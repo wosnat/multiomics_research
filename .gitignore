@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+
+# Benchmarks and eval outputs (regenerated, often large)
+benchmarks/
+
+# Analysis outputs (per-analysis, not tracked)
+analyses/*/data/
+analyses/*/results/
+
+# Logs (collected locally, not committed)
+*.jsonl
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json

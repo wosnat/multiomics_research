@@ -1,0 +1,132 @@
+# Tool chain evaluation cases.
+#
+# Each case is a natural language research question with:
+#   - expected_chain: ordered list of tool calls Claude should make
+#   - anti_patterns: tool usage patterns that indicate poor behavior
+#   - assertions: properties of the final answer to verify
+#
+# Run with: python scripts/run_chain_eval.py evals/chain_evals.yaml
+
+- id: iron_stress_cross_organism
+  question: >
+    What genes are differentially expressed under iron limitation in
+    Prochlorococcus MED4, and do their orthologs respond similarly
+    in MIT9312?
+  category: comparative
+  expected_chain:
+    - tool: list_experiments
+      reason: find iron limitation experiments
+    - tool: differential_expression_by_gene
+      params_contain:
+        organism: "MED4"
+      reason: get DE genes for MED4
+    - tool: gene_homologs
+      reason: find orthologs in MIT9312
+    - tool: differential_expression_by_ortholog
+      reason: compare across organisms
+  anti_patterns:
+    - pattern: run_cypher
+      reason: structured tools exist for all steps
+    - pattern: differential_expression_by_gene.*differential_expression_by_gene
+      reason: should use differential_expression_by_ortholog for cross-organism
+  assertions:
+    - mentions_truncation: true
+    - uses_locus_tags: true
+    - qualifies_cross_study: true
+
+- id: nitrogen_responsive_genes
+  question: >
+    How many genes respond to nitrogen stress in MED4? What are the
+    top upregulated ones by fold change?
+  category: survey
+  expected_chain:
+    - tool: list_experiments
+      params_contain:
+        treatment_type: ["nitrogen"]
+      reason: find nitrogen experiments
+    - tool: differential_expression_by_gene
+      params_contain:
+        direction: "up"
+        significant_only: true
+      reason: get upregulated genes
+  anti_patterns:
+    - pattern: genes_by_function
+      reason: should query expression directly, not search by function text
+  assertions:
+    - uses_total_matching_not_len: true
+    - mentions_truncation: true
+
+- id: catalase_paralogs
+  question: >
+    What catalase genes does Alteromonas MIT1002 have, and how do
+    they respond to coculture with Prochlorococcus?
+  category: survey
+  expected_chain:
+    - tool: genes_by_function
+      params_contain:
+        search_text: "catalase"
+        organism: "MIT1002"
+      reason: find catalase genes
+    - tool: gene_overview
+      reason: check for paralogs and data availability
+    - tool: differential_expression_by_gene
+      reason: get expression under coculture
+  anti_patterns:
+    - pattern: resolve_gene
+      reason: catalase is a function keyword, not a gene name
+  assertions:
+    - separates_paralogs: true
+    - uses_locus_tags: true
+
+- id: photosystem_conservation
+  question: >
+    Are photosystem II genes conserved across Prochlorococcus strains?
+    Which strains have the most complete set?
+  category: comparative
+  expected_chain:
+    - tool: search_ontology
+      params_contain:
+        ontology: "go_bp"
+      reason: find photosystem II GO terms
+    - tool: genes_by_ontology
+      reason: get genes annotated to photosystem II
+    - tool: gene_homologs
+      reason: check conservation across strains
+  anti_patterns:
+    - pattern: run_cypher
+      reason: ontology + homolog tools cover this
+  assertions:
+    - uses_locus_tags: true
+    - reports_per_organism: true
+
+- id: simple_gene_lookup
+  question: >
+    What is gene PMM0120 in MED4?
+  category: lookup
+  expected_chain:
+    - tool: resolve_gene
+      params_contain:
+        identifier: "PMM0120"
+      reason: resolve the gene identifier
+    - tool: gene_overview
+      reason: get annotation and data availability
+  anti_patterns:
+    - pattern: list_experiments
+      reason: not needed for a simple gene lookup
+    - pattern: differential_expression_by_gene
+      reason: not asked about expression
+  assertions:
+    - uses_locus_tags: true
+
+- id: run_cypher_appropriate
+  question: >
+    How many relationships of each type exist in the knowledge graph?
+  category: lookup
+  expected_chain:
+    - tool: kg_schema
+      reason: check available relationship types
+    - tool: run_cypher
+      reason: no structured tool for relationship counts
+  anti_patterns: []
+  assertions:
+    - run_cypher_justified: true

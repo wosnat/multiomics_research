@@ -1,0 +1,73 @@
+[
+  {
+    "id": "rq_iron_stress_response",
+    "question": "What is the transcriptional response of Prochlorococcus MED4 to iron limitation? Identify the most strongly affected genes and their functions.",
+    "category": "survey",
+    "difficulty": "medium",
+    "expected_phases": ["orientation", "gene_work", "expression"],
+    "quality_criteria": {
+      "uses_locus_tags": "All genes identified by locus_tag, not just gene name",
+      "checks_truncation": "Reports total_matching, notes if results are truncated",
+      "separates_paralogs": "Does not merge paralogs sharing a gene name",
+      "qualifies_scope": "Anchors findings to specific experiment(s), not universal claims",
+      "documents_gaps": "Notes any missing data or KG limitations",
+      "appropriate_language": "Uses 'associated with' not 'causes'; matches padj to confidence level"
+    }
+  },
+  {
+    "id": "rq_catalase_coculture",
+    "question": "How do catalase genes in Alteromonas MIT1002 respond to coculture with Prochlorococcus? Are there paralogs with different behaviors?",
+    "category": "survey",
+    "difficulty": "hard",
+    "expected_phases": ["orientation", "gene_work", "expression"],
+    "quality_criteria": {
+      "uses_locus_tags": "Each catalase paralog tracked by locus_tag",
+      "separates_paralogs": "Critical — catalase has multiple paralogs with opposite behaviors",
+      "reports_all_contrasts": "Does not cherry-pick one entry when duplicates exist",
+      "qualifies_scope": "Names specific experiments and contrasts",
+      "appropriate_language": "Strength of language matches padj values"
+    },
+    "notes": "This is the exact scenario where paralog conflation was first observed. A/B comparison should show clear improvement with the research skill."
+  },
+  {
+    "id": "rq_nitrogen_conservation",
+    "question": "Is the nitrogen stress response conserved across Prochlorococcus ecotypes? Compare MED4 (high-light adapted) and NATL2A (low-light adapted).",
+    "category": "comparative",
+    "difficulty": "hard",
+    "expected_phases": ["orientation", "gene_work", "expression"],
+    "quality_criteria": {
+      "uses_ortholog_tool": "Uses differential_expression_by_ortholog, not two separate by_gene calls",
+      "qualifies_cross_study": "Notes that comparisons are across different studies/conditions",
+      "no_cross_study_pvalue": "Does not compare p-values between studies",
+      "uses_locus_tags": true,
+      "documents_gaps": "Notes organisms or experiments not available"
+    }
+  },
+  {
+    "id": "rq_simple_lookup",
+    "question": "What is gene PMM0120? What annotations does it have?",
+    "category": "lookup",
+    "difficulty": "easy",
+    "expected_phases": ["gene_work"],
+    "quality_criteria": {
+      "uses_locus_tags": true,
+      "no_invented_function": "Does not state function from training data without querying KG",
+      "efficient_tool_use": "Does not call unnecessary tools (no list_experiments, no expression tools)"
+    }
+  },
+  {
+    "id": "rq_enrichment_pipeline",
+    "question": "What biological processes are enriched among the upregulated genes in MED4 under nitrogen limitation? Produce a reproducible analysis with scripts.",
+    "category": "discovery",
+    "difficulty": "hard",
+    "expected_phases": ["orientation", "gene_work", "expression"],
+    "quality_criteria": {
+      "creates_artifacts": "Produces analysis directory with data/, scripts/, results/",
+      "scripts_not_chat": "Statistical computation done in .py files, not in chat",
+      "proper_background": "Enrichment uses KG-derived background set, not assumed",
+      "multiple_testing": "Applies multiple testing correction",
+      "documents_methods": "Creates methods.md with full protocol"
+    },
+    "notes": "This tests the full artifacts workflow. Without the research skill, Claude typically does enrichment in chat without scripts or proper background sets."
+  }
+]

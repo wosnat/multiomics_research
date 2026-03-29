@@ -1,0 +1,102 @@
+[
+  {
+    "query": "What genes are upregulated under iron stress in Prochlorococcus MED4?",
+    "should_trigger": true,
+    "reason": "Direct biological research question about expression data"
+  },
+  {
+    "query": "Compare the nitrogen stress response between MED4 and MIT9312",
+    "should_trigger": true,
+    "reason": "Cross-organism comparative analysis"
+  },
+  {
+    "query": "Are there catalase genes in the KG? What do they do under coculture?",
+    "should_trigger": true,
+    "reason": "Gene function + expression question"
+  },
+  {
+    "query": "What publications in the KG cover light stress experiments?",
+    "should_trigger": true,
+    "reason": "Orientation question that starts a research workflow"
+  },
+  {
+    "query": "I want to do an enrichment analysis on the top differentially expressed genes in MIT1002 under coculture",
+    "should_trigger": true,
+    "reason": "Statistical analysis requiring the research methodology"
+  },
+  {
+    "query": "Review my analysis — did I handle paralogs correctly?",
+    "should_trigger": true,
+    "reason": "Explicit review request matches skill's review protocol"
+  },
+  {
+    "query": "What photosystem genes are conserved across all Prochlorococcus strains?",
+    "should_trigger": true,
+    "reason": "Conservation analysis across organisms"
+  },
+  {
+    "query": "How do I create a volcano plot from the expression data?",
+    "should_trigger": true,
+    "reason": "Research artifact creation, covered by artifacts guide"
+  },
+  {
+    "query": "What strains of Prochlorococcus are in the knowledge graph?",
+    "should_trigger": true,
+    "reason": "Orientation phase question"
+  },
+  {
+    "query": "Is PMM0120 differentially expressed under any condition?",
+    "should_trigger": true,
+    "reason": "Gene-specific expression survey"
+  },
+  {
+    "query": "Fix the bug in test_tool_wrappers.py where the mock is wrong",
+    "should_trigger": false,
+    "reason": "Software engineering task, not biological research"
+  },
+  {
+    "query": "Add a new MCP tool called list_pathways",
+    "should_trigger": false,
+    "reason": "Tool development task, not research"
+  },
+  {
+    "query": "Refactor the query builder to use OPTIONAL MATCH",
+    "should_trigger": false,
+    "reason": "Code refactoring, not biological analysis"
+  },
+  {
+    "query": "What's the directory structure of this project?",
+    "should_trigger": false,
+    "reason": "Project navigation, not research"
+  },
+  {
+    "query": "Run pytest on the unit tests",
+    "should_trigger": false,
+    "reason": "Test execution, not research"
+  },
+  {
+    "query": "Help me write a Python function to parse FASTA files",
+    "should_trigger": false,
+    "reason": "General programming, not KG-based research"
+  },
+  {
+    "query": "What's the Neo4j schema?",
+    "should_trigger": false,
+    "reason": "Schema inspection is a tool lookup, not a research workflow"
+  },
+  {
+    "query": "Create a git commit with my changes",
+    "should_trigger": false,
+    "reason": "Git operation, not research"
+  },
+  {
+    "query": "Explain how the MCP server connects to Neo4j",
+    "should_trigger": false,
+    "reason": "Architecture question about the codebase"
+  },
+  {
+    "query": "Update the CLAUDE.md to document the new tool",
+    "should_trigger": false,
+    "reason": "Documentation task, not research"
+  }
+]
