@@ -17,16 +17,19 @@ mkdir -p "$LOG_DIR"
 INPUT=$(cat)
 
 # Extract fields with jq, adding timestamp
+# tool_response arrives as a JSON string, so parse it first
 echo "$INPUT" | jq -c '{
   timestamp: (now | todate),
   event: .hook_event_name,
   session_id: .session_id,
   tool_name: .tool_name,
   tool_input: .tool_input,
-  response_keys: (.tool_response | if type == "object" then keys else null end),
-  truncated: (.tool_response.truncated // null),
-  total_matching: (.tool_response.total_matching // null),
-  returned: (.tool_response.returned // null),
+} + (.tool_response | fromjson? // {} | {
+  response_keys: (if type == "object" then keys else null end),
+  truncated: (.truncated // null),
+  total_matching: (.total_matching // null),
+  returned: (.returned // null),
+}) + {
   error: (.error // null)
 }' >> "$LOG_FILE"
 

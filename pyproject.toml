@@ -12,8 +12,25 @@ analysis = [
     "pandas>=2.0",
     "matplotlib>=3.7",
     "scipy>=1.11",
+    "multiomics-explorer @ file:///home/osnat/github/multiomics_explorer_release",
 ]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+# No package module named multiomics_research exists, so we include files manually.
+include = [
+    "CLAUDE.md",
+    "pyproject.toml",
+    "scripts/**",
+    "skills/**",
+    "evals/**",
+    "hooks/**",
+    "benchmarks/**",
+    "notebooks/**",
+]

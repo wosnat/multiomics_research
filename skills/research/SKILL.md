@@ -87,6 +87,8 @@ the research loop.
 - Discovery: `resolve_gene`, `genes_by_function`, `genes_by_ontology`,
   `genes_by_homolog_group`
 - Details: `gene_overview`, `gene_ontology_terms`, `gene_homologs`
+- Cross-experiment profile: `gene_response_profile` — which
+  treatments each gene responds to, direction, rank, consistency
 - Annotation: `search_ontology`, `search_homolog_groups`
 
 **Outputs:**
@@ -122,8 +124,12 @@ remaining gaps can't be addressed with available data.
 
 - Use MCP tools for browsing and quick lookups
 - Use `gene_response_profile` for cross-experiment gene-level
-  summaries (when available; fall back to manual aggregation via
-  API extraction otherwise)
+  summaries: which stresses a gene responds to, response direction,
+  rank, and consistency across experiments
+- Use `response_matrix()` to build gene × treatment matrices for
+  comparison or visualization
+- Use `gene_set_compare()` to compare two gene sets by their
+  response profiles (overlap, divergent treatments, summary counts)
 - Write scripts for any computation or reshaping — save to
   `scripts/explore_*.py` immediately rather than doing one-offs
   in chat
@@ -185,12 +191,39 @@ If yes, is it tagged `[interpretation]`?"
 | Quick lookups (< 50 results) | Any computation on gene lists |
 | Working in chat mode | Result set > MCP limit |
 | Cross-experiment overview (`gene_response_profile`) | Reshaping or aggregating data |
+| | Building response matrices (`response_matrix()`) |
+| | Comparing gene sets (`gene_set_compare()`) |
 
-**When to switch:** If you need to reshape, aggregate, or compute
-on MCP results, write a script immediately. Save it to
-`scripts/explore_*.py` and reference it from the exploration log.
-Do not attempt to work around MCP limits in chat with one-off
-parsing.
+### Analysis utilities (`multiomics_explorer.analysis`)
+
+Reusable functions that consume the API for common analysis
+patterns. All return DataFrames. No side effects.
+
+```python
+from multiomics_explorer.analysis import response_matrix, gene_set_compare
+
+# Gene × treatment response matrix
+df = response_matrix(genes=["PMM0370", "PMM0920"], organism="MED4")
+# Cells: up / down / mixed / not_responded / not_known
+
+# Custom grouping (e.g., by experimental condition instead of treatment type)
+df = response_matrix(
+    genes=["PMM0370", "PMM0920"], organism="MED4",
+    group_map={"exp_id_1": "axenic_early", "exp_id_2": "coculture"})
+
+# Compare two gene sets
+result = gene_set_compare(
+    set_a=["PMM0370", "PMM0920"], set_b=["PMM0468", "PMM0920"],
+    organism="MED4", set_a_name="early", set_b_name="late")
+# Returns: overlap, only_a, only_b, shared_groups, divergent_groups, summary_per_group
+```
+
+**When to switch from MCP to utilities:** If you need to reshape,
+aggregate, or compute on MCP results, use the analysis utilities
+first. Write scripts only for project-specific logic not covered
+by the utilities. Save to `scripts/explore_*.py` and reference
+from the exploration log. Do not attempt to work around MCP limits
+in chat with one-off parsing.
 
 **Script naming convention:**
 - `scripts/extract_*.py` — data extraction from KG (reusable)
@@ -198,9 +231,6 @@ parsing.
   (reusable)
 - `scripts/explore_*.py` — ad hoc iteration scripts (may be
   throwaway, kept for reproducibility)
-
-Explore scripts can be promoted into the analysis utilities module
-if the pattern recurs.
 
 ```python
 from multiomics_explorer import differential_expression_by_gene
