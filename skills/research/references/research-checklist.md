@@ -21,22 +21,17 @@ using the multiomics KG.
 
 ---
 
-## Phase 1: Orientation
+## Orientation (run once)
+
+### Scope
 
 - [ ] `list_organisms` — confirm target organisms are in the KG
 - [ ] `list_publications` — find relevant studies
 - [ ] `list_experiments(summary=true)` — understand available
   conditions, time points, omics types
 - [ ] `list_experiments` with filters — get specific experiment IDs
-- [ ] **Gate: scope check**
-  - Are the needed organisms present?
-  - Are there experiments for the conditions of interest?
-  - What data types are available (transcriptomics, proteomics)?
-  - Document any gaps: "The KG does not contain [X] data for [Y]"
 
----
-
-## Phase 2: Gene identification
+### Gene identification
 
 - [ ] Identify genes of interest using appropriate discovery tools:
   - By name/keyword: `resolve_gene`, `genes_by_function`
@@ -48,91 +43,83 @@ using the multiomics KG.
   - If yes: `gene_overview` on all locus tags, treat separately
 - [ ] `gene_overview` — confirm annotation types, expression data
   availability, ortholog coverage
-- [ ] **Gate: gene set complete?**
-  - Check `total_matching` — is the full set captured?
-  - Are there genes with no expression data? Flag them.
-  - Are paralogs identified and catalogued?
-  - Record the gene set with locus tags in methods.md
+
+### Orientation outputs
+
+- [ ] Create `methods.md` stub (research question, data scope, gene
+  set)
+- [ ] Write first exploration log
+  (`exploration/YYYY-MM-DD-orientation.md`)
+- [ ] Initialize `gaps_and_friction.md`
+
+### Gate: scope check
+
+- [ ] Are the needed organisms present?
+- [ ] Are there experiments for the conditions of interest?
+- [ ] Are all genes resolved to locus tags? Paralogs identified?
+- [ ] Is the gene set complete? (check `total_matching` vs
+  `returned`)
+- [ ] Document any gaps: "The KG does not contain [X] data for [Y]"
 
 ---
 
-## Phase 3: Expression analysis
+## Research loop (per iteration)
 
-### For MCP-scale results (few genes, few experiments)
-- [ ] `differential_expression_by_gene` — gene-centric, per organism
-- [ ] Check summary fields: total results, direction breakdown
-- [ ] If `truncated: false` — results are complete, can interpret
-  directly
+Run this checklist for each iteration of the research loop.
 
-### For analyses requiring full data
-- [ ] Check `truncated` flag — if true, must extract via package
-- [ ] Write extraction script using Python package:
-  ```python
-  from multiomics_explorer import differential_expression_by_gene
-  data = differential_expression_by_gene(
-      organism="...", locus_tags=[...], experiment_ids=[...])
-  pd.DataFrame(data["results"]).to_csv("data/de_genes.csv")
-  ```
-- [ ] Verify extraction: row count matches `total_matching` from
-  MCP summary
-- [ ] **Gate: data completeness**
-  - All expected genes present?
-  - All expected experiments present?
-  - Missing data documented?
+### Question
 
-### For cross-organism comparison
-- [ ] `differential_expression_by_ortholog` for cluster-level view
-- [ ] `genes_by_homolog_group` for cluster membership
-- [ ] Verify ortholog assignments — are the right groups selected?
-- [ ] Missing organisms in a group = no homolog, not missing data
+- [ ] State a testable claim or comparison (not open-ended)
+- [ ] Mark type: `hypothesis`, `exploratory`, or `follow-up`
 
----
+### Explore
 
-## Phase 4: Analysis and computation
+- [ ] Use MCP for browsing, Python scripts for computation
+- [ ] For cross-experiment comparison: use `gene_response_profile`
+  or extract via API and aggregate in a script
+- [ ] Save any ad hoc computation to `scripts/explore_*.py`
+- [ ] If comparing across platforms: note caveat, compare direction
+  and rank not magnitude
 
-All computation happens in scripts, not chat.
+### Log
 
-- [ ] Write analysis scripts in `scripts/`
-- [ ] Scripts read from `data/`, write to `results/`
-- [ ] Include in scripts:
-  - Library imports with version logging
-  - Clear input/output file paths
-  - Statistical methods with parameters
-  - Seed setting for reproducibility where applicable
-- [ ] **Gate: outputs valid?**
-  - Do output files exist and are non-empty?
-  - Do row/gene counts match expectations?
-  - Are statistical assumptions met?
+- [ ] Write exploration log entry
+  (`exploration/YYYY-MM-DD-{topic}.md`) **during** the iteration
+- [ ] Tag every finding: `[KG]`, `[interpretation]`, or `[gap]`
+
+### Assess
+
+- [ ] Classify findings: `established`, `preliminary`, or
+  `speculative`
+- [ ] Self-check: did I use knowledge not from the KG? Is it tagged?
+- [ ] Append any gaps/friction to `gaps_and_friction.md`
+- [ ] Update `methods.md` if established findings changed scope
+- [ ] Decide: next question, or conclude?
 
 ---
 
-## Phase 5: Interpretation and documentation
+## Synthesis (after the loop)
 
-- [ ] Interpret results using biological context
-- [ ] Flag where intrinsic knowledge is used vs KG data
-- [ ] Write `methods.md` with all required sections:
-  - Research question
-  - Data scope (organisms, experiments, conditions — with IDs)
-  - Gene selection method and filtering steps
-  - Statistical methods and parameters
-  - Results summary with effect sizes and p-values
-  - Limitations and KG gaps
-- [ ] Write `README.md` — summary, key findings, file index
+- [ ] Finalize `methods.md` — coherent, publication-ready
+- [ ] Write or update `README.md` — summary, findings, file index,
+  exploration log links
+- [ ] Produce publication artifacts in `results/`
 - [ ] Populate `references.md` or `references.bib`
-- [ ] **Gate: reproducibility check**
-  - Can the analysis be rerun from scripts alone?
-  - Are all data sources documented?
-  - Are all decisions explained in methods.md?
 
 ---
 
 ## Review (self or peer)
 
 - [ ] Every number traces to a named KG query or script output
+- [ ] Findings are tagged with source (`[KG]`, `[interpretation]`,
+  `[gap]`) in exploration logs
 - [ ] No gene name used without its locus tag
 - [ ] Paralogs and orthologs handled correctly
 - [ ] Truncation metadata respected (not counting from limited rows)
+- [ ] Findings classified (established / preliminary / speculative)
 - [ ] Statistical methods appropriate and documented
-- [ ] KG gaps and limitations explicitly stated
+- [ ] KG gaps and limitations stated in exploration logs and
+  `gaps_and_friction.md`
 - [ ] All artifact files exist and are consistent with the narrative
+- [ ] Exploration logs form a followable chain (`## Next` links)
 - [ ] Claims match the data — no over-interpretation
