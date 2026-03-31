@@ -16,8 +16,7 @@ using the multiomics KG.
     comparison → extraction + statistics required
   - **Discovery** — enrichment, clustering, unbiased screen →
     full extraction + computational pipeline required
-- [ ] For comparative/discovery: create the analysis directory
-  structure (see artifacts guide)
+- [ ] For comparative/discovery: proceed to Phase 0 (pre-flight)
 
 ---
 
@@ -59,11 +58,6 @@ using the multiomics KG.
 
 ## Orientation (run once)
 
-> **GATE 1 — Orientation complete.**
-> Before entering the research loop: an exploration log with
-> ## Findings must exist, methods.md must have ## Data scope,
-> and gaps_and_friction.md must be updated.
-
 ### Scope
 
 - [ ] `list_organisms` — confirm target organisms are in the KG
@@ -101,6 +95,11 @@ using the multiomics KG.
 - [ ] Is the gene set complete? (check `total_matching` vs
   `returned`)
 - [ ] Document any gaps: "The KG does not contain [X] data for [Y]"
+
+> **GATE 1 — Orientation complete.**
+> Before entering the research loop: an exploration log with
+> ## Findings must exist, methods.md must have ## Data scope,
+> and gaps_and_friction.md must be updated.
 
 ---
 
