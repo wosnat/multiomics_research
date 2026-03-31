@@ -45,7 +45,7 @@ from multiomics_explorer import (
 from multiomics_explorer.analysis import response_matrix, gene_set_compare
 ```
 
-**Run scripts from the `multiomics_research` project root** — the package is installed in this project's virtual environment (`.venv`). Use `.venv/bin/python script.py`, not `uv run --directory /path/to/multiomics_explorer`.
+**Run scripts from the `multiomics_research` project root** — the package is installed in this project's environment. Use `uv run script.py` or `.venv/bin/python script.py`. Do not use `uv run --directory /path/to/multiomics_explorer` — that runs in the wrong environment.
 
 **Neo4j must be running** (same connection as the MCP server, configured via `multiomics_explorer/.env`).
 
@@ -119,6 +119,10 @@ This is the most common source of bugs. Some result fields are lists, dicts, or 
 | `differential_expression_by_gene` | `top_categories` | list[object] | Envelope field — not in `results` |
 
 ### Worked Example: `gene_response_profile`
+
+> **Note:** `profile_to_dataframe` in `multiomics_explorer.analysis`
+> will handle this conversion automatically once available. Use the
+> manual pattern below until then.
 
 This function has both list columns and a deeply nested `response_summary` field. Here is the full extraction pattern.
 
@@ -195,7 +199,7 @@ Use this to decide whether `limit=None` is safe or whether you need to filter up
 
 | Mistake | Fix |
 |---------|-----|
-| `uv run --directory /path/to/multiomics_explorer script.py` | Run from `multiomics_research` root — package is installed in this project's environment. Use `.venv/bin/python script.py`. |
+| `uv run --directory /path/to/multiomics_explorer script.py` | Run from `multiomics_research` root — package is installed in this project's environment |
 | Guessing column names (`product`, `is_significant`) | Test with `result["results"][0].keys()` first |
 | `pd.DataFrame(result["results"])` then `.to_csv()` on nested data | Flatten list/dict columns first (see section 4) |
 | Hardcoding the full organism name | Fuzzy matching works: `"MED4"` resolves correctly |

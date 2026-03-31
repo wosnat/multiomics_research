@@ -250,6 +250,87 @@ should treat it the same as `groups_not_responded` — cell value
 
 ---
 
+## 3. DataFrame conversion utilities (ADDENDUM)
+
+> Added after initial spec. Does not block items 1-2 above —
+> implement whenever convenient.
+
+### Problem
+
+Converting API results to DataFrames requires boilerplate for
+functions with nested return fields (lists, dicts). The pattern is
+identical every time but easy to get wrong (broken CSV export,
+silent object-in-cell issues). The API guide in `multiomics_research`
+currently documents this as copy-paste boilerplate — it should be
+a utility function instead.
+
+### Proposed functions
+
+Add to `multiomics_explorer/analysis/expression.py` (or a new
+`multiomics_explorer/analysis/frames.py` if expression.py is
+getting large):
+
+#### `profile_to_dataframe`
+
+Converts a `gene_response_profile` result dict into two DataFrames.
+
+```python
+from multiomics_explorer.analysis import profile_to_dataframe
+
+result = gene_response_profile(locus_tags=["PMM0370", "PMM0920"])
+genes_df, summary_df = profile_to_dataframe(result)
+```
+
+**Returns:** tuple of two DataFrames:
+
+1. `genes_df` — one row per gene, list columns joined as
+   semicolon-separated strings, `response_summary` dropped.
+   Columns: `locus_tag`, `gene_name`, `product`, `gene_category`,
+   `groups_responded`, `groups_not_responded`, `groups_not_known`
+   (all as strings, not lists).
+
+2. `summary_df` — one row per gene x group, flattened from
+   `response_summary`. Columns: `locus_tag`, `gene_name`, `group`,
+   plus all stats fields (`experiments_total`, `experiments_tested`,
+   `experiments_up`, `experiments_down`, `timepoints_total`,
+   `timepoints_tested`, `timepoints_up`, `timepoints_down`,
+   `up_best_rank`, `up_median_rank`, `up_max_log2fc`,
+   `down_best_rank`, `down_median_rank`, `down_max_log2fc`).
+
+Both DataFrames are CSV-safe (no nested objects in cells).
+
+#### `results_to_dataframe` (optional)
+
+Generic helper for the simple case. Thin wrapper that warns if
+nested fields are detected.
+
+```python
+from multiomics_explorer.analysis import results_to_dataframe
+
+result = differential_expression_by_gene(organism="MED4", limit=None)
+df = results_to_dataframe(result)
+# Same as pd.DataFrame(result["results"]) but warns if any column
+# contains list/dict values
+```
+
+This is lower priority — `pd.DataFrame(result["results"])` works
+for most functions. The value is the warning on nested fields.
+
+### Reference docs
+
+Add `references/utils/profile_to_dataframe.md` following the same
+format as the other utility reference docs (Section 1 above).
+
+### Impact on research repo
+
+The Python API guide in `multiomics_research` should reference
+`profile_to_dataframe` instead of embedding the flattening
+boilerplate. The guide keeps the pre-script checklist, common
+mistakes, and import paths — but the conversion pattern becomes
+a function call, not copy-paste code.
+
+---
+
 ## Implementation order
 
 1. **Utility reference docs** — write `references/utils/response_matrix.md`
@@ -263,5 +344,9 @@ should treat it the same as `groups_not_responded` — cell value
 4. **Update tool guide** — update
    `references/tools/gene_response_profile.md` with new fields and
    updated common mistakes section
+5. **DataFrame conversion utilities** (addendum) — implement
+   `profile_to_dataframe`, optionally `results_to_dataframe`, add
+   reference doc `references/utils/profile_to_dataframe.md`
 
-Step 1 is independent. Steps 2-4 are sequential.
+Steps 1 and 5 are independent of each other. Steps 2-4 are
+sequential. Step 5 can be done at any time.
