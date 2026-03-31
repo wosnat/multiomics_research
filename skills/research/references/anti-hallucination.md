@@ -131,6 +131,30 @@ significant one was reported.
   statistical support — use "suggestive of" or "potentially
   related to"
 
+### 2.5 Cross-experiment aggregation without caveats
+
+**What happens:** Expression data from different platforms
+(microarray, RNA-seq) or different statistical tests (Goldenspike,
+Rockhopper, DESeq2) are compared as if they are directly
+comparable. "Gene X has log2FC 3.2 in study A and 1.1 in study B,
+so the response is stronger in A."
+
+**Real example (nitrogen stress analysis):** Tolonen 2006
+(microarray, Goldenspike) and Read 2017 (RNA-seq, Rockhopper)
+fold changes for the same genes were compared. Different platforms
+have different dynamic ranges — a log2FC of 3 on microarray is
+not the same as log2FC 3 on RNA-seq.
+
+**Prevention:**
+- Compare direction (up/down) and rank across platforms, not
+  magnitude
+- Compare log2FC magnitudes only within the same platform and study
+- When presenting cross-experiment tables, include a platform
+  column and note the caveat
+- Use `gene_response_profile` rank fields (comparable across
+  platforms) instead of raw fold changes for cross-study
+  comparisons
+
 ---
 
 ## Category 3: Data handling errors
