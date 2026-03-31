@@ -8,8 +8,10 @@ argument-hint: "[research question or 'review' to audit an existing analysis]"
 
 See [research checklist](references/research-checklist.md) for the
 step-by-step protocol, [artifacts guide](references/artifacts-guide.md)
-for output structure, and [anti-hallucination](references/anti-hallucination.md)
-for concrete failure modes to avoid.
+for output structure, [Python API guide](references/python-api-guide.md)
+for scripting with the multiomics_explorer package, and
+[anti-hallucination](references/anti-hallucination.md) for concrete
+failure modes to avoid.
 
 ## KG is the sole data source
 
@@ -71,7 +73,18 @@ and **exploration logs** go to disk. See the
 
 ---
 
-## The 2-stage workflow
+## The 3-phase workflow
+
+### Phase 0: Pre-flight (before any MCP call)
+
+No biology. No MCP calls. Create the analysis directory and
+artifact stubs first. Check for prior analyses on the same topic.
+
+See [research checklist — Phase 0](references/research-checklist.md)
+for the full checklist.
+
+> **GATE 0:** Do not make any MCP tool calls or KG queries until
+> methods.md, gaps_and_friction.md, and exploration/ exist on disk.
 
 ### Stage 1: Orientation (linear, run once)
 
@@ -105,6 +118,10 @@ the research loop.
 - Is the gene set complete (check `total_matching` vs `returned`)?
 - If key data is missing, report the gap before proceeding.
 
+> **GATE 1:** Do not enter the research loop until an exploration
+> log with ## Findings exists, methods.md has ## Data scope, and
+> gaps_and_friction.md is updated.
+
 ### Stage 2: Research loop (iterative, run N times)
 
 Each iteration follows: **Question → Explore → Log → Assess**.
@@ -133,6 +150,10 @@ remaining gaps can't be addressed with available data.
 - Write scripts for any computation or reshaping — save to
   `scripts/explore_*.py` immediately rather than doing one-offs
   in chat
+- See [Python API guide](references/python-api-guide.md) for
+  import paths, return structure, and common scripting patterns.
+  **Before writing any script:** test the return schema with a
+  minimal call (see guide §Pre-script checklist).
 - **Cross-experiment comparison caveat:** when comparing across
   platforms (microarray vs RNA-seq), compare direction (up/down)
   and rank, not fold-change magnitude. Include a platform column
@@ -171,6 +192,10 @@ If yes, is it tagged `[interpretation]`?"
   relevant section of `methods.md`
 - Decide: next question, or conclude?
 
+> **Per-iteration exit:** Before moving to the next iteration,
+> verify: exploration log written, scripts saved to `scripts/`,
+> gaps_and_friction.md updated.
+
 ### Synthesis (after the loop)
 
 - Finalize `methods.md` — ensure coherence and publication-readiness
@@ -178,6 +203,11 @@ If yes, is it tagged `[interpretation]`?"
   exploration log links
 - Produce publication artifacts (figures, tables) in `results/`
 - Populate `references.md`
+
+> **Exit gate:** Before concluding the analysis: README.md written,
+> all scripts in `scripts/`, gaps_and_friction.md has
+> `## Process retrospective` (what worked, what didn't, proposed
+> changes).
 
 ---
 
