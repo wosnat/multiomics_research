@@ -122,6 +122,29 @@ Organize by category:
 1. **{Short description}** — {What the skill didn't guide well.}
 ```
 
+Add a process retrospective at the end of the analysis (exit gate):
+
+```markdown
+## Process retrospective
+
+### What worked
+1. ...
+
+### What didn't work
+1. ...
+
+### Proposed changes
+
+**To the skill:**
+- ...
+
+**To the MCP/KG:**
+- ...
+```
+
+Written at the end of the analysis (exit gate). Captures lessons
+for skill and tool improvement.
+
 ---
 
 ## data/
@@ -152,6 +175,10 @@ df = pd.DataFrame(data["results"])
 df.to_csv("data/de_genes_med4.csv", index=False)
 print(f"Extracted {len(df)} rows (total_matching: {data['total_matching']})")
 ```
+
+See [Python API guide](python-api-guide.md) for import paths,
+return structure handling (especially nested fields), and common
+mistakes to avoid.
 
 Scripts in `data/` or `scripts/` — either works, but extraction
 scripts should be clearly labeled.
