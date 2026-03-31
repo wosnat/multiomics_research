@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__multiomics-kg__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/osnat/github/multiomics_research/hooks/log-mcp-usage.sh",
+            "statusMessage": "Logging MCP tool usage"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "mcp__multiomics-kg__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/osnat/github/multiomics_research/hooks/log-mcp-usage.sh",
+            "statusMessage": "Logging MCP tool failure"
+          }
+        ]
+      }
+    ]
+  }
+}
