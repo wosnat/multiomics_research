@@ -11,9 +11,9 @@ step-by-step protocol, [artifacts guide](references/artifacts-guide.md)
 for output structure, and [anti-hallucination](references/anti-hallucination.md)
 for concrete failure modes to avoid.
 
-## Core principles
+## KG is the sole data source
 
-### 1. KG is the sole data source
+This is the top-level rule. Everything else follows from it.
 
 Every claim must trace to a KG query. Never rely on intrinsic
 knowledge for data — gene names, expression values, experiment
@@ -23,17 +23,23 @@ knowledge only for:
 - Suggesting next analytical steps
 - Explaining methodology
 
-**When the KG is insufficient**, say so explicitly. Common gaps:
+**When the KG is insufficient**, say so explicitly and flag it as
+a gap. Do not fill gaps with assumptions, web searches, or general
+knowledge. Common gaps:
 - Missing organisms or strains not yet in the KG
 - Annotations not loaded (e.g., some GO terms, regulatory elements)
 - Expression data not available for a condition/study
 - No adjusted p-values in the original dataset
 - Missing metadata (timepoints, replicates, normalization method)
+- No physiological data (growth curves, Fv/Fm, cell counts)
 
-Do not fill gaps with assumptions or intrinsic knowledge. Document
-what is missing and flag it as a limitation.
+This rule is made operational through **source tagging** in the
+research loop: every finding is tagged `[KG]`, `[interpretation]`,
+or `[gap]` (see Stage 2).
 
-### 2. Reproducibility over convenience
+## Core principles
+
+### 1. Reproducibility over convenience
 
 Every analysis must be reproducible without access to the Claude
 conversation. This means:
@@ -46,11 +52,9 @@ conversation. This means:
 - **No manual steps** — if it can't be scripted, document it as a
   limitation
 
-### 3. Locus tags, not gene names
+### 2. Locus tags, not gene names
 
-Gene names are ambiguous. The catalase analysis showed that "katA"
-maps to two paralogs per strain with opposite expression behavior,
-and "katB" was conflated with "katE" in a different strain. Always:
+Gene names are ambiguous. Always:
 - Resolve gene names to locus tags early (`resolve_gene`,
   `genes_by_function`)
 - Report locus tags in all tables and analysis outputs
@@ -58,53 +62,116 @@ and "katB" was conflated with "katE" in a different strain. Always:
   identifier
 - When paralogs exist, treat each locus tag as a separate entity
 
-### 4. Artifacts, not answers
+### 3. Artifacts, not answers
 
 Research questions produce files, not chat messages. Chat is for
-reasoning, planning, and interpretation. Data, statistics, and
-figures go to disk. See the [artifacts guide](references/artifacts-guide.md).
+reasoning, planning, and interpretation. Data, statistics, figures,
+and **exploration logs** go to disk. See the
+[artifacts guide](references/artifacts-guide.md).
 
 ---
 
-## The 3-phase workflow
+## The 2-stage workflow
 
-Follow the tool framework phases. Each phase produces outputs that
-feed the next.
+### Stage 1: Orientation (linear, run once)
 
-### Phase 1: Orientation
+Establish scope and identify the initial gene set before entering
+the research loop.
 
-Establish scope before touching data.
-
+**Scope:**
 - `list_organisms` — what species/strains are available
 - `list_publications` — what studies cover the question
 - `list_experiments` — which experiments, conditions, time points
 
-**Gate:** Can the KG answer this question? If key organisms,
-conditions, or data types are missing, report the gap before
-proceeding.
-
-### Phase 2: Gene work
-
-Identify and characterize genes of interest.
-
+**Gene identification:**
 - Discovery: `resolve_gene`, `genes_by_function`, `genes_by_ontology`,
   `genes_by_homolog_group`
 - Details: `gene_overview`, `gene_ontology_terms`, `gene_homologs`
 - Annotation: `search_ontology`, `search_homolog_groups`
 
-**Gate:** Are all genes resolved to locus tags? Are paralogs
-identified and separated? Is the gene set complete (check
-`total_matching` vs `returned`)?
+**Outputs:**
+- `methods.md` stub with: research question, data scope, gene
+  identification approach
+- First exploration log entry
+  (`exploration/YYYY-MM-DD-orientation.md`)
+- `gaps_and_friction.md` initialized (even if empty)
 
-### Phase 3: Expression
+**Gate:** Can the KG answer this question?
+- Are the needed organisms present?
+- Are there experiments for the conditions of interest?
+- Are all genes resolved to locus tags? Are paralogs identified?
+- Is the gene set complete (check `total_matching` vs `returned`)?
+- If key data is missing, report the gap before proceeding.
 
-Explore expression of selected genes in selected experiments.
+### Stage 2: Research loop (iterative, run N times)
 
-- `differential_expression_by_gene` — single organism, gene-centric
-- `differential_expression_by_ortholog` — cross-organism, cluster-centric
+Each iteration follows: **Question → Explore → Log → Assess**.
+The loop exits when the research question is answered or the
+remaining gaps can't be addressed with available data.
 
-**Gate:** Is data truncated? If `truncated: true`, extract full
-data via Python package before computing statistics.
+#### Question
+
+- State what you're testing as a testable claim or comparison
+  (not open-ended)
+- Mark the question type:
+  - `hypothesis` — have a prediction to test
+  - `exploratory` — no prediction, looking for patterns
+  - `follow-up` — triggered by a previous iteration's findings
+
+#### Explore
+
+- Use MCP tools for browsing and quick lookups
+- Use `gene_response_profile` for cross-experiment gene-level
+  summaries (when available; fall back to manual aggregation via
+  API extraction otherwise)
+- Write scripts for any computation or reshaping — save to
+  `scripts/explore_*.py` immediately rather than doing one-offs
+  in chat
+- **Cross-experiment comparison caveat:** when comparing across
+  platforms (microarray vs RNA-seq), compare direction (up/down)
+  and rank, not fold-change magnitude. Include a platform column
+  in cross-experiment tables. See
+  [anti-hallucination §2.5](references/anti-hallucination.md).
+
+#### Log
+
+Write to `exploration/YYYY-MM-DD-{topic}.md` **during** the
+iteration, not after. One file per iteration.
+
+Tag every finding with its source:
+- `[KG]` — data from KG queries
+- `[interpretation]` — biological reasoning using intrinsic
+  knowledge
+- `[gap]` — things the KG can't answer
+
+See exploration log format in the
+[artifacts guide](references/artifacts-guide.md).
+
+#### Assess
+
+Classify each finding:
+- **Established** — consistent across experiments, statistically
+  supported
+- **Preliminary** — single experiment, or no statistical support
+- **Speculative** — interpretation beyond data
+
+Self-check: "Did I use any knowledge that didn't come from the KG?
+If yes, is it tagged `[interpretation]`?"
+
+- Update the working hypothesis
+- Log any gaps/friction encountered → append to
+  `gaps_and_friction.md`
+- When findings are classified as `established`, update the
+  relevant section of `methods.md`
+- Decide: next question, or conclude?
+
+### Synthesis (after the loop)
+
+- Finalize `methods.md` — ensure coherence and publication-readiness
+- Write or update `README.md` — summary, key findings, file index,
+  exploration log links
+- Produce publication artifacts (figures, tables) in `results/`
+- Populate `references.md`
 
 ---
 
@@ -117,9 +184,23 @@ data via Python package before computing statistics.
 | Navigating between tools | Producing tables and figures |
 | Quick lookups (< 50 results) | Any computation on gene lists |
 | Working in chat mode | Result set > MCP limit |
+| Cross-experiment overview (`gene_response_profile`) | Reshaping or aggregating data |
 
-The decision point: if `truncated: true` in MCP output and you
-need the full data, switch to package import in a script.
+**When to switch:** If you need to reshape, aggregate, or compute
+on MCP results, write a script immediately. Save it to
+`scripts/explore_*.py` and reference it from the exploration log.
+Do not attempt to work around MCP limits in chat with one-off
+parsing.
+
+**Script naming convention:**
+- `scripts/extract_*.py` — data extraction from KG (reusable)
+- `scripts/analyze_*.py` — computation that produces results
+  (reusable)
+- `scripts/explore_*.py` — ad hoc iteration scripts (may be
+  throwaway, kept for reproducibility)
+
+Explore scripts can be promoted into the analysis utilities module
+if the pattern recurs.
 
 ```python
 from multiomics_explorer import differential_expression_by_gene
@@ -182,19 +263,26 @@ For analyses that produce a manuscript or report:
 
 ## Review protocol
 
-Every analysis should be reviewed. Use `/multiomics-research:research review` or
-apply this checklist:
+Every analysis should be reviewed. Use
+`/multiomics-research:research review` or apply this checklist:
 
-1. **Data provenance** — Can every number be traced to a KG query?
-2. **Gene identity** — Are locus tags used throughout? Are paralogs
+1. **Data provenance** — Can every number be traced to a KG query
+   or script output?
+2. **Source tagging** — Are findings tagged `[KG]`,
+   `[interpretation]`, or `[gap]` in exploration logs?
+3. **Gene identity** — Are locus tags used throughout? Are paralogs
    separated?
-3. **Completeness** — Were full datasets extracted for statistical
+4. **Completeness** — Were full datasets extracted for statistical
    analyses, or were truncated MCP results used?
-4. **Statistics** — Were p-values taken from the KG (original study)
+5. **Confidence classification** — Are findings marked as
+   established, preliminary, or speculative?
+6. **Statistics** — Were p-values taken from the KG (original study)
    or computed? If computed, is the method documented?
-5. **Gaps declared** — Are KG limitations and missing data explicitly
-   stated?
-6. **Reproducibility** — Can someone run `python scripts/*.py` and
+7. **Gaps declared** — Are KG limitations and missing data explicitly
+   stated in both exploration logs and `gaps_and_friction.md`?
+8. **Reproducibility** — Can someone run `python scripts/*.py` and
    reproduce the results?
-7. **Artifacts** — Do all claimed files exist and contain what
-   they should?
+9. **Exploration trail** — Do the exploration logs form a followable
+   chain (each entry's `## Next` points to the next)?
+10. **Artifacts** — Do all claimed files exist and contain what
+    they should?
