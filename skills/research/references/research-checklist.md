@@ -17,6 +17,8 @@ using the multiomics KG.
   - **Discovery** — enrichment, clustering, unbiased screen →
     full extraction + computational pipeline required
 - [ ] For comparative/discovery: proceed to Phase 0 (pre-flight)
+- [ ] For lookup/survey: answer directly in chat (no artifacts
+  needed, skip Phase 0)
 
 ---
 
