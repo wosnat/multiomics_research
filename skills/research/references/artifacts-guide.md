@@ -11,11 +11,13 @@ what was done.
 
 ```
 analyses/{analysis_name}/
+├── exploration/       # Exploration logs (one per research loop iteration)
 ├── data/              # Staged data from KG (CSV/TSV)
-├── scripts/           # Python analysis scripts
+├── scripts/           # Python scripts (extract, analyze, explore)
 ├── results/           # Outputs: tables, figures, statistics
 ├── README.md          # Summary, key findings, file index
-├── methods.md         # Publication-ready methods document
+├── methods.md         # Publication-ready methods (living document)
+├── gaps_and_friction.md  # KG/MCP/methodology issues log
 └── references.md      # Data sources and citations
 ```
 
@@ -24,6 +26,101 @@ analyses/{analysis_name}/
 `{analysis_name}` should be descriptive and lowercase with
 underscores: `catalase_expression`, `nitrogen_stress_enrichment`,
 `photosystem_conservation`.
+
+---
+
+## exploration/
+
+Exploration logs — one file per iteration of the research loop.
+Written **during** the session, not reconstructed afterward.
+
+### Naming
+
+`YYYY-MM-DD-{topic}.md` — one file per research question/iteration.
+The topic should be descriptive: `orientation-and-scope`,
+`cross-stress-specificity`, `timepoint-classification`.
+
+### Format
+
+Each exploration log follows this structure:
+
+~~~markdown
+# YYYY-MM-DD: {Topic}
+
+## Question
+{Testable question or comparison. Mark: hypothesis / exploratory / follow-up}
+
+## Approach
+{What queries/scripts will be used. Brief — not a methods section.}
+
+## Findings
+{Results, tables, observations. Each finding tagged:}
+- [KG] cynA (PMM0370) is significant only under nitrogen_stress across all 30 MED4 experiments
+- [interpretation] This suggests cynA is a reliable N-specific marker
+- [gap] No physiological data (Fv/Fm) to confirm cell viability at 48h
+
+## Assessment
+{What did we learn? Classify findings:}
+- **Established:** {consistent across experiments, statistically supported}
+- **Preliminary:** {single experiment, or no stats}
+- **Speculative:** {interpretation beyond data}
+
+## Gaps and friction
+{Any KG/MCP/methodology issues encountered — also appended to gaps_and_friction.md}
+
+## Next
+{What question does this lead to? Or: ready to conclude.}
+~~~
+
+### Source tags
+
+Every finding must be tagged with its source:
+- `[KG]` — data directly from a KG query or script output
+- `[interpretation]` — biological reasoning using intrinsic
+  knowledge (literature context, mechanistic inference)
+- `[gap]` — something the KG can't answer (missing data, missing
+  annotations, missing organisms)
+
+### Chain between iterations
+
+The `## Next` section links iterations. File A's Next says
+"classify all timepoints by stress specificity" → file B is
+`2026-03-30-timepoint-classification.md`. The README should
+list all exploration logs in order.
+
+---
+
+## gaps_and_friction.md
+
+A running log of KG, MCP, and methodology issues discovered during
+the analysis. This is a first-class output — updated during every
+iteration of the research loop, not written retroactively.
+
+Each entry is recorded in two places:
+- The exploration log entry (for context — what were you doing
+  when you hit this?)
+- `gaps_and_friction.md` (aggregated backlog for tool/KG
+  development)
+
+### Format
+
+Organize by category:
+
+```markdown
+# Gaps and friction points
+
+## KG data bugs
+1. **{Short description}** — {Details. Action: ...}
+
+## KG gaps
+1. **{Short description}** — {What's missing and why it matters.}
+
+## MCP friction
+1. **{Short description}** — {What was hard and what would help.}
+
+## Skill/methodology friction
+1. **{Short description}** — {What the skill didn't guide well.}
+```
 
 ---
 
@@ -74,11 +171,25 @@ Requirements:
 - **Clear I/O** — explicit input/output file paths, no hardcoded
   absolute paths
 
-Example patterns:
-- `scripts/extract_data.py` — KG extraction
-- `scripts/enrichment.py` — pathway enrichment analysis
-- `scripts/volcano_plot.py` — visualization
-- `scripts/clustering.py` — gene clustering
+### Naming convention
+
+- `scripts/extract_*.py` — data extraction from KG (reusable)
+- `scripts/analyze_*.py` — computation that produces results
+  (reusable)
+- `scripts/explore_*.py` — ad hoc iteration scripts (may be
+  throwaway, kept for reproducibility)
+
+### Examples
+
+- `scripts/extract_de_med4.py` — KG extraction
+- `scripts/analyze_enrichment.py` — pathway enrichment analysis
+- `scripts/analyze_volcano.py` — visualization
+- `scripts/explore_cross_stress.py` — one-off cross-experiment
+  comparison from a research loop iteration
+
+Explore scripts are referenced from the exploration log
+(`## Approach: ran scripts/explore_cross_stress.py`). If a pattern
+recurs, promote the script to `extract_*` or `analyze_*`.
 
 ---
 
@@ -107,6 +218,10 @@ Outputs from analysis scripts.
 ---
 
 ## methods.md
+
+A living document that grows alongside exploration. Updated
+incrementally as findings become established — not written
+retroactively at the end.
 
 Publication-ready methods document. **Required sections:**
 
