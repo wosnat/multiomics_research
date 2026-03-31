@@ -21,7 +21,48 @@ using the multiomics KG.
 
 ---
 
+## Phase 0: Pre-flight (REQUIRED before any MCP call)
+
+> **GATE 0 — Pre-flight complete.**
+> Before any MCP call: the analysis directory, methods.md,
+> gaps_and_friction.md, and exploration/ must exist on disk.
+> Do not proceed until these files are created.
+
+### Prior work check
+
+- [ ] Search `analyses/` for existing analyses on the same topic
+- [ ] If prior work exists:
+  - Read the prior README.md and gaps_and_friction.md
+  - Note in methods.md: "Builds on / diverges from
+    `analyses/{prior}/`" with rationale
+  - Reference confirmed findings rather than re-deriving them
+- [ ] If user explicitly asks to start fresh, note that in
+  methods.md
+
+### Create analysis directory
+
+- [ ] Create the directory structure:
+  ```
+  analyses/{analysis_name}/
+  ├── exploration/
+  ├── data/
+  ├── scripts/
+  ├── results/
+  ├── methods.md          (stub: ## Research question only)
+  ├── gaps_and_friction.md (stub: category headers only)
+  ```
+- [ ] Verify: methods.md exists with ## Research question
+- [ ] Verify: gaps_and_friction.md exists with category headers
+- [ ] Verify: exploration/ directory exists
+
+---
+
 ## Orientation (run once)
+
+> **GATE 1 — Orientation complete.**
+> Before entering the research loop: an exploration log with
+> ## Findings must exist, methods.md must have ## Data scope,
+> and gaps_and_friction.md must be updated.
 
 ### Scope
 
@@ -96,6 +137,14 @@ Run this checklist for each iteration of the research loop.
 - [ ] Update `methods.md` if established findings changed scope
 - [ ] Decide: next question, or conclude?
 
+### Iteration exit checks
+
+- [ ] Exploration log written with all required sections
+- [ ] Any scripts created this iteration saved to `scripts/`
+  (not left as inline chat code)
+- [ ] `gaps_and_friction.md` updated (even if "no new issues
+  this iteration")
+
 ---
 
 ## Synthesis (after the loop)
@@ -105,6 +154,15 @@ Run this checklist for each iteration of the research loop.
   exploration log links
 - [ ] Produce publication artifacts in `results/`
 - [ ] Populate `references.md` or `references.bib`
+
+### Exit gate
+
+- [ ] All scripts in `scripts/` (no orphaned code in chat)
+- [ ] `gaps_and_friction.md` has `## Process retrospective`
+  section with:
+  - What worked
+  - What didn't work
+  - Proposed changes (to skill, MCP, KG)
 
 ---
 
