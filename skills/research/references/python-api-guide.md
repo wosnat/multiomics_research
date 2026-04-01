@@ -15,7 +15,7 @@ uv sync --extra analysis
 pip install -e ".[analysis]"
 ```
 
-**Import MCP tool functions (19 functions):**
+**Import MCP tool functions (22 functions):**
 ```python
 from multiomics_explorer import (
     resolve_gene,
@@ -35,6 +35,9 @@ from multiomics_explorer import (
     differential_expression_by_gene,
     differential_expression_by_ortholog,
     gene_response_profile,
+    list_gene_clusters,
+    gene_clusters_by_gene,
+    genes_in_cluster,
     kg_schema,
     run_cypher,
 )
@@ -42,7 +45,13 @@ from multiomics_explorer import (
 
 **Import analysis utilities:**
 ```python
-from multiomics_explorer.analysis import response_matrix, gene_set_compare
+from multiomics_explorer.analysis import (
+    response_matrix,
+    gene_set_compare,
+    to_dataframe,                    # any API result → flat CSV-safe DataFrame
+    profile_summary_to_dataframe,    # gene_response_profile → gene × group detail
+    experiments_to_dataframe,        # list_experiments → experiment × timepoint
+)
 ```
 
 **Run scripts from the `multiomics_research` project root** — the package is installed in this project's environment. Use `uv run script.py` or `.venv/bin/python script.py`. Do not use `uv run --directory /path/to/multiomics_explorer` — that runs in the wrong environment.
@@ -100,65 +109,55 @@ If `truncated` is `True` and you needed all rows, re-run with `limit=None`.
 
 ## 4. Handling Nested Fields
 
-This is the most common source of bugs. Some result fields are lists, dicts, or nested objects. `pd.DataFrame()` will store these as Python objects in cells — this silently breaks `.to_csv()`, filtering, and groupby operations.
+Some result fields are lists, dicts, or nested objects. `pd.DataFrame()` stores these as Python objects in cells — silently breaking `.to_csv()`, filtering, and groupby operations.
 
-**Fields that require special handling:**
+Use the DataFrame conversion utilities in `multiomics_explorer.analysis` instead of manual flattening:
 
-| Function | Field | Type | How to handle |
-|----------|-------|------|---------------|
-| `gene_response_profile` | `groups_responded` | list[string] | Join to string or explode |
-| `gene_response_profile` | `groups_not_responded` | list[string] | Join to string or explode |
-| `gene_response_profile` | `groups_not_known` | list[string] | Join to string or explode |
-| `gene_response_profile` | `response_summary` | nested dict (keys=group names, values=stats dicts) | Extract separately — do not put in main DataFrame |
-| `gene_overview` | `annotation_types` | list[string] | Join to string |
-| `gene_overview` | `closest_ortholog_genera` | list[string] or None | Join to string, handle None |
-| `list_experiments` | `timepoints` | list[dict] or None | Extract separately |
-| `list_experiments` | `genes_by_status` | object | Extract separately or flatten |
-| `differential_expression_by_gene` | `rows_by_status` | object | Envelope field — not in `results` |
-| `differential_expression_by_gene` | `experiments` | list[nested objects] | Envelope field — not in `results` |
-| `differential_expression_by_gene` | `top_categories` | list[object] | Envelope field — not in `results` |
+### `to_dataframe(result)` — universal converter
 
-### Worked Example: `gene_response_profile`
-
-> **Note:** `profile_to_dataframe` in `multiomics_explorer.analysis`
-> will handle this conversion automatically once available. Use the
-> manual pattern below until then.
-
-This function has both list columns and a deeply nested `response_summary` field. Here is the full extraction pattern.
+Pass any API function's return dict. Automatically handles:
+- **List columns** → joined with `" | "`
+- **Dict columns** (e.g. `genes_by_status`) → inlined as `genes_by_status_significant_up`, etc.
+- **Nested structures** (e.g. `response_summary`, `timepoints`) → dropped with a `UserWarning` naming the dedicated function
 
 ```python
-import pandas as pd
+from multiomics_explorer import genes_by_function
+from multiomics_explorer.analysis import to_dataframe
+
+result = genes_by_function("nitrogen")
+df = to_dataframe(result)
+df.to_csv("output.csv", index=False)  # always safe
+```
+
+Works for all API functions. For functions with deeply nested fields, `to_dataframe` gives you the flat gene-level table and warns you to use a dedicated converter for the nested parts.
+
+### `profile_summary_to_dataframe(result)` — gene × treatment detail
+
+For `gene_response_profile` results. Returns one row per gene × treatment group with all stats columns.
+
+```python
 from multiomics_explorer import gene_response_profile
+from multiomics_explorer.analysis import to_dataframe, profile_summary_to_dataframe
 
 result = gene_response_profile(locus_tags=["PMM0370", "PMM0920"])
-
-# 1. Flat gene-level table (join list columns, drop nested response_summary)
-genes_df = pd.DataFrame(result["results"])
-
-list_cols = ["groups_responded", "groups_not_responded", "groups_not_known"]
-for col in list_cols:
-    if col in genes_df.columns:
-        genes_df[col] = genes_df[col].apply(
-            lambda x: "; ".join(x) if isinstance(x, list) else x
-        )
-
-genes_df = genes_df.drop(columns=["response_summary"])
-# genes_df is now safe to .to_csv()
-
-# 2. Per-gene x per-treatment summary (extracted from nested response_summary)
-summary_rows = []
-for gene in result["results"]:
-    for group, stats in gene["response_summary"].items():
-        summary_rows.append({
-            "locus_tag": gene["locus_tag"],
-            "gene_name": gene["gene_name"],
-            "group": group,
-            **stats,
-        })
-
-summary_df = pd.DataFrame(summary_rows)
-# Each row: one gene x one treatment group, with stats columns from the stats dict
+genes_df = to_dataframe(result)                   # gene-level flat table
+summary_df = profile_summary_to_dataframe(result)  # gene × group detail
 ```
+
+### `experiments_to_dataframe(result)` — experiment × timepoint
+
+For `list_experiments` results. Expands time-course experiments to one row per timepoint; non-time-course experiments get a single row with NaN timepoint fields.
+
+```python
+from multiomics_explorer import list_experiments
+from multiomics_explorer.analysis import to_dataframe, experiments_to_dataframe
+
+result = list_experiments(organism="MED4")
+exp_df = to_dataframe(result)               # one row per experiment, flat
+tp_df = experiments_to_dataframe(result)     # one row per timepoint
+```
+
+Reference: `docs://analysis/to_dataframe`
 
 ---
 
@@ -201,8 +200,8 @@ Use this to decide whether `limit=None` is safe or whether you need to filter up
 |---------|-----|
 | `uv run --directory /path/to/multiomics_explorer script.py` | Run from `multiomics_research` root — package is installed in this project's environment |
 | Guessing column names (`product`, `is_significant`) | Test with `result["results"][0].keys()` first |
-| `pd.DataFrame(result["results"])` then `.to_csv()` on nested data | Flatten list/dict columns first (see section 4) |
+| `pd.DataFrame(result["results"])` then `.to_csv()` on nested data | Use `to_dataframe(result)` — handles all flattening automatically (see section 4) |
 | Hardcoding the full organism name | Fuzzy matching works: `"MED4"` resolves correctly |
 | Writing raw Neo4j or `requests` calls | Use the API functions — they handle connection, auth, and serialization |
 | Setting an arbitrarily high `limit=10000` | Use `limit=None` to get all results without guessing |
-| Treating `not_known` cells as "not measured" | `not_known` may mean "measured but not significant" — check `list_experiments` for the treatment type's `table_scope` to understand what was covered |
+| Treating `not_known` cells as "not measured" | `not_known` may mean "measured but not significant" — check `groups_tested_not_responded` for genes confirmed tested with no response, and `list_experiments` for the treatment type's `table_scope` |
