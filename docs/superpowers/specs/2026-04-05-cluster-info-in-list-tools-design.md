@@ -58,6 +58,10 @@ Nodes with no linked CAs get `clustering_analysis_count=0`, `cluster_types=[]`, 
 
 ## Implementation layers
 
+### Layer 0: Validate Cypher against live KG
+
+Run the proposed enrichment Cypher (read-only, no SET) against the live Neo4j to confirm edge directions, property names, and expected counts before writing any code. Verify that the aggregated values match `list_clustering_analyses` summary output.
+
 ### Layer 1: KG enrichment (biocypher_kg)
 
 Add a post-import enrichment step (or extend the existing one that computes `experiment_count`, `treatment_types`, etc.) to materialize the four properties on `OrganismTaxon`, `Publication`, and `Experiment` nodes.
@@ -133,6 +137,10 @@ uv run python scripts/build_about_content.py list_publications list_organisms li
 ### Layer 5: Documentation (multiomics_research)
 
 Update `docs/superpowers/specs/2026-03-31-gene-cluster-tools-what-changed.md` to note the new fields on list tools.
+
+### Layer 6: KG spec doc (biocypher_kg)
+
+Create a spec/task doc in biocypher_kg describing the new materialized properties and the enrichment Cypher. This is the handoff for the KG rebuild — implementation of Layer 1 waits for the KG update.
 
 ## Current KG data (as of 2026-04-05)
 
