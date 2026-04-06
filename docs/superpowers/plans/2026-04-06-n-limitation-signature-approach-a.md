@@ -383,6 +383,8 @@ def summarize_de_per_gene(de_df: pd.DataFrame) -> pd.DataFrame:
 def intersect_de_lists(
     study_a: pd.DataFrame,
     study_b: pd.DataFrame,
+    study_a_name: str = "study_a",
+    study_b_name: str = "study_b",
     study_b_all_locus_tags: set[str] | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Intersect two per-gene DE summaries into core and extended signatures.
@@ -391,8 +393,10 @@ def intersect_de_lists(
     Extended: genes in only one study, tagged by source.
 
     Args:
-        study_a: Output of summarize_de_per_gene for study A (Tolonen).
-        study_b: Output of summarize_de_per_gene for study B (Read).
+        study_a: Output of summarize_de_per_gene for study A.
+        study_b: Output of summarize_de_per_gene for study B.
+        study_a_name: Label for study A (e.g. 'tolonen'). Used in column prefixes.
+        study_b_name: Label for study B (e.g. 'read'). Used in column prefixes.
         study_b_all_locus_tags: Set of all locus tags present in study B's
             dataset (not just significant). If None, cannot distinguish
             'absent from dataset' vs 'present but not significant'.
@@ -400,18 +404,20 @@ def intersect_de_lists(
     Returns:
         (core_df, extended_df) — each with columns:
             locus_tag, gene_name, direction,
-            study_a_peak_timepoint, study_a_best_dir_rank, study_a_best_global_rank,
-            study_b_peak_timepoint, study_b_best_dir_rank, study_b_best_global_rank,
+            {study_a_name}_peak_timepoint, {study_a_name}_best_dir_rank, {study_a_name}_best_global_rank,
+            {study_b_name}_peak_timepoint, {study_b_name}_best_dir_rank, {study_b_name}_best_global_rank,
             cross_study_best_dir_rank,
-            signature_type ('core', 'tolonen_only_read_absent', 'tolonen_only_read_ns', 'read_only')
+            signature_type ('core', '{study_a_name}_only_{study_b_name}_absent',
+                           '{study_a_name}_only_{study_b_name}_ns', '{study_b_name}_only')
     """
-    a = study_a.add_prefix("study_a_").rename(columns={
-        "study_a_locus_tag": "locus_tag", "study_a_gene_name": "gene_name",
-        "study_a_direction": "direction_a"
+    pa, pb = study_a_name, study_b_name
+    a = study_a.add_prefix(f"{pa}_").rename(columns={
+        f"{pa}_locus_tag": "locus_tag", f"{pa}_gene_name": "gene_name",
+        f"{pa}_direction": "direction_a"
     })
-    b = study_b.add_prefix("study_b_").rename(columns={
-        "study_b_locus_tag": "locus_tag", "study_b_gene_name": "gene_name",
-        "study_b_direction": "direction_b"
+    b = study_b.add_prefix(f"{pb}_").rename(columns={
+        f"{pb}_locus_tag": "locus_tag", f"{pb}_gene_name": "gene_name",
+        f"{pb}_direction": "direction_b"
     })
 
     merged = a.merge(b, on="locus_tag", how="outer", suffixes=("", "_b"))
@@ -428,45 +434,41 @@ def intersect_de_lists(
 
     # Cross-study best directional rank
     concordant["cross_study_best_dir_rank"] = concordant[
-        ["study_a_best_dir_rank", "study_b_best_dir_rank"]
+        [f"{pa}_best_dir_rank", f"{pb}_best_dir_rank"]
     ].min(axis=1)
 
     # Extended: in one study only
     a_only_mask = merged["direction_b"].isna() & merged["direction_a"].notna()
     b_only_mask = merged["direction_a"].isna() & merged["direction_b"].notna()
-    discordant_mask = (
-        merged["direction_a"].notna() & merged["direction_b"].notna()
-        & (merged["direction_a"] != merged["direction_b"])
-    )
 
     a_only = merged[a_only_mask].copy()
     a_only["direction"] = a_only["direction_a"]
     if study_b_all_locus_tags is not None:
         a_only["signature_type"] = a_only["locus_tag"].apply(
-            lambda lt: "tolonen_only_read_ns" if lt in study_b_all_locus_tags
-            else "tolonen_only_read_absent"
+            lambda lt: f"{pa}_only_{pb}_ns" if lt in study_b_all_locus_tags
+            else f"{pa}_only_{pb}_absent"
         )
     else:
-        a_only["signature_type"] = "tolonen_only"
+        a_only["signature_type"] = f"{pa}_only"
 
     b_only = merged[b_only_mask].copy()
     b_only["direction"] = b_only["direction_b"]
-    b_only["signature_type"] = "read_only"
+    b_only["signature_type"] = f"{pb}_only"
 
     extended = pd.concat([a_only, b_only], ignore_index=True)
     extended["cross_study_best_dir_rank"] = extended.apply(
-        lambda r: r["study_a_best_dir_rank"] if pd.notna(r["study_a_best_dir_rank"])
-        else r["study_b_best_dir_rank"],
+        lambda r: r[f"{pa}_best_dir_rank"] if pd.notna(r[f"{pa}_best_dir_rank"])
+        else r[f"{pb}_best_dir_rank"],
         axis=1,
     )
 
     # Select and order columns
     cols = [
         "locus_tag", "gene_name", "direction", "signature_type",
-        "study_a_peak_timepoint",
-        "study_a_best_dir_rank", "study_a_best_global_rank",
-        "study_b_peak_timepoint",
-        "study_b_best_dir_rank", "study_b_best_global_rank",
+        f"{pa}_peak_timepoint",
+        f"{pa}_best_dir_rank", f"{pa}_best_global_rank",
+        f"{pb}_peak_timepoint",
+        f"{pb}_best_dir_rank", f"{pb}_best_global_rank",
         "cross_study_best_dir_rank",
     ]
     for df in [concordant, extended]:
@@ -515,7 +517,7 @@ sb = summarize_de_per_gene(b_data)
 print('Study A summary:'); print(sa.to_string())
 print('Study B summary:'); print(sb.to_string())
 
-core, ext = intersect_de_lists(sa, sb, study_b_all_locus_tags={'PMM0920','PMM0246','PMM0200'})
+core, ext = intersect_de_lists(sa, sb, study_a_name='tolonen', study_b_name='read', study_b_all_locus_tags={'PMM0920','PMM0246','PMM0200'})
 print('Core:'); print(core[['locus_tag','direction','signature_type','cross_study_best_dir_rank']].to_string())
 print('Extended:'); print(ext[['locus_tag','direction','signature_type','cross_study_best_dir_rank']].to_string())
 assert len(core) == 2  # glnA and ntcA
@@ -1168,6 +1170,7 @@ def main():
     # Build signatures
     core, extended = intersect_de_lists(
         tolonen_summary, read_summary,
+        study_a_name="tolonen", study_b_name="read",
         study_b_all_locus_tags=read_all_tags,
     )
 
