@@ -8,8 +8,8 @@ Adapted from the Anthropic skill-creator pattern:
   https://github.com/anthropics/skills/tree/main/skills/skill-creator
 
 Usage:
-    python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research
-    python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research --runs-per-query 3
+    python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research-methodology
+    python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research-methodology --runs-per-query 3
 """
 
 import argparse

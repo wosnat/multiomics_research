@@ -29,7 +29,8 @@ multiomics_explorer/            # Query the KG
   └── evaluation_data/          #   Test fixtures
 
 multiomics_research/            # Use the KG for research (this repo)
-  ├── skills/research/          #   Research methodology skill
+  ├── skills/research-methodology/  # Domain rules for KG research (reference skill)
+  ├── skills/recipes/           #   On-demand analysis protocols
   ├── evals/                    #   Evaluation cases
   ├── scripts/                  #   Eval runners & analysis
   ├── hooks/                    #   Usage logging
@@ -45,9 +46,9 @@ The KG integrates transcriptomics, proteomics, and genomic data for marine micro
 - **11 treatment types** — coculture, nitrogen/carbon/iron/phosphorus/light/plastic/salt stress, darkness, viral infection, growth state
 - **3 omics platforms** — RNA-seq (48 experiments), microarray (24), proteomics (4)
 
-## Research Skill
+## Research Methodology
 
-The core of this repo is a Claude Code research skill ([skills/research/SKILL.md](skills/research/SKILL.md)) that guides systematic multi-omics analysis. It enforces:
+The research methodology skill ([skills/research-methodology/SKILL.md](skills/research-methodology/SKILL.md)) provides domain rules for KG-based research. Process discipline comes from the superpowers framework (brainstorm → plan → execute). The skill enforces:
 
 - **KG as sole data source** — never rely on LLM training data for gene facts
 - **Locus tags over gene names** — prevents paralog conflation (e.g., `katA` maps to 2 distinct catalase genes per Alteromonas strain with opposite expression patterns)
@@ -58,10 +59,13 @@ The core of this repo is a Claude Code research skill ([skills/research/SKILL.md
 
 | File | Purpose |
 |------|---------|
-| [SKILL.md](skills/research/SKILL.md) | Core methodology: 3-phase workflow (orientation → gene work → expression) |
-| [research-checklist.md](skills/research/references/research-checklist.md) | Step-by-step protocol with checkboxes |
-| [artifacts-guide.md](skills/research/references/artifacts-guide.md) | Standardized directory structure for reproducible analyses |
-| [anti-hallucination.md](skills/research/references/anti-hallucination.md) | Concrete LLM failure modes with prevention strategies |
+| [SKILL.md](skills/research-methodology/SKILL.md) | Top-level rules: KG-as-source, locus tags, source tagging, artifacts |
+| [kg-rules.md](skills/research-methodology/references/kg-rules.md) | Source tagging, common gaps, MCP vs Python API |
+| [gene-identity.md](skills/research-methodology/references/gene-identity.md) | Locus tags, paralog handling, ortholog cluster rules |
+| [artifacts.md](skills/research-methodology/references/artifacts.md) | Directory structure, exploration logs, methods.md |
+| [anti-hallucination.md](skills/research-methodology/references/anti-hallucination.md) | Concrete LLM failure modes with prevention strategies |
+| [python-api-guide.md](skills/research-methodology/references/python-api-guide.md) | Scripting with multiomics_explorer |
+| [statistical-rigor.md](skills/research-methodology/references/statistical-rigor.md) | What KG provides, what to compute, what to flag |
 
 ## Evaluation Framework
 
@@ -126,7 +130,7 @@ python scripts/analyze_usage.py ~/.claude/logs/multiomics-kg-usage.jsonl
 python scripts/run_chain_eval.py evals/chain_evals.yaml
 
 # Run skill trigger evaluation (requires claude CLI)
-python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research
+python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research-methodology
 ```
 
 ## Usage Logging
