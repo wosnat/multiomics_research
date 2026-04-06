@@ -337,15 +337,13 @@ def summarize_de_per_gene(de_df: pd.DataFrame) -> pd.DataFrame:
 
     Returns:
         DataFrame with one row per gene: locus_tag, gene_name, direction,
-        peak_log2fc, peak_timepoint_by_rank (primary),
-        peak_timepoint_by_fc (secondary), best_dir_rank, best_global_rank.
+        peak_timepoint, best_dir_rank, best_global_rank.
     """
     sig = de_df[de_df["expression_status"].isin(["significant_up", "significant_down"])].copy()
     if sig.empty:
         return pd.DataFrame(columns=[
-            "locus_tag", "gene_name", "direction", "peak_log2fc",
-            "peak_timepoint_by_rank", "peak_timepoint_by_fc",
-            "best_dir_rank", "best_global_rank",
+            "locus_tag", "gene_name", "direction",
+            "peak_timepoint", "best_dir_rank", "best_global_rank",
         ])
 
     sig["abs_log2fc"] = sig["log2fc"].abs()
@@ -364,11 +362,8 @@ def summarize_de_per_gene(de_df: pd.DataFrame) -> pd.DataFrame:
     sig = sig.merge(majority_direction, on="locus_tag")
     sig_majority = sig[sig["direction"] == sig["majority_direction"]]
 
-    # Peak by rank (primary): timepoint where gene has best directional rank
-    peak_by_rank = sig_majority.loc[sig_majority.groupby("locus_tag")["dir_rank"].idxmin()]
-
-    # Peak by log2fc (secondary): timepoint where gene has max |log2fc|
-    peak_by_fc = sig_majority.loc[sig_majority.groupby("locus_tag")["abs_log2fc"].idxmax()]
+    # Peak timepoint: where gene has best directional rank
+    peak = sig_majority.loc[sig_majority.groupby("locus_tag")["dir_rank"].idxmin()]
 
     # Best directional rank across all timepoints in majority direction
     best_dir = sig_majority.groupby("locus_tag")["dir_rank"].min().rename("best_dir_rank")
@@ -376,15 +371,9 @@ def summarize_de_per_gene(de_df: pd.DataFrame) -> pd.DataFrame:
     # Best global rank across all significant timepoints
     best_global = sig.groupby("locus_tag")["rank"].min().rename("best_global_rank")
 
-    # Use rank-based peak as primary, record both peak timepoints
-    result = peak_by_rank[["locus_tag", "gene_name", "direction", "log2fc", "timepoint"]].copy()
-    result = result.rename(columns={"log2fc": "peak_log2fc", "timepoint": "peak_timepoint_by_rank"})
+    result = peak[["locus_tag", "gene_name", "direction", "timepoint"]].copy()
+    result = result.rename(columns={"timepoint": "peak_timepoint"})
     result["direction"] = result["locus_tag"].map(majority_direction)
-
-    # Add fc-based peak timepoint for reference
-    fc_peaks = peak_by_fc[["locus_tag", "timepoint"]].rename(columns={"timepoint": "peak_timepoint_by_fc"})
-    result = result.merge(fc_peaks, on="locus_tag")
-
     result = result.merge(best_dir, on="locus_tag")
     result = result.merge(best_global, on="locus_tag")
 
@@ -411,8 +400,8 @@ def intersect_de_lists(
     Returns:
         (core_df, extended_df) — each with columns:
             locus_tag, gene_name, direction,
-            study_a_peak_log2fc, study_a_peak_timepoint_by_rank, study_a_peak_timepoint_by_fc, study_a_best_dir_rank, study_a_best_global_rank,
-            study_b_peak_log2fc, study_b_peak_timepoint_by_rank, study_b_peak_timepoint_by_fc, study_b_best_dir_rank, study_b_best_global_rank,
+            study_a_peak_timepoint, study_a_best_dir_rank, study_a_best_global_rank,
+            study_b_peak_timepoint, study_b_best_dir_rank, study_b_best_global_rank,
             cross_study_best_dir_rank,
             signature_type ('core', 'tolonen_only_read_absent', 'tolonen_only_read_ns', 'read_only')
     """
@@ -474,9 +463,9 @@ def intersect_de_lists(
     # Select and order columns
     cols = [
         "locus_tag", "gene_name", "direction", "signature_type",
-        "study_a_peak_log2fc", "study_a_peak_timepoint_by_rank", "study_a_peak_timepoint_by_fc",
+        "study_a_peak_timepoint",
         "study_a_best_dir_rank", "study_a_best_global_rank",
-        "study_b_peak_log2fc", "study_b_peak_timepoint_by_rank", "study_b_peak_timepoint_by_fc",
+        "study_b_peak_timepoint",
         "study_b_best_dir_rank", "study_b_best_global_rank",
         "cross_study_best_dir_rank",
     ]
