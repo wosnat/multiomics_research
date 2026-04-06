@@ -1,6 +1,6 @@
 {
   "name": "multiomics-research",
-  "description": "Research methodology and evaluation tools for the Prochlorococcus/Alteromonas multi-omics knowledge graph. Provides a research skill that guides Claude through systematic multi-omics analysis: orientation, gene work, expression analysis, with anti-hallucination safeguards and reproducible artifact generation.",
+  "description": "Research methodology and evaluation tools for the Prochlorococcus/Alteromonas multi-omics knowledge graph. Provides domain rules for KG-based research (source tagging, gene identity, anti-hallucination, artifact structure) and on-demand analysis recipes. Designed to work with the superpowers framework for process discipline.",
   "version": "0.1.0",
   "author": {
     "name": "Osnat"

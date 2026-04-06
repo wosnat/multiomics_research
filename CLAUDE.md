@@ -13,7 +13,8 @@ This repo is the **consumer-facing** companion to [`multiomics_explorer`](https:
 
 ```
 multiomics_research/            # This repo (consumer)
-  skills/research/              # Research methodology skill
+  skills/research-methodology/  # Domain rules for KG research (reference skill)
+  skills/recipes/               # On-demand analysis protocols (one skill per method)
   hooks/                        # Usage logging hooks
   evals/                        # Evaluation cases and runners
   scripts/                      # Analysis and eval scripts
@@ -53,6 +54,21 @@ claude --plugin-dir /home/osnat/github/multiomics_research
 
 For researchers, it will be installable from a marketplace (private git repo).
 
+## Research methodology
+
+When answering biological questions, analyzing expression data, or working
+with the multiomics KG, invoke the `research-methodology` skill. It contains
+the rules for KG usage, gene identity, artifact structure, and
+anti-hallucination. These rules apply to all research work — brainstorming,
+planning, and execution.
+
+For specific analysis types, invoke the corresponding recipe skill (e.g.,
+`enrichment`, `response-matrix`, `conservation`).
+
+Use the superpowers workflow for research: brainstorm the question, write a
+plan, execute with checkpoints. The methodology skill provides the domain
+rules; superpowers provides the process discipline.
+
 ## Evaluation Framework
 
 Three evaluation layers:
@@ -73,7 +89,7 @@ python scripts/analyze_usage.py ~/.claude/logs/multiomics-kg-usage.jsonl
 python scripts/run_chain_eval.py evals/chain_evals.yaml
 
 # Run trigger evaluation (requires claude CLI)
-python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research
+python scripts/run_trigger_eval.py evals/trigger_evals.json --skill-path skills/research-methodology
 ```
 
 ### Logs
@@ -85,7 +101,8 @@ Usage logs are written to `~/.claude/logs/multiomics-kg-usage.jsonl` by the Post
 | File | Purpose |
 |---|---|
 | `.claude-plugin/plugin.json` | Plugin manifest |
-| `skills/research/SKILL.md` | Research methodology skill |
+| `skills/research-methodology/SKILL.md` | Research methodology rules (reference skill) |
+| `skills/recipes/` | On-demand analysis protocols |
 | `hooks/hooks.json` | Usage logging hook configuration |
 | `hooks/log-mcp-usage.sh` | Hook script that appends to JSONL |
 | `evals/chain_evals.yaml` | Tool chain evaluation cases |
