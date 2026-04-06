@@ -30,6 +30,9 @@ def load_weissberg_scores(filename: str) -> pd.DataFrame:
     df = df[~df["timepoint"].str.contains(r"\+", na=False)]
     # Parse day number from timepoint strings like "day 18", "day 31"
     df["day"] = df["timepoint"].str.extract(r"(\d+)").astype(float)
+    # Axenic RNA-seq has timepoint="single" — this is the starvation vs exponential
+    # comparison at ~day 11 in PRO99-lowN; plot at day 18 for comparability with coculture
+    df.loc[df["timepoint"] == "single", "day"] = 18
     return df
 
 
