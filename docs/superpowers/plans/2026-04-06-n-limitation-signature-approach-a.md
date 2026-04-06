@@ -53,10 +53,12 @@ All scripts run from `multiomics_research` root via `uv run analyses/2026-04-06-
 mkdir -p analyses/2026-04-06-1432-n_limitation_signature/{sig_utils,scripts,data,results,exploration,superpowers}
 ```
 
-- [ ] **Step 2: Copy spec snapshot**
+- [ ] **Step 2: Copy spec and plan snapshots**
 
 ```bash
 cp docs/superpowers/specs/2026-04-06-n-limitation-signature-analysis-design.md \
+   analyses/2026-04-06-1432-n_limitation_signature/superpowers/
+cp docs/superpowers/plans/2026-04-06-n-limitation-signature-approach-a.md \
    analyses/2026-04-06-1432-n_limitation_signature/superpowers/
 ```
 
@@ -1859,14 +1861,7 @@ Update `analyses/2026-04-06-1432-n_limitation_signature/README.md` with:
 
 - [ ] **Step 3: Update gaps_and_friction.md with any issues encountered**
 
-- [ ] **Step 4: Copy implementation plan to superpowers/**
-
-```bash
-cp docs/superpowers/plans/2026-04-06-n-limitation-signature-approach-a.md \
-   analyses/2026-04-06-1432-n_limitation_signature/superpowers/
-```
-
-- [ ] **Step 5: Final commit**
+- [ ] **Step 4: Final commit**
 
 ```bash
 git add analyses/2026-04-06-1432-n_limitation_signature/
