@@ -35,7 +35,23 @@ by best directional rank), intersect with concordant direction requirement.
 ## Gaps and friction
 
 - 72 Tolonen-only genes are absent from Read entirely — these are likely genes below the 50th-percentile expression cutoff applied during Read extraction. They cannot be scored against Read data regardless of threshold.
-- Many top-ranked genes lack a gene_name (NaN) — these require locus_tag-based KG lookup to interpret functionally.
+- Many top-ranked genes lack a gene_name (NaN) — annotated via gene_overview + gene_ontology_terms (see below).
+
+## Follow-up: Unnamed gene annotation
+
+47 of 198 core signature genes have no gene_name. Looked up via `gene_overview` and `gene_ontology_terms`.
+
+**Key findings:**
+
+- [KG] Most (16/20 top unnamed) are COG category S ("Function unknown"), genuinely uncharacterized.
+- [KG] **DUF1651 family (Pfam PF07864):** 3 genes all upregulated — PMM0684 (rank 11), PMM0819 (rank 9), PMM1134 (rank 14). [interpretation] This uncharacterized domain family may have a specific role in N-stress response; worth investigating conservation across Prochlorococcus strains.
+- [KG] PMM0365 (up, rank 6): DsrE/DsrF-like protein (Pfam PF02635, sulfur relay). [interpretation] May indicate N/S metabolism cross-talk under N-stress.
+- [KG] PMM1391 (up, rank 17): ribbon helix-helix domain, GO: regulation of DNA-templated transcription, CyanoRak: DNA interactions. [interpretation] A transcriptional regulator upregulated under N-stress — candidate NtcA regulon member.
+- [KG] PMM0996 (up, rank 19): DUF3303, CyanoRak: phosphorus adaptation. [interpretation] P/N cross-talk under nutrient limitation.
+- [KG] PMM0605 (down, rank 16): DUF760, CyanoRak: trace metal detoxification. [interpretation] Metal homeostasis affected by N-stress.
+- [KG] PMM0699 (down, rank 4): membrane protein, CyanoRak: adaptation/detoxification. [KG] Conserved in Prochlorococcus only (ortholog group size 8).
+
+Full annotation table: `results/unnamed_genes_annotated.csv`
 
 ## Next
 Score core and extended signatures against Weissberg 2025 experiments.
