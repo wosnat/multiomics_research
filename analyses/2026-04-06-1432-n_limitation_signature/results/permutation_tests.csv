@@ -1,0 +1,15 @@
+observed,empirical_p,n_permutations,n_signature_genes,platform,condition,timepoint
+2.679918089062077,0.0,1000,198,rnaseq,axenic,single
+-0.0773325615671534,0.062,1000,198,rnaseq,coculture,day 18
+0.05863319388599606,0.436,1000,198,rnaseq,coculture,day 31
+0.13892998837263637,0.047,1000,198,rnaseq,coculture,day 60
+0.027964648187372276,0.672,1000,198,rnaseq,coculture,day 89
+0.077696874160396,0.225,1000,198,rnaseq,coculture,days 60+89
+0.4151861321212898,0.0,1000,198,proteomics,axenic,day 14
+0.31319197426494355,0.001,1000,198,proteomics,axenic,day 31
+0.2280397904224882,0.009,1000,198,proteomics,axenic,day 89
+0.4700589628301114,0.0,1000,198,proteomics,coculture,day 18
+0.7594022526700269,0.0,1000,198,proteomics,coculture,day 31
+0.4142163574186145,0.0,1000,198,proteomics,coculture,day 60
+0.43393214951213605,0.0,1000,198,proteomics,coculture,day 89
+0.4240742534653755,0.0,1000,198,proteomics,coculture,days 60+89

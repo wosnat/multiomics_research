@@ -148,6 +148,62 @@ def mean_signed_normalized_rank(
     }
 
 
+def permutation_test_mean_signed_log2fc(
+    signature_df: pd.DataFrame,
+    de_df: pd.DataFrame,
+    all_genes_log2fc: pd.Series,
+    n_permutations: int = 1000,
+    seed: int = 42,
+) -> dict:
+    """Permutation test for mean signed log2FC.
+
+    Shuffles gene labels n_permutations times, recomputes mean signed
+    log2FC each time, returns empirical p-value.
+
+    Args:
+        signature_df: Core/extended signature.
+        de_df: DE data for one condition x timepoint.
+        all_genes_log2fc: Series of log2fc for all genes in the experiment
+            (background), indexed by locus_tag.
+        n_permutations: Number of permutations.
+        seed: Random seed for reproducibility.
+
+    Returns:
+        dict with keys: observed, empirical_p, n_permutations, n_signature_genes.
+    """
+    observed_result = mean_signed_log2fc(signature_df, de_df)
+    observed = observed_result["score"]
+    n_sig = len(signature_df)
+
+    if np.isnan(observed) or n_sig < 30:
+        return {
+            "observed": observed,
+            "empirical_p": np.nan,
+            "n_permutations": 0,
+            "n_signature_genes": n_sig,
+        }
+
+    rng = np.random.default_rng(seed)
+    all_tags = all_genes_log2fc.index.tolist()
+    directions = signature_df["direction"].values
+
+    null_scores = np.empty(n_permutations)
+    for i in range(n_permutations):
+        random_tags = rng.choice(all_tags, size=n_sig, replace=False)
+        random_fc = all_genes_log2fc.reindex(random_tags).values
+        signs = np.where(directions == "up", 1, -1)
+        null_scores[i] = np.nanmean(signs * random_fc)
+
+    empirical_p = (np.abs(null_scores) >= np.abs(observed)).mean()
+
+    return {
+        "observed": float(observed),
+        "empirical_p": float(empirical_p),
+        "n_permutations": n_permutations,
+        "n_signature_genes": n_sig,
+    }
+
+
 def rank_correlation(
     signature_df: pd.DataFrame,
     de_ref_df: pd.DataFrame,
