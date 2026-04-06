@@ -411,20 +411,27 @@ def intersect_de_lists(
                            '{study_a_name}_only_{study_b_name}_ns', '{study_b_name}_only')
     """
     pa, pb = study_a_name, study_b_name
-    a = study_a.add_prefix(f"{pa}_").rename(columns={
-        f"{pa}_locus_tag": "locus_tag", f"{pa}_gene_name": "gene_name",
-        f"{pa}_direction": "direction_a"
+
+    # Rename per-gene summary columns with study prefix, keep locus_tag as merge key
+    a = study_a.rename(columns={
+        "direction": "direction_a",
+        "gene_name": "gene_name_a",
+        "peak_timepoint": f"{pa}_peak_timepoint",
+        "best_dir_rank": f"{pa}_best_dir_rank",
+        "best_global_rank": f"{pa}_best_global_rank",
     })
-    b = study_b.add_prefix(f"{pb}_").rename(columns={
-        f"{pb}_locus_tag": "locus_tag", f"{pb}_gene_name": "gene_name",
-        f"{pb}_direction": "direction_b"
+    b = study_b.rename(columns={
+        "direction": "direction_b",
+        "gene_name": "gene_name_b",
+        "peak_timepoint": f"{pb}_peak_timepoint",
+        "best_dir_rank": f"{pb}_best_dir_rank",
+        "best_global_rank": f"{pb}_best_global_rank",
     })
 
-    merged = a.merge(b, on="locus_tag", how="outer", suffixes=("", "_b"))
-    # Use gene_name from whichever study has it
-    merged["gene_name"] = merged["gene_name"].fillna(merged.get("gene_name_b"))
-    if "gene_name_b" in merged.columns:
-        merged = merged.drop(columns=["gene_name_b"])
+    merged = a.merge(b, on="locus_tag", how="outer")
+    # Use gene_name from whichever study has it (prefer a)
+    merged["gene_name"] = merged["gene_name_a"].fillna(merged["gene_name_b"])
+    merged = merged.drop(columns=["gene_name_a", "gene_name_b"])
 
     # Core: both present, concordant direction
     both = merged.dropna(subset=["direction_a", "direction_b"])
