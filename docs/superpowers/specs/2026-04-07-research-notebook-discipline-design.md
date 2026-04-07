@@ -180,9 +180,83 @@ Don't productize speculatively. Wait for proven reuse — the analysis notebook 
 
 ### references/artifacts.md
 - Update directory structure to include required docs: `data/DATA_MANIFEST.md`, `results/RESULTS_MANIFEST.md`, `decisions.md`, `caveats.md`
-- Add concise templates for each
+- Add templates for each (below)
 - Replace exploration log template with pointer to notebook format in `references/research-notebook.md`
 - Add rule: manifests updated with every step
+
+**`data/DATA_MANIFEST.md` template:**
+
+```markdown
+# Data Manifest
+
+All files produced by extraction scripts from the multiomics KG.
+Run scripts from `multiomics_research` root with `uv run`.
+
+## {Section name}
+
+| File | Rows | Genes | Timepoints | Produced by | Description |
+|------|------|-------|------------|-------------|-------------|
+| `filename.csv` | N | N | list | `script.py` | One-line description. Note any filtering or scope limitations. |
+
+## Common columns (all DE files)
+
+List shared columns with brief descriptions. Note any non-obvious semantics
+(e.g., `not_significant` vs `not_known`, directional rank nulls).
+```
+
+**`results/RESULTS_MANIFEST.md` template:**
+
+```markdown
+# Results Manifest
+
+All files produced by scoring, plotting, and analysis scripts.
+
+## {Section name}
+
+| File | Rows | Produced by | Description |
+|------|------|-------------|-------------|
+| `filename.csv` | N | `script.py` | One-line description. List key columns. |
+
+## Figures
+
+| File | Produced by | Description |
+|------|-------------|-------------|
+| `figure.png` | `script.py` | What it shows, what axes/panels represent. |
+```
+
+**`decisions.md` template:**
+
+```markdown
+# Decision Log
+
+Design decisions with rationale — WHY the analysis was done this way,
+not what it does (that's in methods.md).
+
+## {Topic area}
+
+### {Decision title}
+
+**Decision:** What was chosen.
+
+**Rationale:** Why. What alternatives were considered and rejected.
+
+**Status:** Implemented / Open question / Superseded by [X].
+```
+
+**`caveats.md` template:**
+
+```markdown
+# Caveats for Interpretation
+
+Things a reader of these results needs to know before drawing conclusions.
+This is the "fine print" for any figure or claim from this analysis.
+
+## {Caveat title}
+
+- Bullet points explaining the limitation
+- How it affects interpretation
+- What it means for specific claims or comparisons
+```
 
 ### references/statistical-rigor.md
 - Add: "Every formula in a spec must include a worked example with concrete numbers: input → computation → output."
