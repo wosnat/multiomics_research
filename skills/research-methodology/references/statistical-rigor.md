@@ -14,6 +14,17 @@
 - Effect size reporting (not just significance)
 - Volcano plots, heatmaps with proper clustering
 
+## Worked examples in specs
+
+Every formula in a spec must include at least one worked example
+with concrete numbers showing input → computation → output.
+
+Shorthand like "reference direction as expected sign" is not
+sufficient — a researcher must be able to verify the formula
+produces the expected result by reading the example. If there are
+edge cases (e.g., what happens when a gene is not significant?),
+include an example for those too.
+
 ## What to flag
 
 - Studies without adjusted p-values (report as fold-change only)
