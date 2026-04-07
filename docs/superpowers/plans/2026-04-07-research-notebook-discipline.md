@@ -317,7 +317,7 @@ Three changes: update directory structure, add document templates, replace explo
 
 - [ ] **Step 1: Update directory structure**
 
-Replace the existing directory structure block with:
+Replace the directory structure block at lines 23-33 of `artifacts.md` (the fenced code block under `## Directory structure`) with:
 
 ```
 analyses/{analysis_name}/
@@ -337,7 +337,7 @@ analyses/{analysis_name}/
 
 - [ ] **Step 2: Replace exploration log section**
 
-Replace the "## Exploration logs" section (heading, all content, and the template) with:
+Replace lines 39-77 of `artifacts.md` — the entire `## Exploration logs` section including the `~~~markdown` template block and the "Chain between iterations" paragraph. Replace with:
 
 ```markdown
 ## Research notebook
@@ -354,7 +354,7 @@ The README should link to the notebook.
 
 - [ ] **Step 3: Add document templates after the `## results/` section**
 
-After the existing `## results/` section, add:
+Insert after line 157 of `artifacts.md` (end of `## results/` section, before `## References and citations`):
 
 ```markdown
 ## Required analysis documents
