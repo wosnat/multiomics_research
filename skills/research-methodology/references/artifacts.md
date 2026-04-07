@@ -22,12 +22,16 @@ Simple lookups and quick answers don't need artifacts:
 
 ```
 analyses/{analysis_name}/
-├── exploration/       # Exploration logs (one per research iteration)
+├── exploration/       # Research notebook (one per analysis)
 ├── data/              # Staged data from KG (CSV/TSV)
+│   └── DATA_MANIFEST.md  # What each data file contains
 ├── scripts/           # Python scripts (extract, analyze, explore)
 ├── results/           # Outputs: tables, figures, statistics
+│   └── RESULTS_MANIFEST.md  # What each result file contains
 ├── README.md          # Summary, key findings, file index
 ├── methods.md         # Publication-ready methods (living document)
+├── decisions.md       # Design decisions with rationale (why, not what)
+├── caveats.md         # Interpretation caveats for readers of results
 ├── gaps_and_friction.md  # KG/MCP/methodology issues log
 └── references.md      # Data sources and citations
 ```
@@ -36,45 +40,16 @@ analyses/{analysis_name}/
 with underscores: `catalase_expression`,
 `nitrogen_stress_enrichment`, `photosystem_conservation`.
 
-## Exploration logs
+## Research notebook
 
-One file per research iteration. Written **during** the session,
-not reconstructed afterward.
+One notebook per analysis: `exploration/YYYY-MM-DD-notebook.md`.
+A chronological, append-only lab notebook logging every analytical
+step as it happens. Not a retrospective summary.
 
-**Naming:** `YYYY-MM-DD-{topic}.md`
+See [Research notebook](research-notebook.md) for the full format,
+step cycle, QC checkpoint types, and code lifecycle rules.
 
-**Format:**
-
-~~~markdown
-# YYYY-MM-DD: {Topic}
-
-## Question
-{Testable question or comparison. Mark: hypothesis / exploratory / follow-up}
-
-## Approach
-{What queries/scripts will be used. Brief — not a methods section.}
-
-## Findings
-{Results, tables, observations. Each finding tagged:}
-- [KG] cynA (PMM0370) is significant only under nitrogen_stress across all 30 MED4 experiments
-- [interpretation] This suggests cynA is a reliable N-specific marker
-- [gap] No physiological data (Fv/Fm) to confirm cell viability at 48h
-
-## Assessment
-{What did we learn? Classify findings:}
-- **Established:** {consistent across experiments, statistically supported}
-- **Preliminary:** {single experiment, or no stats}
-- **Speculative:** {interpretation beyond data}
-
-## Gaps and friction
-{Any issues encountered — also appended to gaps_and_friction.md}
-
-## Next
-{What question does this lead to? Or: ready to conclude.}
-~~~
-
-**Chain between iterations:** The `## Next` section links iterations.
-The README should list all exploration logs in order.
+The README should link to the notebook.
 
 ## gaps_and_friction.md
 
@@ -154,6 +129,94 @@ KG extracts staged as files:
 - **Tables:** CSV with clear headers and units
 - **Figures:** PNG (300 DPI min) and PDF/SVG for publication; include axis labels, legends, titles
 - **Statistics:** summary stats as CSV or in methods.md; full test results (statistic, p-value, effect size, CI)
+
+## Required analysis documents
+
+### `data/DATA_MANIFEST.md`
+
+Updated with every extraction step — not retroactively.
+
+~~~markdown
+# Data Manifest
+
+All files produced by extraction scripts from the multiomics KG.
+Run scripts from `multiomics_research` root with `uv run`.
+
+## {Section name}
+
+| File | Rows | Genes | Timepoints | Produced by | Description |
+|------|------|-------|------------|-------------|-------------|
+| `filename.csv` | N | N | list | `script.py` | One-line description. Note any filtering or scope limitations. |
+
+## Common columns (all DE files)
+
+List shared columns with brief descriptions. Note any non-obvious
+semantics (e.g., `not_significant` vs `not_known`, directional
+rank nulls).
+~~~
+
+### `results/RESULTS_MANIFEST.md`
+
+Updated with every scoring, plotting, or analysis step.
+
+~~~markdown
+# Results Manifest
+
+All files produced by scoring, plotting, and analysis scripts.
+
+## {Section name}
+
+| File | Rows | Produced by | Description |
+|------|------|-------------|-------------|
+| `filename.csv` | N | `script.py` | One-line description. List key columns. |
+
+## Figures
+
+| File | Produced by | Description |
+|------|-------------|-------------|
+| `figure.png` | `script.py` | What it shows, what axes/panels represent. |
+~~~
+
+### `decisions.md`
+
+Design decisions with rationale. Written during brainstorming and
+updated during analysis when new decisions are made.
+
+~~~markdown
+# Decision Log
+
+Design decisions with rationale — WHY the analysis was done this
+way, not what it does (that's in methods.md).
+
+## {Topic area}
+
+### {Decision title}
+
+**Decision:** What was chosen.
+
+**Rationale:** Why. What alternatives were considered and rejected.
+
+**Status:** Implemented / Open question / Superseded by [X].
+~~~
+
+### `caveats.md`
+
+Interpretation caveats for readers of results. Distinct from
+gaps_and_friction.md (which is about process/tooling). This is
+the "fine print" for any figure or claim.
+
+~~~markdown
+# Caveats for Interpretation
+
+Things a reader of these results needs to know before drawing
+conclusions.
+
+## {Caveat title}
+
+- Bullet points explaining the limitation
+- How it affects interpretation
+- What it means for specific claims or comparisons
+~~~
 
 ## References and citations
 
