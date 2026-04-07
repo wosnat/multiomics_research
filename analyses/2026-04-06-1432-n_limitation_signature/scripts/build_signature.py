@@ -52,10 +52,29 @@ def main():
         study_b_all_locus_tags=read_all_tags,
     )
 
+    # Join product and gene_category from verbose DE data
+    # Use Tolonen as primary source (more genes), fill gaps from Read
+    product_a = tolonen[["locus_tag", "product", "gene_category"]].drop_duplicates("locus_tag")
+    product_b = read[["locus_tag", "product", "gene_category"]].drop_duplicates("locus_tag")
+    product_combined = product_a.set_index("locus_tag").combine_first(
+        product_b.set_index("locus_tag")
+    ).reset_index()
+
+    for df in [core, extended]:
+        # Drop existing columns if any to avoid merge conflicts
+        for col in ["product", "gene_category"]:
+            if col in df.columns:
+                df.drop(columns=[col], inplace=True)
+
+    core = core.merge(product_combined, on="locus_tag", how="left")
+    extended = extended.merge(product_combined, on="locus_tag", how="left")
+
     print(f"\n=== CORE SIGNATURE ===")
     print(f"Total genes: {len(core)}")
     print(f"  Up: {(core['direction'] == 'up').sum()}")
     print(f"  Down: {(core['direction'] == 'down').sum()}")
+    print(f"  With product annotation: {core['product'].notna().sum()}")
+    print(f"  By category: {core['gene_category'].value_counts().to_dict()}")
 
     if len(core) < 30:
         print("  WARNING: Core signature < 30 genes. Permutation test will be underpowered.")
