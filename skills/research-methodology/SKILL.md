@@ -8,6 +8,11 @@ description: Non-negotiable rules for multi-omics KG research. Load when answeri
 These rules apply to ALL research work — brainstorming, planning,
 and execution. They are non-negotiable.
 
+> **Load this skill BEFORE brainstorming.** The notebook structure,
+> artifact requirements, and methodology rules shape the entire
+> analysis design. Loading after the spec is written means
+> retrofitting — which is what happened in the N-limitation analysis.
+
 ## Rule 1: KG is the sole data source
 
 Every claim must trace to a KG query. Never rely on intrinsic
@@ -72,6 +77,17 @@ the KG provides, what you must compute in scripts, and what to flag.
 See [Anti-hallucination](references/anti-hallucination.md) for
 concrete failure modes and prevention patterns.
 
+## Rule 8: Research notebook, not pipeline
+
+Every analysis is driven by an interactive notebook where each
+step is recorded, explored with the researcher, and approved
+before the next step. Implementation can be fast or delegated;
+quality control is always interactive.
+
+See [Research notebook](references/research-notebook.md) for the
+notebook format, QC checkpoint requirements, step cycle, and code
+lifecycle rules.
+
 ## References
 
 - [KG rules](references/kg-rules.md) — source tagging, common gaps, KG insufficiency
@@ -80,3 +96,4 @@ concrete failure modes and prevention patterns.
 - [Anti-hallucination](references/anti-hallucination.md) — failure modes and prevention
 - [Python API guide](references/python-api-guide.md) — scripting with multiomics_explorer
 - [Statistical rigor](references/statistical-rigor.md) — KG statistics, what to compute, what to flag
+- [Research notebook](references/research-notebook.md) — notebook format, step cycle, QC checkpoints, code lifecycle
