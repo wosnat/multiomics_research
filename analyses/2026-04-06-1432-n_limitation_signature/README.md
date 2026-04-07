@@ -35,6 +35,23 @@ and coculture experiments, and how does the severity differ over time?
   N-recycling activity increases from day 18 through day 60, then plateaus.
   Both up- and down-regulated genes contribute. [KG]
 
+## What to do next
+
+**Priority 1: Walkthrough and verification.** The analysis was built fast. Before extending it, walk through each step: verify the signature makes biological sense, check the scoring outputs against known genes (e.g., does glnA score high in axenic? does it score low in coculture?), and confirm the RNA/protein discordance isn't an artifact of different gene coverage between platforms.
+
+**Priority 2: Investigate the RNA/protein discordance.** This is the novel finding and wasn't in the original plan. Key questions:
+- Which specific genes drive the proteomics signal in coculture? Are they the same genes that drive the RNA-seq signal in axenic, or a different subset?
+- Is the discordance uniform across pathways, or concentrated in specific functional categories (e.g., translation machinery has slow protein turnover)?
+- Can we quantify per-gene RNA/protein concordance at matched timepoints?
+
+**Priority 3: Approach B (pathway enrichment).** The backlog in the spec lists the statistical tests (Fisher's exact, FDR, Mann-Whitney) but needs a full brainstorm given Approach A's results. Key decisions needed: which ontologies for pathways, what background set for enrichment, how to handle the RNA/protein split.
+
+**Priority 4: Approach C (hybrid).** Builds on A + B. The Tier 1/Tier 2 partitioning and multi-omics concordance are well-defined in the spec but should be re-scoped to focus on the discordance finding.
+
+**Spec:** `docs/superpowers/specs/2026-04-06-n-limitation-signature-analysis-design.md`
+**Plan (Approach A):** `docs/superpowers/plans/2026-04-06-n-limitation-signature-approach-a.md`
+**Gaps and retrospective:** `gaps_and_friction.md`
+
 ## File index
 
 - `methods.md` — publication-ready methods
