@@ -56,18 +56,24 @@ For researchers, it will be installable from a marketplace (private git repo).
 
 ## Research methodology
 
-When answering biological questions, analyzing expression data, or working
-with the multiomics KG, invoke the `research-methodology` skill. It contains
-the rules for KG usage, gene identity, artifact structure, and
-anti-hallucination. These rules apply to all research work — brainstorming,
-planning, and execution.
+**Load the `research-methodology` skill BEFORE brainstorming.** It
+contains the rules for KG usage, gene identity, artifact structure,
+notebook discipline, and anti-hallucination. These rules shape the
+analysis design — loading after the spec means retrofitting.
 
-For specific analysis types, invoke the corresponding recipe skill (e.g.,
-`enrichment`, `response-matrix`, `conservation`).
+For specific analysis types, invoke the corresponding recipe skill
+(e.g., `enrichment`, `response-matrix`, `conservation`).
 
-Use the superpowers workflow for research: brainstorm the question, write a
-plan, execute with checkpoints. The methodology skill provides the domain
-rules; superpowers provides the process discipline.
+Use the superpowers workflow for research: brainstorm the question,
+write a plan, execute with checkpoints. The methodology skill
+provides the domain rules; superpowers provides the process
+discipline.
+
+### Process overrides
+
+- **Don't skip subagent reviews** for tasks that produce data
+  outputs. At minimum, run spec compliance review. The tasks that
+  seem simple are where silent bugs hide.
 
 ## Evaluation Framework
 
