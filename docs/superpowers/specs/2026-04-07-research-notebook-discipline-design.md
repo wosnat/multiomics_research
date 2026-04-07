@@ -153,11 +153,23 @@ What to show depends on the step type:
 
 Every step that produces output files updates the relevant manifest (`data/DATA_MANIFEST.md` or `results/RESULTS_MANIFEST.md`) immediately — not retroactively at the end.
 
-### Toy-data verification
+### Code lifecycle: analysis-first, productize later
 
-When building a reusable utility (like sig_utils), verify with hand-calculated toy examples before running on real data. This is a notebook step — create a small synthetic input, compute expected output by hand, run the utility, compare. Log the verification in the notebook.
+Research code has two phases. The skill should guide both.
 
-This applies to any function that will be used across multiple analyses or conditions. One-off scripts don't need it, but anything in a shared `*_utils/` package does.
+**Phase 1 — Analysis code (methodology-first):**
+
+Code is written to solve the immediate research problem. It lives in the analysis directory (e.g., `analyses/*/sig_utils/`). The goal is correct methodology, not good software engineering.
+
+- **Specs describe methodology, not implementation.** For novel utilities (scoring functions, metrics, gene set operations), the spec should contain formulas with worked examples, expected I/O, and pseudocode — not Python implementation. Regular extraction/plotting scripts are straightforward enough to go directly in the plan.
+- **Toy-data verification before real data.** When building a reusable utility, verify with hand-calculated toy examples first. This is a notebook step: create small synthetic input, compute expected output by hand, run the utility, compare, log the verification. Applies to anything in a shared `*_utils/` package. One-off scripts don't need it.
+- **Refine through the notebook QC cycle.** The interactive do→show→explore→decide loop is how the methodology gets validated. Formula corrections, edge cases, direction logic — all discovered through the researcher walking through concrete examples.
+
+**Phase 2 — Productization (software-first):**
+
+After the analysis, if a utility proves reusable (used across multiple analyses or conditions), flag it for productization — a separate brainstorm with proper API design, tests, and documentation. It moves from the analysis directory to a shared package (e.g., `multiomics_explorer/analysis/`).
+
+Don't productize speculatively. Wait for proven reuse — the analysis notebook is the evidence.
 
 ## Changes to Existing Files
 
@@ -180,9 +192,7 @@ This applies to any function that will be used across multiple analyses or condi
 
 ### CLAUDE.md
 - Update research methodology section: load skill before brainstorming.
-- Add process overrides:
-  - No implementation code in plan documents — pseudocode and function signatures only
-  - Don't skip subagent reviews for tasks that produce data outputs
+- Add process override: don't skip subagent reviews for tasks that produce data outputs.
 
 ## New Files
 
