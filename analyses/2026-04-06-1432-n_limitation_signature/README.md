@@ -55,13 +55,15 @@ and coculture experiments, and how does the severity differ over time?
 ## File index
 
 - `methods.md` — publication-ready methods
-- `gaps_and_friction.md` — issues log
+- `decisions.md` — design decisions with rationale (why, not what)
+- `caveats.md` — interpretation caveats for readers of results
+- `gaps_and_friction.md` — issues log and retrospective
 - `references.md` — citations and versions
-- `data/` — staged KG extracts
+- `data/` — staged KG extracts (see `data/DATA_MANIFEST.md`)
 - `scripts/` — extraction and analysis scripts
 - `sig_utils/` — reusable scoring utilities
-- `results/` — output tables and figures
-- `exploration/` — exploration logs
+- `results/` — output tables and figures (see `results/RESULTS_MANIFEST.md`)
+- `exploration/` — exploration logs with full scoring tables
 
 ## Exploration logs
 

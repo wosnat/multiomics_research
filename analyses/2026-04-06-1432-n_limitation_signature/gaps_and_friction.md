@@ -85,3 +85,17 @@
 2. **Toy data verification as a mandatory step.** When building a reusable utility package (like sig_utils), verify with hand-calculated toy data before proceeding. This should be a plan task, not an ad-hoc intervention.
 
 3. **Don't skip subagent reviews for "simple" tasks.** The tasks that seem simple are exactly the ones where silent bugs hide. At minimum, run spec compliance review for tasks that produce data outputs.
+
+**To the research methodology skill — documentation requirements:**
+
+Analysis directories should include these documents (in addition to the existing artifacts guide requirements):
+
+1. **Data manifest** (`data/DATA_MANIFEST.md`): For each CSV, record row count, gene count, timepoints, which script produced it, and a one-line description. Column schema for recurring formats. Without this, files in `data/` are opaque after a few days.
+
+2. **Results manifest** (`results/RESULTS_MANIFEST.md`): Same for results — what each file contains, which script produced it, figure descriptions.
+
+3. **Decision log** (`decisions.md`): Design decisions with rationale. Not "what was done" (that's methods.md) but "why it was done this way and what alternatives were considered." Decisions made during brainstorming exist only in chat history, which is ephemeral. Critical for the researcher to understand their own analysis after a gap, and for reviewers/collaborators.
+
+4. **Caveats for interpretation** (`caveats.md`): Distinct from gaps_and_friction (which is about process/tooling). Lists things a reader of the RESULTS needs to know before drawing conclusions — platform coverage differences, single-timepoint limitations, circularity in self-scoring, etc. This is the "fine print" that should accompany any publication figure or claim.
+
+5. **Full scoring tables in exploration logs.** Not just prose summaries — include the actual numbers in markdown tables so a reviewer can scan all conditions at a glance without opening CSVs.
