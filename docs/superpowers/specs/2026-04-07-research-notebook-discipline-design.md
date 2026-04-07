@@ -153,6 +153,12 @@ What to show depends on the step type:
 
 Every step that produces output files updates the relevant manifest (`data/DATA_MANIFEST.md` or `results/RESULTS_MANIFEST.md`) immediately — not retroactively at the end.
 
+### Toy-data verification
+
+When building a reusable utility (like sig_utils), verify with hand-calculated toy examples before running on real data. This is a notebook step — create a small synthetic input, compute expected output by hand, run the utility, compare. Log the verification in the notebook.
+
+This applies to any function that will be used across multiple analyses or conditions. One-off scripts don't need it, but anything in a shared `*_utils/` package does.
+
 ## Changes to Existing Files
 
 ### SKILL.md
@@ -174,6 +180,9 @@ Every step that produces output files updates the relevant manifest (`data/DATA_
 
 ### CLAUDE.md
 - Update research methodology section: load skill before brainstorming.
+- Add process overrides:
+  - No implementation code in plan documents — pseudocode and function signatures only
+  - Don't skip subagent reviews for tasks that produce data outputs
 
 ## New Files
 
@@ -183,5 +192,4 @@ The full notebook discipline reference: step cycle, notebook format, checkpoint 
 ## Out of Scope
 
 - MCP/KG changes (table_scope in DE rows, background_gene_count, score_gene_set utility) — tracked in gaps_and_friction.md for the explorer repo
-- Superpowers process changes (no code in plans, mandatory toy-data verification, subagent review enforcement) — separate from this skill
 - Recipe-level checkpoint definitions — can be added per-recipe later, building on the general notebook discipline
