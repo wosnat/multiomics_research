@@ -205,3 +205,5 @@ Use this to decide whether `limit=None` is safe or whether you need to filter up
 | Writing raw Neo4j or `requests` calls | Use the API functions — they handle connection, auth, and serialization |
 | Setting an arbitrarily high `limit=10000` | Use `limit=None` to get all results without guessing |
 | Treating `not_known` cells as "not measured" | `not_known` may mean "measured but not significant" — check `groups_tested_not_responded` for genes confirmed tested with no response, and `list_experiments` for the treatment type's `table_scope` |
+| Extracting with `verbose=True` but not joining `product`/`gene_category` into gene-level outputs | Join metadata immediately — don't defer annotation to a separate step. Unnamed genes in signature CSVs are opaque. |
+| Not checking for `timepoint=single` or null after extraction | After extraction, explicitly check for experiments with single/null timepoints. Confirm they're handled correctly in downstream scripts (plotting, groupby). |
