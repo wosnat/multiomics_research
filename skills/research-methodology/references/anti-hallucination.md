@@ -4,6 +4,14 @@ Concrete failure modes observed in LLM-driven omics analysis and
 how to prevent them. Each pattern includes a real or realistic
 example from this KG.
 
+## Contents
+
+1. [Gene identity errors](#category-1-gene-identity-errors) — paralog conflation, ortholog conflation, inventing functions
+2. [Narrative fabrication](#category-2-narrative-fabrication) — causal claims, cherry-picking, selective reporting, language strength, cross-experiment aggregation
+3. [Data handling errors](#category-3-data-handling-errors) — counting from truncated lists, cross-study p-values, fabricating statistics
+4. [Knowledge boundary violations](#category-4-knowledge-boundary-violations) — asserting absence, assuming completeness, unsupported literature claims
+5. [Quick self-check](#quick-self-check) — 7-question checklist before presenting findings
+
 ---
 
 ## Category 1: Gene identity errors
@@ -23,14 +31,7 @@ starvation (log2FC -7.8) then partially recovers at day 89
 "recovery" is ACZ81_11985. Different genes, opposite behaviors,
 same name.
 
-**Prevention:**
-- After `resolve_gene` or `genes_by_function`, check if multiple
-  locus tags share a gene name
-- If yes: treat each locus tag as a separate entity throughout
-- Never aggregate expression data across locus tags that share
-  a name without explicitly noting they are paralogs
-- In tables: always include locus_tag column; add a suffix like
-  "katA-1", "katA-2" when presenting results
+**Prevention:** See [Gene identity — Paralog handling](gene-identity.md#paralog-handling).
 
 ### 1.2 Ortholog cluster conflation
 
@@ -42,13 +43,7 @@ from "katE" in another strain because they share a cluster.
 are both in cluster 4644E. The analysis reported katE expression
 values as "katB" because the cluster matched.
 
-**Prevention:**
-- When reporting per-gene expression, use locus tags, not cluster
-  membership
-- Ortholog clusters are for cross-organism comparison of
-  *conserved function*, not for within-organism gene equivalence
-- If a gene has no expression data, say so — don't substitute
-  a cluster-mate's data
+**Prevention:** See [Gene identity — Ortholog cluster rules](gene-identity.md#ortholog-cluster-rules).
 
 ### 1.3 Inventing gene functions
 
@@ -121,15 +116,7 @@ significant one was reported.
 "katB is significantly downregulated" when padj = 0.050.
 "Consistent with ROS detoxification" when there are no p-values.
 
-**Prevention:**
-- padj < 0.001: "strongly significant" / "highly significant"
-- padj < 0.01: "significant"
-- padj < 0.05: "nominally significant" or "borderline significant"
-- padj = 0.05: "at the conventional threshold" — flag explicitly
-- No padj: "fold-change of X (no statistical test available)"
-- Never write "consistent with [mechanism]" for data without
-  statistical support — use "suggestive of" or "potentially
-  related to"
+**Prevention:** See [Statistical rigor — Strength of language](statistical-rigor.md#strength-of-language-vs-strength-of-evidence). Match language to evidence level; never use confident language for weak or absent statistics.
 
 ### 2.5 Cross-experiment aggregation without caveats
 
@@ -145,15 +132,7 @@ fold changes for the same genes were compared. Different platforms
 have different dynamic ranges — a log2FC of 3 on microarray is
 not the same as log2FC 3 on RNA-seq.
 
-**Prevention:**
-- Compare direction (up/down) and rank across platforms, not
-  magnitude
-- Compare log2FC magnitudes only within the same platform and study
-- When presenting cross-experiment tables, include a platform
-  column and note the caveat
-- Use `gene_response_profile` rank fields (comparable across
-  platforms) instead of raw fold changes for cross-study
-  comparisons
+**Prevention:** See [Statistical rigor — Cross-experiment comparison](statistical-rigor.md#cross-experiment-comparison-caveats). Compare direction and rank, not magnitude, across platforms.
 
 ---
 

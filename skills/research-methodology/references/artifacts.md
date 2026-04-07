@@ -4,6 +4,19 @@ Research questions produce files, not chat messages. Chat is for
 reasoning, planning, and interpretation. Data, statistics, figures,
 and exploration logs go to disk.
 
+## Contents
+
+1. [When to create artifacts](#when-to-create-artifacts)
+2. [Directory structure](#directory-structure)
+3. [Research notebook](#research-notebook)
+4. [gaps_and_friction.md](#gaps_and_frictionmd)
+5. [methods.md](#methodsmd)
+6. [Script naming conventions](#script-naming-conventions)
+7. [data/](#data)
+8. [results/](#results)
+9. [Required analysis documents](#required-analysis-documents) — DATA_MANIFEST, RESULTS_MANIFEST, decisions, caveats
+10. [References and citations](#references-and-citations)
+
 ## When to create artifacts
 
 Create an analysis directory when:

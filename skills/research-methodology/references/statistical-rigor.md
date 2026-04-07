@@ -14,6 +14,55 @@
 - Effect size reporting (not just significance)
 - Volcano plots, heatmaps with proper clustering
 
+### Enrichment: background set construction
+
+The background set is the universe of genes that *could* have been
+detected. Getting this wrong inflates or deflates enrichment
+p-values — it's the most common enrichment error.
+
+**Which background to use depends on the question:**
+
+| Question | Background set | How to get it |
+|----------|---------------|---------------|
+| "Are nitrogen-responsive genes enriched for GO term X?" | All genes tested in the experiment | `differential_expression_by_gene(organism=..., experiment_ids=[...], limit=None)` — use all returned locus tags, not just significant ones |
+| "Are genes in cluster Y enriched for function X?" | All genes in the organism's genome | `genes_by_function("*", organism=..., limit=None)` — returns all annotated genes |
+| "Is ontology term X over-represented in my gene set?" | All genes with any annotation in that ontology | `genes_by_ontology(term_id=<root_term>, organism=..., limit=None)` |
+
+**Common mistakes:**
+- Using only significant genes as background (guarantees
+  inflated enrichment)
+- Using the whole genome when only a subset was measured
+  (e.g., proteomics covers fewer genes than RNA-seq)
+- Not filtering background to the same organism as the test set
+- Forgetting that `differential_expression_by_gene` returns only
+  genes with DE edges — genes with no expression data at all are
+  not in the background
+
+**Worked example (Fisher's exact):**
+
+Suppose 800 MED4 genes were tested in experiment E1. Of these,
+120 are significantly upregulated. Of the 800 total, 40 are
+annotated to GO term "response to oxidative stress". Of the 120
+significant genes, 12 have this annotation.
+
+```
+                  In GO term    Not in GO term
+Significant          12              108         = 120
+Not significant      28              652         = 680
+                     40              760         = 800
+
+Fisher's exact test on this 2×2 table.
+Expected: 120 × 40/800 = 6.0
+Observed: 12 → enrichment ratio = 2.0×
+```
+
+Report: "response to oxidative stress" enriched 2.0-fold among
+upregulated genes (Fisher's exact p = X, BH-corrected q = Y,
+12/40 annotated genes significant vs 6.0 expected).
+
+Always report: fold enrichment, raw p-value, corrected q-value,
+counts (k/K from n/N), and the background set definition.
+
 ## Worked examples in specs
 
 Every formula in a spec must include at least one worked example

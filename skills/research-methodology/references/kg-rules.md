@@ -1,21 +1,9 @@
 # KG rules
 
-## KG is the sole data source
+Extends SKILL.md Rule 1 (KG is the sole data source) with
+operational details for scoping, gap handling, and API choice.
 
-This is the top-level rule. Everything else follows from it.
-
-Every claim must trace to a KG query. Never rely on intrinsic
-knowledge for data — gene names, expression values, experiment
-details, organism properties, ortholog assignments. Use intrinsic
-knowledge only for:
-- Interpreting results (biological context, literature framing)
-- Suggesting next analytical steps
-- Explaining methodology
-
-## When the KG is insufficient
-
-Say so explicitly and flag it as a gap. Do not fill gaps with
-assumptions, web searches, or general knowledge. Common gaps:
+## Common KG gaps
 - Missing organisms or strains not yet in the KG
 - Annotations not loaded (e.g., some GO terms, regulatory elements)
 - Expression data not available for a condition/study
@@ -23,16 +11,7 @@ assumptions, web searches, or general knowledge. Common gaps:
 - Missing metadata (timepoints, replicates, normalization method)
 - No physiological data (growth curves, Fv/Fm, cell counts)
 
-## Source tagging
-
-Tag every finding with its source:
-- `[KG]` — data directly from a KG query or script output
-- `[interpretation]` — biological reasoning using intrinsic
-  knowledge (literature context, mechanistic inference)
-- `[gap]` — something the KG can't answer (missing data, missing
-  annotations, missing organisms)
-
-### Separating KG from literature
+## Separating KG from literature
 
 Clearly separate KG-derived findings from literature context:
 - Use a distinct format: "**From the KG:** ... **From the
