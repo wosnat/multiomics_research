@@ -53,7 +53,7 @@ Each step follows the do→show→explore→decide cycle. No step proceeds witho
 - Classify each experiment: positive control / negative control / target / irrelevant
 
 **Outputs:**
-- `data/experiment_scoping.csv` — experiment ID, publication, conditions, timepoints, platform, classification
+- `data/experiment_scoping.csv` — experiment ID, publication, conditions, timepoints, platform, treatment type, background factors, classification
 - `logs/01_discover_experiments.log` — full query results, classification reasoning
 
 **Explore:** Walk through the scoping table. Discuss classifications. Identify any experiments that could serve as additional controls.
@@ -65,8 +65,11 @@ Each step follows the do→show→explore→decide cycle. No step proceeds witho
 **Goal:** Extract full DE data for all reference and control experiments.
 
 **Method:**
-- Python API: `differential_expression_by_gene()` with `verbose=True`, `limit=None`
-- Extract ALL genes (not just significant) — needed for background sets and for classifying genes as "present but not significant" vs "absent"
+- Build a reusable extraction utility in `sig_utils/extraction.py` that wraps the DE extraction logic. All scripts (steps 2, 4, and any future extraction) use this same function. The utility:
+  - Calls `differential_expression_by_gene()` with `verbose=True`, `limit=None`
+  - Extracts ALL genes (not just significant) — needed for background sets and for classifying genes as "present but not significant" vs "absent"
+  - Captures `table_scope` from the response envelope and adds as a column to every row
+  - Returns a DataFrame in a consistent schema
 - One CSV per experiment
 
 **Outputs:**
@@ -130,6 +133,7 @@ Each step follows the do→show→explore→decide cycle. No step proceeds witho
 - `apply_signature(signature_df, de_df)` → applied subset DataFrame with concordance info, per-gene scores. The script writes this to CSV — the inspectable intermediate showing exactly which genes matched and how.
 - `rank_score(applied_df)` → single score per condition/timepoint
 - `permutation_test(signature_df, de_df, n_perms)` → observed score, p-value, null distribution
+- `score_with_significance(signature_df, de_df, n_perms)` → wraps apply + rank_score + permutation_test into one call, returns score and p-value per condition/timepoint. This is the main entry point for scoring.
 
 **Outputs:**
 - `sig_utils/scoring.py` — tested utility module
@@ -145,14 +149,13 @@ Each step follows the do→show→explore→decide cycle. No step proceeds witho
 
 **Method:**
 - `apply_signature()` for each experiment → applied subset CSVs
-- `rank_score()` per condition/timepoint
-- `permutation_test()` for each target condition (Weissberg only)
+- `score_with_significance()` per condition/timepoint — computes rank score + permutation p-value in one call
 - Check control separation
 
 **Outputs:**
 - `data/applied_*.csv` — one per experiment, showing signature genes in that experiment's context
-- `results/scores_all.csv` — all experiments scored, with role (positive/negative/target)
-- `results/permutation_tests.csv` — Weissberg conditions only
+- `results/scores_all.csv` — all experiments scored with rank score, p-value, and role (positive/negative/target)
+- Note: reference studies scoring their own signature will have inflated scores and low p-values by construction — this is expected and flagged in caveats, not a reason to skip the test
 - `logs/06_score_experiments.log` — full score table, control separation summary, gene-level contributions for marker genes
 
 **Explore:** Full results table. Do positive controls score high? Negative controls low? Trace marker genes through scoring for specific conditions. Identify surprises.
@@ -171,22 +174,31 @@ Each step follows the do→show→explore→decide cycle. No step proceeds witho
 
 **Explore:** Discuss the biological interpretation. RNA-seq vs proteomics comparison. What's novel, what confirms expectations, what's unexplained.
 
+**Optional: companion Jupyter notebook.** A single notebook (`exploration/notebooks/signature_explorer.ipynb`) that loads the produced data files and lets the researcher interactively explore: signature gene table, marker gene traces, score results, key figures. Created here if the researcher wants it — decided after seeing the results.
+
 **Decision:** Analysis complete, or further investigation needed?
 
 ## Utility package: sig_utils
 
 ### Boundary
 
-sig_utils takes DataFrames in a defined schema and returns DataFrames. It never calls the KG, never reads/writes files directly (except through explicit I/O helpers), and never knows about specific experiments or organisms. A script could swap in completely different organisms or studies and sig_utils would work the same.
+sig_utils has two layers:
+- **Extraction** (`extraction.py`) — wraps the KG Python API to produce DataFrames in a consistent schema. This is the only module that calls the KG.
+- **Methodology** (`signature.py`, `scoring.py`) — pure DataFrame-in, DataFrame-out. Never calls the KG, never knows about specific experiments or organisms. A script could swap in completely different data and these modules would work the same.
+- **I/O** (`io.py`) — load/save helpers for standard formats.
 
 ### Modules
 
 ```
 sig_utils/
 ├── __init__.py
+├── extraction.py     # KG DE extraction wrapper (consistent schema, table_scope)
 ├── signature.py      # Signature construction: summarize, intersect, classify
 ├── scoring.py        # Signature application, rank score, permutation test
-└── io.py             # Load/save helpers for standard formats
+├── io.py             # Load/save helpers for standard formats
+└── tests/
+    ├── test_signature.py   # Toy data tests for signature construction
+    └── test_scoring.py     # Toy data tests for scoring and permutation
 ```
 
 ### Flow
@@ -197,22 +209,19 @@ DE data (DataFrame)
     → intersect_references()
     → Signature (DataFrame)
 
-Signature + target DE data
-    → apply_signature()
-    → Applied subset (DataFrame / CSV)
-
-Applied subset
-    → rank_score()
-    → Score per condition/timepoint
-
-Applied subset
-    → permutation_test()
-    → p-values
+Signature + any DE data
+    → score_with_significance()          # main entry point
+        → apply_signature()              # → Applied subset (DataFrame / CSV)
+        → rank_score()                   # → score per condition/timepoint
+        → permutation_test()             # → p-value per condition/timepoint
+    → score + p-value per condition/timepoint
 ```
 
 ### Toy-tested
 
 Both signature construction and scoring functions are verified with hand-calculated synthetic data before touching real KG data. Verification is a notebook step, not an afterthought.
+
+Toy tests are saved as scripts (`sig_utils/tests/test_signature.py`, `sig_utils/tests/test_scoring.py`) so they serve as the seed for a real test suite during productization. Each test script contains synthetic data, hand-calculated expected values, and assertions.
 
 ## Scripts
 
@@ -227,7 +236,7 @@ scripts/
 ```
 
 Each script:
-- Uses sig_utils for methodology, KG Python API for extraction
+- Uses sig_utils for all reusable logic (extraction, signature building, scoring)
 - Writes outputs to `data/` or `results/`
 - Writes diagnostic log to `logs/`
 - Has a `--explore` flag that prints marker gene traces and QC diagnostics to stdout
@@ -268,19 +277,26 @@ analyses/YYYY-MM-DD-HHMM-n_limitation_signature_v2/
 │   └── 06_plot_results.py
 ├── sig_utils/
 │   ├── __init__.py
+│   ├── extraction.py
 │   ├── signature.py
 │   ├── scoring.py
-│   └── io.py
+│   ├── io.py
+│   └── tests/
+│       ├── test_signature.py
+│       └── test_scoring.py
 ├── logs/
 │   ├── 01_discover_experiments.log
 │   ├── 02_extract_reference_de.log
 │   └── ...
 ├── results/
 │   ├── RESULTS_MANIFEST.md
-│   ├── scores_all.csv
-│   ├── permutation_tests.csv
+│   ├── scores_all.csv             # Includes rank scores and permutation p-values
 │   ├── trajectory_*.png
 │   └── control_separation.png
+├── superpowers/
+│   ├── spec.md                    # Copy of the design spec
+│   ├── plan.md                    # Copy of the implementation plan (when created)
+│   └── brainstorm-log.md          # Q&A from the brainstorming session
 ├── README.md
 ├── methods.md
 ├── decisions.md
@@ -298,6 +314,14 @@ Each step gets an entry with: command, inputs, outputs, QC, exploration (marker 
 Reruns get new entries with "why" section — never overwrite.
 
 The notebook is the primary record of the researcher's understanding. Methods.md is the publication-ready distillation.
+
+## Superpowers products
+
+The analysis directory includes a `superpowers/` folder with copies of the design spec, implementation plan, and brainstorming log. These live with the analysis so the full decision history is self-contained — not scattered across `docs/superpowers/` which serves the repo-level index.
+
+- `superpowers/spec.md` — the design spec (this document)
+- `superpowers/plan.md` — the implementation plan (created next)
+- `superpowers/brainstorm-log.md` — the Q&A from the brainstorming session: questions asked, options considered, decisions made, and rationale. Captures the reasoning that shaped the spec.
 
 ## Predecessor analysis
 
