@@ -69,11 +69,34 @@ write a plan, execute with checkpoints. The methodology skill
 provides the domain rules; superpowers provides the process
 discipline.
 
+### Naming conventions
+
+- **Spec steps ≠ plan tasks.** Spec steps describe the analytical
+  pipeline (Step 1, Step 2, ...). Plan tasks describe
+  implementation work and may split one spec step into multiple
+  tasks. Specs must not reference files by task number. Plans must
+  cross-reference the spec step in each task description (e.g.,
+  "Task 5: Build signature utilities [Step 3]"). This prevents
+  confusion when the plan introduces scaffolding or verification
+  tasks that don't correspond to a spec step.
+
 ### Process overrides
+
+- **Interactive discovery steps.** Rule 5 (scripts over chat
+  reasoning) has a carve-out for interactive discovery/scoping
+  steps — see the research-methodology skill for the
+  frozen-output + notebook-entry pattern.
 
 - **Don't skip subagent reviews** for tasks that produce data
   outputs. At minimum, run spec compliance review. The tasks that
   seem simple are where silent bugs hide.
+
+- **Notebook-commit gates in plans.** When writing implementation
+  plans for research analyses, every plan must include a
+  notebook-commit gate between data-producing steps. The gate is:
+  "commit notebook entry for Step N before beginning Step N+1."
+  This ensures the executing agent treats the notebook as a
+  blocking dependency, not a nice-to-have.
 
 ## Evaluation Framework
 

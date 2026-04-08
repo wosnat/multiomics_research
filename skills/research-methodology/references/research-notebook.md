@@ -1,5 +1,25 @@
 # Research notebook
 
+## Notebook-commit gate
+
+In the N-limitation v2 analysis, Steps 1-3 had rich notebook
+entries because they were written as part of the step. Steps 4-6
+lost their entries to chat history — the analysis gained momentum
+and the notebook fell behind. The richest findings (proteomics
+coverage bias, RNA/protein discordance test, rank normalization
+fix) were discovered in those later steps and exist only in the
+conversation. A future reader has methods.md but not the
+investigative trail.
+
+The fix: if a step produces data or analytical output, its
+notebook entry must be committed to git before the next step
+begins. The commit includes the notebook entry and that step's
+generated artifacts (see [Artifacts guide — Git tracking
+convention](artifacts.md)). This keeps the notebook as a live
+record rather than a retroactive summary.
+
+---
+
 Every analysis is driven by an interactive research notebook — a
 chronological log where each analytical step is recorded, inspected,
 explored with the researcher, and approved before the next step
@@ -35,6 +55,30 @@ A step is:
 - A Python script with explicit command-line invocation
 - Output artifacts (CSV, figures, summary files)
 - A notebook entry capturing all four phases of the cycle
+
+## Interactive discovery steps
+
+Some steps are naturally exploratory — browsing experiments,
+classifying conditions, discussing what to include. These don't
+fit neatly into "run a script, check the output." The pattern for
+interactive steps:
+
+1. Explore interactively via MCP queries and chat discussion
+2. Produce a **frozen output file** (CSV, table) that downstream
+   scripts consume — this is the reproducible artifact
+3. Write a **notebook entry** documenting the reasoning,
+   classifications, and decisions — detailed enough that a
+   different researcher could follow the logic
+4. Optionally, write a script that reproduces the frozen output
+   from KG queries
+
+The frozen output + notebook entry are the minimum. A script is
+preferred but not required for discovery steps where the process
+is inherently iterative and conversational.
+
+Rule 5 (scripts over chat reasoning) still applies to
+computations. Interactive steps are for *discovery and
+classification*, not for computing statistics in chat.
 
 ## Notebook format
 
@@ -75,6 +119,10 @@ uv run scripts/script_name.py --arg value --output data/output.csv
 What was decided and why. Proceed / redo / adjust.
 ~~~
 
+Logs must be sufficient to verify the step without rerunning —
+see [Artifacts guide — Log verbosity](artifacts.md) for the
+standard.
+
 ### What the notebook captures
 
 Everything:
@@ -90,10 +138,22 @@ Everything:
   alternatives
 - **Relative links** to all artifacts produced
 
-### Rerun entries
+## Rerun and revision workflow
 
-When a step is rerun after a change, add a new entry (don't
-overwrite the original):
+When a step is rerun (due to a formula correction, normalization
+change, filter adjustment, or any methodology change mid-analysis):
+
+1. **Update the utility code** — change the shared methodology
+   (`*_utils/`), not just the script
+2. **Run tests** — verify the change is correct against toy data
+3. **Rerun all downstream steps** that consumed the changed
+   output — every step after the change gets a fresh run
+4. **New notebook entry per rerun** — each rerun gets its own
+   entry explaining what changed and what the impact was
+5. **Commit each rerun's outputs** — the commit-per-step rule
+   still applies; don't batch rerun commits
+
+The rerun entry template:
 
 ~~~markdown
 ---
@@ -101,19 +161,19 @@ overwrite the original):
 ## YYYY-MM-DD HH:MM — Step N rerun: {what changed}
 
 ### Why
-What the researcher flagged and why the step needed to change.
+What was wrong with the previous output and how it was discovered.
 
 ### Changes
-- What was modified (file, line, logic change)
-- How many genes/rows/results were affected
-
-### Command
-```bash
-uv run scripts/script_name.py --arg new_value --output data/output.csv
-```
+- What code was modified (file, function, logic change)
+- How tests were affected (new tests, changed expected values)
+- How many downstream steps needed rerunning
 
 ### Outputs
-- [output_file.csv](../data/output_file.csv) — N rows (updated)
+- Updated files with new row counts / statistics
+
+### Impact
+- What changed in the results (direction, magnitude, interpretation)
+- What didn't change (confirming robustness where applicable)
 
 ### Decision
 Proceed with updated output / need another iteration.

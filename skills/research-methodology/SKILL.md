@@ -68,6 +68,15 @@ if it can't be scripted, document it as a limitation.
 See [Python API guide](references/python-api-guide.md) for imports,
 return structure, and scripting patterns.
 
+**Exception: interactive discovery steps.** Steps that are
+inherently exploratory (browsing available data, classifying
+experiments, scoping what the KG contains) may be done
+interactively rather than scripted. These steps must still produce
+a frozen output file (CSV) and a notebook entry documenting the
+reasoning. Computations — statistics, scores, enrichment — always
+go in scripts. See [Research notebook — Interactive discovery
+steps](references/research-notebook.md) for the pattern.
+
 ## Rule 6: Statistical rigor
 
 Expression data without proper statistical treatment produces

@@ -34,24 +34,64 @@ Simple lookups and quick answers don't need artifacts:
 ## Directory structure
 
 ```
-analyses/{analysis_name}/
-├── exploration/       # Research notebook (one per analysis)
-├── data/              # Staged data from KG (CSV/TSV)
-│   └── DATA_MANIFEST.md  # What each data file contains
-├── scripts/           # Python scripts (extract, analyze, explore)
-├── results/           # Outputs: tables, figures, statistics
-│   └── RESULTS_MANIFEST.md  # What each result file contains
-├── README.md          # Summary, key findings, file index
-├── methods.md         # Publication-ready methods (living document)
-├── decisions.md       # Design decisions with rationale (why, not what)
-├── caveats.md         # Interpretation caveats for readers of results
-├── gaps_and_friction.md  # KG/MCP/methodology issues log
-└── references.md      # Data sources and citations
+analyses/YYYY-MM-DD-HHMM-{name}/
+├── exploration/           # Research notebook
+├── data/                  # Staged KG data (CSV/TSV)
+│   └── DATA_MANIFEST.md
+├── scripts/               # Pipeline scripts (numbered)
+├── {name}_utils/          # Reusable methodology package (when applicable)
+│   ├── __init__.py
+│   └── tests/
+├── logs/                  # Per-step diagnostic logs
+├── results/               # Tables, figures, statistics
+│   └── RESULTS_MANIFEST.md
+├── superpowers/           # Spec, plan, brainstorm-log (copied here)
+│   ├── spec.md
+│   ├── plan.md
+│   └── brainstorm-log.md
+├── README.md
+├── methods.md
+├── decisions.md
+├── caveats.md
+├── gaps_and_friction.md
+└── references.md
 ```
 
-**Naming:** `{analysis_name}` should be descriptive and lowercase
-with underscores: `catalase_expression`,
-`nitrogen_stress_enrichment`, `photosystem_conservation`.
+**Naming:** `YYYY-MM-DD-HHMM-{name}` — timestamp prefix for
+chronological ordering. `{name}` is descriptive and lowercase
+with underscores (e.g., `2026-04-08-1038-n_limitation_signature_v2`).
+
+**New directories:**
+- **`{name}_utils/`** — reusable methodology package when the
+  analysis introduces novel methods (signature scoring, enrichment,
+  etc.). Contains pure methodology code with tests. Only created
+  when the analysis needs it — not every analysis gets one. See
+  [Research notebook — Code lifecycle](research-notebook.md) for
+  when this applies.
+- **`logs/`** — one log per pipeline step, capturing diagnostics
+  sufficient to verify the step without rerunning. See "Log
+  verbosity" below.
+- **`superpowers/`** — local copies of the spec, plan, and
+  brainstorm-log. See "Superpowers artifact capture" below.
+
+## Superpowers artifact capture
+
+After brainstorming and planning, copy the spec, plan, and
+brainstorm-log into the analysis's `superpowers/` directory. The
+analysis should be self-contained — a reader should find the full
+decision history (why this design, what alternatives were
+considered, what the plan was) alongside the data and code, not
+scattered across `docs/superpowers/`.
+
+The canonical copies in `docs/superpowers/specs/` and
+`docs/superpowers/plans/` remain the repo-level index. The copies
+in the analysis are the local record.
+
+Files to capture:
+- `superpowers/spec.md` — the design spec
+- `superpowers/plan.md` — the implementation plan
+- `superpowers/brainstorm-log.md` — the Q&A from brainstorming
+  (questions asked, options considered, decisions made, rationale)
 
 ## Research notebook
 
@@ -142,6 +182,54 @@ KG extracts staged as files:
 - **Tables:** CSV with clear headers and units
 - **Figures:** PNG (300 DPI min) and PDF/SVG for publication; include axis labels, legends, titles
 - **Statistics:** summary stats as CSV or in methods.md; full test results (statistic, p-value, effect size, CI)
+
+## Git tracking convention
+
+Commit generated artifacts with the step that produces them, not
+retroactively at the end. Each step's commit includes its outputs,
+its log, and updated manifests.
+
+**What to track vs gitignore:**
+
+| Track in git | Gitignore |
+|---|---|
+| Signatures, scores, applied subsets (small CSVs) | Raw DE extracts (large CSVs, reproducible from KG) |
+| Plots (PNG) | `__pycache__/` directories |
+| Logs | |
+| Manifests | |
+| Notebook entries | |
+
+Rule of thumb: if it's small and captures analytical decisions
+(a signature gene list, a score table), track it. If it's large
+and reproducible by rerunning a script against the KG, gitignore
+it.
+
+**Reproduction instructions:** When large files are gitignored,
+the README must include instructions for regenerating them (which
+scripts to run, in what order). A reader who clones the repo
+should be able to reproduce the full analysis.
+
+**Manifest timing:** The manifest (`DATA_MANIFEST.md` or
+`RESULTS_MANIFEST.md`) is updated in the same commit that adds
+the new data or result file. Not retroactively.
+
+## Log verbosity
+
+Logs capture everything a researcher needs to verify the step
+without rerunning it. This includes:
+- Summary statistics (row counts, gene counts, filter funnel)
+- Diagnostic traces (marker gene values at each stage, QC checks)
+- Edge case results (tie-breaking outcomes, genes at
+  classification boundaries)
+
+Scripts with `--explore` flags should write their diagnostic
+output to the log file as well as stdout. The log is the
+persistent record; stdout is for the interactive session.
+
+A log that says "N genes built" is insufficient. A log that shows
+the filter funnel (how many started → how many passed each
+filter → how many in the final set), marker gene traces, and
+classification edge cases is sufficient.
 
 ## Required analysis documents
 
