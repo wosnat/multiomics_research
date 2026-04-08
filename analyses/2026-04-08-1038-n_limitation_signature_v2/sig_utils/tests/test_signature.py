@@ -138,7 +138,7 @@ class TestIntersectReferences:
         """G1 (up in both) and G2 (down in both) → core."""
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
-        core, _ = intersect_references(a_summary, b_summary)
+        core, _, _ = intersect_references(a_summary, b_summary)
         core_tags = set(core["locus_tag"])
         assert "G1" in core_tags
         assert "G2" in core_tags
@@ -147,7 +147,7 @@ class TestIntersectReferences:
         """Core genes have correct direction."""
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
-        core, _ = intersect_references(a_summary, b_summary)
+        core, _, _ = intersect_references(a_summary, b_summary)
         g1 = core[core["locus_tag"] == "G1"].iloc[0]
         assert g1["direction"] == "up"
         g2 = core[core["locus_tag"] == "G2"].iloc[0]
@@ -159,7 +159,7 @@ class TestIntersectReferences:
         """
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
-        core, _ = intersect_references(a_summary, b_summary)
+        core, _, _ = intersect_references(a_summary, b_summary)
         g1 = core[core["locus_tag"] == "G1"].iloc[0]
         assert g1["cross_study_best_dir_rank"] == 1
         g2 = core[core["locus_tag"] == "G2"].iloc[0]
@@ -169,25 +169,62 @@ class TestIntersectReferences:
         """G4: down in A (tie-break), up in B → discordant → not in core or extended."""
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
-        core, extended = intersect_references(a_summary, b_summary)
+        core, extended, _ = intersect_references(a_summary, b_summary)
         all_tags = set(core["locus_tag"]) | set(extended["locus_tag"])
         assert "G4" not in all_tags
 
-    def test_b_only_extended(self):
-        """G6 is only in study B → extended, study_b_only."""
+    def test_discordant_returned(self):
+        """G4: down in A (tie-break), up in B → in discordant list with both directions."""
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
-        _, extended = intersect_references(a_summary, b_summary)
+        _, _, discordant = intersect_references(a_summary, b_summary)
+        g4 = discordant[discordant["locus_tag"] == "G4"]
+        assert len(g4) == 1
+        assert g4.iloc[0]["direction_a_label"] == "down"
+        assert g4.iloc[0]["direction_b_label"] == "up"
+
+    def test_b_only_extended(self):
+        """G6 is only in study B → extended, classified relative to A."""
+        a_summary = summarize_per_gene(make_toy_study_a())
+        b_summary = summarize_per_gene(make_toy_study_b())
+        # Without study_a_all_locus_tags, just "study_b_only"
+        _, extended, _ = intersect_references(a_summary, b_summary)
         g6 = extended[extended["locus_tag"] == "G6"]
         assert len(g6) == 1
         assert "study_b_only" in g6.iloc[0]["signature_type"]
+
+    def test_b_only_a_ns(self):
+        """G6 only significant in B, but present in A's dataset → b_only_a_ns."""
+        a_summary = summarize_per_gene(make_toy_study_a())
+        b_summary = summarize_per_gene(make_toy_study_b())
+        study_a_all_tags = {"G1", "G2", "G3", "G4", "G5", "G6"}  # G6 present in A
+        _, extended, _ = intersect_references(
+            a_summary, b_summary,
+            study_a_all_locus_tags=study_a_all_tags,
+        )
+        g6 = extended[extended["locus_tag"] == "G6"]
+        assert len(g6) == 1
+        assert "_ns" in g6.iloc[0]["signature_type"]
+
+    def test_b_only_a_absent(self):
+        """G6 only significant in B, absent from A's dataset → b_only_a_absent."""
+        a_summary = summarize_per_gene(make_toy_study_a())
+        b_summary = summarize_per_gene(make_toy_study_b())
+        study_a_all_tags = {"G1", "G2", "G3", "G4", "G5"}  # G6 absent from A
+        _, extended, _ = intersect_references(
+            a_summary, b_summary,
+            study_a_all_locus_tags=study_a_all_tags,
+        )
+        g6 = extended[extended["locus_tag"] == "G6"]
+        assert len(g6) == 1
+        assert "absent" in g6.iloc[0]["signature_type"]
 
     def test_a_only_b_absent(self):
         """G3 is in study A but absent from study B dataset → a_only_b_absent."""
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
         study_b_all_tags = {"G1", "G2", "G4", "G5", "G6"}  # G3 absent
-        _, extended = intersect_references(
+        _, extended, _ = intersect_references(
             a_summary, b_summary,
             study_b_all_locus_tags=study_b_all_tags,
         )
@@ -200,7 +237,7 @@ class TestIntersectReferences:
         a_summary = summarize_per_gene(make_toy_study_a())
         b_summary = summarize_per_gene(make_toy_study_b())
         study_b_all_tags = {"G1", "G2", "G3", "G4", "G5", "G6"}  # G3 present
-        _, extended = intersect_references(
+        _, extended, _ = intersect_references(
             a_summary, b_summary,
             study_b_all_locus_tags=study_b_all_tags,
         )

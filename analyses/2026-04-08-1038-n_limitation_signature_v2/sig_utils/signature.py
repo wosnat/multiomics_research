@@ -103,8 +103,9 @@ def intersect_references(
     study_b: pd.DataFrame,
     study_a_name: str = "study_a",
     study_b_name: str = "study_b",
+    study_a_all_locus_tags: set[str] | None = None,
     study_b_all_locus_tags: set[str] | None = None,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Intersect two per-gene DE summaries into core and extended signatures.
 
     Core: genes significant in both studies with concordant direction.
@@ -116,12 +117,17 @@ def intersect_references(
         study_b: Output of summarize_per_gene for study B.
         study_a_name: Label for study A (used in column prefixes).
         study_b_name: Label for study B (used in column prefixes).
+        study_a_all_locus_tags: All locus tags in study A's dataset
+            (not just significant). Used to classify study-B-only genes
+            as "absent from dataset" vs "present but not significant".
         study_b_all_locus_tags: All locus tags in study B's dataset
-            (not just significant). Used to distinguish "absent from
-            dataset" vs "present but not significant" for study-A-only genes.
+            (not just significant). Used to classify study-A-only genes
+            as "absent from dataset" vs "present but not significant".
 
     Returns:
-        (core_df, extended_df) — each sorted by cross_study_best_dir_rank.
+        (core_df, extended_df, discordant_df) — core and extended sorted
+        by cross_study_best_dir_rank; discordant contains genes significant
+        in both studies but with opposite directions.
     """
     pa, pb = study_a_name, study_b_name
 
@@ -157,8 +163,15 @@ def intersect_references(
             merged[meta] = merged[col_a].fillna(merged[col_b])
             merged = merged.drop(columns=[col_a, col_b])
 
-    # CORE: both present, concordant direction
+    # Genes present in both studies
     both = merged.dropna(subset=["direction_a", "direction_b"])
+
+    # DISCORDANT: both present, opposite direction
+    discordant = both[both["direction_a"] != both["direction_b"]].copy()
+    discordant["direction_a_label"] = discordant["direction_a"]
+    discordant["direction_b_label"] = discordant["direction_b"]
+
+    # CORE: both present, concordant direction
     concordant = both[both["direction_a"] == both["direction_b"]].copy()
     concordant["direction"] = concordant["direction_a"]
     concordant["signature_type"] = "core"
@@ -182,7 +195,13 @@ def intersect_references(
 
     b_only = merged[b_only_mask].copy()
     b_only["direction"] = b_only["direction_b"]
-    b_only["signature_type"] = f"{pb}_only"
+    if study_a_all_locus_tags is not None:
+        b_only["signature_type"] = b_only["locus_tag"].apply(
+            lambda lt: f"{pb}_only_{pa}_ns" if lt in study_a_all_locus_tags
+            else f"{pb}_only_{pa}_absent"
+        )
+    else:
+        b_only["signature_type"] = f"{pb}_only"
 
     extended = pd.concat([a_only, b_only], ignore_index=True)
     extended["cross_study_best_dir_rank"] = extended.apply(
@@ -210,4 +229,17 @@ def intersect_references(
     core_df = concordant[cols].sort_values("cross_study_best_dir_rank").reset_index(drop=True)
     extended_df = extended[cols].sort_values("cross_study_best_dir_rank").reset_index(drop=True)
 
-    return core_df, extended_df
+    # Discordant output
+    disc_cols = [
+        "locus_tag", "gene_name", "direction_a_label", "direction_b_label",
+        f"{pa}_best_dir_rank", f"{pb}_best_dir_rank",
+    ]
+    for meta in ["product", "gene_category"]:
+        if meta in discordant.columns:
+            disc_cols.append(meta)
+    for c in disc_cols:
+        if c not in discordant.columns:
+            discordant[c] = pd.NA
+    discordant_df = discordant[disc_cols].reset_index(drop=True)
+
+    return core_df, extended_df, discordant_df
