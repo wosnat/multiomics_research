@@ -76,19 +76,23 @@ def apply_signature(
 
 def rank_score(
     applied_df: pd.DataFrame,
-    total_genes: int,
+    de_df: pd.DataFrame,
 ) -> float:
     """Compute rank score from an applied signature DataFrame.
 
     rank_score = mean(concordance_i * normalized_rank_i)
-    where normalized_rank_i = 1 - (dir_rank_i / total_genes) if significant, else 0.
+    where normalized_rank_i = 1 - (dir_rank_i / n_significant_in_direction).
 
-    Only includes genes that are present in the dataset (non-NaN log2fc or
-    non-NaN expression_status). Genes absent from the dataset are excluded.
+    Normalizing by n_significant (not total genes) gives meaningful spread:
+    rank 10 of 300 significant_up genes → 0.967, rank 200 of 300 → 0.333.
+
+    Only includes genes that are present in the dataset (non-NaN
+    expression_status). Genes absent from the dataset are excluded.
 
     Args:
         applied_df: Output of apply_signature.
-        total_genes: Total genes in the experiment (for normalization).
+        de_df: Full DE data for this condition x timepoint (needed to count
+            significant genes per direction).
 
     Returns:
         Float score. Positive = N-limitation signal, negative = reversal, 0 = no signal.
@@ -100,9 +104,22 @@ def rank_score(
     if len(matched) == 0:
         return np.nan
 
+    # Count significant genes per direction in the full experiment
+    n_sig_up = (de_df["expression_status"] == "significant_up").sum()
+    n_sig_down = (de_df["expression_status"] == "significant_down").sum()
+
+    # Normalize by n_significant in the gene's DE direction
+    n_sig_for_gene = np.where(
+        matched["expression_status"] == "significant_up", n_sig_up,
+        np.where(
+            matched["expression_status"] == "significant_down", n_sig_down,
+            1,  # avoid division by zero for not_significant (will be multiplied by 0)
+        )
+    )
+
     normalized_rank = np.where(
         pd.notna(matched["dir_rank"]),
-        1 - (matched["dir_rank"].astype(float) / total_genes),
+        1 - (matched["dir_rank"].astype(float) / n_sig_for_gene),
         0,
     )
 
@@ -131,8 +148,7 @@ def permutation_test(
         dict with: observed, empirical_p, n_permutations, n_signature_genes.
     """
     applied = apply_signature(signature_df, de_df)
-    total_genes = de_df["locus_tag"].nunique()
-    observed = rank_score(applied, total_genes)
+    observed = rank_score(applied, de_df)
     n_matched = applied["expression_status"].notna().sum()
 
     if np.isnan(observed) or n_matched < 30:
@@ -160,7 +176,7 @@ def permutation_test(
             "direction": random_dirs,
         })
         random_applied = apply_signature(random_sig, de_df)
-        null_scores[i] = rank_score(random_applied, total_genes)
+        null_scores[i] = rank_score(random_applied, de_df)
 
     empirical_p = float((np.abs(null_scores) >= np.abs(observed)).mean())
 
@@ -194,8 +210,7 @@ def score_with_significance(
         n_concordant, n_reversed, n_not_significant, hit_rate.
     """
     applied = apply_signature(signature_df, de_df)
-    total_genes = de_df["locus_tag"].nunique()
-    score = rank_score(applied, total_genes)
+    score = rank_score(applied, de_df)
 
     perm_result = permutation_test(signature_df, de_df, n_perms=n_perms, seed=seed)
 
