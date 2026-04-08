@@ -2003,7 +2003,7 @@ Uses sig_utils/scoring.py for all computation.
 Outputs:
     data/applied_*.csv — signature applied to each experiment
     results/scores_all.csv — all scores with role classification
-    logs/06_score_experiments.log
+    logs/05_score_experiments.log
 
 Run from multiomics_research root:
     uv run analyses/ANALYSIS_DIR/scripts/05_score_experiments.py [--explore]
@@ -2106,7 +2106,7 @@ def main():
     parser.add_argument("--explore", action="store_true", help="Print marker gene traces")
     args = parser.parse_args()
 
-    log_lines = [f"Step 6: Score All Experiments — {datetime.now().isoformat()}", ""]
+    log_lines = [f"Step 5: Score All Experiments — {datetime.now().isoformat()}", ""]
 
     # Load signature
     core = load_signature_csv("core_signature.csv")
@@ -2162,6 +2162,7 @@ def main():
             log_lines.append(line)
 
     write_log("\n".join(log_lines), "05_score_experiments.log")
+
     print(f"\nOutputs: results/scores_all.csv, data/applied_*.csv")
 
 
@@ -2191,7 +2192,7 @@ In chat:
 
 ```bash
 git add scripts/05_score_experiments.py results/scores_all.csv data/applied_*.csv logs/ exploration/ results/RESULTS_MANIFEST.md
-git commit -m "feat: Step 6 — score all experiments with rank score and permutation tests"
+git commit -m "feat: Step 5 — score all experiments with rank score and permutation tests"
 ```
 
 ---
@@ -2364,7 +2365,7 @@ If yes, create `exploration/notebooks/signature_explorer.ipynb`.
 
 ```bash
 git add scripts/06_plot_results.py results/*.png logs/ exploration/ results/RESULTS_MANIFEST.md
-git commit -m "feat: Step 7 — trajectory and control separation plots"
+git commit -m "feat: Step 6 — trajectory and control separation plots"
 ```
 
 ---
