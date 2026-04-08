@@ -9,9 +9,12 @@ build/
 # Benchmarks and eval outputs (regenerated, often large)
 benchmarks/
 
-# Analysis outputs (per-analysis, not tracked)
+# Analysis outputs (per-analysis, large CSVs not tracked by default)
 analyses/*/data/
 analyses/*/results/
+# v2 analysis: track data/results (small, artifact-focused)
+!analyses/2026-04-08-1038-n_limitation_signature_v2/data/
+!analyses/2026-04-08-1038-n_limitation_signature_v2/results/
 
 # Logs (collected locally, not committed)
 *.jsonl
