@@ -1,0 +1,1 @@
+# Gaps and friction points
