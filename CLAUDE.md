@@ -82,11 +82,6 @@ discipline.
 
 ### Process overrides
 
-- **Interactive discovery steps.** Rule 5 (scripts over chat
-  reasoning) has a carve-out for interactive discovery/scoping
-  steps — see the research-methodology skill for the
-  frozen-output + notebook-entry pattern.
-
 - **Don't skip subagent reviews** for tasks that produce data
   outputs. At minimum, run spec compliance review. The tasks that
   seem simple are where silent bugs hide.
@@ -97,6 +92,11 @@ discipline.
   "commit notebook entry for Step N before beginning Step N+1."
   This ensures the executing agent treats the notebook as a
   blocking dependency, not a nice-to-have.
+
+- **Interactive discovery steps.** Rule 5 (scripts over chat
+  reasoning) has a carve-out for interactive discovery/scoping
+  steps — see the research-methodology skill for the
+  frozen-output + notebook-entry pattern.
 
 ## Evaluation Framework
 

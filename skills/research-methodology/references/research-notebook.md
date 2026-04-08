@@ -130,8 +130,7 @@ Everything:
   the analysis design (questions, decisions, rationale)
 - **Each analytical step** — command, inputs, outputs, QC,
   exploration, decision
-- **Reruns** — new entry with "Why" section explaining what changed
-  and the new output
+- **Reruns** — see [Rerun and revision workflow](#rerun-and-revision-workflow)
 - **Chat-based follow-up** — interpretation discussions, "what
   about gene X?" explorations, with actual data points
 - **Questions and decisions** — including dead ends and rejected

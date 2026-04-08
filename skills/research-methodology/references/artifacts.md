@@ -8,14 +8,17 @@ and exploration logs go to disk.
 
 1. [When to create artifacts](#when-to-create-artifacts)
 2. [Directory structure](#directory-structure)
-3. [Research notebook](#research-notebook)
-4. [gaps_and_friction.md](#gaps_and_frictionmd)
-5. [methods.md](#methodsmd)
-6. [Script naming conventions](#script-naming-conventions)
-7. [data/](#data)
-8. [results/](#results)
-9. [Required analysis documents](#required-analysis-documents) — DATA_MANIFEST, RESULTS_MANIFEST, decisions, caveats
-10. [References and citations](#references-and-citations)
+3. [Superpowers artifact capture](#superpowers-artifact-capture)
+4. [Research notebook](#research-notebook)
+5. [gaps_and_friction.md](#gaps_and_frictionmd)
+6. [methods.md](#methodsmd)
+7. [Script naming conventions](#script-naming-conventions)
+8. [data/](#data)
+9. [results/](#results)
+10. [Git tracking convention](#git-tracking-convention)
+11. [Log verbosity](#log-verbosity)
+12. [Required analysis documents](#required-analysis-documents) — DATA_MANIFEST, RESULTS_MANIFEST, decisions, caveats
+13. [References and citations](#references-and-citations)
 
 ## When to create artifacts
 
