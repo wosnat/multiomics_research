@@ -15,6 +15,8 @@ analyses/*/results/
 # v2 analysis: track data/results (small, artifact-focused)
 !analyses/2026-04-08-1038-n_limitation_signature_v2/data/
 !analyses/2026-04-08-1038-n_limitation_signature_v2/results/
+# v2: skip large DE extracts (reproducible from scripts 02 + 04)
+analyses/2026-04-08-1038-n_limitation_signature_v2/data/de_*.csv
 
 # Logs (collected locally, not committed)
 *.jsonl

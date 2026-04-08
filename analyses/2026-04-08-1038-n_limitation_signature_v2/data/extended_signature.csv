@@ -1,0 +1,343 @@
+locus_tag,gene_name,direction,signature_type,tolonen_peak_timepoint,tolonen_best_dir_rank,tolonen_best_global_rank,read_peak_timepoint,read_best_dir_rank,read_best_global_rank,cross_study_best_dir_rank,product,gene_category
+PMM0958,,up,tolonen_only_read_ns,6h,1.0,1,,,,1.0,conserved hypothetical protein (DUF1830),Unknown
+PMM1592,pebB,down,tolonen_only_read_absent,48h,1.0,2,,,,1.0,phycoerythrobilin:ferredoxin oxidoreductase,Coenzyme metabolism
+PMM0551,rbcS,down,tolonen_only_read_ns,48h,3.0,6,,,,3.0,"ribulose bisphosphate carboxylase, small subunit",Photosynthesis
+PMM0815,hli,up,read_only_tolonen_absent,,,,12h,3.0,6,3.0,high light inducible protein,Stress response and adaptation
+PMM1462,,up,tolonen_only_read_ns,6h,3.0,3,,,,3.0,conserved hypothetical protein,Unknown
+PMM1450,atpC,down,tolonen_only_read_absent,6h,5.0,17,,,,5.0,ATP synthase gamma chain,Photosynthesis
+PMM0816,hli,up,read_only_tolonen_absent,,,,12h,5.0,11,5.0,high light inducible protein,Stress response and adaptation
+PMM1041,,up,tolonen_only_read_absent,12h,5.0,10,,,,5.0,RmlC-like cupin domain-containing protein,Central intermediary metabolism
+PMM1240,,down,read_only_tolonen_ns,,,,24h,6.0,9,6.0,methyltransferase domain protein,Secondary metabolites
+PMM0923,rsbW,down,read_only_tolonen_ns,,,,12h,7.0,12,7.0,anti-sigma regulatory factor,Transcription
+PMM1015,,up,read_only_tolonen_ns,,,,24h,7.0,20,7.0,MAPEG family protein,Unknown
+PMM1028,,down,tolonen_only_read_absent,12h,7.0,15,,,,7.0,uncharacterized conserved secreted protein,Unknown
+PMM0627,pcb,down,tolonen_only_read_ns,48h,8.0,30,,,,8.0,"divinyl-chlorophyll a/b binding light harvesting protein, photosystem II-associated",Stress response and adaptation
+PMM1629,rpoD8,down,tolonen_only_read_ns,24h,8.0,21,,,,8.0,"RNA polymerase sigma factor, type II",Stress response and adaptation
+PMM0528,pgeF,down,tolonen_only_read_absent,12h,10.0,18,,,,10.0,multi-copper polyphenol oxidoreductase laccase family protein,Unknown
+PMM1399,hli,up,read_only_tolonen_absent,,,,24h,10.0,25,10.0,high light inducible protein,Stress response and adaptation
+PMM1540,secY,down,tolonen_only_read_ns,6h,10.0,31,,,,10.0,preprotein translocase SecY subunit,Post-translational modification
+PMM1436,groL1,down,tolonen_only_read_ns,24h,10.0,33,,,,10.0,chaperonin GroEL,Stress response and adaptation
+PMM1463,glnB,up,tolonen_only_read_ns,6h,11.0,18,,,,11.0,nitrogen regulatory protein P-II,Stress response and adaptation
+PMM0478,,down,read_only_tolonen_ns,,,,12h,11.0,21,11.0,C-terminal Rossman-fold domain of the monoglucosyldiacylglycerol epimerase MgdE,Lipid metabolism
+PMM1508,tuf,down,tolonen_only_read_ns,24h,11.0,34,,,,11.0,elongation factor EF-Tu,Translation
+PMM0359,,up,tolonen_only_read_absent,12h,12.0,26,,,,12.0,conserved hypothetical protein,Unknown
+PMM0835,,down,read_only_tolonen_ns,,,,24h,13.0,18,13.0,conserved hypothetical protein,Unknown
+PMM0571,,up,read_only_tolonen_ns,,,,24h,13.0,30,13.0,conserved hypothetical protein,Unknown
+PMM1037,,up,tolonen_only_read_absent,6h,13.0,24,,,,13.0,conserved hypothetical protein,Unknown
+PMM1297,trpC,down,tolonen_only_read_absent,6h,14.0,40,,,,14.0,indole-3-glycerol phosphate synthase,Amino acid metabolism
+PMM0228,psbO,down,tolonen_only_read_ns,48h,14.0,53,,,,14.0,photosystem II manganese-stabilizing protein PsbO,Photosynthesis
+PMM0993,,down,read_only_tolonen_ns,,,,12h,15.0,29,15.0,peptidase S51,Post-translational modification
+PMM1439,atpE,down,tolonen_only_read_absent,12h,15.0,25,,,,15.0,ATP synthase epsilon chain,Photosynthesis
+PMM0041,,down,tolonen_only_read_absent,6h,15.0,41,,,,15.0,NADPH-dependent FMN reductase family protein,Carbohydrate metabolism
+PMM1032,lraI,up,read_only_tolonen_ns,,,,12h,16.0,34,16.0,"ABC-type Mn2+/Zn2+ transport system, periplasmic component",Stress response and adaptation
+PMM1398,hli,up,read_only_tolonen_absent,,,,12h,17.0,35,17.0,high light inducible protein,Stress response and adaptation
+PMM1551,rplP,down,tolonen_only_read_ns,12h,17.0,31,,,,17.0,50S ribosomal protein L16,Translation
+PMM1391,,up,tolonen_only_read_ns,48h,17.0,54,,,,17.0,ribbon helix-helix domain containing protein,Regulatory functions
+PMM1031,,up,read_only_tolonen_ns,,,,24h,17.0,35,17.0,"ABC-type Mn2+/Zn2+ transport system, ATP-binding component",Transport
+PMM0347,,down,tolonen_only_read_ns,24h,17.0,47,,,,17.0,uncharacterized conserved membrane protein,Unknown
+PMM0673,phnD,down,tolonen_only_read_absent,6h,17.0,45,,,,17.0,"phosphonate ABC type transporter, substrate binding component",Stress response and adaptation
+PMM0315,psbB,down,tolonen_only_read_ns,48h,18.0,73,,,,18.0,photosystem II chlorophyll-binding protein CP47,Photosynthesis
+PMM1413,,up,read_only_tolonen_ns,,,,12h,18.0,37,18.0,conserved hypothetical protein,Unknown
+PMM0738,,up,tolonen_only_read_absent,12h,19.0,58,,,,19.0,conserved hypothetical protein,Unknown
+PMM0857,,down,read_only_tolonen_ns,,,,24h,19.0,36,19.0,conserved hypothetical protein,Coenzyme metabolism
+PMM1550,rpmC,down,tolonen_only_read_ns,24h,20.0,38,,,,20.0,50S ribosomal protein L29,Translation
+PMM0727,pdeM,up,tolonen_only_read_absent,6h,20.0,55,,,,20.0,"metallophosphoesterase, DNA ligase-associated",Replication and repair
+PMM0685,,up,read_only_tolonen_absent,,,,24h,20.0,41,20.0,conserved hypothetical protein,Unknown
+PMM0082,ndbB,up,read_only_tolonen_ns,,,,12h,20.0,39,20.0,type 2 NADH dehydrogenase,Carbohydrate metabolism
+PMM1151,infA,up,read_only_tolonen_ns,,,,12h,22.0,43,22.0,translation initiation factor IF-1,Translation
+PMM1259,rfbE,up,read_only_tolonen_ns,,,,24h,22.0,46,22.0,perosamine synthetase protein family,Central intermediary metabolism
+PMM1003,,down,read_only_tolonen_ns,,,,24h,23.0,43,23.0,conserved hypothetical protein,Unknown
+PMM0731,,up,tolonen_only_read_absent,6h,24.0,67,,,,24.0,uncharacterized conserved membrane protein,Unknown
+PMM0519,talA,up,tolonen_only_read_ns,6h,25.0,71,,,,25.0,transaldolase,Carbohydrate metabolism
+PMM0997,,up,tolonen_only_read_ns,48h,25.0,100,,,,25.0,uncharacterized conserved membrane protein,Unknown
+PMM0372,cynD,up,tolonen_only_read_absent,12h,25.0,78,,,,25.0,cyanate ABC transporter ATP-binding protein,Central intermediary metabolism
+PMM0804,ftn,up,tolonen_only_read_ns,6h,26.0,73,,,,26.0,ferritin,Transport
+PMM0220,cp12,up,tolonen_only_read_ns,24h,27.0,105,,,,27.0,CP12 polypeptide,Photosynthesis
+PMM1680,,up,read_only_tolonen_absent,,,,12h,28.0,56,28.0,conserved hypothetical protein specific to marine picocyanobacteria,Unknown
+PMM0086,,up,tolonen_only_read_ns,24h,28.0,145,,,,28.0,conserved hypothetical protein,Unknown
+PMM1549,rpsQ,down,tolonen_only_read_ns,12h,28.0,46,,,,28.0,30S ribosomal protein S17,Translation
+PMM0150,ndhD1,up,tolonen_only_read_ns,24h,29.0,159,,,,29.0,NADH dehydrogenase I subunit NdhD (chain 4 or M),Carbohydrate metabolism
+PMM1125,,down,read_only_tolonen_ns,,,,24h,29.0,57,29.0,"conserved hypothetical protein, Prochlorococcus-specific",Unknown
+PMM0908,ilvA,up,tolonen_only_read_absent,6h,29.0,78,,,,29.0,threonine ammonia-lyase,Amino acid metabolism
+PMM1603,rnc,up,read_only_tolonen_ns,,,,12h,30.0,60,30.0,ribonuclease III,Transcription
+PMM1038,,up,tolonen_only_read_absent,6h,30.0,80,,,,30.0,A circularly permuted ATPgrasp family protein,Unknown
+PMM1427,,up,read_only_tolonen_absent,,,,24h,30.0,64,30.0,conserved hypothetical protein,Unknown
+PMM1078,,up,tolonen_only_read_ns,6h,31.0,81,,,,31.0,conserved hypothetical protein,Unknown
+PMM0212,,up,read_only_tolonen_ns,,,,24h,31.0,66,31.0,possible regulator of sodium-dependent bicarbonate transport,Regulatory functions
+PMM0058,,up,read_only_tolonen_ns,,,,12h,31.0,61,31.0,PRC-barrel domain-containing protein,Unknown
+PMM1050,,up,tolonen_only_read_absent,12h,31.0,102,,,,31.0,conserved hypothetical protein,Unknown
+PMM1539,adk,down,tolonen_only_read_absent,6h,32.0,63,,,,32.0,adenylate kinase,Nucleotide metabolism
+PMM0395,sepF,up,tolonen_only_read_ns,24h,33.0,187,,,,33.0,cell division protein SepF (Cdv2),Cell cycle and division
+PMM0829,tpiA,down,tolonen_only_read_ns,6h,33.0,72,,,,33.0,triosephosphate isomerase,Carbohydrate metabolism
+PMM1548,rplN,down,tolonen_only_read_ns,6h,34.0,74,,,,34.0,50S ribosomal protein L14,Translation
+PMM0237,,up,tolonen_only_read_ns,12h,34.0,120,,,,34.0,conserved hypothetical protein,Cell wall and membrane
+PMM1123,hupE,up,tolonen_only_read_ns,24h,34.0,188,,,,34.0,hydrogenase/urease accessory protein,Post-translational modification
+PMM1045,,up,tolonen_only_read_ns,48h,34.0,137,,,,34.0,Uncharacterized conserved membrane protein,Unknown
+PMM1524,psaA,down,tolonen_only_read_ns,48h,35.0,139,,,,35.0,photosystem I core protein PsaA,Photosynthesis
+PMM1434,gpmI,up,tolonen_only_read_ns,12h,35.0,121,,,,35.0,"2,3-bisphosphoglycerate-independent phosphoglycerate mutase",Carbohydrate metabolism
+PMM1313,clpP4,up,tolonen_only_read_ns,6h,35.0,88,,,,35.0,"ATP-dependent Clp protease, protease subunit",Post-translational modification
+PMM1058,petG,down,read_only_tolonen_ns,,,,24h,36.0,66,36.0,cytochrome b6-f complex subunit 5,Photosynthesis
+PMM0448,ctaB,up,tolonen_only_read_ns,6h,36.0,89,,,,36.0,protoheme IX farnesyltransferase,Coenzyme metabolism
+PMM0244,dcd,up,tolonen_only_read_ns,12h,36.0,128,,,,36.0,deoxycytidine triphosphate deaminase,Nucleotide metabolism
+PMM0023,gap2,down,tolonen_only_read_ns,48h,37.0,82,,,,37.0,glyceraldehyde-3-phosphate dehydrogenase,Carbohydrate metabolism
+PMM0544,chlB,up,tolonen_only_read_ns,6h,37.0,90,,,,37.0,"light-independent protochlorophyllide reductase, B subunit",Coenzyme metabolism
+PMM1595,,up,tolonen_only_read_absent,6h,38.0,91,,,,38.0,conserved hypothetical protein,Unknown
+PMM1335,lpxA,down,tolonen_only_read_absent,6h,38.0,97,,,,38.0,acyl-[acyl-carrier-protein]-UDP-N- acetylglucosamine O-acyltransferase,Cell wall and membrane
+PMM1400,,down,tolonen_only_read_ns,48h,38.0,160,,,,38.0,RmlC-like cupin domain-containing protein,Post-translational modification
+PMM1070,crtE,down,tolonen_only_read_absent,6h,39.0,103,,,,39.0,geranylgeranyl pyrophosphate synthase,Coenzyme metabolism
+PMM1704,dnaK3,down,tolonen_only_read_ns,48h,39.0,124,,,,39.0,chaperone protein DnaK,Stress response and adaptation
+PMM1669,gcvH,up,read_only_tolonen_ns,,,,12h,39.0,75,39.0,glycine cleavage system H protein,Amino acid metabolism
+PMM1602,,up,tolonen_only_read_ns,24h,39.0,215,,,,39.0,Conserved hypothetical protein,Unknown
+PMM0338,,up,tolonen_only_read_ns,48h,40.0,152,,,,40.0,conserved hypothetical protein CHP03894,Unknown
+PMM1169,,up,tolonen_only_read_ns,24h,40.0,157,,,,40.0,conserved hypothetical protein,Unknown
+PMM1677,,up,tolonen_only_read_absent,12h,40.0,145,,,,40.0,"SprT-like, zinc ribbon domain-containing protein",Unknown
+PMM1479,,up,tolonen_only_read_ns,48h,41.0,153,,,,41.0,Conserved hypothetical protein,Unknown
+PMM1429,,up,tolonen_only_read_ns,6h,41.0,95,,,,41.0,conserved hypothetical protein (DUF2811),Unknown
+PMM0134,rpaB,down,tolonen_only_read_ns,6h,41.0,105,,,,41.0,two-component system response regulator RR class II (RRII)-CheY-OmpR,Signal transduction
+PMM1152a,petM,down,read_only_tolonen_absent,,,,24h,41.0,80,41.0,cytochrome b6/f complex subunit VII,Carbohydrate metabolism
+PMM1097,recR,up,tolonen_only_read_absent,12h,41.0,149,,,,41.0,recombination protein RecR,Replication and repair
+PMM0432,,up,tolonen_only_read_absent,12h,42.0,98,,,,42.0,conserved hypothetical protein,Unknown
+PMM1289,rpoD6,up,tolonen_only_read_ns,6h,42.0,96,,,,42.0,"RNA polymerase sigma factor, type II",Transcription
+PMM1547,rplX,down,tolonen_only_read_absent,6h,42.0,107,,,,42.0,50S ribosomal protein L24,Translation
+PMM1142,dxr,down,tolonen_only_read_absent,12h,42.0,69,,,,42.0,1-deoxy-D-xylulose 5-phosphate reductoisomerase,Coenzyme metabolism
+PMM0416,,down,read_only_tolonen_ns,,,,24h,44.0,83,44.0,methyltransferase domain protein,Secondary metabolites
+PMM1191,pnp,down,tolonen_only_read_ns,12h,44.0,73,,,,44.0,polyribonucleotide nucleotidyltransferase,Transcription
+PMM1482,hli,down,tolonen_only_read_ns,6h,45.0,115,,,,45.0,high light inducible protein,Stress response and adaptation
+PMM0661,nrdJ,up,tolonen_only_read_ns,12h,45.0,156,,,,45.0,ribonucleoside-diphosphate reductase,Coenzyme metabolism
+PMM0667,,up,read_only_tolonen_ns,,,,12h,45.0,85,45.0,conserved hypothetical protein,Unknown
+PMM1171,isiB,down,read_only_tolonen_ns,,,,12h,45.0,96,45.0,flavodoxin,Stress response and adaptation
+PMM0016,grpE,down,tolonen_only_read_ns,24h,45.0,108,,,,45.0,chaperone protein GrpE,Stress response and adaptation
+PMM1667,,up,tolonen_only_read_ns,6h,46.0,102,,,,46.0,conserved hypothetical protein,Stress response and adaptation
+PMM0741,psb29,down,tolonen_only_read_ns,6h,46.0,117,,,,46.0,photosystem II repair protein Psb29,Stress response and adaptation
+PMM0799,,down,read_only_tolonen_ns,,,,24h,47.0,89,47.0,glutaredoxin family protein,Energy production
+PMM0091,,up,tolonen_only_read_ns,48h,47.0,176,,,,47.0,bacteriophage-like protein,Mobile elements
+PMM0032,,up,tolonen_only_read_ns,12h,47.0,158,,,,47.0,putative bacterial type II secretion system protein,Unknown
+PMM1392,,up,read_only_tolonen_ns,,,,12h,48.0,90,48.0,possible Heat-labile enterotoxin alpha chain,Unknown
+PMM0060,accC,down,tolonen_only_read_ns,6h,48.0,121,,,,48.0,"acetyl-CoA carboxylase, biotin carboxylase subunit",Lipid metabolism
+PMM1276,,down,read_only_tolonen_absent,,,,24h,48.0,90,48.0,conserved hypothetical protein,Stress response and adaptation
+PMM1689,pyrG,up,tolonen_only_read_ns,24h,49.0,208,,,,49.0,CTP synthase,Nucleotide metabolism
+PMM1510,rpsG,down,tolonen_only_read_ns,6h,49.0,125,,,,49.0,30S ribosomal protein S7,Translation
+PMM0719,,up,tolonen_only_read_ns,12h,49.0,163,,,,49.0,conserved hypothetical protein (DUF3764),Unknown
+PMM0622,,down,tolonen_only_read_ns,24h,50.0,108,,,,50.0,uncharacterized conserved membrane protein (DUF3721),Unknown
+PMM1589,purM,up,tolonen_only_read_absent,12h,50.0,164,,,,50.0,phosphoribosylformylglycinamidine cyclo-ligase,Nucleotide metabolism
+PMM0918,cumB,up,tolonen_only_read_absent,6h,51.0,120,,,,51.0,cytidine and deoxycytidylate deaminase zinc-binding region family protein,Nucleotide metabolism
+PMM0852,,up,read_only_tolonen_ns,,,,12h,52.0,100,52.0,conserved hypothetical protein,Unknown
+PMM1663,ycf37,down,tolonen_only_read_absent,6h,52.0,130,,,,52.0,photosystem I assembly protein Ycf37,Photosynthesis
+PMM0055,,up,tolonen_only_read_ns,12h,52.0,169,,,,52.0,"uncharacterized conserved inner membrane protein, YqjD/ElaB family",Unknown
+PMM1030,zur,down,read_only_tolonen_ns,,,,12h,52.0,113,52.0,zinc uptake regulator family protein,Regulatory functions
+PMM0340,,up,tolonen_only_read_absent,6h,52.0,135,,,,52.0,uncharacterized conserved membrane protein,Stress response and adaptation
+PMM0742,clpP1,up,tolonen_only_read_ns,24h,53.0,197,,,,53.0,"ATP-dependent Clp protease, protease subunit",Post-translational modification
+PMM1379,,down,tolonen_only_read_absent,12h,53.0,87,,,,53.0,putative lysine decarboxylase family protein,Unknown
+PMM0235,gatC,up,tolonen_only_read_ns,12h,53.0,170,,,,53.0,aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C,Stress response and adaptation
+PMM0295,rub,down,tolonen_only_read_ns,6h,54.0,132,,,,54.0,rubredoxin,Carbohydrate metabolism
+PMM0092,,up,read_only_tolonen_ns,,,,24h,54.0,119,54.0,conserved hypothetical protein,Unknown
+PMM0737,,up,tolonen_only_read_absent,12h,54.0,175,,,,54.0,conserved hypothetical protein,Unknown
+PMM0366,,up,tolonen_only_read_ns,24h,55.0,309,,,,55.0,Type-1 copper (blue) domain,Unknown
+PMM0509,,up,tolonen_only_read_absent,12h,55.0,143,,,,55.0,conserved hypothetical protein,Unknown
+PMM1395,,up,read_only_tolonen_ns,,,,12h,55.0,105,55.0,conserved hypothetical protein,Unknown
+PMM1546,rplE,down,tolonen_only_read_ns,6h,56.0,134,,,,56.0,50S ribosomal protein L5,Translation
+PMM0231,,down,read_only_tolonen_ns,,,,24h,56.0,107,56.0,conserved hypothetical protein,Unknown
+PMM0116,iscA,up,tolonen_only_read_ns,24h,56.0,312,,,,56.0,iron-sulfur cluster complex assembly protein IscA,Translation
+PMM0492,,down,read_only_tolonen_ns,,,,12h,57.0,122,57.0,uncharacterised protein family UPF0047,Unknown
+PMM1204,rfbF,up,read_only_tolonen_ns,,,,24h,57.0,124,57.0,glucose-1-phosphate cytidylyltransferase,Cell wall and membrane
+PMM0200,rnhA,down,tolonen_only_read_ns,6h,57.0,137,,,,57.0,ribonuclease HI,Transcription
+PMM0090,degQ,up,tolonen_only_read_absent,12h,57.0,186,,,,57.0,"serine endoprotease, periplasmic",Post-translational modification
+PMM0541,,down,tolonen_only_read_ns,12h,57.0,93,,,,57.0,conserved membrane protein,Unknown
+PMM1671,,up,read_only_tolonen_ns,,,,24h,58.0,126,58.0,conserved hypothetical protein,Unknown
+PMM0619,acs,down,tolonen_only_read_ns,6h,58.0,139,,,,58.0,acetate--CoA ligase,Carbohydrate metabolism
+PMM1514,lipA2,up,tolonen_only_read_ns,24h,58.0,318,,,,58.0,lipoyl synthase,Coenzyme metabolism
+PMM0795,ycf55,up,tolonen_only_read_absent,12h,58.0,187,,,,58.0,conserved hypothetical protein,Transcription
+PMM0635,mscS,up,tolonen_only_read_absent,6h,58.0,149,,,,58.0,"small-conductance mechanosensitive ion channel, MscS family",Transport
+PMM1626,tsaE,up,read_only_tolonen_ns,,,,12h,58.0,109,58.0,tRNA threonylcarbamoyladenosine biosynthesis protein TsaE,Translation
+PMM0360,,up,tolonen_only_read_absent,12h,59.0,189,,,,59.0,conserved hypothetical protein DUF985,Unknown
+PMM1351,,up,read_only_tolonen_ns,,,,24h,59.0,127,59.0,conserved hypothetical protein,Unknown
+PMM1369,,down,read_only_tolonen_ns,,,,24h,60.0,111,60.0,GAF domain-containing protein,Signal transduction
+PMM1272,,up,tolonen_only_read_ns,24h,60.0,329,,,,60.0,conserved membrane protein,Unknown
+PMM0117,,up,read_only_tolonen_ns,,,,24h,60.0,129,60.0,tetratricopeptide repeat family protein,Cell motility
+PMM0980,,up,tolonen_only_read_absent,12h,60.0,191,,,,60.0,conserved hypothetical protein,Unknown
+PMM0649,,down,read_only_tolonen_ns,,,,12h,61.0,130,61.0,pentapeptide repeats family protein,Unknown
+PMM0223,psbA,up,read_only_tolonen_ns,,,,24h,62.0,131,62.0,photosystem II protein D1.1,Photosynthesis
+PMM0943,rpsO,down,read_only_tolonen_ns,,,,12h,63.0,136,63.0,30S ribosomal protein S15,Translation
+PMM0166,cysC,down,read_only_tolonen_ns,,,,24h,63.0,115,63.0,adenylylsulfate kinase,Central intermediary metabolism
+PMM0263,amt1,up,tolonen_only_read_ns,24h,63.0,226,,,,63.0,ammonium transporter,Central intermediary metabolism
+PMM0700,,down,tolonen_only_read_ns,24h,64.0,145,,,,64.0,conserved hypothetical protein,Unknown
+PMM0380,,up,tolonen_only_read_absent,6h,64.0,168,,,,64.0,nuclear transport factor 2 (NTF2-like) superfamily protein,Unknown
+PMM1344,rplU,down,read_only_tolonen_ns,,,,12h,64.0,117,64.0,50S ribosomal protein L21,Translation
+PMM1477,fer,up,read_only_tolonen_ns,,,,24h,64.0,137,64.0,3Fe-4S ferredoxin,Stress response and adaptation
+PMM1121,som,up,tolonen_only_read_ns,24h,65.0,358,,,,65.0,outer membrane porin,Stress response and adaptation
+PMM1013,,up,tolonen_only_read_absent,12h,65.0,205,,,,65.0,conserved hypothetical protein,Unknown
+PMM1615,ruvB,up,read_only_tolonen_ns,,,,12h,65.0,124,65.0,holliday junction ATP-dependent DNA helicase RuvB,Replication and repair
+PMM0135,plsX,down,tolonen_only_read_absent,6h,66.0,162,,,,66.0,glycerol-3-phosphate acyltransferase PlsX,Lipid metabolism
+PMM0812,,up,read_only_tolonen_ns,,,,24h,66.0,141,66.0,conserved hypothetical protein,Unknown
+PMM1383,,up,read_only_tolonen_ns,,,,12h,66.0,125,66.0,conserved hypothetical protein,Translation
+PMM0387,aroQ,up,tolonen_only_read_absent,12h,67.0,209,,,,67.0,"3-dehydroquinate dehydratase, type II",Amino acid metabolism
+PMM1119,som,up,tolonen_only_read_ns,24h,68.0,372,,,,68.0,outer membrane porin,Stress response and adaptation
+PMM1489,rpiA,down,tolonen_only_read_ns,6h,68.0,136,,,,68.0,ribose 5-phosphate isomerase A,Carbohydrate metabolism
+PMM0443,,up,tolonen_only_read_ns,12h,68.0,217,,,,68.0,abrB-like transcriptional regulator family protein,Transcription
+PMM1327,plsY,up,read_only_tolonen_ns,,,,24h,68.0,143,68.0,glycerol-3-phosphate acyltransferase (GPAT),Lipid metabolism
+PMM0144,crtP,up,read_only_tolonen_ns,,,,24h,69.0,145,69.0,phytoene dehydrogenase,Coenzyme metabolism
+PMM1184,rnpA,down,tolonen_only_read_ns,6h,69.0,160,,,,69.0,ribonuclease P protein component,Transcription
+PMM1543,rplR,down,tolonen_only_read_ns,24h,69.0,153,,,,69.0,50S ribosomal protein L18,Stress response and adaptation
+PMM1506,lon,down,tolonen_only_read_ns,12h,69.0,116,,,,69.0,ATP-dependent protease,Post-translational modification
+PMM0614,comB,down,read_only_tolonen_ns,,,,12h,70.0,153,70.0,2-phosphosulpholactate phosphatase,Carbohydrate metabolism
+PMM0966,ureD,up,read_only_tolonen_ns,,,,12h,70.0,133,70.0,urease accessory protein UreD,Stress response and adaptation
+PMM0656,,up,tolonen_only_read_absent,12h,70.0,220,,,,70.0,putative membrane protein,Cell wall and membrane
+PMM0409,metB,down,tolonen_only_read_absent,12h,70.0,118,,,,70.0,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+PMM0343,tatA,up,tolonen_only_read_ns,12h,71.0,222,,,,71.0,"twin arginine-targeting translocase, TatA/E family protein",Post-translational modification
+PMM0681,,up,read_only_tolonen_ns,,,,24h,71.0,150,71.0,"protein arginine methyltransferase, NDUFAF7 superfamily",Unknown
+PMM0137,fabD,down,tolonen_only_read_ns,6h,71.0,169,,,,71.0,malonyl CoA-acyl carrier protein transacylase (MCAT),Lipid metabolism
+PMM1157,psbD,up,tolonen_only_read_ns,24h,71.0,324,,,,71.0,photosystem II D2 protein,Photosynthesis
+PMM0692,,down,read_only_tolonen_ns,,,,24h,72.0,135,72.0,conserved hypothetical protein,Unknown
+PMM0321,minD,up,tolonen_only_read_ns,12h,72.0,200,,,,72.0,septum site-determining protein MinD,Cell cycle and division
+PMM1605,rimM,up,read_only_tolonen_ns,,,,12h,72.0,138,72.0,16S rRNA processing protein RimM,Transcription
+PMM0883,,up,tolonen_only_read_ns,24h,73.0,384,,,,73.0,flavin reductase-like domain containing protein,Unknown
+PMM0252,psbN,up,read_only_tolonen_ns,,,,24h,74.0,156,74.0,photosystem II reaction center assembly factor,Photosynthesis
+PMM1349,rnz,up,tolonen_only_read_ns,24h,74.0,443,,,,74.0,ribonuclease Z,Transcription
+PMM0451,,up,read_only_tolonen_ns,,,,12h,74.0,148,74.0,conserved hypothetical protein,Unknown
+PMM0283,,down,tolonen_only_read_absent,12h,75.0,127,,,,75.0,thioredoxin domain-containing protein,Stress response and adaptation
+PMM0445,ctaDI,up,tolonen_only_read_ns,24h,75.0,404,,,,75.0,cytochrome c oxidase subunit I,Carbohydrate metabolism
+PMM1687,gcvT,up,tolonen_only_read_absent,12h,76.0,231,,,,76.0,glycine cleavage system T protein,Carbohydrate metabolism
+PMM0633,crtL-e,down,read_only_tolonen_ns,,,,12h,77.0,167,77.0,lycopene epsilon cyclase,Coenzyme metabolism
+PMM0383,,up,read_only_tolonen_ns,,,,24h,78.0,167,78.0,uncharacterized TonB box-containing membrane protein,Cell wall and membrane
+PMM0341,,up,read_only_tolonen_ns,,,,12h,79.0,164,79.0,nif11-like leader peptide domain protein,Unknown
+PMM0698,,up,read_only_tolonen_ns,,,,24h,79.0,168,79.0,conserved hypothetical protein,Unknown
+PMM0062,psbX,down,read_only_tolonen_absent,,,,12h,80.0,162,80.0,photosystem II PsbX protein,Photosynthesis
+PMM1585,,down,tolonen_only_read_ns,6h,80.0,193,,,,80.0,conserved hypothetical protein,Unknown
+PMM0079,prxQ,down,read_only_tolonen_ns,,,,24h,80.0,153,80.0,2-Cys peroxiredoxin,Stress response and adaptation
+PMM1346,,down,read_only_tolonen_ns,,,,24h,81.0,154,81.0,possible S-adenosyl-L-methionine-dependent methyltransferase,Secondary metabolites
+PMM0133,radA,up,read_only_tolonen_ns,,,,12h,82.0,173,82.0,DNA repair protein Sms/RadA,Replication and repair
+PMM0482,phb,up,tolonen_only_read_ns,6h,82.0,229,,,,82.0,prohibitin-like protein,Post-translational modification
+PMM0063,ycf66,up,tolonen_only_read_ns,6h,83.0,233,,,,83.0,uncharacterized conserved hypothetical protein Ycf66,Transcription
+PMM0637,fur,up,tolonen_only_read_ns,12h,83.0,254,,,,83.0,ferric uptake regulator,Stress response and adaptation
+PMM1618,lysS,down,tolonen_only_read_absent,6h,84.0,202,,,,84.0,lysine--tRNA ligase,Translation
+PMM0224,aroC,up,tolonen_only_read_ns,6h,84.0,241,,,,84.0,chorismate synthase,Amino acid metabolism
+PMM1401,,down,read_only_tolonen_ns,,,,24h,84.0,158,84.0,conserved hypothetical protein (DUF3764),Unknown
+PMM0733,,up,tolonen_only_read_absent,12h,85.0,263,,,,85.0,conserved hypothetical protein,Unknown
+PMM0474,,down,tolonen_only_read_ns,6h,85.0,211,,,,85.0,Prochlorococcus/marine Synechococcus Hyper-Conserved Protein (PSHCP),Photosynthesis
+PMM0609,glgA,down,tolonen_only_read_ns,6h,86.0,215,,,,86.0,glycogen synthase,Carbohydrate metabolism
+PMM0146,,up,read_only_tolonen_ns,,,,24h,86.0,182,86.0,uncharacterized conserved membrane protein (DUF3172),Unknown
+PMM1584,rnd,up,tolonen_only_read_absent,12h,86.0,270,,,,86.0,ribonuclease D,Transcription
+PMM0258,glyA,up,read_only_tolonen_ns,,,,12h,86.0,197,86.0,serine hydroxymethyltransferase,Amino acid metabolism
+PMM0471,hli,down,read_only_tolonen_ns,,,,24h,86.0,164,86.0,high light inducible protein,Stress response and adaptation
+PMM0801,ycf39,down,read_only_tolonen_ns,,,,24h,89.0,169,89.0,NAD(P)-binding domain-containing protein,Carbohydrate metabolism
+PMM1414,,up,tolonen_only_read_absent,6h,89.0,266,,,,89.0,conserved hypothetical protein (DUF3303),Unknown
+PMM0732,,up,tolonen_only_read_ns,6h,90.0,269,,,,90.0,"translation initiation factor IF-2, N-terminal domain-containing protein",Unknown
+PMM0957,,up,tolonen_only_read_ns,12h,91.0,286,,,,91.0,putative gRAM domain,Unknown
+PMM1604,ndhS,down,read_only_tolonen_ns,,,,12h,92.0,199,92.0,NADH dehydrogenase I subunit NdhS,Carbohydrate metabolism
+PMM0103,,up,tolonen_only_read_ns,12h,92.0,288,,,,92.0,uncharacterised conserved protein UCP037673,Coenzyme metabolism
+PMM0580,clpB1,down,tolonen_only_read_ns,24h,93.0,210,,,,93.0,ATP-dependent Clp protease ATP-binding subunit ClpB,Stress response and adaptation
+PMM1106,ycf54,up,tolonen_only_read_absent,12h,93.0,289,,,,93.0,protochlorophyllide synthesis factor Ycf54,Coenzyme metabolism
+PMM0153,metF,down,read_only_tolonen_ns,,,,12h,95.0,205,95.0,"5,10-methylenetetrahydrofolate reductase",Central intermediary metabolism
+PMM1596,icd,up,tolonen_only_read_ns,12h,95.0,296,,,,95.0,isocitrate dehydrogenase,Carbohydrate metabolism
+PMM1264,ftsH4,down,tolonen_only_read_ns,12h,95.0,172,,,,95.0,cell division protein FtsH,Stress response and adaptation
+PMM1685,speE,up,read_only_tolonen_ns,,,,24h,95.0,211,95.0,spermidine synthase,Amino acid metabolism
+PMM1388,,up,read_only_tolonen_ns,,,,24h,96.0,214,96.0,conserved hypothetical protein,Stress response and adaptation
+PMM1073,opcA,up,tolonen_only_read_absent,12h,96.0,297,,,,96.0,glucose 6-phosphate dehydrogenase assembly protein,Cellular processes
+PMM1483,rpoC2,down,tolonen_only_read_ns,6h,96.0,235,,,,96.0,"DNA-directed RNA polymerase, beta^^ subunit",Transcription
+PMM0851,,down,read_only_tolonen_ns,,,,24h,97.0,185,97.0,"HAD hydrolase, IA, variant 3 family protein",Unknown
+PMM0777,,up,tolonen_only_read_ns,6h,97.0,298,,,,97.0,pentapeptide repeats family protein,Unknown
+PMM0253,psbI,down,tolonen_only_read_ns,12h,98.0,180,,,,98.0,photosystem II reaction center protein PsbI,Photosynthesis
+PMM0027,accB,down,tolonen_only_read_ns,6h,98.0,239,,,,98.0,"acetyl-CoA carboxylase, biotin carboxyl carrier protein",Lipid metabolism
+PMM0264,lytB,down,read_only_tolonen_ns,,,,12h,98.0,212,98.0,4-hydroxy-3-methylbut-2-enyl diphosphate reductase,Coenzyme metabolism
+PMM0305,ppeB,down,read_only_tolonen_ns,,,,24h,98.0,188,98.0,"phycoerythrin class III, beta subunit",Photosynthesis
+PMM0704,,up,read_only_tolonen_ns,,,,24h,98.0,219,98.0,"potassium ion channel, VIC family",Stress response and adaptation
+PMM0033,,up,tolonen_only_read_ns,12h,99.0,305,,,,99.0,"conserved membrane protein, ArbrB family",Unknown
+PMM0215,hemB,down,tolonen_only_read_absent,6h,99.0,240,,,,99.0,delta-aminolevulinic acid dehydratase,Coenzyme metabolism
+PMM1697,rpoD4,up,tolonen_only_read_ns,12h,100.0,308,,,,100.0,"RNA polymerase sigma factor, type II",Transcription
+PMM0388,miaE,up,read_only_tolonen_ns,,,,24h,100.0,227,100.0,putative tRNA-(MS[2]IO[6]A)-hydroxylase,Translation
+PMM0902,rpmB,down,tolonen_only_read_ns,12h,100.0,184,,,,100.0,50S ribosomal protein L28,Stress response and adaptation
+PMM0929,secD,down,tolonen_only_read_absent,24h,100.0,231,,,,100.0,preprotein translocase SecD subunit,Post-translational modification
+PMM0163,pspE,down,read_only_tolonen_ns,,,,24h,100.0,193,100.0,rhodanese-like domain protein,Inorganic ion transport
+PMM0536,folE,down,tolonen_only_read_ns,6h,101.0,247,,,,101.0,GTP cyclohydrolase I,Coenzyme metabolism
+PMM0342,,up,tolonen_only_read_ns,6h,101.0,315,,,,101.0,"helper component proteinase, Prochlorococcus-specific",Unknown
+PMM0584,glgB,down,tolonen_only_read_absent,12h,101.0,188,,,,101.0,"1,4-alpha-glucan branching enzyme",Carbohydrate metabolism
+PMM1251,,down,tolonen_only_read_ns,6h,102.0,248,,,,102.0,carbamoyltransferase family protein,Post-translational modification
+PMM0557,,down,read_only_tolonen_ns,,,,12h,102.0,225,102.0,conserved hypothetical protein (DUF3136),Unknown
+PMM0301,mtnP,up,read_only_tolonen_ns,,,,24h,102.0,229,102.0,methylthioadenosine phosphorylase,Nucleotide metabolism
+PMM0172,ndhH,up,tolonen_only_read_ns,6h,102.0,317,,,,102.0,NADH dehydrogenase I subunit NdhH (chain 7 or delta),Carbohydrate metabolism
+PMM0500,APE1,down,tolonen_only_read_ns,24h,103.0,234,,,,103.0,acclimation of photosynthesis to environment protein,Stress response and adaptation
+PMM0159,ndhI,up,tolonen_only_read_ns,12h,103.0,316,,,,103.0,NADH dehydrogenase I subunit NdhI,Carbohydrate metabolism
+PMM0924,ycf53,down,tolonen_only_read_absent,6h,103.0,253,,,,103.0,ferredoxin-interacting protein Ycf53,Coenzyme metabolism
+PMM1509,fusA,down,tolonen_only_read_ns,6h,104.0,239,,,,104.0,elongation factor G,Translation
+PMM0546,,up,read_only_tolonen_ns,,,,24h,104.0,234,104.0,conserved hypothetical protein,Unknown
+PMM0243,thyx,up,tolonen_only_read_ns,12h,104.0,319,,,,104.0,thymidylate synthase,Nucleotide metabolism
+PMM1512,glsF,up,tolonen_only_read_ns,6h,104.0,321,,,,104.0,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+PMM0412,,up,read_only_tolonen_ns,,,,24h,105.0,236,105.0,thioredoxin family protein,Nucleotide metabolism
+PMM0926,psb28,down,read_only_tolonen_ns,,,,12h,106.0,245,106.0,photosystem II reaction centre Psb28 protein,Photosynthesis
+PMM1179,,up,read_only_tolonen_ns,,,,24h,106.0,240,106.0,eamA-like transporter family protein,Transport
+PMM0534,accA,down,read_only_tolonen_ns,,,,12h,107.0,249,107.0,"acetyl-CoA carboxylase, carboxyl transferase alpha subunit",Lipid metabolism
+PMM1374,,down,tolonen_only_read_absent,24h,107.0,251,,,,107.0,conserved hypothetical protein,Unknown
+PMM1522,,down,tolonen_only_read_absent,12h,107.0,203,,,,107.0,"beta-glycosyltransferase, family 2",Cell wall and membrane
+PMM0015,msrB,up,tolonen_only_read_ns,6h,107.0,337,,,,107.0,peptide methionine-R-sulfoxide reductase,Stress response and adaptation
+PMM1229,pdhA,down,tolonen_only_read_ns,6h,108.0,279,,,,108.0,pyruvate dehydrogenase E1 component alpha subunit,Amino acid metabolism
+PMM1060,hisH,down,tolonen_only_read_ns,12h,108.0,204,,,,108.0,"imidazole glycerol phosphate synthase, HisH subunit",Amino acid metabolism
+PMM0736,,up,tolonen_only_read_ns,6h,108.0,345,,,,108.0,uncharacterized conserved lipoprotein,Unknown
+PMM1296,,up,tolonen_only_read_ns,6h,109.0,375,,,,109.0,putative membrane protein,Cell wall and membrane
+PMM1318,,down,read_only_tolonen_ns,,,,24h,109.0,210,109.0,conserved hypothetical protein,Unknown
+PMM1042,,down,read_only_tolonen_ns,,,,12h,109.0,254,109.0,pentapeptide repeats family protein,Unknown
+PMM0963,ureC,up,read_only_tolonen_ns,,,,24h,110.0,256,110.0,urease alpha subunit,Stress response and adaptation
+PMM0444,ctaEI,up,tolonen_only_read_absent,12h,110.0,336,,,,110.0,cytochrome c oxidase subunit III,Carbohydrate metabolism
+PMM0999,,down,read_only_tolonen_ns,,,,24h,110.0,212,110.0,conserved hypothetical protein,Unknown
+PMM0017,dnaJ1,down,tolonen_only_read_ns,6h,111.0,293,,,,111.0,DnaJ type I chaperone protein,Stress response and adaptation
+PMM0558,ridA,up,tolonen_only_read_ns,6h,111.0,405,,,,111.0,reactive intermediate/imine deaminase A,Transcription
+PMM0317,psbM,down,read_only_tolonen_ns,,,,24h,111.0,213,111.0,photosystem II reaction center protein PsbM,Photosynthesis
+PMM1363,,up,tolonen_only_read_ns,12h,111.0,338,,,,111.0,conserved hypothetical protein,Unknown
+PMM0553,csoSCA,down,tolonen_only_read_absent,12h,112.0,213,,,,112.0,carboxysomal carbonic anhydrase,Photosynthesis
+PMM1441,,down,read_only_tolonen_ns,,,,24h,112.0,216,112.0,conserved hypothetical protein,Unknown
+PMM0284,degT,down,read_only_tolonen_ns,,,,12h,112.0,260,112.0,putative pleiotropic regulatory protein,Regulatory functions
+PMM0806,,up,read_only_tolonen_ns,,,,24h,112.0,263,112.0,"possible transcriptional regulator of iron metabolism, Crp/Fnr family protein",Stress response and adaptation
+PMM0288,chlD,down,tolonen_only_read_absent,6h,112.0,295,,,,112.0,"protoporphyrin IX Mg-chelatase, subunit ChlD",Coenzyme metabolism
+PMM0463,,up,tolonen_only_read_absent,12h,112.0,340,,,,112.0,conserved hypothetical protein,Unknown
+PMM0169,ycf29,up,tolonen_only_read_absent,6h,113.0,364,,,,113.0,"two-component response regulator, NarL subfamily",Stress response and adaptation
+PMM0483,hemL,down,tolonen_only_read_ns,24h,113.0,266,,,,113.0,"glutamate-1-semialdehyde-2,1-aminomutase",Coenzyme metabolism
+PMM0998,,up,read_only_tolonen_ns,,,,24h,114.0,272,114.0,conserved hypothetical protein,Unknown
+PMM1117,psbY,down,read_only_tolonen_absent,,,,24h,114.0,220,114.0,photosystem II PsbY protein,Photosynthesis
+PMM1461,queF,up,tolonen_only_read_absent,12h,114.0,343,,,,114.0,7-cyano-7-deazaguanine reductase,Coenzyme metabolism
+PMM1600,nhaS,down,tolonen_only_read_ns,6h,114.0,311,,,,114.0,"Na+/H+ antiporter, CPA2 family",Transport
+PMM1570,cobO-1,down,read_only_tolonen_ns,,,,12h,115.0,264,115.0,cob(I)alamin adenosyltransferase family protein,Coenzyme metabolism
+PMM0800,,down,read_only_tolonen_absent,,,,24h,116.0,222,116.0,conserved hypothetical protein,Unknown
+PMM0056,,down,tolonen_only_read_ns,6h,116.0,332,,,,116.0,conserved hypothetical protein,Unknown
+PMM0638,arsS,up,tolonen_only_read_ns,12h,116.0,348,,,,116.0,radical SAM/Cys-rich domain protein,Stress response and adaptation
+PMM0311,metK,down,read_only_tolonen_ns,,,,12h,118.0,258,118.0,methionine adenosyltransferase,Amino acid metabolism
+PMM0328,mutM,down,read_only_tolonen_ns,,,,24h,118.0,231,118.0,formamidopyrimidine-DNA glycolase,Replication and repair
+PMM1664,thiG,down,tolonen_only_read_absent,12h,119.0,234,,,,119.0,thiazole synthase,Coenzyme metabolism
+PMM0515,psp,down,read_only_tolonen_ns,,,,24h,119.0,232,119.0,phosphoserine phosphatase,Amino acid metabolism
+PMM1079,,down,tolonen_only_read_ns,6h,120.0,353,,,,120.0,putative cAMP phosphodiesterase class-II,Unknown
+PMM0945,dnaE,up,tolonen_only_read_absent,12h,122.0,369,,,,122.0,"DNA polymerase III, alpha subunit",Replication and repair
+PMM0814,,down,read_only_tolonen_ns,,,,12h,123.0,316,123.0,conserved hypothetical protein,Unknown
+PMM1530,rpmE,down,tolonen_only_read_ns,12h,124.0,249,,,,124.0,50S ribosomal protein L31,Translation
+PMM1665,sqdB,down,read_only_tolonen_ns,,,,24h,124.0,242,124.0,UDP-sulfoquinovose synthase,Stress response and adaptation
+PMM0239,,down,read_only_tolonen_ns,,,,24h,125.0,246,125.0,conserved hypothetical protein,Unknown
+PMM0911,,up,tolonen_only_read_absent,12h,127.0,379,,,,127.0,"possible pyrophosphatase, MazG family",Unknown
+PMM0961,gmgG,up,tolonen_only_read_absent,12h,129.0,385,,,,129.0,possible glucosyl(mannosyl)glycerate-glucosidase,Stress response and adaptation
+PMM0136,fabH,down,read_only_tolonen_ns,,,,24h,129.0,251,129.0,beta-ketoacyl-(acyl-carrier-protein) synthase III (KASIII),Lipid metabolism
+PMM1075,petH,up,tolonen_only_read_ns,12h,131.0,394,,,,131.0,ferredoxin--NADP+ reductase (FNR),Stress response and adaptation
+PMM1317,hli6,down,read_only_tolonen_ns,,,,24h,131.0,261,131.0,high light inducible protein,Stress response and adaptation
+PMM1309,ftsZ,up,tolonen_only_read_ns,12h,132.0,395,,,,132.0,cell division protein FtsZ,Cell cycle and division
+PMM0299,psbL,down,tolonen_only_read_ns,24h,132.0,320,,,,132.0,photosystem II reaction center protein PsbL,Photosynthesis
+PMM0894,ppiB,down,read_only_tolonen_ns,,,,24h,132.0,267,132.0,peptidyl-prolyl cis-trans isomerase,Post-translational modification
+PMM1182,,down,tolonen_only_read_absent,24h,133.0,337,,,,133.0,uncharacterized conserved lipoprotein (DUF2808),Unknown
+PMM1611,thiC,up,tolonen_only_read_ns,12h,135.0,418,,,,135.0,thiamine biosynthesis protein,Coenzyme metabolism
+PMM1247,,down,tolonen_only_read_absent,24h,136.0,352,,,,136.0,hypothetical protein,Unknown
+PMM0012,argH,up,tolonen_only_read_absent,12h,136.0,419,,,,136.0,argininosuccinate lyase,Amino acid metabolism
+PMM1617,,down,tolonen_only_read_ns,12h,136.0,278,,,,136.0,conserved hypothetical protein,Unknown
+PMM0318,prmC,down,read_only_tolonen_ns,,,,24h,137.0,279,137.0,"protein-(glutamine-N5) methyltransferase, release factor-specific",Translation
+PMM0642,metY,down,tolonen_only_read_ns,24h,139.0,432,,,,139.0,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+PMM0611,glmU,up,tolonen_only_read_absent,12h,140.0,436,,,,140.0,bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase,Cell wall and membrane
+PMM0265,,down,tolonen_only_read_ns,24h,140.0,398,,,,140.0,doxX family protein,Unknown
+PMM0294,ndhC,up,tolonen_only_read_ns,12h,142.0,445,,,,142.0,NADH dehydrogenase I subunit NdhC (chain 3 or alpha),Carbohydrate metabolism
+PMM0378,,up,tolonen_only_read_ns,12h,144.0,456,,,,144.0,conserved hypothetical protein (DUF3303),Unknown
+PMM0907,dxs,down,tolonen_only_read_ns,12h,144.0,322,,,,144.0,1-deoxy-D-xylulose-5-phosphate synthase,Coenzyme metabolism
+PMM1331,,up,tolonen_only_read_ns,12h,145.0,457,,,,145.0,conserved hypothetical protein,Replication and repair
+PMM1116,trmFO,down,read_only_tolonen_ns,,,,24h,146.0,304,146.0,methylenetetrahydrofolate--tRNA-(uracil(54)-C(5))-methyltransferase (FADH(2)-oxidizing),Translation
+PMM1650,ycf23,down,read_only_tolonen_ns,,,,24h,147.0,306,147.0,uncharacterized conserved TIM barrel-containing protein (Ycf23),Nucleotide metabolism
+PMM0297,psbE,down,tolonen_only_read_ns,12h,148.0,341,,,,148.0,"cytochrome b559, alpha subunit",Photosynthesis
+PMM0298,psbF1,down,tolonen_only_read_ns,12h,149.0,346,,,,149.0,"cytochrome b559, beta subunit",Photosynthesis
+PMM0405,pdhC,down,read_only_tolonen_ns,,,,24h,149.0,313,149.0,"pyruvate dehydrogenase complex, dihydrolipoamide acyltransferase (E2) component",Carbohydrate metabolism
+PMM0983,,down,read_only_tolonen_ns,,,,24h,152.0,318,152.0,"uncharacterized secreted protein, Prochlorococcus-specific",Unknown
+PMM1485,rpoB,down,tolonen_only_read_ns,12h,155.0,386,,,,155.0,"DNA-directed RNA polymerase, beta subunit",Transcription
+PMM0853,rpmF,down,read_only_tolonen_ns,,,,24h,156.0,336,156.0,50S ribosomal protein L32,Translation
+PMM0462,petC,down,read_only_tolonen_ns,,,,24h,157.0,337,157.0,cytochrome b6-f complex iron-sulfur subunit,Carbohydrate metabolism
+PMM0275,pyrE,down,read_only_tolonen_ns,,,,24h,163.0,390,163.0,orotate phosphoribosyltransferase,Nucleotide metabolism
+PMM1148,,down,read_only_tolonen_ns,,,,24h,164.0,415,164.0,conserved hypothetical protein,Unknown
+PMM0493,cxp,down,read_only_tolonen_ns,,,,24h,166.0,440,166.0,carboxypeptidase Taq (M32) metallopeptidase,Post-translational modification

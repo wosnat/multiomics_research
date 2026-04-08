@@ -1,0 +1,38 @@
+Step 3: Build Signature — 2026-04-08T14:41:21.792824
+
+Study A (tolonen): 10182 rows, 1697 genes
+Study B (read): 2534 rows, 857 genes
+Excluded tolonen timepoints ['0h', '3h']: 10182 → 6788 rows
+Excluded read timepoints ['3h']: 2534 → 1693 rows
+
+--- Filter funnel ---
+tolonen significant genes: 409 (up=196, down=213)
+read significant genes: 319 (up=134, down=185)
+tolonen total locus tags in dataset: 1697
+read total locus tags in dataset: 856
+
+Core: 189 genes (up=74, down=115)
+Extended: 342 genes
+Discordant: 4 genes
+  {'tolonen_only_read_ns': 143, 'read_only_tolonen_ns': 114, 'tolonen_only_read_absent': 73, 'read_only_tolonen_absent': 12}
+
+Top 10 core genes:
+locus_tag gene_name direction  cross_study_best_dir_rank                                            product
+  PMM0030       NaN        up                        1.0                     conserved hypothetical protein
+  PMM0337       NaN        up                        1.0                     conserved hypothetical protein
+  PMM0346       NaN      down                        1.0                     conserved hypothetical protein
+  PMM0370      cynA        up                        1.0 cyanate ABC transporter, substrate-binding protein
+  PMM0550      rbcL      down                        1.0   ribulose bisphosphate carboxylase, large subunit
+  PMM1453      atpF      down                        1.0                             ATP synthase subunit B
+  PMM1452      atpD      down                        1.0                           ATP synthase delta chain
+  PMM0690       hli        up                        2.0                       high light inducible protein
+  PMM1454      atpG      down                        2.0                                    ATP synthase B^
+  PMM1404       hli        up                        2.0                       high light inducible protein
+
+=== Marker gene traces ===
+  PMM0920 (glnA): CORE, direction=up, cross_rank=2.0, tolonen_rank=2.0, read_rank=42.0
+  PMM0370 (cynA): CORE, direction=up, cross_rank=1.0, tolonen_rank=1.0, read_rank=14.0
+  PMM0550 (rbcL): CORE, direction=down, cross_rank=1.0, tolonen_rank=1.0, read_rank=121.0
+  PMM1452 (atpD): CORE, direction=down, cross_rank=1.0, tolonen_rank=1.0, read_rank=1.0
+  PMM0030 (nan): CORE, direction=up, cross_rank=1.0, tolonen_rank=1.0, read_rank=2.0
+  PMM0346 (nan): CORE, direction=down, cross_rank=1.0, tolonen_rank=113.0, read_rank=1.0

@@ -1,0 +1,138 @@
+Step 4: Target DE Extraction — 2026-04-08T14:45:40.084747
+
+Core signature loaded: 189 genes
+=== Weissberg RNA-seq axenic ===
+Rows: 1849
+Genes: 1849
+Experiments: 1
+Timepoints: ['day 14']
+Status: {'not_significant': 972, 'significant_down': 472, 'significant_up': 405}
+Table scope: ['all_detected_genes']
+Omics type: ['RNASEQ']
+Signature coverage: 185/189 genes detected
+Missing signature genes: 4
+Saved: data/de_weissberg_rnaseq_axenic.csv
+
+Marker genes:
+locus_tag gene_name timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN    day 14  5.215585    significant_up        9       <NA>
+  PMM0346       NaN    day 14 -2.591437  significant_down     <NA>        166
+  PMM0370      cynA    day 14  5.158630    significant_up       10       <NA>
+  PMM0550      rbcL    day 14 -3.455845  significant_down     <NA>         77
+  PMM0920      glnA    day 14  3.356977    significant_up       56       <NA>
+  PMM1452      atpD    day 14 -4.059180  significant_down     <NA>         50
+
+=== Weissberg RNA-seq coculture ===
+Rows: 9245
+Genes: 1849
+Experiments: 1
+Timepoints: ['day 18', 'day 31', 'day 60', 'day 89', 'days 60+89']
+Status: {'not_significant': 7858, 'significant_down': 834, 'significant_up': 553}
+Table scope: ['all_detected_genes']
+Omics type: ['RNASEQ']
+Signature coverage: 185/189 genes detected
+Missing signature genes: 4
+Saved: data/de_weissberg_rnaseq_coculture.csv
+
+Marker genes:
+locus_tag gene_name  timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN     day 18 -2.493054   not_significant     <NA>       <NA>
+  PMM0030       NaN     day 31 -3.147740  significant_down     <NA>          9
+  PMM0030       NaN     day 60 -3.119937  significant_down     <NA>          6
+  PMM0030       NaN     day 89 -4.526681  significant_down     <NA>          2
+  PMM0030       NaN days 60+89 -3.653190  significant_down     <NA>          3
+  PMM0346       NaN     day 18 -1.117125  significant_down     <NA>         37
+  PMM0346       NaN     day 31 -1.238515  significant_down     <NA>        171
+  PMM0346       NaN     day 60 -1.072751  significant_down     <NA>        210
+  PMM0346       NaN     day 89 -0.490026   not_significant     <NA>       <NA>
+  PMM0346       NaN days 60+89 -0.759002   not_significant     <NA>       <NA>
+  PMM0370      cynA     day 18 -0.135450   not_significant     <NA>       <NA>
+  PMM0370      cynA     day 31  0.057348   not_significant     <NA>       <NA>
+  PMM0370      cynA     day 60 -0.339350   not_significant     <NA>       <NA>
+  PMM0370      cynA     day 89  0.799704   not_significant     <NA>       <NA>
+  PMM0370      cynA days 60+89  0.339773   not_significant     <NA>       <NA>
+  PMM0550      rbcL     day 18  1.814409   not_significant     <NA>       <NA>
+  PMM0550      rbcL     day 31  2.595395    significant_up       31       <NA>
+  PMM0550      rbcL     day 60  0.798278   not_significant     <NA>       <NA>
+  PMM0550      rbcL     day 89  2.588539    significant_up       21       <NA>
+  PMM0550      rbcL days 60+89  1.954919    significant_up       31       <NA>
+  PMM0920      glnA     day 18 -0.464834   not_significant     <NA>       <NA>
+  PMM0920      glnA     day 31 -1.675926   not_significant     <NA>       <NA>
+  PMM0920      glnA     day 60 -2.173486  significant_down     <NA>         31
+  PMM0920      glnA     day 89 -1.261446   not_significant     <NA>       <NA>
+  PMM0920      glnA days 60+89 -1.646598  significant_down     <NA>         50
+  PMM1452      atpD     day 18  0.428874   not_significant     <NA>       <NA>
+  PMM1452      atpD     day 31 -1.216789   not_significant     <NA>       <NA>
+  PMM1452      atpD     day 60 -1.415695   not_significant     <NA>       <NA>
+  PMM1452      atpD     day 89 -0.391975   not_significant     <NA>       <NA>
+  PMM1452      atpD days 60+89 -0.814921   not_significant     <NA>       <NA>
+
+=== Weissberg proteomics axenic ===
+Rows: 4272
+Genes: 1424
+Experiments: 1
+Timepoints: ['day 14', 'day 31', 'day 89']
+Status: {'not_significant': 3117, 'significant_up': 599, 'significant_down': 556}
+Table scope: ['all_detected_genes']
+Omics type: ['PROTEOMICS']
+Signature coverage: 147/189 genes detected
+Missing signature genes: 42
+Saved: data/de_weissberg_proteomics_axenic.csv
+
+Marker genes:
+locus_tag gene_name timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0346       NaN    day 14 -0.731453   not_significant     <NA>       <NA>
+  PMM0346       NaN    day 31  0.246694   not_significant     <NA>       <NA>
+  PMM0346       NaN    day 89  0.434356   not_significant     <NA>       <NA>
+  PMM0370      cynA    day 14  2.092055    significant_up        7       <NA>
+  PMM0370      cynA    day 31  0.179190   not_significant     <NA>       <NA>
+  PMM0370      cynA    day 89  0.561357   not_significant     <NA>       <NA>
+  PMM0550      rbcL    day 14 -0.000543   not_significant     <NA>       <NA>
+  PMM0550      rbcL    day 31 -1.763381  significant_down     <NA>        137
+  PMM0550      rbcL    day 89 -0.932055   not_significant     <NA>       <NA>
+  PMM0920      glnA    day 14  2.120484    significant_up        5       <NA>
+  PMM0920      glnA    day 31  1.380181    significant_up      141       <NA>
+  PMM0920      glnA    day 89  2.528886    significant_up       29       <NA>
+  PMM1452      atpD    day 14 -0.420425   not_significant     <NA>       <NA>
+  PMM1452      atpD    day 31 -0.351791   not_significant     <NA>       <NA>
+  PMM1452      atpD    day 89 -1.236353  significant_down     <NA>        167
+
+=== Weissberg proteomics coculture ===
+Rows: 7120
+Genes: 1424
+Experiments: 1
+Timepoints: ['day 18', 'day 31', 'day 60', 'day 89', 'days 60+89']
+Status: {'not_significant': 6117, 'significant_up': 609, 'significant_down': 394}
+Table scope: ['all_detected_genes']
+Omics type: ['PROTEOMICS']
+Signature coverage: 147/189 genes detected
+Missing signature genes: 42
+Saved: data/de_weissberg_proteomics_coculture.csv
+
+Marker genes:
+locus_tag gene_name  timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0346       NaN     day 18 -0.856067   not_significant     <NA>       <NA>
+  PMM0346       NaN     day 31 -1.434061  significant_down     <NA>         56
+  PMM0346       NaN     day 60 -0.637643   not_significant     <NA>       <NA>
+  PMM0346       NaN     day 89 -1.089995  significant_down     <NA>         77
+  PMM0346       NaN days 60+89 -0.863819   not_significant     <NA>       <NA>
+  PMM0370      cynA     day 18  2.447187    significant_up        6       <NA>
+  PMM0370      cynA     day 31  3.368236    significant_up        3       <NA>
+  PMM0370      cynA     day 60  3.862445    significant_up        2       <NA>
+  PMM0370      cynA     day 89  3.889550    significant_up        4       <NA>
+  PMM0370      cynA days 60+89  3.875997    significant_up        2       <NA>
+  PMM0550      rbcL     day 18 -0.106927   not_significant     <NA>       <NA>
+  PMM0550      rbcL     day 31  0.363890   not_significant     <NA>       <NA>
+  PMM0550      rbcL     day 60  1.396720    significant_up       83       <NA>
+  PMM0550      rbcL     day 89  1.525762    significant_up       81       <NA>
+  PMM0550      rbcL days 60+89  1.461241    significant_up       82       <NA>
+  PMM0920      glnA     day 18  2.551115    significant_up        5       <NA>
+  PMM0920      glnA     day 31  2.945693    significant_up        9       <NA>
+  PMM0920      glnA     day 60  2.570541    significant_up       19       <NA>
+  PMM0920      glnA     day 89  2.215892    significant_up       35       <NA>
+  PMM0920      glnA days 60+89  2.393216    significant_up       26       <NA>
+  PMM1452      atpD     day 18 -0.089212   not_significant     <NA>       <NA>
+  PMM1452      atpD     day 31 -0.472682   not_significant     <NA>       <NA>
+  PMM1452      atpD     day 60 -0.107262   not_significant     <NA>       <NA>
+  PMM1452      atpD     day 89 -0.038138   not_significant     <NA>       <NA>
+  PMM1452      atpD days 60+89 -0.072700   not_significant     <NA>       <NA>

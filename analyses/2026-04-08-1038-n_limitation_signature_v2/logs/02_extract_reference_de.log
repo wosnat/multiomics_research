@@ -1,0 +1,152 @@
+Step 2: Reference DE Extraction — 2026-04-08T11:13:21.170189
+
+=== Tolonen 2006 N-deprivation (reference) ===
+Rows: 10182
+Genes: 1697
+Experiments: 1
+Timepoints: ['0h', '12h', '24h', '3h', '48h', '6h']
+Status: {'not_significant': 9314, 'significant_down': 476, 'significant_up': 392}
+Table scope: ['all_detected_genes']
+Omics type: ['MICROARRAY']
+Saved: data/de_ref_tolonen_ndep.csv
+
+Marker genes:
+locus_tag gene_name timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN        0h -0.009330   not_significant     <NA>       <NA>
+  PMM0030       NaN        3h  0.462830   not_significant     <NA>       <NA>
+  PMM0030       NaN        6h  1.114323    significant_up       78       <NA>
+  PMM0030       NaN       12h  1.474976    significant_up       78       <NA>
+  PMM0030       NaN       24h  3.619730    significant_up        4       <NA>
+  PMM0030       NaN       48h  4.466445    significant_up        1       <NA>
+  PMM0346       NaN        0h -0.287211   not_significant     <NA>       <NA>
+  PMM0346       NaN        3h -0.087552   not_significant     <NA>       <NA>
+  PMM0346       NaN        6h -0.926129  significant_down     <NA>        113
+  PMM0346       NaN       12h -1.407988  significant_down     <NA>        125
+  PMM0346       NaN       24h -1.265143   not_significant     <NA>       <NA>
+  PMM0346       NaN       48h -0.551720   not_significant     <NA>       <NA>
+  PMM0370      cynA        0h  0.135752   not_significant     <NA>       <NA>
+  PMM0370      cynA        3h  4.308543    significant_up        3       <NA>
+  PMM0370      cynA        6h  5.728487    significant_up        2       <NA>
+  PMM0370      cynA       12h  4.583502    significant_up        2       <NA>
+  PMM0370      cynA       24h  4.064549    significant_up        1       <NA>
+  PMM0370      cynA       48h  3.913806    significant_up        6       <NA>
+  PMM0550      rbcL        0h  0.576359   not_significant     <NA>       <NA>
+  PMM0550      rbcL        3h -1.035884   not_significant     <NA>       <NA>
+  PMM0550      rbcL        6h -3.236220  significant_down     <NA>          1
+  PMM0550      rbcL       12h -4.306516  significant_down     <NA>          5
+  PMM0550      rbcL       24h -3.058971  significant_down     <NA>          5
+  PMM0550      rbcL       48h -3.617786  significant_down     <NA>          5
+  PMM0920      glnA        0h  0.509219   not_significant     <NA>       <NA>
+  PMM0920      glnA        3h  3.759732    significant_up        5       <NA>
+  PMM0920      glnA        6h  5.060512    significant_up        5       <NA>
+  PMM0920      glnA       12h  4.141780    significant_up        4       <NA>
+  PMM0920      glnA       24h  3.921746    significant_up        2       <NA>
+  PMM0920      glnA       48h  3.798889    significant_up        8       <NA>
+  PMM1452      atpD        0h  0.284171   not_significant     <NA>       <NA>
+  PMM1452      atpD        3h -1.213518   not_significant     <NA>       <NA>
+  PMM1452      atpD        6h -3.109228  significant_down     <NA>          2
+  PMM1452      atpD       12h -4.442500  significant_down     <NA>          3
+  PMM1452      atpD       24h -4.328967  significant_down     <NA>          1
+  PMM1452      atpD       48h -3.480636  significant_down     <NA>          6
+
+=== Read 2017 N-depleted (reference) ===
+Rows: 2534
+Genes: 857
+Experiments: 1
+Timepoints: ['12h', '24h', '3h']
+Status: {'not_significant': 1937, 'significant_down': 326, 'significant_up': 271}
+Table scope: ['filtered_subset']
+Omics type: ['RNASEQ']
+Saved: data/de_ref_read_ndep.csv
+
+Marker genes:
+locus_tag gene_name timepoint  log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN        3h    0.36   not_significant     <NA>       <NA>
+  PMM0030       NaN       12h    5.12    significant_up        2       <NA>
+  PMM0030       NaN       24h    4.93    significant_up        3       <NA>
+  PMM0346       NaN        3h   -0.80   not_significant     <NA>       <NA>
+  PMM0346       NaN       12h   -4.87  significant_down     <NA>          3
+  PMM0346       NaN       24h   -6.53  significant_down     <NA>          1
+  PMM0370      cynA        3h   -1.98   not_significant     <NA>       <NA>
+  PMM0370      cynA       12h    3.85    significant_up       14       <NA>
+  PMM0370      cynA       24h    3.84    significant_up       14       <NA>
+  PMM0550      rbcL        3h    2.93    significant_up       29       <NA>
+  PMM0550      rbcL       12h   -1.48  significant_down     <NA>        121
+  PMM0550      rbcL       24h   -1.28   not_significant     <NA>       <NA>
+  PMM0920      glnA        3h    1.50   not_significant     <NA>       <NA>
+  PMM0920      glnA       12h    2.85    significant_up       42       <NA>
+  PMM0920      glnA       24h    2.45    significant_up       63       <NA>
+  PMM1452      atpD        3h    0.00   not_significant     <NA>       <NA>
+  PMM1452      atpD       12h   -5.53  significant_down     <NA>          1
+  PMM1452      atpD       24h   -4.69  significant_down     <NA>          4
+
+=== Tolonen 2006 cyanate (negative_control) ===
+Rows: 1697
+Genes: 1697
+Experiments: 1
+Timepoints: [None]
+Status: {'not_significant': 1654, 'significant_down': 23, 'significant_up': 20}
+Table scope: ['all_detected_genes']
+Omics type: ['MICROARRAY']
+  WARNING: contains single/null timepoints: [None]
+Saved: data/de_ctrl_tolonen_cyanate.csv
+
+Marker genes:
+locus_tag gene_name timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN      None  0.905448   not_significant     <NA>       <NA>
+  PMM0346       NaN      None -0.441224   not_significant     <NA>       <NA>
+  PMM0370      cynA      None  1.171158    significant_up       13       <NA>
+  PMM0550      rbcL      None -1.183855  significant_down     <NA>          2
+  PMM0920      glnA      None  1.399013    significant_up        6       <NA>
+  PMM1452      atpD      None -0.544915   not_significant     <NA>       <NA>
+
+=== Tolonen 2006 urea (negative_control) ===
+Rows: 1697
+Genes: 1697
+Experiments: 1
+Timepoints: [None]
+Status: {'not_significant': 1665, 'significant_up': 18, 'significant_down': 14}
+Table scope: ['all_detected_genes']
+Omics type: ['MICROARRAY']
+  WARNING: contains single/null timepoints: [None]
+Saved: data/de_ctrl_tolonen_urea.csv
+
+Marker genes:
+locus_tag gene_name timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN      None  1.063445   not_significant     <NA>       <NA>
+  PMM0346       NaN      None -0.039472   not_significant     <NA>       <NA>
+  PMM0370      cynA      None -1.056210   not_significant     <NA>       <NA>
+  PMM0550      rbcL      None -0.414564   not_significant     <NA>       <NA>
+  PMM0920      glnA      None -0.195372   not_significant     <NA>       <NA>
+  PMM1452      atpD      None -0.378864   not_significant     <NA>       <NA>
+
+=== Aharonovich 2016 coculture (negative_control) ===
+Rows: 1714
+Genes: 1714
+Experiments: 1
+Timepoints: ['20h']
+Status: {'not_significant': 1418, 'significant_down': 272, 'significant_up': 24}
+Table scope: ['all_detected_genes']
+Omics type: ['RNASEQ']
+Saved: data/de_ctrl_aharonovich_coculture.csv
+
+Marker genes:
+locus_tag gene_name timepoint    log2fc expression_status  rank_up  rank_down
+  PMM0030       NaN       20h -1.304602   not_significant     <NA>       <NA>
+  PMM0346       NaN       20h  0.382410   not_significant     <NA>       <NA>
+  PMM0370      cynA       20h -0.659819   not_significant     <NA>       <NA>
+  PMM0550      rbcL       20h -1.147056   not_significant     <NA>       <NA>
+  PMM0920      glnA       20h -2.792602  significant_down     <NA>        268
+  PMM1452      atpD       20h -3.157367  significant_down     <NA>        255
+
+=== Steglich 2006 high white light (negative_control) ===
+Rows: 198
+Genes: 198
+Experiments: 1
+Timepoints: [None]
+Status: {'significant_up': 115, 'significant_down': 59, 'not_significant': 24}
+Table scope: ['filtered_subset']
+Omics type: ['MICROARRAY']
+  WARNING: contains single/null timepoints: [None]
+Saved: data/de_ctrl_steglich_high_white_light.csv
+No marker genes found

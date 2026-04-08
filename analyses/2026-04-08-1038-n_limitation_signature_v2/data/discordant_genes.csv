@@ -1,0 +1,5 @@
+locus_tag,gene_name,direction_a_label,direction_b_label,tolonen_best_dir_rank,read_best_dir_rank,product,gene_category
+PMM0213,sbtA,down,up,75.0,83.0,possible sodium-dependent bicarbonate transporter,Transport
+PMM0660,,up,down,27.0,141.0,conserved hypothetical protein,Unknown
+PMM1069,folD,up,down,44.0,41.0,"bifunctional 5,10-methylene-tetrahydrofolate dehydrogenase/ 5,10-methylene-tetrahydrofolate cyclohydrolase",Coenzyme metabolism
+PMM1150,trxB,down,up,116.0,72.0,thioredoxin reductase fused with a thioredoxin domain (large NTR System or NTRC),Coenzyme metabolism

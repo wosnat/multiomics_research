@@ -47,6 +47,34 @@
 - `exploration/` — research notebook
 - `superpowers/` — spec, plan, brainstorm log
 
+## How to reproduce
+
+Requires Neo4j running + multiomics_explorer installed. Run from `multiomics_research` root.
+
+```bash
+# Step 1: Experiment scoping (was done interactively — CSV tracked in git)
+
+# Step 2: Extract reference and control DE data (large CSVs, not tracked)
+uv run analyses/2026-04-08-1038-n_limitation_signature_v2/scripts/02_extract_reference_de.py
+
+# Step 3: Build signature (produces core/extended/discordant CSVs)
+uv run analyses/2026-04-08-1038-n_limitation_signature_v2/scripts/03_build_signature.py
+
+# Step 4: Extract target DE data (large CSVs, not tracked)
+uv run analyses/2026-04-08-1038-n_limitation_signature_v2/scripts/04_extract_target_de.py
+
+# Step 5: Score all experiments (produces scores_all.csv + applied subsets)
+uv run analyses/2026-04-08-1038-n_limitation_signature_v2/scripts/05_score_experiments.py
+
+# Step 6: Generate plots
+uv run analyses/2026-04-08-1038-n_limitation_signature_v2/scripts/06_plot_results.py
+
+# Run tests
+uv run python -m pytest analyses/2026-04-08-1038-n_limitation_signature_v2/sig_utils/tests/ -v
+```
+
+Steps 2 and 4 produce large DE extract CSVs (`de_*.csv`) that are not tracked in git. All other outputs (signatures, scores, plots, logs) are tracked. Re-run steps 2+4 first to regenerate the extracts, then steps 3-6 will work.
+
 ## Spec and plan
 
 - **Spec:** `superpowers/spec.md`
