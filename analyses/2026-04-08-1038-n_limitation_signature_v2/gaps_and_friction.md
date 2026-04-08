@@ -72,6 +72,8 @@
 
 8. **Plotting cosmetics.** Trajectory x-axis in hours (hard to read as days), cramped x-labels in tier comparison. Affects publication readiness.
 
+9. **Generated artifacts not committed until the end.** Data files, results, and logs were produced throughout the analysis but only committed at the very end when "lots of untracked files" was noticed. Should have been committed with each step. Related: no clear convention for which generated files to track (small artifacts) vs gitignore (large reproducible extracts). Had to decide this retroactively and add gitignore rules + reproduction docs after the fact.
+
 ### Proposed changes
 
 **To the research-methodology skill:**
@@ -85,6 +87,8 @@
 4. **Manifest update timing.** "Updated with every extraction step" is correct but clashes with interactive flow. Practical rule: "manifest updated in the same commit that adds the new data file."
 
 5. **Methodological revision pattern.** When the metric/formula needs to change mid-analysis (as happened with rank normalization), the skill should describe the rerun workflow: update the utility, rerun tests, rescore everything, add a rerun entry to the notebook explaining what changed and why. We did this correctly but ad hoc.
+
+6. **Git tracking convention for analysis outputs.** The skill should specify: (a) commit generated artifacts with the step that produces them, not retroactively at the end; (b) distinguish small artifacts to track (signatures, scores, plots, logs) from large reproducible extracts to gitignore (raw DE CSVs); (c) README must include reproduction instructions ("run steps 2+4 to regenerate untracked extracts, then 3-6 for the rest").
 
 6. **Working example for formula specs.** The statistical rigor reference says "every formula must include worked examples." This was followed in the brainstorming (rank score worked example) but the spec's formula description was still somewhat abstract. The toy test data ended up being the real worked examples — perhaps the skill should say "toy test = worked example."
 
