@@ -105,6 +105,7 @@ def extract_annotations(
     Genes in `not_found` (unknown to the KG) are silently ignored.
     """
     from multiomics_explorer import gene_ontology_terms
+    from multiomics_explorer.analysis import to_dataframe
 
     if not locus_tags:
         return pd.DataFrame(columns=_ANNOTATION_COLS)
@@ -116,12 +117,11 @@ def extract_annotations(
         conn=conn,
     )
 
-    rows = result.get("results", [])
-    if not rows:
+    if not result.get("results"):
         return pd.DataFrame(columns=_ANNOTATION_COLS)
 
-    df = pd.DataFrame(rows)[["locus_tag", "term_id", "term_name"]]
-    return df.reset_index(drop=True)
+    df = to_dataframe(result)
+    return df[["locus_tag", "term_id", "term_name"]].reset_index(drop=True)
 
 
 # ---------------------------------------------------------------------------
