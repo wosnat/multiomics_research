@@ -32,11 +32,12 @@ They converge in interpretation, and eventually in Approach C (hybrid).
 
 ## Goals
 
-1. **Annotation landscape characterization** — systematic survey of all KG ontologies for MED4, scoped to the gene universes in the v2 experiments
-2. **Ranked ontology recommendations** — scored by coverage, granularity, biological relevance, with rationale. Reusable for future analyses.
-3. **Pathway enrichment results** — using the top-ranked ontology, across all v2 experiments
-4. **Clean `enrich_utils` package** — reusable enrichment utilities with toy-tested functions, sibling to `sig_utils`, candidate for later productization
-5. **MCP tool requirements** — document what hierarchy queries this analysis needed via `run_cypher`, as input for a future dedicated ontology hierarchy tool
+1. **Research notebook and analysis artifacts** — interactive exploration notebook guiding and recording every step (do→show→explore→decide), plus full artifact set per the research-methodology skill: methods.md, decisions.md, caveats.md, gaps_and_friction.md, manifests, references.md
+2. **Annotation landscape characterization** — systematic survey of all KG ontologies for MED4, scoped to the gene universes in the v2 experiments
+3. **Ranked ontology recommendations** — scored by coverage, granularity, biological relevance, with rationale. Reusable for future analyses.
+4. **Pathway enrichment results** — using the top-ranked ontology, across all v2 experiments
+5. **Clean `enrich_utils` package** — reusable enrichment utilities with toy-tested functions, sibling to `sig_utils`, candidate for later productization
+6. **MCP tool requirements** — document what hierarchy queries this analysis needed via `run_cypher`, as input for a future dedicated ontology hierarchy tool
 
 ## Out of scope
 
