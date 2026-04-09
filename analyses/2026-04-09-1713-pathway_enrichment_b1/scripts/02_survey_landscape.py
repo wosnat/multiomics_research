@@ -104,6 +104,7 @@ def main(explore: bool = False) -> None:
         for lvl in profile.get("per_level", []):
             log(
                 f"    level={lvl['level']}  "
+                f"genes={lvl.get('n_genes_at_level', '?')}/{profile['n_annotated']} ({lvl.get('gene_coverage', 0):.0%})  "
                 f"n_terms={lvl['n_terms_with_genes']}  "
                 f"median_genes={lvl.get('median_genes')}  "
                 f"[{lvl.get('min_genes')}, {lvl.get('max_genes')}]"
@@ -120,10 +121,15 @@ def main(explore: bool = False) -> None:
     ranking_df = rank_ontologies(profiles)
     log(f"  Ranked {len(ranking_df)} ontologies")
     for _, row in ranking_df.iterrows():
+        lvl = row.get('best_level', None)
+        lvl_str = f"level {int(lvl)}" if pd.notna(lvl) else "none"
         log(
             f"    rank={int(row['rank'])}  {row['ontology']:20s}  "
             f"coverage={row['coverage']:.3f}  "
-            f"median_term={row['median_term_size']:.1f}  "
+            f"best_level={lvl_str}  "
+            f"gene_cov={row.get('best_level_gene_coverage', 0):.0%}  "
+            f"median={row.get('best_level_median_genes', 0):.0f}  "
+            f"n_terms={int(row.get('best_level_n_terms', 0))}  "
             f"score={row['score']:.3f}"
         )
 

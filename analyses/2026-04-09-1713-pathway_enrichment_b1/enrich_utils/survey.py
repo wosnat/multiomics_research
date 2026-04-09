@@ -42,6 +42,9 @@ def survey_ontology(
         n_unannotated    - count of unannotated genes in universe
         per_level        - list of dicts, one per level present in hierarchy_df:
             level                - integer level
+            n_genes_at_level     - distinct genes reachable at this level
+            gene_coverage        - n_genes_at_level / n_annotated (fraction of
+                                   annotated genes that appear at this level)
             n_terms_with_genes   - number of terms that have >= 1 annotated gene
             min_genes            - minimum term gene count (across terms with >= 1)
             q1_genes             - 25th percentile
@@ -63,9 +66,14 @@ def survey_ontology(
         rolled = roll_up_to_level(annotations_df, hierarchy_df, target_level=level)
         # Restrict to universe genes
         rolled_in_universe = rolled[rolled["locus_tag"].isin(gene_universe)]
+        n_genes_at_level = rolled_in_universe["locus_tag"].nunique()
+        gene_cov = n_genes_at_level / n_annotated if n_annotated > 0 else 0.0
+
         if len(rolled_in_universe) == 0:
             per_level.append({
                 "level": level,
+                "n_genes_at_level": 0,
+                "gene_coverage": 0.0,
                 "n_terms_with_genes": 0,
                 "min_genes": None,
                 "q1_genes": None,
@@ -80,6 +88,8 @@ def survey_ontology(
 
         per_level.append({
             "level": level,
+            "n_genes_at_level": n_genes_at_level,
+            "gene_coverage": gene_cov,
             "n_terms_with_genes": len(sizes),
             "min_genes": int(sizes.min()),
             "q1_genes": float(np.percentile(sizes, 25)),
@@ -116,30 +126,44 @@ def rank_ontologies(profiles: dict) -> pd.DataFrame:
     DataFrame with columns: ontology, coverage, sweet_spot_score, rank.
     Sorted by rank ascending (best first).
 
-    Scoring:
-        sweet_spot = 1.0 if median term size is 5-50 genes (inclusive), else 0.0
-        score = coverage + sweet_spot  (range 0-2, higher is better)
+    Scoring per level:
+        A level qualifies if: median term size 5-50, gene coverage >= 0.5
+        Best level = qualifying level with highest gene_coverage * coverage
+        score = coverage * best_level_gene_coverage  (0 if no qualifying level)
     """
     rows = []
     for ontology, profile in profiles.items():
         cov = profile.get("coverage", 0.0)
 
-        # Find the median_genes across all per_level entries
-        medians = [
-            lvl["median_genes"]
-            for lvl in profile.get("per_level", [])
-            if lvl.get("median_genes") is not None
-        ]
-        median_term_size = float(np.median(medians)) if medians else 0.0
+        # Find the best qualifying level
+        best_level = None
+        best_level_gene_cov = 0.0
+        best_level_median = 0.0
+        best_level_n_terms = 0
 
-        sweet_spot = 1.0 if 5 <= median_term_size <= 50 else 0.0
-        score = cov + sweet_spot
+        for lvl in profile.get("per_level", []):
+            median = lvl.get("median_genes")
+            gene_cov = lvl.get("gene_coverage", 0.0)
+            if median is not None and 5 <= median <= 50 and gene_cov >= 0.5:
+                if gene_cov > best_level_gene_cov:
+                    best_level = lvl["level"]
+                    best_level_gene_cov = gene_cov
+                    best_level_median = median
+                    best_level_n_terms = lvl.get("n_terms_with_genes", 0)
+
+        # Flat ontologies with no hierarchy: treat leaf as only level
+        if not profile.get("per_level") and cov > 0:
+            best_level_gene_cov = 0.0  # no qualifying level
+
+        score = cov * best_level_gene_cov
 
         rows.append({
             "ontology": ontology,
             "coverage": cov,
-            "median_term_size": median_term_size,
-            "sweet_spot_score": sweet_spot,
+            "best_level": best_level,
+            "best_level_gene_coverage": best_level_gene_cov,
+            "best_level_median_genes": best_level_median,
+            "best_level_n_terms": best_level_n_terms,
             "score": score,
         })
 

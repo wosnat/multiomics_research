@@ -188,15 +188,37 @@ class TestSurveyOntology:
         assert l0["max_genes"] == 5
 
 
+class TestSurveyGeneCoverage:
+    def test_gene_coverage_at_level(self, annotations_df, hierarchy_df):
+        """gene_coverage per level: level 0 should have all 7 annotated genes."""
+        profile = survey_ontology(annotations_df, hierarchy_df, GENE_UNIVERSE)
+        l0 = next(p for p in profile["per_level"] if p["level"] == 0)
+        assert l0["n_genes_at_level"] == 7  # all annotated genes roll up to roots
+        assert abs(l0["gene_coverage"] - 1.0) < 1e-9
+
+    def test_gene_coverage_decreases_at_deeper_levels(self, annotations_df, hierarchy_df):
+        """Deeper levels may cover fewer genes (e.g., G06 at root only)."""
+        profile = survey_ontology(annotations_df, hierarchy_df, GENE_UNIVERSE)
+        l0 = next(p for p in profile["per_level"] if p["level"] == 0)
+        l1 = next(p for p in profile["per_level"] if p["level"] == 1)
+        # G06 is at root only — absent from level 1
+        assert l1["n_genes_at_level"] < l0["n_genes_at_level"]
+        assert l1["gene_coverage"] < l0["gene_coverage"]
+
+
 class TestRankOntologies:
     def test_ranking_returns_dataframe(self):
         """rank_ontologies takes a dict of profiles and returns a DataFrame."""
         profiles = {
-            "GO": {"coverage": 0.9, "per_level": [{"level": 1, "n_terms_with_genes": 10,
+            "GO": {"coverage": 0.9, "per_level": [{"level": 1, "n_genes_at_level": 900,
+                                                     "gene_coverage": 0.9,
+                                                     "n_terms_with_genes": 10,
                                                      "min_genes": 1, "q1_genes": 5,
                                                      "median_genes": 20, "q3_genes": 50,
                                                      "max_genes": 200}]},
-            "KEGG": {"coverage": 0.5, "per_level": [{"level": 1, "n_terms_with_genes": 5,
+            "KEGG": {"coverage": 0.5, "per_level": [{"level": 1, "n_genes_at_level": 450,
+                                                       "gene_coverage": 0.9,
+                                                       "n_terms_with_genes": 5,
                                                        "min_genes": 3, "q1_genes": 8,
                                                        "median_genes": 15, "q3_genes": 30,
                                                        "max_genes": 100}]},
@@ -207,19 +229,39 @@ class TestRankOntologies:
         assert "ontology" in result.columns
 
     def test_higher_coverage_ranks_first(self):
-        """Ontology with higher coverage should rank first when median is comparable."""
+        """Ontology with higher coverage should rank first when gene_coverage is equal."""
         profiles = {
-            "HighCov": {"coverage": 0.9, "per_level": [{"level": 1, "n_terms_with_genes": 5,
+            "HighCov": {"coverage": 0.9, "per_level": [{"level": 1, "n_genes_at_level": 800,
+                                                          "gene_coverage": 0.9,
+                                                          "n_terms_with_genes": 5,
                                                           "min_genes": 2, "q1_genes": 5,
                                                           "median_genes": 15, "q3_genes": 30,
                                                           "max_genes": 100}]},
-            "LowCov": {"coverage": 0.3, "per_level": [{"level": 1, "n_terms_with_genes": 5,
+            "LowCov": {"coverage": 0.3, "per_level": [{"level": 1, "n_genes_at_level": 250,
+                                                         "gene_coverage": 0.9,
+                                                         "n_terms_with_genes": 5,
                                                          "min_genes": 2, "q1_genes": 5,
                                                          "median_genes": 15, "q3_genes": 30,
                                                          "max_genes": 100}]},
         }
         result = rank_ontologies(profiles)
         assert result.iloc[0]["ontology"] == "HighCov"
+
+    def test_low_gene_coverage_level_rejected(self):
+        """A level with good median but low gene coverage should not be selected."""
+        profiles = {
+            "DeepOnly": {"coverage": 0.8, "per_level": [
+                {"level": 0, "n_genes_at_level": 800, "gene_coverage": 1.0,
+                 "n_terms_with_genes": 3, "min_genes": 200, "q1_genes": 250,
+                 "median_genes": 300, "q3_genes": 350, "max_genes": 400},  # too broad
+                {"level": 2, "n_genes_at_level": 160, "gene_coverage": 0.2,
+                 "n_terms_with_genes": 20, "min_genes": 5, "q1_genes": 8,
+                 "median_genes": 12, "q3_genes": 20, "max_genes": 40},  # good median, bad coverage
+            ]},
+        }
+        result = rank_ontologies(profiles)
+        # Level 2 has gene_coverage 0.2 (< 0.5 threshold) — should not qualify
+        assert result.iloc[0]["best_level"] is None or pd.isna(result.iloc[0]["best_level"])
 
 
 class TestBuildPathwayDefinitions:
