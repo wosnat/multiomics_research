@@ -181,17 +181,19 @@ Interpretation: the pathway is enriched *at this timepoint* relative to all gene
 
 From the KG schema, the following ontology types have gene annotations and hierarchy relationships:
 
-| Ontology | Total terms | Hierarchy | Levels | Gene→term | Term→genes |
-|----------|----------:|-----------|--------|-----------|-----------|
-| `go_bp` | 3,052 | `is_a`, `part_of`, `regulates` | 15 deep | `gene_ontology_terms` (leaf only) | `genes_by_ontology` (with expansion) |
-| `go_mf` | ? | `is_a`, `part_of` | ? | same | same |
-| `go_cc` | ? | `is_a`, `part_of` | ? | same | same |
-| `kegg` | 4,742 | `is_a` | 4 explicit (`category`, `subcategory`, `pathway`, `ko`) | `Gene_has_kegg_ko` | `genes_by_ontology` |
-| `cyanorak_role` | 173 | `is_a` | 3 (letter, X.Y, X.Y.Z) | `Gene_has_cyanorak_role` | `genes_by_ontology` |
-| `tigr_role` | 114 | ? | ? | `Gene_has_tigr_role` | `genes_by_ontology` |
-| `cog_category` | 26 | flat | 1 | `Gene_in_cog_category` | `genes_by_ontology` |
-| `ec` | ? | `is_a` | 4 (X, X.Y, X.Y.Z, X.Y.Z.W) | `Gene_catalyzes_ec_number` | `genes_by_ontology` |
-| `pfam` | ? | `Pfam_in_pfam_clan` | 2 (domain, clan) | `Gene_has_pfam` | `genes_by_ontology` |
+| Ontology | Total terms | Gene→term edge | Hierarchy edge(s) | Levels | Notes |
+|----------|----------:|----------------|-------------------|--------|-------|
+| `go_bp` | 3,052 | `Gene_involved_in_biological_process` | `is_a`, `part_of` | 15 deep | Also has `regulates` edges (positive/negative) |
+| `go_mf` | ? | `Gene_enables_molecular_function` | `is_a`, `part_of` | ? | |
+| `go_cc` | ? | `Gene_located_in_cellular_component` | `is_a`, `part_of` | ? | |
+| `kegg` | 4,742 | `Gene_has_kegg_ko` | `Kegg_term_is_a_kegg_term` | 4 (`category`, `subcategory`, `pathway`, `ko`) | Genes connect at `ko` level only; `KeggTerm.level` property |
+| `cyanorak_role` | 173 | `Gene_has_cyanorak_role` | `Cyanorak_role_is_a_cyanorak_role` | 3 (letter, X.Y, X.Y.Z) | Cyanobacteria-curated |
+| `tigr_role` | 114 | `Gene_has_tigr_role` | — (flat) | 1 | No hierarchy in KG |
+| `cog_category` | 26 | `Gene_in_cog_category` | — (flat) | 1 | Single-letter codes |
+| `ec` | ? | `Gene_catalyzes_ec_number` | `Ec_number_is_a_ec_number` | 4 (X, X.Y, X.Y.Z, X.Y.Z.W) | |
+| `pfam` | ? | `Gene_has_pfam` | `Pfam_in_pfam_clan` | 2 (domain, clan) | |
+
+MCP tools: `gene_ontology_terms` returns leaf annotations (gene→term direction). `genes_by_ontology` finds genes for a term with hierarchy expansion (term→gene direction, one call per term). For bulk extraction: use Python API imports or `run_cypher` with the edges above.
 
 Steps 1-2 will fill in the "?" entries and assess MED4-specific coverage.
 
@@ -203,111 +205,63 @@ Steps 1-2 will fill in the "?" entries and assess MED4-specific coverage.
 - `search_ontology(search_text, ontology)` — text search for term IDs
 - `run_cypher(query)` — raw Cypher, escape hatch for hierarchy queries
 
-**Gap: no hierarchy traversal tool.** To survey the hierarchy structure (depth, parent-child relationships, terms per level), we must use `run_cypher`. This is a known limitation. The analysis will document what queries were needed, as input for a future dedicated tool.
+**Direct graph edges per ontology:** The KG has specific relationships for each ontology type, defined in `ONTOLOGY_CONFIG` in `multiomics_explorer/kg/queries_lib.py`. Scripts can use `run_cypher` with these edges directly instead of going through the `gene_ontology_terms` tool:
 
-**Gap: no bulk gene→term extraction.** `gene_ontology_terms` paginates (default limit 5). For extracting all annotations for ~1,800 genes, use the Python API import:
+| Ontology | Gene→term edge | Hierarchy edge(s) | Notes |
+|----------|---------------|-------------------|-------|
+| `go_bp` | `Gene_involved_in_biological_process` | `is_a`, `part_of` | Two hierarchy edge types |
+| `go_mf` | `Gene_enables_molecular_function` | `is_a`, `part_of` | Two hierarchy edge types |
+| `go_cc` | `Gene_located_in_cellular_component` | `is_a`, `part_of` | Two hierarchy edge types |
+| `kegg` | `Gene_has_kegg_ko` | `Kegg_term_is_a_kegg_term` | Genes connect at `ko` level only; `KeggTerm.level` property for hierarchy |
+| `cyanorak_role` | `Gene_has_cyanorak_role` | `Cyanorak_role_is_a_cyanorak_role` | 3 levels via `code` (A, A.1, A.1.1) |
+| `tigr_role` | `Gene_has_tigr_role` | — (flat) | No hierarchy edges |
+| `cog_category` | `Gene_in_cog_category` | — (flat) | No hierarchy edges |
+| `ec` | `Gene_catalyzes_ec_number` | `Ec_number_is_a_ec_number` | 4-level numeric hierarchy |
+| `pfam` | `Gene_has_pfam` | `Pfam_in_pfam_clan` | 2 levels: domain → clan |
+
+**Gap: no hierarchy traversal tool.** To survey the hierarchy structure (depth, parent-child relationships, terms per level), we must use `run_cypher` with the edges above. This is a known limitation. The analysis will document what queries were needed, as input for a future dedicated tool.
+
+**Gap: no bulk gene→term extraction at scale.** `gene_ontology_terms` paginates (default limit 5). For extracting all annotations for ~1,800 genes, use the Python API import:
 ```python
 from multiomics_explorer import gene_ontology_terms
 result = gene_ontology_terms(locus_tags=[...], ontology="cyanorak_role", limit=None)
 ```
+Or use `run_cypher` with the direct gene→term edges for maximum control.
 
 **Gap: no "genes at hierarchy level X" tool.** To get all genes at CyanoRak level 2 (X.Y), we need either:
 - `genes_by_ontology` called once per level-2 term (up to ~70 calls for CyanoRak)
-- `run_cypher` to batch the query
+- `run_cypher` with hierarchy expansion: `MATCH (g:Gene)-[:Gene_has_cyanorak_role]->(leaf)-[:Cyanorak_role_is_a_cyanorak_role*0..]->(parent) WHERE parent.code =~ '^[A-Z]\\.[0-9]+$'`
 Scripts will use the Python API + `run_cypher` for bulk extraction.
 
-## Pipeline: 7 steps
+**Cypher verification rule:** Every `run_cypher` query must be tested interactively before embedding in a script — run it with a small limit, inspect the output, verify it returns the expected shape and values. Cypher is easy to get subtly wrong (wrong traversal direction, missing deduplication, unintended Cartesian products). Treat each query as a mini do→show→verify step.
 
-Each step follows the do→show→explore→decide cycle. No step proceeds without the researcher's decision. Notebook entry committed before the next step begins.
+**Explorer layer rules:** When writing Cypher queries or using the Python API, follow the architecture conventions in `multiomics_explorer/.claude/skills/layer-rules`. Key points:
+- `queries_lib.py` has `ONTOLOGY_CONFIG` with the exact edge names and hierarchy relationships per ontology — use these, don't guess
+- Python API functions (e.g., `gene_ontology_terms()`, `genes_by_ontology()`) return `dict` with `total_matching`, `results`, etc. — use `limit=None` for full extraction
+- Cypher conventions: `$param` placeholders (never f-string user input), `AS snake_case` aliases, APOC available (`apoc.coll.frequencies()` etc.)
+- `collect()` silently drops NULLs from scalar values — use `collect({key: val})` maps instead
+- `WITH-as-rename` drops other variables — carry UNWIND loop vars explicitly
 
-### Step 1: Extract MED4 annotations from KG (interactive discovery)
+**Complexity escape hatch:** If the hierarchy queries become too complex or error-prone for `run_cypher`, take a 2-step approach:
+1. Document the requirement as an MCP tool spec for `multiomics_explorer` (what the tool should accept and return)
+2. Pause this analysis step, wait for the tool to be delivered
+3. Resume using the new/updated MCP tool
 
-**Goal:** Pull all gene-to-term mappings for every ontology, scoped to the gene universes from the v2 experiments.
+This is preferable to writing fragile Cypher that produces wrong results silently. The MCP tool requirements doc (goal 6) captures these needs regardless.
 
-**Method:**
-- Collect gene universes: union of locus tags per experiment from v2 `de_*.csv` files. Record per-experiment universe sizes.
-- For each ontology type: use Python API `gene_ontology_terms(locus_tags=universe, ontology=X, limit=None)` to get leaf annotations
-- For hierarchical ontologies: use `run_cypher` to extract the full hierarchy (parent-child edges, level assignments)
-- Record which genes have no annotations in any ontology (the "dark genome" for enrichment purposes)
+## Pipeline: two phases
 
-**enrich_utils function:**
-- `extract_annotations(locus_tags, ontology, api)` → DataFrame of gene × term leaf annotations
-- `extract_hierarchy(ontology, api)` → DataFrame of parent-child edges with level assignments
+### Phase 0: Build, test, and validate `enrich_utils` (before full analysis)
 
-**Outputs:**
-- `data/annotations_*.csv` — one per ontology, gene × leaf term mappings
-- `data/hierarchy_*.csv` — one per hierarchical ontology, parent-child edges
-- `data/gene_universes.csv` — per-experiment gene universe with counts
-- `logs/01_extract_annotations.log` — per-ontology: gene count, term count, genes with no terms
+Build the utility functions, verify with toy data, then test with real marker genes/terms to discover MCP gaps early. This phase ends with either "tools work, proceed to phase 1" or "file MCP enhancement, wait for delivery."
 
-**Explore:** Which ontologies have the best coverage for each gene universe? How does coverage differ between RNA-seq (1,849 genes) and proteomics (1,424 genes)? How many genes are unannotated in all ontologies? Are unannotated genes enriched among DE genes (annotation bias)?
+#### Step 0a: Define and toy-test enrichment functions
 
-**Decision:** Any ontologies to drop as obviously unsuitable (empty or near-empty for MED4)?
-
-### Step 2: Characterize annotation landscape
-
-**Goal:** For each ontology, assess suitability for enrichment testing across all v2 experiment gene universes.
-
-**Method — `enrich_utils.survey`:**
-- Per ontology, per gene universe:
-  - Coverage: fraction of genes with ≥1 annotation
-  - Term count (at each hierarchy level for hierarchical ontologies)
-  - Term-size distribution: min, Q1, median, Q3, max genes per term
-  - Terms with <3 genes (underpowered), terms with >200 genes (too broad)
-- Hierarchy analysis (for GO, KEGG, CyanoRak, TIGR, EC):
-  - Depth/levels, terms per level
-  - Gene-set size distribution at each level
-  - Redundancy: fraction of genes annotated to both a term and its parent
-- Identify "sweet spot" level per ontology: terms large enough for power (≥5 genes in the universe), specific enough for interpretation
-- Annotation bias check: are unannotated genes disproportionately DE in any experiment?
+**Goal:** Implement and verify the core enrichment computation (Fisher's exact, FDR, pathway coverage) with hand-calculated synthetic data.
 
 **enrich_utils functions:**
-- `survey_ontology(annotations_df, hierarchy_df, gene_universe)` → OntologyProfile with coverage, term stats, per-level stats
-- `rank_ontologies(profiles)` → ranked list with scores and rationale
-
-**Outputs:**
-- `data/ontology_profiles.csv` — per ontology × level: coverage, term count, term-size stats, sweet-spot flag
-- `results/ontology_ranking.csv` — ranked ontologies with scores
-- `results/annotation_landscape.png` — visual comparison across ontologies
-- `logs/02_characterize_landscape.log`
-
-**Explore:** Walk through profiles. Which ontologies give good power at which levels? CyanoRak level 2 vs KEGG pathway vs GO at depth 5 — what do the term sizes look like for our gene universes? Is annotation biased?
-
-**Decision:** Rank ontologies. Select top choice for enrichment. Justify.
-
-### Step 3: Define pathway gene sets
-
-**Goal:** Extract pathway definitions from the selected ontology at the chosen hierarchy level, for each experiment's gene universe.
-
-**Method:**
-- From step 1 annotations + hierarchy, filter to selected ontology + level
-- For hierarchical ontologies at a rolled-up level: a gene belongs to a parent term if it is annotated to any descendant of that term
-  - For CyanoRak/KEGG: hierarchy is in `hierarchy_*.csv`, roll-up is a join
-  - For GO: use `genes_by_ontology(term_ids=[parent_term], organism="MED4")` per parent term, or `run_cypher` for batch extraction
-- Per pathway definition: pathway ID, pathway name, full gene set (all MED4 genes), per-experiment gene set (intersection with that experiment's universe)
-- Filter: minimum gene set size in the experiment universe (threshold decided during explore — likely ≥5)
-
-**MCP tool limitation:** Getting genes at a non-leaf level requires either:
-- Calling `genes_by_ontology` once per term at the chosen level (works for CyanoRak ~70 terms, expensive for GO ~400 terms)
-- Using `run_cypher` for batch queries
-The script will use whichever is appropriate for the selected ontology. Document the query pattern for the MCP tool requirements output.
-
-**enrich_utils function:**
-- `build_pathway_definitions(annotations_df, hierarchy_df, level, min_genes)` → DataFrame of pathway_id, pathway_name, locus_tags (set), gene_count
-- `scope_pathways_to_universe(pathway_defs, gene_universe)` → same DataFrame with per-universe gene sets and coverage fractions
-
-**Outputs:**
-- `data/pathway_definitions.csv` — pathway ID, name, gene count (full genome), gene list
-- `data/pathway_coverage_per_experiment.csv` — pathway × experiment: genes in universe, coverage fraction
-- `logs/03_define_pathways.log` — filtering funnel, size distribution, N-related pathways check
-
-**Explore:** How many pathways survive the size filter? What's the median gene set size? Do known N-related pathways appear (nitrogen metabolism, photosynthesis, transport)? Any pathways with poor coverage in proteomics but good coverage in RNA-seq?
-
-**Decision:** Pathway definitions look reasonable? Minimum size threshold correct? Proceed to enrichment?
-
-### Step 4: Toy-data verification of enrichment functions
-
-**Goal:** Verify Fisher's exact enrichment, FDR correction, and pathway coverage functions with hand-calculated synthetic data before real data.
+- `run_enrichment(de_df, pathway_defs, gene_universe, table_scope)` → DataFrame with one row per pathway × direction, with p_value, padj, odds_ratio, counts, test_type, pathway_coverage
+- `run_enrichment_all_timepoints(de_df, pathway_defs)` → runs per timepoint, concatenates
 
 **Test cases:**
 
@@ -321,27 +275,153 @@ The script will use whichever is appropriate for the selected ontology. Document
 8. **FDR correction:** 20 pathways tested, 2 nominally significant. Verify BH correction produces expected q-values.
 9. **test_type assignment:** verify that table_scope maps correctly to test_type in output.
 
-Each test: synthetic DE DataFrame + synthetic pathway definitions → expected Fisher's exact result (computed by hand) → assert match.
-
-**enrich_utils tests:**
-- `enrich_utils/tests/test_enrichment.py` — all cases above
-- `enrich_utils/tests/test_survey.py` — synthetic annotation data, verify coverage and term-size stats
-
 **Outputs:**
 - `enrich_utils/tests/test_enrichment.py` — test script with synthetic data and assertions
-- `enrich_utils/tests/test_survey.py` — test script for survey functions
-- `logs/04_verify_enrichment.log` — expected vs actual for each test case
 
-**Explore:** Walk through each test case. Verify edge cases. Does the enrichment function have the properties we want?
+**Explore:** Walk through each test case. Verify edge cases.
 
-**Decision:** Tests pass? Functions correct? Proceed to real data?
+**Decision:** Enrichment functions correct? Proceed to survey/hierarchy functions.
 
-### Step 5: Run enrichment tests
+#### Step 0b: Define and toy-test survey and hierarchy functions (pure DataFrame)
+
+**Goal:** Implement hierarchy roll-up (gene→non-leaf term), survey profiling, and pathway definition functions. All pure DataFrame operations — no KG, no MCP. Tested entirely with synthetic data.
+
+**enrich_utils functions:**
+- `roll_up_to_level(annotations_df, hierarchy_df, level)` → DataFrame of gene × rolled-up term at the chosen level
+- `survey_ontology(annotations_df, hierarchy_df, gene_universe)` → OntologyProfile with coverage, term stats, per-level stats
+- `rank_ontologies(profiles)` → ranked list with scores
+- `build_pathway_definitions(annotations_df, hierarchy_df, level, min_genes)` → DataFrame of pathway_id, pathway_name, locus_tags, gene_count
+- `scope_pathways_to_universe(pathway_defs, gene_universe)` → per-universe gene sets and coverage fractions
+
+**Test cases (toy):**
+- Synthetic 3-level hierarchy (5 roots, 15 mid-level, 40 leaves) with 100 genes. Genes annotated to **any level** (some to leaves, some to mid-level, some to roots — reflecting real KG where annotation depth varies). Genes may have **multiple annotations** (e.g., gene in both "Nitrogen metabolism" and "Transport"). Terms may share genes.
+- Roll-up verification:
+  - Gene annotated to a leaf → appears in leaf's parent and grandparent
+  - Gene annotated directly to a mid-level term → appears in that term and its parent, but NOT in child terms
+  - Gene with annotations to two different branches → appears in both roll-ups
+  - Deduplication (same term): gene annotated to both a leaf and its parent → counted once at the parent level
+  - Deduplication (DAG convergence): gene annotated to two child terms that share a parent → counted once in the parent. The hierarchy is a DAG (especially GO), not a tree — multiple paths converge
+- Survey on synthetic data: verify coverage, term-size distribution, per-level stats (accounting for multi-annotation genes)
+- Pathway definitions: verify min-gene filter, coverage calculation with multi-annotation genes
+
+**Outputs:**
+- `enrich_utils/tests/test_survey.py` — test script for survey and hierarchy functions
+
+**Decision:** Roll-up logic correct? Survey stats match expectations?
+
+#### Step 0c: Implement KG extraction and validate (marker genes/terms)
+
+**Goal:** Implement the extraction functions that produce DataFrames from the KG, and validate the full pipeline (extraction → roll-up → survey → pathway defs) with real marker genes. This is where MCP friction will surface.
+
+**enrich_utils functions:**
+- `extract_annotations(locus_tags, ontology, api)` → DataFrame of gene × term annotations
+- `extract_hierarchy(ontology, api, max_depth=4)` → DataFrame of parent-child edges with level assignments
+
+**Method:**
+- Select marker genes that cover the edge cases from 0b's toy tests:
+  - Genes with multiple annotations in the same ontology (e.g., multiple GO BP terms)
+  - Genes with annotations at different hierarchy levels (leaf vs mid-level)
+  - Genes with no annotation in a given ontology
+  - Genes annotated to sibling terms sharing a parent (DAG convergence)
+  - Starting set from v2: glnA/PMM0920, cynA/PMM0370, rbcL/PMM0550, atpD/PMM1452, PMM0030, PMM0346 — extend during exploration to cover missing edge cases
+- Implement `extract_annotations` using Python API `gene_ontology_terms(locus_tags, ontology, limit=None)`
+- Implement `extract_hierarchy` using `run_cypher` with `ONTOLOGY_CONFIG` edges, capped at `max_depth`
+- For CyanoRak and KEGG (shallow hierarchies): extract, roll up with 0b functions, verify against `genes_by_ontology` spot-checks
+- For GO BP: attempt the same. This is where the DAG complexity will likely cause friction.
+- Run `survey_ontology` and `build_pathway_definitions` on the marker gene set end-to-end
+
+**Verify against MCP:** For each rolled-up term, call `genes_by_ontology(term_ids=[term], ontology=X, organism="MED4")` and compare gene sets. Discrepancies reveal bugs in extraction, roll-up, or gaps in the hierarchy data.
+
+**Outputs:**
+- `enrich_utils/extraction.py` — extraction functions calling existing MCP/Python API/`run_cypher`, or calling new MCP tools once delivered
+- `enrich_utils/tests/test_extraction.py` — integration tests using the marker genes: extraction, roll-up, spot-check against `genes_by_ontology`
+- `logs/00_validate_utils.log` — marker gene annotations per ontology, roll-up verification, discrepancies
+- `mcp_tool_requirements.md` — concrete list of what queries were painful or impossible, proposed tool specs with examples
+
+**Decision gate:**
+- **Extraction + roll-up work for shallow ontologies (CyanoRak, KEGG)?** → Proceed to phase 1.
+- **Works but GO is problematic?** → Proceed to phase 1 excluding GO. File MCP enhancement for GO hierarchy support. GO becomes a future B analysis.
+- **Fundamental friction (even shallow ontologies fail)?** → **Stop. File MCP enhancement with concrete spec. Wait for delivery before phase 1.**
+
+---
+
+### Phase 1: Run the analysis (steps 1-6)
+
+Requires: `enrich_utils` validated in phase 0, MCP tools sufficient (or enhanced).
+
+Each step follows the do→show→explore→decide cycle. No step proceeds without the researcher's decision. Notebook entry committed before the next step begins.
+
+### Step 1: Extract MED4 annotations from KG
+
+**Goal:** Pull all gene-to-term mappings and hierarchies for every ontology, scoped to the gene universes from the v2 experiments.
+
+**Method:**
+- Collect gene universes: union of locus tags per experiment from v2 `de_*.csv` files. Record per-experiment universe sizes.
+- Extract annotations for the **full MED4 genome**, not just experiment gene universes. Use `extract_annotations` with all MED4 locus tags (from `genes_by_function("*", organism="MED4", limit=None)` or equivalent). Filter to experiment-specific universes downstream. This gives the true genome-level denominator for coverage calculations (e.g., "78% of MED4 genes have CyanoRak annotations; RNA-seq covers 95% of those").
+- For hierarchical ontologies: use `extract_hierarchy` (max_depth=4) to get hierarchy edges
+- Record which genes have no annotations in any ontology (the "dark genome")
+
+**Outputs:**
+- `data/annotations_*.csv` — one per ontology, gene × leaf term mappings
+- `data/hierarchy_*.csv` — one per hierarchical ontology, parent-child edges (depth ≤ 4)
+- `data/gene_universes.csv` — per-experiment gene universe with counts
+- `logs/01_extract_annotations.log` — per-ontology: gene count, term count, genes with no terms, hierarchy depth
+
+**Explore:** Coverage per gene universe? RNA-seq vs proteomics? Unannotated genes? Trace the marker genes from step 0c through the full extraction — do their annotations match what was validated in 0c?
+
+**Decision:** Any ontologies to drop?
+
+### Step 2: Characterize annotation landscape
+
+**Goal:** For each ontology, assess suitability for enrichment testing across all v2 experiment gene universes.
+
+**Method — `enrich_utils.survey`:**
+- Per ontology, per gene universe:
+  - Coverage: fraction of genes with ≥1 annotation
+  - Term count at each hierarchy level (using `roll_up_to_level` from phase 0)
+  - Term-size distribution per level: min, Q1, median, Q3, max genes per term
+  - Terms with <3 genes (underpowered), terms with >200 genes (too broad)
+- Hierarchy analysis:
+  - For flat ontologies (COG, TIGR): single level, stats complete
+  - For hierarchical ontologies: terms per level, gene-set size distribution per level, redundancy
+  - For GO (if included): top 4 levels only
+- Identify "sweet spot" level per ontology
+- Annotation bias check: are unannotated genes disproportionately DE?
+
+**Outputs:**
+- `data/ontology_profiles.csv` — per ontology × level: coverage, term count, term-size stats, sweet-spot flag
+- `results/ontology_ranking.csv` — ranked ontologies with scores
+- `results/annotation_landscape.png` — visual comparison across ontologies
+- `logs/02_characterize_landscape.log`
+
+**Explore:** Which ontologies give good power at which levels? CyanoRak level 2 vs KEGG pathway vs GO depth 4? What's the per-term coverage distribution across experiments — are some terms well-covered in RNA-seq but missing in proteomics?
+
+**Decision:** Rank ontologies. Select top choice. Justify.
+
+### Step 3: Define pathway gene sets
+
+**Goal:** Build pathway definitions from the selected ontology at the chosen hierarchy level.
+
+**Method:**
+- Use `roll_up_to_level` + `build_pathway_definitions` on the selected ontology
+- Use `scope_pathways_to_universe` per experiment
+- Filter by minimum gene set size (decided during explore)
+
+**Outputs:**
+- `data/pathway_definitions.csv` — pathway ID, name, gene count, gene list
+- `data/pathway_coverage_per_experiment.csv` — pathway × experiment: genes in universe, coverage fraction
+- `logs/03_define_pathways.log` — filtering funnel, size distribution, N-related pathways check
+
+**Explore:** How many pathways? Median gene set size? N-related pathways present? Coverage in proteomics vs RNA-seq?
+
+**Decision:** Pathway definitions reasonable? Proceed to enrichment?
+
+### Step 4: Run enrichment tests
 
 **Goal:** Fisher's exact test per pathway × experiment × timepoint × direction, across all v2 experiments.
 
 **Method — `enrich_utils.enrichment`:**
-- For each experiment × timepoint:
+- For each experiment × timepoint (single-timepoint experiments like Tolonen cyanate/urea, Steglich, and Weissberg RNA-seq axenic are treated as one timepoint — no special-casing needed):
   - Load DE data, determine background (all genes at this experiment × timepoint)
   - Determine `test_type` from `table_scope`
   - For each pathway:
@@ -360,13 +440,13 @@ Each test: synthetic DE DataFrame + synthetic pathway definitions → expected F
 **Outputs:**
 - `results/enrichment_all.csv` — full results: pathway, experiment, timepoint, direction, p_value, padj, odds_ratio, fold_enrichment, observed (a), expected, a, b, c, d, test_type, pathway_coverage, n_pathway_genes_in_universe, n_pathway_genes_total
 - `results/enrichment_significant.csv` — filtered to padj < 0.05
-- `logs/05_run_enrichment.log` — total tests, tests per experiment, significant counts, N-pathway traces
+- `logs/04_run_enrichment.log` — total tests, tests per experiment, significant counts, N-pathway traces
 
 **Explore:** Which pathways are enriched in RNA-seq axenic? In coculture? Do they differ? Does proteomics show the same or different pathways? Trace nitrogen-related and photosynthesis pathways specifically. How many tests total, how many survive FDR? Compare enrichment in positive controls (reference studies) vs negative controls — do the right pathways light up?
 
 **Decision:** Results make biological sense? Surprises? Proceed to visualization?
 
-### Step 6: Visualize
+### Step 5: Visualize
 
 **Goal:** Heatmaps and summary figures.
 
@@ -377,7 +457,7 @@ Each test: synthetic DE DataFrame + synthetic pathway definitions → expected F
 - `results/pathway_comparison_rnaseq_vs_proteomics.png` — same conditions, different platforms
 - `results/control_enrichment.png` — reference and negative control enrichment patterns
 
-### Step 7: Interpret and document
+### Step 6: Interpret and document
 
 **Goal:** Update analysis documents, assess enrich_utils for packaging, produce MCP tool requirements.
 
@@ -394,39 +474,41 @@ Each test: synthetic DE DataFrame + synthetic pathway definitions → expected F
 
 Sibling to `sig_utils` — independent package in the analysis directory. Shares the DE data format but not logic. No imports from `sig_utils`.
 
-Two layers:
-- **Survey** (`survey.py`) — annotation landscape characterization, ontology profiling, ranking. Operates on annotation DataFrames. May use KG Python API for extraction.
-- **Enrichment** (`enrichment.py`) — Fisher's exact, FDR correction, pathway coverage. Pure DataFrame-in, DataFrame-out. Never calls the KG.
-- **Hierarchy** (`hierarchy.py`) — hierarchy extraction and level roll-up. Uses KG Python API / `run_cypher` for extraction, pure DataFrame operations for roll-up.
-- **I/O** (`io.py`) — load/save helpers.
+Four modules:
+- **Extraction** (`extraction.py`) — KG data extraction: annotations and hierarchies. Calls Python API / `run_cypher`. Only module that touches the KG.
+- **Hierarchy** (`hierarchy.py`) — hierarchy roll-up (`roll_up_to_level`). Pure DataFrame operations — takes annotations + hierarchy edges, produces gene × rolled-up term.
+- **Survey** (`survey.py`) — annotation landscape characterization, ontology profiling, ranking. Pure DataFrame operations.
+- **Enrichment** (`enrichment.py`) — Fisher's exact, FDR correction, pathway coverage. Pure DataFrame-in, DataFrame-out.
 
 ### Modules
 
 ```
 enrich_utils/
 ├── __init__.py
-├── survey.py          # Annotation landscape: coverage, term stats, ranking
-├── enrichment.py      # Fisher's exact, FDR, pathway coverage (pure computation)
-├── hierarchy.py       # Hierarchy extraction and level roll-up
+├── extraction.py      # KG data extraction: annotations and hierarchies (only KG-touching module)
+├── hierarchy.py       # Roll-up: gene × leaf term → gene × level term (pure DataFrame)
+├── survey.py          # Annotation landscape: coverage, term stats, ranking (pure DataFrame)
+├── enrichment.py      # Fisher's exact, FDR, pathway coverage (pure DataFrame)
 ├── io.py              # Load/save helpers
 └── tests/
     ├── test_enrichment.py   # Toy data tests for Fisher's exact + FDR
-    └── test_survey.py       # Toy data tests for coverage and profiling
+    ├── test_survey.py       # Toy data tests for coverage, roll-up, and profiling
+    └── test_extraction.py   # Integration tests against KG with marker genes
 ```
 
 ### Flow
 
 ```
 Gene universes + KG
-    → extract_annotations()           # gene × leaf term per ontology
-    → extract_hierarchy()             # parent-child edges per ontology
+    → extract_annotations()           # gene × leaf term per ontology (step 1)
+    → extract_hierarchy()             # parent-child edges, depth ≤ 4 (step 1)
 
 Annotations + hierarchy + gene universe
-    → survey_ontology()               # per-ontology profile
+    → survey_ontology()               # per-ontology profile (step 2)
     → rank_ontologies()               # ranked list with scores
 
 Selected ontology + hierarchy
-    → build_pathway_definitions()     # pathway gene sets at chosen level
+    → build_pathway_definitions()     # pathway gene sets at chosen level (step 3)
     → scope_pathways_to_universe()    # per-experiment coverage
 
 DE data + pathway definitions + gene universe
@@ -455,20 +537,39 @@ Each script:
 - Writes diagnostic log to `logs/`
 - Has a `--explore` flag for marker pathway traces and QC diagnostics
 
-Note: pipeline step 4 (toy-data verification) runs the test suite in `enrich_utils/tests/`, not a numbered pipeline script. The test scripts are the artifact. Pipeline scripts are numbered 01-05 mapping to steps 1-3 and 5-6.
+Phase 0 (build/test/validate) uses the test suite in `enrich_utils/tests/` and interactive MCP exploration — no numbered pipeline scripts. Phase 1 scripts are numbered 01-05 mapping to steps 1-5. Step 6 (interpret) produces documentation, not script output.
 
-## Marker pathways
+## Marker genes and pathways
 
-Starting set for tracing through every step (confirmed after step 2 selects the ontology):
+Traced through every step from phase 0c onward. Marker genes are carried from v2; marker pathways are assigned specific term IDs after step 2 selects the ontology.
 
-| Expected pathway | Expected behavior | Why |
-|-----------------|-------------------|-----|
-| Nitrogen metabolism | Enriched up in axenic RNA-seq | Core N-limitation response |
-| Photosynthesis | Enriched down in axenic RNA-seq | N-stress suppresses photosynthesis |
-| Protein synthesis / ribosomal | Enriched down in N-stress | Growth shutdown |
-| Transport | Enriched up in N-stress | Nutrient scavenging |
+### Marker genes
 
-Specific term IDs depend on the selected ontology — assigned in step 3.
+From v2, selected to cover edge cases (see step 0c):
+
+| Gene | Locus tag | Direction (v2) | Why trace it |
+|------|-----------|:-:|--------------|
+| glnA | PMM0920 | up | Canonical N-limitation marker, likely multi-annotated (N-metabolism + glutamate family) |
+| cynA | PMM0370 | up | N-scavenging transporter, should appear in transport pathways |
+| rbcL | PMM0550 | down | Photosynthesis/CO2 fixation, tests down-enrichment |
+| atpD | PMM1452 | down | Energy metabolism, tests cross-pathway annotation |
+| PMM0030 | PMM0030 | up | Unnamed, rank 1 — may have no annotation in some ontologies |
+| PMM0346 | PMM0346 | down | Unnamed, proteomics edge case — may have sparse annotation |
+
+Additional genes added during step 0c to cover: multiple terms in same ontology, annotations at non-leaf level, no annotation, DAG convergence (sibling terms sharing parent).
+
+### Marker pathways
+
+| Expected pathway | Axenic RNA-seq | Coculture RNA-seq | Negative controls | Why |
+|-----------------|:-:|:-:|:-:|-----|
+| Nitrogen metabolism | Enriched up | Low/absent | Low (except cyanate) | Core N-limitation response |
+| Photosynthesis | Enriched down | Low/absent | Low | N-stress suppresses photosynthesis |
+| Protein synthesis / ribosomal | Enriched down | Low/absent | Low | Growth shutdown under N-stress |
+| Transport | Enriched up | Low/absent | Low | Nutrient scavenging |
+
+Specific term IDs depend on the selected ontology — assigned in step 3. Expected behaviors based on v2 signature results (axenic score 0.58, coculture near zero).
+
+**Proteomics expectations:** May differ from RNA-seq — the RNA/protein discordance from v2 should manifest as different pathway enrichment patterns between platforms. This is a key question for B1.
 
 ## Directory structure
 
@@ -479,8 +580,8 @@ analyses/YYYY-MM-DD-HHMM-pathway_enrichment_b1/
 ├── data/
 │   ├── DATA_MANIFEST.md
 │   ├── gene_universes.csv
-│   ├── annotations_*.csv          # One per ontology
-│   ├── hierarchy_*.csv            # One per hierarchical ontology
+│   ├── annotations_*.csv          # One per ontology (leaf terms)
+│   ├── hierarchy_*.csv            # One per hierarchical ontology (depth ≤ 4)
 │   ├── ontology_profiles.csv
 │   ├── pathway_definitions.csv
 │   └── pathway_coverage_per_experiment.csv
@@ -492,13 +593,15 @@ analyses/YYYY-MM-DD-HHMM-pathway_enrichment_b1/
 │   └── 05_plot_results.py
 ├── enrich_utils/
 │   ├── __init__.py
+│   ├── extraction.py
+│   ├── hierarchy.py
 │   ├── survey.py
 │   ├── enrichment.py
-│   ├── hierarchy.py
 │   ├── io.py
 │   └── tests/
 │       ├── test_enrichment.py
-│       └── test_survey.py
+│       ├── test_survey.py
+│       └── test_extraction.py
 ├── logs/
 │   ├── 01_extract_annotations.log
 │   └── ...
