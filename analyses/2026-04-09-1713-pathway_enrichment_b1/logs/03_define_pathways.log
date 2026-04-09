@@ -1,0 +1,38 @@
+[20:06:54] === Step 3: Define Pathways (ontology=cyanorak_role, level=1, min_genes=5) ===
+[20:06:54] Loaded annotations: 1938 rows, 1504 genes
+[20:06:54] Loaded hierarchy: 154 edges
+[20:06:54] Built term_names dict: 141 entries
+[20:06:54] Building pathway definitions at level=1, min_genes=5...
+[20:06:55]   69 pathways (>= 5 genes)
+[20:06:55]   gene count distribution: min=5, q25=9, median=14, q75=23, max=340
+[20:06:55] --- Marker gene pathway membership ---
+[20:06:55]   PMM0920 (glnA): cyanorak.role:A.3 | Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro) (16 genes)
+[20:06:55]   PMM0920 (glnA): cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism (28 genes)
+[20:06:55]   PMM0370 (cynA): cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism (28 genes)
+[20:06:55]   PMM0370 (cynA): cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines (10 genes)
+[20:06:55]   PMM0550 (rbcL): cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation (22 genes)
+[20:06:55]   PMM1452 (atpD): cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase (10 genes)
+[20:06:55]   PMM0030 (PMM0030): not in any pathway
+[20:06:55]   PMM0346 (PMM0346): not in any pathway
+[20:06:55] --- Size distribution histogram ---
+[20:06:55]   <5        : 0 pathways
+[20:06:55]   5-9       : 18 pathways
+[20:06:55]   10-19     : 29 pathways
+[20:06:55]   20-49     : 16 pathways
+[20:06:55]   50-99     : 4 pathways
+[20:06:55]   100-199   : 0 pathways
+[20:06:55]   200-499   : 2 pathways
+[20:06:55]   500+      : 0 pathways
+[20:06:55] Loading gene universes and scoping pathways...
+[20:06:55]   de_ctrl_aharonovich_coculture: 69/69 pathways represented, mean_coverage=0.986
+[20:06:55]   de_ctrl_steglich_high_white_light: 49/69 pathways represented, mean_coverage=0.103
+[20:06:55]   de_ctrl_tolonen_cyanate: 69/69 pathways represented, mean_coverage=0.988
+[20:06:55]   de_ctrl_tolonen_urea: 69/69 pathways represented, mean_coverage=0.988
+[20:06:55]   de_ref_read_ndep: 67/69 pathways represented, mean_coverage=0.516
+[20:06:55]   de_ref_tolonen_ndep: 69/69 pathways represented, mean_coverage=0.988
+[20:06:55]   de_weissberg_proteomics_axenic: 69/69 pathways represented, mean_coverage=0.899
+[20:06:55]   de_weissberg_proteomics_coculture: 69/69 pathways represented, mean_coverage=0.899
+[20:06:55]   de_weissberg_rnaseq_axenic: 69/69 pathways represented, mean_coverage=0.992
+[20:06:55]   de_weissberg_rnaseq_coculture: 69/69 pathways represented, mean_coverage=0.992
+[20:06:55] Saved pathway_definitions.csv (69 pathways)
+[20:06:55] Saved pathway_coverage_per_experiment.csv
