@@ -123,17 +123,17 @@ Significant up        8              442         = 450
 Not sig up            6             1393         = 1399
                      14             1835         = 1849
 
-Fisher's exact (one-sided, over-representation):
-Expected: 450 × 14 / 1849 = 3.41
-Observed: 8
-Fold enrichment: 8 / 3.41 = 2.35×
-p-value: scipy.stats.fisher_exact([[8, 442], [6, 1393]], alternative='greater')[1]
+odds_ratio, pvalue = scipy.stats.fisher_exact([[8, 442], [6, 1393]], alternative='greater')
+odds_ratio = (8 × 1393) / (442 × 6) = 11144 / 2652 = 4.20
+Fold enrichment (observed/expected): 8 / (450 × 14 / 1849) = 8 / 3.41 = 2.35×
 
 test_type: vs_genome
 pathway_coverage: 14/15 = 0.93
 ```
 
-Report: "Nitrogen metabolism" enriched 2.35-fold among upregulated genes at day 14 (Fisher's exact p = X, BH q = Y, 8/14 pathway genes significant_up vs 3.4 expected, pathway coverage 93%).
+Note: odds ratio (4.20) and fold enrichment (2.35×) measure different things. Odds ratio compares odds of being in the pathway given DE vs not DE. Fold enrichment compares observed count to expected under independence. Both are reported; fold enrichment is more intuitive for interpretation.
+
+Report: "Nitrogen metabolism" enriched among upregulated genes at day 14 (Fisher's exact p = X, BH q = Y, odds ratio = 4.20, fold enrichment = 2.35×, 8/14 pathway genes significant_up vs 3.4 expected, pathway coverage 93%).
 
 ### Worked example (filtered_subset background)
 
@@ -145,9 +145,9 @@ Significant up        6              194         = 200
 Not sig up            3              637         = 640
                       9              831         = 840
 
-Expected: 200 × 9 / 840 = 2.14
-Observed: 6
-Fold enrichment: 6 / 2.14 = 2.80×
+odds_ratio, pvalue = scipy.stats.fisher_exact([[6, 194], [3, 637]], alternative='greater')
+odds_ratio = (6 × 637) / (194 × 3) = 3822 / 582 = 6.57
+Fold enrichment: 6 / (200 × 9 / 840) = 6 / 2.14 = 2.80×
 
 test_type: vs_filtered_genome
 pathway_coverage: 9/15 = 0.60
@@ -164,6 +164,10 @@ If an experiment has table_scope `significant_any_timepoint` with 300 genes tota
 Significant up        5               75         = 80
 Not sig up            2              218         = 220
                       7              293         = 300
+
+odds_ratio, pvalue = scipy.stats.fisher_exact([[5, 75], [2, 218]], alternative='greater')
+odds_ratio = (5 × 218) / (75 × 2) = 1090 / 150 = 7.27
+Fold enrichment: 5 / (80 × 7 / 300) = 5 / 1.87 = 2.67×
 
 test_type: vs_all_responsive
 pathway_coverage: 7/15 = 0.47 (flagged: < 50%)
@@ -354,7 +358,7 @@ Each test: synthetic DE DataFrame + synthetic pathway definitions → expected F
 - `run_enrichment_all_timepoints(de_df, pathway_defs)` → runs per timepoint, concatenates
 
 **Outputs:**
-- `results/enrichment_all.csv` — full results: pathway, experiment, timepoint, direction, p_value, padj, odds_ratio, fold_enrichment, a, b, c, d, test_type, pathway_coverage, n_pathway_genes_in_universe, n_pathway_genes_total
+- `results/enrichment_all.csv` — full results: pathway, experiment, timepoint, direction, p_value, padj, odds_ratio, fold_enrichment, observed (a), expected, a, b, c, d, test_type, pathway_coverage, n_pathway_genes_in_universe, n_pathway_genes_total
 - `results/enrichment_significant.csv` — filtered to padj < 0.05
 - `logs/05_run_enrichment.log` — total tests, tests per experiment, significant counts, N-pathway traces
 
