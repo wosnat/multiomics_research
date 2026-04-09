@@ -110,18 +110,25 @@ def extract_annotations(
     if not locus_tags:
         return pd.DataFrame(columns=_ANNOTATION_COLS)
 
-    result = gene_ontology_terms(
-        locus_tags=locus_tags,
-        ontology=ontology,
-        limit=None,
-        conn=conn,
-    )
+    # Batch to avoid Neo4j memory limits on large gene lists
+    batch_size = 500
+    frames = []
+    for i in range(0, len(locus_tags), batch_size):
+        batch = locus_tags[i : i + batch_size]
+        result = gene_ontology_terms(
+            locus_tags=batch,
+            ontology=ontology,
+            limit=None,
+            conn=conn,
+        )
+        if result.get("results"):
+            frames.append(to_dataframe(result))
 
-    if not result.get("results"):
+    if not frames:
         return pd.DataFrame(columns=_ANNOTATION_COLS)
 
-    df = to_dataframe(result)
-    return df[["locus_tag", "term_id", "term_name"]].reset_index(drop=True)
+    df = pd.concat(frames, ignore_index=True)
+    return df[["locus_tag", "term_id", "term_name"]].drop_duplicates().reset_index(drop=True)
 
 
 # ---------------------------------------------------------------------------

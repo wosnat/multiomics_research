@@ -1,0 +1,141 @@
+[18:46:43] === Step 1: Extract Annotations ===
+[18:46:43] Loading gene universes from /home/osnat/github/multiomics_research/analyses/2026-04-08-1038-n_limitation_signature_v2/data
+[18:46:43]   Loaded 10 experiment universes
+[18:46:43]     de_ctrl_aharonovich_coculture: 1714 genes
+[18:46:43]     de_ctrl_steglich_high_white_light: 198 genes
+[18:46:43]     de_ctrl_tolonen_cyanate: 1697 genes
+[18:46:43]     de_ctrl_tolonen_urea: 1697 genes
+[18:46:43]     de_ref_read_ndep: 857 genes
+[18:46:43]     de_ref_tolonen_ndep: 1697 genes
+[18:46:43]     de_weissberg_proteomics_axenic: 1424 genes
+[18:46:43]     de_weissberg_proteomics_coculture: 1424 genes
+[18:46:43]     de_weissberg_rnaseq_axenic: 1849 genes
+[18:46:43]     de_weissberg_rnaseq_coculture: 1849 genes
+[18:46:43]   Saved gene_universes.csv
+[18:46:43] Fetching full MED4 gene list via genes_by_function('*', organism='MED4')
+[18:46:43]   Full MED4 genome: 1976 genes
+[18:46:43] Extracting annotations for all ontologies...
+[18:46:43]   Extracting cog_category...
+[18:46:43]     genes=1751, terms=19, unannotated=225
+[18:46:43]     --- Marker gene traces for cog_category ---
+[18:46:43]       PMM0920 (glnA): cog.category:H | Coenzyme transport and metabolism
+[18:46:43]       PMM0370 (cynA): cog.category:P | Inorganic ion transport and metabolism
+[18:46:43]       PMM0550 (rbcL): cog.category:H | Coenzyme transport and metabolism
+[18:46:43]       PMM1452 (atpD): cog.category:F | Nucleotide transport and metabolism
+[18:46:43]       PMM0030 (PMM0030): no annotations
+[18:46:43]       PMM0346 (PMM0346): cog.category:S | Function unknown
+[18:46:43]   Extracting cyanorak_role...
+[18:46:44]     genes=1504, terms=141, unannotated=472
+[18:46:44]     --- Marker gene traces for cyanorak_role ---
+[18:46:44]       PMM0920 (glnA): cyanorak.role:A.3 | Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)
+[18:46:44]       PMM0920 (glnA): cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism
+[18:46:44]       PMM0370 (cynA): cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism
+[18:46:44]       PMM0370 (cynA): cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines
+[18:46:44]       PMM0550 (rbcL): cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation
+[18:46:44]       PMM1452 (atpD): cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase
+[18:46:44]       PMM0030 (PMM0030): no annotations
+[18:46:44]       PMM0346 (PMM0346): no annotations
+[18:46:44]   Extracting ec...
+[18:46:44]     genes=828, terms=700, unannotated=1148
+[18:46:44]     --- Marker gene traces for ec ---
+[18:46:44]       PMM0920 (glnA): ec:6.3.1.2 | glutamine synthetase
+[18:46:44]       PMM0370 (cynA): no annotations
+[18:46:44]       PMM0550 (rbcL): ec:4.1.1.39 | ribulose-bisphosphate carboxylase
+[18:46:44]       PMM1452 (atpD): ec:7.1.2.2 | H(+)-transporting two-sector ATPase
+[18:46:44]       PMM0030 (PMM0030): no annotations
+[18:46:44]       PMM0346 (PMM0346): no annotations
+[18:46:44]   Extracting go_bp...
+[18:46:44]     genes=1122, terms=669, unannotated=854
+[18:46:44]     --- Marker gene traces for go_bp ---
+[18:46:44]       PMM0920 (glnA): go:0009399 | nitrogen fixation
+[18:46:44]       PMM0920 (glnA): go:0019740 | nitrogen utilization
+[18:46:44]       PMM0370 (cynA): go:0006811 | monoatomic ion transport
+[18:46:44]       PMM0370 (cynA): go:0015704 | cyanate transport
+[18:46:44]       PMM0550 (rbcL): go:0015977 | carbon fixation
+[18:46:44]       PMM1452 (atpD): go:0015986 | proton motive force-driven ATP synthesis
+[18:46:44]       PMM0030 (PMM0030): no annotations
+[18:46:44]       PMM0346 (PMM0346): no annotations
+[18:46:44]   Extracting go_cc...
+[18:46:45]     genes=805, terms=121, unannotated=1171
+[18:46:45]     --- Marker gene traces for go_cc ---
+[18:46:45]       PMM0920 (glnA): go:0005737 | cytoplasm
+[18:46:45]       PMM0920 (glnA): go:0016020 | membrane
+[18:46:45]       PMM0370 (cynA): go:0005886 | plasma membrane
+[18:46:45]       PMM0370 (cynA): go:0042597 | periplasmic space
+[18:46:45]       PMM0370 (cynA): go:0055052 | ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing
+[18:46:45]       PMM0550 (rbcL): go:0031470 | carboxysome
+[18:46:45]       PMM1452 (atpD): go:0045259 | proton-transporting ATP synthase complex
+[18:46:45]       PMM0030 (PMM0030): no annotations
+[18:46:45]       PMM0346 (PMM0346): no annotations
+[18:46:45]   Extracting go_mf...
+[18:46:45]     genes=1200, terms=886, unannotated=776
+[18:46:45]     --- Marker gene traces for go_mf ---
+[18:46:45]       PMM0920 (glnA): go:0003824 | catalytic activity
+[18:46:45]       PMM0920 (glnA): go:0004356 | glutamine synthetase activity
+[18:46:45]       PMM0920 (glnA): go:0005524 | ATP binding
+[18:46:45]       PMM0920 (glnA): go:0046872 | metal ion binding
+[18:46:45]       PMM0370 (cynA): go:0015110 | cyanate transmembrane transporter activity
+[18:46:45]       PMM0370 (cynA): go:0140359 | ABC-type transporter activity
+[18:46:45]       PMM0550 (rbcL): go:0016984 | ribulose-bisphosphate carboxylase activity
+[18:46:45]       PMM1452 (atpD): go:0015662 | P-type ion transporter activity
+[18:46:45]       PMM1452 (atpD): go:0046933 | proton-transporting ATP synthase activity, rotational mechanism
+[18:46:45]       PMM0030 (PMM0030): no annotations
+[18:46:45]       PMM0346 (PMM0346): no annotations
+[18:46:45]   Extracting kegg...
+[18:46:46]     genes=1065, terms=1017, unannotated=911
+[18:46:46]     --- Marker gene traces for kegg ---
+[18:46:46]       PMM0920 (glnA): kegg.orthology:K01915 | glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+[18:46:46]       PMM0370 (cynA): kegg.orthology:K15576 | nrtA, nasF, cynA; nitrate/nitrite transport system substrate-binding protein
+[18:46:46]       PMM0370 (cynA): kegg.orthology:K15598 | thiY; putative hydroxymethylpyrimidine transport system substrate-binding protein
+[18:46:46]       PMM0550 (rbcL): kegg.orthology:K01601 | rbcL, cbbL; ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]
+[18:46:46]       PMM1452 (atpD): kegg.orthology:K02113 | ATPF1D, atpH; F-type H+-transporting ATPase subunit delta
+[18:46:46]       PMM0030 (PMM0030): no annotations
+[18:46:46]       PMM0346 (PMM0346): no annotations
+[18:46:46]   Extracting pfam...
+[18:46:46]     genes=1492, terms=1527, unannotated=484
+[18:46:46]     --- Marker gene traces for pfam ---
+[18:46:46]       PMM0920 (glnA): pfam:PF00120 | Glutamine synthetase, catalytic domain
+[18:46:46]       PMM0920 (glnA): pfam:PF03951 | Glutamine synthetase, beta-Grasp domain
+[18:46:46]       PMM0370 (cynA): pfam:PF09084 | NMT1/THI5 like
+[18:46:46]       PMM0370 (cynA): pfam:PF13379 | NMT1-like family
+[18:46:46]       PMM0550 (rbcL): pfam:PF00016 | Ribulose bisphosphate carboxylase large chain, catalytic domain
+[18:46:46]       PMM0550 (rbcL): pfam:PF02788 | Ribulose bisphosphate carboxylase large chain, N-terminal domain
+[18:46:46]       PMM1452 (atpD): pfam:PF00213 | ATP synthase delta (OSCP) subunit
+[18:46:46]       PMM0030 (PMM0030): no annotations
+[18:46:46]       PMM0346 (PMM0346): pfam:PF13319 | Protein of unknown function (DUF4090)
+[18:46:46]   Extracting tigr_role...
+[18:46:46]     genes=1765, terms=106, unannotated=211
+[18:46:46]     --- Marker gene traces for tigr_role ---
+[18:46:46]       PMM0920 (glnA): tigr.role:73 | Amino acid biosynthesis / Glutamate family
+[18:46:46]       PMM0370 (cynA): tigr.role:142 | Transport and binding proteins / Amino acids, peptides and amines
+[18:46:46]       PMM0550 (rbcL): tigr.role:164 | Energy metabolism / Photosynthesis
+[18:46:46]       PMM1452 (atpD): tigr.role:111 | Energy metabolism / ATP-proton motive force interconversion
+[18:46:46]       PMM1452 (atpD): tigr.role:164 | Energy metabolism / Photosynthesis
+[18:46:46]       PMM0030 (PMM0030): tigr.role:856 | Not Found
+[18:46:46]       PMM0346 (PMM0346): tigr.role:156 | Hypothetical proteins / Conserved
+[18:46:46] Extracting hierarchies for hierarchical ontologies...
+[18:46:46]   Extracting hierarchy for cyanorak_role...
+[18:46:47]     edges=154, levels=[1, 2]
+[18:46:47]   Extracting hierarchy for ec...
+[18:46:47]     edges=7330, levels=[1, 2, 3]
+[18:46:47]   Extracting hierarchy for go_bp...
+[18:46:47]     edges=5502, levels=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+[18:46:47]   Extracting hierarchy for go_cc...
+[18:46:47]     edges=681, levels=[1, 2, 3, 4, 5, 6]
+[18:46:47]   Extracting hierarchy for go_mf...
+[18:46:47]     edges=3502, levels=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+[18:46:47]   Extracting hierarchy for kegg...
+[18:46:48]     edges=8189, levels=[1, 2, 3]
+[18:46:48]   Extracting hierarchy for pfam...
+[18:46:48]     (no hierarchy edges found)
+[18:46:48] 
+[18:46:48] === Annotation Summary ===
+[18:46:48]   cog_category          genes=1751  terms=  19  unannotated= 225
+[18:46:48]   cyanorak_role         genes=1504  terms= 141  unannotated= 472
+[18:46:48]   ec                    genes= 828  terms= 700  unannotated=1148
+[18:46:48]   go_bp                 genes=1122  terms= 669  unannotated= 854
+[18:46:48]   go_cc                 genes= 805  terms= 121  unannotated=1171
+[18:46:48]   go_mf                 genes=1200  terms= 886  unannotated= 776
+[18:46:48]   kegg                  genes=1065  terms=1017  unannotated= 911
+[18:46:48]   pfam                  genes=1492  terms=1527  unannotated= 484
+[18:46:48]   tigr_role             genes=1765  terms= 106  unannotated= 211

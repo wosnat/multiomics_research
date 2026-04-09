@@ -1,0 +1,94 @@
+[20:04:22] === Step 2: Survey Annotation Landscape ===
+[20:04:22] Loading gene universes from /home/osnat/github/multiomics_research/analyses/2026-04-08-1038-n_limitation_signature_v2/data
+[20:04:22]   Loaded 10 experiment universes
+[20:04:22]   Combined background universe: 1870 genes
+[20:04:22] Found 9 annotation files
+[20:04:22]   Surveying cog_category...
+[20:04:22]     coverage=0.932  annotated=1742  unannotated=128
+[20:04:22]     --- Full profile for cog_category ---
+[20:04:22]     {'coverage': 0.9315508021390374, 'n_annotated': 1742, 'n_unannotated': 128, 'per_level': []}
+[20:04:22]   Surveying cyanorak_role...
+[20:04:22]     coverage=0.784  annotated=1466  unannotated=404
+[20:04:22]     level=0  n_terms=19  median_genes=70.0  [1, 384]
+[20:04:22]     level=1  n_terms=109  median_genes=9.0  [1, 308]
+[20:04:22]     level=2  n_terms=26  median_genes=11.5  [1, 51]
+[20:04:22]     --- Full profile for cyanorak_role ---
+[20:04:22]     {'coverage': 0.7839572192513369, 'n_annotated': 1466, 'n_unannotated': 404, 'per_level': [{'level': 0, 'n_terms_with_genes': 19, 'min_genes': 1, 'q1_genes': 40.0, 'median_genes': 70.0, 'q3_genes': 121.0, 'max_genes': 384}, {'level': 1, 'n_terms_with_genes': 109, 'min_genes': 1, 'q1_genes': 3.0, 'median_genes': 9.0, 'q3_genes': 16.0, 'max_genes': 308}, {'level': 2, 'n_terms_with_genes': 26, 'min_genes': 1, 'q1_genes': 5.25, 'median_genes': 11.5, 'q3_genes': 25.0, 'max_genes': 51}]}
+[20:04:22]   Surveying ec...
+[20:04:23]     coverage=0.442  annotated=827  unannotated=1043
+[20:04:23]     level=0  n_terms=7  median_genes=80.0  [55, 294]
+[20:04:23]     level=1  n_terms=61  median_genes=7.0  [1, 91]
+[20:04:23]     level=2  n_terms=143  median_genes=3.0  [1, 48]
+[20:04:23]     level=3  n_terms=649  median_genes=1.0  [1, 16]
+[20:04:23]     --- Full profile for ec ---
+[20:04:23]     {'coverage': 0.44224598930481285, 'n_annotated': 827, 'n_unannotated': 1043, 'per_level': [{'level': 0, 'n_terms_with_genes': 7, 'min_genes': 55, 'q1_genes': 66.0, 'median_genes': 80.0, 'q3_genes': 167.5, 'max_genes': 294}, {'level': 1, 'n_terms_with_genes': 61, 'min_genes': 1, 'q1_genes': 3.0, 'median_genes': 7.0, 'q3_genes': 20.0, 'max_genes': 91}, {'level': 2, 'n_terms_with_genes': 143, 'min_genes': 1, 'q1_genes': 2.0, 'median_genes': 3.0, 'q3_genes': 8.0, 'max_genes': 48}, {'level': 3, 'n_terms_with_genes': 649, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 1.0, 'max_genes': 16}]}
+[20:04:23]   Surveying go_bp...
+[20:04:26]     coverage=0.598  annotated=1119  unannotated=751
+[20:04:26]     level=0  n_terms=1  median_genes=1119.0  [1119, 1119]
+[20:04:26]     level=1  n_terms=11  median_genes=7.0  [1, 1035]
+[20:04:26]     level=2  n_terms=40  median_genes=8.0  [1, 911]
+[20:04:26]     level=3  n_terms=121  median_genes=5.0  [1, 635]
+[20:04:26]     level=4  n_terms=237  median_genes=4.0  [1, 187]
+[20:04:26]     level=5  n_terms=275  median_genes=3.0  [1, 101]
+[20:04:26]     level=6  n_terms=262  median_genes=2.0  [1, 52]
+[20:04:26]     level=7  n_terms=177  median_genes=1.0  [1, 41]
+[20:04:26]     level=8  n_terms=55  median_genes=1.0  [1, 35]
+[20:04:26]     level=9  n_terms=10  median_genes=1.0  [1, 4]
+[20:04:26]     level=10  n_terms=1  median_genes=1.0  [1, 1]
+[20:04:26]     level=11  n_terms=0  median_genes=None  [None, None]
+[20:04:26]     --- Full profile for go_bp ---
+[20:04:26]     {'coverage': 0.5983957219251337, 'n_annotated': 1119, 'n_unannotated': 751, 'per_level': [{'level': 0, 'n_terms_with_genes': 1, 'min_genes': 1119, 'q1_genes': 1119.0, 'median_genes': 1119.0, 'q3_genes': 1119.0, 'max_genes': 1119}, {'level': 1, 'n_terms_with_genes': 11, 'min_genes': 1, 'q1_genes': 5.5, 'median_genes': 7.0, 'q3_genes': 105.5, 'max_genes': 1035}, {'level': 2, 'n_terms_with_genes': 40, 'min_genes': 1, 'q1_genes': 3.0, 'median_genes': 8.0, 'q3_genes': 25.75, 'max_genes': 911}, {'level': 3, 'n_terms_with_genes': 121, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 5.0, 'q3_genes': 17.0, 'max_genes': 635}, {'level': 4, 'n_terms_with_genes': 237, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 4.0, 'q3_genes': 13.0, 'max_genes': 187}, {'level': 5, 'n_terms_with_genes': 275, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 3.0, 'q3_genes': 8.0, 'max_genes': 101}, {'level': 6, 'n_terms_with_genes': 262, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 2.0, 'q3_genes': 4.75, 'max_genes': 52}, {'level': 7, 'n_terms_with_genes': 177, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 3.0, 'max_genes': 41}, {'level': 8, 'n_terms_with_genes': 55, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 3.0, 'max_genes': 35}, {'level': 9, 'n_terms_with_genes': 10, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 1.0, 'max_genes': 4}, {'level': 10, 'n_terms_with_genes': 1, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 1.0, 'max_genes': 1}, {'level': 11, 'n_terms_with_genes': 0, 'min_genes': None, 'q1_genes': None, 'median_genes': None, 'q3_genes': None, 'max_genes': None}]}
+[20:04:26]   Surveying go_cc...
+[20:04:27]     coverage=0.426  annotated=797  unannotated=1073
+[20:04:27]     level=0  n_terms=1  median_genes=797.0  [797, 797]
+[20:04:27]     level=1  n_terms=2  median_genes=513.5  [256, 771]
+[20:04:27]     level=2  n_terms=40  median_genes=4.0  [1, 333]
+[20:04:27]     level=3  n_terms=81  median_genes=2.0  [1, 115]
+[20:04:27]     level=4  n_terms=42  median_genes=2.0  [1, 44]
+[20:04:27]     level=5  n_terms=10  median_genes=2.5  [1, 24]
+[20:04:27]     level=6  n_terms=1  median_genes=13.0  [13, 13]
+[20:04:27]     --- Full profile for go_cc ---
+[20:04:27]     {'coverage': 0.42620320855614974, 'n_annotated': 797, 'n_unannotated': 1073, 'per_level': [{'level': 0, 'n_terms_with_genes': 1, 'min_genes': 797, 'q1_genes': 797.0, 'median_genes': 797.0, 'q3_genes': 797.0, 'max_genes': 797}, {'level': 1, 'n_terms_with_genes': 2, 'min_genes': 256, 'q1_genes': 384.75, 'median_genes': 513.5, 'q3_genes': 642.25, 'max_genes': 771}, {'level': 2, 'n_terms_with_genes': 40, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 4.0, 'q3_genes': 33.0, 'max_genes': 333}, {'level': 3, 'n_terms_with_genes': 81, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 2.0, 'q3_genes': 7.0, 'max_genes': 115}, {'level': 4, 'n_terms_with_genes': 42, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 2.0, 'q3_genes': 4.0, 'max_genes': 44}, {'level': 5, 'n_terms_with_genes': 10, 'min_genes': 1, 'q1_genes': 1.25, 'median_genes': 2.5, 'q3_genes': 11.0, 'max_genes': 24}, {'level': 6, 'n_terms_with_genes': 1, 'min_genes': 13, 'q1_genes': 13.0, 'median_genes': 13.0, 'q3_genes': 13.0, 'max_genes': 13}]}
+[20:04:27]   Surveying go_mf...
+[20:04:29]     coverage=0.641  annotated=1199  unannotated=671
+[20:04:29]     level=0  n_terms=1  median_genes=1199.0  [1199, 1199]
+[20:04:29]     level=1  n_terms=15  median_genes=17.0  [1, 909]
+[20:04:29]     level=2  n_terms=70  median_genes=4.5  [1, 562]
+[20:04:29]     level=3  n_terms=177  median_genes=3.0  [1, 299]
+[20:04:29]     level=4  n_terms=272  median_genes=2.0  [1, 222]
+[20:04:29]     level=5  n_terms=432  median_genes=1.0  [1, 221]
+[20:04:29]     level=6  n_terms=156  median_genes=1.0  [1, 73]
+[20:04:29]     level=7  n_terms=45  median_genes=1.0  [1, 42]
+[20:04:29]     level=8  n_terms=8  median_genes=1.0  [1, 2]
+[20:04:29]     level=9  n_terms=0  median_genes=None  [None, None]
+[20:04:29]     --- Full profile for go_mf ---
+[20:04:29]     {'coverage': 0.6411764705882353, 'n_annotated': 1199, 'n_unannotated': 671, 'per_level': [{'level': 0, 'n_terms_with_genes': 1, 'min_genes': 1199, 'q1_genes': 1199.0, 'median_genes': 1199.0, 'q3_genes': 1199.0, 'max_genes': 1199}, {'level': 1, 'n_terms_with_genes': 15, 'min_genes': 1, 'q1_genes': 8.0, 'median_genes': 17.0, 'q3_genes': 91.5, 'max_genes': 909}, {'level': 2, 'n_terms_with_genes': 70, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 4.5, 'q3_genes': 27.25, 'max_genes': 562}, {'level': 3, 'n_terms_with_genes': 177, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 3.0, 'q3_genes': 12.0, 'max_genes': 299}, {'level': 4, 'n_terms_with_genes': 272, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 2.0, 'q3_genes': 5.0, 'max_genes': 222}, {'level': 5, 'n_terms_with_genes': 432, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 2.0, 'max_genes': 221}, {'level': 6, 'n_terms_with_genes': 156, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 1.25, 'max_genes': 73}, {'level': 7, 'n_terms_with_genes': 45, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 2.0, 'max_genes': 42}, {'level': 8, 'n_terms_with_genes': 8, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 1.25, 'max_genes': 2}, {'level': 9, 'n_terms_with_genes': 0, 'min_genes': None, 'q1_genes': None, 'median_genes': None, 'q3_genes': None, 'max_genes': None}]}
+[20:04:29]   Surveying kegg...
+[20:04:30]     coverage=0.570  annotated=1065  unannotated=805
+[20:04:30]     level=0  n_terms=6  median_genes=66.5  [33, 538]
+[20:04:30]     level=1  n_terms=38  median_genes=14.5  [1, 164]
+[20:04:30]     level=2  n_terms=213  median_genes=4.0  [1, 519]
+[20:04:30]     level=3  n_terms=722  median_genes=1.0  [1, 4]
+[20:04:30]     --- Full profile for kegg ---
+[20:04:30]     {'coverage': 0.56951871657754, 'n_annotated': 1065, 'n_unannotated': 805, 'per_level': [{'level': 0, 'n_terms_with_genes': 6, 'min_genes': 33, 'q1_genes': 49.0, 'median_genes': 66.5, 'q3_genes': 141.0, 'max_genes': 538}, {'level': 1, 'n_terms_with_genes': 38, 'min_genes': 1, 'q1_genes': 5.0, 'median_genes': 14.5, 'q3_genes': 37.25, 'max_genes': 164}, {'level': 2, 'n_terms_with_genes': 213, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 4.0, 'q3_genes': 12.0, 'max_genes': 519}, {'level': 3, 'n_terms_with_genes': 722, 'min_genes': 1, 'q1_genes': 1.0, 'median_genes': 1.0, 'q3_genes': 1.0, 'max_genes': 4}]}
+[20:04:30]   Surveying pfam...
+[20:04:30]     coverage=0.796  annotated=1488  unannotated=382
+[20:04:30]     --- Full profile for pfam ---
+[20:04:30]     {'coverage': 0.7957219251336899, 'n_annotated': 1488, 'n_unannotated': 382, 'per_level': []}
+[20:04:30]   Surveying tigr_role...
+[20:04:30]     coverage=0.922  annotated=1725  unannotated=145
+[20:04:30]     --- Full profile for tigr_role ---
+[20:04:30]     {'coverage': 0.9224598930481284, 'n_annotated': 1725, 'n_unannotated': 145, 'per_level': []}
+[20:04:30] Ranking ontologies...
+[20:04:30]   Ranked 9 ontologies
+[20:04:30]     rank=1  cyanorak_role         coverage=0.784  median_term=11.5  score=1.784
+[20:04:30]     rank=2  kegg                  coverage=0.570  median_term=9.2  score=1.570
+[20:04:30]     rank=3  ec                    coverage=0.442  median_term=5.0  score=1.442
+[20:04:30]     rank=4  cog_category          coverage=0.932  median_term=0.0  score=0.932
+[20:04:30]     rank=5  tigr_role             coverage=0.922  median_term=0.0  score=0.922
+[20:04:30]     rank=6  pfam                  coverage=0.796  median_term=0.0  score=0.796
+[20:04:30]     rank=7  go_mf                 coverage=0.641  median_term=2.0  score=0.641
+[20:04:30]     rank=8  go_bp                 coverage=0.598  median_term=3.0  score=0.598
+[20:04:30]     rank=9  go_cc                 coverage=0.426  median_term=4.0  score=0.426
+[20:04:30] Saved ontology_profiles.csv (43 rows)
+[20:04:30] Saved ontology_ranking.csv (9 rows)

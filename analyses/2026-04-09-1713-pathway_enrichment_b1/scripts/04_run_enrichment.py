@@ -28,7 +28,7 @@ ANALYSIS_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ANALYSIS_DIR / "data"
 RESULTS_DIR = ANALYSIS_DIR / "results"
 LOGS_DIR = ANALYSIS_DIR / "logs"
-V2_DATA_DIR = Path(__file__).resolve().parents[3] / "2026-04-08-1038-n_limitation_signature_v2" / "data"
+V2_DATA_DIR = ANALYSIS_DIR.parent / "2026-04-08-1038-n_limitation_signature_v2" / "data"
 
 # Keywords for marker pathway --explore traces
 MARKER_PATHWAY_KEYWORDS = ["nitrogen", "photosynthesis", "transport", "ribosomal", "ribosome"]

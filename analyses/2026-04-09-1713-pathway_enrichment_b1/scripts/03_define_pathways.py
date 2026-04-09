@@ -27,7 +27,7 @@ from enrich_utils.survey import build_pathway_definitions, scope_pathways_to_uni
 ANALYSIS_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ANALYSIS_DIR / "data"
 LOGS_DIR = ANALYSIS_DIR / "logs"
-V2_DATA_DIR = Path(__file__).resolve().parents[3] / "2026-04-08-1038-n_limitation_signature_v2" / "data"
+V2_DATA_DIR = ANALYSIS_DIR.parent / "2026-04-08-1038-n_limitation_signature_v2" / "data"
 
 MARKER_GENES = ["PMM0920", "PMM0370", "PMM0550", "PMM1452", "PMM0030", "PMM0346"]
 MARKER_NAMES = {
