@@ -97,16 +97,15 @@ def main(explore: bool = False) -> None:
 
         # Log per-ontology stats
         log(
-            f"    coverage={profile['coverage']:.3f}  "
-            f"annotated={profile['n_annotated']}  "
-            f"unannotated={profile['n_unannotated']}"
+            f"    genome_coverage={profile['genome_coverage']:.3f}  "
+            f"annotated={profile['n_annotated']}/{profile['n_universe']}"
         )
         for lvl in profile.get("per_level", []):
             log(
                 f"    level={lvl['level']}  "
-                f"genes={lvl.get('n_genes_at_level', '?')}/{profile['n_annotated']} ({lvl.get('gene_coverage', 0):.0%})  "
+                f"genes={lvl.get('n_genes_at_level', '?')}/{profile['n_universe']} ({lvl.get('genome_coverage', 0):.0%})  "
                 f"n_terms={lvl['n_terms_with_genes']}  "
-                f"median_genes={lvl.get('median_genes')}  "
+                f"median={lvl.get('median_genes')}  "
                 f"[{lvl.get('min_genes')}, {lvl.get('max_genes')}]"
             )
 
@@ -125,10 +124,11 @@ def main(explore: bool = False) -> None:
         lvl_str = f"level {int(lvl)}" if pd.notna(lvl) else "none"
         log(
             f"    rank={int(row['rank'])}  {row['ontology']:20s}  "
-            f"coverage={row['coverage']:.3f}  "
+            f"genome_cov={row['genome_coverage']:.3f}  "
             f"best_level={lvl_str}  "
-            f"gene_cov={row.get('best_level_gene_coverage', 0):.0%}  "
+            f"level_cov={row.get('best_level_genome_coverage', 0):.0%}  "
             f"median={row.get('best_level_median_genes', 0):.0f}  "
+            f"max={int(row.get('best_level_max_genes', 0))}  "
             f"n_terms={int(row.get('best_level_n_terms', 0))}  "
             f"score={row['score']:.3f}"
         )
@@ -141,9 +141,9 @@ def main(explore: bool = False) -> None:
     for ontology, profile in profiles.items():
         base = {
             "ontology": ontology,
-            "coverage": profile["coverage"],
+            "genome_coverage": profile["genome_coverage"],
             "n_annotated": profile["n_annotated"],
-            "n_unannotated": profile["n_unannotated"],
+            "n_universe": profile["n_universe"],
         }
         if not profile.get("per_level"):
             base["level"] = None

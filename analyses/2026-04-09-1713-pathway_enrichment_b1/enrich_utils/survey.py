@@ -37,14 +37,14 @@ def survey_ontology(
     Returns
     -------
     dict with:
-        coverage         - fraction of gene_universe with >= 1 annotation
+        genome_coverage  - fraction of gene_universe with >= 1 annotation
         n_annotated      - count of annotated genes in universe
-        n_unannotated    - count of unannotated genes in universe
+        n_universe       - size of gene_universe
         per_level        - list of dicts, one per level present in hierarchy_df:
             level                - integer level
             n_genes_at_level     - distinct genes reachable at this level
-            gene_coverage        - n_genes_at_level / n_annotated (fraction of
-                                   annotated genes that appear at this level)
+            genome_coverage      - n_genes_at_level / n_universe (fraction of
+                                   the full gene universe reachable at this level)
             n_terms_with_genes   - number of terms that have >= 1 annotated gene
             min_genes            - minimum term gene count (across terms with >= 1)
             q1_genes             - 25th percentile
@@ -55,8 +55,8 @@ def survey_ontology(
     # Annotated genes restricted to universe
     annotated_in_universe = set(annotations_df["locus_tag"]) & gene_universe
     n_annotated = len(annotated_in_universe)
-    n_unannotated = len(gene_universe) - n_annotated
-    coverage = n_annotated / len(gene_universe) if gene_universe else 0.0
+    n_universe = len(gene_universe)
+    genome_coverage = n_annotated / n_universe if n_universe > 0 else 0.0
 
     # Determine all levels present in hierarchy
     levels = sorted(set(hierarchy_df["child_level"]) | set(hierarchy_df["parent_level"]))
@@ -67,13 +67,13 @@ def survey_ontology(
         # Restrict to universe genes
         rolled_in_universe = rolled[rolled["locus_tag"].isin(gene_universe)]
         n_genes_at_level = rolled_in_universe["locus_tag"].nunique()
-        gene_cov = n_genes_at_level / n_annotated if n_annotated > 0 else 0.0
+        level_genome_cov = n_genes_at_level / n_universe if n_universe > 0 else 0.0
 
         if len(rolled_in_universe) == 0:
             per_level.append({
                 "level": level,
                 "n_genes_at_level": 0,
-                "gene_coverage": 0.0,
+                "genome_coverage": 0.0,
                 "n_terms_with_genes": 0,
                 "min_genes": None,
                 "q1_genes": None,
@@ -89,7 +89,7 @@ def survey_ontology(
         per_level.append({
             "level": level,
             "n_genes_at_level": n_genes_at_level,
-            "gene_coverage": gene_cov,
+            "genome_coverage": level_genome_cov,
             "n_terms_with_genes": len(sizes),
             "min_genes": int(sizes.min()),
             "q1_genes": float(np.percentile(sizes, 25)),
@@ -99,9 +99,9 @@ def survey_ontology(
         })
 
     return {
-        "coverage": coverage,
+        "genome_coverage": genome_coverage,
         "n_annotated": n_annotated,
-        "n_unannotated": n_unannotated,
+        "n_universe": n_universe,
         "per_level": per_level,
     }
 
@@ -127,42 +127,41 @@ def rank_ontologies(profiles: dict) -> pd.DataFrame:
     Sorted by rank ascending (best first).
 
     Scoring per level:
-        A level qualifies if: median term size 5-50, gene coverage >= 0.5
-        Best level = qualifying level with highest gene_coverage * coverage
-        score = coverage * best_level_gene_coverage  (0 if no qualifying level)
+        A level qualifies if: median term size 5-50, genome coverage >= 0.3
+        Best level = qualifying level with highest genome_coverage
+        score = best_level_genome_coverage  (0 if no qualifying level)
     """
     rows = []
     for ontology, profile in profiles.items():
-        cov = profile.get("coverage", 0.0)
+        genome_cov = profile.get("genome_coverage", 0.0)
 
         # Find the best qualifying level
         best_level = None
-        best_level_gene_cov = 0.0
+        best_level_genome_cov = 0.0
         best_level_median = 0.0
         best_level_n_terms = 0
+        best_level_max = 0
 
         for lvl in profile.get("per_level", []):
             median = lvl.get("median_genes")
-            gene_cov = lvl.get("gene_coverage", 0.0)
-            if median is not None and 5 <= median <= 50 and gene_cov >= 0.5:
-                if gene_cov > best_level_gene_cov:
+            lvl_genome_cov = lvl.get("genome_coverage", 0.0)
+            if median is not None and 5 <= median <= 50 and lvl_genome_cov >= 0.3:
+                if lvl_genome_cov > best_level_genome_cov:
                     best_level = lvl["level"]
-                    best_level_gene_cov = gene_cov
+                    best_level_genome_cov = lvl_genome_cov
                     best_level_median = median
                     best_level_n_terms = lvl.get("n_terms_with_genes", 0)
+                    best_level_max = lvl.get("max_genes", 0)
 
-        # Flat ontologies with no hierarchy: treat leaf as only level
-        if not profile.get("per_level") and cov > 0:
-            best_level_gene_cov = 0.0  # no qualifying level
-
-        score = cov * best_level_gene_cov
+        score = best_level_genome_cov
 
         rows.append({
             "ontology": ontology,
-            "coverage": cov,
+            "genome_coverage": genome_cov,
             "best_level": best_level,
-            "best_level_gene_coverage": best_level_gene_cov,
+            "best_level_genome_coverage": best_level_genome_cov,
             "best_level_median_genes": best_level_median,
+            "best_level_max_genes": best_level_max,
             "best_level_n_terms": best_level_n_terms,
             "score": score,
         })
