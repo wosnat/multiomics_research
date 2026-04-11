@@ -144,7 +144,7 @@ def make_heatmap(
 
     fig, ax = plt.subplots(figsize=(fig_width, fig_height))
     # Leave space on the left for row group labels
-    fig.subplots_adjust(left=0.35)
+    fig.subplots_adjust(left=0.40)
 
     im = ax.imshow(
         matrix.values,
@@ -162,7 +162,7 @@ def make_heatmap(
     ax.set_yticks(range(n_pathways))
     ax.set_yticklabels(matrix.index, fontsize=8)
 
-    ax.set_title(title, fontsize=12, fontweight="bold", pad=12)
+    fig.suptitle(title, fontsize=12, fontweight="bold", y=1.02)
 
     # Light cell gridlines
     ax.set_xticks([x - 0.5 for x in range(1, n_conditions)], minor=True)
@@ -192,7 +192,7 @@ def make_heatmap(
                 continue
             mid = (start + end - 1) / 2
             # Bracket line in axes fraction x, data y
-            bracket_x = -0.04  # left of the y-axis labels
+            bracket_x = -0.08  # left of the y-axis labels
             ax.plot([bracket_x, bracket_x], [start - 0.4, end - 1 + 0.4],
                     transform=ax.get_yaxis_transform(),
                     color="0.4", linewidth=1.2, clip_on=False)
