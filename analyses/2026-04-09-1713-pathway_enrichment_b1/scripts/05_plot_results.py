@@ -146,16 +146,27 @@ def make_heatmap(
     # Leave space on the left for row group labels
     fig.subplots_adjust(left=0.40)
 
+    # Cap color scale at vmax for readability (extreme values compress the range)
+    vmax = min(matrix.values.max(), 10.0) if matrix.values.max() > 0 else 1.0
+
     im = ax.imshow(
-        matrix.values,
+        np.clip(matrix.values, 0, vmax),
         aspect="auto",
         cmap=cmap,
         vmin=0,
-        vmax=max(matrix.values.max(), threshold + 1),
+        vmax=vmax,
         interpolation="nearest",
     )
 
     plt.colorbar(im, ax=ax, label="-log10(padj)", shrink=0.8)
+
+    # Mark significant cells with *
+    for i in range(n_pathways):
+        for j in range(n_conditions):
+            val = matrix.values[i, j]
+            if val >= threshold:
+                ax.text(j, i, "*", ha="center", va="center",
+                        fontsize=8, fontweight="bold", color="black" if val < vmax * 0.7 else "white")
 
     ax.set_xticks(range(n_conditions))
     ax.set_xticklabels(matrix.columns, rotation=60, ha="right", fontsize=7.5)
@@ -292,6 +303,236 @@ def build_matrix(
     matrix = matrix.iloc[sort_order]
 
     return matrix
+
+
+def plot_discordance_scatter(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
+    """Scatter: -log10(padj) in RNA-seq axenic vs proteomics coculture per pathway.
+
+    Each point = one pathway. Separate panels for up and down.
+    Pathways on the diagonal are concordant; off-diagonal = discordance.
+    """
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+    for ax, direction, color in zip(axes, ["up", "down"], ["firebrick", "steelblue"]):
+        # RNA-seq axenic, best timepoint (day 14 only)
+        rna_ax = enrich_df[
+            (enrich_df["experiment"] == "de_weissberg_rnaseq_axenic") &
+            (enrich_df["direction"] == direction)
+        ].set_index("pathway_id")
+
+        # Proteomics coculture — take max -log10(padj) across timepoints
+        prot_co = enrich_df[
+            (enrich_df["experiment"] == "de_weissberg_proteomics_coculture") &
+            (enrich_df["direction"] == direction)
+        ].copy()
+        prot_co["neg_log10"] = prot_co["padj"].apply(
+            lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
+        )
+        prot_co_max = prot_co.groupby("pathway_id")["neg_log10"].max()
+
+        # Join
+        common = set(rna_ax.index) & set(prot_co_max.index)
+        if not common:
+            ax.text(0.5, 0.5, "No common pathways", transform=ax.transAxes, ha="center")
+            ax.set_title(f"{direction.capitalize()}-regulated")
+            continue
+
+        x_vals, y_vals, labels = [], [], []
+        for pid in sorted(common):
+            rna_p = rna_ax.loc[pid, "padj"]
+            x = -np.log10(rna_p) if pd.notna(rna_p) and rna_p > 0 else 0.0
+            y = prot_co_max[pid]
+            x_vals.append(x)
+            y_vals.append(y)
+            # Get short name
+            name = rna_ax.loc[pid, "pathway_name"] if "pathway_name" in rna_ax.columns else pid
+            labels.append(_short_pathway_name(str(name)))
+
+        ax.scatter(x_vals, y_vals, c=color, alpha=0.7, s=40, edgecolors="white", linewidths=0.5)
+
+        # Label significant points
+        sig_thresh = NEG_LOG10_THRESHOLD
+        for x, y, label in zip(x_vals, y_vals, labels):
+            if x > sig_thresh or y > sig_thresh:
+                ax.annotate(label, (x, y), fontsize=6, ha="left", va="bottom",
+                            xytext=(3, 3), textcoords="offset points")
+
+        # Diagonal line
+        max_val = max(max(x_vals, default=1), max(y_vals, default=1)) * 1.1
+        ax.plot([0, max_val], [0, max_val], "k--", alpha=0.3, linewidth=0.8)
+
+        # Significance thresholds
+        ax.axhline(y=sig_thresh, color="gray", linestyle=":", alpha=0.4, linewidth=0.8)
+        ax.axvline(x=sig_thresh, color="gray", linestyle=":", alpha=0.4, linewidth=0.8)
+
+        ax.set_xlabel("RNA-seq axenic  -log10(padj)", fontsize=9)
+        ax.set_ylabel("Proteomics coculture  -log10(padj)", fontsize=9)
+        ax.set_title(f"{direction.capitalize()}-regulated", fontsize=10, fontweight="bold")
+        ax.set_xlim(-0.5, None)
+        ax.set_ylim(-0.5, None)
+
+    fig.suptitle("RNA/Protein Discordance — Pathway Enrichment", fontsize=12, fontweight="bold")
+    fig.tight_layout()
+    out = results_dir / "discordance_scatter.png"
+    fig.savefig(out, dpi=200, bbox_inches="tight")
+    fig.savefig(out.with_suffix(".svg"), format="svg", bbox_inches="tight")
+    plt.close(fig)
+    log_fn(f"  Saved {out.name} + .svg")
+
+
+def plot_proteomics_trajectory(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
+    """Line plot: -log10(padj) over time for top pathways in proteomics coculture."""
+    prot_co = enrich_df[
+        (enrich_df["experiment"] == "de_weissberg_proteomics_coculture") &
+        (enrich_df["timepoint"].notna()) &
+        (enrich_df["timepoint"] != "days 60+89")  # exclude combined timepoint
+    ].copy()
+
+    if len(prot_co) == 0:
+        log_fn("  No proteomics coculture data for trajectory plot")
+        return
+
+    prot_co["neg_log10"] = prot_co["padj"].apply(
+        lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
+    )
+
+    # Top pathways: significant in at least 2 timepoints (any direction)
+    sig_counts = prot_co[prot_co["padj"] < PADJ_THRESHOLD].groupby("pathway_id").size()
+    top_pathways = sig_counts[sig_counts >= 2].index.tolist()
+
+    if not top_pathways:
+        log_fn("  No pathways significant in >=2 timepoints")
+        return
+
+    # Get short names and sort order for timepoints
+    tp_order = ["day 18", "day 31", "day 60", "day 89"]
+    tp_x = {tp: i for i, tp in enumerate(tp_order)}
+
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+    for ax, direction, color_base in zip(axes, ["up", "down"], ["Reds", "Blues"]):
+        subset = prot_co[
+            (prot_co["direction"] == direction) &
+            (prot_co["pathway_id"].isin(top_pathways)) &
+            (prot_co["timepoint"].isin(tp_order))
+        ]
+
+        cmap = plt.get_cmap(color_base)
+        n_pw = len(top_pathways)
+
+        for j, pid in enumerate(sorted(top_pathways)):
+            pw_data = subset[subset["pathway_id"] == pid].sort_values(
+                "timepoint", key=lambda s: s.map(tp_x)
+            )
+            if len(pw_data) == 0:
+                continue
+
+            xs = [tp_x[tp] for tp in pw_data["timepoint"]]
+            ys = pw_data["neg_log10"].values
+            name = _short_pathway_name(str(pw_data["pathway_name"].iloc[0]))
+            c = cmap(0.3 + 0.6 * j / max(n_pw - 1, 1))
+
+            ax.plot(xs, ys, marker="o", markersize=4, linewidth=1.5,
+                    color=c, label=name, alpha=0.8)
+
+        ax.axhline(y=NEG_LOG10_THRESHOLD, color="gray", linestyle=":", alpha=0.5)
+        ax.set_xticks(range(len(tp_order)))
+        ax.set_xticklabels(tp_order, fontsize=8)
+        ax.set_ylabel("-log10(padj)", fontsize=9)
+        ax.set_xlabel("Timepoint", fontsize=9)
+        ax.set_title(f"{direction.capitalize()}-regulated", fontsize=10, fontweight="bold")
+        ax.legend(fontsize=6, loc="upper right", framealpha=0.8)
+
+    fig.suptitle("Proteomics Coculture — Pathway Enrichment Trajectory",
+                 fontsize=12, fontweight="bold")
+    fig.tight_layout()
+    out = results_dir / "trajectory_proteomics_coculture.png"
+    fig.savefig(out, dpi=200, bbox_inches="tight")
+    fig.savefig(out.with_suffix(".svg"), format="svg", bbox_inches="tight")
+    plt.close(fig)
+    log_fn(f"  Saved {out.name} + .svg")
+
+
+def plot_control_separation(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
+    """Bar chart: number of significant pathways per experiment."""
+    sig = enrich_df[enrich_df["padj"] < PADJ_THRESHOLD].copy()
+
+    # Count unique significant pathways per experiment (any direction)
+    counts = sig.groupby("experiment")["pathway_id"].nunique().reset_index()
+    counts.columns = ["experiment", "n_significant_pathways"]
+
+    # Add experiments with zero significant
+    all_exps = enrich_df["experiment"].unique()
+    for exp in all_exps:
+        if exp not in counts["experiment"].values:
+            counts = pd.concat([counts, pd.DataFrame([{
+                "experiment": exp, "n_significant_pathways": 0
+            }])], ignore_index=True)
+
+    # Short names and order
+    counts["short_name"] = counts["experiment"].map(EXPERIMENT_SHORT).fillna(counts["experiment"])
+    exp_order_map = {e: i for i, e in enumerate(EXPERIMENT_ORDER)}
+    counts["sort_key"] = counts["experiment"].map(exp_order_map).fillna(99)
+    counts = counts.sort_values("sort_key").reset_index(drop=True)
+
+    # Color by role
+    def _role_color(exp):
+        if "ref_" in exp:
+            return "forestgreen"
+        elif "ctrl_" in exp:
+            return "salmon"
+        elif "axenic" in exp:
+            return "darkorange"
+        else:
+            return "royalblue"
+
+    counts["color"] = counts["experiment"].apply(_role_color)
+
+    fig, ax = plt.subplots(figsize=(10, 4))
+    bars = ax.bar(range(len(counts)), counts["n_significant_pathways"],
+                  color=counts["color"], edgecolor="white", linewidth=0.5)
+
+    ax.set_xticks(range(len(counts)))
+    ax.set_xticklabels(counts["short_name"], rotation=45, ha="right", fontsize=8)
+    ax.set_ylabel("Significant pathways (padj < 0.05)", fontsize=9)
+    ax.set_title("Control Separation — Pathway Enrichment",
+                 fontsize=12, fontweight="bold")
+
+    # Legend
+    from matplotlib.patches import Patch
+    legend_elements = [
+        Patch(facecolor="forestgreen", label="Reference (+)"),
+        Patch(facecolor="salmon", label="Negative control"),
+        Patch(facecolor="darkorange", label="Target (axenic)"),
+        Patch(facecolor="royalblue", label="Target (coculture)"),
+    ]
+    ax.legend(handles=legend_elements, fontsize=7, loc="upper right")
+
+    # Group separators
+    boundaries = []
+    prev_group = None
+    for i, exp in enumerate(counts["experiment"]):
+        group = _col_group_for_exp(exp)
+        if prev_group is not None and group != prev_group:
+            boundaries.append(i)
+        prev_group = group
+    for b in boundaries:
+        ax.axvline(x=b - 0.5, color="black", linewidth=1, alpha=0.5)
+
+    fig.tight_layout()
+    out = results_dir / "control_separation.png"
+    fig.savefig(out, dpi=200, bbox_inches="tight")
+    fig.savefig(out.with_suffix(".svg"), format="svg", bbox_inches="tight")
+    plt.close(fig)
+    log_fn(f"  Saved {out.name} + .svg")
+
+
+def _col_group_for_exp(exp):
+    """Map experiment ID to group label."""
+    for g_label, g_exps in EXPERIMENT_GROUPS:
+        if exp in g_exps:
+            return g_label
+    return "?"
 
 
 def main(explore: bool = False) -> None:
@@ -459,6 +700,24 @@ def main(explore: bool = False) -> None:
         )
     else:
         log("No significant down-regulated pathways to plot")
+
+    # ------------------------------------------------------------------
+    # 6. RNA vs protein discordance scatter
+    # ------------------------------------------------------------------
+    log("Plotting RNA vs protein discordance scatter...")
+    plot_discordance_scatter(enrich_df, RESULTS_DIR, log)
+
+    # ------------------------------------------------------------------
+    # 7. Proteomics coculture trajectory
+    # ------------------------------------------------------------------
+    log("Plotting proteomics coculture trajectory...")
+    plot_proteomics_trajectory(enrich_df, RESULTS_DIR, log)
+
+    # ------------------------------------------------------------------
+    # 8. Control separation bar chart
+    # ------------------------------------------------------------------
+    log("Plotting control separation bar chart...")
+    plot_control_separation(enrich_df, RESULTS_DIR, log)
 
     log("Done.")
 
