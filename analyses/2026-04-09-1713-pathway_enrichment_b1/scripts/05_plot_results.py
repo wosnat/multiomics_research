@@ -139,7 +139,7 @@ def make_heatmap(
     log_fn(f"  Plotting {n_pathways} pathways × {n_conditions} conditions → {out_path.name}")
 
     # Figure size: scale with dimensions, extra left margin for row group labels
-    fig_width = max(12, n_conditions * 0.55 + 6)
+    fig_width = max(10, n_conditions * 0.35 + 6)
     fig_height = max(5, n_pathways * 0.35 + 2.5)
 
     fig, ax = plt.subplots(figsize=(fig_width, fig_height))
