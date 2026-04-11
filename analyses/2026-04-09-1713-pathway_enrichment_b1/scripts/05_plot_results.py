@@ -204,6 +204,9 @@ def make_heatmap(
 
     fig.tight_layout()
     fig.savefig(out_path, dpi=200, bbox_inches="tight")
+    # Also save SVG for easy editing
+    svg_path = out_path.with_suffix(".svg")
+    fig.savefig(svg_path, format="svg", bbox_inches="tight")
     plt.close(fig)
     log_fn(f"  Saved {out_path}")
 
