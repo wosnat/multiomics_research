@@ -1,0 +1,1125 @@
+locus_tag,term_id,term_name
+PMM0001,kegg.orthology:K02338,dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]
+PMM0003,kegg.orthology:K01952,"PFAS, purL; phosphoribosylformylglycinamidine synthase [EC:6.3.5.3]"
+PMM0004,kegg.orthology:K00764,"purF, PPAT; amidophosphoribosyltransferase [EC:2.4.2.14]"
+PMM0005,kegg.orthology:K02469,gyrA; DNA gyrase subunit A [EC:5.6.2.2]
+PMM0007,kegg.orthology:K18979,queG; epoxyqueuosine reductase [EC:1.17.99.6]
+PMM0009,kegg.orthology:K03625,nusB; transcription antitermination protein NusB
+PMM0010,kegg.orthology:K03110,ftsY; fused signal recognition particle receptor
+PMM0011,kegg.orthology:K07315,rsbU_P; phosphoserine phosphatase RsbU/P [EC:3.1.3.3]
+PMM0012,kegg.orthology:K01755,"argH, ASL; argininosuccinate lyase [EC:4.3.2.1]"
+PMM0014,kegg.orthology:K05539,dusA; tRNA-dihydrouridine synthase A [EC:1.-.-.-]
+PMM0015,kegg.orthology:K07305,msrB; peptide-methionine (R)-S-oxide reductase [EC:1.8.4.12]
+PMM0016,kegg.orthology:K03687,GRPE; molecular chaperone GrpE
+PMM0017,kegg.orthology:K03686,dnaJ; molecular chaperone DnaJ
+PMM0018,kegg.orthology:K00392,sir; sulfite reductase (ferredoxin) [EC:1.8.7.1]
+PMM0019,kegg.orthology:K06949,"rsgA, engC; ribosome biogenesis GTPase / thiamine phosphate phosphatase [EC:3.6.1.- 3.1.3.100]"
+PMM0020,kegg.orthology:K09747,ebfC; nucleoid-associated protein EbfC
+PMM0021,kegg.orthology:K00075,murB; UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98]
+PMM0022,kegg.orthology:K01924,murC; UDP-N-acetylmuramate--alanine ligase [EC:6.3.2.8]
+PMM0023,kegg.orthology:K00150,"gap2, gapB; glyceraldehyde-3-phosphate dehydrogenase (NAD(P)+) (phosphorylating) [EC:1.2.1.59]"
+PMM0024,kegg.orthology:K00946,thiL; thiamine-monophosphate kinase [EC:2.7.4.16]
+PMM0025,kegg.orthology:K01802,E5.2.1.8; peptidylprolyl isomerase [EC:5.2.1.8]
+PMM0026,kegg.orthology:K02356,efp; elongation factor P
+PMM0027,kegg.orthology:K02160,"accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein"
+PMM0028,kegg.orthology:K00097,pdxA; 4-hydroxythreonine-4-phosphate dehydrogenase [EC:1.1.1.262]
+PMM0033,kegg.orthology:K07120,K07120; uncharacterized protein
+PMM0035,kegg.orthology:K00436,hoxH; NAD-reducing hydrogenase large subunit [EC:1.12.1.2]
+PMM0036,kegg.orthology:K02188,cbiD; cobalt-precorrin-5B (C1)-methyltransferase [EC:2.1.1.195]
+PMM0037,kegg.orthology:K01951,"guaA, GMPS; GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]"
+PMM0040,kegg.orthology:K05515,mrdA; penicillin-binding protein 2 [EC:3.4.16.4]
+PMM0044,kegg.orthology:K01872,"AARS, alaS; alanyl-tRNA synthetase [EC:6.1.1.7]"
+PMM0045,kegg.orthology:K01585,speA; arginine decarboxylase [EC:4.1.1.19]
+PMM0046,kegg.orthology:K00940,"ndk, NME; nucleoside-diphosphate kinase [EC:2.7.4.6]"
+PMM0047,kegg.orthology:K03149,thiG; thiazole synthase [EC:2.8.1.10]
+PMM0047,kegg.orthology:K03153,thiO; glycine oxidase [EC:1.4.3.19]
+PMM0048,kegg.orthology:K02434,"gatB, PET112; aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit B [EC:6.3.5.6 6.3.5.7]"
+PMM0049,kegg.orthology:K00859,coaE; dephospho-CoA kinase [EC:2.7.1.24]
+PMM0050,kegg.orthology:K00620,argJ; glutamate N-acetyltransferase / amino-acid N-acetyltransferase [EC:2.3.1.35 2.3.1.1]
+PMM0051,kegg.orthology:K03496,"parA, soj; chromosome partitioning protein"
+PMM0052,kegg.orthology:K05275,E1.1.1.65; pyridoxine 4-dehydrogenase [EC:1.1.1.65]
+PMM0053,kegg.orthology:K07444,ypsC; putative N6-adenine-specific DNA methylase [EC:2.1.1.-]
+PMM0057,kegg.orthology:K03529,smc; chromosome segregation protein
+PMM0059,kegg.orthology:K00748,lpxB; lipid-A-disaccharide synthase [EC:2.4.1.182]
+PMM0060,kegg.orthology:K01961,"accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]"
+PMM0061,kegg.orthology:K02221,yggT; YggT family protein
+PMM0062,kegg.orthology:K02722,psbX; photosystem II PsbX protein
+PMM0065,kegg.orthology:K02021,ABC.MR; putative ABC transport system ATP-binding protein
+PMM0065,kegg.orthology:K02471,"bacA, bclA; vitamin B12/bleomycin/antimicrobial peptide transport system ATP-binding/permease protein"
+PMM0067,kegg.orthology:K02503,"HINT1_2, hinT, hit; histidine triad (HIT) family protein [EC:3.9.1.-]"
+PMM0068,kegg.orthology:K01462,"PDF, def; peptide deformylase [EC:3.5.1.88]"
+PMM0070,kegg.orthology:K11717,sufS; cysteine desulfurase / selenocysteine lyase [EC:2.8.1.7 4.4.1.16]
+PMM0071,kegg.orthology:K07033,K07033; uncharacterized protein
+PMM0071,kegg.orthology:K09015,sufD; Fe-S cluster assembly protein SufD
+PMM0072,kegg.orthology:K09013,sufC; Fe-S cluster assembly ATP-binding protein
+PMM0073,kegg.orthology:K09014,sufB; Fe-S cluster assembly protein SufB
+PMM0075,kegg.orthology:K09942,K09942; uncharacterized protein
+PMM0076,kegg.orthology:K01835,pgm; phosphoglucomutase [EC:5.4.2.2]
+PMM0077,kegg.orthology:K07478,ycaJ; putative ATPase
+PMM0079,kegg.orthology:K03564,"BCP, PRXQ, DOT5; thioredoxin-dependent peroxiredoxin [EC:1.11.1.24]"
+PMM0080,kegg.orthology:K03525,coaX; type III pantothenate kinase [EC:2.7.1.33]
+PMM0081,kegg.orthology:K00390,cysH; phosphoadenosine phosphosulfate reductase [EC:1.8.4.8 1.8.4.10]
+PMM0082,kegg.orthology:K03885,ndh; NADH:quinone reductase (non-electrogenic) [EC:1.6.5.9]
+PMM0084,kegg.orthology:K03498,"trkH, trkG, ktrB, ktrD; trk/ktr system potassium uptake protein"
+PMM0085,kegg.orthology:K03499,"trkA, ktrA, ktrC; trk/ktr system potassium uptake protein"
+PMM0089,kegg.orthology:K06158,"ABCF3; ATP-binding cassette, subfamily F, member 3"
+PMM0090,kegg.orthology:K08372,pepD; putative serine protease PepD [EC:3.4.21.-]
+PMM0095,kegg.orthology:K07058,K07058; membrane protein
+PMM0096,kegg.orthology:K01092,"E3.1.3.25, IMPA, suhB; myo-inositol-1(or 4)-monophosphatase [EC:3.1.3.25]"
+PMM0097,kegg.orthology:K03287,"TC.OMF; outer membrane factor, OMF family"
+PMM0100,kegg.orthology:K00278,nadB; L-aspartate oxidase [EC:1.4.3.16]
+PMM0102,kegg.orthology:K14441,rimO; ribosomal protein S12 methylthiotransferase [EC:2.8.4.4]
+PMM0104,kegg.orthology:K09919,K09919; uncharacterized protein
+PMM0105,kegg.orthology:K00082,ribD2; 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:1.1.1.193]
+PMM0106,kegg.orthology:K01737,"queD, ptpS, PTS; 6-pyruvoyltetrahydropterin/6-carboxytetrahydropterin synthase [EC:4.2.3.12 4.1.2.50]"
+PMM0107,kegg.orthology:K00891,"aroK, aroL; shikimate kinase [EC:2.7.1.71]"
+PMM0110,kegg.orthology:K00799,"GST, gst; glutathione S-transferase [EC:2.5.1.18]"
+PMM0112,kegg.orthology:K02834,rbfA; ribosome-binding factor A
+PMM0113,kegg.orthology:K01719,"hemD, UROS; uroporphyrinogen-III synthase [EC:4.2.1.75]"
+PMM0113,kegg.orthology:K13542,cobA-hemD; uroporphyrinogen III methyltransferase / synthase [EC:2.1.1.107 4.2.1.75]
+PMM0115,kegg.orthology:K00514,"ZDS, crtQ; zeta-carotene desaturase [EC:1.3.5.6]"
+PMM0116,kegg.orthology:K13628,iscA; iron-sulfur cluster assembly protein
+PMM0120,kegg.orthology:K07071,K07071; uncharacterized protein
+PMM0122,kegg.orthology:K03686,dnaJ; molecular chaperone DnaJ
+PMM0123,kegg.orthology:K01738,cysK; cysteine synthase [EC:2.5.1.47]
+PMM0125,kegg.orthology:K16786,ecfA1; energy-coupling factor transport system ATP-binding protein [EC:7.-.-.-]
+PMM0128,kegg.orthology:K10697,"rpaA; two-component system, OmpR family, response regulator RpaA"
+PMM0129,kegg.orthology:K02341,holB; DNA polymerase III subunit delta^ [EC:2.7.7.7]
+PMM0130,kegg.orthology:K00943,"tmk, DTYMK; dTMP kinase [EC:2.7.4.9]"
+PMM0131,kegg.orthology:K01533,copB; P-type Cu2+ transporter [EC:7.2.2.9]
+PMM0133,kegg.orthology:K04485,"radA, sms; DNA repair protein RadA/Sms"
+PMM0134,kegg.orthology:K11329,"rpaB; two-component system, OmpR family, response regulator RpaB"
+PMM0135,kegg.orthology:K03621,plsX; phosphate acyltransferase [EC:2.3.1.274]
+PMM0136,kegg.orthology:K00648,fabH; 3-oxoacyl-[acyl-carrier-protein] synthase III [EC:2.3.1.180]
+PMM0137,kegg.orthology:K00645,"fabD, MCAT, MCT1; [acyl-carrier-protein] S-malonyltransferase [EC:2.3.1.39]"
+PMM0138,kegg.orthology:K00655,plsC; 1-acyl-sn-glycerol-3-phosphate acyltransferase [EC:2.3.1.51]
+PMM0141,kegg.orthology:K00970,pcnB; poly(A) polymerase [EC:2.7.7.19]
+PMM0141,kegg.orthology:K00974,cca; tRNA nucleotidyltransferase (CCA-adding enzyme) [EC:2.7.7.72 3.1.3.- 3.1.4.-]
+PMM0143,kegg.orthology:K02291,crtB; 15-cis-phytoene synthase [EC:2.5.1.32]
+PMM0144,kegg.orthology:K02293,"PDS, crtP; 15-cis-phytoene desaturase [EC:1.3.5.5]"
+PMM0145,kegg.orthology:K05584,ndhM; NAD(P)H-quinone oxidoreductase subunit M [EC:7.1.1.2]
+PMM0149,kegg.orthology:K05577,ndhF; NAD(P)H-quinone oxidoreductase subunit 5 [EC:7.1.1.2]
+PMM0150,kegg.orthology:K05575,ndhD; NAD(P)H-quinone oxidoreductase subunit 4 [EC:7.1.1.2]
+PMM0151,kegg.orthology:K05896,scpA; segregation and condensation protein A
+PMM0152,kegg.orthology:K00966,GMPP; mannose-1-phosphate guanylyltransferase [EC:2.7.7.13]
+PMM0152,kegg.orthology:K16881,K16881; mannose-1-phosphate guanylyltransferase / phosphomannomutase [EC:2.7.7.13 5.4.2.8]
+PMM0153,kegg.orthology:K00297,"metF, MTHFR; methylenetetrahydrofolate reductase (NADH) [EC:1.5.1.54]"
+PMM0155,kegg.orthology:K01768,E4.6.1.1; adenylate cyclase [EC:4.6.1.1]
+PMM0156,kegg.orthology:K00858,"ppnK, NADK; NAD+ kinase [EC:2.7.1.23]"
+PMM0157,kegg.orthology:K05576,ndhE; NAD(P)H-quinone oxidoreductase subunit 4L [EC:7.1.1.2]
+PMM0158,kegg.orthology:K05578,ndhG; NAD(P)H-quinone oxidoreductase subunit 6 [EC:7.1.1.2]
+PMM0159,kegg.orthology:K05580,ndhI; NAD(P)H-quinone oxidoreductase subunit I [EC:7.1.1.2]
+PMM0160,kegg.orthology:K05572,ndhA; NAD(P)H-quinone oxidoreductase subunit 1 [EC:7.1.1.2]
+PMM0161,kegg.orthology:K01647,"CS, gltA; citrate synthase [EC:2.3.3.1]"
+PMM0164,kegg.orthology:K01696,trpB; tryptophan synthase beta chain [EC:4.2.1.20]
+PMM0165,kegg.orthology:K03113,"EIF1, SUI1; translation initiation factor 1"
+PMM0166,kegg.orthology:K00860,cysC; adenylylsulfate kinase [EC:2.7.1.25]
+PMM0167,kegg.orthology:K01588,purE; 5-(carboxyamino)imidazole ribonucleotide mutase [EC:5.4.99.18]
+PMM0168,kegg.orthology:K03428,"bchM, chlM; magnesium-protoporphyrin O-methyltransferase [EC:2.1.1.11]"
+PMM0170,kegg.orthology:K04487,"iscS, NFS1; cysteine desulfurase [EC:2.8.1.7]"
+PMM0171,kegg.orthology:K03438,"mraW, rsmH; 16S rRNA (cytosine1402-N4)-methyltransferase [EC:2.1.1.199]"
+PMM0172,kegg.orthology:K05579,ndhH; NAD(P)H-quinone oxidoreductase subunit H [EC:7.1.1.2]
+PMM0173,kegg.orthology:K12073,"E3.1.2.28; 1,4-dihydroxy-2-naphthoyl-CoA hydrolase [EC:3.1.2.28]"
+PMM0174,kegg.orthology:K01911,menE; o-succinylbenzoate---CoA ligase [EC:6.2.1.26]
+PMM0175,kegg.orthology:K02549,menC; o-succinylbenzoate synthase [EC:4.2.1.113]
+PMM0176,kegg.orthology:K02548,"menA; 1,4-dihydroxy-2-naphthoate polyprenyltransferase [EC:2.5.1.74]"
+PMM0177,kegg.orthology:K02552,menF; menaquinone-specific isochorismate synthase [EC:5.4.4.2]
+PMM0178,kegg.orthology:K01920,gshB; glutathione synthase [EC:6.3.2.3]
+PMM0179,kegg.orthology:K03676,"grxC, GLRX, GLRX2; glutaredoxin 3"
+PMM0180,kegg.orthology:K02836,prfB; peptide chain release factor 2
+PMM0182,kegg.orthology:K07042,"ybeY, yqfG; probable rRNA maturation factor"
+PMM0183,kegg.orthology:K00901,"dgkA, DGK; diacylglycerol kinase (ATP) [EC:2.7.1.107]"
+PMM0184,kegg.orthology:K01658,trpG; anthranilate synthase component II [EC:4.1.3.27]
+PMM0184,kegg.orthology:K01664,pabA; para-aminobenzoate synthetase component II [EC:2.6.1.85]
+PMM0186,kegg.orthology:K00817,hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+PMM0187,kegg.orthology:K01887,"RARS, argS; arginyl-tRNA synthetase [EC:6.1.1.19]"
+PMM0188,kegg.orthology:K00767,"nadC, QPRT; nicotinate-nucleotide pyrophosphorylase (carboxylating) [EC:2.4.2.19]"
+PMM0189,kegg.orthology:K03650,"mnmE, trmE, MSS1; tRNA modification GTPase [EC:3.6.-.-]"
+PMM0190,kegg.orthology:K09928,K09928; uncharacterized protein
+PMM0191,kegg.orthology:K00951,relA; GTP pyrophosphokinase [EC:2.7.6.5]
+PMM0191,kegg.orthology:K01139,"spoT; GTP diphosphokinase / guanosine-3^,5^-bis(diphosphate) 3^-diphosphatase [EC:2.7.6.5 3.1.7.2]"
+PMM0192,kegg.orthology:K02031,ddpD; peptide/nickel transport system ATP-binding protein
+PMM0192,kegg.orthology:K02032,ddpF; peptide/nickel transport system ATP-binding protein
+PMM0193,kegg.orthology:K06180,rluD; 23S rRNA pseudouridine1911/1915/1917 synthase [EC:5.4.99.23]
+PMM0194,kegg.orthology:K14540,rbgA; ribosome biogenesis GTPase A
+PMM0195,kegg.orthology:K00927,"PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]"
+PMM0197,kegg.orthology:K02563,murG; UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase [EC:2.4.1.227]
+PMM0199,kegg.orthology:K00254,"DHODH, pyrD; dihydroorotate dehydrogenase [EC:1.3.5.2]"
+PMM0200,kegg.orthology:K03469,"rnhA, RNASEH1; ribonuclease HI [EC:3.1.26.4]"
+PMM0201,kegg.orthology:K02935,"RP-L7, MRPL12, rplL; large subunit ribosomal protein L7/L12"
+PMM0202,kegg.orthology:K02864,"RP-L10, MRPL10, rplJ; large subunit ribosomal protein L10"
+PMM0203,kegg.orthology:K02863,"RP-L1, MRPL1, rplA; large subunit ribosomal protein L1"
+PMM0204,kegg.orthology:K02867,"RP-L11, MRPL11, rplK; large subunit ribosomal protein L11"
+PMM0205,kegg.orthology:K02601,nusG; transcription termination/antitermination protein NusG
+PMM0206,kegg.orthology:K03073,secE; preprotein translocase subunit SecE
+PMM0208,kegg.orthology:K01689,"ENO1_2_3, eno; enolase 1/2/3 [EC:4.2.1.11]"
+PMM0211,kegg.orthology:K00384,"trxB, TRR; thioredoxin reductase (NADPH) [EC:1.8.1.9]"
+PMM0213,kegg.orthology:K07086,K07086; uncharacterized protein
+PMM0214,kegg.orthology:K03321,"TC.SULP; sulfate permease, SulP family"
+PMM0215,kegg.orthology:K01698,"hemB, ALAD; porphobilinogen synthase [EC:4.2.1.24]"
+PMM0217,kegg.orthology:K07456,mutS2; DNA mismatch repair protein MutS2
+PMM0218,kegg.orthology:K03979,"obgE, cgtA, MTG2; GTPase [EC:3.6.5.-]"
+PMM0221,kegg.orthology:K07393,"ECM4, yqjG; glutathionyl-hydroquinone reductase [EC:1.8.5.7]"
+PMM0222,kegg.orthology:K01437,"ASPA, aspA; aspartoacylase [EC:3.5.1.15]"
+PMM0223,kegg.orthology:K02703,psbA; photosystem II P680 reaction center D1 protein [EC:1.10.3.9]
+PMM0224,kegg.orthology:K01736,aroC; chorismate synthase [EC:4.2.3.5]
+PMM0225,kegg.orthology:K01625,eda; 2-dehydro-3-deoxyphosphogluconate aldolase / (4S)-4-hydroxy-2-oxoglutarate aldolase [EC:4.1.2.14 4.1.3.42]
+PMM0226,kegg.orthology:K03798,"ftsH, hflB; cell division protease FtsH [EC:3.4.24.-]"
+PMM0227,kegg.orthology:K00958,"sat, met3; sulfate adenylyltransferase [EC:2.7.7.4]"
+PMM0228,kegg.orthology:K02716,psbO; photosystem II oxygen-evolving enhancer protein 1
+PMM0229,kegg.orthology:K13038,"coaBC, dfp; phosphopantothenoylcysteine decarboxylase / phosphopantothenate---cysteine ligase [EC:4.1.1.36 6.3.2.5]"
+PMM0233,kegg.orthology:K00609,"pyrB, PYR2; aspartate carbamoyltransferase catalytic subunit [EC:2.1.3.2]"
+PMM0234,kegg.orthology:K03652,MPG; DNA-3-methyladenine glycosylase [EC:3.2.2.21]
+PMM0235,kegg.orthology:K02435,"gatC, GATC; aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C [EC:6.3.5.6 6.3.5.7]"
+PMM0236,kegg.orthology:K02294,crtR; beta-carotene hydroxylase [EC:1.14.13.-]
+PMM0238,kegg.orthology:K01870,"IARS, ileS; isoleucyl-tRNA synthetase [EC:6.1.1.5]"
+PMM0240,kegg.orthology:K03439,"trmB, METTL1, TRM8; tRNA (guanine-N7-)-methyltransferase [EC:2.1.1.33]"
+PMM0241,kegg.orthology:K03431,glmM; phosphoglucosamine mutase [EC:5.4.2.10]
+PMM0243,kegg.orthology:K03465,"thyX, thy1; thymidylate synthase (FAD) [EC:2.1.1.148]"
+PMM0244,kegg.orthology:K01494,dcd; dCTP deaminase [EC:3.5.4.13]
+PMM0245,kegg.orthology:K00798,"MMAB, pduO; cob(I)alamin adenosyltransferase [EC:2.5.1.17]"
+PMM0246,kegg.orthology:K21561,"ntcA; CRP/FNR family transcriptional regulator, global nitrogen regulator"
+PMM0250,kegg.orthology:K01056,"PTH1, PTRH1, pth, spoVC; peptidyl-tRNA hydrolase, PTH1 family [EC:3.1.1.29]"
+PMM0251,kegg.orthology:K02709,psbH; photosystem II PsbH protein
+PMM0252,kegg.orthology:K02715,psbN; PsbN protein
+PMM0253,kegg.orthology:K02710,psbI; photosystem II PsbI protein
+PMM0255,kegg.orthology:K01704,"leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]"
+PMM0256,kegg.orthology:K01703,"leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]"
+PMM0257,kegg.orthology:K03742,pncC; nicotinamide-nucleotide amidase [EC:3.5.1.42]
+PMM0258,kegg.orthology:K00600,"glyA, SHMT; glycine hydroxymethyltransferase [EC:2.1.2.1]"
+PMM0261,kegg.orthology:K03980,"murJ, mviN; putative peptidoglycan lipid II flippase"
+PMM0262,kegg.orthology:K06206,sfsA; sugar fermentation stimulation protein A
+PMM0263,kegg.orthology:K03320,"amt, AMT, MEP; ammonium transporter, Amt family"
+PMM0264,kegg.orthology:K03527,"ispH, lytB; 4-hydroxy-3-methylbut-2-en-1-yl diphosphate reductase [EC:1.17.7.4]"
+PMM0266,kegg.orthology:K00602,purH; phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase [EC:2.1.2.3 3.5.4.10]
+PMM0267,kegg.orthology:K06999,K06999; phospholipase/carboxylesterase
+PMM0270,kegg.orthology:K02233,"E2.7.8.26, cobS, cobV; adenosylcobinamide-GDP ribazoletransferase [EC:2.7.8.26]"
+PMM0271,kegg.orthology:K00773,tgt; queuine tRNA-ribosyltransferase [EC:2.4.2.29]
+PMM0272,kegg.orthology:K02712,psbK; photosystem II PsbK protein
+PMM0273,kegg.orthology:K03810,mviM; virulence factor
+PMM0274,kegg.orthology:K03699,"tlyC; magnesium and cobalt exporter, CNNM family"
+PMM0275,kegg.orthology:K00762,pyrE; orotate phosphoribosyltransferase [EC:2.4.2.10]
+PMM0279,kegg.orthology:K02428,K02428
+PMM0280,kegg.orthology:K00464,"diox1; all-trans-8^-apo-beta-carotenal 15,15^-oxygenase [EC:1.13.11.75]"
+PMM0281,kegg.orthology:K01693,hisB; imidazoleglycerol-phosphate dehydratase [EC:4.2.1.19]
+PMM0282,kegg.orthology:K00208,fabI; enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]
+PMM0285,kegg.orthology:K01669,"phr, PHR1; deoxyribodipyrimidine photo-lyase [EC:4.1.99.3]"
+PMM0286,kegg.orthology:K01515,nudF; ADP-ribose diphosphatase [EC:3.6.1.13 3.6.1.-]
+PMM0287,kegg.orthology:K00950,folK; 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase [EC:2.7.6.3]
+PMM0288,kegg.orthology:K03404,"chlD, bchD; magnesium chelatase subunit D [EC:6.6.1.1]"
+PMM0289,kegg.orthology:K02067,"mlaD, linM; phospholipid/cholesterol/gamma-HCH transport system substrate-binding protein"
+PMM0290,kegg.orthology:K02065,"mlaF, linL, mkl; phospholipid/cholesterol/gamma-HCH transport system ATP-binding protein"
+PMM0292,kegg.orthology:K05581,ndhJ; NAD(P)H-quinone oxidoreductase subunit J [EC:7.1.1.2]
+PMM0293,kegg.orthology:K05582,ndhK; NAD(P)H-quinone oxidoreductase subunit K [EC:7.1.1.2]
+PMM0294,kegg.orthology:K05574,ndhC; NAD(P)H-quinone oxidoreductase subunit 3 [EC:7.1.1.2]
+PMM0297,kegg.orthology:K02707,psbE; photosystem II cytochrome b559 subunit alpha
+PMM0298,kegg.orthology:K02708,psbF; photosystem II cytochrome b559 subunit beta
+PMM0299,kegg.orthology:K02713,psbL; photosystem II PsbL protein
+PMM0300,kegg.orthology:K02711,psbJ; photosystem II PsbJ protein
+PMM0301,kegg.orthology:K00772,"mtaP, MTAP; 5^-methylthioadenosine phosphorylase [EC:2.4.2.28]"
+PMM0302,kegg.orthology:K01008,"selD, SEPHS; selenide, water dikinase [EC:2.7.9.3]"
+PMM0303,kegg.orthology:K00970,pcnB; poly(A) polymerase [EC:2.7.7.19]
+PMM0303,kegg.orthology:K00974,cca; tRNA nucleotidyltransferase (CCA-adding enzyme) [EC:2.7.7.72 3.1.3.- 3.1.4.-]
+PMM0304,kegg.orthology:K03657,"uvrD, pcrA; ATP-dependent DNA helicase UvrD/PcrA [EC:5.6.2.4]"
+PMM0305,kegg.orthology:K05377,"cpeB, mpeB; phycoerythrin beta chain"
+PMM0306,kegg.orthology:K05382,cpeS; phycoerythrin-associated linker protein
+PMM0310,kegg.orthology:K00854,"xylB, XYLB; xylulokinase [EC:2.7.1.17]"
+PMM0311,kegg.orthology:K00789,"metK, MAT; S-adenosylmethionine synthetase [EC:2.5.1.6]"
+PMM0312,kegg.orthology:K02945,"RP-S1, rpsA; small subunit ribosomal protein S1"
+PMM0313,kegg.orthology:K07738,nrdR; transcriptional repressor NrdR
+PMM0314,kegg.orthology:K02718,psbT; photosystem II PsbT protein
+PMM0315,kegg.orthology:K02704,psbB; photosystem II CP47 chlorophyll apoprotein
+PMM0316,kegg.orthology:K04755,"fdx; ferredoxin, 2Fe-2S"
+PMM0317,kegg.orthology:K02714,psbM; photosystem II PsbM protein
+PMM0318,kegg.orthology:K02493,"hemK, prmC, HEMK; release factor glutamine methyltransferase [EC:2.1.1.297]"
+PMM0319,kegg.orthology:K07566,"tsaC, rimN, SUA5, YRDC; L-threonylcarbamoyladenylate synthase [EC:2.7.7.87]"
+PMM0320,kegg.orthology:K03608,minE; cell division topological specificity factor
+PMM0321,kegg.orthology:K03609,minD; septum site-determining protein MinD
+PMM0322,kegg.orthology:K03610,minC; septum site-determining protein MinC
+PMM0323,kegg.orthology:K06885,K06885; uncharacterized protein
+PMM0324,kegg.orthology:K03797,"E3.4.21.102, prc, ctpA; carboxyl-terminal processing protease [EC:3.4.21.102]"
+PMM0325,kegg.orthology:K02635,petB; cytochrome b6
+PMM0326,kegg.orthology:K02637,petD; cytochrome b6-f complex subunit 4
+PMM0327,kegg.orthology:K01193,"INV, sacA; beta-fructofuranosidase [EC:3.2.1.26]"
+PMM0328,kegg.orthology:K10563,"mutM, fpg; formamidopyrimidine-DNA glycosylase [EC:3.2.2.23 4.2.99.18]"
+PMM0329,kegg.orthology:K02693,psaE; photosystem I subunit IV
+PMM0331,kegg.orthology:K00128,ALDH; aldehyde dehydrogenase (NAD+) [EC:1.2.1.3]
+PMM0331,kegg.orthology:K00129,ALDH3; aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]
+PMM0333,kegg.orthology:K03789,rimI; [ribosomal protein S18]-alanine N-acetyltransferase [EC:2.3.1.266]
+PMM0336,kegg.orthology:K17893,"AOX1, AOX2; ubiquinol oxidase [EC:1.10.3.11]"
+PMM0339,kegg.orthology:K09835,"crtISO, crtH; prolycopene isomerase [EC:5.2.1.13]"
+PMM0343,kegg.orthology:K03116,tatA; sec-independent protein translocase protein TatA
+PMM0345,kegg.orthology:K03564,"BCP, PRXQ, DOT5; thioredoxin-dependent peroxiredoxin [EC:1.11.1.24]"
+PMM0349,kegg.orthology:K15034,yaeJ; ribosome-associated protein
+PMM0352,kegg.orthology:K07052,K07052; CAAX protease family protein
+PMM0354,kegg.orthology:K13005,"rfbV, wbaV; O-antigen biosynthesis alpha-1,3-abequosyltransferase [EC:2.4.1.60]"
+PMM0356,kegg.orthology:K01259,pip; proline iminopeptidase [EC:3.4.11.5]
+PMM0357,kegg.orthology:K03707,tenA; thiaminase (transcriptional activator TenA) [EC:3.5.99.2]
+PMM0358,kegg.orthology:K00941,thiD; hydroxymethylpyrimidine/phosphomethylpyrimidine kinase [EC:2.7.1.49 2.7.4.7]
+PMM0360,kegg.orthology:K09705,K09705; uncharacterized protein
+PMM0370,kegg.orthology:K15576,"nrtA, nasF, cynA; nitrate/nitrite transport system substrate-binding protein"
+PMM0370,kegg.orthology:K15598,thiY; putative hydroxymethylpyrimidine transport system substrate-binding protein
+PMM0371,kegg.orthology:K15577,"nrtB, nasE, cynB; nitrate/nitrite transport system permease protein"
+PMM0372,kegg.orthology:K15578,"nrtC, nasD; nitrate/nitrite transport system ATP-binding protein [EC:7.3.2.4]"
+PMM0373,kegg.orthology:K01725,cynS; cyanate lyase [EC:4.2.1.104]
+PMM0374,kegg.orthology:K03116,tatA; sec-independent protein translocase protein TatA
+PMM0374,kegg.orthology:K03117,tatB; sec-independent protein translocase protein TatB
+PMM0380,kegg.orthology:K09958,K09958; uncharacterized protein
+PMM0383,kegg.orthology:K09797,K09797; uncharacterized protein
+PMM0384,kegg.orthology:K01153,"hsdR; type I restriction enzyme, R subunit [EC:3.1.21.3]"
+PMM0384,kegg.orthology:K01155,E3.1.21.4; type II restriction enzyme [EC:3.1.21.4]
+PMM0384,kegg.orthology:K03427,hsdM; type I restriction enzyme M protein [EC:2.1.1.72]
+PMM0384,kegg.orthology:K09384,K09384; uncharacterized protein
+PMM0387,kegg.orthology:K03786,"aroQ, qutE; 3-dehydroquinate dehydratase II [EC:4.2.1.10]"
+PMM0388,kegg.orthology:K06169,miaE; tRNA 2-(methylsulfanyl)-N6-isopentenyladenosine37 hydroxylase [EC:1.14.99.69]
+PMM0389,kegg.orthology:K03394,cobI-cbiL; precorrin-2/cobalt-factor-2 C20-methyltransferase [EC:2.1.1.130 2.1.1.151]
+PMM0391,kegg.orthology:K00058,"serA, PHGDH; D-3-phosphoglycerate dehydrogenase / 2-oxoglutarate reductase [EC:1.1.1.95 1.1.1.399]"
+PMM0391,kegg.orthology:K03977,"engA, der; GTPase"
+PMM0392,kegg.orthology:K16785,ecfT; energy-coupling factor transport system permease protein
+PMM0393,kegg.orthology:K14518,pipX; PII interaction protein X
+PMM0394,kegg.orthology:K06997,"yggS, PROSC; PLP dependent protein"
+PMM0395,kegg.orthology:K09772,sepF; cell division inhibitor SepF
+PMM0396,kegg.orthology:K00286,proC; pyrroline-5-carboxylate reductase [EC:1.5.1.2]
+PMM0398,kegg.orthology:K03584,recO; DNA repair protein RecO (recombination protein O)
+PMM0399,kegg.orthology:K01619,"deoC, DERA; deoxyribose-phosphate aldolase [EC:4.1.2.4]"
+PMM0400,kegg.orthology:K05808,hpf; ribosome hibernation promoting factor
+PMM0401,kegg.orthology:K03801,lipB; lipoyl(octanoyl) transferase [EC:2.3.1.181]
+PMM0402,kegg.orthology:K01897,"ACSL, fadD; long-chain-fatty-acid---CoA ligase [EC:6.2.1.3]"
+PMM0405,kegg.orthology:K00627,"DLAT, aceF, pdhC; pyruvate dehydrogenase E2 component (dihydrolipoyllysine-residue acetyltransferase) [EC:2.3.1.12]"
+PMM0406,kegg.orthology:K07568,queA; S-adenosylmethionine:tRNA ribosyltransferase-isomerase [EC:2.4.99.17]
+PMM0407,kegg.orthology:K01738,cysK; cysteine synthase [EC:2.5.1.47]
+PMM0408,kegg.orthology:K01739,metB; cystathionine gamma-synthase [EC:2.5.1.48]
+PMM0409,kegg.orthology:K01739,metB; cystathionine gamma-synthase [EC:2.5.1.48]
+PMM0409,kegg.orthology:K01758,CTH; cystathionine gamma-lyase [EC:4.4.1.1]
+PMM0410,kegg.orthology:K02986,"RP-S4, NAM9, rpsD; small subunit ribosomal protein S4"
+PMM0411,kegg.orthology:K08998,K08998; uncharacterized protein
+PMM0413,kegg.orthology:K01928,"murE; UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase [EC:6.3.2.13]"
+PMM0415,kegg.orthology:K04127,cefD; isopenicillin-N epimerase [EC:5.1.1.17]
+PMM0415,kegg.orthology:K11325,K11325; L-cysteine/cystine lyase
+PMM0416,kegg.orthology:K07755,AS3MT; arsenite methyltransferase [EC:2.1.1.137]
+PMM0419,kegg.orthology:K00116,mqo; malate dehydrogenase (quinone) [EC:1.1.5.4]
+PMM0420,kegg.orthology:K03596,lepA; GTP-binding protein LepA
+PMM0421,kegg.orthology:K02034,ABC.PE.P1; peptide/nickel transport system permease protein
+PMM0422,kegg.orthology:K00556,trmH; tRNA (guanosine-2^-O-)-methyltransferase [EC:2.1.1.34]
+PMM0425,kegg.orthology:K06876,phrB; (6-4)DNA photolyase [EC:4.1.99.13]
+PMM0426,kegg.orthology:K03500,"rsmB, sun; 16S rRNA (cytosine967-C5)-methyltransferase [EC:2.1.1.176]"
+PMM0427,kegg.orthology:K05366,mrcA; penicillin-binding protein 1A [EC:2.4.99.28 3.4.16.4]
+PMM0428,kegg.orthology:K04040,"chlG, bchG; chlorophyll/bacteriochlorophyll a synthase [EC:2.5.1.62 2.5.1.133]"
+PMM0430,kegg.orthology:K02500,hisF; imidazole glycerol-phosphate synthase subunit HisF [EC:4.3.2.10]
+PMM0431,kegg.orthology:K03183,"ubiE; demethylmenaquinone methyltransferase / 2-methoxy-6-polyprenyl-1,4-benzoquinol methylase [EC:2.1.1.163 2.1.1.201]"
+PMM0433,kegg.orthology:K03524,"birA; BirA family transcriptional regulator, biotin operon repressor / biotin---[acetyl-CoA-carboxylase] ligase [EC:6.3.4.15]"
+PMM0434,kegg.orthology:K02003,ABC.CD.A; putative ABC transport system ATP-binding protein
+PMM0435,kegg.orthology:K05573,ndhB; NAD(P)H-quinone oxidoreductase subunit 2 [EC:7.1.1.2]
+PMM0436,kegg.orthology:K03168,topA; DNA topoisomerase I [EC:5.6.2.1]
+PMM0441,kegg.orthology:K07079,K07079; uncharacterized protein
+PMM0442,kegg.orthology:K00793,"ribE, RIB5; riboflavin synthase [EC:2.5.1.9]"
+PMM0444,kegg.orthology:K02276,"coxC, ctaE; cytochrome c oxidase subunit III [EC:7.1.1.9]"
+PMM0445,kegg.orthology:K02274,"coxA, ctaD; cytochrome c oxidase subunit I [EC:7.1.1.9]"
+PMM0446,kegg.orthology:K02275,"coxB, ctaC; cytochrome c oxidase subunit II [EC:7.1.1.9]"
+PMM0447,kegg.orthology:K02259,"COX15, ctaA; heme a synthase [EC:1.17.99.9]"
+PMM0448,kegg.orthology:K02257,"COX10, ctaB, cyoE; heme o synthase [EC:2.5.1.141]"
+PMM0449,kegg.orthology:K01990,ABC-2.A; ABC-2 type transport system ATP-binding protein
+PMM0450,kegg.orthology:K01992,ABC-2.P; ABC-2 type transport system permease protein
+PMM0452,kegg.orthology:K04077,"groEL, HSPD1, HSP60, CPN60; chaperonin GroEL [EC:5.6.1.7]"
+PMM0453,kegg.orthology:K00059,"fabG, OAR1; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]"
+PMM0454,kegg.orthology:K00991,ispD; 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase [EC:2.7.7.60]
+PMM0455,kegg.orthology:K01297,ldcA; muramoyltetrapeptide carboxypeptidase [EC:3.4.17.13]
+PMM0456,kegg.orthology:K03179,ubiA; 4-hydroxybenzoate polyprenyltransferase [EC:2.5.1.39]
+PMM0457,kegg.orthology:K01524,"ppx-gppA; exopolyphosphatase / guanosine-5^-triphosphate,3^-diphosphate pyrophosphatase [EC:3.6.1.11 3.6.1.40]"
+PMM0459,kegg.orthology:K05936,"cobM, cbiF; precorrin-4/cobalt-precorrin-4 C11-methyltransferase [EC:2.1.1.133 2.1.1.271]"
+PMM0460,kegg.orthology:K13292,"lgt, umpA; phosphatidylglycerol---prolipoprotein diacylglyceryl transferase [EC:2.5.1.145]"
+PMM0461,kegg.orthology:K02634,petA; apocytochrome f
+PMM0462,kegg.orthology:K02636,petC; cytochrome b6-f complex iron-sulfur subunit [EC:7.1.1.6]
+PMM0464,kegg.orthology:K03118,tatC; sec-independent protein translocase protein TatC
+PMM0467,kegg.orthology:K00942,"gmk, GUK1; guanylate kinase [EC:2.7.4.8]"
+PMM0468,kegg.orthology:K02697,psaJ; photosystem I subunit IX
+PMM0469,kegg.orthology:K02694,psaF; photosystem I subunit III
+PMM0470,kegg.orthology:K01409,"OSGEP, KAE1, QRI7; N6-L-threonylcarbamoyladenine synthase [EC:2.3.1.234]"
+PMM0473,kegg.orthology:K01885,"EARS, gltX; glutamyl-tRNA synthetase [EC:6.1.1.17]"
+PMM0475,kegg.orthology:K02884,"RP-L19, MRPL19, rplS; large subunit ribosomal protein L19"
+PMM0477,kegg.orthology:K01265,map; methionyl aminopeptidase [EC:3.4.11.18]
+PMM0478,kegg.orthology:K20024,mgdE; monoglucosyldiacylglycerol epimerase [EC:5.1.3.34]
+PMM0479,kegg.orthology:K06873,K06873; uncharacterized protein
+PMM0481,kegg.orthology:K09767,yajQ; cyclic-di-GMP-binding protein
+PMM0483,kegg.orthology:K01845,"hemL; glutamate-1-semialdehyde 2,1-aminomutase [EC:5.4.3.8]"
+PMM0484,kegg.orthology:K01142,"xthA, xth; exodeoxyribonuclease III [EC:3.1.11.2]"
+PMM0487,kegg.orthology:K09121,"larC; pyridinium-3,5-bisthiocarboxylic acid mononucleotide nickel chelatase [EC:4.99.1.12]"
+PMM0488,kegg.orthology:K07027,K07027; glycosyltransferase 2 family protein
+PMM0489,kegg.orthology:K02011,"afuB, fbpB; iron(III) transport system permease protein"
+PMM0491,kegg.orthology:K01724,"PCBD, phhB; 4a-hydroxytetrahydrobiopterin dehydratase [EC:4.2.1.96]"
+PMM0493,kegg.orthology:K01299,E3.4.17.19; carboxypeptidase Taq [EC:3.4.17.19]
+PMM0494,kegg.orthology:K01507,ppa; inorganic pyrophosphatase [EC:3.6.1.1]
+PMM0495,kegg.orthology:K01749,"hemC, HMBS; hydroxymethylbilane synthase [EC:2.5.1.61]"
+PMM0496,kegg.orthology:K03086,rpoD; RNA polymerase primary sigma factor
+PMM0497,kegg.orthology:K04066,priA; primosomal protein N^ (replication factor Y) (superfamily II helicase) [EC:5.6.2.4]
+PMM0499,kegg.orthology:K00930,argB; acetylglutamate kinase [EC:2.7.2.8]
+PMM0502,kegg.orthology:K03111,ssb; single-strand DNA-binding protein
+PMM0503,kegg.orthology:K05895,cobK-cbiJ; precorrin-6A/cobalt-precorrin-6A reductase [EC:1.3.1.54 1.3.1.106]
+PMM0504,kegg.orthology:K01733,thrC; threonine synthase [EC:4.2.3.1]
+PMM0504,kegg.orthology:K03926,cutA; periplasmic divalent cation tolerance protein
+PMM0505,kegg.orthology:K00847,"E2.7.1.4, scrK; fructokinase [EC:2.7.1.4]"
+PMM0506,kegg.orthology:K01939,"purA, ADSS; adenylosuccinate synthase [EC:6.3.4.4]"
+PMM0507,kegg.orthology:K08902,psb27; photosystem II Psb27 protein
+PMM0508,kegg.orthology:K01881,"PARS, proS; prolyl-tRNA synthetase [EC:6.1.1.15]"
+PMM0511,kegg.orthology:K01507,ppa; inorganic pyrophosphatase [EC:3.6.1.1]
+PMM0512,kegg.orthology:K00537,arsC; arsenate reductase (glutaredoxin) [EC:1.20.4.1]
+PMM0513,kegg.orthology:K03100,lepB; signal peptidase I [EC:3.4.21.89]
+PMM0514,kegg.orthology:K01465,"URA4, pyrC; dihydroorotase [EC:3.5.2.3]"
+PMM0515,kegg.orthology:K22305,psp; phosphoserine phosphatase [EC:3.1.3.3]
+PMM0516,kegg.orthology:K07052,K07052; CAAX protease family protein
+PMM0518,kegg.orthology:K03587,ftsI; cell division protein FtsI (penicillin-binding protein 3) [EC:3.4.16.4]
+PMM0519,kegg.orthology:K00616,"TALDO1, talB, talA; transaldolase [EC:2.2.1.2]"
+PMM0521,kegg.orthology:K02838,"frr, MRRF, RRF; ribosome recycling factor"
+PMM0522,kegg.orthology:K09903,pyrH; uridylate kinase [EC:2.7.4.22]
+PMM0523,kegg.orthology:K19221,"cobA, btuR; cob(I)alamin adenosyltransferase [EC:2.5.1.17]"
+PMM0525,kegg.orthology:K01772,"hemH, FECH; protoporphyrin/coproporphyrin ferrochelatase [EC:4.98.1.1 4.99.1.9]"
+PMM0526,kegg.orthology:K01652,"E2.2.1.6L, ilvB, ilvG, ilvI; acetolactate synthase I/II/III large subunit [EC:2.2.1.6]"
+PMM0528,kegg.orthology:K05810,"LACC1, yfiH; purine-nucleoside/S-methyl-5^-thioadenosine phosphorylase / adenosine deaminase [EC:2.4.2.1 2.4.2.28 3.5.4.4]"
+PMM0530,kegg.orthology:K02945,"RP-S1, rpsA; small subunit ribosomal protein S1"
+PMM0531,kegg.orthology:K01470,E3.5.2.10; creatinine amidohydrolase [EC:3.5.2.10]
+PMM0532,kegg.orthology:K14331,K14331; fatty aldehyde decarbonylase [EC:4.1.99.5]
+PMM0533,kegg.orthology:K14330,K14330; fatty aldehyde-generating acyl-ACP reductase [EC:1.2.1.80]
+PMM0534,kegg.orthology:K01962,accA; acetyl-CoA carboxylase carboxyl transferase subunit alpha [EC:6.4.1.2 2.1.3.15]
+PMM0535,kegg.orthology:K05886,sdh; serine 3-dehydrogenase (NADP+) [EC:1.1.1.276]
+PMM0536,kegg.orthology:K01495,"GCH1, folE; GTP cyclohydrolase IA [EC:3.5.4.16]"
+PMM0537,kegg.orthology:K01817,trpF; phosphoribosylanthranilate isomerase [EC:5.3.1.24]
+PMM0538,kegg.orthology:K06402,spoIVFB; stage IV sporulation protein FB [EC:3.4.24.-]
+PMM0539,kegg.orthology:K03800,"lplA, lplJ, lipL1; lipoate---protein ligase [EC:6.3.1.20]"
+PMM0540,kegg.orthology:K02700,psaM; photosystem I subunit XII
+PMM0542,kegg.orthology:K00218,por; protochlorophyllide reductase [EC:1.3.1.33]
+PMM0543,kegg.orthology:K04037,chlL; light-independent protochlorophyllide reductase subunit L [EC:1.3.7.7]
+PMM0544,kegg.orthology:K04039,chlB; light-independent protochlorophyllide reductase subunit B [EC:1.3.7.7]
+PMM0545,kegg.orthology:K04038,chlN; light-independent protochlorophyllide reductase subunit N [EC:1.3.7.7]
+PMM0550,kegg.orthology:K01601,"rbcL, cbbL; ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]"
+PMM0551,kegg.orthology:K01602,"rbcS, cbbS; ribulose-bisphosphate carboxylase small chain [EC:4.1.1.39]"
+PMM0556,kegg.orthology:K01724,"PCBD, phhB; 4a-hydroxytetrahydrobiopterin dehydratase [EC:4.2.1.96]"
+PMM0558,kegg.orthology:K09022,"ridA, tdcF, RIDA; 2-iminobutanoate/2-iminopropanoate deaminase [EC:3.5.99.10]"
+PMM0559,kegg.orthology:K01069,"gloB, gloC, HAGH; hydroxyacylglutathione hydrolase [EC:3.1.2.6]"
+PMM0560,kegg.orthology:K00765,hisG; ATP phosphoribosyltransferase [EC:2.4.2.17]
+PMM0561,kegg.orthology:K18890,"mdlB, smdB; ATP-binding cassette, subfamily B, multidrug efflux pump"
+PMM0564,kegg.orthology:K09931,K09931; uncharacterized protein
+PMM0565,kegg.orthology:K02313,dnaA; chromosomal replication initiator protein
+PMM0566,kegg.orthology:K00799,"GST, gst; glutathione S-transferase [EC:2.5.1.18]"
+PMM0567,kegg.orthology:K00383,"GSR, gor; glutathione reductase (NADPH) [EC:1.8.1.7]"
+PMM0568,kegg.orthology:K07301,yrbG; cation:H+ antiporter
+PMM0569,kegg.orthology:K01465,"URA4, pyrC; dihydroorotase [EC:3.5.2.3]"
+PMM0570,kegg.orthology:K05583,ndhL; NAD(P)H-quinone oxidoreductase subunit L [EC:7.1.1.2]
+PMM0572,kegg.orthology:K01695,trpA; tryptophan synthase alpha chain [EC:4.2.1.20]
+PMM0574,kegg.orthology:K09780,K09780; uncharacterized protein
+PMM0578,kegg.orthology:K11755,hisIE; phosphoribosyl-AMP cyclohydrolase / phosphoribosyl-ATP pyrophosphohydrolase [EC:3.5.4.19 3.6.1.31]
+PMM0579,kegg.orthology:K01737,"queD, ptpS, PTS; 6-pyruvoyltetrahydropterin/6-carboxytetrahydropterin synthase [EC:4.2.3.12 4.1.2.50]"
+PMM0580,kegg.orthology:K03695,clpB; ATP-dependent Clp protease ATP-binding subunit ClpB
+PMM0581,kegg.orthology:K02638,petE; plastocyanin
+PMM0583,kegg.orthology:K01599,"hemE, UROD; uroporphyrinogen decarboxylase [EC:4.1.1.37]"
+PMM0584,kegg.orthology:K00700,"GBE1, glgB; 1,4-alpha-glucan branching enzyme [EC:2.4.1.18]"
+PMM0585,kegg.orthology:K06978,K06978; uncharacterized protein
+PMM0589,kegg.orthology:K09800,tamB; translocation and assembly module TamB
+PMM0590,kegg.orthology:K00147,proA; glutamate-5-semialdehyde dehydrogenase [EC:1.2.1.41]
+PMM0591,kegg.orthology:K01633,"folB; 7,8-dihydroneopterin aldolase/epimerase/oxygenase [EC:4.1.2.25 5.1.99.8 1.13.11.81]"
+PMM0592,kegg.orthology:K01046,"lip, TGL2; triacylglycerol lipase [EC:3.1.1.3]"
+PMM0593,kegg.orthology:K01414,prlC; oligopeptidase A [EC:3.4.24.70]
+PMM0594,kegg.orthology:K05575,ndhD; NAD(P)H-quinone oxidoreductase subunit 4 [EC:7.1.1.2]
+PMM0595,kegg.orthology:K00872,thrB; homoserine kinase [EC:2.7.1.39]
+PMM0596,kegg.orthology:K00845,glk; glucokinase [EC:2.7.1.2]
+PMM0597,kegg.orthology:K01868,"TARS, thrS; threonyl-tRNA synthetase [EC:6.1.1.3]"
+PMM0598,kegg.orthology:K01867,"WARS, trpS; tryptophanyl-tRNA synthetase [EC:6.1.1.2]"
+PMM0600,kegg.orthology:K06883,K06883; uncharacterized protein
+PMM0601,kegg.orthology:K11601,mntC; manganese transport system substrate-binding protein
+PMM0602,kegg.orthology:K11603,mntA; manganese transport system ATP-binding protein [EC:7.2.2.5]
+PMM0603,kegg.orthology:K09819,ABC.MN.P; manganese/iron transport system permease protein
+PMM0603,kegg.orthology:K11602,mntB; manganese transport system permease protein
+PMM0606,kegg.orthology:K03100,lepB; signal peptidase I [EC:3.4.21.89]
+PMM0607,kegg.orthology:K02551,menD; 2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate synthase [EC:2.2.1.9]
+PMM0608,kegg.orthology:K01661,menB; naphthoate synthase [EC:4.1.3.36]
+PMM0609,kegg.orthology:K00703,glgA; starch synthase [EC:2.4.1.21]
+PMM0610,kegg.orthology:K01929,murF; UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase [EC:6.3.2.10]
+PMM0611,kegg.orthology:K04042,glmU; bifunctional UDP-N-acetylglucosamine pyrophosphorylase / glucosamine-1-phosphate N-acetyltransferase [EC:2.7.7.23 2.3.1.157]
+PMM0613,kegg.orthology:K00800,aroA; 3-phosphoshikimate 1-carboxyvinyltransferase [EC:2.5.1.19]
+PMM0614,kegg.orthology:K05979,comB; 2-phosphosulfolactate phosphatase [EC:3.1.3.71]
+PMM0615,kegg.orthology:K11206,"NIT1, ybeM; deaminated glutathione amidase [EC:3.5.1.128]"
+PMM0616,kegg.orthology:K01448,amiABC; N-acetylmuramoyl-L-alanine amidase [EC:3.5.1.28]
+PMM0617,kegg.orthology:K01776,murI; glutamate racemase [EC:5.1.1.3]
+PMM0618,kegg.orthology:K05356,"SPS, sds; all-trans-nonaprenyl-diphosphate synthase [EC:2.5.1.84 2.5.1.85]"
+PMM0619,kegg.orthology:K01895,"ACSS1_2, acs; acetyl-CoA synthetase [EC:6.2.1.1]"
+PMM0621,kegg.orthology:K02342,dnaQ; DNA polymerase III subunit epsilon [EC:2.7.7.7]
+PMM0623,kegg.orthology:K01892,"HARS, hisS; histidyl-tRNA synthetase [EC:6.1.1.21]"
+PMM0627,kegg.orthology:K08918,pcbA; chlorophyll a/b binding light-harvesting protein PcbA
+PMM0627,kegg.orthology:K08921,pcbD; chlorophyll a/b binding light-harvesting protein PcbD
+PMM0628,kegg.orthology:K03312,"gltS; glutamate:Na+ symporter, ESS family"
+PMM0630,kegg.orthology:K00799,"GST, gst; glutathione S-transferase [EC:2.5.1.18]"
+PMM0633,kegg.orthology:K06443,"lcyB, crtL1, crtY; lycopene beta-cyclase [EC:5.5.1.19]"
+PMM0633,kegg.orthology:K06444,"lcyE, crtL2; lycopene epsilon-cyclase [EC:5.5.1.18]"
+PMM0634,kegg.orthology:K00218,por; protochlorophyllide reductase [EC:1.3.1.33]
+PMM0635,kegg.orthology:K16052,"ynaI, mscMJ; MscS family membrane protein"
+PMM0637,kegg.orthology:K03711,"fur, zur, furB; Fur family transcriptional regulator, ferric uptake regulator"
+PMM0639,kegg.orthology:K05978,stpA; glucosylglycerol 3-phosphatase [EC:3.1.3.69]
+PMM0642,kegg.orthology:K01740,metY; O-acetylhomoserine (thiol)-lyase [EC:2.5.1.49]
+PMM0643,kegg.orthology:K00651,metA; homoserine O-succinyltransferase/O-acetyltransferase [EC:2.3.1.46 2.3.1.31]
+PMM0644,kegg.orthology:K03321,"TC.SULP; sulfate permease, SulP family"
+PMM0646,kegg.orthology:K03795,cbiX; sirohydrochlorin cobaltochelatase [EC:4.99.1.3]
+PMM0653,kegg.orthology:K01759,"GLO1, gloA; lactoylglutathione lyase [EC:4.4.1.5]"
+PMM0658,kegg.orthology:K06178,rluB; 23S rRNA pseudouridine2605 synthase [EC:5.4.99.22]
+PMM0658,kegg.orthology:K06182,rluF; 23S rRNA pseudouridine2604 synthase [EC:5.4.99.21]
+PMM0658,kegg.orthology:K06183,rsuA; 16S rRNA pseudouridine516 synthase [EC:5.4.99.19]
+PMM0659,kegg.orthology:K01972,"E6.5.1.2, ligA, ligB; DNA ligase (NAD+) [EC:6.5.1.2]"
+PMM0661,kegg.orthology:K00524,"nrdJ; ribonucleotide reductase, class II [EC:1.17.4.2]"
+PMM0663,kegg.orthology:K02837,prfC; peptide chain release factor 3
+PMM0665,kegg.orthology:K04083,hslO; molecular chaperone Hsp33
+PMM0666,kegg.orthology:K16787,ecfA2; energy-coupling factor transport system ATP-binding protein [EC:7.-.-.-]
+PMM0668,kegg.orthology:K09761,rsmE; 16S rRNA (uracil1498-N3)-methyltransferase [EC:2.1.1.193]
+PMM0671,kegg.orthology:K02042,phnE; phosphonate transport system permease protein
+PMM0672,kegg.orthology:K02041,phnC; phosphonate transport system ATP-binding protein [EC:7.3.2.2]
+PMM0673,kegg.orthology:K02044,phnD; phosphonate transport system substrate-binding protein
+PMM0674,kegg.orthology:K00812,aspB; aspartate aminotransferase [EC:2.6.1.1]
+PMM0675,kegg.orthology:K21929,udg; uracil-DNA glycosylase [EC:3.2.2.27]
+PMM0676,kegg.orthology:K03526,"gcpE, ispG; (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase [EC:1.17.7.1 1.17.7.3]"
+PMM0677,kegg.orthology:K03797,"E3.4.21.102, prc, ctpA; carboxyl-terminal processing protease [EC:3.4.21.102]"
+PMM0678,kegg.orthology:K03517,nadA; quinolinate synthase [EC:2.5.1.72]
+PMM0682,kegg.orthology:K01735,aroB; 3-dehydroquinate synthase [EC:4.2.3.4]
+PMM0683,kegg.orthology:K01589,purK; 5-(carboxyamino)imidazole ribonucleotide synthase [EC:6.3.4.18]
+PMM0695,kegg.orthology:K01951,"guaA, GMPS; GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]"
+PMM0704,kegg.orthology:K10716,"kch, trkA, mthK, pch; voltage-gated potassium channel"
+PMM0705,kegg.orthology:K07657,"phoB; two-component system, OmpR family, phosphate regulon response regulator PhoB"
+PMM0706,kegg.orthology:K07636,"phoR; two-component system, OmpR family, phosphate regulon sensor histidine kinase PhoR [EC:2.7.13.3]"
+PMM0708,kegg.orthology:K01077,"E3.1.3.1, phoA, phoB; alkaline phosphatase [EC:3.1.3.1]"
+PMM0709,kegg.orthology:K11891,"impL, vasK, icmF; type VI secretion system protein ImpL"
+PMM0709,kegg.orthology:K16091,fecA; Fe(3+) dicitrate transport protein
+PMM0710,kegg.orthology:K02040,pstS; phosphate transport system substrate-binding protein
+PMM0711,kegg.orthology:K07240,chrA; chromate transporter
+PMM0713,kegg.orthology:K00134,"GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) [EC:1.2.1.12]"
+PMM0714,kegg.orthology:K03892,"arsR; ArsR family transcriptional regulator, arsenate/arsenite/antimonite-responsive transcriptional repressor"
+PMM0716,kegg.orthology:K03325,"ACR3, arsB; arsenite transporter"
+PMM0717,kegg.orthology:K02042,phnE; phosphonate transport system permease protein
+PMM0718,kegg.orthology:K10914,"crp; CRP/FNR family transcriptional regulator, cyclic AMP receptor protein"
+PMM0723,kegg.orthology:K02037,pstC; phosphate transport system permease protein
+PMM0724,kegg.orthology:K02038,pstA; phosphate transport system permease protein
+PMM0725,kegg.orthology:K02036,pstB; phosphate transport system ATP-binding protein [EC:7.3.2.1]
+PMM0728,kegg.orthology:K03724,lhr; ATP-dependent helicase Lhr and Lhr-like helicase [EC:5.6.2.6 5.6.2.4]
+PMM0729,kegg.orthology:K10747,LIG1; DNA ligase 1 [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+PMM0730,kegg.orthology:K07577,K07577; putative mRNA 3-end processing factor
+PMM0742,kegg.orthology:K01358,"clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]"
+PMM0743,kegg.orthology:K03798,"ftsH, hflB; cell division protease FtsH [EC:3.4.24.-]"
+PMM0746,kegg.orthology:K07263,pqqL; zinc protease [EC:3.4.24.-]
+PMM0747,kegg.orthology:K05371,pcyA; phycocyanobilin:ferredoxin oxidoreductase [EC:1.3.7.5]
+PMM0748,kegg.orthology:K02005,ABC.CD.TX; HlyD family secretion protein
+PMM0749,kegg.orthology:K02004,ABC.CD.P; putative ABC transport system permease protein
+PMM0750,kegg.orthology:K02003,ABC.CD.A; putative ABC transport system ATP-binding protein
+PMM0753,kegg.orthology:K02967,"RP-S2, MRPS2, rpsB; small subunit ribosomal protein S2"
+PMM0754,kegg.orthology:K02357,"tsf, TSFM; elongation factor Ts"
+PMM0756,kegg.orthology:K03655,recG; ATP-dependent DNA helicase RecG [EC:5.6.2.4]
+PMM0757,kegg.orthology:K08641,vanX; zinc D-Ala-D-Ala dipeptidase [EC:3.4.13.22]
+PMM0758,kegg.orthology:K00392,sir; sulfite reductase (ferredoxin) [EC:1.8.7.1]
+PMM0759,kegg.orthology:K01879,glyS; glycyl-tRNA synthetase beta chain [EC:6.1.1.14]
+PMM0760,kegg.orthology:K10960,"chlP, bchP; geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase [EC:1.3.1.83 1.3.1.111]"
+PMM0761,kegg.orthology:K07260,vanY; zinc D-Ala-D-Ala carboxypeptidase [EC:3.4.17.14]
+PMM0762,kegg.orthology:K06207,"typA, bipA; GTP-binding protein"
+PMM0763,kegg.orthology:K09763,K09763; uncharacterized protein
+PMM0764,kegg.orthology:K06861,lptB; lipopolysaccharide export system ATP-binding protein [EC:7.5.2.5]
+PMM0766,kegg.orthology:K01783,"rpe, RPE; ribulose-phosphate 3-epimerase [EC:5.1.3.1]"
+PMM0767,kegg.orthology:K11532,"glpX-SEBP; fructose-1,6-bisphosphatase II / sedoheptulose-1,7-bisphosphatase [EC:3.1.3.11 3.1.3.37]"
+PMM0768,kegg.orthology:K02492,hemA; glutamyl-tRNA reductase [EC:1.2.1.70]
+PMM0769,kegg.orthology:K00975,glgC; glucose-1-phosphate adenylyltransferase [EC:2.7.7.27]
+PMM0770,kegg.orthology:K00033,"PGD, gnd, gntZ; 6-phosphogluconate dehydrogenase [EC:1.1.1.44 1.1.1.343]"
+PMM0771,kegg.orthology:K01057,"PGLS, pgl, devB; 6-phosphogluconolactonase [EC:3.1.1.31]"
+PMM0774,kegg.orthology:K01687,ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+PMM0776,kegg.orthology:K00761,"upp, UPRT; uracil phosphoribosyltransferase [EC:2.4.2.9]"
+PMM0778,kegg.orthology:K02234,cobW; cobalamin biosynthesis protein CobW
+PMM0779,kegg.orthology:K01952,"PFAS, purL; phosphoribosylformylglycinamidine synthase [EC:6.3.5.3]"
+PMM0780,kegg.orthology:K01952,"PFAS, purL; phosphoribosylformylglycinamidine synthase [EC:6.3.5.3]"
+PMM0781,kegg.orthology:K01624,"FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]"
+PMM0784,kegg.orthology:K01963,accD; acetyl-CoA carboxylase carboxyl transferase subunit beta [EC:6.4.1.2 2.1.3.15]
+PMM0785,kegg.orthology:K00855,"PRK, prk; phosphoribulokinase [EC:2.7.1.19]"
+PMM0786,kegg.orthology:K00052,"leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]"
+PMM0787,kegg.orthology:K02536,lpxD; UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase [EC:2.3.1.191]
+PMM0788,kegg.orthology:K00931,proB; glutamate 5-kinase [EC:2.7.2.11]
+PMM0789,kegg.orthology:K07015,K07015
+PMM0791,kegg.orthology:K07447,ruvX; putative pre-16S rRNA nuclease [EC:3.1.-.-]
+PMM0796,kegg.orthology:K01814,hisA; phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase [EC:5.3.1.16]
+PMM0797,kegg.orthology:K01710,"rfbB, rmlB, rffG; dTDP-glucose 4,6-dehydratase [EC:4.2.1.46]"
+PMM0797,kegg.orthology:K01784,"galE, GALE; UDP-glucose 4-epimerase [EC:5.1.3.2]"
+PMM0798,kegg.orthology:K00995,"PGS1, pgsA; CDP-diacylglycerol---glycerol-3-phosphate 3-phosphatidyltransferase [EC:2.7.8.5]"
+PMM0802,kegg.orthology:K10773,"NTHL1, nth; endonuclease III [EC:3.2.2.- 4.2.99.18]"
+PMM0803,kegg.orthology:K02010,"afuC, fbpC; iron(III) transport system ATP-binding protein [EC:7.2.2.7]"
+PMM0807,kegg.orthology:K02013,ABC.FEV.A; iron complex transport system ATP-binding protein [EC:7.2.2.-]
+PMM0808,kegg.orthology:K19982,prnD; aminopyrrolnitrin oxygenase [EC:1.14.13.-]
+PMM0821,kegg.orthology:K01424,"E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]"
+PMM0823,kegg.orthology:K09710,ybeB; ribosome-associated protein
+PMM0825,kegg.orthology:K01955,"carB, CPA2; carbamoyl-phosphate synthase large subunit [EC:6.3.5.5]"
+PMM0827,kegg.orthology:K06147,"ABCB-BAC; ATP-binding cassette, subfamily B, bacterial"
+PMM0828,kegg.orthology:K14761,"rlbA, ybcJ; ribosome-associated protein"
+PMM0829,kegg.orthology:K01803,"TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]"
+PMM0830,kegg.orthology:K00796,folP; dihydropteroate synthase [EC:2.5.1.15]
+PMM0830,kegg.orthology:K18824,sul2; dihydropteroate synthase type 2 [EC:2.5.1.15]
+PMM0831,kegg.orthology:K03403,"chlH, bchH; magnesium chelatase subunit H [EC:6.6.1.1]"
+PMM0832,kegg.orthology:K00215,dapB; 4-hydroxy-tetrahydrodipicolinate reductase [EC:1.17.1.8]
+PMM0834,kegg.orthology:K03185,ubiH; 2-octaprenyl-6-methoxyphenol hydroxylase [EC:1.14.13.-]
+PMM0839,kegg.orthology:K03723,mfd; transcription-repair coupling factor (superfamily II helicase) [EC:5.6.2.4]
+PMM0841,kegg.orthology:K00604,"MTFMT, fmt; methionyl-tRNA formyltransferase [EC:2.1.2.9]"
+PMM0842,kegg.orthology:K03592,pmbA; PmbA protein
+PMM0843,kegg.orthology:K03568,tldD; TldD protein
+PMM0844,kegg.orthology:K04035,"E1.14.13.81, acsF, chlE; magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase [EC:1.14.13.81]"
+PMM0847,kegg.orthology:K12573,"rnr, vacB; ribonuclease R [EC:3.1.13.1]"
+PMM0850,kegg.orthology:K06940,K06940; uncharacterized protein
+PMM0853,kegg.orthology:K02911,"RP-L32, MRPL32, rpmF; large subunit ribosomal protein L32"
+PMM0854,kegg.orthology:K03798,"ftsH, hflB; cell division protease FtsH [EC:3.4.24.-]"
+PMM0856,kegg.orthology:K03386,"PRDX2_4, ahpC; peroxiredoxin 2/4 [EC:1.11.1.24]"
+PMM0862,kegg.orthology:K03216,"trmL, cspR; tRNA (cytidine/uridine-2^-O-)-methyltransferase [EC:2.1.1.207]"
+PMM0863,kegg.orthology:K02231,"cobP, cobU; adenosylcobinamide kinase / adenosylcobinamide-phosphate guanylyltransferase [EC:2.7.1.156 2.7.7.62]"
+PMM0867,kegg.orthology:K01874,"MARS, metG; methionyl-tRNA synthetase [EC:6.1.1.10]"
+PMM0868,kegg.orthology:K01147,rnb; exoribonuclease II [EC:3.1.13.1]
+PMM0869,kegg.orthology:K02963,"RP-S18, MRPS18, rpsR; small subunit ribosomal protein S18"
+PMM0870,kegg.orthology:K02913,"RP-L33, MRPL33, rpmG; large subunit ribosomal protein L33"
+PMM0871,kegg.orthology:K01890,"FARSB, pheT; phenylalanyl-tRNA synthetase beta chain [EC:6.1.1.20]"
+PMM0874,kegg.orthology:K00988,APA1_2; sulfate adenylyltransferase (ADP) / ATP adenylyltransferase [EC:2.7.7.5 2.7.7.53]
+PMM0875,kegg.orthology:K09966,K09966; uncharacterized protein
+PMM0877,kegg.orthology:K00548,"metH, MTR; 5-methyltetrahydrofolate--homocysteine methyltransferase [EC:2.1.1.13]"
+PMM0878,kegg.orthology:K00826,"E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]"
+PMM0879,kegg.orthology:K02230,cobN; cobaltochelatase CobN [EC:6.6.1.2]
+PMM0881,kegg.orthology:K08973,hemJ; protoporphyrinogen IX oxidase [EC:1.3.99.-]
+PMM0882,kegg.orthology:K03703,uvrC; excinuclease ABC subunit C
+PMM0884,kegg.orthology:K00954,"E2.7.7.3A, coaD, kdtB; pantetheine-phosphate adenylyltransferase [EC:2.7.7.3]"
+PMM0885,kegg.orthology:K07259,dacB; serine-type D-Ala-D-Ala carboxypeptidase/endopeptidase (penicillin-binding protein 4) [EC:3.4.16.4 3.4.21.-]
+PMM0887,kegg.orthology:K04487,"iscS, NFS1; cysteine desulfurase [EC:2.8.1.7]"
+PMM0888,kegg.orthology:K01778,dapF; diaminopimelate epimerase [EC:5.1.1.7]
+PMM0889,kegg.orthology:K01869,"LARS, leuS; leucyl-tRNA synthetase [EC:6.1.1.4]"
+PMM0890,kegg.orthology:K01810,"GPI, pgi; glucose-6-phosphate isomerase [EC:5.3.1.9]"
+PMM0891,kegg.orthology:K11175,purN; phosphoribosylglycinamide formyltransferase 1 [EC:2.1.2.2]
+PMM0892,kegg.orthology:K00145,argC; N-acetyl-gamma-glutamyl-phosphate reductase [EC:1.2.1.38]
+PMM0893,kegg.orthology:K14652,"ribBA; 3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]"
+PMM0894,kegg.orthology:K01802,E5.2.1.8; peptidylprolyl isomerase [EC:5.2.1.8]
+PMM0894,kegg.orthology:K03767,PPIA; peptidyl-prolyl cis-trans isomerase A (cyclophilin A) [EC:5.2.1.8]
+PMM0894,kegg.orthology:K03768,"PPIB, ppiB; peptidyl-prolyl cis-trans isomerase B (cyclophilin B) [EC:5.2.1.8]"
+PMM0897,kegg.orthology:K04043,"dnaK, HSPA9; molecular chaperone DnaK"
+PMM0898,kegg.orthology:K02639,petF; ferredoxin
+PMM0899,kegg.orthology:K01092,"E3.1.3.25, IMPA, suhB; myo-inositol-1(or 4)-monophosphatase [EC:3.1.3.25]"
+PMM0900,kegg.orthology:K02502,hisZ; ATP phosphoribosyltransferase regulatory subunit
+PMM0901,kegg.orthology:K04079,"HSP90A, htpG; molecular chaperone HtpG"
+PMM0902,kegg.orthology:K02902,"RP-L28, MRPL28, rpmB; large subunit ribosomal protein L28"
+PMM0903,kegg.orthology:K03564,"BCP, PRXQ, DOT5; thioredoxin-dependent peroxiredoxin [EC:1.11.1.24]"
+PMM0906,kegg.orthology:K02698,psaK; photosystem I subunit X
+PMM0907,kegg.orthology:K01662,dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]
+PMM0908,kegg.orthology:K01754,"E4.3.1.19, ilvA, tdcB; threonine dehydratase [EC:4.3.1.19]"
+PMM0909,kegg.orthology:K06024,scpB; segregation and condensation protein B
+PMM0910,kegg.orthology:K02221,yggT; YggT family protein
+PMM0912,kegg.orthology:K00873,"PK, pyk; pyruvate kinase [EC:2.7.1.40]"
+PMM0913,kegg.orthology:K02004,ABC.CD.P; putative ABC transport system permease protein
+PMM0914,kegg.orthology:K03523,bioY; biotin transport system substrate-specific component
+PMM0915,kegg.orthology:K03101,lspA; signal peptidase II [EC:3.4.23.36]
+PMM0916,kegg.orthology:K06883,K06883; uncharacterized protein
+PMM0917,kegg.orthology:K01590,"hdc, HDC; histidine decarboxylase [EC:4.1.1.22]"
+PMM0917,kegg.orthology:K13745,"ddc; L-2,4-diaminobutyrate decarboxylase [EC:4.1.1.86]"
+PMM0918,kegg.orthology:K11991,tadA; tRNA(adenine34) deaminase [EC:3.5.4.33]
+PMM0919,kegg.orthology:K00830,AGXT; alanine-glyoxylate transaminase / serine-glyoxylate transaminase / serine-pyruvate transaminase [EC:2.6.1.44 2.6.1.45 2.6.1.51]
+PMM0920,kegg.orthology:K01915,"glnA, GLUL; glutamine synthetase [EC:6.3.1.2]"
+PMM0923,kegg.orthology:K04757,rsbW; serine/threonine-protein kinase RsbW [EC:2.7.11.1]
+PMM0925,kegg.orthology:K06917,"selU, mnmH; tRNA 2-selenouridine synthase [EC:2.9.1.3]"
+PMM0926,kegg.orthology:K08903,psb28; photosystem II 13kDa protein
+PMM0928,kegg.orthology:K03074,secF; preprotein translocase subunit SecF
+PMM0929,kegg.orthology:K03072,secD; preprotein translocase subunit SecD
+PMM0930,kegg.orthology:K00162,"PDHB, pdhB; pyruvate dehydrogenase E1 component subunit beta [EC:1.2.4.1]"
+PMM0932,kegg.orthology:K00919,ispE; 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase [EC:2.7.1.148]
+PMM0933,kegg.orthology:K02528,ksgA; 16S rRNA (adenine1518-N6/adenine1519-N6)-dimethyltransferase [EC:2.1.1.182]
+PMM0935,kegg.orthology:K00783,rlmH; 23S rRNA (pseudouridine1915-N3)-methyltransferase [EC:2.1.1.177]
+PMM0936,kegg.orthology:K03503,umuD; DNA polymerase V [EC:3.4.21.-]
+PMM0937,kegg.orthology:K03502,umuC; DNA polymerase V
+PMM0939,kegg.orthology:K02316,dnaG; DNA primase [EC:2.7.7.101]
+PMM0942,kegg.orthology:K03550,ruvA; holliday junction DNA helicase RuvA
+PMM0943,kegg.orthology:K02956,"RP-S15, MRPS15, rpsO; small subunit ribosomal protein S15"
+PMM0945,kegg.orthology:K02337,dnaE; DNA polymerase III subunit alpha [EC:2.7.7.7]
+PMM0946,kegg.orthology:K02433,"gatA, QRSL1; aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]"
+PMM0948,kegg.orthology:K03218,rlmB; 23S rRNA (guanosine2251-2^-O)-methyltransferase [EC:2.1.1.185]
+PMM0949,kegg.orthology:K11145,mrnC; mini-ribonuclease III [EC:3.1.26.-]
+PMM0951,kegg.orthology:K01956,"carA, CPA1; carbamoyl-phosphate synthase small subunit [EC:6.3.5.5]"
+PMM0952,kegg.orthology:K00766,trpD; anthranilate phosphoribosyltransferase [EC:2.4.2.18]
+PMM0954,kegg.orthology:K18889,"mdlA, smdA; ATP-binding cassette, subfamily B, multidrug efflux pump"
+PMM0955,kegg.orthology:K07304,msrA; peptide-methionine (S)-S-oxide reductase [EC:1.8.4.11]
+PMM0956,kegg.orthology:K06153,bacA; undecaprenyl-diphosphatase [EC:3.6.1.27]
+PMM0959,kegg.orthology:K15918,GLYK; D-glycerate 3-kinase [EC:2.7.1.31]
+PMM0960,kegg.orthology:K07026,E3.1.3.70; mannosyl-3-phosphoglycerate phosphatase [EC:3.1.3.70]
+PMM0961,kegg.orthology:K00690,E2.4.1.7; sucrose phosphorylase [EC:2.4.1.7]
+PMM0962,kegg.orthology:K13693,gpgS; glucosyl-3-phosphoglycerate synthase [EC:2.4.1.266]
+PMM0963,kegg.orthology:K01428,ureC; urease subunit alpha [EC:3.5.1.5]
+PMM0964,kegg.orthology:K01429,ureB; urease subunit beta [EC:3.5.1.5]
+PMM0965,kegg.orthology:K01430,ureA; urease subunit gamma [EC:3.5.1.5]
+PMM0966,kegg.orthology:K03190,"ureD, ureH; urease accessory protein"
+PMM0967,kegg.orthology:K03187,ureE; urease accessory protein
+PMM0968,kegg.orthology:K03188,ureF; urease accessory protein
+PMM0969,kegg.orthology:K03189,ureG; urease accessory protein
+PMM0970,kegg.orthology:K11959,urtA; urea transport system substrate-binding protein
+PMM0971,kegg.orthology:K11960,urtB; urea transport system permease protein
+PMM0972,kegg.orthology:K11961,urtC; urea transport system permease protein
+PMM0973,kegg.orthology:K11962,urtD; urea transport system ATP-binding protein
+PMM0974,kegg.orthology:K11963,urtE; urea transport system ATP-binding protein
+PMM0976,kegg.orthology:K01990,ABC-2.A; ABC-2 type transport system ATP-binding protein
+PMM0977,kegg.orthology:K01992,ABC-2.P; ABC-2 type transport system permease protein
+PMM0978,kegg.orthology:K01992,ABC-2.P; ABC-2 type transport system permease protein
+PMM0981,kegg.orthology:K07090,K07090; uncharacterized protein
+PMM0987,kegg.orthology:K02970,"RP-S21, MRPS21, rpsU; small subunit ribosomal protein S21"
+PMM0989,kegg.orthology:K00876,"udk, UCK; uridine kinase [EC:2.7.1.48]"
+PMM0993,kegg.orthology:K01256,pepN; aminopeptidase N [EC:3.4.11.2]
+PMM1002,kegg.orthology:K01256,pepN; aminopeptidase N [EC:3.4.11.2]
+PMM1004,kegg.orthology:K08289,purT; phosphoribosylglycinamide formyltransferase 2 [EC:6.3.1.21]
+PMM1006,kegg.orthology:K00432,"gpx, btuE, bsaA; glutathione peroxidase [EC:1.11.1.9]"
+PMM1006,kegg.orthology:K20207,gpx; hydroperoxy fatty acid reductase [EC:1.11.1.22]
+PMM1009,kegg.orthology:K05540,dusB; tRNA-dihydrouridine synthase B [EC:1.-.-.-]
+PMM1012,kegg.orthology:K07107,ybgC; acyl-CoA thioester hydrolase [EC:3.1.2.-]
+PMM1014,kegg.orthology:K07448,mrr; restriction system protein
+PMM1025,kegg.orthology:K07397,yhfA; putative redox protein
+PMM1029,kegg.orthology:K02075,ABC.ZM.P; zinc/manganese transport system permease protein
+PMM1030,kegg.orthology:K03711,"fur, zur, furB; Fur family transcriptional regulator, ferric uptake regulator"
+PMM1031,kegg.orthology:K02074,ABC.ZM.A; zinc/manganese transport system ATP-binding protein
+PMM1032,kegg.orthology:K02077,ABC.ZM.S; zinc/manganese transport system substrate-binding protein
+PMM1044,kegg.orthology:K00852,"rbsK, RBKS; ribokinase [EC:2.7.1.15]"
+PMM1048,kegg.orthology:K02033,ABC.PE.P; peptide/nickel transport system permease protein
+PMM1049,kegg.orthology:K02035,ABC.PE.S; peptide/nickel transport system substrate-binding protein
+PMM1051,kegg.orthology:K00003,hom; homoserine dehydrogenase [EC:1.1.1.3]
+PMM1052,kegg.orthology:K02426,sufE; cysteine desulfuration protein SufE
+PMM1053,kegg.orthology:K01934,MTHFS; 5-formyltetrahydrofolate cyclo-ligase [EC:6.3.3.2]
+PMM1054,kegg.orthology:K01159,ruvC; crossover junction endodeoxyribonuclease RuvC [EC:3.1.21.10]
+PMM1055,kegg.orthology:K03405,"chlI, bchI; magnesium chelatase subunit I [EC:6.6.1.1]"
+PMM1056,kegg.orthology:K02533,lasT; tRNA/rRNA methyltransferase [EC:2.1.1.-]
+PMM1058,kegg.orthology:K02640,petG; cytochrome b6-f complex subunit 5
+PMM1060,kegg.orthology:K02501,hisH; imidazole glycerol-phosphate synthase subunit HisH [EC:4.3.2.10]
+PMM1061,kegg.orthology:K03671,"TXN, trxA; thioredoxin"
+PMM1062,kegg.orthology:K00088,"IMPDH, guaB; IMP dehydrogenase [EC:1.1.1.205]"
+PMM1063,kegg.orthology:K02469,gyrA; DNA gyrase subunit A [EC:5.6.2.2]
+PMM1064,kegg.orthology:K06443,"lcyB, crtL1, crtY; lycopene beta-cyclase [EC:5.5.1.19]"
+PMM1065,kegg.orthology:K16149,"K16149; 1,4-alpha-glucan branching enzyme [EC:2.4.1.18]"
+PMM1066,kegg.orthology:K01649,"leuA, IMS; 2-isopropylmalate synthase [EC:2.3.3.13]"
+PMM1066,kegg.orthology:K02594,nifV; homocitrate synthase NifV [EC:2.3.3.14]
+PMM1068,kegg.orthology:K07037,pgpH; cyclic-di-AMP phosphodiesterase PgpH [EC:3.1.4.-]
+PMM1069,kegg.orthology:K01491,folD; methylenetetrahydrofolate dehydrogenase (NADP+) / methenyltetrahydrofolate cyclohydrolase [EC:1.5.1.5 3.5.4.9]
+PMM1070,kegg.orthology:K13789,"GGPS; geranylgeranyl diphosphate synthase, type II [EC:2.5.1.1 2.5.1.10 2.5.1.29]"
+PMM1071,kegg.orthology:K09775,K09775; uncharacterized protein
+PMM1072,kegg.orthology:K02224,"cobB-cbiA; cobyrinic acid a,c-diamide synthase [EC:6.3.5.9 6.3.5.11]"
+PMM1074,kegg.orthology:K00036,"G6PD, zwf; glucose-6-phosphate 1-dehydrogenase [EC:1.1.1.49 1.1.1.363]"
+PMM1075,kegg.orthology:K02641,petH; ferredoxin--NADP+ reductase [EC:1.18.1.2]
+PMM1077,kegg.orthology:K08479,"sasA; two-component system, OmpR family, clock-associated histidine kinase SasA [EC:2.7.13.3]"
+PMM1080,kegg.orthology:K00948,"PRPS, prsA; ribose-phosphate pyrophosphokinase [EC:2.7.6.1]"
+PMM1081,kegg.orthology:K00705,malQ; 4-alpha-glucanotransferase [EC:2.4.1.25]
+PMM1084,kegg.orthology:K01582,"E4.1.1.18, ldcC, cadA; lysine decarboxylase [EC:4.1.1.18]"
+PMM1085,kegg.orthology:K00981,"E2.7.7.41, CDS1, CDS2, cdsA; phosphatidate cytidylyltransferase [EC:2.7.7.41]"
+PMM1087,kegg.orthology:K00001,"E1.1.1.1, adh; alcohol dehydrogenase [EC:1.1.1.1]"
+PMM1087,kegg.orthology:K00005,gldA; glycerol dehydrogenase [EC:1.1.1.6]
+PMM1088,kegg.orthology:K03696,clpC; ATP-dependent Clp protease ATP-binding subunit ClpC
+PMM1089,kegg.orthology:K03789,rimI; [ribosomal protein S18]-alanine N-acetyltransferase [EC:2.3.1.266]
+PMM1090,kegg.orthology:K01586,lysA; diaminopimelate decarboxylase [EC:4.1.1.20]
+PMM1092,kegg.orthology:K00806,uppS; undecaprenyl diphosphate synthase [EC:2.5.1.31]
+PMM1093,kegg.orthology:K01012,bioB; biotin synthase [EC:2.8.1.6]
+PMM1094,kegg.orthology:K07146,K07146; UPF0176 protein
+PMM1096,kegg.orthology:K03644,"lipA, LIAS, LIP1, LIP5; lipoyl synthase [EC:2.8.1.8]"
+PMM1097,kegg.orthology:K06187,recR; recombination protein RecR
+PMM1098,kegg.orthology:K02717,psbP; photosystem II oxygen-evolving enhancer protein 2
+PMM1099,kegg.orthology:K06147,"ABCB-BAC; ATP-binding cassette, subfamily B, bacterial"
+PMM1101,kegg.orthology:K05592,"deaD, cshA; ATP-dependent RNA helicase DeaD [EC:5.6.2.7]"
+PMM1102,kegg.orthology:K03581,recD; exodeoxyribonuclease V alpha subunit [EC:3.1.11.5]
+PMM1103,kegg.orthology:K03582,recB; exodeoxyribonuclease V beta subunit [EC:3.1.11.5]
+PMM1105,kegg.orthology:K03583,recC; exodeoxyribonuclease V gamma subunit [EC:3.1.11.5]
+PMM1107,kegg.orthology:K03474,pdxJ; pyridoxine 5-phosphate synthase [EC:2.6.99.2]
+PMM1108,kegg.orthology:K00655,plsC; 1-acyl-sn-glycerol-3-phosphate acyltransferase [EC:2.3.1.51]
+PMM1111,kegg.orthology:K07390,"grxD, GLRX5; monothiol glutaredoxin"
+PMM1115,kegg.orthology:K09835,"crtISO, crtH; prolycopene isomerase [EC:5.2.1.13]"
+PMM1116,kegg.orthology:K04094,"trmFO, gid; methylenetetrahydrofolate--tRNA-(uracil-5-)-methyltransferase [EC:2.1.1.74]"
+PMM1117,kegg.orthology:K02723,psbY; photosystem II PsbY protein
+PMM1122,kegg.orthology:K00759,"APRT, apt; adenine phosphoribosyltransferase [EC:2.4.2.7]"
+PMM1123,kegg.orthology:K03192,ureJ; urease accessory protein
+PMM1127,kegg.orthology:K09127,cmr3; CRISPR-associated protein Cmr3
+PMM1138,kegg.orthology:K06942,ychF; ribosome-binding ATPase
+PMM1139,kegg.orthology:K02005,ABC.CD.TX; HlyD family secretion protein
+PMM1140,kegg.orthology:K02335,polA; DNA polymerase I [EC:2.7.7.7]
+PMM1141,kegg.orthology:K01883,"CARS, cysS; cysteinyl-tRNA synthetase [EC:6.1.1.16]"
+PMM1142,kegg.orthology:K00099,dxr; 1-deoxy-D-xylulose-5-phosphate reductoisomerase [EC:1.1.1.267]
+PMM1144,kegg.orthology:K07019,K07019; uncharacterized protein
+PMM1145,kegg.orthology:K00325,pntB; proton-translocating NAD(P)+ transhydrogenase subunit beta [EC:7.1.1.1]
+PMM1146,kegg.orthology:K00324,pntA; proton-translocating NAD(P)+ transhydrogenase subunit alpha [EC:7.1.1.1]
+PMM1147,kegg.orthology:K00324,pntA; proton-translocating NAD(P)+ transhydrogenase subunit alpha [EC:7.1.1.1]
+PMM1150,kegg.orthology:K00384,"trxB, TRR; thioredoxin reductase (NADPH) [EC:1.8.1.9]"
+PMM1151,kegg.orthology:K02518,infA; translation initiation factor IF-1
+PMM1152a,kegg.orthology:K02643,petM; cytochrome b6-f complex subunit 7
+PMM1153,kegg.orthology:K01563,dhaA; haloalkane dehalogenase [EC:3.8.1.5]
+PMM1154,kegg.orthology:K01653,"E2.2.1.6S, ilvH, ilvN; acetolactate synthase I/III small subunit [EC:2.2.1.6]"
+PMM1155,kegg.orthology:K03767,PPIA; peptidyl-prolyl cis-trans isomerase A (cyclophilin A) [EC:5.2.1.8]
+PMM1155,kegg.orthology:K03768,"PPIB, ppiB; peptidyl-prolyl cis-trans isomerase B (cyclophilin B) [EC:5.2.1.8]"
+PMM1157,kegg.orthology:K02706,psbD; photosystem II P680 reaction center D2 protein [EC:1.10.3.9]
+PMM1158,kegg.orthology:K02705,psbC; photosystem II CP43 chlorophyll apoprotein
+PMM1159,kegg.orthology:K06287,yhdE; nucleoside triphosphate pyrophosphatase [EC:3.6.1.-]
+PMM1160,kegg.orthology:K02232,"cobQ, cbiP; adenosylcobyric acid synthase [EC:6.3.5.10]"
+PMM1164,kegg.orthology:K02012,"afuA, fbpA; iron(III) transport system substrate-binding protein"
+PMM1165,kegg.orthology:K01878,glyQ; glycyl-tRNA synthetase alpha chain [EC:6.1.1.14]
+PMM1171,kegg.orthology:K03839,"fldA, nifF, isiB; flavodoxin I"
+PMM1173,kegg.orthology:K15383,K15383; MtN3 and saliva related transmembrane protein
+PMM1175,kegg.orthology:K07088,K07088
+PMM1178,kegg.orthology:K03867,BGLUT; UDP-glucose:tetrahydrobiopterin glucosyltransferase [EC:2.4.1.-]
+PMM1180,kegg.orthology:K04773,sppA; protease IV [EC:3.4.21.-]
+PMM1181,kegg.orthology:K06208,aroH; chorismate mutase [EC:5.4.99.5]
+PMM1183,kegg.orthology:K02914,"RP-L34, MRPL34, rpmH; large subunit ribosomal protein L34"
+PMM1184,kegg.orthology:K03536,rnpA; ribonuclease P protein component [EC:3.1.26.5]
+PMM1186,kegg.orthology:K03217,"yidC, spoIIIJ, OXA1, ccfA; YidC/Oxa1 family membrane protein insertase"
+PMM1188,kegg.orthology:K01875,"SARS, serS; seryl-tRNA synthetase [EC:6.1.1.11]"
+PMM1190,kegg.orthology:K02954,"RP-S14, MRPS14, rpsN; small subunit ribosomal protein S14"
+PMM1191,kegg.orthology:K00962,"pnp, PNPT1; polyribonucleotide nucleotidyltransferase [EC:2.7.7.8]"
+PMM1192,kegg.orthology:K01082,"cysQ, MET22, BPNT1; 3^(2^), 5^-bisphosphate nucleotidase [EC:3.1.3.7]"
+PMM1193,kegg.orthology:K07056,rsmI; 16S rRNA (cytidine1402-2^-O)-methyltransferase [EC:2.1.1.198]
+PMM1196,kegg.orthology:K00971,"manC, cpsB; mannose-1-phosphate guanylyltransferase [EC:2.7.7.13]"
+PMM1196,kegg.orthology:K16011,"algA, xanB, rfbA, wbpW, pslB; mannose-1-phosphate guanylyltransferase / mannose-6-phosphate isomerase [EC:2.7.7.13 5.3.1.8]"
+PMM1198,kegg.orthology:K00728,"POMT, pmt; dolichyl-phosphate-mannose-protein mannosyltransferase [EC:2.4.1.109]"
+PMM1199,kegg.orthology:K00721,DPM1; dolichol-phosphate mannosyltransferase [EC:2.4.1.83]
+PMM1200,kegg.orthology:K00721,DPM1; dolichol-phosphate mannosyltransferase [EC:2.4.1.83]
+PMM1200,kegg.orthology:K20534,gtrB; polyisoprenyl-phosphate glycosyltransferase [EC:2.4.-.-]
+PMM1201,kegg.orthology:K12454,rfbE; CDP-paratose 2-epimerase [EC:5.1.3.10]
+PMM1202,kegg.orthology:K19180,tll; dTDP-6-deoxy-L-talose 4-dehydrogenase (NAD+) [EC:1.1.1.339]
+PMM1203,kegg.orthology:K01709,"rfbG; CDP-glucose 4,6-dehydratase [EC:4.2.1.45]"
+PMM1204,kegg.orthology:K00978,rfbF; glucose-1-phosphate cytidylyltransferase [EC:2.7.7.33]
+PMM1205,kegg.orthology:K12452,"ascC, ddhC, rfbH; CDP-4-dehydro-6-deoxyglucose reductase, E1 [EC:1.17.1.1]"
+PMM1206,kegg.orthology:K00728,"POMT, pmt; dolichyl-phosphate-mannose-protein mannosyltransferase [EC:2.4.1.109]"
+PMM1207,kegg.orthology:K02377,"TSTA3, fcl; GDP-L-fucose synthase [EC:1.1.1.271]"
+PMM1208,kegg.orthology:K01711,"gmd, GMDS; GDPmannose 4,6-dehydratase [EC:4.2.1.47]"
+PMM1209,kegg.orthology:K01784,"galE, GALE; UDP-glucose 4-epimerase [EC:5.1.3.2]"
+PMM1210,kegg.orthology:K08679,"GAE, cap1J; UDP-glucuronate 4-epimerase [EC:5.1.3.6]"
+PMM1211,kegg.orthology:K01991,"wza, gfcE; polysaccharide biosynthesis/export protein"
+PMM1214,kegg.orthology:K03271,"gmhA, lpcA; D-sedoheptulose 7-phosphate isomerase [EC:5.3.1.28]"
+PMM1214,kegg.orthology:K03273,"gmhB; D-glycero-D-manno-heptose 1,7-bisphosphate phosphatase [EC:3.1.3.82 3.1.3.83]"
+PMM1215,kegg.orthology:K15736,lhgO; (S)-2-hydroxyglutarate dehydrogenase [EC:1.1.5.13]
+PMM1216,kegg.orthology:K00966,GMPP; mannose-1-phosphate guanylyltransferase [EC:2.7.7.13]
+PMM1217,kegg.orthology:K03271,"gmhA, lpcA; D-sedoheptulose 7-phosphate isomerase [EC:5.3.1.28]"
+PMM1224,kegg.orthology:K01991,"wza, gfcE; polysaccharide biosynthesis/export protein"
+PMM1225,kegg.orthology:K16692,etk-wzc; tyrosine-protein kinase Etk/Wzc [EC:2.7.10.3]
+PMM1227,kegg.orthology:K02851,"wecA, tagO, rfe; UDP-GlcNAc:undecaprenyl-phosphate/decaprenyl-phosphate GlcNAc-1-phosphate transferase [EC:2.7.8.33 2.7.8.35]"
+PMM1229,kegg.orthology:K00161,"PDHA, pdhA; pyruvate dehydrogenase E1 component subunit alpha [EC:1.2.4.1]"
+PMM1229,kegg.orthology:K11381,bkdA; 2-oxoisovalerate dehydrogenase E1 component [EC:1.2.4.4]
+PMM1230,kegg.orthology:K00167,"BCKDHB, bkdA2; 2-oxoisovalerate dehydrogenase E1 component subunit beta [EC:1.2.4.4]"
+PMM1230,kegg.orthology:K11381,bkdA; 2-oxoisovalerate dehydrogenase E1 component [EC:1.2.4.4]
+PMM1230,kegg.orthology:K21417,"acoB; acetoin:2,6-dichlorophenolindophenol oxidoreductase subunit beta [EC:1.1.1.-]"
+PMM1231,kegg.orthology:K01810,"GPI, pgi; glucose-6-phosphate isomerase [EC:5.3.1.9]"
+PMM1233,kegg.orthology:K00067,"rfbD, rmlD; dTDP-4-dehydrorhamnose reductase [EC:1.1.1.133]"
+PMM1234,kegg.orthology:K00121,"frmA, ADH5, adhC; S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:1.1.1.284 1.1.1.1]"
+PMM1235,kegg.orthology:K00615,"E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]"
+PMM1236,kegg.orthology:K00615,"E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]"
+PMM1239,kegg.orthology:K06147,"ABCB-BAC; ATP-binding cassette, subfamily B, bacterial"
+PMM1246,kegg.orthology:K00612,nodU; carbamoyltransferase [EC:2.1.3.-]
+PMM1250,kegg.orthology:K00612,nodU; carbamoyltransferase [EC:2.1.3.-]
+PMM1251,kegg.orthology:K00612,nodU; carbamoyltransferase [EC:2.1.3.-]
+PMM1256,kegg.orthology:K13683,wcaE; putative colanic acid biosynthesis glycosyltransferase WcaE [EC:2.4.-.-]
+PMM1256,kegg.orthology:K20444,rfbC; O-antigen biosynthesis protein [EC:2.4.1.-]
+PMM1257,kegg.orthology:K01710,"rfbB, rmlB, rffG; dTDP-glucose 4,6-dehydratase [EC:4.2.1.46]"
+PMM1257,kegg.orthology:K01784,"galE, GALE; UDP-glucose 4-epimerase [EC:5.1.3.2]"
+PMM1260,kegg.orthology:K01710,"rfbB, rmlB, rffG; dTDP-glucose 4,6-dehydratase [EC:4.2.1.46]"
+PMM1260,kegg.orthology:K08678,"UXS1, uxs; UDP-glucuronate decarboxylase [EC:4.1.1.35]"
+PMM1261,kegg.orthology:K00012,"UGDH, ugd; UDPglucose 6-dehydrogenase [EC:1.1.1.22]"
+PMM1262,kegg.orthology:K01356,lexA; repressor LexA [EC:3.4.21.88]
+PMM1263,kegg.orthology:K00611,"OTC, argF, argI; ornithine carbamoyltransferase [EC:2.1.3.3]"
+PMM1264,kegg.orthology:K03798,"ftsH, hflB; cell division protease FtsH [EC:3.4.24.-]"
+PMM1265,kegg.orthology:K11752,ribD; diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:3.5.4.26 1.1.1.193]
+PMM1268,kegg.orthology:K00595,"cobL-cbiET; precorrin-6B C5,15-methyltransferase / cobalt-precorrin-6B C5,C15-methyltransferase [EC:2.1.1.132 2.1.1.289 2.1.1.196]"
+PMM1269,kegg.orthology:K00858,"ppnK, NADK; NAD+ kinase [EC:2.7.1.23]"
+PMM1270,kegg.orthology:K01889,"FARSA, pheS; phenylalanyl-tRNA synthetase alpha chain [EC:6.1.1.20]"
+PMM1271,kegg.orthology:K03787,surE; 5^/3^-nucleotidase [EC:3.1.3.5 3.1.3.6]
+PMM1273,kegg.orthology:K11753,ribF; riboflavin kinase / FMN adenylyltransferase [EC:2.7.1.26 2.7.7.2]
+PMM1274,kegg.orthology:K00788,thiE; thiamine-phosphate pyrophosphorylase [EC:2.5.1.3]
+PMM1275,kegg.orthology:K03154,thiS; sulfur carrier protein
+PMM1278,kegg.orthology:K06898,"larB; pyridinium-3,5-biscarboxylic acid mononucleotide synthase [EC:2.5.1.143]"
+PMM1280,kegg.orthology:K00554,trmD; tRNA (guanine37-N1)-methyltransferase [EC:2.1.1.228]
+PMM1280,kegg.orthology:K01770,"ispF; 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase [EC:4.6.1.12]"
+PMM1281,kegg.orthology:K03595,"era, ERAL1; GTPase"
+PMM1283,kegg.orthology:K06890,K06890; uncharacterized protein
+PMM1284,kegg.orthology:K06217,"phoH, phoL; phosphate starvation-inducible protein PhoH and related proteins"
+PMM1285,kegg.orthology:K02959,"RP-S16, MRPS16, rpsP; small subunit ribosomal protein S16"
+PMM1286,kegg.orthology:K03106,"SRP54, ffh; signal recognition particle subunit SRP54 [EC:3.6.5.4]"
+PMM1288,kegg.orthology:K00161,"PDHA, pdhA; pyruvate dehydrogenase E1 component subunit alpha [EC:1.2.4.1]"
+PMM1289,kegg.orthology:K03086,rpoD; RNA polymerase primary sigma factor
+PMM1289,kegg.orthology:K03087,rpoS; RNA polymerase nonessential primary-like sigma factor
+PMM1290,kegg.orthology:K17758,nnrD; ADP-dependent NAD(P)H-hydrate dehydratase [EC:4.2.1.136]
+PMM1290,kegg.orthology:K17759,"NAXE, nnrE; NAD(P)H-hydrate epimerase [EC:5.1.99.6]"
+PMM1291,kegg.orthology:K00566,"mnmA, trmU; tRNA-uridine 2-sulfurtransferase [EC:2.8.1.13]"
+PMM1292,kegg.orthology:K03820,lnt; apolipoprotein N-acyltransferase [EC:2.3.1.269]
+PMM1293,kegg.orthology:K01802,E5.2.1.8; peptidylprolyl isomerase [EC:5.2.1.8]
+PMM1293,kegg.orthology:K03772,fkpA; FKBP-type peptidyl-prolyl cis-trans isomerase FkpA [EC:5.2.1.8]
+PMM1294,kegg.orthology:K00518,sodN; nickel superoxide dismutase [EC:1.15.1.1]
+PMM1295,kegg.orthology:K03100,lepB; signal peptidase I [EC:3.4.21.89]
+PMM1295,kegg.orthology:K06147,"ABCB-BAC; ATP-binding cassette, subfamily B, bacterial"
+PMM1295,kegg.orthology:K13280,"SEC11, sipW; signal peptidase I [EC:3.4.21.89]"
+PMM1297,kegg.orthology:K01609,trpC; indole-3-glycerol phosphate synthase [EC:4.1.1.48]
+PMM1298,kegg.orthology:K00382,"DLD, lpd, pdhD; dihydrolipoyl dehydrogenase [EC:1.8.1.4]"
+PMM1299,kegg.orthology:K03437,"spoU; RNA methyltransferase, TrmH family"
+PMM1300,kegg.orthology:K00790,murA; UDP-N-acetylglucosamine 1-carboxyvinyltransferase [EC:2.5.1.7]
+PMM1301,kegg.orthology:K00821,argD; acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]
+PMM1302,kegg.orthology:K11754,folC; dihydrofolate synthase / folylpolyglutamate synthase [EC:6.3.2.12 6.3.2.17]
+PMM1304,kegg.orthology:K01485,codA; cytosine/creatinine deaminase [EC:3.5.4.1 3.5.4.21]
+PMM1305,kegg.orthology:K06168,"CDK5RAP1, miaB; tRNA-2-methylthio-N6-dimethylallyladenosine synthase [EC:2.8.4.3]"
+PMM1306,kegg.orthology:K01921,ddl; D-alanine-D-alanine ligase [EC:6.3.2.4]
+PMM1308,kegg.orthology:K03589,ftsQ; cell division protein FtsQ
+PMM1309,kegg.orthology:K03531,ftsZ; cell division protein FtsZ
+PMM1310,kegg.orthology:K00606,panB; 3-methyl-2-oxobutanoate hydroxymethyltransferase [EC:2.1.2.11]
+PMM1313,kegg.orthology:K01358,"clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]"
+PMM1314,kegg.orthology:K01358,"clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]"
+PMM1315,kegg.orthology:K00053,ilvC; ketol-acid reductoisomerase [EC:1.1.1.86]
+PMM1316,kegg.orthology:K02227,"cbiB, cobD; adenosylcobinamide-phosphate synthase [EC:6.3.1.10]"
+PMM1321,kegg.orthology:K03530,hupB; DNA-binding protein HU-beta
+PMM1322,kegg.orthology:K01214,"ISA, treX; isoamylase [EC:3.2.1.68]"
+PMM1323,kegg.orthology:K03292,"TC.GPH; glycoside/pentoside/hexuronide:cation symporter, GPH family"
+PMM1324,kegg.orthology:K02066,"mlaE, linK; phospholipid/cholesterol/gamma-HCH transport system permease protein"
+PMM1327,kegg.orthology:K08591,plsY; acyl phosphate:glycerol-3-phosphate acyltransferase [EC:2.3.1.275]
+PMM1328,kegg.orthology:K01591,pyrF; orotidine-5^-phosphate decarboxylase [EC:4.1.1.23]
+PMM1329,kegg.orthology:K01866,"YARS, tyrS; tyrosyl-tRNA synthetase [EC:6.1.1.1]"
+PMM1332,kegg.orthology:K01255,"CARP, pepA; leucyl aminopeptidase [EC:3.4.11.1]"
+PMM1333,kegg.orthology:K07304,msrA; peptide-methionine (S)-S-oxide reductase [EC:1.8.4.11]
+PMM1334,kegg.orthology:K00748,lpxB; lipid-A-disaccharide synthase [EC:2.4.1.182]
+PMM1335,kegg.orthology:K00677,lpxA; UDP-N-acetylglucosamine acyltransferase [EC:2.3.1.129]
+PMM1336,kegg.orthology:K02372,fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+PMM1337,kegg.orthology:K02535,lpxC; UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase [EC:3.5.1.108]
+PMM1338,kegg.orthology:K07277,"SAM50, TOB55, bamA; outer membrane protein insertion porin family"
+PMM1339,kegg.orthology:K01923,purC; phosphoribosylaminoimidazole-succinocarboxamide synthase [EC:6.3.2.6]
+PMM1340,kegg.orthology:K01945,purD; phosphoribosylamine---glycine ligase [EC:6.3.4.13]
+PMM1341,kegg.orthology:K07769,"nblS, dfr, dspA, hik33; two-component system, OmpR family, sensor histidine kinase NblS [EC:2.7.13.3]"
+PMM1342,kegg.orthology:K08482,kaiC; circadian clock protein KaiC
+PMM1343,kegg.orthology:K08481,kaiB; circadian clock protein KaiB
+PMM1344,kegg.orthology:K02888,"RP-L21, MRPL21, rplU; large subunit ribosomal protein L21"
+PMM1345,kegg.orthology:K02899,"RP-L27, MRPL27, rpmA; large subunit ribosomal protein L27"
+PMM1347,kegg.orthology:K03177,"truB, PUS4, TRUB1; tRNA pseudouridine55 synthase [EC:5.4.99.25]"
+PMM1348,kegg.orthology:K06381,spoIID; stage II sporulation protein D (peptidoglycan lytic transglycosylase) [EC:4.2.2.29]
+PMM1349,kegg.orthology:K00784,rnz; ribonuclease Z [EC:3.1.26.11]
+PMM1352,kegg.orthology:K02639,petF; ferredoxin
+PMM1353,kegg.orthology:K02687,prmA; ribosomal protein L11 methyltransferase [EC:2.1.1.-]
+PMM1354,kegg.orthology:K00058,"serA, PHGDH; D-3-phosphoglycerate dehydrogenase / 2-oxoglutarate reductase [EC:1.1.1.95 1.1.1.399]"
+PMM1358,kegg.orthology:K00275,"pdxH, PNPO; pyridoxamine 5^-phosphate oxidase [EC:1.4.3.5]"
+PMM1359,kegg.orthology:K15977,K15977; putative oxidoreductase
+PMM1360,kegg.orthology:K01669,"phr, PHR1; deoxyribodipyrimidine photo-lyase [EC:4.1.99.3]"
+PMM1361,kegg.orthology:K00218,por; protochlorophyllide reductase [EC:1.3.1.33]
+PMM1364,kegg.orthology:K01925,murD; UDP-N-acetylmuramoylalanine--D-glutamate ligase [EC:6.3.2.9]
+PMM1366,kegg.orthology:K06911,"PIR; quercetin 2,3-dioxygenase [EC:1.13.11.24]"
+PMM1368,kegg.orthology:K08983,K08983; putative membrane protein
+PMM1370,kegg.orthology:K07007,"baiN; 3-dehydro-bile acid Delta4,6-reductase [EC:1.3.1.114]"
+PMM1372,kegg.orthology:K06995,K06995; uncharacterized protein
+PMM1377,kegg.orthology:K00091,E1.1.1.219; dihydroflavonol-4-reductase [EC:1.1.1.219]
+PMM1378,kegg.orthology:K10255,"FAD6, desA; acyl-lipid omega-6 desaturase (Delta-12 desaturase) [EC:1.14.19.23 1.14.19.45]"
+PMM1379,kegg.orthology:K06966,ppnN; pyrimidine/purine-5^-nucleotide nucleosidase [EC:3.2.2.10 3.2.2.-]
+PMM1380,kegg.orthology:K01838,pgmB; beta-phosphoglucomutase [EC:5.4.2.6]
+PMM1380,kegg.orthology:K17623,"PUDP, HDHD1; pseudouridine 5^-phosphatase [EC:3.1.3.96]"
+PMM1382,kegg.orthology:K10255,"FAD6, desA; acyl-lipid omega-6 desaturase (Delta-12 desaturase) [EC:1.14.19.23 1.14.19.45]"
+PMM1382,kegg.orthology:K10257,"FAD3, FAD7, FAD8, desB; acyl-lipid omega-3 desaturase [EC:1.14.19.25 1.14.19.35 1.14.19.36]"
+PMM1386,kegg.orthology:K11720,lptG; lipopolysaccharide export system permease protein
+PMM1415,kegg.orthology:K01061,E3.1.1.45; carboxymethylenebutenolidase [EC:3.1.1.45]
+PMM1418,kegg.orthology:K11909,vasI; type VI secretion system protein VasI
+PMM1431,kegg.orthology:K03060,rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+PMM1433,kegg.orthology:K02825,pyrR; pyrimidine operon attenuation protein / uracil phosphoribosyltransferase [EC:2.4.2.9]
+PMM1434,kegg.orthology:K15633,"gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]"
+PMM1435,kegg.orthology:K03075,secG; preprotein translocase subunit SecG
+PMM1436,kegg.orthology:K04077,"groEL, HSPD1, HSP60, CPN60; chaperonin GroEL [EC:5.6.1.7]"
+PMM1437,kegg.orthology:K04078,"groES, HSPE1; chaperonin GroES"
+PMM1438,kegg.orthology:K02112,"ATPF1B, atpD; F-type H+/Na+-transporting ATPase subunit beta [EC:7.1.2.2 7.2.2.1]"
+PMM1439,kegg.orthology:K02114,"ATPF1E, atpC; F-type H+-transporting ATPase subunit epsilon"
+PMM1440,kegg.orthology:K19032,PSRP3; 30S ribosomal protein 3
+PMM1442,kegg.orthology:K01262,pepP; Xaa-Pro aminopeptidase [EC:3.4.11.9]
+PMM1444,kegg.orthology:K06883,K06883; uncharacterized protein
+PMM1445,kegg.orthology:K00969,nadD; nicotinate-nucleotide adenylyltransferase [EC:2.7.7.18]
+PMM1446,kegg.orthology:K01916,nadE; NAD+ synthase [EC:6.3.1.5]
+PMM1446,kegg.orthology:K01950,"E6.3.5.1, NADSYN1, QNS1, nadE; NAD+ synthase (glutamine-hydrolysing) [EC:6.3.5.1]"
+PMM1449,kegg.orthology:K02639,petF; ferredoxin
+PMM1450,kegg.orthology:K02115,"ATPF1G, atpG; F-type H+-transporting ATPase subunit gamma"
+PMM1451,kegg.orthology:K02111,"ATPF1A, atpA; F-type H+/Na+-transporting ATPase subunit alpha [EC:7.1.2.2 7.2.2.1]"
+PMM1452,kegg.orthology:K02113,"ATPF1D, atpH; F-type H+-transporting ATPase subunit delta"
+PMM1453,kegg.orthology:K02109,"ATPF0B, atpF; F-type H+-transporting ATPase subunit b"
+PMM1454,kegg.orthology:K02109,"ATPF0B, atpF; F-type H+-transporting ATPase subunit b"
+PMM1455,kegg.orthology:K02110,"ATPF0C, atpE; F-type H+-transporting ATPase subunit c"
+PMM1456,kegg.orthology:K02108,"ATPF0A, atpB; F-type H+-transporting ATPase subunit a"
+PMM1457,kegg.orthology:K02116,atpI; ATP synthase protein I
+PMM1458,kegg.orthology:K03588,"ftsW, spoVE, rodA; peptidoglycan glycosyltransferase [EC:2.4.99.28]"
+PMM1459,kegg.orthology:K06196,ccdA; cytochrome c-type biogenesis protein
+PMM1460,kegg.orthology:K07399,"resB, ccs1; cytochrome c biogenesis protein"
+PMM1461,kegg.orthology:K09457,queF; 7-cyano-7-deazaguanine reductase [EC:1.7.1.13]
+PMM1463,kegg.orthology:K04751,glnB; nitrogen regulatory protein P-II 1
+PMM1463,kegg.orthology:K04752,glnK; nitrogen regulatory protein P-II 2
+PMM1464,kegg.orthology:K06442,tlyA; 23S rRNA (cytidine1920-2^-O)/16S rRNA (cytidine1409-2^-O)-methyltransferase [EC:2.1.1.226 2.1.1.227]
+PMM1465,kegg.orthology:K01756,"purB, ADSL; adenylosuccinate lyase [EC:4.3.2.2]"
+PMM1466,kegg.orthology:K01679,"E4.2.1.2B, fumC, FH; fumarate hydratase, class II [EC:4.2.1.2]"
+PMM1468,kegg.orthology:K00639,"kbl, GCAT; glycine C-acetyltransferase [EC:2.3.1.29]"
+PMM1468,kegg.orthology:K00652,bioF; 8-amino-7-oxononanoate synthase [EC:2.3.1.47]
+PMM1469,kegg.orthology:K19560,bioK; pimeloyl-[acyl-carrier protein] methyl ester esterase [EC:3.1.1.85]
+PMM1470,kegg.orthology:K02169,bioC; malonyl-CoA O-methyltransferase [EC:2.1.1.197]
+PMM1471,kegg.orthology:K01935,bioD; dethiobiotin synthetase [EC:6.3.3.3]
+PMM1472,kegg.orthology:K00822,E2.6.1.18; beta-alanine--pyruvate transaminase [EC:2.6.1.18]
+PMM1472,kegg.orthology:K00833,bioA; adenosylmethionine---8-amino-7-oxononanoate aminotransferase [EC:2.6.1.62]
+PMM1475,kegg.orthology:K03501,"gidB, rsmG; 16S rRNA (guanine527-N7)-methyltransferase [EC:2.1.1.170]"
+PMM1476,kegg.orthology:K07079,K07079; uncharacterized protein
+PMM1477,kegg.orthology:K05337,fer; ferredoxin
+PMM1481,kegg.orthology:K06941,rlmN; 23S rRNA (adenine2503-C2)-methyltransferase [EC:2.1.1.192]
+PMM1483,kegg.orthology:K03046,rpoC; DNA-directed RNA polymerase subunit beta^ [EC:2.7.7.6]
+PMM1484,kegg.orthology:K03046,rpoC; DNA-directed RNA polymerase subunit beta^ [EC:2.7.7.6]
+PMM1485,kegg.orthology:K03043,rpoB; DNA-directed RNA polymerase subunit beta [EC:2.7.7.6]
+PMM1486,kegg.orthology:K03424,tatD; TatD DNase family protein [EC:3.1.21.-]
+PMM1487,kegg.orthology:K02968,"RP-S20, rpsT; small subunit ribosomal protein S20"
+PMM1488,kegg.orthology:K00013,hisD; histidinol dehydrogenase [EC:1.1.1.23]
+PMM1489,kegg.orthology:K01807,rpiA; ribose 5-phosphate isomerase A [EC:5.3.1.6]
+PMM1491,kegg.orthology:K09748,rimP; ribosome maturation factor RimP
+PMM1492,kegg.orthology:K02600,nusA; transcription termination/antitermination protein NusA
+PMM1493,kegg.orthology:K07742,ylxR; uncharacterized protein
+PMM1494,kegg.orthology:K02519,"infB, MTIF2; translation initiation factor IF-2"
+PMM1499,kegg.orthology:K06891,clpS; ATP-dependent Clp protease adaptor protein ClpS
+PMM1500,kegg.orthology:K10206,E2.6.1.83; LL-diaminopimelate aminotransferase [EC:2.6.1.83]
+PMM1501,kegg.orthology:K08300,rne; ribonuclease E [EC:3.1.26.12]
+PMM1502,kegg.orthology:K03470,rnhB; ribonuclease HII [EC:3.1.26.4]
+PMM1504,kegg.orthology:K04518,pheA2; prephenate dehydratase [EC:4.2.1.51]
+PMM1505,kegg.orthology:K18534,K18534; MPBQ/MSBQ methyltransferase [EC:2.1.1.295]
+PMM1506,kegg.orthology:K01338,lon; ATP-dependent Lon protease [EC:3.4.21.53]
+PMM1507,kegg.orthology:K02946,"RP-S10, MRPS10, rpsJ; small subunit ribosomal protein S10"
+PMM1508,kegg.orthology:K02358,"tuf, TUFM; elongation factor Tu"
+PMM1509,kegg.orthology:K02355,"fusA, GFM, EFG; elongation factor G"
+PMM1510,kegg.orthology:K02992,"RP-S7, MRPS7, rpsG; small subunit ribosomal protein S7"
+PMM1511,kegg.orthology:K02950,"RP-S12, MRPS12, rpsL; small subunit ribosomal protein S12"
+PMM1512,kegg.orthology:K00284,"GLU, gltS; glutamate synthase (ferredoxin) [EC:1.4.7.1]"
+PMM1514,kegg.orthology:K03644,"lipA, LIAS, LIP1, LIP5; lipoyl synthase [EC:2.8.1.8]"
+PMM1519,kegg.orthology:K02699,psaL; photosystem I subunit XI
+PMM1520,kegg.orthology:K02696,psaI; photosystem I subunit VIII
+PMM1522,kegg.orthology:K00721,DPM1; dolichol-phosphate mannosyltransferase [EC:2.4.1.83]
+PMM1523,kegg.orthology:K02690,psaB; photosystem I P700 chlorophyll a apoprotein A2 [EC:1.97.1.12]
+PMM1524,kegg.orthology:K02689,psaA; photosystem I P700 chlorophyll a apoprotein A1 [EC:1.97.1.12]
+PMM1525,kegg.orthology:K13541,cbiGH-cobJ; cobalt-precorrin 5A hydrolase / cobalt-factor III methyltransferase / precorrin-3B C17-methyltransferase [EC:3.7.1.12 2.1.1.272 2.1.1.131]
+PMM1526,kegg.orthology:K11777,K11777; HAD superfamily phosphatase
+PMM1527,kegg.orthology:K01775,alr; alanine racemase [EC:5.1.1.1]
+PMM1529,kegg.orthology:K02835,"prfA, MTRF1, MRF1; peptide chain release factor 1"
+PMM1530,kegg.orthology:K02909,"RP-L31, rpmE; large subunit ribosomal protein L31"
+PMM1531,kegg.orthology:K02996,"RP-S9, MRPS9, rpsI; small subunit ribosomal protein S9"
+PMM1532,kegg.orthology:K02871,"RP-L13, MRPL13, rplM; large subunit ribosomal protein L13"
+PMM1533,kegg.orthology:K06173,"truA, PUS1; tRNA pseudouridine38-40 synthase [EC:5.4.99.12]"
+PMM1534,kegg.orthology:K02879,"RP-L17, MRPL17, rplQ; large subunit ribosomal protein L17"
+PMM1535,kegg.orthology:K03040,rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+PMM1536,kegg.orthology:K02948,"RP-S11, MRPS11, rpsK; small subunit ribosomal protein S11"
+PMM1537,kegg.orthology:K02952,"RP-S13, rpsM; small subunit ribosomal protein S13"
+PMM1538,kegg.orthology:K02919,"RP-L36, MRPL36, rpmJ; large subunit ribosomal protein L36"
+PMM1539,kegg.orthology:K00939,"adk, AK; adenylate kinase [EC:2.7.4.3]"
+PMM1540,kegg.orthology:K03076,secY; preprotein translocase subunit SecY
+PMM1541,kegg.orthology:K02876,"RP-L15, MRPL15, rplO; large subunit ribosomal protein L15"
+PMM1542,kegg.orthology:K02988,"RP-S5, MRPS5, rpsE; small subunit ribosomal protein S5"
+PMM1543,kegg.orthology:K02881,"RP-L18, MRPL18, rplR; large subunit ribosomal protein L18"
+PMM1544,kegg.orthology:K02933,"RP-L6, MRPL6, rplF; large subunit ribosomal protein L6"
+PMM1545,kegg.orthology:K02994,"RP-S8, MRPS8, rpsH; small subunit ribosomal protein S8"
+PMM1546,kegg.orthology:K02931,"RP-L5, MRPL5, rplE; large subunit ribosomal protein L5"
+PMM1547,kegg.orthology:K02895,"RP-L24, MRPL24, rplX; large subunit ribosomal protein L24"
+PMM1548,kegg.orthology:K02874,"RP-L14, MRPL14, rplN; large subunit ribosomal protein L14"
+PMM1549,kegg.orthology:K02961,"RP-S17, MRPS17, rpsQ; small subunit ribosomal protein S17"
+PMM1550,kegg.orthology:K02904,"RP-L29, rpmC; large subunit ribosomal protein L29"
+PMM1551,kegg.orthology:K02878,"RP-L16, MRPL16, rplP; large subunit ribosomal protein L16"
+PMM1552,kegg.orthology:K02982,"RP-S3, rpsC; small subunit ribosomal protein S3"
+PMM1553,kegg.orthology:K02890,"RP-L22, MRPL22, rplV; large subunit ribosomal protein L22"
+PMM1554,kegg.orthology:K02965,"RP-S19, RSM19, rpsS; small subunit ribosomal protein S19"
+PMM1555,kegg.orthology:K02886,"RP-L2, MRPL2, RML2, rplB; large subunit ribosomal protein L2"
+PMM1556,kegg.orthology:K02892,"RP-L23, MRPL23, rplW; large subunit ribosomal protein L23"
+PMM1557,kegg.orthology:K02926,"RP-L4, MRPL4, rplD; large subunit ribosomal protein L4"
+PMM1558,kegg.orthology:K02906,"RP-L3, MRPL3, rplC; large subunit ribosomal protein L3"
+PMM1559,kegg.orthology:K05585,ndhN; NAD(P)H-quinone oxidoreductase subunit N [EC:7.1.1.2]
+PMM1562,kegg.orthology:K03553,recA; recombination protein RecA
+PMM1564,kegg.orthology:K03722,dinG; ATP-dependent DNA helicase DinG [EC:5.6.2.3]
+PMM1565,kegg.orthology:K15226,tyrAa; arogenate dehydrogenase (NADP+) [EC:1.3.1.78]
+PMM1569,kegg.orthology:K21147,"moeZR, moeBR; sulfur-carrier protein adenylyltransferase/sulfurtransferase [EC:2.7.7.80 2.7.7.- 2.8.1.11 2.8.1.-]"
+PMM1570,kegg.orthology:K19221,"cobA, btuR; cob(I)alamin adenosyltransferase [EC:2.5.1.17]"
+PMM1571,kegg.orthology:K06864,"larE; cysteine-dependent pyridinium-3,5-bisthiocarboxylic acid mononucleotide synthase [EC:4.4.1.37 4.4.1.45]"
+PMM1572,kegg.orthology:K01611,"speD, AMD1; S-adenosylmethionine decarboxylase [EC:4.1.1.50]"
+PMM1573,kegg.orthology:K03629,recF; DNA replication and repair protein RecF
+PMM1575,kegg.orthology:K01595,ppc; phosphoenolpyruvate carboxylase [EC:4.1.1.31]
+PMM1577,kegg.orthology:K01657,trpE; anthranilate synthase component I [EC:4.1.3.27]
+PMM1578,kegg.orthology:K02692,psaD; photosystem I subunit II
+PMM1580,kegg.orthology:K05837,"rodA, mrdB; peptidoglycan glycosyltransferase [EC:2.4.99.28]"
+PMM1581,kegg.orthology:K03593,"mrp, NUBPL; ATP-binding protein involved in chromosome partitioning"
+PMM1582,kegg.orthology:K00228,"CPOX, hemF; coproporphyrinogen III oxidase [EC:1.3.3.3]"
+PMM1584,kegg.orthology:K03684,rnd; ribonuclease D [EC:3.1.13.5]
+PMM1589,kegg.orthology:K01933,purM; phosphoribosylformylglycinamidine cyclo-ligase [EC:6.3.3.1]
+PMM1590,kegg.orthology:K13799,panC-cmk; pantoate ligase / CMP/dCMP kinase [EC:6.3.2.1 2.7.4.25]
+PMM1591,kegg.orthology:K01104,E3.1.3.48; protein-tyrosine phosphatase [EC:3.1.3.48]
+PMM1592,kegg.orthology:K05370,pebB; phycoerythrobilin:ferredoxin oxidoreductase [EC:1.3.7.3]
+PMM1593,kegg.orthology:K05369,"pebA; 15,16-dihydrobiliverdin:ferredoxin oxidoreductase [EC:1.3.7.2]"
+PMM1594,kegg.orthology:K21480,"HO, pbsA1, hmuO; heme oxygenase (biliverdin-producing, ferredoxin) [EC:1.14.15.20]"
+PMM1596,kegg.orthology:K00031,"IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]"
+PMM1598,kegg.orthology:K01785,"galM, GALM; aldose 1-epimerase [EC:5.1.3.3]"
+PMM1601,kegg.orthology:K00688,"PYG, glgP; glycogen phosphorylase [EC:2.4.1.1]"
+PMM1603,kegg.orthology:K03685,"rnc, DROSHA, RNT1; ribonuclease III [EC:3.1.26.3]"
+PMM1605,kegg.orthology:K02860,rimM; 16S rRNA processing protein RimM
+PMM1606,kegg.orthology:K00820,"glmS, GFPT; glutamine---fructose-6-phosphate transaminase (isomerizing) [EC:2.6.1.16]"
+PMM1607,kegg.orthology:K02691,psaC; photosystem I iron-sulfur center [EC:1.97.1.12]
+PMM1608,kegg.orthology:K02078,"acpP, acpM; acyl carrier protein"
+PMM1609,kegg.orthology:K09458,"fabF, OXSM, CEM1; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]"
+PMM1610,kegg.orthology:K00615,"E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]"
+PMM1611,kegg.orthology:K03147,thiC; phosphomethylpyrimidine synthase [EC:4.1.99.17]
+PMM1613,kegg.orthology:K01436,yhaA; amidohydrolase [EC:3.5.1.-]
+PMM1615,kegg.orthology:K03551,ruvB; holliday junction DNA helicase RuvB [EC:5.6.2.4]
+PMM1616,kegg.orthology:K03664,smpB; SsrA-binding protein
+PMM1618,kegg.orthology:K04567,"KARS, lysS; lysyl-tRNA synthetase, class II [EC:6.1.1.6]"
+PMM1621,kegg.orthology:K03570,mreC; rod shape-determining protein MreC
+PMM1622,kegg.orthology:K03569,mreB; rod shape-determining protein MreB and related proteins
+PMM1623,kegg.orthology:K03111,ssb; single-strand DNA-binding protein
+PMM1624,kegg.orthology:K01077,"E3.1.3.1, phoA, phoB; alkaline phosphatase [EC:3.1.3.1]"
+PMM1625,kegg.orthology:K01251,"AHCY, ahcY; adenosylhomocysteinase [EC:3.13.2.1]"
+PMM1626,kegg.orthology:K06925,tsaE; tRNA threonylcarbamoyladenosine biosynthesis protein TsaE
+PMM1627,kegg.orthology:K00847,"E2.7.1.4, scrK; fructokinase [EC:2.7.1.4]"
+PMM1629,kegg.orthology:K03087,rpoS; RNA polymerase nonessential primary-like sigma factor
+PMM1630,kegg.orthology:K06213,mgtE; magnesium transporter
+PMM1631,kegg.orthology:K06199,"crcB, FEX; fluoride exporter"
+PMM1632,kegg.orthology:K06199,"crcB, FEX; fluoride exporter"
+PMM1634,kegg.orthology:K02470,gyrB; DNA gyrase subunit B [EC:5.6.2.2]
+PMM1635,kegg.orthology:K00791,"miaA, TRIT1; tRNA dimethylallyltransferase [EC:2.5.1.75]"
+PMM1636,kegg.orthology:K02520,"infC, MTIF3; translation initiation factor IF-3"
+PMM1637,kegg.orthology:K07978,plmA; GntR family transcriptional regulator
+PMM1638,kegg.orthology:K00640,cysE; serine O-acetyltransferase [EC:2.3.1.30]
+PMM1639,kegg.orthology:K03070,secA; preprotein translocase subunit SecA [EC:7.4.2.8]
+PMM1643,kegg.orthology:K00794,"ribH, RIB4; 6,7-dimethyl-8-ribityllumazine synthase [EC:2.5.1.78]"
+PMM1644,kegg.orthology:K02724,psbZ; photosystem II PsbZ protein
+PMM1645,kegg.orthology:K03555,mutS; DNA mismatch repair protein MutS
+PMM1646,kegg.orthology:K06042,cobH-cbiC; precorrin-8X/cobalt-precorrin-8 methylmutase [EC:5.4.99.61 5.4.99.60]
+PMM1647,kegg.orthology:K02340,holA; DNA polymerase III subunit delta [EC:2.7.7.7]
+PMM1648,kegg.orthology:K00928,lysC; aspartate kinase [EC:2.7.2.4]
+PMM1649,kegg.orthology:K03702,uvrB; excinuclease ABC subunit B
+PMM1651,kegg.orthology:K04075,"tilS, mesJ; tRNA(Ile)-lysidine synthase [EC:6.3.4.19]"
+PMM1652,kegg.orthology:K12574,rnj; ribonuclease J [EC:3.1.-.-]
+PMM1653,kegg.orthology:K01714,dapA; 4-hydroxy-tetrahydrodipicolinate synthase [EC:4.3.3.7]
+PMM1654,kegg.orthology:K00133,asd; aspartate-semialdehyde dehydrogenase [EC:1.2.1.11]
+PMM1655,kegg.orthology:K03545,tig; trigger factor
+PMM1656,kegg.orthology:K01358,"clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]"
+PMM1657,kegg.orthology:K03544,"clpX, CLPX; ATP-dependent Clp protease ATP-binding subunit ClpX"
+PMM1658,kegg.orthology:K02343,dnaX; DNA polymerase III subunit gamma/tau [EC:2.7.7.7]
+PMM1659,kegg.orthology:K19003,"mgdA; 1,2-diacylglycerol 3-beta-glucosyltransferase [EC:2.4.1.336]"
+PMM1661,kegg.orthology:K02916,"RP-L35, MRPL35, rpmI; large subunit ribosomal protein L35"
+PMM1662,kegg.orthology:K02887,"RP-L20, MRPL20, rplT; large subunit ribosomal protein L20"
+PMM1664,kegg.orthology:K03149,thiG; thiazole synthase [EC:2.8.1.10]
+PMM1665,kegg.orthology:K06118,"SQD1, sqdB; UDP-sulfoquinovose synthase [EC:3.13.1.1]"
+PMM1668,kegg.orthology:K00281,"GLDC, gcvP; glycine cleavage system P protein (glycine dehydrogenase) [EC:1.4.4.2]"
+PMM1669,kegg.orthology:K02437,"gcvH, GCSH; glycine cleavage system H protein"
+PMM1670,kegg.orthology:K01758,CTH; cystathionine gamma-lyase [EC:4.4.1.1]
+PMM1672,kegg.orthology:K00507,"SCD, desC; stearoyl-CoA desaturase (Delta-9 desaturase) [EC:1.14.19.1]"
+PMM1673,kegg.orthology:K02939,"RP-L9, MRPL9, rplI; large subunit ribosomal protein L9"
+PMM1674,kegg.orthology:K02314,dnaB; replicative DNA helicase [EC:5.6.2.3]
+PMM1675,kegg.orthology:K03495,"gidA, mnmG, MTO1; tRNA uridine 5-carboxymethylaminomethyl modification enzyme"
+PMM1676,kegg.orthology:K03181,ubiC; chorismate lyase [EC:4.1.3.40]
+PMM1679,kegg.orthology:K10747,LIG1; DNA ligase 1 [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+PMM1682,kegg.orthology:K01873,"VARS, valS; valyl-tRNA synthetase [EC:6.1.1.9]"
+PMM1684,kegg.orthology:K02428,K02428
+PMM1684,kegg.orthology:K02499,yabN; tetrapyrrole methylase family protein / MazG family protein
+PMM1685,kegg.orthology:K00797,"speE, SRM, SPE3; spermidine synthase [EC:2.5.1.16]"
+PMM1686,kegg.orthology:K01480,speB; agmatinase [EC:3.5.3.11]
+PMM1687,kegg.orthology:K00605,"gcvT, AMT; glycine cleavage system T protein (aminomethyltransferase) [EC:2.1.2.10]"
+PMM1688,kegg.orthology:K01876,"DARS2, aspS; aspartyl-tRNA synthetase [EC:6.1.1.12]"
+PMM1689,kegg.orthology:K01937,"pyrG, CTPS; CTP synthase [EC:6.3.4.2]"
+PMM1690,kegg.orthology:K10026,queE; 7-carboxy-7-deazaguanine synthase [EC:4.3.99.3]
+PMM1691,kegg.orthology:K06920,queC; 7-cyano-7-deazaguanine synthase [EC:6.3.4.20]
+PMM1692,kegg.orthology:K01665,pabB; para-aminobenzoate synthetase component I [EC:2.6.1.85]
+PMM1693,kegg.orthology:K02619,pabC; 4-amino-4-deoxychorismate lyase [EC:4.1.3.38]
+PMM1694,kegg.orthology:K02303,cobA; uroporphyrin-III C-methyltransferase [EC:2.1.1.107]
+PMM1695,kegg.orthology:K08151,"tetA; MFS transporter, DHA1 family, tetracycline resistance protein"
+PMM1696,kegg.orthology:K00937,ppk1; polyphosphate kinase [EC:2.7.4.1]
+PMM1697,kegg.orthology:K03086,rpoD; RNA polymerase primary sigma factor
+PMM1698,kegg.orthology:K18678,VTE5; phytol kinase [EC:2.7.1.182]
+PMM1699,kegg.orthology:K01626,"E2.5.1.54, aroF, aroG, aroH; 3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]"
+PMM1700,kegg.orthology:K01682,acnB; aconitate hydratase 2 / 2-methylisocitrate dehydratase [EC:4.2.1.3 4.2.1.99]
+PMM1701,kegg.orthology:K03281,"clcA, clcB, CLC-E, CLC-F; chloride channel protein, CIC family"
+PMM1702,kegg.orthology:K01433,purU; formyltetrahydrofolate deformylase [EC:3.5.1.10]
+PMM1703,kegg.orthology:K00273,"DAO, aao; D-amino-acid oxidase [EC:1.4.3.3]"
+PMM1704,kegg.orthology:K04043,"dnaK, HSPA9; molecular chaperone DnaK"
+PMM1705,kegg.orthology:K00014,aroE; shikimate dehydrogenase [EC:1.1.1.25]
+PMM1706,kegg.orthology:K02990,"RP-S6, MRPS6, rpsF; small subunit ribosomal protein S6"
+PMM1707,kegg.orthology:K01940,"argG, ASS1; argininosuccinate synthase [EC:6.3.4.5]"
+PMM1709,kegg.orthology:K01000,mraY; phospho-N-acetylmuramoyl-pentapeptide-transferase [EC:2.7.8.13]
+PMM1711,kegg.orthology:K00696,E2.4.1.14; sucrose-phosphate synthase [EC:2.4.1.14]
+PMM1712,kegg.orthology:K03701,uvrA; excinuclease ABC subunit A
+PMM1713,kegg.orthology:K03631,recN; DNA repair protein RecN (Recombination protein N)
+PMM1716,kegg.orthology:K01733,thrC; threonine synthase [EC:4.2.3.1]
+PMM1841,kegg.orthology:K00571,E2.1.1.72; site-specific DNA-methyltransferase (adenine-specific) [EC:2.1.1.72]
+PMM1841,kegg.orthology:K01155,E3.1.21.4; type II restriction enzyme [EC:3.1.21.4]
+PMM1841,kegg.orthology:K03427,hsdM; type I restriction enzyme M protein [EC:2.1.1.72]

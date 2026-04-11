@@ -1,0 +1,2372 @@
+locus_tag,term_id,term_name
+PMM0001,pfam:PF00712,"DNA polymerase III beta subunit, N-terminal domain"
+PMM0001,pfam:PF02767,"DNA polymerase III beta subunit, central domain"
+PMM0001,pfam:PF02768,"DNA polymerase III beta subunit, C-terminal domain"
+PMM0002,pfam:PF05239,PRC-barrel domain
+PMM0003,pfam:PF00586,"AIR synthase related protein, N-terminal domain"
+PMM0003,pfam:PF02769,"AIR synthase related protein, C-terminal domain"
+PMM0004,pfam:PF00156,Phosphoribosyl transferase domain
+PMM0004,pfam:PF13522,Glutamine amidotransferase domain
+PMM0005,pfam:PF00521,"DNA gyrase/topoisomerase IV, subunit A"
+PMM0005,pfam:PF03989,"DNA gyrase C-terminal domain, beta-propeller"
+PMM0006,pfam:PF00515,Tetratricopeptide repeat
+PMM0006,pfam:PF07719,Tetratricopeptide repeat
+PMM0006,pfam:PF13181,Tetratricopeptide repeat
+PMM0006,pfam:PF13414,TPR repeat
+PMM0006,pfam:PF13432,Tetratricopeptide repeat
+PMM0006,pfam:PF14559,Tetratricopeptide repeat
+PMM0007,pfam:PF08331,"Epoxyqueuosine reductase QueG, DUF1730"
+PMM0007,pfam:PF13484,4Fe-4S double cluster binding domain
+PMM0008,pfam:PF04367,Protein of unknown function (DUF502)
+PMM0009,pfam:PF01029,NusB family
+PMM0010,pfam:PF00448,"SRP54-type protein, GTPase domain"
+PMM0010,pfam:PF02881,"SRP54-type protein, helical bundle domain"
+PMM0011,pfam:PF07228,Stage II sporulation protein E (SpoIIE)
+PMM0012,pfam:PF00206,Lyase
+PMM0012,pfam:PF14698,Argininosuccinate lyase C-terminal
+PMM0013,pfam:PF00076,RNA recognition motif
+PMM0014,pfam:PF01207,Dihydrouridine synthase (Dus)
+PMM0015,pfam:PF01641,SelR domain
+PMM0016,pfam:PF01025,GrpE
+PMM0017,pfam:PF00226,DnaJ domain
+PMM0017,pfam:PF00684,DnaJ central domain
+PMM0017,pfam:PF01556,DnaJ C terminal domain
+PMM0018,pfam:PF01077,Nitrite and sulphite reductase 4Fe-4S domain
+PMM0018,pfam:PF01206,Sulfurtransferase TusA
+PMM0018,pfam:PF03460,Nitrite/Sulfite reductase ferredoxin-like half domain
+PMM0019,pfam:PF03193,RsgA GTPase
+PMM0020,pfam:PF02575,YbaB/EbfC DNA-binding family
+PMM0021,pfam:PF01565,FAD binding domain
+PMM0021,pfam:PF02873,"UDP-N-acetylenolpyruvoylglucosamine reductase, C-terminal domain"
+PMM0022,pfam:PF01225,"Mur ligase family, catalytic domain"
+PMM0022,pfam:PF02875,"Mur ligase, glutamate ligase domain"
+PMM0022,pfam:PF08245,Mur ligase middle domain
+PMM0023,pfam:PF00044,"Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain"
+PMM0023,pfam:PF02800,"Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain"
+PMM0024,pfam:PF00586,"AIR synthase related protein, N-terminal domain"
+PMM0024,pfam:PF02769,"AIR synthase related protein, C-terminal domain"
+PMM0025,pfam:PF00160,Cyclophilin type peptidyl-prolyl cis-trans isomerase/CLD
+PMM0025,pfam:PF21329,"Peptidyl-prolyl cis-trans isomerase CYP38-like, PsbQ-like domain"
+PMM0026,pfam:PF01132,Elongation factor P (EF-P) OB domain
+PMM0026,pfam:PF08207,Elongation factor P (EF-P) KOW-like domain
+PMM0026,pfam:PF09285,"Elongation factor P, C-terminal"
+PMM0027,pfam:PF00364,Biotin-requiring enzyme
+PMM0028,pfam:PF04166,Pyridoxal phosphate biosynthetic protein PdxA
+PMM0029,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM0029,pfam:PF04321,RmlD substrate binding domain
+PMM0029,pfam:PF13460,NAD(P)H-binding
+PMM0031,pfam:PF01844,HNH endonuclease
+PMM0031,pfam:PF14279,HNH endonuclease
+PMM0032,pfam:PF20191,Family of unknown function (DUF6554)
+PMM0033,pfam:PF05145,Transition state regulatory protein AbrB
+PMM0035,pfam:PF00266,Aminotransferase class-V
+PMM0036,pfam:PF01888,CbiD
+PMM0037,pfam:PF00117,Glutamine amidotransferase class-I
+PMM0037,pfam:PF00733,Asparagine synthase
+PMM0037,pfam:PF00958,GMP synthase C terminal domain
+PMM0037,pfam:PF02540,NAD synthase
+PMM0038,pfam:PF12705,PD-(D/E)XK nuclease superfamily
+PMM0040,pfam:PF00905,Penicillin binding protein transpeptidase domain
+PMM0040,pfam:PF03717,Penicillin-binding Protein dimerisation domain
+PMM0041,pfam:PF03358,NADPH-dependent FMN reductase
+PMM0042,pfam:PF00258,Flavodoxin
+PMM0042,pfam:PF00753,Metallo-beta-lactamase superfamily
+PMM0042,pfam:PF01613,Flavin reductase like domain
+PMM0042,pfam:PF19583,ODP family beta lactamase
+PMM0043,pfam:PF00753,Metallo-beta-lactamase superfamily
+PMM0043,pfam:PF01613,Flavin reductase like domain
+PMM0043,pfam:PF19583,ODP family beta lactamase
+PMM0044,pfam:PF01411,tRNA synthetases class II (A)
+PMM0044,pfam:PF02272,DHHA1 domain
+PMM0044,pfam:PF07973,Threonyl and Alanyl tRNA synthetase second additional domain
+PMM0045,pfam:PF00278,"Pyridoxal-dependent decarboxylase, C-terminal sheet domain"
+PMM0045,pfam:PF02784,"Pyridoxal-dependent decarboxylase, pyridoxal binding domain"
+PMM0046,pfam:PF00334,Nucleoside diphosphate kinase
+PMM0047,pfam:PF01266,FAD dependent oxidoreductase
+PMM0048,pfam:PF02637,GatB domain
+PMM0048,pfam:PF02934,GatB/GatE catalytic domain
+PMM0049,pfam:PF01121,Dephospho-CoA kinase
+PMM0050,pfam:PF01960,ArgJ family
+PMM0051,pfam:PF01656,CobQ/CobB/MinD/ParA nucleotide binding domain
+PMM0051,pfam:PF13614,AAA domain
+PMM0052,pfam:PF00248,Aldo/keto reductase family
+PMM0053,pfam:PF01170,"RMKL-like, methyltransferase domain"
+PMM0053,pfam:PF02926,THUMP domain
+PMM0053,pfam:PF22020,RlmL ferredoxin-like domain
+PMM0054,pfam:PF07332,"Putative Actinobacterial Holin-X, holin superfamily III"
+PMM0055,pfam:PF05957,DUF883 N-terminal domain
+PMM0056,pfam:PF13298,DNA Ligase D 3^-phosphoesterase domain
+PMM0057,pfam:PF02463,RecF/RecN/SMC N terminal domain
+PMM0057,pfam:PF06470,SMC proteins Flexible Hinge Domain
+PMM0058,pfam:PF05239,PRC-barrel domain
+PMM0060,pfam:PF00289,"Biotin carboxylase, N-terminal domain"
+PMM0060,pfam:PF02785,Biotin carboxylase C-terminal domain
+PMM0060,pfam:PF02786,"Carbamoyl-phosphate synthase L chain, ATP binding domain"
+PMM0061,pfam:PF02325,CCB3/YggT
+PMM0062,pfam:PF06596,Photosystem II reaction centre X protein (PsbX)
+PMM0063,pfam:PF07444,Ycf66 protein N-terminus
+PMM0064,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0065,pfam:PF00005,ABC transporter
+PMM0065,pfam:PF06472,ABC transporter transmembrane region 2
+PMM0067,pfam:PF01230,HIT domain
+PMM0067,pfam:PF11969,Scavenger mRNA decapping enzyme C-term binding
+PMM0068,pfam:PF01327,Polypeptide deformylase
+PMM0069,pfam:PF00326,Prolyl oligopeptidase family
+PMM0069,pfam:PF07676,WD40-like Beta Propeller Repeat
+PMM0070,pfam:PF00266,Aminotransferase class-V
+PMM0071,pfam:PF01458,"SUF system FeS cluster assembly, SufBD core domain"
+PMM0072,pfam:PF00005,ABC transporter
+PMM0073,pfam:PF01458,"SUF system FeS cluster assembly, SufBD core domain"
+PMM0073,pfam:PF19295,SufBD protein N-terminal region
+PMM0075,pfam:PF07498,"Rho termination factor, N-terminal domain"
+PMM0075,pfam:PF16258,Domain of unknown function (DUF4912)
+PMM0076,pfam:PF00408,"Phosphoglucomutase/phosphomannomutase, C-terminal domain"
+PMM0076,pfam:PF02878,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain I"
+PMM0076,pfam:PF02879,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain II"
+PMM0076,pfam:PF02880,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain III"
+PMM0076,pfam:PF24947,"Phosphoglucomutase-1, C-terminal domain"
+PMM0077,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM0077,pfam:PF05496,Holliday junction DNA helicase RuvB P-loop domain
+PMM0077,pfam:PF12002,MgsA AAA+ ATPase C terminal
+PMM0077,pfam:PF16193,AAA C-terminal domain
+PMM0078,pfam:PF01648,4^-phosphopantetheinyl transferase superfamily
+PMM0079,pfam:PF00578,AhpC/TSA family
+PMM0080,pfam:PF03309,Type III pantothenate kinase
+PMM0081,pfam:PF01507,Phosphoadenosine phosphosulfate reductase domain
+PMM0082,pfam:PF00070,Pyridine nucleotide-disulphide oxidoreductase
+PMM0082,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM0083,pfam:PF00939,Sodium:sulfate symporter transmembrane region
+PMM0083,pfam:PF02080,TrkA-C domain
+PMM0083,pfam:PF03600,Citrate transporter
+PMM0084,pfam:PF02386,Cation transport protein
+PMM0085,pfam:PF02080,TrkA-C domain
+PMM0085,pfam:PF02254,TrkA-N domain
+PMM0086,pfam:PF07878,"CopG-like RHH_1 or ribbon-helix-helix domain, RHH_5"
+PMM0089,pfam:PF00005,ABC transporter
+PMM0089,pfam:PF12848,ABC transporter
+PMM0090,pfam:PF13180,PDZ domain
+PMM0090,pfam:PF13365,Trypsin-like peptidase domain
+PMM0091,pfam:PF11189,Protein of unknown function (DUF2973)
+PMM0093,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0094,pfam:PF11023,Zinc-ribbon containing domain
+PMM0095,pfam:PF03631,Virulence factor BrkB
+PMM0096,pfam:PF00459,Inositol monophosphatase family
+PMM0097,pfam:PF02321,Outer membrane efflux protein
+PMM0098,pfam:PF04459,Protein of unknown function (DUF512)
+PMM0098,pfam:PF17820,PDZ domain
+PMM0098,pfam:PF19238,Radical SAM-like domain
+PMM0099,pfam:PF11318,Protein of unknown function (DUF3120)
+PMM0100,pfam:PF00890,FAD binding domain
+PMM0100,pfam:PF02910,Fumarate reductase flavoprotein C-term
+PMM0101,pfam:PF07884,Vitamin K epoxide reductase family
+PMM0102,pfam:PF00919,Uncharacterized protein family UPF0004
+PMM0102,pfam:PF01938,TRAM domain
+PMM0102,pfam:PF04055,Radical SAM superfamily
+PMM0103,pfam:PF14251,PterinBD-DUF4346
+PMM0104,pfam:PF04339,Peptidogalycan biosysnthesis/recognition
+PMM0105,pfam:PF01872,RibD C-terminal domain
+PMM0106,pfam:PF01242,6-pyruvoyl tetrahydropterin synthase
+PMM0107,pfam:PF01202,Shikimate kinase
+PMM0108,pfam:PF12095,Protein CHLORORESPIRATORY REDUCTION 7
+PMM0109,pfam:PF20670,Domain of unknown function (DUF6816)
+PMM0110,pfam:PF00043,"Glutathione S-transferase, C-terminal domain"
+PMM0110,pfam:PF13410,"Glutathione S-transferase, C-terminal domain"
+PMM0110,pfam:PF13417,"Glutathione S-transferase, N-terminal domain"
+PMM0111,pfam:PF05421,Protein of unknown function (DUF751)
+PMM0112,pfam:PF02033,Ribosome-binding factor A
+PMM0113,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM0113,pfam:PF02602,Uroporphyrinogen-III synthase HemD
+PMM0114,pfam:PF03364,Polyketide cyclase / dehydrase and lipid transport
+PMM0115,pfam:PF01593,Flavin containing amine oxidoreductase
+PMM0116,pfam:PF01521,Iron-sulphur cluster biosynthesis
+PMM0120,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM0120,pfam:PF08338,Domain of unknown function (DUF1731)
+PMM0120,pfam:PF13460,NAD(P)H-binding
+PMM0121,pfam:PF11910,Cyanobacterial and plant NDH-1 subunit O
+PMM0122,pfam:PF00226,DnaJ domain
+PMM0123,pfam:PF00291,Pyridoxal-phosphate dependent enzyme
+PMM0125,pfam:PF00005,ABC transporter
+PMM0126,pfam:PF14099,Polysaccharide lyase
+PMM0127,pfam:PF24012,Family of unknown function (DUF7326)
+PMM0128,pfam:PF00072,Response regulator receiver domain
+PMM0128,pfam:PF00486,"Transcriptional regulatory protein, C terminal"
+PMM0129,pfam:PF13177,"DNA polymerase III, delta subunit"
+PMM0130,pfam:PF02223,Thymidylate kinase
+PMM0131,pfam:PF00122,P-type ATPase actuator domain
+PMM0131,pfam:PF00403,Heavy-metal-associated domain
+PMM0131,pfam:PF00702,haloacid dehalogenase-like hydrolase
+PMM0132,pfam:PF00515,Tetratricopeptide repeat
+PMM0132,pfam:PF07719,Tetratricopeptide repeat
+PMM0132,pfam:PF13176,Tetratricopeptide repeat
+PMM0132,pfam:PF13181,Tetratricopeptide repeat
+PMM0132,pfam:PF13424,Tetratricopeptide repeat
+PMM0133,pfam:PF06745,KaiC
+PMM0133,pfam:PF13481,AAA domain
+PMM0133,pfam:PF13541,Subunit ChlI of Mg-chelatase
+PMM0133,pfam:PF18073,Rubredoxin metal binding domain
+PMM0134,pfam:PF00072,Response regulator receiver domain
+PMM0134,pfam:PF00486,"Transcriptional regulatory protein, C terminal"
+PMM0135,pfam:PF02504,Fatty acid synthesis protein
+PMM0136,pfam:PF08541,3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III C terminal
+PMM0136,pfam:PF08545,3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III
+PMM0137,pfam:PF00698,Acyl transferase domain
+PMM0138,pfam:PF01553,Acyltransferase
+PMM0139,pfam:PF00814,tRNA N6-adenosine threonylcarbamoyltransferase
+PMM0140,pfam:PF10718,Hypothetical chloroplast protein Ycf34
+PMM0141,pfam:PF01743,Poly A polymerase head domain
+PMM0141,pfam:PF12627,Probable RNA and SrmB- binding site of polymerase A
+PMM0141,pfam:PF13735,tRNA nucleotidyltransferase domain 2 putative
+PMM0142,pfam:PF00076,RNA recognition motif
+PMM0143,pfam:PF00494,Squalene/phytoene synthase
+PMM0144,pfam:PF01593,Flavin containing amine oxidoreductase
+PMM0145,pfam:PF10664,Cyanobacterial and plastid NDH-1 subunit M
+PMM0146,pfam:PF11371,Protein of unknown function (DUF3172)
+PMM0147,pfam:PF00126,"Bacterial regulatory helix-turn-helix protein, lysR family"
+PMM0147,pfam:PF03466,LysR substrate binding domain
+PMM0148,pfam:PF07298,NnrU protein
+PMM0149,pfam:PF00361,"NADH:quinone oxidoreductase/Mrp antiporter, TM"
+PMM0149,pfam:PF00662,"NADH-Ubiquinone oxidoreductase (complex I), chain 5 N-terminus"
+PMM0149,pfam:PF01010,"NADH-dehyrogenase subunit F, TMs, (complex I) C-terminus"
+PMM0150,pfam:PF00361,"NADH:quinone oxidoreductase/Mrp antiporter, TM"
+PMM0151,pfam:PF02616,Segregation and condensation protein ScpA
+PMM0152,pfam:PF00132,Bacterial transferase hexapeptide (six repeats)
+PMM0152,pfam:PF00483,Nucleotidyl transferase
+PMM0153,pfam:PF02219,Methylenetetrahydrofolate reductase
+PMM0154,pfam:PF00196,"Bacterial regulatory proteins, luxR family"
+PMM0155,pfam:PF01928,CYTH domain
+PMM0156,pfam:PF01513,ATP-NAD kinase N-terminal domain
+PMM0157,pfam:PF00420,NADH-ubiquinone/plastoquinone oxidoreductase chain 4L
+PMM0158,pfam:PF00499,NADH-ubiquinone/plastoquinone oxidoreductase chain 6
+PMM0159,pfam:PF00037,4Fe-4S binding domain
+PMM0159,pfam:PF12838,4Fe-4S dicluster domain
+PMM0159,pfam:PF13237,4Fe-4S dicluster domain
+PMM0160,pfam:PF00146,NADH dehydrogenase
+PMM0161,pfam:PF00285,"Citrate synthase, C-terminal domain"
+PMM0163,pfam:PF00581,Rhodanese-like domain
+PMM0164,pfam:PF00291,Pyridoxal-phosphate dependent enzyme
+PMM0165,pfam:PF01253,Translation initiation factor SUI1
+PMM0166,pfam:PF01583,Adenylylsulphate kinase
+PMM0167,pfam:PF00731,AIR carboxylase
+PMM0168,pfam:PF01209,ubiE/COQ5 methyltransferase family
+PMM0168,pfam:PF06325,Ribosomal protein L11 methyltransferase (PrmA)
+PMM0168,pfam:PF07109,Magnesium-protoporphyrin IX methyltransferase C-terminus
+PMM0169,pfam:PF00072,Response regulator receiver domain
+PMM0169,pfam:PF00196,"Bacterial regulatory proteins, luxR family"
+PMM0170,pfam:PF00266,Aminotransferase class-V
+PMM0171,pfam:PF01795,MraW methylase family
+PMM0172,pfam:PF00346,"Respiratory-chain NADH dehydrogenase, 49 Kd subunit"
+PMM0173,pfam:PF03061,Thioesterase superfamily
+PMM0173,pfam:PF13279,Thioesterase-like superfamily
+PMM0174,pfam:PF00501,AMP-binding enzyme
+PMM0174,pfam:PF13193,AMP-binding enzyme C-terminal domain
+PMM0175,pfam:PF01188,PF01188
+PMM0175,pfam:PF13378,Enolase C-terminal domain-like
+PMM0176,pfam:PF01040,UbiA prenyltransferase family
+PMM0177,pfam:PF00425,chorismate binding enzyme
+PMM0178,pfam:PF02951,"Prokaryotic glutathione synthetase, N-terminal domain"
+PMM0178,pfam:PF02955,"Prokaryotic glutathione synthetase, ATP-grasp domain"
+PMM0179,pfam:PF00462,Glutaredoxin
+PMM0180,pfam:PF00472,RF-1 domain
+PMM0180,pfam:PF03462,PCRF domain
+PMM0181,pfam:PF11688,Protein of unknown function (DUF3285)
+PMM0182,pfam:PF02130,Endoribonuclease YbeY
+PMM0183,pfam:PF01219,Prokaryotic diacylglycerol kinase
+PMM0184,pfam:PF00117,Glutamine amidotransferase class-I
+PMM0185,pfam:PF13483,Beta-lactamase superfamily domain
+PMM0186,pfam:PF00155,Aminotransferase class I and II
+PMM0187,pfam:PF00750,"tRNA synthetases class I (R), catalytic domain"
+PMM0187,pfam:PF03485,Arginyl tRNA synthetase N terminal domain
+PMM0187,pfam:PF05746,DALR anticodon binding domain
+PMM0188,pfam:PF01729,"Quinolinate phosphoribosyl transferase, C-terminal domain"
+PMM0188,pfam:PF02749,"Quinolinate phosphoribosyl transferase, N-terminal domain"
+PMM0189,pfam:PF01926,50S ribosome-binding GTPase
+PMM0189,pfam:PF10396,GTP-binding protein TrmE N-terminus
+PMM0189,pfam:PF12631,MnmE helical domain
+PMM0190,pfam:PF09835,Uncharacterized protein conserved in bacteria (DUF2062)
+PMM0191,pfam:PF02824,TGS domain
+PMM0191,pfam:PF04607,Region found in RelA / SpoT proteins
+PMM0191,pfam:PF13291,ACT domain
+PMM0191,pfam:PF13328,HD domain
+PMM0191,pfam:PF19296,RelA/SpoT AH domain
+PMM0192,pfam:PF00005,ABC transporter
+PMM0192,pfam:PF08352,"Oligopeptide/dipeptide transporter, C-terminal region"
+PMM0193,pfam:PF00849,RNA pseudouridylate synthase
+PMM0193,pfam:PF01479,S4 domain
+PMM0194,pfam:PF01926,50S ribosome-binding GTPase
+PMM0195,pfam:PF00162,Phosphoglycerate kinase
+PMM0197,pfam:PF03033,Glycosyltransferase family 28 N-terminal domain
+PMM0197,pfam:PF04101,Glycosyltransferase family 28 C-terminal domain
+PMM0198,pfam:PF00155,Aminotransferase class I and II
+PMM0199,pfam:PF01180,Dihydroorotate dehydrogenase
+PMM0200,pfam:PF00075,RNase H
+PMM0201,pfam:PF00542,Ribosomal protein L7/L12 C-terminal domain
+PMM0201,pfam:PF16320,Ribosomal protein L7/L12 dimerisation domain
+PMM0202,pfam:PF00466,Ribosomal protein L10
+PMM0203,pfam:PF00687,Ribosomal protein L1p/L10e family
+PMM0204,pfam:PF00298,"Ribosomal protein L11, RNA binding domain"
+PMM0204,pfam:PF03946,"Ribosomal protein L11, N-terminal domain"
+PMM0205,pfam:PF00467,KOW motif
+PMM0205,pfam:PF02357,Transcription termination factor nusG
+PMM0206,pfam:PF00584,SecE/Sec61-gamma subunits of protein translocation complex
+PMM0207,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM0207,pfam:PF02861,Clp repeat (R) N-terminal domain
+PMM0207,pfam:PF07724,AAA domain (Cdc48 subfamily)
+PMM0207,pfam:PF10431,"C-terminal, D2-small domain, of ClpB protein"
+PMM0207,pfam:PF17871,AAA lid domain
+PMM0208,pfam:PF00113,"Enolase, C-terminal TIM barrel domain"
+PMM0208,pfam:PF03952,"Enolase, N-terminal domain"
+PMM0209,pfam:PF03109,ABC1 atypical kinase-like domain
+PMM0211,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM0211,pfam:PF13738,Pyridine nucleotide-disulphide oxidoreductase
+PMM0212,pfam:PF00543,Nitrogen regulatory protein P-II
+PMM0213,pfam:PF05982,Na+-dependent bicarbonate transporter superfamily
+PMM0214,pfam:PF00916,Sulfate permease family
+PMM0214,pfam:PF01740,STAS domain
+PMM0214,pfam:PF13792,PF13792
+PMM0215,pfam:PF00490,Delta-aminolevulinic acid dehydratase
+PMM0216,pfam:PF00903,Glyoxalase/Bleomycin resistance protein/Dioxygenase superfamily
+PMM0217,pfam:PF00488,MutS domain V
+PMM0217,pfam:PF01713,Smr domain
+PMM0217,pfam:PF05192,MutS domain III
+PMM0218,pfam:PF01018,GTP1/OBG
+PMM0218,pfam:PF01926,50S ribosome-binding GTPase
+PMM0220,pfam:PF02672,CP12 domain
+PMM0221,pfam:PF00043,"Glutathione S-transferase, C-terminal domain"
+PMM0221,pfam:PF13409,"Glutathione S-transferase, N-terminal domain"
+PMM0221,pfam:PF13410,"Glutathione S-transferase, C-terminal domain"
+PMM0222,pfam:PF04952,AstE/AspA barrel-sandwich hybrid domain
+PMM0223,pfam:PF00124,Photosynthetic reaction centre protein
+PMM0224,pfam:PF01264,Chorismate synthase
+PMM0225,pfam:PF01081,KDPG and KHG aldolase
+PMM0226,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM0226,pfam:PF01434,Peptidase family M41
+PMM0226,pfam:PF06480,FtsH Extracellular
+PMM0226,pfam:PF17862,AAA+ lid domain
+PMM0227,pfam:PF01747,ATP-sulfurylase
+PMM0227,pfam:PF14306,PUA-like domain
+PMM0228,pfam:PF01716,Manganese-stabilising protein / photosystem II polypeptide
+PMM0229,pfam:PF02441,Flavoprotein
+PMM0229,pfam:PF04127,DNA/pantothenate metabolism flavoprotein C-terminal domain
+PMM0230,pfam:PF10742,Protein of unknown function (DUF2555)
+PMM0232,pfam:PF04483,Protein of unknown function (DUF565)
+PMM0233,pfam:PF00185,"Aspartate/ornithine carbamoyltransferase, Asp/Orn binding domain"
+PMM0233,pfam:PF02729,"Aspartate/ornithine carbamoyltransferase, carbamoyl-P binding domain"
+PMM0234,pfam:PF02245,Methylpurine-DNA glycosylase (MPG)
+PMM0235,pfam:PF02686,Glu-tRNAGln amidotransferase C subunit
+PMM0236,pfam:PF00487,Fatty acid desaturase
+PMM0237,pfam:PF07444,Ycf66 protein N-terminus
+PMM0238,pfam:PF00133,"tRNA synthetases class I (I, L, M and V)"
+PMM0238,pfam:PF06827,Zinc finger found in FPG and IleRS
+PMM0238,pfam:PF08264,Anticodon-binding domain of tRNA ligase
+PMM0239,pfam:PF11375,Protein of unknown function (DUF3177)
+PMM0240,pfam:PF02390,Putative methyltransferase
+PMM0241,pfam:PF00408,"Phosphoglucomutase/phosphomannomutase, C-terminal domain"
+PMM0241,pfam:PF02878,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain I"
+PMM0241,pfam:PF02879,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain II"
+PMM0241,pfam:PF02880,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain III"
+PMM0242,pfam:PF00085,Thioredoxin
+PMM0243,pfam:PF02511,Thymidylate synthase complementing protein
+PMM0244,pfam:PF00692,dUTPase
+PMM0244,pfam:PF22769,dCTP deaminase-like
+PMM0245,pfam:PF02572,ATP:corrinoid adenosyltransferase BtuR/CobO/CobP
+PMM0246,pfam:PF00027,Cyclic nucleotide-binding domain
+PMM0246,pfam:PF13545,Crp-like helix-turn-helix domain
+PMM0247,pfam:PF11283,Protein of unknown function (DUF3084)
+PMM0249,pfam:PF11344,Protein of unknown function (DUF3146)
+PMM0250,pfam:PF01195,Peptidyl-tRNA hydrolase
+PMM0251,pfam:PF00737,Photosystem II 10 kDa phosphoprotein
+PMM0252,pfam:PF02468,Photosystem II reaction centre N protein (psbN)
+PMM0253,pfam:PF02532,Photosystem II reaction centre I protein (PSII 4.8 kDa protein)
+PMM0254,pfam:PF12600,Protein of unknown function (DUF3769)
+PMM0255,pfam:PF00694,Aconitase C-terminal domain
+PMM0256,pfam:PF00330,Aconitase family (aconitate hydratase)
+PMM0257,pfam:PF00994,Probable molybdopterin binding domain
+PMM0257,pfam:PF02464,Competence-damaged protein
+PMM0258,pfam:PF00464,Serine hydroxymethyltransferase
+PMM0259,pfam:PF13239,2TM domain
+PMM0260,pfam:PF11378,Protein of unknown function (DUF3181)
+PMM0261,pfam:PF03023,Lipid II flippase MurJ
+PMM0262,pfam:PF03749,Sugar fermentation stimulation protein RE domain
+PMM0263,pfam:PF00909,Ammonium Transporter Family
+PMM0264,pfam:PF02401,LytB protein
+PMM0265,pfam:PF07681,DoxX
+PMM0266,pfam:PF01808,AICARFT/IMPCHase bienzyme
+PMM0266,pfam:PF02142,MGS-like domain
+PMM0267,pfam:PF02230,Phospholipase/Carboxylesterase
+PMM0268,pfam:PF11352,Protein of unknown function (DUF3155)
+PMM0269,pfam:PF00512,His Kinase A (phospho-acceptor) domain
+PMM0269,pfam:PF01590,GAF domain
+PMM0269,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM0270,pfam:PF02654,Cobalamin-5-phosphate synthase
+PMM0271,pfam:PF01702,Queuine tRNA-ribosyltransferase
+PMM0272,pfam:PF02533,Photosystem II 4 kDa reaction centre component
+PMM0273,pfam:PF01408,"Oxidoreductase family, NAD-binding Rossmann fold"
+PMM0273,pfam:PF02894,"Oxidoreductase family, C-terminal alpha/beta domain"
+PMM0273,pfam:PF22725,GFO/IDH/MocA C-terminal domain
+PMM0274,pfam:PF00571,CBS domain
+PMM0274,pfam:PF01595,Cyclin M transmembrane N-terminal domain
+PMM0274,pfam:PF03471,Transporter associated domain
+PMM0275,pfam:PF00156,Phosphoribosyl transferase domain
+PMM0276,pfam:PF01571,GCVT N-terminal domain
+PMM0276,pfam:PF08669,Glycine cleavage T-protein C-terminal barrel domain
+PMM0277,pfam:PF01930,Domain of unknown function DUF83
+PMM0277,pfam:PF13482,RNase_H superfamily
+PMM0277,pfam:PF14520,Helix-hairpin-helix domain
+PMM0278,pfam:PF00408,"Phosphoglucomutase/phosphomannomutase, C-terminal domain"
+PMM0278,pfam:PF02878,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain I"
+PMM0278,pfam:PF02879,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain II"
+PMM0278,pfam:PF02880,"Phosphoglucomutase/phosphomannomutase, alpha/beta/alpha domain III"
+PMM0279,pfam:PF01725,Ham1 family
+PMM0280,pfam:PF03055,Retinal pigment epithelial membrane protein
+PMM0281,pfam:PF00475,Imidazoleglycerol-phosphate dehydratase
+PMM0282,pfam:PF13561,Enoyl-(Acyl carrier protein) reductase
+PMM0283,pfam:PF00578,AhpC/TSA family
+PMM0283,pfam:PF08534,Redoxin
+PMM0284,pfam:PF01041,DegT/DnrJ/EryC1/StrS aminotransferase family
+PMM0285,pfam:PF00875,DNA photolyase
+PMM0285,pfam:PF03441,FAD binding domain of DNA photolyase
+PMM0286,pfam:PF00293,NUDIX domain
+PMM0287,pfam:PF01288,"7,8-dihydro-6-hydroxymethylpterin-pyrophosphokinase (HPPK)"
+PMM0288,pfam:PF01078,"Magnesium chelatase, subunit ChlI"
+PMM0288,pfam:PF13519,von Willebrand factor type A domain
+PMM0289,pfam:PF02470,MlaD protein
+PMM0290,pfam:PF00005,ABC transporter
+PMM0291,pfam:PF01933,2-phospho-L-lactate transferase CofD
+PMM0292,pfam:PF00329,"Respiratory-chain NADH dehydrogenase, 30 Kd subunit"
+PMM0293,pfam:PF01058,"NADH ubiquinone oxidoreductase, 20 Kd subunit"
+PMM0294,pfam:PF00507,"NADH-ubiquinone/plastoquinone oxidoreductase, chain 3"
+PMM0295,pfam:PF00301,Rubredoxin
+PMM0296,pfam:PF14870,Photosynthesis system II assembly factor YCF48
+PMM0297,pfam:PF00283,"Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits"
+PMM0297,pfam:PF00284,"Lumenal portion of Cytochrome b559, alpha (gene psbE) subunit"
+PMM0298,pfam:PF00283,"Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits"
+PMM0299,pfam:PF02419,PsbL protein
+PMM0300,pfam:PF01788,PsbJ
+PMM0301,pfam:PF01048,Phosphorylase superfamily
+PMM0302,pfam:PF00586,"AIR synthase related protein, N-terminal domain"
+PMM0302,pfam:PF02769,"AIR synthase related protein, C-terminal domain"
+PMM0302,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM0303,pfam:PF00571,CBS domain
+PMM0303,pfam:PF01368,"DHH family, N-terminal domain"
+PMM0303,pfam:PF01743,Poly A polymerase head domain
+PMM0303,pfam:PF02272,DHHA1 domain
+PMM0303,pfam:PF12627,Probable RNA and SrmB- binding site of polymerase A
+PMM0304,pfam:PF00580,UvrD/REP helicase N-terminal domain
+PMM0304,pfam:PF13361,UvrD-like helicase C-terminal domain
+PMM0304,pfam:PF21196,PcrA/UvrD tudor domain
+PMM0305,pfam:PF00502,Phycobilisome protein
+PMM0306,pfam:PF09367,CpeS-like protein
+PMM0308,pfam:PF09335,VTT domain
+PMM0310,pfam:PF00370,"FGGY family of carbohydrate kinases, N-terminal domain"
+PMM0310,pfam:PF02782,"FGGY family of carbohydrate kinases, C-terminal domain"
+PMM0311,pfam:PF00438,"S-adenosylmethionine synthetase, N-terminal domain"
+PMM0311,pfam:PF02772,"S-adenosylmethionine synthetase, central domain"
+PMM0311,pfam:PF02773,"S-adenosylmethionine synthetase, C-terminal domain"
+PMM0312,pfam:PF00575,S1 RNA binding domain
+PMM0313,pfam:PF03477,ATP cone domain
+PMM0314,pfam:PF01405,Photosystem II reaction centre T protein
+PMM0315,pfam:PF00421,Photosystem II protein
+PMM0316,pfam:PF00111,2Fe-2S iron-sulfur cluster binding domain
+PMM0317,pfam:PF05151,Photosystem II reaction centre M protein (PsbM)
+PMM0318,pfam:PF05175,Methyltransferase small domain
+PMM0318,pfam:PF13659,PF13659
+PMM0318,pfam:PF13847,Methyltransferase domain
+PMM0319,pfam:PF01300,Telomere recombination
+PMM0320,pfam:PF03776,Septum formation topological specificity factor MinE
+PMM0321,pfam:PF01656,CobQ/CobB/MinD/ParA nucleotide binding domain
+PMM0321,pfam:PF10609,NUBPL iron-transfer P-loop NTPase
+PMM0321,pfam:PF13614,AAA domain
+PMM0322,pfam:PF03775,"Septum formation inhibitor MinC, C-terminal domain"
+PMM0323,pfam:PF01966,HD domain
+PMM0323,pfam:PF19276,HD associated region
+PMM0324,pfam:PF00595,PDZ domain
+PMM0324,pfam:PF03572,Peptidase family S41
+PMM0324,pfam:PF13180,PDZ domain
+PMM0324,pfam:PF17820,PDZ domain
+PMM0325,pfam:PF00033,Cytochrome b/b6/petB
+PMM0325,pfam:PF13631,Cytochrome b(N-terminal)/b6/petB
+PMM0326,pfam:PF00032,Cytochrome b(C-terminal)/b6/petD
+PMM0327,pfam:PF12899,Alkaline and neutral invertase
+PMM0328,pfam:PF01149,Formamidopyrimidine-DNA glycosylase N-terminal domain
+PMM0328,pfam:PF06827,Zinc finger found in FPG and IleRS
+PMM0328,pfam:PF06831,Formamidopyrimidine-DNA glycosylase H2TH domain
+PMM0329,pfam:PF02427,Photosystem I reaction centre subunit IV / PsaE
+PMM0330,pfam:PF01476,LysM domain
+PMM0331,pfam:PF00171,Aldehyde dehydrogenase family
+PMM0332,pfam:PF01694,Rhomboid domain
+PMM0333,pfam:PF00583,Acetyltransferase (GNAT) family
+PMM0333,pfam:PF13673,Acetyltransferase (GNAT) domain
+PMM0333,pfam:PF18014,Acetyltransferase (GNAT) domain
+PMM0334,pfam:PF11302,Protein of unknown function (DUF3104)
+PMM0336,pfam:PF01786,Alternative oxidase
+PMM0339,pfam:PF01266,FAD dependent oxidoreductase
+PMM0339,pfam:PF01593,Flavin containing amine oxidoreductase
+PMM0339,pfam:PF13450,NAD(P)-binding Rossmann-like domain
+PMM0341,pfam:PF07862,Nif11 domain
+PMM0343,pfam:PF02416,mttA/Hcf106 family
+PMM0345,pfam:PF00578,AhpC/TSA family
+PMM0346,pfam:PF13319,Protein of unknown function (DUF4090)
+PMM0349,pfam:PF00472,RF-1 domain
+PMM0350,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM0352,pfam:PF02517,Type II CAAX prenyl endopeptidase Rce1-like
+PMM0353,pfam:PF01531,Glycosyl transferase family 11
+PMM0354,pfam:PF00535,Glycosyl transferase family 2
+PMM0355,pfam:PF07045,Domain of unknown function (DUF1330)
+PMM0356,pfam:PF00561,alpha/beta hydrolase fold
+PMM0357,pfam:PF03070,TENA/THI-4/PQQC family
+PMM0358,pfam:PF08543,Phosphomethylpyrimidine kinase
+PMM0360,pfam:PF06172,Cupin superfamily (DUF985)
+PMM0363,pfam:PF13463,Winged helix DNA-binding domain
+PMM0364,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM0365,pfam:PF02635,DsrE/DsrF-like family
+PMM0366,pfam:PF00127,"Copper binding proteins, plastocyanin/azurin family"
+PMM0367,pfam:PF03992,Antibiotic biosynthesis monooxygenase
+PMM0368,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM0370,pfam:PF09084,NMT1/THI5 like
+PMM0370,pfam:PF13379,NMT1-like family
+PMM0371,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0372,pfam:PF00005,ABC transporter
+PMM0373,pfam:PF02560,Cyanate lyase C-terminal domain
+PMM0374,pfam:PF02416,mttA/Hcf106 family
+PMM0376,pfam:PF06835,"Lipopolysaccharide-assembly, LptC-related"
+PMM0378,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM0379,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM0380,pfam:PF07080,Protein of unknown function (DUF1348)
+PMM0383,pfam:PF04402,Protein of unknown function (DUF541)
+PMM0384,pfam:PF02384,N-6 DNA Methylase
+PMM0384,pfam:PF04313,Type I restriction enzyme R protein N terminus (HSDR_N)
+PMM0384,pfam:PF04851,"Type III restriction enzyme, res subunit"
+PMM0384,pfam:PF10544,T5orf172 domain
+PMM0384,pfam:PF13588,Type I restriction enzyme R protein N terminus (HSDR_N)
+PMM0387,pfam:PF01220,Dehydroquinase class II
+PMM0388,pfam:PF06175,tRNA-(MS[2]IO[6]A)-hydroxylase (MiaE)
+PMM0389,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM0390,pfam:PF08853,Domain of unknown function (DUF1823)
+PMM0391,pfam:PF01926,50S ribosome-binding GTPase
+PMM0391,pfam:PF14714,"KH-domain-like of EngA bacterial GTPase enzymes, C-terminal"
+PMM0392,pfam:PF02361,Cobalt transport protein
+PMM0393,pfam:PF12058,PII-interacting protein X
+PMM0394,pfam:PF01168,"Alanine racemase, N-terminal domain"
+PMM0395,pfam:PF04472,Cell division protein SepF
+PMM0396,pfam:PF03807,NADP oxidoreductase coenzyme F420-dependent
+PMM0396,pfam:PF14748,Pyrroline-5-carboxylate reductase dimerisation
+PMM0397,pfam:PF00534,Glycosyl transferases group 1
+PMM0397,pfam:PF13439,Glycosyltransferase Family 4
+PMM0397,pfam:PF13579,Glycosyl transferase 4-like domain
+PMM0397,pfam:PF13692,Glycosyl transferases group 1
+PMM0398,pfam:PF02565,Recombination protein O C terminal
+PMM0398,pfam:PF11967,Recombination protein O N terminal
+PMM0399,pfam:PF01791,DeoC/LacD family aldolase
+PMM0400,pfam:PF02482,Sigma 54 modulation protein / S30EA ribosomal protein
+PMM0400,pfam:PF16321,Sigma 54 modulation/S30EA ribosomal protein C terminus
+PMM0401,pfam:PF03099,Biotin/lipoate A/B protein ligase family
+PMM0402,pfam:PF00501,AMP-binding enzyme
+PMM0402,pfam:PF23562,AMP-binding enzyme C-terminal domain
+PMM0403,pfam:PF11068,YlqD protein
+PMM0405,pfam:PF00198,2-oxoacid dehydrogenases acyltransferase (catalytic domain)
+PMM0405,pfam:PF00364,Biotin-requiring enzyme
+PMM0405,pfam:PF02817,e3 binding domain
+PMM0406,pfam:PF02547,Queuosine biosynthesis protein
+PMM0407,pfam:PF00291,Pyridoxal-phosphate dependent enzyme
+PMM0408,pfam:PF01053,Cys/Met metabolism PLP-dependent enzyme
+PMM0409,pfam:PF01053,Cys/Met metabolism PLP-dependent enzyme
+PMM0410,pfam:PF00163,Ribosomal protein S4/S9 N-terminal domain
+PMM0410,pfam:PF01479,S4 domain
+PMM0411,pfam:PF01809,Putative membrane protein insertion efficiency factor
+PMM0412,pfam:PF05768,Glutaredoxin-like domain (DUF836)
+PMM0413,pfam:PF01225,"Mur ligase family, catalytic domain"
+PMM0413,pfam:PF02875,"Mur ligase, glutamate ligase domain"
+PMM0413,pfam:PF08245,Mur ligase middle domain
+PMM0414,pfam:PF00106,short chain dehydrogenase
+PMM0415,pfam:PF00266,Aminotransferase class-V
+PMM0416,pfam:PF13847,Methyltransferase domain
+PMM0418,pfam:PF01106,NifU-like domain
+PMM0419,pfam:PF06039,Malate:quinone oxidoreductase (Mqo)
+PMM0420,pfam:PF00009,Elongation factor Tu GTP binding domain
+PMM0420,pfam:PF00679,Elongation factor G C-terminus
+PMM0420,pfam:PF03144,Elongation factor Tu domain 2
+PMM0420,pfam:PF06421,GTP-binding protein LepA C-terminus
+PMM0421,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0422,pfam:PF00588,SpoU rRNA Methylase family
+PMM0422,pfam:PF12105,"SpoU, rRNA methylase, C-terminal"
+PMM0423,pfam:PF04134,DCC1-like thiol-disulfide oxidoreductase
+PMM0424,pfam:PF10985,Protein of unknown function (DUF2805)
+PMM0425,pfam:PF03441,FAD binding domain of DNA photolyase
+PMM0425,pfam:PF04244,Deoxyribodipyrimidine photo-lyase-related protein
+PMM0426,pfam:PF01029,NusB family
+PMM0426,pfam:PF01189,16S rRNA methyltransferase RsmB/F
+PMM0426,pfam:PF17125,N-terminal domain of 16S rRNA methyltransferase RsmF
+PMM0426,pfam:PF22458,"Methyltr_RsmF/B-like, ferredoxin-like domain"
+PMM0427,pfam:PF00905,Penicillin binding protein transpeptidase domain
+PMM0427,pfam:PF00912,Transglycosylase
+PMM0428,pfam:PF01040,UbiA prenyltransferase family
+PMM0429,pfam:PF11061,"Cytochrome b6f, subunit Tsr0524-like"
+PMM0430,pfam:PF00977,Histidine biosynthesis protein
+PMM0431,pfam:PF01209,ubiE/COQ5 methyltransferase family
+PMM0432,pfam:PF05258,"Dna[CI] antecedent, DciA"
+PMM0433,pfam:PF02237,Biotin protein ligase C terminal domain
+PMM0433,pfam:PF03099,Biotin/lipoate A/B protein ligase family
+PMM0434,pfam:PF00005,ABC transporter
+PMM0435,pfam:PF00361,"NADH:quinone oxidoreductase/Mrp antiporter, TM"
+PMM0436,pfam:PF01131,DNA topoisomerase
+PMM0436,pfam:PF01751,Toprim domain
+PMM0436,pfam:PF13368,Topoisomerase C-terminal repeat
+PMM0438,pfam:PF09991,Predicted membrane protein (DUF2232)
+PMM0439,pfam:PF02277,Phosphoribosyltransferase
+PMM0440,pfam:PF13343,Bacterial extracellular solute-binding protein
+PMM0441,pfam:PF00248,Aldo/keto reductase family
+PMM0441,pfam:PF13534,4Fe-4S dicluster domain
+PMM0442,pfam:PF00677,Lumazine binding domain
+PMM0443,pfam:PF14250,AbrB-like transcriptional regulator
+PMM0444,pfam:PF00510,Cytochrome c oxidase subunit III
+PMM0445,pfam:PF00115,Cytochrome C and Quinol oxidase polypeptide I
+PMM0446,pfam:PF00116,"Cytochrome C oxidase subunit II, periplasmic domain"
+PMM0446,pfam:PF02790,"Cytochrome C oxidase subunit II, transmembrane domain"
+PMM0447,pfam:PF02628,Cytochrome oxidase assembly protein
+PMM0448,pfam:PF01040,UbiA prenyltransferase family
+PMM0449,pfam:PF00005,ABC transporter
+PMM0449,pfam:PF13732,"ATP-binding protein DrrA1-3-like, C-terminal domain"
+PMM0450,pfam:PF01061,ABC-2 type transporter
+PMM0452,pfam:PF00118,TCP-1/cpn60 chaperonin family
+PMM0453,pfam:PF00106,short chain dehydrogenase
+PMM0453,pfam:PF13561,Enoyl-(Acyl carrier protein) reductase
+PMM0454,pfam:PF01128,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase
+PMM0455,pfam:PF02016,LD-carboxypeptidase N-terminal domain
+PMM0455,pfam:PF17676,LD-carboxypeptidase C-terminal domain
+PMM0456,pfam:PF01040,UbiA prenyltransferase family
+PMM0457,pfam:PF01966,HD domain
+PMM0457,pfam:PF02541,Ppx/GppA phosphatase family
+PMM0457,pfam:PF21447,"Ppx/GppA phosphatase, domain III"
+PMM0458,pfam:PF13413,Helix-turn-helix domain
+PMM0458,pfam:PF13464,RodZ C-terminal domain
+PMM0459,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM0460,pfam:PF01790,Prolipoprotein diacylglyceryl transferase
+PMM0461,pfam:PF01333,"Apocytochrome F, C-terminal"
+PMM0461,pfam:PF16639,"Apocytochrome F, N-terminal"
+PMM0462,pfam:PF00355,Rieske [2Fe-2S] domain
+PMM0462,pfam:PF08802,PF08802
+PMM0463,pfam:PF11267,Domain of unknown function (DUF3067)
+PMM0464,pfam:PF00902,Sec-independent protein translocase protein (TatC)
+PMM0466,pfam:PF05670,NFACT protein RNA binding domain
+PMM0466,pfam:PF05833,NFACT N-terminal and middle domains
+PMM0467,pfam:PF00625,Guanylate kinase
+PMM0468,pfam:PF01701,Photosystem I reaction centre subunit IX / PsaJ
+PMM0469,pfam:PF02507,Photosystem I reaction centre subunit III
+PMM0470,pfam:PF00814,tRNA N6-adenosine threonylcarbamoyltransferase
+PMM0472,pfam:PF00999,"Sodium/hydrogen exchanger, transmembrane"
+PMM0472,pfam:PF02080,TrkA-C domain
+PMM0472,pfam:PF02254,TrkA-N domain
+PMM0473,pfam:PF00749,"tRNA synthetases class I (E and Q), catalytic domain"
+PMM0474,pfam:PF00018,SH3 domain
+PMM0475,pfam:PF01245,Ribosomal protein L19
+PMM0477,pfam:PF00557,Metallopeptidase family M24
+PMM0478,pfam:PF00106,short chain dehydrogenase
+PMM0478,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM0479,pfam:PF07085,DRTGG domain
+PMM0479,pfam:PF13500,AAA domain
+PMM0480,pfam:PF02481,DNA recombination-mediator protein A
+PMM0481,pfam:PF04461,Nucleotide-binding protein YajQ-like
+PMM0482,pfam:PF01145,SPFH domain / Band 7 family
+PMM0483,pfam:PF00202,Aminotransferase class-III
+PMM0484,pfam:PF03372,Endonuclease/Exonuclease/phosphatase family
+PMM0487,pfam:PF01969,Nickel insertion protein
+PMM0488,pfam:PF03706,Lysylphosphatidylglycerol synthase TM region
+PMM0489,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0490,pfam:PF02492,"CobW/HypB/UreG, nucleotide-binding domain"
+PMM0490,pfam:PF07683,Cobalamin synthesis protein cobW C-terminal domain
+PMM0491,pfam:PF01329,Pterin 4 alpha carbinolamine dehydratase
+PMM0492,pfam:PF01894,UPF0047 protein YjbQ-like
+PMM0493,pfam:PF02074,Carboxypeptidase Taq (M32) metallopeptidase
+PMM0494,pfam:PF00719,Inorganic pyrophosphatase
+PMM0495,pfam:PF01379,"Porphobilinogen deaminase, dipyromethane cofactor binding domain"
+PMM0495,pfam:PF03900,"Porphobilinogen deaminase, C-terminal domain"
+PMM0496,pfam:PF00140,"Sigma-70 factor, region 1.2"
+PMM0496,pfam:PF04539,Sigma-70 region 3
+PMM0496,pfam:PF04542,Sigma-70 region 2
+PMM0496,pfam:PF04545,"Sigma-70, region 4"
+PMM0497,pfam:PF00270,DEAD/DEAH box helicase
+PMM0497,pfam:PF00271,Helicase conserved C-terminal domain
+PMM0497,pfam:PF18074,Primosomal protein N C-terminal domain
+PMM0498,pfam:PF11353,Protein of unknown function (DUF3153)
+PMM0499,pfam:PF00696,Amino acid kinase family
+PMM0500,pfam:PF11016,Protein of unknown function (DUF2854)
+PMM0502,pfam:PF00436,Single-strand binding protein family
+PMM0503,pfam:PF02571,Precorrin-6x reductase CbiJ/CobK
+PMM0504,pfam:PF03091,CutA1 divalent ion tolerance protein
+PMM0505,pfam:PF00294,pfkB family carbohydrate kinase
+PMM0506,pfam:PF00709,Adenylosuccinate synthetase
+PMM0507,pfam:PF13326,Photosystem II Pbs27
+PMM0508,pfam:PF00587,"tRNA synthetase class II core domain (G, H, P, S and T)"
+PMM0508,pfam:PF03129,Anticodon binding domain
+PMM0508,pfam:PF04073,Aminoacyl-tRNA editing domain
+PMM0511,pfam:PF00719,Inorganic pyrophosphatase
+PMM0512,pfam:PF00462,Glutaredoxin
+PMM0512,pfam:PF03960,ArsC family
+PMM0513,pfam:PF00717,Peptidase S24-like
+PMM0513,pfam:PF10502,"Signal peptidase, peptidase S26"
+PMM0514,pfam:PF01979,Amidohydrolase family
+PMM0514,pfam:PF13147,PF13147
+PMM0515,pfam:PF00300,Histidine phosphatase superfamily (branch 1)
+PMM0516,pfam:PF02517,Type II CAAX prenyl endopeptidase Rce1-like
+PMM0518,pfam:PF00905,Penicillin binding protein transpeptidase domain
+PMM0518,pfam:PF03717,Penicillin-binding Protein dimerisation domain
+PMM0519,pfam:PF00923,Transaldolase/Fructose-6-phosphate aldolase
+PMM0519,pfam:PF13202,EF hand
+PMM0520,pfam:PF01266,FAD dependent oxidoreductase
+PMM0520,pfam:PF01494,FAD binding domain
+PMM0520,pfam:PF04820,Tryptophan halogenase
+PMM0520,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM0520,pfam:PF13450,NAD(P)-binding Rossmann-like domain
+PMM0521,pfam:PF01765,Ribosome recycling factor
+PMM0522,pfam:PF00696,Amino acid kinase family
+PMM0523,pfam:PF02572,ATP:corrinoid adenosyltransferase BtuR/CobO/CobP
+PMM0523,pfam:PF12557,Cob(I)alamin adenosyltransferase N terminal
+PMM0524,pfam:PF00589,Phage integrase family
+PMM0525,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0525,pfam:PF00762,Ferrochelatase
+PMM0526,pfam:PF00205,"Thiamine pyrophosphate enzyme, central domain"
+PMM0526,pfam:PF02775,"Thiamine pyrophosphate enzyme, C-terminal TPP binding domain"
+PMM0526,pfam:PF02776,"Thiamine pyrophosphate enzyme, N-terminal TPP binding domain"
+PMM0526,pfam:PF13240,zinc-ribbon domain
+PMM0526,pfam:PF13248,zinc-ribbon domain
+PMM0528,pfam:PF02578,Multi-copper polyphenol oxidoreductase laccase
+PMM0529,pfam:PF06485,RNA-binding protein Tab2/Atab2 N terminal
+PMM0529,pfam:PF20429,"RNA-binding protein Tab2/Atab2, C-terminal domain"
+PMM0530,pfam:PF00575,S1 RNA binding domain
+PMM0531,pfam:PF02633,Creatinine amidohydrolase
+PMM0532,pfam:PF11266,Long-chain fatty aldehyde decarbonylase
+PMM0533,pfam:PF00106,short chain dehydrogenase
+PMM0533,pfam:PF01118,"Semialdehyde dehydrogenase, NAD binding domain"
+PMM0533,pfam:PF01488,Shikimate / quinate 5-dehydrogenase
+PMM0534,pfam:PF03255,Acetyl co-enzyme A carboxylase carboxyltransferase-like
+PMM0535,pfam:PF00106,short chain dehydrogenase
+PMM0536,pfam:PF01227,GTP cyclohydrolase I
+PMM0537,pfam:PF00697,N-(5^phosphoribosyl)anthranilate (PRA) isomerase
+PMM0538,pfam:PF00571,CBS domain
+PMM0538,pfam:PF02163,Peptidase family M50
+PMM0538,pfam:PF13398,Peptidase M50B-like
+PMM0539,pfam:PF03099,Biotin/lipoate A/B protein ligase family
+PMM0539,pfam:PF21948,Lipoyl protein ligase A/B catalytic domain
+PMM0540,pfam:PF07465,Photosystem I protein M (PsaM)
+PMM0542,pfam:PF00106,short chain dehydrogenase
+PMM0543,pfam:PF00142,"4Fe-4S iron sulfur cluster binding proteins, NifH/frxC family"
+PMM0544,pfam:PF00148,Nitrogenase component 1 type Oxidoreductase
+PMM0544,pfam:PF08369,Proto-chlorophyllide reductase 57 kD subunit
+PMM0545,pfam:PF00148,Nitrogenase component 1 type Oxidoreductase
+PMM0547,pfam:PF00936,BMC domain
+PMM0548,pfam:PF01725,Ham1 family
+PMM0549,pfam:PF00936,BMC domain
+PMM0550,pfam:PF00016,"Ribulose bisphosphate carboxylase large chain, catalytic domain"
+PMM0550,pfam:PF02788,"Ribulose bisphosphate carboxylase large chain, N-terminal domain"
+PMM0551,pfam:PF00101,"Ribulose bisphosphate carboxylase, small chain"
+PMM0552,pfam:PF12288,Carboxysome shell peptide mid-region
+PMM0553,pfam:PF08936,"Carboxysome Shell Carbonic Anhydrase, C-terminal"
+PMM0554,pfam:PF03319,Ethanolamine utilisation protein EutN/carboxysome
+PMM0555,pfam:PF03319,Ethanolamine utilisation protein EutN/carboxysome
+PMM0556,pfam:PF01329,Pterin 4 alpha carbinolamine dehydratase
+PMM0556,pfam:PF13676,TIR domain
+PMM0557,pfam:PF11334,Protein of unknown function (DUF3136)
+PMM0558,pfam:PF01042,Endoribonuclease L-PSP
+PMM0559,pfam:PF00753,Metallo-beta-lactamase superfamily
+PMM0559,pfam:PF16123,Hydroxyacylglutathione hydrolase C-terminus
+PMM0560,pfam:PF01634,ATP phosphoribosyltransferase
+PMM0561,pfam:PF00005,ABC transporter
+PMM0561,pfam:PF00664,ABC transporter transmembrane region
+PMM0562,pfam:PF00583,Acetyltransferase (GNAT) family
+PMM0562,pfam:PF13673,Acetyltransferase (GNAT) domain
+PMM0563,pfam:PF00535,Glycosyl transferase family 2
+PMM0564,pfam:PF09837,Uncharacterized protein conserved in bacteria (DUF2064)
+PMM0565,pfam:PF00308,Bacterial DnaA ATPAse domain
+PMM0565,pfam:PF08299,Bacterial dnaA protein helix-turn-helix
+PMM0565,pfam:PF11638,DnaA N-terminal domain
+PMM0566,pfam:PF13409,"Glutathione S-transferase, N-terminal domain"
+PMM0566,pfam:PF13410,"Glutathione S-transferase, C-terminal domain"
+PMM0566,pfam:PF13417,"Glutathione S-transferase, N-terminal domain"
+PMM0567,pfam:PF00070,Pyridine nucleotide-disulphide oxidoreductase
+PMM0567,pfam:PF02852,"Pyridine nucleotide-disulphide oxidoreductase, dimerisation domain"
+PMM0567,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM0568,pfam:PF01699,Sodium/calcium exchanger protein
+PMM0569,pfam:PF01979,Amidohydrolase family
+PMM0570,pfam:PF10716,NADH dehydrogenase transmembrane subunit
+PMM0571,pfam:PF11460,Protein of unknown function (DUF3007)
+PMM0572,pfam:PF00290,Tryptophan synthase alpha chain
+PMM0573,pfam:PF14250,AbrB-like transcriptional regulator
+PMM0574,pfam:PF03795,YCII-related domain
+PMM0576,pfam:PF06803,Protein of unknown function (DUF1232)
+PMM0577,pfam:PF00140,"Sigma-70 factor, region 1.2"
+PMM0577,pfam:PF04539,Sigma-70 region 3
+PMM0577,pfam:PF04542,Sigma-70 region 2
+PMM0577,pfam:PF04545,"Sigma-70, region 4"
+PMM0578,pfam:PF01502,Phosphoribosyl-AMP cyclohydrolase
+PMM0578,pfam:PF01503,Phosphoribosyl-ATP pyrophosphohydrolase
+PMM0579,pfam:PF01242,6-pyruvoyl tetrahydropterin synthase
+PMM0580,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM0580,pfam:PF02861,Clp repeat (R) N-terminal domain
+PMM0580,pfam:PF07724,AAA domain (Cdc48 subfamily)
+PMM0580,pfam:PF10431,"C-terminal, D2-small domain, of ClpB protein"
+PMM0581,pfam:PF00127,"Copper binding proteins, plastocyanin/azurin family"
+PMM0582,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM0583,pfam:PF01208,Uroporphyrinogen decarboxylase (URO-D)
+PMM0584,pfam:PF00128,"Alpha amylase, catalytic domain"
+PMM0584,pfam:PF02806,"Alpha amylase, C-terminal all-beta domain"
+PMM0584,pfam:PF02922,Carbohydrate-binding module 48 (Isoamylase N-terminal domain)
+PMM0585,pfam:PF02129,X-Pro dipeptidyl-peptidase (S15 family)
+PMM0585,pfam:PF08530,X-Pro dipeptidyl-peptidase C-terminal non-catalytic domain
+PMM0587,pfam:PF14229,Domain of unknown function (DUF4332)
+PMM0588,pfam:PF10726,Protein of function (DUF2518)
+PMM0589,pfam:PF04357,TamB C-terminal domain
+PMM0589,pfam:PF05359,Domain of Unknown Function (DUF748)
+PMM0589,pfam:PF13116,YhdP protein
+PMM0590,pfam:PF00171,Aldehyde dehydrogenase family
+PMM0591,pfam:PF02152,Dihydroneopterin aldolase
+PMM0592,pfam:PF00561,alpha/beta hydrolase fold
+PMM0592,pfam:PF02089,Palmitoyl protein thioesterase
+PMM0592,pfam:PF05057,Putative serine esterase (DUF676)
+PMM0593,pfam:PF01432,Peptidase family M3
+PMM0593,pfam:PF19310,"Neurolysin/Thimet oligopeptidase, N-terminal domain"
+PMM0594,pfam:PF00361,"NADH:quinone oxidoreductase/Mrp antiporter, TM"
+PMM0595,pfam:PF00288,GHMP kinases N terminal domain
+PMM0595,pfam:PF08544,GHMP kinases C terminal
+PMM0596,pfam:PF02685,Glucokinase
+PMM0597,pfam:PF00587,"tRNA synthetase class II core domain (G, H, P, S and T)"
+PMM0597,pfam:PF02824,TGS domain
+PMM0597,pfam:PF03129,Anticodon binding domain
+PMM0597,pfam:PF07973,Threonyl and Alanyl tRNA synthetase second additional domain
+PMM0598,pfam:PF00579,tRNA synthetases class I (W and Y)
+PMM0600,pfam:PF05128,Domain of unknown function (DUF697)
+PMM0601,pfam:PF01297,Zinc-uptake complex component A periplasmic
+PMM0602,pfam:PF00005,ABC transporter
+PMM0603,pfam:PF00950,ABC 3 transport family
+PMM0604,pfam:PF14234,Domain of unknown function (DUF4336)
+PMM0605,pfam:PF05542,Protein of unknown function (DUF760)
+PMM0606,pfam:PF00717,Peptidase S24-like
+PMM0606,pfam:PF10502,"Signal peptidase, peptidase S26"
+PMM0607,pfam:PF02775,"Thiamine pyrophosphate enzyme, C-terminal TPP binding domain"
+PMM0607,pfam:PF02776,"Thiamine pyrophosphate enzyme, N-terminal TPP binding domain"
+PMM0607,pfam:PF16582,Middle domain of thiamine pyrophosphate
+PMM0608,pfam:PF00378,Enoyl-CoA hydratase/isomerase
+PMM0609,pfam:PF00534,Glycosyl transferases group 1
+PMM0609,pfam:PF08323,Starch synthase catalytic domain
+PMM0610,pfam:PF01225,"Mur ligase family, catalytic domain"
+PMM0610,pfam:PF02875,"Mur ligase, glutamate ligase domain"
+PMM0610,pfam:PF08245,Mur ligase middle domain
+PMM0611,pfam:PF00132,Bacterial transferase hexapeptide (six repeats)
+PMM0611,pfam:PF12804,MobA-like NTP transferase domain
+PMM0612,pfam:PF05430,S-adenosyl-L-methionine-dependent methyltransferase
+PMM0613,pfam:PF00275,EPSP synthase (3-phosphoshikimate 1-carboxyvinyltransferase)
+PMM0614,pfam:PF04029,2-phosphosulpholactate phosphatase
+PMM0615,pfam:PF00795,Carbon-nitrogen hydrolase
+PMM0616,pfam:PF01520,N-acetylmuramoyl-L-alanine amidase
+PMM0616,pfam:PF11741,AMIN domain
+PMM0617,pfam:PF01177,Asp/Glu/Hydantoin racemase
+PMM0618,pfam:PF00348,Polyprenyl synthetase
+PMM0619,pfam:PF00501,AMP-binding enzyme
+PMM0619,pfam:PF13193,AMP-binding enzyme C-terminal domain
+PMM0619,pfam:PF16177,Acetyl-coenzyme A synthetase N-terminus
+PMM0620,pfam:PF07082,Protein of unknown function (DUF1350)
+PMM0621,pfam:PF00929,Exonuclease
+PMM0622,pfam:PF01744,GLTT repeat (6 copies)
+PMM0622,pfam:PF12518,Protein of unknown function
+PMM0623,pfam:PF03129,Anticodon binding domain
+PMM0623,pfam:PF13393,Histidyl-tRNA synthetase
+PMM0625,pfam:PF09493,Tryptophan-rich protein (DUF2389)
+PMM0627,pfam:PF00421,Photosystem II protein
+PMM0628,pfam:PF03616,Sodium/glutamate symporter
+PMM0630,pfam:PF06108,Protein of unknown function (DUF952)
+PMM0630,pfam:PF13410,"Glutathione S-transferase, C-terminal domain"
+PMM0630,pfam:PF13417,"Glutathione S-transferase, N-terminal domain"
+PMM0631,pfam:PF10544,T5orf172 domain
+PMM0631,pfam:PF13455,Meiotically up-regulated gene 113
+PMM0632,pfam:PF00106,short chain dehydrogenase
+PMM0633,pfam:PF05834,Lycopene cyclase protein
+PMM0634,pfam:PF00106,short chain dehydrogenase
+PMM0635,pfam:PF00924,"Mechanosensitive ion channel, beta-domain"
+PMM0635,pfam:PF21082,"Mechanosensitive ion channel MscS, C-terminal"
+PMM0636,pfam:PF00857,Isochorismatase domain
+PMM0637,pfam:PF01475,Ferric uptake regulator family
+PMM0638,pfam:PF04055,Radical SAM superfamily
+PMM0638,pfam:PF12345,Protein of unknown function (DUF3641)
+PMM0638,pfam:PF13353,4Fe-4S single cluster domain
+PMM0639,pfam:PF09506,Glucosylglycerol-phosphate phosphatase (Salt_tol_Pase)
+PMM0642,pfam:PF01053,Cys/Met metabolism PLP-dependent enzyme
+PMM0643,pfam:PF04204,Homoserine O-succinyltransferase
+PMM0644,pfam:PF00916,Sulfate permease family
+PMM0644,pfam:PF01740,STAS domain
+PMM0644,pfam:PF13792,PF13792
+PMM0645,pfam:PF01565,FAD binding domain
+PMM0645,pfam:PF08031,Berberine and berberine like
+PMM0646,pfam:PF01903,CbiX
+PMM0647,pfam:PF10929,Protein of unknown function (DUF2811)
+PMM0648,pfam:PF00732,GMC oxidoreductase
+PMM0648,pfam:PF00890,FAD binding domain
+PMM0648,pfam:PF05199,GMC oxidoreductase
+PMM0649,pfam:PF00805,Pentapeptide repeats (8 copies)
+PMM0651,pfam:PF07878,"CopG-like RHH_1 or ribbon-helix-helix domain, RHH_5"
+PMM0653,pfam:PF00903,Glyoxalase/Bleomycin resistance protein/Dioxygenase superfamily
+PMM0654,pfam:PF16166,Chloroplast import apparatus Tic20-like
+PMM0658,pfam:PF00849,RNA pseudouridylate synthase
+PMM0658,pfam:PF01479,S4 domain
+PMM0659,pfam:PF01653,NAD-dependent DNA ligase adenylation domain
+PMM0660,pfam:PF07878,"CopG-like RHH_1 or ribbon-helix-helix domain, RHH_5"
+PMM0662,pfam:PF13489,Methyltransferase domain
+PMM0662,pfam:PF13649,Methyltransferase domain
+PMM0662,pfam:PF13847,Methyltransferase domain
+PMM0663,pfam:PF00009,Elongation factor Tu GTP binding domain
+PMM0663,pfam:PF03144,Elongation factor Tu domain 2
+PMM0663,pfam:PF16658,"Class II release factor RF3, C-terminal domain"
+PMM0663,pfam:PF22042,Elongation factor G domain 2
+PMM0664,pfam:PF11833,Protein CHAPERONE-LIKE PROTEIN OF POR1-like
+PMM0665,pfam:PF01430,Hsp33 protein
+PMM0666,pfam:PF00005,ABC transporter
+PMM0666,pfam:PF00437,Type II/IV secretion system protein
+PMM0667,pfam:PF12049,Protein of unknown function (DUF3531)
+PMM0668,pfam:PF04452,RNA methyltransferase domain
+PMM0668,pfam:PF20260,RNA methyltransferase PUA domain
+PMM0669,pfam:PF01940,Integral membrane protein DUF92
+PMM0670,pfam:PF13472,GDSL-like Lipase/Acylhydrolase family
+PMM0671,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0672,pfam:PF00005,ABC transporter
+PMM0673,pfam:PF12974,"ABC transporter, phosphonate, periplasmic substrate-binding protein"
+PMM0674,pfam:PF00155,Aminotransferase class I and II
+PMM0675,pfam:PF03167,Uracil DNA glycosylase superfamily
+PMM0676,pfam:PF04551,GcpE TIM-barrel domain
+PMM0677,pfam:PF00595,PDZ domain
+PMM0677,pfam:PF03572,Peptidase family S41
+PMM0677,pfam:PF13180,PDZ domain
+PMM0677,pfam:PF14684,Tricorn protease C1 domain
+PMM0678,pfam:PF02445,Quinolinate synthetase A protein
+PMM0679,pfam:PF00149,Calcineurin-like phosphoesterase
+PMM0680,pfam:PF04536,TPM domain
+PMM0681,pfam:PF02636,Putative S-adenosyl-L-methionine-dependent methyltransferase
+PMM0682,pfam:PF01761,3-dehydroquinate synthase N-terminal
+PMM0683,pfam:PF02222,ATP-grasp domain
+PMM0683,pfam:PF17769,Phosphoribosylaminoimidazole carboxylase C-terminal domain
+PMM0683,pfam:PF22660,Ribonucleotide synthetase preATP-grasp domain
+PMM0684,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM0686,pfam:PF02617,ATP-dependent Clp protease adaptor protein ClpS
+PMM0688,pfam:PF12707,Protein of unknown function (DUF3804)
+PMM0689,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0691,pfam:PF09493,Tryptophan-rich protein (DUF2389)
+PMM0694,pfam:PF00106,short chain dehydrogenase
+PMM0695,pfam:PF00117,Glutamine amidotransferase class-I
+PMM0701,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM0703,pfam:PF07386,Protein of unknown function (DUF1499)
+PMM0704,pfam:PF02080,TrkA-C domain
+PMM0704,pfam:PF02254,TrkA-N domain
+PMM0704,pfam:PF07885,Ion channel
+PMM0705,pfam:PF00072,Response regulator receiver domain
+PMM0705,pfam:PF00486,"Transcriptional regulatory protein, C terminal"
+PMM0706,pfam:PF00512,His Kinase A (phospho-acceptor) domain
+PMM0706,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM0706,pfam:PF13188,PAS domain
+PMM0708,pfam:PF13449,Esterase-like activity of phytase
+PMM0709,pfam:PF00593,"TonB dependent receptor-like, beta-barrel"
+PMM0709,pfam:PF04966,"Carbohydrate-selective porin, OprB family"
+PMM0709,pfam:PF07715,TonB-dependent Receptor Plug Domain
+PMM0710,pfam:PF12849,PBP superfamily domain
+PMM0711,pfam:PF02417,Chromate transporter
+PMM0712,pfam:PF07690,Major Facilitator Superfamily
+PMM0713,pfam:PF00044,"Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain"
+PMM0713,pfam:PF02800,"Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain"
+PMM0714,pfam:PF01022,"Bacterial regulatory protein, arsR family"
+PMM0716,pfam:PF01758,Sodium Bile acid symporter family
+PMM0717,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0718,pfam:PF00027,Cyclic nucleotide-binding domain
+PMM0718,pfam:PF13545,Crp-like helix-turn-helix domain
+PMM0719,pfam:PF12594,Protein of unknown function (DUF3764)
+PMM0723,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0724,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM0725,pfam:PF00005,ABC transporter
+PMM0727,pfam:PF00149,Calcineurin-like phosphoesterase
+PMM0728,pfam:PF00270,DEAD/DEAH box helicase
+PMM0728,pfam:PF00271,Helicase conserved C-terminal domain
+PMM0728,pfam:PF08494,DEAD/H associated
+PMM0728,pfam:PF19306,"Large helicase-related protein, winged helix domain"
+PMM0729,pfam:PF01068,ATP dependent DNA ligase domain
+PMM0729,pfam:PF04675,DNA ligase N terminus
+PMM0729,pfam:PF04679,ATP dependent DNA ligase C terminal region
+PMM0730,pfam:PF07521,Zn-dependent metallo-hydrolase RNA specificity domain
+PMM0732,pfam:PF04760,"Translation initiation factor IF-2, N-terminal region"
+PMM0733,pfam:PF09903,Uncharacterized protein conserved in bacteria (DUF2130)
+PMM0739,pfam:PF09876,Predicted metal-binding protein (DUF2103)
+PMM0740,pfam:PF03742,PetN
+PMM0741,pfam:PF01730,UreF
+PMM0741,pfam:PF11264,Thylakoid formation protein
+PMM0742,pfam:PF00574,Clp protease
+PMM0743,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM0743,pfam:PF01434,Peptidase family M41
+PMM0743,pfam:PF06480,FtsH Extracellular
+PMM0743,pfam:PF17862,AAA+ lid domain
+PMM0744,pfam:PF11347,Protein CHLORORESPIRATORY REDUCTION 42-like
+PMM0745,pfam:PF00675,Insulinase (Peptidase family M16)
+PMM0745,pfam:PF05193,Peptidase M16 inactive domain
+PMM0746,pfam:PF00675,Insulinase (Peptidase family M16)
+PMM0746,pfam:PF05193,Peptidase M16 inactive domain
+PMM0747,pfam:PF05996,Ferredoxin-dependent bilin reductase
+PMM0748,pfam:PF13437,PF13437
+PMM0749,pfam:PF02687,FtsX-like permease C-terminal
+PMM0750,pfam:PF00005,ABC transporter
+PMM0752,pfam:PF00535,Glycosyl transferase family 2
+PMM0753,pfam:PF00318,Ribosomal protein S2
+PMM0754,pfam:PF00627,UBA/TS-N domain
+PMM0754,pfam:PF00889,Elongation factor TS
+PMM0756,pfam:PF00270,DEAD/DEAH box helicase
+PMM0756,pfam:PF00271,Helicase conserved C-terminal domain
+PMM0756,pfam:PF17191,RecG wedge domain
+PMM0756,pfam:PF19833,"ATP-dependent DNA helicase RecG, domain 3, C-terminal"
+PMM0757,pfam:PF01427,D-ala-D-ala dipeptidase
+PMM0758,pfam:PF01077,Nitrite and sulphite reductase 4Fe-4S domain
+PMM0758,pfam:PF03460,Nitrite/Sulfite reductase ferredoxin-like half domain
+PMM0759,pfam:PF02092,Glycyl-tRNA synthetase beta subunit
+PMM0759,pfam:PF05746,DALR anticodon binding domain
+PMM0760,pfam:PF01494,FAD binding domain
+PMM0761,pfam:PF02557,D-alanyl-D-alanine carboxypeptidase
+PMM0762,pfam:PF00009,Elongation factor Tu GTP binding domain
+PMM0762,pfam:PF00679,Elongation factor G C-terminus
+PMM0762,pfam:PF03144,Elongation factor Tu domain 2
+PMM0762,pfam:PF21018,TypA/BipA C-terminal domain
+PMM0763,pfam:PF03745,Domain of unknown function (DUF309)
+PMM0764,pfam:PF00005,ABC transporter
+PMM0765,pfam:PF01578,Cytochrome C assembly protein
+PMM0766,pfam:PF00834,Ribulose-phosphate 3 epimerase family
+PMM0767,pfam:PF03320,"Bacterial fructose-1,6-bisphosphatase, glpX-encoded"
+PMM0768,pfam:PF00745,"Glutamyl-tRNAGlu reductase, dimerisation domain"
+PMM0768,pfam:PF01488,Shikimate / quinate 5-dehydrogenase
+PMM0768,pfam:PF05201,"Glutamyl-tRNAGlu reductase, N-terminal domain"
+PMM0769,pfam:PF00483,Nucleotidyl transferase
+PMM0769,pfam:PF25247,GLGC left-handed parallel beta-helix domain
+PMM0770,pfam:PF00393,"6-phosphogluconate dehydrogenase, C-terminal domain"
+PMM0770,pfam:PF03446,NAD binding domain of 6-phosphogluconate dehydrogenase
+PMM0771,pfam:PF01182,Glucosamine-6-phosphate isomerases/6-phosphogluconolactonase
+PMM0772,pfam:PF08547,Complex I intermediate-associated protein 30 (CIA30)
+PMM0774,pfam:PF00920,Dihydroxy-acid/6-phosphogluconate dehydratase N-terminal
+PMM0776,pfam:PF14681,Uracil phosphoribosyltransferase
+PMM0777,pfam:PF00805,Pentapeptide repeats (8 copies)
+PMM0778,pfam:PF02492,"CobW/HypB/UreG, nucleotide-binding domain"
+PMM0778,pfam:PF07683,Cobalamin synthesis protein cobW C-terminal domain
+PMM0779,pfam:PF02700,Phosphoribosylformylglycinamidine (FGAM) synthase
+PMM0780,pfam:PF13507,CobB/CobQ-like glutamine amidotransferase domain
+PMM0781,pfam:PF01116,Fructose-bisphosphate aldolase class-II
+PMM0782,pfam:PF01408,"Oxidoreductase family, NAD-binding Rossmann fold"
+PMM0782,pfam:PF02894,"Oxidoreductase family, C-terminal alpha/beta domain"
+PMM0784,pfam:PF01039,Carboxyl transferase domain
+PMM0785,pfam:PF00485,Phosphoribulokinase / Uridine kinase family
+PMM0786,pfam:PF00180,Isocitrate/isopropylmalate dehydrogenase
+PMM0787,pfam:PF00132,Bacterial transferase hexapeptide (six repeats)
+PMM0787,pfam:PF04613,"UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase, LpxD"
+PMM0787,pfam:PF14602,Hexapeptide repeat of succinyl-transferase
+PMM0788,pfam:PF00696,Amino acid kinase family
+PMM0788,pfam:PF01472,PUA domain
+PMM0789,pfam:PF09419,Mitochondrial PGP phosphatase
+PMM0789,pfam:PF13242,HAD-hyrolase-like
+PMM0790,pfam:PF06949,Protein of unknown function (DUF1292)
+PMM0790,pfam:PF12527,Protein of unknown function (DUF3727)
+PMM0791,pfam:PF03652,Holliday junction resolvase
+PMM0793,pfam:PF01996,F420-0:Gamma-glutamyl ligase
+PMM0795,pfam:PF00072,Response regulator receiver domain
+PMM0795,pfam:PF12452,Protein of unknown function (DUF3685)
+PMM0796,pfam:PF00977,Histidine biosynthesis protein
+PMM0797,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM0798,pfam:PF01066,CDP-alcohol phosphatidyltransferase
+PMM0799,pfam:PF00462,Glutaredoxin
+PMM0799,pfam:PF03479,Plants and Prokaryotes Conserved (PCC) domain
+PMM0801,pfam:PF13460,NAD(P)H-binding
+PMM0802,pfam:PF00633,Helix-hairpin-helix motif
+PMM0802,pfam:PF00730,HhH-GPD superfamily base excision DNA repair protein
+PMM0802,pfam:PF10576,Iron-sulfur binding domain of endonuclease III
+PMM0803,pfam:PF00005,ABC transporter
+PMM0803,pfam:PF08402,TOBE domain
+PMM0804,pfam:PF00210,Ferritin-like domain
+PMM0806,pfam:PF13545,Crp-like helix-turn-helix domain
+PMM0807,pfam:PF00005,ABC transporter
+PMM0808,pfam:PF00355,Rieske [2Fe-2S] domain
+PMM0808,pfam:PF08417,Pheophorbide a oxygenase
+PMM0808,pfam:PF19112,Vanillate O-demethylase oxygenase C-terminal domain
+PMM0815,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0816,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0817,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0818,pfam:PF00504,Chlorophyll A-B binding protein
+PMM0819,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM0821,pfam:PF06089,L-asparaginase II
+PMM0822,pfam:PF06799,Conserved in the green lineage and diatoms 27
+PMM0823,pfam:PF02410,Ribosomal silencing factor during starvation
+PMM0824,pfam:PF11780,Protein of unknown function (DUF3318)
+PMM0825,pfam:PF00289,"Biotin carboxylase, N-terminal domain"
+PMM0825,pfam:PF02142,MGS-like domain
+PMM0825,pfam:PF02786,"Carbamoyl-phosphate synthase L chain, ATP binding domain"
+PMM0825,pfam:PF02787,"Carbamoyl-phosphate synthetase large chain, oligomerisation domain"
+PMM0825,pfam:PF25596,Carbamoyl phosphate synthase preATP-grasp domain
+PMM0827,pfam:PF00005,ABC transporter
+PMM0827,pfam:PF00664,ABC transporter transmembrane region
+PMM0828,pfam:PF13275,S4 domain
+PMM0829,pfam:PF00121,Triosephosphate isomerase
+PMM0830,pfam:PF00809,Pterin binding enzyme
+PMM0831,pfam:PF02514,CobN/Magnesium Chelatase
+PMM0831,pfam:PF11965,Domain of unknown function (DUF3479)
+PMM0832,pfam:PF01113,"Dihydrodipicolinate reductase, N-terminus"
+PMM0832,pfam:PF05173,"Dihydrodipicolinate reductase, C-terminus"
+PMM0834,pfam:PF01494,FAD binding domain
+PMM0835,pfam:PF11165,Protein of unknown function (DUF2949)
+PMM0836,pfam:PF11237,Protein of unknown function (DUF3038)
+PMM0837,pfam:PF14233,Domain of unknown function (DUF4335)
+PMM0839,pfam:PF00270,DEAD/DEAH box helicase
+PMM0839,pfam:PF00271,Helicase conserved C-terminal domain
+PMM0839,pfam:PF02559,CarD-like/TRCF RID domain
+PMM0839,pfam:PF03461,TRCF domain
+PMM0839,pfam:PF17757,UvrB interaction domain
+PMM0840,pfam:PF03741,Integral membrane protein TerC family
+PMM0841,pfam:PF00551,Formyl transferase
+PMM0841,pfam:PF02911,"Formyl transferase, C-terminal domain"
+PMM0842,pfam:PF01523,PmbA/TldA metallopeptidase domain 1
+PMM0842,pfam:PF19289,PmbA/TldA metallopeptidase C-terminal domain
+PMM0842,pfam:PF19290,PmbA/TldA metallopeptidase central domain
+PMM0843,pfam:PF01523,PmbA/TldA metallopeptidase domain 1
+PMM0843,pfam:PF19289,PmbA/TldA metallopeptidase C-terminal domain
+PMM0843,pfam:PF19290,PmbA/TldA metallopeptidase central domain
+PMM0844,pfam:PF02915,Rubrerythrin
+PMM0845,pfam:PF11210,Protein of unknown function (DUF2996)
+PMM0846,pfam:PF06305,Lipopolysaccharide assembly protein A domain
+PMM0847,pfam:PF00575,S1 RNA binding domain
+PMM0847,pfam:PF00773,RNB domain
+PMM0847,pfam:PF08206,Ribonuclease B OB domain
+PMM0848,pfam:PF01169,Divalent cation/proton antiporter GDT1
+PMM0849,pfam:PF01169,Divalent cation/proton antiporter GDT1
+PMM0850,pfam:PF03692,Putative zinc- or iron-chelating domain
+PMM0851,pfam:PF13419,Haloacid dehalogenase-like hydrolase
+PMM0852,pfam:PF04483,Protein of unknown function (DUF565)
+PMM0853,pfam:PF01783,Ribosomal L32p protein family
+PMM0854,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM0854,pfam:PF01434,Peptidase family M41
+PMM0854,pfam:PF06480,FtsH Extracellular
+PMM0854,pfam:PF17862,AAA+ lid domain
+PMM0856,pfam:PF00578,AhpC/TSA family
+PMM0856,pfam:PF10417,C-terminal domain of 1-Cys peroxiredoxin
+PMM0859,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM0860,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM0862,pfam:PF00588,SpoU rRNA Methylase family
+PMM0863,pfam:PF02283,Cobinamide kinase / cobinamide phosphate guanyltransferase
+PMM0865,pfam:PF11152,"Cofactor assembly of complex C subunit B, CCB2/CCB4"
+PMM0866,pfam:PF06835,"Lipopolysaccharide-assembly, LptC-related"
+PMM0867,pfam:PF00133,"tRNA synthetases class I (I, L, M and V)"
+PMM0867,pfam:PF08264,Anticodon-binding domain of tRNA ligase
+PMM0867,pfam:PF09334,tRNA synthetases class I (M)
+PMM0867,pfam:PF19303,Anticodon binding domain of methionyl tRNA ligase
+PMM0868,pfam:PF00773,RNB domain
+PMM0869,pfam:PF01084,Ribosomal protein S18
+PMM0870,pfam:PF00471,Ribosomal protein L33
+PMM0871,pfam:PF01588,Putative tRNA binding domain
+PMM0871,pfam:PF03147,Ferredoxin-fold anticodon binding domain
+PMM0871,pfam:PF03483,B3/4 domain
+PMM0871,pfam:PF03484,tRNA synthetase B5 domain
+PMM0873,pfam:PF00226,DnaJ domain
+PMM0873,pfam:PF01402,"Ribbon-helix-helix protein, copG family"
+PMM0874,pfam:PF09830,ATP adenylyltransferase C-terminal domain
+PMM0874,pfam:PF19327,Ap4A phosphorylase N-terminal domain
+PMM0875,pfam:PF09996,Uncharacterized protein conserved in bacteria (DUF2237)
+PMM0877,pfam:PF00809,Pterin binding enzyme
+PMM0877,pfam:PF02310,B12 binding domain
+PMM0877,pfam:PF02574,Homocysteine S-methyltransferase
+PMM0877,pfam:PF02607,B12 binding domain
+PMM0877,pfam:PF02965,"Vitamin B12 dependent methionine synthase, activation domain"
+PMM0878,pfam:PF01063,Amino-transferase class IV
+PMM0879,pfam:PF02514,CobN/Magnesium Chelatase
+PMM0880,pfam:PF02811,PHP domain
+PMM0881,pfam:PF03653,Uncharacterised protein family (UPF0093)
+PMM0882,pfam:PF01541,GIY-YIG catalytic domain
+PMM0882,pfam:PF02151,UvrB/uvrC motif
+PMM0882,pfam:PF08459,UvrC RNAse H endonuclease domain
+PMM0882,pfam:PF12826,Helix-hairpin-helix motif
+PMM0882,pfam:PF14520,Helix-hairpin-helix domain
+PMM0883,pfam:PF01613,Flavin reductase like domain
+PMM0884,pfam:PF01467,Cytidylyltransferase-like
+PMM0885,pfam:PF02113,D-Ala-D-Ala carboxypeptidase 3 (S13) family
+PMM0886,pfam:PF09353,Domain of unknown function (DUF1995)
+PMM0887,pfam:PF00266,Aminotransferase class-V
+PMM0888,pfam:PF01678,Diaminopimelate epimerase
+PMM0889,pfam:PF00133,"tRNA synthetases class I (I, L, M and V)"
+PMM0889,pfam:PF08264,Anticodon-binding domain of tRNA ligase
+PMM0889,pfam:PF13603,"Leucyl-tRNA synthetase, editing domain"
+PMM0890,pfam:PF00342,Phosphoglucose isomerase
+PMM0891,pfam:PF00551,Formyl transferase
+PMM0892,pfam:PF01118,"Semialdehyde dehydrogenase, NAD binding domain"
+PMM0892,pfam:PF02774,"Semialdehyde dehydrogenase, dimerisation domain"
+PMM0893,pfam:PF00925,GTP cyclohydrolase II
+PMM0893,pfam:PF00926,"3,4-dihydroxy-2-butanone 4-phosphate synthase"
+PMM0894,pfam:PF00160,Cyclophilin type peptidyl-prolyl cis-trans isomerase/CLD
+PMM0895,pfam:PF11360,Protein of unknown function (DUF3110)
+PMM0896,pfam:PF00226,DnaJ domain
+PMM0896,pfam:PF01556,DnaJ C terminal domain
+PMM0897,pfam:PF00012,Hsp70 protein
+PMM0898,pfam:PF00111,2Fe-2S iron-sulfur cluster binding domain
+PMM0899,pfam:PF00459,Inositol monophosphatase family
+PMM0900,pfam:PF13393,Histidyl-tRNA synthetase
+PMM0901,pfam:PF00183,Hsp90 protein
+PMM0901,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM0901,pfam:PF13589,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM0902,pfam:PF00830,Ribosomal L28 family
+PMM0903,pfam:PF00578,AhpC/TSA family
+PMM0904,pfam:PF10693,Protein of unknown function (DUF2499)
+PMM0905,pfam:PF12159,Protein of unknown function (DUF3593)
+PMM0906,pfam:PF01241,Photosystem I psaG / psaK
+PMM0907,pfam:PF02779,"Transketolase, pyrimidine binding domain"
+PMM0907,pfam:PF02780,"Transketolase, C-terminal domain"
+PMM0907,pfam:PF13292,1-deoxy-D-xylulose-5-phosphate synthase
+PMM0908,pfam:PF00291,Pyridoxal-phosphate dependent enzyme
+PMM0908,pfam:PF00585,C-terminal regulatory domain of Threonine dehydratase
+PMM0909,pfam:PF04079,Segregation and condensation complex subunit ScpB
+PMM0910,pfam:PF02325,CCB3/YggT
+PMM0911,pfam:PF03819,MazG nucleotide pyrophosphohydrolase domain
+PMM0912,pfam:PF00224,"Pyruvate kinase, barrel domain"
+PMM0912,pfam:PF00391,"PEP-utilising enzyme, mobile domain"
+PMM0912,pfam:PF02887,"Pyruvate kinase, alpha/beta domain"
+PMM0913,pfam:PF02687,FtsX-like permease C-terminal
+PMM0913,pfam:PF12704,MacB-like periplasmic core domain
+PMM0914,pfam:PF02632,BioY family
+PMM0915,pfam:PF01252,Signal peptidase (SPase) II
+PMM0916,pfam:PF01926,50S ribosome-binding GTPase
+PMM0916,pfam:PF05128,Domain of unknown function (DUF697)
+PMM0917,pfam:PF00282,Pyridoxal-dependent decarboxylase conserved domain
+PMM0918,pfam:PF00383,Cytidine and deoxycytidylate deaminase zinc-binding region
+PMM0918,pfam:PF14437,MafB19-like deaminase
+PMM0919,pfam:PF00266,Aminotransferase class-V
+PMM0920,pfam:PF00120,"Glutamine synthetase, catalytic domain"
+PMM0920,pfam:PF03951,"Glutamine synthetase, beta-Grasp domain"
+PMM0921,pfam:PF08241,Methyltransferase domain
+PMM0921,pfam:PF13649,Methyltransferase domain
+PMM0922,pfam:PF20035,Family of unknown function (DUF6439)
+PMM0923,pfam:PF13581,Histidine kinase-like ATPase domain
+PMM0924,pfam:PF05419,GUN4-like
+PMM0924,pfam:PF16416,"ARM-like repeat domain, GUN4-N terminal"
+PMM0925,pfam:PF00581,Rhodanese-like domain
+PMM0925,pfam:PF26341,tRNA 2-selenouridine synthase AAA domain
+PMM0926,pfam:PF03912,Psb28 protein
+PMM0927,pfam:PF01594,AI-2E family transporter
+PMM0928,pfam:PF02355,"Protein export membrane protein SecD/SecF, C-terminal"
+PMM0928,pfam:PF07549,SecD/SecF GG Motif
+PMM0929,pfam:PF02355,"Protein export membrane protein SecD/SecF, C-terminal"
+PMM0929,pfam:PF07549,SecD/SecF GG Motif
+PMM0929,pfam:PF21760,"Protein translocase subunit SecDF, P1 domain, N-terminal"
+PMM0929,pfam:PF22599,"SecDF, P1 head subdomain"
+PMM0930,pfam:PF02779,"Transketolase, pyrimidine binding domain"
+PMM0930,pfam:PF02780,"Transketolase, C-terminal domain"
+PMM0931,pfam:PF11282,Protein of unknown function (DUF3082)
+PMM0932,pfam:PF00288,GHMP kinases N terminal domain
+PMM0932,pfam:PF08544,GHMP kinases C terminal
+PMM0933,pfam:PF00398,Ribosomal RNA adenine dimethylase
+PMM0935,pfam:PF02590,Predicted SPOUT methyltransferase
+PMM0936,pfam:PF00717,Peptidase S24-like
+PMM0937,pfam:PF00817,impB/mucB/samB family
+PMM0937,pfam:PF11798,IMS family HHH motif
+PMM0937,pfam:PF11799,impB/mucB/samB family C-terminal domain
+PMM0937,pfam:PF13438,Domain of unknown function (DUF4113)
+PMM0939,pfam:PF01807,CHC2 zinc finger
+PMM0939,pfam:PF08275,"DNA primase catalytic core, N-terminal domain"
+PMM0939,pfam:PF10410,DnaB-helicase binding domain of primase
+PMM0939,pfam:PF13155,Toprim-like
+PMM0939,pfam:PF13662,Toprim domain
+PMM0940,pfam:PF00892,EamA-like transporter family
+PMM0941,pfam:PF05433,Glycine zipper 2TM domain
+PMM0942,pfam:PF01330,RuvA N terminal domain
+PMM0942,pfam:PF07499,"RuvA, C-terminal domain"
+PMM0942,pfam:PF14520,Helix-hairpin-helix domain
+PMM0943,pfam:PF00312,Ribosomal protein S15
+PMM0944,pfam:PF11947,Photosynthesis affected mutant 68
+PMM0945,pfam:PF01336,OB-fold nucleic acid binding domain
+PMM0945,pfam:PF02811,PHP domain
+PMM0945,pfam:PF07733,Bacterial DNA polymerase III alpha NTPase domain
+PMM0945,pfam:PF14579,Helix-hairpin-helix motif
+PMM0945,pfam:PF17657,Bacterial DNA polymerase III alpha subunit finger domain
+PMM0946,pfam:PF01425,Amidase
+PMM0947,pfam:PF08846,Domain of unknown function (DUF1816)
+PMM0948,pfam:PF00588,SpoU rRNA Methylase family
+PMM0948,pfam:PF08032,RNA 2^-O ribose methyltransferase substrate binding
+PMM0949,pfam:PF00636,Ribonuclease III domain
+PMM0950,pfam:PF01740,STAS domain
+PMM0951,pfam:PF00117,Glutamine amidotransferase class-I
+PMM0951,pfam:PF00988,"Carbamoyl-phosphate synthase small chain, CPSase domain"
+PMM0952,pfam:PF00591,"Glycosyl transferase family, a/b domain"
+PMM0952,pfam:PF02885,"Glycosyl transferase family, helical bundle domain"
+PMM0953,pfam:PF11691,Protein of unknown function (DUF3288)
+PMM0954,pfam:PF00005,ABC transporter
+PMM0954,pfam:PF00664,ABC transporter transmembrane region
+PMM0955,pfam:PF01625,Peptide methionine sulfoxide reductase
+PMM0956,pfam:PF02673,Bacitracin resistance protein BacA
+PMM0958,pfam:PF08865,Domain of unknown function (DUF1830)
+PMM0959,pfam:PF00485,Phosphoribulokinase / Uridine kinase family
+PMM0960,pfam:PF08282,haloacid dehalogenase-like hydrolase
+PMM0961,pfam:PF00128,"Alpha amylase, catalytic domain"
+PMM0961,pfam:PF16657,"Maltogenic Amylase, C-terminal domain"
+PMM0963,pfam:PF00449,"Urease alpha-subunit, N-terminal domain"
+PMM0963,pfam:PF01979,Amidohydrolase family
+PMM0964,pfam:PF00699,Urease beta subunit
+PMM0965,pfam:PF00547,"Urease, gamma subunit"
+PMM0966,pfam:PF01774,UreD urease accessory protein
+PMM0967,pfam:PF02814,"UreE urease accessory protein, N-terminal domain"
+PMM0967,pfam:PF05194,"UreE urease accessory protein, C-terminal domain"
+PMM0968,pfam:PF01730,UreF
+PMM0969,pfam:PF02492,"CobW/HypB/UreG, nucleotide-binding domain"
+PMM0970,pfam:PF13433,Periplasmic binding protein domain
+PMM0971,pfam:PF02653,Branched-chain amino acid transport system / permease component
+PMM0972,pfam:PF02653,Branched-chain amino acid transport system / permease component
+PMM0973,pfam:PF00005,ABC transporter
+PMM0973,pfam:PF12399,Branched-chain amino acid ATP-binding cassette transporter
+PMM0974,pfam:PF00005,ABC transporter
+PMM0975,pfam:PF11061,"Cytochrome b6f, subunit Tsr0524-like"
+PMM0976,pfam:PF00005,ABC transporter
+PMM0977,pfam:PF06182,ABC-2 family transporter protein
+PMM0978,pfam:PF06182,ABC-2 family transporter protein
+PMM0981,pfam:PF01925,Sulfite exporter TauE/SafE
+PMM0982,pfam:PF01844,HNH endonuclease
+PMM0982,pfam:PF14279,HNH endonuclease
+PMM0986,pfam:PF05014,Nucleoside 2-deoxyribosyltransferase
+PMM0987,pfam:PF01165,Ribosomal protein S21
+PMM0988,pfam:PF14520,Helix-hairpin-helix domain
+PMM0989,pfam:PF00485,Phosphoribulokinase / Uridine kinase family
+PMM0990,pfam:PF13450,NAD(P)-binding Rossmann-like domain
+PMM0993,pfam:PF03575,Peptidase family S51
+PMM0994,pfam:PF13673,Acetyltransferase (GNAT) domain
+PMM0996,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM0998,pfam:PF04134,DCC1-like thiol-disulfide oxidoreductase
+PMM1001,pfam:PF13483,Beta-lactamase superfamily domain
+PMM1002,pfam:PF01433,Peptidase family M1 domain
+PMM1002,pfam:PF11940,Domain of unknown function (DUF3458) Ig-like fold
+PMM1002,pfam:PF13646,HEAT repeats
+PMM1002,pfam:PF17432,Domain of unknown function (DUF3458_C) ARM repeats
+PMM1002,pfam:PF17900,Peptidase M1 N-terminal domain
+PMM1004,pfam:PF02222,ATP-grasp domain
+PMM1006,pfam:PF00255,Glutathione peroxidase
+PMM1009,pfam:PF01207,Dihydrouridine synthase (Dus)
+PMM1010,pfam:PF10615,Domain of unknown function (DUF2470)
+PMM1012,pfam:PF03061,Thioesterase superfamily
+PMM1012,pfam:PF13279,Thioesterase-like superfamily
+PMM1014,pfam:PF04471,Restriction endonuclease
+PMM1015,pfam:PF01124,MAPEG family
+PMM1017,pfam:PF04755,PAP_fibrillin
+PMM1018,pfam:PF07045,Domain of unknown function (DUF1330)
+PMM1020,pfam:PF07862,Nif11 domain
+PMM1021,pfam:PF04755,PAP_fibrillin
+PMM1025,pfam:PF02566,OsmC-like protein
+PMM1026,pfam:PF07386,Protein of unknown function (DUF1499)
+PMM1029,pfam:PF00950,ABC 3 transport family
+PMM1030,pfam:PF01475,Ferric uptake regulator family
+PMM1031,pfam:PF00005,ABC transporter
+PMM1032,pfam:PF01297,Zinc-uptake complex component A periplasmic
+PMM1033,pfam:PF02492,"CobW/HypB/UreG, nucleotide-binding domain"
+PMM1033,pfam:PF07683,Cobalamin synthesis protein cobW C-terminal domain
+PMM1034,pfam:PF00400,"WD domain, G-beta repeat"
+PMM1034,pfam:PF12894,Anaphase-promoting complex subunit 4 WD40 domain
+PMM1034,pfam:PF13360,Outer membrane protein assembly factor BamB
+PMM1038,pfam:PF04174,A circularly permuted ATPgrasp
+PMM1038,pfam:PF14403,Circularly permuted ATP-grasp type 2
+PMM1039,pfam:PF04168,A predicted alpha-helical domain with a conserved ER motif.
+PMM1040,pfam:PF01841,Transglutaminase-like superfamily
+PMM1040,pfam:PF02533,Photosystem II 4 kDa reaction centre component
+PMM1040,pfam:PF08379,Bacterial transglutaminase-like N-terminal region
+PMM1042,pfam:PF00805,Pentapeptide repeats (8 copies)
+PMM1044,pfam:PF00294,pfkB family carbohydrate kinase
+PMM1045,pfam:PF11196,Protein of unknown function DUF2834
+PMM1046,pfam:PF07690,Major Facilitator Superfamily
+PMM1047,pfam:PF07176,Alpha/beta hydrolase of unknown function (DUF1400)
+PMM1047,pfam:PF12146,"Serine aminopeptidase, S33"
+PMM1047,pfam:PF12695,Alpha/beta hydrolase family
+PMM1047,pfam:PF12697,Alpha/beta hydrolase family
+PMM1048,pfam:PF00528,Binding-protein-dependent transport system inner membrane component
+PMM1048,pfam:PF19300,"Binding-prot-dependent transport system membrane comp, N-term"
+PMM1049,pfam:PF00496,"Bacterial extracellular solute-binding proteins, family 5 Middle"
+PMM1051,pfam:PF00742,Homoserine dehydrogenase
+PMM1051,pfam:PF01842,ACT domain
+PMM1051,pfam:PF03447,"Homoserine dehydrogenase, NAD binding domain"
+PMM1052,pfam:PF02657,Fe-S metabolism associated domain
+PMM1053,pfam:PF01812,5-formyltetrahydrofolate cyclo-ligase family
+PMM1054,pfam:PF02075,Crossover junction endodeoxyribonuclease RuvC
+PMM1055,pfam:PF01078,"Magnesium chelatase, subunit ChlI"
+PMM1055,pfam:PF17863,AAA lid domain
+PMM1056,pfam:PF00588,SpoU rRNA Methylase family
+PMM1057,pfam:PF00034,Cytochrome c
+PMM1057,pfam:PF13442,"Cytochrome C oxidase, cbb3-type, subunit III"
+PMM1058,pfam:PF02529,Cytochrome B6-F complex subunit 5
+PMM1059,pfam:PF03602,Conserved hypothetical protein 95
+PMM1060,pfam:PF00117,Glutamine amidotransferase class-I
+PMM1061,pfam:PF00085,Thioredoxin
+PMM1062,pfam:PF00478,IMP dehydrogenase / GMP reductase domain
+PMM1063,pfam:PF00521,"DNA gyrase/topoisomerase IV, subunit A"
+PMM1063,pfam:PF03989,"DNA gyrase C-terminal domain, beta-propeller"
+PMM1064,pfam:PF05834,Lycopene cyclase protein
+PMM1065,pfam:PF03065,Glycosyl hydrolase family 57
+PMM1065,pfam:PF09210,"1,4-alpha-glucan branching enzyme, C-terminal"
+PMM1066,pfam:PF00682,HMGL-like
+PMM1066,pfam:PF08502,LeuA allosteric (dimerisation) domain
+PMM1068,pfam:PF01966,HD domain
+PMM1068,pfam:PF07697,7TM-HD extracellular
+PMM1068,pfam:PF07698,7TM receptor with intracellular HD hydrolase
+PMM1069,pfam:PF00763,"Tetrahydrofolate dehydrogenase/cyclohydrolase, catalytic domain"
+PMM1069,pfam:PF02882,"Tetrahydrofolate dehydrogenase/cyclohydrolase, NAD(P)-binding domain"
+PMM1070,pfam:PF00348,Polyprenyl synthetase
+PMM1071,pfam:PF02681,Divergent PAP2 family
+PMM1072,pfam:PF01656,CobQ/CobB/MinD/ParA nucleotide binding domain
+PMM1072,pfam:PF07685,CobB/CobQ-like glutamine amidotransferase domain
+PMM1072,pfam:PF13500,AAA domain
+PMM1073,pfam:PF01471,Putative peptidoglycan binding domain
+PMM1073,pfam:PF10128,Glucose-6-phosphate dehydrogenase subunit N-terminal domain
+PMM1073,pfam:PF20171,Glucose-6-phosphate dehydrogenase subunit C-terminal domain
+PMM1074,pfam:PF00479,"Glucose-6-phosphate dehydrogenase, NAD binding domain"
+PMM1074,pfam:PF02781,"Glucose-6-phosphate dehydrogenase, C-terminal domain"
+PMM1075,pfam:PF00175,Oxidoreductase NAD-binding domain
+PMM1075,pfam:PF00970,Oxidoreductase FAD-binding domain
+PMM1075,pfam:PF01383,CpcD/allophycocyanin linker domain
+PMM1076,pfam:PF03364,Polyketide cyclase / dehydrase and lipid transport
+PMM1077,pfam:PF00512,His Kinase A (phospho-acceptor) domain
+PMM1077,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM1077,pfam:PF07689,KaiB domain
+PMM1080,pfam:PF13793,N-terminal domain of ribose phosphate pyrophosphokinase
+PMM1080,pfam:PF14572,Phosphoribosyl synthetase-associated domain
+PMM1081,pfam:PF02446,4-alpha-glucanotransferase
+PMM1082,pfam:PF13413,Helix-turn-helix domain
+PMM1083,pfam:PF03109,ABC1 atypical kinase-like domain
+PMM1084,pfam:PF01276,"Orn/Lys/Arg decarboxylase, major domain"
+PMM1084,pfam:PF03711,"Orn/Lys/Arg decarboxylase, C-terminal domain"
+PMM1085,pfam:PF01148,Cytidylyltransferase family
+PMM1086,pfam:PF00561,alpha/beta hydrolase fold
+PMM1086,pfam:PF12697,Alpha/beta hydrolase family
+PMM1087,pfam:PF00465,Iron-containing alcohol dehydrogenase
+PMM1088,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM1088,pfam:PF02151,UvrB/uvrC motif
+PMM1088,pfam:PF02861,Clp repeat (R) N-terminal domain
+PMM1088,pfam:PF07724,AAA domain (Cdc48 subfamily)
+PMM1088,pfam:PF10431,"C-terminal, D2-small domain, of ClpB protein"
+PMM1088,pfam:PF17871,AAA lid domain
+PMM1089,pfam:PF00583,Acetyltransferase (GNAT) family
+PMM1089,pfam:PF13673,Acetyltransferase (GNAT) domain
+PMM1090,pfam:PF00278,"Pyridoxal-dependent decarboxylase, C-terminal sheet domain"
+PMM1090,pfam:PF02784,"Pyridoxal-dependent decarboxylase, pyridoxal binding domain"
+PMM1091,pfam:PF02457,DisA bacterial checkpoint controller nucleotide-binding
+PMM1092,pfam:PF01255,Putative undecaprenyl diphosphate synthase
+PMM1093,pfam:PF04055,Radical SAM superfamily
+PMM1093,pfam:PF06968,Biotin and Thiamin Synthesis associated domain
+PMM1094,pfam:PF00581,Rhodanese-like domain
+PMM1094,pfam:PF12368,Rhodanase C-terminal
+PMM1096,pfam:PF04055,Radical SAM superfamily
+PMM1096,pfam:PF16881,N-terminal domain of lipoyl synthase of Radical_SAM family
+PMM1097,pfam:PF00633,Helix-hairpin-helix motif
+PMM1097,pfam:PF02132,"RecR, Cys4-zinc finger domain"
+PMM1097,pfam:PF13662,Toprim domain
+PMM1098,pfam:PF01789,PsbP
+PMM1099,pfam:PF00005,ABC transporter
+PMM1099,pfam:PF00664,ABC transporter transmembrane region
+PMM1101,pfam:PF00270,DEAD/DEAH box helicase
+PMM1101,pfam:PF00271,Helicase conserved C-terminal domain
+PMM1101,pfam:PF03880,DbpA RNA binding domain
+PMM1102,pfam:PF13245,AAA domain
+PMM1102,pfam:PF13538,UvrD-like helicase C-terminal domain
+PMM1102,pfam:PF13604,AAA domain
+PMM1103,pfam:PF00580,UvrD/REP helicase N-terminal domain
+PMM1103,pfam:PF13361,UvrD-like helicase C-terminal domain
+PMM1104,pfam:PF04191,Phospholipid methyltransferase
+PMM1105,pfam:PF04257,"Exodeoxyribonuclease V, gamma subunit"
+PMM1105,pfam:PF17946,RecC C-terminal domain
+PMM1106,pfam:PF10674,Ycf54 protein
+PMM1107,pfam:PF03740,Pyridoxal phosphate biosynthesis protein PdxJ
+PMM1108,pfam:PF01553,Acyltransferase
+PMM1110,pfam:PF01722,BolA-like protein
+PMM1111,pfam:PF00462,Glutaredoxin
+PMM1112,pfam:PF20547,Family of unknown function (DUF6761)
+PMM1113,pfam:PF00072,Response regulator receiver domain
+PMM1113,pfam:PF00486,"Transcriptional regulatory protein, C terminal"
+PMM1115,pfam:PF01266,FAD dependent oxidoreductase
+PMM1115,pfam:PF01593,Flavin containing amine oxidoreductase
+PMM1115,pfam:PF13450,NAD(P)-binding Rossmann-like domain
+PMM1116,pfam:PF01134,Glucose inhibited division protein A
+PMM1117,pfam:PF06298,Photosystem II protein Y (PsbY)
+PMM1118,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1119,pfam:PF04966,"Carbohydrate-selective porin, OprB family"
+PMM1119,pfam:PF13609,Gram-negative porin
+PMM1120,pfam:PF00515,Tetratricopeptide repeat
+PMM1120,pfam:PF00685,Sulfotransferase domain
+PMM1120,pfam:PF07719,Tetratricopeptide repeat
+PMM1120,pfam:PF13181,Tetratricopeptide repeat
+PMM1120,pfam:PF13414,TPR repeat
+PMM1120,pfam:PF13469,Sulfotransferase family
+PMM1122,pfam:PF00156,Phosphoribosyl transferase domain
+PMM1123,pfam:PF04955,HupE / UreJ protein
+PMM1124,pfam:PF03382,"Mycoplasma protein of unknown function, DUF285"
+PMM1124,pfam:PF03797,Autotransporter beta-domain
+PMM1124,pfam:PF12951,Passenger-associated-transport-repeat
+PMM1124,pfam:PF13205,Bacterial Ig-like domain
+PMM1126,pfam:PF01757,Acyltransferase domain
+PMM1126,pfam:PF19040,SGNH domain (fused to AT3 domains)
+PMM1127,pfam:PF13148,Protein of unknown function (DUF3987)
+PMM1127,pfam:PF13481,AAA domain
+PMM1131,pfam:PF20045,Family of unknown function (DUF6447)
+PMM1132,pfam:PF02696,Protein adenylyltransferase SelO
+PMM1133,pfam:PF07883,Cupin domain
+PMM1134,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM1135,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1138,pfam:PF01926,50S ribosome-binding GTPase
+PMM1138,pfam:PF06071,Protein of unknown function (DUF933)
+PMM1139,pfam:PF12700,PF12700
+PMM1139,pfam:PF25917,"RND MFP, barrel-sandwich hybrid domain"
+PMM1139,pfam:PF25967,"RND MFPs, C-terminal permuted SH3 domain"
+PMM1139,pfam:PF25990,YknX-like beta-barrel domain
+PMM1140,pfam:PF00476,DNA polymerase family A
+PMM1140,pfam:PF01367,"5^-3^ exonuclease, C-terminal SAM fold"
+PMM1140,pfam:PF01612,3^-5^ exonuclease
+PMM1140,pfam:PF02739,"5^-3^ exonuclease, N-terminal resolvase-like domain"
+PMM1141,pfam:PF01406,tRNA synthetases class I (C) catalytic domain
+PMM1141,pfam:PF09190,DALR domain
+PMM1141,pfam:PF09334,tRNA synthetases class I (M)
+PMM1142,pfam:PF02670,1-deoxy-D-xylulose 5-phosphate reductoisomerase
+PMM1142,pfam:PF08436,1-deoxy-D-xylulose 5-phosphate reductoisomerase C-terminal domain
+PMM1142,pfam:PF13288,DXP reductoisomerase C-terminal domain
+PMM1144,pfam:PF00326,Prolyl oligopeptidase family
+PMM1144,pfam:PF12146,"Serine aminopeptidase, S33"
+PMM1144,pfam:PF12697,Alpha/beta hydrolase family
+PMM1145,pfam:PF02233,NAD(P) transhydrogenase beta subunit
+PMM1146,pfam:PF12769,"4TM region of pyridine nucleotide transhydrogenase, mitoch"
+PMM1147,pfam:PF01262,"Alanine dehydrogenase/PNT, C-terminal domain"
+PMM1147,pfam:PF05222,"Alanine dehydrogenase/PNT, N-terminal domain"
+PMM1147,pfam:PF12769,"4TM region of pyridine nucleotide transhydrogenase, mitoch"
+PMM1150,pfam:PF00070,Pyridine nucleotide-disulphide oxidoreductase
+PMM1150,pfam:PF00085,Thioredoxin
+PMM1150,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM1151,pfam:PF01176,Translation initiation factor 1A / IF-1
+PMM1152,pfam:PF05368,NmrA-like family
+PMM1152,pfam:PF13460,NAD(P)H-binding
+PMM1152a,pfam:PF08041,PetM family of cytochrome b6f complex subunit 7
+PMM1153,pfam:PF00561,alpha/beta hydrolase fold
+PMM1153,pfam:PF12697,Alpha/beta hydrolase family
+PMM1154,pfam:PF01842,ACT domain
+PMM1154,pfam:PF10369,Small subunit of acetolactate synthase
+PMM1154,pfam:PF13710,ACT domain
+PMM1154,pfam:PF22629,AHAS small subunit-like ACT domain
+PMM1155,pfam:PF00160,Cyclophilin type peptidyl-prolyl cis-trans isomerase/CLD
+PMM1156,pfam:PF02392,Ycf4
+PMM1157,pfam:PF00124,Photosynthetic reaction centre protein
+PMM1158,pfam:PF00421,Photosystem II protein
+PMM1159,pfam:PF02545,Maf-like protein
+PMM1160,pfam:PF01656,CobQ/CobB/MinD/ParA nucleotide binding domain
+PMM1160,pfam:PF07685,CobB/CobQ-like glutamine amidotransferase domain
+PMM1160,pfam:PF13500,AAA domain
+PMM1161,pfam:PF00111,2Fe-2S iron-sulfur cluster binding domain
+PMM1164,pfam:PF13343,Bacterial extracellular solute-binding protein
+PMM1164,pfam:PF13416,Bacterial extracellular solute-binding protein
+PMM1165,pfam:PF02091,Glycyl-tRNA synthetase alpha subunit
+PMM1166,pfam:PF08854,Domain of unknown function (DUF1824)
+PMM1167,pfam:PF01187,Macrophage migration inhibitory factor (MIF)
+PMM1168,pfam:PF08241,Methyltransferase domain
+PMM1170,pfam:PF11866,Protein of unknown function (DUF3386)
+PMM1171,pfam:PF00258,Flavodoxin
+PMM1172,pfam:PF13911,AhpC/TSA antioxidant enzyme
+PMM1173,pfam:PF04193,PQ loop repeat
+PMM1175,pfam:PF03547,Membrane transport protein
+PMM1177,pfam:PF13231,Dolichyl-phosphate-mannose-protein mannosyltransferase
+PMM1178,pfam:PF00534,Glycosyl transferases group 1
+PMM1178,pfam:PF13439,Glycosyltransferase Family 4
+PMM1179,pfam:PF00892,EamA-like transporter family
+PMM1180,pfam:PF01343,Peptidase family S49
+PMM1181,pfam:PF07736,Chorismate mutase type I
+PMM1182,pfam:PF10989,Protein of unknown function (DUF2808)
+PMM1183,pfam:PF00468,Ribosomal protein L34
+PMM1184,pfam:PF00825,Ribonuclease P
+PMM1185,pfam:PF03703,Bacterial PH domain
+PMM1186,pfam:PF02096,60Kd inner membrane protein
+PMM1187,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM1188,pfam:PF00587,"tRNA synthetase class II core domain (G, H, P, S and T)"
+PMM1188,pfam:PF02403,Seryl-tRNA synthetase N-terminal domain
+PMM1189,pfam:PF02163,Peptidase family M50
+PMM1189,pfam:PF13180,PDZ domain
+PMM1190,pfam:PF00253,Ribosomal protein S14p/S29e
+PMM1191,pfam:PF00013,KH domain
+PMM1191,pfam:PF00575,S1 RNA binding domain
+PMM1191,pfam:PF01138,"3^ exoribonuclease family, domain 1"
+PMM1191,pfam:PF03725,"3^ exoribonuclease family, domain 2"
+PMM1191,pfam:PF03726,"Polyribonucleotide nucleotidyltransferase, RNA binding domain"
+PMM1192,pfam:PF00459,Inositol monophosphatase family
+PMM1193,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM1196,pfam:PF00483,Nucleotidyl transferase
+PMM1196,pfam:PF01050,Mannose-6-phosphate isomerase C-terminal
+PMM1196,pfam:PF22640,MannoseP isomerase/GMP-like beta-helix domain
+PMM1197,pfam:PF04932,O-Antigen ligase
+PMM1197,pfam:PF13425,O-antigen ligase like membrane protein
+PMM1198,pfam:PF00485,Phosphoribulokinase / Uridine kinase family
+PMM1198,pfam:PF09594,Glycosyltransferase family 87
+PMM1198,pfam:PF13231,Dolichyl-phosphate-mannose-protein mannosyltransferase
+PMM1198,pfam:PF16192,C-terminal four TMM region of protein-O-mannosyltransferase
+PMM1199,pfam:PF00535,Glycosyl transferase family 2
+PMM1199,pfam:PF04138,"GtrA/DPMS, transmembrane domain"
+PMM1200,pfam:PF00535,Glycosyl transferase family 2
+PMM1201,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1201,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1202,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1203,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1203,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1204,pfam:PF00483,Nucleotidyl transferase
+PMM1205,pfam:PF01041,DegT/DnrJ/EryC1/StrS aminotransferase family
+PMM1206,pfam:PF00485,Phosphoribulokinase / Uridine kinase family
+PMM1206,pfam:PF09594,Glycosyltransferase family 87
+PMM1206,pfam:PF13231,Dolichyl-phosphate-mannose-protein mannosyltransferase
+PMM1206,pfam:PF16192,C-terminal four TMM region of protein-O-mannosyltransferase
+PMM1207,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1208,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1208,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1209,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1209,pfam:PF13950,PF13950
+PMM1209,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1210,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1210,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1211,pfam:PF02563,Polysaccharide biosynthesis/export protein
+PMM1211,pfam:PF10531,SLBB domain
+PMM1212,pfam:PF08241,Methyltransferase domain
+PMM1212,pfam:PF13489,Methyltransferase domain
+PMM1213,pfam:PF00534,Glycosyl transferases group 1
+PMM1214,pfam:PF00483,Nucleotidyl transferase
+PMM1214,pfam:PF08645,Polynucleotide kinase 3 phosphatase
+PMM1214,pfam:PF13242,HAD-hyrolase-like
+PMM1215,pfam:PF01266,FAD dependent oxidoreductase
+PMM1216,pfam:PF00483,Nucleotidyl transferase
+PMM1216,pfam:PF12804,MobA-like NTP transferase domain
+PMM1217,pfam:PF13580,SIS domain
+PMM1218,pfam:PF00294,pfkB family carbohydrate kinase
+PMM1218,pfam:PF01467,Cytidylyltransferase-like
+PMM1219,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1220,pfam:PF00535,Glycosyl transferase family 2
+PMM1221,pfam:PF00534,Glycosyl transferases group 1
+PMM1222,pfam:PF00535,Glycosyl transferase family 2
+PMM1223,pfam:PF00534,Glycosyl transferases group 1
+PMM1223,pfam:PF13439,Glycosyltransferase Family 4
+PMM1224,pfam:PF02563,Polysaccharide biosynthesis/export protein
+PMM1224,pfam:PF10531,SLBB domain
+PMM1225,pfam:PF01656,CobQ/CobB/MinD/ParA nucleotide binding domain
+PMM1225,pfam:PF02706,Chain length determinant protein
+PMM1225,pfam:PF13614,AAA domain
+PMM1225,pfam:PF13807,G-rich domain on putative tyrosine kinase
+PMM1226,pfam:PF14897,EpsG family
+PMM1227,pfam:PF00953,Glycosyl transferase family 4
+PMM1229,pfam:PF00676,Dehydrogenase E1 component
+PMM1230,pfam:PF00676,Dehydrogenase E1 component
+PMM1230,pfam:PF02779,"Transketolase, pyrimidine binding domain"
+PMM1230,pfam:PF02780,"Transketolase, C-terminal domain"
+PMM1231,pfam:PF19480,Domain of unknown function (DUF6016)
+PMM1232,pfam:PF08421,Putative zinc binding domain
+PMM1232,pfam:PF08484,C-methyltransferase C-terminal domain
+PMM1232,pfam:PF13489,Methyltransferase domain
+PMM1233,pfam:PF04321,RmlD substrate binding domain
+PMM1234,pfam:PF00107,Zinc-binding dehydrogenase
+PMM1234,pfam:PF08240,Alcohol dehydrogenase GroES-like domain
+PMM1235,pfam:PF00456,"Transketolase, thiamine diphosphate binding domain"
+PMM1236,pfam:PF02779,"Transketolase, pyrimidine binding domain"
+PMM1236,pfam:PF02780,"Transketolase, C-terminal domain"
+PMM1238,pfam:PF03881,Fructosamine kinase
+PMM1239,pfam:PF00005,ABC transporter
+PMM1239,pfam:PF00664,ABC transporter transmembrane region
+PMM1240,pfam:PF13847,Methyltransferase domain
+PMM1241,pfam:PF08241,Methyltransferase domain
+PMM1241,pfam:PF13489,Methyltransferase domain
+PMM1243,pfam:PF08241,Methyltransferase domain
+PMM1243,pfam:PF13524,Glycosyl transferase-like
+PMM1243,pfam:PF13649,Methyltransferase domain
+PMM1243,pfam:PF13847,Methyltransferase domain
+PMM1244,pfam:PF19451,Family of unknown function (DUF5989)
+PMM1245,pfam:PF19588,Saxitoxin biosynthesis operon protein SxtJ
+PMM1246,pfam:PF02543,Carbamoyltransferase N-terminus
+PMM1246,pfam:PF16861,Carbamoyltransferase C-terminus
+PMM1250,pfam:PF02543,Carbamoyltransferase N-terminus
+PMM1250,pfam:PF16861,Carbamoyltransferase C-terminus
+PMM1250,pfam:PF19588,Saxitoxin biosynthesis operon protein SxtJ
+PMM1251,pfam:PF02543,Carbamoyltransferase N-terminus
+PMM1251,pfam:PF16861,Carbamoyltransferase C-terminus
+PMM1252,pfam:PF00132,Bacterial transferase hexapeptide (six repeats)
+PMM1252,pfam:PF14602,Hexapeptide repeat of succinyl-transferase
+PMM1253,pfam:PF08241,Methyltransferase domain
+PMM1253,pfam:PF13489,Methyltransferase domain
+PMM1253,pfam:PF13649,Methyltransferase domain
+PMM1253,pfam:PF13847,Methyltransferase domain
+PMM1254,pfam:PF00535,Glycosyl transferase family 2
+PMM1256,pfam:PF00535,Glycosyl transferase family 2
+PMM1257,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1257,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1258,pfam:PF01041,DegT/DnrJ/EryC1/StrS aminotransferase family
+PMM1259,pfam:PF01041,DegT/DnrJ/EryC1/StrS aminotransferase family
+PMM1260,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1260,pfam:PF16363,"GDP-mannose 4,6 dehydratase"
+PMM1261,pfam:PF00984,"UDP-glucose/GDP-mannose dehydrogenase family, central domain"
+PMM1261,pfam:PF03720,"UDP-glucose/GDP-mannose dehydrogenase family, UDP binding domain"
+PMM1261,pfam:PF03721,"UDP-glucose/GDP-mannose dehydrogenase family, NAD binding domain"
+PMM1262,pfam:PF00717,Peptidase S24-like
+PMM1262,pfam:PF01726,LexA DNA binding domain
+PMM1263,pfam:PF00185,"Aspartate/ornithine carbamoyltransferase, Asp/Orn binding domain"
+PMM1263,pfam:PF02729,"Aspartate/ornithine carbamoyltransferase, carbamoyl-P binding domain"
+PMM1264,pfam:PF00004,ATPase family associated with various cellular activities (AAA)
+PMM1264,pfam:PF01434,Peptidase family M41
+PMM1264,pfam:PF06480,FtsH Extracellular
+PMM1264,pfam:PF17862,AAA+ lid domain
+PMM1265,pfam:PF00383,Cytidine and deoxycytidylate deaminase zinc-binding region
+PMM1265,pfam:PF01872,RibD C-terminal domain
+PMM1266,pfam:PF11320,Protein of unknown function (DUF3122)
+PMM1268,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM1268,pfam:PF02390,Putative methyltransferase
+PMM1268,pfam:PF05175,Methyltransferase small domain
+PMM1268,pfam:PF12847,Methyltransferase domain
+PMM1269,pfam:PF01513,ATP-NAD kinase N-terminal domain
+PMM1270,pfam:PF01409,tRNA synthetases class II core domain (F)
+PMM1270,pfam:PF02912,"Aminoacyl tRNA synthetase class II, N-terminal domain"
+PMM1271,pfam:PF01975,Survival protein SurE
+PMM1272,pfam:PF12263,Protein of unknown function (DUF3611)
+PMM1273,pfam:PF01687,Riboflavin kinase
+PMM1273,pfam:PF06574,FAD synthetase
+PMM1274,pfam:PF02581,Thiamine monophosphate synthase
+PMM1275,pfam:PF02597,ThiS family
+PMM1278,pfam:PF00731,AIR carboxylase
+PMM1279,pfam:PF03992,Antibiotic biosynthesis monooxygenase
+PMM1280,pfam:PF01746,tRNA (Guanine-1)-methyltransferase TrmD
+PMM1280,pfam:PF02542,YgbB family
+PMM1281,pfam:PF01926,50S ribosome-binding GTPase
+PMM1281,pfam:PF07650,KH domain
+PMM1283,pfam:PF01027,Inhibitor of apoptosis-promoting Bax1
+PMM1284,pfam:PF02562,PhoH-like protein
+PMM1285,pfam:PF00886,Ribosomal protein S16
+PMM1286,pfam:PF00448,"SRP54-type protein, GTPase domain"
+PMM1286,pfam:PF02881,"SRP54-type protein, helical bundle domain"
+PMM1286,pfam:PF02978,Signal peptide binding domain
+PMM1287,pfam:PF00226,DnaJ domain
+PMM1287,pfam:PF13355,"ARC6-like, IMS domain"
+PMM1287,pfam:PF23468,Plastid division regulator alpha solenoid domain
+PMM1287,pfam:PF25515,Plastid division regulator ARM repeat
+PMM1288,pfam:PF00676,Dehydrogenase E1 component
+PMM1289,pfam:PF00140,"Sigma-70 factor, region 1.2"
+PMM1289,pfam:PF04539,Sigma-70 region 3
+PMM1289,pfam:PF04542,Sigma-70 region 2
+PMM1289,pfam:PF04545,"Sigma-70, region 4"
+PMM1290,pfam:PF01256,NAD(P)H-hydrate dehydratase
+PMM1290,pfam:PF03853,YjeF-related protein N-terminus
+PMM1291,pfam:PF03054,tRNA methyl transferase HUP domain
+PMM1292,pfam:PF00795,Carbon-nitrogen hydrolase
+PMM1293,pfam:PF00254,FKBP-type peptidyl-prolyl cis-trans isomerase
+PMM1294,pfam:PF09055,Nickel-containing superoxide dismutase
+PMM1295,pfam:PF00717,Peptidase S24-like
+PMM1297,pfam:PF00218,Indole-3-glycerol phosphate synthase
+PMM1298,pfam:PF00070,Pyridine nucleotide-disulphide oxidoreductase
+PMM1298,pfam:PF02852,"Pyridine nucleotide-disulphide oxidoreductase, dimerisation domain"
+PMM1298,pfam:PF07992,Pyridine nucleotide-disulphide oxidoreductase
+PMM1299,pfam:PF00588,SpoU rRNA Methylase family
+PMM1299,pfam:PF08032,RNA 2^-O ribose methyltransferase substrate binding
+PMM1300,pfam:PF00275,EPSP synthase (3-phosphoshikimate 1-carboxyvinyltransferase)
+PMM1301,pfam:PF00202,Aminotransferase class-III
+PMM1302,pfam:PF08245,Mur ligase middle domain
+PMM1303,pfam:PF01565,FAD binding domain
+PMM1304,pfam:PF01979,Amidohydrolase family
+PMM1304,pfam:PF07969,Amidohydrolase family
+PMM1304,pfam:PF7969,PF7969
+PMM1305,pfam:PF00919,Uncharacterized protein family UPF0004
+PMM1305,pfam:PF01938,TRAM domain
+PMM1305,pfam:PF04055,Radical SAM superfamily
+PMM1306,pfam:PF01820,D-ala D-ala ligase N-terminus
+PMM1306,pfam:PF07478,D-ala D-ala ligase C-terminus
+PMM1308,pfam:PF08478,"POTRA domain, FtsQ-type"
+PMM1309,pfam:PF00091,"Tubulin/FtsZ family, GTPase domain"
+PMM1309,pfam:PF12327,"FtsZ family, C-terminal domain"
+PMM1310,pfam:PF02548,Ketopantoate hydroxymethyltransferase
+PMM1311,pfam:PF04055,Radical SAM superfamily
+PMM1311,pfam:PF06969,HemN C-terminal domain
+PMM1312,pfam:PF01938,TRAM domain
+PMM1312,pfam:PF13638,PIN domain
+PMM1313,pfam:PF00574,Clp protease
+PMM1314,pfam:PF00574,Clp protease
+PMM1315,pfam:PF01450,"Ketol-acid reductoisomerase, C-terminal domain"
+PMM1315,pfam:PF07991,"Acetohydroxy acid isomeroreductase, NADPH-binding domain"
+PMM1316,pfam:PF03186,CobD/Cbib protein
+PMM1317,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1321,pfam:PF00216,Bacterial DNA-binding protein
+PMM1322,pfam:PF00128,"Alpha amylase, catalytic domain"
+PMM1322,pfam:PF02922,Carbohydrate-binding module 48 (Isoamylase N-terminal domain)
+PMM1323,pfam:PF13347,MFS/sugar transport protein
+PMM1324,pfam:PF02405,Permease MlaE
+PMM1325,pfam:PF11317,Protein of unknown function (DUF3119)
+PMM1326,pfam:PF11285,Protein of unknown function (DUF3086)
+PMM1327,pfam:PF02660,Glycerol-3-phosphate acyltransferase
+PMM1328,pfam:PF00215,Orotidine 5^-phosphate decarboxylase / HUMPS family
+PMM1329,pfam:PF00579,tRNA synthetases class I (W and Y)
+PMM1329,pfam:PF01479,S4 domain
+PMM1330,pfam:PF08855,Domain of unknown function (DUF1825)
+PMM1332,pfam:PF00883,"Cytosol aminopeptidase family, catalytic domain"
+PMM1332,pfam:PF02789,"Cytosol aminopeptidase family, N-terminal domain"
+PMM1333,pfam:PF01625,Peptide methionine sulfoxide reductase
+PMM1334,pfam:PF02684,Lipid-A-disaccharide synthetase
+PMM1335,pfam:PF00132,Bacterial transferase hexapeptide (six repeats)
+PMM1335,pfam:PF13720,Udp N-acetylglucosamine O-acyltransferase; Domain 2
+PMM1336,pfam:PF07977,FabA-like domain
+PMM1337,pfam:PF03331,UDP-3-O-acyl N-acetylglycosamine deacetylase
+PMM1338,pfam:PF01103,Omp85 superfamily domain
+PMM1338,pfam:PF07244,Surface antigen variable number repeat
+PMM1338,pfam:PF08479,"POTRA domain, ShlB-type"
+PMM1339,pfam:PF01259,SAICAR synthetase
+PMM1340,pfam:PF01071,"Phosphoribosylglycinamide synthetase, ATP-grasp (A) domain"
+PMM1340,pfam:PF02843,"Phosphoribosylglycinamide synthetase, C domain"
+PMM1340,pfam:PF02844,"Phosphoribosylglycinamide synthetase, N domain"
+PMM1341,pfam:PF00512,His Kinase A (phospho-acceptor) domain
+PMM1341,pfam:PF00672,HAMP domain
+PMM1341,pfam:PF00989,PAS fold
+PMM1341,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM1341,pfam:PF08448,PAS fold
+PMM1342,pfam:PF06745,KaiC
+PMM1343,pfam:PF07689,KaiB domain
+PMM1344,pfam:PF00829,Ribosomal prokaryotic L21 protein
+PMM1345,pfam:PF01016,Ribosomal L27 protein
+PMM1346,pfam:PF13489,Methyltransferase domain
+PMM1347,pfam:PF01509,TruB family pseudouridylate synthase (N terminal domain)
+PMM1347,pfam:PF09142,"tRNA Pseudouridine synthase II, C terminal"
+PMM1347,pfam:PF09157,"Pseudouridine synthase II TruB, C-terminal"
+PMM1347,pfam:PF16198,tRNA pseudouridylate synthase B C-terminal domain
+PMM1348,pfam:PF08486,Stage II sporulation protein
+PMM1349,pfam:PF12706,Beta-lactamase superfamily domain
+PMM1350,pfam:PF00805,Pentapeptide repeats (8 copies)
+PMM1350,pfam:PF13599,Pentapeptide repeat region
+PMM1352,pfam:PF00111,2Fe-2S iron-sulfur cluster binding domain
+PMM1353,pfam:PF06325,Ribosomal protein L11 methyltransferase (PrmA)
+PMM1354,pfam:PF00389,"D-isomer specific 2-hydroxyacid dehydrogenase, catalytic domain"
+PMM1354,pfam:PF01842,ACT domain
+PMM1354,pfam:PF02826,"D-isomer specific 2-hydroxyacid dehydrogenase, NAD binding domain"
+PMM1354,pfam:PF19304,D-3-phosphoglycerate dehydrogenase intervening domain
+PMM1356,pfam:PF01479,S4 domain
+PMM1357,pfam:PF01222,Ergosterol biosynthesis ERG4/ERG24 family
+PMM1357,pfam:PF06966,Protein of unknown function (DUF1295)
+PMM1358,pfam:PF12766,Pyridoxamine 5^-phosphate oxidase
+PMM1359,pfam:PF07681,DoxX
+PMM1360,pfam:PF03441,FAD binding domain of DNA photolyase
+PMM1361,pfam:PF00106,short chain dehydrogenase
+PMM1361,pfam:PF05721,Phytanoyl-CoA dioxygenase (PhyH)
+PMM1363,pfam:PF12518,Protein of unknown function
+PMM1364,pfam:PF02875,"Mur ligase, glutamate ligase domain"
+PMM1364,pfam:PF08245,Mur ligase middle domain
+PMM1366,pfam:PF02678,Pirin
+PMM1366,pfam:PF17954,Quercetinase C-terminal cupin domain
+PMM1367,pfam:PF07799,Protein of unknown function (DUF1643)
+PMM1368,pfam:PF09980,Predicted membrane protein (DUF2214)
+PMM1369,pfam:PF00072,Response regulator receiver domain
+PMM1369,pfam:PF00211,Adenylate and Guanylate cyclase catalytic domain
+PMM1369,pfam:PF00512,His Kinase A (phospho-acceptor) domain
+PMM1369,pfam:PF00989,PAS fold
+PMM1369,pfam:PF01590,GAF domain
+PMM1369,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM1369,pfam:PF08448,PAS fold
+PMM1370,pfam:PF03486,HI0933-like protein Rossmann domain
+PMM1370,pfam:PF22780,HI0933-like protein barrel and H2TH domain
+PMM1371,pfam:PF00117,Glutamine amidotransferase class-I
+PMM1371,pfam:PF00892,EamA-like transporter family
+PMM1371,pfam:PF06418,CTP synthase N-terminus
+PMM1372,pfam:PF05899,EutQ-like cupin domain
+PMM1373,pfam:PF05656,Protein of unknown function (DUF805)
+PMM1376,pfam:PF00076,RNA recognition motif
+PMM1377,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1378,pfam:PF00487,Fatty acid desaturase
+PMM1379,pfam:PF03641,Possible lysine decarboxylase
+PMM1380,pfam:PF13419,Haloacid dehalogenase-like hydrolase
+PMM1381,pfam:PF02586,SOS response associated peptidase (SRAP)
+PMM1382,pfam:PF00487,Fatty acid desaturase
+PMM1382,pfam:PF11960,Domain of unknown function (DUF3474)
+PMM1383,pfam:PF06080,Protein of unknown function (DUF938)
+PMM1384,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1386,pfam:PF03739,Lipopolysaccharide export system permease LptF/LptG
+PMM1387,pfam:PF10999,Protein of unknown function (DUF2839)
+PMM1388,pfam:PF07566,Domain of Unknown Function (DUF1543)
+PMM1389,pfam:PF13640,2OG-Fe(II) oxygenase superfamily
+PMM1390,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1394,pfam:PF07864,Protein of unknown function (DUF1651)
+PMM1396,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1397,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1398,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1399,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1400,pfam:PF02566,OsmC-like protein
+PMM1401,pfam:PF12594,Protein of unknown function (DUF3764)
+PMM1403,pfam:PF01844,HNH endonuclease
+PMM1403,pfam:PF14279,HNH endonuclease
+PMM1406,pfam:PF06835,"Lipopolysaccharide-assembly, LptC-related"
+PMM1409,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM1412,pfam:PF07883,Cupin domain
+PMM1414,pfam:PF11746,Domain of unknown function (DUF3303)
+PMM1415,pfam:PF01738,Dienelactone hydrolase family
+PMM1415,pfam:PF12695,Alpha/beta hydrolase family
+PMM1415,pfam:PF12697,Alpha/beta hydrolase family
+PMM1416,pfam:PF00028,Cadherin domain
+PMM1416,pfam:PF00353,RTX calcium-binding nonapeptide repeat (4 copies)
+PMM1416,pfam:PF07691,PA14 domain
+PMM1416,pfam:PF13448,Domain of unknown function (DUF4114)
+PMM1417,pfam:PF00565,Staphylococcal nuclease homologue
+PMM1417,pfam:PF05901,Excalibur calcium-binding domain
+PMM1418,pfam:PF11319,"Type VI secretion system VasI, EvfG, VC_A0118"
+PMM1421,pfam:PF12518,Protein of unknown function
+PMM1422,pfam:PF04214,"Protein of unknown function, DUF411"
+PMM1423,pfam:PF00462,Glutaredoxin
+PMM1423,pfam:PF07291,Methylamine utilisation protein MauE
+PMM1425,pfam:PF13365,Trypsin-like peptidase domain
+PMM1428,pfam:PF01878,EVE domain
+PMM1429,pfam:PF10929,Protein of unknown function (DUF2811)
+PMM1430,pfam:PF08848,Domain of unknown function (DUF1818)
+PMM1431,pfam:PF01192,RNA polymerase Rpb6
+PMM1432,pfam:PF00012,Hsp70 protein
+PMM1432,pfam:PF06723,MreB/Mbl protein
+PMM1433,pfam:PF00156,Phosphoribosyl transferase domain
+PMM1434,pfam:PF01663,Type I phosphodiesterase / nucleotide pyrophosphatase
+PMM1434,pfam:PF01676,Metalloenzyme superfamily
+PMM1434,pfam:PF06415,BPG-independent PGAM N-terminus (iPGM_N)
+PMM1435,pfam:PF03840,Preprotein translocase SecG subunit
+PMM1436,pfam:PF00118,TCP-1/cpn60 chaperonin family
+PMM1437,pfam:PF00166,Chaperonin 10 Kd subunit
+PMM1438,pfam:PF00006,"ATP synthase alpha/beta family, nucleotide-binding domain"
+PMM1438,pfam:PF00306,"ATP synthase alpha/beta chain, C terminal domain"
+PMM1438,pfam:PF02874,"ATP synthase alpha/beta family, beta-barrel domain"
+PMM1439,pfam:PF00401,"ATP synthase, Delta/Epsilon chain, long alpha-helix domain"
+PMM1439,pfam:PF02823,"ATP synthase, Delta/Epsilon chain, beta-sandwich domain"
+PMM1440,pfam:PF04839,Plastid and cyanobacterial ribosomal protein (PSRP-3 / Ycf65)
+PMM1442,pfam:PF00557,Metallopeptidase family M24
+PMM1442,pfam:PF05195,"Aminopeptidase P, N-terminal domain"
+PMM1443,pfam:PF00571,CBS domain
+PMM1443,pfam:PF01595,Cyclin M transmembrane N-terminal domain
+PMM1444,pfam:PF01926,50S ribosome-binding GTPase
+PMM1444,pfam:PF05128,Domain of unknown function (DUF697)
+PMM1445,pfam:PF01467,Cytidylyltransferase-like
+PMM1446,pfam:PF00795,Carbon-nitrogen hydrolase
+PMM1446,pfam:PF02540,NAD synthase
+PMM1447,pfam:PF11805,Protein of unknown function (DUF3326)
+PMM1449,pfam:PF00111,2Fe-2S iron-sulfur cluster binding domain
+PMM1450,pfam:PF00231,ATP synthase
+PMM1451,pfam:PF00006,"ATP synthase alpha/beta family, nucleotide-binding domain"
+PMM1451,pfam:PF00306,"ATP synthase alpha/beta chain, C terminal domain"
+PMM1451,pfam:PF02874,"ATP synthase alpha/beta family, beta-barrel domain"
+PMM1452,pfam:PF00213,ATP synthase delta (OSCP) subunit
+PMM1453,pfam:PF00430,ATP synthase B/B^ CF(0)
+PMM1454,pfam:PF00430,ATP synthase B/B^ CF(0)
+PMM1455,pfam:PF00137,ATP synthase subunit C
+PMM1456,pfam:PF00119,ATP synthase A chain
+PMM1457,pfam:PF03899,ATP synthase I chain
+PMM1457,pfam:PF12966,"N-ATPase, AtpR subunit"
+PMM1458,pfam:PF01098,Cell cycle protein
+PMM1459,pfam:PF02683,Cytochrome C biogenesis protein transmembrane domain
+PMM1460,pfam:PF05140,ResB-like family
+PMM1461,pfam:PF14489,QueF-like protein
+PMM1463,pfam:PF00543,Nitrogen regulatory protein P-II
+PMM1464,pfam:PF01479,S4 domain
+PMM1464,pfam:PF01728,FtsJ-like methyltransferase
+PMM1465,pfam:PF00206,Lyase
+PMM1465,pfam:PF10397,Adenylosuccinate lyase C-terminus
+PMM1466,pfam:PF00206,Lyase
+PMM1466,pfam:PF10415,Fumarase C C-terminus
+PMM1467,pfam:PF00270,DEAD/DEAH box helicase
+PMM1467,pfam:PF00271,Helicase conserved C-terminal domain
+PMM1467,pfam:PF08148,DSHCT (NUC185) domain
+PMM1468,pfam:PF00155,Aminotransferase class I and II
+PMM1469,pfam:PF12146,"Serine aminopeptidase, S33"
+PMM1470,pfam:PF08241,Methyltransferase domain
+PMM1470,pfam:PF13489,Methyltransferase domain
+PMM1471,pfam:PF13500,AAA domain
+PMM1472,pfam:PF00202,Aminotransferase class-III
+PMM1473,pfam:PF11341,Protein of unknown function (DUF3143)
+PMM1474,pfam:PF00226,DnaJ domain
+PMM1475,pfam:PF02527,rRNA small subunit methyltransferase G
+PMM1476,pfam:PF00248,Aldo/keto reductase family
+PMM1477,pfam:PF13370,4Fe-4S single cluster domain of Ferredoxin I
+PMM1477,pfam:PF13459,4Fe-4S single cluster domain
+PMM1478,pfam:PF06868,Protein of unknown function (DUF1257)
+PMM1479,pfam:PF11211,Protein of unknown function (DUF2997)
+PMM1480,pfam:PF03130,PBS lyase HEAT-like repeat
+PMM1480,pfam:PF13646,HEAT repeats
+PMM1481,pfam:PF04055,Radical SAM superfamily
+PMM1481,pfam:PF13353,4Fe-4S single cluster domain
+PMM1481,pfam:PF13394,PF13394
+PMM1482,pfam:PF00504,Chlorophyll A-B binding protein
+PMM1483,pfam:PF04983,"RNA polymerase Rpb1, domain 3"
+PMM1483,pfam:PF04998,"RNA polymerase Rpb1, domain 5"
+PMM1483,pfam:PF05000,"RNA polymerase Rpb1, domain 4"
+PMM1484,pfam:PF00623,"RNA polymerase Rpb1, domain 2"
+PMM1484,pfam:PF04983,"RNA polymerase Rpb1, domain 3"
+PMM1484,pfam:PF04997,"RNA polymerase Rpb1, domain 1"
+PMM1485,pfam:PF00562,"RNA polymerase Rpb2, domain 6"
+PMM1485,pfam:PF04560,"RNA polymerase Rpb2, domain 7"
+PMM1485,pfam:PF04561,"RNA polymerase Rpb2, domain 2"
+PMM1485,pfam:PF04563,RNA polymerase beta subunit
+PMM1485,pfam:PF04565,"RNA polymerase Rpb2, domain 3"
+PMM1485,pfam:PF10385,RNA polymerase beta subunit external 1 domain
+PMM1486,pfam:PF01026,TatD related DNase
+PMM1487,pfam:PF01649,Ribosomal protein S20
+PMM1488,pfam:PF00815,Histidinol dehydrogenase
+PMM1489,pfam:PF06026,Ribose 5-phosphate isomerase A (phosphoriboisomerase A)
+PMM1490,pfam:PF13180,PDZ domain
+PMM1490,pfam:PF13365,Trypsin-like peptidase domain
+PMM1491,pfam:PF02576,RimP N-terminal domain
+PMM1492,pfam:PF00013,KH domain
+PMM1492,pfam:PF08529,NusA N-terminal domain
+PMM1492,pfam:PF13184,NusA-like first KH domain
+PMM1492,pfam:PF26594,NusA-like second KH domain
+PMM1493,pfam:PF04296,Protein of unknown function (DUF448)
+PMM1494,pfam:PF00009,Elongation factor Tu GTP binding domain
+PMM1494,pfam:PF03144,Elongation factor Tu domain 2
+PMM1494,pfam:PF04760,"Translation initiation factor IF-2, N-terminal region"
+PMM1494,pfam:PF11987,Translation-initiation factor 2
+PMM1495,pfam:PF11998,Low psii accumulation1 / Rep27
+PMM1496,pfam:PF13231,Dolichyl-phosphate-mannose-protein mannosyltransferase
+PMM1497,pfam:PF00535,Glycosyl transferase family 2
+PMM1497,pfam:PF07021,Methionine biosynthesis protein MetW
+PMM1497,pfam:PF08242,Methyltransferase domain
+PMM1497,pfam:PF13489,Methyltransferase domain
+PMM1497,pfam:PF13649,Methyltransferase domain
+PMM1498,pfam:PF04055,Radical SAM superfamily
+PMM1499,pfam:PF02617,ATP-dependent Clp protease adaptor protein ClpS
+PMM1500,pfam:PF00155,Aminotransferase class I and II
+PMM1501,pfam:PF00575,S1 RNA binding domain
+PMM1501,pfam:PF10150,Ribonuclease E/G family
+PMM1502,pfam:PF01351,Ribonuclease HII
+PMM1503,pfam:PF09366,Protein of unknown function (DUF1997)
+PMM1504,pfam:PF00800,Prephenate dehydratase
+PMM1504,pfam:PF01842,ACT domain
+PMM1505,pfam:PF08241,Methyltransferase domain
+PMM1506,pfam:PF02190,ATP-dependent protease La (LON) substrate-binding domain
+PMM1507,pfam:PF00338,Ribosomal protein S10p/S20e
+PMM1508,pfam:PF00009,Elongation factor Tu GTP binding domain
+PMM1508,pfam:PF03143,Elongation factor Tu C-terminal domain
+PMM1508,pfam:PF03144,Elongation factor Tu domain 2
+PMM1509,pfam:PF00009,Elongation factor Tu GTP binding domain
+PMM1509,pfam:PF00679,Elongation factor G C-terminus
+PMM1509,pfam:PF03144,Elongation factor Tu domain 2
+PMM1509,pfam:PF03764,"Elongation factor G, domain IV"
+PMM1509,pfam:PF14492,"Elongation Factor G, domain III"
+PMM1510,pfam:PF00177,Ribosomal protein S7p/S5e
+PMM1511,pfam:PF00164,Ribosomal protein S12/S23
+PMM1512,pfam:PF00310,Glutamine amidotransferases class-II
+PMM1512,pfam:PF01493,GXGXG motif
+PMM1512,pfam:PF01645,Conserved region in glutamate synthase
+PMM1512,pfam:PF04898,Glutamate synthase central domain
+PMM1513,pfam:PF03795,YCII-related domain
+PMM1514,pfam:PF04055,Radical SAM superfamily
+PMM1514,pfam:PF16881,N-terminal domain of lipoyl synthase of Radical_SAM family
+PMM1515,pfam:PF00239,"Resolvase, N terminal domain"
+PMM1517,pfam:PF13354,Beta-lactamase enzyme family
+PMM1518,pfam:PF00877,NlpC/P60 family
+PMM1518,pfam:PF08239,Bacterial SH3 domain
+PMM1519,pfam:PF02605,Photosystem I reaction centre subunit XI
+PMM1520,pfam:PF00796,Photosystem I reaction centre subunit VIII
+PMM1521,pfam:PF13646,HEAT repeats
+PMM1522,pfam:PF00535,Glycosyl transferase family 2
+PMM1523,pfam:PF00223,Photosystem I psaA/psaB protein
+PMM1524,pfam:PF00223,Photosystem I psaA/psaB protein
+PMM1525,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM1525,pfam:PF01890,Cobalamin synthesis G C-terminus
+PMM1525,pfam:PF11760,Cobalamin synthesis G N-terminal
+PMM1525,pfam:PF11761,Cobalamin biosynthesis central region
+PMM1526,pfam:PF00702,haloacid dehalogenase-like hydrolase
+PMM1526,pfam:PF13419,Haloacid dehalogenase-like hydrolase
+PMM1527,pfam:PF00842,"Alanine racemase, C-terminal domain"
+PMM1527,pfam:PF01168,"Alanine racemase, N-terminal domain"
+PMM1528,pfam:PF01844,HNH endonuclease
+PMM1528,pfam:PF14279,HNH endonuclease
+PMM1529,pfam:PF00472,RF-1 domain
+PMM1529,pfam:PF03462,PCRF domain
+PMM1530,pfam:PF01197,Ribosomal protein L31
+PMM1531,pfam:PF00380,Ribosomal protein S9/S16
+PMM1532,pfam:PF00572,Ribosomal protein L13
+PMM1533,pfam:PF01416,tRNA pseudouridine synthase
+PMM1534,pfam:PF01196,Ribosomal protein L17
+PMM1535,pfam:PF01000,RNA polymerase Rpb3/RpoA insert domain
+PMM1535,pfam:PF01193,RNA polymerase Rpb3/Rpb11 dimerisation domain
+PMM1535,pfam:PF03118,"Bacterial RNA polymerase, alpha chain C terminal domain"
+PMM1536,pfam:PF00411,Ribosomal protein S11
+PMM1537,pfam:PF00416,Ribosomal protein S13/S18
+PMM1538,pfam:PF00444,Ribosomal protein L36
+PMM1539,pfam:PF00406,Adenylate kinase
+PMM1540,pfam:PF00344,SecY
+PMM1541,pfam:PF00828,"Ribosomal proteins 50S-L15, 50S-L18e, 60S-L27A"
+PMM1542,pfam:PF00333,"Ribosomal protein S5, N-terminal domain"
+PMM1542,pfam:PF03719,"Ribosomal protein S5, C-terminal domain"
+PMM1543,pfam:PF00861,"Ribosomal L18 of archaea, bacteria, mitoch. and chloroplast"
+PMM1544,pfam:PF00347,Ribosomal protein L6
+PMM1545,pfam:PF00410,Ribosomal protein S8
+PMM1546,pfam:PF00281,Ribosomal protein L5
+PMM1546,pfam:PF00673,ribosomal L5P family C-terminus
+PMM1547,pfam:PF00467,KOW motif
+PMM1547,pfam:PF17136,"Large ribosomal subunit protein uL24, C-terminal domain"
+PMM1548,pfam:PF00238,Ribosomal protein L14p/L23e
+PMM1549,pfam:PF00366,Ribosomal protein S17
+PMM1550,pfam:PF00831,Ribosomal L29 protein
+PMM1551,pfam:PF00252,Ribosomal protein L16p/L10e
+PMM1552,pfam:PF00189,"Ribosomal protein S3, C-terminal domain"
+PMM1552,pfam:PF07650,KH domain
+PMM1553,pfam:PF00237,Ribosomal protein L22p/L17e
+PMM1554,pfam:PF00203,Ribosomal protein S19
+PMM1555,pfam:PF00181,"Ribosomal Proteins L2, RNA binding N-terminal domain"
+PMM1555,pfam:PF03947,"Ribosomal Proteins L2, C-terminal domain"
+PMM1556,pfam:PF00276,Ribosomal protein L23
+PMM1557,pfam:PF00573,Ribosomal protein L4/L1 family
+PMM1558,pfam:PF00297,Ribosomal protein L3
+PMM1559,pfam:PF11909,NADH-quinone oxidoreductase cyanobacterial subunit N
+PMM1560,pfam:PF00037,4Fe-4S binding domain
+PMM1560,pfam:PF12617,Light dependent period A C-terminal domain
+PMM1560,pfam:PF12837,4Fe-4S binding domain
+PMM1560,pfam:PF25160,LdpA Fe-S cluster-binding domain
+PMM1561,pfam:PF00702,haloacid dehalogenase-like hydrolase
+PMM1561,pfam:PF13419,Haloacid dehalogenase-like hydrolase
+PMM1562,pfam:PF00154,RecA N-terminal domain
+PMM1563,pfam:PF10999,Protein of unknown function (DUF2839)
+PMM1564,pfam:PF13307,Helicase C-terminal domain
+PMM1565,pfam:PF02153,"Prephenate dehydrogenase, nucleotide-binding domain"
+PMM1565,pfam:PF20463,"Prephenate dehydrogenase, dimerization domain"
+PMM1566,pfam:PF01593,Flavin containing amine oxidoreductase
+PMM1566,pfam:PF13450,NAD(P)-binding Rossmann-like domain
+PMM1567,pfam:PF03881,Fructosamine kinase
+PMM1568,pfam:PF14159,CAAD domains of cyanobacterial aminoacyl-tRNA synthetase
+PMM1569,pfam:PF00581,Rhodanese-like domain
+PMM1569,pfam:PF00899,ThiF family
+PMM1569,pfam:PF05237,PF05237
+PMM1570,pfam:PF02572,ATP:corrinoid adenosyltransferase BtuR/CobO/CobP
+PMM1571,pfam:PF00733,Asparagine synthase
+PMM1571,pfam:PF02540,NAD synthase
+PMM1572,pfam:PF02675,S-adenosylmethionine decarboxylase
+PMM1573,pfam:PF02463,RecF/RecN/SMC N terminal domain
+PMM1575,pfam:PF00311,Phosphoenolpyruvate carboxylase
+PMM1576,pfam:PF04107,Glutamate-cysteine ligase family 2(GCS2)
+PMM1577,pfam:PF00425,chorismate binding enzyme
+PMM1577,pfam:PF04715,"Anthranilate synthase component I, N terminal region"
+PMM1578,pfam:PF02531,PsaD
+PMM1579,pfam:PF00512,His Kinase A (phospho-acceptor) domain
+PMM1580,pfam:PF01098,Cell cycle protein
+PMM1581,pfam:PF01883,Iron-sulfur cluster assembly protein
+PMM1581,pfam:PF10609,NUBPL iron-transfer P-loop NTPase
+PMM1581,pfam:PF13614,AAA domain
+PMM1582,pfam:PF01218,Coproporphyrinogen III oxidase
+PMM1583,pfam:PF12046,Cofactor assembly of complex C subunit B
+PMM1584,pfam:PF01612,3^-5^ exonuclease
+PMM1589,pfam:PF00586,"AIR synthase related protein, N-terminal domain"
+PMM1589,pfam:PF02769,"AIR synthase related protein, C-terminal domain"
+PMM1590,pfam:PF02224,Cytidylate kinase
+PMM1590,pfam:PF02569,Pantoate-beta-alanine ligase
+PMM1591,pfam:PF01451,Low molecular weight phosphotyrosine protein phosphatase
+PMM1592,pfam:PF05996,Ferredoxin-dependent bilin reductase
+PMM1593,pfam:PF05996,Ferredoxin-dependent bilin reductase
+PMM1594,pfam:PF01126,Heme oxygenase
+PMM1596,pfam:PF00180,Isocitrate/isopropylmalate dehydrogenase
+PMM1597,pfam:PF07005,Sugar-binding N-terminal domain
+PMM1597,pfam:PF17042,Nucleotide-binding C-terminal domain
+PMM1598,pfam:PF01263,Aldose 1-epimerase
+PMM1599,pfam:PF00561,alpha/beta hydrolase fold
+PMM1599,pfam:PF12697,Alpha/beta hydrolase family
+PMM1600,pfam:PF00999,"Sodium/hydrogen exchanger, transmembrane"
+PMM1601,pfam:PF00343,Carbohydrate phosphorylase
+PMM1601,pfam:PF11897,Protein of unknown function (DUF3417)
+PMM1603,pfam:PF00035,Double-stranded RNA binding motif
+PMM1603,pfam:PF14622,Ribonuclease-III-like
+PMM1604,pfam:PF11623,NAD(P)H dehydrogenase subunit S
+PMM1605,pfam:PF01782,RimM N-terminal domain
+PMM1605,pfam:PF05239,PRC-barrel domain
+PMM1606,pfam:PF01380,SIS domain
+PMM1606,pfam:PF13522,Glutamine amidotransferase domain
+PMM1607,pfam:PF00037,4Fe-4S binding domain
+PMM1607,pfam:PF12838,4Fe-4S dicluster domain
+PMM1608,pfam:PF00550,Phosphopantetheine attachment site
+PMM1609,pfam:PF00109,"Beta-ketoacyl synthase, N-terminal domain"
+PMM1609,pfam:PF02801,"Beta-ketoacyl synthase, C-terminal domain"
+PMM1610,pfam:PF00456,"Transketolase, thiamine diphosphate binding domain"
+PMM1610,pfam:PF02779,"Transketolase, pyrimidine binding domain"
+PMM1610,pfam:PF02780,"Transketolase, C-terminal domain"
+PMM1610,pfam:PF22613,Transketolase-like TK C-terminal domain
+PMM1611,pfam:PF01964,Radical SAM ThiC family
+PMM1612,pfam:PF11384,Protein of unknown function (DUF3188)
+PMM1613,pfam:PF01546,Peptidase family M20/M25/M40
+PMM1613,pfam:PF07687,Peptidase dimerisation domain
+PMM1614,pfam:PF00515,Tetratricopeptide repeat
+PMM1614,pfam:PF07719,Tetratricopeptide repeat
+PMM1614,pfam:PF13174,Tetratricopeptide repeat
+PMM1614,pfam:PF13414,TPR repeat
+PMM1614,pfam:PF13432,Tetratricopeptide repeat
+PMM1615,pfam:PF05491,RuvB C-terminal winged helix domain
+PMM1615,pfam:PF05496,Holliday junction DNA helicase RuvB P-loop domain
+PMM1616,pfam:PF01668,SmpB protein
+PMM1618,pfam:PF00152,"tRNA synthetases class II (D, K and N)"
+PMM1618,pfam:PF01336,OB-fold nucleic acid binding domain
+PMM1618,pfam:PF13619,KTSC domain
+PMM1619,pfam:PF00072,Response regulator receiver domain
+PMM1619,pfam:PF00486,"Transcriptional regulatory protein, C terminal"
+PMM1621,pfam:PF04085,"Rod shape-determining protein MreC, barrel core"
+PMM1622,pfam:PF06723,MreB/Mbl protein
+PMM1623,pfam:PF00436,Single-strand binding protein family
+PMM1624,pfam:PF09335,VTT domain
+PMM1625,pfam:PF00670,"S-adenosyl-L-homocysteine hydrolase, NAD binding domain"
+PMM1625,pfam:PF05221,S-adenosyl-L-homocysteine hydrolase
+PMM1626,pfam:PF02367,Threonylcarbamoyl adenosine biosynthesis protein TsaE
+PMM1627,pfam:PF00294,pfkB family carbohydrate kinase
+PMM1628,pfam:PF12697,Alpha/beta hydrolase family
+PMM1629,pfam:PF00140,"Sigma-70 factor, region 1.2"
+PMM1629,pfam:PF04539,Sigma-70 region 3
+PMM1629,pfam:PF04542,Sigma-70 region 2
+PMM1629,pfam:PF04545,"Sigma-70, region 4"
+PMM1630,pfam:PF00571,CBS domain
+PMM1630,pfam:PF01769,Divalent cation transporter
+PMM1630,pfam:PF03448,MgtE intracellular N domain
+PMM1631,pfam:PF02537,"CrcB-like protein, Camphor Resistance (CrcB)"
+PMM1632,pfam:PF02537,"CrcB-like protein, Camphor Resistance (CrcB)"
+PMM1634,pfam:PF00204,DNA gyrase B
+PMM1634,pfam:PF00986,"DNA gyrase B subunit, carboxyl terminus"
+PMM1634,pfam:PF01751,Toprim domain
+PMM1634,pfam:PF02518,"Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase"
+PMM1634,pfam:PF14890,Intein splicing domain
+PMM1635,pfam:PF01715,IPP transferase
+PMM1636,pfam:PF00707,"Translation initiation factor IF-3, C-terminal domain"
+PMM1636,pfam:PF05198,"Translation initiation factor IF-3, N-terminal domain"
+PMM1637,pfam:PF00392,"Bacterial regulatory proteins, gntR family"
+PMM1638,pfam:PF00132,Bacterial transferase hexapeptide (six repeats)
+PMM1638,pfam:PF06426,"Serine acetyltransferase, N-terminal"
+PMM1639,pfam:PF01043,SecA preprotein cross-linking domain
+PMM1639,pfam:PF07516,SecA Wing and Scaffold domain
+PMM1639,pfam:PF07517,SecA DEAD-like domain
+PMM1640,pfam:PF00583,Acetyltransferase (GNAT) family
+PMM1640,pfam:PF13508,Acetyltransferase (GNAT) domain
+PMM1641,pfam:PF04138,"GtrA/DPMS, transmembrane domain"
+PMM1642,pfam:PF12680,SnoaL-like domain
+PMM1643,pfam:PF00885,"6,7-dimethyl-8-ribityllumazine synthase"
+PMM1644,pfam:PF01737,YCF9
+PMM1645,pfam:PF00488,MutS domain V
+PMM1645,pfam:PF01624,MutS domain I
+PMM1645,pfam:PF05188,MutS domain II
+PMM1645,pfam:PF05190,MutS family domain IV
+PMM1645,pfam:PF05192,MutS domain III
+PMM1646,pfam:PF02570,Precorrin-8X methylmutase
+PMM1647,pfam:PF06144,"DNA polymerase III, delta subunit"
+PMM1647,pfam:PF21694,"DNA polymerase III delta subunit, C-terminal domain"
+PMM1648,pfam:PF00696,Amino acid kinase family
+PMM1648,pfam:PF01842,ACT domain
+PMM1648,pfam:PF13840,ACT domain
+PMM1648,pfam:PF22468,ACT domain
+PMM1649,pfam:PF00271,Helicase conserved C-terminal domain
+PMM1649,pfam:PF02151,UvrB/uvrC motif
+PMM1649,pfam:PF04851,"Type III restriction enzyme, res subunit"
+PMM1649,pfam:PF12344,Ultra-violet resistance protein B
+PMM1650,pfam:PF04481,Protein of unknown function (DUF561)
+PMM1651,pfam:PF01171,PP-loop domain
+PMM1651,pfam:PF09179,TilS substrate binding domain
+PMM1652,pfam:PF00753,Metallo-beta-lactamase superfamily
+PMM1652,pfam:PF07521,Zn-dependent metallo-hydrolase RNA specificity domain
+PMM1652,pfam:PF17770,Ribonuclease J C-terminal domain
+PMM1652,pfam:PF22505,"Ribonuclease J, beta-CASP domain"
+PMM1653,pfam:PF00701,Dihydrodipicolinate synthetase family
+PMM1654,pfam:PF01118,"Semialdehyde dehydrogenase, NAD binding domain"
+PMM1654,pfam:PF02774,"Semialdehyde dehydrogenase, dimerisation domain"
+PMM1655,pfam:PF00254,FKBP-type peptidyl-prolyl cis-trans isomerase
+PMM1655,pfam:PF05697,Bacterial trigger factor protein (TF)
+PMM1655,pfam:PF05698,Bacterial trigger factor protein (TF) C-terminus
+PMM1656,pfam:PF00574,Clp protease
+PMM1657,pfam:PF06689,ClpX C4-type zinc finger
+PMM1657,pfam:PF07724,AAA domain (Cdc48 subfamily)
+PMM1657,pfam:PF10431,"C-terminal, D2-small domain, of ClpB protein"
+PMM1658,pfam:PF12169,DNA polymerase III subunits gamma and tau domain III
+PMM1658,pfam:PF13177,"DNA polymerase III, delta subunit"
+PMM1658,pfam:PF22608,"DNA polymerase III clamp loader subunit, ATPase lid domain"
+PMM1658,pfam:PF23007,"STICHEL, DnaA_N-like alpha-beta domain"
+PMM1659,pfam:PF00535,Glycosyl transferase family 2
+PMM1659,pfam:PF13641,Glycosyltransferase like family 2
+PMM1660,pfam:PF08486,Stage II sporulation protein
+PMM1661,pfam:PF01632,Ribosomal protein L35
+PMM1662,pfam:PF00453,Ribosomal protein L20
+PMM1663,pfam:PF00515,Tetratricopeptide repeat
+PMM1663,pfam:PF07719,Tetratricopeptide repeat
+PMM1663,pfam:PF13176,Tetratricopeptide repeat
+PMM1663,pfam:PF13181,Tetratricopeptide repeat
+PMM1663,pfam:PF13414,TPR repeat
+PMM1664,pfam:PF01266,FAD dependent oxidoreductase
+PMM1664,pfam:PF05690,Thiazole biosynthesis protein ThiG
+PMM1665,pfam:PF01370,NAD dependent epimerase/dehydratase family
+PMM1666,pfam:PF00534,Glycosyl transferases group 1
+PMM1666,pfam:PF13439,Glycosyltransferase Family 4
+PMM1666,pfam:PF13579,Glycosyl transferase 4-like domain
+PMM1668,pfam:PF02347,Glycine cleavage system P-protein
+PMM1668,pfam:PF21478,"Glycine dehydrogenase, C-terminal domain"
+PMM1669,pfam:PF01597,Glycine cleavage H-protein
+PMM1670,pfam:PF06838,Methionine gamma-lyase
+PMM1672,pfam:PF00487,Fatty acid desaturase
+PMM1673,pfam:PF01281,"Ribosomal protein L9, N-terminal domain"
+PMM1673,pfam:PF03948,"Ribosomal protein L9, C-terminal domain"
+PMM1674,pfam:PF00772,DnaB-like helicase N terminal domain
+PMM1674,pfam:PF03796,DnaB-like helicase C terminal domain
+PMM1674,pfam:PF14528,LAGLIDADG-like domain
+PMM1674,pfam:PF14890,Intein splicing domain
+PMM1675,pfam:PF01134,Glucose inhibited division protein A
+PMM1675,pfam:PF13932,tRNA modifying enzyme MnmG/GidA C-terminal helical bundle
+PMM1676,pfam:PF01947,Chorismate pyruvate-lyase Rv2949c-like
+PMM1677,pfam:PF10263,SprT-like family
+PMM1677,pfam:PF17283,SprT-like zinc ribbon domain
+PMM1679,pfam:PF01068,ATP dependent DNA ligase domain
+PMM1679,pfam:PF14743,DNA ligase OB-like domain
+PMM1681,pfam:PF09335,VTT domain
+PMM1682,pfam:PF00133,"tRNA synthetases class I (I, L, M and V)"
+PMM1682,pfam:PF08264,Anticodon-binding domain of tRNA ligase
+PMM1682,pfam:PF10458,Valyl tRNA synthetase tRNA binding arm
+PMM1682,pfam:PF14159,CAAD domains of cyanobacterial aminoacyl-tRNA synthetase
+PMM1684,pfam:PF03819,MazG nucleotide pyrophosphohydrolase domain
+PMM1685,pfam:PF01564,Spermine/spermidine synthase domain
+PMM1685,pfam:PF02675,S-adenosylmethionine decarboxylase
+PMM1685,pfam:PF17284,Spermidine synthase tetramerisation domain
+PMM1686,pfam:PF00491,Arginase family
+PMM1687,pfam:PF01571,GCVT N-terminal domain
+PMM1687,pfam:PF08669,Glycine cleavage T-protein C-terminal barrel domain
+PMM1688,pfam:PF00152,"tRNA synthetases class II (D, K and N)"
+PMM1688,pfam:PF01336,OB-fold nucleic acid binding domain
+PMM1688,pfam:PF02938,GAD domain
+PMM1689,pfam:PF00117,Glutamine amidotransferase class-I
+PMM1689,pfam:PF06418,CTP synthase N-terminus
+PMM1690,pfam:PF04055,Radical SAM superfamily
+PMM1690,pfam:PF13394,PF13394
+PMM1691,pfam:PF06508,Queuosine biosynthesis protein QueC
+PMM1692,pfam:PF00425,chorismate binding enzyme
+PMM1692,pfam:PF04715,"Anthranilate synthase component I, N terminal region"
+PMM1693,pfam:PF01063,Amino-transferase class IV
+PMM1694,pfam:PF00590,Tetrapyrrole (Corrin/Porphyrin) Methylases
+PMM1695,pfam:PF00083,Sugar (and other) transporter
+PMM1695,pfam:PF07690,Major Facilitator Superfamily
+PMM1696,pfam:PF02503,Polyphosphate kinase middle domain
+PMM1696,pfam:PF13089,Polyphosphate kinase N-terminal domain
+PMM1696,pfam:PF13090,Polyphosphate kinase C-terminal domain 2
+PMM1696,pfam:PF17941,Polyphosphate kinase C-terminal domain 1
+PMM1697,pfam:PF00140,"Sigma-70 factor, region 1.2"
+PMM1697,pfam:PF04539,Sigma-70 region 3
+PMM1697,pfam:PF04542,Sigma-70 region 2
+PMM1697,pfam:PF04545,"Sigma-70, region 4"
+PMM1698,pfam:PF01148,Cytidylyltransferase family
+PMM1699,pfam:PF00793,DAHP synthetase I family
+PMM1700,pfam:PF00330,Aconitase family (aconitate hydratase)
+PMM1700,pfam:PF06434,Aconitate hydratase 2 N-terminus
+PMM1700,pfam:PF11791,Aconitate B N-terminal domain
+PMM1701,pfam:PF00571,CBS domain
+PMM1701,pfam:PF00582,Universal stress protein family
+PMM1701,pfam:PF00654,Voltage gated chloride channel
+PMM1702,pfam:PF00551,Formyl transferase
+PMM1702,pfam:PF01842,ACT domain
+PMM1703,pfam:PF01266,FAD dependent oxidoreductase
+PMM1704,pfam:PF00012,Hsp70 protein
+PMM1705,pfam:PF01488,Shikimate / quinate 5-dehydrogenase
+PMM1705,pfam:PF08501,Shikimate dehydrogenase substrate binding domain
+PMM1706,pfam:PF01250,Ribosomal protein S6
+PMM1707,pfam:PF00764,Arginosuccinate synthase N-terminal HUP domain
+PMM1708,pfam:PF11332,Protein of unknown function (DUF3134)
+PMM1709,pfam:PF00953,Glycosyl transferase family 4
+PMM1709,pfam:PF10555,Phospho-N-acetylmuramoyl-pentapeptide-transferase signature 1
+PMM1711,pfam:PF00534,Glycosyl transferases group 1
+PMM1711,pfam:PF00862,Sucrose synthase first GT-B domain
+PMM1711,pfam:PF05116,Sucrose-6F-phosphate phosphohydrolase
+PMM1711,pfam:PF13439,Glycosyltransferase Family 4
+PMM1711,pfam:PF13579,Glycosyl transferase 4-like domain
+PMM1712,pfam:PF00005,ABC transporter
+PMM1712,pfam:PF17755,UvrA DNA-binding domain
+PMM1712,pfam:PF17760,UvrA interaction domain
+PMM1713,pfam:PF02463,RecF/RecN/SMC N terminal domain
+PMM1714,pfam:PF03109,ABC1 atypical kinase-like domain
+PMM1715,pfam:PF07176,Alpha/beta hydrolase of unknown function (DUF1400)
+PMM1716,pfam:PF00291,Pyridoxal-phosphate dependent enzyme
+PMM1723,pfam:PF00487,Fatty acid desaturase
+PMM1841,pfam:PF04851,"Type III restriction enzyme, res subunit"
+PMM1841,pfam:PF07669,Eco57I restriction-modification methylase
+PMM1843,pfam:PF00589,Phage integrase family
+PMM1846,pfam:PF14105,Domain of unknown function (DUF4278)
+PMM1855,pfam:PF10999,Protein of unknown function (DUF2839)
+PMM1900,pfam:PF05969,Photosystem II complex subunit Ycf12
+PMM1933,pfam:PF13240,zinc-ribbon domain
+PMM1941,pfam:PF10999,Protein of unknown function (DUF2839)
+PMM1972,pfam:PF19451,Family of unknown function (DUF5989)
+PMM2002,pfam:PF12594,Protein of unknown function (DUF3764)
+PMM2063,pfam:PF13172,PF13172
+TX50_RS09255,pfam:PF10013,Uncharacterized protein conserved in bacteria (DUF2256)
+TX50_RS09260,pfam:PF14105,Domain of unknown function (DUF4278)

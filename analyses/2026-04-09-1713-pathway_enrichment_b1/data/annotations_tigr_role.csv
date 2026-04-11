@@ -1,0 +1,1975 @@
+locus_tag,term_id,term_name
+PMM0001,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0002,tigr.role:156,Hypothetical proteins / Conserved
+PMM0003,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0004,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0005,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0006,tigr.role:157,Unknown function / General
+PMM0007,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0008,tigr.role:156,Hypothetical proteins / Conserved
+PMM0009,tigr.role:133,Transcription / Other
+PMM0010,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0011,tigr.role:700,Signal transduction / PTS
+PMM0012,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0013,tigr.role:262,Regulatory functions / RNA interactions
+PMM0014,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0015,tigr.role:140,Protein fate / Protein modification and repair
+PMM0015,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0016,tigr.role:136,Protein synthesis / Other
+PMM0016,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0017,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0018,tigr.role:156,Hypothetical proteins / Conserved
+PMM0019,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0020,tigr.role:156,Hypothetical proteins / Conserved
+PMM0021,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0022,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0023,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0023,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0024,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0025,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0026,tigr.role:169,Protein synthesis / Translation factors
+PMM0027,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0028,tigr.role:84,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridoxine"
+PMM0029,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0030,tigr.role:856,Not Found
+PMM0031,tigr.role:123,"Purines, pyrimidines, nucleosides, and nucleotides / 2^-Deoxyribonucleotide metabolism"
+PMM0032,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0033,tigr.role:156,Hypothetical proteins / Conserved
+PMM0034,tigr.role:156,Hypothetical proteins / Conserved
+PMM0035,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0036,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0037,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0038,tigr.role:183,DNA metabolism / Restriction/modification
+PMM0039,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0040,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0041,tigr.role:112,Energy metabolism / Electron transport
+PMM0042,tigr.role:112,Energy metabolism / Electron transport
+PMM0043,tigr.role:112,Energy metabolism / Electron transport
+PMM0044,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0045,tigr.role:104,Central intermediary metabolism / Polyamine biosynthesis
+PMM0046,tigr.role:123,"Purines, pyrimidines, nucleosides, and nucleotides / 2^-Deoxyribonucleotide metabolism"
+PMM0046,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0046,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0047,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0048,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0049,tigr.role:83,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pantothenate and coenzyme A"
+PMM0050,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0051,tigr.role:157,Unknown function / General
+PMM0052,tigr.role:84,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridoxine"
+PMM0053,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0054,tigr.role:156,Hypothetical proteins / Conserved
+PMM0055,tigr.role:156,Hypothetical proteins / Conserved
+PMM0056,tigr.role:156,Hypothetical proteins / Conserved
+PMM0057,tigr.role:170,DNA metabolism / Chromosome-associated proteins
+PMM0057,tigr.role:93,Cellular processes / Cell division
+PMM0058,tigr.role:157,Unknown function / General
+PMM0059,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0060,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0061,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0061,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0062,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0063,tigr.role:156,Hypothetical proteins / Conserved
+PMM0063,tigr.role:157,Unknown function / General
+PMM0064,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0065,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0066,tigr.role:156,Hypothetical proteins / Conserved
+PMM0067,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0068,tigr.role:140,Protein fate / Protein modification and repair
+PMM0069,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0070,tigr.role:69,Amino acid biosynthesis / Other
+PMM0071,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0072,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0073,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0073,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0074,tigr.role:156,Hypothetical proteins / Conserved
+PMM0075,tigr.role:133,Transcription / Other
+PMM0076,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0076,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0076,tigr.role:119,Energy metabolism / Sugars
+PMM0077,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0078,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0078,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0079,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0079,tigr.role:96,Cellular processes / Detoxification
+PMM0080,tigr.role:83,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pantothenate and coenzyme A"
+PMM0081,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0082,tigr.role:112,Energy metabolism / Electron transport
+PMM0082,tigr.role:263,Regulatory functions / Protein interactions
+PMM0083,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0084,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0085,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0086,tigr.role:156,Hypothetical proteins / Conserved
+PMM0087,tigr.role:156,Hypothetical proteins / Conserved
+PMM0088,tigr.role:156,Hypothetical proteins / Conserved
+PMM0089,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0090,tigr.role:189,Protein fate / Other
+PMM0090,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0091,tigr.role:152,Mobile and extrachromosomal element functions / Prophage functions
+PMM0092,tigr.role:156,Hypothetical proteins / Conserved
+PMM0093,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0094,tigr.role:156,Hypothetical proteins / Conserved
+PMM0095,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0096,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0097,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0098,tigr.role:156,Hypothetical proteins / Conserved
+PMM0099,tigr.role:156,Hypothetical proteins / Conserved
+PMM0100,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM0101,tigr.role:91,Cell envelope / Surface structures
+PMM0102,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0103,tigr.role:156,Hypothetical proteins / Conserved
+PMM0104,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0105,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM0106,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0107,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0108,tigr.role:156,Hypothetical proteins / Conserved
+PMM0109,tigr.role:156,Hypothetical proteins / Conserved
+PMM0110,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0111,tigr.role:156,Hypothetical proteins / Conserved
+PMM0112,tigr.role:166,Transcription / RNA processing
+PMM0113,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0114,tigr.role:96,Cellular processes / Detoxification
+PMM0115,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0116,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0117,tigr.role:156,Hypothetical proteins / Conserved
+PMM0118,tigr.role:156,Hypothetical proteins / Conserved
+PMM0120,tigr.role:93,Cellular processes / Cell division
+PMM0121,tigr.role:112,Energy metabolism / Electron transport
+PMM0121,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0122,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0123,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0124,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0125,tigr.role:147,Transport and binding proteins / Other
+PMM0127,tigr.role:156,Hypothetical proteins / Conserved
+PMM0128,tigr.role:699,Signal transduction / Two-component systems
+PMM0129,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0130,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0131,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0131,tigr.role:96,Cellular processes / Detoxification
+PMM0132,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0133,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0134,tigr.role:699,Signal transduction / Two-component systems
+PMM0135,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0136,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0137,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0138,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0139,tigr.role:136,Protein synthesis / Other
+PMM0140,tigr.role:112,Energy metabolism / Electron transport
+PMM0141,tigr.role:166,Transcription / RNA processing
+PMM0142,tigr.role:146,"Transport and binding proteins / Nucleosides, purines and pyrimidines"
+PMM0143,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0144,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0145,tigr.role:112,Energy metabolism / Electron transport
+PMM0145,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0146,tigr.role:156,Hypothetical proteins / Conserved
+PMM0147,tigr.role:261,Regulatory functions / DNA interactions
+PMM0148,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0149,tigr.role:112,Energy metabolism / Electron transport
+PMM0149,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0150,tigr.role:112,Energy metabolism / Electron transport
+PMM0150,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0151,tigr.role:170,DNA metabolism / Chromosome-associated proteins
+PMM0151,tigr.role:93,Cellular processes / Cell division
+PMM0152,tigr.role:96,Cellular processes / Detoxification
+PMM0153,tigr.role:698,Central intermediary metabolism / One-carbon metabolism
+PMM0154,tigr.role:165,Transcription / Transcription factors
+PMM0154,tigr.role:261,Regulatory functions / DNA interactions
+PMM0155,tigr.role:264,Regulatory functions / Small molecule interactions
+PMM0156,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM0157,tigr.role:112,Energy metabolism / Electron transport
+PMM0157,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0158,tigr.role:112,Energy metabolism / Electron transport
+PMM0158,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0159,tigr.role:112,Energy metabolism / Electron transport
+PMM0159,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0160,tigr.role:112,Energy metabolism / Electron transport
+PMM0160,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0161,tigr.role:120,Energy metabolism / TCA cycle
+PMM0162,tigr.role:156,Hypothetical proteins / Conserved
+PMM0163,tigr.role:157,Unknown function / General
+PMM0164,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0165,tigr.role:169,Protein synthesis / Translation factors
+PMM0166,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0167,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0168,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0168,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0168,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0169,tigr.role:261,Regulatory functions / DNA interactions
+PMM0169,tigr.role:699,Signal transduction / Two-component systems
+PMM0170,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0171,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0172,tigr.role:112,Energy metabolism / Electron transport
+PMM0172,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0173,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0174,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0175,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0176,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0177,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0178,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0179,tigr.role:112,Energy metabolism / Electron transport
+PMM0180,tigr.role:169,Protein synthesis / Translation factors
+PMM0181,tigr.role:156,Hypothetical proteins / Conserved
+PMM0182,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0183,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0184,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM0185,tigr.role:157,Unknown function / General
+PMM0186,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0187,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0188,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM0189,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0190,tigr.role:156,Hypothetical proteins / Conserved
+PMM0191,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0191,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0192,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0192,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0193,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0194,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0195,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0195,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0195,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0196,tigr.role:156,Hypothetical proteins / Conserved
+PMM0197,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0198,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0199,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0200,tigr.role:134,Transcription / Degradation of RNA
+PMM0201,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0202,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0203,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0204,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0205,tigr.role:165,Transcription / Transcription factors
+PMM0206,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0207,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0208,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0209,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0210,tigr.role:156,Hypothetical proteins / Conserved
+PMM0211,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0212,tigr.role:263,Regulatory functions / Protein interactions
+PMM0213,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0214,tigr.role:143,Transport and binding proteins / Anions
+PMM0215,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0216,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0217,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0218,tigr.role:136,Protein synthesis / Other
+PMM0219,tigr.role:156,Hypothetical proteins / Conserved
+PMM0220,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0220,tigr.role:263,Regulatory functions / Protein interactions
+PMM0221,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0222,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0223,tigr.role:112,Energy metabolism / Electron transport
+PMM0223,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0224,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0225,tigr.role:113,Energy metabolism / Entner-Doudoroff
+PMM0226,tigr.role:93,Cellular processes / Cell division
+PMM0227,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0228,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0229,tigr.role:83,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pantothenate and coenzyme A"
+PMM0230,tigr.role:156,Hypothetical proteins / Conserved
+PMM0231,tigr.role:156,Hypothetical proteins / Conserved
+PMM0232,tigr.role:156,Hypothetical proteins / Conserved
+PMM0233,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0234,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0235,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0238,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0239,tigr.role:156,Hypothetical proteins / Conserved
+PMM0240,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0241,tigr.role:100,Central intermediary metabolism / Amino sugars
+PMM0241,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0242,tigr.role:112,Energy metabolism / Electron transport
+PMM0242,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0242,tigr.role:96,Cellular processes / Detoxification
+PMM0243,tigr.role:122,"Purines, pyrimidines, nucleosides, and nucleotides / Other"
+PMM0244,tigr.role:123,"Purines, pyrimidines, nucleosides, and nucleotides / 2^-Deoxyribonucleotide metabolism"
+PMM0245,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0246,tigr.role:129,Regulatory functions / Other
+PMM0247,tigr.role:156,Hypothetical proteins / Conserved
+PMM0248,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0249,tigr.role:156,Hypothetical proteins / Conserved
+PMM0250,tigr.role:169,Protein synthesis / Translation factors
+PMM0251,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0252,tigr.role:140,Protein fate / Protein modification and repair
+PMM0252,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0253,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0254,tigr.role:156,Hypothetical proteins / Conserved
+PMM0255,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0256,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0257,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0258,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0258,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0259,tigr.role:156,Hypothetical proteins / Conserved
+PMM0260,tigr.role:156,Hypothetical proteins / Conserved
+PMM0261,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0262,tigr.role:119,Energy metabolism / Sugars
+PMM0262,tigr.role:129,Regulatory functions / Other
+PMM0263,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0264,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0265,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0266,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0267,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0268,tigr.role:156,Hypothetical proteins / Conserved
+PMM0269,tigr.role:699,Signal transduction / Two-component systems
+PMM0270,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0271,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0272,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0273,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0274,tigr.role:147,Transport and binding proteins / Other
+PMM0275,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0276,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0277,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0278,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0278,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0278,tigr.role:119,Energy metabolism / Sugars
+PMM0279,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0280,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0281,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM0282,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0282,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM0283,tigr.role:112,Energy metabolism / Electron transport
+PMM0284,tigr.role:264,Regulatory functions / Small molecule interactions
+PMM0285,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0286,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0286,tigr.role:127,"Purines, pyrimidines, nucleosides, and nucleotides / Salvage of nucleosides and nucleotides"
+PMM0287,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM0288,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0288,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0289,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0290,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0291,tigr.role:156,Hypothetical proteins / Conserved
+PMM0292,tigr.role:112,Energy metabolism / Electron transport
+PMM0292,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0293,tigr.role:112,Energy metabolism / Electron transport
+PMM0293,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0294,tigr.role:112,Energy metabolism / Electron transport
+PMM0294,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0295,tigr.role:112,Energy metabolism / Electron transport
+PMM0296,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0297,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0298,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0299,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0300,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0301,tigr.role:102,Central intermediary metabolism / Other
+PMM0301,tigr.role:127,"Purines, pyrimidines, nucleosides, and nucleotides / Salvage of nucleosides and nucleotides"
+PMM0302,tigr.role:69,Amino acid biosynthesis / Other
+PMM0303,tigr.role:166,Transcription / RNA processing
+PMM0304,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0305,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0306,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0307,tigr.role:156,Hypothetical proteins / Conserved
+PMM0308,tigr.role:156,Hypothetical proteins / Conserved
+PMM0309,tigr.role:156,Hypothetical proteins / Conserved
+PMM0310,tigr.role:119,Energy metabolism / Sugars
+PMM0311,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM0311,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0312,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0313,tigr.role:261,Regulatory functions / DNA interactions
+PMM0314,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0315,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0316,tigr.role:112,Energy metabolism / Electron transport
+PMM0317,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0318,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0319,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0320,tigr.role:93,Cellular processes / Cell division
+PMM0321,tigr.role:93,Cellular processes / Cell division
+PMM0322,tigr.role:93,Cellular processes / Cell division
+PMM0323,tigr.role:156,Hypothetical proteins / Conserved
+PMM0324,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0324,tigr.role:140,Protein fate / Protein modification and repair
+PMM0325,tigr.role:112,Energy metabolism / Electron transport
+PMM0325,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0326,tigr.role:112,Energy metabolism / Electron transport
+PMM0326,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0327,tigr.role:144,"Transport and binding proteins / Carbohydrates, organic alcohols, and acids"
+PMM0328,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0329,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0330,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0331,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0331,tigr.role:118,Energy metabolism / Pyruvate dehydrogenase
+PMM0333,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0334,tigr.role:156,Hypothetical proteins / Conserved
+PMM0335,tigr.role:156,Hypothetical proteins / Conserved
+PMM0336,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0336,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0337,tigr.role:156,Hypothetical proteins / Conserved
+PMM0338,tigr.role:156,Hypothetical proteins / Conserved
+PMM0339,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0340,tigr.role:156,Hypothetical proteins / Conserved
+PMM0341,tigr.role:156,Hypothetical proteins / Conserved
+PMM0341,tigr.role:157,Unknown function / General
+PMM0342,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0343,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0344,tigr.role:88,Cell envelope / Other
+PMM0345,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0345,tigr.role:96,Cellular processes / Detoxification
+PMM0346,tigr.role:156,Hypothetical proteins / Conserved
+PMM0347,tigr.role:156,Hypothetical proteins / Conserved
+PMM0348,tigr.role:156,Hypothetical proteins / Conserved
+PMM0349,tigr.role:169,Protein synthesis / Translation factors
+PMM0350,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0350,tigr.role:156,Hypothetical proteins / Conserved
+PMM0351,tigr.role:156,Hypothetical proteins / Conserved
+PMM0352,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0353,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0355,tigr.role:156,Hypothetical proteins / Conserved
+PMM0356,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0357,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0358,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0359,tigr.role:156,Hypothetical proteins / Conserved
+PMM0360,tigr.role:156,Hypothetical proteins / Conserved
+PMM0361,tigr.role:156,Hypothetical proteins / Conserved
+PMM0362,tigr.role:156,Hypothetical proteins / Conserved
+PMM0363,tigr.role:129,Regulatory functions / Other
+PMM0364,tigr.role:156,Hypothetical proteins / Conserved
+PMM0367,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0367,tigr.role:92,Cellular processes / Other
+PMM0368,tigr.role:156,Hypothetical proteins / Conserved
+PMM0369,tigr.role:156,Hypothetical proteins / Conserved
+PMM0370,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0371,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM0372,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM0373,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM0374,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0377,tigr.role:156,Hypothetical proteins / Conserved
+PMM0378,tigr.role:156,Hypothetical proteins / Conserved
+PMM0380,tigr.role:156,Hypothetical proteins / Conserved
+PMM0383,tigr.role:91,Cell envelope / Surface structures
+PMM0387,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0388,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0389,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0390,tigr.role:156,Hypothetical proteins / Conserved
+PMM0391,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0392,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0393,tigr.role:263,Regulatory functions / Protein interactions
+PMM0394,tigr.role:92,Cellular processes / Other
+PMM0395,tigr.role:93,Cellular processes / Cell division
+PMM0396,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0397,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0398,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0399,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0400,tigr.role:169,Protein synthesis / Translation factors
+PMM0401,tigr.role:80,"Biosynthesis of cofactors, prosthetic groups, and carriers / Lipoate"
+PMM0402,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0402,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM0403,tigr.role:156,Hypothetical proteins / Conserved
+PMM0404,tigr.role:156,Hypothetical proteins / Conserved
+PMM0405,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0405,tigr.role:118,Energy metabolism / Pyruvate dehydrogenase
+PMM0405,tigr.role:120,Energy metabolism / TCA cycle
+PMM0406,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0407,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0408,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0409,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0410,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0411,tigr.role:133,Transcription / Other
+PMM0412,tigr.role:123,"Purines, pyrimidines, nucleosides, and nucleotides / 2^-Deoxyribonucleotide metabolism"
+PMM0413,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0414,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0415,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0416,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0417,tigr.role:156,Hypothetical proteins / Conserved
+PMM0418,tigr.role:157,Unknown function / General
+PMM0419,tigr.role:120,Energy metabolism / TCA cycle
+PMM0420,tigr.role:157,Unknown function / General
+PMM0421,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0422,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0423,tigr.role:156,Hypothetical proteins / Conserved
+PMM0424,tigr.role:156,Hypothetical proteins / Conserved
+PMM0425,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0425,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0426,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0427,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0428,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0429,tigr.role:112,Energy metabolism / Electron transport
+PMM0429,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0430,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0431,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0432,tigr.role:156,Hypothetical proteins / Conserved
+PMM0433,tigr.role:261,Regulatory functions / DNA interactions
+PMM0433,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM0434,tigr.role:92,Cellular processes / Other
+PMM0435,tigr.role:112,Energy metabolism / Electron transport
+PMM0435,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0436,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0437,tigr.role:156,Hypothetical proteins / Conserved
+PMM0438,tigr.role:156,Hypothetical proteins / Conserved
+PMM0439,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0440,tigr.role:156,Hypothetical proteins / Conserved
+PMM0441,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0442,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM0443,tigr.role:165,Transcription / Transcription factors
+PMM0444,tigr.role:112,Energy metabolism / Electron transport
+PMM0445,tigr.role:112,Energy metabolism / Electron transport
+PMM0446,tigr.role:112,Energy metabolism / Electron transport
+PMM0447,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0448,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0449,tigr.role:147,Transport and binding proteins / Other
+PMM0450,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0451,tigr.role:156,Hypothetical proteins / Conserved
+PMM0452,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0453,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0454,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0455,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0456,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0457,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0458,tigr.role:261,Regulatory functions / DNA interactions
+PMM0459,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0460,tigr.role:140,Protein fate / Protein modification and repair
+PMM0461,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0462,tigr.role:112,Energy metabolism / Electron transport
+PMM0462,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0463,tigr.role:156,Hypothetical proteins / Conserved
+PMM0464,tigr.role:94,Cellular processes / Toxin production and resistance
+PMM0465,tigr.role:156,Hypothetical proteins / Conserved
+PMM0466,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0467,tigr.role:124,"Purines, pyrimidines, nucleosides, and nucleotides / Nucleotide and nucleoside interconversions"
+PMM0468,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0469,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0470,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0471,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0472,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0473,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0474,tigr.role:156,Hypothetical proteins / Conserved
+PMM0475,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0476,tigr.role:156,Hypothetical proteins / Conserved
+PMM0477,tigr.role:140,Protein fate / Protein modification and repair
+PMM0478,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0479,tigr.role:157,Unknown function / General
+PMM0480,tigr.role:156,Hypothetical proteins / Conserved
+PMM0481,tigr.role:710,Signal transduction / Other
+PMM0482,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0483,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0484,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0485,tigr.role:156,Hypothetical proteins / Conserved
+PMM0486,tigr.role:156,Hypothetical proteins / Conserved
+PMM0487,tigr.role:69,Amino acid biosynthesis / Other
+PMM0488,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0489,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0490,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0491,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM0492,tigr.role:156,Hypothetical proteins / Conserved
+PMM0493,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0494,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0495,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0496,tigr.role:165,Transcription / Transcription factors
+PMM0497,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0498,tigr.role:156,Hypothetical proteins / Conserved
+PMM0499,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0500,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0501,tigr.role:156,Hypothetical proteins / Conserved
+PMM0502,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0503,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0504,tigr.role:96,Cellular processes / Detoxification
+PMM0505,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0505,tigr.role:119,Energy metabolism / Sugars
+PMM0506,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0507,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0508,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0508,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0509,tigr.role:156,Hypothetical proteins / Conserved
+PMM0510,tigr.role:156,Hypothetical proteins / Conserved
+PMM0511,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0512,tigr.role:96,Cellular processes / Detoxification
+PMM0513,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0514,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0515,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0516,tigr.role:157,Unknown function / General
+PMM0517,tigr.role:156,Hypothetical proteins / Conserved
+PMM0518,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0519,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0520,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0521,tigr.role:169,Protein synthesis / Translation factors
+PMM0522,tigr.role:124,"Purines, pyrimidines, nucleosides, and nucleotides / Nucleotide and nucleoside interconversions"
+PMM0523,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0524,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0524,tigr.role:152,Mobile and extrachromosomal element functions / Prophage functions
+PMM0525,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0526,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0527,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0527,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0528,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0529,tigr.role:156,Hypothetical proteins / Conserved
+PMM0530,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0531,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM0532,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0533,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0534,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0535,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0536,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM0537,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0538,tigr.role:140,Protein fate / Protein modification and repair
+PMM0539,tigr.role:80,"Biosynthesis of cofactors, prosthetic groups, and carriers / Lipoate"
+PMM0540,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0541,tigr.role:156,Hypothetical proteins / Conserved
+PMM0542,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0543,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0544,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0545,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0546,tigr.role:156,Hypothetical proteins / Conserved
+PMM0547,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0548,tigr.role:127,"Purines, pyrimidines, nucleosides, and nucleotides / Salvage of nucleosides and nucleotides"
+PMM0549,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0550,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0551,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0552,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0553,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0553,tigr.role:698,Central intermediary metabolism / One-carbon metabolism
+PMM0554,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0555,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0556,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0557,tigr.role:156,Hypothetical proteins / Conserved
+PMM0558,tigr.role:134,Transcription / Degradation of RNA
+PMM0559,tigr.role:96,Cellular processes / Detoxification
+PMM0560,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM0561,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0562,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0563,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0564,tigr.role:156,Hypothetical proteins / Conserved
+PMM0565,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0566,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0567,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0568,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0569,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0570,tigr.role:112,Energy metabolism / Electron transport
+PMM0570,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0571,tigr.role:156,Hypothetical proteins / Conserved
+PMM0572,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0573,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0573,tigr.role:165,Transcription / Transcription factors
+PMM0574,tigr.role:156,Hypothetical proteins / Conserved
+PMM0575,tigr.role:156,Hypothetical proteins / Conserved
+PMM0576,tigr.role:156,Hypothetical proteins / Conserved
+PMM0577,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0577,tigr.role:165,Transcription / Transcription factors
+PMM0577,tigr.role:92,Cellular processes / Other
+PMM0578,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM0579,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0579,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0579,tigr.role:92,Cellular processes / Other
+PMM0580,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0581,tigr.role:112,Energy metabolism / Electron transport
+PMM0581,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0582,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0583,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0584,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM0585,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0586,tigr.role:156,Hypothetical proteins / Conserved
+PMM0587,tigr.role:156,Hypothetical proteins / Conserved
+PMM0588,tigr.role:156,Hypothetical proteins / Conserved
+PMM0589,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0590,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0591,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM0592,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM0593,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0594,tigr.role:112,Energy metabolism / Electron transport
+PMM0594,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0595,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0596,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0596,tigr.role:119,Energy metabolism / Sugars
+PMM0597,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0598,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0599,tigr.role:156,Hypothetical proteins / Conserved
+PMM0600,tigr.role:156,Hypothetical proteins / Conserved
+PMM0601,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0602,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0603,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0604,tigr.role:156,Hypothetical proteins / Conserved
+PMM0605,tigr.role:156,Hypothetical proteins / Conserved
+PMM0606,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0607,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0608,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0609,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM0610,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0611,tigr.role:100,Central intermediary metabolism / Amino sugars
+PMM0611,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0611,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0612,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0613,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0614,tigr.role:159,Energy metabolism / Methanogenesis
+PMM0615,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0616,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0617,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0618,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0619,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0619,tigr.role:118,Energy metabolism / Pyruvate dehydrogenase
+PMM0620,tigr.role:156,Hypothetical proteins / Conserved
+PMM0621,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0622,tigr.role:156,Hypothetical proteins / Conserved
+PMM0623,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0625,tigr.role:156,Hypothetical proteins / Conserved
+PMM0626,tigr.role:156,Hypothetical proteins / Conserved
+PMM0627,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0628,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0629,tigr.role:156,Hypothetical proteins / Conserved
+PMM0630,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0631,tigr.role:152,Mobile and extrachromosomal element functions / Prophage functions
+PMM0632,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0633,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0634,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0635,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0636,tigr.role:707,"Biosynthesis of cofactors, prosthetic groups, and carriers / Siderophores"
+PMM0637,tigr.role:261,Regulatory functions / DNA interactions
+PMM0638,tigr.role:157,Unknown function / General
+PMM0639,tigr.role:121,Fatty acid and phospholipid metabolism / Other
+PMM0640,tigr.role:156,Hypothetical proteins / Conserved
+PMM0641,tigr.role:156,Hypothetical proteins / Conserved
+PMM0642,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0642,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0643,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0643,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0644,tigr.role:143,Transport and binding proteins / Anions
+PMM0645,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0646,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0647,tigr.role:156,Hypothetical proteins / Conserved
+PMM0648,tigr.role:157,Unknown function / General
+PMM0649,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0650,tigr.role:156,Hypothetical proteins / Conserved
+PMM0651,tigr.role:156,Hypothetical proteins / Conserved
+PMM0652,tigr.role:156,Hypothetical proteins / Conserved
+PMM0653,tigr.role:184,Energy metabolism / Other
+PMM0653,tigr.role:94,Cellular processes / Toxin production and resistance
+PMM0654,tigr.role:156,Hypothetical proteins / Conserved
+PMM0655,tigr.role:156,Hypothetical proteins / Conserved
+PMM0656,tigr.role:88,Cell envelope / Other
+PMM0657,tigr.role:156,Hypothetical proteins / Conserved
+PMM0658,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0659,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0660,tigr.role:156,Hypothetical proteins / Conserved
+PMM0661,tigr.role:123,"Purines, pyrimidines, nucleosides, and nucleotides / 2^-Deoxyribonucleotide metabolism"
+PMM0661,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0661,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM0662,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0663,tigr.role:169,Protein synthesis / Translation factors
+PMM0664,tigr.role:156,Hypothetical proteins / Conserved
+PMM0665,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0666,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0667,tigr.role:156,Hypothetical proteins / Conserved
+PMM0668,tigr.role:156,Hypothetical proteins / Conserved
+PMM0669,tigr.role:156,Hypothetical proteins / Conserved
+PMM0670,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM0671,tigr.role:143,Transport and binding proteins / Anions
+PMM0672,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0672,tigr.role:143,Transport and binding proteins / Anions
+PMM0673,tigr.role:143,Transport and binding proteins / Anions
+PMM0674,tigr.role:69,Amino acid biosynthesis / Other
+PMM0675,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0676,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0677,tigr.role:140,Protein fate / Protein modification and repair
+PMM0678,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM0679,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0680,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0681,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0682,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0683,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0684,tigr.role:156,Hypothetical proteins / Conserved
+PMM0685,tigr.role:156,Hypothetical proteins / Conserved
+PMM0686,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0687,tigr.role:156,Hypothetical proteins / Conserved
+PMM0688,tigr.role:156,Hypothetical proteins / Conserved
+PMM0689,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0690,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0691,tigr.role:156,Hypothetical proteins / Conserved
+PMM0692,tigr.role:156,Hypothetical proteins / Conserved
+PMM0694,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0695,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0696,tigr.role:156,Hypothetical proteins / Conserved
+PMM0697,tigr.role:156,Hypothetical proteins / Conserved
+PMM0698,tigr.role:156,Hypothetical proteins / Conserved
+PMM0699,tigr.role:156,Hypothetical proteins / Conserved
+PMM0700,tigr.role:156,Hypothetical proteins / Conserved
+PMM0702,tigr.role:156,Hypothetical proteins / Conserved
+PMM0703,tigr.role:156,Hypothetical proteins / Conserved
+PMM0704,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0705,tigr.role:699,Signal transduction / Two-component systems
+PMM0706,tigr.role:699,Signal transduction / Two-component systems
+PMM0707,tigr.role:156,Hypothetical proteins / Conserved
+PMM0709,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0710,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0710,tigr.role:143,Transport and binding proteins / Anions
+PMM0711,tigr.role:96,Cellular processes / Detoxification
+PMM0712,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0713,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0714,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0714,tigr.role:165,Transcription / Transcription factors
+PMM0714,tigr.role:92,Cellular processes / Other
+PMM0714,tigr.role:96,Cellular processes / Detoxification
+PMM0715,tigr.role:156,Hypothetical proteins / Conserved
+PMM0716,tigr.role:143,Transport and binding proteins / Anions
+PMM0716,tigr.role:96,Cellular processes / Detoxification
+PMM0718,tigr.role:261,Regulatory functions / DNA interactions
+PMM0719,tigr.role:156,Hypothetical proteins / Conserved
+PMM0720,tigr.role:156,Hypothetical proteins / Conserved
+PMM0723,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0723,tigr.role:143,Transport and binding proteins / Anions
+PMM0724,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM0724,tigr.role:143,Transport and binding proteins / Anions
+PMM0725,tigr.role:143,Transport and binding proteins / Anions
+PMM0726,tigr.role:156,Hypothetical proteins / Conserved
+PMM0727,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0728,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0728,tigr.role:134,Transcription / Degradation of RNA
+PMM0729,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0730,tigr.role:166,Transcription / RNA processing
+PMM0731,tigr.role:156,Hypothetical proteins / Conserved
+PMM0732,tigr.role:157,Unknown function / General
+PMM0733,tigr.role:156,Hypothetical proteins / Conserved
+PMM0734,tigr.role:156,Hypothetical proteins / Conserved
+PMM0735,tigr.role:156,Hypothetical proteins / Conserved
+PMM0736,tigr.role:156,Hypothetical proteins / Conserved
+PMM0737,tigr.role:856,Not Found
+PMM0738,tigr.role:156,Hypothetical proteins / Conserved
+PMM0739,tigr.role:156,Hypothetical proteins / Conserved
+PMM0740,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0741,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0742,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0743,tigr.role:140,Protein fate / Protein modification and repair
+PMM0744,tigr.role:156,Hypothetical proteins / Conserved
+PMM0745,tigr.role:140,Protein fate / Protein modification and repair
+PMM0746,tigr.role:140,Protein fate / Protein modification and repair
+PMM0747,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0748,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0749,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0750,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0751,tigr.role:156,Hypothetical proteins / Conserved
+PMM0752,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0753,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0754,tigr.role:169,Protein synthesis / Translation factors
+PMM0755,tigr.role:156,Hypothetical proteins / Conserved
+PMM0756,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0757,tigr.role:94,Cellular processes / Toxin production and resistance
+PMM0758,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM0759,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0760,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0761,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0762,tigr.role:129,Regulatory functions / Other
+PMM0762,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0762,tigr.role:169,Protein synthesis / Translation factors
+PMM0763,tigr.role:156,Hypothetical proteins / Conserved
+PMM0764,tigr.role:147,Transport and binding proteins / Other
+PMM0765,tigr.role:108,Energy metabolism / Aerobic
+PMM0765,tigr.role:112,Energy metabolism / Electron transport
+PMM0765,tigr.role:147,Transport and binding proteins / Other
+PMM0766,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0767,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0768,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0769,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM0769,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0770,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0771,tigr.role:113,Energy metabolism / Entner-Doudoroff
+PMM0771,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0772,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0773,tigr.role:156,Hypothetical proteins / Conserved
+PMM0774,tigr.role:113,Energy metabolism / Entner-Doudoroff
+PMM0774,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0775,tigr.role:156,Hypothetical proteins / Conserved
+PMM0776,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0776,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0777,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0778,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0779,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0780,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0781,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0781,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0781,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0782,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0783,tigr.role:156,Hypothetical proteins / Conserved
+PMM0784,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0785,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0785,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0786,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0786,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0787,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM0788,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0789,tigr.role:701,Cellular processes / Cell adhesion
+PMM0790,tigr.role:156,Hypothetical proteins / Conserved
+PMM0791,tigr.role:166,Transcription / RNA processing
+PMM0792,tigr.role:156,Hypothetical proteins / Conserved
+PMM0793,tigr.role:156,Hypothetical proteins / Conserved
+PMM0794,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0794,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0795,tigr.role:156,Hypothetical proteins / Conserved
+PMM0796,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM0797,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0797,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0797,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0797,tigr.role:92,Cellular processes / Other
+PMM0798,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM0799,tigr.role:112,Energy metabolism / Electron transport
+PMM0800,tigr.role:156,Hypothetical proteins / Conserved
+PMM0801,tigr.role:185,Unclassified / Role category not yet assigned
+PMM0802,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0803,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0804,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM0805,tigr.role:156,Hypothetical proteins / Conserved
+PMM0806,tigr.role:261,Regulatory functions / DNA interactions
+PMM0807,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0808,tigr.role:94,Cellular processes / Toxin production and resistance
+PMM0809,tigr.role:156,Hypothetical proteins / Conserved
+PMM0810,tigr.role:156,Hypothetical proteins / Conserved
+PMM0811,tigr.role:856,Not Found
+PMM0812,tigr.role:156,Hypothetical proteins / Conserved
+PMM0813,tigr.role:156,Hypothetical proteins / Conserved
+PMM0814,tigr.role:156,Hypothetical proteins / Conserved
+PMM0815,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0816,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0817,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0818,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0820,tigr.role:156,Hypothetical proteins / Conserved
+PMM0821,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0822,tigr.role:156,Hypothetical proteins / Conserved
+PMM0823,tigr.role:157,Unknown function / General
+PMM0824,tigr.role:156,Hypothetical proteins / Conserved
+PMM0825,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0826,tigr.role:156,Hypothetical proteins / Conserved
+PMM0827,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0828,tigr.role:157,Unknown function / General
+PMM0829,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0829,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0830,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM0831,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0832,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0833,tigr.role:156,Hypothetical proteins / Conserved
+PMM0834,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM0835,tigr.role:156,Hypothetical proteins / Conserved
+PMM0836,tigr.role:156,Hypothetical proteins / Conserved
+PMM0837,tigr.role:156,Hypothetical proteins / Conserved
+PMM0838,tigr.role:156,Hypothetical proteins / Conserved
+PMM0839,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0840,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0841,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0842,tigr.role:156,Hypothetical proteins / Conserved
+PMM0843,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0844,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM0845,tigr.role:112,Energy metabolism / Electron transport
+PMM0845,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0846,tigr.role:156,Hypothetical proteins / Conserved
+PMM0847,tigr.role:134,Transcription / Degradation of RNA
+PMM0848,tigr.role:156,Hypothetical proteins / Conserved
+PMM0849,tigr.role:156,Hypothetical proteins / Conserved
+PMM0850,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0851,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0852,tigr.role:156,Hypothetical proteins / Conserved
+PMM0853,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0854,tigr.role:140,Protein fate / Protein modification and repair
+PMM0855,tigr.role:156,Hypothetical proteins / Conserved
+PMM0856,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0857,tigr.role:156,Hypothetical proteins / Conserved
+PMM0858,tigr.role:156,Hypothetical proteins / Conserved
+PMM0859,tigr.role:156,Hypothetical proteins / Conserved
+PMM0861,tigr.role:156,Hypothetical proteins / Conserved
+PMM0862,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0863,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0864,tigr.role:156,Hypothetical proteins / Conserved
+PMM0865,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0865,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0867,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0868,tigr.role:166,Transcription / RNA processing
+PMM0869,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0870,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0871,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0872,tigr.role:156,Hypothetical proteins / Conserved
+PMM0873,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0874,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0875,tigr.role:156,Hypothetical proteins / Conserved
+PMM0876,tigr.role:156,Hypothetical proteins / Conserved
+PMM0877,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0878,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0879,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0880,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0881,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0882,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0883,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0884,tigr.role:83,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pantothenate and coenzyme A"
+PMM0885,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0886,tigr.role:156,Hypothetical proteins / Conserved
+PMM0887,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0888,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0889,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0890,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0890,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM0891,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM0892,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0893,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM0894,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0895,tigr.role:156,Hypothetical proteins / Conserved
+PMM0896,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0897,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0898,tigr.role:112,Energy metabolism / Electron transport
+PMM0899,tigr.role:102,Central intermediary metabolism / Other
+PMM0900,tigr.role:270,Disrupted reading frame /
+PMM0901,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0902,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0903,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0903,tigr.role:96,Cellular processes / Detoxification
+PMM0904,tigr.role:156,Hypothetical proteins / Conserved
+PMM0905,tigr.role:156,Hypothetical proteins / Conserved
+PMM0906,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0907,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM0907,tigr.role:84,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridoxine"
+PMM0908,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM0909,tigr.role:170,DNA metabolism / Chromosome-associated proteins
+PMM0909,tigr.role:93,Cellular processes / Cell division
+PMM0910,tigr.role:93,Cellular processes / Cell division
+PMM0911,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0912,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0913,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0914,tigr.role:147,Transport and binding proteins / Other
+PMM0915,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0916,tigr.role:157,Unknown function / General
+PMM0917,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0918,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0919,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0920,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM0921,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0922,tigr.role:156,Hypothetical proteins / Conserved
+PMM0923,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0923,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0924,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM0925,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0926,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0927,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0928,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0929,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM0930,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM0930,tigr.role:118,Energy metabolism / Pyruvate dehydrogenase
+PMM0930,tigr.role:120,Energy metabolism / TCA cycle
+PMM0931,tigr.role:156,Hypothetical proteins / Conserved
+PMM0932,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM0933,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0934,tigr.role:156,Hypothetical proteins / Conserved
+PMM0935,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0936,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0937,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0938,tigr.role:156,Hypothetical proteins / Conserved
+PMM0939,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0940,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0941,tigr.role:156,Hypothetical proteins / Conserved
+PMM0942,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0943,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0944,tigr.role:164,Energy metabolism / Photosynthesis
+PMM0945,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM0946,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM0947,tigr.role:156,Hypothetical proteins / Conserved
+PMM0948,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM0949,tigr.role:166,Transcription / RNA processing
+PMM0950,tigr.role:263,Regulatory functions / Protein interactions
+PMM0951,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM0952,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM0953,tigr.role:156,Hypothetical proteins / Conserved
+PMM0954,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0955,tigr.role:140,Protein fate / Protein modification and repair
+PMM0955,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0956,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM0957,tigr.role:157,Unknown function / General
+PMM0958,tigr.role:156,Hypothetical proteins / Conserved
+PMM0959,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM0959,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM0959,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM0960,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0961,tigr.role:119,Energy metabolism / Sugars
+PMM0962,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0963,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM0964,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM0965,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM0966,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0967,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0968,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM0969,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM0970,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0971,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0972,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0973,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0974,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM0975,tigr.role:156,Hypothetical proteins / Conserved
+PMM0976,tigr.role:147,Transport and binding proteins / Other
+PMM0976,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0977,tigr.role:147,Transport and binding proteins / Other
+PMM0977,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0978,tigr.role:147,Transport and binding proteins / Other
+PMM0978,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM0979,tigr.role:156,Hypothetical proteins / Conserved
+PMM0980,tigr.role:156,Hypothetical proteins / Conserved
+PMM0981,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM0983,tigr.role:156,Hypothetical proteins / Conserved
+PMM0984,tigr.role:156,Hypothetical proteins / Conserved
+PMM0985,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0986,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0987,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM0988,tigr.role:156,Hypothetical proteins / Conserved
+PMM0990,tigr.role:156,Hypothetical proteins / Conserved
+PMM0991,tigr.role:156,Hypothetical proteins / Conserved
+PMM0992,tigr.role:156,Hypothetical proteins / Conserved
+PMM0993,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM0994,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM0995,tigr.role:156,Hypothetical proteins / Conserved
+PMM0996,tigr.role:156,Hypothetical proteins / Conserved
+PMM0997,tigr.role:156,Hypothetical proteins / Conserved
+PMM0998,tigr.role:156,Hypothetical proteins / Conserved
+PMM0999,tigr.role:156,Hypothetical proteins / Conserved
+PMM1000,tigr.role:156,Hypothetical proteins / Conserved
+PMM1001,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1002,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1003,tigr.role:156,Hypothetical proteins / Conserved
+PMM1004,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1006,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM1007,tigr.role:156,Hypothetical proteins / Conserved
+PMM1008,tigr.role:156,Hypothetical proteins / Conserved
+PMM1009,tigr.role:157,Unknown function / General
+PMM1010,tigr.role:157,Unknown function / General
+PMM1011,tigr.role:156,Hypothetical proteins / Conserved
+PMM1012,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1013,tigr.role:156,Hypothetical proteins / Conserved
+PMM1014,tigr.role:183,DNA metabolism / Restriction/modification
+PMM1015,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1016,tigr.role:156,Hypothetical proteins / Conserved
+PMM1017,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1018,tigr.role:156,Hypothetical proteins / Conserved
+PMM1020,tigr.role:156,Hypothetical proteins / Conserved
+PMM1020,tigr.role:157,Unknown function / General
+PMM1023,tigr.role:156,Hypothetical proteins / Conserved
+PMM1025,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1026,tigr.role:156,Hypothetical proteins / Conserved
+PMM1027,tigr.role:856,Not Found
+PMM1028,tigr.role:156,Hypothetical proteins / Conserved
+PMM1029,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM1030,tigr.role:261,Regulatory functions / DNA interactions
+PMM1031,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM1032,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM1033,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1034,tigr.role:157,Unknown function / General
+PMM1036,tigr.role:156,Hypothetical proteins / Conserved
+PMM1037,tigr.role:156,Hypothetical proteins / Conserved
+PMM1038,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1039,tigr.role:157,Unknown function / General
+PMM1040,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1041,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1042,tigr.role:157,Unknown function / General
+PMM1042,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1043,tigr.role:156,Hypothetical proteins / Conserved
+PMM1044,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM1045,tigr.role:156,Hypothetical proteins / Conserved
+PMM1046,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1047,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1048,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM1049,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM1050,tigr.role:156,Hypothetical proteins / Conserved
+PMM1051,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1051,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1052,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM1053,tigr.role:698,Central intermediary metabolism / One-carbon metabolism
+PMM1054,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1055,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM1056,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1057,tigr.role:112,Energy metabolism / Electron transport
+PMM1058,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1059,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1060,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM1061,tigr.role:112,Energy metabolism / Electron transport
+PMM1062,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1063,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1064,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1065,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1065,tigr.role:119,Energy metabolism / Sugars
+PMM1065,tigr.role:706,Cellular processes / Biosynthesis of natural products
+PMM1065,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1066,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1067,tigr.role:88,Cell envelope / Other
+PMM1068,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1069,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1070,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1071,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM1071,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM1072,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1073,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1074,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM1075,tigr.role:112,Energy metabolism / Electron transport
+PMM1076,tigr.role:706,Cellular processes / Biosynthesis of natural products
+PMM1077,tigr.role:699,Signal transduction / Two-component systems
+PMM1078,tigr.role:156,Hypothetical proteins / Conserved
+PMM1079,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1080,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM1081,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1082,tigr.role:261,Regulatory functions / DNA interactions
+PMM1083,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1084,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1085,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1086,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1087,tigr.role:121,Fatty acid and phospholipid metabolism / Other
+PMM1088,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1089,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1090,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1091,tigr.role:700,Signal transduction / PTS
+PMM1092,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1093,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM1094,tigr.role:157,Unknown function / General
+PMM1095,tigr.role:156,Hypothetical proteins / Conserved
+PMM1096,tigr.role:80,"Biosynthesis of cofactors, prosthetic groups, and carriers / Lipoate"
+PMM1097,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1098,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1099,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1100,tigr.role:156,Hypothetical proteins / Conserved
+PMM1101,tigr.role:133,Transcription / Other
+PMM1102,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1103,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1104,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1105,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1106,tigr.role:191,"Biosynthesis of cofactors, prosthetic groups, and carriers / Chlorophyll and bacteriochlorphyll"
+PMM1106,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1107,tigr.role:84,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridoxine"
+PMM1108,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1109,tigr.role:156,Hypothetical proteins / Conserved
+PMM1110,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1110,tigr.role:92,Cellular processes / Other
+PMM1111,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1111,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1112,tigr.role:156,Hypothetical proteins / Conserved
+PMM1113,tigr.role:261,Regulatory functions / DNA interactions
+PMM1114,tigr.role:156,Hypothetical proteins / Conserved
+PMM1115,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1116,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1117,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1118,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1119,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM1120,tigr.role:157,Unknown function / General
+PMM1121,tigr.role:142,"Transport and binding proteins / Amino acids, peptides and amines"
+PMM1122,tigr.role:127,"Purines, pyrimidines, nucleosides, and nucleotides / Salvage of nucleosides and nucleotides"
+PMM1123,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1124,tigr.role:156,Hypothetical proteins / Conserved
+PMM1125,tigr.role:156,Hypothetical proteins / Conserved
+PMM1126,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1127,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1127,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1128,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1129,tigr.role:156,Hypothetical proteins / Conserved
+PMM1130,tigr.role:156,Hypothetical proteins / Conserved
+PMM1131,tigr.role:156,Hypothetical proteins / Conserved
+PMM1132,tigr.role:156,Hypothetical proteins / Conserved
+PMM1133,tigr.role:156,Hypothetical proteins / Conserved
+PMM1134,tigr.role:156,Hypothetical proteins / Conserved
+PMM1135,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1136,tigr.role:156,Hypothetical proteins / Conserved
+PMM1138,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1139,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1140,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1141,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1142,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1143,tigr.role:112,Energy metabolism / Electron transport
+PMM1144,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1145,tigr.role:124,"Purines, pyrimidines, nucleosides, and nucleotides / Nucleotide and nucleoside interconversions"
+PMM1145,tigr.role:147,Transport and binding proteins / Other
+PMM1146,tigr.role:124,"Purines, pyrimidines, nucleosides, and nucleotides / Nucleotide and nucleoside interconversions"
+PMM1146,tigr.role:147,Transport and binding proteins / Other
+PMM1147,tigr.role:124,"Purines, pyrimidines, nucleosides, and nucleotides / Nucleotide and nucleoside interconversions"
+PMM1147,tigr.role:147,Transport and binding proteins / Other
+PMM1148,tigr.role:156,Hypothetical proteins / Conserved
+PMM1149,tigr.role:156,Hypothetical proteins / Conserved
+PMM1150,tigr.role:112,Energy metabolism / Electron transport
+PMM1151,tigr.role:169,Protein synthesis / Translation factors
+PMM1152,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1152a,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1153,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1154,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1155,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1156,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1156,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1157,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1158,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1159,tigr.role:93,Cellular processes / Cell division
+PMM1160,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1161,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1162,tigr.role:156,Hypothetical proteins / Conserved
+PMM1163,tigr.role:119,Energy metabolism / Sugars
+PMM1164,tigr.role:147,Transport and binding proteins / Other
+PMM1165,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1166,tigr.role:156,Hypothetical proteins / Conserved
+PMM1167,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1168,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1169,tigr.role:156,Hypothetical proteins / Conserved
+PMM1170,tigr.role:156,Hypothetical proteins / Conserved
+PMM1171,tigr.role:112,Energy metabolism / Electron transport
+PMM1171,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1171,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1172,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1172,tigr.role:96,Cellular processes / Detoxification
+PMM1173,tigr.role:88,Cell envelope / Other
+PMM1174,tigr.role:156,Hypothetical proteins / Conserved
+PMM1175,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1176,tigr.role:156,Hypothetical proteins / Conserved
+PMM1177,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1177,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1178,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1178,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1179,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1180,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1181,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1182,tigr.role:156,Hypothetical proteins / Conserved
+PMM1183,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1184,tigr.role:166,Transcription / RNA processing
+PMM1185,tigr.role:156,Hypothetical proteins / Conserved
+PMM1186,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1187,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1188,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1189,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1190,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1191,tigr.role:134,Transcription / Degradation of RNA
+PMM1192,tigr.role:106,Central intermediary metabolism / Sulfur metabolism
+PMM1193,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1194,tigr.role:156,Hypothetical proteins / Conserved
+PMM1195,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1196,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1197,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1199,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1200,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1201,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1202,tigr.role:119,Energy metabolism / Sugars
+PMM1203,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1204,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1205,tigr.role:69,Amino acid biosynthesis / Other
+PMM1207,tigr.role:119,Energy metabolism / Sugars
+PMM1208,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1209,tigr.role:119,Energy metabolism / Sugars
+PMM1210,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1211,tigr.role:119,Energy metabolism / Sugars
+PMM1211,tigr.role:128,"Purines, pyrimidines, nucleosides, and nucleotides / Sugar-nucleotide biosynthesis and conversions"
+PMM1211,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1212,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1214,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1215,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1216,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1217,tigr.role:119,Energy metabolism / Sugars
+PMM1217,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1217,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1218,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1219,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1220,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1222,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1223,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1224,tigr.role:128,"Purines, pyrimidines, nucleosides, and nucleotides / Sugar-nucleotide biosynthesis and conversions"
+PMM1224,tigr.role:147,Transport and binding proteins / Other
+PMM1224,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1225,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1226,tigr.role:88,Cell envelope / Other
+PMM1227,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1229,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1232,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1233,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1234,tigr.role:263,Regulatory functions / Protein interactions
+PMM1235,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1236,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM1237,tigr.role:156,Hypothetical proteins / Conserved
+PMM1238,tigr.role:856,Not Found
+PMM1239,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1240,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1246,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1250,tigr.role:88,Cell envelope / Other
+PMM1251,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1253,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1258,tigr.role:100,Central intermediary metabolism / Amino sugars
+PMM1259,tigr.role:100,Central intermediary metabolism / Amino sugars
+PMM1260,tigr.role:100,Central intermediary metabolism / Amino sugars
+PMM1261,tigr.role:119,Energy metabolism / Sugars
+PMM1262,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1262,tigr.role:261,Regulatory functions / DNA interactions
+PMM1263,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1264,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1264,tigr.role:93,Cellular processes / Cell division
+PMM1265,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM1266,tigr.role:156,Hypothetical proteins / Conserved
+PMM1267,tigr.role:156,Hypothetical proteins / Conserved
+PMM1268,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1269,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM1270,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1271,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1271,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM1272,tigr.role:156,Hypothetical proteins / Conserved
+PMM1273,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM1274,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1275,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM1276,tigr.role:156,Hypothetical proteins / Conserved
+PMM1277,tigr.role:856,Not Found
+PMM1278,tigr.role:129,Regulatory functions / Other
+PMM1279,tigr.role:94,Cellular processes / Toxin production and resistance
+PMM1280,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1281,tigr.role:165,Transcription / Transcription factors
+PMM1282,tigr.role:156,Hypothetical proteins / Conserved
+PMM1283,tigr.role:156,Hypothetical proteins / Conserved
+PMM1284,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM1285,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1286,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM1287,tigr.role:93,Cellular processes / Cell division
+PMM1288,tigr.role:118,Energy metabolism / Pyruvate dehydrogenase
+PMM1289,tigr.role:165,Transcription / Transcription factors
+PMM1290,tigr.role:127,"Purines, pyrimidines, nucleosides, and nucleotides / Salvage of nucleosides and nucleotides"
+PMM1291,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1292,tigr.role:88,Cell envelope / Other
+PMM1293,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1294,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1294,tigr.role:96,Cellular processes / Detoxification
+PMM1295,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1295,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1295,tigr.role:96,Cellular processes / Detoxification
+PMM1296,tigr.role:88,Cell envelope / Other
+PMM1297,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1298,tigr.role:120,Energy metabolism / TCA cycle
+PMM1298,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1298,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1299,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1300,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1301,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1301,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1302,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1303,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1304,tigr.role:122,"Purines, pyrimidines, nucleosides, and nucleotides / Other"
+PMM1305,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1306,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1307,tigr.role:156,Hypothetical proteins / Conserved
+PMM1308,tigr.role:93,Cellular processes / Cell division
+PMM1309,tigr.role:93,Cellular processes / Cell division
+PMM1310,tigr.role:83,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pantothenate and coenzyme A"
+PMM1311,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1312,tigr.role:156,Hypothetical proteins / Conserved
+PMM1313,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1314,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1315,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1316,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1317,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1319,tigr.role:156,Hypothetical proteins / Conserved
+PMM1320,tigr.role:156,Hypothetical proteins / Conserved
+PMM1321,tigr.role:261,Regulatory functions / DNA interactions
+PMM1322,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1323,tigr.role:144,"Transport and binding proteins / Carbohydrates, organic alcohols, and acids"
+PMM1324,tigr.role:156,Hypothetical proteins / Conserved
+PMM1325,tigr.role:156,Hypothetical proteins / Conserved
+PMM1326,tigr.role:156,Hypothetical proteins / Conserved
+PMM1327,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1327,tigr.role:177,Fatty acid and phospholipid metabolism / Degradation
+PMM1328,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM1329,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1330,tigr.role:156,Hypothetical proteins / Conserved
+PMM1331,tigr.role:156,Hypothetical proteins / Conserved
+PMM1332,tigr.role:261,Regulatory functions / DNA interactions
+PMM1332,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1333,tigr.role:140,Protein fate / Protein modification and repair
+PMM1333,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1334,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1335,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1336,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1337,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1338,tigr.role:182,Transport and binding proteins / Porins
+PMM1338,tigr.role:91,Cell envelope / Surface structures
+PMM1339,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1340,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1341,tigr.role:699,Signal transduction / Two-component systems
+PMM1342,tigr.role:92,Cellular processes / Other
+PMM1343,tigr.role:92,Cellular processes / Other
+PMM1344,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1345,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1346,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1347,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1348,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1349,tigr.role:166,Transcription / RNA processing
+PMM1350,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1351,tigr.role:156,Hypothetical proteins / Conserved
+PMM1352,tigr.role:112,Energy metabolism / Electron transport
+PMM1353,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1354,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1355,tigr.role:156,Hypothetical proteins / Conserved
+PMM1356,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1357,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1358,tigr.role:84,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridoxine"
+PMM1359,tigr.role:156,Hypothetical proteins / Conserved
+PMM1360,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM1361,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1362,tigr.role:156,Hypothetical proteins / Conserved
+PMM1364,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1365,tigr.role:156,Hypothetical proteins / Conserved
+PMM1366,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1366,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1367,tigr.role:156,Hypothetical proteins / Conserved
+PMM1368,tigr.role:156,Hypothetical proteins / Conserved
+PMM1370,tigr.role:156,Hypothetical proteins / Conserved
+PMM1371,tigr.role:147,Transport and binding proteins / Other
+PMM1372,tigr.role:156,Hypothetical proteins / Conserved
+PMM1373,tigr.role:156,Hypothetical proteins / Conserved
+PMM1374,tigr.role:156,Hypothetical proteins / Conserved
+PMM1376,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1377,tigr.role:156,Hypothetical proteins / Conserved
+PMM1378,tigr.role:121,Fatty acid and phospholipid metabolism / Other
+PMM1379,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1380,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1381,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1381,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1382,tigr.role:121,Fatty acid and phospholipid metabolism / Other
+PMM1383,tigr.role:156,Hypothetical proteins / Conserved
+PMM1384,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1385,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1386,tigr.role:147,Transport and binding proteins / Other
+PMM1388,tigr.role:156,Hypothetical proteins / Conserved
+PMM1389,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1390,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1391,tigr.role:261,Regulatory functions / DNA interactions
+PMM1393,tigr.role:156,Hypothetical proteins / Conserved
+PMM1393,tigr.role:157,Unknown function / General
+PMM1394,tigr.role:156,Hypothetical proteins / Conserved
+PMM1396,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1397,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1398,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1399,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1400,tigr.role:157,Unknown function / General
+PMM1401,tigr.role:156,Hypothetical proteins / Conserved
+PMM1403,tigr.role:123,"Purines, pyrimidines, nucleosides, and nucleotides / 2^-Deoxyribonucleotide metabolism"
+PMM1404,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1408,tigr.role:156,Hypothetical proteins / Conserved
+PMM1409,tigr.role:156,Hypothetical proteins / Conserved
+PMM1412,tigr.role:156,Hypothetical proteins / Conserved
+PMM1413,tigr.role:156,Hypothetical proteins / Conserved
+PMM1414,tigr.role:156,Hypothetical proteins / Conserved
+PMM1416,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM1417,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1420,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1421,tigr.role:156,Hypothetical proteins / Conserved
+PMM1422,tigr.role:156,Hypothetical proteins / Conserved
+PMM1423,tigr.role:112,Energy metabolism / Electron transport
+PMM1425,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1427,tigr.role:156,Hypothetical proteins / Conserved
+PMM1428,tigr.role:157,Unknown function / General
+PMM1429,tigr.role:156,Hypothetical proteins / Conserved
+PMM1430,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1431,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1432,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1433,tigr.role:133,Transcription / Other
+PMM1434,tigr.role:116,Energy metabolism / Glycolysis/gluconeogenesis
+PMM1435,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM1436,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1437,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1438,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1439,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1439,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1440,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1441,tigr.role:156,Hypothetical proteins / Conserved
+PMM1442,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1443,tigr.role:156,Hypothetical proteins / Conserved
+PMM1444,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1445,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM1446,tigr.role:163,"Biosynthesis of cofactors, prosthetic groups, and carriers / Pyridine nucleotides"
+PMM1447,tigr.role:156,Hypothetical proteins / Conserved
+PMM1448,tigr.role:156,Hypothetical proteins / Conserved
+PMM1449,tigr.role:112,Energy metabolism / Electron transport
+PMM1450,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1450,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1451,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1451,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1452,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1452,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1453,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1453,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1454,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1454,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1455,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1455,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1456,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1456,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1457,tigr.role:111,Energy metabolism / ATP-proton motive force interconversion
+PMM1458,tigr.role:93,Cellular processes / Cell division
+PMM1459,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1460,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1461,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1462,tigr.role:156,Hypothetical proteins / Conserved
+PMM1463,tigr.role:160,Central intermediary metabolism / Nitrogen metabolism
+PMM1463,tigr.role:261,Regulatory functions / DNA interactions
+PMM1464,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1465,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1466,tigr.role:120,Energy metabolism / TCA cycle
+PMM1466,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1467,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1467,tigr.role:134,Transcription / Degradation of RNA
+PMM1468,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM1469,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM1470,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM1471,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM1472,tigr.role:77,"Biosynthesis of cofactors, prosthetic groups, and carriers / Biotin"
+PMM1473,tigr.role:156,Hypothetical proteins / Conserved
+PMM1474,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1475,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1476,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1477,tigr.role:112,Energy metabolism / Electron transport
+PMM1478,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1479,tigr.role:156,Hypothetical proteins / Conserved
+PMM1480,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1481,tigr.role:166,Transcription / RNA processing
+PMM1481,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1482,tigr.role:149,Cellular processes / Adaptations to atypical conditions
+PMM1483,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1484,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1485,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1486,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1487,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1488,tigr.role:161,Amino acid biosynthesis / Histidine family
+PMM1489,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM1489,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1490,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1490,tigr.role:189,Protein fate / Other
+PMM1491,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1492,tigr.role:165,Transcription / Transcription factors
+PMM1493,tigr.role:156,Hypothetical proteins / Conserved
+PMM1494,tigr.role:169,Protein synthesis / Translation factors
+PMM1495,tigr.role:156,Hypothetical proteins / Conserved
+PMM1496,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1498,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1499,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1500,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1501,tigr.role:134,Transcription / Degradation of RNA
+PMM1502,tigr.role:134,Transcription / Degradation of RNA
+PMM1503,tigr.role:156,Hypothetical proteins / Conserved
+PMM1504,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1505,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM1506,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1507,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1508,tigr.role:169,Protein synthesis / Translation factors
+PMM1509,tigr.role:169,Protein synthesis / Translation factors
+PMM1510,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1511,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1512,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1512,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1512,tigr.role:92,Cellular processes / Other
+PMM1513,tigr.role:156,Hypothetical proteins / Conserved
+PMM1513,tigr.role:157,Unknown function / General
+PMM1514,tigr.role:80,"Biosynthesis of cofactors, prosthetic groups, and carriers / Lipoate"
+PMM1515,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1516,tigr.role:156,Hypothetical proteins / Conserved
+PMM1517,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1518,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1519,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1520,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1521,tigr.role:156,Hypothetical proteins / Conserved
+PMM1522,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1523,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1524,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1525,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1526,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1527,tigr.role:74,Amino acid biosynthesis / Pyruvate family
+PMM1528,tigr.role:157,Unknown function / General
+PMM1529,tigr.role:169,Protein synthesis / Translation factors
+PMM1530,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1531,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1532,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1533,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1534,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1535,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1536,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1537,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1538,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1539,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1540,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM1541,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1542,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1543,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1544,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1545,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1546,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1547,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1548,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1549,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1550,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1551,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1552,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1553,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1554,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1555,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1556,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1557,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1558,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1559,tigr.role:112,Energy metabolism / Electron transport
+PMM1559,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1560,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1561,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1562,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1563,tigr.role:156,Hypothetical proteins / Conserved
+PMM1564,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1564,tigr.role:134,Transcription / Degradation of RNA
+PMM1565,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1566,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1567,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1568,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1569,tigr.role:82,"Biosynthesis of cofactors, prosthetic groups, and carriers / Molybdopterin"
+PMM1570,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1571,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1572,tigr.role:104,Central intermediary metabolism / Polyamine biosynthesis
+PMM1572,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1572,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1573,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1574,tigr.role:156,Hypothetical proteins / Conserved
+PMM1575,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1576,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM1577,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1578,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1579,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1579,tigr.role:92,Cellular processes / Other
+PMM1580,tigr.role:93,Cellular processes / Cell division
+PMM1581,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1582,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1583,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1583,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1584,tigr.role:166,Transcription / RNA processing
+PMM1585,tigr.role:156,Hypothetical proteins / Conserved
+PMM1586,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1587,tigr.role:156,Hypothetical proteins / Conserved
+PMM1588,tigr.role:156,Hypothetical proteins / Conserved
+PMM1589,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1590,tigr.role:124,"Purines, pyrimidines, nucleosides, and nucleotides / Nucleotide and nucleoside interconversions"
+PMM1591,tigr.role:140,Protein fate / Protein modification and repair
+PMM1591,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1592,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1593,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1594,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1595,tigr.role:156,Hypothetical proteins / Conserved
+PMM1596,tigr.role:120,Energy metabolism / TCA cycle
+PMM1597,tigr.role:156,Hypothetical proteins / Conserved
+PMM1598,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1599,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1600,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM1601,tigr.role:105,Energy metabolism / Biosynthesis and degradation of polysaccharides
+PMM1602,tigr.role:156,Hypothetical proteins / Conserved
+PMM1603,tigr.role:166,Transcription / RNA processing
+PMM1604,tigr.role:112,Energy metabolism / Electron transport
+PMM1604,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1605,tigr.role:166,Transcription / RNA processing
+PMM1606,tigr.role:100,Central intermediary metabolism / Amino sugars
+PMM1606,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1606,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1607,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1608,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1609,tigr.role:176,Fatty acid and phospholipid metabolism / Biosynthesis
+PMM1610,tigr.role:117,Energy metabolism / Pentose phosphate pathway
+PMM1610,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1611,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM1612,tigr.role:156,Hypothetical proteins / Conserved
+PMM1613,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1614,tigr.role:188,Cellular processes / Chemotaxis and motility
+PMM1615,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1616,tigr.role:136,Protein synthesis / Other
+PMM1617,tigr.role:156,Hypothetical proteins / Conserved
+PMM1618,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1619,tigr.role:699,Signal transduction / Two-component systems
+PMM1620,tigr.role:88,Cell envelope / Other
+PMM1621,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1621,tigr.role:93,Cellular processes / Cell division
+PMM1622,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1623,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1624,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1625,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM1625,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1626,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1627,tigr.role:119,Energy metabolism / Sugars
+PMM1628,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1629,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1630,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM1632,tigr.role:147,Transport and binding proteins / Other
+PMM1633,tigr.role:156,Hypothetical proteins / Conserved
+PMM1634,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1635,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1636,tigr.role:169,Protein synthesis / Translation factors
+PMM1637,tigr.role:261,Regulatory functions / DNA interactions
+PMM1638,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1639,tigr.role:97,Protein fate / Protein and peptide secretion and trafficking
+PMM1640,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1642,tigr.role:165,Transcription / Transcription factors
+PMM1643,tigr.role:85,"Biosynthesis of cofactors, prosthetic groups, and carriers / Riboflavin, FMN, and FAD"
+PMM1644,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1645,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1646,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1647,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1648,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1649,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1650,tigr.role:156,Hypothetical proteins / Conserved
+PMM1651,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1652,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1653,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1654,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1655,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1656,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1657,tigr.role:138,"Protein fate / Degradation of proteins, peptides, and glycopeptides"
+PMM1657,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1658,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1659,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1660,tigr.role:92,Cellular processes / Other
+PMM1661,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1662,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1663,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1664,tigr.role:162,"Biosynthesis of cofactors, prosthetic groups, and carriers / Thiamine"
+PMM1665,tigr.role:119,Energy metabolism / Sugars
+PMM1666,tigr.role:90,Cell envelope / Biosynthesis and degradation of surface polysaccharides and lipopolysaccharides
+PMM1667,tigr.role:156,Hypothetical proteins / Conserved
+PMM1668,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM1668,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1669,tigr.role:75,Amino acid biosynthesis / Serine family
+PMM1670,tigr.role:145,Transport and binding proteins / Cations and iron carrying compounds
+PMM1670,tigr.role:96,Cellular processes / Detoxification
+PMM1671,tigr.role:156,Hypothetical proteins / Conserved
+PMM1672,tigr.role:121,Fatty acid and phospholipid metabolism / Other
+PMM1673,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1674,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1675,tigr.role:168,Protein synthesis / tRNA and rRNA base modification
+PMM1676,tigr.role:81,"Biosynthesis of cofactors, prosthetic groups, and carriers / Menaquinone and ubiquinone"
+PMM1677,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1678,tigr.role:156,Hypothetical proteins / Conserved
+PMM1679,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1680,tigr.role:156,Hypothetical proteins / Conserved
+PMM1681,tigr.role:156,Hypothetical proteins / Conserved
+PMM1682,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1683,tigr.role:156,Hypothetical proteins / Conserved
+PMM1684,tigr.role:157,Unknown function / General
+PMM1685,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1685,tigr.role:86,"Biosynthesis of cofactors, prosthetic groups, and carriers / Glutathione and analogs"
+PMM1686,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM1687,tigr.role:109,Energy metabolism / Amino acids and amines
+PMM1688,tigr.role:137,Protein synthesis / tRNA aminoacylation
+PMM1689,tigr.role:126,"Purines, pyrimidines, nucleosides, and nucleotides / Pyrimidine ribonucleotide biosynthesis"
+PMM1690,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1691,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1692,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1693,tigr.role:78,"Biosynthesis of cofactors, prosthetic groups, and carriers / Folic acid"
+PMM1694,tigr.role:79,"Biosynthesis of cofactors, prosthetic groups, and carriers / Heme, porphyrin, and cobalamin"
+PMM1695,tigr.role:141,Transport and binding proteins / Unknown substrate
+PMM1696,tigr.role:103,Central intermediary metabolism / Phosphorus compounds
+PMM1697,tigr.role:135,Transcription / DNA-dependent RNA polymerase
+PMM1698,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1699,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1700,tigr.role:120,Energy metabolism / TCA cycle
+PMM1701,tigr.role:143,Transport and binding proteins / Anions
+PMM1702,tigr.role:125,"Purines, pyrimidines, nucleosides, and nucleotides / Purine ribonucleotide biosynthesis"
+PMM1703,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1704,tigr.role:95,Protein fate / Protein folding and stabilization
+PMM1705,tigr.role:70,Amino acid biosynthesis / Aromatic amino acid family
+PMM1706,tigr.role:158,Protein synthesis / Ribosomal proteins: synthesis and modification
+PMM1707,tigr.role:73,Amino acid biosynthesis / Glutamate family
+PMM1708,tigr.role:156,Hypothetical proteins / Conserved
+PMM1709,tigr.role:89,Cell envelope / Biosynthesis and degradation of murein sacculus and peptidoglycan
+PMM1710,tigr.role:156,Hypothetical proteins / Conserved
+PMM1711,tigr.role:119,Energy metabolism / Sugars
+PMM1712,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1713,tigr.role:132,"DNA metabolism / DNA replication, recombination, and repair"
+PMM1714,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1715,tigr.role:703,Unknown function / Enzymes of unknown specificity
+PMM1716,tigr.role:71,Amino acid biosynthesis / Aspartate family
+PMM1718,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1720,tigr.role:112,Energy metabolism / Electron transport
+PMM1720,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1723,tigr.role:76,"Biosynthesis of cofactors, prosthetic groups, and carriers / Other"
+PMM1801,tigr.role:156,Hypothetical proteins / Conserved
+PMM1802,tigr.role:156,Hypothetical proteins / Conserved
+PMM1803,tigr.role:88,Cell envelope / Other
+PMM1804,tigr.role:156,Hypothetical proteins / Conserved
+PMM1805,tigr.role:156,Hypothetical proteins / Conserved
+PMM1807,tigr.role:156,Hypothetical proteins / Conserved
+PMM1808,tigr.role:156,Hypothetical proteins / Conserved
+PMM1810,tigr.role:156,Hypothetical proteins / Conserved
+PMM1812,tigr.role:156,Hypothetical proteins / Conserved
+PMM1813,tigr.role:156,Hypothetical proteins / Conserved
+PMM1816,tigr.role:156,Hypothetical proteins / Conserved
+PMM1817,tigr.role:156,Hypothetical proteins / Conserved
+PMM1821,tigr.role:156,Hypothetical proteins / Conserved
+PMM1826,tigr.role:156,Hypothetical proteins / Conserved
+PMM1830,tigr.role:156,Hypothetical proteins / Conserved
+PMM1836,tigr.role:156,Hypothetical proteins / Conserved
+PMM1838,tigr.role:156,Hypothetical proteins / Conserved
+PMM1846,tigr.role:156,Hypothetical proteins / Conserved
+PMM1847,tigr.role:156,Hypothetical proteins / Conserved
+PMM1850,tigr.role:156,Hypothetical proteins / Conserved
+PMM1851,tigr.role:156,Hypothetical proteins / Conserved
+PMM1855,tigr.role:156,Hypothetical proteins / Conserved
+PMM1857,tigr.role:156,Hypothetical proteins / Conserved
+PMM1858,tigr.role:156,Hypothetical proteins / Conserved
+PMM1859,tigr.role:156,Hypothetical proteins / Conserved
+PMM1860,tigr.role:156,Hypothetical proteins / Conserved
+PMM1866,tigr.role:156,Hypothetical proteins / Conserved
+PMM1868,tigr.role:156,Hypothetical proteins / Conserved
+PMM1869,tigr.role:156,Hypothetical proteins / Conserved
+PMM1870,tigr.role:156,Hypothetical proteins / Conserved
+PMM1871,tigr.role:156,Hypothetical proteins / Conserved
+PMM1872,tigr.role:156,Hypothetical proteins / Conserved
+PMM1873,tigr.role:856,Not Found
+PMM1875,tigr.role:156,Hypothetical proteins / Conserved
+PMM1876,tigr.role:156,Hypothetical proteins / Conserved
+PMM1877,tigr.role:156,Hypothetical proteins / Conserved
+PMM1878,tigr.role:156,Hypothetical proteins / Conserved
+PMM1880,tigr.role:156,Hypothetical proteins / Conserved
+PMM1883,tigr.role:156,Hypothetical proteins / Conserved
+PMM1884,tigr.role:156,Hypothetical proteins / Conserved
+PMM1885,tigr.role:156,Hypothetical proteins / Conserved
+PMM1887,tigr.role:156,Hypothetical proteins / Conserved
+PMM1888,tigr.role:156,Hypothetical proteins / Conserved
+PMM1889,tigr.role:156,Hypothetical proteins / Conserved
+PMM1890,tigr.role:156,Hypothetical proteins / Conserved
+PMM1896,tigr.role:156,Hypothetical proteins / Conserved
+PMM1897,tigr.role:156,Hypothetical proteins / Conserved
+PMM1899,tigr.role:156,Hypothetical proteins / Conserved
+PMM1900,tigr.role:164,Energy metabolism / Photosynthesis
+PMM1902,tigr.role:156,Hypothetical proteins / Conserved
+PMM1904,tigr.role:156,Hypothetical proteins / Conserved
+PMM1907,tigr.role:156,Hypothetical proteins / Conserved
+PMM1909,tigr.role:156,Hypothetical proteins / Conserved
+PMM1911,tigr.role:156,Hypothetical proteins / Conserved
+PMM1914,tigr.role:156,Hypothetical proteins / Conserved
+PMM1915,tigr.role:156,Hypothetical proteins / Conserved
+PMM1918,tigr.role:156,Hypothetical proteins / Conserved
+PMM1919,tigr.role:156,Hypothetical proteins / Conserved
+PMM1921,tigr.role:156,Hypothetical proteins / Conserved
+PMM1923,tigr.role:156,Hypothetical proteins / Conserved
+PMM1925,tigr.role:156,Hypothetical proteins / Conserved
+PMM1928,tigr.role:156,Hypothetical proteins / Conserved
+PMM1931,tigr.role:156,Hypothetical proteins / Conserved
+PMM1932,tigr.role:156,Hypothetical proteins / Conserved
+PMM1934,tigr.role:156,Hypothetical proteins / Conserved
+PMM1935,tigr.role:156,Hypothetical proteins / Conserved
+PMM1936,tigr.role:156,Hypothetical proteins / Conserved
+PMM1937,tigr.role:156,Hypothetical proteins / Conserved
+PMM1940,tigr.role:156,Hypothetical proteins / Conserved
+PMM1941,tigr.role:156,Hypothetical proteins / Conserved
+PMM1943,tigr.role:156,Hypothetical proteins / Conserved
+PMM1944,tigr.role:156,Hypothetical proteins / Conserved
+PMM1949,tigr.role:156,Hypothetical proteins / Conserved
+PMM1951,tigr.role:156,Hypothetical proteins / Conserved
+PMM1953,tigr.role:156,Hypothetical proteins / Conserved
+PMM1954,tigr.role:156,Hypothetical proteins / Conserved
+PMM1957,tigr.role:156,Hypothetical proteins / Conserved
+PMM1958,tigr.role:156,Hypothetical proteins / Conserved
+PMM1959,tigr.role:156,Hypothetical proteins / Conserved
+PMM1961,tigr.role:156,Hypothetical proteins / Conserved
+PMM1962,tigr.role:156,Hypothetical proteins / Conserved
+PMM1966,tigr.role:156,Hypothetical proteins / Conserved
+PMM1967,tigr.role:156,Hypothetical proteins / Conserved
+PMM1971,tigr.role:156,Hypothetical proteins / Conserved
+PMM1972,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1974,tigr.role:88,Cell envelope / Other
+PMM1975,tigr.role:156,Hypothetical proteins / Conserved
+PMM1976,tigr.role:185,Unclassified / Role category not yet assigned
+PMM1977,tigr.role:156,Hypothetical proteins / Conserved
+PMM1978,tigr.role:156,Hypothetical proteins / Conserved
+PMM1980,tigr.role:156,Hypothetical proteins / Conserved
+PMM1981,tigr.role:156,Hypothetical proteins / Conserved
+PMM1982,tigr.role:156,Hypothetical proteins / Conserved
+PMM1983,tigr.role:156,Hypothetical proteins / Conserved
+PMM1985,tigr.role:156,Hypothetical proteins / Conserved
+PMM1987,tigr.role:156,Hypothetical proteins / Conserved
+PMM1990,tigr.role:156,Hypothetical proteins / Conserved
+PMM1991,tigr.role:156,Hypothetical proteins / Conserved
+PMM1992,tigr.role:156,Hypothetical proteins / Conserved
+PMM1994,tigr.role:156,Hypothetical proteins / Conserved
+PMM1995,tigr.role:156,Hypothetical proteins / Conserved
+PMM1996,tigr.role:156,Hypothetical proteins / Conserved
+PMM1998,tigr.role:156,Hypothetical proteins / Conserved
+PMM2002,tigr.role:156,Hypothetical proteins / Conserved
+PMM2004,tigr.role:156,Hypothetical proteins / Conserved
+PMM2005,tigr.role:156,Hypothetical proteins / Conserved
+PMM2009,tigr.role:156,Hypothetical proteins / Conserved
+PMM2010,tigr.role:156,Hypothetical proteins / Conserved
+PMM2011,tigr.role:156,Hypothetical proteins / Conserved
+PMM2013,tigr.role:156,Hypothetical proteins / Conserved
+PMM2018,tigr.role:88,Cell envelope / Other
+PMM2019,tigr.role:156,Hypothetical proteins / Conserved
+PMM2046,tigr.role:156,Hypothetical proteins / Conserved
+PMM2055,tigr.role:185,Unclassified / Role category not yet assigned
+PMM2059,tigr.role:156,Hypothetical proteins / Conserved
+PMM50003,tigr.role:156,Hypothetical proteins / Conserved
+PMM50022,tigr.role:156,Hypothetical proteins / Conserved
+PMM50028,tigr.role:156,Hypothetical proteins / Conserved
+PMM50029,tigr.role:156,Hypothetical proteins / Conserved
+PMM_50048,tigr.role:156,Hypothetical proteins / Conserved
+TX50_RS09730,tigr.role:149,Cellular processes / Adaptations to atypical conditions

@@ -1,0 +1,1174 @@
+locus_tag,term_id,term_name
+PMM0001,go:0005737,cytoplasm
+PMM0001,go:0009360,DNA polymerase III complex
+PMM0004,go:0005829,cytosol
+PMM0005,go:0005694,chromosome
+PMM0005,go:0005737,cytoplasm
+PMM0005,go:0009330,"DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) complex"
+PMM0006,go:0009279,cell outer membrane
+PMM0008,go:0016020,membrane
+PMM0009,go:0005829,cytosol
+PMM0010,go:0005737,cytoplasm
+PMM0010,go:0005886,plasma membrane
+PMM0012,go:0005575,cellular_component
+PMM0012,go:0005737,cytoplasm
+PMM0015,go:0005737,cytoplasm
+PMM0019,go:0005737,cytoplasm
+PMM0020,go:0005737,cytoplasm
+PMM0026,go:0005575,cellular_component
+PMM0026,go:0005737,cytoplasm
+PMM0027,go:0009317,acetyl-CoA carboxylase complex
+PMM0033,go:0016020,membrane
+PMM0035,go:0005737,cytoplasm
+PMM0036,go:0005737,cytoplasm
+PMM0040,go:0005886,plasma membrane
+PMM0041,go:0005829,cytosol
+PMM0044,go:0005737,cytoplasm
+PMM0046,go:0005575,cellular_component
+PMM0046,go:0005622,intracellular anatomical structure
+PMM0046,go:0005840,ribosome
+PMM0046,go:0005886,plasma membrane
+PMM0046,go:0030141,secretory granule
+PMM0046,go:0045335,phagocytic vesicle
+PMM0047,go:0005737,cytoplasm
+PMM0048,go:0030956,glutamyl-tRNA(Gln) amidotransferase complex
+PMM0049,go:0005737,cytoplasm
+PMM0054,go:0005886,plasma membrane
+PMM0055,go:0016020,membrane
+PMM0057,go:0005694,chromosome
+PMM0059,go:0016020,membrane
+PMM0060,go:0009317,acetyl-CoA carboxylase complex
+PMM0061,go:0016020,membrane
+PMM0062,go:0009523,photosystem II
+PMM0062,go:0016020,membrane
+PMM0062,go:0042651,thylakoid membrane
+PMM0064,go:0016020,membrane
+PMM0065,go:0005886,plasma membrane
+PMM0076,go:0005829,cytosol
+PMM0079,go:0005737,cytoplasm
+PMM0080,go:0005737,cytoplasm
+PMM0081,go:0005737,cytoplasm
+PMM0083,go:0005886,plasma membrane
+PMM0084,go:0005886,plasma membrane
+PMM0085,go:0016020,membrane
+PMM0089,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0090,go:0030288,outer membrane-bounded periplasmic space
+PMM0093,go:0016020,membrane
+PMM0094,go:0005622,intracellular anatomical structure
+PMM0095,go:0016020,membrane
+PMM0097,go:0009279,cell outer membrane
+PMM0097,go:1990281,efflux pump complex
+PMM0100,go:0005737,cytoplasm
+PMM0101,go:0016020,membrane
+PMM0101,go:0030288,outer membrane-bounded periplasmic space
+PMM0102,go:0005737,cytoplasm
+PMM0107,go:0005829,cytosol
+PMM0112,go:0005575,cellular_component
+PMM0112,go:0005829,cytosol
+PMM0121,go:0042651,thylakoid membrane
+PMM0123,go:0009333,cysteine synthase complex
+PMM0125,go:0016020,membrane
+PMM0128,go:0005829,cytosol
+PMM0128,go:0032993,protein-DNA complex
+PMM0129,go:0009360,DNA polymerase III complex
+PMM0130,go:0005575,cellular_component
+PMM0130,go:0005737,cytoplasm
+PMM0131,go:0005575,cellular_component
+PMM0131,go:0005886,plasma membrane
+PMM0133,go:0005829,cytosol
+PMM0134,go:0005829,cytosol
+PMM0134,go:0032993,protein-DNA complex
+PMM0137,go:0005829,cytosol
+PMM0138,go:0016020,membrane
+PMM0144,go:0005886,plasma membrane
+PMM0145,go:0042651,thylakoid membrane
+PMM0147,go:0031470,carboxysome
+PMM0148,go:0016020,membrane
+PMM0149,go:0005575,cellular_component
+PMM0149,go:0005886,plasma membrane
+PMM0149,go:0012505,endomembrane system
+PMM0149,go:0042651,thylakoid membrane
+PMM0150,go:0042651,thylakoid membrane
+PMM0152,go:0031470,carboxysome
+PMM0153,go:0005829,cytosol
+PMM0157,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0157,go:0045271,respiratory chain complex I
+PMM0157,go:0098797,plasma membrane protein complex
+PMM0158,go:0005886,plasma membrane
+PMM0158,go:0042651,thylakoid membrane
+PMM0159,go:0030964,NADH dehydrogenase complex
+PMM0159,go:0042651,thylakoid membrane
+PMM0160,go:0042651,thylakoid membrane
+PMM0161,go:0005829,cytosol
+PMM0164,go:0005575,cellular_component
+PMM0164,go:0005737,cytoplasm
+PMM0166,go:0005737,cytoplasm
+PMM0167,go:0009320,phosphoribosylaminoimidazole carboxylase complex
+PMM0169,go:0005829,cytosol
+PMM0169,go:0032993,protein-DNA complex
+PMM0171,go:0005575,cellular_component
+PMM0171,go:0005737,cytoplasm
+PMM0172,go:0042651,thylakoid membrane
+PMM0176,go:0005886,plasma membrane
+PMM0177,go:0005737,cytoplasm
+PMM0178,go:0005575,cellular_component
+PMM0178,go:0005737,cytoplasm
+PMM0179,go:0005737,cytoplasm
+PMM0180,go:0005737,cytoplasm
+PMM0183,go:0005886,plasma membrane
+PMM0184,go:0005829,cytosol
+PMM0187,go:0005575,cellular_component
+PMM0187,go:0005737,cytoplasm
+PMM0188,go:0005737,cytoplasm
+PMM0189,go:0005622,intracellular anatomical structure
+PMM0191,go:0005575,cellular_component
+PMM0191,go:0005618,cell wall
+PMM0191,go:0005886,plasma membrane
+PMM0192,go:0009898,cytoplasmic side of plasma membrane
+PMM0192,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0193,go:0005575,cellular_component
+PMM0193,go:0005829,cytosol
+PMM0194,go:0005737,cytoplasm
+PMM0195,go:0005737,cytoplasm
+PMM0197,go:0005886,plasma membrane
+PMM0199,go:0005737,cytoplasm
+PMM0199,go:0005886,plasma membrane
+PMM0200,go:0005737,cytoplasm
+PMM0201,go:0005622,intracellular anatomical structure
+PMM0201,go:0005840,ribosome
+PMM0201,go:0022625,cytosolic large ribosomal subunit
+PMM0202,go:0022625,cytosolic large ribosomal subunit
+PMM0203,go:0022625,cytosolic large ribosomal subunit
+PMM0204,go:0022625,cytosolic large ribosomal subunit
+PMM0205,go:0005575,cellular_component
+PMM0205,go:0005829,cytosol
+PMM0206,go:0005886,plasma membrane
+PMM0206,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0207,go:0005737,cytoplasm
+PMM0208,go:0000015,phosphopyruvate hydratase complex
+PMM0214,go:0016020,membrane
+PMM0215,go:0005829,cytosol
+PMM0215,go:0009507,chloroplast
+PMM0217,go:0032300,mismatch repair complex
+PMM0217,go:1990391,DNA repair complex
+PMM0223,go:0009539,photosystem II reaction center
+PMM0224,go:0005575,cellular_component
+PMM0224,go:0005829,cytosol
+PMM0226,go:0016020,membrane
+PMM0226,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0228,go:0009654,photosystem II oxygen evolving complex
+PMM0228,go:0019898,extrinsic component of membrane
+PMM0228,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0229,go:0071513,phosphopantothenoylcysteine decarboxylase complex
+PMM0232,go:0016020,membrane
+PMM0233,go:0005575,cellular_component
+PMM0233,go:0005737,cytoplasm
+PMM0235,go:0030956,glutamyl-tRNA(Gln) amidotransferase complex
+PMM0238,go:0005737,cytoplasm
+PMM0240,go:0005737,cytoplasm
+PMM0240,go:0043527,tRNA methyltransferase complex
+PMM0246,go:0005829,cytosol
+PMM0246,go:0032993,protein-DNA complex
+PMM0251,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0252,go:0009539,photosystem II reaction center
+PMM0252,go:0016020,membrane
+PMM0253,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0254,go:0009279,cell outer membrane
+PMM0254,go:1990351,transporter complex
+PMM0255,go:0009316,3-isopropylmalate dehydratase complex
+PMM0256,go:0009316,3-isopropylmalate dehydratase complex
+PMM0259,go:0016020,membrane
+PMM0261,go:0005886,plasma membrane
+PMM0263,go:0005886,plasma membrane
+PMM0265,go:0005886,plasma membrane
+PMM0266,go:0005829,cytosol
+PMM0269,go:0005886,plasma membrane
+PMM0270,go:0005886,plasma membrane
+PMM0271,go:0005575,cellular_component
+PMM0271,go:0005737,cytoplasm
+PMM0272,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0274,go:0005886,plasma membrane
+PMM0279,go:0005575,cellular_component
+PMM0279,go:0005829,cytosol
+PMM0288,go:0010007,magnesium chelatase complex
+PMM0292,go:0042651,thylakoid membrane
+PMM0293,go:0042651,thylakoid membrane
+PMM0294,go:0030964,NADH dehydrogenase complex
+PMM0294,go:0042651,thylakoid membrane
+PMM0294,go:1902494,catalytic complex
+PMM0297,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0298,go:0009539,photosystem II reaction center
+PMM0298,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0299,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0300,go:0009523,photosystem II
+PMM0304,go:0005829,cytosol
+PMM0304,go:0033202,DNA helicase complex
+PMM0305,go:0030089,phycobilisome
+PMM0306,go:0030089,phycobilisome
+PMM0308,go:0005886,plasma membrane
+PMM0310,go:0005829,cytosol
+PMM0311,go:0005575,cellular_component
+PMM0311,go:0005829,cytosol
+PMM0312,go:0005840,ribosome
+PMM0312,go:0022627,cytosolic small ribosomal subunit
+PMM0312,go:1990904,ribonucleoprotein complex
+PMM0314,go:0009523,photosystem II
+PMM0315,go:0009539,photosystem II reaction center
+PMM0315,go:0016020,membrane
+PMM0315,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0317,go:0009523,photosystem II
+PMM0318,go:0005575,cellular_component
+PMM0318,go:0005829,cytosol
+PMM0319,go:0005737,cytoplasm
+PMM0321,go:0005829,cytosol
+PMM0321,go:0009898,cytoplasmic side of plasma membrane
+PMM0324,go:0030288,outer membrane-bounded periplasmic space
+PMM0325,go:0005622,intracellular anatomical structure
+PMM0325,go:0009512,cytochrome b6f complex
+PMM0325,go:0032991,protein-containing complex
+PMM0325,go:0042651,thylakoid membrane
+PMM0326,go:0005622,intracellular anatomical structure
+PMM0326,go:0009512,cytochrome b6f complex
+PMM0326,go:0032991,protein-containing complex
+PMM0326,go:0042651,thylakoid membrane
+PMM0329,go:0005575,cellular_component
+PMM0329,go:0005622,intracellular anatomical structure
+PMM0329,go:0005886,plasma membrane
+PMM0329,go:0009538,photosystem I reaction center
+PMM0329,go:0042651,thylakoid membrane
+PMM0331,go:0005737,cytoplasm
+PMM0331,go:0009501,amyloplast
+PMM0331,go:0009507,chloroplast
+PMM0332,go:0016020,membrane
+PMM0336,go:0016020,membrane
+PMM0343,go:0005886,plasma membrane
+PMM0343,go:0033281,TAT protein transport complex
+PMM0344,go:0016020,membrane
+PMM0345,go:0005737,cytoplasm
+PMM0347,go:0016020,membrane
+PMM0352,go:0016020,membrane
+PMM0353,go:0016020,membrane
+PMM0356,go:0005737,cytoplasm
+PMM0357,go:0005829,cytosol
+PMM0358,go:0005829,cytosol
+PMM0363,go:0005622,intracellular anatomical structure
+PMM0367,go:0005737,cytoplasm
+PMM0370,go:0005886,plasma membrane
+PMM0370,go:0042597,periplasmic space
+PMM0370,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0371,go:0005886,plasma membrane
+PMM0371,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0372,go:0005886,plasma membrane
+PMM0374,go:0005886,plasma membrane
+PMM0374,go:0033281,TAT protein transport complex
+PMM0383,go:0016020,membrane
+PMM0391,go:0005737,cytoplasm
+PMM0392,go:0005886,plasma membrane
+PMM0396,go:0005829,cytosol
+PMM0398,go:0043590,bacterial nucleoid
+PMM0399,go:0005737,cytoplasm
+PMM0400,go:0022627,cytosolic small ribosomal subunit
+PMM0405,go:0045254,pyruvate dehydrogenase complex
+PMM0406,go:0005737,cytoplasm
+PMM0409,go:0005737,cytoplasm
+PMM0410,go:0005737,cytoplasm
+PMM0410,go:0022627,cytosolic small ribosomal subunit
+PMM0411,go:0005886,plasma membrane
+PMM0413,go:0005737,cytoplasm
+PMM0414,go:0005737,cytoplasm
+PMM0421,go:0016020,membrane
+PMM0422,go:0005737,cytoplasm
+PMM0426,go:0005575,cellular_component
+PMM0426,go:0005829,cytosol
+PMM0427,go:0030288,outer membrane-bounded periplasmic space
+PMM0428,go:0016020,membrane
+PMM0429,go:0009512,cytochrome b6f complex
+PMM0433,go:0005737,cytoplasm
+PMM0434,go:0098796,membrane protein complex
+PMM0435,go:0042651,thylakoid membrane
+PMM0436,go:0005737,cytoplasm
+PMM0443,go:0032993,protein-DNA complex
+PMM0444,go:0005575,cellular_component
+PMM0444,go:0005886,plasma membrane
+PMM0445,go:0005886,plasma membrane
+PMM0446,go:0005886,plasma membrane
+PMM0446,go:0009319,cytochrome o ubiquinol oxidase complex
+PMM0446,go:0098796,membrane protein complex
+PMM0447,go:0016020,membrane
+PMM0448,go:0005575,cellular_component
+PMM0448,go:0005886,plasma membrane
+PMM0449,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0450,go:0016020,membrane
+PMM0450,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0452,go:0032991,protein-containing complex
+PMM0452,go:1990220,GroEL-GroES complex
+PMM0456,go:0005886,plasma membrane
+PMM0458,go:0016020,membrane
+PMM0460,go:0016020,membrane
+PMM0461,go:0005622,intracellular anatomical structure
+PMM0461,go:0009512,cytochrome b6f complex
+PMM0461,go:0032991,protein-containing complex
+PMM0462,go:0009512,cytochrome b6f complex
+PMM0464,go:0033281,TAT protein transport complex
+PMM0466,go:1990112,RQC complex
+PMM0467,go:0005575,cellular_component
+PMM0467,go:0005829,cytosol
+PMM0468,go:0009538,photosystem I reaction center
+PMM0468,go:0030094,plasma membrane-derived photosystem I
+PMM0469,go:0009538,photosystem I reaction center
+PMM0469,go:0030094,plasma membrane-derived photosystem I
+PMM0469,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0470,go:0000408,EKC/KEOPS complex
+PMM0470,go:0005622,intracellular anatomical structure
+PMM0470,go:0032991,protein-containing complex
+PMM0472,go:0005886,plasma membrane
+PMM0473,go:0005575,cellular_component
+PMM0473,go:0009332,glutamate-tRNA ligase complex
+PMM0475,go:0000311,plastid large ribosomal subunit
+PMM0475,go:0022625,cytosolic large ribosomal subunit
+PMM0477,go:0005829,cytosol
+PMM0482,go:0005743,mitochondrial inner membrane
+PMM0482,go:0016020,membrane
+PMM0482,go:0035632,mitochondrial prohibitin complex
+PMM0483,go:0005737,cytoplasm
+PMM0484,go:0005622,intracellular anatomical structure
+PMM0488,go:0005886,plasma membrane
+PMM0489,go:0005886,plasma membrane
+PMM0492,go:0005737,cytoplasm
+PMM0494,go:0005737,cytoplasm
+PMM0495,go:0005575,cellular_component
+PMM0495,go:0005737,cytoplasm
+PMM0496,go:0005737,cytoplasm
+PMM0497,go:0005658,alpha DNA polymerase:primase complex
+PMM0497,go:1990077,primosome complex
+PMM0499,go:0005737,cytoplasm
+PMM0504,go:0005575,cellular_component
+PMM0504,go:0005737,cytoplasm
+PMM0506,go:0005575,cellular_component
+PMM0506,go:0005737,cytoplasm
+PMM0507,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0507,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0507,go:0031977,thylakoid lumen
+PMM0508,go:0005829,cytosol
+PMM0510,go:0016020,membrane
+PMM0511,go:0005737,cytoplasm
+PMM0513,go:0005886,plasma membrane
+PMM0514,go:0005575,cellular_component
+PMM0514,go:0005737,cytoplasm
+PMM0516,go:0016020,membrane
+PMM0518,go:0005886,plasma membrane
+PMM0519,go:0005737,cytoplasm
+PMM0521,go:0005737,cytoplasm
+PMM0522,go:0005737,cytoplasm
+PMM0526,go:0005948,acetolactate synthase complex
+PMM0530,go:0005840,ribosome
+PMM0530,go:0022627,cytosolic small ribosomal subunit
+PMM0530,go:1990904,ribonucleoprotein complex
+PMM0533,go:0005575,cellular_component
+PMM0533,go:0005886,plasma membrane
+PMM0534,go:0009317,acetyl-CoA carboxylase complex
+PMM0535,go:0016020,membrane
+PMM0536,go:0005575,cellular_component
+PMM0536,go:0005737,cytoplasm
+PMM0538,go:0005575,cellular_component
+PMM0538,go:0005737,cytoplasm
+PMM0540,go:0009538,photosystem I reaction center
+PMM0540,go:0030094,plasma membrane-derived photosystem I
+PMM0547,go:0031470,carboxysome
+PMM0548,go:0005829,cytosol
+PMM0549,go:0031470,carboxysome
+PMM0550,go:0031470,carboxysome
+PMM0551,go:0031470,carboxysome
+PMM0552,go:0031470,carboxysome
+PMM0553,go:0031470,carboxysome
+PMM0554,go:0031470,carboxysome
+PMM0555,go:0031470,carboxysome
+PMM0558,go:0005829,cytosol
+PMM0560,go:0005737,cytoplasm
+PMM0561,go:0005886,plasma membrane
+PMM0561,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0562,go:0005737,cytoplasm
+PMM0563,go:0005886,plasma membrane
+PMM0563,go:0009274,peptidoglycan-based cell wall
+PMM0564,go:0005575,cellular_component
+PMM0565,go:0005575,cellular_component
+PMM0565,go:0005737,cytoplasm
+PMM0565,go:0005886,plasma membrane
+PMM0566,go:0005737,cytoplasm
+PMM0567,go:0005575,cellular_component
+PMM0567,go:0005829,cytosol
+PMM0568,go:0005886,plasma membrane
+PMM0569,go:0005575,cellular_component
+PMM0569,go:0005829,cytosol
+PMM0570,go:0042651,thylakoid membrane
+PMM0576,go:0012505,endomembrane system
+PMM0576,go:0016020,membrane
+PMM0580,go:0005737,cytoplasm
+PMM0581,go:0016020,membrane
+PMM0583,go:0005575,cellular_component
+PMM0583,go:0005829,cytosol
+PMM0589,go:0005886,plasma membrane
+PMM0591,go:0005737,cytoplasm
+PMM0593,go:0005829,cytosol
+PMM0594,go:0042651,thylakoid membrane
+PMM0595,go:0005575,cellular_component
+PMM0595,go:0005829,cytosol
+PMM0596,go:0005575,cellular_component
+PMM0596,go:0005829,cytosol
+PMM0597,go:0005737,cytoplasm
+PMM0600,go:0016020,membrane
+PMM0601,go:0030313,cell envelope
+PMM0603,go:0005575,cellular_component
+PMM0603,go:0005886,plasma membrane
+PMM0603,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0606,go:0005886,plasma membrane
+PMM0608,go:0005829,cytosol
+PMM0610,go:0005737,cytoplasm
+PMM0611,go:0005737,cytoplasm
+PMM0616,go:0030288,outer membrane-bounded periplasmic space
+PMM0619,go:0005829,cytosol
+PMM0621,go:0005829,cytosol
+PMM0623,go:0005737,cytoplasm
+PMM0627,go:0009517,PSII associated light-harvesting complex II
+PMM0627,go:0030076,light-harvesting complex
+PMM0628,go:0016020,membrane
+PMM0630,go:0005737,cytoplasm
+PMM0635,go:0005886,plasma membrane
+PMM0642,go:0005737,cytoplasm
+PMM0643,go:0005737,cytoplasm
+PMM0644,go:0016020,membrane
+PMM0653,go:0005737,cytoplasm
+PMM0654,go:0016020,membrane
+PMM0656,go:0016020,membrane
+PMM0658,go:0005575,cellular_component
+PMM0658,go:0005829,cytosol
+PMM0663,go:0005829,cytosol
+PMM0665,go:0005737,cytoplasm
+PMM0666,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0668,go:0005737,cytoplasm
+PMM0669,go:0005575,cellular_component
+PMM0669,go:0016020,membrane
+PMM0671,go:0005886,plasma membrane
+PMM0671,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0672,go:0005886,plasma membrane
+PMM0672,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0673,go:0030288,outer membrane-bounded periplasmic space
+PMM0673,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0676,go:0005737,cytoplasm
+PMM0678,go:0005575,cellular_component
+PMM0678,go:0005829,cytosol
+PMM0682,go:0005737,cytoplasm
+PMM0683,go:0005575,cellular_component
+PMM0683,go:0005829,cytosol
+PMM0683,go:0009320,phosphoribosylaminoimidazole carboxylase complex
+PMM0689,go:0016020,membrane
+PMM0690,go:0016020,membrane
+PMM0695,go:0005829,cytosol
+PMM0704,go:0005886,plasma membrane
+PMM0705,go:0005829,cytosol
+PMM0705,go:0032993,protein-DNA complex
+PMM0706,go:0005886,plasma membrane
+PMM0709,go:0009279,cell outer membrane
+PMM0709,go:0016020,membrane
+PMM0710,go:0030288,outer membrane-bounded periplasmic space
+PMM0710,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0711,go:0005886,plasma membrane
+PMM0714,go:0005622,intracellular anatomical structure
+PMM0716,go:0016020,membrane
+PMM0717,go:0016020,membrane
+PMM0717,go:0030313,cell envelope
+PMM0717,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0723,go:0005886,plasma membrane
+PMM0723,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0724,go:0005886,plasma membrane
+PMM0724,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0725,go:0009898,cytoplasmic side of plasma membrane
+PMM0725,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0741,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0742,go:0009368,endopeptidase Clp complex
+PMM0743,go:0005575,cellular_component
+PMM0743,go:0005622,intracellular anatomical structure
+PMM0743,go:0009523,photosystem II
+PMM0743,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0748,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0749,go:0016020,membrane
+PMM0749,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0750,go:0005886,plasma membrane
+PMM0752,go:0009274,peptidoglycan-based cell wall
+PMM0753,go:0022627,cytosolic small ribosomal subunit
+PMM0756,go:0005575,cellular_component
+PMM0756,go:0005737,cytoplasm
+PMM0756,go:0009379,Holliday junction helicase complex
+PMM0757,go:0005576,extracellular region
+PMM0757,go:0005618,cell wall
+PMM0758,go:0009337,sulfite reductase complex (NADPH)
+PMM0759,go:0005829,cytosol
+PMM0762,go:0005829,cytosol
+PMM0762,go:1990904,ribonucleoprotein complex
+PMM0764,go:0005737,cytoplasm
+PMM0764,go:0005886,plasma membrane
+PMM0764,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0765,go:0016020,membrane
+PMM0766,go:0005737,cytoplasm
+PMM0767,go:0005575,cellular_component
+PMM0767,go:0005829,cytosol
+PMM0768,go:0005737,cytoplasm
+PMM0769,go:0031470,carboxysome
+PMM0771,go:0005575,cellular_component
+PMM0771,go:0005737,cytoplasm
+PMM0778,go:0005737,cytoplasm
+PMM0779,go:0005737,cytoplasm
+PMM0780,go:0005575,cellular_component
+PMM0780,go:0005737,cytoplasm
+PMM0784,go:0009317,acetyl-CoA carboxylase complex
+PMM0786,go:0005575,cellular_component
+PMM0786,go:0005829,cytosol
+PMM0788,go:0005575,cellular_component
+PMM0788,go:0005829,cytosol
+PMM0791,go:0005575,cellular_component
+PMM0791,go:0005829,cytosol
+PMM0796,go:0005575,cellular_component
+PMM0796,go:0005737,cytoplasm
+PMM0797,go:0005829,cytosol
+PMM0798,go:0016020,membrane
+PMM0803,go:0005886,plasma membrane
+PMM0804,go:0005737,cytoplasm
+PMM0808,go:0005737,cytoplasm
+PMM0815,go:0016020,membrane
+PMM0816,go:0016020,membrane
+PMM0817,go:0016020,membrane
+PMM0818,go:0016020,membrane
+PMM0823,go:0005737,cytoplasm
+PMM0825,go:0005575,cellular_component
+PMM0825,go:0005951,carbamoyl-phosphate synthase complex
+PMM0827,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0829,go:0005575,cellular_component
+PMM0829,go:0005829,cytosol
+PMM0830,go:0005575,cellular_component
+PMM0830,go:0005829,cytosol
+PMM0831,go:0010007,magnesium chelatase complex
+PMM0832,go:0005575,cellular_component
+PMM0832,go:0005829,cytosol
+PMM0839,go:0005737,cytoplasm
+PMM0840,go:0016020,membrane
+PMM0841,go:0005737,cytoplasm
+PMM0842,go:0005829,cytosol
+PMM0843,go:0005575,cellular_component
+PMM0843,go:0005829,cytosol
+PMM0846,go:0016020,membrane
+PMM0848,go:0016020,membrane
+PMM0849,go:0016020,membrane
+PMM0853,go:0000315,organellar large ribosomal subunit
+PMM0853,go:0005840,ribosome
+PMM0853,go:0022625,cytosolic large ribosomal subunit
+PMM0854,go:0009523,photosystem II
+PMM0854,go:0016020,membrane
+PMM0854,go:0031676,plasma membrane-derived thylakoid membrane
+PMM0862,go:0005737,cytoplasm
+PMM0866,go:0005886,plasma membrane
+PMM0867,go:0005737,cytoplasm
+PMM0868,go:0000178,exosome (RNase complex)
+PMM0868,go:0000932,P-body
+PMM0868,go:1990904,ribonucleoprotein complex
+PMM0869,go:0000314,organellar small ribosomal subunit
+PMM0869,go:0022627,cytosolic small ribosomal subunit
+PMM0870,go:0005840,ribosome
+PMM0870,go:0022625,cytosolic large ribosomal subunit
+PMM0871,go:0009328,phenylalanine-tRNA ligase complex
+PMM0875,go:0005575,cellular_component
+PMM0877,go:0005575,cellular_component
+PMM0877,go:0005829,cytosol
+PMM0882,go:0005622,intracellular anatomical structure
+PMM0882,go:0009380,excinuclease repair complex
+PMM0888,go:0005575,cellular_component
+PMM0888,go:0005829,cytosol
+PMM0889,go:0005575,cellular_component
+PMM0889,go:0005829,cytosol
+PMM0890,go:0005575,cellular_component
+PMM0890,go:0005737,cytoplasm
+PMM0891,go:0005829,cytosol
+PMM0892,go:0005737,cytoplasm
+PMM0893,go:0005829,cytosol
+PMM0900,go:0005737,cytoplasm
+PMM0902,go:0022625,cytosolic large ribosomal subunit
+PMM0903,go:0005829,cytosol
+PMM0906,go:0009538,photosystem I reaction center
+PMM0906,go:0030094,plasma membrane-derived photosystem I
+PMM0906,go:0042651,thylakoid membrane
+PMM0907,go:0005737,cytoplasm
+PMM0910,go:0016020,membrane
+PMM0912,go:0005575,cellular_component
+PMM0912,go:0005829,cytosol
+PMM0913,go:0005886,plasma membrane
+PMM0914,go:0005886,plasma membrane
+PMM0915,go:0005886,plasma membrane
+PMM0916,go:0005829,cytosol
+PMM0916,go:0016020,membrane
+PMM0917,go:0005737,cytoplasm
+PMM0920,go:0005737,cytoplasm
+PMM0920,go:0016020,membrane
+PMM0926,go:0009538,photosystem I reaction center
+PMM0926,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM0927,go:0016020,membrane
+PMM0928,go:0005575,cellular_component
+PMM0928,go:0005886,plasma membrane
+PMM0928,go:0031522,cell envelope Sec protein transport complex
+PMM0929,go:0005575,cellular_component
+PMM0929,go:0005886,plasma membrane
+PMM0929,go:0031522,cell envelope Sec protein transport complex
+PMM0933,go:0005575,cellular_component
+PMM0933,go:0005737,cytoplasm
+PMM0935,go:0005737,cytoplasm
+PMM0937,go:0005829,cytosol
+PMM0939,go:0000428,DNA-directed RNA polymerase complex
+PMM0939,go:0005737,cytoplasm
+PMM0939,go:1990077,primosome complex
+PMM0940,go:0016020,membrane
+PMM0941,go:0019867,outer membrane
+PMM0942,go:0009379,Holliday junction helicase complex
+PMM0942,go:0048476,Holliday junction resolvase complex
+PMM0943,go:0022627,cytosolic small ribosomal subunit
+PMM0944,go:0016020,membrane
+PMM0945,go:0005737,cytoplasm
+PMM0946,go:0030956,glutamyl-tRNA(Gln) amidotransferase complex
+PMM0948,go:0005575,cellular_component
+PMM0948,go:0005829,cytosol
+PMM0949,go:0005737,cytoplasm
+PMM0951,go:0005951,carbamoyl-phosphate synthase complex
+PMM0954,go:0005886,plasma membrane
+PMM0954,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0955,go:0005737,cytoplasm
+PMM0956,go:0016020,membrane
+PMM0956,go:0030288,outer membrane-bounded periplasmic space
+PMM0960,go:0005829,cytosol
+PMM0963,go:0005737,cytoplasm
+PMM0964,go:0035550,urease complex
+PMM0965,go:0005737,cytoplasm
+PMM0970,go:0016020,membrane
+PMM0970,go:0030288,outer membrane-bounded periplasmic space
+PMM0970,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0971,go:0005886,plasma membrane
+PMM0972,go:0005886,plasma membrane
+PMM0972,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0973,go:0009898,cytoplasmic side of plasma membrane
+PMM0973,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0974,go:0009898,cytoplasmic side of plasma membrane
+PMM0974,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM0976,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0977,go:0016020,membrane
+PMM0977,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0978,go:0016020,membrane
+PMM0978,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM0981,go:0005886,plasma membrane
+PMM0987,go:0005840,ribosome
+PMM0987,go:0022627,cytosolic small ribosomal subunit
+PMM0997,go:0016020,membrane
+PMM1015,go:0016020,membrane
+PMM1029,go:0016020,membrane
+PMM1029,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM1032,go:0030313,cell envelope
+PMM1033,go:0005737,cytoplasm
+PMM1040,go:0009539,photosystem II reaction center
+PMM1046,go:0005886,plasma membrane
+PMM1048,go:0005886,plasma membrane
+PMM1049,go:0030313,cell envelope
+PMM1049,go:0042597,periplasmic space
+PMM1049,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM1054,go:0005622,intracellular anatomical structure
+PMM1054,go:0009379,Holliday junction helicase complex
+PMM1054,go:0032991,protein-containing complex
+PMM1054,go:0048476,Holliday junction resolvase complex
+PMM1055,go:0010007,magnesium chelatase complex
+PMM1058,go:0009512,cytochrome b6f complex
+PMM1058,go:0009535,chloroplast thylakoid membrane
+PMM1060,go:0009382,imidazoleglycerol-phosphate synthase complex
+PMM1061,go:0005575,cellular_component
+PMM1061,go:0005737,cytoplasm
+PMM1063,go:0005694,chromosome
+PMM1063,go:0005737,cytoplasm
+PMM1063,go:0009330,"DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) complex"
+PMM1065,go:0005576,extracellular region
+PMM1068,go:0016020,membrane
+PMM1069,go:0005575,cellular_component
+PMM1069,go:0005829,cytosol
+PMM1070,go:0005737,cytoplasm
+PMM1072,go:0005737,cytoplasm
+PMM1074,go:0005829,cytosol
+PMM1075,go:0005575,cellular_component
+PMM1075,go:0005622,intracellular anatomical structure
+PMM1075,go:0030089,phycobilisome
+PMM1075,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1080,go:0009507,chloroplast
+PMM1085,go:0016020,membrane
+PMM1088,go:0005737,cytoplasm
+PMM1092,go:0005575,cellular_component
+PMM1092,go:0005829,cytosol
+PMM1096,go:0005575,cellular_component
+PMM1096,go:0005737,cytoplasm
+PMM1098,go:0009654,photosystem II oxygen evolving complex
+PMM1098,go:0019898,extrinsic component of membrane
+PMM1099,go:0005886,plasma membrane
+PMM1099,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM1101,go:0005829,cytosol
+PMM1103,go:0005829,cytosol
+PMM1103,go:0009338,exodeoxyribonuclease V complex
+PMM1104,go:0012505,endomembrane system
+PMM1105,go:0009338,exodeoxyribonuclease V complex
+PMM1107,go:0005575,cellular_component
+PMM1107,go:0005829,cytosol
+PMM1108,go:0016020,membrane
+PMM1110,go:1990229,iron-sulfur cluster assembly complex
+PMM1113,go:0005829,cytosol
+PMM1113,go:0032993,protein-DNA complex
+PMM1116,go:0005575,cellular_component
+PMM1116,go:0005829,cytosol
+PMM1117,go:0009523,photosystem II
+PMM1118,go:0016020,membrane
+PMM1119,go:0009279,cell outer membrane
+PMM1120,go:0016020,membrane
+PMM1121,go:0009279,cell outer membrane
+PMM1122,go:0005737,cytoplasm
+PMM1123,go:0016020,membrane
+PMM1124,go:0016020,membrane
+PMM1126,go:0005886,plasma membrane
+PMM1128,go:0016020,membrane
+PMM1135,go:0016020,membrane
+PMM1136,go:0016020,membrane
+PMM1138,go:0005737,cytoplasm
+PMM1139,go:0016020,membrane
+PMM1139,go:1990281,efflux pump complex
+PMM1140,go:0005575,cellular_component
+PMM1140,go:0005737,cytoplasm
+PMM1141,go:0005575,cellular_component
+PMM1141,go:0005829,cytosol
+PMM1142,go:0005737,cytoplasm
+PMM1145,go:0005886,plasma membrane
+PMM1146,go:0005886,plasma membrane
+PMM1147,go:0005886,plasma membrane
+PMM1150,go:0005737,cytoplasm
+PMM1151,go:0005829,cytosol
+PMM1152,go:0009523,photosystem II
+PMM1152a,go:0009512,cytochrome b6f complex
+PMM1154,go:0005829,cytosol
+PMM1154,go:0005948,acetolactate synthase complex
+PMM1156,go:0009522,photosystem I
+PMM1156,go:0009579,thylakoid
+PMM1157,go:0009539,photosystem II reaction center
+PMM1157,go:0016020,membrane
+PMM1157,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1158,go:0009539,photosystem II reaction center
+PMM1158,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM1158,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1159,go:0005737,cytoplasm
+PMM1159,go:0030428,cell septum
+PMM1164,go:0005575,cellular_component
+PMM1164,go:0005886,plasma membrane
+PMM1164,go:0030288,outer membrane-bounded periplasmic space
+PMM1164,go:0042651,thylakoid membrane
+PMM1165,go:0009345,glycine-tRNA ligase complex
+PMM1167,go:0005615,extracellular space
+PMM1173,go:0016020,membrane
+PMM1175,go:0005886,plasma membrane
+PMM1177,go:0005886,plasma membrane
+PMM1179,go:0016020,membrane
+PMM1183,go:0000315,organellar large ribosomal subunit
+PMM1183,go:0005840,ribosome
+PMM1183,go:0022625,cytosolic large ribosomal subunit
+PMM1188,go:0005737,cytoplasm
+PMM1189,go:0016020,membrane
+PMM1190,go:0005737,cytoplasm
+PMM1190,go:0022627,cytosolic small ribosomal subunit
+PMM1193,go:0005737,cytoplasm
+PMM1194,go:0016020,membrane
+PMM1197,go:0005886,plasma membrane
+PMM1199,go:0016020,membrane
+PMM1200,go:0005886,plasma membrane
+PMM1206,go:0005886,plasma membrane
+PMM1209,go:0005829,cytosol
+PMM1211,go:0016020,membrane
+PMM1214,go:0005737,cytoplasm
+PMM1215,go:0005737,cytoplasm
+PMM1218,go:0005829,cytosol
+PMM1224,go:0016020,membrane
+PMM1226,go:0016020,membrane
+PMM1227,go:0005886,plasma membrane
+PMM1239,go:0005886,plasma membrane
+PMM1239,go:0055052,"ATP-binding cassette (ABC) transporter complex, substrate-binding subunit-containing"
+PMM1250,go:0016020,membrane
+PMM1252,go:0031470,carboxysome
+PMM1260,go:0005737,cytoplasm
+PMM1262,go:0032993,protein-DNA complex
+PMM1263,go:0005575,cellular_component
+PMM1263,go:0005737,cytoplasm
+PMM1264,go:0016020,membrane
+PMM1264,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1270,go:0009328,phenylalanine-tRNA ligase complex
+PMM1271,go:0005737,cytoplasm
+PMM1272,go:0016020,membrane
+PMM1273,go:0005737,cytoplasm
+PMM1274,go:0005575,cellular_component
+PMM1274,go:0005737,cytoplasm
+PMM1280,go:0005829,cytosol
+PMM1281,go:0005829,cytosol
+PMM1281,go:0005886,plasma membrane
+PMM1283,go:0005886,plasma membrane
+PMM1284,go:0005829,cytosol
+PMM1285,go:0000314,organellar small ribosomal subunit
+PMM1285,go:0005737,cytoplasm
+PMM1285,go:0022627,cytosolic small ribosomal subunit
+PMM1286,go:0048501,"signal recognition particle, plasma membrane targeting"
+PMM1288,go:0045254,pyruvate dehydrogenase complex
+PMM1291,go:0005737,cytoplasm
+PMM1296,go:0016020,membrane
+PMM1298,go:0045252,oxoglutarate dehydrogenase complex
+PMM1302,go:0005829,cytosol
+PMM1303,go:0009339,glycolate oxidase complex
+PMM1306,go:0005737,cytoplasm
+PMM1308,go:0005886,plasma membrane
+PMM1309,go:0005575,cellular_component
+PMM1309,go:0005737,cytoplasm
+PMM1309,go:0032153,cell division site
+PMM1311,go:0005575,cellular_component
+PMM1311,go:0005737,cytoplasm
+PMM1312,go:0005575,cellular_component
+PMM1312,go:0005618,cell wall
+PMM1312,go:0016020,membrane
+PMM1313,go:0005737,cytoplasm
+PMM1313,go:0009368,endopeptidase Clp complex
+PMM1314,go:0005737,cytoplasm
+PMM1316,go:0005886,plasma membrane
+PMM1317,go:0016020,membrane
+PMM1321,go:0005829,cytosol
+PMM1323,go:0005886,plasma membrane
+PMM1324,go:0016020,membrane
+PMM1324,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM1327,go:0005886,plasma membrane
+PMM1329,go:0005575,cellular_component
+PMM1329,go:0005829,cytosol
+PMM1332,go:0005622,intracellular anatomical structure
+PMM1332,go:0005829,cytosol
+PMM1334,go:0005575,cellular_component
+PMM1334,go:0005829,cytosol
+PMM1334,go:0016020,membrane
+PMM1336,go:0005829,cytosol
+PMM1337,go:0016020,membrane
+PMM1338,go:0019867,outer membrane
+PMM1341,go:0016020,membrane
+PMM1344,go:0005840,ribosome
+PMM1344,go:0022625,cytosolic large ribosomal subunit
+PMM1345,go:0000315,organellar large ribosomal subunit
+PMM1345,go:0005840,ribosome
+PMM1345,go:0022625,cytosolic large ribosomal subunit
+PMM1348,go:0030288,outer membrane-bounded periplasmic space
+PMM1353,go:0005737,cytoplasm
+PMM1356,go:0030095,chloroplast photosystem II
+PMM1356,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM1357,go:0016020,membrane
+PMM1359,go:0005886,plasma membrane
+PMM1364,go:0005737,cytoplasm
+PMM1371,go:0005886,plasma membrane
+PMM1373,go:0016020,membrane
+PMM1378,go:0016020,membrane
+PMM1379,go:0005829,cytosol
+PMM1384,go:0016020,membrane
+PMM1385,go:0016020,membrane
+PMM1386,go:0016020,membrane
+PMM1386,go:0043190,ATP-binding cassette (ABC) transporter complex
+PMM1390,go:0016020,membrane
+PMM1396,go:0016020,membrane
+PMM1397,go:0016020,membrane
+PMM1398,go:0016020,membrane
+PMM1399,go:0016020,membrane
+PMM1404,go:0016020,membrane
+PMM1423,go:0016020,membrane
+PMM1432,go:0005737,cytoplasm
+PMM1434,go:0005737,cytoplasm
+PMM1435,go:0005886,plasma membrane
+PMM1436,go:0005737,cytoplasm
+PMM1436,go:1990220,GroEL-GroES complex
+PMM1437,go:0005737,cytoplasm
+PMM1437,go:1990220,GroEL-GroES complex
+PMM1438,go:0005622,intracellular anatomical structure
+PMM1438,go:0045259,proton-transporting ATP synthase complex
+PMM1438,go:0098797,plasma membrane protein complex
+PMM1439,go:0005622,intracellular anatomical structure
+PMM1439,go:0045259,proton-transporting ATP synthase complex
+PMM1439,go:0098797,plasma membrane protein complex
+PMM1440,go:0005840,ribosome
+PMM1440,go:0009536,plastid
+PMM1442,go:0005829,cytosol
+PMM1443,go:0005575,cellular_component
+PMM1443,go:0005886,plasma membrane
+PMM1444,go:0005737,cytoplasm
+PMM1444,go:0016020,membrane
+PMM1446,go:0005575,cellular_component
+PMM1446,go:0005737,cytoplasm
+PMM1450,go:0005622,intracellular anatomical structure
+PMM1450,go:0045259,proton-transporting ATP synthase complex
+PMM1450,go:0098797,plasma membrane protein complex
+PMM1451,go:0005622,intracellular anatomical structure
+PMM1451,go:0045259,proton-transporting ATP synthase complex
+PMM1451,go:0098797,plasma membrane protein complex
+PMM1452,go:0045259,proton-transporting ATP synthase complex
+PMM1453,go:0005622,intracellular anatomical structure
+PMM1453,go:0045259,proton-transporting ATP synthase complex
+PMM1453,go:0098797,plasma membrane protein complex
+PMM1454,go:0005622,intracellular anatomical structure
+PMM1454,go:0045259,proton-transporting ATP synthase complex
+PMM1454,go:0098797,plasma membrane protein complex
+PMM1455,go:0045259,proton-transporting ATP synthase complex
+PMM1456,go:0005622,intracellular anatomical structure
+PMM1456,go:0005886,plasma membrane
+PMM1456,go:0033177,"proton-transporting two-sector ATPase complex, proton-transporting domain"
+PMM1456,go:0045259,proton-transporting ATP synthase complex
+PMM1457,go:0045259,proton-transporting ATP synthase complex
+PMM1458,go:0005886,plasma membrane
+PMM1458,go:0032153,cell division site
+PMM1459,go:0016020,membrane
+PMM1460,go:0042651,thylakoid membrane
+PMM1461,go:0005737,cytoplasm
+PMM1463,go:0005829,cytosol
+PMM1465,go:0005829,cytosol
+PMM1466,go:0045239,tricarboxylic acid cycle heteromeric enzyme complex
+PMM1467,go:0055087,Ski complex
+PMM1471,go:0005575,cellular_component
+PMM1471,go:0005829,cytosol
+PMM1472,go:0005737,cytoplasm
+PMM1475,go:0005575,cellular_component
+PMM1475,go:0005829,cytosol
+PMM1480,go:0030089,phycobilisome
+PMM1481,go:0005737,cytoplasm
+PMM1482,go:0016020,membrane
+PMM1483,go:0000428,DNA-directed RNA polymerase complex
+PMM1483,go:0005622,intracellular anatomical structure
+PMM1484,go:0000428,DNA-directed RNA polymerase complex
+PMM1485,go:0000345,cytosolic DNA-directed RNA polymerase complex
+PMM1485,go:0005622,intracellular anatomical structure
+PMM1486,go:0005829,cytosol
+PMM1487,go:0005840,ribosome
+PMM1487,go:0022627,cytosolic small ribosomal subunit
+PMM1488,go:0005575,cellular_component
+PMM1488,go:0005829,cytosol
+PMM1489,go:0005575,cellular_component
+PMM1489,go:0005829,cytosol
+PMM1490,go:0030288,outer membrane-bounded periplasmic space
+PMM1492,go:0005829,cytosol
+PMM1494,go:0005737,cytoplasm
+PMM1495,go:0016020,membrane
+PMM1496,go:0005886,plasma membrane
+PMM1498,go:0005829,cytosol
+PMM1501,go:0005575,cellular_component
+PMM1501,go:0005737,cytoplasm
+PMM1501,go:0016020,membrane
+PMM1504,go:0005737,cytoplasm
+PMM1507,go:0005737,cytoplasm
+PMM1507,go:0022627,cytosolic small ribosomal subunit
+PMM1510,go:0022627,cytosolic small ribosomal subunit
+PMM1511,go:0005737,cytoplasm
+PMM1511,go:0005840,ribosome
+PMM1511,go:0022627,cytosolic small ribosomal subunit
+PMM1511,go:1990904,ribonucleoprotein complex
+PMM1512,go:0005575,cellular_component
+PMM1512,go:0005737,cytoplasm
+PMM1514,go:0005575,cellular_component
+PMM1514,go:0005737,cytoplasm
+PMM1519,go:0009538,photosystem I reaction center
+PMM1519,go:0030094,plasma membrane-derived photosystem I
+PMM1520,go:0009538,photosystem I reaction center
+PMM1520,go:0030094,plasma membrane-derived photosystem I
+PMM1520,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1521,go:0016020,membrane
+PMM1522,go:0005886,plasma membrane
+PMM1523,go:0009538,photosystem I reaction center
+PMM1523,go:0030094,plasma membrane-derived photosystem I
+PMM1523,go:0042651,thylakoid membrane
+PMM1524,go:0009538,photosystem I reaction center
+PMM1524,go:0009579,thylakoid
+PMM1524,go:0016020,membrane
+PMM1527,go:0005829,cytosol
+PMM1529,go:0005737,cytoplasm
+PMM1530,go:0005840,ribosome
+PMM1530,go:0022625,cytosolic large ribosomal subunit
+PMM1531,go:0022627,cytosolic small ribosomal subunit
+PMM1532,go:0005737,cytoplasm
+PMM1532,go:0005840,ribosome
+PMM1532,go:0022625,cytosolic large ribosomal subunit
+PMM1532,go:1990904,ribonucleoprotein complex
+PMM1534,go:0022625,cytosolic large ribosomal subunit
+PMM1535,go:0005575,cellular_component
+PMM1535,go:0005737,cytoplasm
+PMM1535,go:0030880,RNA polymerase complex
+PMM1536,go:0005840,ribosome
+PMM1536,go:0022627,cytosolic small ribosomal subunit
+PMM1537,go:0005829,cytosol
+PMM1537,go:0022627,cytosolic small ribosomal subunit
+PMM1538,go:0022625,cytosolic large ribosomal subunit
+PMM1538,go:0022627,cytosolic small ribosomal subunit
+PMM1539,go:0005829,cytosol
+PMM1540,go:0005886,plasma membrane
+PMM1540,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1541,go:0005840,ribosome
+PMM1541,go:0022625,cytosolic large ribosomal subunit
+PMM1542,go:0005840,ribosome
+PMM1542,go:0022627,cytosolic small ribosomal subunit
+PMM1543,go:0022625,cytosolic large ribosomal subunit
+PMM1544,go:0022625,cytosolic large ribosomal subunit
+PMM1545,go:0022627,cytosolic small ribosomal subunit
+PMM1546,go:0022625,cytosolic large ribosomal subunit
+PMM1547,go:0005840,ribosome
+PMM1547,go:0022625,cytosolic large ribosomal subunit
+PMM1548,go:0022625,cytosolic large ribosomal subunit
+PMM1549,go:0005840,ribosome
+PMM1549,go:0022627,cytosolic small ribosomal subunit
+PMM1550,go:0000315,organellar large ribosomal subunit
+PMM1550,go:0005840,ribosome
+PMM1550,go:0022625,cytosolic large ribosomal subunit
+PMM1551,go:0022625,cytosolic large ribosomal subunit
+PMM1552,go:0022627,cytosolic small ribosomal subunit
+PMM1553,go:0005840,ribosome
+PMM1553,go:0022625,cytosolic large ribosomal subunit
+PMM1554,go:0022627,cytosolic small ribosomal subunit
+PMM1555,go:0022625,cytosolic large ribosomal subunit
+PMM1556,go:0022625,cytosolic large ribosomal subunit
+PMM1557,go:0022625,cytosolic large ribosomal subunit
+PMM1557,go:1990904,ribonucleoprotein complex
+PMM1558,go:0005840,ribosome
+PMM1558,go:0022625,cytosolic large ribosomal subunit
+PMM1559,go:0016020,membrane
+PMM1559,go:0042651,thylakoid membrane
+PMM1562,go:0005575,cellular_component
+PMM1562,go:0005829,cytosol
+PMM1563,go:0005575,cellular_component
+PMM1568,go:0016020,membrane
+PMM1569,go:0005737,cytoplasm
+PMM1572,go:0005829,cytosol
+PMM1575,go:0005575,cellular_component
+PMM1575,go:0005829,cytosol
+PMM1577,go:0005950,anthranilate synthase complex
+PMM1578,go:0009538,photosystem I reaction center
+PMM1578,go:0031676,plasma membrane-derived thylakoid membrane
+PMM1579,go:0016020,membrane
+PMM1580,go:0005886,plasma membrane
+PMM1580,go:0032153,cell division site
+PMM1583,go:0016020,membrane
+PMM1585,go:0005575,cellular_component
+PMM1590,go:0005575,cellular_component
+PMM1590,go:0005829,cytosol
+PMM1592,go:0030089,phycobilisome
+PMM1593,go:0030089,phycobilisome
+PMM1594,go:0005575,cellular_component
+PMM1594,go:0016020,membrane
+PMM1596,go:0005575,cellular_component
+PMM1596,go:0005737,cytoplasm
+PMM1600,go:0016020,membrane
+PMM1601,go:0005737,cytoplasm
+PMM1603,go:0005737,cytoplasm
+PMM1605,go:0005840,ribosome
+PMM1606,go:0005575,cellular_component
+PMM1606,go:0005829,cytosol
+PMM1607,go:0005575,cellular_component
+PMM1607,go:0005622,intracellular anatomical structure
+PMM1607,go:0005886,plasma membrane
+PMM1607,go:0009538,photosystem I reaction center
+PMM1607,go:0042651,thylakoid membrane
+PMM1608,go:0005575,cellular_component
+PMM1608,go:0005829,cytosol
+PMM1609,go:0005829,cytosol
+PMM1610,go:0005829,cytosol
+PMM1611,go:0005575,cellular_component
+PMM1611,go:0005829,cytosol
+PMM1615,go:0009379,Holliday junction helicase complex
+PMM1615,go:0048476,Holliday junction resolvase complex
+PMM1618,go:0005737,cytoplasm
+PMM1619,go:0005829,cytosol
+PMM1619,go:0032993,protein-DNA complex
+PMM1620,go:0016020,membrane
+PMM1621,go:0005886,plasma membrane
+PMM1622,go:0005737,cytoplasm
+PMM1623,go:0009295,nucleoid
+PMM1624,go:0005886,plasma membrane
+PMM1625,go:0005575,cellular_component
+PMM1625,go:0005829,cytosol
+PMM1626,go:0005737,cytoplasm
+PMM1630,go:0005886,plasma membrane
+PMM1631,go:0016020,membrane
+PMM1632,go:0016020,membrane
+PMM1634,go:0005694,chromosome
+PMM1634,go:0005737,cytoplasm
+PMM1634,go:0009330,"DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) complex"
+PMM1635,go:0005737,cytoplasm
+PMM1636,go:0005575,cellular_component
+PMM1636,go:0005829,cytosol
+PMM1636,go:0016020,membrane
+PMM1638,go:0005737,cytoplasm
+PMM1638,go:0031470,carboxysome
+PMM1639,go:0009898,cytoplasmic side of plasma membrane
+PMM1641,go:0005886,plasma membrane
+PMM1643,go:0005575,cellular_component
+PMM1643,go:0005829,cytosol
+PMM1643,go:0009349,riboflavin synthase complex
+PMM1644,go:0009538,photosystem I reaction center
+PMM1644,go:0009539,photosystem II reaction center
+PMM1645,go:0032300,mismatch repair complex
+PMM1645,go:1990391,DNA repair complex
+PMM1647,go:0009360,DNA polymerase III complex
+PMM1648,go:0005829,cytosol
+PMM1649,go:0009380,excinuclease repair complex
+PMM1651,go:0005737,cytoplasm
+PMM1652,go:0005737,cytoplasm
+PMM1654,go:0005737,cytoplasm
+PMM1655,go:0005575,cellular_component
+PMM1655,go:0005854,nascent polypeptide-associated complex
+PMM1656,go:0009368,endopeptidase Clp complex
+PMM1657,go:0009368,endopeptidase Clp complex
+PMM1658,go:0009360,DNA polymerase III complex
+PMM1659,go:0005886,plasma membrane
+PMM1659,go:0009274,peptidoglycan-based cell wall
+PMM1660,go:0030288,outer membrane-bounded periplasmic space
+PMM1661,go:0022625,cytosolic large ribosomal subunit
+PMM1662,go:0000315,organellar large ribosomal subunit
+PMM1662,go:0022625,cytosolic large ribosomal subunit
+PMM1666,go:0009274,peptidoglycan-based cell wall
+PMM1668,go:0005829,cytosol
+PMM1668,go:0005960,glycine cleavage complex
+PMM1669,go:0005960,glycine cleavage complex
+PMM1672,go:0016020,membrane
+PMM1673,go:0022625,cytosolic large ribosomal subunit
+PMM1674,go:0005575,cellular_component
+PMM1674,go:0005829,cytosol
+PMM1674,go:1990077,primosome complex
+PMM1675,go:0005575,cellular_component
+PMM1675,go:0005829,cytosol
+PMM1681,go:0016020,membrane
+PMM1687,go:0005737,cytoplasm
+PMM1688,go:0005737,cytoplasm
+PMM1695,go:0005886,plasma membrane
+PMM1696,go:0009358,polyphosphate kinase complex
+PMM1698,go:0016020,membrane
+PMM1699,go:0005737,cytoplasm
+PMM1700,go:0005829,cytosol
+PMM1701,go:0034707,chloride channel complex
+PMM1702,go:0005829,cytosol
+PMM1703,go:0005737,cytoplasm
+PMM1705,go:0005575,cellular_component
+PMM1705,go:0005829,cytosol
+PMM1706,go:0000314,organellar small ribosomal subunit
+PMM1706,go:0022627,cytosolic small ribosomal subunit
+PMM1707,go:0005575,cellular_component
+PMM1707,go:0005737,cytoplasm
+PMM1709,go:0016020,membrane
+PMM1712,go:0005737,cytoplasm
+PMM1712,go:0009380,excinuclease repair complex
+PMM1713,go:0005694,chromosome
+PMM1713,go:0043590,bacterial nucleoid
+PMM1716,go:0005575,cellular_component
+PMM1716,go:0005737,cytoplasm
+PMM1720,go:0016020,membrane
+PMM1803,go:0016020,membrane
+PMM1808,go:0016020,membrane
+PMM1878,go:0016020,membrane
+PMM1900,go:0030096,plasma membrane-derived thylakoid photosystem II
+PMM1974,go:0016020,membrane
+PMM2018,go:0016020,membrane
+PMM50022,go:0016020,membrane
+PMM_50048,go:0016020,membrane

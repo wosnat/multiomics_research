@@ -1,0 +1,2956 @@
+locus_tag,term_id,term_name
+PMM0001,go:0003677,DNA binding
+PMM0001,go:0003887,DNA-directed DNA polymerase activity
+PMM0001,go:0008408,3^-5^ exonuclease activity
+PMM0003,go:0004642,phosphoribosylformylglycinamidine synthase activity
+PMM0004,go:0000287,magnesium ion binding
+PMM0004,go:0004044,amidophosphoribosyltransferase activity
+PMM0004,go:0016757,glycosyltransferase activity
+PMM0005,go:0003677,DNA binding
+PMM0005,go:0005524,ATP binding
+PMM0005,go:0034335,DNA negative supercoiling activity
+PMM0006,go:0005515,protein binding
+PMM0007,go:0016491,oxidoreductase activity
+PMM0007,go:0046872,metal ion binding
+PMM0007,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0007,go:0052693,epoxyqueuosine reductase activity
+PMM0009,go:0003723,RNA binding
+PMM0009,go:0005515,protein binding
+PMM0010,go:0003924,GTPase activity
+PMM0010,go:0005047,signal recognition particle binding
+PMM0010,go:0005525,GTP binding
+PMM0011,go:0004722,protein serine/threonine phosphatase activity
+PMM0011,go:0046872,metal ion binding
+PMM0012,go:0004056,argininosuccinate lyase activity
+PMM0013,go:0003676,nucleic acid binding
+PMM0013,go:0003729,mRNA binding
+PMM0014,go:0000049,tRNA binding
+PMM0014,go:0010181,FMN binding
+PMM0014,go:0050660,flavin adenine dinucleotide binding
+PMM0014,go:0102264,tRNA-dihydrouridine20 synthase activity
+PMM0014,go:0102266,tRNA-dihydrouridine20a synthase activity
+PMM0015,go:0033743,peptide-methionine (R)-S-oxide reductase activity
+PMM0015,go:0046872,metal ion binding
+PMM0016,go:0000774,adenyl-nucleotide exchange factor activity
+PMM0016,go:0030554,adenyl nucleotide binding
+PMM0016,go:0042803,protein homodimerization activity
+PMM0016,go:0051082,unfolded protein binding
+PMM0016,go:0051087,protein-folding chaperone binding
+PMM0016,go:0060589,nucleoside-triphosphatase regulator activity
+PMM0017,go:0005524,ATP binding
+PMM0017,go:0031072,heat shock protein binding
+PMM0017,go:0051082,unfolded protein binding
+PMM0018,go:0097163,sulfur carrier activity
+PMM0019,go:0003924,GTPase activity
+PMM0019,go:0005525,GTP binding
+PMM0019,go:0019843,rRNA binding
+PMM0019,go:0043022,ribosome binding
+PMM0019,go:0046872,metal ion binding
+PMM0020,go:0003677,DNA binding
+PMM0021,go:0008762,UDP-N-acetylmuramate dehydrogenase activity
+PMM0021,go:0016614,"oxidoreductase activity, acting on CH-OH group of donors"
+PMM0021,go:0071949,FAD binding
+PMM0022,go:0005524,ATP binding
+PMM0022,go:0008763,UDP-N-acetylmuramate-L-alanine ligase activity
+PMM0022,go:0016874,ligase activity
+PMM0023,go:0000166,nucleotide binding
+PMM0023,go:0004365,glyceraldehyde-3-phosphate dehydrogenase (NAD+) (phosphorylating) activity
+PMM0023,go:0008886,glyceraldehyde-3-phosphate dehydrogenase (NADP+) (non-phosphorylating) activity
+PMM0023,go:0047100,glyceraldehyde-3-phosphate dehydrogenase (NADP+) (phosphorylating) activity
+PMM0023,go:0050661,NADP binding
+PMM0023,go:0051287,NAD binding
+PMM0024,go:0000287,magnesium ion binding
+PMM0024,go:0005524,ATP binding
+PMM0024,go:0009030,thiamine-phosphate kinase activity
+PMM0025,go:0003755,peptidyl-prolyl cis-trans isomerase activity
+PMM0026,go:0003723,RNA binding
+PMM0026,go:0003746,translation elongation factor activity
+PMM0026,go:0008135,"translation factor activity, RNA binding"
+PMM0026,go:1901363,heterocyclic compound binding
+PMM0027,go:0003989,acetyl-CoA carboxylase activity
+PMM0028,go:0046872,metal ion binding
+PMM0028,go:0050570,4-hydroxythreonine-4-phosphate dehydrogenase activity
+PMM0028,go:0051287,NAD binding
+PMM0029,go:0016491,oxidoreductase activity
+PMM0029,go:0051287,NAD binding
+PMM0031,go:0003676,nucleic acid binding
+PMM0031,go:0004519,endonuclease activity
+PMM0031,go:0008270,zinc ion binding
+PMM0035,go:0016491,oxidoreductase activity
+PMM0035,go:0030170,pyridoxal phosphate binding
+PMM0036,go:0016740,transferase activity
+PMM0037,go:0003921,GMP synthase activity
+PMM0037,go:0004066,asparagine synthase (glutamine-hydrolyzing) activity
+PMM0037,go:0005524,ATP binding
+PMM0037,go:0016462,pyrophosphatase activity
+PMM0038,go:0004386,helicase activity
+PMM0040,go:0003824,catalytic activity
+PMM0040,go:0008658,penicillin binding
+PMM0040,go:0008955,peptidoglycan glycosyltransferase activity
+PMM0040,go:0009002,serine-type D-Ala-D-Ala carboxypeptidase activity
+PMM0040,go:0071972,"peptidoglycan L,D-transpeptidase activity"
+PMM0041,go:0008753,NADPH dehydrogenase (quinone) activity
+PMM0041,go:0010181,FMN binding
+PMM0041,go:0016491,oxidoreductase activity
+PMM0041,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0041,go:0052873,FMN reductase (NADPH) activity
+PMM0042,go:0009055,electron transfer activity
+PMM0042,go:0010181,FMN binding
+PMM0042,go:0016646,"oxidoreductase activity, acting on the CH-NH group of donors, NAD or NADP as acceptor"
+PMM0042,go:0016787,hydrolase activity
+PMM0042,go:0042602,riboflavin reductase (NADPH) activity
+PMM0043,go:0009055,electron transfer activity
+PMM0043,go:0010181,FMN binding
+PMM0043,go:0016646,"oxidoreductase activity, acting on the CH-NH group of donors, NAD or NADP as acceptor"
+PMM0043,go:0016787,hydrolase activity
+PMM0043,go:0042602,riboflavin reductase (NADPH) activity
+PMM0043,go:0046872,metal ion binding
+PMM0044,go:0000049,tRNA binding
+PMM0044,go:0000166,nucleotide binding
+PMM0044,go:0004813,alanine-tRNA ligase activity
+PMM0044,go:0016597,amino acid binding
+PMM0044,go:0031406,carboxylic acid binding
+PMM0045,go:0008792,arginine decarboxylase activity
+PMM0046,go:0004550,nucleoside diphosphate kinase activity
+PMM0046,go:0005524,ATP binding
+PMM0046,go:0046872,metal ion binding
+PMM0047,go:0016491,oxidoreductase activity
+PMM0047,go:0016647,"oxidoreductase activity, acting on the CH-NH group of donors, oxygen as acceptor"
+PMM0047,go:0043799,glycine oxidase activity
+PMM0047,go:0050660,flavin adenine dinucleotide binding
+PMM0048,go:0050567,glutaminyl-tRNA synthase (glutamine-hydrolyzing) activity
+PMM0049,go:0004140,dephospho-CoA kinase activity
+PMM0049,go:0005524,ATP binding
+PMM0050,go:0004042,L-glutamate N-acetyltransferase activity
+PMM0050,go:0004358,"L-glutamate N-acetyltransferase activity, acting on acetyl-L-ornithine as donor"
+PMM0050,go:0008080,N-acetyltransferase activity
+PMM0052,go:0016491,oxidoreductase activity
+PMM0053,go:0003723,RNA binding
+PMM0053,go:0008990,rRNA (guanine-N2-)-methyltransferase activity
+PMM0053,go:0016423,tRNA (guanine) methyltransferase activity
+PMM0053,go:0070043,rRNA (guanine-N7-)-methyltransferase activity
+PMM0053,go:1904047,S-adenosyl-L-methionine binding
+PMM0055,go:0043022,ribosome binding
+PMM0057,go:0005515,protein binding
+PMM0057,go:0005524,ATP binding
+PMM0059,go:0005543,phospholipid binding
+PMM0059,go:0008915,lipid-A-disaccharide synthase activity
+PMM0059,go:0016757,glycosyltransferase activity
+PMM0060,go:0003989,acetyl-CoA carboxylase activity
+PMM0060,go:0004075,biotin carboxylase activity
+PMM0060,go:0005524,ATP binding
+PMM0060,go:0016874,ligase activity
+PMM0060,go:0046872,metal ion binding
+PMM0065,go:0005524,ATP binding
+PMM0065,go:0016887,ATP hydrolysis activity
+PMM0065,go:0140359,ABC-type transporter activity
+PMM0067,go:0003824,catalytic activity
+PMM0068,go:0005506,iron ion binding
+PMM0068,go:0042586,peptide deformylase activity
+PMM0069,go:0008236,serine-type peptidase activity
+PMM0069,go:0016787,hydrolase activity
+PMM0070,go:0016829,lyase activity
+PMM0070,go:0030170,pyridoxal phosphate binding
+PMM0070,go:0031071,cysteine desulfurase activity
+PMM0072,go:0005524,ATP binding
+PMM0072,go:0016887,ATP hydrolysis activity
+PMM0076,go:0000287,magnesium ion binding
+PMM0076,go:0004614,phosphoglucomutase activity
+PMM0077,go:0000166,nucleotide binding
+PMM0077,go:0003677,DNA binding
+PMM0077,go:0005524,ATP binding
+PMM0077,go:0008047,enzyme activator activity
+PMM0077,go:0009378,four-way junction helicase activity
+PMM0077,go:0016887,ATP hydrolysis activity
+PMM0077,go:0017116,single-stranded DNA helicase activity
+PMM0078,go:0000287,magnesium ion binding
+PMM0078,go:0008897,holo-[acyl-carrier-protein] synthase activity
+PMM0078,go:0016740,transferase activity
+PMM0079,go:0008379,thioredoxin peroxidase activity
+PMM0079,go:0016491,oxidoreductase activity
+PMM0079,go:0051920,peroxiredoxin activity
+PMM0080,go:0004594,pantothenate kinase activity
+PMM0080,go:0005524,ATP binding
+PMM0081,go:0003824,catalytic activity
+PMM0081,go:0004604,phosphoadenylyl-sulfate reductase (thioredoxin) activity
+PMM0082,go:0003954,NADH dehydrogenase activity
+PMM0082,go:0003955,NAD(P)H dehydrogenase (quinone) activity
+PMM0082,go:0016491,oxidoreductase activity
+PMM0082,go:0050660,flavin adenine dinucleotide binding
+PMM0083,go:0008324,monoatomic cation transmembrane transporter activity
+PMM0084,go:0008324,monoatomic cation transmembrane transporter activity
+PMM0085,go:0008324,monoatomic cation transmembrane transporter activity
+PMM0085,go:0022857,transmembrane transporter activity
+PMM0089,go:0003676,nucleic acid binding
+PMM0089,go:0005524,ATP binding
+PMM0089,go:0015439,ABC-type heme transporter activity
+PMM0089,go:0016887,ATP hydrolysis activity
+PMM0090,go:0004252,serine-type endopeptidase activity
+PMM0094,go:0008270,zinc ion binding
+PMM0096,go:0008934,inositol monophosphate 1-phosphatase activity
+PMM0096,go:0046872,metal ion binding
+PMM0097,go:0005215,transporter activity
+PMM0097,go:0015288,porin activity
+PMM0097,go:0015562,efflux transmembrane transporter activity
+PMM0100,go:0008734,L-aspartate oxidase activity
+PMM0100,go:0033765,"steroid dehydrogenase activity, acting on the CH-CH group of donors"
+PMM0101,go:0003756,protein disulfide isomerase activity
+PMM0101,go:0005515,protein binding
+PMM0101,go:0015035,protein-disulfide reductase activity
+PMM0101,go:0016491,oxidoreductase activity
+PMM0101,go:0048038,quinone binding
+PMM0102,go:0008172,S-methyltransferase activity
+PMM0102,go:0016782,"transferase activity, transferring sulphur-containing groups"
+PMM0102,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0102,go:1904047,S-adenosyl-L-methionine binding
+PMM0105,go:0008703,5-amino-6-(5-phosphoribosylamino)uracil reductase activity
+PMM0106,go:0016829,lyase activity
+PMM0106,go:0046872,metal ion binding
+PMM0106,go:0070497,6-carboxytetrahydropterin synthase activity
+PMM0107,go:0000287,magnesium ion binding
+PMM0107,go:0004765,shikimate kinase activity
+PMM0107,go:0005524,ATP binding
+PMM0110,go:0004364,glutathione transferase activity
+PMM0110,go:0005515,protein binding
+PMM0110,go:0016034,maleylacetoacetate isomerase activity
+PMM0112,go:0019843,rRNA binding
+PMM0112,go:0043021,ribonucleoprotein complex binding
+PMM0112,go:0043024,ribosomal small subunit binding
+PMM0113,go:0004852,uroporphyrinogen-III synthase activity
+PMM0115,go:0016719,"9,9^-di-cis-zeta-carotene desaturase activity"
+PMM0116,go:0005198,structural molecule activity
+PMM0116,go:0005488,binding
+PMM0116,go:0030674,protein-macromolecule adaptor activity
+PMM0116,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM0117,go:0005515,protein binding
+PMM0120,go:0003824,catalytic activity
+PMM0121,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0121,go:0048038,quinone binding
+PMM0121,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0122,go:0051082,unfolded protein binding
+PMM0123,go:0004124,cysteine synthase activity
+PMM0123,go:0016846,carbon-sulfur lyase activity
+PMM0125,go:0005524,ATP binding
+PMM0125,go:0016887,ATP hydrolysis activity
+PMM0125,go:0022857,transmembrane transporter activity
+PMM0125,go:0140359,ABC-type transporter activity
+PMM0128,go:0000156,phosphorelay response regulator activity
+PMM0128,go:0000976,transcription cis-regulatory region binding
+PMM0128,go:0003677,DNA binding
+PMM0129,go:0003677,DNA binding
+PMM0129,go:0003887,DNA-directed DNA polymerase activity
+PMM0130,go:0004798,dTMP kinase activity
+PMM0130,go:0005524,ATP binding
+PMM0130,go:0050145,nucleoside monophosphate kinase activity
+PMM0131,go:0000166,nucleotide binding
+PMM0131,go:0005507,copper ion binding
+PMM0131,go:0005524,ATP binding
+PMM0131,go:0016887,ATP hydrolysis activity
+PMM0131,go:0043682,P-type divalent copper transporter activity
+PMM0131,go:0046872,metal ion binding
+PMM0132,go:0005515,protein binding
+PMM0133,go:0000166,nucleotide binding
+PMM0133,go:0003684,damaged DNA binding
+PMM0133,go:0005524,ATP binding
+PMM0133,go:0008270,zinc ion binding
+PMM0133,go:0016787,hydrolase activity
+PMM0133,go:0046872,metal ion binding
+PMM0133,go:0140664,ATP-dependent DNA damage sensor activity
+PMM0134,go:0000156,phosphorelay response regulator activity
+PMM0134,go:0000976,transcription cis-regulatory region binding
+PMM0134,go:0003677,DNA binding
+PMM0135,go:0016616,"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor"
+PMM0135,go:0043811,phosphate:acyl-[acyl carrier protein] acyltransferase activity
+PMM0136,go:0004314,[acyl-carrier-protein] S-malonyltransferase activity
+PMM0136,go:0004315,3-oxoacyl-[acyl-carrier-protein] synthase activity
+PMM0136,go:0016746,acyltransferase activity
+PMM0136,go:0033818,beta-ketoacyl-acyl-carrier-protein synthase III activity
+PMM0137,go:0004314,[acyl-carrier-protein] S-malonyltransferase activity
+PMM0137,go:0016746,acyltransferase activity
+PMM0138,go:0003841,1-acylglycerol-3-phosphate O-acyltransferase activity
+PMM0138,go:0016746,acyltransferase activity
+PMM0141,go:0000049,tRNA binding
+PMM0141,go:0000166,nucleotide binding
+PMM0141,go:0016779,nucleotidyltransferase activity
+PMM0141,go:0046872,metal ion binding
+PMM0141,go:1990817,poly(A) RNA polymerase activity
+PMM0142,go:0000166,nucleotide binding
+PMM0142,go:0003676,nucleic acid binding
+PMM0142,go:0003729,mRNA binding
+PMM0143,go:0004311,geranylgeranyl diphosphate synthase activity
+PMM0143,go:0004337,"(2E,6E)-farnesyl diphosphate synthase activity"
+PMM0143,go:0046905,15-cis-phytoene synthase activity
+PMM0143,go:0051996,squalene synthase [NAD(P)H] activity
+PMM0144,go:0016166,phytoene dehydrogenase activity
+PMM0145,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0145,go:0048038,quinone binding
+PMM0145,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0147,go:0000976,transcription cis-regulatory region binding
+PMM0147,go:0003700,DNA-binding transcription factor activity
+PMM0148,go:0090471,"9,15,9^-tri-cis-zeta-carotene isomerase activity"
+PMM0149,go:0008137,NADH dehydrogenase (ubiquinone) activity
+PMM0149,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0149,go:0048038,quinone binding
+PMM0149,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0150,go:0016491,oxidoreductase activity
+PMM0150,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0150,go:0048038,quinone binding
+PMM0150,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0152,go:0000287,magnesium ion binding
+PMM0152,go:0002134,UTP binding
+PMM0152,go:0003983,UTP:glucose-1-phosphate uridylyltransferase activity
+PMM0152,go:0032551,pyrimidine ribonucleoside binding
+PMM0152,go:0043886,structural constituent of carboxysome shell
+PMM0153,go:0071949,FAD binding
+PMM0153,go:0106312,methylenetetrahydrofolate reductase (NADH) activity
+PMM0154,go:0000156,phosphorelay response regulator activity
+PMM0154,go:0003700,DNA-binding transcription factor activity
+PMM0154,go:0043565,sequence-specific DNA binding
+PMM0156,go:0003951,NAD+ kinase activity
+PMM0157,go:0008137,NADH dehydrogenase (ubiquinone) activity
+PMM0157,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0157,go:0048038,quinone binding
+PMM0157,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0158,go:0008137,NADH dehydrogenase (ubiquinone) activity
+PMM0158,go:0016491,oxidoreductase activity
+PMM0158,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0158,go:0048038,quinone binding
+PMM0158,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0159,go:0008753,NADPH dehydrogenase (quinone) activity
+PMM0159,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0159,go:0048038,quinone binding
+PMM0159,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0160,go:0016491,oxidoreductase activity
+PMM0160,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0160,go:0048038,quinone binding
+PMM0160,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0161,go:0036440,citrate synthase activity
+PMM0164,go:0004834,tryptophan synthase activity
+PMM0165,go:0003729,mRNA binding
+PMM0165,go:0003743,translation initiation factor activity
+PMM0166,go:0004020,adenylylsulfate kinase activity
+PMM0166,go:0004781,sulfate adenylyltransferase (ATP) activity
+PMM0166,go:0005524,ATP binding
+PMM0167,go:0004638,phosphoribosylaminoimidazole carboxylase activity
+PMM0167,go:0034023,5-(carboxyamino)imidazole ribonucleotide mutase activity
+PMM0168,go:0046406,magnesium protoporphyrin IX methyltransferase activity
+PMM0169,go:0000156,phosphorelay response regulator activity
+PMM0169,go:0000976,transcription cis-regulatory region binding
+PMM0169,go:0003677,DNA binding
+PMM0170,go:0030170,pyridoxal phosphate binding
+PMM0170,go:0031071,cysteine desulfurase activity
+PMM0171,go:0071424,rRNA (cytosine-N4-)-methyltransferase activity
+PMM0172,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0172,go:0048038,quinone binding
+PMM0172,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0173,go:0047617,fatty acyl-CoA hydrolase activity
+PMM0174,go:0000166,nucleotide binding
+PMM0174,go:0005524,ATP binding
+PMM0174,go:0008756,o-succinylbenzoate-CoA ligase activity
+PMM0174,go:0016874,ligase activity
+PMM0175,go:0000287,magnesium ion binding
+PMM0175,go:0003824,catalytic activity
+PMM0175,go:0016836,hydro-lyase activity
+PMM0176,go:0004650,polygalacturonase activity
+PMM0176,go:0046428,"1,4-dihydroxy-2-naphthoate polyprenyltransferase activity"
+PMM0177,go:0008909,isochorismate synthase activity
+PMM0178,go:0004363,glutathione synthase activity
+PMM0178,go:0005524,ATP binding
+PMM0178,go:0046872,metal ion binding
+PMM0179,go:0015038,glutathione disulfide oxidoreductase activity
+PMM0180,go:0016149,"translation release factor activity, codon specific"
+PMM0182,go:0004222,metalloendopeptidase activity
+PMM0182,go:0004521,RNA endonuclease activity
+PMM0182,go:0008270,zinc ion binding
+PMM0182,go:0016787,hydrolase activity
+PMM0182,go:0046872,metal ion binding
+PMM0183,go:0004143,ATP-dependent diacylglycerol kinase activity
+PMM0183,go:0005524,ATP binding
+PMM0183,go:0016301,kinase activity
+PMM0183,go:0046872,metal ion binding
+PMM0184,go:0004049,anthranilate synthase activity
+PMM0184,go:0016884,"carbon-nitrogen ligase activity, with glutamine as amido-N-donor"
+PMM0185,go:0016787,hydrolase activity
+PMM0185,go:0046872,metal ion binding
+PMM0186,go:0003824,catalytic activity
+PMM0186,go:0008483,transaminase activity
+PMM0186,go:0030170,pyridoxal phosphate binding
+PMM0187,go:0000166,nucleotide binding
+PMM0187,go:0004814,arginine-tRNA ligase activity
+PMM0187,go:0005524,ATP binding
+PMM0188,go:0004514,nicotinate-nucleotide diphosphorylase (carboxylating) activity
+PMM0189,go:0003924,GTPase activity
+PMM0189,go:0005525,GTP binding
+PMM0189,go:0042802,identical protein binding
+PMM0191,go:0000166,nucleotide binding
+PMM0191,go:0005515,protein binding
+PMM0191,go:0008728,GTP diphosphokinase activity
+PMM0191,go:0008893,"guanosine-3^,5^-bis(diphosphate) 3^-diphosphatase activity"
+PMM0191,go:0016301,kinase activity
+PMM0191,go:0016597,amino acid binding
+PMM0192,go:0005524,ATP binding
+PMM0192,go:0015413,ABC-type nickel transporter activity
+PMM0192,go:0016887,ATP hydrolysis activity
+PMM0193,go:0003723,RNA binding
+PMM0193,go:0016829,lyase activity
+PMM0193,go:0120159,rRNA pseudouridine synthase activity
+PMM0194,go:0003924,GTPase activity
+PMM0194,go:0005525,GTP binding
+PMM0195,go:0004618,phosphoglycerate kinase activity
+PMM0195,go:0005524,ATP binding
+PMM0197,go:0050511,undecaprenyldiphospho-muramoylpentapeptide beta-N-acetylglucosaminyltransferase activity
+PMM0197,go:0051991,"UDP-N-acetyl-D-glucosamine:N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelyl-D-alanyl-D-alanine-diphosphoundecaprenol 4-beta-N-acetylglucosaminlytransferase activity"
+PMM0198,go:0003824,catalytic activity
+PMM0198,go:0008483,transaminase activity
+PMM0198,go:0030170,pyridoxal phosphate binding
+PMM0199,go:0106430,dihydroorotate dehydrogenase (quinone) activity
+PMM0200,go:0000287,magnesium ion binding
+PMM0200,go:0003723,RNA binding
+PMM0200,go:0004519,endonuclease activity
+PMM0200,go:0004523,RNA-DNA hybrid ribonuclease activity
+PMM0200,go:0016787,hydrolase activity
+PMM0200,go:0030145,manganese ion binding
+PMM0201,go:0003735,structural constituent of ribosome
+PMM0201,go:0019843,rRNA binding
+PMM0202,go:0003735,structural constituent of ribosome
+PMM0202,go:0019843,rRNA binding
+PMM0203,go:0003735,structural constituent of ribosome
+PMM0203,go:0019843,rRNA binding
+PMM0203,go:1901363,heterocyclic compound binding
+PMM0204,go:0003735,structural constituent of ribosome
+PMM0204,go:0019843,rRNA binding
+PMM0204,go:1901363,heterocyclic compound binding
+PMM0206,go:0015450,protein-transporting ATPase activity
+PMM0207,go:0005524,ATP binding
+PMM0207,go:0008233,peptidase activity
+PMM0207,go:0016887,ATP hydrolysis activity
+PMM0207,go:0051082,unfolded protein binding
+PMM0208,go:0000287,magnesium ion binding
+PMM0208,go:0004634,phosphopyruvate hydratase activity
+PMM0208,go:0016829,lyase activity
+PMM0208,go:0042803,protein homodimerization activity
+PMM0209,go:0004672,protein kinase activity
+PMM0209,go:0005524,ATP binding
+PMM0211,go:0004791,thioredoxin-disulfide reductase (NADPH) activity
+PMM0211,go:0016491,oxidoreductase activity
+PMM0211,go:0050660,flavin adenine dinucleotide binding
+PMM0212,go:0030234,enzyme regulator activity
+PMM0214,go:0015116,sulfate transmembrane transporter activity
+PMM0215,go:0003824,catalytic activity
+PMM0215,go:0004655,porphobilinogen synthase activity
+PMM0215,go:0008270,zinc ion binding
+PMM0215,go:0046872,metal ion binding
+PMM0216,go:0003824,catalytic activity
+PMM0216,go:0004462,lactoylglutathione lyase activity
+PMM0216,go:0046872,metal ion binding
+PMM0216,go:0051213,dioxygenase activity
+PMM0217,go:0003684,damaged DNA binding
+PMM0217,go:0004519,endonuclease activity
+PMM0217,go:0005524,ATP binding
+PMM0217,go:0016887,ATP hydrolysis activity
+PMM0217,go:0019843,rRNA binding
+PMM0217,go:0030983,mismatched DNA binding
+PMM0217,go:0043023,ribosomal large subunit binding
+PMM0217,go:0140664,ATP-dependent DNA damage sensor activity
+PMM0217,go:1901363,heterocyclic compound binding
+PMM0218,go:0000287,magnesium ion binding
+PMM0218,go:0003924,GTPase activity
+PMM0218,go:0005525,GTP binding
+PMM0221,go:0004364,glutathione transferase activity
+PMM0221,go:0005515,protein binding
+PMM0221,go:0016491,oxidoreductase activity
+PMM0221,go:0016672,"oxidoreductase activity, acting on a sulfur group of donors, quinone or similar compound as acceptor"
+PMM0221,go:0042803,protein homodimerization activity
+PMM0222,go:0016788,"hydrolase activity, acting on ester bonds"
+PMM0223,go:0009055,electron transfer activity
+PMM0224,go:0004107,chorismate synthase activity
+PMM0224,go:0010181,FMN binding
+PMM0225,go:0016829,lyase activity
+PMM0226,go:0004176,ATP-dependent peptidase activity
+PMM0226,go:0004222,metalloendopeptidase activity
+PMM0226,go:0005524,ATP binding
+PMM0226,go:0008270,zinc ion binding
+PMM0226,go:0016887,ATP hydrolysis activity
+PMM0227,go:0004781,sulfate adenylyltransferase (ATP) activity
+PMM0227,go:0005524,ATP binding
+PMM0228,go:0005509,calcium ion binding
+PMM0228,go:0010242,oxygen evolving activity
+PMM0229,go:0003824,catalytic activity
+PMM0229,go:0004632,phosphopantothenate--cysteine ligase activity
+PMM0229,go:0004633,phosphopantothenoylcysteine decarboxylase activity
+PMM0229,go:0010181,FMN binding
+PMM0229,go:0046872,metal ion binding
+PMM0233,go:0004070,aspartate carbamoyltransferase activity
+PMM0233,go:0016597,amino acid binding
+PMM0234,go:0003677,DNA binding
+PMM0234,go:0003905,alkylbase DNA N-glycosylase activity
+PMM0235,go:0050567,glutaminyl-tRNA synthase (glutamine-hydrolyzing) activity
+PMM0238,go:0000166,nucleotide binding
+PMM0238,go:0003824,catalytic activity
+PMM0238,go:0004822,isoleucine-tRNA ligase activity
+PMM0238,go:0005524,ATP binding
+PMM0240,go:0008176,tRNA (guanine(46)-N7)-methyltransferase activity
+PMM0241,go:0000287,magnesium ion binding
+PMM0241,go:0008966,phosphoglucosamine mutase activity
+PMM0242,go:0016209,antioxidant activity
+PMM0242,go:0016491,oxidoreductase activity
+PMM0242,go:0016671,"oxidoreductase activity, acting on a sulfur group of donors, disulfide as acceptor"
+PMM0243,go:0004799,thymidylate synthase activity
+PMM0243,go:0050660,flavin adenine dinucleotide binding
+PMM0243,go:0050797,thymidylate synthase (FAD) activity
+PMM0243,go:0070402,NADPH binding
+PMM0244,go:0008829,dCTP deaminase activity
+PMM0244,go:0016787,hydrolase activity
+PMM0245,go:0000166,nucleotide binding
+PMM0245,go:0004640,phosphoribosylanthranilate isomerase activity
+PMM0245,go:0005524,ATP binding
+PMM0245,go:0008817,corrinoid adenosyltransferase activity
+PMM0245,go:0016740,transferase activity
+PMM0246,go:0003700,DNA-binding transcription factor activity
+PMM0246,go:0043565,sequence-specific DNA binding
+PMM0246,go:1901363,heterocyclic compound binding
+PMM0248,go:0003676,nucleic acid binding
+PMM0248,go:0016740,transferase activity
+PMM0248,go:0016788,"hydrolase activity, acting on ester bonds"
+PMM0250,go:0004045,peptidyl-tRNA hydrolase activity
+PMM0251,go:0042301,phosphate ion binding
+PMM0255,go:0003861,3-isopropylmalate dehydratase activity
+PMM0255,go:0005515,protein binding
+PMM0255,go:0016829,lyase activity
+PMM0255,go:0016866,intramolecular transferase activity
+PMM0256,go:0003861,3-isopropylmalate dehydratase activity
+PMM0256,go:0005515,protein binding
+PMM0256,go:0016829,lyase activity
+PMM0256,go:0016866,intramolecular transferase activity
+PMM0256,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0258,go:0004372,glycine hydroxymethyltransferase activity
+PMM0258,go:0008270,zinc ion binding
+PMM0258,go:0030170,pyridoxal phosphate binding
+PMM0258,go:0070905,serine binding
+PMM0262,go:0003677,DNA binding
+PMM0263,go:0008519,ammonium channel activity
+PMM0264,go:0046872,metal ion binding
+PMM0264,go:0051745,4-hydroxy-3-methylbut-2-enyl diphosphate reductase activity
+PMM0266,go:0003824,catalytic activity
+PMM0266,go:0003937,IMP cyclohydrolase activity
+PMM0266,go:0004643,phosphoribosylaminoimidazolecarboxamide formyltransferase activity
+PMM0267,go:0016787,hydrolase activity
+PMM0269,go:0000155,phosphorelay sensor kinase activity
+PMM0269,go:0005524,ATP binding
+PMM0270,go:0008818,cobalamin 5^-phosphate synthase activity
+PMM0270,go:0051073,adenosylcobinamide-GDP ribazoletransferase activity
+PMM0271,go:0008479,tRNA-guanosine(34) queuine transglycosylase activity
+PMM0273,go:0000166,nucleotide binding
+PMM0273,go:0016491,oxidoreductase activity
+PMM0274,go:0050660,flavin adenine dinucleotide binding
+PMM0275,go:0000287,magnesium ion binding
+PMM0275,go:0004588,orotate phosphoribosyltransferase activity
+PMM0276,go:0005515,protein binding
+PMM0276,go:0005542,folic acid binding
+PMM0278,go:0000287,magnesium ion binding
+PMM0278,go:0008973,phosphopentomutase activity
+PMM0278,go:0016740,transferase activity
+PMM0279,go:0035870,dITP diphosphatase activity
+PMM0279,go:0036222,XTP diphosphatase activity
+PMM0280,go:0016702,"oxidoreductase activity, acting on single donors with incorporation of molecular oxygen, incorporation of two atoms of oxygen"
+PMM0280,go:0046872,metal ion binding
+PMM0281,go:0004424,imidazoleglycerol-phosphate dehydratase activity
+PMM0282,go:0004312,fatty acid synthase activity
+PMM0282,go:0004318,enoyl-[acyl-carrier-protein] reductase (NADH) activity
+PMM0282,go:0016628,"oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor"
+PMM0283,go:0015035,protein-disulfide reductase activity
+PMM0283,go:0016209,antioxidant activity
+PMM0283,go:0016491,oxidoreductase activity
+PMM0284,go:0008483,transaminase activity
+PMM0284,go:0030170,pyridoxal phosphate binding
+PMM0285,go:0003677,DNA binding
+PMM0285,go:0003904,deoxyribodipyrimidine photo-lyase activity
+PMM0285,go:0071949,FAD binding
+PMM0286,go:0016817,"hydrolase activity, acting on acid anhydrides"
+PMM0286,go:0046872,metal ion binding
+PMM0287,go:0003848,2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase activity
+PMM0287,go:0005524,ATP binding
+PMM0287,go:0016301,kinase activity
+PMM0288,go:0005524,ATP binding
+PMM0288,go:0016851,magnesium chelatase activity
+PMM0288,go:0016887,ATP hydrolysis activity
+PMM0288,go:0046406,magnesium protoporphyrin IX methyltransferase activity
+PMM0290,go:0005524,ATP binding
+PMM0290,go:0016887,ATP hydrolysis activity
+PMM0290,go:0140359,ABC-type transporter activity
+PMM0291,go:0043743,LPPG:FO 2-phospho-L-lactate transferase activity
+PMM0291,go:0051287,NAD binding
+PMM0292,go:0008137,NADH dehydrogenase (ubiquinone) activity
+PMM0292,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0292,go:0048038,quinone binding
+PMM0292,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0293,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0293,go:0048038,quinone binding
+PMM0293,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0294,go:0008137,NADH dehydrogenase (ubiquinone) activity
+PMM0294,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0294,go:0048038,quinone binding
+PMM0294,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0295,go:0005506,iron ion binding
+PMM0295,go:0009055,electron transfer activity
+PMM0297,go:0020037,heme binding
+PMM0298,go:0020037,heme binding
+PMM0298,go:0042802,identical protein binding
+PMM0301,go:0017061,S-methyl-5-thioadenosine phosphorylase activity
+PMM0302,go:0004756,"selenide, water dikinase activity"
+PMM0302,go:0005524,ATP binding
+PMM0302,go:0016491,oxidoreductase activity
+PMM0303,go:0000049,tRNA binding
+PMM0303,go:0000166,nucleotide binding
+PMM0303,go:0016779,nucleotidyltransferase activity
+PMM0303,go:0046872,metal ion binding
+PMM0304,go:0003677,DNA binding
+PMM0304,go:0005524,ATP binding
+PMM0304,go:0016887,ATP hydrolysis activity
+PMM0304,go:0043138,3^-5^ DNA helicase activity
+PMM0305,go:0031992,energy transducer activity
+PMM0310,go:0004856,D-xylulokinase activity
+PMM0310,go:0005524,ATP binding
+PMM0310,go:0019150,D-ribulokinase activity
+PMM0311,go:0004478,methionine adenosyltransferase activity
+PMM0311,go:0005524,ATP binding
+PMM0312,go:0003729,mRNA binding
+PMM0312,go:0003735,structural constituent of ribosome
+PMM0312,go:0019843,rRNA binding
+PMM0313,go:0008270,zinc ion binding
+PMM0313,go:0140110,transcription regulator activity
+PMM0315,go:0016168,chlorophyll binding
+PMM0316,go:0009055,electron transfer activity
+PMM0316,go:0046872,metal ion binding
+PMM0316,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM0318,go:0003676,nucleic acid binding
+PMM0318,go:0008170,N-methyltransferase activity
+PMM0318,go:0008276,protein methyltransferase activity
+PMM0318,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM0318,go:0016491,oxidoreductase activity
+PMM0319,go:0000049,tRNA binding
+PMM0319,go:0000166,nucleotide binding
+PMM0319,go:0003725,double-stranded RNA binding
+PMM0319,go:0005524,ATP binding
+PMM0319,go:0016740,transferase activity
+PMM0319,go:0061710,L-threonylcarbamoyladenylate synthase activity
+PMM0321,go:0005524,ATP binding
+PMM0321,go:0016887,ATP hydrolysis activity
+PMM0322,go:0004857,enzyme inhibitor activity
+PMM0323,go:0008081,phosphoric diester hydrolase activity
+PMM0323,go:0008832,dGTPase activity
+PMM0323,go:0016787,hydrolase activity
+PMM0323,go:0046872,metal ion binding
+PMM0324,go:0004175,endopeptidase activity
+PMM0324,go:0008236,serine-type peptidase activity
+PMM0326,go:0009055,electron transfer activity
+PMM0327,go:0004564,beta-fructofuranosidase activity
+PMM0327,go:0033926,endo-alpha-N-acetylgalactosaminidase activity
+PMM0328,go:0003906,DNA-(apurinic or apyrimidinic site) endonuclease activity
+PMM0328,go:0008534,oxidized purine nucleobase lesion DNA N-glycosylase activity
+PMM0329,go:0016168,chlorophyll binding
+PMM0330,go:0008932,lytic endotransglycosylase activity
+PMM0331,go:0004029,aldehyde dehydrogenase (NAD+) activity
+PMM0331,go:0016491,oxidoreductase activity
+PMM0332,go:0004252,serine-type endopeptidase activity
+PMM0333,go:0008080,N-acetyltransferase activity
+PMM0333,go:0016747,"acyltransferase activity, transferring groups other than amino-acyl groups"
+PMM0336,go:0009916,alternative oxidase activity
+PMM0336,go:0046872,metal ion binding
+PMM0339,go:0009055,electron transfer activity
+PMM0339,go:0016491,oxidoreductase activity
+PMM0339,go:0046608,carotenoid isomerase activity
+PMM0343,go:0009977,proton motive force dependent protein transmembrane transporter activity
+PMM0345,go:0008379,thioredoxin peroxidase activity
+PMM0345,go:0016491,oxidoreductase activity
+PMM0345,go:0051920,peroxiredoxin activity
+PMM0349,go:0003747,translation release factor activity
+PMM0349,go:0004045,peptidyl-tRNA hydrolase activity
+PMM0349,go:0043022,ribosome binding
+PMM0352,go:0004222,metalloendopeptidase activity
+PMM0352,go:0070007,glutamic-type endopeptidase activity
+PMM0353,go:0008107,galactoside 2-alpha-L-fucosyltransferase activity
+PMM0354,go:0016757,glycosyltransferase activity
+PMM0356,go:0004177,aminopeptidase activity
+PMM0358,go:0005524,ATP binding
+PMM0358,go:0008902,hydroxymethylpyrimidine kinase activity
+PMM0358,go:0008972,phosphomethylpyrimidine kinase activity
+PMM0360,go:0046872,metal ion binding
+PMM0361,go:0016301,kinase activity
+PMM0363,go:0003700,DNA-binding transcription factor activity
+PMM0366,go:0005507,copper ion binding
+PMM0366,go:0009055,electron transfer activity
+PMM0367,go:0004497,monooxygenase activity
+PMM0370,go:0015110,cyanate transmembrane transporter activity
+PMM0370,go:0140359,ABC-type transporter activity
+PMM0371,go:0015112,nitrate transmembrane transporter activity
+PMM0372,go:0005215,transporter activity
+PMM0372,go:0005524,ATP binding
+PMM0372,go:0015110,cyanate transmembrane transporter activity
+PMM0372,go:0015112,nitrate transmembrane transporter activity
+PMM0372,go:0016887,ATP hydrolysis activity
+PMM0372,go:0140359,ABC-type transporter activity
+PMM0373,go:0008824,cyanate hydratase activity
+PMM0374,go:0009977,proton motive force dependent protein transmembrane transporter activity
+PMM0382,go:0008168,methyltransferase activity
+PMM0384,go:0003677,DNA binding
+PMM0384,go:0005524,ATP binding
+PMM0384,go:0009036,type II site-specific deoxyribonuclease activity
+PMM0384,go:0016787,hydrolase activity
+PMM0386,go:0008168,methyltransferase activity
+PMM0387,go:0003855,3-dehydroquinate dehydratase activity
+PMM0388,go:0045301,tRNA 2-(methylsulfanyl)-N(6)-isopentenyladenosine(37) hydroxylase activity
+PMM0389,go:0008168,methyltransferase activity
+PMM0389,go:0030788,precorrin-2 C20-methyltransferase activity
+PMM0391,go:0003924,GTPase activity
+PMM0391,go:0005525,GTP binding
+PMM0391,go:0043022,ribosome binding
+PMM0394,go:0030170,pyridoxal phosphate binding
+PMM0396,go:0004735,pyrroline-5-carboxylate reductase activity
+PMM0396,go:0016491,oxidoreductase activity
+PMM0396,go:0050661,NADP binding
+PMM0397,go:0016757,glycosyltransferase activity
+PMM0398,go:0003677,DNA binding
+PMM0399,go:0004139,deoxyribose-phosphate aldolase activity
+PMM0399,go:0016829,lyase activity
+PMM0400,go:0043024,ribosomal small subunit binding
+PMM0400,go:0045182,translation regulator activity
+PMM0401,go:0016979,lipoate-protein ligase activity
+PMM0401,go:0033819,lipoyl(octanoyl) transferase activity
+PMM0402,go:0003824,catalytic activity
+PMM0402,go:0004467,long-chain fatty acid-CoA ligase activity
+PMM0405,go:0004742,dihydrolipoyllysine-residue acetyltransferase activity
+PMM0405,go:0016407,acetyltransferase activity
+PMM0405,go:0016746,acyltransferase activity
+PMM0406,go:0016740,transferase activity
+PMM0406,go:0051075,S-adenosylmethionine:tRNA ribosyltransferase-isomerase activity
+PMM0407,go:0004124,cysteine synthase activity
+PMM0407,go:0005515,protein binding
+PMM0407,go:0016740,transferase activity
+PMM0407,go:0016829,lyase activity
+PMM0407,go:0030170,pyridoxal phosphate binding
+PMM0407,go:0042803,protein homodimerization activity
+PMM0407,go:0050272,S-carboxymethylcysteine synthase activity
+PMM0407,go:0080146,L-cysteine desulfhydrase activity
+PMM0408,go:0003962,cystathionine gamma-synthase activity
+PMM0408,go:0030170,pyridoxal phosphate binding
+PMM0409,go:0003962,cystathionine gamma-synthase activity
+PMM0409,go:0004123,cystathionine gamma-lyase activity
+PMM0409,go:0016740,transferase activity
+PMM0409,go:0018826,methionine gamma-lyase activity
+PMM0409,go:0030170,pyridoxal phosphate binding
+PMM0409,go:0042802,identical protein binding
+PMM0409,go:0047982,homocysteine desulfhydrase activity
+PMM0410,go:0003735,structural constituent of ribosome
+PMM0410,go:0019843,rRNA binding
+PMM0410,go:1901363,heterocyclic compound binding
+PMM0411,go:0032977,membrane insertase activity
+PMM0413,go:0005524,ATP binding
+PMM0413,go:0016874,ligase activity
+PMM0413,go:0016881,acid-amino acid ligase activity
+PMM0414,go:0016491,oxidoreductase activity
+PMM0415,go:0016829,lyase activity
+PMM0415,go:0030170,pyridoxal phosphate binding
+PMM0416,go:0030791,arsenite methyltransferase activity
+PMM0418,go:0005198,structural molecule activity
+PMM0418,go:0005506,iron ion binding
+PMM0418,go:0051536,iron-sulfur cluster binding
+PMM0419,go:0008924,L-malate dehydrogenase (quinone) activity
+PMM0420,go:0003924,GTPase activity
+PMM0420,go:0005525,GTP binding
+PMM0421,go:0140359,ABC-type transporter activity
+PMM0422,go:0000049,tRNA binding
+PMM0422,go:0008173,RNA methyltransferase activity
+PMM0422,go:0141100,tRNA (guanine(18)-2^-O)-methyltransferase activity
+PMM0423,go:0015035,protein-disulfide reductase activity
+PMM0425,go:0003913,DNA photolyase activity
+PMM0426,go:0003723,RNA binding
+PMM0426,go:0009383,rRNA (cytosine-C5-)-methyltransferase activity
+PMM0427,go:0008658,penicillin binding
+PMM0427,go:0008955,peptidoglycan glycosyltransferase activity
+PMM0427,go:0009002,serine-type D-Ala-D-Ala carboxypeptidase activity
+PMM0427,go:0016757,glycosyltransferase activity
+PMM0428,go:0046408,chlorophyll synthetase activity
+PMM0430,go:0000107,imidazoleglycerol-phosphate synthase activity
+PMM0431,go:0008425,"2-methoxy-6-polyprenyl-1,4-benzoquinol methyltransferase activity"
+PMM0431,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM0431,go:0016740,transferase activity
+PMM0431,go:0052624,"2-phytyl-1,4-naphthoquinone methyltransferase activity"
+PMM0433,go:0004077,biotin--[biotin carboxyl-carrier protein] ligase activity
+PMM0434,go:0005524,ATP binding
+PMM0434,go:0016887,ATP hydrolysis activity
+PMM0434,go:0022857,transmembrane transporter activity
+PMM0434,go:0140359,ABC-type transporter activity
+PMM0435,go:0016491,oxidoreductase activity
+PMM0435,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0435,go:0048038,quinone binding
+PMM0435,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0436,go:0003677,DNA binding
+PMM0436,go:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity"
+PMM0436,go:0046872,metal ion binding
+PMM0441,go:0046872,metal ion binding
+PMM0441,go:0051536,iron-sulfur cluster binding
+PMM0442,go:0004746,riboflavin synthase activity
+PMM0443,go:0000976,transcription cis-regulatory region binding
+PMM0443,go:0001217,DNA-binding transcription repressor activity
+PMM0444,go:0004129,cytochrome-c oxidase activity
+PMM0444,go:0016491,oxidoreductase activity
+PMM0445,go:0004129,cytochrome-c oxidase activity
+PMM0445,go:0016491,oxidoreductase activity
+PMM0445,go:0020037,heme binding
+PMM0445,go:0046872,metal ion binding
+PMM0446,go:0004129,cytochrome-c oxidase activity
+PMM0446,go:0005507,copper ion binding
+PMM0446,go:0016491,oxidoreductase activity
+PMM0447,go:0016627,"oxidoreductase activity, acting on the CH-CH group of donors"
+PMM0447,go:0020037,heme binding
+PMM0447,go:0046872,metal ion binding
+PMM0448,go:0004311,geranylgeranyl diphosphate synthase activity
+PMM0448,go:0008495,protoheme IX farnesyltransferase activity
+PMM0449,go:0005524,ATP binding
+PMM0449,go:0016887,ATP hydrolysis activity
+PMM0450,go:0140359,ABC-type transporter activity
+PMM0452,go:0005524,ATP binding
+PMM0452,go:0016887,ATP hydrolysis activity
+PMM0452,go:0051082,unfolded protein binding
+PMM0452,go:0140662,ATP-dependent protein folding chaperone
+PMM0453,go:0004316,3-oxoacyl-[acyl-carrier-protein] reductase (NADPH) activity
+PMM0453,go:0016491,oxidoreductase activity
+PMM0453,go:0051287,NAD binding
+PMM0454,go:0050518,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase activity
+PMM0455,go:0004180,carboxypeptidase activity
+PMM0455,go:0008236,serine-type peptidase activity
+PMM0455,go:0016787,hydrolase activity
+PMM0456,go:0008412,4-hydroxybenzoate polyprenyltransferase activity
+PMM0457,go:0000166,nucleotide binding
+PMM0457,go:0004309,exopolyphosphatase activity
+PMM0457,go:0016787,hydrolase activity
+PMM0457,go:0042803,protein homodimerization activity
+PMM0458,go:0003677,DNA binding
+PMM0459,go:0008168,methyltransferase activity
+PMM0459,go:0043115,precorrin-2 dehydrogenase activity
+PMM0459,go:0046026,precorrin-4 C11-methyltransferase activity
+PMM0460,go:0008961,phosphatidylglycerol-prolipoprotein diacylglyceryl transferase activity
+PMM0462,go:0009496,plastoquinol--plastocyanin reductase activity
+PMM0464,go:0009977,proton motive force dependent protein transmembrane transporter activity
+PMM0464,go:0015399,primary active transmembrane transporter activity
+PMM0464,go:0015450,protein-transporting ATPase activity
+PMM0464,go:0042802,identical protein binding
+PMM0464,go:1904680,peptide transmembrane transporter activity
+PMM0466,go:0000049,tRNA binding
+PMM0466,go:0043023,ribosomal large subunit binding
+PMM0467,go:0004385,GMP kinase activity
+PMM0468,go:0016168,chlorophyll binding
+PMM0469,go:0016168,chlorophyll binding
+PMM0470,go:0004222,metalloendopeptidase activity
+PMM0472,go:0015078,proton transmembrane transporter activity
+PMM0472,go:0015297,antiporter activity
+PMM0473,go:0000166,nucleotide binding
+PMM0473,go:0004818,glutamate-tRNA ligase activity
+PMM0473,go:0005524,ATP binding
+PMM0475,go:0003735,structural constituent of ribosome
+PMM0475,go:0019843,rRNA binding
+PMM0477,go:0004239,initiator methionyl aminopeptidase activity
+PMM0477,go:0046872,metal ion binding
+PMM0477,go:0070006,metalloaminopeptidase activity
+PMM0478,go:0004316,3-oxoacyl-[acyl-carrier-protein] reductase (NADPH) activity
+PMM0478,go:0016491,oxidoreductase activity
+PMM0478,go:0051287,NAD binding
+PMM0481,go:0000049,tRNA binding
+PMM0481,go:0000166,nucleotide binding
+PMM0481,go:0005515,protein binding
+PMM0481,go:0005524,ATP binding
+PMM0481,go:0005525,GTP binding
+PMM0483,go:0008483,transaminase activity
+PMM0483,go:0030170,pyridoxal phosphate binding
+PMM0483,go:0042286,"glutamate-1-semialdehyde 2,1-aminomutase activity"
+PMM0484,go:0003677,DNA binding
+PMM0484,go:0004519,endonuclease activity
+PMM0484,go:0004529,DNA exonuclease activity
+PMM0484,go:0008311,double-stranded DNA 3^-5^ DNA exonuclease activity
+PMM0484,go:0046872,metal ion binding
+PMM0487,go:0004066,asparagine synthase (glutamine-hydrolyzing) activity
+PMM0487,go:0016783,sulfurtransferase activity
+PMM0489,go:0140359,ABC-type transporter activity
+PMM0490,go:0000166,nucleotide binding
+PMM0490,go:0003924,GTPase activity
+PMM0490,go:0005525,GTP binding
+PMM0490,go:0016787,hydrolase activity
+PMM0490,go:0046872,metal ion binding
+PMM0491,go:0004505,phenylalanine 4-monooxygenase activity
+PMM0491,go:0005515,protein binding
+PMM0491,go:0008124,4-alpha-hydroxytetrahydrobiopterin dehydratase activity
+PMM0492,go:0003824,catalytic activity
+PMM0493,go:0004181,metallocarboxypeptidase activity
+PMM0493,go:0008270,zinc ion binding
+PMM0493,go:0046872,metal ion binding
+PMM0494,go:0000287,magnesium ion binding
+PMM0494,go:0004427,inorganic diphosphate phosphatase activity
+PMM0495,go:0004418,hydroxymethylbilane synthase activity
+PMM0496,go:0003677,DNA binding
+PMM0496,go:0016987,sigma factor activity
+PMM0497,go:0003677,DNA binding
+PMM0497,go:0003688,DNA replication origin binding
+PMM0497,go:0005524,ATP binding
+PMM0497,go:0008270,zinc ion binding
+PMM0497,go:0016887,ATP hydrolysis activity
+PMM0497,go:0043138,3^-5^ DNA helicase activity
+PMM0499,go:0003991,acetylglutamate kinase activity
+PMM0499,go:0034618,arginine binding
+PMM0499,go:0042802,identical protein binding
+PMM0502,go:0003697,single-stranded DNA binding
+PMM0503,go:0016994,precorrin-6A reductase activity
+PMM0504,go:0005488,binding
+PMM0504,go:0005507,copper ion binding
+PMM0505,go:0016301,kinase activity
+PMM0505,go:0016773,"phosphotransferase activity, alcohol group as acceptor"
+PMM0506,go:0004019,adenylosuccinate synthase activity
+PMM0506,go:0005525,GTP binding
+PMM0508,go:0000166,nucleotide binding
+PMM0508,go:0004827,proline-tRNA ligase activity
+PMM0508,go:0005524,ATP binding
+PMM0508,go:0043906,Ala-tRNA(Pro) deacylase activity
+PMM0510,go:0003964,RNA-directed DNA polymerase activity
+PMM0511,go:0000287,magnesium ion binding
+PMM0511,go:0004427,inorganic diphosphate phosphatase activity
+PMM0512,go:0008794,arsenate reductase (glutaredoxin) activity
+PMM0512,go:0016491,oxidoreductase activity
+PMM0513,go:0004252,serine-type endopeptidase activity
+PMM0513,go:0009003,signal peptidase activity
+PMM0514,go:0004038,allantoinase activity
+PMM0514,go:0004151,dihydroorotase activity
+PMM0514,go:0008270,zinc ion binding
+PMM0514,go:0046872,metal ion binding
+PMM0515,go:0003824,catalytic activity
+PMM0515,go:0016791,phosphatase activity
+PMM0516,go:0004222,metalloendopeptidase activity
+PMM0516,go:0070007,glutamic-type endopeptidase activity
+PMM0518,go:0008658,penicillin binding
+PMM0518,go:0008955,peptidoglycan glycosyltransferase activity
+PMM0518,go:0009002,serine-type D-Ala-D-Ala carboxypeptidase activity
+PMM0518,go:0016787,hydrolase activity
+PMM0519,go:0004801,transaldolase activity
+PMM0520,go:0000166,nucleotide binding
+PMM0520,go:0016628,"oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor"
+PMM0520,go:0045550,geranylgeranyl reductase activity
+PMM0520,go:0071949,FAD binding
+PMM0521,go:0008135,"translation factor activity, RNA binding"
+PMM0522,go:0000166,nucleotide binding
+PMM0522,go:0005524,ATP binding
+PMM0522,go:0016301,kinase activity
+PMM0522,go:0016740,transferase activity
+PMM0522,go:0033862,UMP kinase activity
+PMM0523,go:0005524,ATP binding
+PMM0523,go:0008817,corrinoid adenosyltransferase activity
+PMM0524,go:0003677,DNA binding
+PMM0525,go:0004325,ferrochelatase activity
+PMM0526,go:0000287,magnesium ion binding
+PMM0526,go:0003984,acetolactate synthase activity
+PMM0526,go:0030976,thiamine pyrophosphate binding
+PMM0526,go:0050660,flavin adenine dinucleotide binding
+PMM0528,go:0005488,binding
+PMM0528,go:0005507,copper ion binding
+PMM0528,go:0016787,hydrolase activity
+PMM0528,go:0017061,S-methyl-5-thioadenosine phosphorylase activity
+PMM0529,go:0003723,RNA binding
+PMM0530,go:0003729,mRNA binding
+PMM0530,go:0003735,structural constituent of ribosome
+PMM0530,go:0019843,rRNA binding
+PMM0531,go:0016811,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides"
+PMM0531,go:0046872,metal ion binding
+PMM0531,go:0047789,creatininase activity
+PMM0532,go:0046914,transition metal ion binding
+PMM0532,go:0071771,aldehyde oxygenase (deformylating) activity
+PMM0533,go:0008823,cupric reductase (NADH) activity
+PMM0533,go:0052851,ferric-chelate reductase (NADPH) activity
+PMM0534,go:0000166,nucleotide binding
+PMM0534,go:0003989,acetyl-CoA carboxylase activity
+PMM0534,go:0005524,ATP binding
+PMM0535,go:0016491,oxidoreductase activity
+PMM0536,go:0003934,GTP cyclohydrolase I activity
+PMM0536,go:0005525,GTP binding
+PMM0536,go:0008270,zinc ion binding
+PMM0536,go:0032550,purine ribonucleoside binding
+PMM0537,go:0004640,phosphoribosylanthranilate isomerase activity
+PMM0538,go:0003938,IMP dehydrogenase activity
+PMM0538,go:0004222,metalloendopeptidase activity
+PMM0539,go:0016874,ligase activity
+PMM0540,go:0016168,chlorophyll binding
+PMM0542,go:0016491,oxidoreductase activity
+PMM0542,go:0016630,protochlorophyllide reductase activity
+PMM0543,go:0005524,ATP binding
+PMM0543,go:0016730,"oxidoreductase activity, acting on iron-sulfur proteins as donors"
+PMM0544,go:0016730,"oxidoreductase activity, acting on iron-sulfur proteins as donors"
+PMM0545,go:0016630,protochlorophyllide reductase activity
+PMM0545,go:0016730,"oxidoreductase activity, acting on iron-sulfur proteins as donors"
+PMM0547,go:0043886,structural constituent of carboxysome shell
+PMM0548,go:0000166,nucleotide binding
+PMM0548,go:0016787,hydrolase activity
+PMM0548,go:0047429,nucleoside triphosphate diphosphatase activity
+PMM0550,go:0016984,ribulose-bisphosphate carboxylase activity
+PMM0551,go:0016984,ribulose-bisphosphate carboxylase activity
+PMM0553,go:0004089,carbonate dehydratase activity
+PMM0554,go:0043886,structural constituent of carboxysome shell
+PMM0555,go:0043886,structural constituent of carboxysome shell
+PMM0556,go:0008124,4-alpha-hydroxytetrahydrobiopterin dehydratase activity
+PMM0558,go:0004521,RNA endonuclease activity
+PMM0558,go:0019239,deaminase activity
+PMM0559,go:0004416,hydroxyacylglutathione hydrolase activity
+PMM0559,go:0008270,zinc ion binding
+PMM0559,go:0046872,metal ion binding
+PMM0560,go:0003879,ATP phosphoribosyltransferase activity
+PMM0561,go:0005524,ATP binding
+PMM0561,go:0016887,ATP hydrolysis activity
+PMM0561,go:0034040,ATPase-coupled lipid transmembrane transporter activity
+PMM0561,go:0140359,ABC-type transporter activity
+PMM0562,go:0008080,N-acetyltransferase activity
+PMM0562,go:0016746,acyltransferase activity
+PMM0563,go:0016757,glycosyltransferase activity
+PMM0564,go:0003674,molecular_function
+PMM0565,go:0003688,DNA replication origin binding
+PMM0565,go:0005524,ATP binding
+PMM0565,go:1901363,heterocyclic compound binding
+PMM0566,go:0004364,glutathione transferase activity
+PMM0566,go:0005515,protein binding
+PMM0567,go:0004362,glutathione-disulfide reductase (NADPH) activity
+PMM0567,go:0016491,oxidoreductase activity
+PMM0567,go:0050660,flavin adenine dinucleotide binding
+PMM0567,go:0050661,NADP binding
+PMM0568,go:0005262,calcium channel activity
+PMM0568,go:0008273,"calcium, potassium:sodium antiporter activity"
+PMM0568,go:0015368,calcium:monoatomic cation antiporter activity
+PMM0569,go:0004151,dihydroorotase activity
+PMM0569,go:0008270,zinc ion binding
+PMM0570,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0570,go:0048038,quinone binding
+PMM0570,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0572,go:0004834,tryptophan synthase activity
+PMM0575,go:0003677,DNA binding
+PMM0577,go:0003677,DNA binding
+PMM0577,go:0016987,sigma factor activity
+PMM0578,go:0004635,phosphoribosyl-AMP cyclohydrolase activity
+PMM0578,go:0004636,phosphoribosyl-ATP diphosphatase activity
+PMM0579,go:0003874,6-pyruvoyltetrahydropterin synthase activity
+PMM0579,go:0016829,lyase activity
+PMM0579,go:0046872,metal ion binding
+PMM0579,go:0070497,6-carboxytetrahydropterin synthase activity
+PMM0580,go:0005524,ATP binding
+PMM0580,go:0016887,ATP hydrolysis activity
+PMM0580,go:0051082,unfolded protein binding
+PMM0581,go:0005507,copper ion binding
+PMM0581,go:0009055,electron transfer activity
+PMM0582,go:0016491,oxidoreductase activity
+PMM0582,go:0070403,NAD+ binding
+PMM0583,go:0004853,uroporphyrinogen decarboxylase activity
+PMM0584,go:0003844,"1,4-alpha-glucan branching enzyme activity"
+PMM0584,go:0004553,"hydrolase activity, hydrolyzing O-glycosyl compounds"
+PMM0584,go:0043169,cation binding
+PMM0585,go:0008239,dipeptidyl-peptidase activity
+PMM0585,go:0016787,hydrolase activity
+PMM0590,go:0004350,glutamate-5-semialdehyde dehydrogenase activity
+PMM0591,go:0004150,dihydroneopterin aldolase activity
+PMM0592,go:0004806,triacylglycerol lipase activity
+PMM0592,go:0016787,hydrolase activity
+PMM0593,go:0004222,metalloendopeptidase activity
+PMM0593,go:0008233,peptidase activity
+PMM0593,go:0008270,zinc ion binding
+PMM0593,go:0046872,metal ion binding
+PMM0594,go:0016491,oxidoreductase activity
+PMM0594,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0594,go:0048038,quinone binding
+PMM0594,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0595,go:0004413,homoserine kinase activity
+PMM0595,go:0005524,ATP binding
+PMM0596,go:0004340,glucokinase activity
+PMM0596,go:0005524,ATP binding
+PMM0596,go:0005536,D-glucose binding
+PMM0597,go:0004829,threonine-tRNA ligase activity
+PMM0597,go:0005524,ATP binding
+PMM0598,go:0000166,nucleotide binding
+PMM0598,go:0004830,tryptophan-tRNA ligase activity
+PMM0598,go:0005524,ATP binding
+PMM0601,go:0046872,metal ion binding
+PMM0602,go:0005524,ATP binding
+PMM0602,go:0016887,ATP hydrolysis activity
+PMM0602,go:0046872,metal ion binding
+PMM0602,go:0140359,ABC-type transporter activity
+PMM0603,go:0046872,metal ion binding
+PMM0603,go:0140359,ABC-type transporter activity
+PMM0606,go:0004252,serine-type endopeptidase activity
+PMM0606,go:0009003,signal peptidase activity
+PMM0607,go:0003824,catalytic activity
+PMM0607,go:0030976,thiamine pyrophosphate binding
+PMM0607,go:0070204,2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylic-acid synthase activity
+PMM0608,go:0008935,"1,4-dihydroxy-2-naphthoyl-CoA synthase activity"
+PMM0609,go:0004373,"alpha-1,4-glucan glucosyltransferase (UDP-glucose donor) activity"
+PMM0609,go:0016757,glycosyltransferase activity
+PMM0610,go:0005524,ATP binding
+PMM0610,go:0008766,"UDP-N-acetylmuramoylalanyl-D-glutamyl-2,6-diaminopimelate-D-alanyl-D-alanine ligase activity"
+PMM0610,go:0047480,UDP-N-acetylmuramoyl-tripeptide-D-alanyl-D-alanine ligase activity
+PMM0611,go:0000287,magnesium ion binding
+PMM0611,go:0003977,UDP-N-acetylglucosamine diphosphorylase activity
+PMM0611,go:0019134,glucosamine-1-phosphate N-acetyltransferase activity
+PMM0612,go:0016645,"oxidoreductase activity, acting on the CH-NH group of donors"
+PMM0613,go:0003866,3-phosphoshikimate 1-carboxyvinyltransferase activity
+PMM0614,go:0000287,magnesium ion binding
+PMM0614,go:0050532,2-phosphosulfolactate phosphatase activity
+PMM0614,go:0050545,sulfopyruvate decarboxylase activity
+PMM0615,go:0016811,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides"
+PMM0616,go:0008745,N-acetylmuramoyl-L-alanine amidase activity
+PMM0616,go:0016787,hydrolase activity
+PMM0617,go:0008881,glutamate racemase activity
+PMM0618,go:0004659,prenyltransferase activity
+PMM0618,go:0046872,metal ion binding
+PMM0618,go:0052923,all-trans-nonaprenyl-diphosphate synthase (geranyl-diphosphate specific) activity
+PMM0619,go:0003987,acetate-CoA ligase activity
+PMM0619,go:0005524,ATP binding
+PMM0619,go:0016208,AMP binding
+PMM0619,go:0046872,metal ion binding
+PMM0621,go:0003677,DNA binding
+PMM0621,go:0003887,DNA-directed DNA polymerase activity
+PMM0621,go:0008408,3^-5^ exonuclease activity
+PMM0623,go:0004821,histidine-tRNA ligase activity
+PMM0623,go:0005524,ATP binding
+PMM0627,go:0016168,chlorophyll binding
+PMM0628,go:0015501,glutamate:sodium symporter activity
+PMM0630,go:0004364,glutathione transferase activity
+PMM0631,go:0003677,DNA binding
+PMM0631,go:0004518,nuclease activity
+PMM0632,go:0016491,oxidoreductase activity
+PMM0633,go:0016705,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"
+PMM0633,go:0045436,lycopene beta cyclase activity
+PMM0634,go:0016491,oxidoreductase activity
+PMM0634,go:0016630,protochlorophyllide reductase activity
+PMM0635,go:0008381,mechanosensitive monoatomic ion channel activity
+PMM0636,go:0016787,hydrolase activity
+PMM0637,go:0000976,transcription cis-regulatory region binding
+PMM0637,go:0003677,DNA binding
+PMM0637,go:0003700,DNA-binding transcription factor activity
+PMM0637,go:0008270,zinc ion binding
+PMM0637,go:0046872,metal ion binding
+PMM0638,go:0003824,catalytic activity
+PMM0638,go:0046872,metal ion binding
+PMM0638,go:0051536,iron-sulfur cluster binding
+PMM0639,go:0050530,glucosylglycerol 3-phosphatase activity
+PMM0642,go:0003961,O-acetylhomoserine aminocarboxypropyltransferase activity
+PMM0642,go:0004124,cysteine synthase activity
+PMM0642,go:0030170,pyridoxal phosphate binding
+PMM0643,go:0004414,homoserine O-acetyltransferase activity
+PMM0643,go:0008899,homoserine O-succinyltransferase activity
+PMM0644,go:0008271,secondary active sulfate transmembrane transporter activity
+PMM0645,go:0008762,UDP-N-acetylmuramate dehydrogenase activity
+PMM0645,go:0016614,"oxidoreductase activity, acting on CH-OH group of donors"
+PMM0645,go:0071949,FAD binding
+PMM0646,go:0016852,sirohydrochlorin cobaltochelatase activity
+PMM0648,go:0016614,"oxidoreductase activity, acting on CH-OH group of donors"
+PMM0652,go:0004527,exonuclease activity
+PMM0653,go:0004462,lactoylglutathione lyase activity
+PMM0653,go:0046872,metal ion binding
+PMM0658,go:0003723,RNA binding
+PMM0658,go:0016829,lyase activity
+PMM0658,go:0120159,rRNA pseudouridine synthase activity
+PMM0659,go:0003911,DNA ligase (NAD+) activity
+PMM0661,go:0000166,nucleotide binding
+PMM0661,go:0004748,"ribonucleoside-diphosphate reductase activity, thioredoxin disulfide as acceptor"
+PMM0661,go:0008998,ribonucleoside-triphosphate reductase (thioredoxin) activity
+PMM0661,go:0031419,cobalamin binding
+PMM0662,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM0662,go:1904047,S-adenosyl-L-methionine binding
+PMM0663,go:0003924,GTPase activity
+PMM0663,go:0005525,GTP binding
+PMM0663,go:0016149,"translation release factor activity, codon specific"
+PMM0663,go:0016150,"translation release factor activity, codon nonspecific"
+PMM0665,go:0051082,unfolded protein binding
+PMM0666,go:0005524,ATP binding
+PMM0666,go:0016887,ATP hydrolysis activity
+PMM0666,go:0140359,ABC-type transporter activity
+PMM0668,go:0070042,rRNA (uridine-N3-)-methyltransferase activity
+PMM0670,go:0004622,phosphatidylcholine lysophospholipase A1 activity
+PMM0670,go:0008233,peptidase activity
+PMM0670,go:0016298,lipase activity
+PMM0671,go:0015416,ABC-type phosphonate transporter activity
+PMM0672,go:0005524,ATP binding
+PMM0672,go:0016887,ATP hydrolysis activity
+PMM0672,go:0043168,anion binding
+PMM0673,go:0043168,anion binding
+PMM0674,go:0004069,L-aspartate:2-oxoglutarate aminotransferase activity
+PMM0674,go:0016740,transferase activity
+PMM0674,go:0030170,pyridoxal phosphate binding
+PMM0674,go:0080130,L-phenylalanine-2-oxoglutarate transaminase activity
+PMM0675,go:0004844,uracil DNA N-glycosylase activity
+PMM0675,go:0005515,protein binding
+PMM0675,go:0016779,nucleotidyltransferase activity
+PMM0675,go:0016799,"hydrolase activity, hydrolyzing N-glycosyl compounds"
+PMM0675,go:0046872,metal ion binding
+PMM0675,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0676,go:0005488,binding
+PMM0676,go:0009055,electron transfer activity
+PMM0676,go:0046429,4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase activity (ferredoxin)
+PMM0676,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0677,go:0008236,serine-type peptidase activity
+PMM0678,go:0003824,catalytic activity
+PMM0678,go:0005488,binding
+PMM0678,go:0008987,quinolinate synthetase A activity
+PMM0678,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0679,go:0016787,hydrolase activity
+PMM0681,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM0681,go:0035243,protein-arginine omega-N symmetric methyltransferase activity
+PMM0681,go:1904047,S-adenosyl-L-methionine binding
+PMM0682,go:0003856,3-dehydroquinate synthase activity
+PMM0683,go:0004638,phosphoribosylaminoimidazole carboxylase activity
+PMM0683,go:0005524,ATP binding
+PMM0683,go:0016887,ATP hydrolysis activity
+PMM0683,go:0034028,5-(carboxyamino)imidazole ribonucleotide synthase activity
+PMM0683,go:0046872,metal ion binding
+PMM0694,go:0016491,oxidoreductase activity
+PMM0694,go:0016616,"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor"
+PMM0695,go:0016740,transferase activity
+PMM0695,go:0016787,hydrolase activity
+PMM0704,go:0005216,monoatomic ion channel activity
+PMM0704,go:0008324,monoatomic cation transmembrane transporter activity
+PMM0704,go:0022857,transmembrane transporter activity
+PMM0705,go:0000156,phosphorelay response regulator activity
+PMM0705,go:0000976,transcription cis-regulatory region binding
+PMM0705,go:0003677,DNA binding
+PMM0706,go:0000155,phosphorelay sensor kinase activity
+PMM0706,go:0004721,phosphoprotein phosphatase activity
+PMM0706,go:0016301,kinase activity
+PMM0708,go:0004035,alkaline phosphatase activity
+PMM0709,go:0005215,transporter activity
+PMM0709,go:0015288,porin activity
+PMM0710,go:0015415,ATPase-coupled phosphate ion transmembrane transporter activity
+PMM0710,go:0042301,phosphate ion binding
+PMM0711,go:0015109,chromate transmembrane transporter activity
+PMM0712,go:0022857,transmembrane transporter activity
+PMM0713,go:0000166,nucleotide binding
+PMM0713,go:0004365,glyceraldehyde-3-phosphate dehydrogenase (NAD+) (phosphorylating) activity
+PMM0713,go:0047100,glyceraldehyde-3-phosphate dehydrogenase (NADP+) (phosphorylating) activity
+PMM0713,go:0050661,NADP binding
+PMM0713,go:0051287,NAD binding
+PMM0714,go:0003677,DNA binding
+PMM0714,go:0003700,DNA-binding transcription factor activity
+PMM0716,go:0008490,arsenite secondary active transmembrane transporter activity
+PMM0716,go:0015297,antiporter activity
+PMM0717,go:0140359,ABC-type transporter activity
+PMM0718,go:0003677,DNA binding
+PMM0723,go:0015415,ATPase-coupled phosphate ion transmembrane transporter activity
+PMM0724,go:0015415,ATPase-coupled phosphate ion transmembrane transporter activity
+PMM0725,go:0005524,ATP binding
+PMM0725,go:0015415,ATPase-coupled phosphate ion transmembrane transporter activity
+PMM0727,go:0016787,hydrolase activity
+PMM0728,go:0003677,DNA binding
+PMM0728,go:0003678,DNA helicase activity
+PMM0728,go:0005524,ATP binding
+PMM0728,go:0016818,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides"
+PMM0728,go:0016887,ATP hydrolysis activity
+PMM0729,go:0003677,DNA binding
+PMM0729,go:0003910,DNA ligase (ATP) activity
+PMM0729,go:0005524,ATP binding
+PMM0729,go:0046872,metal ion binding
+PMM0730,go:0004521,RNA endonuclease activity
+PMM0742,go:0004176,ATP-dependent peptidase activity
+PMM0742,go:0004252,serine-type endopeptidase activity
+PMM0742,go:0051082,unfolded protein binding
+PMM0743,go:0004176,ATP-dependent peptidase activity
+PMM0743,go:0004222,metalloendopeptidase activity
+PMM0743,go:0005524,ATP binding
+PMM0743,go:0008270,zinc ion binding
+PMM0743,go:0016887,ATP hydrolysis activity
+PMM0744,go:0019209,kinase activator activity
+PMM0745,go:0008237,metallopeptidase activity
+PMM0745,go:0016787,hydrolase activity
+PMM0745,go:0046872,metal ion binding
+PMM0746,go:0004222,metalloendopeptidase activity
+PMM0746,go:0046872,metal ion binding
+PMM0747,go:0050620,phycocyanobilin:ferredoxin oxidoreductase activity
+PMM0748,go:0042626,ATPase-coupled transmembrane transporter activity
+PMM0749,go:0042626,ATPase-coupled transmembrane transporter activity
+PMM0750,go:0005524,ATP binding
+PMM0750,go:0016887,ATP hydrolysis activity
+PMM0750,go:0022857,transmembrane transporter activity
+PMM0752,go:0016757,glycosyltransferase activity
+PMM0753,go:0003735,structural constituent of ribosome
+PMM0753,go:0019843,rRNA binding
+PMM0754,go:0003723,RNA binding
+PMM0754,go:0003746,translation elongation factor activity
+PMM0754,go:0008135,"translation factor activity, RNA binding"
+PMM0754,go:1901363,heterocyclic compound binding
+PMM0756,go:0000166,nucleotide binding
+PMM0756,go:0003677,DNA binding
+PMM0756,go:0003724,RNA helicase activity
+PMM0756,go:0005524,ATP binding
+PMM0756,go:0016887,ATP hydrolysis activity
+PMM0756,go:0043138,3^-5^ DNA helicase activity
+PMM0757,go:0008237,metallopeptidase activity
+PMM0757,go:0008270,zinc ion binding
+PMM0757,go:0160237,D-Ala-D-Ala dipeptidase activity
+PMM0758,go:0004783,sulfite reductase (NADPH) activity
+PMM0758,go:0020037,heme binding
+PMM0758,go:0046872,metal ion binding
+PMM0758,go:0050311,sulfite reductase (ferredoxin) activity
+PMM0758,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0759,go:0000166,nucleotide binding
+PMM0759,go:0004820,glycine-tRNA ligase activity
+PMM0759,go:0005524,ATP binding
+PMM0760,go:0004497,monooxygenase activity
+PMM0760,go:0045550,geranylgeranyl reductase activity
+PMM0760,go:0071949,FAD binding
+PMM0760,go:0102067,geranylgeranyl diphosphate reductase activity
+PMM0761,go:0004180,carboxypeptidase activity
+PMM0761,go:0008233,peptidase activity
+PMM0761,go:0008270,zinc ion binding
+PMM0762,go:0000049,tRNA binding
+PMM0762,go:0003924,GTPase activity
+PMM0762,go:0005525,GTP binding
+PMM0762,go:0019843,rRNA binding
+PMM0762,go:0043022,ribosome binding
+PMM0764,go:0005524,ATP binding
+PMM0764,go:0015221,lipopolysaccharide transmembrane transporter activity
+PMM0764,go:0016887,ATP hydrolysis activity
+PMM0764,go:0042626,ATPase-coupled transmembrane transporter activity
+PMM0765,go:0015232,heme transmembrane transporter activity
+PMM0765,go:0020037,heme binding
+PMM0766,go:0004750,D-ribulose-phosphate 3-epimerase activity
+PMM0766,go:0046872,metal ion binding
+PMM0767,go:0042132,"fructose 1,6-bisphosphate 1-phosphatase activity"
+PMM0768,go:0008883,glutamyl-tRNA reductase activity
+PMM0768,go:0050661,NADP binding
+PMM0769,go:0005524,ATP binding
+PMM0769,go:0008878,glucose-1-phosphate adenylyltransferase activity
+PMM0769,go:0043886,structural constituent of carboxysome shell
+PMM0770,go:0004616,phosphogluconate dehydrogenase (decarboxylating) activity
+PMM0770,go:0016491,oxidoreductase activity
+PMM0770,go:0050661,NADP binding
+PMM0771,go:0017057,6-phosphogluconolactonase activity
+PMM0772,go:0051082,unfolded protein binding
+PMM0774,go:0004160,dihydroxy-acid dehydratase activity
+PMM0774,go:0051536,iron-sulfur cluster binding
+PMM0776,go:0004845,uracil phosphoribosyltransferase activity
+PMM0776,go:0005524,ATP binding
+PMM0776,go:0016757,glycosyltransferase activity
+PMM0776,go:0016773,"phosphotransferase activity, alcohol group as acceptor"
+PMM0778,go:0000166,nucleotide binding
+PMM0778,go:0016787,hydrolase activity
+PMM0779,go:0004642,phosphoribosylformylglycinamidine synthase activity
+PMM0779,go:0005524,ATP binding
+PMM0780,go:0004642,phosphoribosylformylglycinamidine synthase activity
+PMM0781,go:0004332,fructose-bisphosphate aldolase activity
+PMM0781,go:0008270,zinc ion binding
+PMM0782,go:0000166,nucleotide binding
+PMM0782,go:0016491,oxidoreductase activity
+PMM0784,go:0000166,nucleotide binding
+PMM0784,go:0003989,acetyl-CoA carboxylase activity
+PMM0784,go:0016874,ligase activity
+PMM0785,go:0005524,ATP binding
+PMM0785,go:0008974,phosphoribulokinase activity
+PMM0786,go:0000287,magnesium ion binding
+PMM0786,go:0003862,3-isopropylmalate dehydrogenase activity
+PMM0786,go:0051287,NAD binding
+PMM0787,go:0016410,N-acyltransferase activity
+PMM0787,go:0016740,transferase activity
+PMM0788,go:0000287,magnesium ion binding
+PMM0788,go:0003723,RNA binding
+PMM0788,go:0004349,glutamate 5-kinase activity
+PMM0788,go:0005524,ATP binding
+PMM0789,go:0008962,phosphatidylglycerophosphatase activity
+PMM0791,go:0004518,nuclease activity
+PMM0791,go:0005515,protein binding
+PMM0791,go:0008296,3^-5^-DNA exonuclease activity
+PMM0791,go:0016787,hydrolase activity
+PMM0796,go:0003949,1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide isomerase activity
+PMM0797,go:0003824,catalytic activity
+PMM0797,go:0003978,UDP-glucose 4-epimerase activity
+PMM0798,go:0008444,CDP-diacylglycerol-glycerol-3-phosphate 3-phosphatidyltransferase activity
+PMM0798,go:0016780,"phosphotransferase activity, for other substituted phosphate groups"
+PMM0799,go:0009055,electron transfer activity
+PMM0799,go:0015035,protein-disulfide reductase activity
+PMM0802,go:0000703,oxidized pyrimidine nucleobase lesion DNA N-glycosylase activity
+PMM0802,go:0003677,DNA binding
+PMM0802,go:0004844,uracil DNA N-glycosylase activity
+PMM0802,go:0005515,protein binding
+PMM0802,go:0016798,"hydrolase activity, acting on glycosyl bonds"
+PMM0802,go:0016829,lyase activity
+PMM0802,go:0019104,DNA N-glycosylase activity
+PMM0802,go:0046872,metal ion binding
+PMM0802,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM0802,go:0140078,class I DNA-(apurinic or apyrimidinic site) endonuclease activity
+PMM0803,go:0005524,ATP binding
+PMM0803,go:0015408,ABC-type ferric iron transporter activity
+PMM0803,go:0015418,ABC-type quaternary ammonium compound transporting activity
+PMM0803,go:0016887,ATP hydrolysis activity
+PMM0804,go:0008198,ferrous iron binding
+PMM0804,go:0008199,ferric iron binding
+PMM0804,go:0016491,oxidoreductase activity
+PMM0806,go:0003677,DNA binding
+PMM0806,go:0003700,DNA-binding transcription factor activity
+PMM0807,go:0005524,ATP binding
+PMM0807,go:0016887,ATP hydrolysis activity
+PMM0807,go:0140359,ABC-type transporter activity
+PMM0808,go:0004497,monooxygenase activity
+PMM0808,go:0010277,chlorophyllide a oxygenase activity
+PMM0808,go:0016705,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"
+PMM0808,go:0046872,metal ion binding
+PMM0808,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM0823,go:0043023,ribosomal large subunit binding
+PMM0825,go:0004087,carbamoyl-phosphate synthase (ammonia) activity
+PMM0825,go:0004088,carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity
+PMM0825,go:0005524,ATP binding
+PMM0825,go:0046872,metal ion binding
+PMM0827,go:0005524,ATP binding
+PMM0827,go:0016887,ATP hydrolysis activity
+PMM0827,go:0140359,ABC-type transporter activity
+PMM0828,go:0003723,RNA binding
+PMM0829,go:0004807,triose-phosphate isomerase activity
+PMM0830,go:0004156,dihydropteroate synthase activity
+PMM0830,go:0046872,metal ion binding
+PMM0831,go:0005524,ATP binding
+PMM0831,go:0016851,magnesium chelatase activity
+PMM0831,go:0016887,ATP hydrolysis activity
+PMM0831,go:0046406,magnesium protoporphyrin IX methyltransferase activity
+PMM0832,go:0008839,4-hydroxy-tetrahydrodipicolinate reductase activity
+PMM0832,go:0070402,NADPH binding
+PMM0834,go:0016491,oxidoreductase activity
+PMM0834,go:0016709,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, NAD(P)H as one donor, and incorporation of one atom of oxygen"
+PMM0834,go:0071949,FAD binding
+PMM0839,go:0000166,nucleotide binding
+PMM0839,go:0003678,DNA helicase activity
+PMM0839,go:0003684,damaged DNA binding
+PMM0839,go:0005515,protein binding
+PMM0839,go:0005524,ATP binding
+PMM0839,go:0015616,DNA translocase activity
+PMM0839,go:0016787,hydrolase activity
+PMM0839,go:0043175,RNA polymerase core enzyme binding
+PMM0841,go:0004479,methionyl-tRNA formyltransferase activity
+PMM0842,go:0008237,metallopeptidase activity
+PMM0842,go:0008270,zinc ion binding
+PMM0843,go:0008237,metallopeptidase activity
+PMM0843,go:0008270,zinc ion binding
+PMM0844,go:0005506,iron ion binding
+PMM0844,go:0016491,oxidoreductase activity
+PMM0844,go:0016668,"oxidoreductase activity, acting on a sulfur group of donors, NAD(P) as acceptor"
+PMM0844,go:0046872,metal ion binding
+PMM0844,go:0048529,magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase activity
+PMM0845,go:0016491,oxidoreductase activity
+PMM0845,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM0845,go:0048038,quinone binding
+PMM0845,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM0847,go:0003723,RNA binding
+PMM0847,go:0004532,RNA exonuclease activity
+PMM0848,go:0046873,metal ion transmembrane transporter activity
+PMM0849,go:0046873,metal ion transmembrane transporter activity
+PMM0850,go:0046872,metal ion binding
+PMM0850,go:0051536,iron-sulfur cluster binding
+PMM0851,go:0016787,hydrolase activity
+PMM0853,go:0003735,structural constituent of ribosome
+PMM0854,go:0004176,ATP-dependent peptidase activity
+PMM0854,go:0004222,metalloendopeptidase activity
+PMM0854,go:0005524,ATP binding
+PMM0854,go:0008270,zinc ion binding
+PMM0854,go:0016887,ATP hydrolysis activity
+PMM0854,go:0046872,metal ion binding
+PMM0856,go:0008379,thioredoxin peroxidase activity
+PMM0856,go:0016209,antioxidant activity
+PMM0856,go:0016491,oxidoreductase activity
+PMM0856,go:0051920,peroxiredoxin activity
+PMM0862,go:0003723,RNA binding
+PMM0862,go:0008173,RNA methyltransferase activity
+PMM0862,go:0016740,transferase activity
+PMM0862,go:0042803,protein homodimerization activity
+PMM0862,go:0141098,tRNA (cytidine(34)-2^-O)-methyltransferase activity
+PMM0862,go:0141102,tRNA (5-carboxymethylaminomethyluridine(34)-2^-O)-methyltransferase activity
+PMM0862,go:1904047,S-adenosyl-L-methionine binding
+PMM0863,go:0000166,nucleotide binding
+PMM0863,go:0005524,ATP binding
+PMM0863,go:0005525,GTP binding
+PMM0863,go:0008820,cobinamide phosphate guanylyltransferase activity
+PMM0863,go:0043752,adenosylcobinamide kinase activity
+PMM0866,go:0015221,lipopolysaccharide transmembrane transporter activity
+PMM0867,go:0000166,nucleotide binding
+PMM0867,go:0004825,methionine-tRNA ligase activity
+PMM0867,go:0005524,ATP binding
+PMM0867,go:0046872,metal ion binding
+PMM0868,go:0003723,RNA binding
+PMM0868,go:0008859,exoribonuclease II activity
+PMM0869,go:0003735,structural constituent of ribosome
+PMM0869,go:0019843,rRNA binding
+PMM0870,go:0000049,tRNA binding
+PMM0870,go:0003735,structural constituent of ribosome
+PMM0870,go:0019843,rRNA binding
+PMM0871,go:0000049,tRNA binding
+PMM0871,go:0000287,magnesium ion binding
+PMM0871,go:0004826,phenylalanine-tRNA ligase activity
+PMM0871,go:0005524,ATP binding
+PMM0873,go:0051082,unfolded protein binding
+PMM0874,go:0003877,ATP:ADP adenylyltransferase activity
+PMM0874,go:0005524,ATP binding
+PMM0875,go:0003674,molecular_function
+PMM0877,go:0008270,zinc ion binding
+PMM0877,go:0008705,methionine synthase activity
+PMM0877,go:0008898,S-adenosylmethionine-homocysteine S-methyltransferase activity
+PMM0877,go:0031419,cobalamin binding
+PMM0877,go:0046872,metal ion binding
+PMM0878,go:0003824,catalytic activity
+PMM0878,go:0052654,L-leucine-2-oxoglutarate transaminase activity
+PMM0878,go:0052655,L-valine-2-oxoglutarate transaminase activity
+PMM0878,go:0052656,L-isoleucine-2-oxoglutarate transaminase activity
+PMM0879,go:0051116,cobaltochelatase activity
+PMM0880,go:0003824,catalytic activity
+PMM0880,go:0004534,5^-3^ RNA exonuclease activity
+PMM0880,go:0035312,5^-3^ DNA exonuclease activity
+PMM0880,go:0046872,metal ion binding
+PMM0882,go:0009381,excinuclease ABC activity
+PMM0883,go:0010181,FMN binding
+PMM0883,go:0016491,oxidoreductase activity
+PMM0883,go:0042602,riboflavin reductase (NADPH) activity
+PMM0884,go:0004595,pantetheine-phosphate adenylyltransferase activity
+PMM0885,go:0004185,serine-type carboxypeptidase activity
+PMM0885,go:0008658,penicillin binding
+PMM0887,go:0008483,transaminase activity
+PMM0887,go:0030170,pyridoxal phosphate binding
+PMM0887,go:0031071,cysteine desulfurase activity
+PMM0887,go:0046872,metal ion binding
+PMM0887,go:0051536,iron-sulfur cluster binding
+PMM0888,go:0008837,diaminopimelate epimerase activity
+PMM0889,go:0000166,nucleotide binding
+PMM0889,go:0002161,aminoacyl-tRNA deacylase activity
+PMM0889,go:0004823,leucine-tRNA ligase activity
+PMM0889,go:0005515,protein binding
+PMM0889,go:0005524,ATP binding
+PMM0890,go:0004347,glucose-6-phosphate isomerase activity
+PMM0891,go:0004644,phosphoribosylglycinamide formyltransferase activity
+PMM0892,go:0003942,N-acetyl-gamma-glutamyl-phosphate reductase activity
+PMM0892,go:0046983,protein dimerization activity
+PMM0892,go:0051287,NAD binding
+PMM0892,go:0070401,NADP+ binding
+PMM0893,go:0000287,magnesium ion binding
+PMM0893,go:0003935,GTP cyclohydrolase II activity
+PMM0893,go:0005525,GTP binding
+PMM0893,go:0008270,zinc ion binding
+PMM0893,go:0008686,"3,4-dihydroxy-2-butanone-4-phosphate synthase activity"
+PMM0893,go:0030145,manganese ion binding
+PMM0894,go:0003755,peptidyl-prolyl cis-trans isomerase activity
+PMM0896,go:0051082,unfolded protein binding
+PMM0897,go:0000166,nucleotide binding
+PMM0897,go:0005524,ATP binding
+PMM0897,go:0008270,zinc ion binding
+PMM0897,go:0043531,ADP binding
+PMM0897,go:0044183,protein folding chaperone
+PMM0897,go:0051082,unfolded protein binding
+PMM0898,go:0009055,electron transfer activity
+PMM0898,go:0046872,metal ion binding
+PMM0898,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM0899,go:0008934,inositol monophosphate 1-phosphatase activity
+PMM0899,go:0046872,metal ion binding
+PMM0900,go:0003879,ATP phosphoribosyltransferase activity
+PMM0901,go:0005524,ATP binding
+PMM0901,go:0016887,ATP hydrolysis activity
+PMM0901,go:0051082,unfolded protein binding
+PMM0901,go:0140662,ATP-dependent protein folding chaperone
+PMM0902,go:0000049,tRNA binding
+PMM0902,go:0003735,structural constituent of ribosome
+PMM0902,go:0019843,rRNA binding
+PMM0903,go:0008379,thioredoxin peroxidase activity
+PMM0903,go:0016491,oxidoreductase activity
+PMM0903,go:0051920,peroxiredoxin activity
+PMM0906,go:0016168,chlorophyll binding
+PMM0907,go:0008661,1-deoxy-D-xylulose-5-phosphate synthase activity
+PMM0908,go:0003941,L-serine ammonia-lyase activity
+PMM0908,go:0004794,threonine deaminase activity
+PMM0908,go:0030170,pyridoxal phosphate binding
+PMM0909,go:0005515,protein binding
+PMM0912,go:0000287,magnesium ion binding
+PMM0912,go:0004743,pyruvate kinase activity
+PMM0912,go:0005524,ATP binding
+PMM0912,go:0016301,kinase activity
+PMM0912,go:0030955,potassium ion binding
+PMM0913,go:0022857,transmembrane transporter activity
+PMM0913,go:0140359,ABC-type transporter activity
+PMM0914,go:0015225,biotin transmembrane transporter activity
+PMM0915,go:0004190,aspartic-type endopeptidase activity
+PMM0916,go:0005525,GTP binding
+PMM0917,go:0004058,aromatic-L-amino-acid decarboxylase activity
+PMM0917,go:0030170,pyridoxal phosphate binding
+PMM0918,go:0008270,zinc ion binding
+PMM0918,go:0016787,hydrolase activity
+PMM0918,go:0019239,deaminase activity
+PMM0918,go:0052717,tRNA-specific adenosine-34 deaminase activity
+PMM0919,go:0004760,L-serine-pyruvate transaminase activity
+PMM0919,go:0008453,alanine-glyoxylate transaminase activity
+PMM0919,go:0030170,pyridoxal phosphate binding
+PMM0920,go:0003824,catalytic activity
+PMM0920,go:0004356,glutamine synthetase activity
+PMM0920,go:0005524,ATP binding
+PMM0920,go:0046872,metal ion binding
+PMM0921,go:0008168,methyltransferase activity
+PMM0921,go:0016740,transferase activity
+PMM0921,go:1904047,S-adenosyl-L-methionine binding
+PMM0923,go:0004674,protein serine/threonine kinase activity
+PMM0923,go:0005524,ATP binding
+PMM0923,go:0016740,transferase activity
+PMM0923,go:0016787,hydrolase activity
+PMM0925,go:0043828,tRNA 2-selenouridine synthase activity
+PMM0927,go:0015562,efflux transmembrane transporter activity
+PMM0928,go:0015450,protein-transporting ATPase activity
+PMM0929,go:0005524,ATP binding
+PMM0929,go:0015450,protein-transporting ATPase activity
+PMM0930,go:0004739,pyruvate dehydrogenase (acetyl-transferring) activity
+PMM0932,go:0005524,ATP binding
+PMM0932,go:0050515,4-(cytidine 5^-diphospho)-2-C-methyl-D-erythritol kinase activity
+PMM0933,go:0000179,"rRNA (adenine-N6,N6-)-dimethyltransferase activity"
+PMM0935,go:0008168,methyltransferase activity
+PMM0936,go:0003684,damaged DNA binding
+PMM0936,go:0003887,DNA-directed DNA polymerase activity
+PMM0936,go:0016787,hydrolase activity
+PMM0937,go:0003684,damaged DNA binding
+PMM0937,go:0003887,DNA-directed DNA polymerase activity
+PMM0938,go:0008168,methyltransferase activity
+PMM0939,go:0003677,DNA binding
+PMM0939,go:0003899,DNA-directed RNA polymerase activity
+PMM0939,go:0008270,zinc ion binding
+PMM0940,go:0022857,transmembrane transporter activity
+PMM0942,go:0004518,nuclease activity
+PMM0942,go:0004520,DNA endonuclease activity
+PMM0942,go:0009378,four-way junction helicase activity
+PMM0942,go:0016787,hydrolase activity
+PMM0942,go:0046872,metal ion binding
+PMM0943,go:0003735,structural constituent of ribosome
+PMM0943,go:0019843,rRNA binding
+PMM0945,go:0003677,DNA binding
+PMM0945,go:0003824,catalytic activity
+PMM0945,go:0003887,DNA-directed DNA polymerase activity
+PMM0945,go:0008408,3^-5^ exonuclease activity
+PMM0946,go:0050567,glutaminyl-tRNA synthase (glutamine-hydrolyzing) activity
+PMM0948,go:0003723,RNA binding
+PMM0948,go:0008171,O-methyltransferase activity
+PMM0948,go:0070039,rRNA (guanosine-2^-O-)-methyltransferase activity
+PMM0949,go:0004525,ribonuclease III activity
+PMM0949,go:0019843,rRNA binding
+PMM0950,go:0043856,anti-sigma factor antagonist activity
+PMM0950,go:0045152,antisigma factor binding
+PMM0951,go:0004088,carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity
+PMM0951,go:0004359,glutaminase activity
+PMM0951,go:0005524,ATP binding
+PMM0952,go:0004048,anthranilate phosphoribosyltransferase activity
+PMM0954,go:0005524,ATP binding
+PMM0954,go:0015421,ABC-type oligopeptide transporter activity
+PMM0954,go:0016887,ATP hydrolysis activity
+PMM0955,go:0008113,peptide-methionine (S)-S-oxide reductase activity
+PMM0955,go:0033744,L-methionine (S)-S-oxide reductase activity
+PMM0956,go:0050380,undecaprenyl-diphosphatase activity
+PMM0959,go:0016301,kinase activity
+PMM0960,go:0000287,magnesium ion binding
+PMM0960,go:0050531,mannosyl-3-phosphoglycerate phosphatase activity
+PMM0961,go:0016758,hexosyltransferase activity
+PMM0961,go:0016787,hydrolase activity
+PMM0962,go:0016757,glycosyltransferase activity
+PMM0963,go:0009039,urease activity
+PMM0963,go:0016151,nickel cation binding
+PMM0963,go:0016810,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds"
+PMM0964,go:0009039,urease activity
+PMM0964,go:0016151,nickel cation binding
+PMM0964,go:0016787,hydrolase activity
+PMM0965,go:0009039,urease activity
+PMM0965,go:0016151,nickel cation binding
+PMM0965,go:0016787,hydrolase activity
+PMM0966,go:0016151,nickel cation binding
+PMM0967,go:0016151,nickel cation binding
+PMM0968,go:0016151,nickel cation binding
+PMM0969,go:0003924,GTPase activity
+PMM0969,go:0016151,nickel cation binding
+PMM0969,go:0016530,metallochaperone activity
+PMM0969,go:0046872,metal ion binding
+PMM0970,go:0005215,transporter activity
+PMM0970,go:0033219,urea binding
+PMM0970,go:0033221,ATPase-coupled urea transmembrane transporter activity
+PMM0971,go:0022857,transmembrane transporter activity
+PMM0972,go:0005215,transporter activity
+PMM0972,go:0015658,branched-chain amino acid transmembrane transporter activity
+PMM0972,go:0033221,ATPase-coupled urea transmembrane transporter activity
+PMM0973,go:0005524,ATP binding
+PMM0973,go:0016887,ATP hydrolysis activity
+PMM0973,go:0033221,ATPase-coupled urea transmembrane transporter activity
+PMM0974,go:0005524,ATP binding
+PMM0974,go:0015658,branched-chain amino acid transmembrane transporter activity
+PMM0974,go:0016887,ATP hydrolysis activity
+PMM0974,go:0033221,ATPase-coupled urea transmembrane transporter activity
+PMM0976,go:0005524,ATP binding
+PMM0976,go:0016887,ATP hydrolysis activity
+PMM0976,go:0042626,ATPase-coupled transmembrane transporter activity
+PMM0977,go:0140359,ABC-type transporter activity
+PMM0978,go:0140359,ABC-type transporter activity
+PMM0982,go:0003676,nucleic acid binding
+PMM0982,go:0004519,endonuclease activity
+PMM0982,go:0008270,zinc ion binding
+PMM0985,go:0016757,glycosyltransferase activity
+PMM0986,go:0050144,nucleoside deoxyribosyltransferase activity
+PMM0986,go:0070694,5-hydroxymethyl-dUMP N-hydrolase activity
+PMM0987,go:0003735,structural constituent of ribosome
+PMM0987,go:0019843,rRNA binding
+PMM0988,go:0003677,DNA binding
+PMM0989,go:0005524,ATP binding
+PMM0989,go:0016301,kinase activity
+PMM0989,go:0016773,"phosphotransferase activity, alcohol group as acceptor"
+PMM0993,go:0008236,serine-type peptidase activity
+PMM0993,go:0016805,dipeptidase activity
+PMM0994,go:0008080,N-acetyltransferase activity
+PMM0994,go:0016747,"acyltransferase activity, transferring groups other than amino-acyl groups"
+PMM0998,go:0015035,protein-disulfide reductase activity
+PMM1001,go:0016787,hydrolase activity
+PMM1001,go:0046872,metal ion binding
+PMM1002,go:0008237,metallopeptidase activity
+PMM1002,go:0008270,zinc ion binding
+PMM1002,go:0016285,alanyl aminopeptidase activity
+PMM1004,go:0000287,magnesium ion binding
+PMM1004,go:0004644,phosphoribosylglycinamide formyltransferase activity
+PMM1004,go:0005524,ATP binding
+PMM1004,go:0043815,phosphoribosylglycinamide formyltransferase 2 activity
+PMM1005,go:0030246,carbohydrate binding
+PMM1006,go:0004602,glutathione peroxidase activity
+PMM1006,go:0043295,glutathione binding
+PMM1009,go:0016491,oxidoreductase activity
+PMM1009,go:0017150,tRNA dihydrouridine synthase activity
+PMM1009,go:0050660,flavin adenine dinucleotide binding
+PMM1010,go:0010181,FMN binding
+PMM1010,go:0016491,oxidoreductase activity
+PMM1012,go:0016790,thiolester hydrolase activity
+PMM1014,go:0003677,DNA binding
+PMM1014,go:0004519,endonuclease activity
+PMM1014,go:0015666,restriction endodeoxyribonuclease activity
+PMM1025,go:0004601,peroxidase activity
+PMM1029,go:0005524,ATP binding
+PMM1029,go:0140359,ABC-type transporter activity
+PMM1030,go:0000976,transcription cis-regulatory region binding
+PMM1030,go:0003677,DNA binding
+PMM1030,go:0003700,DNA-binding transcription factor activity
+PMM1030,go:0008270,zinc ion binding
+PMM1030,go:0046872,metal ion binding
+PMM1031,go:0005524,ATP binding
+PMM1031,go:0016887,ATP hydrolysis activity
+PMM1031,go:0140359,ABC-type transporter activity
+PMM1032,go:0046872,metal ion binding
+PMM1033,go:0000166,nucleotide binding
+PMM1033,go:0003924,GTPase activity
+PMM1033,go:0005525,GTP binding
+PMM1033,go:0016787,hydrolase activity
+PMM1033,go:0046872,metal ion binding
+PMM1034,go:0005515,protein binding
+PMM1035,go:0016853,isomerase activity
+PMM1044,go:0000166,nucleotide binding
+PMM1044,go:0004747,ribokinase activity
+PMM1044,go:0005524,ATP binding
+PMM1044,go:0016301,kinase activity
+PMM1044,go:0016740,transferase activity
+PMM1044,go:0042803,protein homodimerization activity
+PMM1044,go:0046872,metal ion binding
+PMM1046,go:0022857,transmembrane transporter activity
+PMM1047,go:0003847,1-alkyl-2-acetylglycerophosphocholine esterase activity
+PMM1047,go:0016787,hydrolase activity
+PMM1049,go:1904680,peptide transmembrane transporter activity
+PMM1051,go:0004412,homoserine dehydrogenase activity
+PMM1051,go:0016491,oxidoreductase activity
+PMM1051,go:0016597,amino acid binding
+PMM1051,go:0050661,NADP binding
+PMM1052,go:0005515,protein binding
+PMM1052,go:0008047,enzyme activator activity
+PMM1052,go:0042803,protein homodimerization activity
+PMM1052,go:0097163,sulfur carrier activity
+PMM1053,go:0005524,ATP binding
+PMM1053,go:0030272,5-formyltetrahydrofolate cyclo-ligase activity
+PMM1053,go:0046872,metal ion binding
+PMM1054,go:0000287,magnesium ion binding
+PMM1054,go:0003676,nucleic acid binding
+PMM1054,go:0005515,protein binding
+PMM1054,go:0008821,crossover junction DNA endonuclease activity
+PMM1054,go:0009378,four-way junction helicase activity
+PMM1055,go:0005524,ATP binding
+PMM1055,go:0016851,magnesium chelatase activity
+PMM1055,go:0016887,ATP hydrolysis activity
+PMM1055,go:0046406,magnesium protoporphyrin IX methyltransferase activity
+PMM1056,go:0003723,RNA binding
+PMM1056,go:0008173,RNA methyltransferase activity
+PMM1057,go:0009055,electron transfer activity
+PMM1057,go:0020037,heme binding
+PMM1059,go:0003676,nucleic acid binding
+PMM1059,go:0008168,methyltransferase activity
+PMM1059,go:0016740,transferase activity
+PMM1059,go:0052913,16S rRNA (guanine(966)-N(2))-methyltransferase activity
+PMM1060,go:0000107,imidazoleglycerol-phosphate synthase activity
+PMM1060,go:0016740,transferase activity
+PMM1060,go:0016884,"carbon-nitrogen ligase activity, with glutamine as amido-N-donor"
+PMM1061,go:0004791,thioredoxin-disulfide reductase (NADPH) activity
+PMM1061,go:0016651,"oxidoreductase activity, acting on NAD(P)H"
+PMM1061,go:0016671,"oxidoreductase activity, acting on a sulfur group of donors, disulfide as acceptor"
+PMM1062,go:0003938,IMP dehydrogenase activity
+PMM1062,go:0016491,oxidoreductase activity
+PMM1062,go:0042802,identical protein binding
+PMM1062,go:0046872,metal ion binding
+PMM1063,go:0003677,DNA binding
+PMM1063,go:0005524,ATP binding
+PMM1063,go:0034335,DNA negative supercoiling activity
+PMM1064,go:0016705,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"
+PMM1064,go:0045436,lycopene beta cyclase activity
+PMM1065,go:0003844,"1,4-alpha-glucan branching enzyme activity"
+PMM1065,go:0004556,alpha-amylase activity
+PMM1066,go:0003852,2-isopropylmalate synthase activity
+PMM1068,go:0016787,hydrolase activity
+PMM1068,go:0046872,metal ion binding
+PMM1069,go:0004477,methenyltetrahydrofolate cyclohydrolase activity
+PMM1069,go:0004488,methylenetetrahydrofolate dehydrogenase (NADP+) activity
+PMM1070,go:0004161,dimethylallyltranstransferase activity
+PMM1070,go:0004311,geranylgeranyl diphosphate synthase activity
+PMM1070,go:0004659,prenyltransferase activity
+PMM1070,go:0046872,metal ion binding
+PMM1072,go:0005524,ATP binding
+PMM1072,go:0042242,"cobyrinic acid a,c-diamide synthase activity"
+PMM1074,go:0004345,glucose-6-phosphate dehydrogenase activity
+PMM1074,go:0016614,"oxidoreductase activity, acting on CH-OH group of donors"
+PMM1074,go:0050661,NADP binding
+PMM1075,go:0004324,ferredoxin-NADP+ reductase activity
+PMM1077,go:0000155,phosphorelay sensor kinase activity
+PMM1080,go:0000287,magnesium ion binding
+PMM1080,go:0004749,ribose phosphate diphosphokinase activity
+PMM1080,go:0005524,ATP binding
+PMM1080,go:0016301,kinase activity
+PMM1081,go:0004134,4-alpha-glucanotransferase activity
+PMM1082,go:0043565,sequence-specific DNA binding
+PMM1083,go:0004672,protein kinase activity
+PMM1083,go:0005524,ATP binding
+PMM1083,go:0016772,"transferase activity, transferring phosphorus-containing groups"
+PMM1084,go:0003824,catalytic activity
+PMM1084,go:0008923,lysine decarboxylase activity
+PMM1084,go:0030170,pyridoxal phosphate binding
+PMM1085,go:0004605,phosphatidate cytidylyltransferase activity
+PMM1085,go:0016772,"transferase activity, transferring phosphorus-containing groups"
+PMM1086,go:0016787,hydrolase activity
+PMM1087,go:0008888,glycerol dehydrogenase (NAD+) activity
+PMM1087,go:0016491,oxidoreductase activity
+PMM1087,go:0046872,metal ion binding
+PMM1088,go:0005524,ATP binding
+PMM1088,go:0016887,ATP hydrolysis activity
+PMM1088,go:0051082,unfolded protein binding
+PMM1089,go:0008080,N-acetyltransferase activity
+PMM1090,go:0008836,diaminopimelate decarboxylase activity
+PMM1090,go:0016829,lyase activity
+PMM1090,go:0030170,pyridoxal phosphate binding
+PMM1090,go:0042803,protein homodimerization activity
+PMM1091,go:0004016,adenylate cyclase activity
+PMM1091,go:0005524,ATP binding
+PMM1091,go:0106408,diadenylate cyclase activity
+PMM1092,go:0004659,prenyltransferase activity
+PMM1092,go:0008834,"ditrans,polycis-undecaprenyl-diphosphate synthase [(2E,6E)-farnesyl-diphosphate specific] activity"
+PMM1093,go:0003824,catalytic activity
+PMM1093,go:0004076,biotin synthase activity
+PMM1093,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1093,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1093,go:1904047,S-adenosyl-L-methionine binding
+PMM1096,go:0016992,lipoate synthase activity
+PMM1096,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1096,go:1904047,S-adenosyl-L-methionine binding
+PMM1097,go:0003677,DNA binding
+PMM1097,go:0046872,metal ion binding
+PMM1098,go:0005509,calcium ion binding
+PMM1099,go:0005524,ATP binding
+PMM1099,go:0015421,ABC-type oligopeptide transporter activity
+PMM1099,go:0016887,ATP hydrolysis activity
+PMM1101,go:0003723,RNA binding
+PMM1101,go:0003724,RNA helicase activity
+PMM1101,go:0005524,ATP binding
+PMM1101,go:0016787,hydrolase activity
+PMM1102,go:0000166,nucleotide binding
+PMM1102,go:0003677,DNA binding
+PMM1102,go:0003678,DNA helicase activity
+PMM1102,go:0004519,endonuclease activity
+PMM1102,go:0004527,exonuclease activity
+PMM1102,go:0005524,ATP binding
+PMM1102,go:0008854,exodeoxyribonuclease V activity
+PMM1102,go:0016787,hydrolase activity
+PMM1102,go:0016887,ATP hydrolysis activity
+PMM1102,go:0046872,metal ion binding
+PMM1103,go:0003677,DNA binding
+PMM1103,go:0005524,ATP binding
+PMM1103,go:0008854,exodeoxyribonuclease V activity
+PMM1103,go:0016887,ATP hydrolysis activity
+PMM1103,go:0043138,3^-5^ DNA helicase activity
+PMM1103,go:0046872,metal ion binding
+PMM1104,go:0008168,methyltransferase activity
+PMM1105,go:0003677,DNA binding
+PMM1105,go:0004386,helicase activity
+PMM1105,go:0005524,ATP binding
+PMM1105,go:0008854,exodeoxyribonuclease V activity
+PMM1106,go:0048529,magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase activity
+PMM1107,go:0033856,pyridoxine 5^-phosphate synthase activity
+PMM1108,go:0003841,1-acylglycerol-3-phosphate O-acyltransferase activity
+PMM1108,go:0016746,acyltransferase activity
+PMM1110,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1111,go:0009055,electron transfer activity
+PMM1111,go:0015035,protein-disulfide reductase activity
+PMM1111,go:0046872,metal ion binding
+PMM1111,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1113,go:0000156,phosphorelay response regulator activity
+PMM1113,go:0000976,transcription cis-regulatory region binding
+PMM1113,go:0003677,DNA binding
+PMM1115,go:0046608,carotenoid isomerase activity
+PMM1116,go:0016740,transferase activity
+PMM1116,go:0047151,"tRNA (uracil(54)-C5)-methyltransferase activity, 5,10-methylenetetrahydrofolate-dependent"
+PMM1116,go:0050660,flavin adenine dinucleotide binding
+PMM1117,go:0030145,manganese ion binding
+PMM1119,go:0005215,transporter activity
+PMM1119,go:0015288,porin activity
+PMM1120,go:0005515,protein binding
+PMM1120,go:0008476,protein-tyrosine sulfotransferase activity
+PMM1120,go:0050656,3^-phosphoadenosine 5^-phosphosulfate binding
+PMM1121,go:0005215,transporter activity
+PMM1121,go:0015288,porin activity
+PMM1122,go:0003999,adenine phosphoribosyltransferase activity
+PMM1126,go:0016747,"acyltransferase activity, transferring groups other than amino-acyl groups"
+PMM1132,go:0000287,magnesium ion binding
+PMM1132,go:0005524,ATP binding
+PMM1132,go:0030145,manganese ion binding
+PMM1132,go:0070733,AMPylase activity
+PMM1138,go:0000166,nucleotide binding
+PMM1138,go:0004857,enzyme inhibitor activity
+PMM1138,go:0005515,protein binding
+PMM1138,go:0005524,ATP binding
+PMM1138,go:0005525,GTP binding
+PMM1138,go:0016887,ATP hydrolysis activity
+PMM1138,go:0042803,protein homodimerization activity
+PMM1138,go:0043023,ribosomal large subunit binding
+PMM1138,go:0046872,metal ion binding
+PMM1139,go:0015562,efflux transmembrane transporter activity
+PMM1139,go:0042802,identical protein binding
+PMM1140,go:0003887,DNA-directed DNA polymerase activity
+PMM1140,go:0008408,3^-5^ exonuclease activity
+PMM1140,go:0008409,5^-3^ exonuclease activity
+PMM1140,go:0043565,sequence-specific DNA binding
+PMM1141,go:0004817,cysteine-tRNA ligase activity
+PMM1141,go:0005524,ATP binding
+PMM1142,go:0000166,nucleotide binding
+PMM1142,go:0005515,protein binding
+PMM1142,go:0030145,manganese ion binding
+PMM1142,go:0030604,1-deoxy-D-xylulose-5-phosphate reductoisomerase activity
+PMM1142,go:0070402,NADPH binding
+PMM1143,go:0009055,electron transfer activity
+PMM1143,go:0046872,metal ion binding
+PMM1143,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1144,go:0008236,serine-type peptidase activity
+PMM1144,go:0034338,short-chain carboxylesterase activity
+PMM1144,go:0047372,monoacylglycerol lipase activity
+PMM1145,go:0005515,protein binding
+PMM1145,go:0008750,proton-translocating NAD(P)+ transhydrogenase activity
+PMM1145,go:0016491,oxidoreductase activity
+PMM1145,go:0050661,NADP binding
+PMM1146,go:0005515,protein binding
+PMM1146,go:0008750,proton-translocating NAD(P)+ transhydrogenase activity
+PMM1146,go:0016491,oxidoreductase activity
+PMM1146,go:0050661,NADP binding
+PMM1147,go:0000166,nucleotide binding
+PMM1147,go:0008750,proton-translocating NAD(P)+ transhydrogenase activity
+PMM1147,go:0016491,oxidoreductase activity
+PMM1147,go:0046983,protein dimerization activity
+PMM1147,go:0050661,NADP binding
+PMM1147,go:0051287,NAD binding
+PMM1148,go:0003677,DNA binding
+PMM1150,go:0004791,thioredoxin-disulfide reductase (NADPH) activity
+PMM1150,go:0016491,oxidoreductase activity
+PMM1150,go:0071949,FAD binding
+PMM1151,go:0003723,RNA binding
+PMM1151,go:0003743,translation initiation factor activity
+PMM1151,go:0043022,ribosome binding
+PMM1153,go:0003824,catalytic activity
+PMM1154,go:0003984,acetolactate synthase activity
+PMM1154,go:0016597,amino acid binding
+PMM1154,go:1990610,acetolactate synthase regulator activity
+PMM1155,go:0003755,peptidyl-prolyl cis-trans isomerase activity
+PMM1157,go:0005506,iron ion binding
+PMM1157,go:0009055,electron transfer activity
+PMM1157,go:0010242,oxygen evolving activity
+PMM1157,go:0016168,chlorophyll binding
+PMM1157,go:0046872,metal ion binding
+PMM1158,go:0016168,chlorophyll binding
+PMM1158,go:0046872,metal ion binding
+PMM1159,go:0000166,nucleotide binding
+PMM1159,go:0047429,nucleoside triphosphate diphosphatase activity
+PMM1160,go:0003824,catalytic activity
+PMM1160,go:0051921,adenosylcobyric acid synthase (glutamine-hydrolyzing) activity
+PMM1161,go:0009055,electron transfer activity
+PMM1161,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1163,go:0015927,trehalase activity
+PMM1164,go:0005215,transporter activity
+PMM1164,go:0046872,metal ion binding
+PMM1165,go:0000166,nucleotide binding
+PMM1165,go:0004820,glycine-tRNA ligase activity
+PMM1165,go:0005524,ATP binding
+PMM1167,go:0004167,dopachrome isomerase activity
+PMM1167,go:0005125,cytokine activity
+PMM1167,go:0050178,phenylpyruvate tautomerase activity
+PMM1168,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM1171,go:0009055,electron transfer activity
+PMM1171,go:0010181,FMN binding
+PMM1171,go:0016491,oxidoreductase activity
+PMM1173,go:0051119,sugar transmembrane transporter activity
+PMM1177,go:0016763,pentosyltransferase activity
+PMM1178,go:0016757,glycosyltransferase activity
+PMM1179,go:0022857,transmembrane transporter activity
+PMM1180,go:0004252,serine-type endopeptidase activity
+PMM1181,go:0004106,chorismate mutase activity
+PMM1183,go:0000049,tRNA binding
+PMM1183,go:0003735,structural constituent of ribosome
+PMM1183,go:0019843,rRNA binding
+PMM1184,go:0000049,tRNA binding
+PMM1184,go:0004526,ribonuclease P activity
+PMM1187,go:0005524,ATP binding
+PMM1187,go:0016887,ATP hydrolysis activity
+PMM1188,go:0000166,nucleotide binding
+PMM1188,go:0004828,serine-tRNA ligase activity
+PMM1188,go:0005524,ATP binding
+PMM1189,go:0004222,metalloendopeptidase activity
+PMM1189,go:0046872,metal ion binding
+PMM1190,go:0003735,structural constituent of ribosome
+PMM1190,go:0019843,rRNA binding
+PMM1191,go:0000175,3^-5^-RNA exonuclease activity
+PMM1191,go:0003723,RNA binding
+PMM1191,go:0004654,polyribonucleotide nucleotidyltransferase activity
+PMM1192,go:0000287,magnesium ion binding
+PMM1192,go:0008441,"3^(2^),5^-bisphosphate nucleotidase activity"
+PMM1193,go:0008649,rRNA methyltransferase activity
+PMM1193,go:0070677,rRNA (cytosine-2^-O-)-methyltransferase activity
+PMM1196,go:0004475,mannose-1-phosphate guanylyltransferase (GTP) activity
+PMM1196,go:0004476,mannose-6-phosphate isomerase activity
+PMM1196,go:0005525,GTP binding
+PMM1196,go:0016779,nucleotidyltransferase activity
+PMM1197,go:0008754,O-antigen ligase activity
+PMM1197,go:0008755,O antigen polymerase activity
+PMM1198,go:0016758,hexosyltransferase activity
+PMM1199,go:0004582,dolichyl-phosphate beta-D-mannosyltransferase activity
+PMM1199,go:0016757,glycosyltransferase activity
+PMM1200,go:0004582,dolichyl-phosphate beta-D-mannosyltransferase activity
+PMM1200,go:0016740,transferase activity
+PMM1201,go:0016853,isomerase activity
+PMM1201,go:0047732,CDP-abequose epimerase activity
+PMM1202,go:0016491,oxidoreductase activity
+PMM1202,go:0070403,NAD+ binding
+PMM1203,go:0047733,"CDP-glucose 4,6-dehydratase activity"
+PMM1204,go:0016779,nucleotidyltransferase activity
+PMM1204,go:0047343,glucose-1-phosphate cytidylyltransferase activity
+PMM1205,go:0008483,transaminase activity
+PMM1205,go:0030170,pyridoxal phosphate binding
+PMM1206,go:0016758,hexosyltransferase activity
+PMM1207,go:0016491,oxidoreductase activity
+PMM1207,go:0016853,isomerase activity
+PMM1207,go:0050577,GDP-L-fucose synthase activity
+PMM1207,go:0070401,NADP+ binding
+PMM1208,go:0008446,"GDP-mannose 4,6-dehydratase activity"
+PMM1208,go:0070401,NADP+ binding
+PMM1209,go:0003978,UDP-glucose 4-epimerase activity
+PMM1209,go:0016853,isomerase activity
+PMM1209,go:0042802,identical protein binding
+PMM1209,go:0070403,NAD+ binding
+PMM1210,go:0016853,isomerase activity
+PMM1210,go:0016857,"racemase and epimerase activity, acting on carbohydrates and derivatives"
+PMM1211,go:0015159,polysaccharide transmembrane transporter activity
+PMM1213,go:0016757,glycosyltransferase activity
+PMM1214,go:0016787,hydrolase activity
+PMM1214,go:0016791,phosphatase activity
+PMM1214,go:0046872,metal ion binding
+PMM1215,go:0016491,oxidoreductase activity
+PMM1215,go:0047545,(S)-2-hydroxyglutarate dehydrogenase activity
+PMM1216,go:0016740,transferase activity
+PMM1216,go:0016779,nucleotidyltransferase activity
+PMM1217,go:0016853,isomerase activity
+PMM1217,go:0097367,carbohydrate derivative binding
+PMM1218,go:0003824,catalytic activity
+PMM1218,go:0016773,"phosphotransferase activity, alcohol group as acceptor"
+PMM1218,go:0033785,heptose 7-phosphate kinase activity
+PMM1218,go:0033786,heptose-1-phosphate adenylyltransferase activity
+PMM1219,go:0016491,oxidoreductase activity
+PMM1219,go:0070403,NAD+ binding
+PMM1220,go:0016758,hexosyltransferase activity
+PMM1221,go:0016757,glycosyltransferase activity
+PMM1222,go:0016758,hexosyltransferase activity
+PMM1223,go:0016757,glycosyltransferase activity
+PMM1224,go:0015159,polysaccharide transmembrane transporter activity
+PMM1227,go:0008963,phospho-N-acetylmuramoyl-pentapeptide-transferase activity
+PMM1227,go:0046872,metal ion binding
+PMM1229,go:0004739,pyruvate dehydrogenase (acetyl-transferring) activity
+PMM1230,go:0016491,oxidoreductase activity
+PMM1232,go:0008168,methyltransferase activity
+PMM1232,go:1904047,S-adenosyl-L-methionine binding
+PMM1233,go:0008831,dTDP-4-dehydrorhamnose reductase activity
+PMM1234,go:0008270,zinc ion binding
+PMM1234,go:0016491,oxidoreductase activity
+PMM1236,go:0016740,transferase activity
+PMM1239,go:0005524,ATP binding
+PMM1239,go:0016887,ATP hydrolysis activity
+PMM1239,go:0140359,ABC-type transporter activity
+PMM1240,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM1240,go:1904047,S-adenosyl-L-methionine binding
+PMM1241,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM1243,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM1243,go:1904047,S-adenosyl-L-methionine binding
+PMM1246,go:0016740,transferase activity
+PMM1251,go:0016740,transferase activity
+PMM1252,go:0016746,acyltransferase activity
+PMM1252,go:0043886,structural constituent of carboxysome shell
+PMM1252,go:0120225,coenzyme A binding
+PMM1253,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM1253,go:1904047,S-adenosyl-L-methionine binding
+PMM1254,go:0016757,glycosyltransferase activity
+PMM1256,go:0016758,hexosyltransferase activity
+PMM1257,go:0008460,"dTDP-glucose 4,6-dehydratase activity"
+PMM1257,go:0016491,oxidoreductase activity
+PMM1257,go:0070403,NAD+ binding
+PMM1258,go:0008483,transaminase activity
+PMM1258,go:0030170,pyridoxal phosphate binding
+PMM1259,go:0008483,transaminase activity
+PMM1259,go:0030170,pyridoxal phosphate binding
+PMM1260,go:0003824,catalytic activity
+PMM1260,go:0004519,endonuclease activity
+PMM1260,go:0048040,UDP-glucuronate decarboxylase activity
+PMM1260,go:0070403,NAD+ binding
+PMM1261,go:0003979,UDP-glucose 6-dehydrogenase activity
+PMM1261,go:0051287,NAD binding
+PMM1262,go:0000976,transcription cis-regulatory region binding
+PMM1262,go:0001216,DNA-binding transcription activator activity
+PMM1262,go:0001217,DNA-binding transcription repressor activity
+PMM1262,go:0004252,serine-type endopeptidase activity
+PMM1262,go:1901363,heterocyclic compound binding
+PMM1263,go:0004585,ornithine carbamoyltransferase activity
+PMM1263,go:0016597,amino acid binding
+PMM1264,go:0004176,ATP-dependent peptidase activity
+PMM1264,go:0004222,metalloendopeptidase activity
+PMM1264,go:0005524,ATP binding
+PMM1264,go:0008270,zinc ion binding
+PMM1264,go:0016887,ATP hydrolysis activity
+PMM1265,go:0008270,zinc ion binding
+PMM1265,go:0008703,5-amino-6-(5-phosphoribosylamino)uracil reductase activity
+PMM1265,go:0008835,diaminohydroxyphosphoribosylaminopyrimidine deaminase activity
+PMM1265,go:0016787,hydrolase activity
+PMM1265,go:0046872,metal ion binding
+PMM1265,go:0050661,NADP binding
+PMM1268,go:0008276,protein methyltransferase activity
+PMM1268,go:0046025,"precorrin-6Y C5,15-methyltransferase (decarboxylating) activity"
+PMM1269,go:0003951,NAD+ kinase activity
+PMM1270,go:0000049,tRNA binding
+PMM1270,go:0000166,nucleotide binding
+PMM1270,go:0004826,phenylalanine-tRNA ligase activity
+PMM1270,go:0005524,ATP binding
+PMM1271,go:0000166,nucleotide binding
+PMM1271,go:0008253,5^-nucleotidase activity
+PMM1271,go:0016787,hydrolase activity
+PMM1271,go:0046872,metal ion binding
+PMM1273,go:0003919,FMN adenylyltransferase activity
+PMM1273,go:0005524,ATP binding
+PMM1273,go:0008531,riboflavin kinase activity
+PMM1274,go:0004789,thiamine-phosphate diphosphorylase activity
+PMM1275,go:0003824,catalytic activity
+PMM1275,go:0004789,thiamine-phosphate diphosphorylase activity
+PMM1278,go:0016787,hydrolase activity
+PMM1280,go:0003723,RNA binding
+PMM1280,go:0008685,"2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase activity"
+PMM1280,go:0046872,metal ion binding
+PMM1280,go:0050518,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase activity
+PMM1280,go:0052906,tRNA (guanine(37)-N1)-methyltransferase activity
+PMM1281,go:0003924,GTPase activity
+PMM1281,go:0005525,GTP binding
+PMM1281,go:0043024,ribosomal small subunit binding
+PMM1281,go:0070181,small ribosomal subunit rRNA binding
+PMM1284,go:0005524,ATP binding
+PMM1285,go:0003735,structural constituent of ribosome
+PMM1285,go:0019843,rRNA binding
+PMM1286,go:0003924,GTPase activity
+PMM1286,go:0005048,signal sequence binding
+PMM1286,go:0005525,GTP binding
+PMM1286,go:0008312,7S RNA binding
+PMM1288,go:0004739,pyruvate dehydrogenase (acetyl-transferring) activity
+PMM1289,go:0003677,DNA binding
+PMM1289,go:0016987,sigma factor activity
+PMM1290,go:0000166,nucleotide binding
+PMM1290,go:0005524,ATP binding
+PMM1290,go:0016829,lyase activity
+PMM1290,go:0016853,isomerase activity
+PMM1290,go:0046872,metal ion binding
+PMM1290,go:0052855,ADP-dependent NAD(P)H-hydrate dehydratase activity
+PMM1290,go:0052856,NAD(P)HX epimerase activity
+PMM1291,go:0004808,tRNA (5-methylaminomethyl-2-thiouridylate)(34)-methyltransferase activity
+PMM1291,go:0016740,transferase activity
+PMM1291,go:0016783,sulfurtransferase activity
+PMM1292,go:0016410,N-acyltransferase activity
+PMM1292,go:0016746,acyltransferase activity
+PMM1292,go:0016810,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds"
+PMM1293,go:0003755,peptidyl-prolyl cis-trans isomerase activity
+PMM1294,go:0004784,superoxide dismutase activity
+PMM1294,go:0016151,nickel cation binding
+PMM1295,go:0004252,serine-type endopeptidase activity
+PMM1295,go:0008233,peptidase activity
+PMM1297,go:0004425,indole-3-glycerol-phosphate synthase activity
+PMM1298,go:0004148,dihydrolipoyl dehydrogenase (NADH) activity
+PMM1298,go:0050660,flavin adenine dinucleotide binding
+PMM1299,go:0003723,RNA binding
+PMM1299,go:0008173,RNA methyltransferase activity
+PMM1299,go:1904047,S-adenosyl-L-methionine binding
+PMM1300,go:0008760,UDP-N-acetylglucosamine 1-carboxyvinyltransferase activity
+PMM1301,go:0008483,transaminase activity
+PMM1301,go:0030170,pyridoxal phosphate binding
+PMM1301,go:0042802,identical protein binding
+PMM1302,go:0004326,tetrahydrofolylpolyglutamate synthase activity
+PMM1302,go:0005524,ATP binding
+PMM1302,go:0008841,dihydrofolate synthase activity
+PMM1302,go:0046872,metal ion binding
+PMM1303,go:0004458,D-lactate dehydrogenase (cytochrome) activity
+PMM1303,go:0008720,D-lactate dehydrogenase (NAD+) activity
+PMM1303,go:0016491,oxidoreductase activity
+PMM1303,go:0071949,FAD binding
+PMM1304,go:0004131,cytosine deaminase activity
+PMM1304,go:0016810,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds"
+PMM1304,go:0035888,isoguanine deaminase activity
+PMM1305,go:0016782,"transferase activity, transferring sulphur-containing groups"
+PMM1305,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1305,go:1904047,S-adenosyl-L-methionine binding
+PMM1306,go:0005524,ATP binding
+PMM1306,go:0008716,D-alanine-D-alanine ligase activity
+PMM1306,go:0046872,metal ion binding
+PMM1309,go:0003924,GTPase activity
+PMM1309,go:0005525,GTP binding
+PMM1309,go:0032550,purine ribonucleoside binding
+PMM1309,go:0042802,identical protein binding
+PMM1310,go:0003864,3-methyl-2-oxobutanoate hydroxymethyltransferase activity
+PMM1311,go:0004109,coproporphyrinogen oxidase activity
+PMM1311,go:0005488,binding
+PMM1311,go:0016491,oxidoreductase activity
+PMM1311,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1311,go:0051989,coproporphyrinogen dehydrogenase activity
+PMM1312,go:0004518,nuclease activity
+PMM1312,go:0016787,hydrolase activity
+PMM1313,go:0004176,ATP-dependent peptidase activity
+PMM1313,go:0004252,serine-type endopeptidase activity
+PMM1313,go:0051082,unfolded protein binding
+PMM1313,go:0051117,ATPase binding
+PMM1314,go:0004176,ATP-dependent peptidase activity
+PMM1314,go:0004252,serine-type endopeptidase activity
+PMM1314,go:0051082,unfolded protein binding
+PMM1315,go:0004455,ketol-acid reductoisomerase activity
+PMM1315,go:0016491,oxidoreductase activity
+PMM1316,go:0015420,ABC-type vitamin B12 transporter activity
+PMM1316,go:0016880,acid-ammonia (or amide) ligase activity
+PMM1316,go:0048472,threonine-phosphate decarboxylase activity
+PMM1321,go:0003677,DNA binding
+PMM1321,go:0030527,structural constituent of chromatin
+PMM1321,go:0042802,identical protein binding
+PMM1322,go:0019156,isoamylase activity
+PMM1322,go:0046872,metal ion binding
+PMM1323,go:0015293,symporter activity
+PMM1323,go:0022857,transmembrane transporter activity
+PMM1324,go:0005548,phospholipid transporter activity
+PMM1324,go:0140359,ABC-type transporter activity
+PMM1327,go:0008374,O-acyltransferase activity
+PMM1327,go:0043772,acyl-phosphate glycerol-3-phosphate acyltransferase activity
+PMM1328,go:0004590,orotidine-5^-phosphate decarboxylase activity
+PMM1328,go:0005515,protein binding
+PMM1328,go:0016829,lyase activity
+PMM1329,go:0000166,nucleotide binding
+PMM1329,go:0003723,RNA binding
+PMM1329,go:0004831,tyrosine-tRNA ligase activity
+PMM1329,go:0005524,ATP binding
+PMM1332,go:0004177,aminopeptidase activity
+PMM1332,go:0008235,metalloexopeptidase activity
+PMM1332,go:0030145,manganese ion binding
+PMM1333,go:0008113,peptide-methionine (S)-S-oxide reductase activity
+PMM1333,go:0033744,L-methionine (S)-S-oxide reductase activity
+PMM1334,go:0005543,phospholipid binding
+PMM1334,go:0008915,lipid-A-disaccharide synthase activity
+PMM1334,go:0043168,anion binding
+PMM1335,go:0008780,acyl-[acyl-carrier-protein]-UDP-N-acetylglucosamine O-acyltransferase activity
+PMM1335,go:0016740,transferase activity
+PMM1336,go:0016829,lyase activity
+PMM1336,go:0016836,hydro-lyase activity
+PMM1336,go:0042802,identical protein binding
+PMM1337,go:0046872,metal ion binding
+PMM1337,go:0103117,UDP-3-O-acyl-N-acetylglucosamine deacetylase activity
+PMM1339,go:0004639,phosphoribosylaminoimidazolesuccinocarboxamide synthase activity
+PMM1340,go:0004637,phosphoribosylamine-glycine ligase activity
+PMM1340,go:0005524,ATP binding
+PMM1340,go:0046872,metal ion binding
+PMM1341,go:0000155,phosphorelay sensor kinase activity
+PMM1341,go:0000156,phosphorelay response regulator activity
+PMM1341,go:0005524,ATP binding
+PMM1341,go:0030295,protein kinase activator activity
+PMM1342,go:0000287,magnesium ion binding
+PMM1342,go:0003677,DNA binding
+PMM1342,go:0004674,protein serine/threonine kinase activity
+PMM1342,go:0005524,ATP binding
+PMM1342,go:0016301,kinase activity
+PMM1342,go:0042802,identical protein binding
+PMM1343,go:0042802,identical protein binding
+PMM1344,go:0003735,structural constituent of ribosome
+PMM1344,go:0019843,rRNA binding
+PMM1345,go:0000049,tRNA binding
+PMM1345,go:0003735,structural constituent of ribosome
+PMM1345,go:0019843,rRNA binding
+PMM1346,go:0008168,methyltransferase activity
+PMM1346,go:1904047,S-adenosyl-L-methionine binding
+PMM1347,go:0003723,RNA binding
+PMM1347,go:0004730,pseudouridylate synthase activity
+PMM1347,go:0009982,pseudouridine synthase activity
+PMM1349,go:0042781,3^-tRNA processing endoribonuclease activity
+PMM1352,go:0009055,electron transfer activity
+PMM1352,go:0046872,metal ion binding
+PMM1352,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1353,go:0008276,protein methyltransferase activity
+PMM1353,go:0008757,S-adenosylmethionine-dependent methyltransferase activity
+PMM1354,go:0004617,phosphoglycerate dehydrogenase activity
+PMM1354,go:0016597,amino acid binding
+PMM1354,go:0051287,NAD binding
+PMM1356,go:0003723,RNA binding
+PMM1357,go:0016627,"oxidoreductase activity, acting on the CH-CH group of donors"
+PMM1358,go:0010181,FMN binding
+PMM1360,go:0003677,DNA binding
+PMM1360,go:0003904,deoxyribodipyrimidine photo-lyase activity
+PMM1360,go:0071949,FAD binding
+PMM1361,go:0016491,oxidoreductase activity
+PMM1364,go:0005524,ATP binding
+PMM1364,go:0008764,UDP-N-acetylmuramoylalanine-D-glutamate ligase activity
+PMM1364,go:0016874,ligase activity
+PMM1366,go:0046872,metal ion binding
+PMM1369,go:0005515,protein binding
+PMM1370,go:0016491,oxidoreductase activity
+PMM1371,go:0005215,transporter activity
+PMM1372,go:0046872,metal ion binding
+PMM1376,go:0003729,mRNA binding
+PMM1377,go:0016491,oxidoreductase activity
+PMM1377,go:0016616,"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor"
+PMM1378,go:0016491,oxidoreductase activity
+PMM1378,go:0016717,"oxidoreductase activity, acting on paired donors, with oxidation of a pair of donors resulting in the reduction of molecular oxygen to two molecules of water"
+PMM1379,go:0016799,"hydrolase activity, hydrolyzing N-glycosyl compounds"
+PMM1380,go:0016787,hydrolase activity
+PMM1381,go:0003697,single-stranded DNA binding
+PMM1381,go:0008233,peptidase activity
+PMM1381,go:0016829,lyase activity
+PMM1382,go:0016491,oxidoreductase activity
+PMM1386,go:0015437,lipopolysaccharide floppase activity
+PMM1386,go:0140359,ABC-type transporter activity
+PMM1389,go:0008198,ferrous iron binding
+PMM1389,go:0016705,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"
+PMM1389,go:0046872,metal ion binding
+PMM1403,go:0003676,nucleic acid binding
+PMM1403,go:0004519,endonuclease activity
+PMM1403,go:0008270,zinc ion binding
+PMM1423,go:0009055,electron transfer activity
+PMM1423,go:0015035,protein-disulfide reductase activity
+PMM1425,go:0004252,serine-type endopeptidase activity
+PMM1425,go:0005515,protein binding
+PMM1428,go:0003723,RNA binding
+PMM1430,go:0003677,DNA binding
+PMM1431,go:0003677,DNA binding
+PMM1431,go:0003899,DNA-directed RNA polymerase activity
+PMM1432,go:0000166,nucleotide binding
+PMM1432,go:0005524,ATP binding
+PMM1432,go:0008270,zinc ion binding
+PMM1432,go:0043531,ADP binding
+PMM1432,go:0051082,unfolded protein binding
+PMM1432,go:0140662,ATP-dependent protein folding chaperone
+PMM1433,go:0004845,uracil phosphoribosyltransferase activity
+PMM1434,go:0004619,phosphoglycerate mutase activity
+PMM1434,go:0030145,manganese ion binding
+PMM1434,go:0046872,metal ion binding
+PMM1435,go:0015136,sialic acid transmembrane transporter activity
+PMM1435,go:0015450,protein-transporting ATPase activity
+PMM1436,go:0005524,ATP binding
+PMM1436,go:0016887,ATP hydrolysis activity
+PMM1436,go:0051082,unfolded protein binding
+PMM1436,go:0140662,ATP-dependent protein folding chaperone
+PMM1437,go:0005524,ATP binding
+PMM1437,go:0016887,ATP hydrolysis activity
+PMM1437,go:0051082,unfolded protein binding
+PMM1438,go:0015662,P-type ion transporter activity
+PMM1438,go:0046933,"proton-transporting ATP synthase activity, rotational mechanism"
+PMM1439,go:0015662,P-type ion transporter activity
+PMM1439,go:0046933,"proton-transporting ATP synthase activity, rotational mechanism"
+PMM1440,go:0003735,structural constituent of ribosome
+PMM1442,go:0030145,manganese ion binding
+PMM1442,go:0070006,metalloaminopeptidase activity
+PMM1444,go:0005525,GTP binding
+PMM1445,go:0000309,nicotinamide-nucleotide adenylyltransferase activity
+PMM1445,go:0004515,nicotinate-nucleotide adenylyltransferase activity
+PMM1445,go:0005524,ATP binding
+PMM1446,go:0003952,NAD+ synthase (glutamine-hydrolyzing) activity
+PMM1446,go:0004359,glutaminase activity
+PMM1446,go:0005524,ATP binding
+PMM1446,go:0008795,NAD+ synthase activity
+PMM1449,go:0009055,electron transfer activity
+PMM1449,go:0046872,metal ion binding
+PMM1449,go:0051537,"2 iron, 2 sulfur cluster binding"
+PMM1450,go:0015662,P-type ion transporter activity
+PMM1450,go:0046933,"proton-transporting ATP synthase activity, rotational mechanism"
+PMM1451,go:0015662,P-type ion transporter activity
+PMM1451,go:0046933,"proton-transporting ATP synthase activity, rotational mechanism"
+PMM1452,go:0015662,P-type ion transporter activity
+PMM1452,go:0046933,"proton-transporting ATP synthase activity, rotational mechanism"
+PMM1453,go:0015662,P-type ion transporter activity
+PMM1454,go:0015662,P-type ion transporter activity
+PMM1455,go:0015078,proton transmembrane transporter activity
+PMM1455,go:0015662,P-type ion transporter activity
+PMM1456,go:0015078,proton transmembrane transporter activity
+PMM1456,go:0015662,P-type ion transporter activity
+PMM1456,go:0016887,ATP hydrolysis activity
+PMM1456,go:0019829,ATPase-coupled monoatomic cation transmembrane transporter activity
+PMM1456,go:0044769,"ATPase activity, coupled to transmembrane movement of ions, rotational mechanism"
+PMM1456,go:0046933,"proton-transporting ATP synthase activity, rotational mechanism"
+PMM1457,go:0015662,P-type ion transporter activity
+PMM1458,go:0008955,peptidoglycan glycosyltransferase activity
+PMM1458,go:0015648,lipid-linked peptidoglycan transporter activity
+PMM1461,go:0033739,preQ1 synthase activity
+PMM1463,go:0000166,nucleotide binding
+PMM1463,go:0005524,ATP binding
+PMM1463,go:0030234,enzyme regulator activity
+PMM1463,go:0042802,identical protein binding
+PMM1464,go:0003723,RNA binding
+PMM1464,go:0008168,methyltransferase activity
+PMM1465,go:0004018,"N6-(1,2-dicarboxyethyl)AMP AMP-lyase (fumarate-forming) activity"
+PMM1465,go:0070626,(S)-2-(5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamido) succinate lyase (fumarate-forming) activity
+PMM1466,go:0004333,fumarate hydratase activity
+PMM1467,go:0003676,nucleic acid binding
+PMM1467,go:0004386,helicase activity
+PMM1467,go:0005524,ATP binding
+PMM1467,go:0016787,hydrolase activity
+PMM1467,go:0016818,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides"
+PMM1467,go:0016887,ATP hydrolysis activity
+PMM1468,go:0008710,8-amino-7-oxononanoate synthase activity
+PMM1468,go:0016740,transferase activity
+PMM1468,go:0030170,pyridoxal phosphate binding
+PMM1469,go:0016787,hydrolase activity
+PMM1471,go:0000287,magnesium ion binding
+PMM1471,go:0004141,dethiobiotin synthase activity
+PMM1471,go:0005524,ATP binding
+PMM1472,go:0004015,adenosylmethionine-8-amino-7-oxononanoate transaminase activity
+PMM1472,go:0004141,dethiobiotin synthase activity
+PMM1472,go:0030170,pyridoxal phosphate binding
+PMM1474,go:0051082,unfolded protein binding
+PMM1475,go:0070043,rRNA (guanine-N7-)-methyltransferase activity
+PMM1476,go:0016491,oxidoreductase activity
+PMM1477,go:0005506,iron ion binding
+PMM1477,go:0009055,electron transfer activity
+PMM1477,go:0046872,metal ion binding
+PMM1477,go:0051536,iron-sulfur cluster binding
+PMM1480,go:0005515,protein binding
+PMM1480,go:0016491,oxidoreductase activity
+PMM1481,go:0000049,tRNA binding
+PMM1481,go:0002935,tRNA (adenine(37)-C2)-methyltransferase activity
+PMM1481,go:0005515,protein binding
+PMM1481,go:0008175,tRNA methyltransferase activity
+PMM1481,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1481,go:0070040,rRNA (adenine(2503)-C2-)-methyltransferase activity
+PMM1483,go:0003677,DNA binding
+PMM1483,go:0003899,DNA-directed RNA polymerase activity
+PMM1484,go:0003899,DNA-directed RNA polymerase activity
+PMM1484,go:0016740,transferase activity
+PMM1484,go:0016779,nucleotidyltransferase activity
+PMM1485,go:0003677,DNA binding
+PMM1485,go:0003899,DNA-directed RNA polymerase activity
+PMM1485,go:0016740,transferase activity
+PMM1485,go:0016779,nucleotidyltransferase activity
+PMM1486,go:0004536,DNA nuclease activity
+PMM1486,go:0016788,"hydrolase activity, acting on ester bonds"
+PMM1486,go:0046872,metal ion binding
+PMM1486,go:0051500,D-tyrosyl-tRNA(Tyr) deacylase activity
+PMM1487,go:0003735,structural constituent of ribosome
+PMM1487,go:0019843,rRNA binding
+PMM1488,go:0004399,histidinol dehydrogenase activity
+PMM1488,go:0008270,zinc ion binding
+PMM1488,go:0046872,metal ion binding
+PMM1488,go:0051287,NAD binding
+PMM1489,go:0004751,ribose-5-phosphate isomerase activity
+PMM1490,go:0008233,peptidase activity
+PMM1490,go:0042802,identical protein binding
+PMM1492,go:0003700,DNA-binding transcription factor activity
+PMM1492,go:0003723,RNA binding
+PMM1493,go:0003723,RNA binding
+PMM1494,go:0003743,translation initiation factor activity
+PMM1494,go:0003924,GTPase activity
+PMM1494,go:0005525,GTP binding
+PMM1496,go:0016763,pentosyltransferase activity
+PMM1497,go:0016757,glycosyltransferase activity
+PMM1498,go:0003824,catalytic activity
+PMM1498,go:0046872,metal ion binding
+PMM1498,go:0051536,iron-sulfur cluster binding
+PMM1500,go:0010285,"L,L-diaminopimelate aminotransferase activity"
+PMM1500,go:0030170,pyridoxal phosphate binding
+PMM1501,go:0000287,magnesium ion binding
+PMM1501,go:0003723,RNA binding
+PMM1501,go:0004521,RNA endonuclease activity
+PMM1501,go:0005515,protein binding
+PMM1501,go:0008270,zinc ion binding
+PMM1501,go:0008995,ribonuclease E activity
+PMM1501,go:0016788,"hydrolase activity, acting on ester bonds"
+PMM1502,go:0003723,RNA binding
+PMM1502,go:0004519,endonuclease activity
+PMM1502,go:0004523,RNA-DNA hybrid ribonuclease activity
+PMM1502,go:0016787,hydrolase activity
+PMM1502,go:0030145,manganese ion binding
+PMM1502,go:0046872,metal ion binding
+PMM1504,go:0004664,prephenate dehydratase activity
+PMM1504,go:0016597,amino acid binding
+PMM1505,go:0051741,"2-methyl-6-phytyl-1,4-benzoquinone methyltransferase activity"
+PMM1506,go:0004176,ATP-dependent peptidase activity
+PMM1506,go:0004252,serine-type endopeptidase activity
+PMM1507,go:0003735,structural constituent of ribosome
+PMM1507,go:0019843,rRNA binding
+PMM1508,go:0003746,translation elongation factor activity
+PMM1508,go:0003924,GTPase activity
+PMM1508,go:0005525,GTP binding
+PMM1509,go:0003746,translation elongation factor activity
+PMM1509,go:0005525,GTP binding
+PMM1510,go:0003729,mRNA binding
+PMM1510,go:0003735,structural constituent of ribosome
+PMM1510,go:0019843,rRNA binding
+PMM1510,go:1901363,heterocyclic compound binding
+PMM1511,go:0003735,structural constituent of ribosome
+PMM1511,go:0019843,rRNA binding
+PMM1512,go:0016041,glutamate synthase (ferredoxin) activity
+PMM1512,go:0046872,metal ion binding
+PMM1512,go:0051538,"3 iron, 4 sulfur cluster binding"
+PMM1514,go:0016992,lipoate synthase activity
+PMM1514,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1514,go:1904047,S-adenosyl-L-methionine binding
+PMM1515,go:0000150,DNA strand exchange activity
+PMM1515,go:0003677,DNA binding
+PMM1517,go:0008800,beta-lactamase activity
+PMM1518,go:0008234,cysteine-type peptidase activity
+PMM1519,go:0016168,chlorophyll binding
+PMM1520,go:0016168,chlorophyll binding
+PMM1522,go:0016757,glycosyltransferase activity
+PMM1523,go:0016168,chlorophyll binding
+PMM1523,go:0043168,anion binding
+PMM1523,go:0046872,metal ion binding
+PMM1523,go:1901363,heterocyclic compound binding
+PMM1524,go:0016168,chlorophyll binding
+PMM1524,go:0046872,metal ion binding
+PMM1525,go:0008168,methyltransferase activity
+PMM1525,go:0030789,precorrin-3B C17-methyltransferase activity
+PMM1526,go:0004424,imidazoleglycerol-phosphate dehydratase activity
+PMM1526,go:0016829,lyase activity
+PMM1527,go:0008784,alanine racemase activity
+PMM1527,go:0030170,pyridoxal phosphate binding
+PMM1528,go:0003676,nucleic acid binding
+PMM1528,go:0004519,endonuclease activity
+PMM1528,go:0008270,zinc ion binding
+PMM1529,go:0016149,"translation release factor activity, codon specific"
+PMM1530,go:0000049,tRNA binding
+PMM1530,go:0003735,structural constituent of ribosome
+PMM1530,go:0019843,rRNA binding
+PMM1531,go:0003735,structural constituent of ribosome
+PMM1531,go:0019843,rRNA binding
+PMM1531,go:1901363,heterocyclic compound binding
+PMM1532,go:0003729,mRNA binding
+PMM1532,go:0003735,structural constituent of ribosome
+PMM1532,go:0019843,rRNA binding
+PMM1532,go:1901363,heterocyclic compound binding
+PMM1533,go:0003723,RNA binding
+PMM1533,go:0009982,pseudouridine synthase activity
+PMM1534,go:0003735,structural constituent of ribosome
+PMM1534,go:0019843,rRNA binding
+PMM1535,go:0003677,DNA binding
+PMM1535,go:0003899,DNA-directed RNA polymerase activity
+PMM1535,go:0046983,protein dimerization activity
+PMM1536,go:0003735,structural constituent of ribosome
+PMM1536,go:0019843,rRNA binding
+PMM1537,go:0003735,structural constituent of ribosome
+PMM1537,go:0019843,rRNA binding
+PMM1538,go:0003735,structural constituent of ribosome
+PMM1538,go:0019843,rRNA binding
+PMM1539,go:0000166,nucleotide binding
+PMM1539,go:0000287,magnesium ion binding
+PMM1539,go:0004017,AMP kinase activity
+PMM1539,go:0005515,protein binding
+PMM1539,go:0005524,ATP binding
+PMM1539,go:0016208,AMP binding
+PMM1539,go:0016740,transferase activity
+PMM1539,go:0016776,"phosphotransferase activity, phosphate group as acceptor"
+PMM1539,go:0019205,nucleobase-containing compound kinase activity
+PMM1540,go:0005515,protein binding
+PMM1541,go:0003735,structural constituent of ribosome
+PMM1541,go:0019843,rRNA binding
+PMM1542,go:0003735,structural constituent of ribosome
+PMM1542,go:0019843,rRNA binding
+PMM1543,go:0003735,structural constituent of ribosome
+PMM1543,go:0008097,5S rRNA binding
+PMM1543,go:1901363,heterocyclic compound binding
+PMM1544,go:0003735,structural constituent of ribosome
+PMM1544,go:0019843,rRNA binding
+PMM1544,go:1901363,heterocyclic compound binding
+PMM1545,go:0003735,structural constituent of ribosome
+PMM1545,go:0019843,rRNA binding
+PMM1546,go:0003735,structural constituent of ribosome
+PMM1546,go:0019843,rRNA binding
+PMM1546,go:1901363,heterocyclic compound binding
+PMM1547,go:0003735,structural constituent of ribosome
+PMM1547,go:0019843,rRNA binding
+PMM1548,go:0003735,structural constituent of ribosome
+PMM1548,go:0070180,large ribosomal subunit rRNA binding
+PMM1548,go:1901363,heterocyclic compound binding
+PMM1549,go:0003735,structural constituent of ribosome
+PMM1549,go:0019843,rRNA binding
+PMM1550,go:0003735,structural constituent of ribosome
+PMM1551,go:0003735,structural constituent of ribosome
+PMM1551,go:0019843,rRNA binding
+PMM1551,go:1901363,heterocyclic compound binding
+PMM1552,go:0003735,structural constituent of ribosome
+PMM1552,go:0019843,rRNA binding
+PMM1553,go:0003735,structural constituent of ribosome
+PMM1553,go:0019843,rRNA binding
+PMM1554,go:0003735,structural constituent of ribosome
+PMM1554,go:0019843,rRNA binding
+PMM1555,go:0003735,structural constituent of ribosome
+PMM1555,go:0016740,transferase activity
+PMM1555,go:0019843,rRNA binding
+PMM1555,go:1901363,heterocyclic compound binding
+PMM1556,go:0003735,structural constituent of ribosome
+PMM1556,go:0019843,rRNA binding
+PMM1556,go:1901363,heterocyclic compound binding
+PMM1557,go:0003735,structural constituent of ribosome
+PMM1557,go:0019843,rRNA binding
+PMM1557,go:1901363,heterocyclic compound binding
+PMM1558,go:0003735,structural constituent of ribosome
+PMM1558,go:0019843,rRNA binding
+PMM1559,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM1559,go:0048038,quinone binding
+PMM1559,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM1560,go:0046872,metal ion binding
+PMM1560,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1561,go:0016787,hydrolase activity
+PMM1562,go:0003697,single-stranded DNA binding
+PMM1562,go:0005524,ATP binding
+PMM1562,go:0008094,"ATP-dependent activity, acting on DNA"
+PMM1563,go:0003674,molecular_function
+PMM1564,go:0003676,nucleic acid binding
+PMM1564,go:0005524,ATP binding
+PMM1564,go:0016818,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides"
+PMM1565,go:0004665,prephenate dehydrogenase (NADP+) activity
+PMM1565,go:0008977,prephenate dehydrogenase (NAD+) activity
+PMM1565,go:0070403,NAD+ binding
+PMM1566,go:0016491,oxidoreductase activity
+PMM1567,go:0016301,kinase activity
+PMM1569,go:0004792,thiosulfate-cyanide sulfurtransferase activity
+PMM1569,go:0005524,ATP binding
+PMM1569,go:0008641,ubiquitin-like modifier activating enzyme activity
+PMM1569,go:0016779,nucleotidyltransferase activity
+PMM1569,go:0030366,molybdopterin synthase activity
+PMM1570,go:0005524,ATP binding
+PMM1570,go:0008817,corrinoid adenosyltransferase activity
+PMM1571,go:0004066,asparagine synthase (glutamine-hydrolyzing) activity
+PMM1571,go:0016783,sulfurtransferase activity
+PMM1572,go:0004014,adenosylmethionine decarboxylase activity
+PMM1573,go:0003697,single-stranded DNA binding
+PMM1573,go:0005524,ATP binding
+PMM1575,go:0008964,phosphoenolpyruvate carboxylase activity
+PMM1576,go:0004357,glutamate-cysteine ligase activity
+PMM1577,go:0004049,anthranilate synthase activity
+PMM1577,go:0046872,metal ion binding
+PMM1578,go:0016168,chlorophyll binding
+PMM1579,go:0000155,phosphorelay sensor kinase activity
+PMM1579,go:0005524,ATP binding
+PMM1579,go:0016301,kinase activity
+PMM1579,go:0016740,transferase activity
+PMM1580,go:0008955,peptidoglycan glycosyltransferase activity
+PMM1580,go:0015648,lipid-linked peptidoglycan transporter activity
+PMM1581,go:0005524,ATP binding
+PMM1581,go:0016787,hydrolase activity
+PMM1581,go:0016887,ATP hydrolysis activity
+PMM1581,go:0046872,metal ion binding
+PMM1581,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1581,go:0140663,ATP-dependent FeS chaperone activity
+PMM1582,go:0004109,coproporphyrinogen oxidase activity
+PMM1582,go:0042803,protein homodimerization activity
+PMM1584,go:0000166,nucleotide binding
+PMM1584,go:0003676,nucleic acid binding
+PMM1584,go:0004525,ribonuclease III activity
+PMM1584,go:0004540,RNA nuclease activity
+PMM1584,go:0008408,3^-5^ exonuclease activity
+PMM1584,go:0016787,hydrolase activity
+PMM1584,go:0033890,ribonuclease D activity
+PMM1585,go:0003674,molecular_function
+PMM1589,go:0004641,phosphoribosylformylglycinamidine cyclo-ligase activity
+PMM1589,go:0042803,protein homodimerization activity
+PMM1590,go:0004592,pantoate-beta-alanine ligase activity
+PMM1590,go:0050145,nucleoside monophosphate kinase activity
+PMM1591,go:0004725,protein tyrosine phosphatase activity
+PMM1592,go:0050617,"15,16-dihydrobiliverdin:ferredoxin oxidoreductase activity"
+PMM1593,go:0050617,"15,16-dihydrobiliverdin:ferredoxin oxidoreductase activity"
+PMM1594,go:0004392,heme oxygenase (decyclizing) activity
+PMM1594,go:0016705,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"
+PMM1594,go:0020037,heme binding
+PMM1594,go:0046872,metal ion binding
+PMM1594,go:1901363,heterocyclic compound binding
+PMM1596,go:0000287,magnesium ion binding
+PMM1596,go:0004450,isocitrate dehydrogenase (NADP+) activity
+PMM1596,go:0016616,"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor"
+PMM1596,go:0051287,NAD binding
+PMM1597,go:0005524,ATP binding
+PMM1597,go:0016301,kinase activity
+PMM1597,go:0016491,oxidoreductase activity
+PMM1598,go:0016853,isomerase activity
+PMM1598,go:0030246,carbohydrate binding
+PMM1600,go:0015078,proton transmembrane transporter activity
+PMM1600,go:0015297,antiporter activity
+PMM1601,go:0008184,glycogen phosphorylase activity
+PMM1601,go:0030170,pyridoxal phosphate binding
+PMM1603,go:0003725,double-stranded RNA binding
+PMM1603,go:0004525,ribonuclease III activity
+PMM1603,go:0019843,rRNA binding
+PMM1603,go:0046872,metal ion binding
+PMM1604,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM1605,go:0005515,protein binding
+PMM1605,go:0019843,rRNA binding
+PMM1605,go:0043022,ribosome binding
+PMM1606,go:0004360,glutamine-fructose-6-phosphate transaminase (isomerizing) activity
+PMM1606,go:0097367,carbohydrate derivative binding
+PMM1607,go:0009055,electron transfer activity
+PMM1607,go:0016168,chlorophyll binding
+PMM1607,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1608,go:0000035,acyl binding
+PMM1608,go:0000036,acyl carrier activity
+PMM1608,go:0031177,phosphopantetheine binding
+PMM1608,go:0140104,molecular carrier activity
+PMM1609,go:0003824,catalytic activity
+PMM1609,go:0004315,3-oxoacyl-[acyl-carrier-protein] synthase activity
+PMM1609,go:0005515,protein binding
+PMM1609,go:0016746,acyltransferase activity
+PMM1610,go:0004802,transketolase activity
+PMM1610,go:0046872,metal ion binding
+PMM1611,go:0003824,catalytic activity
+PMM1611,go:0051536,iron-sulfur cluster binding
+PMM1613,go:0004180,carboxypeptidase activity
+PMM1613,go:0016787,hydrolase activity
+PMM1613,go:0046872,metal ion binding
+PMM1613,go:0050118,N-acetyldiaminopimelate deacetylase activity
+PMM1614,go:0005515,protein binding
+PMM1615,go:0003677,DNA binding
+PMM1615,go:0004518,nuclease activity
+PMM1615,go:0004520,DNA endonuclease activity
+PMM1615,go:0005524,ATP binding
+PMM1615,go:0009378,four-way junction helicase activity
+PMM1615,go:0016787,hydrolase activity
+PMM1615,go:0046872,metal ion binding
+PMM1616,go:0003723,RNA binding
+PMM1618,go:0000166,nucleotide binding
+PMM1618,go:0003676,nucleic acid binding
+PMM1618,go:0004824,lysine-tRNA ligase activity
+PMM1618,go:0005524,ATP binding
+PMM1619,go:0000156,phosphorelay response regulator activity
+PMM1619,go:0000976,transcription cis-regulatory region binding
+PMM1619,go:0003677,DNA binding
+PMM1622,go:0005524,ATP binding
+PMM1623,go:0003697,single-stranded DNA binding
+PMM1625,go:0004013,adenosylhomocysteinase activity
+PMM1625,go:0016802,trialkylsulfonium hydrolase activity
+PMM1626,go:0005524,ATP binding
+PMM1626,go:0016887,ATP hydrolysis activity
+PMM1626,go:0046872,metal ion binding
+PMM1627,go:0005524,ATP binding
+PMM1627,go:0016301,kinase activity
+PMM1628,go:0016787,hydrolase activity
+PMM1629,go:0003677,DNA binding
+PMM1629,go:0016987,sigma factor activity
+PMM1630,go:0015095,magnesium ion transmembrane transporter activity
+PMM1630,go:0046872,metal ion binding
+PMM1632,go:1903425,fluoride transmembrane transporter activity
+PMM1634,go:0003677,DNA binding
+PMM1634,go:0005524,ATP binding
+PMM1634,go:0034335,DNA negative supercoiling activity
+PMM1634,go:0046872,metal ion binding
+PMM1635,go:0052381,tRNA dimethylallyltransferase activity
+PMM1636,go:0003723,RNA binding
+PMM1636,go:0003743,translation initiation factor activity
+PMM1636,go:0008135,"translation factor activity, RNA binding"
+PMM1636,go:0043022,ribosome binding
+PMM1636,go:1901363,heterocyclic compound binding
+PMM1637,go:0003677,DNA binding
+PMM1637,go:0003700,DNA-binding transcription factor activity
+PMM1638,go:0009001,serine O-acetyltransferase activity
+PMM1638,go:0016740,transferase activity
+PMM1638,go:0043886,structural constituent of carboxysome shell
+PMM1639,go:0005524,ATP binding
+PMM1639,go:0015440,ABC-type peptide transporter activity
+PMM1639,go:0015462,ABC-type protein transporter activity
+PMM1639,go:0016887,ATP hydrolysis activity
+PMM1640,go:0008080,N-acetyltransferase activity
+PMM1640,go:0016747,"acyltransferase activity, transferring groups other than amino-acyl groups"
+PMM1643,go:0000906,"6,7-dimethyl-8-ribityllumazine synthase activity"
+PMM1645,go:0003684,damaged DNA binding
+PMM1645,go:0005524,ATP binding
+PMM1645,go:0008094,"ATP-dependent activity, acting on DNA"
+PMM1645,go:0016887,ATP hydrolysis activity
+PMM1645,go:0030983,mismatched DNA binding
+PMM1645,go:1901363,heterocyclic compound binding
+PMM1646,go:0016993,precorrin-8X methylmutase activity
+PMM1647,go:0003677,DNA binding
+PMM1647,go:0003887,DNA-directed DNA polymerase activity
+PMM1648,go:0004072,aspartate kinase activity
+PMM1648,go:0005524,ATP binding
+PMM1648,go:0016597,amino acid binding
+PMM1649,go:0003677,DNA binding
+PMM1649,go:0005515,protein binding
+PMM1649,go:0005524,ATP binding
+PMM1649,go:0009381,excinuclease ABC activity
+PMM1649,go:0016787,hydrolase activity
+PMM1649,go:0016887,ATP hydrolysis activity
+PMM1651,go:0000166,nucleotide binding
+PMM1651,go:0005524,ATP binding
+PMM1651,go:0016879,"ligase activity, forming carbon-nitrogen bonds"
+PMM1652,go:0003723,RNA binding
+PMM1652,go:0004521,RNA endonuclease activity
+PMM1652,go:0004534,5^-3^ RNA exonuclease activity
+PMM1652,go:0008270,zinc ion binding
+PMM1652,go:0016788,"hydrolase activity, acting on ester bonds"
+PMM1652,go:0046872,metal ion binding
+PMM1653,go:0008840,4-hydroxy-tetrahydrodipicolinate synthase activity
+PMM1653,go:0016829,lyase activity
+PMM1654,go:0003942,N-acetyl-gamma-glutamyl-phosphate reductase activity
+PMM1654,go:0004073,aspartate-semialdehyde dehydrogenase activity
+PMM1654,go:0046983,protein dimerization activity
+PMM1654,go:0050661,NADP binding
+PMM1654,go:0051287,NAD binding
+PMM1655,go:0003755,peptidyl-prolyl cis-trans isomerase activity
+PMM1655,go:0016853,isomerase activity
+PMM1655,go:0042802,identical protein binding
+PMM1655,go:0043022,ribosome binding
+PMM1655,go:0044183,protein folding chaperone
+PMM1655,go:0051082,unfolded protein binding
+PMM1656,go:0004176,ATP-dependent peptidase activity
+PMM1656,go:0004252,serine-type endopeptidase activity
+PMM1656,go:0051082,unfolded protein binding
+PMM1657,go:0004176,ATP-dependent peptidase activity
+PMM1657,go:0005524,ATP binding
+PMM1657,go:0008270,zinc ion binding
+PMM1657,go:0016887,ATP hydrolysis activity
+PMM1657,go:0042802,identical protein binding
+PMM1657,go:0046872,metal ion binding
+PMM1657,go:0046983,protein dimerization activity
+PMM1657,go:0051082,unfolded protein binding
+PMM1657,go:0140662,ATP-dependent protein folding chaperone
+PMM1658,go:0003677,DNA binding
+PMM1658,go:0003887,DNA-directed DNA polymerase activity
+PMM1658,go:0005524,ATP binding
+PMM1658,go:0046872,metal ion binding
+PMM1659,go:0000287,magnesium ion binding
+PMM1659,go:0005488,binding
+PMM1659,go:0016758,hexosyltransferase activity
+PMM1661,go:0000049,tRNA binding
+PMM1661,go:0003735,structural constituent of ribosome
+PMM1661,go:0019843,rRNA binding
+PMM1662,go:0003735,structural constituent of ribosome
+PMM1662,go:0019843,rRNA binding
+PMM1663,go:0005515,protein binding
+PMM1664,go:0036355,2-iminoacetate synthase activity
+PMM1664,go:1990107,thiazole synthase activity
+PMM1665,go:0003824,catalytic activity
+PMM1666,go:0016757,glycosyltransferase activity
+PMM1666,go:0046510,UDP-sulfoquinovose:DAG sulfoquinovosyltransferase activity
+PMM1668,go:0004375,glycine dehydrogenase (decarboxylating) activity
+PMM1668,go:0016594,glycine binding
+PMM1668,go:0030170,pyridoxal phosphate binding
+PMM1668,go:0047960,glycine dehydrogenase (NAD+) activity
+PMM1669,go:0003824,catalytic activity
+PMM1670,go:0003824,catalytic activity
+PMM1670,go:0030170,pyridoxal phosphate binding
+PMM1672,go:0016491,oxidoreductase activity
+PMM1672,go:0016717,"oxidoreductase activity, acting on paired donors, with oxidation of a pair of donors resulting in the reduction of molecular oxygen to two molecules of water"
+PMM1672,go:0046872,metal ion binding
+PMM1673,go:0003735,structural constituent of ribosome
+PMM1673,go:0019843,rRNA binding
+PMM1673,go:1901363,heterocyclic compound binding
+PMM1674,go:0003677,DNA binding
+PMM1674,go:0005524,ATP binding
+PMM1674,go:0016887,ATP hydrolysis activity
+PMM1674,go:0043139,5^-3^ DNA helicase activity
+PMM1674,go:0140097,"catalytic activity, acting on DNA"
+PMM1675,go:0016740,transferase activity
+PMM1675,go:0050660,flavin adenine dinucleotide binding
+PMM1676,go:0008813,chorismate lyase activity
+PMM1676,go:0016829,lyase activity
+PMM1677,go:0004222,metalloendopeptidase activity
+PMM1677,go:0046872,metal ion binding
+PMM1679,go:0003910,DNA ligase (ATP) activity
+PMM1679,go:0005524,ATP binding
+PMM1682,go:0000166,nucleotide binding
+PMM1682,go:0004832,valine-tRNA ligase activity
+PMM1682,go:0005524,ATP binding
+PMM1684,go:0047429,nucleoside triphosphate diphosphatase activity
+PMM1685,go:0003824,catalytic activity
+PMM1686,go:0008783,agmatinase activity
+PMM1686,go:0046872,metal ion binding
+PMM1687,go:0004047,aminomethyltransferase activity
+PMM1688,go:0000166,nucleotide binding
+PMM1688,go:0003676,nucleic acid binding
+PMM1688,go:0004815,aspartate-tRNA ligase activity
+PMM1688,go:0005524,ATP binding
+PMM1688,go:0016874,ligase activity
+PMM1689,go:0003883,CTP synthase activity
+PMM1690,go:0000287,magnesium ion binding
+PMM1690,go:0003824,catalytic activity
+PMM1690,go:0016840,carbon-nitrogen lyase activity
+PMM1690,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1690,go:1904047,S-adenosyl-L-methionine binding
+PMM1692,go:0016829,lyase activity
+PMM1692,go:0016833,oxo-acid-lyase activity
+PMM1692,go:0046872,metal ion binding
+PMM1693,go:0003824,catalytic activity
+PMM1693,go:0008483,transaminase activity
+PMM1694,go:0004851,uroporphyrin-III C-methyltransferase activity
+PMM1695,go:0022857,transmembrane transporter activity
+PMM1696,go:0005524,ATP binding
+PMM1696,go:0008976,polyphosphate kinase activity
+PMM1696,go:0046872,metal ion binding
+PMM1697,go:0003677,DNA binding
+PMM1697,go:0016987,sigma factor activity
+PMM1698,go:0016301,kinase activity
+PMM1699,go:0003849,3-deoxy-7-phosphoheptulonate synthase activity
+PMM1699,go:0016832,aldehyde-lyase activity
+PMM1700,go:0003730,mRNA 3^-UTR binding
+PMM1700,go:0003994,aconitate hydratase activity
+PMM1700,go:0046872,metal ion binding
+PMM1700,go:0047456,2-methylisocitrate dehydratase activity
+PMM1700,go:0051539,"4 iron, 4 sulfur cluster binding"
+PMM1700,go:1901363,heterocyclic compound binding
+PMM1701,go:0005254,chloride channel activity
+PMM1702,go:0008864,formyltetrahydrofolate deformylase activity
+PMM1702,go:0016742,"hydroxymethyl-, formyl- and related transferase activity"
+PMM1703,go:0016491,oxidoreductase activity
+PMM1703,go:0071949,FAD binding
+PMM1704,go:0005524,ATP binding
+PMM1704,go:0016887,ATP hydrolysis activity
+PMM1704,go:0051082,unfolded protein binding
+PMM1705,go:0000166,nucleotide binding
+PMM1705,go:0004764,shikimate 3-dehydrogenase (NADP+) activity
+PMM1705,go:0050661,NADP binding
+PMM1706,go:0003735,structural constituent of ribosome
+PMM1706,go:0070181,small ribosomal subunit rRNA binding
+PMM1706,go:1901363,heterocyclic compound binding
+PMM1707,go:0004055,argininosuccinate synthase activity
+PMM1707,go:0005524,ATP binding
+PMM1709,go:0008963,phospho-N-acetylmuramoyl-pentapeptide-transferase activity
+PMM1711,go:0016757,glycosyltransferase activity
+PMM1711,go:0046524,sucrose-phosphate synthase activity
+PMM1712,go:0003677,DNA binding
+PMM1712,go:0005524,ATP binding
+PMM1712,go:0008270,zinc ion binding
+PMM1712,go:0009381,excinuclease ABC activity
+PMM1712,go:0016887,ATP hydrolysis activity
+PMM1713,go:0005524,ATP binding
+PMM1714,go:0004672,protein kinase activity
+PMM1714,go:0005524,ATP binding
+PMM1716,go:0003941,L-serine ammonia-lyase activity
+PMM1716,go:0004794,threonine deaminase activity
+PMM1716,go:0004795,threonine synthase activity
+PMM1716,go:0016740,transferase activity
+PMM1716,go:0030170,pyridoxal phosphate binding
+PMM1720,go:0016491,oxidoreductase activity
+PMM1720,go:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor"
+PMM1720,go:0048038,quinone binding
+PMM1720,go:0050136,NADH dehydrogenase (quinone) (non-electrogenic) activity
+PMM1841,go:0003677,DNA binding
+PMM1841,go:0003824,catalytic activity
+PMM1841,go:0004519,endonuclease activity
+PMM1841,go:0008168,methyltransferase activity
+PMM1841,go:0009007,site-specific DNA-methyltransferase (adenine-specific) activity
+PMM1841,go:1904047,S-adenosyl-L-methionine binding
+PMM2019,go:0004386,helicase activity

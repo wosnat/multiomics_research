@@ -1,0 +1,1939 @@
+locus_tag,term_id,term_name
+PMM0001,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0002,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0003,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0004,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0005,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0007,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0008,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0009,cyanorak.role:P,Transcription
+PMM0010,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0011,cyanorak.role:O.2,Signal transduction > Phosphotransferase systems (PTS)
+PMM0012,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0013,cyanorak.role:N.2,Regulatory functions > RNA interactions
+PMM0014,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0015,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0015,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0016,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM0016,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0016,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0016,cyanorak.role:K.5,Protein synthesis > Other
+PMM0016,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0017,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0017,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0018,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0018,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0019,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0019,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0021,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0022,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0023,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0023,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0024,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0026,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM0027,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0028,cyanorak.role:B.10.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Pyridoxine (b6)"
+PMM0029,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0031,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0031,cyanorak.role:M.1,"Purines, pyrimidines, nucleosides, and nucleotides > 2^-Deoxyribonucleotide metabolism"
+PMM0032,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0033,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0034,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0035,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0036,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0037,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0038,cyanorak.role:F.2,DNA metabolism > Restriction/modification
+PMM0040,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0041,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0042,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0042,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM0043,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0043,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM0044,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0045,cyanorak.role:E.5,Central intermediary metabolism > Polyamine biosynthesis
+PMM0046,cyanorak.role:M.1,"Purines, pyrimidines, nucleosides, and nucleotides > 2^-Deoxyribonucleotide metabolism"
+PMM0046,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0046,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0047,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0048,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0050,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0052,cyanorak.role:B.10.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Pyridoxine (b6)"
+PMM0053,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0054,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0055,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0057,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0058,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0059,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0060,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0061,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0061,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0062,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0063,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0064,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0064,cyanorak.role:J,Photosynthesis and respiration
+PMM0065,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0066,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0066,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0067,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0068,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0069,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0070,cyanorak.role:A.7,Amino acid biosynthesis > Other
+PMM0070,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0070,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0070,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0070,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0071,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0071,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0071,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0072,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0072,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0072,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0073,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0073,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0073,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0073,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0075,cyanorak.role:P.5,Transcription > Other
+PMM0076,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0076,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0076,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0077,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0078,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0078,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0079,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0080,cyanorak.role:B.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pantothenate and coenzyme A"
+PMM0081,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0082,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0082,cyanorak.role:N,Regulatory functions
+PMM0083,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0084,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0085,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0087,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0089,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0090,cyanorak.role:L.5,Protein fate > Other
+PMM0091,cyanorak.role:I.2,Mobile and extrachromosomal element functions > Prophage functions
+PMM0093,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0093,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0093,cyanorak.role:J,Photosynthesis and respiration
+PMM0094,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0094,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0095,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0097,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0097,cyanorak.role:D.7,Cellular processes > Protein and peptide secretion
+PMM0097,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0097,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0099,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0099,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0100,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM0101,cyanorak.role:C.4,Cell envelope > Surface structures
+PMM0102,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0103,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0104,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0105,cyanorak.role:B.7,"Biosynthesis of cofactors, prosthetic groups, and carriers > Riboflavin, FMN and FAD"
+PMM0106,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0107,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0108,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0109,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0110,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0110,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0113,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0113,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0113,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0114,cyanorak.role:D.8,Cellular processes > Toxin production and resistance
+PMM0115,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0116,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0117,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0120,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0121,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0121,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0122,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0123,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0124,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0125,cyanorak.role:Q.8,Transport and binding proteins > Other
+PMM0127,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0128,cyanorak.role:O.1.2,Signal transduction > Two-component systems > response regulators (RR)
+PMM0129,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0130,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0131,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0132,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0132,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0133,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0134,cyanorak.role:O.1.2,Signal transduction > Two-component systems > response regulators (RR)
+PMM0135,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM0136,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0137,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0138,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0139,cyanorak.role:K,Protein synthesis
+PMM0140,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0141,cyanorak.role:P.4,Transcription > RNA processing
+PMM0142,cyanorak.role:Q.5,"Transport and binding proteins > Nucleosides, purines and pyrimidines"
+PMM0143,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0144,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0145,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0145,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0146,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0147,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0147,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0148,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0149,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0149,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0150,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0150,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0152,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM0153,cyanorak.role:E.2,Central intermediary metabolism > One-carbon metabolism
+PMM0154,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0154,cyanorak.role:P.3,Transcription > Transcription factors
+PMM0156,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM0157,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0157,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0158,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0158,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0159,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0159,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0160,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0160,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0161,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM0162,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0164,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0166,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0167,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0168,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0169,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0169,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0169,cyanorak.role:O.1.2,Signal transduction > Two-component systems > response regulators (RR)
+PMM0170,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0171,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0172,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0172,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0173,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0174,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0175,cyanorak.role:B.10,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins"
+PMM0175,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0176,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0177,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0178,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0178,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0179,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0179,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0180,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM0182,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0184,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM0187,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0188,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM0189,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0191,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0191,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0191,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0192,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0192,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0193,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0194,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0197,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0198,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0199,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0200,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM0201,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0201,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0202,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0202,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0203,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0204,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0207,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0208,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0209,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0211,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0211,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0211,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0211,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0212,cyanorak.role:N.3,Regulatory functions > Protein interactions
+PMM0213,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0214,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0215,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0215,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0215,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0217,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0220,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0220,cyanorak.role:N.3,Regulatory functions > Protein interactions
+PMM0221,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0222,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0223,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0224,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0225,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0225,cyanorak.role:G.10,Energy metabolism > Other
+PMM0226,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0227,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0228,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0229,cyanorak.role:B.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pantothenate and coenzyme A"
+PMM0231,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0232,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0233,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0234,cyanorak.role:F.1.1,"DNA metabolism > DNA replication, recombination, and repair > Base excision repair"
+PMM0235,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0235,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0238,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0240,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0241,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0241,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM0243,cyanorak.role:M,"Purines, pyrimidines, nucleosides, and nucleotides"
+PMM0244,cyanorak.role:M.1,"Purines, pyrimidines, nucleosides, and nucleotides > 2^-Deoxyribonucleotide metabolism"
+PMM0245,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0246,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0246,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0246,cyanorak.role:N.5,Regulatory functions > Other
+PMM0247,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0248,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0249,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0250,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM0251,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0252,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0252,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0253,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0254,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0255,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0256,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0257,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0258,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0259,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0261,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0263,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0263,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0264,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0266,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0267,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0268,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0269,cyanorak.role:O.1.1,Signal transduction > Two-component systems > Histidine kinase (HK)
+PMM0270,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0272,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0273,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0274,cyanorak.role:Q.8,Transport and binding proteins > Other
+PMM0275,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0276,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0277,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0278,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0278,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0278,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0279,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0280,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0281,cyanorak.role:A.4,Amino acid biosynthesis > Histidine family
+PMM0282,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0283,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0283,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0284,cyanorak.role:N,Regulatory functions
+PMM0285,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0285,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0285,cyanorak.role:F.1.6,"DNA metabolism > DNA replication, recombination, and repair > Reversal of damage"
+PMM0285,cyanorak.role:F.3,DNA metabolism > Other
+PMM0286,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0286,cyanorak.role:M.5,"Purines, pyrimidines, nucleosides, and nucleotides > Salvage of nucleosides and nucleotides"
+PMM0287,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM0288,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0292,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0292,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0293,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0293,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0294,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0294,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0295,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0296,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0296,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0297,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0298,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0299,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0300,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0301,cyanorak.role:M.5,"Purines, pyrimidines, nucleosides, and nucleotides > Salvage of nucleosides and nucleotides"
+PMM0302,cyanorak.role:A.7,Amino acid biosynthesis > Other
+PMM0303,cyanorak.role:P.4,Transcription > RNA processing
+PMM0304,cyanorak.role:F.1.2,"DNA metabolism > DNA replication, recombination, and repair > Nucleotide excision repair"
+PMM0305,cyanorak.role:J.5.3,Photosynthesis and respiration > Light-harvesting-Phycobilisomes > Phycoerythrin
+PMM0306,cyanorak.role:J.5.4,Photosynthesis and respiration > Light-harvesting-Phycobilisomes > Phycobilin lyase
+PMM0307,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0308,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0309,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0310,cyanorak.role:E.2,Central intermediary metabolism > One-carbon metabolism
+PMM0310,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0311,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0311,cyanorak.role:G.1,Energy metabolism > Amino acids and amines (catabolism)
+PMM0312,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0313,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0314,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0315,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0316,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0316,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0316,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM0317,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0319,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0320,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0321,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0322,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0323,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0324,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0324,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0325,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0326,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0327,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0328,cyanorak.role:F.1.1,"DNA metabolism > DNA replication, recombination, and repair > Base excision repair"
+PMM0329,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0330,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0331,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0331,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0331,cyanorak.role:G.6,Energy metabolism > Pyruvate and acetyl-CoA metabolism
+PMM0334,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0335,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0336,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0336,cyanorak.role:J.9,Photosynthesis and respiration > Respiratory terminal oxidases
+PMM0338,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0339,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0340,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0341,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0342,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0343,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0345,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification
+PMM0347,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0348,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0350,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0350,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0351,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0352,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0356,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0357,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0358,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0359,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0360,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0361,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0362,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0363,cyanorak.role:N,Regulatory functions
+PMM0364,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0368,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0370,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0370,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0371,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0372,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0373,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0374,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0377,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0378,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0380,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0383,cyanorak.role:C.4,Cell envelope > Surface structures
+PMM0384,cyanorak.role:F.2,DNA metabolism > Restriction/modification
+PMM0384,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0386,cyanorak.role:F.2,DNA metabolism > Restriction/modification
+PMM0386,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0387,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0388,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0389,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0391,cyanorak.role:K,Protein synthesis
+PMM0392,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0393,cyanorak.role:N.3,Regulatory functions > Protein interactions
+PMM0394,cyanorak.role:D.10,Cellular processes > Other
+PMM0395,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0396,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0397,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0398,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0400,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM0401,cyanorak.role:B.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Lipoic acid"
+PMM0402,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0403,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0403,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0404,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0405,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0405,cyanorak.role:G.6,Energy metabolism > Pyruvate and acetyl-CoA metabolism
+PMM0405,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM0406,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0407,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0407,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0408,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0408,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0409,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0409,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0410,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0411,cyanorak.role:L.5,Protein fate > Other
+PMM0412,cyanorak.role:M.1,"Purines, pyrimidines, nucleosides, and nucleotides > 2^-Deoxyribonucleotide metabolism"
+PMM0413,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0415,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0415,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0417,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0418,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0418,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0419,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM0420,cyanorak.role:C.5,Cell envelope > Other
+PMM0420,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0421,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0422,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0424,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0424,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0425,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0425,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0425,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0426,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0427,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0428,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0429,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0430,cyanorak.role:A.4,Amino acid biosynthesis > Histidine family
+PMM0430,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0431,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0433,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM0433,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0434,cyanorak.role:D.10,Cellular processes > Other
+PMM0435,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0435,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0436,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0439,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0440,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0442,cyanorak.role:B.7,"Biosynthesis of cofactors, prosthetic groups, and carriers > Riboflavin, FMN and FAD"
+PMM0443,cyanorak.role:P.3,Transcription > Transcription factors
+PMM0444,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0444,cyanorak.role:J.9,Photosynthesis and respiration > Respiratory terminal oxidases
+PMM0445,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0445,cyanorak.role:J.9,Photosynthesis and respiration > Respiratory terminal oxidases
+PMM0446,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0446,cyanorak.role:J.9,Photosynthesis and respiration > Respiratory terminal oxidases
+PMM0447,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0447,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0448,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0449,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0451,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0452,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0452,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0453,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0454,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0455,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0456,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0457,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0458,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0459,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0460,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0461,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0462,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0462,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0464,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0465,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0467,cyanorak.role:M.2,"Purines, pyrimidines, nucleosides, and nucleotides > Nucleotide and nucleoside interconversions"
+PMM0468,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0469,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0470,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0471,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0471,cyanorak.role:J,Photosynthesis and respiration
+PMM0472,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0473,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0474,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0474,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0475,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0477,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0478,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0480,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0481,cyanorak.role:O.3,Signal transduction > Other
+PMM0482,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0483,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0483,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0483,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0484,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0484,cyanorak.role:F.1.1,"DNA metabolism > DNA replication, recombination, and repair > Base excision repair"
+PMM0486,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0487,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0488,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0489,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0489,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0490,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0491,cyanorak.role:G.1,Energy metabolism > Amino acids and amines (catabolism)
+PMM0492,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0493,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0494,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0495,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0495,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0495,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0496,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0496,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0496,cyanorak.role:P.3,Transcription > Transcription factors
+PMM0497,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM0499,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0500,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0500,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0501,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0503,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0503,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0504,cyanorak.role:D.8,Cellular processes > Toxin production and resistance
+PMM0505,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0505,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0506,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0507,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0508,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0510,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0511,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0512,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0513,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0515,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0518,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0519,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0520,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0522,cyanorak.role:M.2,"Purines, pyrimidines, nucleosides, and nucleotides > Nucleotide and nucleoside interconversions"
+PMM0523,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0525,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0525,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0526,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0528,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0530,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0531,cyanorak.role:G.1,Energy metabolism > Amino acids and amines (catabolism)
+PMM0532,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0533,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0534,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0535,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0535,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0536,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM0536,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0537,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0538,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0539,cyanorak.role:B.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Lipoic acid"
+PMM0540,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0540,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0540,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0541,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0542,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0543,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0544,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0545,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0546,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0547,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0548,cyanorak.role:M.5,"Purines, pyrimidines, nucleosides, and nucleotides > Salvage of nucleosides and nucleotides"
+PMM0549,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0550,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0551,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0552,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0553,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0554,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0555,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0556,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0556,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0557,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0558,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM0559,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0559,cyanorak.role:D.8,Cellular processes > Toxin production and resistance
+PMM0562,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0563,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0564,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0565,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0566,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0567,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0567,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0568,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0569,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0570,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0570,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0572,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0573,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0573,cyanorak.role:P.3,Transcription > Transcription factors
+PMM0574,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0575,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0576,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0577,cyanorak.role:P.3,Transcription > Transcription factors
+PMM0578,cyanorak.role:A.4,Amino acid biosynthesis > Histidine family
+PMM0580,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0580,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM0580,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0580,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0580,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0581,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0581,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0581,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM0583,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0583,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0584,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0585,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0586,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0587,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0589,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0590,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0591,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM0592,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0593,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0594,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0594,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0596,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0596,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0597,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0598,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0600,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0601,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0601,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0602,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0603,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0604,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0605,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0605,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0606,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0607,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0608,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0609,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0610,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0611,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0611,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0613,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0614,cyanorak.role:G.10,Energy metabolism > Other
+PMM0615,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0616,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0617,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0618,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0619,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0619,cyanorak.role:G.6,Energy metabolism > Pyruvate and acetyl-CoA metabolism
+PMM0620,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0620,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0622,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0623,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0625,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0626,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0627,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0627,cyanorak.role:J.4,Photosynthesis and respiration > Light-harvesting-Pcb
+PMM0630,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0631,cyanorak.role:I.2,Mobile and extrachromosomal element functions > Prophage functions
+PMM0632,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM0633,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM0634,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0635,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0636,cyanorak.role:B.8,"Biosynthesis of cofactors, prosthetic groups, and carriers > Siderophores"
+PMM0637,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0637,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0638,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0638,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0639,cyanorak.role:H.3,"Fatty acid, phospholipid and sterol metabolism > Glycerolipid metabolism"
+PMM0640,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0642,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0642,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0642,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0643,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0643,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0644,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0645,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0646,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0647,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0649,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0650,cyanorak.role:R.4,Other > Hypothetical proteins
+PMM0651,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0652,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0653,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0653,cyanorak.role:D.8,Cellular processes > Toxin production and resistance
+PMM0654,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0655,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0657,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0658,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0659,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0661,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0661,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0661,cyanorak.role:M.1,"Purines, pyrimidines, nucleosides, and nucleotides > 2^-Deoxyribonucleotide metabolism"
+PMM0663,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0669,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0670,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0671,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0671,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0671,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0672,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0672,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0672,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0673,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0673,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0673,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0674,cyanorak.role:A,Amino acid biosynthesis
+PMM0675,cyanorak.role:F.1.1,"DNA metabolism > DNA replication, recombination, and repair > Base excision repair"
+PMM0676,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0677,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0678,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM0681,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0682,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0683,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0684,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0685,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0686,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0687,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0688,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0689,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0689,cyanorak.role:J,Photosynthesis and respiration
+PMM0690,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0690,cyanorak.role:J,Photosynthesis and respiration
+PMM0691,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0692,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0694,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0696,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0697,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0698,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0699,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0699,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0700,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0702,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0703,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0704,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0704,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0705,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0705,cyanorak.role:O.1.2,Signal transduction > Two-component systems > response regulators (RR)
+PMM0706,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0706,cyanorak.role:O.1.1,Signal transduction > Two-component systems > Histidine kinase (HK)
+PMM0707,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0709,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0709,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0709,cyanorak.role:Q.6,Transport and binding proteins > Porins
+PMM0710,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0710,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0710,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0711,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0711,cyanorak.role:D.8,Cellular processes > Toxin production and resistance
+PMM0711,cyanorak.role:O.1,Signal transduction > Two-component systems
+PMM0712,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0712,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0713,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0713,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0714,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0714,cyanorak.role:P,Transcription
+PMM0715,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0716,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0718,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0719,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0720,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0723,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0723,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0723,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0724,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0724,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0724,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0725,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0725,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM0725,cyanorak.role:Q.2,Transport and binding proteins > Anions
+PMM0726,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0727,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0728,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0728,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM0730,cyanorak.role:P.4,Transcription > RNA processing
+PMM0731,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0732,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0734,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0735,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0736,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0738,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0739,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0740,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0741,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0741,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0742,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0743,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0745,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0747,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0747,cyanorak.role:J,Photosynthesis and respiration
+PMM0748,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0749,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0750,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0753,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0755,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0756,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM0757,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0758,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0758,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM0759,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0760,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0761,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0762,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM0763,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0764,cyanorak.role:Q.8,Transport and binding proteins > Other
+PMM0765,cyanorak.role:J,Photosynthesis and respiration
+PMM0766,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0767,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0768,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0768,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0768,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0768,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0769,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0769,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0770,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0770,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0771,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0771,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0772,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0774,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0774,cyanorak.role:G.10,Energy metabolism > Other
+PMM0777,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0778,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0779,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0780,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0781,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0781,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0781,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0782,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0784,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM0785,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0785,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0785,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0786,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0786,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0787,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0788,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0789,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0790,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0791,cyanorak.role:P.4,Transcription > RNA processing
+PMM0792,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0793,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0794,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM0794,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0795,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0796,cyanorak.role:A.4,Amino acid biosynthesis > Histidine family
+PMM0798,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM0798,cyanorak.role:H.3,"Fatty acid, phospholipid and sterol metabolism > Glycerolipid metabolism"
+PMM0800,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0802,cyanorak.role:F.1.1,"DNA metabolism > DNA replication, recombination, and repair > Base excision repair"
+PMM0803,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0803,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0804,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM0805,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0805,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0806,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0806,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0806,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM0809,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0810,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0812,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0813,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0814,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0815,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0815,cyanorak.role:J,Photosynthesis and respiration
+PMM0816,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0816,cyanorak.role:J,Photosynthesis and respiration
+PMM0817,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0817,cyanorak.role:J,Photosynthesis and respiration
+PMM0818,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM0818,cyanorak.role:J,Photosynthesis and respiration
+PMM0820,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0821,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0822,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0825,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0826,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0827,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0829,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0829,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM0830,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM0831,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0832,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0832,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0833,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0833,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0834,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM0838,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0839,cyanorak.role:F.1.2,"DNA metabolism > DNA replication, recombination, and repair > Nucleotide excision repair"
+PMM0840,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0841,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0842,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0843,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0844,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0845,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0845,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM0846,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0847,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM0848,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0850,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0851,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0853,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0854,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0855,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0856,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0856,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0857,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0858,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0859,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0861,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0862,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0863,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0864,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0865,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0865,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM0867,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0868,cyanorak.role:P.4,Transcription > RNA processing
+PMM0869,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0870,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0871,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0872,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0873,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0874,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0875,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0877,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0878,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0879,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM0880,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0881,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0881,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM0882,cyanorak.role:F.1.2,"DNA metabolism > DNA replication, recombination, and repair > Nucleotide excision repair"
+PMM0883,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0884,cyanorak.role:B.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pantothenate and coenzyme A"
+PMM0885,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0887,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0888,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0889,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0890,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0890,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM0890,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0891,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM0892,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0893,cyanorak.role:B.7,"Biosynthesis of cofactors, prosthetic groups, and carriers > Riboflavin, FMN and FAD"
+PMM0894,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0895,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0895,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0896,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0897,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0898,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM0898,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM0898,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM0899,cyanorak.role:E.8,Central intermediary metabolism > Other
+PMM0900,cyanorak.role:N.3,Regulatory functions > Protein interactions
+PMM0901,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0901,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0901,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM0902,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0902,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0903,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification
+PMM0905,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0906,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM0907,cyanorak.role:B.10.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Pyridoxine (b6)"
+PMM0907,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM0908,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM0909,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0910,cyanorak.role:D.2,Cellular processes > Cell division
+PMM0912,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0914,cyanorak.role:Q.8,Transport and binding proteins > Other
+PMM0915,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0917,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0919,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0920,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM0920,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0921,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM0921,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0923,cyanorak.role:P.3,Transcription > Transcription factors
+PMM0924,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM0926,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0927,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM0929,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM0930,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM0930,cyanorak.role:G.7,Energy metabolism > Pyruvate dehydrogenase
+PMM0930,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM0931,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0932,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM0934,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0936,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0937,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0939,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0940,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM0941,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM0942,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM0943,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0944,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM0945,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM0946,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM0947,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0948,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM0949,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM0949,cyanorak.role:P.4,Transcription > RNA processing
+PMM0950,cyanorak.role:N.3,Regulatory functions > Protein interactions
+PMM0951,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0951,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM0952,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM0955,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification
+PMM0955,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM0956,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM0958,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0959,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM0959,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM0959,cyanorak.role:H.3,"Fatty acid, phospholipid and sterol metabolism > Glycerolipid metabolism"
+PMM0960,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM0961,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM0961,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM0962,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM0963,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0963,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0964,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0964,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0965,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0965,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0966,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0966,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0966,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0967,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0967,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0967,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0968,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0968,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0968,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0969,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0969,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM0969,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0970,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0970,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0970,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0971,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0971,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0971,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0972,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0972,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0972,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0973,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0973,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0973,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0974,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM0974,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM0974,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM0975,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0976,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0977,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0978,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM0979,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0980,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0983,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0984,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0985,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM0987,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM0988,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0991,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0993,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM0995,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0996,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM0996,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0997,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM0999,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1001,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1001,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1001,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1002,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1002,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1004,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1006,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM1007,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1008,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1010,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1010,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1011,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1012,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1013,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1014,cyanorak.role:F.2,DNA metabolism > Restriction/modification
+PMM1016,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1017,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM1020,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1023,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1025,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1028,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1029,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1030,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1031,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1032,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1032,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1033,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1034,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1036,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1040,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM1040,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1040,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1041,cyanorak.role:E.6,Central intermediary metabolism > Polysaccharides and glycoproteins biosynthesis
+PMM1042,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1043,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1044,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM1046,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1046,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM1047,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1048,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM1049,cyanorak.role:Q.1,"Transport and binding proteins > Amino acids, peptides and amines"
+PMM1050,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1051,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1051,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1052,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1052,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1052,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM1053,cyanorak.role:E.2,Central intermediary metabolism > One-carbon metabolism
+PMM1054,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1055,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM1056,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1056,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1057,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1058,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM1059,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1060,cyanorak.role:A.4,Amino acid biosynthesis > Histidine family
+PMM1060,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1061,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1061,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1062,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1063,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1064,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM1066,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1068,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1069,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1070,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM1071,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1071,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM1071,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM1072,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1073,cyanorak.role:D.6,Cellular processes > Circadian clock
+PMM1074,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM1075,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1075,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1075,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM1077,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1077,cyanorak.role:O.1.1,Signal transduction > Two-component systems > Histidine kinase (HK)
+PMM1078,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1080,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM1081,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1082,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1083,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1084,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1085,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1085,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1086,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1086,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1087,cyanorak.role:H.3,"Fatty acid, phospholipid and sterol metabolism > Glycerolipid metabolism"
+PMM1088,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1088,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1089,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1090,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1091,cyanorak.role:O.2,Signal transduction > Phosphotransferase systems (PTS)
+PMM1093,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM1096,cyanorak.role:B.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Lipoic acid"
+PMM1097,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1098,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1099,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM1100,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1101,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM1101,cyanorak.role:P.5,Transcription > Other
+PMM1102,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1103,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1104,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1105,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1106,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM1106,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1107,cyanorak.role:B.10.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Pyridoxine (b6)"
+PMM1108,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM1109,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1111,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM1111,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1112,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1113,cyanorak.role:O.1.2,Signal transduction > Two-component systems > response regulators (RR)
+PMM1115,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM1116,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1117,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1118,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1118,cyanorak.role:J,Photosynthesis and respiration
+PMM1119,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1119,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1119,cyanorak.role:Q.6,Transport and binding proteins > Porins
+PMM1120,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1121,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1121,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1121,cyanorak.role:Q.6,Transport and binding proteins > Porins
+PMM1122,cyanorak.role:M.5,"Purines, pyrimidines, nucleosides, and nucleotides > Salvage of nucleosides and nucleotides"
+PMM1123,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1124,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1125,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1128,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1128,cyanorak.role:J,Photosynthesis and respiration
+PMM1129,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1130,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1131,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1132,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1133,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1134,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1135,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1135,cyanorak.role:J,Photosynthesis and respiration
+PMM1136,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1138,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1139,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM1140,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1141,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1142,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM1143,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1144,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1145,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM1145,cyanorak.role:M.2,"Purines, pyrimidines, nucleosides, and nucleotides > Nucleotide and nucleoside interconversions"
+PMM1146,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM1146,cyanorak.role:M.2,"Purines, pyrimidines, nucleosides, and nucleotides > Nucleotide and nucleoside interconversions"
+PMM1147,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM1147,cyanorak.role:M.2,"Purines, pyrimidines, nucleosides, and nucleotides > Nucleotide and nucleoside interconversions"
+PMM1148,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1149,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1150,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM1150,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1150,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1150,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1151,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM1152,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1152a,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1152a,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM1153,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1154,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1156,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1156,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1157,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1158,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1159,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1160,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1161,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1161,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1161,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM1163,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM1163,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1164,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1164,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1164,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1165,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1167,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1168,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1168,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1169,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1170,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1171,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1171,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1171,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1171,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM1172,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM1172,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1175,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM1176,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1177,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1177,cyanorak.role:E.6,Central intermediary metabolism > Polysaccharides and glycoproteins biosynthesis
+PMM1178,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1178,cyanorak.role:E.6,Central intermediary metabolism > Polysaccharides and glycoproteins biosynthesis
+PMM1179,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM1180,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1181,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM1182,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1183,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1184,cyanorak.role:P.4,Transcription > RNA processing
+PMM1185,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1185,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1186,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1186,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1187,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM1187,cyanorak.role:N.5,Regulatory functions > Other
+PMM1188,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1189,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1190,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1191,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM1192,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM1193,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1194,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1196,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1197,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1201,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1202,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1203,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1204,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1205,cyanorak.role:A,Amino acid biosynthesis
+PMM1207,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM1208,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1209,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1210,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1211,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1211,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1211,cyanorak.role:M.6,"Purines, pyrimidines, nucleosides, and nucleotides > Sugar-nucleotide biosynthesis and conversions"
+PMM1211,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM1212,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1214,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1217,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1220,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1222,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1224,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1224,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1224,cyanorak.role:M.6,"Purines, pyrimidines, nucleosides, and nucleotides > Sugar-nucleotide biosynthesis and conversions"
+PMM1224,cyanorak.role:Q.7,Transport and binding proteins > Sugars
+PMM1225,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1227,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM1229,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1232,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1233,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1234,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1235,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1236,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM1239,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM1253,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1258,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM1259,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM1260,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM1261,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1262,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1263,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM1264,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1264,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1264,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1265,cyanorak.role:B.7,"Biosynthesis of cofactors, prosthetic groups, and carriers > Riboflavin, FMN and FAD"
+PMM1268,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1271,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1271,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM1272,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1273,cyanorak.role:B.7,"Biosynthesis of cofactors, prosthetic groups, and carriers > Riboflavin, FMN and FAD"
+PMM1274,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM1275,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM1276,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1276,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1278,cyanorak.role:D.6,Cellular processes > Circadian clock
+PMM1279,cyanorak.role:D.8,Cellular processes > Toxin production and resistance
+PMM1280,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1281,cyanorak.role:P.3,Transcription > Transcription factors
+PMM1282,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1283,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1283,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1283,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1284,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1284,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1284,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM1285,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1286,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM1287,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1288,cyanorak.role:G.7,Energy metabolism > Pyruvate dehydrogenase
+PMM1289,cyanorak.role:P.3,Transcription > Transcription factors
+PMM1290,cyanorak.role:M.5,"Purines, pyrimidines, nucleosides, and nucleotides > Salvage of nucleosides and nucleotides"
+PMM1291,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1292,cyanorak.role:C.1,"Cell envelope > Membranes, lipoproteins, and porins"
+PMM1293,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1294,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1295,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1295,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1297,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM1298,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1298,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1298,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM1299,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1300,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM1301,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1301,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM1302,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1303,cyanorak.role:G.3,Energy metabolism > Glycolate pathway
+PMM1304,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM1304,cyanorak.role:M,"Purines, pyrimidines, nucleosides, and nucleotides"
+PMM1305,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1308,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1309,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1310,cyanorak.role:B.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pantothenate and coenzyme A"
+PMM1311,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM1311,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1312,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1313,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1314,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1315,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1316,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1317,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1317,cyanorak.role:J,Photosynthesis and respiration
+PMM1319,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1320,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1321,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1322,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1323,cyanorak.role:Q.3,"Transport and binding proteins > Carbohydrates, organic alcohols, and acids"
+PMM1327,cyanorak.role:H.3,"Fatty acid, phospholipid and sterol metabolism > Glycerolipid metabolism"
+PMM1327,cyanorak.role:H.4,"Fatty acid, phospholipid and sterol metabolism > Glycerophospholipid metabolism"
+PMM1327,cyanorak.role:H.7,"Fatty acid, phospholipid and sterol metabolism > Sphingolipid and glycosphingolipid metabolism"
+PMM1328,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM1329,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1329,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1330,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1330,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1331,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1332,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1332,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1333,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1334,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1336,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM1337,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1338,cyanorak.role:C.4,Cell envelope > Surface structures
+PMM1338,cyanorak.role:Q.6,Transport and binding proteins > Porins
+PMM1339,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1340,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1341,cyanorak.role:O.1.1,Signal transduction > Two-component systems > Histidine kinase (HK)
+PMM1342,cyanorak.role:D.6,Cellular processes > Circadian clock
+PMM1343,cyanorak.role:D.6,Cellular processes > Circadian clock
+PMM1344,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1345,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1346,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1348,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM1349,cyanorak.role:P.4,Transcription > RNA processing
+PMM1350,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1352,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1352,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1352,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM1354,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1355,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1355,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1356,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1356,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1357,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1358,cyanorak.role:B.10.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Pyridoxine (b6)"
+PMM1359,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1359,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1360,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM1362,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1364,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM1365,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1366,cyanorak.role:D.1.8,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Salinity
+PMM1369,cyanorak.role:O.3,Signal transduction > Other
+PMM1370,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1374,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1376,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1377,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1378,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM1378,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM1381,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1381,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1382,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM1382,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1384,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1384,cyanorak.role:J,Photosynthesis and respiration
+PMM1385,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1385,cyanorak.role:J,Photosynthesis and respiration
+PMM1386,cyanorak.role:Q.8,Transport and binding proteins > Other
+PMM1388,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1388,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1389,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1390,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1390,cyanorak.role:J,Photosynthesis and respiration
+PMM1391,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1392,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1393,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1394,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1396,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1396,cyanorak.role:J,Photosynthesis and respiration
+PMM1397,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1397,cyanorak.role:J,Photosynthesis and respiration
+PMM1398,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1398,cyanorak.role:J,Photosynthesis and respiration
+PMM1399,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1399,cyanorak.role:J,Photosynthesis and respiration
+PMM1400,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1401,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1403,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1403,cyanorak.role:M.1,"Purines, pyrimidines, nucleosides, and nucleotides > 2^-Deoxyribonucleotide metabolism"
+PMM1404,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1404,cyanorak.role:J,Photosynthesis and respiration
+PMM1409,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1412,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1413,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1414,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1416,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1416,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM1417,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1420,cyanorak.role:R.4,Other > Hypothetical proteins
+PMM1422,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1425,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1427,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1429,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1431,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1432,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1433,cyanorak.role:P.5,Transcription > Other
+PMM1434,cyanorak.role:G.4,Energy metabolism > Glycolysis/gluconeogenesis
+PMM1436,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1436,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM1436,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1437,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM1437,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1437,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM1437,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1438,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1439,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1440,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1441,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1442,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1443,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1444,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1445,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM1446,cyanorak.role:B.6,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pyridine nucleotides (NAD, NADP)"
+PMM1449,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1449,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1449,cyanorak.role:J.10,Photosynthesis and respiration > Soluble electron carriers
+PMM1450,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1451,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1452,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1453,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1454,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1455,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1456,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1457,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase
+PMM1458,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1459,cyanorak.role:D.1.4,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Oxidative stress
+PMM1459,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1460,cyanorak.role:B.11,"Biosynthesis of cofactors, prosthetic groups, and carriers > Other"
+PMM1461,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1462,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1463,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM1463,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM1463,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1464,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1465,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1466,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1466,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM1467,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1467,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM1468,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM1469,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM1470,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM1471,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM1472,cyanorak.role:B.10.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Biotin (b7)"
+PMM1474,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1475,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1476,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1477,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1477,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1478,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM1478,cyanorak.role:N,Regulatory functions
+PMM1480,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1481,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1481,cyanorak.role:P.4,Transcription > RNA processing
+PMM1482,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1482,cyanorak.role:J,Photosynthesis and respiration
+PMM1483,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1484,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1485,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1487,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1488,cyanorak.role:A.4,Amino acid biosynthesis > Histidine family
+PMM1489,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM1489,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM1490,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1491,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1492,cyanorak.role:P.3,Transcription > Transcription factors
+PMM1494,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM1495,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1498,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1499,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1500,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1501,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM1502,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM1504,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM1505,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM1506,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1507,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1508,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM1509,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM1510,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1511,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1512,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM1512,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM1513,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1514,cyanorak.role:B.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Lipoic acid"
+PMM1515,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1516,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1519,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1519,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1519,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1520,cyanorak.role:D.1.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Iron
+PMM1520,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+PMM1520,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1521,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1522,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1523,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1524,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1525,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1527,cyanorak.role:A.5,"Amino acid biosynthesis > Pyruvate family (Ala, Val, Leu)"
+PMM1529,cyanorak.role:K.4,Protein synthesis > Translation factors
+PMM1530,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1531,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1532,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1533,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1534,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1535,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1536,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1537,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1538,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1539,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1540,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM1541,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1542,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1543,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1543,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1544,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1545,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1546,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1547,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1548,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1549,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1550,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1551,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1552,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1553,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1554,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1555,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1556,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1557,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1558,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1559,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1559,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM1562,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1563,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1564,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1564,cyanorak.role:P.1,Transcription > Degradation of RNA
+PMM1566,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM1567,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1568,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1569,cyanorak.role:B.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Molybdopterin"
+PMM1569,cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen
+PMM1569,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM1570,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1571,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1572,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM1572,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1572,cyanorak.role:E.5,Central intermediary metabolism > Polyamine biosynthesis
+PMM1573,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1574,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1575,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM1575,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM1576,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM1577,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM1578,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1579,cyanorak.role:O.1.1,Signal transduction > Two-component systems > Histidine kinase (HK)
+PMM1581,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM1582,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM1582,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1583,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1583,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM1584,cyanorak.role:P.4,Transcription > RNA processing
+PMM1585,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1586,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1587,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1588,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1588,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1589,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1590,cyanorak.role:M.2,"Purines, pyrimidines, nucleosides, and nucleotides > Nucleotide and nucleoside interconversions"
+PMM1591,cyanorak.role:L.2,Protein fate > Protein modification and repair
+PMM1592,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1593,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1594,cyanorak.role:B.5.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Hemes and phycobilins"
+PMM1595,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1596,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM1597,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1598,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1598,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1599,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1599,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1600,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1601,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1601,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1603,cyanorak.role:P.4,Transcription > RNA processing
+PMM1604,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1604,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM1604,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1605,cyanorak.role:P.4,Transcription > RNA processing
+PMM1606,cyanorak.role:A,Amino acid biosynthesis
+PMM1606,cyanorak.role:E.1,Central intermediary metabolism > Amino sugars
+PMM1607,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1608,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1609,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism"
+PMM1610,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway
+PMM1610,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation
+PMM1611,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM1612,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1613,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1614,cyanorak.role:D.5,Cellular processes > Chemotaxis and motility
+PMM1615,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1616,cyanorak.role:K.5,Protein synthesis > Other
+PMM1617,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1618,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1619,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1619,cyanorak.role:O.1.2,Signal transduction > Two-component systems > response regulators (RR)
+PMM1621,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1622,cyanorak.role:C.4,Cell envelope > Surface structures
+PMM1622,cyanorak.role:D.2,Cellular processes > Cell division
+PMM1623,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1625,cyanorak.role:G.1,Energy metabolism > Amino acids and amines (catabolism)
+PMM1626,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1627,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1628,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1629,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1629,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1630,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1632,cyanorak.role:Q.8,Transport and binding proteins > Other
+PMM1634,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1635,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1637,cyanorak.role:N.1,Regulatory functions > DNA interactions
+PMM1638,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1639,cyanorak.role:L.1,Protein fate > Protein and peptide secretion and trafficking
+PMM1643,cyanorak.role:B.7,"Biosynthesis of cofactors, prosthetic groups, and carriers > Riboflavin, FMN and FAD"
+PMM1644,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1645,cyanorak.role:F.1.3,"DNA metabolism > DNA replication, recombination, and repair > Mismatch excision repair"
+PMM1646,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1647,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1649,cyanorak.role:F.1.2,"DNA metabolism > DNA replication, recombination, and repair > Nucleotide excision repair"
+PMM1650,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1651,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1652,cyanorak.role:P.4,Transcription > RNA processing
+PMM1653,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1654,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1655,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1656,cyanorak.role:L.4,"Protein fate > Degradation of proteins, peptides, and glycopeptides"
+PMM1657,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification
+PMM1657,cyanorak.role:D.4,Cellular processes > Chaperones
+PMM1657,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1658,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1659,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1659,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1660,cyanorak.role:D.10,Cellular processes > Other
+PMM1661,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1662,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1663,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I
+PMM1664,cyanorak.role:B.10.5,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Thiamine (b1)"
+PMM1665,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1665,cyanorak.role:E.6,Central intermediary metabolism > Polysaccharides and glycoproteins biosynthesis
+PMM1665,cyanorak.role:E.7,Central intermediary metabolism > Sulfur metabolism
+PMM1666,cyanorak.role:C.3,Cell envelope > Surface polysaccharides and lipopolysaccharides
+PMM1666,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1667,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1667,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1668,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1668,cyanorak.role:G.3,Energy metabolism > Glycolate pathway
+PMM1669,cyanorak.role:A.6,"Amino acid biosynthesis > Serine family (Ser, Gly, Cys)"
+PMM1669,cyanorak.role:G.3,Energy metabolism > Glycolate pathway
+PMM1670,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1670,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism
+PMM1670,cyanorak.role:Q.4,Transport and binding proteins > Cations and iron carrying compounds
+PMM1671,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1672,cyanorak.role:D.1.6,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Temperature
+PMM1672,cyanorak.role:H,"Fatty acid, phospholipid and sterol metabolism"
+PMM1673,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1674,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1675,cyanorak.role:K.3,Protein synthesis > tRNA and rRNA base modification
+PMM1676,cyanorak.role:B.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Plastoquinone, menaquinone and ubiquinone"
+PMM1677,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1678,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1678,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1679,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1680,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1682,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1683,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1685,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM1685,cyanorak.role:B.9,"Biosynthesis of cofactors, prosthetic groups, and carriers > Thioredoxin, glutaredoxin and glutathione"
+PMM1686,cyanorak.role:G.1,Energy metabolism > Amino acids and amines (catabolism)
+PMM1687,cyanorak.role:G.3,Energy metabolism > Glycolate pathway
+PMM1688,cyanorak.role:K.1,Protein synthesis > tRNA aminoacylation
+PMM1689,cyanorak.role:M.4,"Purines, pyrimidines, nucleosides, and nucleotides > Pyrimidine ribonucleotide biosynthesis"
+PMM1690,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1691,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1692,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1693,cyanorak.role:B.10.3,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Folic acid (b9)"
+PMM1694,cyanorak.role:B.10.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Cobalamin (b12)"
+PMM1695,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1695,cyanorak.role:Q.9,Transport and binding proteins > Unknown substrate
+PMM1696,cyanorak.role:E.3,Central intermediary metabolism > Phosphorus metabolism
+PMM1697,cyanorak.role:P.2,Transcription > DNA-dependent RNA polymerase
+PMM1698,cyanorak.role:B.5.2,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Chlorophylls and porphyrins"
+PMM1699,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM1700,cyanorak.role:G.9,Energy metabolism > TCA cycle
+PMM1702,cyanorak.role:M.3,"Purines, pyrimidines, nucleosides, and nucleotides > Purine ribonucleotide biosynthesis"
+PMM1703,cyanorak.role:A.3,"Amino acid biosynthesis > Glutamate family (Arg, Gln, Glu, Pro)"
+PMM1704,cyanorak.role:D.1.5,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Phosphorus
+PMM1704,cyanorak.role:D.1.7,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Trace metals
+PMM1704,cyanorak.role:L.3,Protein fate > Protein folding and stabilization
+PMM1705,cyanorak.role:A.1,"Amino acid biosynthesis > Aromatic amino acids family (Phe, Trp, Tyr)"
+PMM1706,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification
+PMM1707,cyanorak.role:0.4,Non-coding gene (RNA) > Other
+PMM1709,cyanorak.role:C.2,Cell envelope > Murein sacculus and peptidoglycan
+PMM1711,cyanorak.role:G.8,Energy metabolism > Glycogen and sugar metabolism
+PMM1712,cyanorak.role:F.1,"DNA metabolism > DNA replication, recombination, and repair"
+PMM1713,cyanorak.role:D.1.9,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Other
+PMM1713,cyanorak.role:F.1.4,"DNA metabolism > DNA replication, recombination, and repair > Homologous recombination"
+PMM1714,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1715,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1716,cyanorak.role:A.2,"Amino acid biosynthesis > Aspartate family (Asp, Asn, Ile, Lys, Met, Thr)"
+PMM1716,cyanorak.role:B.10.4,"Biosynthesis of cofactors, prosthetic groups, and carriers > Vitamins > Pyridoxine (b6)"
+PMM1718,cyanorak.role:J.3,Photosynthesis and respiration > Cytochrome b6/f complex
+PMM1720,cyanorak.role:G.2,Energy metabolism > Electron transport
+PMM1720,cyanorak.role:J.6,Photosynthesis and respiration > NADH dehydrogenase
+PMM1723,cyanorak.role:B.5.1,"Biosynthesis of cofactors, prosthetic groups, and carriers > Pigments > Carotenoids"
+PMM1801,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1802,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1803,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1805,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1807,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1808,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1810,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1812,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1813,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1817,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1821,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1826,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1830,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1836,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1838,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1841,cyanorak.role:F.2,DNA metabolism > Restriction/modification
+PMM1841,cyanorak.role:R.3,Other > Enzymes of unknown specificity
+PMM1846,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1847,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1850,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1851,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1855,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1857,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1858,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1859,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1860,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1866,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1868,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1869,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1870,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1872,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1875,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1876,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1877,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1878,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1880,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1883,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1884,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1885,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1887,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1888,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1889,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1890,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1896,cyanorak.role:R.5,Other > Other
+PMM1897,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1899,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1900,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II
+PMM1904,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1907,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1909,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1911,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1914,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1918,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1919,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1921,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1923,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1925,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1928,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1931,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1934,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1935,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1936,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1937,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1940,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1941,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1943,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1944,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1949,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1951,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1953,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1954,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1957,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1958,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1959,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1961,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1962,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1967,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1971,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1974,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1975,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1976,cyanorak.role:R.4,Other > Hypothetical proteins
+PMM1977,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1978,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1980,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1981,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1982,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1983,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1985,cyanorak.role:R.1,Other > Conserved hypothetical domains
+PMM1987,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1992,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1994,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1995,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1996,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM1998,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2002,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2004,cyanorak.role:R.5,Other > Other
+PMM2005,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2009,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2010,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2011,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2013,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2019,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2046,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM2059,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM50003,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM50022,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM50028,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM50029,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+PMM_50048,cyanorak.role:R.2,Other > Conserved hypothetical proteins
+TX50_RS09730,cyanorak.role:D.1.2,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Light
+TX50_RS09730,cyanorak.role:J,Photosynthesis and respiration

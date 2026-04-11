@@ -1,0 +1,2205 @@
+locus_tag,term_id,term_name
+PMM0001,go:0006260,DNA replication
+PMM0001,go:0006271,DNA strand elongation involved in DNA replication
+PMM0003,go:0006189,^de novo^ IMP biosynthetic process
+PMM0003,go:0006541,glutamine metabolic process
+PMM0003,go:0009152,purine ribonucleotide biosynthetic process
+PMM0004,go:0006189,^de novo^ IMP biosynthetic process
+PMM0004,go:0006541,glutamine metabolic process
+PMM0004,go:0009113,purine nucleobase biosynthetic process
+PMM0004,go:0009116,nucleoside metabolic process
+PMM0005,go:0006265,DNA topological change
+PMM0006,go:0046813,receptor-mediated virion attachment to host cell
+PMM0007,go:0008033,tRNA processing
+PMM0007,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM0007,go:0042455,ribonucleoside biosynthetic process
+PMM0009,go:0006353,DNA-templated transcription termination
+PMM0009,go:0006355,regulation of DNA-templated transcription
+PMM0010,go:0006614,SRP-dependent cotranslational protein targeting to membrane
+PMM0010,go:0009306,protein secretion
+PMM0011,go:0006470,protein dephosphorylation
+PMM0012,go:0006591,ornithine metabolic process
+PMM0012,go:0042450,L-arginine biosynthetic process via ornithine
+PMM0012,go:1901607,alpha-amino acid biosynthetic process
+PMM0013,go:0006397,mRNA processing
+PMM0014,go:0002943,tRNA dihydrouridine synthesis
+PMM0014,go:0008033,tRNA processing
+PMM0015,go:0006979,response to oxidative stress
+PMM0015,go:0030091,protein repair
+PMM0016,go:0006457,protein folding
+PMM0016,go:0050790,regulation of catalytic activity
+PMM0017,go:0006457,protein folding
+PMM0017,go:0009408,response to heat
+PMM0019,go:0006412,translation
+PMM0019,go:0042274,ribosomal small subunit biogenesis
+PMM0021,go:0009252,peptidoglycan biosynthetic process
+PMM0022,go:0007049,cell cycle
+PMM0022,go:0008360,regulation of cell shape
+PMM0022,go:0009252,peptidoglycan biosynthetic process
+PMM0022,go:0051301,cell division
+PMM0023,go:0006006,glucose metabolic process
+PMM0023,go:0008150,biological_process
+PMM0023,go:0015977,carbon fixation
+PMM0024,go:0009228,thiamine biosynthetic process
+PMM0024,go:0009229,thiamine diphosphate biosynthetic process
+PMM0025,go:0000413,protein peptidyl-prolyl isomerization
+PMM0025,go:0006457,protein folding
+PMM0026,go:0006414,translational elongation
+PMM0026,go:0010467,gene expression
+PMM0026,go:0043043,peptide biosynthetic process
+PMM0027,go:0006633,fatty acid biosynthetic process
+PMM0028,go:0008615,pyridoxine biosynthetic process
+PMM0033,go:0010468,regulation of gene expression
+PMM0036,go:0009236,cobalamin biosynthetic process
+PMM0037,go:0006177,GMP biosynthetic process
+PMM0037,go:1901070,guanosine-containing compound biosynthetic process
+PMM0038,go:0006281,DNA repair
+PMM0040,go:0006508,proteolysis
+PMM0040,go:0008360,regulation of cell shape
+PMM0040,go:0009252,peptidoglycan biosynthetic process
+PMM0040,go:0046677,response to antibiotic
+PMM0040,go:0071555,cell wall organization
+PMM0042,go:0006810,transport
+PMM0042,go:0022900,electron transport chain
+PMM0043,go:0006810,transport
+PMM0043,go:0022900,electron transport chain
+PMM0044,go:0006400,tRNA modification
+PMM0044,go:0006419,alanyl-tRNA aminoacylation
+PMM0044,go:0019752,carboxylic acid metabolic process
+PMM0044,go:0043043,peptide biosynthetic process
+PMM0045,go:0006527,L-arginine catabolic process
+PMM0046,go:0006183,GTP biosynthetic process
+PMM0046,go:0006228,UTP biosynthetic process
+PMM0046,go:0006241,CTP biosynthetic process
+PMM0046,go:0006414,translational elongation
+PMM0046,go:0007010,cytoskeleton organization
+PMM0046,go:0007186,G protein-coupled receptor signaling pathway
+PMM0046,go:0009117,nucleotide metabolic process
+PMM0046,go:0009132,nucleoside diphosphate metabolic process
+PMM0046,go:0009617,response to bacterium
+PMM0046,go:0016310,phosphorylation
+PMM0047,go:0009228,thiamine biosynthetic process
+PMM0047,go:0009229,thiamine diphosphate biosynthetic process
+PMM0048,go:0006424,glutamyl-tRNA aminoacylation
+PMM0048,go:0019752,carboxylic acid metabolic process
+PMM0048,go:0070681,glutaminyl-tRNAGln biosynthesis via transamidation
+PMM0049,go:0009152,purine ribonucleotide biosynthetic process
+PMM0049,go:0015937,coenzyme A biosynthetic process
+PMM0049,go:0016310,phosphorylation
+PMM0049,go:0034030,ribonucleoside bisphosphate biosynthetic process
+PMM0049,go:0034033,purine nucleoside bisphosphate biosynthetic process
+PMM0050,go:0006526,L-arginine biosynthetic process
+PMM0050,go:0006592,ornithine biosynthetic process
+PMM0052,go:0008615,pyridoxine biosynthetic process
+PMM0053,go:0030488,tRNA methylation
+PMM0057,go:0007059,chromosome segregation
+PMM0057,go:0007062,sister chromatid cohesion
+PMM0057,go:0030261,chromosome condensation
+PMM0059,go:0009245,lipid A biosynthetic process
+PMM0060,go:0006633,fatty acid biosynthetic process
+PMM0060,go:0008152,metabolic process
+PMM0060,go:2001295,malonyl-CoA biosynthetic process
+PMM0061,go:0051301,cell division
+PMM0062,go:0015979,photosynthesis
+PMM0064,go:0009644,response to high light intensity
+PMM0068,go:0018206,peptidyl-methionine modification
+PMM0068,go:0031365,N-terminal protein amino acid modification
+PMM0069,go:0006508,proteolysis
+PMM0070,go:0006534,cysteine metabolic process
+PMM0070,go:0016226,iron-sulfur cluster assembly
+PMM0071,go:0016226,iron-sulfur cluster assembly
+PMM0072,go:0006810,transport
+PMM0072,go:0016226,iron-sulfur cluster assembly
+PMM0073,go:0016226,iron-sulfur cluster assembly
+PMM0075,go:0006353,DNA-templated transcription termination
+PMM0076,go:0005975,carbohydrate metabolic process
+PMM0077,go:0000731,DNA synthesis involved in DNA repair
+PMM0077,go:0006261,DNA-templated DNA replication
+PMM0077,go:0006310,DNA recombination
+PMM0077,go:0030174,regulation of DNA-templated DNA replication initiation
+PMM0077,go:0033567,"DNA replication, Okazaki fragment processing"
+PMM0077,go:0043085,positive regulation of catalytic activity
+PMM0078,go:0009059,macromolecule biosynthetic process
+PMM0079,go:0034599,cellular response to oxidative stress
+PMM0079,go:0045454,cell redox homeostasis
+PMM0080,go:0015937,coenzyme A biosynthetic process
+PMM0081,go:0019379,"sulfate assimilation, phosphoadenylyl sulfate reduction by phosphoadenylyl-sulfate reductase (thioredoxin)"
+PMM0081,go:0070814,hydrogen sulfide biosynthetic process
+PMM0082,go:0019646,aerobic electron transport chain
+PMM0083,go:0006813,potassium ion transport
+PMM0083,go:0055085,transmembrane transport
+PMM0084,go:0006813,potassium ion transport
+PMM0084,go:0055085,transmembrane transport
+PMM0085,go:0006813,potassium ion transport
+PMM0085,go:0034220,monoatomic ion transmembrane transport
+PMM0089,go:0015886,heme transport
+PMM0090,go:0006508,proteolysis
+PMM0093,go:0009644,response to high light intensity
+PMM0096,go:0006020,inositol metabolic process
+PMM0096,go:0007165,signal transduction
+PMM0097,go:0055085,transmembrane transport
+PMM0100,go:0019363,pyridine nucleotide biosynthetic process
+PMM0100,go:0034628,^de novo^ NAD+ biosynthetic process from L-aspartate
+PMM0101,go:0006457,protein folding
+PMM0101,go:0045454,cell redox homeostasis
+PMM0101,go:0071236,cellular response to antibiotic
+PMM0102,go:0006400,tRNA modification
+PMM0102,go:0018339,peptidyl-L-beta-methylthioaspartic acid biosynthetic process from peptidyl-aspartic acid
+PMM0105,go:0009231,riboflavin biosynthetic process
+PMM0106,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM0107,go:0008652,amino acid biosynthetic process
+PMM0107,go:0009073,aromatic amino acid family biosynthetic process
+PMM0107,go:0009423,chorismate biosynthetic process
+PMM0110,go:0006559,L-phenylalanine catabolic process
+PMM0110,go:0006749,glutathione metabolic process
+PMM0112,go:0006974,DNA damage response
+PMM0112,go:0009409,response to cold
+PMM0112,go:0030490,maturation of SSU-rRNA
+PMM0113,go:0006780,uroporphyrinogen III biosynthetic process
+PMM0113,go:0006782,protoporphyrinogen IX biosynthetic process
+PMM0113,go:0033014,tetrapyrrole biosynthetic process
+PMM0115,go:0016117,carotenoid biosynthetic process
+PMM0116,go:0006790,sulfur compound metabolic process
+PMM0116,go:0016226,iron-sulfur cluster assembly
+PMM0116,go:0050821,protein stabilization
+PMM0120,go:0051301,cell division
+PMM0121,go:0042773,ATP synthesis coupled electron transport
+PMM0122,go:0006457,protein folding
+PMM0123,go:0006535,L-cysteine biosynthetic process from L-serine
+PMM0128,go:0000160,phosphorelay signal transduction system
+PMM0128,go:0006355,regulation of DNA-templated transcription
+PMM0128,go:0051301,cell division
+PMM0128,go:0097167,circadian regulation of translation
+PMM0129,go:0006261,DNA-templated DNA replication
+PMM0130,go:0006227,dUDP biosynthetic process
+PMM0130,go:0006233,dTDP biosynthetic process
+PMM0130,go:0006235,dTTP biosynthetic process
+PMM0130,go:0009202,deoxyribonucleoside triphosphate biosynthetic process
+PMM0130,go:0015949,nucleobase-containing small molecule interconversion
+PMM0130,go:0016310,phosphorylation
+PMM0130,go:0046940,nucleoside monophosphate phosphorylation
+PMM0131,go:0006825,copper ion transport
+PMM0131,go:0030001,metal ion transport
+PMM0131,go:0055070,copper ion homeostasis
+PMM0133,go:0000725,recombinational repair
+PMM0134,go:0000160,phosphorelay signal transduction system
+PMM0134,go:0006355,regulation of DNA-templated transcription
+PMM0135,go:0006633,fatty acid biosynthetic process
+PMM0136,go:0006633,fatty acid biosynthetic process
+PMM0137,go:0006633,fatty acid biosynthetic process
+PMM0138,go:0006654,phosphatidic acid biosynthetic process
+PMM0138,go:0008654,phospholipid biosynthetic process
+PMM0141,go:0008033,tRNA processing
+PMM0143,go:0016117,carotenoid biosynthetic process
+PMM0144,go:0009635,response to herbicide
+PMM0144,go:0016117,carotenoid biosynthetic process
+PMM0145,go:0042773,ATP synthesis coupled electron transport
+PMM0147,go:0006355,regulation of DNA-templated transcription
+PMM0148,go:0016120,carotene biosynthetic process
+PMM0149,go:0015990,electron transport coupled proton transport
+PMM0149,go:0042773,ATP synthesis coupled electron transport
+PMM0150,go:0015977,carbon fixation
+PMM0150,go:0042773,ATP synthesis coupled electron transport
+PMM0152,go:0006011,UDP-alpha-D-glucose metabolic process
+PMM0152,go:0006793,phosphorus metabolic process
+PMM0152,go:0009058,biosynthetic process
+PMM0152,go:0055086,nucleobase-containing small molecule metabolic process
+PMM0153,go:0006555,methionine metabolic process
+PMM0153,go:0035999,tetrahydrofolate interconversion
+PMM0154,go:0000160,phosphorelay signal transduction system
+PMM0154,go:0006351,DNA-templated transcription
+PMM0154,go:0006355,regulation of DNA-templated transcription
+PMM0156,go:0009435,NAD+ biosynthetic process
+PMM0157,go:0008150,biological_process
+PMM0157,go:0008152,metabolic process
+PMM0157,go:0019684,"photosynthesis, light reaction"
+PMM0157,go:0042773,ATP synthesis coupled electron transport
+PMM0158,go:0042773,ATP synthesis coupled electron transport
+PMM0159,go:0042773,ATP synthesis coupled electron transport
+PMM0160,go:0042773,ATP synthesis coupled electron transport
+PMM0160,go:0045333,cellular respiration
+PMM0161,go:0005975,carbohydrate metabolic process
+PMM0161,go:0006099,tricarboxylic acid cycle
+PMM0164,go:0000162,L-tryptophan biosynthetic process
+PMM0164,go:1901607,alpha-amino acid biosynthetic process
+PMM0165,go:0001731,formation of translation preinitiation complex
+PMM0165,go:0002188,translation reinitiation
+PMM0165,go:0006413,translational initiation
+PMM0165,go:0006417,regulation of translation
+PMM0166,go:0010134,sulfate assimilation via adenylyl sulfate reduction
+PMM0166,go:0019379,"sulfate assimilation, phosphoadenylyl sulfate reduction by phosphoadenylyl-sulfate reductase (thioredoxin)"
+PMM0166,go:0070814,hydrogen sulfide biosynthetic process
+PMM0167,go:0006189,^de novo^ IMP biosynthetic process
+PMM0167,go:0009152,purine ribonucleotide biosynthetic process
+PMM0168,go:0015995,chlorophyll biosynthetic process
+PMM0168,go:0032259,methylation
+PMM0169,go:0000160,phosphorelay signal transduction system
+PMM0169,go:0006355,regulation of DNA-templated transcription
+PMM0170,go:0006534,cysteine metabolic process
+PMM0171,go:0070475,rRNA base methylation
+PMM0172,go:0042773,ATP synthesis coupled electron transport
+PMM0173,go:0009110,vitamin biosynthetic process
+PMM0173,go:0009234,menaquinone biosynthetic process
+PMM0173,go:0042372,phylloquinone biosynthetic process
+PMM0173,go:1901663,quinone biosynthetic process
+PMM0174,go:0042372,phylloquinone biosynthetic process
+PMM0175,go:0042372,phylloquinone biosynthetic process
+PMM0176,go:0006744,ubiquinone biosynthetic process
+PMM0176,go:0009234,menaquinone biosynthetic process
+PMM0176,go:0042372,phylloquinone biosynthetic process
+PMM0177,go:0009058,biosynthetic process
+PMM0177,go:0009234,menaquinone biosynthetic process
+PMM0178,go:0006750,glutathione biosynthetic process
+PMM0179,go:0034599,cellular response to oxidative stress
+PMM0179,go:0045454,cell redox homeostasis
+PMM0180,go:0006415,translational termination
+PMM0182,go:0006508,proteolysis
+PMM0182,go:0031125,rRNA 3^-end processing
+PMM0183,go:0008654,phospholipid biosynthetic process
+PMM0184,go:0000162,L-tryptophan biosynthetic process
+PMM0184,go:0008152,metabolic process
+PMM0186,go:0009058,biosynthetic process
+PMM0187,go:0006420,arginyl-tRNA aminoacylation
+PMM0187,go:0010467,gene expression
+PMM0187,go:0019752,carboxylic acid metabolic process
+PMM0187,go:0043043,peptide biosynthetic process
+PMM0188,go:0009435,NAD+ biosynthetic process
+PMM0188,go:0019363,pyridine nucleotide biosynthetic process
+PMM0188,go:0034213,quinolinate catabolic process
+PMM0189,go:0006400,tRNA modification
+PMM0191,go:0009605,response to external stimulus
+PMM0191,go:0015949,nucleobase-containing small molecule interconversion
+PMM0191,go:0015970,guanosine tetraphosphate biosynthetic process
+PMM0191,go:0016310,phosphorylation
+PMM0191,go:0042594,response to starvation
+PMM0191,go:0046128,purine ribonucleoside metabolic process
+PMM0192,go:0015675,nickel cation transport
+PMM0192,go:0055085,transmembrane transport
+PMM0193,go:0000455,enzyme-directed rRNA pseudouridine synthesis
+PMM0194,go:0006412,translation
+PMM0194,go:0042254,ribosome biogenesis
+PMM0195,go:0006096,glycolytic process
+PMM0195,go:0019253,reductive pentose-phosphate cycle
+PMM0197,go:0005975,carbohydrate metabolic process
+PMM0197,go:0008360,regulation of cell shape
+PMM0197,go:0009252,peptidoglycan biosynthetic process
+PMM0197,go:0051301,cell division
+PMM0197,go:0071555,cell wall organization
+PMM0198,go:0009058,biosynthetic process
+PMM0199,go:0006207,^de novo^ pyrimidine nucleobase biosynthetic process
+PMM0199,go:0044205,^de novo^ UMP biosynthetic process
+PMM0200,go:0043137,"DNA replication, removal of RNA primer"
+PMM0201,go:0006412,translation
+PMM0202,go:0006412,translation
+PMM0202,go:0010467,gene expression
+PMM0202,go:0042254,ribosome biogenesis
+PMM0202,go:0043043,peptide biosynthetic process
+PMM0203,go:0000470,maturation of LSU-rRNA
+PMM0203,go:0006412,translation
+PMM0203,go:0043043,peptide biosynthetic process
+PMM0204,go:0000027,ribosomal large subunit assembly
+PMM0204,go:0006412,translation
+PMM0204,go:0010467,gene expression
+PMM0204,go:0043043,peptide biosynthetic process
+PMM0204,go:0070925,organelle assembly
+PMM0205,go:0006353,DNA-templated transcription termination
+PMM0205,go:0006354,DNA-templated transcription elongation
+PMM0205,go:0031564,transcription antitermination
+PMM0205,go:0032784,regulation of DNA-templated transcription elongation
+PMM0206,go:0006605,protein targeting
+PMM0206,go:0009306,protein secretion
+PMM0206,go:0043952,protein transport by the Sec complex
+PMM0206,go:0065002,intracellular protein transmembrane transport
+PMM0207,go:0006508,proteolysis
+PMM0207,go:0034605,cellular response to heat
+PMM0208,go:0006096,glycolytic process
+PMM0209,go:0006468,protein phosphorylation
+PMM0212,go:0006808,regulation of nitrogen utilization
+PMM0214,go:0055085,transmembrane transport
+PMM0215,go:0006782,protoporphyrinogen IX biosynthetic process
+PMM0215,go:0015995,chlorophyll biosynthetic process
+PMM0215,go:0033014,tetrapyrrole biosynthetic process
+PMM0217,go:0006298,mismatch repair
+PMM0217,go:0045910,negative regulation of DNA recombination
+PMM0217,go:0072344,rescue of stalled cytosolic ribosome
+PMM0218,go:0042254,ribosome biogenesis
+PMM0220,go:0015977,carbon fixation
+PMM0222,go:0008152,metabolic process
+PMM0224,go:0008652,amino acid biosynthetic process
+PMM0224,go:0009073,aromatic amino acid family biosynthetic process
+PMM0224,go:0009423,chorismate biosynthetic process
+PMM0225,go:0008152,metabolic process
+PMM0226,go:0006508,proteolysis
+PMM0226,go:0010205,photoinhibition
+PMM0226,go:0010206,photosystem II repair
+PMM0226,go:0010304,PSII associated light-harvesting complex II catabolic process
+PMM0226,go:0051301,cell division
+PMM0227,go:0000103,sulfate assimilation
+PMM0228,go:0010207,photosystem II assembly
+PMM0228,go:0015979,photosynthesis
+PMM0228,go:0042549,photosystem II stabilization
+PMM0229,go:0015937,coenzyme A biosynthetic process
+PMM0229,go:0015941,pantothenate catabolic process
+PMM0233,go:0006207,^de novo^ pyrimidine nucleobase biosynthetic process
+PMM0233,go:0006520,amino acid metabolic process
+PMM0233,go:0009220,pyrimidine ribonucleotide biosynthetic process
+PMM0234,go:0006284,base-excision repair
+PMM0235,go:0006424,glutamyl-tRNA aminoacylation
+PMM0235,go:0006450,regulation of translational fidelity
+PMM0236,go:0006629,lipid metabolic process
+PMM0238,go:0006428,isoleucyl-tRNA aminoacylation
+PMM0240,go:0106004,tRNA (guanine-N7)-methylation
+PMM0241,go:0005975,carbohydrate metabolic process
+PMM0241,go:0009103,lipopolysaccharide biosynthetic process
+PMM0241,go:0009252,peptidoglycan biosynthetic process
+PMM0242,go:0045454,cell redox homeostasis
+PMM0243,go:0006231,dTMP biosynthetic process
+PMM0244,go:0006229,dUTP biosynthetic process
+PMM0244,go:0009394,2^-deoxyribonucleotide metabolic process
+PMM0244,go:0015949,nucleobase-containing small molecule interconversion
+PMM0245,go:0006779,porphyrin-containing compound biosynthetic process
+PMM0245,go:0019250,aerobic cobalamin biosynthetic process
+PMM0246,go:0006355,regulation of DNA-templated transcription
+PMM0246,go:0006808,regulation of nitrogen utilization
+PMM0248,go:0006139,nucleobase-containing compound metabolic process
+PMM0250,go:0006412,translation
+PMM0251,go:0015979,photosynthesis
+PMM0252,go:0015979,photosynthesis
+PMM0253,go:0010206,photosystem II repair
+PMM0253,go:0010207,photosystem II assembly
+PMM0253,go:0015979,photosynthesis
+PMM0255,go:0008652,amino acid biosynthetic process
+PMM0255,go:0009098,L-leucine biosynthetic process
+PMM0256,go:0008652,amino acid biosynthetic process
+PMM0256,go:0009098,L-leucine biosynthetic process
+PMM0257,go:0006777,Mo-molybdopterin cofactor biosynthetic process
+PMM0258,go:0006544,glycine metabolic process
+PMM0258,go:0019264,glycine biosynthetic process from L-serine
+PMM0261,go:0008360,regulation of cell shape
+PMM0261,go:0009252,peptidoglycan biosynthetic process
+PMM0261,go:0034204,lipid translocation
+PMM0262,go:0000023,maltose metabolic process
+PMM0263,go:0072488,ammonium transmembrane transport
+PMM0263,go:0097272,ammonium homeostasis
+PMM0264,go:0015968,stringent response
+PMM0264,go:0019288,"isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway"
+PMM0264,go:0046677,response to antibiotic
+PMM0264,go:0050992,dimethylallyl diphosphate biosynthetic process
+PMM0266,go:0006164,purine nucleotide biosynthetic process
+PMM0266,go:0006189,^de novo^ IMP biosynthetic process
+PMM0266,go:0015949,nucleobase-containing small molecule interconversion
+PMM0269,go:0007165,signal transduction
+PMM0270,go:0009236,cobalamin biosynthetic process
+PMM0271,go:0006400,tRNA modification
+PMM0271,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM0271,go:0042455,ribonucleoside biosynthetic process
+PMM0272,go:0015979,photosynthesis
+PMM0273,go:0008152,metabolic process
+PMM0275,go:0009116,nucleoside metabolic process
+PMM0275,go:0009220,pyrimidine ribonucleotide biosynthetic process
+PMM0275,go:0019856,pyrimidine nucleobase biosynthetic process
+PMM0275,go:0044205,^de novo^ UMP biosynthetic process
+PMM0276,go:0016226,iron-sulfur cluster assembly
+PMM0278,go:0005975,carbohydrate metabolic process
+PMM0278,go:0006166,purine ribonucleoside salvage
+PMM0279,go:0006281,DNA repair
+PMM0279,go:0009143,nucleoside triphosphate catabolic process
+PMM0279,go:0034404,nucleobase-containing small molecule biosynthetic process
+PMM0280,go:0006720,isoprenoid metabolic process
+PMM0281,go:0000105,L-histidine biosynthetic process
+PMM0281,go:1901607,alpha-amino acid biosynthetic process
+PMM0282,go:0030497,fatty acid elongation
+PMM0282,go:0051289,protein homotetramerization
+PMM0283,go:0045454,cell redox homeostasis
+PMM0284,go:0000271,polysaccharide biosynthetic process
+PMM0285,go:0000719,photoreactive repair
+PMM0285,go:0006139,nucleobase-containing compound metabolic process
+PMM0285,go:0006281,DNA repair
+PMM0285,go:0006950,response to stress
+PMM0285,go:0009416,response to light stimulus
+PMM0286,go:0009132,nucleoside diphosphate metabolic process
+PMM0286,go:0019693,ribose phosphate metabolic process
+PMM0287,go:0046654,tetrahydrofolate biosynthetic process
+PMM0287,go:0046656,folic acid biosynthetic process
+PMM0288,go:0015995,chlorophyll biosynthetic process
+PMM0289,go:0015914,phospholipid transport
+PMM0292,go:0042773,ATP synthesis coupled electron transport
+PMM0292,go:0045333,cellular respiration
+PMM0293,go:0042773,ATP synthesis coupled electron transport
+PMM0294,go:0008150,biological_process
+PMM0294,go:0008152,metabolic process
+PMM0294,go:0042773,ATP synthesis coupled electron transport
+PMM0295,go:0043448,alkane catabolic process
+PMM0297,go:0009767,photosynthetic electron transport chain
+PMM0298,go:0009767,photosynthetic electron transport chain
+PMM0299,go:0015979,photosynthesis
+PMM0300,go:0015979,photosynthesis
+PMM0301,go:0006168,adenine salvage
+PMM0301,go:0019509,L-methionine salvage from methylthioadenosine
+PMM0302,go:0001887,selenium compound metabolic process
+PMM0303,go:0008033,tRNA processing
+PMM0304,go:0000725,recombinational repair
+PMM0304,go:0009314,response to radiation
+PMM0305,go:0016038,absorption of visible light
+PMM0306,go:0017009,protein-phycocyanobilin linkage
+PMM0310,go:0005997,xylulose metabolic process
+PMM0310,go:0046835,carbohydrate phosphorylation
+PMM0311,go:0006556,S-adenosylmethionine biosynthetic process
+PMM0312,go:0006412,translation
+PMM0313,go:0006355,regulation of DNA-templated transcription
+PMM0314,go:0015979,photosynthesis
+PMM0315,go:0009769,"photosynthesis, light harvesting in photosystem II"
+PMM0315,go:0009772,photosynthetic electron transport in photosystem II
+PMM0315,go:0019684,"photosynthesis, light reaction"
+PMM0316,go:0006810,transport
+PMM0316,go:0140647,P450-containing electron transport chain
+PMM0317,go:0015979,photosynthesis
+PMM0318,go:0006412,translation
+PMM0318,go:0008150,biological_process
+PMM0318,go:0018364,peptidyl-glutamine methylation
+PMM0318,go:0032259,methylation
+PMM0319,go:0006364,rRNA processing
+PMM0319,go:0006450,regulation of translational fidelity
+PMM0319,go:0008033,tRNA processing
+PMM0320,go:0000917,division septum assembly
+PMM0320,go:0032955,regulation of division septum assembly
+PMM0320,go:0043093,FtsZ-dependent cytokinesis
+PMM0320,go:0051301,cell division
+PMM0321,go:0000918,division septum site selection
+PMM0321,go:0043093,FtsZ-dependent cytokinesis
+PMM0321,go:0051179,localization
+PMM0321,go:0051782,negative regulation of cell division
+PMM0321,go:0061640,cytoskeleton-dependent cytokinesis
+PMM0322,go:0000902,cell morphogenesis
+PMM0322,go:0000917,division septum assembly
+PMM0322,go:0043093,FtsZ-dependent cytokinesis
+PMM0323,go:0006203,dGTP catabolic process
+PMM0324,go:0006508,proteolysis
+PMM0324,go:0007165,signal transduction
+PMM0325,go:0009767,photosynthetic electron transport chain
+PMM0326,go:0009767,photosynthetic electron transport chain
+PMM0327,go:0005975,carbohydrate metabolic process
+PMM0328,go:0006281,DNA repair
+PMM0329,go:0015979,photosynthesis
+PMM0331,go:0006081,aldehyde metabolic process
+PMM0331,go:0006950,response to stress
+PMM0336,go:0010230,alternative respiration
+PMM0339,go:0016117,carotenoid biosynthetic process
+PMM0343,go:0015628,protein secretion by the type II secretion system
+PMM0343,go:0043953,protein transport by the Tat complex
+PMM0343,go:0065002,intracellular protein transmembrane transport
+PMM0345,go:0034599,cellular response to oxidative stress
+PMM0345,go:0045454,cell redox homeostasis
+PMM0349,go:0006415,translational termination
+PMM0349,go:0072344,rescue of stalled cytosolic ribosome
+PMM0352,go:0071586,CAAX-box protein processing
+PMM0353,go:0005975,carbohydrate metabolic process
+PMM0356,go:0006508,proteolysis
+PMM0356,go:0030163,protein catabolic process
+PMM0358,go:0009228,thiamine biosynthetic process
+PMM0363,go:0006355,regulation of DNA-templated transcription
+PMM0367,go:0017000,antibiotic biosynthetic process
+PMM0370,go:0006811,monoatomic ion transport
+PMM0370,go:0015704,cyanate transport
+PMM0371,go:0006811,monoatomic ion transport
+PMM0371,go:0015704,cyanate transport
+PMM0371,go:0015706,nitrate transmembrane transport
+PMM0371,go:0042918,alkanesulfonate transmembrane transport
+PMM0372,go:0006811,monoatomic ion transport
+PMM0372,go:0015704,cyanate transport
+PMM0373,go:0009440,cyanate catabolic process
+PMM0374,go:0015628,protein secretion by the type II secretion system
+PMM0374,go:0043953,protein transport by the Tat complex
+PMM0374,go:0065002,intracellular protein transmembrane transport
+PMM0382,go:0032259,methylation
+PMM0383,go:0006974,DNA damage response
+PMM0386,go:0032259,methylation
+PMM0387,go:0009423,chorismate biosynthetic process
+PMM0388,go:0006400,tRNA modification
+PMM0389,go:0009236,cobalamin biosynthetic process
+PMM0389,go:0032259,methylation
+PMM0391,go:0042254,ribosome biogenesis
+PMM0392,go:0055085,transmembrane transport
+PMM0394,go:0051301,cell division
+PMM0395,go:0051301,cell division
+PMM0396,go:0008652,amino acid biosynthetic process
+PMM0396,go:0055129,L-proline biosynthetic process
+PMM0398,go:0006302,double-strand break repair
+PMM0398,go:0006310,DNA recombination
+PMM0398,go:0006914,autophagy
+PMM0399,go:0009264,deoxyribonucleotide catabolic process
+PMM0400,go:0044238,primary metabolic process
+PMM0400,go:0045900,negative regulation of translational elongation
+PMM0401,go:0009249,protein lipoylation
+PMM0402,go:0008152,metabolic process
+PMM0405,go:0006086,pyruvate decarboxylation to acetyl-CoA
+PMM0406,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM0406,go:0042455,ribonucleoside biosynthetic process
+PMM0407,go:0006535,L-cysteine biosynthetic process from L-serine
+PMM0407,go:0008652,amino acid biosynthetic process
+PMM0408,go:0008652,amino acid biosynthetic process
+PMM0408,go:0019346,transsulfuration
+PMM0409,go:0008652,amino acid biosynthetic process
+PMM0409,go:0019343,L-cysteine biosynthetic process via L-cystathionine
+PMM0409,go:0019346,transsulfuration
+PMM0409,go:0071266,^de novo^ L-methionine biosynthetic process
+PMM0410,go:0006412,translation
+PMM0410,go:0045903,positive regulation of translational fidelity
+PMM0411,go:0015031,protein transport
+PMM0411,go:0051205,protein insertion into membrane
+PMM0413,go:0008360,regulation of cell shape
+PMM0413,go:0009058,biosynthetic process
+PMM0413,go:0051301,cell division
+PMM0414,go:0008152,metabolic process
+PMM0415,go:0008152,metabolic process
+PMM0418,go:0016226,iron-sulfur cluster assembly
+PMM0419,go:0006099,tricarboxylic acid cycle
+PMM0421,go:0006810,transport
+PMM0422,go:0002938,tRNA guanine ribose methylation
+PMM0422,go:0006396,RNA processing
+PMM0425,go:0006281,DNA repair
+PMM0426,go:0006355,regulation of DNA-templated transcription
+PMM0426,go:0070475,rRNA base methylation
+PMM0427,go:0006508,proteolysis
+PMM0427,go:0008360,regulation of cell shape
+PMM0427,go:0009252,peptidoglycan biosynthetic process
+PMM0427,go:0051301,cell division
+PMM0427,go:0071555,cell wall organization
+PMM0428,go:0015995,chlorophyll biosynthetic process
+PMM0429,go:0009767,photosynthetic electron transport chain
+PMM0430,go:0000105,L-histidine biosynthetic process
+PMM0430,go:0008652,amino acid biosynthetic process
+PMM0431,go:0006744,ubiquinone biosynthetic process
+PMM0431,go:0009060,aerobic respiration
+PMM0431,go:0009234,menaquinone biosynthetic process
+PMM0431,go:0032259,methylation
+PMM0431,go:0042372,phylloquinone biosynthetic process
+PMM0433,go:0036211,protein modification process
+PMM0434,go:0000917,division septum assembly
+PMM0434,go:0051301,cell division
+PMM0435,go:0042773,ATP synthesis coupled electron transport
+PMM0436,go:0006260,DNA replication
+PMM0436,go:0006265,DNA topological change
+PMM0442,go:0009231,riboflavin biosynthetic process
+PMM0444,go:0019646,aerobic electron transport chain
+PMM0445,go:0006119,oxidative phosphorylation
+PMM0445,go:0015990,electron transport coupled proton transport
+PMM0445,go:0022904,respiratory electron transport chain
+PMM0446,go:0009167,purine ribonucleoside monophosphate metabolic process
+PMM0446,go:0016310,phosphorylation
+PMM0446,go:0042773,ATP synthesis coupled electron transport
+PMM0446,go:0046034,ATP metabolic process
+PMM0447,go:0006784,heme A biosynthetic process
+PMM0447,go:0017004,cytochrome complex assembly
+PMM0448,go:0045333,cellular respiration
+PMM0448,go:0048034,heme O biosynthetic process
+PMM0449,go:0043215,daunorubicin transport
+PMM0450,go:0006810,transport
+PMM0452,go:0006458,^de novo^ protein folding
+PMM0452,go:0007049,cell cycle
+PMM0452,go:0009408,response to heat
+PMM0452,go:0042026,protein refolding
+PMM0452,go:0051301,cell division
+PMM0453,go:0030497,fatty acid elongation
+PMM0454,go:0016114,terpenoid biosynthetic process
+PMM0454,go:0019288,"isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway"
+PMM0455,go:0006508,proteolysis
+PMM0456,go:0006744,ubiquinone biosynthetic process
+PMM0457,go:0006793,phosphorus metabolic process
+PMM0457,go:0006798,polyphosphate catabolic process
+PMM0459,go:0006779,porphyrin-containing compound biosynthetic process
+PMM0459,go:0009236,cobalamin biosynthetic process
+PMM0459,go:0032259,methylation
+PMM0460,go:0009249,protein lipoylation
+PMM0460,go:0042158,lipoprotein biosynthetic process
+PMM0461,go:0009767,photosynthetic electron transport chain
+PMM0462,go:0015979,photosynthesis
+PMM0464,go:0015628,protein secretion by the type II secretion system
+PMM0464,go:0015833,peptide transport
+PMM0464,go:0043953,protein transport by the Tat complex
+PMM0464,go:0065002,intracellular protein transmembrane transport
+PMM0464,go:0071705,nitrogen compound transport
+PMM0466,go:0072344,rescue of stalled cytosolic ribosome
+PMM0467,go:0015949,nucleobase-containing small molecule interconversion
+PMM0467,go:0016310,phosphorylation
+PMM0467,go:0046037,GMP metabolic process
+PMM0467,go:0046128,purine ribonucleoside metabolic process
+PMM0467,go:0046710,GDP metabolic process
+PMM0467,go:0046940,nucleoside monophosphate phosphorylation
+PMM0468,go:0019684,"photosynthesis, light reaction"
+PMM0469,go:0015979,photosynthesis
+PMM0470,go:0002949,tRNA threonylcarbamoyladenosine modification
+PMM0470,go:0070525,tRNA threonylcarbamoyladenosine metabolic process
+PMM0472,go:0006812,monoatomic cation transport
+PMM0472,go:0055085,transmembrane transport
+PMM0472,go:1902600,proton transmembrane transport
+PMM0473,go:0006424,glutamyl-tRNA aminoacylation
+PMM0475,go:0006412,translation
+PMM0477,go:0006508,proteolysis
+PMM0478,go:0030497,fatty acid elongation
+PMM0480,go:0009294,DNA-mediated transformation
+PMM0481,go:0006974,DNA damage response
+PMM0483,go:0006779,porphyrin-containing compound biosynthetic process
+PMM0484,go:0006281,DNA repair
+PMM0489,go:0055085,transmembrane transport
+PMM0491,go:0006729,tetrahydrobiopterin biosynthetic process
+PMM0491,go:0051289,protein homotetramerization
+PMM0491,go:0051291,protein heterooligomerization
+PMM0493,go:0006508,proteolysis
+PMM0494,go:0006796,phosphate-containing compound metabolic process
+PMM0495,go:0006783,heme biosynthetic process
+PMM0495,go:0018160,peptidyl-pyrromethane cofactor linkage
+PMM0496,go:0006352,DNA-templated transcription initiation
+PMM0496,go:0006355,regulation of DNA-templated transcription
+PMM0497,go:0006269,"DNA replication, synthesis of primer"
+PMM0497,go:0006270,DNA replication initiation
+PMM0497,go:0006302,double-strand break repair
+PMM0497,go:0006310,DNA recombination
+PMM0497,go:0009059,macromolecule biosynthetic process
+PMM0497,go:0032392,DNA geometric change
+PMM0499,go:0006526,L-arginine biosynthetic process
+PMM0499,go:0006592,ornithine biosynthetic process
+PMM0499,go:0016310,phosphorylation
+PMM0502,go:0006260,DNA replication
+PMM0503,go:0009236,cobalamin biosynthetic process
+PMM0504,go:0046688,response to copper ion
+PMM0504,go:0051260,protein homooligomerization
+PMM0506,go:0044208,^de novo^ AMP biosynthetic process
+PMM0506,go:0046040,IMP metabolic process
+PMM0507,go:0010206,photosystem II repair
+PMM0507,go:0010270,photosystem II oxygen evolving complex assembly
+PMM0508,go:0006433,prolyl-tRNA aminoacylation
+PMM0508,go:0006450,regulation of translational fidelity
+PMM0511,go:0006796,phosphate-containing compound metabolic process
+PMM0512,go:0006974,DNA damage response
+PMM0512,go:0046685,response to arsenic-containing substance
+PMM0513,go:0009306,protein secretion
+PMM0514,go:0006145,purine nucleobase catabolic process
+PMM0514,go:0006221,pyrimidine nucleotide biosynthetic process
+PMM0516,go:0006508,proteolysis
+PMM0516,go:0071586,CAAX-box protein processing
+PMM0518,go:0000917,division septum assembly
+PMM0518,go:0009252,peptidoglycan biosynthetic process
+PMM0518,go:0051301,cell division
+PMM0518,go:0071555,cell wall organization
+PMM0519,go:0006098,pentose-phosphate shunt
+PMM0520,go:0030494,bacteriochlorophyll biosynthetic process
+PMM0521,go:0006412,translation
+PMM0522,go:0006221,pyrimidine nucleotide biosynthetic process
+PMM0522,go:0006225,UDP biosynthetic process
+PMM0522,go:0008152,metabolic process
+PMM0522,go:0015949,nucleobase-containing small molecule interconversion
+PMM0522,go:0016310,phosphorylation
+PMM0522,go:0044210,^de novo^ CTP biosynthetic process
+PMM0522,go:0046940,nucleoside monophosphate phosphorylation
+PMM0523,go:0009236,cobalamin biosynthetic process
+PMM0524,go:0006310,DNA recombination
+PMM0524,go:0015074,DNA integration
+PMM0525,go:0006783,heme biosynthetic process
+PMM0526,go:0009097,isoleucine biosynthetic process
+PMM0526,go:0009099,L-valine biosynthetic process
+PMM0530,go:0006412,translation
+PMM0531,go:0009231,riboflavin biosynthetic process
+PMM0532,go:0043447,alkane biosynthetic process
+PMM0533,go:0006633,fatty acid biosynthetic process
+PMM0533,go:0008152,metabolic process
+PMM0533,go:0015677,copper ion import
+PMM0533,go:0043447,alkane biosynthetic process
+PMM0533,go:0098706,iron ion import across cell outer membrane
+PMM0533,go:0098711,iron ion import across plasma membrane
+PMM0534,go:0006633,fatty acid biosynthetic process
+PMM0535,go:0008152,metabolic process
+PMM0536,go:0006729,tetrahydrobiopterin biosynthetic process
+PMM0536,go:0006730,one-carbon metabolic process
+PMM0536,go:0046654,tetrahydrofolate biosynthetic process
+PMM0537,go:0000162,L-tryptophan biosynthetic process
+PMM0538,go:0006183,GTP biosynthetic process
+PMM0538,go:0006508,proteolysis
+PMM0538,go:1901070,guanosine-containing compound biosynthetic process
+PMM0540,go:0019684,"photosynthesis, light reaction"
+PMM0542,go:0015979,photosynthesis
+PMM0542,go:0015995,chlorophyll biosynthetic process
+PMM0543,go:0015995,chlorophyll biosynthetic process
+PMM0543,go:0019685,"photosynthesis, dark reaction"
+PMM0544,go:0015995,chlorophyll biosynthetic process
+PMM0544,go:0019685,"photosynthesis, dark reaction"
+PMM0545,go:0015979,photosynthesis
+PMM0545,go:0015995,chlorophyll biosynthetic process
+PMM0547,go:0015977,carbon fixation
+PMM0548,go:0009146,purine nucleoside triphosphate catabolic process
+PMM0549,go:0015977,carbon fixation
+PMM0550,go:0015977,carbon fixation
+PMM0551,go:0015977,carbon fixation
+PMM0552,go:0015977,carbon fixation
+PMM0553,go:0015977,carbon fixation
+PMM0554,go:0015977,carbon fixation
+PMM0555,go:0015977,carbon fixation
+PMM0556,go:0006729,tetrahydrobiopterin biosynthetic process
+PMM0556,go:0015977,carbon fixation
+PMM0558,go:0006402,mRNA catabolic process
+PMM0558,go:0008152,metabolic process
+PMM0559,go:0006750,glutathione biosynthetic process
+PMM0560,go:0000105,L-histidine biosynthetic process
+PMM0560,go:1901607,alpha-amino acid biosynthetic process
+PMM0563,go:0009058,biosynthetic process
+PMM0564,go:0008150,biological_process
+PMM0565,go:0000076,DNA replication checkpoint signaling
+PMM0565,go:0006270,DNA replication initiation
+PMM0565,go:0006351,DNA-templated transcription
+PMM0565,go:0006355,regulation of DNA-templated transcription
+PMM0565,go:0008156,negative regulation of DNA replication
+PMM0565,go:0009059,macromolecule biosynthetic process
+PMM0567,go:0006749,glutathione metabolic process
+PMM0567,go:0034599,cellular response to oxidative stress
+PMM0567,go:0045454,cell redox homeostasis
+PMM0568,go:0006811,monoatomic ion transport
+PMM0568,go:0006874,intracellular calcium ion homeostasis
+PMM0569,go:0006207,^de novo^ pyrimidine nucleobase biosynthetic process
+PMM0569,go:0009220,pyrimidine ribonucleotide biosynthetic process
+PMM0569,go:0044205,^de novo^ UMP biosynthetic process
+PMM0570,go:0042773,ATP synthesis coupled electron transport
+PMM0572,go:0000162,L-tryptophan biosynthetic process
+PMM0577,go:0006352,DNA-templated transcription initiation
+PMM0578,go:0000105,L-histidine biosynthetic process
+PMM0579,go:0006729,tetrahydrobiopterin biosynthetic process
+PMM0579,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM0580,go:0009408,response to heat
+PMM0580,go:0016485,protein processing
+PMM0580,go:0019538,protein metabolic process
+PMM0581,go:0009767,photosynthetic electron transport chain
+PMM0581,go:0015979,photosynthesis
+PMM0583,go:0006783,heme biosynthetic process
+PMM0584,go:0005975,carbohydrate metabolic process
+PMM0584,go:0005978,glycogen biosynthetic process
+PMM0589,go:0009306,protein secretion
+PMM0590,go:0008150,biological_process
+PMM0590,go:0008152,metabolic process
+PMM0591,go:0006760,folic acid-containing compound metabolic process
+PMM0591,go:0046654,tetrahydrofolate biosynthetic process
+PMM0591,go:0046656,folic acid biosynthetic process
+PMM0592,go:0016042,lipid catabolic process
+PMM0593,go:0006508,proteolysis
+PMM0593,go:0006518,peptide metabolic process
+PMM0594,go:0042773,ATP synthesis coupled electron transport
+PMM0595,go:0000097,sulfur amino acid biosynthetic process
+PMM0595,go:0006555,methionine metabolic process
+PMM0595,go:0009088,L-threonine biosynthetic process
+PMM0595,go:0009092,L-homoserine metabolic process
+PMM0595,go:0016310,phosphorylation
+PMM0595,go:1901607,alpha-amino acid biosynthetic process
+PMM0596,go:0006096,glycolytic process
+PMM0596,go:0006754,ATP biosynthetic process
+PMM0596,go:0009166,nucleotide catabolic process
+PMM0596,go:0009168,purine ribonucleoside monophosphate biosynthetic process
+PMM0596,go:0019359,nicotinamide nucleotide biosynthetic process
+PMM0596,go:0034404,nucleobase-containing small molecule biosynthetic process
+PMM0596,go:0042866,pyruvate biosynthetic process
+PMM0596,go:0046031,ADP metabolic process
+PMM0596,go:0046835,carbohydrate phosphorylation
+PMM0596,go:0051156,glucose 6-phosphate metabolic process
+PMM0597,go:0006435,threonyl-tRNA aminoacylation
+PMM0598,go:0006436,tryptophanyl-tRNA aminoacylation
+PMM0601,go:0007155,cell adhesion
+PMM0601,go:0030001,metal ion transport
+PMM0603,go:0010043,response to zinc ion
+PMM0603,go:0055085,transmembrane transport
+PMM0603,go:0071281,cellular response to iron ion
+PMM0606,go:0006508,proteolysis
+PMM0606,go:0009306,protein secretion
+PMM0607,go:0009234,menaquinone biosynthetic process
+PMM0607,go:0042372,phylloquinone biosynthetic process
+PMM0608,go:0009234,menaquinone biosynthetic process
+PMM0608,go:0042372,phylloquinone biosynthetic process
+PMM0609,go:0005978,glycogen biosynthetic process
+PMM0610,go:0008360,regulation of cell shape
+PMM0610,go:0009252,peptidoglycan biosynthetic process
+PMM0610,go:0051301,cell division
+PMM0610,go:0071555,cell wall organization
+PMM0611,go:0000902,cell morphogenesis
+PMM0611,go:0009103,lipopolysaccharide biosynthetic process
+PMM0611,go:0009252,peptidoglycan biosynthetic process
+PMM0613,go:0009073,aromatic amino acid family biosynthetic process
+PMM0613,go:0009423,chorismate biosynthetic process
+PMM0616,go:0009253,peptidoglycan catabolic process
+PMM0616,go:0043093,FtsZ-dependent cytokinesis
+PMM0616,go:0051301,cell division
+PMM0616,go:0071555,cell wall organization
+PMM0617,go:0008360,regulation of cell shape
+PMM0617,go:0009252,peptidoglycan biosynthetic process
+PMM0617,go:0071555,cell wall organization
+PMM0618,go:0008299,isoprenoid biosynthetic process
+PMM0618,go:0010236,plastoquinone biosynthetic process
+PMM0618,go:0015979,photosynthesis
+PMM0619,go:0019427,acetyl-CoA biosynthetic process from acetate
+PMM0621,go:0045004,DNA replication proofreading
+PMM0623,go:0006427,histidyl-tRNA aminoacylation
+PMM0627,go:0009769,"photosynthesis, light harvesting in photosystem II"
+PMM0628,go:0015813,L-glutamate transmembrane transport
+PMM0632,go:0008152,metabolic process
+PMM0633,go:0016117,carotenoid biosynthetic process
+PMM0634,go:0015995,chlorophyll biosynthetic process
+PMM0635,go:0055085,transmembrane transport
+PMM0637,go:0045892,negative regulation of DNA-templated transcription
+PMM0637,go:1900376,regulation of secondary metabolite biosynthetic process
+PMM0639,go:0006970,response to osmotic stress
+PMM0642,go:0006535,L-cysteine biosynthetic process from L-serine
+PMM0642,go:0019346,transsulfuration
+PMM0642,go:0019413,acetate biosynthetic process
+PMM0642,go:0071269,L-homocysteine biosynthetic process
+PMM0643,go:0019281,L-methionine biosynthetic process from homoserine via O-succinyl-L-homoserine and cystathionine
+PMM0653,go:0005975,carbohydrate metabolic process
+PMM0653,go:0051596,methylglyoxal catabolic process
+PMM0658,go:0000455,enzyme-directed rRNA pseudouridine synthesis
+PMM0661,go:0006260,DNA replication
+PMM0662,go:0032259,methylation
+PMM0663,go:0006415,translational termination
+PMM0663,go:0006449,regulation of translational termination
+PMM0665,go:0006457,protein folding
+PMM0668,go:0070475,rRNA base methylation
+PMM0670,go:0006508,proteolysis
+PMM0670,go:0006629,lipid metabolic process
+PMM0671,go:0015716,organic phosphonate transport
+PMM0671,go:0055085,transmembrane transport
+PMM0672,go:0015716,organic phosphonate transport
+PMM0672,go:0055085,transmembrane transport
+PMM0673,go:0055085,transmembrane transport
+PMM0674,go:0006520,amino acid metabolic process
+PMM0674,go:0009058,biosynthetic process
+PMM0675,go:0006284,base-excision repair
+PMM0675,go:0008152,metabolic process
+PMM0676,go:0006090,pyruvate metabolic process
+PMM0676,go:0016114,terpenoid biosynthetic process
+PMM0676,go:0019288,"isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway"
+PMM0676,go:0022900,electron transport chain
+PMM0677,go:0006508,proteolysis
+PMM0678,go:0019805,quinolinate biosynthetic process
+PMM0678,go:0034628,^de novo^ NAD+ biosynthetic process from L-aspartate
+PMM0681,go:0032259,methylation
+PMM0682,go:0009073,aromatic amino acid family biosynthetic process
+PMM0682,go:0009423,chorismate biosynthetic process
+PMM0683,go:0006189,^de novo^ IMP biosynthetic process
+PMM0683,go:0009152,purine ribonucleotide biosynthetic process
+PMM0686,go:0030163,protein catabolic process
+PMM0689,go:0009644,response to high light intensity
+PMM0690,go:0009644,response to high light intensity
+PMM0694,go:0008152,metabolic process
+PMM0704,go:0006813,potassium ion transport
+PMM0704,go:0034220,monoatomic ion transmembrane transport
+PMM0705,go:0000160,phosphorelay signal transduction system
+PMM0705,go:0006355,regulation of DNA-templated transcription
+PMM0706,go:0000160,phosphorelay signal transduction system
+PMM0706,go:0007165,signal transduction
+PMM0706,go:0016036,cellular response to phosphate starvation
+PMM0706,go:0016310,phosphorylation
+PMM0706,go:0018106,peptidyl-histidine phosphorylation
+PMM0706,go:0048511,rhythmic process
+PMM0709,go:0006810,transport
+PMM0710,go:0035435,phosphate ion transmembrane transport
+PMM0711,go:0015703,chromate transport
+PMM0712,go:0055085,transmembrane transport
+PMM0713,go:0006006,glucose metabolic process
+PMM0713,go:0008150,biological_process
+PMM0713,go:0008152,metabolic process
+PMM0714,go:0006351,DNA-templated transcription
+PMM0714,go:0006355,regulation of DNA-templated transcription
+PMM0716,go:0015700,arsenite transport
+PMM0716,go:0046685,response to arsenic-containing substance
+PMM0718,go:0006355,regulation of DNA-templated transcription
+PMM0723,go:0006817,phosphate ion transport
+PMM0724,go:0035435,phosphate ion transmembrane transport
+PMM0725,go:0006817,phosphate ion transport
+PMM0728,go:0006281,DNA repair
+PMM0729,go:0006260,DNA replication
+PMM0729,go:0006281,DNA repair
+PMM0729,go:0006310,DNA recombination
+PMM0729,go:0051301,cell division
+PMM0741,go:0010207,photosystem II assembly
+PMM0741,go:0015979,photosynthesis
+PMM0742,go:0006508,proteolysis
+PMM0743,go:0006508,proteolysis
+PMM0743,go:0010205,photoinhibition
+PMM0743,go:0010206,photosystem II repair
+PMM0743,go:0010304,PSII associated light-harvesting complex II catabolic process
+PMM0743,go:0051301,cell division
+PMM0744,go:0010258,NADH dehydrogenase complex (plastoquinone) assembly
+PMM0746,go:0006508,proteolysis
+PMM0747,go:0046148,pigment biosynthetic process
+PMM0748,go:0006810,transport
+PMM0749,go:0006810,transport
+PMM0753,go:0006412,translation
+PMM0753,go:0010467,gene expression
+PMM0753,go:0043043,peptide biosynthetic process
+PMM0754,go:0006414,translational elongation
+PMM0754,go:0010467,gene expression
+PMM0754,go:0043043,peptide biosynthetic process
+PMM0756,go:0006281,DNA repair
+PMM0756,go:0006310,DNA recombination
+PMM0756,go:0016070,RNA metabolic process
+PMM0757,go:0006508,proteolysis
+PMM0757,go:0071555,cell wall organization
+PMM0758,go:0000103,sulfate assimilation
+PMM0758,go:0008652,amino acid biosynthetic process
+PMM0759,go:0006426,glycyl-tRNA aminoacylation
+PMM0760,go:0015979,photosynthesis
+PMM0760,go:0015995,chlorophyll biosynthetic process
+PMM0761,go:0006508,proteolysis
+PMM0762,go:0000027,ribosomal large subunit assembly
+PMM0762,go:0006412,translation
+PMM0762,go:0009409,response to cold
+PMM0762,go:0010467,gene expression
+PMM0764,go:0015920,lipopolysaccharide transport
+PMM0764,go:0055085,transmembrane transport
+PMM0765,go:0008152,metabolic process
+PMM0765,go:0015886,heme transport
+PMM0765,go:0017004,cytochrome complex assembly
+PMM0766,go:0005975,carbohydrate metabolic process
+PMM0766,go:0006098,pentose-phosphate shunt
+PMM0767,go:0006071,glycerol metabolic process
+PMM0767,go:0006094,gluconeogenesis
+PMM0767,go:0016311,dephosphorylation
+PMM0767,go:0019253,reductive pentose-phosphate cycle
+PMM0767,go:0030388,"fructose 1,6-bisphosphate metabolic process"
+PMM0768,go:0006779,porphyrin-containing compound biosynthetic process
+PMM0769,go:0005978,glycogen biosynthetic process
+PMM0770,go:0006098,pentose-phosphate shunt
+PMM0770,go:0019521,D-gluconate metabolic process
+PMM0771,go:0005975,carbohydrate metabolic process
+PMM0771,go:0006006,glucose metabolic process
+PMM0771,go:0006739,NADP+ metabolic process
+PMM0771,go:0009051,"pentose-phosphate shunt, oxidative branch"
+PMM0771,go:0019682,glyceraldehyde-3-phosphate metabolic process
+PMM0771,go:0019693,ribose phosphate metabolic process
+PMM0772,go:0010257,NADH dehydrogenase complex assembly
+PMM0774,go:0008152,metabolic process
+PMM0774,go:0009097,isoleucine biosynthetic process
+PMM0774,go:0009099,L-valine biosynthetic process
+PMM0778,go:0009236,cobalamin biosynthetic process
+PMM0779,go:0006189,^de novo^ IMP biosynthetic process
+PMM0779,go:0006541,glutamine metabolic process
+PMM0779,go:0009152,purine ribonucleotide biosynthetic process
+PMM0780,go:0006189,^de novo^ IMP biosynthetic process
+PMM0780,go:0006541,glutamine metabolic process
+PMM0780,go:0009152,purine ribonucleotide biosynthetic process
+PMM0781,go:0006096,glycolytic process
+PMM0781,go:0019253,reductive pentose-phosphate cycle
+PMM0782,go:0008152,metabolic process
+PMM0784,go:0006629,lipid metabolic process
+PMM0784,go:0006633,fatty acid biosynthetic process
+PMM0785,go:0005975,carbohydrate metabolic process
+PMM0785,go:0019253,reductive pentose-phosphate cycle
+PMM0786,go:0009098,L-leucine biosynthetic process
+PMM0786,go:1901607,alpha-amino acid biosynthetic process
+PMM0787,go:0009245,lipid A biosynthetic process
+PMM0788,go:0006560,L-proline metabolic process
+PMM0788,go:0009084,L-glutamine family amino acid biosynthetic process
+PMM0788,go:0016310,phosphorylation
+PMM0788,go:1901607,alpha-amino acid biosynthetic process
+PMM0791,go:0000967,rRNA 5^-end processing
+PMM0791,go:0006259,DNA metabolic process
+PMM0791,go:0006974,DNA damage response
+PMM0791,go:0031564,transcription antitermination
+PMM0796,go:0000105,L-histidine biosynthetic process
+PMM0796,go:0000162,L-tryptophan biosynthetic process
+PMM0796,go:0006974,DNA damage response
+PMM0796,go:1901607,alpha-amino acid biosynthetic process
+PMM0797,go:0006012,galactose metabolic process
+PMM0798,go:0046474,glycerophospholipid biosynthetic process
+PMM0799,go:0045454,cell redox homeostasis
+PMM0802,go:0034644,cellular response to UV
+PMM0802,go:0097510,"base-excision repair, AP site formation via deaminated base removal"
+PMM0804,go:0006826,iron ion transport
+PMM0804,go:0006879,intracellular iron ion homeostasis
+PMM0806,go:0006355,regulation of DNA-templated transcription
+PMM0808,go:0015995,chlorophyll biosynthetic process
+PMM0815,go:0009644,response to high light intensity
+PMM0816,go:0009644,response to high light intensity
+PMM0817,go:0009644,response to high light intensity
+PMM0818,go:0009644,response to high light intensity
+PMM0823,go:0017148,negative regulation of translation
+PMM0823,go:0042256,cytosolic ribosome assembly
+PMM0823,go:0090071,negative regulation of ribosome biogenesis
+PMM0825,go:0000050,urea cycle
+PMM0825,go:0006526,L-arginine biosynthetic process
+PMM0825,go:0006541,glutamine metabolic process
+PMM0825,go:0009220,pyrimidine ribonucleotide biosynthetic process
+PMM0825,go:0044205,^de novo^ UMP biosynthetic process
+PMM0825,go:1901607,alpha-amino acid biosynthetic process
+PMM0827,go:0055085,transmembrane transport
+PMM0829,go:0006094,gluconeogenesis
+PMM0829,go:0006096,glycolytic process
+PMM0829,go:0006754,ATP biosynthetic process
+PMM0829,go:0009166,nucleotide catabolic process
+PMM0829,go:0009168,purine ribonucleoside monophosphate biosynthetic process
+PMM0829,go:0016310,phosphorylation
+PMM0829,go:0019253,reductive pentose-phosphate cycle
+PMM0829,go:0019359,nicotinamide nucleotide biosynthetic process
+PMM0829,go:0019563,glycerol catabolic process
+PMM0829,go:0034404,nucleobase-containing small molecule biosynthetic process
+PMM0829,go:0042866,pyruvate biosynthetic process
+PMM0829,go:0046031,ADP metabolic process
+PMM0829,go:0046166,glyceraldehyde-3-phosphate biosynthetic process
+PMM0830,go:0046394,carboxylic acid biosynthetic process
+PMM0830,go:0046654,tetrahydrofolate biosynthetic process
+PMM0830,go:0046656,folic acid biosynthetic process
+PMM0831,go:0015979,photosynthesis
+PMM0831,go:0015995,chlorophyll biosynthetic process
+PMM0832,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM0832,go:0019877,diaminopimelate biosynthetic process
+PMM0834,go:0006744,ubiquinone biosynthetic process
+PMM0839,go:0000716,"transcription-coupled nucleotide-excision repair, DNA damage recognition"
+PMM0839,go:0006281,DNA repair
+PMM0839,go:0006355,regulation of DNA-templated transcription
+PMM0841,go:0006413,translational initiation
+PMM0841,go:0006431,methionyl-tRNA aminoacylation
+PMM0841,go:0036211,protein modification process
+PMM0841,go:0043043,peptide biosynthetic process
+PMM0841,go:0071951,conversion of methionyl-tRNA to N-formyl-methionyl-tRNA
+PMM0842,go:0006355,regulation of DNA-templated transcription
+PMM0842,go:0006508,proteolysis
+PMM0842,go:0030651,peptide antibiotic biosynthetic process
+PMM0843,go:0006508,proteolysis
+PMM0844,go:0015979,photosynthesis
+PMM0844,go:0015995,chlorophyll biosynthetic process
+PMM0845,go:0042773,ATP synthesis coupled electron transport
+PMM0851,go:0008152,metabolic process
+PMM0853,go:0006412,translation
+PMM0854,go:0006508,proteolysis
+PMM0854,go:0010205,photoinhibition
+PMM0854,go:0010206,photosystem II repair
+PMM0854,go:0010304,PSII associated light-harvesting complex II catabolic process
+PMM0854,go:0051301,cell division
+PMM0856,go:0006979,response to oxidative stress
+PMM0856,go:0033554,cellular response to stress
+PMM0856,go:0042744,hydrogen peroxide catabolic process
+PMM0856,go:0045454,cell redox homeostasis
+PMM0862,go:0001510,RNA methylation
+PMM0862,go:0002131,wobble position cytosine ribose methylation
+PMM0862,go:0002132,wobble position uridine ribose methylation
+PMM0862,go:0008033,tRNA processing
+PMM0862,go:0032259,methylation
+PMM0863,go:0009236,cobalamin biosynthetic process
+PMM0865,go:0010190,cytochrome b6f complex assembly
+PMM0866,go:0015920,lipopolysaccharide transport
+PMM0867,go:0006431,methionyl-tRNA aminoacylation
+PMM0867,go:0010467,gene expression
+PMM0867,go:0019752,carboxylic acid metabolic process
+PMM0867,go:0043043,peptide biosynthetic process
+PMM0868,go:0006364,rRNA processing
+PMM0868,go:0006402,mRNA catabolic process
+PMM0868,go:0009057,macromolecule catabolic process
+PMM0868,go:0034655,nucleobase-containing compound catabolic process
+PMM0869,go:0006412,translation
+PMM0869,go:0010467,gene expression
+PMM0869,go:0043043,peptide biosynthetic process
+PMM0870,go:0006412,translation
+PMM0871,go:0006432,phenylalanyl-tRNA aminoacylation
+PMM0871,go:0008033,tRNA processing
+PMM0871,go:0010467,gene expression
+PMM0871,go:0019752,carboxylic acid metabolic process
+PMM0871,go:0043043,peptide biosynthetic process
+PMM0873,go:0006355,regulation of DNA-templated transcription
+PMM0873,go:0006457,protein folding
+PMM0874,go:0009117,nucleotide metabolic process
+PMM0875,go:0008150,biological_process
+PMM0877,go:0000097,sulfur amino acid biosynthetic process
+PMM0877,go:0006555,methionine metabolic process
+PMM0877,go:0009067,aspartate family amino acid biosynthetic process
+PMM0877,go:0032259,methylation
+PMM0877,go:0042558,pteridine-containing compound metabolic process
+PMM0877,go:0046653,tetrahydrofolate metabolic process
+PMM0877,go:0050667,homocysteine metabolic process
+PMM0877,go:1901607,alpha-amino acid biosynthetic process
+PMM0878,go:0008152,metabolic process
+PMM0878,go:0009097,isoleucine biosynthetic process
+PMM0878,go:0009098,L-leucine biosynthetic process
+PMM0878,go:0009099,L-valine biosynthetic process
+PMM0879,go:0009236,cobalamin biosynthetic process
+PMM0882,go:0006289,nucleotide-excision repair
+PMM0882,go:0009432,SOS response
+PMM0884,go:0015937,coenzyme A biosynthetic process
+PMM0885,go:0006508,proteolysis
+PMM0887,go:0006534,cysteine metabolic process
+PMM0888,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM0888,go:0043648,dicarboxylic acid metabolic process
+PMM0888,go:1901607,alpha-amino acid biosynthetic process
+PMM0889,go:0006429,leucyl-tRNA aminoacylation
+PMM0889,go:0010467,gene expression
+PMM0889,go:0019752,carboxylic acid metabolic process
+PMM0889,go:0043043,peptide biosynthetic process
+PMM0890,go:0006094,gluconeogenesis
+PMM0890,go:0006096,glycolytic process
+PMM0891,go:0006189,^de novo^ IMP biosynthetic process
+PMM0891,go:0009152,purine ribonucleotide biosynthetic process
+PMM0892,go:0006526,L-arginine biosynthetic process
+PMM0892,go:0006592,ornithine biosynthetic process
+PMM0892,go:0008652,amino acid biosynthetic process
+PMM0893,go:0009231,riboflavin biosynthetic process
+PMM0894,go:0000413,protein peptidyl-prolyl isomerization
+PMM0894,go:0006457,protein folding
+PMM0896,go:0006457,protein folding
+PMM0897,go:0006260,DNA replication
+PMM0897,go:0006457,protein folding
+PMM0897,go:0009408,response to heat
+PMM0897,go:0034620,cellular response to unfolded protein
+PMM0897,go:0043335,protein unfolding
+PMM0898,go:0006810,transport
+PMM0898,go:0022900,electron transport chain
+PMM0899,go:0005975,carbohydrate metabolic process
+PMM0899,go:0006020,inositol metabolic process
+PMM0899,go:0007165,signal transduction
+PMM0899,go:0016311,dephosphorylation
+PMM0899,go:0046854,phosphatidylinositol phosphate biosynthetic process
+PMM0899,go:0071545,inositol phosphate catabolic process
+PMM0900,go:0000105,L-histidine biosynthetic process
+PMM0901,go:0006457,protein folding
+PMM0901,go:0006950,response to stress
+PMM0902,go:0006412,translation
+PMM0903,go:0006979,response to oxidative stress
+PMM0903,go:0033554,cellular response to stress
+PMM0903,go:0042744,hydrogen peroxide catabolic process
+PMM0903,go:0045454,cell redox homeostasis
+PMM0906,go:0019684,"photosynthesis, light reaction"
+PMM0907,go:0008615,pyridoxine biosynthetic process
+PMM0907,go:0009228,thiamine biosynthetic process
+PMM0907,go:0009240,isopentenyl diphosphate biosynthetic process
+PMM0907,go:0016114,terpenoid biosynthetic process
+PMM0908,go:0006520,amino acid metabolic process
+PMM0908,go:0006565,L-serine catabolic process
+PMM0908,go:0006567,L-threonine catabolic process
+PMM0908,go:0009097,isoleucine biosynthetic process
+PMM0909,go:0030261,chromosome condensation
+PMM0909,go:0051301,cell division
+PMM0909,go:0051304,chromosome separation
+PMM0910,go:0051301,cell division
+PMM0912,go:0006096,glycolytic process
+PMM0912,go:0006754,ATP biosynthetic process
+PMM0912,go:0009166,nucleotide catabolic process
+PMM0912,go:0009168,purine ribonucleoside monophosphate biosynthetic process
+PMM0912,go:0016310,phosphorylation
+PMM0912,go:0019359,nicotinamide nucleotide biosynthetic process
+PMM0912,go:0034404,nucleobase-containing small molecule biosynthetic process
+PMM0912,go:0042866,pyruvate biosynthetic process
+PMM0912,go:0046031,ADP metabolic process
+PMM0914,go:0015878,biotin transport
+PMM0915,go:0006508,proteolysis
+PMM0915,go:0009306,protein secretion
+PMM0916,go:0002098,tRNA wobble uridine modification
+PMM0916,go:0030488,tRNA methylation
+PMM0917,go:0019752,carboxylic acid metabolic process
+PMM0918,go:0002100,tRNA wobble adenosine to inosine editing
+PMM0918,go:0009116,nucleoside metabolic process
+PMM0919,go:0008152,metabolic process
+PMM0919,go:0019265,"glycine biosynthetic process, by transamination of glyoxylate"
+PMM0920,go:0009399,nitrogen fixation
+PMM0920,go:0019740,nitrogen utilization
+PMM0921,go:0008152,metabolic process
+PMM0925,go:0001887,selenium compound metabolic process
+PMM0925,go:0002098,tRNA wobble uridine modification
+PMM0925,go:0006400,tRNA modification
+PMM0926,go:0015979,photosynthesis
+PMM0927,go:0055085,transmembrane transport
+PMM0927,go:1905887,autoinducer AI-2 transmembrane transport
+PMM0928,go:0006605,protein targeting
+PMM0928,go:0015833,peptide transport
+PMM0928,go:0043952,protein transport by the Sec complex
+PMM0928,go:0065002,intracellular protein transmembrane transport
+PMM0928,go:0071705,nitrogen compound transport
+PMM0929,go:0006605,protein targeting
+PMM0929,go:0015833,peptide transport
+PMM0929,go:0017038,protein import
+PMM0929,go:0043952,protein transport by the Sec complex
+PMM0929,go:0065002,intracellular protein transmembrane transport
+PMM0929,go:0071705,nitrogen compound transport
+PMM0930,go:0006086,pyruvate decarboxylation to acetyl-CoA
+PMM0932,go:0016114,terpenoid biosynthetic process
+PMM0932,go:0016310,phosphorylation
+PMM0933,go:0031167,rRNA methylation
+PMM0935,go:0006364,rRNA processing
+PMM0936,go:0006261,DNA-templated DNA replication
+PMM0936,go:0006281,DNA repair
+PMM0936,go:0009432,SOS response
+PMM0936,go:0045892,negative regulation of DNA-templated transcription
+PMM0937,go:0006261,DNA-templated DNA replication
+PMM0937,go:0006281,DNA repair
+PMM0937,go:0009432,SOS response
+PMM0937,go:0042276,error-prone translesion synthesis
+PMM0938,go:0032259,methylation
+PMM0939,go:0006260,DNA replication
+PMM0939,go:0006269,"DNA replication, synthesis of primer"
+PMM0940,go:0055085,transmembrane transport
+PMM0942,go:0000725,recombinational repair
+PMM0942,go:0009432,SOS response
+PMM0942,go:0071932,replication fork reversal
+PMM0943,go:0006412,translation
+PMM0945,go:0006260,DNA replication
+PMM0946,go:0006412,translation
+PMM0946,go:0006424,glutamyl-tRNA aminoacylation
+PMM0948,go:0000451,rRNA 2^-O-methylation
+PMM0949,go:0006364,rRNA processing
+PMM0950,go:0006355,regulation of DNA-templated transcription
+PMM0951,go:0000050,urea cycle
+PMM0951,go:0006207,^de novo^ pyrimidine nucleobase biosynthetic process
+PMM0951,go:0006526,L-arginine biosynthetic process
+PMM0951,go:0006541,glutamine metabolic process
+PMM0951,go:0009220,pyrimidine ribonucleotide biosynthetic process
+PMM0951,go:0044205,^de novo^ UMP biosynthetic process
+PMM0951,go:1901607,alpha-amino acid biosynthetic process
+PMM0952,go:0000162,L-tryptophan biosynthetic process
+PMM0952,go:1901607,alpha-amino acid biosynthetic process
+PMM0955,go:0030091,protein repair
+PMM0955,go:0034599,cellular response to oxidative stress
+PMM0956,go:0009252,peptidoglycan biosynthetic process
+PMM0956,go:0016311,dephosphorylation
+PMM0956,go:0046677,response to antibiotic
+PMM0956,go:0071555,cell wall organization
+PMM0959,go:0016310,phosphorylation
+PMM0960,go:0051479,mannosylglycerate biosynthetic process
+PMM0961,go:0005975,carbohydrate metabolic process
+PMM0961,go:0005985,sucrose metabolic process
+PMM0963,go:0043419,urea catabolic process
+PMM0964,go:0043419,urea catabolic process
+PMM0965,go:0043419,urea catabolic process
+PMM0966,go:0019627,urea metabolic process
+PMM0967,go:0006457,protein folding
+PMM0967,go:0019627,urea metabolic process
+PMM0968,go:0019627,urea metabolic process
+PMM0969,go:0019627,urea metabolic process
+PMM0970,go:0015840,urea transport
+PMM0971,go:0006865,amino acid transport
+PMM0971,go:0071918,urea transmembrane transport
+PMM0972,go:0006810,transport
+PMM0972,go:0015840,urea transport
+PMM0973,go:0015840,urea transport
+PMM0974,go:0015807,L-amino acid transport
+PMM0974,go:0071918,urea transmembrane transport
+PMM0981,go:0006810,transport
+PMM0985,go:0009116,nucleoside metabolic process
+PMM0986,go:0009159,deoxyribonucleoside monophosphate catabolic process
+PMM0987,go:0006412,translation
+PMM0988,go:0006281,DNA repair
+PMM0993,go:0006508,proteolysis
+PMM1002,go:0006508,proteolysis
+PMM1004,go:0009113,purine nucleobase biosynthetic process
+PMM1004,go:0009152,purine ribonucleotide biosynthetic process
+PMM1009,go:0008033,tRNA processing
+PMM1014,go:0009307,DNA restriction-modification system
+PMM1019,go:0007229,integrin-mediated signaling pathway
+PMM1025,go:0006979,response to oxidative stress
+PMM1027,go:0034220,monoatomic ion transmembrane transport
+PMM1029,go:0010043,response to zinc ion
+PMM1029,go:0055085,transmembrane transport
+PMM1030,go:0045892,negative regulation of DNA-templated transcription
+PMM1030,go:1900376,regulation of secondary metabolite biosynthetic process
+PMM1031,go:0006810,transport
+PMM1032,go:0030001,metal ion transport
+PMM1040,go:0015979,photosynthesis
+PMM1044,go:0019303,D-ribose catabolic process
+PMM1044,go:0046835,carbohydrate phosphorylation
+PMM1046,go:0055085,transmembrane transport
+PMM1047,go:0016042,lipid catabolic process
+PMM1048,go:0055085,transmembrane transport
+PMM1049,go:0015833,peptide transport
+PMM1049,go:0055085,transmembrane transport
+PMM1051,go:0006520,amino acid metabolic process
+PMM1051,go:0008152,metabolic process
+PMM1051,go:0009088,L-threonine biosynthetic process
+PMM1052,go:0006790,sulfur compound metabolic process
+PMM1052,go:0006810,transport
+PMM1052,go:0006979,response to oxidative stress
+PMM1052,go:0016226,iron-sulfur cluster assembly
+PMM1052,go:0043085,positive regulation of catalytic activity
+PMM1053,go:0006730,one-carbon metabolic process
+PMM1054,go:0000725,recombinational repair
+PMM1054,go:0009059,macromolecule biosynthetic process
+PMM1054,go:0009432,SOS response
+PMM1054,go:0071932,replication fork reversal
+PMM1055,go:0015979,photosynthesis
+PMM1055,go:0015995,chlorophyll biosynthetic process
+PMM1056,go:0006396,RNA processing
+PMM1056,go:0009451,RNA modification
+PMM1058,go:0006810,transport
+PMM1058,go:0015979,photosynthesis
+PMM1058,go:0017004,cytochrome complex assembly
+PMM1058,go:0022900,electron transport chain
+PMM1059,go:0006364,rRNA processing
+PMM1059,go:0032259,methylation
+PMM1059,go:0070475,rRNA base methylation
+PMM1060,go:0000105,L-histidine biosynthetic process
+PMM1060,go:0006541,glutamine metabolic process
+PMM1060,go:0008652,amino acid biosynthetic process
+PMM1061,go:0008152,metabolic process
+PMM1061,go:0033554,cellular response to stress
+PMM1061,go:0034599,cellular response to oxidative stress
+PMM1061,go:0045454,cell redox homeostasis
+PMM1061,go:0050794,regulation of cellular process
+PMM1061,go:0065008,regulation of biological quality
+PMM1061,go:0098869,cellular oxidant detoxification
+PMM1062,go:0006164,purine nucleotide biosynthetic process
+PMM1062,go:0006177,GMP biosynthetic process
+PMM1062,go:0006183,GTP biosynthetic process
+PMM1063,go:0006261,DNA-templated DNA replication
+PMM1063,go:0006265,DNA topological change
+PMM1064,go:0016117,carotenoid biosynthetic process
+PMM1065,go:0030979,alpha-glucan biosynthetic process
+PMM1066,go:0009098,L-leucine biosynthetic process
+PMM1066,go:0019752,carboxylic acid metabolic process
+PMM1067,go:0005975,carbohydrate metabolic process
+PMM1069,go:0006730,one-carbon metabolic process
+PMM1070,go:0016114,terpenoid biosynthetic process
+PMM1070,go:0016117,carotenoid biosynthetic process
+PMM1072,go:0009236,cobalamin biosynthetic process
+PMM1073,go:0019253,reductive pentose-phosphate cycle
+PMM1074,go:0006006,glucose metabolic process
+PMM1074,go:0009051,"pentose-phosphate shunt, oxidative branch"
+PMM1075,go:0009773,photosynthetic electron transport in photosystem I
+PMM1077,go:0000160,phosphorelay signal transduction system
+PMM1077,go:0018106,peptidyl-histidine phosphorylation
+PMM1077,go:0048511,rhythmic process
+PMM1080,go:0009116,nucleoside metabolic process
+PMM1080,go:0009156,ribonucleoside monophosphate biosynthetic process
+PMM1080,go:0009165,nucleotide biosynthetic process
+PMM1081,go:0005975,carbohydrate metabolic process
+PMM1081,go:0005980,glycogen catabolic process
+PMM1083,go:0006468,protein phosphorylation
+PMM1084,go:0009058,biosynthetic process
+PMM1085,go:0016024,CDP-diacylglycerol biosynthetic process
+PMM1088,go:0019538,protein metabolic process
+PMM1088,go:0034605,cellular response to heat
+PMM1089,go:0006474,N-terminal protein amino acid acetylation
+PMM1090,go:0008652,amino acid biosynthetic process
+PMM1090,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM1091,go:0006171,cAMP biosynthetic process
+PMM1092,go:0009252,peptidoglycan biosynthetic process
+PMM1092,go:0016094,polyprenol biosynthetic process
+PMM1093,go:0009102,biotin biosynthetic process
+PMM1096,go:0009107,lipoate biosynthetic process
+PMM1096,go:0009249,protein lipoylation
+PMM1097,go:0006281,DNA repair
+PMM1097,go:0006310,DNA recombination
+PMM1098,go:0015979,photosynthesis
+PMM1099,go:0055085,transmembrane transport
+PMM1101,go:0000027,ribosomal large subunit assembly
+PMM1101,go:0070417,cellular response to cold
+PMM1102,go:0006302,double-strand break repair
+PMM1102,go:0006308,DNA catabolic process
+PMM1102,go:0006310,DNA recombination
+PMM1103,go:0000725,recombinational repair
+PMM1104,go:0032259,methylation
+PMM1105,go:0006302,double-strand break repair
+PMM1105,go:0006310,DNA recombination
+PMM1105,go:0044355,clearance of foreign intracellular DNA
+PMM1106,go:0015979,photosynthesis
+PMM1106,go:0015995,chlorophyll biosynthetic process
+PMM1107,go:0008615,pyridoxine biosynthetic process
+PMM1108,go:0008654,phospholipid biosynthetic process
+PMM1111,go:0045454,cell redox homeostasis
+PMM1113,go:0000160,phosphorelay signal transduction system
+PMM1113,go:0006355,regulation of DNA-templated transcription
+PMM1115,go:0016117,carotenoid biosynthetic process
+PMM1116,go:0002098,tRNA wobble uridine modification
+PMM1116,go:0030488,tRNA methylation
+PMM1117,go:0015979,photosynthesis
+PMM1118,go:0009644,response to high light intensity
+PMM1119,go:0006810,transport
+PMM1121,go:0006810,transport
+PMM1122,go:0006166,purine ribonucleoside salvage
+PMM1122,go:0006168,adenine salvage
+PMM1122,go:0009116,nucleoside metabolic process
+PMM1126,go:0009103,lipopolysaccharide biosynthetic process
+PMM1128,go:0009644,response to high light intensity
+PMM1135,go:0009644,response to high light intensity
+PMM1138,go:0006979,response to oxidative stress
+PMM1138,go:0043086,negative regulation of catalytic activity
+PMM1139,go:0055085,transmembrane transport
+PMM1140,go:0006261,DNA-templated DNA replication
+PMM1140,go:0006302,double-strand break repair
+PMM1140,go:0009059,macromolecule biosynthetic process
+PMM1140,go:0034654,nucleobase-containing compound biosynthetic process
+PMM1140,go:0071897,DNA biosynthetic process
+PMM1141,go:0006423,cysteinyl-tRNA aminoacylation
+PMM1141,go:0010467,gene expression
+PMM1141,go:0019752,carboxylic acid metabolic process
+PMM1141,go:0043043,peptide biosynthetic process
+PMM1142,go:0006090,pyruvate metabolic process
+PMM1142,go:0019288,"isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway"
+PMM1142,go:0051483,"terpenoid biosynthetic process, mevalonate-independent"
+PMM1144,go:0006508,proteolysis
+PMM1145,go:0006740,NADPH regeneration
+PMM1146,go:0006740,NADPH regeneration
+PMM1147,go:0006740,NADPH regeneration
+PMM1147,go:1902600,proton transmembrane transport
+PMM1150,go:0019430,removal of superoxide radicals
+PMM1150,go:0045454,cell redox homeostasis
+PMM1151,go:0006413,translational initiation
+PMM1152,go:0015979,photosynthesis
+PMM1152a,go:0009767,photosynthetic electron transport chain
+PMM1154,go:0008152,metabolic process
+PMM1154,go:0009097,isoleucine biosynthetic process
+PMM1154,go:0009099,L-valine biosynthetic process
+PMM1155,go:0000413,protein peptidyl-prolyl isomerization
+PMM1155,go:0006457,protein folding
+PMM1156,go:0015979,photosynthesis
+PMM1157,go:0009769,"photosynthesis, light harvesting in photosystem II"
+PMM1157,go:0009772,photosynthetic electron transport in photosystem II
+PMM1157,go:0019684,"photosynthesis, light reaction"
+PMM1158,go:0009769,"photosynthesis, light harvesting in photosystem II"
+PMM1158,go:0009772,photosynthetic electron transport in photosystem II
+PMM1158,go:0019684,"photosynthesis, light reaction"
+PMM1159,go:0000917,division septum assembly
+PMM1159,go:0009146,purine nucleoside triphosphate catabolic process
+PMM1160,go:0009236,cobalamin biosynthetic process
+PMM1164,go:0006811,monoatomic ion transport
+PMM1164,go:0006826,iron ion transport
+PMM1165,go:0006426,glycyl-tRNA aminoacylation
+PMM1168,go:0008152,metabolic process
+PMM1171,go:0010106,cellular response to iron ion starvation
+PMM1175,go:0055085,transmembrane transport
+PMM1177,go:0009103,lipopolysaccharide biosynthetic process
+PMM1177,go:0010041,response to iron(III) ion
+PMM1179,go:0055085,transmembrane transport
+PMM1180,go:0006508,proteolysis
+PMM1181,go:0008652,amino acid biosynthetic process
+PMM1181,go:0009073,aromatic amino acid family biosynthetic process
+PMM1181,go:0046417,chorismate metabolic process
+PMM1183,go:0006412,translation
+PMM1184,go:0001682,tRNA 5^-leader removal
+PMM1184,go:0008033,tRNA processing
+PMM1186,go:0051205,protein insertion into membrane
+PMM1188,go:0006434,seryl-tRNA aminoacylation
+PMM1189,go:0006508,proteolysis
+PMM1190,go:0006412,translation
+PMM1190,go:0010467,gene expression
+PMM1190,go:0043043,peptide biosynthetic process
+PMM1191,go:0006396,RNA processing
+PMM1191,go:0006402,mRNA catabolic process
+PMM1192,go:0006790,sulfur compound metabolic process
+PMM1192,go:0046854,phosphatidylinositol phosphate biosynthetic process
+PMM1193,go:0000451,rRNA 2^-O-methylation
+PMM1193,go:0006412,translation
+PMM1193,go:0006450,regulation of translational fidelity
+PMM1196,go:0009058,biosynthetic process
+PMM1196,go:0009103,lipopolysaccharide biosynthetic process
+PMM1196,go:0009298,GDP-mannose biosynthetic process
+PMM1197,go:0009103,lipopolysaccharide biosynthetic process
+PMM1199,go:0000271,polysaccharide biosynthetic process
+PMM1200,go:0009103,lipopolysaccharide biosynthetic process
+PMM1201,go:0009103,lipopolysaccharide biosynthetic process
+PMM1203,go:0009243,O antigen biosynthetic process
+PMM1204,go:0009058,biosynthetic process
+PMM1204,go:0009243,O antigen biosynthetic process
+PMM1205,go:0000271,polysaccharide biosynthetic process
+PMM1207,go:0042351,^de novo^ GDP-L-fucose biosynthetic process
+PMM1208,go:0000271,polysaccharide biosynthetic process
+PMM1208,go:0042351,^de novo^ GDP-L-fucose biosynthetic process
+PMM1209,go:0005975,carbohydrate metabolic process
+PMM1209,go:0006012,galactose metabolic process
+PMM1209,go:0033499,"galactose catabolic process via UDP-galactose, Leloir pathway"
+PMM1210,go:0005975,carbohydrate metabolic process
+PMM1211,go:0000271,polysaccharide biosynthetic process
+PMM1211,go:0015774,polysaccharide transport
+PMM1214,go:0005975,carbohydrate metabolic process
+PMM1216,go:0009058,biosynthetic process
+PMM1217,go:0005975,carbohydrate metabolic process
+PMM1217,go:1901135,carbohydrate derivative metabolic process
+PMM1218,go:0009058,biosynthetic process
+PMM1224,go:0015774,polysaccharide transport
+PMM1227,go:0009103,lipopolysaccharide biosynthetic process
+PMM1227,go:0009252,peptidoglycan biosynthetic process
+PMM1227,go:0071555,cell wall organization
+PMM1229,go:0006086,pyruvate decarboxylation to acetyl-CoA
+PMM1230,go:0007584,response to nutrient
+PMM1230,go:0009083,branched-chain amino acid catabolic process
+PMM1232,go:0032259,methylation
+PMM1233,go:0009243,O antigen biosynthetic process
+PMM1233,go:0019305,dTDP-rhamnose biosynthetic process
+PMM1236,go:0008152,metabolic process
+PMM1239,go:0055085,transmembrane transport
+PMM1240,go:0032259,methylation
+PMM1243,go:0032259,methylation
+PMM1246,go:0009058,biosynthetic process
+PMM1251,go:0009058,biosynthetic process
+PMM1252,go:0046677,response to antibiotic
+PMM1253,go:0032259,methylation
+PMM1254,go:0006487,protein N-linked glycosylation
+PMM1256,go:0009247,glycolipid biosynthetic process
+PMM1258,go:0000271,polysaccharide biosynthetic process
+PMM1259,go:0000271,polysaccharide biosynthetic process
+PMM1260,go:0016539,intein-mediated protein splicing
+PMM1260,go:0033320,UDP-D-xylose biosynthetic process
+PMM1260,go:0042732,D-xylose metabolic process
+PMM1261,go:0000271,polysaccharide biosynthetic process
+PMM1261,go:0006024,glycosaminoglycan biosynthetic process
+PMM1261,go:0006065,UDP-glucuronate biosynthetic process
+PMM1262,go:0006260,DNA replication
+PMM1262,go:0006281,DNA repair
+PMM1262,go:0006282,regulation of DNA repair
+PMM1262,go:0006508,proteolysis
+PMM1262,go:0009432,SOS response
+PMM1262,go:0010628,positive regulation of gene expression
+PMM1262,go:0010629,negative regulation of gene expression
+PMM1262,go:0045892,negative regulation of DNA-templated transcription
+PMM1262,go:0045893,positive regulation of DNA-templated transcription
+PMM1263,go:0000050,urea cycle
+PMM1263,go:0006591,ornithine metabolic process
+PMM1263,go:0042450,L-arginine biosynthetic process via ornithine
+PMM1263,go:1901607,alpha-amino acid biosynthetic process
+PMM1264,go:0006508,proteolysis
+PMM1264,go:0010205,photoinhibition
+PMM1264,go:0010206,photosystem II repair
+PMM1264,go:0010304,PSII associated light-harvesting complex II catabolic process
+PMM1264,go:0051301,cell division
+PMM1265,go:0009231,riboflavin biosynthetic process
+PMM1265,go:0009451,RNA modification
+PMM1268,go:0009236,cobalamin biosynthetic process
+PMM1268,go:0032259,methylation
+PMM1269,go:0006741,NADP+ biosynthetic process
+PMM1269,go:0008152,metabolic process
+PMM1270,go:0006432,phenylalanyl-tRNA aminoacylation
+PMM1273,go:0006747,FAD biosynthetic process
+PMM1273,go:0009231,riboflavin biosynthetic process
+PMM1273,go:0009398,FMN biosynthetic process
+PMM1274,go:0009228,thiamine biosynthetic process
+PMM1275,go:0009228,thiamine biosynthetic process
+PMM1278,go:0006189,^de novo^ IMP biosynthetic process
+PMM1278,go:0043153,entrainment of circadian clock by photoperiod
+PMM1280,go:0002939,tRNA N1-guanine methylation
+PMM1280,go:0016114,terpenoid biosynthetic process
+PMM1280,go:0019288,"isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway"
+PMM1281,go:0000028,ribosomal small subunit assembly
+PMM1281,go:0042254,ribosome biogenesis
+PMM1284,go:0006796,phosphate-containing compound metabolic process
+PMM1285,go:0006412,translation
+PMM1285,go:0010467,gene expression
+PMM1285,go:0043043,peptide biosynthetic process
+PMM1286,go:0006614,SRP-dependent cotranslational protein targeting to membrane
+PMM1286,go:0009306,protein secretion
+PMM1287,go:0051301,cell division
+PMM1288,go:0006086,pyruvate decarboxylation to acetyl-CoA
+PMM1289,go:0006352,DNA-templated transcription initiation
+PMM1290,go:0046496,nicotinamide nucleotide metabolic process
+PMM1290,go:0110051,metabolite repair
+PMM1291,go:0008033,tRNA processing
+PMM1292,go:0042158,lipoprotein biosynthetic process
+PMM1293,go:0006457,protein folding
+PMM1294,go:0019430,removal of superoxide radicals
+PMM1295,go:0016485,protein processing
+PMM1295,go:0019430,removal of superoxide radicals
+PMM1297,go:0006568,L-tryptophan metabolic process
+PMM1298,go:0006103,2-oxoglutarate metabolic process
+PMM1298,go:0051068,dihydrolipoamide metabolic process
+PMM1299,go:0006396,RNA processing
+PMM1299,go:0032259,methylation
+PMM1300,go:0009252,peptidoglycan biosynthetic process
+PMM1300,go:0019277,UDP-N-acetylgalactosamine biosynthetic process
+PMM1301,go:0006525,arginine metabolic process
+PMM1302,go:0006730,one-carbon metabolic process
+PMM1303,go:0009441,glycolate metabolic process
+PMM1303,go:1903457,lactate catabolic process
+PMM1304,go:0006209,cytosine catabolic process
+PMM1305,go:0006400,tRNA modification
+PMM1306,go:0009252,peptidoglycan biosynthetic process
+PMM1308,go:0043093,FtsZ-dependent cytokinesis
+PMM1308,go:0051301,cell division
+PMM1309,go:0000917,division septum assembly
+PMM1309,go:0032506,cytokinetic process
+PMM1309,go:0043093,FtsZ-dependent cytokinesis
+PMM1309,go:0051258,protein polymerization
+PMM1310,go:0015940,pantothenate biosynthetic process
+PMM1311,go:0006779,porphyrin-containing compound biosynthetic process
+PMM1313,go:0006508,proteolysis
+PMM1313,go:0006515,protein quality control for misfolded or incompletely synthesized proteins
+PMM1314,go:0006508,proteolysis
+PMM1315,go:0008652,amino acid biosynthetic process
+PMM1315,go:0009097,isoleucine biosynthetic process
+PMM1315,go:0009099,L-valine biosynthetic process
+PMM1316,go:0009236,cobalamin biosynthetic process
+PMM1317,go:0009644,response to high light intensity
+PMM1321,go:0006351,DNA-templated transcription
+PMM1321,go:0030261,chromosome condensation
+PMM1321,go:0043158,heterocyst development
+PMM1322,go:0005975,carbohydrate metabolic process
+PMM1322,go:0005980,glycogen catabolic process
+PMM1323,go:0008643,carbohydrate transport
+PMM1323,go:0055085,transmembrane transport
+PMM1327,go:0006654,phosphatidic acid biosynthetic process
+PMM1327,go:0008654,phospholipid biosynthetic process
+PMM1328,go:0006207,^de novo^ pyrimidine nucleobase biosynthetic process
+PMM1328,go:0006221,pyrimidine nucleotide biosynthetic process
+PMM1328,go:0015949,nucleobase-containing small molecule interconversion
+PMM1328,go:0044205,^de novo^ UMP biosynthetic process
+PMM1329,go:0006437,tyrosyl-tRNA aminoacylation
+PMM1329,go:0019752,carboxylic acid metabolic process
+PMM1332,go:0006508,proteolysis
+PMM1332,go:0046686,response to cadmium ion
+PMM1333,go:0006979,response to oxidative stress
+PMM1333,go:0030091,protein repair
+PMM1334,go:0009245,lipid A biosynthetic process
+PMM1334,go:0009312,oligosaccharide biosynthetic process
+PMM1335,go:0008610,lipid biosynthetic process
+PMM1335,go:0009245,lipid A biosynthetic process
+PMM1336,go:0006629,lipid metabolic process
+PMM1336,go:0006633,fatty acid biosynthetic process
+PMM1336,go:0009245,lipid A biosynthetic process
+PMM1337,go:0009245,lipid A biosynthetic process
+PMM1339,go:0009152,purine ribonucleotide biosynthetic process
+PMM1340,go:0006189,^de novo^ IMP biosynthetic process
+PMM1340,go:0009113,purine nucleobase biosynthetic process
+PMM1340,go:0009152,purine ribonucleotide biosynthetic process
+PMM1341,go:0006355,regulation of DNA-templated transcription
+PMM1341,go:0007165,signal transduction
+PMM1341,go:0007234,osmosensory signaling via phosphorelay pathway
+PMM1341,go:0048511,rhythmic process
+PMM1342,go:0006355,regulation of DNA-templated transcription
+PMM1342,go:0007623,circadian rhythm
+PMM1342,go:0009649,entrainment of circadian clock
+PMM1342,go:0042754,negative regulation of circadian rhythm
+PMM1342,go:0046777,protein autophosphorylation
+PMM1342,go:0070297,regulation of phosphorelay signal transduction system
+PMM1343,go:0007623,circadian rhythm
+PMM1343,go:0009649,entrainment of circadian clock
+PMM1343,go:0042326,negative regulation of phosphorylation
+PMM1344,go:0006412,translation
+PMM1345,go:0006412,translation
+PMM1346,go:0032259,methylation
+PMM1347,go:0006400,tRNA modification
+PMM1347,go:1990481,mRNA pseudouridine synthesis
+PMM1348,go:0030435,sporulation resulting in formation of a cellular spore
+PMM1349,go:0042780,tRNA 3^-end processing
+PMM1349,go:0043628,regulatory ncRNA 3^-end processing
+PMM1352,go:0006810,transport
+PMM1352,go:0022900,electron transport chain
+PMM1353,go:0006479,protein methylation
+PMM1353,go:0036211,protein modification process
+PMM1354,go:0006564,L-serine biosynthetic process
+PMM1356,go:0015979,photosynthesis
+PMM1357,go:0006629,lipid metabolic process
+PMM1358,go:0008615,pyridoxine biosynthetic process
+PMM1360,go:0006281,DNA repair
+PMM1364,go:0008360,regulation of cell shape
+PMM1364,go:0009058,biosynthetic process
+PMM1364,go:0009252,peptidoglycan biosynthetic process
+PMM1364,go:0051301,cell division
+PMM1371,go:0055085,transmembrane transport
+PMM1376,go:0006397,mRNA processing
+PMM1377,go:0006694,steroid biosynthetic process
+PMM1378,go:0006629,lipid metabolic process
+PMM1378,go:0006633,fatty acid biosynthetic process
+PMM1379,go:0009691,cytokinin biosynthetic process
+PMM1380,go:0008152,metabolic process
+PMM1381,go:0006508,proteolysis
+PMM1381,go:0009432,SOS response
+PMM1381,go:0106300,protein-DNA covalent cross-linking repair
+PMM1382,go:0006629,lipid metabolic process
+PMM1382,go:0006633,fatty acid biosynthetic process
+PMM1384,go:0009644,response to high light intensity
+PMM1385,go:0009644,response to high light intensity
+PMM1386,go:0015920,lipopolysaccharide transport
+PMM1386,go:0055085,transmembrane transport
+PMM1390,go:0009644,response to high light intensity
+PMM1391,go:0006355,regulation of DNA-templated transcription
+PMM1396,go:0009644,response to high light intensity
+PMM1397,go:0009644,response to high light intensity
+PMM1398,go:0009644,response to high light intensity
+PMM1399,go:0009644,response to high light intensity
+PMM1404,go:0009644,response to high light intensity
+PMM1423,go:0030416,methylamine metabolic process
+PMM1423,go:0045454,cell redox homeostasis
+PMM1425,go:0006508,proteolysis
+PMM1430,go:0006355,regulation of DNA-templated transcription
+PMM1431,go:0006351,DNA-templated transcription
+PMM1432,go:0006260,DNA replication
+PMM1432,go:0006457,protein folding
+PMM1432,go:0009408,response to heat
+PMM1432,go:0034620,cellular response to unfolded protein
+PMM1432,go:0043335,protein unfolding
+PMM1433,go:0006351,DNA-templated transcription
+PMM1433,go:0006355,regulation of DNA-templated transcription
+PMM1433,go:0009116,nucleoside metabolic process
+PMM1434,go:0006007,glucose catabolic process
+PMM1434,go:0006096,glycolytic process
+PMM1435,go:0009306,protein secretion
+PMM1435,go:0015739,sialic acid transport
+PMM1435,go:0043952,protein transport by the Sec complex
+PMM1436,go:0007049,cell cycle
+PMM1436,go:0009408,response to heat
+PMM1436,go:0042026,protein refolding
+PMM1436,go:0051301,cell division
+PMM1437,go:0006457,protein folding
+PMM1437,go:0007049,cell cycle
+PMM1437,go:0009408,response to heat
+PMM1437,go:0051301,cell division
+PMM1438,go:0015986,proton motive force-driven ATP synthesis
+PMM1439,go:0009168,purine ribonucleoside monophosphate biosynthetic process
+PMM1439,go:0015985,"energy coupled proton transport, down electrochemical gradient"
+PMM1439,go:0015986,proton motive force-driven ATP synthesis
+PMM1440,go:0006412,translation
+PMM1442,go:0006508,proteolysis
+PMM1444,go:0002098,tRNA wobble uridine modification
+PMM1444,go:0030488,tRNA methylation
+PMM1445,go:0034628,^de novo^ NAD+ biosynthetic process from L-aspartate
+PMM1446,go:0006974,DNA damage response
+PMM1446,go:0034355,NAD+ biosynthetic process via the salvage pathway
+PMM1446,go:0034628,^de novo^ NAD+ biosynthetic process from L-aspartate
+PMM1449,go:0006810,transport
+PMM1449,go:0022900,electron transport chain
+PMM1450,go:0015986,proton motive force-driven ATP synthesis
+PMM1451,go:0015986,proton motive force-driven ATP synthesis
+PMM1452,go:0015986,proton motive force-driven ATP synthesis
+PMM1453,go:0006754,ATP biosynthetic process
+PMM1454,go:0006754,ATP biosynthetic process
+PMM1455,go:0015986,proton motive force-driven ATP synthesis
+PMM1456,go:0009168,purine ribonucleoside monophosphate biosynthetic process
+PMM1456,go:0015985,"energy coupled proton transport, down electrochemical gradient"
+PMM1456,go:0042777,proton motive force-driven plasma membrane ATP synthesis
+PMM1457,go:0006754,ATP biosynthetic process
+PMM1458,go:0007049,cell cycle
+PMM1458,go:0008360,regulation of cell shape
+PMM1458,go:0009252,peptidoglycan biosynthetic process
+PMM1458,go:0051301,cell division
+PMM1458,go:0071555,cell wall organization
+PMM1459,go:0017004,cytochrome complex assembly
+PMM1460,go:0017004,cytochrome complex assembly
+PMM1461,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM1463,go:0006351,DNA-templated transcription
+PMM1463,go:0006355,regulation of DNA-templated transcription
+PMM1463,go:0006808,regulation of nitrogen utilization
+PMM1464,go:0032259,methylation
+PMM1464,go:0051301,cell division
+PMM1465,go:0006189,^de novo^ IMP biosynthetic process
+PMM1465,go:0044208,^de novo^ AMP biosynthetic process
+PMM1466,go:0006099,tricarboxylic acid cycle
+PMM1466,go:0006101,citrate metabolic process
+PMM1466,go:0006106,fumarate metabolic process
+PMM1466,go:0006108,malate metabolic process
+PMM1466,go:0016999,antibiotic metabolic process
+PMM1467,go:0070478,"nuclear-transcribed mRNA catabolic process, 3^-5^ exonucleolytic nonsense-mediated decay"
+PMM1468,go:0009058,biosynthetic process
+PMM1468,go:0009102,biotin biosynthetic process
+PMM1469,go:0009102,biotin biosynthetic process
+PMM1470,go:0009102,biotin biosynthetic process
+PMM1471,go:0009102,biotin biosynthetic process
+PMM1472,go:0009102,biotin biosynthetic process
+PMM1474,go:0006457,protein folding
+PMM1475,go:0046118,7-methylguanosine biosynthetic process
+PMM1475,go:0070476,rRNA (guanine-N7)-methylation
+PMM1477,go:0006810,transport
+PMM1477,go:0022900,electron transport chain
+PMM1481,go:0030488,tRNA methylation
+PMM1481,go:0046677,response to antibiotic
+PMM1481,go:0070475,rRNA base methylation
+PMM1482,go:0009644,response to high light intensity
+PMM1483,go:0006351,DNA-templated transcription
+PMM1484,go:0006351,DNA-templated transcription
+PMM1485,go:0006352,DNA-templated transcription initiation
+PMM1486,go:0006308,DNA catabolic process
+PMM1486,go:0009057,macromolecule catabolic process
+PMM1486,go:0019478,D-amino acid catabolic process
+PMM1486,go:0034655,nucleobase-containing compound catabolic process
+PMM1487,go:0006412,translation
+PMM1488,go:0000105,L-histidine biosynthetic process
+PMM1488,go:1901607,alpha-amino acid biosynthetic process
+PMM1489,go:0006014,D-ribose metabolic process
+PMM1489,go:0006739,NADP+ metabolic process
+PMM1489,go:0009052,"pentose-phosphate shunt, non-oxidative branch"
+PMM1489,go:0019693,ribose phosphate metabolic process
+PMM1490,go:0006508,proteolysis
+PMM1491,go:0042274,ribosomal small subunit biogenesis
+PMM1492,go:0006353,DNA-templated transcription termination
+PMM1492,go:0031554,regulation of termination of DNA-templated transcription
+PMM1492,go:0031564,transcription antitermination
+PMM1494,go:0006413,translational initiation
+PMM1496,go:0009103,lipopolysaccharide biosynthetic process
+PMM1496,go:0010041,response to iron(III) ion
+PMM1497,go:0006487,protein N-linked glycosylation
+PMM1499,go:0030163,protein catabolic process
+PMM1500,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM1501,go:0000967,rRNA 5^-end processing
+PMM1501,go:0006402,mRNA catabolic process
+PMM1501,go:0008033,tRNA processing
+PMM1501,go:0051289,protein homotetramerization
+PMM1502,go:0006401,RNA catabolic process
+PMM1504,go:0008152,metabolic process
+PMM1504,go:0009094,L-phenylalanine biosynthetic process
+PMM1505,go:0008150,biological_process
+PMM1505,go:0010236,plastoquinone biosynthetic process
+PMM1505,go:0032259,methylation
+PMM1506,go:0006508,proteolysis
+PMM1507,go:0006412,translation
+PMM1507,go:0010467,gene expression
+PMM1507,go:0043043,peptide biosynthetic process
+PMM1508,go:0006414,translational elongation
+PMM1509,go:0006414,translational elongation
+PMM1510,go:0000028,ribosomal small subunit assembly
+PMM1510,go:0006412,translation
+PMM1510,go:0010467,gene expression
+PMM1510,go:0043043,peptide biosynthetic process
+PMM1510,go:0070925,organelle assembly
+PMM1511,go:0006412,translation
+PMM1511,go:0010467,gene expression
+PMM1511,go:0043043,peptide biosynthetic process
+PMM1512,go:0009084,L-glutamine family amino acid biosynthetic process
+PMM1512,go:0019676,ammonia assimilation cycle
+PMM1512,go:0043650,dicarboxylic acid biosynthetic process
+PMM1512,go:1901607,alpha-amino acid biosynthetic process
+PMM1514,go:0009107,lipoate biosynthetic process
+PMM1514,go:0009249,protein lipoylation
+PMM1515,go:0006310,DNA recombination
+PMM1515,go:0015074,DNA integration
+PMM1517,go:0030655,beta-lactam antibiotic catabolic process
+PMM1517,go:0046677,response to antibiotic
+PMM1518,go:0000270,peptidoglycan metabolic process
+PMM1518,go:0006508,proteolysis
+PMM1519,go:0019684,"photosynthesis, light reaction"
+PMM1520,go:0019684,"photosynthesis, light reaction"
+PMM1522,go:0009103,lipopolysaccharide biosynthetic process
+PMM1523,go:0015979,photosynthesis
+PMM1524,go:0015979,photosynthesis
+PMM1525,go:0009236,cobalamin biosynthetic process
+PMM1525,go:0032259,methylation
+PMM1527,go:0006522,alanine metabolic process
+PMM1527,go:0009252,peptidoglycan biosynthetic process
+PMM1527,go:0030632,D-alanine biosynthetic process
+PMM1529,go:0006415,translational termination
+PMM1530,go:0006412,translation
+PMM1531,go:0000462,"maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)"
+PMM1531,go:0006412,translation
+PMM1531,go:0043043,peptide biosynthetic process
+PMM1532,go:0006412,translation
+PMM1532,go:0010467,gene expression
+PMM1532,go:0043043,peptide biosynthetic process
+PMM1533,go:0031119,tRNA pseudouridine synthesis
+PMM1534,go:0006412,translation
+PMM1535,go:0006352,DNA-templated transcription initiation
+PMM1535,go:0006354,DNA-templated transcription elongation
+PMM1535,go:0034654,nucleobase-containing compound biosynthetic process
+PMM1536,go:0006412,translation
+PMM1537,go:0006412,translation
+PMM1537,go:0010467,gene expression
+PMM1537,go:0042254,ribosome biogenesis
+PMM1537,go:0043043,peptide biosynthetic process
+PMM1538,go:0006412,translation
+PMM1538,go:0010467,gene expression
+PMM1538,go:0043043,peptide biosynthetic process
+PMM1539,go:0006139,nucleobase-containing compound metabolic process
+PMM1539,go:0006172,ADP biosynthetic process
+PMM1539,go:0006412,translation
+PMM1539,go:0008654,phospholipid biosynthetic process
+PMM1539,go:0015951,purine ribonucleotide interconversion
+PMM1539,go:0016310,phosphorylation
+PMM1539,go:0032774,RNA biosynthetic process
+PMM1539,go:0044209,AMP salvage
+PMM1540,go:0006605,protein targeting
+PMM1540,go:0015628,protein secretion by the type II secretion system
+PMM1540,go:0043952,protein transport by the Sec complex
+PMM1540,go:0065002,intracellular protein transmembrane transport
+PMM1541,go:0006412,translation
+PMM1542,go:0006412,translation
+PMM1542,go:0010467,gene expression
+PMM1542,go:0043043,peptide biosynthetic process
+PMM1543,go:0006412,translation
+PMM1544,go:0002181,cytoplasmic translation
+PMM1544,go:0010467,gene expression
+PMM1544,go:0043043,peptide biosynthetic process
+PMM1545,go:0006412,translation
+PMM1546,go:0000027,ribosomal large subunit assembly
+PMM1546,go:0006412,translation
+PMM1546,go:0010467,gene expression
+PMM1546,go:0043043,peptide biosynthetic process
+PMM1546,go:0070925,organelle assembly
+PMM1547,go:0006412,translation
+PMM1547,go:0010467,gene expression
+PMM1547,go:0043043,peptide biosynthetic process
+PMM1548,go:0006412,translation
+PMM1549,go:0006412,translation
+PMM1550,go:0006412,translation
+PMM1551,go:0006412,translation
+PMM1552,go:0002181,cytoplasmic translation
+PMM1552,go:0010467,gene expression
+PMM1552,go:0043043,peptide biosynthetic process
+PMM1553,go:0006412,translation
+PMM1554,go:0000028,ribosomal small subunit assembly
+PMM1554,go:0006412,translation
+PMM1554,go:0070925,organelle assembly
+PMM1555,go:0002181,cytoplasmic translation
+PMM1555,go:0010467,gene expression
+PMM1555,go:0043043,peptide biosynthetic process
+PMM1556,go:0000027,ribosomal large subunit assembly
+PMM1556,go:0006412,translation
+PMM1556,go:0010467,gene expression
+PMM1556,go:0043043,peptide biosynthetic process
+PMM1556,go:0070925,organelle assembly
+PMM1557,go:0006412,translation
+PMM1557,go:0010467,gene expression
+PMM1557,go:0043043,peptide biosynthetic process
+PMM1558,go:0006412,translation
+PMM1559,go:0042773,ATP synthesis coupled electron transport
+PMM1560,go:0043153,entrainment of circadian clock by photoperiod
+PMM1562,go:0006281,DNA repair
+PMM1562,go:0006310,DNA recombination
+PMM1562,go:0009432,SOS response
+PMM1563,go:0008150,biological_process
+PMM1564,go:0006139,nucleobase-containing compound metabolic process
+PMM1565,go:0006571,L-tyrosine biosynthetic process
+PMM1566,go:0016117,carotenoid biosynthetic process
+PMM1567,go:0016310,phosphorylation
+PMM1569,go:0032324,molybdopterin cofactor biosynthetic process
+PMM1569,go:0042128,nitrate assimilation
+PMM1570,go:0009236,cobalamin biosynthetic process
+PMM1571,go:0006163,purine nucleotide metabolic process
+PMM1572,go:0008295,spermidine biosynthetic process
+PMM1573,go:0000731,DNA synthesis involved in DNA repair
+PMM1573,go:0006260,DNA replication
+PMM1573,go:0006302,double-strand break repair
+PMM1573,go:0006310,DNA recombination
+PMM1573,go:0009059,macromolecule biosynthetic process
+PMM1573,go:0009432,SOS response
+PMM1573,go:0034654,nucleobase-containing compound biosynthetic process
+PMM1575,go:0006099,tricarboxylic acid cycle
+PMM1575,go:0006107,oxaloacetate metabolic process
+PMM1575,go:0015977,carbon fixation
+PMM1576,go:0006750,glutathione biosynthetic process
+PMM1577,go:0000162,L-tryptophan biosynthetic process
+PMM1577,go:1901607,alpha-amino acid biosynthetic process
+PMM1578,go:0015979,photosynthesis
+PMM1579,go:0000160,phosphorelay signal transduction system
+PMM1579,go:0007165,signal transduction
+PMM1579,go:0016310,phosphorylation
+PMM1579,go:0018106,peptidyl-histidine phosphorylation
+PMM1580,go:0008360,regulation of cell shape
+PMM1580,go:0009252,peptidoglycan biosynthetic process
+PMM1580,go:0043093,FtsZ-dependent cytokinesis
+PMM1580,go:0051301,cell division
+PMM1580,go:0071555,cell wall organization
+PMM1581,go:0016226,iron-sulfur cluster assembly
+PMM1582,go:0006782,protoporphyrinogen IX biosynthetic process
+PMM1584,go:0006139,nucleobase-containing compound metabolic process
+PMM1584,go:0042780,tRNA 3^-end processing
+PMM1585,go:0008150,biological_process
+PMM1589,go:0006189,^de novo^ IMP biosynthetic process
+PMM1589,go:0009152,purine ribonucleotide biosynthetic process
+PMM1590,go:0006573,valine metabolic process
+PMM1590,go:0015940,pantothenate biosynthetic process
+PMM1590,go:0016310,phosphorylation
+PMM1590,go:0046940,nucleoside monophosphate phosphorylation
+PMM1591,go:0006470,protein dephosphorylation
+PMM1592,go:0046148,pigment biosynthetic process
+PMM1593,go:0046148,pigment biosynthetic process
+PMM1594,go:0006788,heme oxidation
+PMM1594,go:0006979,response to oxidative stress
+PMM1594,go:0015979,photosynthesis
+PMM1594,go:0042167,heme catabolic process
+PMM1594,go:0046148,pigment biosynthetic process
+PMM1594,go:0055080,monoatomic cation homeostasis
+PMM1594,go:0065008,regulation of biological quality
+PMM1594,go:0098771,inorganic ion homeostasis
+PMM1596,go:0006097,glyoxylate cycle
+PMM1596,go:0006099,tricarboxylic acid cycle
+PMM1598,go:0005975,carbohydrate metabolic process
+PMM1600,go:0006812,monoatomic cation transport
+PMM1600,go:0006814,sodium ion transport
+PMM1600,go:0055085,transmembrane transport
+PMM1600,go:1902600,proton transmembrane transport
+PMM1601,go:0005975,carbohydrate metabolic process
+PMM1601,go:0005980,glycogen catabolic process
+PMM1603,go:0006364,rRNA processing
+PMM1603,go:0006397,mRNA processing
+PMM1603,go:0008033,tRNA processing
+PMM1603,go:0010468,regulation of gene expression
+PMM1604,go:0009767,photosynthetic electron transport chain
+PMM1605,go:0000028,ribosomal small subunit assembly
+PMM1605,go:0030490,maturation of SSU-rRNA
+PMM1606,go:0005975,carbohydrate metabolic process
+PMM1606,go:0006002,fructose 6-phosphate metabolic process
+PMM1606,go:0006047,UDP-N-acetylglucosamine metabolic process
+PMM1606,go:0006487,protein N-linked glycosylation
+PMM1606,go:0036211,protein modification process
+PMM1606,go:0046349,amino sugar biosynthetic process
+PMM1606,go:0055086,nucleobase-containing small molecule metabolic process
+PMM1607,go:0009773,photosynthetic electron transport in photosystem I
+PMM1607,go:0015979,photosynthesis
+PMM1608,go:0006633,fatty acid biosynthetic process
+PMM1608,go:0009245,lipid A biosynthetic process
+PMM1608,go:0009312,oligosaccharide biosynthetic process
+PMM1609,go:0006633,fatty acid biosynthetic process
+PMM1609,go:0008152,metabolic process
+PMM1610,go:0006098,pentose-phosphate shunt
+PMM1611,go:0009228,thiamine biosynthetic process
+PMM1613,go:0019877,diaminopimelate biosynthetic process
+PMM1615,go:0000725,recombinational repair
+PMM1615,go:0009432,SOS response
+PMM1615,go:0071932,replication fork reversal
+PMM1616,go:0006450,regulation of translational fidelity
+PMM1618,go:0006430,lysyl-tRNA aminoacylation
+PMM1619,go:0000160,phosphorelay signal transduction system
+PMM1619,go:0006355,regulation of DNA-templated transcription
+PMM1621,go:0008360,regulation of cell shape
+PMM1622,go:0000902,cell morphogenesis
+PMM1622,go:0008360,regulation of cell shape
+PMM1623,go:0006260,DNA replication
+PMM1623,go:0006281,DNA repair
+PMM1623,go:0006310,DNA recombination
+PMM1625,go:0006555,methionine metabolic process
+PMM1625,go:0006730,one-carbon metabolic process
+PMM1625,go:0033353,S-adenosylmethionine cycle
+PMM1625,go:0046439,L-cysteine metabolic process
+PMM1625,go:0046498,S-adenosylhomocysteine metabolic process
+PMM1626,go:0002949,tRNA threonylcarbamoyladenosine modification
+PMM1627,go:0005975,carbohydrate metabolic process
+PMM1627,go:0016310,phosphorylation
+PMM1629,go:0006352,DNA-templated transcription initiation
+PMM1629,go:0006355,regulation of DNA-templated transcription
+PMM1630,go:0015693,magnesium ion transport
+PMM1632,go:1903424,fluoride transmembrane transport
+PMM1634,go:0006261,DNA-templated DNA replication
+PMM1634,go:0006265,DNA topological change
+PMM1635,go:0006400,tRNA modification
+PMM1636,go:0006413,translational initiation
+PMM1636,go:0010467,gene expression
+PMM1636,go:0032790,ribosome disassembly
+PMM1636,go:0032988,protein-RNA complex disassembly
+PMM1636,go:0043043,peptide biosynthetic process
+PMM1637,go:0006355,regulation of DNA-templated transcription
+PMM1638,go:0006535,L-cysteine biosynthetic process from L-serine
+PMM1639,go:0006605,protein targeting
+PMM1639,go:0006886,intracellular protein transport
+PMM1639,go:0015833,peptide transport
+PMM1639,go:0017038,protein import
+PMM1639,go:0043952,protein transport by the Sec complex
+PMM1639,go:0071705,nitrogen compound transport
+PMM1641,go:0000271,polysaccharide biosynthetic process
+PMM1641,go:0006810,transport
+PMM1643,go:0009231,riboflavin biosynthetic process
+PMM1644,go:0015979,photosynthesis
+PMM1644,go:0042549,photosystem II stabilization
+PMM1645,go:0006298,mismatch repair
+PMM1646,go:0009236,cobalamin biosynthetic process
+PMM1647,go:0006261,DNA-templated DNA replication
+PMM1648,go:0008152,metabolic process
+PMM1648,go:0009088,L-threonine biosynthetic process
+PMM1648,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM1648,go:0009090,L-homoserine biosynthetic process
+PMM1648,go:0019877,diaminopimelate biosynthetic process
+PMM1649,go:0006289,nucleotide-excision repair
+PMM1651,go:0006400,tRNA modification
+PMM1652,go:0006364,rRNA processing
+PMM1653,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM1654,go:0009088,L-threonine biosynthetic process
+PMM1654,go:0009089,L-lysine biosynthetic process via diaminopimelate
+PMM1654,go:0009097,isoleucine biosynthetic process
+PMM1654,go:0019877,diaminopimelate biosynthetic process
+PMM1654,go:0071266,^de novo^ L-methionine biosynthetic process
+PMM1655,go:0000413,protein peptidyl-prolyl isomerization
+PMM1655,go:0006457,protein folding
+PMM1655,go:0007049,cell cycle
+PMM1655,go:0009408,response to heat
+PMM1655,go:0015031,protein transport
+PMM1655,go:0043335,protein unfolding
+PMM1655,go:0051083,^de novo^ cotranslational protein folding
+PMM1655,go:0065003,protein-containing complex assembly
+PMM1656,go:0006508,proteolysis
+PMM1657,go:0006457,protein folding
+PMM1657,go:0006508,proteolysis
+PMM1657,go:0030163,protein catabolic process
+PMM1657,go:0043335,protein unfolding
+PMM1657,go:0051301,cell division
+PMM1658,go:0006261,DNA-templated DNA replication
+PMM1659,go:0006071,glycerol metabolic process
+PMM1659,go:0008610,lipid biosynthetic process
+PMM1660,go:0030435,sporulation resulting in formation of a cellular spore
+PMM1660,go:0051301,cell division
+PMM1661,go:0006412,translation
+PMM1662,go:0000027,ribosomal large subunit assembly
+PMM1662,go:0006412,translation
+PMM1662,go:0070925,organelle assembly
+PMM1664,go:0009228,thiamine biosynthetic process
+PMM1666,go:0046506,sulfolipid biosynthetic process
+PMM1668,go:0019464,glycine decarboxylation via glycine cleavage system
+PMM1669,go:0019464,glycine decarboxylation via glycine cleavage system
+PMM1672,go:0006629,lipid metabolic process
+PMM1672,go:0006636,unsaturated fatty acid biosynthetic process
+PMM1673,go:0006412,translation
+PMM1673,go:0010467,gene expression
+PMM1673,go:0043043,peptide biosynthetic process
+PMM1674,go:0006269,"DNA replication, synthesis of primer"
+PMM1674,go:0009059,macromolecule biosynthetic process
+PMM1674,go:0032392,DNA geometric change
+PMM1675,go:0002098,tRNA wobble uridine modification
+PMM1675,go:0030488,tRNA methylation
+PMM1676,go:0006744,ubiquinone biosynthetic process
+PMM1676,go:0042866,pyruvate biosynthetic process
+PMM1677,go:0006508,proteolysis
+PMM1679,go:0006260,DNA replication
+PMM1679,go:0006281,DNA repair
+PMM1679,go:0006310,DNA recombination
+PMM1682,go:0006438,valyl-tRNA aminoacylation
+PMM1682,go:0010467,gene expression
+PMM1682,go:0019752,carboxylic acid metabolic process
+PMM1682,go:0043043,peptide biosynthetic process
+PMM1684,go:0006203,dGTP catabolic process
+PMM1684,go:0046047,TTP catabolic process
+PMM1684,go:0046052,UTP catabolic process
+PMM1684,go:0046061,dATP catabolic process
+PMM1684,go:0046076,dTTP catabolic process
+PMM1684,go:0046081,dUTP catabolic process
+PMM1686,go:0008295,spermidine biosynthetic process
+PMM1686,go:0033389,"putrescine biosynthetic process from arginine, via agmatine"
+PMM1687,go:0019464,glycine decarboxylation via glycine cleavage system
+PMM1688,go:0006422,aspartyl-tRNA aminoacylation
+PMM1689,go:0006241,CTP biosynthetic process
+PMM1690,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM1691,go:0008616,tRNA queuosine(34) biosynthetic process
+PMM1692,go:0000162,L-tryptophan biosynthetic process
+PMM1692,go:0009058,biosynthetic process
+PMM1693,go:0008152,metabolic process
+PMM1693,go:0046394,carboxylic acid biosynthetic process
+PMM1694,go:0019354,siroheme biosynthetic process
+PMM1694,go:0032259,methylation
+PMM1695,go:0055085,transmembrane transport
+PMM1696,go:0006799,polyphosphate biosynthetic process
+PMM1697,go:0006352,DNA-templated transcription initiation
+PMM1698,go:0016310,phosphorylation
+PMM1699,go:0008652,amino acid biosynthetic process
+PMM1699,go:0009073,aromatic amino acid family biosynthetic process
+PMM1699,go:0009423,chorismate biosynthetic process
+PMM1700,go:0006099,tricarboxylic acid cycle
+PMM1700,go:0006101,citrate metabolic process
+PMM1700,go:0017001,antibiotic catabolic process
+PMM1700,go:0019629,"propionate catabolic process, 2-methylcitrate cycle"
+PMM1702,go:0006189,^de novo^ IMP biosynthetic process
+PMM1702,go:0006730,one-carbon metabolic process
+PMM1702,go:0009152,purine ribonucleotide biosynthetic process
+PMM1702,go:0009257,10-formyltetrahydrofolate biosynthetic process
+PMM1704,go:0006457,protein folding
+PMM1705,go:0008652,amino acid biosynthetic process
+PMM1705,go:0009073,aromatic amino acid family biosynthetic process
+PMM1705,go:0009423,chorismate biosynthetic process
+PMM1705,go:0019632,shikimate metabolic process
+PMM1706,go:0006412,translation
+PMM1707,go:0000050,urea cycle
+PMM1707,go:0000053,argininosuccinate metabolic process
+PMM1707,go:0042450,L-arginine biosynthetic process via ornithine
+PMM1707,go:1901607,alpha-amino acid biosynthetic process
+PMM1709,go:0009252,peptidoglycan biosynthetic process
+PMM1711,go:0005986,sucrose biosynthetic process
+PMM1712,go:0006289,nucleotide-excision repair
+PMM1712,go:0009432,SOS response
+PMM1713,go:0000724,double-strand break repair via homologous recombination
+PMM1713,go:0006281,DNA repair
+PMM1713,go:0006310,DNA recombination
+PMM1713,go:0009432,SOS response
+PMM1714,go:0006468,protein phosphorylation
+PMM1716,go:0006520,amino acid metabolic process
+PMM1716,go:0006565,L-serine catabolic process
+PMM1716,go:0006567,L-threonine catabolic process
+PMM1716,go:0009088,L-threonine biosynthetic process
+PMM1716,go:0009097,isoleucine biosynthetic process
+PMM1718,go:0010190,cytochrome b6f complex assembly
+PMM1718,go:0015979,photosynthesis
+PMM1720,go:0042773,ATP synthesis coupled electron transport
+PMM1723,go:0006629,lipid metabolic process
+PMM1723,go:0046148,pigment biosynthetic process
+PMM1841,go:0006304,DNA modification
+PMM1841,go:0032259,methylation
+PMM1900,go:0010206,photosystem II repair
+PMM1900,go:0010207,photosystem II assembly
+PMM1900,go:0015979,photosynthesis

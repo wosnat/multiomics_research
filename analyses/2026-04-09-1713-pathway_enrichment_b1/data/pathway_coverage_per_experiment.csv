@@ -1,0 +1,11 @@
+experiment,n_pathways_total,n_pathways_represented,mean_coverage
+de_ctrl_aharonovich_coculture,69,69,0.9862734662171256
+de_ctrl_steglich_high_white_light,69,49,0.10313189873954083
+de_ctrl_tolonen_cyanate,69,69,0.9877719625531521
+de_ctrl_tolonen_urea,69,69,0.9877719625531521
+de_ref_read_ndep,69,67,0.5157624430302131
+de_ref_tolonen_ndep,69,69,0.9877719625531521
+de_weissberg_proteomics_axenic,69,69,0.8994274085398901
+de_weissberg_proteomics_coculture,69,69,0.8994274085398901
+de_weissberg_rnaseq_axenic,69,69,0.991880859839885
+de_weissberg_rnaseq_coculture,69,69,0.991880859839885

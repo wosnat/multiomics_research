@@ -1,0 +1,11 @@
+experiment,n_genes
+de_ctrl_aharonovich_coculture,1714
+de_ctrl_steglich_high_white_light,198
+de_ctrl_tolonen_cyanate,1697
+de_ctrl_tolonen_urea,1697
+de_ref_read_ndep,857
+de_ref_tolonen_ndep,1697
+de_weissberg_proteomics_axenic,1424
+de_weissberg_proteomics_coculture,1424
+de_weissberg_rnaseq_axenic,1849
+de_weissberg_rnaseq_coculture,1849

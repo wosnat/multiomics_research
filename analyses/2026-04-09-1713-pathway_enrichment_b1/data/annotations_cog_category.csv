@@ -1,0 +1,1827 @@
+locus_tag,term_id,term_name
+PMM0001,cog.category:L,"Replication, recombination and repair"
+PMM0002,cog.category:S,Function unknown
+PMM0003,cog.category:F,Nucleotide transport and metabolism
+PMM0004,cog.category:F,Nucleotide transport and metabolism
+PMM0005,cog.category:L,"Replication, recombination and repair"
+PMM0006,cog.category:S,Function unknown
+PMM0007,cog.category:C,Energy production and conversion
+PMM0008,cog.category:S,Function unknown
+PMM0009,cog.category:K,Transcription
+PMM0010,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0011,cog.category:K,Transcription
+PMM0011,cog.category:T,Signal transduction mechanisms
+PMM0012,cog.category:E,Amino acid transport and metabolism
+PMM0013,cog.category:S,Function unknown
+PMM0014,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0015,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0016,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0017,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0018,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0019,cog.category:S,Function unknown
+PMM0020,cog.category:S,Function unknown
+PMM0021,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0022,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0023,cog.category:G,Carbohydrate transport and metabolism
+PMM0024,cog.category:F,Nucleotide transport and metabolism
+PMM0025,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0026,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0027,cog.category:I,Lipid transport and metabolism
+PMM0028,cog.category:C,Energy production and conversion
+PMM0029,cog.category:G,Carbohydrate transport and metabolism
+PMM0029,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0031,cog.category:L,"Replication, recombination and repair"
+PMM0032,cog.category:S,Function unknown
+PMM0033,cog.category:S,Function unknown
+PMM0034,cog.category:S,Function unknown
+PMM0035,cog.category:E,Amino acid transport and metabolism
+PMM0036,cog.category:H,Coenzyme transport and metabolism
+PMM0037,cog.category:F,Nucleotide transport and metabolism
+PMM0038,cog.category:L,"Replication, recombination and repair"
+PMM0039,cog.category:S,Function unknown
+PMM0040,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0041,cog.category:S,Function unknown
+PMM0042,cog.category:C,Energy production and conversion
+PMM0043,cog.category:C,Energy production and conversion
+PMM0044,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0045,cog.category:H,Coenzyme transport and metabolism
+PMM0046,cog.category:F,Nucleotide transport and metabolism
+PMM0047,cog.category:C,Energy production and conversion
+PMM0048,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0049,cog.category:F,Nucleotide transport and metabolism
+PMM0050,cog.category:E,Amino acid transport and metabolism
+PMM0051,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0052,cog.category:C,Energy production and conversion
+PMM0053,cog.category:L,"Replication, recombination and repair"
+PMM0054,cog.category:S,Function unknown
+PMM0055,cog.category:S,Function unknown
+PMM0056,cog.category:S,Function unknown
+PMM0057,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0058,cog.category:S,Function unknown
+PMM0059,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0060,cog.category:I,Lipid transport and metabolism
+PMM0061,cog.category:S,Function unknown
+PMM0062,cog.category:S,Function unknown
+PMM0063,cog.category:K,Transcription
+PMM0063,cog.category:L,"Replication, recombination and repair"
+PMM0063,cog.category:T,Signal transduction mechanisms
+PMM0064,cog.category:S,Function unknown
+PMM0065,cog.category:S,Function unknown
+PMM0066,cog.category:S,Function unknown
+PMM0067,cog.category:F,Nucleotide transport and metabolism
+PMM0067,cog.category:G,Carbohydrate transport and metabolism
+PMM0068,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0069,cog.category:E,Amino acid transport and metabolism
+PMM0070,cog.category:E,Amino acid transport and metabolism
+PMM0071,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0072,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0073,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0074,cog.category:S,Function unknown
+PMM0075,cog.category:S,Function unknown
+PMM0076,cog.category:G,Carbohydrate transport and metabolism
+PMM0077,cog.category:L,"Replication, recombination and repair"
+PMM0078,cog.category:H,Coenzyme transport and metabolism
+PMM0079,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0080,cog.category:K,Transcription
+PMM0081,cog.category:E,Amino acid transport and metabolism
+PMM0081,cog.category:H,Coenzyme transport and metabolism
+PMM0082,cog.category:C,Energy production and conversion
+PMM0083,cog.category:P,Inorganic ion transport and metabolism
+PMM0084,cog.category:P,Inorganic ion transport and metabolism
+PMM0085,cog.category:P,Inorganic ion transport and metabolism
+PMM0086,cog.category:S,Function unknown
+PMM0087,cog.category:S,Function unknown
+PMM0088,cog.category:S,Function unknown
+PMM0089,cog.category:S,Function unknown
+PMM0090,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0091,cog.category:S,Function unknown
+PMM0092,cog.category:S,Function unknown
+PMM0094,cog.category:S,Function unknown
+PMM0095,cog.category:S,Function unknown
+PMM0096,cog.category:G,Carbohydrate transport and metabolism
+PMM0097,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0097,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0098,cog.category:C,Energy production and conversion
+PMM0099,cog.category:S,Function unknown
+PMM0100,cog.category:H,Coenzyme transport and metabolism
+PMM0101,cog.category:C,Energy production and conversion
+PMM0101,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0102,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0103,cog.category:H,Coenzyme transport and metabolism
+PMM0104,cog.category:S,Function unknown
+PMM0105,cog.category:H,Coenzyme transport and metabolism
+PMM0106,cog.category:H,Coenzyme transport and metabolism
+PMM0107,cog.category:F,Nucleotide transport and metabolism
+PMM0108,cog.category:S,Function unknown
+PMM0109,cog.category:S,Function unknown
+PMM0110,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0111,cog.category:S,Function unknown
+PMM0112,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0113,cog.category:H,Coenzyme transport and metabolism
+PMM0114,cog.category:S,Function unknown
+PMM0115,cog.category:S,Function unknown
+PMM0116,cog.category:S,Function unknown
+PMM0117,cog.category:N,Cell motility
+PMM0117,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0118,cog.category:S,Function unknown
+PMM0120,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0121,cog.category:C,Energy production and conversion
+PMM0122,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0123,cog.category:E,Amino acid transport and metabolism
+PMM0124,cog.category:S,Function unknown
+PMM0125,cog.category:P,Inorganic ion transport and metabolism
+PMM0126,cog.category:S,Function unknown
+PMM0127,cog.category:S,Function unknown
+PMM0128,cog.category:T,Signal transduction mechanisms
+PMM0129,cog.category:L,"Replication, recombination and repair"
+PMM0130,cog.category:F,Nucleotide transport and metabolism
+PMM0131,cog.category:P,Inorganic ion transport and metabolism
+PMM0132,cog.category:N,Cell motility
+PMM0132,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0133,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0134,cog.category:K,Transcription
+PMM0134,cog.category:T,Signal transduction mechanisms
+PMM0135,cog.category:I,Lipid transport and metabolism
+PMM0136,cog.category:I,Lipid transport and metabolism
+PMM0137,cog.category:I,Lipid transport and metabolism
+PMM0138,cog.category:I,Lipid transport and metabolism
+PMM0139,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0140,cog.category:S,Function unknown
+PMM0141,cog.category:H,Coenzyme transport and metabolism
+PMM0142,cog.category:S,Function unknown
+PMM0143,cog.category:I,Lipid transport and metabolism
+PMM0144,cog.category:E,Amino acid transport and metabolism
+PMM0145,cog.category:C,Energy production and conversion
+PMM0146,cog.category:S,Function unknown
+PMM0147,cog.category:K,Transcription
+PMM0148,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0149,cog.category:C,Energy production and conversion
+PMM0149,cog.category:P,Inorganic ion transport and metabolism
+PMM0150,cog.category:C,Energy production and conversion
+PMM0151,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0152,cog.category:H,Coenzyme transport and metabolism
+PMM0153,cog.category:C,Energy production and conversion
+PMM0154,cog.category:K,Transcription
+PMM0155,cog.category:S,Function unknown
+PMM0156,cog.category:F,Nucleotide transport and metabolism
+PMM0157,cog.category:C,Energy production and conversion
+PMM0158,cog.category:C,Energy production and conversion
+PMM0159,cog.category:C,Energy production and conversion
+PMM0160,cog.category:C,Energy production and conversion
+PMM0161,cog.category:C,Energy production and conversion
+PMM0162,cog.category:S,Function unknown
+PMM0163,cog.category:P,Inorganic ion transport and metabolism
+PMM0164,cog.category:E,Amino acid transport and metabolism
+PMM0165,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0166,cog.category:F,Nucleotide transport and metabolism
+PMM0167,cog.category:F,Nucleotide transport and metabolism
+PMM0168,cog.category:H,Coenzyme transport and metabolism
+PMM0169,cog.category:K,Transcription
+PMM0170,cog.category:E,Amino acid transport and metabolism
+PMM0171,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0172,cog.category:C,Energy production and conversion
+PMM0173,cog.category:S,Function unknown
+PMM0174,cog.category:I,Lipid transport and metabolism
+PMM0174,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0175,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0176,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0177,cog.category:H,Coenzyme transport and metabolism
+PMM0177,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0178,cog.category:H,Coenzyme transport and metabolism
+PMM0179,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0180,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0181,cog.category:S,Function unknown
+PMM0182,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0183,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0184,cog.category:E,Amino acid transport and metabolism
+PMM0184,cog.category:H,Coenzyme transport and metabolism
+PMM0185,cog.category:S,Function unknown
+PMM0186,cog.category:E,Amino acid transport and metabolism
+PMM0187,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0188,cog.category:H,Coenzyme transport and metabolism
+PMM0189,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0190,cog.category:S,Function unknown
+PMM0191,cog.category:K,Transcription
+PMM0191,cog.category:T,Signal transduction mechanisms
+PMM0192,cog.category:P,Inorganic ion transport and metabolism
+PMM0193,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0194,cog.category:S,Function unknown
+PMM0195,cog.category:F,Nucleotide transport and metabolism
+PMM0196,cog.category:S,Function unknown
+PMM0197,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0198,cog.category:E,Amino acid transport and metabolism
+PMM0199,cog.category:F,Nucleotide transport and metabolism
+PMM0200,cog.category:L,"Replication, recombination and repair"
+PMM0201,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0202,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0203,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0204,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0205,cog.category:K,Transcription
+PMM0206,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0207,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0208,cog.category:F,Nucleotide transport and metabolism
+PMM0209,cog.category:S,Function unknown
+PMM0210,cog.category:S,Function unknown
+PMM0211,cog.category:C,Energy production and conversion
+PMM0212,cog.category:E,Amino acid transport and metabolism
+PMM0213,cog.category:S,Function unknown
+PMM0214,cog.category:P,Inorganic ion transport and metabolism
+PMM0215,cog.category:H,Coenzyme transport and metabolism
+PMM0216,cog.category:E,Amino acid transport and metabolism
+PMM0217,cog.category:L,"Replication, recombination and repair"
+PMM0218,cog.category:S,Function unknown
+PMM0219,cog.category:S,Function unknown
+PMM0220,cog.category:S,Function unknown
+PMM0221,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0222,cog.category:E,Amino acid transport and metabolism
+PMM0223,cog.category:C,Energy production and conversion
+PMM0224,cog.category:E,Amino acid transport and metabolism
+PMM0225,cog.category:G,Carbohydrate transport and metabolism
+PMM0226,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0227,cog.category:P,Inorganic ion transport and metabolism
+PMM0228,cog.category:S,Function unknown
+PMM0229,cog.category:H,Coenzyme transport and metabolism
+PMM0230,cog.category:S,Function unknown
+PMM0231,cog.category:S,Function unknown
+PMM0232,cog.category:S,Function unknown
+PMM0233,cog.category:F,Nucleotide transport and metabolism
+PMM0234,cog.category:L,"Replication, recombination and repair"
+PMM0235,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0236,cog.category:I,Lipid transport and metabolism
+PMM0237,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0238,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0239,cog.category:S,Function unknown
+PMM0240,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0241,cog.category:G,Carbohydrate transport and metabolism
+PMM0242,cog.category:C,Energy production and conversion
+PMM0242,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0243,cog.category:F,Nucleotide transport and metabolism
+PMM0244,cog.category:F,Nucleotide transport and metabolism
+PMM0245,cog.category:H,Coenzyme transport and metabolism
+PMM0246,cog.category:K,Transcription
+PMM0247,cog.category:S,Function unknown
+PMM0248,cog.category:L,"Replication, recombination and repair"
+PMM0249,cog.category:S,Function unknown
+PMM0250,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0251,cog.category:S,Function unknown
+PMM0252,cog.category:S,Function unknown
+PMM0253,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0254,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0255,cog.category:E,Amino acid transport and metabolism
+PMM0256,cog.category:E,Amino acid transport and metabolism
+PMM0257,cog.category:S,Function unknown
+PMM0258,cog.category:E,Amino acid transport and metabolism
+PMM0259,cog.category:S,Function unknown
+PMM0260,cog.category:S,Function unknown
+PMM0261,cog.category:S,Function unknown
+PMM0262,cog.category:S,Function unknown
+PMM0263,cog.category:P,Inorganic ion transport and metabolism
+PMM0264,cog.category:I,Lipid transport and metabolism
+PMM0264,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0265,cog.category:S,Function unknown
+PMM0266,cog.category:F,Nucleotide transport and metabolism
+PMM0267,cog.category:S,Function unknown
+PMM0268,cog.category:S,Function unknown
+PMM0269,cog.category:T,Signal transduction mechanisms
+PMM0270,cog.category:H,Coenzyme transport and metabolism
+PMM0271,cog.category:F,Nucleotide transport and metabolism
+PMM0272,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0273,cog.category:S,Function unknown
+PMM0274,cog.category:P,Inorganic ion transport and metabolism
+PMM0275,cog.category:F,Nucleotide transport and metabolism
+PMM0276,cog.category:S,Function unknown
+PMM0277,cog.category:S,Function unknown
+PMM0278,cog.category:G,Carbohydrate transport and metabolism
+PMM0279,cog.category:F,Nucleotide transport and metabolism
+PMM0280,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0281,cog.category:E,Amino acid transport and metabolism
+PMM0282,cog.category:I,Lipid transport and metabolism
+PMM0283,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0284,cog.category:E,Amino acid transport and metabolism
+PMM0285,cog.category:L,"Replication, recombination and repair"
+PMM0286,cog.category:L,"Replication, recombination and repair"
+PMM0287,cog.category:H,Coenzyme transport and metabolism
+PMM0288,cog.category:H,Coenzyme transport and metabolism
+PMM0289,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0290,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0291,cog.category:S,Function unknown
+PMM0292,cog.category:C,Energy production and conversion
+PMM0293,cog.category:C,Energy production and conversion
+PMM0294,cog.category:C,Energy production and conversion
+PMM0295,cog.category:P,Inorganic ion transport and metabolism
+PMM0296,cog.category:S,Function unknown
+PMM0297,cog.category:C,Energy production and conversion
+PMM0298,cog.category:C,Energy production and conversion
+PMM0299,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0300,cog.category:S,Function unknown
+PMM0301,cog.category:F,Nucleotide transport and metabolism
+PMM0302,cog.category:C,Energy production and conversion
+PMM0302,cog.category:E,Amino acid transport and metabolism
+PMM0303,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0304,cog.category:L,"Replication, recombination and repair"
+PMM0305,cog.category:C,Energy production and conversion
+PMM0306,cog.category:E,Amino acid transport and metabolism
+PMM0307,cog.category:S,Function unknown
+PMM0308,cog.category:S,Function unknown
+PMM0309,cog.category:S,Function unknown
+PMM0310,cog.category:G,Carbohydrate transport and metabolism
+PMM0311,cog.category:H,Coenzyme transport and metabolism
+PMM0312,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0313,cog.category:K,Transcription
+PMM0314,cog.category:S,Function unknown
+PMM0315,cog.category:P,Inorganic ion transport and metabolism
+PMM0316,cog.category:C,Energy production and conversion
+PMM0317,cog.category:S,Function unknown
+PMM0318,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0319,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0320,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0321,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0322,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0323,cog.category:S,Function unknown
+PMM0324,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0325,cog.category:C,Energy production and conversion
+PMM0326,cog.category:C,Energy production and conversion
+PMM0327,cog.category:G,Carbohydrate transport and metabolism
+PMM0328,cog.category:L,"Replication, recombination and repair"
+PMM0329,cog.category:S,Function unknown
+PMM0330,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0331,cog.category:C,Energy production and conversion
+PMM0332,cog.category:S,Function unknown
+PMM0333,cog.category:K,Transcription
+PMM0334,cog.category:S,Function unknown
+PMM0335,cog.category:C,Energy production and conversion
+PMM0335,cog.category:P,Inorganic ion transport and metabolism
+PMM0336,cog.category:S,Function unknown
+PMM0337,cog.category:S,Function unknown
+PMM0338,cog.category:S,Function unknown
+PMM0339,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0340,cog.category:S,Function unknown
+PMM0341,cog.category:S,Function unknown
+PMM0342,cog.category:S,Function unknown
+PMM0343,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0344,cog.category:S,Function unknown
+PMM0345,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0346,cog.category:S,Function unknown
+PMM0347,cog.category:S,Function unknown
+PMM0348,cog.category:S,Function unknown
+PMM0349,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0350,cog.category:S,Function unknown
+PMM0352,cog.category:S,Function unknown
+PMM0353,cog.category:H,Coenzyme transport and metabolism
+PMM0354,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0355,cog.category:S,Function unknown
+PMM0356,cog.category:E,Amino acid transport and metabolism
+PMM0357,cog.category:K,Transcription
+PMM0358,cog.category:H,Coenzyme transport and metabolism
+PMM0359,cog.category:S,Function unknown
+PMM0360,cog.category:S,Function unknown
+PMM0361,cog.category:H,Coenzyme transport and metabolism
+PMM0363,cog.category:K,Transcription
+PMM0364,cog.category:S,Function unknown
+PMM0365,cog.category:S,Function unknown
+PMM0367,cog.category:S,Function unknown
+PMM0368,cog.category:S,Function unknown
+PMM0369,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0370,cog.category:P,Inorganic ion transport and metabolism
+PMM0371,cog.category:P,Inorganic ion transport and metabolism
+PMM0372,cog.category:P,Inorganic ion transport and metabolism
+PMM0373,cog.category:P,Inorganic ion transport and metabolism
+PMM0374,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0376,cog.category:S,Function unknown
+PMM0378,cog.category:S,Function unknown
+PMM0379,cog.category:S,Function unknown
+PMM0380,cog.category:S,Function unknown
+PMM0383,cog.category:S,Function unknown
+PMM0384,cog.category:L,"Replication, recombination and repair"
+PMM0386,cog.category:V,Defense mechanisms
+PMM0387,cog.category:E,Amino acid transport and metabolism
+PMM0388,cog.category:F,Nucleotide transport and metabolism
+PMM0388,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0389,cog.category:H,Coenzyme transport and metabolism
+PMM0390,cog.category:S,Function unknown
+PMM0391,cog.category:S,Function unknown
+PMM0392,cog.category:P,Inorganic ion transport and metabolism
+PMM0393,cog.category:S,Function unknown
+PMM0394,cog.category:S,Function unknown
+PMM0395,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0396,cog.category:E,Amino acid transport and metabolism
+PMM0397,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0398,cog.category:L,"Replication, recombination and repair"
+PMM0399,cog.category:F,Nucleotide transport and metabolism
+PMM0400,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0401,cog.category:H,Coenzyme transport and metabolism
+PMM0402,cog.category:I,Lipid transport and metabolism
+PMM0403,cog.category:S,Function unknown
+PMM0404,cog.category:S,Function unknown
+PMM0405,cog.category:C,Energy production and conversion
+PMM0406,cog.category:F,Nucleotide transport and metabolism
+PMM0407,cog.category:E,Amino acid transport and metabolism
+PMM0408,cog.category:E,Amino acid transport and metabolism
+PMM0409,cog.category:E,Amino acid transport and metabolism
+PMM0410,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0411,cog.category:S,Function unknown
+PMM0412,cog.category:S,Function unknown
+PMM0413,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0414,cog.category:I,Lipid transport and metabolism
+PMM0414,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0415,cog.category:E,Amino acid transport and metabolism
+PMM0416,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0417,cog.category:S,Function unknown
+PMM0418,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0419,cog.category:C,Energy production and conversion
+PMM0420,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0421,cog.category:P,Inorganic ion transport and metabolism
+PMM0422,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0423,cog.category:S,Function unknown
+PMM0424,cog.category:S,Function unknown
+PMM0425,cog.category:S,Function unknown
+PMM0426,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0427,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0428,cog.category:H,Coenzyme transport and metabolism
+PMM0429,cog.category:S,Function unknown
+PMM0430,cog.category:E,Amino acid transport and metabolism
+PMM0431,cog.category:H,Coenzyme transport and metabolism
+PMM0432,cog.category:S,Function unknown
+PMM0433,cog.category:H,Coenzyme transport and metabolism
+PMM0434,cog.category:V,Defense mechanisms
+PMM0435,cog.category:C,Energy production and conversion
+PMM0436,cog.category:L,"Replication, recombination and repair"
+PMM0437,cog.category:S,Function unknown
+PMM0438,cog.category:S,Function unknown
+PMM0439,cog.category:H,Coenzyme transport and metabolism
+PMM0440,cog.category:E,Amino acid transport and metabolism
+PMM0441,cog.category:S,Function unknown
+PMM0442,cog.category:H,Coenzyme transport and metabolism
+PMM0443,cog.category:K,Transcription
+PMM0444,cog.category:C,Energy production and conversion
+PMM0445,cog.category:C,Energy production and conversion
+PMM0446,cog.category:C,Energy production and conversion
+PMM0447,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0448,cog.category:H,Coenzyme transport and metabolism
+PMM0449,cog.category:V,Defense mechanisms
+PMM0450,cog.category:V,Defense mechanisms
+PMM0451,cog.category:S,Function unknown
+PMM0452,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0453,cog.category:I,Lipid transport and metabolism
+PMM0453,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0454,cog.category:I,Lipid transport and metabolism
+PMM0455,cog.category:V,Defense mechanisms
+PMM0456,cog.category:H,Coenzyme transport and metabolism
+PMM0457,cog.category:F,Nucleotide transport and metabolism
+PMM0457,cog.category:P,Inorganic ion transport and metabolism
+PMM0458,cog.category:S,Function unknown
+PMM0459,cog.category:H,Coenzyme transport and metabolism
+PMM0460,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0461,cog.category:C,Energy production and conversion
+PMM0462,cog.category:C,Energy production and conversion
+PMM0463,cog.category:S,Function unknown
+PMM0464,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0465,cog.category:S,Function unknown
+PMM0466,cog.category:K,Transcription
+PMM0467,cog.category:F,Nucleotide transport and metabolism
+PMM0468,cog.category:S,Function unknown
+PMM0469,cog.category:S,Function unknown
+PMM0470,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0471,cog.category:S,Function unknown
+PMM0472,cog.category:P,Inorganic ion transport and metabolism
+PMM0473,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0475,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0476,cog.category:S,Function unknown
+PMM0477,cog.category:E,Amino acid transport and metabolism
+PMM0478,cog.category:I,Lipid transport and metabolism
+PMM0478,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0479,cog.category:C,Energy production and conversion
+PMM0480,cog.category:L,"Replication, recombination and repair"
+PMM0480,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0481,cog.category:S,Function unknown
+PMM0482,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0483,cog.category:H,Coenzyme transport and metabolism
+PMM0484,cog.category:L,"Replication, recombination and repair"
+PMM0485,cog.category:S,Function unknown
+PMM0486,cog.category:S,Function unknown
+PMM0487,cog.category:S,Function unknown
+PMM0488,cog.category:S,Function unknown
+PMM0489,cog.category:P,Inorganic ion transport and metabolism
+PMM0490,cog.category:S,Function unknown
+PMM0491,cog.category:H,Coenzyme transport and metabolism
+PMM0492,cog.category:S,Function unknown
+PMM0493,cog.category:E,Amino acid transport and metabolism
+PMM0494,cog.category:C,Energy production and conversion
+PMM0495,cog.category:H,Coenzyme transport and metabolism
+PMM0496,cog.category:K,Transcription
+PMM0497,cog.category:L,"Replication, recombination and repair"
+PMM0498,cog.category:S,Function unknown
+PMM0499,cog.category:F,Nucleotide transport and metabolism
+PMM0500,cog.category:S,Function unknown
+PMM0502,cog.category:L,"Replication, recombination and repair"
+PMM0503,cog.category:H,Coenzyme transport and metabolism
+PMM0504,cog.category:P,Inorganic ion transport and metabolism
+PMM0505,cog.category:G,Carbohydrate transport and metabolism
+PMM0506,cog.category:F,Nucleotide transport and metabolism
+PMM0507,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0508,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0509,cog.category:S,Function unknown
+PMM0510,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0511,cog.category:C,Energy production and conversion
+PMM0512,cog.category:P,Inorganic ion transport and metabolism
+PMM0513,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0514,cog.category:F,Nucleotide transport and metabolism
+PMM0515,cog.category:G,Carbohydrate transport and metabolism
+PMM0516,cog.category:S,Function unknown
+PMM0517,cog.category:S,Function unknown
+PMM0518,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0519,cog.category:F,Nucleotide transport and metabolism
+PMM0520,cog.category:C,Energy production and conversion
+PMM0521,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0522,cog.category:F,Nucleotide transport and metabolism
+PMM0523,cog.category:H,Coenzyme transport and metabolism
+PMM0524,cog.category:L,"Replication, recombination and repair"
+PMM0525,cog.category:H,Coenzyme transport and metabolism
+PMM0526,cog.category:H,Coenzyme transport and metabolism
+PMM0527,cog.category:S,Function unknown
+PMM0528,cog.category:S,Function unknown
+PMM0529,cog.category:S,Function unknown
+PMM0530,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0531,cog.category:S,Function unknown
+PMM0532,cog.category:S,Function unknown
+PMM0533,cog.category:S,Function unknown
+PMM0534,cog.category:I,Lipid transport and metabolism
+PMM0535,cog.category:S,Function unknown
+PMM0536,cog.category:H,Coenzyme transport and metabolism
+PMM0537,cog.category:E,Amino acid transport and metabolism
+PMM0538,cog.category:S,Function unknown
+PMM0539,cog.category:H,Coenzyme transport and metabolism
+PMM0540,cog.category:S,Function unknown
+PMM0541,cog.category:S,Function unknown
+PMM0542,cog.category:I,Lipid transport and metabolism
+PMM0542,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0543,cog.category:F,Nucleotide transport and metabolism
+PMM0544,cog.category:F,Nucleotide transport and metabolism
+PMM0545,cog.category:F,Nucleotide transport and metabolism
+PMM0546,cog.category:S,Function unknown
+PMM0547,cog.category:C,Energy production and conversion
+PMM0547,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0548,cog.category:F,Nucleotide transport and metabolism
+PMM0549,cog.category:C,Energy production and conversion
+PMM0549,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0550,cog.category:H,Coenzyme transport and metabolism
+PMM0551,cog.category:C,Energy production and conversion
+PMM0552,cog.category:S,Function unknown
+PMM0553,cog.category:S,Function unknown
+PMM0554,cog.category:C,Energy production and conversion
+PMM0554,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0555,cog.category:C,Energy production and conversion
+PMM0555,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0556,cog.category:H,Coenzyme transport and metabolism
+PMM0557,cog.category:S,Function unknown
+PMM0558,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0559,cog.category:S,Function unknown
+PMM0560,cog.category:F,Nucleotide transport and metabolism
+PMM0561,cog.category:V,Defense mechanisms
+PMM0562,cog.category:K,Transcription
+PMM0563,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0564,cog.category:S,Function unknown
+PMM0565,cog.category:F,Nucleotide transport and metabolism
+PMM0566,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0567,cog.category:C,Energy production and conversion
+PMM0568,cog.category:P,Inorganic ion transport and metabolism
+PMM0569,cog.category:F,Nucleotide transport and metabolism
+PMM0570,cog.category:C,Energy production and conversion
+PMM0571,cog.category:S,Function unknown
+PMM0572,cog.category:E,Amino acid transport and metabolism
+PMM0574,cog.category:S,Function unknown
+PMM0575,cog.category:S,Function unknown
+PMM0576,cog.category:S,Function unknown
+PMM0577,cog.category:K,Transcription
+PMM0578,cog.category:E,Amino acid transport and metabolism
+PMM0579,cog.category:H,Coenzyme transport and metabolism
+PMM0580,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0581,cog.category:C,Energy production and conversion
+PMM0582,cog.category:G,Carbohydrate transport and metabolism
+PMM0582,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0583,cog.category:H,Coenzyme transport and metabolism
+PMM0584,cog.category:G,Carbohydrate transport and metabolism
+PMM0585,cog.category:S,Function unknown
+PMM0586,cog.category:S,Function unknown
+PMM0587,cog.category:S,Function unknown
+PMM0588,cog.category:S,Function unknown
+PMM0589,cog.category:S,Function unknown
+PMM0590,cog.category:E,Amino acid transport and metabolism
+PMM0591,cog.category:H,Coenzyme transport and metabolism
+PMM0592,cog.category:S,Function unknown
+PMM0593,cog.category:E,Amino acid transport and metabolism
+PMM0594,cog.category:C,Energy production and conversion
+PMM0595,cog.category:F,Nucleotide transport and metabolism
+PMM0596,cog.category:G,Carbohydrate transport and metabolism
+PMM0597,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0598,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0599,cog.category:S,Function unknown
+PMM0600,cog.category:S,Function unknown
+PMM0601,cog.category:P,Inorganic ion transport and metabolism
+PMM0602,cog.category:P,Inorganic ion transport and metabolism
+PMM0603,cog.category:P,Inorganic ion transport and metabolism
+PMM0604,cog.category:S,Function unknown
+PMM0605,cog.category:S,Function unknown
+PMM0606,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0607,cog.category:H,Coenzyme transport and metabolism
+PMM0608,cog.category:H,Coenzyme transport and metabolism
+PMM0609,cog.category:F,Nucleotide transport and metabolism
+PMM0610,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0611,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0612,cog.category:S,Function unknown
+PMM0613,cog.category:E,Amino acid transport and metabolism
+PMM0614,cog.category:H,Coenzyme transport and metabolism
+PMM0615,cog.category:S,Function unknown
+PMM0616,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0617,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0618,cog.category:H,Coenzyme transport and metabolism
+PMM0619,cog.category:H,Coenzyme transport and metabolism
+PMM0620,cog.category:S,Function unknown
+PMM0621,cog.category:L,"Replication, recombination and repair"
+PMM0622,cog.category:S,Function unknown
+PMM0623,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0625,cog.category:S,Function unknown
+PMM0626,cog.category:S,Function unknown
+PMM0627,cog.category:S,Function unknown
+PMM0628,cog.category:E,Amino acid transport and metabolism
+PMM0629,cog.category:S,Function unknown
+PMM0630,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0631,cog.category:S,Function unknown
+PMM0632,cog.category:I,Lipid transport and metabolism
+PMM0632,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0633,cog.category:C,Energy production and conversion
+PMM0634,cog.category:I,Lipid transport and metabolism
+PMM0634,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0635,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0636,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0637,cog.category:P,Inorganic ion transport and metabolism
+PMM0638,cog.category:S,Function unknown
+PMM0639,cog.category:S,Function unknown
+PMM0640,cog.category:S,Function unknown
+PMM0641,cog.category:L,"Replication, recombination and repair"
+PMM0642,cog.category:E,Amino acid transport and metabolism
+PMM0643,cog.category:E,Amino acid transport and metabolism
+PMM0644,cog.category:P,Inorganic ion transport and metabolism
+PMM0645,cog.category:C,Energy production and conversion
+PMM0646,cog.category:S,Function unknown
+PMM0647,cog.category:S,Function unknown
+PMM0648,cog.category:E,Amino acid transport and metabolism
+PMM0649,cog.category:S,Function unknown
+PMM0650,cog.category:S,Function unknown
+PMM0651,cog.category:S,Function unknown
+PMM0653,cog.category:E,Amino acid transport and metabolism
+PMM0654,cog.category:S,Function unknown
+PMM0655,cog.category:S,Function unknown
+PMM0656,cog.category:S,Function unknown
+PMM0658,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0659,cog.category:L,"Replication, recombination and repair"
+PMM0660,cog.category:S,Function unknown
+PMM0661,cog.category:F,Nucleotide transport and metabolism
+PMM0662,cog.category:S,Function unknown
+PMM0663,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0664,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0665,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0666,cog.category:P,Inorganic ion transport and metabolism
+PMM0667,cog.category:S,Function unknown
+PMM0668,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0669,cog.category:S,Function unknown
+PMM0670,cog.category:E,Amino acid transport and metabolism
+PMM0671,cog.category:P,Inorganic ion transport and metabolism
+PMM0672,cog.category:P,Inorganic ion transport and metabolism
+PMM0673,cog.category:P,Inorganic ion transport and metabolism
+PMM0674,cog.category:E,Amino acid transport and metabolism
+PMM0675,cog.category:L,"Replication, recombination and repair"
+PMM0676,cog.category:I,Lipid transport and metabolism
+PMM0677,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0678,cog.category:H,Coenzyme transport and metabolism
+PMM0679,cog.category:S,Function unknown
+PMM0680,cog.category:S,Function unknown
+PMM0681,cog.category:S,Function unknown
+PMM0682,cog.category:E,Amino acid transport and metabolism
+PMM0683,cog.category:F,Nucleotide transport and metabolism
+PMM0684,cog.category:S,Function unknown
+PMM0685,cog.category:S,Function unknown
+PMM0687,cog.category:S,Function unknown
+PMM0688,cog.category:S,Function unknown
+PMM0689,cog.category:S,Function unknown
+PMM0691,cog.category:S,Function unknown
+PMM0692,cog.category:S,Function unknown
+PMM0694,cog.category:S,Function unknown
+PMM0695,cog.category:F,Nucleotide transport and metabolism
+PMM0696,cog.category:S,Function unknown
+PMM0697,cog.category:S,Function unknown
+PMM0698,cog.category:S,Function unknown
+PMM0699,cog.category:S,Function unknown
+PMM0700,cog.category:S,Function unknown
+PMM0701,cog.category:S,Function unknown
+PMM0702,cog.category:S,Function unknown
+PMM0703,cog.category:S,Function unknown
+PMM0704,cog.category:P,Inorganic ion transport and metabolism
+PMM0705,cog.category:K,Transcription
+PMM0705,cog.category:T,Signal transduction mechanisms
+PMM0706,cog.category:T,Signal transduction mechanisms
+PMM0707,cog.category:S,Function unknown
+PMM0708,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0710,cog.category:P,Inorganic ion transport and metabolism
+PMM0711,cog.category:P,Inorganic ion transport and metabolism
+PMM0712,cog.category:P,Inorganic ion transport and metabolism
+PMM0713,cog.category:G,Carbohydrate transport and metabolism
+PMM0714,cog.category:K,Transcription
+PMM0716,cog.category:P,Inorganic ion transport and metabolism
+PMM0717,cog.category:P,Inorganic ion transport and metabolism
+PMM0718,cog.category:T,Signal transduction mechanisms
+PMM0719,cog.category:S,Function unknown
+PMM0721,cog.category:S,Function unknown
+PMM0723,cog.category:P,Inorganic ion transport and metabolism
+PMM0724,cog.category:P,Inorganic ion transport and metabolism
+PMM0725,cog.category:P,Inorganic ion transport and metabolism
+PMM0726,cog.category:S,Function unknown
+PMM0727,cog.category:S,Function unknown
+PMM0728,cog.category:L,"Replication, recombination and repair"
+PMM0729,cog.category:L,"Replication, recombination and repair"
+PMM0730,cog.category:L,"Replication, recombination and repair"
+PMM0731,cog.category:S,Function unknown
+PMM0732,cog.category:S,Function unknown
+PMM0733,cog.category:S,Function unknown
+PMM0734,cog.category:S,Function unknown
+PMM0735,cog.category:S,Function unknown
+PMM0736,cog.category:S,Function unknown
+PMM0737,cog.category:S,Function unknown
+PMM0738,cog.category:S,Function unknown
+PMM0739,cog.category:S,Function unknown
+PMM0740,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0741,cog.category:S,Function unknown
+PMM0742,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0743,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0744,cog.category:S,Function unknown
+PMM0745,cog.category:S,Function unknown
+PMM0746,cog.category:S,Function unknown
+PMM0747,cog.category:H,Coenzyme transport and metabolism
+PMM0748,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0749,cog.category:V,Defense mechanisms
+PMM0750,cog.category:V,Defense mechanisms
+PMM0752,cog.category:S,Function unknown
+PMM0753,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0754,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0755,cog.category:S,Function unknown
+PMM0756,cog.category:L,"Replication, recombination and repair"
+PMM0757,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0758,cog.category:C,Energy production and conversion
+PMM0759,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0760,cog.category:C,Energy production and conversion
+PMM0761,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0762,cog.category:T,Signal transduction mechanisms
+PMM0763,cog.category:S,Function unknown
+PMM0764,cog.category:S,Function unknown
+PMM0765,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0766,cog.category:G,Carbohydrate transport and metabolism
+PMM0767,cog.category:G,Carbohydrate transport and metabolism
+PMM0768,cog.category:H,Coenzyme transport and metabolism
+PMM0769,cog.category:H,Coenzyme transport and metabolism
+PMM0770,cog.category:H,Coenzyme transport and metabolism
+PMM0771,cog.category:G,Carbohydrate transport and metabolism
+PMM0772,cog.category:G,Carbohydrate transport and metabolism
+PMM0772,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0773,cog.category:S,Function unknown
+PMM0774,cog.category:E,Amino acid transport and metabolism
+PMM0775,cog.category:S,Function unknown
+PMM0776,cog.category:F,Nucleotide transport and metabolism
+PMM0777,cog.category:S,Function unknown
+PMM0778,cog.category:S,Function unknown
+PMM0779,cog.category:F,Nucleotide transport and metabolism
+PMM0780,cog.category:F,Nucleotide transport and metabolism
+PMM0781,cog.category:G,Carbohydrate transport and metabolism
+PMM0782,cog.category:S,Function unknown
+PMM0783,cog.category:S,Function unknown
+PMM0784,cog.category:I,Lipid transport and metabolism
+PMM0785,cog.category:G,Carbohydrate transport and metabolism
+PMM0786,cog.category:C,Energy production and conversion
+PMM0786,cog.category:E,Amino acid transport and metabolism
+PMM0787,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0788,cog.category:F,Nucleotide transport and metabolism
+PMM0789,cog.category:S,Function unknown
+PMM0790,cog.category:S,Function unknown
+PMM0791,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0792,cog.category:K,Transcription
+PMM0793,cog.category:S,Function unknown
+PMM0794,cog.category:C,Energy production and conversion
+PMM0794,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0795,cog.category:K,Transcription
+PMM0795,cog.category:T,Signal transduction mechanisms
+PMM0796,cog.category:E,Amino acid transport and metabolism
+PMM0797,cog.category:G,Carbohydrate transport and metabolism
+PMM0797,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0798,cog.category:I,Lipid transport and metabolism
+PMM0799,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0800,cog.category:S,Function unknown
+PMM0801,cog.category:G,Carbohydrate transport and metabolism
+PMM0801,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0802,cog.category:L,"Replication, recombination and repair"
+PMM0803,cog.category:E,Amino acid transport and metabolism
+PMM0804,cog.category:P,Inorganic ion transport and metabolism
+PMM0805,cog.category:S,Function unknown
+PMM0806,cog.category:K,Transcription
+PMM0807,cog.category:P,Inorganic ion transport and metabolism
+PMM0808,cog.category:P,Inorganic ion transport and metabolism
+PMM0809,cog.category:S,Function unknown
+PMM0810,cog.category:S,Function unknown
+PMM0811,cog.category:S,Function unknown
+PMM0812,cog.category:S,Function unknown
+PMM0816,cog.category:S,Function unknown
+PMM0817,cog.category:S,Function unknown
+PMM0818,cog.category:S,Function unknown
+PMM0819,cog.category:S,Function unknown
+PMM0821,cog.category:E,Amino acid transport and metabolism
+PMM0822,cog.category:S,Function unknown
+PMM0823,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0824,cog.category:S,Function unknown
+PMM0825,cog.category:F,Nucleotide transport and metabolism
+PMM0826,cog.category:S,Function unknown
+PMM0827,cog.category:V,Defense mechanisms
+PMM0828,cog.category:S,Function unknown
+PMM0829,cog.category:F,Nucleotide transport and metabolism
+PMM0830,cog.category:H,Coenzyme transport and metabolism
+PMM0831,cog.category:H,Coenzyme transport and metabolism
+PMM0832,cog.category:E,Amino acid transport and metabolism
+PMM0833,cog.category:S,Function unknown
+PMM0834,cog.category:C,Energy production and conversion
+PMM0834,cog.category:H,Coenzyme transport and metabolism
+PMM0835,cog.category:S,Function unknown
+PMM0836,cog.category:S,Function unknown
+PMM0837,cog.category:S,Function unknown
+PMM0839,cog.category:L,"Replication, recombination and repair"
+PMM0840,cog.category:P,Inorganic ion transport and metabolism
+PMM0841,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0842,cog.category:S,Function unknown
+PMM0843,cog.category:S,Function unknown
+PMM0844,cog.category:H,Coenzyme transport and metabolism
+PMM0845,cog.category:S,Function unknown
+PMM0846,cog.category:S,Function unknown
+PMM0847,cog.category:K,Transcription
+PMM0848,cog.category:S,Function unknown
+PMM0849,cog.category:S,Function unknown
+PMM0850,cog.category:S,Function unknown
+PMM0851,cog.category:S,Function unknown
+PMM0852,cog.category:S,Function unknown
+PMM0853,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0854,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0856,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0857,cog.category:H,Coenzyme transport and metabolism
+PMM0858,cog.category:S,Function unknown
+PMM0859,cog.category:S,Function unknown
+PMM0860,cog.category:S,Function unknown
+PMM0862,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0863,cog.category:H,Coenzyme transport and metabolism
+PMM0864,cog.category:S,Function unknown
+PMM0865,cog.category:T,Signal transduction mechanisms
+PMM0866,cog.category:S,Function unknown
+PMM0867,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0868,cog.category:K,Transcription
+PMM0869,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0870,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0871,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0872,cog.category:S,Function unknown
+PMM0873,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0874,cog.category:F,Nucleotide transport and metabolism
+PMM0875,cog.category:S,Function unknown
+PMM0876,cog.category:S,Function unknown
+PMM0877,cog.category:H,Coenzyme transport and metabolism
+PMM0878,cog.category:E,Amino acid transport and metabolism
+PMM0879,cog.category:H,Coenzyme transport and metabolism
+PMM0880,cog.category:S,Function unknown
+PMM0881,cog.category:S,Function unknown
+PMM0882,cog.category:L,"Replication, recombination and repair"
+PMM0883,cog.category:S,Function unknown
+PMM0884,cog.category:F,Nucleotide transport and metabolism
+PMM0885,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0886,cog.category:S,Function unknown
+PMM0887,cog.category:E,Amino acid transport and metabolism
+PMM0888,cog.category:E,Amino acid transport and metabolism
+PMM0889,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0890,cog.category:F,Nucleotide transport and metabolism
+PMM0891,cog.category:F,Nucleotide transport and metabolism
+PMM0892,cog.category:E,Amino acid transport and metabolism
+PMM0893,cog.category:H,Coenzyme transport and metabolism
+PMM0894,cog.category:G,Carbohydrate transport and metabolism
+PMM0895,cog.category:S,Function unknown
+PMM0896,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0897,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0898,cog.category:C,Energy production and conversion
+PMM0899,cog.category:G,Carbohydrate transport and metabolism
+PMM0900,cog.category:E,Amino acid transport and metabolism
+PMM0901,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0902,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0903,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0904,cog.category:S,Function unknown
+PMM0905,cog.category:S,Function unknown
+PMM0906,cog.category:S,Function unknown
+PMM0907,cog.category:F,Nucleotide transport and metabolism
+PMM0908,cog.category:E,Amino acid transport and metabolism
+PMM0909,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM0910,cog.category:S,Function unknown
+PMM0911,cog.category:S,Function unknown
+PMM0912,cog.category:G,Carbohydrate transport and metabolism
+PMM0913,cog.category:V,Defense mechanisms
+PMM0914,cog.category:S,Function unknown
+PMM0915,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0915,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0916,cog.category:S,Function unknown
+PMM0917,cog.category:E,Amino acid transport and metabolism
+PMM0918,cog.category:F,Nucleotide transport and metabolism
+PMM0918,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0919,cog.category:E,Amino acid transport and metabolism
+PMM0920,cog.category:H,Coenzyme transport and metabolism
+PMM0921,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM0922,cog.category:S,Function unknown
+PMM0923,cog.category:T,Signal transduction mechanisms
+PMM0924,cog.category:S,Function unknown
+PMM0925,cog.category:S,Function unknown
+PMM0926,cog.category:S,Function unknown
+PMM0927,cog.category:S,Function unknown
+PMM0928,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0929,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM0930,cog.category:C,Energy production and conversion
+PMM0931,cog.category:S,Function unknown
+PMM0932,cog.category:F,Nucleotide transport and metabolism
+PMM0933,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0934,cog.category:S,Function unknown
+PMM0935,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0936,cog.category:K,Transcription
+PMM0936,cog.category:T,Signal transduction mechanisms
+PMM0937,cog.category:L,"Replication, recombination and repair"
+PMM0938,cog.category:H,Coenzyme transport and metabolism
+PMM0939,cog.category:L,"Replication, recombination and repair"
+PMM0940,cog.category:E,Amino acid transport and metabolism
+PMM0940,cog.category:G,Carbohydrate transport and metabolism
+PMM0941,cog.category:S,Function unknown
+PMM0942,cog.category:L,"Replication, recombination and repair"
+PMM0943,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0944,cog.category:S,Function unknown
+PMM0945,cog.category:L,"Replication, recombination and repair"
+PMM0946,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0947,cog.category:T,Signal transduction mechanisms
+PMM0948,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0949,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0950,cog.category:T,Signal transduction mechanisms
+PMM0951,cog.category:F,Nucleotide transport and metabolism
+PMM0952,cog.category:F,Nucleotide transport and metabolism
+PMM0953,cog.category:S,Function unknown
+PMM0954,cog.category:V,Defense mechanisms
+PMM0955,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0956,cog.category:V,Defense mechanisms
+PMM0957,cog.category:S,Function unknown
+PMM0958,cog.category:S,Function unknown
+PMM0959,cog.category:S,Function unknown
+PMM0960,cog.category:S,Function unknown
+PMM0961,cog.category:G,Carbohydrate transport and metabolism
+PMM0962,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0963,cog.category:E,Amino acid transport and metabolism
+PMM0964,cog.category:E,Amino acid transport and metabolism
+PMM0965,cog.category:E,Amino acid transport and metabolism
+PMM0966,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0967,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0968,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM0969,cog.category:F,Nucleotide transport and metabolism
+PMM0970,cog.category:E,Amino acid transport and metabolism
+PMM0971,cog.category:E,Amino acid transport and metabolism
+PMM0972,cog.category:E,Amino acid transport and metabolism
+PMM0973,cog.category:S,Function unknown
+PMM0974,cog.category:E,Amino acid transport and metabolism
+PMM0975,cog.category:S,Function unknown
+PMM0976,cog.category:S,Function unknown
+PMM0977,cog.category:S,Function unknown
+PMM0978,cog.category:S,Function unknown
+PMM0979,cog.category:S,Function unknown
+PMM0980,cog.category:S,Function unknown
+PMM0981,cog.category:S,Function unknown
+PMM0982,cog.category:L,"Replication, recombination and repair"
+PMM0983,cog.category:S,Function unknown
+PMM0984,cog.category:S,Function unknown
+PMM0985,cog.category:F,Nucleotide transport and metabolism
+PMM0986,cog.category:F,Nucleotide transport and metabolism
+PMM0987,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM0988,cog.category:L,"Replication, recombination and repair"
+PMM0989,cog.category:F,Nucleotide transport and metabolism
+PMM0990,cog.category:S,Function unknown
+PMM0991,cog.category:S,Function unknown
+PMM0992,cog.category:S,Function unknown
+PMM0993,cog.category:E,Amino acid transport and metabolism
+PMM0994,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM0996,cog.category:S,Function unknown
+PMM0997,cog.category:S,Function unknown
+PMM0998,cog.category:S,Function unknown
+PMM0999,cog.category:S,Function unknown
+PMM1000,cog.category:S,Function unknown
+PMM1001,cog.category:S,Function unknown
+PMM1002,cog.category:E,Amino acid transport and metabolism
+PMM1003,cog.category:S,Function unknown
+PMM1004,cog.category:F,Nucleotide transport and metabolism
+PMM1005,cog.category:S,Function unknown
+PMM1006,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1008,cog.category:S,Function unknown
+PMM1009,cog.category:H,Coenzyme transport and metabolism
+PMM1010,cog.category:S,Function unknown
+PMM1011,cog.category:S,Function unknown
+PMM1012,cog.category:S,Function unknown
+PMM1013,cog.category:S,Function unknown
+PMM1014,cog.category:V,Defense mechanisms
+PMM1015,cog.category:S,Function unknown
+PMM1017,cog.category:S,Function unknown
+PMM1018,cog.category:S,Function unknown
+PMM1019,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1020,cog.category:S,Function unknown
+PMM1021,cog.category:S,Function unknown
+PMM1022,cog.category:S,Function unknown
+PMM1023,cog.category:S,Function unknown
+PMM1024,cog.category:S,Function unknown
+PMM1025,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1026,cog.category:S,Function unknown
+PMM1027,cog.category:E,Amino acid transport and metabolism
+PMM1028,cog.category:S,Function unknown
+PMM1029,cog.category:P,Inorganic ion transport and metabolism
+PMM1030,cog.category:P,Inorganic ion transport and metabolism
+PMM1031,cog.category:P,Inorganic ion transport and metabolism
+PMM1032,cog.category:P,Inorganic ion transport and metabolism
+PMM1033,cog.category:S,Function unknown
+PMM1034,cog.category:S,Function unknown
+PMM1035,cog.category:S,Function unknown
+PMM1037,cog.category:S,Function unknown
+PMM1038,cog.category:S,Function unknown
+PMM1039,cog.category:S,Function unknown
+PMM1040,cog.category:E,Amino acid transport and metabolism
+PMM1041,cog.category:S,Function unknown
+PMM1042,cog.category:S,Function unknown
+PMM1043,cog.category:S,Function unknown
+PMM1044,cog.category:G,Carbohydrate transport and metabolism
+PMM1045,cog.category:S,Function unknown
+PMM1046,cog.category:E,Amino acid transport and metabolism
+PMM1046,cog.category:G,Carbohydrate transport and metabolism
+PMM1046,cog.category:P,Inorganic ion transport and metabolism
+PMM1047,cog.category:S,Function unknown
+PMM1048,cog.category:P,Inorganic ion transport and metabolism
+PMM1049,cog.category:E,Amino acid transport and metabolism
+PMM1050,cog.category:S,Function unknown
+PMM1051,cog.category:E,Amino acid transport and metabolism
+PMM1052,cog.category:S,Function unknown
+PMM1053,cog.category:H,Coenzyme transport and metabolism
+PMM1054,cog.category:L,"Replication, recombination and repair"
+PMM1055,cog.category:H,Coenzyme transport and metabolism
+PMM1056,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1057,cog.category:C,Energy production and conversion
+PMM1058,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1059,cog.category:L,"Replication, recombination and repair"
+PMM1060,cog.category:E,Amino acid transport and metabolism
+PMM1061,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1062,cog.category:C,Energy production and conversion
+PMM1063,cog.category:L,"Replication, recombination and repair"
+PMM1064,cog.category:C,Energy production and conversion
+PMM1064,cog.category:H,Coenzyme transport and metabolism
+PMM1065,cog.category:G,Carbohydrate transport and metabolism
+PMM1066,cog.category:E,Amino acid transport and metabolism
+PMM1067,cog.category:S,Function unknown
+PMM1068,cog.category:S,Function unknown
+PMM1069,cog.category:F,Nucleotide transport and metabolism
+PMM1070,cog.category:H,Coenzyme transport and metabolism
+PMM1071,cog.category:S,Function unknown
+PMM1072,cog.category:H,Coenzyme transport and metabolism
+PMM1073,cog.category:G,Carbohydrate transport and metabolism
+PMM1074,cog.category:G,Carbohydrate transport and metabolism
+PMM1075,cog.category:P,Inorganic ion transport and metabolism
+PMM1076,cog.category:I,Lipid transport and metabolism
+PMM1077,cog.category:T,Signal transduction mechanisms
+PMM1078,cog.category:S,Function unknown
+PMM1079,cog.category:S,Function unknown
+PMM1080,cog.category:F,Nucleotide transport and metabolism
+PMM1081,cog.category:G,Carbohydrate transport and metabolism
+PMM1082,cog.category:S,Function unknown
+PMM1083,cog.category:S,Function unknown
+PMM1084,cog.category:E,Amino acid transport and metabolism
+PMM1085,cog.category:S,Function unknown
+PMM1086,cog.category:S,Function unknown
+PMM1087,cog.category:C,Energy production and conversion
+PMM1088,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1089,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1090,cog.category:E,Amino acid transport and metabolism
+PMM1091,cog.category:S,Function unknown
+PMM1092,cog.category:H,Coenzyme transport and metabolism
+PMM1093,cog.category:H,Coenzyme transport and metabolism
+PMM1094,cog.category:S,Function unknown
+PMM1095,cog.category:S,Function unknown
+PMM1096,cog.category:H,Coenzyme transport and metabolism
+PMM1097,cog.category:L,"Replication, recombination and repair"
+PMM1098,cog.category:S,Function unknown
+PMM1099,cog.category:V,Defense mechanisms
+PMM1100,cog.category:S,Function unknown
+PMM1101,cog.category:L,"Replication, recombination and repair"
+PMM1102,cog.category:L,"Replication, recombination and repair"
+PMM1103,cog.category:L,"Replication, recombination and repair"
+PMM1104,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1105,cog.category:L,"Replication, recombination and repair"
+PMM1106,cog.category:S,Function unknown
+PMM1107,cog.category:H,Coenzyme transport and metabolism
+PMM1108,cog.category:I,Lipid transport and metabolism
+PMM1109,cog.category:S,Function unknown
+PMM1110,cog.category:T,Signal transduction mechanisms
+PMM1111,cog.category:C,Energy production and conversion
+PMM1112,cog.category:S,Function unknown
+PMM1113,cog.category:K,Transcription
+PMM1113,cog.category:T,Signal transduction mechanisms
+PMM1114,cog.category:S,Function unknown
+PMM1115,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1116,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1117,cog.category:S,Function unknown
+PMM1118,cog.category:S,Function unknown
+PMM1119,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1120,cog.category:S,Function unknown
+PMM1121,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1121,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1122,cog.category:F,Nucleotide transport and metabolism
+PMM1123,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1124,cog.category:T,Signal transduction mechanisms
+PMM1126,cog.category:I,Lipid transport and metabolism
+PMM1127,cog.category:T,Signal transduction mechanisms
+PMM1128,cog.category:S,Function unknown
+PMM1129,cog.category:S,Function unknown
+PMM1130,cog.category:S,Function unknown
+PMM1131,cog.category:S,Function unknown
+PMM1132,cog.category:S,Function unknown
+PMM1133,cog.category:S,Function unknown
+PMM1134,cog.category:S,Function unknown
+PMM1135,cog.category:S,Function unknown
+PMM1137,cog.category:S,Function unknown
+PMM1138,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1139,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1140,cog.category:L,"Replication, recombination and repair"
+PMM1141,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1142,cog.category:I,Lipid transport and metabolism
+PMM1143,cog.category:C,Energy production and conversion
+PMM1144,cog.category:S,Function unknown
+PMM1145,cog.category:C,Energy production and conversion
+PMM1146,cog.category:C,Energy production and conversion
+PMM1147,cog.category:C,Energy production and conversion
+PMM1148,cog.category:S,Function unknown
+PMM1149,cog.category:S,Function unknown
+PMM1150,cog.category:C,Energy production and conversion
+PMM1151,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1152,cog.category:G,Carbohydrate transport and metabolism
+PMM1152,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1152a,cog.category:C,Energy production and conversion
+PMM1153,cog.category:I,Lipid transport and metabolism
+PMM1154,cog.category:E,Amino acid transport and metabolism
+PMM1155,cog.category:G,Carbohydrate transport and metabolism
+PMM1156,cog.category:S,Function unknown
+PMM1157,cog.category:C,Energy production and conversion
+PMM1158,cog.category:P,Inorganic ion transport and metabolism
+PMM1159,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1160,cog.category:H,Coenzyme transport and metabolism
+PMM1161,cog.category:C,Energy production and conversion
+PMM1162,cog.category:N,Cell motility
+PMM1162,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1164,cog.category:P,Inorganic ion transport and metabolism
+PMM1165,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1166,cog.category:S,Function unknown
+PMM1167,cog.category:S,Function unknown
+PMM1168,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1169,cog.category:S,Function unknown
+PMM1170,cog.category:S,Function unknown
+PMM1171,cog.category:C,Energy production and conversion
+PMM1172,cog.category:S,Function unknown
+PMM1173,cog.category:S,Function unknown
+PMM1174,cog.category:S,Function unknown
+PMM1175,cog.category:S,Function unknown
+PMM1176,cog.category:S,Function unknown
+PMM1177,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1178,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1179,cog.category:E,Amino acid transport and metabolism
+PMM1179,cog.category:G,Carbohydrate transport and metabolism
+PMM1180,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1180,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1181,cog.category:E,Amino acid transport and metabolism
+PMM1182,cog.category:S,Function unknown
+PMM1183,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1184,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1185,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1186,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1187,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1188,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1189,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1190,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1191,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1192,cog.category:P,Inorganic ion transport and metabolism
+PMM1193,cog.category:H,Coenzyme transport and metabolism
+PMM1195,cog.category:L,"Replication, recombination and repair"
+PMM1196,cog.category:G,Carbohydrate transport and metabolism
+PMM1196,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1197,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1198,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1199,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1200,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1201,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1202,cog.category:G,Carbohydrate transport and metabolism
+PMM1202,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1203,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1204,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1205,cog.category:E,Amino acid transport and metabolism
+PMM1206,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1207,cog.category:G,Carbohydrate transport and metabolism
+PMM1207,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1208,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1209,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1210,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1211,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1213,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1214,cog.category:E,Amino acid transport and metabolism
+PMM1215,cog.category:C,Energy production and conversion
+PMM1216,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1216,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1217,cog.category:G,Carbohydrate transport and metabolism
+PMM1218,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1219,cog.category:G,Carbohydrate transport and metabolism
+PMM1219,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1220,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1221,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1222,cog.category:S,Function unknown
+PMM1223,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1224,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1225,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1226,cog.category:S,Function unknown
+PMM1227,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1229,cog.category:C,Energy production and conversion
+PMM1230,cog.category:C,Energy production and conversion
+PMM1231,cog.category:G,Carbohydrate transport and metabolism
+PMM1232,cog.category:S,Function unknown
+PMM1233,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1234,cog.category:C,Energy production and conversion
+PMM1235,cog.category:G,Carbohydrate transport and metabolism
+PMM1236,cog.category:G,Carbohydrate transport and metabolism
+PMM1237,cog.category:S,Function unknown
+PMM1238,cog.category:S,Function unknown
+PMM1239,cog.category:V,Defense mechanisms
+PMM1240,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1241,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1243,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1246,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1250,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1251,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1252,cog.category:S,Function unknown
+PMM1253,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1254,cog.category:V,Defense mechanisms
+PMM1256,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1257,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1258,cog.category:E,Amino acid transport and metabolism
+PMM1259,cog.category:E,Amino acid transport and metabolism
+PMM1260,cog.category:G,Carbohydrate transport and metabolism
+PMM1260,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1261,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1262,cog.category:K,Transcription
+PMM1263,cog.category:E,Amino acid transport and metabolism
+PMM1264,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1265,cog.category:H,Coenzyme transport and metabolism
+PMM1266,cog.category:S,Function unknown
+PMM1267,cog.category:S,Function unknown
+PMM1268,cog.category:H,Coenzyme transport and metabolism
+PMM1269,cog.category:F,Nucleotide transport and metabolism
+PMM1270,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1271,cog.category:F,Nucleotide transport and metabolism
+PMM1272,cog.category:S,Function unknown
+PMM1273,cog.category:H,Coenzyme transport and metabolism
+PMM1274,cog.category:H,Coenzyme transport and metabolism
+PMM1275,cog.category:H,Coenzyme transport and metabolism
+PMM1276,cog.category:S,Function unknown
+PMM1278,cog.category:S,Function unknown
+PMM1279,cog.category:S,Function unknown
+PMM1280,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1281,cog.category:S,Function unknown
+PMM1282,cog.category:S,Function unknown
+PMM1283,cog.category:S,Function unknown
+PMM1284,cog.category:T,Signal transduction mechanisms
+PMM1285,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1286,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1287,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1288,cog.category:C,Energy production and conversion
+PMM1289,cog.category:K,Transcription
+PMM1290,cog.category:H,Coenzyme transport and metabolism
+PMM1291,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1292,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1293,cog.category:G,Carbohydrate transport and metabolism
+PMM1294,cog.category:C,Energy production and conversion
+PMM1295,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1296,cog.category:S,Function unknown
+PMM1297,cog.category:E,Amino acid transport and metabolism
+PMM1298,cog.category:C,Energy production and conversion
+PMM1299,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1300,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1301,cog.category:E,Amino acid transport and metabolism
+PMM1302,cog.category:H,Coenzyme transport and metabolism
+PMM1303,cog.category:C,Energy production and conversion
+PMM1304,cog.category:F,Nucleotide transport and metabolism
+PMM1305,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1306,cog.category:F,Nucleotide transport and metabolism
+PMM1307,cog.category:S,Function unknown
+PMM1308,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1309,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1310,cog.category:H,Coenzyme transport and metabolism
+PMM1311,cog.category:H,Coenzyme transport and metabolism
+PMM1312,cog.category:S,Function unknown
+PMM1313,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1313,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1314,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1315,cog.category:E,Amino acid transport and metabolism
+PMM1315,cog.category:H,Coenzyme transport and metabolism
+PMM1316,cog.category:H,Coenzyme transport and metabolism
+PMM1317,cog.category:S,Function unknown
+PMM1318,cog.category:S,Function unknown
+PMM1319,cog.category:S,Function unknown
+PMM1320,cog.category:S,Function unknown
+PMM1321,cog.category:L,"Replication, recombination and repair"
+PMM1322,cog.category:G,Carbohydrate transport and metabolism
+PMM1323,cog.category:P,Inorganic ion transport and metabolism
+PMM1324,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1325,cog.category:S,Function unknown
+PMM1326,cog.category:S,Function unknown
+PMM1327,cog.category:I,Lipid transport and metabolism
+PMM1328,cog.category:F,Nucleotide transport and metabolism
+PMM1329,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1330,cog.category:S,Function unknown
+PMM1331,cog.category:L,"Replication, recombination and repair"
+PMM1332,cog.category:E,Amino acid transport and metabolism
+PMM1333,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1334,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1335,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1336,cog.category:I,Lipid transport and metabolism
+PMM1337,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1338,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1339,cog.category:F,Nucleotide transport and metabolism
+PMM1340,cog.category:F,Nucleotide transport and metabolism
+PMM1341,cog.category:T,Signal transduction mechanisms
+PMM1342,cog.category:F,Nucleotide transport and metabolism
+PMM1343,cog.category:T,Signal transduction mechanisms
+PMM1344,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1345,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1346,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1347,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1348,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1349,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1350,cog.category:S,Function unknown
+PMM1351,cog.category:S,Function unknown
+PMM1352,cog.category:C,Energy production and conversion
+PMM1353,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1354,cog.category:E,Amino acid transport and metabolism
+PMM1355,cog.category:S,Function unknown
+PMM1356,cog.category:S,Function unknown
+PMM1357,cog.category:S,Function unknown
+PMM1358,cog.category:S,Function unknown
+PMM1359,cog.category:S,Function unknown
+PMM1360,cog.category:L,"Replication, recombination and repair"
+PMM1361,cog.category:I,Lipid transport and metabolism
+PMM1361,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1362,cog.category:S,Function unknown
+PMM1363,cog.category:S,Function unknown
+PMM1364,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1365,cog.category:S,Function unknown
+PMM1366,cog.category:S,Function unknown
+PMM1367,cog.category:S,Function unknown
+PMM1368,cog.category:S,Function unknown
+PMM1369,cog.category:T,Signal transduction mechanisms
+PMM1370,cog.category:S,Function unknown
+PMM1371,cog.category:E,Amino acid transport and metabolism
+PMM1371,cog.category:G,Carbohydrate transport and metabolism
+PMM1372,cog.category:S,Function unknown
+PMM1373,cog.category:S,Function unknown
+PMM1374,cog.category:S,Function unknown
+PMM1375,cog.category:S,Function unknown
+PMM1376,cog.category:K,Transcription
+PMM1377,cog.category:G,Carbohydrate transport and metabolism
+PMM1377,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1378,cog.category:I,Lipid transport and metabolism
+PMM1379,cog.category:S,Function unknown
+PMM1380,cog.category:S,Function unknown
+PMM1381,cog.category:E,Amino acid transport and metabolism
+PMM1382,cog.category:I,Lipid transport and metabolism
+PMM1383,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1384,cog.category:S,Function unknown
+PMM1385,cog.category:S,Function unknown
+PMM1386,cog.category:S,Function unknown
+PMM1387,cog.category:S,Function unknown
+PMM1388,cog.category:S,Function unknown
+PMM1389,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1390,cog.category:S,Function unknown
+PMM1392,cog.category:S,Function unknown
+PMM1393,cog.category:S,Function unknown
+PMM1394,cog.category:S,Function unknown
+PMM1397,cog.category:S,Function unknown
+PMM1398,cog.category:S,Function unknown
+PMM1399,cog.category:S,Function unknown
+PMM1400,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1401,cog.category:S,Function unknown
+PMM1403,cog.category:L,"Replication, recombination and repair"
+PMM1406,cog.category:S,Function unknown
+PMM1408,cog.category:S,Function unknown
+PMM1409,cog.category:S,Function unknown
+PMM1412,cog.category:S,Function unknown
+PMM1413,cog.category:S,Function unknown
+PMM1414,cog.category:S,Function unknown
+PMM1415,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1416,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1417,cog.category:L,"Replication, recombination and repair"
+PMM1418,cog.category:S,Function unknown
+PMM1420,cog.category:S,Function unknown
+PMM1421,cog.category:S,Function unknown
+PMM1422,cog.category:S,Function unknown
+PMM1423,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1425,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1427,cog.category:S,Function unknown
+PMM1428,cog.category:S,Function unknown
+PMM1429,cog.category:S,Function unknown
+PMM1430,cog.category:S,Function unknown
+PMM1431,cog.category:K,Transcription
+PMM1432,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1433,cog.category:F,Nucleotide transport and metabolism
+PMM1434,cog.category:G,Carbohydrate transport and metabolism
+PMM1435,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1436,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1437,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1438,cog.category:F,Nucleotide transport and metabolism
+PMM1439,cog.category:C,Energy production and conversion
+PMM1440,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1441,cog.category:S,Function unknown
+PMM1442,cog.category:E,Amino acid transport and metabolism
+PMM1443,cog.category:S,Function unknown
+PMM1444,cog.category:S,Function unknown
+PMM1445,cog.category:H,Coenzyme transport and metabolism
+PMM1446,cog.category:H,Coenzyme transport and metabolism
+PMM1447,cog.category:S,Function unknown
+PMM1448,cog.category:S,Function unknown
+PMM1449,cog.category:C,Energy production and conversion
+PMM1450,cog.category:F,Nucleotide transport and metabolism
+PMM1451,cog.category:F,Nucleotide transport and metabolism
+PMM1452,cog.category:F,Nucleotide transport and metabolism
+PMM1453,cog.category:C,Energy production and conversion
+PMM1454,cog.category:C,Energy production and conversion
+PMM1455,cog.category:F,Nucleotide transport and metabolism
+PMM1456,cog.category:C,Energy production and conversion
+PMM1457,cog.category:S,Function unknown
+PMM1458,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1459,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1460,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1461,cog.category:F,Nucleotide transport and metabolism
+PMM1462,cog.category:S,Function unknown
+PMM1463,cog.category:K,Transcription
+PMM1464,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1465,cog.category:F,Nucleotide transport and metabolism
+PMM1466,cog.category:C,Energy production and conversion
+PMM1467,cog.category:L,"Replication, recombination and repair"
+PMM1468,cog.category:E,Amino acid transport and metabolism
+PMM1469,cog.category:I,Lipid transport and metabolism
+PMM1470,cog.category:S,Function unknown
+PMM1471,cog.category:H,Coenzyme transport and metabolism
+PMM1472,cog.category:H,Coenzyme transport and metabolism
+PMM1473,cog.category:S,Function unknown
+PMM1474,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1475,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1476,cog.category:S,Function unknown
+PMM1477,cog.category:C,Energy production and conversion
+PMM1478,cog.category:S,Function unknown
+PMM1479,cog.category:S,Function unknown
+PMM1480,cog.category:C,Energy production and conversion
+PMM1481,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1483,cog.category:K,Transcription
+PMM1484,cog.category:K,Transcription
+PMM1485,cog.category:K,Transcription
+PMM1486,cog.category:L,"Replication, recombination and repair"
+PMM1487,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1488,cog.category:E,Amino acid transport and metabolism
+PMM1489,cog.category:G,Carbohydrate transport and metabolism
+PMM1490,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1491,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1492,cog.category:K,Transcription
+PMM1493,cog.category:K,Transcription
+PMM1494,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1495,cog.category:S,Function unknown
+PMM1496,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1497,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1498,cog.category:C,Energy production and conversion
+PMM1499,cog.category:S,Function unknown
+PMM1500,cog.category:E,Amino acid transport and metabolism
+PMM1501,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1502,cog.category:L,"Replication, recombination and repair"
+PMM1503,cog.category:S,Function unknown
+PMM1504,cog.category:E,Amino acid transport and metabolism
+PMM1505,cog.category:H,Coenzyme transport and metabolism
+PMM1506,cog.category:S,Function unknown
+PMM1507,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1508,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1509,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1510,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1511,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1512,cog.category:E,Amino acid transport and metabolism
+PMM1513,cog.category:S,Function unknown
+PMM1514,cog.category:H,Coenzyme transport and metabolism
+PMM1515,cog.category:L,"Replication, recombination and repair"
+PMM1516,cog.category:S,Function unknown
+PMM1517,cog.category:V,Defense mechanisms
+PMM1518,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1519,cog.category:S,Function unknown
+PMM1520,cog.category:S,Function unknown
+PMM1521,cog.category:S,Function unknown
+PMM1522,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1523,cog.category:C,Energy production and conversion
+PMM1524,cog.category:C,Energy production and conversion
+PMM1525,cog.category:H,Coenzyme transport and metabolism
+PMM1526,cog.category:S,Function unknown
+PMM1527,cog.category:E,Amino acid transport and metabolism
+PMM1528,cog.category:L,"Replication, recombination and repair"
+PMM1529,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1530,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1531,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1532,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1533,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1534,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1535,cog.category:K,Transcription
+PMM1536,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1537,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1538,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1539,cog.category:F,Nucleotide transport and metabolism
+PMM1540,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1541,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1542,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1543,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1544,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1545,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1546,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1547,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1548,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1549,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1550,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1551,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1552,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1553,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1554,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1555,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1556,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1557,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1558,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1559,cog.category:C,Energy production and conversion
+PMM1560,cog.category:C,Energy production and conversion
+PMM1561,cog.category:S,Function unknown
+PMM1562,cog.category:L,"Replication, recombination and repair"
+PMM1563,cog.category:S,Function unknown
+PMM1564,cog.category:K,Transcription
+PMM1564,cog.category:L,"Replication, recombination and repair"
+PMM1565,cog.category:E,Amino acid transport and metabolism
+PMM1566,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1567,cog.category:G,Carbohydrate transport and metabolism
+PMM1568,cog.category:S,Function unknown
+PMM1569,cog.category:H,Coenzyme transport and metabolism
+PMM1570,cog.category:H,Coenzyme transport and metabolism
+PMM1571,cog.category:S,Function unknown
+PMM1572,cog.category:E,Amino acid transport and metabolism
+PMM1573,cog.category:L,"Replication, recombination and repair"
+PMM1574,cog.category:S,Function unknown
+PMM1575,cog.category:H,Coenzyme transport and metabolism
+PMM1576,cog.category:H,Coenzyme transport and metabolism
+PMM1577,cog.category:E,Amino acid transport and metabolism
+PMM1577,cog.category:H,Coenzyme transport and metabolism
+PMM1578,cog.category:S,Function unknown
+PMM1579,cog.category:T,Signal transduction mechanisms
+PMM1580,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1581,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1582,cog.category:H,Coenzyme transport and metabolism
+PMM1583,cog.category:S,Function unknown
+PMM1584,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1585,cog.category:S,Function unknown
+PMM1586,cog.category:S,Function unknown
+PMM1587,cog.category:S,Function unknown
+PMM1588,cog.category:S,Function unknown
+PMM1589,cog.category:F,Nucleotide transport and metabolism
+PMM1590,cog.category:F,Nucleotide transport and metabolism
+PMM1591,cog.category:T,Signal transduction mechanisms
+PMM1592,cog.category:F,Nucleotide transport and metabolism
+PMM1593,cog.category:F,Nucleotide transport and metabolism
+PMM1594,cog.category:C,Energy production and conversion
+PMM1595,cog.category:S,Function unknown
+PMM1596,cog.category:C,Energy production and conversion
+PMM1597,cog.category:S,Function unknown
+PMM1598,cog.category:G,Carbohydrate transport and metabolism
+PMM1599,cog.category:I,Lipid transport and metabolism
+PMM1600,cog.category:P,Inorganic ion transport and metabolism
+PMM1601,cog.category:G,Carbohydrate transport and metabolism
+PMM1602,cog.category:S,Function unknown
+PMM1603,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1604,cog.category:S,Function unknown
+PMM1605,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1606,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1607,cog.category:C,Energy production and conversion
+PMM1608,cog.category:I,Lipid transport and metabolism
+PMM1608,cog.category:Q,"Secondary metabolites biosynthesis, transport and catabolism"
+PMM1609,cog.category:I,Lipid transport and metabolism
+PMM1610,cog.category:G,Carbohydrate transport and metabolism
+PMM1611,cog.category:H,Coenzyme transport and metabolism
+PMM1612,cog.category:S,Function unknown
+PMM1613,cog.category:S,Function unknown
+PMM1614,cog.category:S,Function unknown
+PMM1615,cog.category:L,"Replication, recombination and repair"
+PMM1616,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1617,cog.category:S,Function unknown
+PMM1618,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1619,cog.category:K,Transcription
+PMM1619,cog.category:T,Signal transduction mechanisms
+PMM1620,cog.category:S,Function unknown
+PMM1621,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1622,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1623,cog.category:L,"Replication, recombination and repair"
+PMM1624,cog.category:S,Function unknown
+PMM1625,cog.category:F,Nucleotide transport and metabolism
+PMM1626,cog.category:S,Function unknown
+PMM1627,cog.category:G,Carbohydrate transport and metabolism
+PMM1628,cog.category:I,Lipid transport and metabolism
+PMM1629,cog.category:K,Transcription
+PMM1630,cog.category:P,Inorganic ion transport and metabolism
+PMM1631,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1632,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1633,cog.category:S,Function unknown
+PMM1634,cog.category:L,"Replication, recombination and repair"
+PMM1635,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1636,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1637,cog.category:K,Transcription
+PMM1638,cog.category:E,Amino acid transport and metabolism
+PMM1639,cog.category:U,"Intracellular trafficking, secretion, and vesicular transport"
+PMM1640,cog.category:K,Transcription
+PMM1641,cog.category:S,Function unknown
+PMM1642,cog.category:S,Function unknown
+PMM1643,cog.category:H,Coenzyme transport and metabolism
+PMM1644,cog.category:S,Function unknown
+PMM1645,cog.category:L,"Replication, recombination and repair"
+PMM1646,cog.category:G,Carbohydrate transport and metabolism
+PMM1647,cog.category:L,"Replication, recombination and repair"
+PMM1648,cog.category:E,Amino acid transport and metabolism
+PMM1649,cog.category:L,"Replication, recombination and repair"
+PMM1650,cog.category:F,Nucleotide transport and metabolism
+PMM1651,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1652,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1653,cog.category:E,Amino acid transport and metabolism
+PMM1654,cog.category:E,Amino acid transport and metabolism
+PMM1655,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1656,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1657,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1658,cog.category:H,Coenzyme transport and metabolism
+PMM1659,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1660,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1661,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1662,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1663,cog.category:S,Function unknown
+PMM1664,cog.category:H,Coenzyme transport and metabolism
+PMM1665,cog.category:G,Carbohydrate transport and metabolism
+PMM1665,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1666,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1667,cog.category:S,Function unknown
+PMM1668,cog.category:E,Amino acid transport and metabolism
+PMM1669,cog.category:E,Amino acid transport and metabolism
+PMM1670,cog.category:P,Inorganic ion transport and metabolism
+PMM1671,cog.category:S,Function unknown
+PMM1672,cog.category:I,Lipid transport and metabolism
+PMM1673,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1674,cog.category:L,"Replication, recombination and repair"
+PMM1675,cog.category:D,"Cell cycle control, cell division, chromosome partitioning"
+PMM1676,cog.category:H,Coenzyme transport and metabolism
+PMM1677,cog.category:S,Function unknown
+PMM1678,cog.category:S,Function unknown
+PMM1679,cog.category:L,"Replication, recombination and repair"
+PMM1680,cog.category:S,Function unknown
+PMM1681,cog.category:S,Function unknown
+PMM1682,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1683,cog.category:S,Function unknown
+PMM1684,cog.category:S,Function unknown
+PMM1685,cog.category:E,Amino acid transport and metabolism
+PMM1686,cog.category:E,Amino acid transport and metabolism
+PMM1687,cog.category:E,Amino acid transport and metabolism
+PMM1688,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1689,cog.category:F,Nucleotide transport and metabolism
+PMM1690,cog.category:H,Coenzyme transport and metabolism
+PMM1691,cog.category:F,Nucleotide transport and metabolism
+PMM1692,cog.category:E,Amino acid transport and metabolism
+PMM1692,cog.category:H,Coenzyme transport and metabolism
+PMM1693,cog.category:E,Amino acid transport and metabolism
+PMM1693,cog.category:H,Coenzyme transport and metabolism
+PMM1694,cog.category:H,Coenzyme transport and metabolism
+PMM1695,cog.category:E,Amino acid transport and metabolism
+PMM1695,cog.category:G,Carbohydrate transport and metabolism
+PMM1695,cog.category:P,Inorganic ion transport and metabolism
+PMM1696,cog.category:H,Coenzyme transport and metabolism
+PMM1697,cog.category:K,Transcription
+PMM1698,cog.category:I,Lipid transport and metabolism
+PMM1699,cog.category:E,Amino acid transport and metabolism
+PMM1700,cog.category:C,Energy production and conversion
+PMM1701,cog.category:P,Inorganic ion transport and metabolism
+PMM1702,cog.category:F,Nucleotide transport and metabolism
+PMM1703,cog.category:E,Amino acid transport and metabolism
+PMM1704,cog.category:O,"Post-translational modification, protein turnover, chaperones"
+PMM1705,cog.category:E,Amino acid transport and metabolism
+PMM1706,cog.category:J,"Translation, ribosomal structure and biogenesis"
+PMM1707,cog.category:F,Nucleotide transport and metabolism
+PMM1708,cog.category:S,Function unknown
+PMM1709,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1710,cog.category:S,Function unknown
+PMM1711,cog.category:M,Cell wall/membrane/envelope biogenesis
+PMM1712,cog.category:L,"Replication, recombination and repair"
+PMM1713,cog.category:L,"Replication, recombination and repair"
+PMM1714,cog.category:S,Function unknown
+PMM1715,cog.category:S,Function unknown
+PMM1716,cog.category:E,Amino acid transport and metabolism
+PMM1803,cog.category:S,Function unknown
+PMM1804,cog.category:S,Function unknown
+PMM1805,cog.category:S,Function unknown
+PMM1807,cog.category:S,Function unknown
+PMM1812,cog.category:S,Function unknown
+PMM1813,cog.category:S,Function unknown
+PMM1814,cog.category:S,Function unknown
+PMM1816,cog.category:S,Function unknown
+PMM1821,cog.category:S,Function unknown
+PMM1825,cog.category:S,Function unknown
+PMM1826,cog.category:S,Function unknown
+PMM1828,cog.category:S,Function unknown
+PMM1830,cog.category:S,Function unknown
+PMM1831,cog.category:S,Function unknown
+PMM1838,cog.category:S,Function unknown
+PMM1839,cog.category:S,Function unknown
+PMM1841,cog.category:V,Defense mechanisms
+PMM1843,cog.category:L,"Replication, recombination and repair"
+PMM1845,cog.category:S,Function unknown
+PMM1846,cog.category:S,Function unknown
+PMM1847,cog.category:S,Function unknown
+PMM1850,cog.category:S,Function unknown
+PMM1851,cog.category:S,Function unknown
+PMM1852,cog.category:S,Function unknown
+PMM1853,cog.category:S,Function unknown
+PMM1855,cog.category:S,Function unknown
+PMM1858,cog.category:S,Function unknown
+PMM1859,cog.category:S,Function unknown
+PMM1861,cog.category:S,Function unknown
+PMM1865,cog.category:S,Function unknown
+PMM1866,cog.category:S,Function unknown
+PMM1867,cog.category:S,Function unknown
+PMM1868,cog.category:S,Function unknown
+PMM1871,cog.category:S,Function unknown
+PMM1872,cog.category:S,Function unknown
+PMM1883,cog.category:S,Function unknown
+PMM1884,cog.category:S,Function unknown
+PMM1887,cog.category:S,Function unknown
+PMM1891,cog.category:S,Function unknown
+PMM1893,cog.category:S,Function unknown
+PMM1899,cog.category:S,Function unknown
+PMM1902,cog.category:S,Function unknown
+PMM1903,cog.category:S,Function unknown
+PMM1910,cog.category:S,Function unknown
+PMM1911,cog.category:S,Function unknown
+PMM1912,cog.category:S,Function unknown
+PMM1913,cog.category:S,Function unknown
+PMM1914,cog.category:S,Function unknown
+PMM1915,cog.category:S,Function unknown
+PMM1918,cog.category:S,Function unknown
+PMM1919,cog.category:S,Function unknown
+PMM1921,cog.category:S,Function unknown
+PMM1924,cog.category:S,Function unknown
+PMM1925,cog.category:S,Function unknown
+PMM1926,cog.category:S,Function unknown
+PMM1928,cog.category:S,Function unknown
+PMM1931,cog.category:S,Function unknown
+PMM1932,cog.category:S,Function unknown
+PMM1934,cog.category:S,Function unknown
+PMM1937,cog.category:S,Function unknown
+PMM1940,cog.category:S,Function unknown
+PMM1941,cog.category:S,Function unknown
+PMM1943,cog.category:S,Function unknown
+PMM1944,cog.category:S,Function unknown
+PMM1951,cog.category:S,Function unknown
+PMM1952,cog.category:S,Function unknown
+PMM1954,cog.category:S,Function unknown
+PMM1956,cog.category:S,Function unknown
+PMM1958,cog.category:S,Function unknown
+PMM1960,cog.category:S,Function unknown
+PMM1962,cog.category:S,Function unknown
+PMM1966,cog.category:S,Function unknown
+PMM1967,cog.category:S,Function unknown
+PMM1969,cog.category:S,Function unknown
+PMM1971,cog.category:S,Function unknown
+PMM1972,cog.category:S,Function unknown
+PMM1975,cog.category:S,Function unknown
+PMM1976,cog.category:S,Function unknown
+PMM1981,cog.category:S,Function unknown
+PMM1983,cog.category:S,Function unknown
+PMM1985,cog.category:S,Function unknown
+PMM1989,cog.category:S,Function unknown
+PMM1990,cog.category:S,Function unknown
+PMM1991,cog.category:S,Function unknown
+PMM1994,cog.category:S,Function unknown
+PMM1998,cog.category:S,Function unknown
+PMM2002,cog.category:S,Function unknown
+PMM2008,cog.category:S,Function unknown
+PMM2009,cog.category:S,Function unknown
+PMM2018,cog.category:S,Function unknown
+PMM2019,cog.category:S,Function unknown
+PMM2046,cog.category:S,Function unknown
+TX50_RS09255,cog.category:S,Function unknown
+TX50_RS09260,cog.category:S,Function unknown
+TX50_RS09290,cog.category:S,Function unknown
+TX50_RS09730,cog.category:S,Function unknown
+TX50_RS09915,cog.category:S,Function unknown
