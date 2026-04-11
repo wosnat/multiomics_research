@@ -395,3 +395,60 @@ def test_run_enrichment_all_timepoints():
     assert "timepoint" in result.columns, "Output must have 'timepoint' column"
     assert set(result["timepoint"].unique()) == {"T1", "T2"}
     assert "pathway_id" in result.columns
+
+
+# ---------------------------------------------------------------------------
+# Signed enrichment score tests
+# ---------------------------------------------------------------------------
+
+def test_signed_score_up_only():
+    """Pathway significant up only → positive score."""
+    from enrich_utils.enrichment import signed_enrichment_score
+    df = pd.DataFrame([
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "up", "padj": 0.001},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "down", "padj": 0.5},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "combined", "padj": 0.01},
+    ])
+    result = signed_enrichment_score(df)
+    assert len(result) == 1
+    assert result.iloc[0]["score"] == pytest.approx(-np.log10(0.001))
+    assert result.iloc[0]["dominant_direction"] == "up"
+
+
+def test_signed_score_down_only():
+    """Pathway significant down only → negative score."""
+    from enrich_utils.enrichment import signed_enrichment_score
+    df = pd.DataFrame([
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "up", "padj": 0.8},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "down", "padj": 0.001},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "combined", "padj": 0.01},
+    ])
+    result = signed_enrichment_score(df)
+    assert result.iloc[0]["score"] == pytest.approx(np.log10(0.001))  # negative
+    assert result.iloc[0]["dominant_direction"] == "down"
+
+
+def test_signed_score_both_sig_up_wins():
+    """Both significant, up has lower padj → positive score from up."""
+    from enrich_utils.enrichment import signed_enrichment_score
+    df = pd.DataFrame([
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "up", "padj": 0.001},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "down", "padj": 0.01},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "combined", "padj": 0.001},
+    ])
+    result = signed_enrichment_score(df)
+    assert result.iloc[0]["score"] > 0
+    assert result.iloc[0]["dominant_direction"] == "up"
+
+
+def test_signed_score_neither_sig():
+    """Neither direction significant → score = 0."""
+    from enrich_utils.enrichment import signed_enrichment_score
+    df = pd.DataFrame([
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "up", "padj": 0.5},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "down", "padj": 0.8},
+        {"pathway_id": "P1", "pathway_name": "Path1", "direction": "combined", "padj": 0.3},
+    ])
+    result = signed_enrichment_score(df)
+    assert result.iloc[0]["score"] == 0.0
+    assert result.iloc[0]["dominant_direction"] == "ns"

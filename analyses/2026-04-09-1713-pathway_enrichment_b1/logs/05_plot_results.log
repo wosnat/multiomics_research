@@ -1,14 +1,17 @@
-[15:13:26] === Step 5: Plot Enrichment Heatmaps ===
-[15:13:26] Loaded enrichment_all.csv: 5589 rows
-[15:13:26] Pathways significant in >= 1 condition: 18
-[15:13:26]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_up.png
-[15:13:27]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_up.png
-[15:13:27]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_down.png
-[15:13:27]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_down.png
-[15:13:27] Plotting RNA vs protein discordance scatter...
-[15:13:28]   Saved discordance_scatter.png + .svg
-[15:13:28] Plotting proteomics coculture trajectory...
-[15:13:28]   Saved trajectory_proteomics_coculture.png + .svg
-[15:13:28] Plotting control separation bar chart...
-[15:13:28]   Saved control_separation.png + .svg
-[15:13:28] Done.
+[15:26:56] === Step 5: Plot Enrichment Heatmaps ===
+[15:26:56] Loaded enrichment_all.csv: 5589 rows
+[15:26:56] Pathways significant in >= 1 condition: 18
+[15:26:56]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_up.png
+[15:26:56]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_up.png
+[15:26:56]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_down.png
+[15:26:57]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_down.png
+[15:26:57] Plotting signed enrichment heatmap...
+[15:26:58]   Plotting signed heatmap: 18 pathways × 27 conditions
+[15:26:59]   Saved heatmap_enrichment_signed.png + .svg
+[15:26:59] Plotting RNA vs protein discordance scatter...
+[15:27:00]   Saved discordance_scatter.png + .svg
+[15:27:00] Plotting proteomics coculture trajectory...
+[15:27:02]   Saved trajectory_proteomics_coculture.png + .svg
+[15:27:02] Plotting control separation bar chart...
+[15:27:02]   Saved control_separation.png + .svg
+[15:27:02] Done.

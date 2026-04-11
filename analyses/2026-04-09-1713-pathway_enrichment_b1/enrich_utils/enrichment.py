@@ -5,6 +5,7 @@ Pure DataFrame in / DataFrame out. No KG dependency.
 Public API:
     run_enrichment(de_df, pathway_defs, gene_universe, table_scope) -> DataFrame
     run_enrichment_all_timepoints(de_df, pathway_defs, table_scope) -> DataFrame
+    signed_enrichment_score(enrichment_df) -> DataFrame
 
 2×2 contingency table (over-representation, one-sided):
 
@@ -303,3 +304,79 @@ def run_enrichment_all_timepoints(
         return pd.DataFrame()
 
     return pd.concat(timepoint_results, ignore_index=True)
+
+
+def signed_enrichment_score(enrichment_df: pd.DataFrame) -> pd.DataFrame:
+    """Compute a signed enrichment score per pathway × experiment × timepoint.
+
+    Score = -log10(padj) with sign:
+        positive if up-regulated is the dominant direction
+        negative if down-regulated is the dominant direction
+        0 if neither direction is significant
+
+    When both up and down are significant, the direction with the
+    lower padj (stronger signal) wins.
+
+    Parameters
+    ----------
+    enrichment_df:
+        Full enrichment results (from run_enrichment or
+        run_enrichment_all_timepoints). Must have columns:
+        pathway_id, pathway_name, direction, padj, experiment (optional),
+        timepoint (optional).
+
+    Returns
+    -------
+    DataFrame with one row per pathway × experiment × timepoint:
+        pathway_id, pathway_name, experiment, timepoint, score,
+        dominant_direction, up_padj, down_padj
+    """
+    # Identify grouping columns (pathway + experiment context)
+    group_cols = ["pathway_id", "pathway_name"]
+    if "experiment" in enrichment_df.columns:
+        group_cols.append("experiment")
+    if "timepoint" in enrichment_df.columns:
+        group_cols.append("timepoint")
+
+    rows = []
+    for group_key, group_df in enrichment_df.groupby(group_cols, dropna=False):
+        if not isinstance(group_key, tuple):
+            group_key = (group_key,)
+        info = dict(zip(group_cols, group_key))
+
+        up_row = group_df[group_df["direction"] == "up"]
+        down_row = group_df[group_df["direction"] == "down"]
+
+        up_padj = float(up_row["padj"].iloc[0]) if len(up_row) > 0 else float("nan")
+        down_padj = float(down_row["padj"].iloc[0]) if len(down_row) > 0 else float("nan")
+
+        up_sig = pd.notna(up_padj) and up_padj < 0.05
+        down_sig = pd.notna(down_padj) and down_padj < 0.05
+
+        if up_sig and down_sig:
+            # Both significant — stronger signal wins
+            if up_padj <= down_padj:
+                score = -np.log10(up_padj)
+                dominant = "up"
+            else:
+                score = np.log10(down_padj)  # negative
+                dominant = "down"
+        elif up_sig:
+            score = -np.log10(up_padj)
+            dominant = "up"
+        elif down_sig:
+            score = np.log10(down_padj)  # negative
+            dominant = "down"
+        else:
+            score = 0.0
+            dominant = "ns"
+
+        rows.append({
+            **info,
+            "score": score,
+            "dominant_direction": dominant,
+            "up_padj": up_padj,
+            "down_padj": down_padj,
+        })
+
+    return pd.DataFrame(rows)

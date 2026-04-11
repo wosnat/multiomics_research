@@ -23,6 +23,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from enrich_utils.enrichment import signed_enrichment_score
+
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
@@ -305,89 +307,198 @@ def build_matrix(
     return matrix
 
 
-def plot_discordance_scatter(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
-    """Scatter: RNA-seq vs Proteomics -log10(padj) per pathway.
+def plot_signed_heatmap(
+    enrich_df: pd.DataFrame,
+    sig_pathway_ids: set,
+    results_dir: Path,
+    log_fn,
+    col_groups_fn,
+    row_groups_fn,
+) -> None:
+    """Combined signed heatmap: red = up-enriched, blue = down-enriched."""
+    scores_df = signed_enrichment_score(enrich_df)
 
-    Each point = one pathway. Separate panels for up and down.
-    Two marker shapes: ● axenic, ▲ coculture.
+    # Filter to significant pathways
+    scores_df = scores_df[scores_df["pathway_id"].isin(sig_pathway_ids)]
+
+    if len(scores_df) == 0:
+        log_fn("  No significant pathways for signed heatmap")
+        return
+
+    # Build condition label and sort
+    def _cond_label(row):
+        exp_short = EXPERIMENT_SHORT.get(row.get("experiment", ""), row.get("experiment", ""))
+        tp = row.get("timepoint")
+        if pd.notna(tp) and str(tp) != "None":
+            return f"{exp_short} {tp}"
+        return exp_short
+
+    def _cond_sort(row):
+        exp = row.get("experiment", "")
+        exp_idx = EXPERIMENT_ORDER.index(exp) if exp in EXPERIMENT_ORDER else 99
+        tp = row.get("timepoint")
+        tp_idx = TIMEPOINT_ORDER.get(str(tp), 50) if pd.notna(tp) else 0
+        return (exp_idx, tp_idx)
+
+    scores_df["condition"] = scores_df.apply(_cond_label, axis=1)
+    scores_df["_sort"] = scores_df.apply(_cond_sort, axis=1)
+    scores_df = scores_df.sort_values("_sort")
+
+    scores_df["label"] = scores_df["pathway_name"].apply(_short_pathway_name)
+
+    condition_order = list(dict.fromkeys(scores_df["condition"]))
+    label_to_id = dict(zip(scores_df["label"], scores_df["pathway_id"]))
+
+    matrix = scores_df.pivot_table(
+        index="label", columns="condition", values="score",
+        aggfunc="first", fill_value=0.0,
+    )
+    matrix = matrix[[c for c in condition_order if c in matrix.columns]]
+
+    # Sort rows by pathway_id
+    pathway_ids = [label_to_id.get(l, l) for l in matrix.index]
+    sort_order = sorted(range(len(pathway_ids)), key=lambda i: pathway_ids[i])
+    matrix = matrix.iloc[sort_order]
+
+    n_pathways, n_conditions = matrix.shape
+    log_fn(f"  Plotting signed heatmap: {n_pathways} pathways × {n_conditions} conditions")
+
+    fig_width = max(10, n_conditions * 0.35 + 6)
+    fig_height = max(5, n_pathways * 0.35 + 2.5)
+    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
+    fig.subplots_adjust(left=0.40)
+
+    vmax = 10.0
+    im = ax.imshow(
+        np.clip(matrix.values, -vmax, vmax),
+        aspect="auto",
+        cmap="RdBu_r",  # red = positive (up), blue = negative (down)
+        vmin=-vmax, vmax=vmax,
+        interpolation="nearest",
+    )
+
+    plt.colorbar(im, ax=ax, label="Signed score: +up / −down", shrink=0.8)
+
+    # Mark significant cells
+    for i in range(n_pathways):
+        for j in range(n_conditions):
+            val = matrix.values[i, j]
+            if abs(val) >= NEG_LOG10_THRESHOLD:
+                text_color = "white" if abs(val) > vmax * 0.6 else "black"
+                ax.text(j, i, "*", ha="center", va="center",
+                        fontsize=8, fontweight="bold", color=text_color)
+
+    ax.set_xticks(range(n_conditions))
+    ax.set_xticklabels(matrix.columns, rotation=60, ha="right", fontsize=7.5)
+    ax.set_yticks(range(n_pathways))
+    ax.set_yticklabels(matrix.index, fontsize=8)
+
+    fig.suptitle("Pathway Enrichment — Signed Score", fontsize=12, fontweight="bold", y=1.02)
+
+    # Cell gridlines
+    ax.set_xticks([x - 0.5 for x in range(1, n_conditions)], minor=True)
+    ax.set_yticks([y - 0.5 for y in range(1, n_pathways)], minor=True)
+    ax.grid(which="minor", color="white", linewidth=0.5)
+    ax.tick_params(which="minor", size=0)
+
+    # Group separators
+    col_bounds, col_labels = col_groups_fn(matrix)
+    row_bounds, row_labels = row_groups_fn(matrix, enrich_df)
+
+    for b in col_bounds:
+        ax.axvline(x=b - 0.5, color="black", linewidth=1.5)
+    for b in row_bounds:
+        ax.axhline(y=b - 0.5, color="black", linewidth=1.5)
+
+    # Column group labels
+    for label, start, end in col_labels:
+        mid = (start + end - 1) / 2
+        ax.text(mid, -1.5, label, ha="center", va="bottom", fontsize=7,
+                fontweight="bold", clip_on=False)
+
+    # Row group bracket labels
+    for label, start, end in row_labels:
+        if end - start < 1:
+            continue
+        mid = (start + end - 1) / 2
+        bracket_x = -0.08
+        ax.plot([bracket_x, bracket_x], [start - 0.4, end - 1 + 0.4],
+                transform=ax.get_yaxis_transform(),
+                color="0.4", linewidth=1.2, clip_on=False)
+        ax.text(bracket_x - 0.015, mid, label,
+                transform=ax.get_yaxis_transform(),
+                ha="right", va="center", fontsize=6, fontweight="bold",
+                clip_on=False)
+
+    fig.tight_layout()
+    out = results_dir / "heatmap_enrichment_signed.png"
+    fig.savefig(out, dpi=200, bbox_inches="tight")
+    fig.savefig(out.with_suffix(".svg"), format="svg", bbox_inches="tight")
+    plt.close(fig)
+    log_fn(f"  Saved {out.name} + .svg")
+
+
+def plot_discordance_scatter(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
+    """Scatter: RNA-seq vs Proteomics signed enrichment score per pathway.
+
+    Each point = one pathway. ● axenic, ▲ coculture.
+    Signed score: positive = up-enriched, negative = down-enriched.
     Points on the diagonal = concordant; off-diagonal = discordance.
     """
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5.5))
+    scores = signed_enrichment_score(enrich_df)
 
-    # Two condition pairs: axenic and coculture
     pairs = [
         ("de_weissberg_rnaseq_axenic", "de_weissberg_proteomics_axenic", "Axenic", "o"),
         ("de_weissberg_rnaseq_coculture", "de_weissberg_proteomics_coculture", "Coculture", "^"),
     ]
 
-    for ax, direction, base_color in zip(axes, ["up", "down"], ["firebrick", "steelblue"]):
-        sig_thresh = NEG_LOG10_THRESHOLD
+    fig, ax = plt.subplots(figsize=(7, 6))
 
-        for rna_exp, prot_exp, cond_label, marker in pairs:
-            # RNA-seq: max -log10(padj) across timepoints
-            rna = enrich_df[
-                (enrich_df["experiment"] == rna_exp) &
-                (enrich_df["direction"] == direction)
-            ].copy()
-            rna["neg_log10"] = rna["padj"].apply(
-                lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
-            )
-            rna_max = rna.groupby("pathway_id").agg(
-                neg_log10=("neg_log10", "max"),
-                pathway_name=("pathway_name", "first"),
-            )
+    for rna_exp, prot_exp, cond_label, marker in pairs:
+        # Max absolute score across timepoints, preserving sign
+        rna = scores[scores["experiment"] == rna_exp].copy()
+        rna_best = rna.loc[rna.groupby("pathway_id")["score"].apply(lambda s: s.abs().idxmax())]
+        rna_best = rna_best.set_index("pathway_id")
 
-            # Proteomics: max -log10(padj) across timepoints
-            prot = enrich_df[
-                (enrich_df["experiment"] == prot_exp) &
-                (enrich_df["direction"] == direction)
-            ].copy()
-            prot["neg_log10"] = prot["padj"].apply(
-                lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
-            )
-            prot_max = prot.groupby("pathway_id")["neg_log10"].max()
+        prot = scores[scores["experiment"] == prot_exp].copy()
+        prot_best = prot.loc[prot.groupby("pathway_id")["score"].apply(lambda s: s.abs().idxmax())]
+        prot_best = prot_best.set_index("pathway_id")
 
-            common = set(rna_max.index) & set(prot_max.index)
-            if not common:
-                continue
+        common = set(rna_best.index) & set(prot_best.index)
+        if not common:
+            continue
 
-            x_vals, y_vals, labels = [], [], []
-            for pid in sorted(common):
-                x = rna_max.loc[pid, "neg_log10"]
-                y = prot_max[pid]
-                x_vals.append(x)
-                y_vals.append(y)
-                name = rna_max.loc[pid, "pathway_name"]
-                labels.append(_short_pathway_name(str(name)))
+        x_vals, y_vals, labels = [], [], []
+        for pid in sorted(common):
+            x_vals.append(rna_best.loc[pid, "score"])
+            y_vals.append(prot_best.loc[pid, "score"])
+            labels.append(_short_pathway_name(str(rna_best.loc[pid, "pathway_name"])))
 
-            alpha = 0.8 if cond_label == "Coculture" else 0.5
-            ax.scatter(x_vals, y_vals, c=base_color, alpha=alpha, s=50,
-                       marker=marker, edgecolors="white", linewidths=0.5,
-                       label=cond_label)
+        alpha = 0.8 if cond_label == "Coculture" else 0.5
+        ax.scatter(x_vals, y_vals, alpha=alpha, s=50,
+                   marker=marker, edgecolors="gray", linewidths=0.5,
+                   label=cond_label, c=["firebrick" if y > 0 else "steelblue" if y < 0 else "gray"
+                                        for y in y_vals])
 
-            # Label significant points
-            for x, y, label in zip(x_vals, y_vals, labels):
-                if x > sig_thresh or y > sig_thresh:
-                    ax.annotate(label, (x, y), fontsize=5.5, ha="left", va="bottom",
-                                xytext=(4, 4), textcoords="offset points")
+        # Label points with significant signal on either axis
+        for x, y, label in zip(x_vals, y_vals, labels):
+            if abs(x) > NEG_LOG10_THRESHOLD or abs(y) > NEG_LOG10_THRESHOLD:
+                ax.annotate(label, (x, y), fontsize=5.5, ha="left", va="bottom",
+                            xytext=(4, 4), textcoords="offset points")
 
-        # Diagonal line
-        all_vals = [v for v in ax.get_xlim() + ax.get_ylim() if v > 0]
-        max_val = max(all_vals, default=5) * 1.05
-        ax.plot([0, max_val], [0, max_val], "k--", alpha=0.3, linewidth=0.8)
+    # Diagonal and axis lines
+    lim = max(abs(ax.get_xlim()[0]), abs(ax.get_xlim()[1]),
+              abs(ax.get_ylim()[0]), abs(ax.get_ylim()[1]), 5) * 1.1
+    ax.plot([-lim, lim], [-lim, lim], "k--", alpha=0.3, linewidth=0.8)
+    ax.axhline(0, color="gray", linewidth=0.5, alpha=0.3)
+    ax.axvline(0, color="gray", linewidth=0.5, alpha=0.3)
 
-        # Significance thresholds
-        ax.axhline(y=sig_thresh, color="gray", linestyle=":", alpha=0.4, linewidth=0.8)
-        ax.axvline(x=sig_thresh, color="gray", linestyle=":", alpha=0.4, linewidth=0.8)
+    ax.set_xlabel("RNA-seq signed score", fontsize=10)
+    ax.set_ylabel("Proteomics signed score", fontsize=10)
+    ax.set_title("RNA/Protein Discordance — Signed Enrichment Score",
+                 fontsize=11, fontweight="bold")
+    ax.legend(fontsize=8, loc="lower right")
 
-        ax.set_xlabel("RNA-seq  -log10(padj)", fontsize=9)
-        ax.set_ylabel("Proteomics  -log10(padj)", fontsize=9)
-        ax.set_title(f"{direction.capitalize()}-regulated", fontsize=10, fontweight="bold")
-        ax.set_xlim(-0.5, None)
-        ax.set_ylim(-0.5, None)
-        ax.legend(fontsize=8, loc="upper left")
-
-    fig.suptitle("RNA/Protein Discordance — Pathway Enrichment", fontsize=12, fontweight="bold")
     fig.tight_layout()
     out = results_dir / "discordance_scatter.png"
     fig.savefig(out, dpi=200, bbox_inches="tight")
@@ -397,70 +508,62 @@ def plot_discordance_scatter(enrich_df: pd.DataFrame, results_dir: Path, log_fn)
 
 
 def plot_proteomics_trajectory(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
-    """Line plot: -log10(padj) over time for top pathways in proteomics coculture."""
-    prot_co = enrich_df[
-        (enrich_df["experiment"] == "de_weissberg_proteomics_coculture") &
-        (enrich_df["timepoint"].notna()) &
-        (enrich_df["timepoint"] != "days 60+89")  # exclude combined timepoint
+    """Line plot: signed enrichment score over time for top pathways in proteomics coculture."""
+    scores = signed_enrichment_score(enrich_df)
+
+    prot_co = scores[
+        (scores["experiment"] == "de_weissberg_proteomics_coculture") &
+        (scores["timepoint"].notna()) &
+        (scores["timepoint"] != "days 60+89")
     ].copy()
 
     if len(prot_co) == 0:
         log_fn("  No proteomics coculture data for trajectory plot")
         return
 
-    prot_co["neg_log10"] = prot_co["padj"].apply(
-        lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
-    )
-
-    # Top pathways: significant in at least 2 timepoints (any direction)
-    sig_counts = prot_co[prot_co["padj"] < PADJ_THRESHOLD].groupby("pathway_id").size()
-    top_pathways = sig_counts[sig_counts >= 2].index.tolist()
+    # Top pathways: non-zero score in at least 2 timepoints
+    nonzero_counts = prot_co[prot_co["score"] != 0].groupby("pathway_id").size()
+    top_pathways = nonzero_counts[nonzero_counts >= 2].index.tolist()
 
     if not top_pathways:
-        log_fn("  No pathways significant in >=2 timepoints")
+        log_fn("  No pathways with signal in >=2 timepoints")
         return
 
-    # Get short names and sort order for timepoints
     tp_order = ["day 18", "day 31", "day 60", "day 89"]
     tp_x = {tp: i for i, tp in enumerate(tp_order)}
 
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+    fig, ax = plt.subplots(figsize=(8, 5))
 
-    for ax, direction, color_base in zip(axes, ["up", "down"], ["Reds", "Blues"]):
-        subset = prot_co[
-            (prot_co["direction"] == direction) &
-            (prot_co["pathway_id"].isin(top_pathways)) &
+    colors = plt.cm.tab10(np.linspace(0, 1, len(top_pathways)))
+
+    for j, pid in enumerate(sorted(top_pathways)):
+        pw_data = prot_co[
+            (prot_co["pathway_id"] == pid) &
             (prot_co["timepoint"].isin(tp_order))
-        ]
+        ].sort_values("timepoint", key=lambda s: s.map(tp_x))
 
-        cmap = plt.get_cmap(color_base)
-        n_pw = len(top_pathways)
+        if len(pw_data) == 0:
+            continue
 
-        for j, pid in enumerate(sorted(top_pathways)):
-            pw_data = subset[subset["pathway_id"] == pid].sort_values(
-                "timepoint", key=lambda s: s.map(tp_x)
-            )
-            if len(pw_data) == 0:
-                continue
+        xs = [tp_x[tp] for tp in pw_data["timepoint"]]
+        ys = pw_data["score"].values
+        name = _short_pathway_name(str(pw_data["pathway_name"].iloc[0]))
 
-            xs = [tp_x[tp] for tp in pw_data["timepoint"]]
-            ys = pw_data["neg_log10"].values
-            name = _short_pathway_name(str(pw_data["pathway_name"].iloc[0]))
-            c = cmap(0.3 + 0.6 * j / max(n_pw - 1, 1))
+        ax.plot(xs, ys, marker="o", markersize=5, linewidth=1.8,
+                color=colors[j], label=name, alpha=0.85)
 
-            ax.plot(xs, ys, marker="o", markersize=4, linewidth=1.5,
-                    color=c, label=name, alpha=0.8)
+    ax.axhline(0, color="gray", linewidth=0.8, alpha=0.5)
+    ax.axhline(NEG_LOG10_THRESHOLD, color="gray", linestyle=":", alpha=0.3, linewidth=0.8)
+    ax.axhline(-NEG_LOG10_THRESHOLD, color="gray", linestyle=":", alpha=0.3, linewidth=0.8)
 
-        ax.axhline(y=NEG_LOG10_THRESHOLD, color="gray", linestyle=":", alpha=0.5)
-        ax.set_xticks(range(len(tp_order)))
-        ax.set_xticklabels(tp_order, fontsize=8)
-        ax.set_ylabel("-log10(padj)", fontsize=9)
-        ax.set_xlabel("Timepoint", fontsize=9)
-        ax.set_title(f"{direction.capitalize()}-regulated", fontsize=10, fontweight="bold")
-        ax.legend(fontsize=6, loc="upper right", framealpha=0.8)
+    ax.set_xticks(range(len(tp_order)))
+    ax.set_xticklabels(tp_order, fontsize=9)
+    ax.set_ylabel("Signed enrichment score (+up / −down)", fontsize=9)
+    ax.set_xlabel("Timepoint", fontsize=9)
+    ax.set_title("Proteomics Coculture — Pathway Enrichment Trajectory",
+                 fontsize=11, fontweight="bold")
+    ax.legend(fontsize=7, loc="best", framealpha=0.8)
 
-    fig.suptitle("Proteomics Coculture — Pathway Enrichment Trajectory",
-                 fontsize=12, fontweight="bold")
     fig.tight_layout()
     out = results_dir / "trajectory_proteomics_coculture.png"
     fig.savefig(out, dpi=200, bbox_inches="tight")
@@ -718,7 +821,14 @@ def main(explore: bool = False) -> None:
         log("No significant down-regulated pathways to plot")
 
     # ------------------------------------------------------------------
-    # 6. RNA vs protein discordance scatter
+    # 6. Combined signed heatmap
+    # ------------------------------------------------------------------
+    log("Plotting signed enrichment heatmap...")
+    plot_signed_heatmap(enrich_df, sig_pathway_ids, RESULTS_DIR, log,
+                        _col_groups, _row_groups)
+
+    # ------------------------------------------------------------------
+    # 7. RNA vs protein discordance scatter
     # ------------------------------------------------------------------
     log("Plotting RNA vs protein discordance scatter...")
     plot_discordance_scatter(enrich_df, RESULTS_DIR, log)
