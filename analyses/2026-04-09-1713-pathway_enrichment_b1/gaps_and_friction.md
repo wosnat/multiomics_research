@@ -28,6 +28,14 @@
 
 4. **`gene_ontology_terms` returns leaf terms only** — No way to get annotations at a specific hierarchy level via MCP. Must extract leaves then roll up in Python. The proposed `genes_at_ontology_level` tool would solve this.
 
+## MCP/KG — what worked well
+
+1. **KG annotation data was correct.** Roll-up results matched `genes_by_ontology` 69/69 for CyanoRak — zero discrepancies. The KG's ontology graph is reliable.
+2. **Python API imports made scripting natural.** `from multiomics_explorer import gene_ontology_terms, genes_by_ontology, run_cypher` — same interface as MCP but with `limit=None` and no pagination. The extraction scripts were clean.
+3. **`to_dataframe` utility eliminated manual result parsing.** CSV-safe DataFrames from any API call with one function.
+4. **`run_cypher` worked for hierarchy extraction.** CyanoRak (154 edges) and KEGG (8,189 edges) hierarchies extracted correctly. The ontology-specific strategies (code dot-count for CyanoRak, level property for KEGG, BFS for others) all produced correct results.
+5. **`genes_by_ontology` as validation oracle.** Using the MCP tool to spot-check roll-up results was the right pattern — it gave ground truth without needing to trust our own code.
+
 ## Skill/methodology friction
 
 1. **Notebook-commit gate violated for steps 1-2.** The rule says "commit notebook entry for Step N before beginning Step N+1." Steps 1 and 2 were both explored interactively and their notebook entries were written retroactively in bulk. The researcher had to ask "did you put these tables in the notebook?" Steps 3+ were better. Root cause: during fast interactive exploration, stopping to write a formal notebook entry breaks the flow. The rule is right but needs enforcement or a lighter "jot notes now, formalize later" pattern.
