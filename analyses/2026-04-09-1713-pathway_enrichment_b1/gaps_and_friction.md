@@ -52,6 +52,8 @@
 
 7. **Phase 0 subagent reviews skipped.** CLAUDE.md says "don't skip subagent reviews for tasks that produce data outputs." Phase 0 tasks (enrichment.py, hierarchy.py, survey.py) were dispatched as subagents but only verified by test results, not by spec/quality reviewer subagents. The code was correct (43 tests pass) but the process shortcut was a violation.
 
+8. **Results directory gitignored.** The repo's `.gitignore` has a blanket `analyses/*/results/` rule. All result files (CSVs, PNGs, SVGs) were generated but not tracked until the researcher noticed. v2 had an exception added manually; B1 needed the same. This should be part of the analysis scaffold step — when creating a new analysis directory, add the gitignore exception immediately.
+
 ## Process retrospective
 
 ### What worked
