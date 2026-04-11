@@ -306,70 +306,86 @@ def build_matrix(
 
 
 def plot_discordance_scatter(enrich_df: pd.DataFrame, results_dir: Path, log_fn) -> None:
-    """Scatter: -log10(padj) in RNA-seq axenic vs proteomics coculture per pathway.
+    """Scatter: RNA-seq vs Proteomics -log10(padj) per pathway.
 
     Each point = one pathway. Separate panels for up and down.
-    Pathways on the diagonal are concordant; off-diagonal = discordance.
+    Two marker shapes: ● axenic, ▲ coculture.
+    Points on the diagonal = concordant; off-diagonal = discordance.
     """
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.5))
 
-    for ax, direction, color in zip(axes, ["up", "down"], ["firebrick", "steelblue"]):
-        # RNA-seq axenic, best timepoint (day 14 only)
-        rna_ax = enrich_df[
-            (enrich_df["experiment"] == "de_weissberg_rnaseq_axenic") &
-            (enrich_df["direction"] == direction)
-        ].set_index("pathway_id")
+    # Two condition pairs: axenic and coculture
+    pairs = [
+        ("de_weissberg_rnaseq_axenic", "de_weissberg_proteomics_axenic", "Axenic", "o"),
+        ("de_weissberg_rnaseq_coculture", "de_weissberg_proteomics_coculture", "Coculture", "^"),
+    ]
 
-        # Proteomics coculture — take max -log10(padj) across timepoints
-        prot_co = enrich_df[
-            (enrich_df["experiment"] == "de_weissberg_proteomics_coculture") &
-            (enrich_df["direction"] == direction)
-        ].copy()
-        prot_co["neg_log10"] = prot_co["padj"].apply(
-            lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
-        )
-        prot_co_max = prot_co.groupby("pathway_id")["neg_log10"].max()
-
-        # Join
-        common = set(rna_ax.index) & set(prot_co_max.index)
-        if not common:
-            ax.text(0.5, 0.5, "No common pathways", transform=ax.transAxes, ha="center")
-            ax.set_title(f"{direction.capitalize()}-regulated")
-            continue
-
-        x_vals, y_vals, labels = [], [], []
-        for pid in sorted(common):
-            rna_p = rna_ax.loc[pid, "padj"]
-            x = -np.log10(rna_p) if pd.notna(rna_p) and rna_p > 0 else 0.0
-            y = prot_co_max[pid]
-            x_vals.append(x)
-            y_vals.append(y)
-            # Get short name
-            name = rna_ax.loc[pid, "pathway_name"] if "pathway_name" in rna_ax.columns else pid
-            labels.append(_short_pathway_name(str(name)))
-
-        ax.scatter(x_vals, y_vals, c=color, alpha=0.7, s=40, edgecolors="white", linewidths=0.5)
-
-        # Label significant points
+    for ax, direction, base_color in zip(axes, ["up", "down"], ["firebrick", "steelblue"]):
         sig_thresh = NEG_LOG10_THRESHOLD
-        for x, y, label in zip(x_vals, y_vals, labels):
-            if x > sig_thresh or y > sig_thresh:
-                ax.annotate(label, (x, y), fontsize=6, ha="left", va="bottom",
-                            xytext=(3, 3), textcoords="offset points")
+
+        for rna_exp, prot_exp, cond_label, marker in pairs:
+            # RNA-seq: max -log10(padj) across timepoints
+            rna = enrich_df[
+                (enrich_df["experiment"] == rna_exp) &
+                (enrich_df["direction"] == direction)
+            ].copy()
+            rna["neg_log10"] = rna["padj"].apply(
+                lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
+            )
+            rna_max = rna.groupby("pathway_id").agg(
+                neg_log10=("neg_log10", "max"),
+                pathway_name=("pathway_name", "first"),
+            )
+
+            # Proteomics: max -log10(padj) across timepoints
+            prot = enrich_df[
+                (enrich_df["experiment"] == prot_exp) &
+                (enrich_df["direction"] == direction)
+            ].copy()
+            prot["neg_log10"] = prot["padj"].apply(
+                lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
+            )
+            prot_max = prot.groupby("pathway_id")["neg_log10"].max()
+
+            common = set(rna_max.index) & set(prot_max.index)
+            if not common:
+                continue
+
+            x_vals, y_vals, labels = [], [], []
+            for pid in sorted(common):
+                x = rna_max.loc[pid, "neg_log10"]
+                y = prot_max[pid]
+                x_vals.append(x)
+                y_vals.append(y)
+                name = rna_max.loc[pid, "pathway_name"]
+                labels.append(_short_pathway_name(str(name)))
+
+            alpha = 0.8 if cond_label == "Coculture" else 0.5
+            ax.scatter(x_vals, y_vals, c=base_color, alpha=alpha, s=50,
+                       marker=marker, edgecolors="white", linewidths=0.5,
+                       label=cond_label)
+
+            # Label significant points
+            for x, y, label in zip(x_vals, y_vals, labels):
+                if x > sig_thresh or y > sig_thresh:
+                    ax.annotate(label, (x, y), fontsize=5.5, ha="left", va="bottom",
+                                xytext=(4, 4), textcoords="offset points")
 
         # Diagonal line
-        max_val = max(max(x_vals, default=1), max(y_vals, default=1)) * 1.1
+        all_vals = [v for v in ax.get_xlim() + ax.get_ylim() if v > 0]
+        max_val = max(all_vals, default=5) * 1.05
         ax.plot([0, max_val], [0, max_val], "k--", alpha=0.3, linewidth=0.8)
 
         # Significance thresholds
         ax.axhline(y=sig_thresh, color="gray", linestyle=":", alpha=0.4, linewidth=0.8)
         ax.axvline(x=sig_thresh, color="gray", linestyle=":", alpha=0.4, linewidth=0.8)
 
-        ax.set_xlabel("RNA-seq axenic  -log10(padj)", fontsize=9)
-        ax.set_ylabel("Proteomics coculture  -log10(padj)", fontsize=9)
+        ax.set_xlabel("RNA-seq  -log10(padj)", fontsize=9)
+        ax.set_ylabel("Proteomics  -log10(padj)", fontsize=9)
         ax.set_title(f"{direction.capitalize()}-regulated", fontsize=10, fontweight="bold")
         ax.set_xlim(-0.5, None)
         ax.set_ylim(-0.5, None)
+        ax.legend(fontsize=8, loc="upper left")
 
     fig.suptitle("RNA/Protein Discordance — Pathway Enrichment", fontsize=12, fontweight="bold")
     fig.tight_layout()
