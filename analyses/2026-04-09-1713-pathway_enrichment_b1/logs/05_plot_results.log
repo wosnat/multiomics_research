@@ -1,8 +1,8 @@
-[14:55:40] === Step 5: Plot Enrichment Heatmaps ===
-[14:55:40] Loaded enrichment_all.csv: 5589 rows
-[14:55:40] Pathways significant in >= 1 condition: 18
-[14:55:40]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_up.png
-[14:55:41]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_up.png
-[14:55:41]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_down.png
-[14:55:41]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_down.png
-[14:55:41] Done.
+[15:02:42] === Step 5: Plot Enrichment Heatmaps ===
+[15:02:42] Loaded enrichment_all.csv: 5589 rows
+[15:02:42] Pathways significant in >= 1 condition: 18
+[15:02:42]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_up.png
+[15:02:43]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_up.png
+[15:02:43]   Plotting 18 pathways × 27 conditions → heatmap_enrichment_down.png
+[15:02:44]   Saved /home/osnat/github/multiomics_research/analyses/2026-04-09-1713-pathway_enrichment_b1/results/heatmap_enrichment_down.png
+[15:02:44] Done.

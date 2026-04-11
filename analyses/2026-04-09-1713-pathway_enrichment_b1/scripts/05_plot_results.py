@@ -52,19 +52,27 @@ EXPERIMENT_SHORT = {
     "de_weissberg_proteomics_coculture": "Wb prot cocult",
 }
 
-# Order: references → negative controls → targets (RNA then prot, axenic then cocult)
-EXPERIMENT_ORDER = [
-    "de_ref_tolonen_ndep",
-    "de_ref_read_ndep",
-    "de_ctrl_tolonen_cyanate",
-    "de_ctrl_tolonen_urea",
-    "de_ctrl_aharonovich_coculture",
-    "de_ctrl_steglich_high_white_light",
-    "de_weissberg_rnaseq_axenic",
-    "de_weissberg_rnaseq_coculture",
-    "de_weissberg_proteomics_axenic",
-    "de_weissberg_proteomics_coculture",
+# Experiment groups for visual separation (vertical lines between groups)
+EXPERIMENT_GROUPS = [
+    # (group_label, [experiment_ids])
+    ("Reference", [
+        "de_ref_tolonen_ndep",
+        "de_ref_read_ndep",
+    ]),
+    ("Neg. control", [
+        "de_ctrl_tolonen_cyanate",
+        "de_ctrl_tolonen_urea",
+        "de_ctrl_aharonovich_coculture",
+        "de_ctrl_steglich_high_white_light",
+    ]),
+    ("RNA-seq axenic", ["de_weissberg_rnaseq_axenic"]),
+    ("RNA-seq coculture", ["de_weissberg_rnaseq_coculture"]),
+    ("Proteomics axenic", ["de_weissberg_proteomics_axenic"]),
+    ("Proteomics coculture", ["de_weissberg_proteomics_coculture"]),
 ]
+
+# Flat experiment order derived from groups
+EXPERIMENT_ORDER = [exp for _, exps in EXPERIMENT_GROUPS for exp in exps]
 
 # Timepoint sort order
 TIMEPOINT_ORDER = {
@@ -81,6 +89,18 @@ def _short_pathway_name(name: str) -> str:
     return name
 
 
+def _find_group_boundaries(labels: list[str], group_key_fn) -> list[int]:
+    """Find indices where the group key changes. Returns positions for separator lines."""
+    boundaries = []
+    prev_key = None
+    for i, label in enumerate(labels):
+        key = group_key_fn(label)
+        if prev_key is not None and key != prev_key:
+            boundaries.append(i)
+        prev_key = key
+    return boundaries
+
+
 def make_heatmap(
     matrix: pd.DataFrame,
     title: str,
@@ -88,6 +108,10 @@ def make_heatmap(
     cmap: str,
     threshold: float,
     log_fn,
+    col_group_boundaries: list[int] | None = None,
+    row_group_boundaries: list[int] | None = None,
+    col_group_labels: list[tuple[str, int, int]] | None = None,
+    row_group_labels: list[tuple[str, int, int]] | None = None,
 ) -> None:
     """Plot a pathway × condition heatmap of -log10(padj).
 
@@ -106,15 +130,21 @@ def make_heatmap(
         -log10(padj) at significance threshold (used as vmin).
     log_fn:
         Logging function.
+    col_group_boundaries:
+        Column indices where group separators should be drawn.
+    row_group_boundaries:
+        Row indices where group separators should be drawn.
     """
     n_pathways, n_conditions = matrix.shape
     log_fn(f"  Plotting {n_pathways} pathways × {n_conditions} conditions → {out_path.name}")
 
-    # Figure size: scale with dimensions
-    fig_width = max(8, n_conditions * 0.6 + 3)
-    fig_height = max(4, n_pathways * 0.3 + 2)
+    # Figure size: scale with dimensions, extra left margin for row group labels
+    fig_width = max(12, n_conditions * 0.55 + 6)
+    fig_height = max(5, n_pathways * 0.35 + 2.5)
 
     fig, ax = plt.subplots(figsize=(fig_width, fig_height))
+    # Leave space on the left for row group labels
+    fig.subplots_adjust(left=0.35)
 
     im = ax.imshow(
         matrix.values,
@@ -125,21 +155,52 @@ def make_heatmap(
         interpolation="nearest",
     )
 
-    # Threshold line (significance boundary)
-    plt.colorbar(im, ax=ax, label="-log10(padj)")
+    plt.colorbar(im, ax=ax, label="-log10(padj)", shrink=0.8)
 
     ax.set_xticks(range(n_conditions))
-    ax.set_xticklabels(matrix.columns, rotation=60, ha="right", fontsize=8)
+    ax.set_xticklabels(matrix.columns, rotation=60, ha="right", fontsize=7.5)
     ax.set_yticks(range(n_pathways))
     ax.set_yticklabels(matrix.index, fontsize=8)
 
     ax.set_title(title, fontsize=12, fontweight="bold", pad=12)
 
-    # Light gridlines
+    # Light cell gridlines
     ax.set_xticks([x - 0.5 for x in range(1, n_conditions)], minor=True)
     ax.set_yticks([y - 0.5 for y in range(1, n_pathways)], minor=True)
     ax.grid(which="minor", color="white", linewidth=0.5)
     ax.tick_params(which="minor", size=0)
+
+    # Group separator lines (thicker, dark)
+    if col_group_boundaries:
+        for b in col_group_boundaries:
+            ax.axvline(x=b - 0.5, color="black", linewidth=1.5)
+    if row_group_boundaries:
+        for b in row_group_boundaries:
+            ax.axhline(y=b - 0.5, color="black", linewidth=1.5)
+
+    # Column group labels (above the heatmap)
+    if col_group_labels:
+        for label, start, end in col_group_labels:
+            mid = (start + end - 1) / 2
+            ax.text(mid, -1.5, label, ha="center", va="bottom", fontsize=7,
+                    fontweight="bold", clip_on=False)
+
+    # Row group labels with bracket lines (left of the heatmap)
+    if row_group_labels:
+        for label, start, end in row_group_labels:
+            if end - start < 1:
+                continue
+            mid = (start + end - 1) / 2
+            # Bracket line in axes fraction x, data y
+            bracket_x = -0.04  # left of the y-axis labels
+            ax.plot([bracket_x, bracket_x], [start - 0.4, end - 1 + 0.4],
+                    transform=ax.get_yaxis_transform(),
+                    color="0.4", linewidth=1.2, clip_on=False)
+            # Group label text further left
+            ax.text(bracket_x - 0.015, mid, label,
+                    transform=ax.get_yaxis_transform(),
+                    ha="right", va="center", fontsize=6, fontweight="bold",
+                    clip_on=False)
 
     fig.tight_layout()
     fig.savefig(out_path, dpi=200, bbox_inches="tight")
@@ -208,6 +269,9 @@ def build_matrix(
     # Preserve condition order from sorted subset
     condition_order = list(dict.fromkeys(subset["condition"]))
 
+    # Track pathway_id per label for sorting
+    label_to_id = dict(zip(subset["label"], subset["pathway_id"]))
+
     matrix = subset.pivot_table(
         index="label",
         columns="condition",
@@ -219,8 +283,10 @@ def build_matrix(
     # Reorder columns to match experiment/timepoint order
     matrix = matrix[[c for c in condition_order if c in matrix.columns]]
 
-    # Sort pathways by max significance across conditions (descending)
-    matrix = matrix.loc[matrix.max(axis=1).sort_values(ascending=False).index]
+    # Sort pathways by pathway_id (alphabetical = grouped by level-0 parent)
+    pathway_ids = [label_to_id.get(label, label) for label in matrix.index]
+    sort_order = sorted(range(len(pathway_ids)), key=lambda i: pathway_ids[i])
+    matrix = matrix.iloc[sort_order]
 
     return matrix
 
@@ -269,10 +335,91 @@ def main(explore: bool = False) -> None:
             log(f"  {pid}: significant in {n_sig} conditions")
 
     # ------------------------------------------------------------------
-    # 3. Plot up direction
+    # 3. Compute group boundaries for column separators
+    # ------------------------------------------------------------------
+    # Build the full condition order to find where experiment groups change
+    # CyanoRak level-0 parent names for row group labels
+    LEVEL0_NAMES = {
+        "A": "Amino acid",
+        "B": "Cofactors",
+        "C": "Cell envelope",
+        "D": "Cell processes",
+        "E": "Central metab.",
+        "F": "DNA metab.",
+        "G": "Energy metab.",
+        "H": "Fatty acid",
+        "J": "Photosynthesis",
+        "K": "Protein synth.",
+        "L": "Protein fate",
+        "M": "Nucleotides",
+        "N": "Regulatory",
+        "O": "Signal transd.",
+        "P": "Transcription",
+        "Q": "Transport",
+        "R": "Other",
+    }
+
+    def _col_group_for(col):
+        """Map a condition column label to its experiment group label."""
+        for g_label, g_exps in EXPERIMENT_GROUPS:
+            for e in g_exps:
+                if col.startswith(EXPERIMENT_SHORT.get(e, e)):
+                    return g_label
+        return "?"
+
+    def _col_groups(matrix):
+        """Compute column group boundaries and labels."""
+        boundaries = []
+        labels = []  # (label, start_idx, end_idx)
+        prev_group = None
+        group_start = 0
+        for i, col in enumerate(matrix.columns):
+            group = _col_group_for(col)
+            if prev_group is not None and group != prev_group:
+                boundaries.append(i)
+                labels.append((prev_group, group_start, i))
+                group_start = i
+            prev_group = group
+        if prev_group is not None:
+            labels.append((prev_group, group_start, len(matrix.columns)))
+        return boundaries, labels
+
+    def _row_parent(label, enrich_df):
+        """Get CyanoRak level-0 parent letter for a pathway label."""
+        name_to_id = dict(zip(
+            enrich_df["pathway_name"].apply(_short_pathway_name),
+            enrich_df["pathway_id"]
+        ))
+        pid = name_to_id.get(label, label)
+        code = pid.replace("cyanorak.role:", "")
+        return code.split(".")[0]
+
+    def _row_groups(matrix, enrich_df):
+        """Compute row group boundaries and labels by level-0 parent."""
+        boundaries = []
+        labels = []
+        prev_parent = None
+        group_start = 0
+        for i, label in enumerate(matrix.index):
+            parent = _row_parent(label, enrich_df)
+            if prev_parent is not None and parent != prev_parent:
+                boundaries.append(i)
+                parent_name = LEVEL0_NAMES.get(prev_parent, prev_parent)
+                labels.append((parent_name, group_start, i))
+                group_start = i
+            prev_parent = parent
+        if prev_parent is not None:
+            parent_name = LEVEL0_NAMES.get(prev_parent, prev_parent)
+            labels.append((parent_name, group_start, len(matrix.index)))
+        return boundaries, labels
+
+    # ------------------------------------------------------------------
+    # 4. Plot up direction
     # ------------------------------------------------------------------
     up_matrix = build_matrix(enrich_df, direction="up", sig_pathways=sig_pathway_ids)
     if len(up_matrix) > 0:
+        col_bounds, col_labels = _col_groups(up_matrix)
+        row_bounds, row_labels = _row_groups(up_matrix, enrich_df)
         make_heatmap(
             matrix=up_matrix,
             title="Pathway Enrichment — Up-regulated",
@@ -280,15 +427,21 @@ def main(explore: bool = False) -> None:
             cmap=CMAP_UP,
             threshold=NEG_LOG10_THRESHOLD,
             log_fn=log,
+            col_group_boundaries=col_bounds,
+            row_group_boundaries=row_bounds,
+            col_group_labels=col_labels,
+            row_group_labels=row_labels,
         )
     else:
         log("No significant up-regulated pathways to plot")
 
     # ------------------------------------------------------------------
-    # 4. Plot down direction
+    # 5. Plot down direction
     # ------------------------------------------------------------------
     down_matrix = build_matrix(enrich_df, direction="down", sig_pathways=sig_pathway_ids)
     if len(down_matrix) > 0:
+        col_bounds, col_labels = _col_groups(down_matrix)
+        row_bounds, row_labels = _row_groups(down_matrix, enrich_df)
         make_heatmap(
             matrix=down_matrix,
             title="Pathway Enrichment — Down-regulated",
@@ -296,6 +449,10 @@ def main(explore: bool = False) -> None:
             cmap=CMAP_DOWN,
             threshold=NEG_LOG10_THRESHOLD,
             log_fn=log,
+            col_group_boundaries=col_bounds,
+            row_group_boundaries=row_bounds,
+            col_group_labels=col_labels,
+            row_group_labels=row_labels,
         )
     else:
         log("No significant down-regulated pathways to plot")
