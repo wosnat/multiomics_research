@@ -1,0 +1,159 @@
+[14:48:14] === Step 4: Run Enrichment (table_scope=all_detected_genes) ===
+[14:48:14] Loaded 69 pathway definitions
+[14:48:14] Found 10 DE files
+[14:48:14]   Processing de_ctrl_aharonovich_coculture...
+[14:48:14]     tests=207, significant (padj<0.05)=0
+[14:48:14]       timepoint=20h: tests=207, significant=0
+[14:48:14]   Processing de_ctrl_steglich_high_white_light...
+[14:48:14]     tests=207, significant (padj<0.05)=0
+[14:48:14]   Processing de_ctrl_tolonen_cyanate...
+[14:48:14]     tests=207, significant (padj<0.05)=8
+[14:48:14]   Processing de_ctrl_tolonen_urea...
+[14:48:14]     tests=207, significant (padj<0.05)=2
+[14:48:14]   Processing de_ref_read_ndep...
+[14:48:14]     tests=621, significant (padj<0.05)=14
+[14:48:14]       timepoint=12h: tests=207, significant=7
+[14:48:14]       timepoint=24h: tests=207, significant=7
+[14:48:14]       timepoint=3h: tests=207, significant=0
+[14:48:14]   Processing de_ref_tolonen_ndep...
+[14:48:14]     tests=1242, significant (padj<0.05)=55
+[14:48:14]       timepoint=0h: tests=207, significant=1
+[14:48:14]       timepoint=12h: tests=207, significant=14
+[14:48:14]       timepoint=24h: tests=207, significant=15
+[14:48:14]       timepoint=3h: tests=207, significant=4
+[14:48:14]       timepoint=48h: tests=207, significant=11
+[14:48:14]       timepoint=6h: tests=207, significant=10
+[14:48:14]   Processing de_weissberg_proteomics_axenic...
+[14:48:14]     tests=621, significant (padj<0.05)=8
+[14:48:14]       timepoint=day 14: tests=207, significant=2
+[14:48:14]       timepoint=day 31: tests=207, significant=2
+[14:48:14]       timepoint=day 89: tests=207, significant=4
+[14:48:14]   Processing de_weissberg_proteomics_coculture...
+[14:48:14]     tests=1035, significant (padj<0.05)=29
+[14:48:14]       timepoint=day 18: tests=207, significant=6
+[14:48:14]       timepoint=day 31: tests=207, significant=7
+[14:48:14]       timepoint=day 60: tests=207, significant=6
+[14:48:14]       timepoint=day 89: tests=207, significant=4
+[14:48:14]       timepoint=days 60+89: tests=207, significant=6
+[14:48:14]   Processing de_weissberg_rnaseq_axenic...
+[14:48:14]     tests=207, significant (padj<0.05)=11
+[14:48:14]       timepoint=day 14: tests=207, significant=11
+[14:48:14]   Processing de_weissberg_rnaseq_coculture...
+[14:48:15]     tests=1035, significant (padj<0.05)=6
+[14:48:15]       timepoint=day 18: tests=207, significant=1
+[14:48:15]       timepoint=day 31: tests=207, significant=0
+[14:48:15]       timepoint=day 60: tests=207, significant=2
+[14:48:15]       timepoint=day 89: tests=207, significant=2
+[14:48:15]       timepoint=days 60+89: tests=207, significant=1
+[14:48:15] Total tests: 5589
+[14:48:15] Total significant (padj<0.05): 133
+[14:48:15] Saved enrichment_all.csv (5589 rows)
+[14:48:15] Saved enrichment_significant.csv (133 rows)
+[14:48:15] --- Marker pathway traces ---
+[14:48:15]   'nitrogen': 22 significant rows
+[14:48:15]     de_ref_read_ndep tp=12h dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=7.049e-03 OR=7.32
+[14:48:15]     de_ref_read_ndep tp=24h dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=6.170e-03 OR=6.88
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=6.168e-05 OR=8.66
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=6.623e-03 OR=4.05
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=9.615e-05 OR=11.50
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.704e-02 OR=3.95
+[14:48:15]     de_ref_tolonen_ndep tp=3h dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=5.378e-03 OR=66.64
+[14:48:15]     de_ref_tolonen_ndep tp=3h dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=5.378e-03 OR=66.64
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=4.003e-05 OR=9.94
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=9.995e-03 OR=4.15
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 14 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=3.257e-04 OR=14.47
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 18 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.764e-15 OR=70.56
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 18 dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.006e-14 OR=50.11
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 31 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=5.284e-13 OR=28.04
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 31 dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=3.238e-09 OR=14.65
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 60 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=2.051e-08 OR=14.30
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 60 dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.097e-07 OR=11.90
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 89 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.051e-07 OR=12.56
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 89 dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.278e-06 OR=9.89
+[14:48:15]     de_weissberg_proteomics_coculture tp=days 60+89 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=5.103e-09 OR=15.26
+[14:48:15]     de_weissberg_proteomics_coculture tp=days 60+89 dir=combined cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=2.908e-08 OR=13.06
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=up cyanorak.role:E.4 | Central intermediary metabolism > Nitrogen metabolism padj=1.515e-02 OR=4.23
+[14:48:15]   'photosynthesis': 53 significant rows
+[14:48:15]     de_ctrl_tolonen_cyanate tp=None dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=5.649e-03 OR=35.72
+[14:48:15]     de_ctrl_tolonen_cyanate tp=None dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=2.773e-02 OR=17.65
+[14:48:15]     de_ctrl_tolonen_cyanate tp=None dir=down cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=2.253e-04 OR=27.08
+[14:48:15]     de_ctrl_tolonen_cyanate tp=None dir=combined cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=3.627e-03 OR=12.67
+[14:48:15]     de_ctrl_tolonen_cyanate tp=None dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=1.107e-04 OR=38.47
+[14:48:15]     de_ctrl_tolonen_cyanate tp=None dir=combined cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=1.405e-03 OR=18.00
+[14:48:15]     de_ref_read_ndep tp=12h dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=7.076e-06 OR=inf
+[14:48:15]     de_ref_read_ndep tp=12h dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=5.593e-04 OR=inf
+[14:48:15]     de_ref_read_ndep tp=12h dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=2.073e-02 OR=5.98
+[14:48:15]     de_ref_read_ndep tp=24h dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=6.001e-05 OR=inf
+[14:48:15]     de_ref_read_ndep tp=24h dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=4.342e-03 OR=inf
+[14:48:15]     de_ref_read_ndep tp=24h dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=4.468e-04 OR=9.68
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=1.677e-09 OR=inf
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=1.147e-06 OR=inf
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=down cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=1.857e-06 OR=12.20
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=combined cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=4.205e-04 OR=6.78
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=7.459e-07 OR=18.56
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=combined cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=4.372e-04 OR=8.57
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=1.898e-03 OR=5.54
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=4.008e-10 OR=inf
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=3.201e-08 OR=inf
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=down cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=5.386e-05 OR=9.82
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=combined cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=3.767e-04 OR=7.17
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=3.113e-06 OR=16.89
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=combined cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=1.824e-04 OR=10.22
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=3.552e-03 OR=5.52
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=combined cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=1.704e-02 OR=3.95
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=1.074e-06 OR=68.79
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=1.153e-04 OR=28.62
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=down cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=1.012e-05 OR=21.87
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=combined cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=1.595e-03 OR=8.95
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=2.060e-09 OR=56.15
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=combined cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=2.643e-06 OR=22.21
+[14:48:15]     de_ref_tolonen_ndep tp=48h dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=4.962e-02 OR=7.15
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=1.354e-08 OR=124.18
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=5.165e-06 OR=57.89
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=down cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=1.536e-06 OR=13.96
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=combined cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=1.648e-04 OR=7.77
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 31 dir=down cyanorak.role:J.3 | Photosynthesis and respiration > Cytochrome b6/f complex padj=4.022e-04 OR=inf
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 31 dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=5.955e-04 OR=6.86
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 89 dir=down cyanorak.role:J.3 | Photosynthesis and respiration > Cytochrome b6/f complex padj=3.449e-03 OR=36.94
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 89 dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=3.624e-02 OR=6.16
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 89 dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=1.363e-02 OR=5.19
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 60 dir=up cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=9.574e-03 OR=6.17
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 60 dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=4.259e-02 OR=7.36
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=down cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=3.048e-05 OR=inf
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=combined cyanorak.role:J.1 | Photosynthesis and respiration > ATP synthase padj=1.935e-02 OR=inf
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=down cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=5.916e-03 OR=4.85
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=combined cyanorak.role:J.2 | Photosynthesis and respiration > CO2 fixation padj=3.826e-02 OR=4.78
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=3.048e-05 OR=14.00
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=2.041e-04 OR=5.21
+[14:48:15]     de_weissberg_rnaseq_coculture tp=day 60 dir=down cyanorak.role:J.7 | Photosynthesis and respiration > Photosystem I padj=1.613e-02 OR=6.58
+[14:48:15]     de_weissberg_rnaseq_coculture tp=day 60 dir=down cyanorak.role:J.8 | Photosynthesis and respiration > Photosystem II padj=1.613e-02 OR=4.32
+[14:48:15]   'transport': 11 significant rows
+[14:48:15]     de_ref_tolonen_ndep tp=3h dir=up cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=1.598e-02 OR=105.19
+[14:48:15]     de_ref_tolonen_ndep tp=3h dir=combined cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=1.598e-02 OR=105.19
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 18 dir=up cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=5.330e-05 OR=46.13
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 18 dir=combined cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=3.002e-04 OR=31.14
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 31 dir=up cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=4.964e-05 OR=29.39
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 31 dir=combined cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=7.716e-03 OR=11.36
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 60 dir=up cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=5.177e-03 OR=13.76
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 60 dir=up cyanorak.role:Q.9 | Transport and binding proteins > Unknown substrate padj=4.911e-02 OR=7.58
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 89 dir=up cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=6.266e-03 OR=12.18
+[14:48:15]     de_weissberg_proteomics_coculture tp=days 60+89 dir=up cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=5.429e-04 OR=19.66
+[14:48:15]     de_weissberg_proteomics_coculture tp=days 60+89 dir=combined cyanorak.role:Q.1 | Transport and binding proteins > Amino acids, peptides and amines padj=7.901e-03 OR=12.20
+[14:48:15]   'ribosomal': 16 significant rows
+[14:48:15]     de_ref_read_ndep tp=12h dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=3.910e-12 OR=9.80
+[14:48:15]     de_ref_read_ndep tp=12h dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=1.810e-05 OR=4.41
+[14:48:15]     de_ref_read_ndep tp=24h dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=1.124e-12 OR=9.93
+[14:48:15]     de_ref_read_ndep tp=24h dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=2.395e-05 OR=4.38
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=3.486e-29 OR=27.93
+[14:48:15]     de_ref_tolonen_ndep tp=12h dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=4.570e-17 OR=11.44
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=1.607e-30 OR=31.49
+[14:48:15]     de_ref_tolonen_ndep tp=24h dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=2.677e-22 OR=17.11
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=4.062e-23 OR=21.89
+[14:48:15]     de_ref_tolonen_ndep tp=6h dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=3.053e-13 OR=8.94
+[14:48:15]     de_weissberg_proteomics_axenic tp=day 14 dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=1.287e-02 OR=4.22
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 18 dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=8.286e-03 OR=14.80
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 31 dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=3.057e-23 OR=22.58
+[14:48:15]     de_weissberg_proteomics_coculture tp=day 31 dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=1.087e-13 OR=9.82
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=down cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=5.527e-12 OR=7.57
+[14:48:15]     de_weissberg_rnaseq_axenic tp=day 14 dir=combined cyanorak.role:K.2 | Protein synthesis > Ribosomal proteins: synthesis and modification padj=1.357e-03 OR=3.23
+[14:48:15]   'ribosome': no significant hits

@@ -285,8 +285,15 @@ def run_enrichment_all_timepoints(
     if "timepoint" not in de_df.columns:
         raise ValueError("de_df must have a 'timepoint' column for run_enrichment_all_timepoints")
 
+    # Handle single-timepoint experiments (timepoint column is all NaN)
+    if de_df["timepoint"].isna().all():
+        universe = set(de_df["locus_tag"].dropna())
+        result = run_enrichment(de_df, pathway_defs, universe, table_scope)
+        result["timepoint"] = None
+        return result
+
     timepoint_results = []
-    for tp, tp_df in de_df.groupby("timepoint"):
+    for tp, tp_df in de_df.groupby("timepoint", dropna=False):
         universe = set(tp_df["locus_tag"].dropna())
         result = run_enrichment(tp_df, pathway_defs, universe, table_scope)
         result["timepoint"] = tp
