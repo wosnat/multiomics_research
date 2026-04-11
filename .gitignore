@@ -17,6 +17,8 @@ analyses/*/results/
 !analyses/2026-04-08-1038-n_limitation_signature_v2/results/
 # v2: skip large DE extracts (reproducible from scripts 02 + 04)
 analyses/2026-04-08-1038-n_limitation_signature_v2/data/de_*.csv
+# B1 pathway enrichment: track results (figures, scores, rankings)
+!analyses/2026-04-09-1713-pathway_enrichment_b1/results/
 
 # Logs (collected locally, not committed)
 *.jsonl
