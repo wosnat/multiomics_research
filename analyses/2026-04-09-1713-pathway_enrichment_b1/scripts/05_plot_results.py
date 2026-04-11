@@ -38,6 +38,48 @@ NEG_LOG10_THRESHOLD = -np.log10(PADJ_THRESHOLD)  # ~1.30
 CMAP_UP = "Reds"
 CMAP_DOWN = "Blues"
 
+# Short labels for experiments (for x-axis)
+EXPERIMENT_SHORT = {
+    "de_ref_tolonen_ndep": "Tolonen N-dep",
+    "de_ref_read_ndep": "Read N-dep",
+    "de_ctrl_tolonen_cyanate": "Tolonen cyanate",
+    "de_ctrl_tolonen_urea": "Tolonen urea",
+    "de_ctrl_aharonovich_coculture": "Aharonovich cocult",
+    "de_ctrl_steglich_high_white_light": "Steglich light",
+    "de_weissberg_rnaseq_axenic": "Wb RNA ax",
+    "de_weissberg_rnaseq_coculture": "Wb RNA cocult",
+    "de_weissberg_proteomics_axenic": "Wb prot ax",
+    "de_weissberg_proteomics_coculture": "Wb prot cocult",
+}
+
+# Order: references → negative controls → targets (RNA then prot, axenic then cocult)
+EXPERIMENT_ORDER = [
+    "de_ref_tolonen_ndep",
+    "de_ref_read_ndep",
+    "de_ctrl_tolonen_cyanate",
+    "de_ctrl_tolonen_urea",
+    "de_ctrl_aharonovich_coculture",
+    "de_ctrl_steglich_high_white_light",
+    "de_weissberg_rnaseq_axenic",
+    "de_weissberg_rnaseq_coculture",
+    "de_weissberg_proteomics_axenic",
+    "de_weissberg_proteomics_coculture",
+]
+
+# Timepoint sort order
+TIMEPOINT_ORDER = {
+    "0h": 0, "3h": 1, "6h": 2, "12h": 3, "24h": 4, "48h": 5,
+    "20h": 3,
+    "day 14": 10, "day 18": 11, "day 31": 12, "day 60": 13, "day 89": 14,
+    "days 60+89": 15,
+}
+
+# Short pathway names: strip the "Category > " prefix, keep the specific part
+def _short_pathway_name(name: str) -> str:
+    if " > " in name:
+        return name.split(" > ", 1)[1]
+    return name
+
 
 def make_heatmap(
     matrix: pd.DataFrame,
@@ -87,17 +129,20 @@ def make_heatmap(
     plt.colorbar(im, ax=ax, label="-log10(padj)")
 
     ax.set_xticks(range(n_conditions))
-    ax.set_xticklabels(matrix.columns, rotation=45, ha="right", fontsize=8)
+    ax.set_xticklabels(matrix.columns, rotation=60, ha="right", fontsize=8)
     ax.set_yticks(range(n_pathways))
-    ax.set_yticklabels(matrix.index, fontsize=7)
+    ax.set_yticklabels(matrix.index, fontsize=8)
 
-    ax.set_title(title, fontsize=11, pad=10)
-    ax.set_xlabel("Experiment · Timepoint", fontsize=9)
-    ax.set_ylabel("Pathway", fontsize=9)
+    ax.set_title(title, fontsize=12, fontweight="bold", pad=12)
 
-    # Draw significance threshold gridline on colorbar (visual guide)
+    # Light gridlines
+    ax.set_xticks([x - 0.5 for x in range(1, n_conditions)], minor=True)
+    ax.set_yticks([y - 0.5 for y in range(1, n_pathways)], minor=True)
+    ax.grid(which="minor", color="white", linewidth=0.5)
+    ax.tick_params(which="minor", size=0)
+
     fig.tight_layout()
-    fig.savefig(out_path, dpi=150, bbox_inches="tight")
+    fig.savefig(out_path, dpi=200, bbox_inches="tight")
     plt.close(fig)
     log_fn(f"  Saved {out_path}")
 
@@ -127,27 +172,41 @@ def build_matrix(
         & (enrich_df["pathway_id"].isin(sig_pathways))
     ].copy()
 
-    # Build condition label: experiment + timepoint
-    if "timepoint" in subset.columns and "experiment" in subset.columns:
-        subset["condition"] = subset["experiment"].str.replace("de_", "", regex=False) + "·" + subset["timepoint"].astype(str)
-    elif "experiment" in subset.columns:
-        subset["condition"] = subset["experiment"].str.replace("de_", "", regex=False)
-    else:
-        subset["condition"] = "unknown"
+    # Build condition label: short experiment name + timepoint
+    def _condition_label(row):
+        exp_short = EXPERIMENT_SHORT.get(row["experiment"], row["experiment"])
+        tp = row.get("timepoint")
+        if pd.notna(tp) and str(tp) != "None":
+            return f"{exp_short} {tp}"
+        return exp_short
+
+    # Sort key for conditions: experiment order, then timepoint order
+    def _condition_sort_key(row):
+        exp_idx = EXPERIMENT_ORDER.index(row["experiment"]) if row["experiment"] in EXPERIMENT_ORDER else 99
+        tp = row.get("timepoint")
+        tp_idx = TIMEPOINT_ORDER.get(str(tp), 50) if pd.notna(tp) else 0
+        return (exp_idx, tp_idx)
+
+    subset["condition"] = subset.apply(_condition_label, axis=1)
+    subset["_sort_key"] = subset.apply(_condition_sort_key, axis=1)
+    subset = subset.sort_values("_sort_key")
 
     # -log10(padj), clamp NaN to 0
     subset["neg_log10_padj"] = subset["padj"].apply(
         lambda p: -np.log10(p) if pd.notna(p) and p > 0 else 0.0
     )
 
-    # Use pathway_name as row label (fall back to pathway_id if missing)
+    # Short pathway names
     if "pathway_name" in subset.columns:
-        subset["label"] = subset["pathway_name"].fillna(subset["pathway_id"])
+        subset["label"] = subset["pathway_name"].fillna(subset["pathway_id"]).apply(_short_pathway_name)
     else:
         subset["label"] = subset["pathway_id"]
 
     if len(subset) == 0:
         return pd.DataFrame()
+
+    # Preserve condition order from sorted subset
+    condition_order = list(dict.fromkeys(subset["condition"]))
 
     matrix = subset.pivot_table(
         index="label",
@@ -156,6 +215,9 @@ def build_matrix(
         aggfunc="max",
         fill_value=0.0,
     )
+
+    # Reorder columns to match experiment/timepoint order
+    matrix = matrix[[c for c in condition_order if c in matrix.columns]]
 
     # Sort pathways by max significance across conditions (descending)
     matrix = matrix.loc[matrix.max(axis=1).sort_values(ascending=False).index]
