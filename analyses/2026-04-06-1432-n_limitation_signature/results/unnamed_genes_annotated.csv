@@ -1,0 +1,48 @@
+locus_tag,direction,cross_study_best_dir_rank,product,category,ontology_notes
+PMM0030,up,1,conserved hypothetical protein,Unknown,
+PMM0346,down,1,conserved hypothetical protein,Unknown,Pfam: DUF4090
+PMM0337,up,1,conserved hypothetical protein,Unknown,
+PMM0699,down,4,uncharacterized membrane protein,Stress response,CyanoRak: adaptation/detoxification
+PMM0365,up,6,DsrE-like protein,Unknown,Pfam: DsrE/DsrF-like (sulfur relay)
+PMM0687,up,7,conserved hypothetical protein,Unknown,CyanoRak: conserved hypothetical domains
+PMM0819,up,9,conserved hypothetical protein,Unknown,Pfam: DUF1651
+PMM0334,up,9,conserved hypothetical protein (DUF3104),Unknown,Pfam: DUF3104
+PMM0684,up,11,conserved hypothetical protein (DUF1651),Unknown,Pfam: DUF1651
+PMM0876,down,14,conserved hypothetical protein,Unknown,
+PMM1134,up,14,conserved hypothetical protein (DUF1651),Unknown,Pfam: DUF1651
+PMM0605,down,16,conserved hypothetical protein (DUF760),Stress response,CyanoRak: trace metal detox; Pfam: DUF760
+PMM1350,down,16,pentapeptide repeats protein,Unknown,Pfam: pentapeptide repeats (8 copies)
+PMM1391,up,17,ribbon helix-helix protein,Regulatory,GO: regulation of transcription; CyanoRak: DNA interactions
+PMM1375,down,18,possible M protein repeat,Unknown,
+PMM1402,down,19,conserved hypothetical protein,Unknown,No annotations
+PMM0996,up,19,conserved hypothetical protein (DUF3303),Stress response,CyanoRak: phosphorus adaptation; Pfam: DUF3303
+PMM0726,up,19,uncharacterized secreted protein,Unknown,
+PMM0087,up,20,conserved hypothetical protein,Unknown,
+PMM0599,down,20,conserved hypothetical protein,Unknown,
+PMM0363,up,21,conserved hypothetical protein,Unknown,
+PMM0810,up,22,conserved hypothetical protein,Unknown,
+PMM0338,up,22,conserved hypothetical protein,Unknown,
+PMM0364,up,23,conserved hypothetical protein,Unknown,
+PMM1412,up,26,conserved hypothetical protein,Unknown,
+PMM0368,up,32,conserved hypothetical protein,Unknown,
+PMM0075,up,33,conserved hypothetical protein,Unknown,
+PMM1149,up,39,conserved hypothetical protein,Unknown,
+PMM1409,up,39,conserved hypothetical protein,Unknown,
+PMM0751,down,40,conserved hypothetical protein,Unknown,
+PMM0858,up,40,conserved hypothetical protein,Unknown,
+PMM0055,up,40,conserved hypothetical protein,Unknown,
+PMM0348,down,41,conserved hypothetical protein,Unknown,
+PMM1011,down,43,conserved hypothetical protein,Unknown,
+PMM1678,up,46,conserved hypothetical protein,Unknown,
+PMM0480,up,48,conserved hypothetical protein,Unknown,
+PMM0988,up,52,conserved hypothetical protein,Unknown,
+PMM0647,up,53,conserved hypothetical protein,Unknown,
+PMM0651,up,55,conserved hypothetical protein,Unknown,
+PMM0797,down,57,conserved hypothetical protein,Unknown,
+PMM1272,up,58,conserved hypothetical protein,Unknown,
+PMM0626,up,61,conserved hypothetical protein,Unknown,
+PMM1109,down,61,conserved hypothetical protein,Unknown,
+PMM0864,down,71,conserved hypothetical protein,Unknown,
+PMM0691,down,74,conserved hypothetical protein,Unknown,
+PMM0510,down,94,conserved hypothetical protein,Unknown,
+PMM0142,down,121,conserved hypothetical protein,Unknown,

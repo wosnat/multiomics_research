@@ -1,0 +1,199 @@
+locus_tag,gene_name,direction,signature_type,tolonen_peak_timepoint,tolonen_best_dir_rank,tolonen_best_global_rank,read_peak_timepoint,read_best_dir_rank,read_best_global_rank,cross_study_best_dir_rank,product,gene_category
+PMM0030,,up,core,48h,1.0,1,12h,2.0,4,1.0,conserved hypothetical protein,Unknown
+PMM0370,cynA,up,core,24h,1.0,2,12h,14.0,27,1.0,"cyanate ABC transporter, substrate-binding protein",Central intermediary metabolism
+PMM0346,,down,core,6h,113.0,250,24h,1.0,2,1.0,conserved hypothetical protein,Unknown
+PMM0337,,up,core,12h,8.0,14,12h,1.0,1,1.0,conserved hypothetical protein,Unknown
+PMM0550,rbcL,down,core,6h,1.0,8,12h,121.0,33,1.0,"ribulose bisphosphate carboxylase, large subunit",Photosynthesis
+PMM1452,atpD,down,core,24h,1.0,1,12h,1.0,2,1.0,ATP synthase delta chain,Photosynthesis
+PMM1453,atpF,down,core,12h,1.0,1,24h,2.0,3,1.0,ATP synthase subunit B,Photosynthesis
+PMM0690,hli,up,core,48h,2.0,4,24h,4.0,10,2.0,high light inducible protein,Stress response and adaptation
+PMM1404,hli,up,core,48h,3.0,5,24h,2.0,4,2.0,high light inducible protein,Stress response and adaptation
+PMM1454,atpG,down,core,12h,2.0,4,24h,3.0,6,2.0,ATP synthase B^,Photosynthesis
+PMM0920,glnA,up,core,24h,2.0,4,12h,42.0,78,2.0,"glutamine synthetase, type I",Amino acid metabolism
+PMM0970,urtA,up,core,24h,3.0,4,12h,12.0,24,3.0,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+PMM0699,,down,core,24h,118.0,280,12h,4.0,7,4.0,uncharacterized conserved membrane protein,Stress response and adaptation
+PMM1557,rplD,down,core,6h,4.0,11,12h,90.0,194,4.0,50S ribosomal protein L4,Translation
+PMM1455,atpH,down,core,24h,4.0,15,24h,7.0,11,4.0,ATP synthase C chain,Photosynthesis
+PMM1390,hli,up,core,48h,9.0,22,12h,4.0,8,4.0,high light inducible protein,Stress response and adaptation
+PMM0818,hli,up,core,48h,14.0,65,24h,5.0,12,5.0,high light inducible protein,Stress response and adaptation
+PMM0453,fabG,down,core,24h,49.0,103,24h,5.0,8,5.0,beta-ketoacyl-(acyl-carrier-protein) reductase (KR),Lipid metabolism
+PMM0689,hli,up,core,48h,5.0,10,12h,10.0,19,5.0,high light inducible protein,Stress response and adaptation
+PMM1706,rpsF,down,core,24h,24.0,64,12h,6.0,10,6.0,30S ribosomal protein S6,Translation
+PMM0336,PTOX,up,core,12h,6.0,11,3h,11.0,11,6.0,plastoquinol terminal oxidase,Stress response and adaptation
+PMM0246,ntcA,up,core,6h,6.0,7,24h,81.0,172,6.0,global nitrogen regulatory protein,Stress response and adaptation
+PMM0365,,up,core,12h,16.0,42,24h,6.0,15,6.0,possible DsrE-like protein,Unknown
+PMM1451,atpA,down,core,6h,7.0,20,12h,34.0,68,7.0,ATP synthase alpha chain,Photosynthesis
+PMM0901,htpG,down,core,24h,7.0,20,12h,74.0,159,7.0,molecular chaperone HtpG,Stress response and adaptation
+PMM0687,,up,core,6h,7.0,8,24h,32.0,66,7.0,conserved hypothetical protein,Unknown
+PMM0583,hemE,down,core,48h,22.0,52,24h,8.0,13,8.0,uroporphyrinogen decarboxylase,Coenzyme metabolism
+PMM0374,tatA,up,core,6h,8.0,9,24h,77.0,163,8.0,"twin arginine-targeting translocase, TatA/E family protein",Post-translational modification
+PMM1146,pntA2,up,core,12h,141.0,439,3h,8.0,8,8.0,"pyridine nucleotide transhydrogenase, subunit alpha2 (A2)",Coenzyme metabolism
+PMM0447,ctaA,up,core,6h,23.0,64,12h,8.0,16,8.0,cytochrome oxidase biogenesis protein,Coenzyme metabolism
+PMM1558,rplC,down,core,6h,8.0,21,12h,9.0,18,8.0,50S ribosomal protein L3,Translation
+PMM0819,,up,core,24h,9.0,18,24h,11.0,27,9.0,conserved hypothetical protein,Unknown
+PMM0452,groL2,down,core,24h,9.0,31,12h,73.0,149,9.0,chaperonin GroEL,Stress response and adaptation
+PMM0334,,up,core,24h,30.0,178,12h,9.0,17,9.0,conserved hypothetical protein (DUF3104),Unknown
+PMM0272,psbK,down,core,48h,30.0,89,24h,9.0,14,9.0,photosystem II reaction center protein PsbK,Photosynthesis
+PMM0549,csoS1A,down,core,48h,9.0,32,12h,38.0,2,9.0,carboxysome shell protein CsoS1A,Photosynthesis
+PMM1541,rplO,down,core,6h,9.0,29,24h,34.0,63,9.0,50S ribosomal protein L15,Translation
+PMM1520,psaI,down,core,48h,10.0,34,24h,59.0,110,10.0,photosystem I reaction center subunit VIII,Stress response and adaptation
+PMM1538,rpmJ,down,core,12h,40.0,67,24h,10.0,15,10.0,50S ribosomal protein L36,Translation
+PMM1537,rpsM,down,core,12h,26.0,44,24h,11.0,16,11.0,30S ribosomal protein S13,Translation
+PMM0684,,up,core,48h,11.0,29,24h,27.0,55,11.0,conserved hypothetical protein (DUF1651),Unknown
+PMM1396,hli,up,core,48h,24.0,99,12h,11.0,22,11.0,high light inducible protein,Stress response and adaptation
+PMM1397,hli,up,core,48h,20.0,93,24h,12.0,26,12.0,high light inducible protein,Stress response and adaptation
+PMM0552,csoS2,down,core,6h,12.0,37,12h,85.0,183,12.0,carboxysome shell protein CsoS2,Photosynthesis
+PMM0785,prkB,down,core,48h,26.0,67,24h,12.0,17,12.0,phosphoribulokinase,Carbohydrate metabolism
+PMM0263,amt1,up,core,24h,63.0,226,3h,12.0,12,12.0,ammonium transporter,Central intermediary metabolism
+PMM1523,psaB,down,core,48h,12.0,49,24h,136.0,277,12.0,photosystem I core protein PsaB,Photosynthesis
+PMM1519,psaL,down,core,48h,13.0,50,24h,105.0,200,13.0,photosystem I reaction centre subunit XI,Stress response and adaptation
+PMM1556,rplW,down,core,12h,13.0,22,12h,91.0,181,13.0,50S ribosomal protein L23,Translation
+PMM1507,rpsJ,down,core,24h,14.0,38,24h,103.0,198,14.0,30S ribosomal protein S10,Translation
+PMM0876,,down,core,24h,125.0,300,12h,14.0,28,14.0,conserved hypothetical protein,Unknown
+PMM1457,atp1,down,core,12h,14.0,23,24h,21.0,39,14.0,ATP synthase protein I,Photosynthesis
+PMM1134,,up,core,24h,14.0,37,24h,46.0,85,14.0,conserved hypothetical protein (DUF1651),Unknown
+PMM0710,pstS,down,core,48h,15.0,56,24h,15.0,24,15.0,"phosphate ABC transporter, phosphate-binding protein PstS",Stress response and adaptation
+PMM1385,hli,up,core,48h,44.0,163,12h,15.0,31,15.0,high light inducible protein,Stress response and adaptation
+PMM1700,acnB,up,core,24h,38.0,100,24h,15.0,33,15.0,aconitate hydratase 2 / 2-methylisocitrate dehydratase,Carbohydrate metabolism
+PMM1554,rpsS,down,core,12h,16.0,27,12h,78.0,171,16.0,30S ribosomal protein S19,Translation
+PMM0605,,down,core,24h,90.0,206,12h,16.0,28,16.0,conserved hypothetical protein (DUF760),Stress response and adaptation
+PMM0548,rdgB,up,core,48h,16.0,77,24h,42.0,88,16.0,dITP/XTP pyrophosphatase,Nucleotide metabolism
+PMM0971,urtB,up,core,6h,16.0,34,12h,68.0,131,16.0,"ABC-type urea transporter, permease component",Stress response and adaptation
+PMM1350,,down,core,48h,32.0,115,24h,16.0,26,16.0,pentapeptide repeats family protein,Unknown
+PMM0371,cynB,up,core,6h,17.0,35,24h,52.0,112,17.0,"cyanate ABC transporter, permease protein",Central intermediary metabolism
+PMM1391,,up,core,48h,17.0,54,3h,17.0,18,17.0,ribbon helix-helix domain containing protein,Regulatory functions
+PMM0540,psaM,down,core,48h,17.0,41,24h,22.0,13,17.0,photosystem I reaction centre subunit XII,Stress response and adaptation
+PMM1262,lexA,up,core,24h,17.0,61,3h,44.0,64,17.0,SOS-response transcriptional repressor,Regulatory functions
+PMM1074,zwf,up,core,6h,18.0,36,12h,60.0,112,18.0,glucose-6-phosphate 1-dehydrogenase,Carbohydrate metabolism
+PMM1553,rplV,down,core,6h,18.0,34,12h,69.0,138,18.0,50S ribosomal protein L22,Translation
+PMM1375,,down,core,24h,62.0,142,12h,18.0,33,18.0,possible M protein repeat,Unknown
+PMM1562,recA,up,core,48h,18.0,86,24h,28.0,56,18.0,recombinase A,Replication and repair
+PMM0306,cpeS,down,core,12h,85.0,144,24h,18.0,32,18.0,phycoerythrobilin:Cys-82 beta-phycoerythrin lyase,Photosynthesis
+PMM0817,hli,up,core,48h,21.0,94,24h,18.0,37,18.0,high light inducible protein,Stress response and adaptation
+PMM1402,,down,core,12h,19.0,33,12h,104.0,239,19.0,conserved hypothetical protein,Unknown
+PMM1298,lpdA,down,core,6h,24.0,56,12h,19.0,36,19.0,dihydrolipoamide dehydrogenase,Amino acid metabolism
+PMM0996,,up,core,6h,55.0,140,12h,19.0,38,19.0,conserved hypothetical protein (DUF3303),Stress response and adaptation
+PMM0469,psaF,down,core,48h,19.0,74,24h,32.0,61,19.0,photosystem I reaction centre PsaF protein,Photosynthesis
+PMM0781,fbaA,down,core,24h,19.0,52,12h,116.0,272,19.0,"fructose-1,6-bisphosphate aldolase, class II",Carbohydrate metabolism
+PMM0726,,up,core,24h,36.0,190,24h,19.0,36,19.0,uncharacterized conserved secreted protein,Unknown
+PMM1672,desC4,up,core,48h,19.0,90,24h,90.0,190,19.0,delta-9 fatty-acid desaturase DesC4,Stress response and adaptation
+PMM0087,,up,core,24h,20.0,71,24h,23.0,47,20.0,conserved hypothetical protein,Unknown
+PMM0599,,down,core,24h,72.0,165,24h,20.0,38,20.0,Conserved hypothetical protein,Unknown
+PMM0468,psaJ,down,core,48h,21.0,80,12h,20.0,41,20.0,photosystem I reaction centre subunit IX,Photosynthesis
+PMM0965,ureA,up,core,6h,21.0,57,24h,37.0,77,21.0,urease gamma subunit,Stress response and adaptation
+PMM1623,ssb,up,core,24h,21.0,85,12h,25.0,49,21.0,single-stranded DNA-binding protein,Replication and repair
+PMM0363,,up,core,12h,21.0,62,24h,109.0,255,21.0,"transcriptional regulator, MarR family",Regulatory functions
+PMM1384,hli,up,core,48h,23.0,98,12h,21.0,40,21.0,high light inducible protein,Stress response and adaptation
+PMM1552,rpsC,down,core,12h,21.0,36,24h,66.0,122,21.0,30S ribosomal protein S3,Translation
+PMM0810,,up,core,6h,22.0,61,12h,88.0,215,22.0,conserved hypothetical protein,Unknown
+PMM0767,fbp-sbp,down,core,24h,22.0,58,12h,126.0,301,22.0,"bifunctional fructose-1,6-biphosphatase/sedoheptulose1,7-biphosphate phosphatase",Photosynthesis
+PMM0338,,up,core,48h,40.0,152,3h,22.0,23,22.0,conserved hypothetical protein CHP03894,Unknown
+PMM1511,rpsL,down,core,12h,96.0,174,12h,22.0,46,22.0,30S ribosomal protein S12,Translation
+PMM1555,rplB,down,core,6h,23.0,45,12h,58.0,123,23.0,50S ribosomal protein L2,Translation
+PMM0307,unk6,down,core,24h,23.0,47,24h,26.0,51,23.0,conserved hypothetical protein,Unknown
+PMM0364,,up,core,6h,34.0,87,12h,23.0,44,23.0,conserved hypothetical protein (DUF3303),Unknown
+PMM0314,psbT,down,core,48h,23.0,85,12h,108.0,253,23.0,photosystem II reaction center T protein,Photosynthesis
+PMM0491,phhB,up,core,6h,86.0,255,12h,24.0,45,24.0,pterin-4-alpha-carbinolamine dehydratase,Carbohydrate metabolism
+PMM1456,atpI,down,core,12h,24.0,42,24h,82.0,155,24.0,ATP synthase A chain,Photosynthesis
+PMM0987,rpsU,down,core,24h,114.0,271,24h,24.0,44,24.0,30S ribosomal protein S21,Translation
+PMM1608,acpP,down,core,24h,92.0,208,24h,25.0,50,25.0,acyl-carrier protein,Lipid metabolism
+PMM0766,rpe,down,core,24h,25.0,66,24h,75.0,140,25.0,ribulose-phosphate 3-epimerase,Carbohydrate metabolism
+PMM0245,cobO2,up,core,24h,25.0,95,24h,115.0,273,25.0,cob(I)alamin adenosyltransferase,Coenzyme metabolism
+PMM1412,,up,core,6h,44.0,99,3h,26.0,30,26.0,cupin domain-containing protein,Unknown
+PMM1578,psaD,down,core,48h,27.0,75,24h,133.0,7,27.0,photosystem I reaction center subunit II,Photosynthesis
+PMM1545,rpsH,down,core,6h,27.0,62,12h,82.0,176,27.0,30S ribosomal protein S8,Translation
+PMM1644,psbZ,down,core,12h,64.0,107,24h,27.0,53,27.0,photosystem II protein PsbZ (Ycf9),Photosynthesis
+PMM0446,ctaCI,up,core,12h,27.0,84,12h,61.0,114,27.0,cytochrome c oxidase subunit II,Carbohydrate metabolism
+PMM0754,tsf,down,core,24h,27.0,69,12h,36.0,72,27.0,Translation elongation factor Ts,Translation
+PMM1601,glgP,up,core,6h,28.0,77,12h,59.0,111,28.0,glycogen phosphorylase,Stress response and adaptation
+PMM1662,rplT,down,core,24h,28.0,72,24h,77.0,147,28.0,50S ribosomal protein L20,Translation
+PMM0429,petP,down,core,24h,98.0,224,24h,28.0,54,28.0,cytochrome b6-f complex subunit PetP,Photosynthesis
+PMM1610,tktA,down,core,6h,29.0,49,12h,97.0,211,29.0,transketolase,Carbohydrate metabolism
+PMM1345,rpmA,down,core,24h,119.0,251,12h,29.0,58,29.0,50S ribosomal protein L27,Translation
+PMM1285,rpsP,down,core,12h,43.0,70,24h,30.0,58,30.0,30S ribosomal protein S16,Translation
+PMM1336,fabZ,down,core,6h,30.0,66,12h,42.0,91,30.0,beta-hydroxy-acyl-(acyl-carrier-protein) dehydratase (DH),Lipid metabolism
+PMM0202,rplJ,down,core,12h,30.0,48,12h,50.0,106,30.0,50S ribosomal protein L10,Stress response and adaptation
+PMM1542,rpsE,down,core,6h,31.0,68,24h,52.0,100,31.0,30S ribosomal protein S5,Translation
+PMM0368,,up,core,6h,32.0,83,12h,46.0,86,32.0,conserved hypothetical protein (DUF3303),Unknown
+PMM1661,rpmI,down,core,24h,32.0,78,24h,53.0,101,32.0,50S ribosomal protein L35,Translation
+PMM1438,atpB,down,core,12h,50.0,81,12h,32.0,63,32.0,ATP synthase beta chain,Photosynthesis
+PMM0160,ndhA,up,core,24h,69.0,374,24h,33.0,72,33.0,NADH dehydrogenase I subunit NdhA (chain 1 or H),Carbohydrate metabolism
+PMM0747,pcyA,down,core,12h,84.0,143,12h,33.0,65,33.0,phycocyanobilin:ferredoxin oxidoreductase,Coenzyme metabolism
+PMM0075,,up,core,12h,33.0,106,24h,65.0,139,33.0,conserved hypothetical protein,Transcription
+PMM0870,rpmG,down,core,24h,60.0,138,24h,35.0,65,35.0,50S ribosomal protein L33,Translation
+PMM0201,rplL,down,core,12h,35.0,57,12h,55.0,119,35.0,50S ribosomal protein L7/L12,Stress response and adaptation
+PMM1135,hli,up,core,48h,36.0,141,12h,54.0,104,36.0,high light inducible protein,Stress response and adaptation
+PMM0494,ppa,down,core,6h,37.0,86,12h,100.0,217,37.0,inorganic pyrophosphatase,Central intermediary metabolism
+PMM0343,tatA,up,core,12h,71.0,222,3h,37.0,49,37.0,"twin arginine-targeting translocase, TatA/E family protein",Post-translational modification
+PMM0936,umuD,up,core,48h,37.0,144,24h,73.0,152,37.0,"DNA polymerase V, subunit D",Replication and repair
+PMM0172,ndhH,up,core,6h,102.0,317,3h,38.0,52,38.0,NADH dehydrogenase I subunit NdhH (chain 7 or delta),Carbohydrate metabolism
+PMM1314,clpP3,up,core,6h,80.0,224,12h,38.0,74,38.0,"ATP-dependent Clp protease, protease subunit",Post-translational modification
+PMM1655,tig,down,core,24h,38.0,90,24h,154.0,331,38.0,trigger factor,Post-translational modification
+PMM1536,rpsK,down,core,12h,41.0,68,12h,39.0,83,39.0,30S ribosomal protein S11,Translation
+PMM1149,,up,core,12h,39.0,112,24h,43.0,92,39.0,conserved hypothetical protein,Unknown
+PMM0410,rpsD,down,core,24h,39.0,91,12h,81.0,175,39.0,30S ribosomal protein S4,Translation
+PMM1409,,up,core,24h,54.0,154,24h,39.0,79,39.0,conserved hypothetical protein (DUF3303),Unknown
+PMM0329,psaE,down,core,48h,40.0,128,12h,51.0,110,40.0,photosystem I reaction centre subunit IV,Photosynthesis
+PMM0751,,down,core,6h,118.0,344,12h,40.0,87,40.0,conserved hypothetical protein,Unknown
+PMM0858,,up,core,12h,66.0,208,12h,40.0,76,40.0,conserved hypothetical protein,Unknown
+PMM1609,fabF,down,core,6h,40.0,104,24h,40.0,74,40.0,beta-ketoacyl-(acyl-carrier-protein) synthase II (KASII),Lipid metabolism
+PMM0055,,up,core,12h,52.0,169,3h,40.0,54,40.0,"uncharacterized conserved inner membrane protein, YqjD/ElaB family",Unknown
+PMM0348,,down,core,48h,41.0,140,12h,65.0,140,41.0,conserved hypothetical protein family PM-17,Unknown
+PMM1437,groES,down,core,48h,42.0,186,12h,46.0,97,42.0,co-chaperonin GroES,Stress response and adaptation
+PMM1011,,down,core,24h,130.0,328,24h,43.0,82,43.0,uncharacterized conserved secreted protein,Unknown
+PMM0120,sulA,up,core,12h,43.0,151,24h,111.0,259,43.0,cell division inhibitor,Cell cycle and division
+PMM0035,PSTA,up,core,24h,43.0,116,24h,101.0,228,43.0,3-phosphoserine transaminase,Amino acid metabolism
+PMM0145,ndhM,up,core,24h,44.0,246,12h,81.0,169,44.0,NADH dehydrogenase I subunit NdhM,Carbohydrate metabolism
+PMM0321,minD,up,core,12h,72.0,200,3h,46.0,68,46.0,septum site-determining protein MinD,Cell cycle and division
+PMM1532,rplM,down,core,12h,90.0,159,24h,46.0,87,46.0,50S ribosomal protein L13,Translation
+PMM1678,,up,core,48h,46.0,173,12h,77.0,155,46.0,conserved hypothetical protein,Stress response and adaptation
+PMM0480,,up,core,12h,121.0,367,3h,48.0,73,48.0,possible DNA recombination-mediator A family protein,Replication and repair
+PMM0214,sul3,down,core,12h,61.0,99,12h,48.0,101,48.0,sulfate transporter family protein,Transport
+PMM1312,yacL,up,core,24h,66.0,205,12h,49.0,93,49.0,uncharacterized conserved membrane TRAM and PIN domains containing protein,Unknown
+PMM0770,gnd,up,core,12h,51.0,167,12h,57.0,108,51.0,6-phosphogluconate dehydrogenase,Stress response and adaptation
+PMM1490,deg1,up,core,12h,119.0,362,24h,51.0,106,51.0,photosystem II assembly factor,Photosynthesis
+PMM0428,chlG,down,core,6h,51.0,129,12h,88.0,192,51.0,chlorophyll a synthase,Coenzyme metabolism
+PMM0988,,up,core,24h,52.0,282,12h,73.0,146,52.0,helix-hairpin-helix DNA-binding motif class 1-containing protein,Replication and repair
+PMM0203,rplA,down,core,6h,53.0,131,12h,53.0,116,53.0,50S ribosomal protein L1,Translation
+PMM0647,,up,core,6h,67.0,177,12h,53.0,103,53.0,conserved hypothetical protein (DUF2811),Unknown
+PMM0251,psbH,down,core,24h,108.0,254,12h,54.0,105,54.0,photosystem II reaction center protein PsbH,Photosynthesis
+PMM0651,,up,core,12h,73.0,225,24h,55.0,120,55.0,conserved hypothetical protein,Unknown
+PMM0797,,down,core,12h,93.0,166,24h,57.0,108,57.0,conserved hypothetical protein,Cellular processes
+PMM1055,chlI,down,core,24h,58.0,136,24h,140.0,283,58.0,"protoporphyrin IX Mg-chelatase, subunit ChlI",Coenzyme metabolism
+PMM1272,,up,core,24h,60.0,329,3h,58.0,92,58.0,conserved membrane protein,Unknown
+PMM0312,rpsA1,down,core,6h,88.0,218,12h,60.0,129,60.0,30S ribosomal protein S1,Translation
+PMM0626,,up,core,6h,66.0,175,24h,61.0,130,61.0,conserved hypothetical protein,Unknown
+PMM1109,,down,core,24h,63.0,144,24h,61.0,113,61.0,uncharacterized conserved secreted protein,Unknown
+PMM0869,rpsR,down,core,24h,82.0,189,24h,62.0,114,62.0,30S ribosomal protein S18,Translation
+PMM0502,ycf41,up,core,12h,62.0,196,12h,64.0,120,62.0,possible single-stranded DNA-binding protein,Transport
+PMM1534,rplQ,down,core,6h,63.0,157,24h,158.0,344,63.0,50S ribosomal protein L17,Translation
+PMM0046,ndk,down,core,6h,77.0,181,24h,64.0,116,64.0,nucleoside diphosphate kinase,Nucleotide metabolism
+PMM0224,aroC,up,core,6h,84.0,241,3h,64.0,115,64.0,chorismate synthase,Amino acid metabolism
+PMM0204,rplK,down,core,6h,64.0,158,12h,117.0,279,64.0,50S ribosomal protein L11,Translation
+PMM1544,rplF,down,core,6h,67.0,164,24h,113.0,218,67.0,50S ribosomal protein L6,Translation
+PMM0964,ureB,up,core,12h,90.0,285,12h,69.0,132,69.0,urease beta subunit,Stress response and adaptation
+PMM0864,,down,core,24h,128.0,311,24h,71.0,134,71.0,uncharacterized conserved membrane protein,Unknown
+PMM1128,hli15,up,core,24h,72.0,270,12h,87.0,200,72.0,high light inducible protein,Stress response and adaptation
+PMM0511,ppa,down,core,6h,73.0,174,24h,94.0,180,73.0,inorganic pyrophosphatase,Central intermediary metabolism
+PMM0691,,down,core,12h,74.0,126,24h,139.0,282,74.0,tryptophan-rich conserved hypothetical protein CHP02450,Unknown
+PMM0356,pip,down,core,12h,147.0,330,24h,83.0,157,83.0,proline iminopeptidase,Amino acid metabolism
+PMM0784,accD,down,core,24h,138.0,426,12h,84.0,182,84.0,"acetyl-CoA carboxylase, carboxyl transferase beta subunit",Lipid metabolism
+PMM1154,ilvN,up,core,12h,128.0,381,12h,84.0,184,84.0,"acetolactate synthase, small subunit",Amino acid metabolism
+PMM1183,rpmH,down,core,24h,94.0,211,24h,87.0,165,87.0,50S ribosomal protein L34,Translation
+PMM0969,ureG,up,core,12h,113.0,342,12h,89.0,224,89.0,urease accessory protein UreG,Stress response and adaptation
+PMM1643,ribH,down,core,12h,89.0,153,24h,123.0,239,89.0,"6,7-dimethyl-8-ribityllumazine synthase",Coenzyme metabolism
+PMM0560,hisG,down,core,6h,89.0,190,24h,165.0,424,89.0,ATP phosphoribosyltransferase,Amino acid metabolism
+PMM0510,,down,core,12h,105.0,198,12h,94.0,183,94.0,uncharacterized conserved membrane protein,Cell wall and membrane
+PMM0273,mviM,down,core,12h,142.0,301,12h,96.0,207,96.0,NAD(P)-binding oxidoreductase,Unknown
+PMM1607,psaC,down,core,24h,102.0,233,24h,99.0,189,99.0,photosystem I iron-sulfur center subunit VII PsaC,Photosynthesis
+PMM0930,phdB,down,core,24h,141.0,456,24h,102.0,195,102.0,pyruvate dehydrogenase E1 component beta subunit,Carbohydrate metabolism
+PMM1440,ycf65,down,core,24h,104.0,235,12h,113.0,249,104.0,ribosomal protein Ycf65,Translation
+PMM1442,pepP,up,core,12h,139.0,434,24h,107.0,241,107.0,Xaa-Pro aminopeptidase,Post-translational modification
+PMM0906,psaK,down,core,24h,121.0,244,24h,107.0,205,107.0,photosystem I reaction center subunit X,Photosynthesis
+PMM0769,glgC,down,core,12h,121.0,242,24h,108.0,208,108.0,glucose-1-phosphate adenylyltransferase,Carbohydrate metabolism
+PMM0296,ycf48,down,core,12h,137.0,279,12h,111.0,258,111.0,photosystem II stability/assembly factor,Photosynthesis
+PMM0206,secE,down,core,6h,115.0,318,24h,155.0,332,115.0,Preprotein translocase SecE subunit,Post-translational modification
+PMM0753,rpsB,down,core,24h,117.0,278,12h,125.0,341,117.0,30S ribosomal protein S2,Translation
+PMM0026,efp,down,core,6h,119.0,352,24h,159.0,349,119.0,translation elongation factor P,Translation
+PMM0142,,down,core,24h,126.0,307,24h,121.0,90,121.0,RNA-binding protein,Transport
+PMM0844,cycI1,down,core,24h,129.0,316,24h,144.0,298,129.0,Mg-protoporphyrin IX monomethylester oxidative cyclase,Coenzyme metabolism

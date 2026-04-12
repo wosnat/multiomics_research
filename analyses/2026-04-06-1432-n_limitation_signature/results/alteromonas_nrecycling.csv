@@ -1,0 +1,211 @@
+locus_tag,gene_name,product,timepoint,omics_type,log2fc,expression_status,rank,rank_up,rank_down
+ACZ81_00520,hemC,hydroxymethylbilane synthase,day 60,RNASEQ,-1.0105887916849954,significant_down,1080,,524.0
+ACZ81_01160,ramA,carbon-nitrogen hydrolase family protein,day 18,RNASEQ,-1.314758844882753,significant_down,543,,234.0
+ACZ81_01160,ramA,carbon-nitrogen hydrolase family protein,day 31,RNASEQ,-1.4176232192076204,significant_down,603,,321.0
+ACZ81_01160,ramA,carbon-nitrogen hydrolase family protein,day 60,RNASEQ,-1.1076449775380188,significant_down,933,,481.0
+ACZ81_01825,glnK,P-II family nitrogen regulator,day 31,RNASEQ,5.315746515296258,significant_up,12,8.0,
+ACZ81_01825,glnK,P-II family nitrogen regulator,day 60,RNASEQ,5.384504757584833,significant_up,10,7.0,
+ACZ81_01825,glnK,P-II family nitrogen regulator,day 89,RNASEQ,4.263486858396482,significant_up,29,20.0,
+ACZ81_01825,glnK,P-II family nitrogen regulator,days 60+89,RNASEQ,4.930105204121131,significant_up,12,8.0,
+ACZ81_02070,argC,N-acetyl-gamma-glutamyl-phosphate reductase,day 60,PROTEOMICS,-1.05142339070638,significant_down,637,,245.0
+ACZ81_02660,fadB,fatty acid oxidation complex subunit alpha FadB,day 31,PROTEOMICS,1.37239583333333,significant_up,284,149.0,
+ACZ81_02660,fadB,fatty acid oxidation complex subunit alpha FadB,day 60,PROTEOMICS,2.04833666483561,significant_up,148,83.0,
+ACZ81_02660,fadB,fatty acid oxidation complex subunit alpha FadB,day 89,PROTEOMICS,2.40910085042318,significant_up,101,67.0,
+ACZ81_02660,fadB,fatty acid oxidation complex subunit alpha FadB,days 60+89,PROTEOMICS,2.2287187576294,significant_up,113,69.0,
+ACZ81_02730,nlpD,peptidoglycan DD-metalloendopeptidase family protein,day 31,RNASEQ,-1.1436326236383805,significant_down,891,,425.0
+ACZ81_02730,nlpD,peptidoglycan DD-metalloendopeptidase family protein,day 89,RNASEQ,-1.183014501097096,significant_down,800,,471.0
+ACZ81_02790,putA,bifunctional proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase PutA,day 18,RNASEQ,-1.208837998027546,significant_down,651,,268.0
+ACZ81_02790,putA,bifunctional proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase PutA,day 31,RNASEQ,-1.1593474263294845,significant_down,873,,419.0
+ACZ81_02790,putA,bifunctional proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase PutA,day 60,RNASEQ,-1.3544654008033268,significant_down,674,,375.0
+ACZ81_02790,putA,bifunctional proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase PutA,day 89,RNASEQ,-1.1170687155530092,significant_down,885,,507.0
+ACZ81_02790,putA,bifunctional proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase PutA,days 60+89,RNASEQ,-1.2308295344912812,significant_down,730,,431.0
+ACZ81_03695,sspB,ClpXP protease specificity-enhancing factor,day 89,PROTEOMICS,-1.59455553690592,significant_down,306,,109.0
+ACZ81_03695,sspB,ClpXP protease specificity-enhancing factor,days 60+89,PROTEOMICS,-1.38328615824382,significant_down,385,,156.0
+ACZ81_03730,ptsN,PTS IIA-like nitrogen regulatory protein PtsN,day 60,PROTEOMICS,-1.71597735087077,significant_down,249,,98.0
+ACZ81_03730,ptsN,PTS IIA-like nitrogen regulatory protein PtsN,day 89,PROTEOMICS,-1.13715807596843,significant_down,587,,214.0
+ACZ81_03730,ptsN,PTS IIA-like nitrogen regulatory protein PtsN,days 60+89,PROTEOMICS,-1.4265677134196,significant_down,355,,141.0
+ACZ81_03775,mlaF,phospholipid ABC transporter ATP-binding protein MlaF,days 60+89,RNASEQ,-1.27407203086483,significant_down,673,,400.0
+ACZ81_03780,mlaE,lipid asymmetry maintenance ABC transporter permease subunit MlaE,day 89,RNASEQ,-1.252155522167862,significant_down,739,,441.0
+ACZ81_03780,mlaE,lipid asymmetry maintenance ABC transporter permease subunit MlaE,days 60+89,RNASEQ,-1.1221474607742223,significant_down,849,,480.0
+ACZ81_03785,mlaD,outer membrane lipid asymmetry maintenance protein MlaD,day 18,PROTEOMICS,1.89818445841471,significant_up,31,13.0,
+ACZ81_03785,mlaD,outer membrane lipid asymmetry maintenance protein MlaD,day 60,PROTEOMICS,1.65119806925456,significant_up,269,150.0,
+ACZ81_03785,mlaD,outer membrane lipid asymmetry maintenance protein MlaD,day 89,PROTEOMICS,2.01523462931315,significant_up,163,102.0,
+ACZ81_03785,mlaD,outer membrane lipid asymmetry maintenance protein MlaD,days 60+89,PROTEOMICS,1.83321634928386,significant_up,199,120.0,
+ACZ81_03790,ttg2D,MlaC/ttg2D family ABC transporter substrate-binding protein,day 89,RNASEQ,-1.0104152347334807,significant_down,1041,,554.0
+ACZ81_03820,degQ,DegQ family serine endoprotease,day 60,RNASEQ,-1.6781088236429529,significant_down,442,,256.0
+ACZ81_03820,degQ,DegQ family serine endoprotease,days 60+89,RNASEQ,-1.2197590184005151,significant_down,738,,434.0
+ACZ81_04585,pyrG,CTP synthase,day 89,RNASEQ,1.2973830323500095,significant_up,683,182.0,
+ACZ81_04830,map,type I methionyl aminopeptidase,day 31,RNASEQ,-1.026385942243803,significant_down,1043,,476.0
+ACZ81_04830,map,type I methionyl aminopeptidase,day 60,PROTEOMICS,1.06589571634928,significant_up,624,299.0,
+ACZ81_04830,map,type I methionyl aminopeptidase,day 60,RNASEQ,-1.081804580669104,significant_down,966,,491.0
+ACZ81_04830,map,type I methionyl aminopeptidase,day 89,PROTEOMICS,1.16862042744954,significant_up,560,295.0,
+ACZ81_04830,map,type I methionyl aminopeptidase,days 60+89,PROTEOMICS,1.11725807189941,significant_up,578,301.0,
+ACZ81_04935,tadA,tRNA adenosine(34) deaminase TadA,day 18,RNASEQ,-1.5045387641686765,significant_down,402,,178.0
+ACZ81_04935,tadA,tRNA adenosine(34) deaminase TadA,day 31,RNASEQ,-1.201583491405665,significant_down,814,,401.0
+ACZ81_04935,tadA,tRNA adenosine(34) deaminase TadA,day 60,RNASEQ,-1.2666756847605094,significant_down,740,,405.0
+ACZ81_04935,tadA,tRNA adenosine(34) deaminase TadA,day 89,RNASEQ,-1.5880138154643244,significant_down,439,,295.0
+ACZ81_04935,tadA,tRNA adenosine(34) deaminase TadA,days 60+89,RNASEQ,-1.4188028062287903,significant_down,542,,333.0
+ACZ81_05380,pepO,M13 family metallopeptidase,day 18,RNASEQ,1.0394786363486042,significant_up,821,322.0,
+ACZ81_05380,pepO,M13 family metallopeptidase,day 31,RNASEQ,1.464457018580215,significant_up,564,218.0,
+ACZ81_05380,pepO,M13 family metallopeptidase,day 60,RNASEQ,1.4235069995435143,significant_up,610,206.0,
+ACZ81_05380,pepO,M13 family metallopeptidase,day 89,RNASEQ,1.5756430058941553,significant_up,446,113.0,
+ACZ81_05380,pepO,M13 family metallopeptidase,days 60+89,RNASEQ,1.5017541394234084,significant_up,489,162.0,
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,day 18,RNASEQ,-1.5699021476961257,significant_down,362,,160.0
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,day 31,PROTEOMICS,1.20383707682291,significant_up,365,186.0,
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,day 31,RNASEQ,-1.247888137584326,significant_down,763,,378.0
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,day 60,PROTEOMICS,1.87319882710775,significant_up,198,110.0,
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,day 89,PROTEOMICS,1.69316291809082,significant_up,257,153.0,
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,day 89,RNASEQ,-1.333546498630013,significant_down,641,,400.0
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,days 60+89,PROTEOMICS,1.78318087259928,significant_up,218,131.0,
+ACZ81_05510,ldh,Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein,days 60+89,RNASEQ,-1.1420996167547857,significant_down,824,,469.0
+ACZ81_05830,pqqL,M16 family metallopeptidase,day 60,PROTEOMICS,-1.22065226236979,significant_down,508,,193.0
+ACZ81_05830,pqqL,M16 family metallopeptidase,day 89,PROTEOMICS,-1.22193272908528,significant_down,525,,190.0
+ACZ81_05830,pqqL,M16 family metallopeptidase,days 60+89,PROTEOMICS,-1.22129249572754,significant_down,496,,193.0
+ACZ81_05925,tsaA,peroxiredoxin,day 18,RNASEQ,1.0819589172624555,significant_up,763,303.0,
+ACZ81_05925,tsaA,peroxiredoxin,day 60,RNASEQ,1.0069620328657698,significant_up,1082,346.0,
+ACZ81_06170,ptrA,insulinase family protein,day 31,PROTEOMICS,1.42343457539876,significant_up,259,137.0,
+ACZ81_06170,ptrA,insulinase family protein,day 60,PROTEOMICS,1.2878786722819,significant_up,455,235.0,
+ACZ81_06170,ptrA,insulinase family protein,day 89,PROTEOMICS,1.63808695475261,significant_up,285,171.0,
+ACZ81_06170,ptrA,insulinase family protein,days 60+89,PROTEOMICS,1.46298281351725,significant_up,340,191.0,
+ACZ81_06685,pepE,dipeptidase PepE,day 18,RNASEQ,1.772883498684991,significant_up,262,111.0,
+ACZ81_07145,lnt,apolipoprotein N-acyltransferase,day 60,PROTEOMICS,-1.08173497517904,significant_down,607,,233.0
+ACZ81_07325,hemA,glutamyl-tRNA reductase,day 60,RNASEQ,2.045692494577217,significant_up,287,103.0,
+ACZ81_07325,hemA,glutamyl-tRNA reductase,days 60+89,RNASEQ,1.572594670285982,significant_up,444,143.0,
+ACZ81_07780,guaD,guanine deaminase,day 60,PROTEOMICS,-1.04807726542155,significant_down,639,,246.0
+ACZ81_07830,add,adenosine deaminase,day 60,PROTEOMICS,1.16146278381348,significant_up,552,277.0,
+ACZ81_07880,amaB,allantoate amidohydrolase,day 18,RNASEQ,-2.780147998653871,significant_down,51,,25.0
+ACZ81_07880,amaB,allantoate amidohydrolase,day 31,RNASEQ,-2.7064632170971006,significant_down,120,,60.0
+ACZ81_07880,amaB,allantoate amidohydrolase,day 60,RNASEQ,-2.5931448486939783,significant_down,153,,81.0
+ACZ81_07880,amaB,allantoate amidohydrolase,day 89,RNASEQ,-2.6669590550262057,significant_down,129,,79.0
+ACZ81_07880,amaB,allantoate amidohydrolase,days 60+89,RNASEQ,-2.629619316759104,significant_down,135,,79.0
+ACZ81_08840,ahpC,alkyl hydroperoxide reductase subunit C,day 31,PROTEOMICS,1.35831133524577,significant_up,288,151.0,
+ACZ81_08840,ahpC,alkyl hydroperoxide reductase subunit C,day 31,RNASEQ,-4.015836477981935,significant_down,31,,13.0
+ACZ81_08840,ahpC,alkyl hydroperoxide reductase subunit C,day 60,PROTEOMICS,1.39957618713379,significant_up,385,200.0,
+ACZ81_08840,ahpC,alkyl hydroperoxide reductase subunit C,day 89,PROTEOMICS,1.70166905721029,significant_up,253,150.0,
+ACZ81_08840,ahpC,alkyl hydroperoxide reductase subunit C,days 60+89,PROTEOMICS,1.55062262217204,significant_up,296,170.0,
+ACZ81_09200,clpS,ATP-dependent Clp protease adapter ClpS,day 89,RNASEQ,-1.610619030068635,significant_down,424,,287.0
+ACZ81_09200,clpS,ATP-dependent Clp protease adapter ClpS,days 60+89,RNASEQ,-1.2396673819417374,significant_down,719,,424.0
+ACZ81_09205,clpA,ATP-dependent Clp protease ATP-binding subunit ClpA,day 18,RNASEQ,-1.126836597830701,significant_down,730,,288.0
+ACZ81_09205,clpA,ATP-dependent Clp protease ATP-binding subunit ClpA,day 31,RNASEQ,-1.1373580305971245,significant_down,902,,431.0
+ACZ81_09205,clpA,ATP-dependent Clp protease ATP-binding subunit ClpA,day 60,RNASEQ,-1.50813950998008,significant_down,548,,318.0
+ACZ81_09205,clpA,ATP-dependent Clp protease ATP-binding subunit ClpA,day 89,RNASEQ,-1.1421949617241116,significant_down,846,,488.0
+ACZ81_09205,clpA,ATP-dependent Clp protease ATP-binding subunit ClpA,days 60+89,RNASEQ,-1.3135044891161791,significant_down,631,,381.0
+ACZ81_09240,sppA,signal peptide peptidase SppA,day 31,RNASEQ,1.1920090112857362,significant_up,828,302.0,
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 18,RNASEQ,-2.485147053749208,significant_down,90,,43.0
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 31,PROTEOMICS,1.86056137084961,significant_up,129,68.0,
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 31,RNASEQ,-1.9403100625201155,significant_down,298,,163.0
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 60,PROTEOMICS,2.10043207804362,significant_up,138,77.0,
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 60,RNASEQ,-2.176063893457962,significant_down,241,,139.0
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 89,PROTEOMICS,2.61406071980794,significant_up,72,50.0,
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,day 89,RNASEQ,-1.7743374370113132,significant_down,354,,244.0
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,days 60+89,PROTEOMICS,2.35724639892578,significant_up,92,60.0,
+ACZ81_09455,proA,glutamate-5-semialdehyde dehydrogenase,days 60+89,RNASEQ,-1.961132902812952,significant_down,266,,171.0
+ACZ81_09635,cdd,cytidine deaminase,day 60,RNASEQ,1.142532919602475,significant_up,892,293.0,
+ACZ81_09900,sohB,protease SohB,day 60,PROTEOMICS,-1.48709996541341,significant_down,332,,128.0
+ACZ81_09900,sohB,protease SohB,days 60+89,PROTEOMICS,-1.12741216023763,significant_down,566,,227.0
+ACZ81_10105,sdaA,L-serine ammonia-lyase,day 18,PROTEOMICS,1.59551429748535,significant_up,60,32.0,
+ACZ81_10105,sdaA,L-serine ammonia-lyase,day 31,PROTEOMICS,2.2547976175944,significant_up,61,39.0,
+ACZ81_10105,sdaA,L-serine ammonia-lyase,day 60,PROTEOMICS,3.91832860310872,significant_up,8,6.0,
+ACZ81_10105,sdaA,L-serine ammonia-lyase,day 89,PROTEOMICS,4.52769724527995,significant_up,4,3.0,
+ACZ81_10105,sdaA,L-serine ammonia-lyase,days 60+89,PROTEOMICS,4.22301292419434,significant_up,4,3.0,
+ACZ81_10195,prc,carboxy terminal-processing peptidase,day 31,PROTEOMICS,1.02462641398112,significant_up,486,232.0,
+ACZ81_10195,prc,carboxy terminal-processing peptidase,day 31,RNASEQ,-1.2667999141344886,significant_down,749,,372.0
+ACZ81_10195,prc,carboxy terminal-processing peptidase,day 60,RNASEQ,-1.4145439941593163,significant_down,619,,352.0
+ACZ81_10195,prc,carboxy terminal-processing peptidase,day 89,RNASEQ,-1.141746076944448,significant_down,847,,489.0
+ACZ81_10195,prc,carboxy terminal-processing peptidase,days 60+89,RNASEQ,-1.2716636154551093,significant_down,677,,403.0
+ACZ81_10770,bepA,M48 family metalloprotease,day 18,RNASEQ,-1.485183827269356,significant_down,414,,182.0
+ACZ81_10770,bepA,M48 family metalloprotease,day 31,RNASEQ,-1.6574630782184312,significant_down,443,,235.0
+ACZ81_10770,bepA,M48 family metalloprotease,day 60,RNASEQ,-1.4503150207656064,significant_down,584,,334.0
+ACZ81_10770,bepA,M48 family metalloprotease,day 89,RNASEQ,-1.8617847429693868,significant_down,316,,217.0
+ACZ81_10770,bepA,M48 family metalloprotease,days 60+89,RNASEQ,-1.6417740366505873,significant_down,405,,255.0
+ACZ81_12435,pqqL,M16 family metallopeptidase,day 18,PROTEOMICS,1.15595881144206,significant_up,170,88.0,
+ACZ81_12435,pqqL,M16 family metallopeptidase,day 31,RNASEQ,1.5434005622669948,significant_up,503,201.0,
+ACZ81_12535,ptrB,S9 family peptidase,day 31,RNASEQ,1.24407026921055,significant_up,768,281.0,
+ACZ81_12535,ptrB,S9 family peptidase,day 60,RNASEQ,1.5187055631655315,significant_up,534,175.0,
+ACZ81_12535,ptrB,S9 family peptidase,days 60+89,RNASEQ,1.2396032190121176,significant_up,720,236.0,
+ACZ81_12755,lepB,signal peptidase I,day 60,RNASEQ,-1.1080134885098811,significant_down,932,,480.0
+ACZ81_12755,lepB,signal peptidase I,day 89,RNASEQ,-1.3404135188214408,significant_down,633,,396.0
+ACZ81_12755,lepB,signal peptidase I,days 60+89,RNASEQ,-1.2197186249714576,significant_down,739,,435.0
+ACZ81_13030,ribD,bifunctional diaminohydroxyphosphoribosylaminopyrimidine deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase RibD,day 18,RNASEQ,1.0007985986220147,significant_up,863,334.0,
+ACZ81_13120,rseA,sigma-E factor negative regulatory protein,day 31,RNASEQ,-1.2080831986653466,significant_down,803,,396.0
+ACZ81_13120,rseA,sigma-E factor negative regulatory protein,day 60,RNASEQ,-1.052330915030579,significant_down,999,,498.0
+ACZ81_13120,rseA,sigma-E factor negative regulatory protein,day 89,RNASEQ,-1.176507269791598,significant_down,815,,476.0
+ACZ81_13120,rseA,sigma-E factor negative regulatory protein,days 60+89,RNASEQ,-1.1130888522191604,significant_down,856,,484.0
+ACZ81_13170,nadE,ammonia-dependent NAD(+) synthetase,day 60,PROTEOMICS,1.03405507405599,significant_up,650,307.0,
+ACZ81_13170,nadE,ammonia-dependent NAD(+) synthetase,day 89,PROTEOMICS,1.44687843322754,significant_up,376,215.0,
+ACZ81_13170,nadE,ammonia-dependent NAD(+) synthetase,days 60+89,PROTEOMICS,1.24046675364177,significant_up,480,259.0,
+ACZ81_13190,ppdB,hypothetical protein,day 18,RNASEQ,3.343005950947047,significant_up,22,13.0,
+ACZ81_13190,ppdB,hypothetical protein,day 60,RNASEQ,3.558699684184241,significant_up,57,32.0,
+ACZ81_13905,glnE,bifunctional [glutamate--ammonia ligase]-adenylyl-L-tyrosine phosphorylase/[glutamate--ammonia-ligase] adenylyltransferase,day 31,PROTEOMICS,1.21035512288411,significant_up,362,184.0,
+ACZ81_14250,pfpI,type 1 glutamine amidotransferase domain-containing protein,day 60,RNASEQ,-2.4527114910251893,significant_down,176,,98.0
+ACZ81_14670,orf,retropepsin-like aspartic protease family protein,day 60,RNASEQ,-1.404872850368255,significant_down,629,,357.0
+ACZ81_14670,orf,retropepsin-like aspartic protease family protein,day 89,RNASEQ,-1.4998649050123647,significant_down,505,,332.0
+ACZ81_14670,orf,retropepsin-like aspartic protease family protein,days 60+89,RNASEQ,-1.4520547808243214,significant_down,516,,316.0
+ACZ81_14820,acdP,dipeptidase,day 60,PROTEOMICS,-1.36809476216634,significant_down,398,,157.0
+ACZ81_14820,acdP,dipeptidase,day 89,PROTEOMICS,-1.48157056172689,significant_down,357,,128.0
+ACZ81_14820,acdP,dipeptidase,days 60+89,PROTEOMICS,-1.42483266194662,significant_down,357,,142.0
+ACZ81_15340,gltD,FAD-dependent oxidoreductase,day 18,PROTEOMICS,-1.90739504496257,significant_down,30,,6.0
+ACZ81_15340,gltD,FAD-dependent oxidoreductase,day 31,PROTEOMICS,-1.47033564249675,significant_down,242,,85.0
+ACZ81_15340,gltD,FAD-dependent oxidoreductase,day 60,PROTEOMICS,-2.70896402994792,significant_down,51,,21.0
+ACZ81_15340,gltD,FAD-dependent oxidoreductase,day 89,PROTEOMICS,-2.60752550760905,significant_down,75,,22.0
+ACZ81_15340,gltD,FAD-dependent oxidoreductase,days 60+89,PROTEOMICS,-2.65824476877849,significant_down,51,,15.0
+ACZ81_15555,glnL,nitrogen regulation protein NR(II),day 31,RNASEQ,1.8872801738941,significant_up,320,129.0,
+ACZ81_15555,glnL,nitrogen regulation protein NR(II),day 60,RNASEQ,1.876337017103084,significant_up,350,123.0,
+ACZ81_15555,glnL,nitrogen regulation protein NR(II),day 89,RNASEQ,1.3702982463862003,significant_up,611,162.0,
+ACZ81_15555,glnL,nitrogen regulation protein NR(II),days 60+89,RNASEQ,1.6447279708950402,significant_up,404,131.0,
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),day 31,PROTEOMICS,-1.42115910847982,significant_down,260,,92.0
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),day 31,RNASEQ,1.8886192070109176,significant_up,319,128.0,
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),day 60,PROTEOMICS,-1.37723223368327,significant_down,394,,156.0
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),day 60,RNASEQ,2.03409571342538,significant_up,290,106.0,
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),day 89,PROTEOMICS,-1.42501513163249,significant_down,386,,139.0
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),day 89,RNASEQ,1.6444557774616713,significant_up,408,102.0,
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),days 60+89,PROTEOMICS,-1.40112368265788,significant_down,371,,149.0
+ACZ81_15560,glnG,nitrogen regulation protein NR(I),days 60+89,RNASEQ,1.852050301153168,significant_up,310,100.0,
+ACZ81_15865,pepQ,M24 family metallopeptidase,day 18,RNASEQ,2.04958032036146,significant_up,169,66.0,
+ACZ81_15865,pepQ,M24 family metallopeptidase,day 31,RNASEQ,1.1948057296502352,significant_up,825,300.0,
+ACZ81_15865,pepQ,M24 family metallopeptidase,day 60,RNASEQ,1.268474221090333,significant_up,738,245.0,
+ACZ81_15865,pepQ,M24 family metallopeptidase,days 60+89,RNASEQ,1.1046031015157958,significant_up,867,294.0,
+ACZ81_16470,dpp4,S9 family peptidase,day 60,RNASEQ,1.0308238976910955,significant_up,1037,332.0,
+ACZ81_16590,rutD,pyrimidine utilization protein D,day 31,RNASEQ,3.6845034008794015,significant_up,47,26.0,
+ACZ81_16590,rutD,pyrimidine utilization protein D,day 60,RNASEQ,4.501816183415628,significant_up,24,16.0,
+ACZ81_16590,rutD,pyrimidine utilization protein D,day 89,RNASEQ,4.546542340502171,significant_up,18,15.0,
+ACZ81_16590,rutD,pyrimidine utilization protein D,days 60+89,RNASEQ,4.524630793873205,significant_up,23,18.0,
+ACZ81_16595,rutC,pyrimidine utilization protein C,day 31,RNASEQ,5.7661249296759465,significant_up,9,6.0,
+ACZ81_16595,rutC,pyrimidine utilization protein C,day 60,PROTEOMICS,-1.3470230102539,significant_down,418,,165.0
+ACZ81_16595,rutC,pyrimidine utilization protein C,day 60,RNASEQ,6.587431775891576,significant_up,2,2.0,
+ACZ81_16595,rutC,pyrimidine utilization protein C,day 89,RNASEQ,6.10386118554679,significant_up,2,2.0,
+ACZ81_16595,rutC,pyrimidine utilization protein C,days 60+89,RNASEQ,6.364408613196077,significant_up,2,2.0,
+ACZ81_16600,rutB,pyrimidine utilization protein B,day 31,RNASEQ,3.957342818711485,significant_up,32,18.0,
+ACZ81_16600,rutB,pyrimidine utilization protein B,day 60,RNASEQ,3.9049038230395055,significant_up,42,26.0,
+ACZ81_16600,rutB,pyrimidine utilization protein B,day 89,PROTEOMICS,1.44107182820638,significant_up,378,217.0,
+ACZ81_16600,rutB,pyrimidine utilization protein B,day 89,RNASEQ,4.013608481447581,significant_up,34,23.0,
+ACZ81_16600,rutB,pyrimidine utilization protein B,days 60+89,RNASEQ,3.960235844056883,significant_up,37,27.0,
+ACZ81_16735,nonF,type 1 glutamine amidotransferase domain-containing protein,day 18,PROTEOMICS,1.02775065104167,significant_up,230,116.0,
+ACZ81_16735,nonF,type 1 glutamine amidotransferase domain-containing protein,day 31,PROTEOMICS,1.89435386657715,significant_up,124,67.0,
+ACZ81_16735,nonF,type 1 glutamine amidotransferase domain-containing protein,day 60,PROTEOMICS,1.88612429300944,significant_up,192,106.0,
+ACZ81_16735,nonF,type 1 glutamine amidotransferase domain-containing protein,day 89,PROTEOMICS,2.36560249328613,significant_up,107,70.0,
+ACZ81_16735,nonF,type 1 glutamine amidotransferase domain-containing protein,days 60+89,PROTEOMICS,2.12586339314779,significant_up,126,75.0,
+ACZ81_17660,hslV,ATP-dependent protease subunit HslV,day 18,RNASEQ,2.262494045381487,significant_up,127,51.0,
+ACZ81_17660,hslV,ATP-dependent protease subunit HslV,day 31,RNASEQ,2.1883566294835712,significant_up,215,85.0,
+ACZ81_17660,hslV,ATP-dependent protease subunit HslV,day 60,PROTEOMICS,1.65900039672851,significant_up,264,145.0,
+ACZ81_17660,hslV,ATP-dependent protease subunit HslV,day 60,RNASEQ,2.2383163651064617,significant_up,226,86.0,
+ACZ81_17660,hslV,ATP-dependent protease subunit HslV,day 89,RNASEQ,2.193541131380285,significant_up,219,63.0,
+ACZ81_17660,hslV,ATP-dependent protease subunit HslV,days 60+89,RNASEQ,2.216057201203647,significant_up,201,71.0,
+ACZ81_17730,pip,prolyl aminopeptidase,day 18,RNASEQ,-1.056512566954472,significant_down,791,,306.0
+ACZ81_18080,pepO,M13 family metallopeptidase,day 31,RNASEQ,1.2089476489553612,significant_up,802,294.0,
+ACZ81_18285,hflC,protease modulator HflC,day 18,RNASEQ,-1.192579792045234,significant_down,662,,272.0
+ACZ81_18285,hflC,protease modulator HflC,day 31,RNASEQ,-1.3218253591995712,significant_down,690,,349.0
+ACZ81_18285,hflC,protease modulator HflC,day 60,RNASEQ,-2.075080278787844,significant_down,274,,163.0
+ACZ81_18285,hflC,protease modulator HflC,day 89,RNASEQ,-1.4161436572475898,significant_down,578,,376.0
+ACZ81_18285,hflC,protease modulator HflC,days 60+89,RNASEQ,-1.7077887979483486,significant_down,379,,241.0
+ACZ81_18290,hflK,FtsH protease activity modulator HflK,day 18,RNASEQ,-1.1782586445764192,significant_down,674,,277.0
+ACZ81_18290,hflK,FtsH protease activity modulator HflK,day 31,RNASEQ,-1.4630848579819993,significant_down,567,,299.0
+ACZ81_18290,hflK,FtsH protease activity modulator HflK,day 60,RNASEQ,-2.295159451796949,significant_down,212,,121.0
+ACZ81_18290,hflK,FtsH protease activity modulator HflK,day 89,RNASEQ,-1.850289661856096,significant_down,321,,221.0
+ACZ81_18290,hflK,FtsH protease activity modulator HflK,days 60+89,RNASEQ,-2.055506810659131,significant_down,239,,152.0
+ACZ81_18840,glmS,glutamine--fructose-6-phosphate transaminase (isomerizing),day 18,RNASEQ,1.441592896090545,significant_up,451,205.0,
+ACZ81_19570,lexA,transcriptional repressor LexA,day 18,RNASEQ,-1.926923528984616,significant_down,204,,106.0
+ACZ81_19570,lexA,transcriptional repressor LexA,day 31,RNASEQ,-1.6979718362438134,significant_down,416,,223.0
+ACZ81_19570,lexA,transcriptional repressor LexA,day 60,RNASEQ,-1.326222550946116,significant_down,689,,383.0
+ACZ81_19570,lexA,transcriptional repressor LexA,day 89,RNASEQ,-1.4185996071078044,significant_down,577,,375.0
+ACZ81_19570,lexA,transcriptional repressor LexA,days 60+89,RNASEQ,-1.3718178276087851,significant_down,585,,359.0

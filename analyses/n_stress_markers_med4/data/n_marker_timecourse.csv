@@ -1,0 +1,251 @@
+locus_tag,gene_name,experiment_id,treatment_type,timepoint,timepoint_hours,timepoint_order,log2fc,padj,rank,rank_up,rank_down,expression_status,tier
+PMM0246,ntcA,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-11.45172627,0.0,101,,100.0,significant_down,Tier2_N+coculture
+PMM0393,pipX,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-11.03686045,0.0,140,,138.0,significant_down,Tier2_N+coculture
+PMM0687,,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-11.03686045,0.0,141,,139.0,significant_down,Tier2_N+coculture
+PMM1462,,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-10.23002044,1.0,248,,,not_significant,Tier1_N-specific
+PMM1462,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,5.61782354744158,0.01,3,3.0,,significant_up,Tier1_N-specific
+PMM0371,cynB,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-5.233951827,1.22e-28,512,,219.0,significant_down,Tier2_N+coculture
+PMM1462,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,4.72778318305637,0.01,2,2.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,4.45086478182776,0.01,7,6.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,4.36724547784196,0.01,7,3.0,,significant_up,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,4.279566443092617,2.9550592954568683e-10,70,27.0,,significant_up,Tier2_N+coculture
+PMM0687,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,4.0674889457570345,1.6181082973453386e-08,81,32.0,,significant_up,Tier2_N+coculture
+PMM0687,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,3.85155137624459,0.01,8,7.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-3.676757158162384,0.0015808047796623,17,,6.0,significant_down,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,3.6510575612386,1.93750018709816e-05,5,4.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,3.58713213602702,2.48270602762731e-07,28,4.0,,significant_up,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,3.56736389795939,1.8408903718366e-06,3,3.0,,significant_up,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,3.48367023468017,2.56189562285053e-05,6,6.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,3.352117316421244,1.0044699427936916e-05,141,57.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,3.29939047495524,2.18119662069137e-08,11,8.0,,significant_up,Tier1_N-specific
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,3.26577631632487,2.58148238326747e-06,6,5.0,,significant_up,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,3.22701247533162,1.43199309413515e-07,9,8.0,,significant_up,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,3.18824863433838,2.63398984896265e-06,13,10.0,,significant_up,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,3.17353884379069,7.70264603864766e-05,5,4.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-3.1495792881694675,0.0012099104460734,21,,4.0,significant_down,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,3.14743343989054,4.65694086846226e-09,11,10.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,3.13,0.0,70,32.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,3.12865835158934,0.01,14,7.0,,significant_up,Tier1_N-specific
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,3.11919911702474,8.01644774392301e-06,7,5.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,3.10788832258843,0.01,42,10.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,3.09633685443019,0.01,26,11.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,3.08,0.0,77,37.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,3.038840754,1.0,7,,,not_significant,Tier2_N+coculture
+PMM0246,ntcA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,3.01927772296539,0.01,30,13.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,2.99746449788411,2.82727119816684e-05,8,6.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,2.99547640482585,8.73053906243799e-08,11,10.0,,significant_up,Tier1_N-specific
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,2.981071492685053,2.4777048908969736e-11,184,70.0,,significant_up,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,2.94700940450033,8.14473662981834e-06,10,8.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,2.85561344589713,0.01,18,11.0,,significant_up,Tier1_N-specific
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,2.8029047648112,7.75580533266242e-06,17,15.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,2.77320004807168,0.01,67,15.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-2.767657875976118,0.01683560832865,35,,11.0,significant_down,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,2.7204049428304,0.0017487735074487,3,3.0,,significant_up,Tier2_N+coculture
+PMM0687,,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,2.7,0.01,89,47.0,,significant_up,Tier2_N+coculture
+PMM0687,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,2.69060631939773,0.01,24,10.0,,significant_up,Tier2_N+coculture
+PMM0687,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,2.68333907202567,0.01,10,6.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,2.67964712778727,2.53352928604394e-06,57,21.0,,significant_up,Tier2_N+coculture
+PMM0371,cynB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,2.65,0.0,112,52.0,,significant_up,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,2.60293324788411,0.0004868286644235,4,4.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,2.6,0.0,99,51.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-2.578430371607697,0.0007778413678228,40,,16.0,significant_down,Tier1_N-specific
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,2.529728484721897,6.0856483158426845e-09,280,109.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,2.510918035629388,0.0164184145191602,22,20.0,,significant_up,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,2.46640882596646,0.0126337089028085,24,22.0,,significant_up,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,2.42644230524699,1.26748453656753e-05,27,23.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,2.400821454544718,0.0358407295972419,27,25.0,,significant_up,Tier2_N+coculture
+PMM0371,cynB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,2.37248468438192,0.01,55,18.0,,significant_up,Tier2_N+coculture
+PMM0964,ureB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,2.37,0.01,132,69.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,2.3455961849395,0.01,59,20.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,-2.33,0.0,66,,14.0,significant_down,Tier2_N+coculture
+PMM0964,ureB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,2.33,0.0,146,70.0,,significant_up,Tier1_N-specific
+PMM0371,cynB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,2.28110125476454,0.01,35,17.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,2.264438881479556,0.0002324155619118,342,132.0,,significant_up,Tier1_N-specific
+PMM1462,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-2.257372852785997,0.0567320752377784,62,,,not_significant,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,2.23080062866211,8.8325962497014e-05,24,15.0,,significant_up,Tier2_N+coculture
+PMM0372,cynD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,2.17991366596472,0.01,78,25.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,2.17,0.0,172,81.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,-2.166458145,1.0,21,,,not_significant,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,2.13397534688314,0.0023777617546765,8,8.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,2.109289489,1.0,14,,,not_significant,Tier1_N-specific
+PMM0371,cynB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,2.10887801596109,0.01,130,31.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,2.10725593566895,8.01644774392301e-06,30,18.0,,significant_up,Tier1_N-specific
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,2.1014755889527947,1.3632077421037737e-05,381,148.0,,significant_up,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,2.09128061930339,8.01644774392301e-06,35,19.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,2.09054247538249,0.0005335963518002,41,34.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-2.0842747712258936,0.0243547283264829,68,,31.0,significant_down,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,2.06486018498738,7.3072354827046e-05,45,40.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-2.0562430846825928,0.0020916650355458,57,,27.0,significant_down,Tier1_N-specific
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,2.04997984568278,0.0001194408822579,61,47.0,,significant_up,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,2.03917789459228,0.0005544788392701,62,48.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-2.033906878694434,0.0069384622838446,80,,32.0,significant_down,Tier1_N-specific
+PMM0371,cynB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,1.92816297994649,0.01,81,19.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,1.90550104081613,0.01,57,21.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-1.878098085118968,0.013468811571469,73,,33.0,significant_down,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,1.86500326792399,0.0002207182174203,39,9.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,1.832505607196949,0.053149961634265,43,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,-1.82,0.1,154,,,not_significant,Tier1_N-specific
+PMM1462,,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,-1.78,0.23,167,,,not_significant,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,1.76032638549805,0.0032116452692161,15,11.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,-1.74,0.23,172,,,not_significant,Tier1_N-specific
+PMM0246,ntcA,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,1.71,0.26,237,,,not_significant,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-1.7014965249685456,0.0588455210576937,129,,,not_significant,Tier2_N+coculture
+PMM0246,ntcA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,1.67965300850396,0.01,130,24.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-1.6791831482157482,0.0305345707580322,133,,73.0,significant_down,Tier1_N-specific
+PMM0372,cynD,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,1.644904733618078,0.0123179722111725,52,41.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,1.61139933268229,0.0001160019291582,260,100.0,,significant_up,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,1.60331058502197,0.0107429971839741,60,13.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-1.582427219583685,0.0843510400391954,153,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,1.57325267791748,0.0006064934109148,61,14.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,-1.57,0.14,221,,,not_significant,Tier1_N-specific
+PMM1463,glnB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,1.54023927,1.0,231,,,not_significant,Tier1_N-specific
+PMM0372,cynD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,1.53130361811556,0.01,92,39.0,,significant_up,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,1.52424176534017,0.0059570821806216,28,15.0,,significant_up,Tier1_N-specific
+PMM0965,ureA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,1.5016806356999,0.01,229,75.0,,significant_up,Tier1_N-specific
+PMM0372,cynD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,1.46954583994354,0.01,180,31.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-1.4581215417256552,0.3077875208122694,59,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,1.444144393237626,0.0256429990840554,66,46.0,,significant_up,Tier2_N+coculture
+PMM0393,pipX,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,-1.440531926,1.0,260,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,1.43806902567546,0.0008850857820164,35,19.0,,significant_up,Tier2_N+coculture
+PMM0372,cynD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,1.350649249,1.0,299,,,not_significant,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,1.34688440958659,0.0017487735074487,40,21.0,,significant_up,Tier1_N-specific
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,1.34489758809407,0.0047188844916412,137,90.0,,significant_up,Tier2_N+coculture
+PMM1462,,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,1.333507296450751,0.5156487820520308,76,,,not_significant,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,1.33327420552572,0.0721109025683839,358,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,1.32778315629641,0.01,285,90.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,1.32659308115642,0.0005205263174463,356,197.0,,significant_up,Tier1_N-specific
+PMM1463,glnB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,1.30876661065235,0.01,236,41.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-1.2947869559092218,0.1456840846630396,268,,,not_significant,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,1.27472082773845,0.0030376430817297,106,22.0,,significant_up,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,1.27374362945557,0.16176371197448,107,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,1.2735704221025266,0.0186913289038617,221,88.0,,significant_up,Tier2_N+coculture
+PMM0372,cynD,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-1.262193429,0.542521742,1000,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,1.26094150543213,0.0001916968065166,189,122.0,,significant_up,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,1.25750271479289,0.001611065647309,156,109.0,,significant_up,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,1.25440692901611,0.0130553170607451,400,221.0,,significant_up,Tier1_N-specific
+PMM0964,ureB,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,1.2542412187499867,0.1116990383918437,86,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,1.24648614137608,0.01,328,108.0,,significant_up,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-1.2444560709143389,0.1088009461466102,235,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,1.243182442,1.0,340,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-1.238454401,0.945885785,1015,,,not_significant,Tier1_N-specific
+PMM0246,ntcA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,1.22622802,1.0,353,,,not_significant,Tier2_N+coculture
+PMM0246,ntcA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,1.1701078414917,0.0095480862242047,217,132.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-1.161068434,1.0,1061,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,1.135729397,1.0,67,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,1.12339067459106,0.000140304674138,196,126.0,,significant_up,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-1.1065851563246203,0.0693472387718947,302,,,not_significant,Tier1_N-specific
+PMM1462,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-1.0943281976289208,0.6214600970182886,109,,,not_significant,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,1.0885057021611748,0.2304651811014042,314,,,not_significant,Tier2_N+coculture
+PMM0965,ureA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,1.0838688978539,0.01,327,59.0,,significant_up,Tier1_N-specific
+PMM0371,cynB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,1.080973522,1.0,83,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-1.0749233906365816,0.0270475908431999,295,,149.0,significant_down,Tier1_N-specific
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,1.06904792785645,0.0076168317505336,234,93.0,,significant_up,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-1.0448556988073128,0.071132508564371,416,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,1.0075126293068315,0.0278893507331073,900,404.0,,significant_up,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,1.00702953338623,0.0164797999456599,189,40.0,,significant_up,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-1.0065323828512034,0.4477691701769808,129,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,0.98583984375,0.0016268648269084,270,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,0.982868037,1.0,480,,,not_significant,Tier1_N-specific
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,0.9576102955854874,0.051333371155627,383,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 31,744.0,2,0.947477976481121,0.0007951410655234,313,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,0.94,0.4,471,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-0.9142830421585856,,419,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,0.912417913,1.0,309,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,0.8981594094488956,0.2465756914173956,164,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,0.897205448251782,0.01,321,104.0,,significant_up,Tier1_N-specific
+PMM0687,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-0.886398141356753,,433,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-0.880916185958924,0.1275609120539932,453,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,0.872687543,1.0,458,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,0.833249409993486,0.07384760350825,680,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,0.81,1.0,503,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,0.802088419596353,0.0704371637783041,166,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,0.797797203063965,0.0423704890111036,287,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-0.7793615768495751,0.2045344209246003,556,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,0.76440665,1.0,663,,,not_significant,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,0.740062395731607,0.323042005558364,711,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,0.7390766652321479,0.1747935719734327,675,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-0.7377817955450489,0.2011600137446337,679,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,0.713287989298502,0.0206303850684552,782,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,-0.693732222,1.0,363,,,not_significant,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-0.6925340511172716,0.4541104875922977,731,,,not_significant,Tier2_N+coculture
+PMM1463,glnB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,0.69,0.96,542,,,not_significant,Tier1_N-specific
+PMM1463,glnB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,0.69,0.56,573,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,0.683407688,1.0,614,,,not_significant,Tier1_N-specific
+PMM1463,glnB,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,0.6824204529870564,0.6136245058064669,275,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 18,432.0,1,0.674486796061194,0.0247818742416318,256,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,0.6491715388274515,0.1683592437135874,673,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-0.6474502987866533,0.4312051784960993,773,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,0.642414235,1.0,557,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,0.608392413,1.0,855,,,not_significant,Tier1_N-specific
+PMM0246,ntcA,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,0.57,1.0,595,,,not_significant,Tier2_N+coculture
+PMM0687,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,-0.5673599084026556,0.6003875860321027,814,,,not_significant,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,0.5554104939890949,0.5334093536642729,782,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,0.5553027523601235,0.345292849915815,898,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 89,2136.0,4,0.5530553680288416,0.3571518923289525,837,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-0.5457684481531775,0.3527057275298099,919,,,not_significant,Tier2_N+coculture
+PMM1463,glnB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,-0.5422675688840383,0.4601319745449214,1319,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-0.5343826345326517,0.3060309591106966,818,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,0.52946090698242,0.0337180581280147,606,,,not_significant,Tier1_N-specific
+PMM0371,cynB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,0.52,0.69,608,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,-0.514418645,0.800106314,1420,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,0.489871819814043,0.0169534101573042,658,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,-0.463805564,1.0,649,,,not_significant,Tier2_N+coculture
+PMM0965,ureA,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,0.462864965,0.990568898,1448,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,0.452231913,1.0,653,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,0.450282732645667,0.0589175759990653,763,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,0.441723649,1.0,669,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-0.4224639158465767,0.5223386726518833,1113,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,0.400882403055827,0.198174455154745,1010,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,-0.395454406738279,0.0877944221492835,1058,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,-0.385845717,1.0,973,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,-0.368265109,1.0,793,,,not_significant,Tier2_N+coculture
+PMM0687,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,0.353550354,1.0,847,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,24h,24.0,5,0.345724139,1.0,1039,,,not_significant,Tier2_N+coculture
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-0.3352303098373757,0.6977697120705293,1270,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.3186397821258024,0.7970028189527907,868,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,0.309952735900879,0.315456450855441,1099,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,-0.301792943,1.0,954,,,not_significant,Tier1_N-specific
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-0.2989600039122373,0.7684921493806444,1292,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.2980424417246772,,925,,,not_significant,Tier2_N+coculture
+PMM0687,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,0.296795925537798,0.7785523368488567,1337,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,days 60+89,,5,-0.2959569219650842,0.620426981778305,1235,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,0.291469891866048,0.460565022183742,863,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,0.283709447392295,0.6367645113171138,1365,,,not_significant,Tier1_N-specific
+PMM1462,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,0.2831240307765973,0.8055168752788114,1587,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,0.27295992,1.0,1025,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,-0.2677995878356702,0.6783407309355831,1339,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.2675853466897814,0.8066782867136176,999,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,48h,48.0,6,0.253360475,1.0,1340,,,not_significant,Tier2_N+coculture
+PMM0371,cynB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.2147453068402726,0.9052399695586828,1140,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 14,336.0,1,0.209834098815917,0.487368119242069,995,,,not_significant,Tier1_N-specific
+PMM0964,ureB,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,20h,20.0,1,0.186352843,1.0,1584,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,-0.180290545,1.0,1241,,,not_significant,Tier1_N-specific
+PMM0372,cynD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,-0.178495928,1.0,1247,,,not_significant,Tier2_N+coculture
+PMM1462,,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,0.165168653,1.0,1279,,,not_significant,Tier1_N-specific
+PMM0965,ureA,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.1522008863520869,0.9141132640645592,1347,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 89,2136.0,4,0.15046405792236,0.69924584294048,1171,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,-0.149610837300618,0.615644105598699,1277,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,coculture,day 11,264.0,1,0.1279588176279954,,1413,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.1218486026955733,0.9122235184200448,1441,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,-0.12,1.0,785,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,days 60+89,,5,0.116311232248941,0.735970027030178,1207,,,not_significant,Tier2_N+coculture
+PMM0964,ureB,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,0.106873194376628,0.736252468770597,1320,,,not_significant,Tier1_N-specific
+PMM1462,,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,24h,24.0,3,-0.1,1.0,815,,,not_significant,Tier1_N-specific
+PMM0393,pipX,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,6h,6.0,3,0.091705119,1.0,1519,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,0.0879319508870443,0.778679419626507,1338,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 31,744.0,2,-0.0847600301106806,0.794369507404046,1340,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,nitrogen_stress,day 60,1440.0,3,0.0821584065755234,0.841240347017491,1293,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 31,744.0,2,-0.0819197259135661,0.8988188226993763,1719,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,-0.0812196731567369,0.804121681404032,1353,,,not_significant,Tier2_N+coculture
+PMM0371,cynB,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,3h,3.0,1,0.08,1.0,802,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,nitrogen_stress,day 14,336.0,1,0.0746086564458916,0.8857731999738403,1780,,,not_significant,Tier2_N+coculture
+PMM0973,urtD,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,-0.0736271337379458,,1607,,,not_significant,Tier2_N+coculture
+PMM0372,cynD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,0.070220922,1.0,1496,,,not_significant,Tier2_N+coculture
+PMM1463,glnB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,0.056513412,1.0,1557,,,not_significant,Tier1_N-specific
+PMM0371,cynB,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,0h,0.0,1,0.040455321,1.0,1602,,,not_significant,Tier2_N+coculture
+PMM0393,pipX,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 60,1440.0,3,0.039854862321933,0.9497671588218152,1789,,,not_significant,Tier2_N+coculture
+PMM1512,glsF,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,nitrogen_stress,day 89,2136.0,3,0.03409544626872,0.887527485806396,1396,,,not_significant,Tier1_N-specific
+PMM0973,urtD,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,12h,12.0,4,0.018974269,1.0,1669,,,not_significant,Tier2_N+coculture
+PMM1462,,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,nitrogen_stress,12h,12.0,2,0.01,0.71,833,,,not_significant,Tier1_N-specific
+PMM1512,glsF,10.1038/msb4100087_nitrogen_stress_nitrogen_deprivation_med4_med4_microarray,nitrogen_stress,3h,3.0,2,-0.008419423,1.0,1665,,,not_significant,Tier1_N-specific
+PMM0687,,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,nitrogen_stress,day 18,432.0,1,0.001883815312576,0.9978034239730889,1847,,,not_significant,Tier2_N+coculture

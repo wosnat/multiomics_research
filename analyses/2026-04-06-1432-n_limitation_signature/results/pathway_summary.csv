@@ -1,0 +1,29 @@
+gene_category,direction,count,genes,gene_names
+Amino acid metabolism,down,3,"PMM0356, PMM0560, PMM1298","hisG, lpdA, pip"
+Amino acid metabolism,up,4,"PMM0035, PMM0224, PMM0920, PMM1154","PSTA, aroC, glnA, ilvN"
+Carbohydrate metabolism,down,6,"PMM0766, PMM0769, PMM0781, PMM0785, PMM0930, PMM1610","fbaA, glgC, phdB, prkB, rpe, tktA"
+Carbohydrate metabolism,up,7,"PMM0145, PMM0160, PMM0172, PMM0446, PMM0491, PMM1074, PMM1700","acnB, ctaCI, ndhA, ndhH, ndhM, phhB, zwf"
+Cell cycle and division,up,2,"PMM0120, PMM0321","minD, sulA"
+Cell wall and membrane,down,1,PMM0510,
+Cellular processes,down,1,PMM0797,
+Central intermediary metabolism,down,2,"PMM0494, PMM0511",ppa
+Central intermediary metabolism,up,3,"PMM0263, PMM0370, PMM0371","amt1, cynA, cynB"
+Coenzyme metabolism,down,6,"PMM0428, PMM0583, PMM0747, PMM0844, PMM1055, PMM1643","chlG, chlI, cycI1, hemE, pcyA, ribH"
+Coenzyme metabolism,up,3,"PMM0245, PMM0447, PMM1146","cobO2, ctaA, pntA2"
+Lipid metabolism,down,5,"PMM0453, PMM0784, PMM1336, PMM1608, PMM1609","accD, acpP, fabF, fabG, fabZ"
+Nucleotide metabolism,down,1,PMM0046,ndk
+Nucleotide metabolism,up,1,PMM0548,rdgB
+Photosynthesis,down,26,"PMM0251, PMM0272, PMM0296, PMM0306, PMM0314, PMM0329, PMM0429, PMM0468, PMM0469, PMM0549, PMM0550, PMM0552, PMM0767, PMM0906, PMM1438, PMM1451, PMM1452, PMM1453, PMM1454, PMM1455, PMM1456, PMM1457, PMM1523, PMM1578, PMM1607, PMM1644","atp1, atpA, atpB, atpD, atpF, atpG, atpH, atpI, cpeS, csoS1A, csoS2, fbp-sbp, petP, psaB, psaC, psaD, psaE, psaF, psaJ, psaK, psbH, psbK, psbT, psbZ, rbcL, ycf48"
+Photosynthesis,up,1,PMM1490,deg1
+Post-translational modification,down,2,"PMM0206, PMM1655","secE, tig"
+Post-translational modification,up,4,"PMM0343, PMM0374, PMM1314, PMM1442","clpP3, pepP, tatA"
+Regulatory functions,up,3,"PMM0363, PMM1262, PMM1391",lexA
+Replication and repair,up,5,"PMM0480, PMM0936, PMM0988, PMM1562, PMM1623","recA, ssb, umuD"
+Stress response and adaptation,down,11,"PMM0201, PMM0202, PMM0452, PMM0540, PMM0605, PMM0699, PMM0710, PMM0901, PMM1437, PMM1519, PMM1520","groES, groL2, htpG, psaI, psaL, psaM, pstS, rplJ, rplL"
+Stress response and adaptation,up,24,"PMM0246, PMM0336, PMM0689, PMM0690, PMM0770, PMM0817, PMM0818, PMM0964, PMM0965, PMM0969, PMM0970, PMM0971, PMM0996, PMM1128, PMM1135, PMM1384, PMM1385, PMM1390, PMM1396, PMM1397, PMM1404, PMM1601, PMM1672, PMM1678","PTOX, desC4, glgP, gnd, hli, hli15, ntcA, ureA, ureB, ureG, urtA, urtB"
+Transcription,up,1,PMM0075,
+Translation,down,35,"PMM0026, PMM0203, PMM0204, PMM0312, PMM0410, PMM0753, PMM0754, PMM0869, PMM0870, PMM0987, PMM1183, PMM1285, PMM1345, PMM1440, PMM1507, PMM1511, PMM1532, PMM1534, PMM1536, PMM1537, PMM1538, PMM1541, PMM1542, PMM1544, PMM1545, PMM1552, PMM1553, PMM1554, PMM1555, PMM1556, PMM1557, PMM1558, PMM1661, PMM1662, PMM1706","efp, rplA, rplB, rplC, rplD, rplF, rplK, rplM, rplO, rplQ, rplT, rplV, rplW, rpmA, rpmG, rpmH, rpmI, rpmJ, rpsA1, rpsB, rpsC, rpsD, rpsE, rpsF, rpsH, rpsJ, rpsK, rpsL, rpsM, rpsP, rpsR, rpsS, rpsU, tsf, ycf65"
+Transport,down,2,"PMM0142, PMM0214",sul3
+Transport,up,1,PMM0502,ycf41
+Unknown,down,14,"PMM0273, PMM0307, PMM0346, PMM0348, PMM0599, PMM0691, PMM0751, PMM0864, PMM0876, PMM1011, PMM1109, PMM1350, PMM1375, PMM1402","mviM, unk6"
+Unknown,up,24,"PMM0030, PMM0055, PMM0087, PMM0334, PMM0337, PMM0338, PMM0364, PMM0365, PMM0368, PMM0626, PMM0647, PMM0651, PMM0684, PMM0687, PMM0726, PMM0810, PMM0819, PMM0858, PMM1134, PMM1149, PMM1272, PMM1312, PMM1409, PMM1412",yacL
