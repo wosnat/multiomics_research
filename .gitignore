@@ -9,17 +9,8 @@ build/
 # Benchmarks and eval outputs (regenerated, often large)
 benchmarks/
 
-# Analysis outputs (per-analysis, large CSVs not tracked by default)
-analyses/*/data/
-analyses/*/results/
-# v2 analysis: track data/results (small, artifact-focused)
-!analyses/2026-04-08-1038-n_limitation_signature_v2/data/
-!analyses/2026-04-08-1038-n_limitation_signature_v2/results/
-# v2: skip large DE extracts (reproducible from scripts 02 + 04)
-analyses/2026-04-08-1038-n_limitation_signature_v2/data/de_*.csv
-# B1 pathway enrichment: track data and results (all small files)
-!analyses/2026-04-09-1713-pathway_enrichment_b1/data/
-!analyses/2026-04-09-1713-pathway_enrichment_b1/results/
+# Analysis outputs: each analysis manages its own .gitignore
+# (see step-protocol.md — per-analysis .gitignore created at scaffolding)
 
 # Logs (collected locally, not committed)
 *.jsonl

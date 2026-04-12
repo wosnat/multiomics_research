@@ -99,12 +99,15 @@ step is recorded, explored with the researcher, and approved
 before the next step. Implementation can be fast or delegated;
 quality control is always interactive.
 
-See [Research notebook](references/research-notebook.md) for the
-notebook format, QC checkpoint requirements, step cycle, and code
-lifecycle rules.
+See [Step protocol](references/step-protocol.md) for per-step
+commit timing, hard gates, the chat-capture pattern, and redo
+path. See [Research notebook](references/research-notebook.md)
+for notebook format, entry templates, QC checkpoint types, and
+code lifecycle rules.
 
 ## References — read on demand, not all at once
 
+- [Step protocol](references/step-protocol.md) — read at the start of every analysis execution; owns commit timing, hard gates, chat-capture, redo path
 - [KG rules](references/kg-rules.md) — read when scoping a new analysis or uncertain about data sourcing vs literature
 - [Gene identity](references/gene-identity.md) — read when working with gene names, paralogs, or orthologs
 - [Artifacts guide](references/artifacts.md) — read when setting up an analysis directory or unsure about file structure

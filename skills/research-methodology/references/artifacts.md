@@ -188,13 +188,29 @@ KG extracts staged as files:
 
 ## Git tracking convention
 
-Commit generated artifacts with the step that produces them, not
-retroactively at the end. Each step's commit includes its outputs,
-its log, and updated manifests.
+For per-step commit timing, manifest-commit coupling, and hard
+gates, see [Step protocol](step-protocol.md).
 
-**What to track vs gitignore:**
+### Per-analysis .gitignore
 
-| Track in git | Gitignore |
+Each analysis gets its own `.gitignore` created during
+scaffolding (before step 1). No blanket repo-level rules for
+`analyses/*/data/` or `analyses/*/results/`. Tracking decisions
+are explicit and logged in the notebook.
+
+Default `.gitignore` template for a new analysis:
+```
+# Large intermediate data reproducible from KG
+# (list specific files here, not blanket patterns)
+__pycache__/
+```
+
+Everything else tracked by default. If a file should be ignored,
+list it explicitly with a comment explaining why.
+
+### What to track vs gitignore
+
+| Track in git | Gitignore (list explicitly) |
 |---|---|
 | Signatures, scores, applied subsets (small CSVs) | Raw DE extracts (large CSVs, reproducible from KG) |
 | Plots (PNG) | `__pycache__/` directories |
@@ -202,19 +218,16 @@ its log, and updated manifests.
 | Manifests | |
 | Notebook entries | |
 
-Rule of thumb: if it's small and captures analytical decisions
-(a signature gene list, a score table), track it. If it's large
-and reproducible by rerunning a script against the KG, gitignore
-it.
+Rule of thumb: if it's small and captures analytical decisions,
+track it. If it's large and reproducible by rerunning a script,
+gitignore it explicitly.
 
-**Reproduction instructions:** When large files are gitignored,
-the README must include instructions for regenerating them (which
-scripts to run, in what order). A reader who clones the repo
-should be able to reproduce the full analysis.
+### Reproduction instructions
 
-**Manifest timing:** The manifest (`DATA_MANIFEST.md` or
-`RESULTS_MANIFEST.md`) is updated in the same commit that adds
-the new data or result file. Not retroactively.
+When large files are gitignored, the README must include
+instructions for regenerating them (which scripts to run, in
+what order). A reader who clones the repo should be able to
+reproduce the full analysis.
 
 ## Log verbosity
 

@@ -1,0 +1,3 @@
+# Large DE extracts (reproducible from scripts 02 + 04)
+data/de_*.csv
+__pycache__/

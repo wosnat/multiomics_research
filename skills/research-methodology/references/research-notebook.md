@@ -1,22 +1,11 @@
 # Research notebook
 
-## Notebook-commit gate
+## Step protocol and enforcement
 
-In the N-limitation v2 analysis, Steps 1-3 had rich notebook
-entries because they were written as part of the step. Steps 4-6
-lost their entries to chat history — the analysis gained momentum
-and the notebook fell behind. The richest findings (proteomics
-coverage bias, RNA/protein discordance test, rank normalization
-fix) were discovered in those later steps and exist only in the
-conversation. A future reader has methods.md but not the
-investigative trail.
-
-The fix: if a step produces data or analytical output, its
-notebook entry must be committed to git before the next step
-begins. The commit includes the notebook entry and that step's
-generated artifacts (see [Artifacts guide — Git tracking
-convention](artifacts.md)). This keeps the notebook as a live
-record rather than a retroactive summary.
+For per-step commit timing, hard gates, and the chat-capture
+pattern, see [Step protocol](step-protocol.md). This document
+owns the notebook **format and content**; step-protocol owns
+**when things happen and what gates enforce them**.
 
 ---
 
@@ -28,22 +17,20 @@ and exploration are always interactive.
 
 ## The step cycle: do → show → explore → decide
 
-Every step that produces data or analytical output follows this cycle:
+Every step that produces data or analytical output follows this
+cycle:
 
-1. **Do** — run the script, produce artifacts (CSV, figures,
-   summaries). Can be delegated to a subagent.
-2. **Show** — present QC diagnostics: what went in, what came out,
-   what's missing, sanity checks.
-3. **Explore** — interactive walkthrough in chat: pick specific
-   genes/conditions, verify the logic on concrete examples, ask and
-   answer questions. Capture the key data points and conclusions in
-   the notebook.
-4. **Decide** — researcher says "continue", "explain X", or "redo
-   with Y". The decision is logged. Only then does the next step
-   begin.
+1. **Do** — write/update script, run, update manifests, commit.
+2. **Show** — present QC diagnostics, begin notebook entry with
+   summary tables, figure links, counts.
+3. **Explore** — interactive walkthrough, append chat-capture
+   section to notebook entry.
+4. **Decide** — researcher says continue/redo/adjust. Decision
+   logged, notebook entry committed.
 
-**No step that produces data or analytical output may proceed
-without completing the full cycle.**
+Per-phase obligations, commit timing, and hard gates are in
+[Step protocol](step-protocol.md). What follows here is the
+notebook **format**.
 
 Mechanical tasks (formatting, plotting from existing data, file
 reorganization) can skip the explore phase but still need
@@ -115,6 +102,15 @@ uv run scripts/script_name.py --arg value --output data/output.csv
 - Checked gene Y: values — expected / unexpected because [reason]
 - Asked: [question] → [answer with data]
 
+### Chat exploration
+**Q: [researcher's question, as asked]**
+Data: [what was looked up / computed to answer it]
+Finding: [what the data showed, with concrete numbers]
+Impact: [how this affects interpretation or next steps]
+
+**Q: [next question]**
+...
+
 ### Decision
 What was decided and why. Proceed / redo / adjust.
 ~~~
@@ -149,8 +145,9 @@ change, filter adjustment, or any methodology change mid-analysis):
    output — every step after the change gets a fresh run
 4. **New notebook entry per rerun** — each rerun gets its own
    entry explaining what changed and what the impact was
-5. **Commit each rerun's outputs** — the commit-per-step rule
-   still applies; don't batch rerun commits
+5. **Commit each rerun's outputs** — see
+   [Step protocol](step-protocol.md) for commit timing during
+   redos
 
 The rerun entry template:
 
@@ -209,12 +206,6 @@ What to show depends on the step type.
   actual numbers)
 - Best/worst scores, surprises, anything unexpected
 - Cross-condition comparison with expectation check
-
-## Manifest updates
-
-Every step that produces output files updates the relevant
-manifest (`data/DATA_MANIFEST.md` or `results/RESULTS_MANIFEST.md`)
-immediately — not retroactively at the end.
 
 ## Code lifecycle: analysis-first, productize later
 
