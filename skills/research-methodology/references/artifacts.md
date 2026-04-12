@@ -296,8 +296,9 @@ All files produced by scoring, plotting, and analysis scripts.
 
 ### `decisions.md`
 
-Design decisions with rationale. Written during brainstorming and
-updated during analysis when new decisions are made.
+Design-time decisions with rationale — from brainstorming and
+planning. Execution-time decisions (continue/redo/adjust at the
+end of each step) go in the notebook's `### Decision` section.
 
 ~~~markdown
 # Decision Log

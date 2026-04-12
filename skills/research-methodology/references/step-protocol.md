@@ -10,12 +10,12 @@ every step that produces data or analytical output.
 Two commits per step:
 - **Commit 1** (end of "do"): script + outputs + log + manifest
   updates
-- **Commit 2** (end of "explore"): notebook entry with QC tables
-  and chat-capture section
+- **Commit 2** (end of "decide"): notebook entry with QC tables,
+  chat-capture section, and decision
 
-Show and explore produce ONE notebook entry together — QC section
-from show, then chat-capture section from explore — committed
-once at the end of explore.
+Show, explore, and decide produce ONE notebook entry together —
+QC section from show, chat-capture section from explore, decision
+from decide — committed once at the end of decide.
 
 If the researcher requests a redo, the exploration reasoning is
 preserved separately from the artifacts that get replaced.
@@ -86,8 +86,8 @@ chain, not the raw transcript.
 ## "decide" phase (closes the notebook entry)
 
 Researcher says continue, redo, or adjust. Decision logged in
-notebook entry. Then git commit (Commit 2): the completed
-notebook entry.
+the notebook entry, closing it. Then git commit (Commit 2): the
+completed notebook entry (QC + chat-capture + decision).
 
 ## Redo path
 

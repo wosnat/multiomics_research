@@ -97,12 +97,12 @@ uv run scripts/script_name.py --arg value --output data/output.csv
 - Summary statistics, counts, sanity checks
 - What's present, what's missing, what's surprising
 
-### Exploration
+### Exploration (agent-driven QC)
 - Walked through gene X (PMM0xxx): values, logic, conclusion
 - Checked gene Y: values — expected / unexpected because [reason]
-- Asked: [question] → [answer with data]
+- Spot-checked edge case Z: [what was checked, what it showed]
 
-### Chat exploration
+### Chat exploration (researcher-driven questions)
 **Q: [researcher's question, as asked]**
 Data: [what was looked up / computed to answer it]
 Finding: [what the data showed, with concrete numbers]

@@ -107,6 +107,34 @@ include an example for those too.
   or different statistical tests (Goldenspike, Rockhopper, DESeq2)
   are NOT directly comparable
 
+## Cross-omics comparison (RNA vs protein)
+
+RNA-seq and proteomics measure different molecular layers. Expect
+discordance — it is biologically real, not an error:
+
+- **Direction agreement** is the primary comparison metric. Report
+  the fraction of genes where RNA and protein change in the same
+  direction.
+- **Magnitude comparison** across omics is not meaningful. RNA
+  log2FC and protein log2FC have different dynamic ranges,
+  detection limits, and noise profiles.
+- **Expected discordance rate:** Literature reports 40-60%
+  directional agreement between mRNA and protein for differentially
+  expressed genes. Agreement above 60% is notable; below 40%
+  warrants investigation of technical factors.
+- **Sources of genuine discordance:** post-transcriptional
+  regulation, protein stability differences, translational
+  control, different temporal dynamics (mRNA changes precede
+  protein changes).
+- **Reporting format:** "Of N genes with both RNA and protein DE
+  data, X (Y%) show concordant direction. Z genes show discordant
+  regulation (RNA up / protein down or vice versa)." List the
+  discordant genes — they are often the most biologically
+  interesting.
+- **Do not** dismiss discordant genes as noise. Flag them for
+  follow-up: post-transcriptional regulation is a real and
+  important biological signal in this system.
+
 ## Cross-study p-value comparison
 
 P-values from different studies have different designs, sample

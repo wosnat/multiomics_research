@@ -27,10 +27,8 @@ When paralogs exist (multiple locus tags share a gene name):
 - Use `gene_overview` on all locus tags to confirm they are
   distinct genes
 
-**Example failure:** "katA is downregulated by starvation (log2FC
--7.8) then partially recovers at day 89 (log2FC +1.8)." Wrong —
-the downregulation is ACZ81_02025, the "recovery" is ACZ81_11985.
-Different genes, opposite behaviors, same name.
+See [Anti-hallucination — Paralog conflation](anti-hallucination.md#11-paralog-conflation)
+for a concrete failure example.
 
 ## Ortholog cluster rules
 
@@ -42,9 +40,8 @@ Genes in the same ortholog cluster are NOT interchangeable:
 - If a gene has no expression data, say so — don't substitute
   a cluster-mate's data
 
-**Example failure:** MIT1002_02513 (katE) and MIT1002_03530 (katB)
-are both in cluster 4644E. The analysis reported katE expression
-values as "katB" because the cluster matched.
+See [Anti-hallucination — Ortholog cluster conflation](anti-hallucination.md#12-ortholog-cluster-conflation)
+for a concrete failure example.
 
 ## Gene function claims
 

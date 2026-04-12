@@ -1,6 +1,6 @@
 ---
 name: research-methodology
-description: Non-negotiable rules for multi-omics KG research. Load when answering biological questions, analyzing expression data, planning or brainstorming a research analysis, reviewing results, or working with the multiomics KG in any capacity. Must be loaded BEFORE brainstorming — the rules shape analysis design. Reference skill — provides domain rules, not process.
+description: Non-negotiable rules for multi-omics KG research. Load when answering biological questions, analyzing expression data, planning or brainstorming a research analysis, reviewing results, or working with the multiomics KG in any capacity. CRITICAL — must be loaded BEFORE the brainstorming skill, because its rules constrain what can be designed. Loading after the spec is written means retrofitting. Recipe skills (enrichment, response-matrix, conservation) assume this skill is already loaded. Reference skill — provides domain rules, not process.
 ---
 
 # Multi-omics research methodology
@@ -104,6 +104,10 @@ commit timing, hard gates, the chat-capture pattern, and redo
 path. See [Research notebook](references/research-notebook.md)
 for notebook format, entry templates, QC checkpoint types, and
 code lifecycle rules.
+
+Recipe skills (enrichment, response-matrix, conservation) assume
+this skill is already loaded. Load this skill first, then the
+relevant recipe.
 
 ## References — read on demand, not all at once
 
