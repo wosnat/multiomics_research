@@ -6,5 +6,6 @@
     "name": "Osnat"
   },
   "repository": "https://github.com/osnat/multiomics_research",
-  "keywords": ["multi-omics", "prochlorococcus", "knowledge-graph", "research", "bioinformatics"]
+  "keywords": ["multi-omics", "prochlorococcus", "knowledge-graph", "research", "bioinformatics"],
+  "skills": "./skills/"
 }
