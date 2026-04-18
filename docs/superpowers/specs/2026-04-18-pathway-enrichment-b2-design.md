@@ -95,12 +95,15 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 ### Step 3 — Reference signature derivation (MED4-only)
 
 **do:**
-- `scripts/04_derive_signature.py`: restrict `enrichment_all.csv` to MED4 R clusters (all ontologies). For each `(ontology, term_id)`, count `n_clusters_supporting = count(padj < 0.05)` per direction. Signature rule (M1 = b):
-  - **Core rule:** pathway is in the signature if it's enriched (padj < 0.05) in **≥3 MED4 R clusters, same direction**.
-  - **Fallback rule:** if fewer than 5 pathways per ontology survive the core rule, relax to **≥2 MED4 R clusters, same direction** for that ontology and record the fallback in `decisions.md`.
-- Write `data/reference_signature.csv` with columns: `ontology, term_id, term_name, direction, n_clusters_supporting, contributing_clusters, rule_applied` (core or fallback).
+- `scripts/04_derive_signature.py`: restrict `enrichment_all.csv` to MED4 R clusters (all ontologies). For each `(ontology, term_id)`, count `n_up(p) = count(padj < 0.05, direction="up")` and `n_down(p) = count(padj < 0.05, direction="down")`. Signature rule (M1 = b):
+  - **Core rule, unambiguous up:** `n_up ≥ 3` AND `n_down < 3` → signature member, `direction = "up"`.
+  - **Core rule, unambiguous down:** `n_down ≥ 3` AND `n_up < 3` → signature member, `direction = "down"`.
+  - **Bidirectional (ambiguous):** `n_up ≥ 3` AND `n_down ≥ 3` → **excluded** from signature. A pathway enriched in both directions across R clusters has no clean direction signal — different member genes respond differently, so it can't anchor the score. Logged with both counts to `data/signature_ambiguous.csv` for transparency (researcher can see which pathways were excluded and why).
+  - **Below threshold:** `max(n_up, n_down) < 3` → not in signature, not in ambiguous log.
+  - **Fallback rule:** if fewer than 5 signature pathways per ontology survive the core rule, relax the threshold to `≥2` (same-direction) / `≥2 AND ≥2` (ambiguous) for that ontology and record the fallback in `decisions.md`.
+- Write `data/reference_signature.csv` with columns: `ontology, term_id, term_name, direction, n_clusters_supporting, n_up, n_down, contributing_clusters, rule_applied` (core or fallback). Write `data/signature_ambiguous.csv` with columns: `ontology, term_id, term_name, n_up, n_down, contributing_up_clusters, contributing_down_clusters`.
 
-**show:** signature size per ontology; distribution of `n_clusters_supporting` (histogram); which key pathways made it into the signature; any fallback application logged.
+**show:** signature size per ontology; distribution of `n_clusters_supporting` (histogram); count of bidirectionally-excluded pathways per ontology; which key pathways made it into the signature (vs. ambiguous vs. below-threshold); any fallback application logged.
 **explore:** signature composition — sensible? Are all key pathways in the signature? If a key pathway (e.g., N-metabolism) is NOT in the signature, investigate: is the MED4 R set too small? Does the reference experiment not behave as expected? Capture in chat-capture.
 **decide:** proceed / adjust threshold → `reference_signature.csv` committed.
 
@@ -180,7 +183,11 @@ Consider pathway `cyanorak.role:E.4` (N-metabolism):
 
 Consider pathway `cyanorak.role:D.2` (catch-all adaptation):
 - padj < 0.05 in 5/12 R clusters, split 3 up / 2 down.
-- No consistent direction → not in signature.
+- `n_up = 3 ≥ 3` AND `n_down = 2 < 3` → unambiguous up → signature member, `direction = "up"`.
+
+Consider pathway `cyanorak.role:X.1` (hypothetical bidirectionally-responsive):
+- padj < 0.05 in 8/12 R clusters, split 4 up / 4 down.
+- `n_up = 4 ≥ 3` AND `n_down = 4 ≥ 3` → **bidirectional, excluded** from signature, logged to `signature_ambiguous.csv` with both counts.
 
 Consider pathway `cyanorak.role:M.3` (some niche category):
 - padj < 0.05 in 2/12 R clusters, both "down".
@@ -246,7 +253,7 @@ Per skill Rule 2:
 Analysis directory: `analyses/2026-04-18-HHMM-pathway_enrichment_b2/` with standard structure per artifacts-guide §Directory structure.
 
 Files expected at completion:
-- `data/experiments_classified.csv`, `data/enrichment_all.csv`, `data/enrichment_results.pkl`, `data/reference_signature.csv`, `data/DATA_MANIFEST.md`.
+- `data/experiments_classified.csv`, `data/enrichment_all.csv`, `data/enrichment_results.pkl`, `data/reference_signature.csv`, `data/signature_ambiguous.csv`, `data/DATA_MANIFEST.md`.
 - `results/scores_all.csv`, `results/score_summary.csv`, `results/loo_signature.csv`, `results/loo_r_experiments.csv`, `results/fig1_heatmap.png`, `results/fig1_heatmap.pdf`, `results/fig2_trajectories.png`, `results/fig2_trajectories.pdf`, `results/RESULTS_MANIFEST.md`.
 - `exploration/2026-04-18-notebook.md`, `exploration/key_pathways.csv`, `exploration/qc/` (diagnostic figures per step).
 - `scripts/01_select_experiments.py`, `02_ontology_landscape.py`, `03_run_enrichment.py`, `04_derive_signature.py`, `05_compute_scores.py`, `06_make_figures.py`, plus any `explore_*.py` for ad-hoc investigation.
