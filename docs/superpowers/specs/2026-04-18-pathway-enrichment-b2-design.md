@@ -126,15 +126,24 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 
 **do:**
 - **Pre-registration before computing:** update `decisions.md` with expected outcomes per T condition (e.g., "axenic-RNA: high, in PC range; coculture-RNA: unknown — B1 showed transcriptional suppression, may score ≈ NC; coculture-protein: may retain signal per B1"). This section is finalized and staged *before* the scoring script runs, then included in Commit 1 alongside the script and outputs — so the pre-registration commit is a single atomic commit, not separate.
-- `scripts/05_compute_scores.py`: for each (cluster, ontology) pair, compute Layer A score using formula M2 (β):
+- `scripts/05_compute_scores.py`: for each (cluster, ontology) pair, compute Layer A score using formula M2 (β) with magnitude capping:
 
   ```
-  score_A(cluster, ontology) = mean(sign_ref_p * signed_score(cluster, p)
+  SCORE_CAP = 10   # corresponds to padj = 1e-10; beyond this, magnitude
+                   # differences no longer carry useful information for
+                   # alignment scoring (and avoids padj-underflow blowup)
+
+  capped_score(cluster, p) = sign(signed_score(cluster, p)) *
+                              min(|signed_score(cluster, p)|, SCORE_CAP)
+
+  score_A(cluster, ontology) = mean(sign_ref_p * capped_score(cluster, p)
                                     for p in signature(ontology)
                                     if p present in cluster results)
   ```
 
-  where `sign_ref_p` = `+1` if `direction(p) == "up"` in signature, `-1` if `"down"`; `signed_score(cluster, p)` is `pathway_enrichment`'s per-result `signed_score` column (= `sign × -log10(padj)`, sign from direction). Clusters not tested against pathway p contribute nothing (excluded from the mean).
+  where `sign_ref_p` = `+1` if `direction(p) == "up"` in signature, `-1` if `"down"`; `signed_score(cluster, p)` is `pathway_enrichment`'s per-result `signed_score` column (= `sign × −log10(padj)`, sign from direction). Clusters not tested against pathway p contribute nothing (excluded from the mean). Pathways with padj that underflow to 0 (signed_score = ±∞) resolve to ±SCORE_CAP after capping, avoiding NaN/inf propagation.
+
+  The cap affects only Layer A score computation. The raw `signed_score` column in `enrichment_all.csv` is preserved uncapped for downstream inspection and figures (Fig 1 applies a separate visualization cap to the color scale — see Step 5).
 
 - Stability checks (M3):
   - **LOO on signature pathways:** per T cluster, recompute score leaving out each pathway in turn. Flag if any single-pathway exclusion flips the score sign or drops it >50%.
@@ -158,7 +167,7 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 
 **do:**
 - `scripts/06_make_figures.py`:
-  - **Fig 1** — unified signed-enrichment heatmap. Rows = visible pathways (signature + key-pathway panel + any pathway significantly enriched in ≥1 T cluster; capped to ~60–80 rows by aggregate magnitude; multi-panel by ontology if overflow). Columns = clusters ordered by class (T → R → PC → NC → CTX), then by experiment × timepoint. Annotations: ontology (row grouping), class (column color), organism (column color — MED4 bolded/highlighted), direction. Signature rows visually highlighted (bold labels + left annotation column + subtle background shade).
+  - **Fig 1** — unified signed-enrichment heatmap. Rows = visible pathways (signature + key-pathway panel + any pathway significantly enriched in ≥1 T cluster; capped to ~60–80 rows by aggregate magnitude; multi-panel by ontology if overflow). Columns = clusters ordered by class (T → R → PC → NC → CTX), then by experiment × timepoint. Cell value = raw `signed_score` from `enrichment_all.csv`. Color scale saturated at ±10 (same `SCORE_CAP` used in scoring) so extreme outlier cells don't flatten the rest of the heatmap — a separate visualization cap mirroring the scoring cap, so figure and score stay interpretable together. Annotations: ontology (row grouping), class (column color), organism (column color — MED4 bolded/highlighted), direction. Signature rows visually highlighted (bold labels + left annotation column + subtle background shade).
   - **Fig 2** — score-trajectory lineplots, one panel per experiment. x = timepoint (ordinal or hours); y = Layer A score; one line per ontology (color). Single-timepoint experiments = single point. Panel title = experiment_id + class + organism. MED4 T panels visually framed. NC panels included as baseline. Horizontal reference lines at `nc_mean ± 2σ` per ontology.
 - Write `methods.md`, `caveats.md`, `gaps_and_friction.md`, `api_coverage.md`, `README.md`, update `DATA_MANIFEST.md` and `RESULTS_MANIFEST.md` with the final file set.
 
@@ -213,23 +222,24 @@ Consider pathway `cyanorak.role:M.3` (some niche category):
 
 Suppose signature for CyanoRak has 12 pathways: 8 "up", 4 "down".
 
-For Weissberg coculture-RNA timepoint t3 cluster:
-- Pathway `E.4` (ref direction "up"): Weissberg `signed_score = +4.2` → contribution = `(+1) * (+4.2) = +4.2` (agrees with reference).
-- Pathway `J.2` (photosynthesis, ref direction "down"): Weissberg `signed_score = -3.1` → contribution = `(-1) * (-3.1) = +3.1` (agrees).
+For Weissberg coculture-RNA timepoint t3 cluster (assume `SCORE_CAP = 10`):
+- Pathway `E.4` (ref direction "up"): Weissberg `signed_score = +4.2` → capped `+4.2` (below cap) → contribution = `(+1) * (+4.2) = +4.2` (agrees with reference).
+- Pathway `J.2` (photosynthesis, ref direction "down"): Weissberg `signed_score = -3.1` → capped `-3.1` (below cap) → contribution = `(-1) * (-3.1) = +3.1` (agrees).
 - Pathway `Q.1` (AA transport, ref direction "up"): Weissberg `signed_score = -0.8` → contribution = `(+1) * (-0.8) = -0.8` (disagrees).
-- Suppose 9 other pathways average contribution `+1.5`:
+- Pathway `T.x` (ribosome, ref direction "down"): Weissberg `signed_score = -35.0` (padj ≈ 1e-35, extreme) → capped `-10` → contribution = `(-1) * (-10) = +10` (agrees, capped). Without the cap, this one pathway would dominate the mean.
+- Suppose 8 other pathways average contribution `+1.5`:
 
 ```
-score_A = mean([+4.2, +3.1, -0.8, +1.5, +1.5, ...]) for 12 pathways
-        ≈ +1.8
+score_A = mean([+4.2, +3.1, -0.8, +10, +1.5, +1.5, ...]) for 12 pathways
+        ≈ +3.0   (capped; would be ≈ +5.0 without the cap due to T.x dominance)
 ```
 
 Compare to:
-- NC noise floor (CyanoRak): `0.1 ± 0.4` → T score `+1.8` is well above noise.
-- PC mean: `+2.5`. T score `+1.8` is in "intermediate" range.
-- R mean: `+3.3`. Not at full R magnitude.
+- NC noise floor (CyanoRak, capped): `0.1 ± 0.4` → T score `+3.0` is well above noise.
+- PC mean (capped): `+2.5`. T score `+3.0` is slightly above PC range.
+- R mean (capped): `+4.5`. Not at full R magnitude.
 
-**Interpretation:** coculture-RNA t3 shows a detectable but attenuated N-limitation signature. Report magnitude, flag attenuation relative to R.
+**Interpretation:** coculture-RNA t3 shows a detectable N-limitation signature at PC-equivalent strength. Report magnitude, note that without the cap the score would have been inflated by one extremely-significant pathway and the interpretation would overstate the signature strength.
 
 ### 7.4 Source tagging
 
