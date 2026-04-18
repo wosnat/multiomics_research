@@ -65,9 +65,9 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 
 **do:**
 - `scripts/02_ontology_landscape.py` — programmatic wrapper for reproducibility:
-  - For each organism with selected experiments: `ontology_landscape(organism=<org>, experiment_ids=<selected for that org>, verbose=True)` via Python API — for MED4 the experiment set is `T∪R∪PC∪NC`; for non-MED4 organisms the experiment set is `CTX` for that organism. Writes raw JSON to `data/landscape_<org>.json`.
-  - `search_ontology("nitrogen")` across all ontologies. Writes raw JSON to `data/nitrogen_ontology_search.json`.
-  - BRITE trees appear as dedicated candidates via `tree=` parameter on the landscape call, iterated over `list_filter_values("brite_tree")` output.
+  - For each organism with selected experiments: `ontology_landscape(organism=<org>, experiment_ids=<selected for that org>, verbose=True)` via Python API — for MED4 the experiment set is `T∪R∪PC∪NC`; for non-MED4 organisms the experiment set is `CTX` for that organism. BRITE rows in the output carry `tree` / `tree_code` sparse fields, so per-tree candidates surface without extra calls.
+  - `search_ontology("nitrogen")` across all ontologies.
+  - Both calls flattened via `to_dataframe` and written as CSV: `data/landscape_<org>.csv`, `data/nitrogen_ontology_search.csv`. Envelope summary fields (totals, `truncated`, `by_ontology` breakdown) captured in the notebook entry, not the CSV.
 - Researcher selects 1–3 ontologies with explicit justification (coverage pick, relevance pick, BRITE subtree). Hard cap: 3. Writes `ontology_selection.md` (ranked table + rationale) manually — this is the interactive decision, not a computation.
 - Identify key-pathway term_ids in each selected ontology for the canonical N-response categories (N-metabolism, photosynthesis, amino-acid transport, ribosome). These are the biological anchor for every downstream QC. Write `exploration/key_pathways.csv` (ontology, term_id, term_name, expected_direction, canonical_gene_marker).
 
@@ -246,6 +246,12 @@ Files expected at completion:
 - `superpowers/spec.md`, `superpowers/plan.md`, `superpowers/brainstorm-log.md`.
 
 No `{name}_utils/` package — this analysis exercises the new shared API rather than building reusable utilities locally.
+
+**Artifact format convention:**
+- **CSV** (via `to_dataframe`) for all API outputs — landscape rows, enrichment results, signature, scores, experiment metadata. Tabular, greppable, token-efficient for Claude Code inspection, one-liner to load via `pd.read_csv`.
+- **Pickle** only for `EnrichmentResult` objects (`data/enrichment_results.pkl`) — downstream steps need the live `.explain()` and `.overlap_genes()` accessors, which CSV cannot preserve.
+- **Notebook markdown** for envelope metadata (totals, `truncated`, per-ontology breakdowns) — captured at the `show` phase of each step, not kept as a separate file.
+- **PNG + PDF/SVG** for figures per artifacts-guide.
 
 ## 10. Meta-deliverables (goals 2 + 3)
 
