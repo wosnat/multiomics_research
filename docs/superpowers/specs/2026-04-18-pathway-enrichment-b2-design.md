@@ -78,11 +78,15 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 ### Step 2 — Enrichment run
 
 **do:**
-- `scripts/03_run_enrichment.py`: for each (organism, ontology) pair from Step 1b, one `pathway_enrichment(organism, experiment_ids=<all selected for that org>, ontology, level, [tree], background="table_scope", direction="both", significant_only=True)` call via the Python API.
-- Collect each `EnrichmentResult.results` DataFrame; concat with added `organism` and `ontology` columns into `data/enrichment_all.csv`. Also pickle the `EnrichmentResult` objects (`data/enrichment_results.pkl`) so downstream steps can use `.explain()` and `.overlap_genes()` for drill-down.
+- `scripts/03_run_enrichment.py`: for each (organism, ontology) pair from Step 1b, split the organism's selected experiments by `table_scope` and run **two** `pathway_enrichment` calls:
+  - **Call A — detected-genes group.** Experiments with `table_scope == "all_detected_genes"` → `background="table_scope"` (the pathway_enrichment default). `table_scope` is a principled per-cluster denominator: the set of genes that were measured and could have been significant.
+  - **Call B — restricted-scope group.** Experiments with `table_scope ∈ {significant_only, significant_any_timepoint, top_n, filtered_subset}` → `background="organism"`. For these experiments the DE table equals (or is a strict subset of) the significant gene set, so `table_scope` background would collapse the Fisher 2×2 and break enrichment. Organism background is the only principled alternative — with the caveat that it inflates `N` for experiments that only measured a proper subset of the genome.
+  - Skip either call if its experiment group is empty.
+- Each call: `pathway_enrichment(organism, experiment_ids=<group>, ontology, level, background=<as above>, direction="both", significant_only=True)` via the Python API.
+- Collect each `EnrichmentResult.results` DataFrame; concat with added `organism`, `ontology`, `background_used` (`"table_scope"` or `"organism"`) columns into `data/enrichment_all.csv`. Also pickle the `EnrichmentResult` objects (`data/enrichment_results.pkl`) so downstream steps can use `.explain()` and `.overlap_genes()` for drill-down.
 - Per-timepoint granularity preserved — cluster key = `experiment_id | timepoint | direction`. NaN timepoints appear as `"NA"` (`pathway_enrichment` tool handles this correctly).
 
-**show:** per-(org, ontology) cluster/test/significance counts; key-pathway signed_score across all clusters as a diagnostic heatmap (`exploration/qc/step2_key_pathway_heatmap.png` — not a publication figure).
+**show:** per-(org, ontology) cluster/test/significance counts, split by `background_used`; key-pathway signed_score across all clusters as a diagnostic heatmap (`exploration/qc/step2_key_pathway_heatmap.png` — not a publication figure).
 **explore:** do R clusters show expected key-pathway enrichment in the expected direction? `result.explain(R_cluster, key_pathway_term_id)` for canonical R clusters (e.g., Tolonen N-deplete, N-metabolism term) — do canonical marker genes (`glnA`, `amt`, `cynA`) appear in the overlap? NC clusters ≈ zero on key pathways?
 **decide:** proceed / redo → `enrichment_all.csv` + pickle + QC figure committed.
 
@@ -225,7 +229,7 @@ Per skill Rule 2:
 
 2. **Ontology-organism mismatch.** CyanoRak is cyanobacteria-specific. If a non-MED4 context experiment uses a non-cyanobacterial organism (e.g., Alteromonas), that organism is silently absent from the CyanoRak enrichment output. Contingency: document per-ontology organism coverage in `ontology_selection.md`; if non-MED4 context becomes ontology-incompatible, show it only in compatible ontologies.
 
-3. **Weissberg T has restricted `table_scope`.** If Weissberg proteomics tables use `significant_only` or similar, the enrichment denominator is broken for those clusters (can't distinguish "not measured" from "not significant"). Contingency: proceed with caveat in `caveats.md`; Layer A score on those clusters is flagged as approximate.
+3. **Mixed-background clusters across experiments.** Restricted-`table_scope` experiments use `organism` background (Step 2 Call B); `all_detected_genes` experiments use `table_scope` background (Step 2 Call A). `fold_enrichment` and `bg_ratio` magnitudes are not directly comparable across the two background types — the organism background has a larger `N`, so `fold_enrichment` runs larger for the same pathway. Contingency: `signed_score` (= `sign × −log10(padj)`) is still comparable because BH is applied per cluster. Report `background_used` in `scores_all.csv`; flag in `caveats.md` if any T/R clusters use the organism background so interpretation accounts for it. Weissberg T tables with `significant_only` or similar are specifically handled via Call B, not silently dropped.
 
 4. **Signature dominated by catch-all pathways.** Per B1 caveat C3, broad categories (CyanoRak D.2, R.2) routinely show high enrichment due to size. Contingency: flag catch-all signature members in `caveats.md`; consider computing Layer A with and without them as a stability check alongside LOO.
 
