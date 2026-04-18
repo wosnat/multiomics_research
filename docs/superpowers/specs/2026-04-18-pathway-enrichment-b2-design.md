@@ -95,7 +95,10 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 ### Step 3 — Reference signature derivation (MED4-only)
 
 **do:**
-- `scripts/04_derive_signature.py`: restrict `enrichment_all.csv` to MED4 R clusters (all ontologies). For each `(ontology, term_id)`, count `n_up(p) = count(padj < 0.05, direction="up")` and `n_down(p) = count(padj < 0.05, direction="down")`. Signature rule (M1 = b):
+- `scripts/04_derive_signature.py`: restrict `enrichment_all.csv` to MED4 R clusters.
+  - **Temporal filter.** B1 observed early-timepoint direction flips in some pathways (e.g., transient upregulation before settled downregulation). To anchor the signature on the settled N-limitation response, exclude clusters with `timepoint_hours < 3` from signature derivation. Clusters without numeric `timepoint_hours` (single-timepoint experiments, ordinal-only labels) contribute all their clusters — the early/late distinction doesn't apply.
+  - Early clusters are **not dropped from the analysis** — they remain in `enrichment_all.csv`, are scored in Step 4, and appear in Fig 2 (the trajectory visualization is where the early-late flip is visible as a feature, not obscured).
+- For each `(ontology, term_id)`, count `n_up(p) = count(padj < 0.05, direction="up")` and `n_down(p) = count(padj < 0.05, direction="down")` over the signature-derivation set (late + non-temporal clusters). Signature rule (M1 = b):
   - **Core rule, unambiguous up:** `n_up ≥ 3` AND `n_down < 3` → signature member, `direction = "up"`.
   - **Core rule, unambiguous down:** `n_down ≥ 3` AND `n_up < 3` → signature member, `direction = "down"`.
   - **Bidirectional (ambiguous):** `n_up ≥ 3` AND `n_down ≥ 3` → **excluded** from signature. A pathway enriched in both directions across R clusters has no clean direction signal — different member genes respond differently, so it can't anchor the score. Logged with both counts to `data/signature_ambiguous.csv` for transparency (researcher can see which pathways were excluded and why).
@@ -103,7 +106,7 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
   - **Fallback rule:** if fewer than 5 signature pathways per ontology survive the core rule, relax the threshold to `≥2` (same-direction) / `≥2 AND ≥2` (ambiguous) for that ontology and record the fallback in `decisions.md`.
 - Write `data/reference_signature.csv` with columns: `ontology, term_id, term_name, direction, n_clusters_supporting, n_up, n_down, contributing_clusters, rule_applied` (core or fallback). Write `data/signature_ambiguous.csv` with columns: `ontology, term_id, term_name, n_up, n_down, contributing_up_clusters, contributing_down_clusters`.
 
-**show:** signature size per ontology; distribution of `n_clusters_supporting` (histogram); count of bidirectionally-excluded pathways per ontology; which key pathways made it into the signature (vs. ambiguous vs. below-threshold); any fallback application logged.
+**show:** signature size per ontology; distribution of `n_clusters_supporting` (histogram); count of bidirectionally-excluded pathways per ontology; count of early clusters (`timepoint_hours < 3`) excluded from derivation vs. late/non-temporal clusters used; which key pathways made it into the signature (vs. ambiguous vs. below-threshold); any fallback application logged.
 **explore:** signature composition — sensible? Are all key pathways in the signature? If a key pathway (e.g., N-metabolism) is NOT in the signature, investigate: is the MED4 R set too small? Does the reference experiment not behave as expected? Capture in chat-capture.
 **decide:** proceed / adjust threshold → `reference_signature.csv` committed.
 
@@ -175,19 +178,19 @@ Non-MED4 N-limitation experiments carry two risks as signature contributors: (i)
 
 ### 7.2 Worked example — signature derivation (M1 = b)
 
-Suppose MED4 R set = Tolonen N-deplete with 2 replicates × 3 timepoints × 2 directions = 12 R clusters, enriched against CyanoRak level 1 (110 terms).
+Suppose MED4 R set = Tolonen N-deplete with 2 replicates × 3 timepoints × 2 directions = 12 R clusters, enriched against CyanoRak level 1 (110 terms). Suppose one of the 3 timepoints is `timepoint_hours=1.5` (early) and the other two are `timepoint_hours=6` and `timepoint_hours=24` (late). After the temporal filter, 8 late clusters feed signature derivation; 4 early clusters are scored in Step 4 but excluded here.
 
 Consider pathway `cyanorak.role:E.4` (N-metabolism):
-- padj < 0.05 in 8/12 R clusters, all with `direction="up"` (same direction).
-- `n_clusters_supporting = 8 ≥ 3` ✓ — signature member, direction = "up".
+- Across the 8 late R clusters: padj < 0.05 in 6, all `direction="up"`.
+- `n_up = 6 ≥ 3` AND `n_down = 0 < 3` → unambiguous up → signature member, `direction = "up"`. (Early clusters not counted; may show opposite direction but don't affect signature.)
 
 Consider pathway `cyanorak.role:D.2` (catch-all adaptation):
 - padj < 0.05 in 5/12 R clusters, split 3 up / 2 down.
 - `n_up = 3 ≥ 3` AND `n_down = 2 < 3` → unambiguous up → signature member, `direction = "up"`.
 
-Consider pathway `cyanorak.role:X.1` (hypothetical bidirectionally-responsive):
-- padj < 0.05 in 8/12 R clusters, split 4 up / 4 down.
-- `n_up = 4 ≥ 3` AND `n_down = 4 ≥ 3` → **bidirectional, excluded** from signature, logged to `signature_ambiguous.csv` with both counts.
+Consider pathway `cyanorak.role:X.1` (hypothetical bidirectionally-responsive even within late timepoints):
+- Across the 8 late R clusters: 4 up / 4 down.
+- `n_up = 4 ≥ 3` AND `n_down = 4 ≥ 3` → **bidirectional, excluded** from signature, logged to `signature_ambiguous.csv` with both counts. (Contrast: if "4 down" were all early clusters and the 4 late were all up, the temporal filter removes the down clusters and the pathway is unambiguous up.)
 
 Consider pathway `cyanorak.role:M.3` (some niche category):
 - padj < 0.05 in 2/12 R clusters, both "down".
