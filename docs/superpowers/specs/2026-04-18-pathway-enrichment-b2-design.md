@@ -343,5 +343,7 @@ Format for `api_coverage.md`:
 - Research methodology skill: `.claude/skills/research-methodology/SKILL.md` and references — rules for KG usage, artifacts, notebook, step protocol.
 - Pathway enrichment methodology: `docs://analysis/enrichment` (MCP resource) — Fisher ORA, BH per cluster, signed_score, clusterProfiler mapping.
 - Pathway enrichment tool: `docs://tools/pathway_enrichment` — parameters, response format, gotchas.
+- Runnable enrichment example: `docs://examples/pathway_enrichment.py` (MCP resource) — demonstrates `EnrichmentResult` accessors (`.explain()`, `.overlap_genes()`, `.to_compare_cluster_frame()`, `.generate_summary()`, `.to_envelope()`), custom-term2gene path via `fisher_ora` directly (no KG), and the full DE-wired pipeline pattern. Starting template for Step 2 `03_run_enrichment.py` and for `explore_*.py` drill-down scripts.
 - Ontology landscape tool: `docs://tools/ontology_landscape` — coverage × size_factor ranking, genome_coverage caveat.
 - Weissberg 2025 bioRxiv (DOI `10.1101/2025.11.24.690089`) — target publication.
+- [Skill v3 improvements proposed from B2 brainstorm](2026-04-18-research-methodology-v3-improvements-from-b2.md) — meta doc capturing content and process findings from this brainstorming session; input to future research-methodology skill revision.
