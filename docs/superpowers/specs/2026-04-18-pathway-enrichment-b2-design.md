@@ -125,7 +125,13 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 ### Step 4 — Scoring (T + R + PC + NC + CTX)
 
 **do:**
-- **Pre-registration before computing:** update `decisions.md` with expected outcomes per T condition (e.g., "axenic-RNA: high, in PC range; coculture-RNA: unknown — B1 showed transcriptional suppression, may score ≈ NC; coculture-protein: may retain signal per B1"). This section is finalized and staged *before* the scoring script runs, then included in Commit 1 alongside the script and outputs — so the pre-registration commit is a single atomic commit, not separate.
+- **Pre-registration before computing:** update `decisions.md` with expected outcomes per T condition, **including its `background_used` tag** — because scores across different backgrounds are not directly comparable and must be interpreted against matched-background controls. Example:
+  - "Weissberg axenic-RNA (`table_scope` bg, `all_detected_genes`): expected high, within PC range for the `table_scope` group. NC calibration from MED4 NC clusters with `table_scope` bg."
+  - "Weissberg axenic-protein (`organism` bg, `significant_only`): expected high but with magnitude caveat — `organism` background inflates `fold_enrichment` because N is larger. Compare only to PC / NC clusters also in the `organism` bg group. If no matched NC exists, interpretation is narrative-only."
+  - "Weissberg coculture-RNA (`table_scope` bg): unknown direction — B1 found transcriptional suppression of the N-response in coculture. May score ≈ NC."
+  - "Weissberg coculture-protein (`organism` bg if `significant_only`): may retain signal per B1's RNA/protein discordance finding."
+
+  This section is finalized and staged *before* the scoring script runs, then included in Commit 1 alongside the script and outputs — so the pre-registration commit is a single atomic commit, not separate.
 - `scripts/05_compute_scores.py`: for each (cluster, ontology) pair, compute Layer A score using formula M2 (β) with magnitude capping:
 
   ```
@@ -149,15 +155,16 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
   - **LOO on signature pathways:** per T cluster, recompute score leaving out each pathway in turn. Flag if any single-pathway exclusion flips the score sign or drops it >50%.
   - **LOO on R experiments:** re-derive signature excluding each R experiment in turn (re-filter `enrichment_all.csv`, not re-enrich), re-score T. Flag if removing any single R experiment flips a T condition's classification.
   - **Cross-ontology agreement:** for each T cluster, compare scores across all selected ontologies. Flag disagreement in direction or major magnitude discrepancy.
-- **NC noise floor (per ontology, per direction of T score):** for each ontology `o`, let `nc_scores_o` = the set of Layer A scores over all NC clusters × ontology `o`. Compute `nc_mean_o = mean(nc_scores_o)` and `nc_std_o = std(nc_scores_o, ddof=1)`. Thresholds:
-  - `score ≥ nc_mean_o + 2·nc_std_o` → **detectable signature** in ontology `o`.
-  - `|score − nc_mean_o| < 2·nc_std_o` → **no signal** (indistinguishable from NC).
-  - `score ≥ pc_mean_o − 2·pc_std_o` (where `pc_*_o` computed analogously over PC clusters) → **PC-like strength**.
+- **NC noise floor (per (ontology, background_used)):** scores from different backgrounds are not directly comparable (§8 risk 3), so calibration is computed within each `(ontology, background_used)` group. For each combination `(o, b)`, let `nc_scores_{o,b}` = Layer A scores over all NC clusters in ontology `o` with `background_used = b`. Compute `nc_mean_{o,b} = mean(nc_scores_{o,b})` and `nc_std_{o,b} = std(nc_scores_{o,b}, ddof=1)`. Thresholds (evaluated against the T cluster's own `(o, b)` group):
+  - `score ≥ nc_mean + 2·nc_std` → **detectable signature**.
+  - `|score − nc_mean| < 2·nc_std` → **no signal** (indistinguishable from NC).
+  - `score ≥ pc_mean − 2·pc_std` (where `pc_*` computed analogously within the matched `(o, b)`) → **PC-like strength**.
+  - If a T cluster's `(o, b)` group has no matched NC/PC clusters (e.g., NC exists only with `table_scope` bg but T is `organism` bg), calibration is unavailable — report the raw T score, document the calibration gap in `caveats.md`, and qualify the interpretation as narrative-only.
 - Stability-check flags are evaluated per T cluster:
   - **LOO pathway flip:** score changes sign (positive → negative or vice versa) OR `|new_score| < 0.5·|original_score|` when any single signature pathway is removed.
   - **LOO R experiment flip:** T cluster's threshold classification (detectable / no-signal / PC-like) changes when any single R experiment is excluded from signature derivation.
   - **Cross-ontology disagreement:** T cluster's threshold classification differs across ontologies (e.g., "PC-like" in CyanoRak but "no signal" in KEGG).
-- Write `results/scores_all.csv` (cluster × ontology score) and `results/score_summary.csv` (T condition × ontology: peak score, peak timepoint, noise-floor comparison, classification).
+- Write `results/scores_all.csv` (cluster × ontology score, including `background_used` column) and `results/score_summary.csv` (T condition × ontology × background_used: peak score, peak timepoint, noise-floor comparison against matched NC/PC group, classification, calibration availability flag).
 
 **show:** score summary table (T / R / PC / NC per ontology); NC calibration check; LOO results per T cluster; cross-ontology agreement.
 **explore:** per-T contribution decomposition — which signature pathways contributed most (top-5 by absolute magnitude)? Which disagreed (opposite sign from reference)? For top contributors, `result.explain(T_cluster, contributing_pathway)` — are the driving genes canonical markers? Leave-one-out results — any fragile scores?
