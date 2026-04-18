@@ -85,7 +85,11 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 - Each call: `pathway_enrichment(organism, experiment_ids=<group>, ontology, level, background=<as above>, direction="both", significant_only=True)` via the Python API.
 - Collect each `EnrichmentResult.results` DataFrame; concat with added `organism`, `ontology`, `background_used` (`"table_scope"` or `"organism"`) columns into `data/enrichment_all.csv`.
 - Pickle all `EnrichmentResult` objects as a single dict keyed by `(organism, ontology, background_used)` into `data/enrichment_results.pkl`. Downstream steps load once and access by key: `results[("MED4", "cyanorak_role", "table_scope")].explain(cluster, term_id)`. Keeps `.explain()` / `.overlap_genes()` accessors available across the mixed-background split.
-- **Pickle round-trip check before the full run.** Pickle and unpickle one `EnrichmentResult` (from a small single-call test) and verify `.explain()` still works on the loaded object. If round-trip fails (class-definition drift, non-picklable refs, etc.), fall back to the contingency in §8 risk 7 — don't discover this mid-Step 4.
+- **Pickle round-trip check before the full run.** Two stages:
+  1. Single-object round-trip: pickle and unpickle one `EnrichmentResult` (from a small single-call test) and verify `.explain()` works on the loaded object.
+  2. Dict round-trip: pickle and unpickle a dict with at least two `EnrichmentResult` values and verify `.explain()` works on instances retrieved from the loaded dict.
+
+  If either stage fails, fall back to the contingency in §8 risk 7 — don't discover this mid-Step 4.
 - Per-timepoint granularity preserved — cluster key = `experiment_id | timepoint | direction`. NaN timepoints appear as `"NA"` (`pathway_enrichment` tool handles this correctly).
 
 **show:** per-(org, ontology) cluster/test/significance counts, split by `background_used`; key-pathway signed_score across all clusters as a diagnostic heatmap (`exploration/qc/step2_key_pathway_heatmap.png` — not a publication figure).
@@ -278,7 +282,12 @@ Per skill Rule 2:
 
 6. **LOO on R experiments collapses the signature.** If removing a single R experiment drops signature size below 5 per ontology, the signature is really just that one experiment. Contingency: document, treat the analysis as descriptive rather than reference-anchored.
 
-7. **`EnrichmentResult` pickle round-trip fails.** The `EnrichmentResult` class may contain non-picklable references, or its class definition may drift between the pickle-write and pickle-read sessions, breaking `.explain()` on the loaded object. Contingency (in order of escalation): (i) retry with `dill` or `cloudpickle`; (ii) pickle only the constituent state that `.explain()` needs (`results` DataFrame, `inputs.gene_sets`, `inputs.background`, `term2gene`) and reconstruct an `EnrichmentResult` in Step 4; (iii) worst case, re-run `pathway_enrichment` inline in Step 4 when drill-down is needed. Detection: the round-trip check in Step 2 `do` catches this before the full enrichment run commits.
+7. **`EnrichmentResult` pickle round-trip fails.** Individual objects may pickle fine, but combining them in a dict and round-tripping can still fail — shared class refs drift across dict values, the aggregate may exceed size limits, or `.explain()` may break on the reconstructed instances even though the dict loads without error. Detection: the Step 2 `do` round-trip check verifies `.explain()` on at least one loaded instance both for an isolated pickle and for the full-dict pickle. Contingency, in escalation order:
+
+   1. **Split into multiple pickle files** — one per `(organism, ontology, background_used)` in `data/enrichment_pkl/` subdirectory. Downstream loads are a lazy dict keyed on filename lookup (`enrichment_pkl/MED4__cyanorak_role__table_scope.pkl`). Often the aggregate-dict problem is the only thing broken.
+   2. **Try `dill` or `cloudpickle`** for the individual files if standard pickle fails at the single-object level.
+   3. **Pickle only the constituent state** that `.explain()` needs (`results` DataFrame, `inputs.gene_sets`, `inputs.background`, `term2gene`, `cluster_metadata`) per `(organism, ontology, background_used)`. Reconstruct an `EnrichmentResult` in the Step 4 / exploration scripts by passing this state back into the constructor. Requires knowing the constructor signature — verify against `multiomics_explorer` source.
+   4. **Re-run `pathway_enrichment` inline** in the exploration/drilldown script when `.explain()` is needed. Slower but independent of pickle mechanics — the `enrichment_all.csv` already has the DataFrame-level results, so re-running is only needed for per-term gene overlap drilldown.
 
 ## 9. Artifact plan
 
