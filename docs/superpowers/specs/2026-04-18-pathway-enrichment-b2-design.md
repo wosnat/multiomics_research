@@ -45,6 +45,20 @@ Non-MED4 N-limitation experiments (CTX class) cannot contribute to the MED4 sign
 
 Six steps. Each step follows the research-methodology skill's do → show → explore → decide cycle; each produces two commits (Commit 1 after do; Commit 2 after decide). Three hard gates (step boundary, manifest currency, chat-capture) enforced per step-protocol.
 
+### 5.0 Step-protocol pace & enforcement
+
+Uniform per-step obligations — the implementation plan must materialize these as explicit tasks, not collapse them.
+
+- **Notebook entry per step.** Every step produces one notebook entry in `exploration/2026-04-18-notebook.md`. Built incrementally: QC section at `show`, chat-capture at `explore`, decision at `decide`. Committed as Commit 2 per step-protocol.
+- **Two commits per step.** Commit 1 at end of `do`: script + outputs + log + DATA_MANIFEST/RESULTS_MANIFEST updates. Commit 2 at end of `decide`: notebook entry (QC + chat-capture + decision). No exceptions.
+- **Per-step diagnostic log.** Each script writes to `logs/step<N>.log` per artifacts-guide §Log verbosity — summary statistics, diagnostic traces, key-pathway values, edge-case resolutions. "N pathways built" is not sufficient; the log must capture enough to verify the step without rerunning.
+- **Show phase is interactive and blocking.** Claude presents QC diagnostics in chat; the researcher inspects before `explore` begins. No skipping to the next step.
+- **Explore phase is interactive and blocking.** Researcher asks questions; answers produce chat-capture entries (Q → data → finding → impact) in the notebook. Blocked by Gate 3 (chat-capture) before `decide`.
+- **Exploration / drill-down scripts.** Ad-hoc scripts written during `explore` live in `scripts/explore_*.py` (per artifacts-guide). They are kept for reproducibility — never deleted once committed. Example: `scripts/explore_step2_key_pathway_genes.py` for `result.explain()` drill-down on R clusters. Each `explore_*.py` is committed alongside its diagnostic output and referenced from the notebook entry so the chat-capture remains verifiable.
+- **Redo path.** If a step is rerun, new commits (never amend), new notebook entry appended (never overwrite previous), per step-protocol §Redo path.
+
+This section operationalizes the step-protocol for THIS analysis; the plan inherits it and must allocate a concrete task for each obligation (e.g., "Task 7: Run Step 2 script and commit", "Task 8: Present Step 2 QC in chat, wait for researcher questions", "Task 9: Write explore scripts on request, commit chat-capture section, decide gate"). If the plan collapses show/explore/decide into a single "run and report" task, it violates this spec.
+
 ### Step 1a — Experiment discovery + classification
 
 **do:**
@@ -297,7 +311,8 @@ Files expected at completion:
 - `data/experiments_classified.csv`, `data/enrichment_all.csv`, `data/enrichment_results.pkl`, `data/reference_signature.csv`, `data/signature_dropped.csv`, `data/DATA_MANIFEST.md`.
 - `results/scores_all.csv`, `results/score_summary.csv`, `results/loo_signature.csv`, `results/loo_r_experiments.csv`, `results/fig1_heatmap.png`, `results/fig1_heatmap.pdf`, `results/fig2_trajectories.png`, `results/fig2_trajectories.pdf`, `results/RESULTS_MANIFEST.md`.
 - `exploration/2026-04-18-notebook.md`, `exploration/key_pathways.csv`, `exploration/qc/` (diagnostic figures per step).
-- `scripts/01_select_experiments.py`, `02_ontology_landscape.py`, `03_run_enrichment.py`, `04_derive_signature.py`, `05_compute_scores.py`, `06_make_figures.py`, plus any `explore_*.py` for ad-hoc investigation.
+- `scripts/01_select_experiments.py`, `02_ontology_landscape.py`, `03_run_enrichment.py`, `04_derive_signature.py`, `05_compute_scores.py`, `06_make_figures.py`. Plus `scripts/explore_*.py` — ad-hoc iteration scripts written during any step's `explore` phase (e.g., `explore_step2_key_pathway_genes.py` for `.explain()` drill-down, `explore_step3_fragile_signature.py` for per-experiment dominance checks). Committed with their outputs; never deleted; referenced from the relevant notebook entry.
+- `logs/step1a.log`, `logs/step1b.log`, `logs/step2.log`, `logs/step3.log`, `logs/step4.log`, `logs/step5.log` — per-step diagnostic logs (summary statistics, marker gene traces, edge-case resolutions) per artifacts-guide §Log verbosity.
 - Root: `README.md`, `methods.md`, `decisions.md`, `caveats.md`, `gaps_and_friction.md`, `api_coverage.md`, `references.md` (bibliographic — original data publications, methods references, tool/KG citations per artifacts-guide).
 - `superpowers/spec.md`, `superpowers/plan.md`, `superpowers/brainstorm-log.md`.
 
