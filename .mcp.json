@@ -5,7 +5,7 @@
       "args": [
         "run",
         "--directory",
-        "/home/osnat/github/multiomics_explorer",
+        "${MULTIOMICS_EXPLORER_DIR}", 
         "multiomics-kg-mcp"
       ]
     }

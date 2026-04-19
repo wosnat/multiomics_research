@@ -955,7 +955,7 @@ wheels = [
 [[package]]
 name = "multiomics-explorer"
 version = "0.1.0"
-source = { directory = "../multiomics_explorer_release" }
+source = { editable = "../multiomics_explorer" }
 dependencies = [
     { name = "cyver" },
     { name = "fastmcp" },
@@ -967,6 +967,8 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "pyyaml" },
     { name = "rich" },
+    { name = "scipy" },
+    { name = "statsmodels" },
     { name = "typer" },
 ]
 
@@ -982,6 +984,8 @@ requires-dist = [
     { name = "python-dotenv", specifier = ">=1.0" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "rich", specifier = ">=13.0" },
+    { name = "scipy", specifier = ">=1.11" },
+    { name = "statsmodels", specifier = ">=0.14" },
     { name = "typer", specifier = ">=0.12.0" },
 ]
 
@@ -1014,7 +1018,7 @@ analysis = [
 [package.metadata]
 requires-dist = [
     { name = "matplotlib", marker = "extra == 'analysis'", specifier = ">=3.7" },
-    { name = "multiomics-explorer", marker = "extra == 'analysis'", directory = "../multiomics_explorer_release" },
+    { name = "multiomics-explorer", marker = "extra == 'analysis'", editable = "../multiomics_explorer" },
     { name = "pandas", marker = "extra == 'analysis'", specifier = ">=2.0" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "scipy", marker = "extra == 'analysis'", specifier = ">=1.11" },
