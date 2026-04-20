@@ -171,6 +171,143 @@ Also saved as user-memory feedback (`feedback_gene_count_per_timepoint.md`) so f
 
 ---
 
+### 2026-04-20 — Step 2 decide: signed_score cap needs explicit methodology-layer reasoning (candidate statistical-rigor.md addition)
+
+**What happened.** Spec §5 Step 4 M2 set `SCORE_CAP = 10` for Layer A scoring with the rationale "corresponds to padj = 1e-10; beyond this, magnitude differences no longer carry useful information." That's correct reasoning but compressed into a one-liner; the researcher pushed back during Step 2 decide with "is 10 the right cutoff?" which surfaced the deeper question: *at what point does signed_score stop measuring biology and start measuring measurement precision?*
+
+Empirical analysis of this dataset (225 significant rows, `explore_step2_score_distribution.py`):
+
+| \|signed_score\| regime | padj range | interpretation |
+|---|---|---|
+| 0–3 | > 1e-3 | below sig threshold (excluded by padj<0.05) |
+| 3–10 | 1e-3 to 1e-10 | **biologically meaningful** — cluster differences reflect real coverage/fold |
+| 10–15 | 1e-10 to 1e-15 | semi-saturated — differences mix biology and detection precision |
+| 15–25 | 1e-15 to 1e-25 | saturation — padj depends on integer overlap count; ±1 gene shifts padj by many orders of magnitude |
+| 25+ | < 1e-25 | statistical ceiling — differences are detection-threshold artifacts |
+
+~15% of this dataset's significant hits exceed \|s\|=10; most are ribosome-DOWN at R/CTX clusters at \|s\|=23–33.
+
+**Root cause (methodology-layer gap).** The spec presented `SCORE_CAP = 10` as a single value with one purpose. In practice, capping has two purposes:
+- **Scoring cap** (for mean-based Layer A): prevents single-pathway domination. Principled choice ≈ "end of biologically-meaningful regime" ≈ \|s\|=10.
+- **Visualization cap** (for heatmap colormap): spreads color dynamic range over the biologically-interesting band. For this dataset, ±5 keeps the 0–5 region visually resolved; anything above is flagged with saturation stars.
+
+Collapsing both into one cap loses information on the viz side. Using the same number for both is a coincidence of this dataset, not a principle.
+
+**Proposed v3 skill change (candidate for statistical-rigor.md).**
+
+> **When scoring with `-log10(padj)`-based metrics, distinguish scoring-layer caps from visualization-layer caps explicitly.**
+>
+> - **Scoring cap:** set at the boundary between the "biological dynamic range" and the "statistical saturation regime." For Fisher ORA on moderate-sized pathway sets (10s to 100s of genes), this is typically \|s\| = 10 (padj = 1e-10). Check empirically: plot `|signed_score|` quantiles on significant rows; the knee of the distribution (~p90–p95) is often where saturation kicks in.
+> - **Visualization cap:** set lower than the scoring cap to preserve color resolution in the biologically-meaningful band. Combine with saturation markers (`*`/`**`/`***` in cells, or alternate visual annotation) to preserve the "this cell is beyond cap" info that readers need for interpretation.
+> - **Document both caps in methods.md** with the empirical distribution that motivated them, not as inherited spec defaults.
+
+**Impact on B2.** Scoring cap stays at spec's ±10 (principled). Visualization cap for Step 2 QC and Step 5 Fig 1 = ±5 + saturation stars. Documented in Step 2 decide notebook entry.
+
+### 2026-04-20 — Step 2 decide: within-ontology pathway redundancy is not covered by LOO (candidate statistical-rigor.md + spec-revision)
+
+**What happened.** Step 2 explore drill-down on J.1 ATP synthase / ko00190 Ox phos / ko00195 Photosynthesis revealed that all three share the same 9 MED4 atp genes (PMM1438–PMM1457, atpA-I operon) as their enriched subset. If all three land in the Step 3 signature, the same biological event (atp operon coordinately downregulated) gets counted three times in Layer A scoring.
+
+Checking the spec: LOO stability (§5 Step 4 M3) detects **fragility** (single-pathway or single-experiment dominance). It does NOT detect **redundancy** (correlated gene overlap inflating confidence):
+- Remove J.1 alone → ko00190 + ko00195 still contribute atp signal. Score barely moves.
+- LOO declares the score "robust," but the robustness is illusory — three pathways voting for the same 9 genes.
+
+LOO and redundancy are orthogonal failure modes.
+
+**Root cause.** Fisher ORA tests each (cluster × term) independently. When pathway sets overlap in gene membership, their enrichment p-values are not statistically independent — but the `pathway_enrichment` output doesn't surface this, and the signature derivation rule (`n ≥ 3 same-direction clusters`) doesn't audit it either. Within-ontology overlap is more acute than cross-ontology (per spec, `score_A` is computed per-ontology, so cross-ontology overlap is limited to inflating the cross-ontology agreement stability check).
+
+**Per-ontology concrete concerns from this dataset:**
+- **Within-KEGG:** `ko00190 Oxphos (33 genes) ∩ ko00195 Photosynthesis (51 genes) = 9 atp genes.` If both enter signature, atp signal is 2× counted.
+- **Within-cyanorak:** J.1/J.2/J.7/J.8/K.2 are hierarchically disjoint L1 categories — likely gene-disjoint, but unverified. Audit during Step 3 explore.
+
+**Proposed v3 skill change (candidate for statistical-rigor.md, new stability-check spec section).**
+
+> **Stability check M4 — Pathway-gene-overlap audit (within-ontology).**
+>
+> For each ontology's signature pathways, compute pairwise `Jaccard(pathway_i.gene_members, pathway_j.gene_members)` and detect strict subset relations. Flag pairs with Jaccard > 0.5 or subset relations as redundancy candidates. Report as heatmap + flag list.
+>
+> Resolution options (researcher-chosen per analysis):
+> - **(A) Audit-only** — report the overlaps as an M4 stability observation, keep all pathways in the signature, document redundancy in caveats.md.
+> - **(B) Post-filter in Step 3** — within each overlap cluster (terms sharing >threshold genes), keep only the most-enriched term in the signature.
+> - **(C) De-weight during scoring** — scale each pathway's contribution to Layer A by `1 - max_jaccard_with_higher_enriched_signature_term`, so redundant contributions are dampened.
+>
+> Default recommendation: (A) unless redundancy is extreme (Jaccard > 0.8 or strict subset).
+>
+> **Why within-ontology:** per spec §5 Step 4, Layer A score is per-ontology; cross-ontology overlap inflates the cross-ontology-agreement stability check but not the score itself. Within-ontology overlap inflates the score directly.
+
+**Impact on B2.** Added new Step 3 explore sub-task before Task 8 — compute pairwise Jaccard on signature pathways per ontology; decide A/B/C based on what the audit surfaces.
+
+### 2026-04-20 — Step 2 decide: a priori anchor lists stay locked through QC; discovered-strong pathways enter via derivation (candidate research-notebook.md / step-protocol.md addition)
+
+**What happened.** During Step 2 explore, discovered-strong pathways emerged in the R clusters (J.1 ATP synthase `n=6/12 down`; ko00190 Ox phos `n=6/12 down`; ko00710 Calvin cycle `n=5/12 down`; D.1 Adaptation `n=3/12 up`). My first instinct was to amend `key_pathways.csv` to include them, since they're clearly canonical N-limit signatures ("ATP synthase should have been on the list!"). The researcher correctly pushed back: adding pathways to the a priori list after observing them in the data is fitting the anchor to the observation — confirmation bias on the very validation step that's supposed to be independent of the outcome.
+
+**Root cause (methodology-layer insight).** The spec distinguishes two lists with different epistemic roles:
+- **key_pathways.csv** (locked at Step 1b): *a priori* prediction based on textbook biology. Used as Step 2 QC sanity check — "did the signal behave at known N-response anchors?" Failure here falsifies the ontology/signal choice.
+- **reference_signature.csv** (derived at Step 3): *a posteriori* discovery from R cluster enrichment data. Used to score T clusters.
+
+Mixing these is a category error. Adding J.1 to the a priori list after seeing it hit means "the signal is validated because the pathways I added after seeing them work also work." Tautology. Backporting would also weaken the 3 zero-hit AA-biosynthesis anchors' falsification value (decision #3) — those are the anchors that DIDN'T behave as predicted, and their presence in the key panel is informative *because* they falsify the prediction.
+
+**Proposed v3 skill change (candidate for research-notebook.md or step-protocol.md Redo path).**
+
+> **Once an a priori list (key-pathway panel, expected marker genes, hypothesized enrichment directions) is committed to disk in the pre-data step, it is locked through the analysis. Discoveries from the data enter via the designated a posteriori mechanism (signature derivation, discovered-strong panel), not by amending the a priori list.**
+>
+> Exceptions:
+> - If the a priori list contains a **data error** (wrong term_id, wrong organism mapping, typo), correct it in a redo-path commit with an explicit "correction, not amendment" annotation in the notebook entry.
+> - If the a priori list contains a **falsified prediction** (observed no signal in either direction, contrary to the expected direction), the prior stays but gets a caveats.md entry documenting the falsification. Option (c) in B2 decision #3.
+>
+> The derived signature, heatmap row selection, or any other a posteriori artifact is the right place for discovered-strong pathways to appear. The key-pathway panel is not.
+
+**Impact on B2.** J.1, ko00190, ko00710, D.1, ko01200 stay out of key_pathways.csv. They enter Step 3 signature via the `n ≥ 3` core rule automatically. The v2 heatmap (decision #2) displays them in a second block ("discovered") alongside the a priori key rows, with bold font distinguishing the two epistemic sources — that's the right place for the union view. Key panel itself unchanged.
+
+### 2026-04-20 — Step 2 decide: NC-class calibration assumes NC is noise, but NC clusters can carry real biology that contaminates the noise floor (candidate statistical-rigor.md + spec-revision)
+
+**What happened.** Step 2 explore found that 4 of the 225 significant enrichment rows come from NC clusters — biologically interpretable signals, not noise:
+- Steglich 2006 high-light 45min (NC) → photosynthesis-DOWN at padj 3e-3 (cyanorak J.7 PSI), 3e-2 (kegg ko00195).
+- Weissberg 2025 coculture day 11 (NC, no explicit N-starvation) → N-metabolism-UP at padj 8.6e-5 (cyanorak E.4), 1.6e-5 (kegg ko00910). Real coculture-induced N-scavenging biology.
+
+These "negative control" clusters carry real signal on N-limit signature markers. Per spec §5 Step 4 M3, the NC noise floor is computed as `nc_mean_{o,b} = mean(nc_scores_{o,b})` and `nc_std_{o,b}` — i.e., whatever NC clusters happen to be in each `(ontology, background_used)` group. When those clusters carry real biology overlapping with signature anchors, the mean and SD inflate; T-score classification thresholds (`nc_mean + 2σ`) rise accordingly; real-but-weak T signature responses get misclassified as "no signal."
+
+**Root cause (methodology-layer gap).** The spec's NC definition is "MED4 experiments unrelated to N (light, phage, salt, dark, glucose)" — a class label applied at experiment-selection time (Step 1a). But the KG contains heterogeneous NC candidates, and "unrelated to N at the experimental-design level" does not guarantee "unrelated to N at the transcriptional/proteomic signature level." Several canonical stress responses (HL-stress shutting down photosynthesis; coculture-enabled N-scavenging) overlap with the signature axes the analysis is calibrating against.
+
+The spec treats NC as a statistical fact ("NC is the noise floor") rather than a testable hypothesis ("NC *should be* the noise floor, verified by no significant key-pathway enrichment"). Step 2 QC surfaces the violation, but the spec has no built-in mechanism to adjust.
+
+**Proposed v3 skill change (candidate for statistical-rigor.md, spec-language refinement).**
+
+> **NC calibration sanity check + exclusion rule.** Before computing `nc_mean` and `nc_std` per `(ontology, background_used)` group:
+>
+> 1. Identify NC clusters with `padj < 1e-3` significant enrichment on any a priori key-pathway anchor for that ontology.
+> 2. Exclude those clusters from NC calibration (log the exclusion with cluster ID, pathway, and padj).
+> 3. If exclusion reduces a calibration group below 3 clusters, flag the group as "weakly calibrated" in caveats.md; threshold-based classifications should be read as narrative indicators rather than hypothesis-test conclusions.
+>
+> The padj<1e-3 threshold (3 orders of magnitude below standard significance) is deliberately stricter than 0.05. At that threshold, an NC cluster's enrichment is implausibly attributable to sampling noise — retaining it in the calibration biases the threshold. Borderline hits (padj 1e-3 to 0.05) stay in NC on the principle that true noise floors include noise-adjacent fluctuations. The threshold is a design choice, not a theorem — can be tuned per dataset, but should be committed at the step-boundary, not tuned post-hoc after seeing T scores.
+
+**Complementary v3 suggestion (for recipe skill or step-protocol).**
+
+> **NC is a hypothesis, not a fact.** When selecting NC candidates in Step 1a, list each proposed NC experiment with "expected signature behavior" — i.e., what biology might leak across the class boundary and inflate the calibration? (e.g., "Steglich high-light may show PS-down contamination of the PS-anchor calibration"; "Weissberg coculture-replete-N may show coculture-induced N-scavenging contamination of the N-metab anchor"). Treat NC class membership as provisional until Step 2 QC confirms or refutes via the key-pathway enrichment check.
+
+**Impact on B2.** Decision #4 applied option (b): exclude Weissberg coculture d11 up cluster from `(cyanorak_role, table_scope)` and `(kegg, table_scope)` NC calibration groups (padj<1e-3 criterion triggered). Steglich high-light 45min down cluster retained (hits at padj 3e-3 and 3e-2, above the threshold). `(*, organism)` NC groups have only 2 clusters each — flagged as weakly calibrated in caveats.md C5. Implementation requirement surfaces as a Task 10 followup (see plan).
+
+### 2026-04-20 — Step 2 decide: heatmap-visualization conventions for pathway-enrichment QC (candidate artifacts.md addition)
+
+**What happened.** The original Step 2 QC heatmap ([step2_key_pathway_heatmap.png](step2_key_pathway_heatmap.png), committed earlier) was unreadable at full zoom — 11 rows × 70 columns crammed into a single axis with tiny labels. Iterated through v2 design in Step 2 decide:
+
+1. **Row selection = a priori key panel ∪ a posteriori discovered-strong (`n_sig ≥ 3` in signature-eligible R clusters).** Bold font for key, regular for discovered — separates epistemic sources visually.
+2. **Columns grouped by class** (R | PC | CTX | NC) with vertical dividers and class labels above. Within each class, ordered by experiment + timepoint.
+3. **T panel separate (stacked below non-T).** Different epistemic role — T is scored *against* the signature derived from R/PC. Keeping T visually isolated makes the "predict from R, validate on T" structure readable.
+4. **T panel split by biological contrast** (axenic vs coculture for B2) rather than by omics type. The primary scientific question drives the divider; the lab-instrument type is secondary.
+5. **Display cap ±5 (not ±10) with saturation stars** (`*`/`**`/`***` for \|s\| ≥ 5/10/20) — spreads color resolution over biologically-meaningful 0–5 band; stars preserve "beyond cap by how much" info.
+6. **Uniform cell size across panels** via explicit axis positioning in figure coordinates — short panels don't stretch, wide panels don't compress.
+7. **Column labels = `firstauthor_6chars | tp_short`** (non-T) or `| omics | tp` (T). Author truncation and timepoint abbreviation (`day 14 → 14d`, `steady state → ss`) keeps 70 columns readable.
+
+Collective artifact: [step2_heatmap_cyanorak_role.png](step2_heatmap_cyanorak_role.png), [step2_heatmap_kegg.png](step2_heatmap_kegg.png), via [explore_step2_heatmap_v2.py](../scripts/explore_step2_heatmap_v2.py).
+
+**Proposed v3 skill change (candidate for artifacts.md, heatmap-conventions section).**
+
+A recipe skill (`recipes/pathway-enrichment-qc-heatmap`?) or an artifacts.md subsection could capture these conventions as a reusable pattern. Low priority — practical enough to apply in future analyses without a formal skill, but consolidating conventions would reduce design-iteration overhead.
+
+**Impact on B2.** Step 2 QC artifact is now publication-adjacent quality. Step 5 Fig 1 will reuse the same design with minor refinements (extra pathways from the final signature, maybe per-panel independent normalization).
+
+---
+
 ## Process retrospective
 
 _(populated at Task 14)_

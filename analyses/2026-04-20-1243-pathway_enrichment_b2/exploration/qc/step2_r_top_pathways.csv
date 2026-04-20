@@ -1,0 +1,27 @@
+ontology,term_id,term_name,direction,n_clusters,min_padj,mean_abs_signed,exps
+cyanorak_role,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase,down,6,4.007774013451114e-10,7.3741754582009085,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko00190,Oxidative phosphorylation,down,6,0.001195685002989,2.34818422005919,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko03010,Ribosome,down,5,6.167194788640151e-34,27.135606360199905,10.1038/ismej.2017.88|10.1038/msb4100087
+cyanorak_role,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification,down,5,1.6073185118771207e-30,24.363888373299385,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko00195,Photosynthesis,down,5,1.9854899181542673e-18,14.148287598956921,10.1038/ismej.2017.88|10.1038/msb4100087
+cyanorak_role,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I,down,5,2.0604696966934914e-09,6.194931165263729,10.1038/ismej.2017.88|10.1038/msb4100087
+cyanorak_role,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation,down,5,1.5364432441182434e-06,4.62584578581669,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko00710,Carbon fixation by Calvin cycle,down,5,7.540789333680982e-06,4.182247251079528,10.1038/ismej.2017.88|10.1038/msb4100087
+cyanorak_role,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism,up,5,4.002739020108686e-05,3.8207176659028805,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko00910,Nitrogen metabolism,up,4,0.0006634008274198,2.3857959441592533,10.1038/msb4100087
+cyanorak_role,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II,down,4,0.0018977332604337,2.1598813876189356,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko01200,Carbon metabolism,down,4,0.0010671694476701,1.9283250484579357,10.1038/ismej.2017.88|10.1038/msb4100087
+cyanorak_role,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification,up,3,3.0209132896370344e-06,3.902583318219191,10.1038/ismej.2017.88|10.1038/msb4100087
+cyanorak_role,cyanorak.role:R.2,Other > Conserved hypothetical proteins,up,2,0.0005204670157725,3.077298290724307,10.1038/msb4100087
+kegg,kegg.pathway:ko00061,Fatty acid biosynthesis,down,2,0.0010671694476701,2.582764837433235,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko01212,Fatty acid metabolism,down,2,0.001338860850646,2.467384526439268,10.1038/ismej.2017.88|10.1038/msb4100087
+kegg,kegg.pathway:ko05152,Tuberculosis,down,2,0.0033067706723229,2.430920134898847,10.1038/msb4100087
+cyanorak_role,cyanorak.role:L.3,Protein fate > Protein folding and stabilization,down,2,0.0159093995967392,1.5513248003848692,10.1038/msb4100087
+cyanorak_role,cyanorak.role:D.4,Cellular processes > Chaperones,down,2,0.027100579590235,1.4356624059286047,10.1038/msb4100087
+kegg,kegg.pathway:ko00640,Propanoate metabolism,down,1,0.0082937404229392,2.081249561285629,10.1038/msb4100087
+kegg,kegg.pathway:ko00010,Glycolysis / Gluconeogenesis,down,1,0.0099094112049071,2.0039521495567545,10.1038/msb4100087
+kegg,kegg.pathway:ko00190,Oxidative phosphorylation,up,1,0.020413597760503,1.6900804470312798,10.1038/msb4100087
+cyanorak_role,cyanorak.role:H.2,"Fatty acid, phospholipid and sterol metabolism > Fatty acid metabolism",down,1,0.0281677677777975,1.5502475683566754,10.1038/ismej.2017.88
+cyanorak_role,cyanorak.role:G.5,Energy metabolism > Pentose phosphate pathway,down,1,0.0282442489415237,1.5490699693393597,10.1038/msb4100087
+kegg,kegg.pathway:ko00720,Other carbon fixation pathways,down,1,0.0444136846259617,1.352483195609409,10.1038/ismej.2017.88
+kegg,kegg.pathway:ko01120,Microbial metabolism in diverse environments,down,1,0.0462391490495104,1.3349901669426862,10.1038/msb4100087

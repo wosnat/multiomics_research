@@ -354,4 +354,255 @@ Fresh session picks up here: read this entry, read the CSVs listed above, resolv
 
 ---
 
+## 2026-04-20 20:30 — Step 2 decide: 4 decisions resolved, extended explore phase in fresh session
+
+Fresh session resumed from commit `02ef861`. Read handover memory, notebook through interim Step 2 entry, `gaps_and_friction.md`, `ontology_selection.md`, and all `exploration/qc/step2_rkey_*.csv` artifacts from files (not memory). Extended the explore phase before committing decide.
+
+### Extended exploration — scripts produced during this session
+
+All in `scripts/`, outputs in `exploration/qc/`:
+
+| script | output | purpose |
+|---|---|---|
+| [explore_step2_cluster_totals.py](../scripts/explore_step2_cluster_totals.py) | [step2_cluster_totals.csv](qc/step2_cluster_totals.csv) | Total significant hits per cluster across full ontology (disambiguates "N sig" in by_expTp which was counted over 11 key pathways only) |
+| [explore_step2_r_top_pathways.py](../scripts/explore_step2_r_top_pathways.py) | [step2_r_top_pathways.csv](qc/step2_r_top_pathways.csv) | Main enriched pathways in R clusters at `timepoint_hours > 3` — preview of Step 3 signature eligibility |
+| [explore_step2_probe_schema.py](../scripts/explore_step2_probe_schema.py) | stdout | One-off: probe EnrichmentResult public API (confirmed `term2gene` is a DataFrame, `overlap_genes` returns GeneRef objects) |
+| [explore_step2_atpsynth_nmetab.py](../scripts/explore_step2_atpsynth_nmetab.py) | stdout | `.explain()` + `overlap_genes` drill-down on J.1 ATP synthase, ko00190 Ox phos, E.4 N-metab; cross-pathway gene-set Jaccards |
+| [explore_step2_score_distribution.py](../scripts/explore_step2_score_distribution.py) | [step2_score_distribution.png](qc/step2_score_distribution.png) | Distribution of signed_score across all 11,239 tests — informs SCORE_CAP choice |
+| [explore_step2_heatmap_v2.py](../scripts/explore_step2_heatmap_v2.py) | [step2_heatmap_cyanorak_role.png](qc/step2_heatmap_cyanorak_role.png), [step2_heatmap_kegg.png](qc/step2_heatmap_kegg.png) | Publication-style two-panel heatmap per ontology, class-grouped columns, key ∪ discovered rows |
+
+### Chat exploration (Q → data → finding)
+
+**Q1: "Tolonen 3h up → 2 sig, 2 agree" — only 2 significant terms in all enrichment, or something else?**
+
+Data: `step2_cluster_totals.csv` — Tolonen 3h up has 2 sig cyanorak + 1 sig kegg = **3 total significant** ontology terms across 166 tested (69 cyanorak + 97 kegg). The "2" in the rkey summary referred to 2 of the 11 key pathways specifically.
+Finding: [KG] the by_expTp summary's `n_significant` column was scoped to the 11-pathway key panel, not whole-ontology significance. Both numbers are real; different denominators.
+Impact: clarified semantics in the Step 2 decide narrative; no change to data.
+
+**Q2: What are the main enriched pathways in R clusters at `timepoint_hours > 3`?**
+
+Data: `step2_r_top_pathways.csv`. Top pathways by n_clusters in 12 signature-eligible R clusters (2 exps):
+
+cyanorak_role:
+| term | dir | n/12 | mean \|signed\| | exps | in key panel? |
+|---|---|---:|---:|---|---|
+| **J.1 ATP synthase** | down | **6** | 7.4 | both | **no** |
+| K.2 Ribosomes | down | 5 | 24.4 | both | yes |
+| J.7 PSI | down | 5 | 6.2 | both | yes |
+| J.2 CO2 fixation | down | 5 | 4.6 | both | yes |
+| E.4 N metabolism | up | 5 | 3.8 | both | yes |
+| J.8 PSII | down | 4 | 2.2 | both | yes |
+| D.1 Adaptation/acclimation | up | 3 | 3.9 | both | no (catch-all) |
+
+kegg:
+| term | dir | n/12 | mean \|signed\| | exps | in key panel? |
+|---|---|---:|---:|---|---|
+| **ko00190 Oxidative phosphorylation** | down | **6** | 2.3 | both | **no** |
+| ko03010 Ribosome | down | 5 | 27.1 | both | yes |
+| ko00195 Photosynthesis | down | 5 | 14.1 | both | yes |
+| **ko00710 Calvin cycle** | down | 5 | 4.2 | both | **no** |
+| ko00910 N metabolism | up | 4 | 2.4 | Tolonen only | yes |
+| ko01200 Carbon metabolism | down | 4 | 1.9 | both | no |
+
+Finding: [KG] 5 pathways beyond the a priori key panel reach `n ≥ 3` same-direction cluster support: J.1, D.1 (cyanorak); ko00190, ko00710, ko01200 (kegg). They will likely enter the Step 3 signature automatically. One Tolonen-only weakness: kegg `ko00910` N-metab (Read's 6-gene kegg N-metab doesn't survive padj<0.05 but its 28-gene cyanorak E.4 N-metab does).
+Impact: [interpretation] discovered-strong pathways are captured by the Step 3 derivation mechanism, not by amending the a priori key panel — see decision #3 discussion.
+
+**Q3: `.explain()` drill-down on J.1 ATP synthase, ko00190 Ox phos, E.4 N-metab. What genes drive them? Do they share genes?**
+
+Data: `explore_step2_atpsynth_nmetab.py` stdout. Tolonen 12h-down cluster:
+
+- **J.1 ATP synthase** (10/10 MED4 atp genes): atpA-I operon, log2fc −2.2 to −4.7, padj 1.68e-9, fold 10.48. **Every atp gene coordinately down.**
+- **ko00190 Ox phos** (11/33 genes): same 9 atp genes + ppa (pyrophosphatase). MED4 ox phos's 11 ndh* (NADH dehydrogenase) and 4 cta* (cyt c oxidase) **don't hit at 12h down** — ko00190 significance is entirely driven by atp operon.
+- **E.4 N-metab** (12/28 genes, 12h up cluster): cynA/B/D/S (cyanate), glnA (GS), ntcA (N-response TF), glnB (PII), ureA-G (urea catabolism), urtA-D (urea ABC transporter). Canonical N-scavenging cassette.
+
+Cross-pathway gene-set overlap (MED4 membership, not cluster-specific):
+
+| pair | overlap | meaning |
+|---|---|---|
+| J.1 ∩ E.4 | ∅ | N-metab disjoint from ATP synthase — independent evidence |
+| J.1 ⊂ ko00190 | 9 atp genes | ATP synthase is the enriched subset of oxphos |
+| J.1 ⊂ ko00195 | 9 atp genes | ATP synthase also in KEGG Photosynthesis map |
+| ko00190 ∩ ko00195 | 9 atp genes (only) | oxphos and photosynthesis share ONLY the atp operon |
+| E.4 ∩ ko00195 | ∅ | N-metab independent of photosynthesis machinery |
+
+Finding: [KG] double-counting risk in the Step 3 signature if J.1, ko00190, ko00195 all enter — same 9 atp genes count three times in Layer A scoring. **Per-ontology scoring** (spec §5 Step 4) mitigates cross-ontology overlap, but within-kegg overlap (ko00190 ∩ ko00195) is real.
+Impact: added new Step 3 explore task to audit within-ontology pairwise Jaccard on signature pathways. Decision between "M4 audit in Step 4" and "post-filter in Step 3" deferred to Step 3 explore (see Decisions below).
+
+**Q4: Is redundancy covered by LOO, or separate?**
+
+Data: spec §5 Step 4 M3 (LOO-pathway, LOO-R-experiment, cross-ontology agreement).
+Finding: [interpretation] LOO catches **fragility** (single-pathway or single-experiment dominance). Redundancy catches **inflation** by correlated gene overlap. Orthogonal failure modes. If J.1, ko00190, ko00195 all vote "atp down" in a T cluster, LOO shows the score is robust but the robustness is illusory — three pathways agreeing because they share 9 genes, not because three independent biological events confirm each other.
+Impact: within-ontology overlap is a separate check, added as Step 3 explore task (see skill-friction note at end).
+
+**Q5: Should we amend the key_pathways.csv list based on discovered-strong pathways (J.1 ATP synthase, ko00190 Ox phos, ko00710 Calvin cycle)?**
+
+Data: key_pathways.csv was locked at Step 1b as an *a priori* biological anchor list for Step 2 QC — "did the signal behave at canonical N-response markers?"
+Finding: [interpretation] adding discovered-strong pathways after seeing them hit would fit the anchor to the data — confirmation bias on the validation step. The signature (Step 3 derivation) is the right mechanism to surface discovered pathways. Keep key_pathways.csv stable.
+Impact: decision — do NOT add J.1, ko00190, ko00710. They'll enter via Step 3 `n_down ≥ 3` rule. Logged as skill-friction meta-pattern (see below).
+
+**Q6: `signed_score = -log10(padj)` — is the difference between 5→10 and 10→20 meaningful, or just noise?**
+
+Data: [step2_score_distribution.png](qc/step2_score_distribution.png) — |signed_score| quantiles on significant rows (N=225):
+
+| quantile | \|s\| |
+|---:|---:|
+| p50 | 2.92 |
+| p75 | 5.43 |
+| p90 | 15.70 |
+| p95 | 24.13 |
+| p99 | 31.49 |
+| max | 33.21 |
+
+15% of significant hits exceed \|s\| = 10. Top hits all ribosome-DOWN (ko03010 / K.2) at R or CTX clusters, |s|=23–33.
+
+Finding: [KG + interpretation] `signed_score` is log-scale evidence strength. Three regimes:
+- **0–3**: below threshold (padj > 1e-3) — noise; excluded by padj<0.05 anyway.
+- **3–10**: biologically meaningful (padj 1e-3 to 1e-10) — cluster-to-cluster differences reflect real coverage/fold differences.
+- **10+**: statistical saturation. In Fisher ORA, at this scale padj depends on integer overlap count; one additional gene hit can drop padj by many orders of magnitude. Differences are measurement-precision artifacts, not biology.
+
+Example: ribosome at Cluster A: 50/54 ribosomal proteins hit → padj 1e-25; Cluster B: 54/54 → padj 1e-33. Same biology ("ribosome shut down"), 8-point |s| difference = 4-gene detection noise.
+
+Impact: [interpretation] spec's ±10 SCORE_CAP is principled. The tail |s|>10 is statistical saturation, not biology. Capping prevents single-pathway mean-domination of Layer A scores without losing interpretive signal.
+Decision: **keep spec ±10 for Layer A scoring**. Use **±5 display cap** for visualization (full color range on biologically-meaningful 0–5 band) + saturation stars (`*` ≥5, `**` ≥10, `***` ≥20) to preserve "how much beyond cap" info.
+
+**Q7: Axenic vs coculture in T panel — is this the biologically meaningful contrast?**
+
+Data: [step2_heatmap_cyanorak_role.png](qc/step2_heatmap_cyanorak_role.png) + [step2_heatmap_kegg.png](qc/step2_heatmap_kegg.png), T panel split axenic | coculture.
+Finding: [KG + interpretation] coculture T clusters show STRONGER N-limitation signature than axenic:
+- Coculture Prot day 31 is the loudest T cluster — ko03010 Ribosome `***` (|s|=23.6, padj 2.3e-24), ko00910 N-metab `*` red.
+- Coculture band on kegg N-metab red across days 14/18/31/60+89; axenic band faint/absent.
+- Cyanorak E.4 N-metab strongest in coculture days 18+31+60+89 (Prot).
+
+Against the memory-held biological expectation: "MED4 dies axenically in ~2 weeks, survives 90 days in coculture." Naively, axenic (dying under N-limit) should show stronger N-limit signature. But data shows the opposite: coculture has the stronger and cleaner signature.
+
+Impact: [interpretation] **hypothesis worth pursuing through Step 4–5**: the N-limit response program in MED4 is *actively engaged* by coculture — axenic cells shut down generally without engaging specific N-scavenging circuitry before dying, whereas coculture enables sustained engagement of the N-response. The paper-worthy story, if it survives Step 3+4 scoring. Documented here for the methodology→interpretation trail.
+
+### Decisions resolved (all 4)
+
+**Decision #1 — Temporal filter boundary.** Tighten spec `timepoint_hours < 3` to `> 3` (exclude 3h from signature derivation). Researcher clarified original intent was to drop all early TPs; the strict `<` wording in spec §5 Step 3 was imprecise. Signature-eligible R clusters: 12 (down from 16 under `< 3`). Core rule `n ≥ 3` remains comfortable. Read 3h-up × J.2 CO2 fixation disagreement now excluded cleanly.
+- Spec refinement to apply in Task 7: `TIMEPOINT_HOURS_CUTOFF = 3.0` with keep-mask `hours > cutoff` (not `>=`).
+
+**Decision #2 — Heatmap re-render.** Build publication-quality v2 heatmap per ontology with:
+- Rows: key panel ∪ discovered-strong pathways (`n_sig ≥ 3` in R clusters at `hours > 3`).
+- Columns: all 70 clusters per ontology, grouped by class (R | PC | CTX | NC) with dividers.
+- T on second row panel below, split axenic | coculture (biological contrast, not Prot/RNA).
+- Display cap ±5 + saturation stars (`*`/`**`/`***`).
+- Author names truncated to 6 chars (Weissb, Tolone, Read, Aharon, Moreno, Stegli).
+- Uniform cell sizes across both panels via explicit axis positioning.
+- Inline legend at top of figure spelling out the conventions (see legend block below).
+
+Artifacts: [step2_heatmap_cyanorak_role.png](qc/step2_heatmap_cyanorak_role.png), [step2_heatmap_kegg.png](qc/step2_heatmap_kegg.png).
+
+#### Heatmap legend (identical on both panels, also rendered atop each figure)
+
+| glyph | meaning |
+|---|---|
+| **color** (cell) | `signed_score = sign × −log10(padj)` — red = up, blue = down. Display color-capped at ±5 (preserves biology-range resolution 0–5; cells above are all deepest shade). |
+| **blank cell** | term was not tested in that cluster (either `min_gene_set_size` filter, or cluster failed at the `pathway_enrichment` call) |
+| **`*`** in cell | uncapped \|signed_score\| ≥ 5 (padj ≤ 1e-5) — strong |
+| **`**`** in cell | uncapped \|signed_score\| ≥ 10 (padj ≤ 1e-10) — saturated |
+| **`***`** in cell | uncapped \|signed_score\| ≥ 20 (padj ≤ 1e-20) — statistical ceiling, differences at this level are detection-precision artifacts (see Q6) |
+| `↑` / `↓` / `~` beside row label | a priori expected direction for that key pathway (up / down / ambiguous). Rows without a marker are discovered-strong pathways, not a priori anchors. |
+| **bold row label** | member of a priori key panel (`exploration/key_pathways.csv`) |
+| regular row label | discovered-strong pathway (n_sig ≥ 3 in R clusters at hours > 3 — signature-eligibility threshold) |
+| **vertical dividers** (non-T panel) | class boundaries: R \| PC \| CTX \| NC |
+| **vertical divider** (T panel) | axenic \| coculture (Weissberg 2025 biological contrast) |
+| column label format | `author6|tp_short` (non-T) or `author6|omics|tp_short` (T). Authors truncated to 6 chars: Weissb, Tolone, Read, Aharon, Moreno, Stegli, Domíng. Timepoints: `day 14 → 14d`, `steady state → ss`, `darkness → dark`, etc. |
+
+(The scoring cap for Layer A in Step 4 remains the spec's ±10. The ±5 visualization cap here is for diagnostic readability only — see gaps_and_friction.md "signed_score cap needs explicit methodology-layer reasoning" for the distinction.)
+
+**Decision #3 — AA-biosynthesis anchors.** Keep `cyanorak.role:A.3` and `kegg.pathway:ko00250` as `expected_direction="up"` in `key_pathways.csv` (option c: preserve original prior as falsified hypothesis). Add caveats.md entry at Step 5 documenting the up-prediction was biologically naive — AA biosynthesis under N-limit is typically suppressed, not induced. `ko00260` stays `ambiguous` unchanged.
+Rationale: changing expected direction to match observation after the fact is post-hoc. Leaving as `up` with caveat preserves the honest scientific record (prior → observation → falsification).
+
+**Decision #4 — NC noise-floor bias.** Option (b) chosen: **exclude ontology-misclassified NC clusters from NC calibration, with an explicit programmatic criterion.**
+
+Rationale: the spec's Step 4 M3 calibration computes `nc_mean` and `nc_std` across all NC clusters, assuming NC is true noise. When specific NC clusters carry real biology that overlaps with N-limit signature markers, they inflate the calibration threshold, silently biasing T-score classification toward "no signal." Option (a) (document-only) leaves the biased threshold in place; option (b) corrects it with a transparent rule; option (c) (side-by-side both calibrations) doubles the reporting burden without improving interpretability.
+
+**Exclusion rule (programmatic, for Step 4 implementation):**
+
+> An NC cluster is excluded from the `(ontology, background_used)` NC calibration group if it shows significant enrichment at padj < 1e-3 on any term in the a priori key-pathway panel for that ontology.
+>
+> The padj < 1e-3 threshold is deliberately stricter than the standard 0.05 significance bar — at 1e-3, the enrichment is 3 orders of magnitude below nominal significance and implausibly attributable to sampling noise alone. Borderline hits (1e-3 ≤ padj < 0.05) stay in NC calibration on the principle that true noise floors include noise-adjacent fluctuations.
+
+Applied to Step 2 NC hits (from `step2_rkey_nc_enrichment.csv`), 4 significant NC × key-pathway rows fall across 2 distinct NC clusters:
+
+| NC cluster | sig key-pathway hits (padj) | threshold check | calibration status |
+|---|---|---|---|
+| Steglich high-light 45min \| down | cyanorak J.7 PSI (3.2e-3), kegg ko00195 Photosynthesis (3.0e-2) | both ≥ 1e-3 | **keep in NC calibration** (both ontologies) — borderline noise-adjacent |
+| Weissberg coculture d11 \| up | cyanorak E.4 N-metab (8.6e-5), kegg ko00910 N-metab (1.6e-5) | both < 1e-3 | **EXCLUDE from NC calibration** for (cyanorak_role, table_scope) AND (kegg, table_scope) — Weissberg NC is `all_detected_genes` → table_scope bg |
+
+The exclusion is per-cluster, not per-experiment: the Weissberg d11 **up** cluster is excluded (strong N-metab signal); the Weissberg d11 **down** cluster is retained (no significant key-pathway hits).
+
+Impact on NC calibration group sizes (verified from `step2_cluster_totals.csv` + `step2_rkey_nc_enrichment.csv`):
+
+| (ontology, background_used) | NC clusters before | excluded | **NC clusters for calibration** |
+|---|---:|---:|---:|
+| cyanorak_role × table_scope | 8 | 1 (Weissberg d11 up) | **7** |
+| cyanorak_role × organism | 2 | 0 | 2 |
+| kegg × table_scope | 8 | 1 (Weissberg d11 up) | **7** |
+| kegg × organism | 2 | 0 | 2 |
+
+[caveat] The `(*, organism)` groups only have 2 NC clusters each (both from Steglich high-light). 2-cluster SD is extremely fragile — any single extreme value dominates. T clusters scored against `organism` background (Read R2, Domínguez-Martín CTX3, and potentially some Weissberg axenic-protein T clusters if they carry `significant_only` tables) have very weak NC-noise anchoring. Flag in T-score interpretation at Step 4 explore. No action here beyond noting; the underlying constraint is that N-related organism-bg experiments are scarce in the KG.
+
+[interpretation] Steglich shows a real HL-stress response on photosynthesis but it's borderline — conservative to keep it in NC. Weissberg coculture day 11 with no explicit N-starvation showing strong N-metab upregulation is real biology ("coculture-enabled N-scavenging"), clearly misclassified as noise for N-metab calibration purposes.
+
+**CRITICAL FOLLOWUP — Task 10 (Step 4 scoring) implementation requirement:**
+
+The `05_compute_scores.py` script at Task 10 MUST implement this filter when computing `nc_mean_{o,b}` and `nc_std_{o,b}`:
+
+```python
+# Pseudocode for the NC calibration filter:
+KEY_PATHWAY_EXCLUSION_PADJ = 1e-3
+
+for (ontology, bg), nc_group in nc_clusters.groupby(["ontology", "background_used"]):
+    # Drop NC clusters with any key-pathway hit at padj < 1e-3 in this (o, b) group.
+    key_ids_this_ontology = set(key_panel.loc[key_panel["ontology"] == ontology, "term_id"])
+    disqualifying_hits = enrichment_all[
+        (enrichment_all["cluster"].isin(nc_group["cluster"])) &
+        (enrichment_all["term_id"].isin(key_ids_this_ontology)) &
+        (enrichment_all["p_adjust"] < KEY_PATHWAY_EXCLUSION_PADJ)
+    ]
+    disqualified_clusters = set(disqualifying_hits["cluster"])
+    nc_calibration_group = nc_group[~nc_group["cluster"].isin(disqualified_clusters)]
+    # Log the exclusion to step4.log and to decisions.md per the spec.
+    # Compute nc_mean and nc_std on nc_calibration_group, not the original nc_group.
+```
+
+**Pre-committed caveats.md text** (collated into `caveats.md` at Task 12 / Step 5 do):
+
+> **C5 — NC calibration exclusion for biology-contaminated clusters.** One NC cluster was excluded from NC calibration in Step 4 per the "ontology-misclassified NC" rule (padj<1e-3 criterion, see notebook Step 2 decide, decision #4): the Weissberg 2025 coculture day-11 **up** cluster was excluded from the `(cyanorak_role, table_scope)` and `(kegg, table_scope)` NC calibration groups due to strong N-metab enrichment at padj ~1e-5 (real coculture-induced N-scavenging biology, not noise). The matched Weissberg d11 **down** cluster shows no significant key-pathway hits and remains in calibration. The Steglich 2006 high-light 45min down cluster was **kept** in NC calibration for both `(cyanorak_role, organism)` and `(kegg, organism)` — its PS-down hits at padj 3e-3 / 3e-2 are near the noise-adjacent threshold (padj ≥ 1e-3) and conservatively retained. Resulting NC calibration group sizes: `(*, table_scope)` = 7 clusters (was 8); `(*, organism)` = 2 clusters (unchanged). T-score calibration thresholds (`nc_mean ± 2σ`) are computed against these filtered groups. Interpretive impact: T clusters scoring just above `nc_mean + 2σ` on N-metab anchors should be read with this exclusion in mind — the threshold is cleaner than it would have been with Weissberg coculture d11 up in the calibration, but the `(*, organism)` calibration with only 2 clusters is statistically weak regardless. Readers should treat threshold classifications as narrative indicators, not hypothesis-test conclusions.
+
+### Gate checks
+
+### New Step 3 task: within-ontology pathway redundancy audit
+
+Before Task 8, Step 3 `explore` phase gains a new sub-task:
+> For each signature pathway pair within the same ontology, compute Jaccard(pathway_i.term2gene, pathway_j.term2gene) and flag ⊂ relationships or Jaccard > 0.5. Present as heatmap / flag list. Researcher decides between: (A) audit-only reported as M4 stability check in Step 4, (B) post-filter in Step 3 (keep most-enriched of each overlap cluster), or (C) caveats-only.
+
+Known upfront concern from Step 2 exploration: within-KEGG, `ko00190 Oxphos ∩ ko00195 Photosynthesis = 9 atp genes`, and J.1 ATP synthase (cyanorak, 10 atp genes) is effectively within-scope if kegg carries ko00190+ko00195 both. Within-cyanorak: J.1/J.2/J.7/J.8/K.2 are hierarchically-disjoint L1 categories — likely gene-disjoint, but verify during audit.
+
+### Gate checks
+
+- Gate 1 (step-boundary): Step 2 do-phase output (`enrichment_all.csv`, pickle, heatmap) committed `3511318`. Explore-phase interim artifacts committed `02ef861`. This decide commit is the boundary.
+- Gate 2 (manifest currency): `data/DATA_MANIFEST.md` + `exploration/qc/` artifacts current (to be verified in commit).
+- Gate 3 (chat-capture): all exploration Q→data→finding→impact captured above. No chat-only reasoning.
+
+### Skill / methodology friction — captured for gaps_and_friction.md
+
+Added in this session (see [../gaps_and_friction.md](../gaps_and_friction.md) Skill/methodology friction section):
+
+1. **SCORE_CAP choice needs explicit methodology-layer reasoning**, not just a spec default. `signed_score = -log10(padj)` has saturation regime above ~|s|=10 where differences are measurement artifacts, not biology. Scoring caps (±10) and visualization caps (±5 here) serve different purposes and should be distinguished.
+2. **Within-ontology pathway redundancy is not covered by LOO.** LOO catches fragility (single-pathway dominance); redundancy catches inflation (correlated gene overlap). Orthogonal failure modes. Needs a separate audit.
+3. **A priori anchor lists stay locked through QC**. Discovered-strong pathways go into the a posteriori signature, not backported to the key panel. Mixing the two confuses validation with discovery.
+4. **Author-label truncation convention** (6-char last names) as figure-convention for multi-cluster heatmaps — captured as practical artifact convention.
+
+### Decision
+
+Step 2 decide gate passed. Proceed to Task 7 (Step 3 do — signature derivation) with:
+- Temporal filter `hours > 3` (decision #1).
+- New within-ontology redundancy audit sub-task inserted before Task 8.
+- caveats.md entries deferred to Step 5 (decisions #3, #4).
+
+---
+
 
