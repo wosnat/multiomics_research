@@ -1,0 +1,17 @@
+2026-04-20 14:38:39,578 [INFO] Starting 02_ontology_landscape.py
+2026-04-20 14:38:39,580 [INFO] Loaded 37 classified rows (15 unique experiments)
+2026-04-20 14:38:39,582 [INFO] Organism 'Prochlorococcus MED4': 13 experiments, requesting landscape
+2026-04-20 14:38:41,438 [INFO] Wrote 62 landscape rows to /home/osnat/github/multiomics_research/analyses/2026-04-20-1243-pathway_enrichment_b2/data/landscape_Prochlorococcus_MED4.csv
+2026-04-20 14:38:41,441 [INFO] Organism 'Prochlorococcus MIT9313': 1 experiments, requesting landscape
+2026-04-20 14:38:41,870 [INFO] Wrote 64 landscape rows to /home/osnat/github/multiomics_research/analyses/2026-04-20-1243-pathway_enrichment_b2/data/landscape_Prochlorococcus_MIT9313.csv
+2026-04-20 14:38:41,873 [INFO] Organism 'Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)': 1 experiments, requesting landscape
+2026-04-20 14:38:42,067 [INFO] Wrote 62 landscape rows to /home/osnat/github/multiomics_research/analyses/2026-04-20-1243-pathway_enrichment_b2/data/landscape_Prochlorococcus_marinus_subsp._marinus_CCMP1375_SS120.csv
+2026-04-20 14:38:42,074 [INFO] search_ontology('nitrogen', 'cyanorak_role'): 2 rows
+2026-04-20 14:38:42,077 [INFO] search_ontology('nitrogen', 'tigr_role'): 1 rows
+2026-04-20 14:38:42,094 [INFO] search_ontology('nitrogen', 'go_bp'): 14 rows
+2026-04-20 14:38:42,127 [INFO] search_ontology('nitrogen', 'go_mf'): 12 rows
+2026-04-20 14:38:42,132 [INFO] search_ontology('nitrogen', 'kegg'): 12 rows
+2026-04-20 14:38:42,164 [INFO] search_ontology('nitrogen', 'ec'): 13 rows
+2026-04-20 14:38:42,191 [INFO] search_ontology('nitrogen', 'cog_category') returned 0 rows
+2026-04-20 14:38:42,279 [INFO] search_ontology('nitrogen', 'pfam'): 2 rows
+2026-04-20 14:38:42,280 [INFO] Wrote 56 nitrogen-term rows to /home/osnat/github/multiomics_research/analyses/2026-04-20-1243-pathway_enrichment_b2/data/nitrogen_ontology_search.csv

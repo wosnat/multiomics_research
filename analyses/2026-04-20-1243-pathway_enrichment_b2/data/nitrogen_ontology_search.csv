@@ -1,0 +1,57 @@
+id,name,score,level,ontology
+cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism,2.109139919281006,1,cyanorak_role
+cyanorak.role:D.1.3,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen,1.5579967498779297,2,cyanorak_role
+tigr.role:160,Central intermediary metabolism / Nitrogen metabolism,2.0758562088012695,0,tigr_role
+go:0009399,nitrogen fixation,3.1092870235443115,4,go_bp
+go:0019740,nitrogen utilization,3.1092870235443115,3,go_bp
+go:0071705,nitrogen compound transport,2.7549948692321777,4,go_bp
+go:0141067,intracellular nitrogen homeostasis,2.7549948692321777,4,go_bp
+go:0006808,regulation of nitrogen utilization,2.47318434715271,5,go_bp
+go:0071941,nitrogen cycle metabolic process,2.47318434715271,3,go_bp
+go:1901698,response to nitrogen compound,2.47318434715271,3,go_bp
+go:0006995,cellular response to nitrogen starvation,2.2436769008636475,5,go_bp
+go:0043562,cellular response to nitrogen levels,2.2436769008636475,4,go_bp
+go:0045848,positive regulation of nitrogen utilization,2.2436769008636475,6,go_bp
+go:0090293,nitrogen catabolite regulation of transcription,2.2436769008636475,5,go_bp
+go:1901699,cellular response to nitrogen compound,2.2436769008636475,4,go_bp
+go:2001057,reactive nitrogen species metabolic process,2.2436769008636475,3,go_bp
+go:1902170,cellular response to reactive nitrogen species,2.053148031234741,5,go_bp
+go:0016840,carbon-nitrogen lyase activity,2.608231782913208,3,go_mf
+go:0016879,"ligase activity, forming carbon-nitrogen bonds",2.196819543838501,3,go_mf
+go:0051002,"ligase activity, forming nitrogen-metal bonds",2.196819543838501,3,go_mf
+go:0016825,"hydrolase activity, acting on phosphorus-nitrogen bonds",2.036226272583008,3,go_mf
+go:0051003,"ligase activity, forming nitrogen-metal bonds, forming coordination complexes",1.776493787765503,4,go_mf
+go:0016810,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",1.669985294342041,3,go_mf
+go:0016884,"carbon-nitrogen ligase activity, with glutamine as amido-N-donor",1.669985294342041,4,go_mf
+go:0016815,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in nitriles",1.4911808967590332,4,go_mf
+go:0016811,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides",1.4154067039489746,4,go_mf
+go:0016812,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amides",1.4154067039489746,4,go_mf
+go:0016813,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amidines",1.4154067039489746,4,go_mf
+go:0016814,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amidines",1.4154067039489746,4,go_mf
+kegg.pathway:ko00910,Nitrogen metabolism,3.81522798538208,2,kegg
+kegg.pathway:ko01310,Nitrogen cycle,3.81522798538208,2,kegg
+kegg.orthology:K04751,glnB; nitrogen regulatory protein P-II 1,2.6724281311035156,3,kegg
+kegg.orthology:K04752,glnK; nitrogen regulatory protein P-II 2,2.6724281311035156,3,kegg
+kegg.orthology:K02806,ptsN; nitrogen PTS system EIIA component [EC:2.7.1.-],2.5213794708251953,3,kegg
+kegg.orthology:K04488,"iscU, nifU; nitrogen fixation protein NifU and related proteins",2.3864920139312744,3,kegg
+kegg.orthology:K19338,"nac; LysR family transcriptional regulator, nitrogen assimilation regulatory protein",2.3864920139312744,3,kegg
+kegg.orthology:K21561,"ntcA; CRP/FNR family transcriptional regulator, global nitrogen regulator",2.3864920139312744,3,kegg
+kegg.orthology:K13599,"ntrX; two-component system, NtrC family, nitrogen regulation response regulator NtrX",2.1558289527893066,3,kegg
+kegg.orthology:K07712,"glnG, ntrC; two-component system, NtrC family, nitrogen regulation response regulator GlnG",2.0564475059509277,3,kegg
+kegg.orthology:K13598,"ntrY; two-component system, NtrC family, nitrogen regulation sensor histidine kinase NtrY [EC:2.7.13.3]",1.8828520774841309,3,kegg
+kegg.orthology:K07708,"glnL, ntrB; two-component system, NtrC family, nitrogen regulation sensor histidine kinase GlnL [EC:2.7.13.3]",1.8066000938415527,3,kegg
+ec:6.7.-.-,Forming nitrogen-nitrogen bonds,3.8728599548339844,1,ec
+ec:4.3.-.-,Carbon-nitrogen lyases,3.126657724380493,1,ec
+ec:4.8.-.-,Nitrogen-oxygen lyases,3.126657724380493,1,ec
+ec:4.3.99.-,Other carbon-nitrogen lyases,2.7961313724517822,2,ec
+ec:6.3.-.-,Forming carbon-nitrogen bonds,2.7961313724517822,1,ec
+ec:6.3.4.-,Other carbon--nitrogen ligases,2.7961313724517822,2,ec
+ec:6.6.-.-,Forming nitrogen-metal bonds,2.7961313724517822,1,ec
+ec:3.10.-.-,Acting on sulfur-nitrogen bonds,2.5288054943084717,1,ec
+ec:3.10.1.-,Acting on sulfur-nitrogen bonds,2.5288054943084717,2,ec
+ec:3.9.-.-,Acting on phosphorus-nitrogen bonds,2.5288054943084717,1,ec
+ec:3.9.1.-,Acting on phosphorus-nitrogen bonds,2.5288054943084717,2,ec
+ec:3.5.-.-,"Acting on carbon-nitrogen bonds, other than peptide bonds",1.829256534576416,1,ec
+ec:6.3.5.-,Carbon--nitrogen ligases with glutamine as amido-N-donor,1.829256534576416,2,ec
+pfam:PF00795,Carbon-nitrogen hydrolase,4.0866498947143555,1,pfam
+pfam:PF00543,Nitrogen regulatory protein P-II,3.3818416595458984,1,pfam

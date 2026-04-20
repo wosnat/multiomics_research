@@ -1,0 +1,12 @@
+ontology,term_id,term_name,expected_direction,canonical_gene_marker,n_med4_genes,rationale
+cyanorak_role,cyanorak.role:E.4,Nitrogen metabolism,up,glnA,28,"Central N-scavenging: glnA (GS), cynABDS (cyanate transport+hydratase), ntcA (global N regulator), amt1 (ammonium transporter), ureA-D (urease) — all expected UP under N-limit"
+cyanorak_role,cyanorak.role:J.7,Photosystem I,down,psaA,17,"Full PSI reaction center (psaA-M, ycf3/4/37) — expected DOWN as photochemistry is throttled under N-limit"
+cyanorak_role,cyanorak.role:J.8,Photosystem II,down,psbA,31,"Full PSII complement (psbA-Z, ycf48) — expected DOWN; psbA D1 turnover reduces specifically under N-limit"
+cyanorak_role,cyanorak.role:J.2,CO2 fixation,down,rbcL,22,"RuBisCO (rbcL/rbcS/rbcR), carboxysome shell (csoS1-4), Calvin cycle (gap2/fbaA/fbp-sbp) — expected DOWN as C-fixation scales with N-assimilation capacity"
+cyanorak_role,cyanorak.role:K.2,Ribosomal proteins,down,rplA,61,"Large + small subunit rpl/rps/rpm complement — expected DOWN per N-cost minimization (Read 2017)"
+cyanorak_role,cyanorak.role:A.3,AA biosynthesis Glu family,up,glnA,16,"Glutamate family (argB-J, glnA, proA-S) — expected UP; supplies Glu/Gln backbone for N-scavenging"
+kegg,kegg.pathway:ko00910,Nitrogen metabolism,up,glnA,6,"Core N-assimilation: glnA (GS), cynABDS (cyanate), glsF (ferredoxin-glutamate synthase) — small but biologically direct"
+kegg,kegg.pathway:ko00195,Photosynthesis,down,psbA,51,"PSI/PSII (psa*/psb*), cytochrome b6f (petA-H), ATP synthase (atpA-I) — unified photosynthesis anchor, expected DOWN"
+kegg,kegg.pathway:ko03010,Ribosome,down,rplA,54,"Full rpl*/rpm*/rps* ribosomal protein set — expected DOWN per N-cost minimization"
+kegg,kegg.pathway:ko00250,Alanine/aspartate/glutamate metabolism,up,glnA,15,"GS-GOGAT cycle (glnA), aspartate aminotransferases (aspC), argH/G arginine bridge, carA/B carbamoyl phosphate — expected UP (contains glnA, key to N-scavenging)"
+kegg,kegg.pathway:ko00260,Glycine/serine/threonine metabolism,ambiguous,glyA,25,"Gly/Ser/Thr pathway (glyA, serA, thrA-C, gcvH/P/T) — direction ambiguous: can be UP as AA biosynthesis ramps for N-scavenging, or DOWN as general protein biosynthesis is suppressed"

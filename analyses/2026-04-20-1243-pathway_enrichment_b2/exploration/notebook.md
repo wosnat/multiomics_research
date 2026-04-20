@@ -160,3 +160,125 @@ Redo follows spec §Redo path: new commit, new notebook entry appended (not over
 
 ---
 
+## 2026-04-20 — Step 1b: ontology landscape + selection (do-phase)
+
+### Command
+```bash
+uv run scripts/02_ontology_landscape.py
+```
+
+### Outputs
+- [data/landscape_Prochlorococcus_MED4.csv](../data/landscape_Prochlorococcus_MED4.csv) — 62 rows
+- [data/landscape_Prochlorococcus_MIT9313.csv](../data/landscape_Prochlorococcus_MIT9313.csv) — 64 rows
+- [data/landscape_Prochlorococcus_marinus_subsp._marinus_CCMP1375_SS120.csv](../data/landscape_Prochlorococcus_marinus_subsp._marinus_CCMP1375_SS120.csv) — 62 rows
+- [data/nitrogen_ontology_search.csv](../data/nitrogen_ontology_search.csv) — 56 N-term rows across 7 ontologies
+- [ontology_selection.md](../ontology_selection.md) — design doc with ranked picks + rejected alternatives
+- [exploration/key_pathways.csv](key_pathways.csv) — 11-row key-pathway panel with expected directions
+
+### QC — coverage per organism
+
+**MED4 (13 exps, T+R+PC+NC)** [KG] top 5 by `relevance_rank`:
+
+| rank | ontology | level | n_terms | genome_cov | median genes/term |
+|---|---|---|---|---|---|
+| 1 | tigr_role | 0 | 77 | 87% | 13 |
+| **2** | **cyanorak_role** | **1** | **69** | **73%** | **14** ← Pick 1 |
+| 3 | go_mf | 2 | 35 | 58% | 25 |
+| 5 | go_bp | 3 | 68 | 54% | 13 |
+| 32 | **kegg** | **2** | **97** | **38%** | **12** ← Pick 2 |
+
+**MIT9313** and **SS120**: both cyanobacteria, both covered by cyanorak_role and kegg. See [ontology_selection.md](../ontology_selection.md) for full per-organism tables.
+
+### QC — nitrogen-term density across ontologies
+
+| ontology | N-term matches | top scoring |
+|---|---|---|
+| cyanorak_role | 2 | `E.4` Nitrogen metabolism (L1) |
+| tigr_role | 1 | `role:160` Nitrogen metabolism |
+| go_bp | 14 | `go:0009399` N fixation, `go:0019740` N utilization |
+| kegg | 12 | `kegg.pathway:ko00910` Nitrogen metabolism (L2) |
+| go_mf | 12 | mostly enzyme-activity |
+| ec | 13 | N-related EC classes |
+| pfam | 2 | Carbon-nitrogen hydrolase, P-II regulator |
+
+### QC — GO BP N-term coverage per level in MED4 [KG]
+
+Investigated because go_bp was a Pick 2 candidate. **All N-labeled GO BP terms across L3-L5 and their MED4 gene counts** (from `genes_by_ontology`):
+
+| Term | Level | MED4 n_genes | Passes ≥5 filter? |
+|---|---|---|---|
+| `go:0071941` nitrogen cycle metabolic process | L3 | 13 | ✓ |
+| `go:0071705` nitrogen compound transport | L4 | 18 | ✓ |
+| `go:0019740` nitrogen utilization | L3 | 2 | ✗ |
+| `go:1901698` response to nitrogen compound | L3 | <5 | ✗ |
+| `go:0009399` nitrogen fixation | L4 | 0 | ✗ |
+| `go:0141067` intracellular nitrogen homeostasis | L4 | 2 | ✗ |
+| `go:0043562` cellular response to nitrogen levels | L4 | <5 | ✗ |
+| `go:1901699` cellular response to nitrogen compound | L4 | <5 | ✗ |
+| `go:0006995` **cellular response to nitrogen starvation** | L5 | **<5** ← the ideal term, MED4-sparse | ✗ |
+| `go:0006808` regulation of N utilization | L5 | 3 | ✗ |
+| `go:0090293` N catabolite regulation of transcription | L5 | <5 | ✗ |
+| `go:1902170` cellular response to reactive N species | L5 | <5 | ✗ |
+
+**Finding** [interpretation]: MED4's GO BP annotation is annotation-sparse at N-limitation-specific terms across all levels. Only 2 N-specific GO BP terms pass min-gene-set-size=5 regardless of level. Going deeper doesn't add N-specific signal.
+
+### QC — KEGG pathway L2 anchor coverage in MED4 [KG]
+
+| KEGG pathway L2 | MED4 n_genes |
+|---|---|
+| `kegg.pathway:ko03010` Ribosome | 54 |
+| `kegg.pathway:ko00195` Photosynthesis | 51 |
+| `kegg.pathway:ko00260` Glycine/serine/threonine metabolism | 25 |
+| `kegg.pathway:ko00250` Alanine/aspartate/**glutamate** metabolism | 15 |
+| `kegg.pathway:ko00910` **Nitrogen metabolism** | 6 |
+| `kegg.pathway:ko00710` Carbon fixation | ~5–8 |
+| `kegg.pathway:ko01310` Nitrogen cycle | 0 (not MED4-annotated) |
+
+All 4 canonical key-pathway anchors (N-metab + photosynthesis + ribosome + AA-metab) present at the same L2. Clean Fisher null over 97 pathways.
+
+### Chat exploration
+
+**Q1: Can MCP orientation run without running the landscape script?** [interpretation]
+Data: plan §Task 3 Step 1 says "Run MCP orientation queries … in chat, not the script." Spec §5 Step 1b do names the interactive MCP sub-phase.
+Finding: the MCP-orientation queries are done interactively before the script, to let the researcher see available ontologies and choose. The script (`02_ontology_landscape.py`) locks the choice by reproducing the per-organism landscape as CSVs; the researcher's decisions live in `ontology_selection.md` + `key_pathways.csv`.
+Impact: script structure finalized — three loops (per-organism landscape), one search_ontology loop (nitrogen across 7 ontologies), no researcher-decision logic embedded in code.
+
+**Q2: Does HOT1A3 (Alteromonas, Gammaproteobacteria) have any cyanobacteria-ontology annotations?**
+Data: `ontology_landscape(organism="Alteromonas macleodii HOT1A3", ...)` summary — cyanorak_role and tigr_role both absent from the returned `by_ontology` dict; top ranks are pfam L0 (65%), go_mf L2 (50%), go_bp L3 (45%).
+Finding: [KG] HOT1A3 has no cyanorak_role or tigr_role annotation — expected (these are cyanobacteria-specific ontologies).
+Impact: with cyanorak_role L1 as MED4-optimal Pick 1, CTX1 would be a blank column. Dropped CTX1 in Step 1a redo (see previous notebook entry) — sister-Prochlorococcus conservation test (MIT9313 + SS120) is the right scope.
+
+**Q3: Is there a "relevant BRITE tree" to use as Pick 3?**
+Data: MED4 landscape — brite trees range from 3–34 terms, 4–32% genome coverage. `transporters` (most N-relevant): 4.3% coverage, 3 L0 terms, mixed P+N "Phosphate and amino acid transporters" — no pure N term.
+Finding: [KG + interpretation] no BRITE tree is a clear Pick 3 for N-biology. `transporters` is closest but conflates P+N and has <5% coverage. `enzymes` L1 at 32% is usable but largely redundant with KEGG pathway membership.
+Impact: rejected BRITE as Pick 3. BRITE drill-down deferred to `explore_*.py` scripts post-Step 2 if needed. Captured in `ontology_selection.md` Considered alternatives.
+
+**Q4: Can we use GO BP with multi-level `term_ids` instead of level-only?**
+Data: `pathway_enrichment` tool schema (`ToolSearch select:mcp__multiomics-kg__pathway_enrichment`) confirms `term_ids: list[str] | None = None` parameter exists. Description: "Specific term IDs to test. Combines with level to scope rollup. At least one of level or term_ids required."
+Finding: [KG] API supports hand-curated `term_ids` — my earlier claim that it didn't was wrong. Logged as anti-hallucination meta-pattern friction in [gaps_and_friction.md](../gaps_and_friction.md).
+Impact: go_bp with cross-level `term_ids` panel is mechanically feasible, but the N-signal doesn't grow (same 2 usable N-terms regardless of level), DAG redundancy inflates BH correction (343 non-independent tests), and curated `term_ids` = key-pathway panel by another name. Rejected for B2. Design thoughts for future "DAG-aware pathway_enrichment" captured in `gaps_and_friction.md`.
+
+**Q5: Between GO BP and KEGG for Pick 2, what's the real trade-off?**
+Data: see `ontology_selection.md` Head-to-head section and the QC tables above.
+Finding: [KG + interpretation] KEGG L2 has all 4 canonical anchors (N-metab + photosynthesis + ribosome + AA-metab) at a single level with clean gene sets (6–54 genes). GO BP L3 has only 1 N-specific term passing the min-5 filter (`go:0071941` nitrogen cycle metabolic process, 13 genes) and requires indirect inference for photosynthesis/ribosome anchors via broader process terms (`carboxylic acid metabolic process`, `gene expression`). KEGG's orthology-based pathway-map framing is also genuinely complementary to cyanorak_role's functional-role framing, making cross-ontology agreement (spec §5 Step 4 M3) more informative.
+Impact: Pick 2 = `kegg` L2.
+
+### Decision (interim — final locked at Task 4 decide gate)
+
+Selected ontologies (2):
+1. **`cyanorak_role` level 1** — MED4-optimal, 4 canonical anchors at this level, cyano-specific.
+2. **`kegg` (pathway) level 2** — orthogonal pathway-map framing, bundles N-metab + photosynthesis + ribosome + AA-metab.
+
+Key-pathway panel (11 terms): 6 cyanorak L1 + 5 kegg L2. All term IDs validated via `genes_by_ontology(term_ids=..., organism="MED4")`; canonical marker genes (`glnA`, `cynA-S`, `psbA`, `psaA`, `rbcL`, `rplA`) confirmed present. Panel serves as the biological anchor for Step 2 QC (R clusters must show expected directions).
+
+Rejected alternatives (all documented in `ontology_selection.md`): tigr_role L0 (redundant), go_bp L3 (sparse N annotation), go_bp L3-5 via term_ids (DAG redundancy + no new N-signal), BRITE subtrees (low coverage), 3rd ontology (reduces cross-ontology agreement informativeness).
+
+MCP / skill-friction items captured:
+- [pathway_enrichment `term_ids` limitation claim — retracted](../gaps_and_friction.md#2026-04-20--step-1b-pathway_enrichment-has-no-term_ids-filter-dag-ontology-friction--retracted-my-error) — anti-hallucination meta-pattern (same class as the Hennon→Aharonovich correction earlier).
+- [pathway_enrichment UX refinement](../gaps_and_friction.md#2026-04-20--step-1b-pathway_enrichment-level-only-mode-for-dag-ontologies-is-a-ux-refinement-opportunity-minor) — example + doc emphasize `level`-only pattern; for DAG ontologies `term_ids` would be the better first-reach.
+- [GO-aware enrichment design notes](../gaps_and_friction.md#2026-04-20--step-1b-design-notes-for-future-go-aware-pathway-enrichment-captures-why-we-did-not-use-go-bp-for-b2) — feature-scope thoughts for a future DAG-aware `pathway_enrichment` mode.
+
+Proceeds to Step 2 do (Task 5) after Task 4 formal decide gate.
+
+---
+
