@@ -1,0 +1,353 @@
+# Pathway enrichment B2 — N-limitation score for Weissberg 2025 MED4 conditions
+
+**Date:** 2026-04-18
+**Predecessor:** `analyses/2026-04-09-1713-pathway_enrichment_b1/` (B1 — pathway enrichment survey)
+**Tracks:** biology + skill evaluation + MCP/Python API evaluation
+
+---
+
+## 1. Research question
+
+**Biological:** How N-limited is MED4 in each of the four Weissberg 2025 conditions — axenic RNA-seq, axenic proteomics, coculture RNA-seq, coculture proteomics — measured against a reference N-limitation signature derived from MED4 experiments in the KG?
+
+**Meta:** Does the research-methodology skill guide this analysis end-to-end without retrofitting? Do the new MCP tools (`ontology_landscape`, `pathway_enrichment`, `search_ontology`) and Python primitives (`fisher_ora`, `EnrichmentResult` accessors) cover the analytical needs of a realistic multi-ontology, multi-experiment enrichment workflow?
+
+## 2. Goals
+
+1. **Biology.** Produce a per-condition N-limitation score for each of the four Weissberg conditions, per chosen ontology, with stability checks and narrative interpretation.
+2. **Skill evaluation.** Run the analysis strictly following the research-methodology step protocol (do → show → explore → decide, two commits per step, three hard gates). Record every place the skill guided effectively or got in the way in `gaps_and_friction.md` — as it happens, not retroactively.
+3. **API evaluation.** Exercise `list_experiments` (with `search_text`), `list_filter_values`, `ontology_landscape`, `search_ontology`, `pathway_enrichment` (MCP wrapper), `EnrichmentResult.explain()` / `.overlap_genes()`, and `fisher_ora` (direct Python primitive). Record API friction in `api_coverage.md`.
+
+## 3. Scope
+
+- **Organism of interest:** MED4 (Prochlorococcus MED4). Non-MED4 N-limitation experiments appear in figures as context but do **not** contribute to the reference signature (see §7.1).
+- **Ontologies:** 1–3 chosen in Step 1b via `ontology_landscape` + `search_ontology("nitrogen")`, including BRITE subtrees as dedicated candidates.
+- **Experiments:** classified into five classes (§4). The target set is the four Weissberg 2025 conditions.
+- **Signal surface:** pathway enrichment (Fisher's exact + BH) on DE gene sets per `(experiment, timepoint, direction)` cluster. Per-timepoint granularity preserved throughout.
+- **Out of scope:** ortholog-level analysis, custom signature gene sets, GSEA/rank-based enrichment, cluster-membership enrichment (these are different analyses for different questions).
+- **Reuse of B1:** none. The B1 `enrich_utils/` package is explicitly not reused — this analysis exercises the new MCP / Python API.
+
+## 4. Experiment classification
+
+Every selected experiment is assigned one of five classes in Step 1a:
+
+| Class | Meaning | Role in scoring |
+|---|---|---|
+| **T** (Target) | The four Weissberg 2025 MED4 conditions | Scored; the answer |
+| **R** (Reference) | Unambiguous MED4 N-limitation experiments (e.g., Tolonen N-deplete) | Derive the signature; also scored (expected: high) |
+| **PC** (Positive control) | N-stress-related MED4 experiments that aren't strict N-deprivation (alternative N sources, chronic low-N) | Scored; expected direction: high |
+| **NC** (Negative control) | MED4 experiments unrelated to N (light, phage, salt, dark, glucose) | Scored; expected: ≈ 0; defines noise floor |
+| **CTX** (Context) | Non-MED4 N-limitation experiments from other organisms | Scored against MED4 signature; emergent evidence of signature conservation (high) or MED4-specificity (low). Figure context only. |
+
+Non-MED4 N-limitation experiments (CTX class) cannot contribute to the MED4 signature (see §7.1 for why). Soft cap on CTX selection: 3–5 experiments across 1–3 organisms, chosen for representativeness of conditions (e.g., one per cyanobacterial strain with an N experiment). Cap enforced for Fig 1 legibility, not for biological reasons.
+
+## 5. Phase structure
+
+Six steps. Each step follows the research-methodology skill's do → show → explore → decide cycle; each produces two commits (Commit 1 after do; Commit 2 after decide). Three hard gates (step boundary, manifest currency, chat-capture) enforced per step-protocol.
+
+### 5.0 Step-protocol pace & enforcement
+
+Uniform per-step obligations — the implementation plan must materialize these as explicit tasks, not collapse them.
+
+- **Notebook entry per step.** Every step produces one notebook entry in `exploration/notebook.md`. Built incrementally: QC section at `show`, chat-capture at `explore`, decision at `decide`. Committed as Commit 2 per step-protocol.
+- **Two commits per step.** Commit 1 at end of `do`: script + outputs + log + DATA_MANIFEST/RESULTS_MANIFEST updates. Commit 2 at end of `decide`: notebook entry (QC + chat-capture + decision). No exceptions.
+- **Per-step diagnostic log.** Each script writes to `logs/step<N>.log` per artifacts-guide §Log verbosity — summary statistics, diagnostic traces, key-pathway values, edge-case resolutions. "N pathways built" is not sufficient; the log must capture enough to verify the step without rerunning.
+- **Show phase is interactive and blocking.** Claude presents QC diagnostics in chat; the researcher inspects before `explore` begins. No skipping to the next step.
+- **Explore phase is interactive and blocking.** Researcher asks questions; answers produce chat-capture entries (Q → data → finding → impact) in the notebook. Blocked by Gate 3 (chat-capture) before `decide`.
+- **Exploration / drill-down scripts.** Ad-hoc scripts written during `explore` live in `scripts/explore_*.py` (per artifacts-guide). They are kept for reproducibility — never deleted once committed. Example: `scripts/explore_step2_key_pathway_genes.py` for `result.explain()` drill-down on R clusters. Each `explore_*.py` is committed alongside its diagnostic output and referenced from the notebook entry so the chat-capture remains verifiable.
+- **Redo path.** If a step is rerun, new commits (never amend), new notebook entry appended (never overwrite previous), per step-protocol §Redo path.
+
+This section operationalizes the step-protocol for THIS analysis; the plan inherits it and must allocate a concrete task for each obligation (e.g., "Task 7: Run Step 2 script and commit", "Task 8: Present Step 2 QC in chat, wait for researcher questions", "Task 9: Write explore scripts on request, commit chat-capture section, decide gate"). If the plan collapses show/explore/decide into a single "run and report" task, it violates this spec.
+
+### Step 1a — Experiment discovery + classification
+
+**do:**
+- MCP orientation (interactive — notebook-captured, chat-capture style):
+  - `list_organisms()`
+  - `list_experiments(summary=True)` — overall by-organism, by-treatment, by-table_scope breakdowns.
+  - `list_experiments(search_text="nitrogen", verbose=True)` — cross-organism fuzzy N catch with Lucene relevance scores.
+  - `list_experiments(organism="MED4", verbose=True)` — full MED4 landscape.
+  - Optional: `list_filter_values("treatment_type")` — sanity-check N-tag vocabulary; catch tags like `nutrient_starvation` that wouldn't match `"nitrogen"` text.
+- Researcher selects experiment IDs per class (T, R, PC, NC, CTX). No pre-filter on `table_scope`; restricted-scope experiments accepted with explicit caveat when they are the only candidate for a class.
+- `scripts/01_select_experiments.py` reproduces the selected `list_experiments` calls via the Python API (`from multiomics_explorer import list_experiments` — run from repo root, not `--directory` to `multiomics_explorer`), applies the classification labels (hard-coded from 1a's decisions), and writes `data/experiments_classified.csv` via `experiments_to_dataframe` or `to_dataframe`.
+
+**show:** counts by class × organism × omics_type; `table_scope` and `gene_count` distributions; sample rows per class.
+**explore:** spot-check close-call classifications; document any restricted-`table_scope` inclusions in the notebook entry with rationale.
+**decide:** classification locked → `experiments_classified.csv` committed.
+
+### Step 1b — Ontology & level selection + key-pathway panel
+
+**do:**
+- `scripts/02_ontology_landscape.py` — programmatic wrapper for reproducibility:
+  - For each organism with selected experiments: `ontology_landscape(organism=<org>, experiment_ids=<selected for that org>, verbose=True)` via Python API — for MED4 the experiment set is `T∪R∪PC∪NC`; for non-MED4 organisms the experiment set is `CTX` for that organism. BRITE rows in the output carry `tree` / `tree_code` sparse fields, so per-tree candidates surface without extra calls.
+  - `search_ontology("nitrogen")` across all ontologies.
+  - Both calls flattened via `to_dataframe` and written as CSV: `data/landscape_<org>.csv`, `data/nitrogen_ontology_search.csv`. Envelope summary fields (totals, `truncated`, `by_ontology` breakdown) captured in the notebook entry, not the CSV.
+- Researcher selects 1–3 ontologies with explicit justification (coverage pick, relevance pick, BRITE subtree). Hard cap: 3. Writes `ontology_selection.md` (ranked table + rationale) manually — this is the interactive decision, not a computation.
+- Identify key-pathway term_ids in each selected ontology for the canonical N-response categories (N-metabolism, photosynthesis, amino-acid transport, ribosome). These are the biological anchor for every downstream QC. Write `exploration/key_pathways.csv` (ontology, term_id, term_name, expected_direction, canonical_gene_marker).
+
+**show:** ranked tables per organism; organism-coverage gaps per selected ontology; top populated terms per pick; key-pathway term_ids with their member counts.
+**explore:** sanity-check key-pathway term_ids via `genes_by_ontology(term_id=..., organism="MED4", limit=None)` — does the N-metabolism term contain `glnA`, `amt`, `cynA`? Does photosynthesis contain `rbcL`, `psbA`, `psbD`? If no, the ontology or level is wrong — redo Step 1b.
+**decide:** ontology set + key-pathway panel locked → both files committed.
+
+### Step 2 — Enrichment run
+
+**do:**
+- `scripts/03_run_enrichment.py`: for each (organism, ontology) pair from Step 1b, split the organism's selected experiments by `table_scope` and run **two** `pathway_enrichment` calls:
+  - **Call A — detected-genes group.** Experiments with `table_scope == "all_detected_genes"` → `background="table_scope"` (the pathway_enrichment default). `table_scope` is a principled per-cluster denominator: the set of genes that were measured and could have been significant.
+  - **Call B — restricted-scope group.** Experiments with `table_scope ∈ {significant_only, significant_any_timepoint, top_n, filtered_subset}` → `background="organism"`. For these experiments the DE table equals (or is a strict subset of) the significant gene set, so `table_scope` background would collapse the Fisher 2×2 and break enrichment. Organism background is the only principled alternative — with the caveat that it inflates `N` for experiments that only measured a proper subset of the genome.
+  - Skip either call if its experiment group is empty.
+- Each call: `pathway_enrichment(organism, experiment_ids=<group>, ontology, level, background=<as above>, direction="both", significant_only=True)` via the Python API.
+- Collect each `EnrichmentResult.results` DataFrame; concat with added `organism`, `ontology`, `background_used` (`"table_scope"` or `"organism"`) columns into `data/enrichment_all.csv`.
+- Pickle all `EnrichmentResult` objects as a single dict keyed by `(organism, ontology, background_used)` into `data/enrichment_results.pkl`. Downstream steps load once and access by key: `results[("MED4", "cyanorak_role", "table_scope")].explain(cluster, term_id)`. Keeps `.explain()` / `.overlap_genes()` accessors available across the mixed-background split.
+- **Pickle round-trip check before the full run.** Two stages:
+  1. Single-object round-trip: pickle and unpickle one `EnrichmentResult` (from a small single-call test) and verify `.explain()` works on the loaded object.
+  2. Dict round-trip: pickle and unpickle a dict with at least two `EnrichmentResult` values and verify `.explain()` works on instances retrieved from the loaded dict.
+
+  If either stage fails, fall back to the contingency in §8 risk 7 — don't discover this mid-Step 4.
+- Per-timepoint granularity preserved — cluster key = `experiment_id | timepoint | direction`. NaN timepoints appear as `"NA"` (`pathway_enrichment` tool handles this correctly).
+
+**show:** per-(org, ontology) cluster/test/significance counts, split by `background_used`; key-pathway signed_score across all clusters as a diagnostic heatmap (`exploration/qc/step2_key_pathway_heatmap.png` — not a publication figure).
+**explore:** do R clusters show expected key-pathway enrichment in the expected direction? `result.explain(R_cluster, key_pathway_term_id)` for canonical R clusters (e.g., Tolonen N-deplete, N-metabolism term) — do canonical marker genes (`glnA`, `amt`, `cynA`) appear in the overlap? NC clusters ≈ zero on key pathways?
+**decide:** proceed / redo → `enrichment_all.csv` + pickle + QC figure committed.
+
+### Step 3 — Reference signature derivation (MED4-only)
+
+**do:**
+- `scripts/04_derive_signature.py`: restrict `enrichment_all.csv` to MED4 R clusters.
+  - **Temporal filter.** B1 observed early-timepoint direction flips in some pathways (e.g., transient upregulation before settled downregulation). To anchor the signature on the settled N-limitation response, exclude clusters with `timepoint_hours < 3` from signature derivation. Clusters without numeric `timepoint_hours` (single-timepoint experiments, ordinal-only labels) contribute all their clusters — the early/late distinction doesn't apply.
+  - Early clusters are **not dropped from the analysis** — they remain in `enrichment_all.csv`, are scored in Step 4, and appear in Fig 2 (the trajectory visualization is where the early-late flip is visible as a feature, not obscured).
+- For each `(ontology, term_id)`, count `n_up(p) = count(padj < 0.05, direction="up")` and `n_down(p) = count(padj < 0.05, direction="down")` over the signature-derivation set (late + non-temporal clusters). Signature rule (M1 = b):
+  - **Core rule, unambiguous up:** `n_up ≥ 3` AND `n_down < 3` → signature member, `direction = "up"`.
+  - **Core rule, unambiguous down:** `n_down ≥ 3` AND `n_up < 3` → signature member, `direction = "down"`.
+  - **Bidirectional (ambiguous):** `n_up ≥ 3` AND `n_down ≥ 3` → **excluded** from signature. A pathway enriched in both directions across R clusters has no clean direction signal — different member genes respond differently, so it can't anchor the score. Logged to `data/signature_dropped.csv` with `drop_reason="bidirectional"`.
+  - **Below threshold:** `max(n_up, n_down) < 3` → not in signature. Logged to `data/signature_dropped.csv` with `drop_reason="below_threshold_notable"` **if** the pathway has notable enrichment anywhere (defined as: `max |signed_score| ≥ 3` in any R cluster, or padj<0.05 in ≥2 R clusters total regardless of direction agreement). Below-threshold pathways without notable enrichment are silently omitted.
+  - **Fallback rule:** if fewer than 5 signature pathways per ontology survive the core rule, relax the threshold to `≥2` (same-direction) / `≥2 AND ≥2` (ambiguous) for that ontology and record the fallback in `decisions.md`.
+- Write `data/reference_signature.csv` with columns: `ontology, term_id, term_name, direction, n_clusters_supporting, n_up, n_down, contributing_clusters, per_experiment_breakdown, rule_applied` (core or fallback). The `per_experiment_breakdown` column encodes per-R-experiment up/down counts (JSON-serialized dict like `{"Tolonen_Ndeplete_rep1": {"up": 2, "down": 0}, ...}`) so the researcher can see whether a signature pathway is supported by multiple experiments or dominated by one. Write `data/signature_dropped.csv` with columns: `ontology, term_id, term_name, n_up, n_down, drop_reason, max_signed_score, contributing_clusters_up, contributing_clusters_down, per_experiment_breakdown`.
+
+**show:**
+- Signature size per ontology; distribution of `n_clusters_supporting` (histogram).
+- Count of bidirectionally-excluded pathways, below-threshold-notable pathways, and silently-omitted pathways, per ontology.
+- Count of early clusters (`timepoint_hours < 3`) excluded from derivation vs. late/non-temporal clusters used.
+- Which key pathways made it into the signature (vs. dropped vs. silently-omitted).
+- Per-R-experiment breakdown for every signature pathway as a notebook markdown table — columns = R experiments, rows = signature pathways, cells = `{n_up}u/{n_down}d`. Any pathway with all its support from a single experiment flagged visually.
+- Top-K (say, top 10) rows of `signature_dropped.csv` sorted by `max_signed_score` desc — the "biologically interesting dropped pathways" — as a notebook markdown table.
+- Any fallback application logged.
+
+**explore:**
+- Signature composition — sensible? Are all key pathways in the signature? If a key pathway (e.g., N-metabolism) is NOT in the signature, investigate: is the MED4 R set too small? Does the reference experiment not behave as expected? Capture in chat-capture.
+- Per-experiment dominance — is any signature pathway supported entirely by one R experiment? If yes, the signature includes a fragile member. Flag to the researcher; decide whether to tighten the threshold or accept with caveat.
+- High-enrichment dropped pathways — what biology do they represent? If they're catch-all categories (e.g., adaptation/hypothetical), document in caveats. If they're specific pathways that respond strongly in 1–2 R experiments but not enough to meet the threshold, flag as "candidates for future expansion of the reference set."
+- Bidirectional pathways with high enrichment — biologically interpretable as "some member genes up, others down under N-limitation"? Or are they catch-all size-driven? `result.explain()` on both up and down clusters of the same bidirectional pathway can reveal which genes drive each direction.
+**decide:** proceed / adjust threshold → `reference_signature.csv` committed.
+
+### Step 4 — Scoring (T + R + PC + NC + CTX)
+
+**do:**
+- **Pre-registration before computing:** update `decisions.md` with expected outcomes per T condition, **including its `background_used` tag** — because scores across different backgrounds are not directly comparable and must be interpreted against matched-background controls. Example:
+  - "Weissberg axenic-RNA (`table_scope` bg, `all_detected_genes`): expected high, within PC range for the `table_scope` group. NC calibration from MED4 NC clusters with `table_scope` bg."
+  - "Weissberg axenic-protein (`organism` bg, `significant_only`): expected high but with magnitude caveat — `organism` background inflates `fold_enrichment` because N is larger. Compare only to PC / NC clusters also in the `organism` bg group. If no matched NC exists, interpretation is narrative-only."
+  - "Weissberg coculture-RNA (`table_scope` bg): unknown direction — B1 found transcriptional suppression of the N-response in coculture. May score ≈ NC."
+  - "Weissberg coculture-protein (`organism` bg if `significant_only`): may retain signal per B1's RNA/protein discordance finding."
+
+  This section is finalized and staged *before* the scoring script runs, then included in Commit 1 alongside the script and outputs — so the pre-registration commit is a single atomic commit, not separate.
+- `scripts/05_compute_scores.py`: for each (cluster, ontology) pair, compute Layer A score using formula M2 (β) with magnitude capping:
+
+  ```
+  SCORE_CAP = 10   # corresponds to padj = 1e-10; beyond this, magnitude
+                   # differences no longer carry useful information for
+                   # alignment scoring (and avoids padj-underflow blowup)
+
+  capped_score(cluster, p) = sign(signed_score(cluster, p)) *
+                              min(|signed_score(cluster, p)|, SCORE_CAP)
+
+  score_A(cluster, ontology) = mean(sign_ref_p * capped_score(cluster, p)
+                                    for p in signature(ontology)
+                                    if p present in cluster results)
+  ```
+
+  where `sign_ref_p` = `+1` if `direction(p) == "up"` in signature, `-1` if `"down"`; `signed_score(cluster, p)` is `pathway_enrichment`'s per-result `signed_score` column (= `sign × −log10(padj)`, sign from direction). Clusters not tested against pathway p contribute nothing (excluded from the mean). Pathways with padj that underflow to 0 (signed_score = ±∞) resolve to ±SCORE_CAP after capping, avoiding NaN/inf propagation.
+
+  The cap affects only Layer A score computation. The raw `signed_score` column in `enrichment_all.csv` is preserved uncapped for downstream inspection and figures (Fig 1 applies a separate visualization cap to the color scale — see Step 5).
+
+- Stability checks (M3):
+  - **LOO on signature pathways:** per T cluster, recompute score leaving out each pathway in turn. Flag if any single-pathway exclusion flips the score sign or drops it >50%.
+  - **LOO on R experiments:** re-derive signature excluding each R experiment in turn (re-filter `enrichment_all.csv`, not re-enrich), re-score T. Flag if removing any single R experiment flips a T condition's classification.
+  - **Cross-ontology agreement:** for each T cluster, compare scores across all selected ontologies. Flag disagreement in direction or major magnitude discrepancy.
+- **NC noise floor (per (ontology, background_used)):** scores from different backgrounds are not directly comparable (§8 risk 3), so calibration is computed within each `(ontology, background_used)` group. For each combination `(o, b)`, let `nc_scores_{o,b}` = Layer A scores over all NC clusters in ontology `o` with `background_used = b`. Compute `nc_mean_{o,b} = mean(nc_scores_{o,b})` and `nc_std_{o,b} = std(nc_scores_{o,b}, ddof=1)`. Thresholds (evaluated against the T cluster's own `(o, b)` group):
+  - `score ≥ nc_mean + 2·nc_std` → **detectable signature**.
+  - `|score − nc_mean| < 2·nc_std` → **no signal** (indistinguishable from NC).
+  - `score ≥ pc_mean − 2·pc_std` (where `pc_*` computed analogously within the matched `(o, b)`) → **PC-like strength**.
+  - If a T cluster's `(o, b)` group has no matched NC/PC clusters (e.g., NC exists only with `table_scope` bg but T is `organism` bg), calibration is unavailable — report the raw T score, document the calibration gap in `caveats.md`, and qualify the interpretation as narrative-only.
+- Stability-check flags are evaluated per T cluster:
+  - **LOO pathway flip:** score changes sign (positive → negative or vice versa) OR `|new_score| < 0.5·|original_score|` when any single signature pathway is removed.
+  - **LOO R experiment flip:** T cluster's threshold classification (detectable / no-signal / PC-like) changes when any single R experiment is excluded from signature derivation.
+  - **Cross-ontology disagreement:** T cluster's threshold classification differs across ontologies (e.g., "PC-like" in CyanoRak but "no signal" in KEGG).
+- Write `results/scores_all.csv` (cluster × ontology score, including `background_used` column) and `results/score_summary.csv` (T condition × ontology × background_used: peak score, peak timepoint, noise-floor comparison against matched NC/PC group, classification, calibration availability flag).
+
+**show:** score summary table (T / R / PC / NC per ontology); NC calibration check; LOO results per T cluster; cross-ontology agreement.
+**explore:** per-T contribution decomposition — which signature pathways contributed most (top-5 by absolute magnitude)? Which disagreed (opposite sign from reference)? For top contributors, `result.explain(T_cluster, contributing_pathway)` — are the driving genes canonical markers? Leave-one-out results — any fragile scores?
+**decide:** scores final / redo → score CSVs and LOO outputs committed.
+
+### Step 5 — Figures + write-up
+
+**do:**
+- `scripts/06_make_figures.py`:
+  - **Fig 1** — unified signed-enrichment heatmap. Rows = visible pathways (signature + key-pathway panel + any pathway significantly enriched in ≥1 T cluster; capped to ~60–80 rows by aggregate magnitude; multi-panel by ontology if overflow). Columns = clusters ordered by class (T → R → PC → NC → CTX), then by experiment × timepoint. Cell value = raw `signed_score` from `enrichment_all.csv`. Color scale saturated at ±10 (same `SCORE_CAP` used in scoring) so extreme outlier cells don't flatten the rest of the heatmap — a separate visualization cap mirroring the scoring cap, so figure and score stay interpretable together. Annotations: ontology (row grouping), class (column color), organism (column color — MED4 bolded/highlighted), direction. Signature rows visually highlighted (bold labels + left annotation column + subtle background shade).
+  - **Fig 2** — score-trajectory lineplots, one panel per experiment. x = timepoint (ordinal or hours); y = Layer A score; one line per ontology (color). Single-timepoint experiments = single point. Panel title = experiment_id + class + organism. MED4 T panels visually framed. NC panels included as baseline. Horizontal reference lines at `nc_mean ± 2σ` per ontology.
+- Write `methods.md`, `caveats.md`, `gaps_and_friction.md`, `api_coverage.md`, `README.md`, update `DATA_MANIFEST.md` and `RESULTS_MANIFEST.md` with the final file set.
+
+**show:** final figures inline; summary table in README with per-condition Layer A scores.
+**explore:** legibility (MED4 distinguishable? trajectories readable?); story clarity (does Fig 1 + Fig 2 + summary table answer the research question?); anything missing or misleading.
+**decide:** publish → Step 5 commit; close the analysis with a final commit of all docs.
+
+## 6. Scaffolding commit (before Step 1a)
+
+Per step-protocol: before Step 1 begins, create:
+- `analyses/2026-04-18-HHMM-pathway_enrichment_b2/` directory with subdirectories per artifacts-guide §Directory structure.
+- Empty `data/DATA_MANIFEST.md`, `results/RESULTS_MANIFEST.md` with header.
+- `exploration/notebook.md` stub with spec-walkthrough section.
+- Per-analysis `.gitignore` with explicit-file entries only (no blanket `data/*` or `results/*`):
+  ```
+  # No large intermediates expected — enrichment results are small
+  __pycache__/
+  *.pyc
+  ```
+- Copy `spec.md` (this document) and `brainstorm-log.md` into `superpowers/`.
+
+## 7. Methodology details
+
+### 7.1 Why MED4-only references
+
+The signature describes MED4 biology — pathways that respond to N-limitation in MED4 specifically. Weissberg is MED4; scoring Weissberg against a MED4-derived signature is an apples-to-apples test.
+
+Non-MED4 N-limitation experiments carry two risks as signature contributors: (i) organism-specific pathway differences (e.g., CyanoRak category populations differ across strains), (ii) different experimental designs (growth conditions, statistical test, table_scope). Rather than dilute the signature, non-MED4 experiments appear as context in Fig 1 and get scored against the MED4 signature — their scores become emergent evidence of signature conservation (high) or MED4-specificity (low).
+
+### 7.2 Worked example — signature derivation (M1 = b)
+
+Suppose MED4 R set = Tolonen N-deplete with 2 replicates × 3 timepoints × 2 directions = 12 R clusters, enriched against CyanoRak level 1 (110 terms). Suppose one of the 3 timepoints is `timepoint_hours=1.5` (early) and the other two are `timepoint_hours=6` and `timepoint_hours=24` (late). After the temporal filter, 8 late clusters feed signature derivation; 4 early clusters are scored in Step 4 but excluded here.
+
+Consider pathway `cyanorak.role:E.4` (N-metabolism):
+- Across the 8 late R clusters: padj < 0.05 in 6, all `direction="up"`.
+- `n_up = 6 ≥ 3` AND `n_down = 0 < 3` → unambiguous up → signature member, `direction = "up"`. (Early clusters not counted; may show opposite direction but don't affect signature.)
+
+Consider pathway `cyanorak.role:D.2` (catch-all adaptation):
+- padj < 0.05 in 5/12 R clusters, split 3 up / 2 down.
+- `n_up = 3 ≥ 3` AND `n_down = 2 < 3` → unambiguous up → signature member, `direction = "up"`.
+
+Consider pathway `cyanorak.role:X.1` (hypothetical bidirectionally-responsive even within late timepoints):
+- Across the 8 late R clusters: 4 up / 4 down.
+- `n_up = 4 ≥ 3` AND `n_down = 4 ≥ 3` → **bidirectional, excluded** from signature, logged to `signature_dropped.csv` with `drop_reason="bidirectional"` and both counts. (Contrast: if "4 down" were all early clusters and the 4 late were all up, the temporal filter removes the down clusters and the pathway is unambiguous up.)
+
+Consider pathway `cyanorak.role:M.3` (some niche category):
+- padj < 0.05 in 2/12 R clusters, both "down".
+- `n_clusters_supporting = 2 < 3` → not in signature under core rule.
+- If final signature for CyanoRak has <5 pathways → fallback to `≥2` → `M.3` admitted with `rule_applied="fallback"`.
+
+### 7.3 Worked example — scoring (M2 = β)
+
+Suppose signature for CyanoRak has 12 pathways: 8 "up", 4 "down".
+
+For Weissberg coculture-RNA timepoint t3 cluster (assume `SCORE_CAP = 10`):
+- Pathway `E.4` (ref direction "up"): Weissberg `signed_score = +4.2` → capped `+4.2` (below cap) → contribution = `(+1) * (+4.2) = +4.2` (agrees with reference).
+- Pathway `J.2` (photosynthesis, ref direction "down"): Weissberg `signed_score = -3.1` → capped `-3.1` (below cap) → contribution = `(-1) * (-3.1) = +3.1` (agrees).
+- Pathway `Q.1` (AA transport, ref direction "up"): Weissberg `signed_score = -0.8` → contribution = `(+1) * (-0.8) = -0.8` (disagrees).
+- Pathway `T.x` (ribosome, ref direction "down"): Weissberg `signed_score = -35.0` (padj ≈ 1e-35, extreme) → capped `-10` → contribution = `(-1) * (-10) = +10` (agrees, capped). Without the cap, this one pathway would dominate the mean.
+- Suppose 8 other pathways average contribution `+1.5`:
+
+```
+score_A = mean([+4.2, +3.1, -0.8, +10, +1.5, +1.5, ...]) for 12 pathways
+        ≈ +3.0   (capped; would be ≈ +5.0 without the cap due to T.x dominance)
+```
+
+Compare to:
+- NC noise floor (CyanoRak, capped): `0.1 ± 0.4` → T score `+3.0` is well above noise.
+- PC mean (capped): `+2.5`. T score `+3.0` is slightly above PC range.
+- R mean (capped): `+4.5`. Not at full R magnitude.
+
+**Interpretation:** coculture-RNA t3 shows a detectable N-limitation signature at PC-equivalent strength. Report magnitude, note that without the cap the score would have been inflated by one extremely-significant pathway and the interpretation would overstate the signature strength.
+
+### 7.4 Source tagging
+
+Per skill Rule 3:
+- `[KG]` — all numbers in notebook, methods.md, caveats.md, figures.
+- `[interpretation]` — biological reasoning using intrinsic knowledge (e.g., "photosynthesis downregulation is canonical N-response behavior").
+- `[gap]` — anything the KG can't answer (e.g., "no MED4 protein-level N-depletion time course outside Weissberg in this KG").
+
+Tagging applies to notebook entries and analysis documents. Chat reasoning during exploration does not need tags (per B1's skill friction observation).
+
+### 7.5 Locus tags, not gene names
+
+Per skill Rule 2:
+- Signature CSV columns: `term_id, term_name, ...` — term_ids are the primary key.
+- When drilling into pathway composition (`result.explain`, `result.overlap_genes`), locus_tags are primary; gene_names (e.g., `glnA`) appear as labels.
+- Figure row labels may use `term_name` for readability but `term_id` must be in the CSV.
+
+## 8. Risks and contingencies
+
+1. **Insufficient MED4 R experiments.** If Phase 1a finds only 1 MED4 N-limitation experiment, the ≥3-cluster signature threshold is barely meaningful (single experiment × a few timepoints). Contingency: relax to fallback `≥2`, document the weakness in `caveats.md`. If fewer than 3 MED4 R clusters exist, the analysis cannot proceed as designed — flag to researcher, reconsider scope.
+
+2. **Ontology-organism mismatch.** CyanoRak is cyanobacteria-specific. If a non-MED4 context experiment uses a non-cyanobacterial organism (e.g., Alteromonas), that organism is silently absent from the CyanoRak enrichment output. Contingency: document per-ontology organism coverage in `ontology_selection.md`; if non-MED4 context becomes ontology-incompatible, show it only in compatible ontologies.
+
+3. **Mixed-background clusters across experiments.** Restricted-`table_scope` experiments use `organism` background (Step 2 Call B); `all_detected_genes` experiments use `table_scope` background (Step 2 Call A). `fold_enrichment` and `bg_ratio` magnitudes are not directly comparable across the two background types — the organism background has a larger `N`, so `fold_enrichment` runs larger for the same pathway. Contingency: `signed_score` (= `sign × −log10(padj)`) is still comparable because BH is applied per cluster. Report `background_used` in `scores_all.csv`; flag in `caveats.md` if any T/R clusters use the organism background so interpretation accounts for it. Weissberg T tables with `significant_only` or similar are specifically handled via Call B, not silently dropped.
+
+4. **Signature dominated by catch-all pathways.** Per B1 caveat C3, broad categories (CyanoRak D.2, R.2) routinely show high enrichment due to size. Contingency: flag catch-all signature members in `caveats.md`; consider computing Layer A with and without them as a stability check alongside LOO.
+
+5. **No cross-ontology agreement.** If the 2–3 ontologies give discordant Layer A scores for a T condition, the claim must be qualified per ontology. Contingency: no single scalar answer; report the per-ontology vector with interpretation.
+
+6. **LOO on R experiments collapses the signature.** If removing a single R experiment drops signature size below 5 per ontology, the signature is really just that one experiment. Contingency: document, treat the analysis as descriptive rather than reference-anchored.
+
+7. **`EnrichmentResult` pickle round-trip fails.** Individual objects may pickle fine, but combining them in a dict and round-tripping can still fail — shared class refs drift across dict values, the aggregate may exceed size limits, or `.explain()` may break on the reconstructed instances even though the dict loads without error. Detection: the Step 2 `do` round-trip check verifies `.explain()` on at least one loaded instance both for an isolated pickle and for the full-dict pickle.
+
+   **Empirical status (2026-04-19).** Standard pickle round-trip verified against a 2-key heterogeneous dict of `EnrichmentResult` values (one 31-row MED4 × cyanorak_role result, one empty) — both single-object and dict stages loaded cleanly, `.explain()` worked on the loaded instances, per-object size ≈ 0.4 MB. Extrapolating to B2's full run (≤ ~30 keys), the full pickle stays well under 20 MB — far from pickle's practical limits. **The escalation paths below are precautionary, not observed failure modes at this scale.** If the Step 2 check fails anyway (scale drift, class churn, environment mismatch), the fallbacks apply.
+
+   Contingency, in escalation order:
+
+   1. **Split into multiple pickle files** — one per `(organism, ontology, background_used)` in `data/enrichment_pkl/` subdirectory. Downstream loads are a lazy dict keyed on filename lookup (`enrichment_pkl/MED4__cyanorak_role__table_scope.pkl`). Often the aggregate-dict problem is the only thing broken.
+   2. **Try `dill` or `cloudpickle`** for the individual files if standard pickle fails at the single-object level.
+   3. **Pickle only the constituent state** that `.explain()` needs (`results` DataFrame, `inputs.gene_sets`, `inputs.background`, `term2gene`, `cluster_metadata`) per `(organism, ontology, background_used)`. Reconstruct an `EnrichmentResult` in the Step 4 / exploration scripts by passing this state back into the constructor. Requires knowing the constructor signature — verify against `multiomics_explorer` source.
+   4. **Re-run `pathway_enrichment` inline** in the exploration/drilldown script when `.explain()` is needed. Slower but independent of pickle mechanics — the `enrichment_all.csv` already has the DataFrame-level results, so re-running is only needed for per-term gene overlap drilldown.
+
+## 9. Artifact plan
+
+Analysis directory: `analyses/2026-04-18-HHMM-pathway_enrichment_b2/` with standard structure per artifacts-guide §Directory structure.
+
+Files expected at completion:
+- `data/experiments_classified.csv`, `data/enrichment_all.csv`, `data/enrichment_results.pkl`, `data/reference_signature.csv`, `data/signature_dropped.csv`, `data/DATA_MANIFEST.md`.
+- `results/scores_all.csv`, `results/score_summary.csv`, `results/loo_signature.csv`, `results/loo_r_experiments.csv`, `results/fig1_heatmap.png`, `results/fig1_heatmap.pdf`, `results/fig2_trajectories.png`, `results/fig2_trajectories.pdf`, `results/RESULTS_MANIFEST.md`.
+- `exploration/notebook.md`, `exploration/key_pathways.csv`, `exploration/qc/` (diagnostic figures per step).
+- `scripts/01_select_experiments.py`, `02_ontology_landscape.py`, `03_run_enrichment.py`, `04_derive_signature.py`, `05_compute_scores.py`, `06_make_figures.py`. Plus `scripts/explore_*.py` — ad-hoc iteration scripts written during any step's `explore` phase (e.g., `explore_step2_key_pathway_genes.py` for `.explain()` drill-down, `explore_step3_fragile_signature.py` for per-experiment dominance checks). Committed with their outputs; never deleted; referenced from the relevant notebook entry.
+- `logs/step1a.log`, `logs/step1b.log`, `logs/step2.log`, `logs/step3.log`, `logs/step4.log`, `logs/step5.log` — per-step diagnostic logs (summary statistics, marker gene traces, edge-case resolutions) per artifacts-guide §Log verbosity.
+- Root: `README.md`, `methods.md`, `decisions.md`, `caveats.md`, `gaps_and_friction.md`, `api_coverage.md`, `references.md` (bibliographic — original data publications, methods references, tool/KG citations per artifacts-guide).
+- `superpowers/spec.md`, `superpowers/plan.md`, `superpowers/brainstorm-log.md`.
+
+No `{name}_utils/` package — this analysis exercises the new shared API rather than building reusable utilities locally.
+
+**Artifact format convention:**
+- **CSV** (via `to_dataframe`) for all API outputs — landscape rows, enrichment results, signature, scores, experiment metadata. Tabular, greppable, token-efficient for Claude Code inspection, one-liner to load via `pd.read_csv`.
+- **Pickle** only for `EnrichmentResult` objects (`data/enrichment_results.pkl`) — downstream steps need the live `.explain()` and `.overlap_genes()` accessors, which CSV cannot preserve.
+- **Notebook markdown** for envelope metadata (totals, `truncated`, per-ontology breakdowns) — captured at the `show` phase of each step, not kept as a separate file.
+- **PNG + PDF/SVG** for figures per artifacts-guide.
+
+## 10. Meta-deliverables (goals 2 + 3)
+
+- **`gaps_and_friction.md`** — live document, updated at every step's decide phase. Sections: KG data bugs, KG gaps, MCP friction, Skill/methodology friction, Process retrospective. Format per artifacts-guide.
+- **`api_coverage.md`** — table of MCP tools and Python primitives used, for what, where each worked or failed. Compared against B1's friction list to show resolved / new / persistent friction.
+
+Format for `api_coverage.md`:
+
+| Tool / Function | Step used | Purpose | Worked well | Friction / gaps |
+|---|---|---|---|---|
+| `list_experiments(search_text="nitrogen")` | 1a | Cross-organism N discovery | ... | ... |
+| `ontology_landscape` | 1b | Ontology/level ranking | ... | ... |
+| ... | | | | |
+
+## 11. References
+
+- B1 analysis: `analyses/2026-04-09-1713-pathway_enrichment_b1/` — prior pathway enrichment survey; reference for biological markers, ontology-selection methodology lessons, catch-all caveats.
+- Research methodology skill: `.claude/skills/research-methodology/SKILL.md` and references — rules for KG usage, artifacts, notebook, step protocol.
+- Pathway enrichment methodology: `docs://analysis/enrichment` (MCP resource) — Fisher ORA, BH per cluster, signed_score, clusterProfiler mapping.
+- Pathway enrichment tool: `docs://tools/pathway_enrichment` — parameters, response format, gotchas.
+- Runnable enrichment example: `docs://examples/pathway_enrichment.py` (MCP resource) — demonstrates `EnrichmentResult` accessors (`.explain()`, `.overlap_genes()`, `.to_compare_cluster_frame()`, `.generate_summary()`, `.to_envelope()`), custom-term2gene path via `fisher_ora` directly (no KG), and the full DE-wired pipeline pattern. Starting template for Step 2 `03_run_enrichment.py` and for `explore_*.py` drill-down scripts.
+- Ontology landscape tool: `docs://tools/ontology_landscape` — coverage × size_factor ranking, genome_coverage caveat.
+- Weissberg 2025 bioRxiv (DOI `10.1101/2025.11.24.690089`) — target publication.
+- [Skill v3 improvements proposed from B2 brainstorm](2026-04-18-research-methodology-v3-improvements-from-b2.md) — meta doc capturing content and process findings from this brainstorming session; input to future research-methodology skill revision.
