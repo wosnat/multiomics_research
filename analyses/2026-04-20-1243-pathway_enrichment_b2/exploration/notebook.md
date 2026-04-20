@@ -142,3 +142,21 @@ Skill-friction items captured:
 - [cumulative gene_count misreporting](../gaps_and_friction.md#2026-04-20--step-1a-gene_count-misreported-as-cumulative-instead-of-per-timepoint) — use per-TP values; top-level field banned from summaries.
 
 ---
+
+## 2026-04-20 16:XX — Step 1a REDO: drop CTX1 per Step 1b ontology-compatibility review
+
+### Why the redo
+During Step 1b MCP orientation (`ontology_landscape` per organism), discovered that **Alteromonas macleodii HOT1A3 has no `cyanorak_role` or `tigr_role` annotations** (cyanobacteria-specific ontologies; HOT1A3 is Gammaproteobacteria). With cyanorak_role L1 selected as Pick 1 (MED4-optimal), CTX1 (Weissberg HOT1A3 axenic N-starvation RNA-seq) would appear as a blank column in the cyanorak enrichment panel — no signal, no conservation signal to read from the figure.
+
+### Decision
+Drop CTX1 from the classification. New CTX set is a sister-Prochlorococcus conservation test (MIT9313 Tolonen companion + SS120 Domínguez-Martín azaserine). Both covered by all Pick 1/Pick 2 ontologies.
+
+### Impact
+- **Classification:** 15 experiments total (was 16). 4 T / 2 R / 2 PC / 5 NC / **2 CTX** (was 3). Spec §4 CTX soft cap (3–5) relaxed to 2, justified by ontology compatibility.
+- **Biology narrative:** CTX becomes a clean within-Prochlorococcus conservation test — the right scope for scoring Weissberg T against a MED4-derived signature.
+- **Artifact:** `data/experiments_classified.csv` regenerated (37 rows, 15 unique experiments). Old 16-experiment version remains traceable in commit `1b1878a`.
+
+Redo follows spec §Redo path: new commit, new notebook entry appended (not overwriting).
+
+---
+

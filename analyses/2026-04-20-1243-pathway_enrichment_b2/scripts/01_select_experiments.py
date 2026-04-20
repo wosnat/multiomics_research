@@ -70,10 +70,13 @@ CLASSIFICATIONS: list[dict[str, str]] = [
      "class": "NC",
      "rationale": "Steglich 2006 MED4 high white light (55 umol/m2/s); filtered_subset -> organism bg (provides organism-bg NC calibration)"},
 
-    # --- CTX (3): non-MED4 N-limitation for figure context ---
-    {"experiment_id": "10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_axenic",
-     "class": "CTX",
-     "rationale": "Weissberg 2025 Alteromonas HOT1A3 axenic N-starvation RNA-seq; representative Alteromonas context"},
+    # --- CTX (2): non-MED4 N-limitation for figure context ---
+    # Dropped 2026-04-20 during Step 1b ontology review:
+    #   HOT1A3 Weissberg axenic N-starvation RNA-seq — Alteromonas has no
+    #   cyanorak_role or tigr_role annotations (Gammaproteobacteria), so with
+    #   the MED4-optimal cyanorak_role L1 pick it would appear as a blank
+    #   column. Sister-Prochlorococcus conservation test (MIT9313 + SS120)
+    #   is the right scope for the MED4 N-signature.
     {"experiment_id": "10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray",
      "class": "CTX",
      "rationale": "Tolonen 2006 Prochlorococcus MIT9313 N-deprivation microarray; sister Prochlorococcus strain, same experimental design as R1"},
