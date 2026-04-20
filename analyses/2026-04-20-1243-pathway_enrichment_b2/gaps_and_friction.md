@@ -40,6 +40,24 @@ _(pre-seeded items from v3 meta-doc §4.5 A1–A4 will be added in Task 12 Step 
 
 **How to apply.** Before any future experiment-classification presentation, call `list_publications` with the relevant organism filter (or by DOI if the tool adds a `publication_doi` parameter — currently uses `author` / `organism` / `search_text` / DOI filter via experiment's `publication_doi`). Do not name authors from memory.
 
+### 2026-04-20 — Step 1a: gene_count misreported as cumulative instead of per-timepoint
+
+**What happened.** In the show-phase table, I reported "Tolonen 2006 R1 gene_count range 10,182 (min) to 10,182 (max)" for the R class — taking the top-level `gene_count` field from `list_experiments`. This is the *cumulative sum* across timepoints (6 TPs × 1697 genes = 10,182), not unique gene count. The researcher caught it: "gene count - report per timepoint not total - this is misleading - mean or range per timepoint."
+
+**Root cause.** `list_experiments` returns both a top-level `gene_count` (summed across timepoints) and per-timepoint `tp_gene_count` (via `experiments_to_dataframe`). I used the top-level field without thinking about its aggregation. The KG schema is not wrong — the top-level number is legitimately the cumulative count — but presenting it as "genes per experiment" in a per-class summary table is misleading because it scales with #timepoints, not with detection power.
+
+**Impact on reasoning.** A reader seeing "Tolonen 10,182 genes" assumes ~10k unique genes detected — 6× the actual MED4 ORFome. This distorts expectations about pathway-background size, per-cluster Fisher 2×2 dimensionality, and enrichment detection power. For Tolonen specifically it's obvious on second look (MED4 only has ~1,700 ORFs), but for larger organisms or deeper time courses it could silently mislead.
+
+**Rule violation.** Not strictly anti-hallucination — the number is in the KG — but a presentation-layer drift that propagates wrong mental models. Related to Rule 7 in spirit: numbers must be presented in a form the researcher can interpret without needing to know the aggregation semantics.
+
+**Proposed skill change (candidate for v3).** Add to `python-api-guide.md` or a new presentation-layer guidance section:
+- **"When summarizing experiment coverage, always use per-timepoint gene counts (`tp_gene_count`), never the top-level `gene_count`.** The top-level field sums across timepoints and scales with #TPs. Report as single value if constant, or min/median/max range if it varies. For cross-class summary tables, aggregate `median(tp_gene_count)` per experiment, then min/median/max across experiments."
+- Ideally the API itself should rename the top-level field to `total_row_count` or add a sibling `genes_per_timepoint` / `n_timepoints` pair so the aggregation semantics are self-documenting. Cross-link to A-series MCP friction (`api_coverage.md`).
+
+**How to apply.** Every show-phase table, notebook entry, manifest row, or methods description that mentions gene count must use `tp_gene_count` from `experiments_to_dataframe` (which is the per-timepoint value). If reporting a single scalar per experiment, use the median (or single value for non-time-course). The top-level `gene_count` should never appear as "N genes" in a human-facing summary without the word "cumulative" adjacent.
+
+Also saved as user-memory feedback (`feedback_gene_count_per_timepoint.md`) so future sessions start with the right convention.
+
 ---
 
 ## Process retrospective
