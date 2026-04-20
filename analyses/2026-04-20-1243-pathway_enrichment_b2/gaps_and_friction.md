@@ -6,7 +6,29 @@ Live document — appended to at each step's decide phase. Sections per artifact
 
 ## KG data bugs
 
-_(none observed yet)_
+### 2026-04-20 — `de_enrichment_inputs` background collapsed to foreground (FIXED same day)
+
+**What happened.** Step 2 enrichment run produced 0 significant pathways across 43 MED4 × `table_scope` bg clusters — biologically impossible for Tolonen R1 (6 TPs × 2 dir, strong N-deprivation time course). Debugging showed `gene_ratio == bg_ratio` in every row — Fisher 2×2 collapsed because `background` == `foreground`.
+
+**Root cause.** `multiomics_explorer.de_enrichment_inputs` iterated over `differential_expression_by_gene` rows and applied `continue` when `row_direction not in ("up", "down")` BEFORE populating `background`. Since `_STATUS_TO_DIR` doesn't map `"not_significant"` → anything, every not-significant row was skipped. Result: per-cluster `background` contained only significant rows in that (TP, direction) — always equal to the foreground gene set, never the full quantified universe.
+
+Compounded by: cluster key was `{exp_id}|{tp}|{direction}`, so even within significant rows the up-cluster bg got only `significant_up` genes, not all sig genes at that TP.
+
+**Detection signal.** `bg_count == count` and `bg_ratio == gene_ratio` across all rows in the enrichment_all.csv. If this repeats in the future, the reader should suspect the background-construction pipeline immediately.
+
+**Fix.** Two-pass background construction in `de_enrichment_inputs`: pass 1 builds per-(exp, tp) quantified universes from all rows (including not_significant); pass 2 builds per-(exp, tp, direction) foregrounds from significant rows. Up/down clusters at the same (exp, tp) share the same background (the full quantified set at that TP). Researcher merged the fix in sibling repo `multiomics_explorer` on 2026-04-20. Editable install picked it up automatically.
+
+**Empirical verification.** Re-running `03_run_enrichment.py`:
+- Tolonen R1 cluster backgrounds: all 12 clusters show bg=1697 (MED4 Affy array size, 100% match to expected quantified universe).
+- Up/down clusters at the same TP: identical background sets (set-equality verified).
+- 3h|down cluster (zero significant genes) now exists with full bg + empty gene_set (previously missing entirely).
+- Significant hits: 225 across 11,239 tests total. R × key-pathway agreement with expected direction: 40/41 significant hits concordant (97.6%). Biological sanity restored.
+
+**Impact on B2.** None on final results — bug found and fixed before committing any enrichment-derived outputs. The Step 2 do-phase commit captures only post-fix artifacts.
+
+**Impact on B1** (prior analysis, `analyses/2026-04-09-1713-pathway_enrichment_b1/`): B1 used a custom `enrich_utils/` package that likely built backgrounds manually, so B1 may be unaffected. Worth confirming; if B1 used `pathway_enrichment` via MCP with default `table_scope` bg, its results are invalid and need re-running. Flagged for researcher review.
+
+**Skill-relevance.** This was a collaboration loop: I (Claude) detected the signal (`gene_ratio == bg_ratio` everywhere), diagnosed the root cause from the `de_enrichment_inputs` source, and wrote a hand-off prompt for the explorer team. Researcher merged the fix in a separate session. The workflow pattern (detect → diagnose → hand off with reproducing case → resume downstream) is worth preserving as a process template. Candidate for v3 skill addition: "When an upstream primitive returns biologically implausible results, diagnose the primitive before adjusting the analysis — don't compensate in the analysis code for an upstream bug."
 
 ---
 

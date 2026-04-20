@@ -17,6 +17,8 @@ Run scripts from `multiomics_research` root with `uv run`.
 
 | File | Rows | Genes | Timepoints | Produced by | Description |
 |------|------|-------|------------|-------------|-------------|
+| `enrichment_all.csv` | 11,239 | n/a | per-cluster | `03_run_enrichment.py` | Fisher ORA results concatenated across 8 (organism, ontology, background) calls. 70 unique clusters. Columns include cluster, term_id, term_name, gene_ratio, bg_ratio, fold_enrichment, pvalue, p_adjust, signed_score, timepoint, direction, experiment_id, omics_type, table_scope, organism, ontology, background_used. 225 rows with p_adjust<0.05. Requires upstream fix in multiomics_explorer `de_enrichment_inputs` (merged 2026-04-20) — prior runs had bg collapsed to foreground. |
+| `enrichment_results.pkl` | 8 dict entries | n/a | n/a | `03_run_enrichment.py` | Dict keyed by (organism, ontology, background_used) → EnrichmentResult instance. Preserves `.explain()` / `.overlap_genes()` / `.background_genes()` accessors. Verified via stage-1 + stage-2 pickle round-trip. |
 
 ## Signature
 

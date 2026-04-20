@@ -1,0 +1,22 @@
+2026-04-20 15:24:26,808 [INFO] Starting 03_run_enrichment.py
+2026-04-20 15:24:26,810 [INFO] Loaded 37 rows (15 unique experiments)
+2026-04-20 15:24:26,811 [INFO] Pickle probe: organism='Prochlorococcus MED4', exp='10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq', ontology='cyanorak_role'
+2026-04-20 15:24:27,116 [INFO] Pickle stage 1 probe (single object): OK (.explain verified)
+2026-04-20 15:24:27,117 [INFO] Organism 'Prochlorococcus MED4': 11 all_detected, 2 restricted
+2026-04-20 15:24:29,612 [INFO] ('Prochlorococcus MED4', 'cyanorak_role', 'table_scope'): 3309 rows, 51 clusters, 78 p_adjust<0.05
+2026-04-20 15:24:29,992 [INFO] ('Prochlorococcus MED4', 'cyanorak_role', 'organism'): 552 rows, 8 clusters, 17 p_adjust<0.05
+2026-04-20 15:24:32,493 [INFO] ('Prochlorococcus MED4', 'kegg', 'table_scope'): 4695 rows, 51 clusters, 72 p_adjust<0.05
+2026-04-20 15:24:32,861 [INFO] ('Prochlorococcus MED4', 'kegg', 'organism'): 776 rows, 8 clusters, 13 p_adjust<0.05
+2026-04-20 15:24:32,861 [INFO] Organism 'Prochlorococcus MIT9313': 1 all_detected, 0 restricted
+2026-04-20 15:24:33,751 [INFO] ('Prochlorococcus MIT9313', 'cyanorak_role', 'table_scope'): 702 rows, 9 clusters, 23 p_adjust<0.05
+2026-04-20 15:24:33,751 [INFO] Skipping 'Prochlorococcus MIT9313' × 'cyanorak_role' × organism: no experiments
+2026-04-20 15:24:34,652 [INFO] ('Prochlorococcus MIT9313', 'kegg', 'table_scope'): 873 rows, 9 clusters, 17 p_adjust<0.05
+2026-04-20 15:24:34,652 [INFO] Skipping 'Prochlorococcus MIT9313' × 'kegg' × organism: no experiments
+2026-04-20 15:24:34,652 [INFO] Organism 'Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)': 0 all_detected, 1 restricted
+2026-04-20 15:24:34,652 [INFO] Skipping 'Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)' × 'cyanorak_role' × table_scope: no experiments
+2026-04-20 15:24:34,850 [INFO] ('Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)', 'cyanorak_role', 'organism'): 144 rows, 2 clusters, 2 p_adjust<0.05
+2026-04-20 15:24:34,850 [INFO] Skipping 'Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)' × 'kegg' × table_scope: no experiments
+2026-04-20 15:24:35,180 [INFO] ('Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)', 'kegg', 'organism'): 188 rows, 2 clusters, 3 p_adjust<0.05
+2026-04-20 15:24:35,300 [INFO] Wrote 11239 total rows to enrichment_all.csv (70 clusters, 185 unique terms)
+2026-04-20 15:24:36,241 [INFO] Pickle stage 2 (dict): OK — .explain verified on ('Prochlorococcus MED4', 'cyanorak_role', 'table_scope')
+2026-04-20 15:24:37,386 [INFO] Wrote diagnostic heatmap to /home/osnat/github/multiomics_research/analyses/2026-04-20-1243-pathway_enrichment_b2/exploration/qc/step2_key_pathway_heatmap.png (11 key pathways × 70 clusters)
