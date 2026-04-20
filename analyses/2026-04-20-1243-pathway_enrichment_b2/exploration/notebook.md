@@ -263,13 +263,15 @@ Data: see `ontology_selection.md` Head-to-head section and the QC tables above.
 Finding: [KG + interpretation] KEGG L2 has all 4 canonical anchors (N-metab + photosynthesis + ribosome + AA-metab) at a single level with clean gene sets (6–54 genes). GO BP L3 has only 1 N-specific term passing the min-5 filter (`go:0071941` nitrogen cycle metabolic process, 13 genes) and requires indirect inference for photosynthesis/ribosome anchors via broader process terms (`carboxylic acid metabolic process`, `gene expression`). KEGG's orthology-based pathway-map framing is also genuinely complementary to cyanorak_role's functional-role framing, making cross-ontology agreement (spec §5 Step 4 M3) more informative.
 Impact: Pick 2 = `kegg` L2.
 
-### Decision (interim — final locked at Task 4 decide gate)
+### Decision (researcher-approved 2026-04-20)
 
 Selected ontologies (2):
 1. **`cyanorak_role` level 1** — MED4-optimal, 4 canonical anchors at this level, cyano-specific.
 2. **`kegg` (pathway) level 2** — orthogonal pathway-map framing, bundles N-metab + photosynthesis + ribosome + AA-metab.
 
-Key-pathway panel (11 terms): 6 cyanorak L1 + 5 kegg L2. All term IDs validated via `genes_by_ontology(term_ids=..., organism="MED4")`; canonical marker genes (`glnA`, `cynA-S`, `psbA`, `psaA`, `rbcL`, `rplA`) confirmed present. Panel serves as the biological anchor for Step 2 QC (R clusters must show expected directions).
+Key-pathway panel (11 terms): 6 cyanorak L1 + 5 kegg L2. All term IDs validated via `genes_by_ontology(term_ids=..., organism="MED4")`; canonical marker genes (`glnA`, `cynA-S`, `psbA`, `psaA`, `rbcL`, `rplA`) confirmed present. Panel serves as the biological anchor for Step 2 QC (R clusters must show expected directions). Direction assignments: 5 UP (N-metab × 2, Glu-family AA, Ala/Asp/Glu, AA biosynth family), 5 DOWN (PSI, PSII, CO2 fixation, ribosome × 2, photosynthesis combined), 1 ambiguous (Gly/Ser/Thr).
+
+Step 1b locked. Gate 1 (step-boundary) satisfied — proceed to Step 2 do (Task 5).
 
 Rejected alternatives (all documented in `ontology_selection.md`): tigr_role L0 (redundant), go_bp L3 (sparse N annotation), go_bp L3-5 via term_ids (DAG redundancy + no new N-signal), BRITE subtrees (low coverage), 3rd ontology (reduces cross-ontology agreement informativeness).
 
