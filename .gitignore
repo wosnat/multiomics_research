@@ -15,6 +15,9 @@ benchmarks/
 # Logs (collected locally, not committed)
 *.jsonl
 
+# Per-analysis path marker written by execution-plan Task 0 scaffolding
+.analysis_dir
+
 # IDE
 .vscode/
 .idea/

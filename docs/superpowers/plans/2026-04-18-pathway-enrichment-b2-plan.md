@@ -34,7 +34,7 @@ If any of these fail, stop and report to the researcher. Do not proceed.
 
 **Files:**
 - Create: `analyses/2026-04-19-HHMM-pathway_enrichment_b2/` directory tree (substitute actual HHMM from `date "+%H%M"`)
-- Create: `analyses/.../exploration/2026-04-19-notebook.md`
+- Create: `analyses/.../exploration/notebook.md`
 - Create: `analyses/.../data/DATA_MANIFEST.md`
 - Create: `analyses/.../results/RESULTS_MANIFEST.md`
 - Create: `analyses/.../.gitignore`
@@ -42,14 +42,26 @@ If any of these fail, stop and report to the researcher. Do not proceed.
 - Create: `analyses/.../superpowers/plan.md` (copied from canonical — this file)
 - Create: `analyses/.../superpowers/brainstorm-log.md` (stub — to be filled if brainstorm transcript is captured separately)
 
-- [ ] **Step 1: Determine HHMM timestamp and create directory tree**
+- [ ] **Step 1: Determine HHMM timestamp, create directory tree, persist path**
 
 ```bash
 cd /home/osnat/github/multiomics_research
 export ANALYSIS_DIR="analyses/$(date +%Y-%m-%d)-$(date +%H%M)-pathway_enrichment_b2"
 mkdir -p "$ANALYSIS_DIR"/{exploration/qc,data,scripts,logs,results,superpowers}
-echo "Created $ANALYSIS_DIR"
+# Persist the path so subsequent tasks (possibly in fresh shells) can recover it
+# without guessing. See "ANALYSIS_DIR preamble" below every later bash block.
+echo "$ANALYSIS_DIR" > .analysis_dir
+echo "Created $ANALYSIS_DIR (path saved to .analysis_dir)"
 ```
+
+**ANALYSIS_DIR preamble for all later tasks.** Each task's bash block should start by re-exporting the path — the env var from Task 0 won't survive a new shell:
+
+```bash
+cd /home/osnat/github/multiomics_research
+export ANALYSIS_DIR="$(cat .analysis_dir)"
+```
+
+If `.analysis_dir` is missing, Task 0 didn't run — go back and scaffold. **Do not** fall back to `date +%Y-%m-%d-HHMM` — the timestamp won't match Task 0's, and a second directory with a different name will appear.
 
 - [ ] **Step 2: Create `.gitignore` with explicit entries only**
 
@@ -109,7 +121,7 @@ All files produced by scoring, plotting, and analysis scripts.
 
 - [ ] **Step 4: Create notebook stub with spec-walkthrough section**
 
-Write `$ANALYSIS_DIR/exploration/2026-04-19-notebook.md`:
+Write `$ANALYSIS_DIR/exploration/notebook.md`:
 
 ```markdown
 # Pathway enrichment B2 — research notebook
@@ -251,35 +263,29 @@ def main() -> int:
         log.error("CLASSIFICATIONS is empty — fill in from Step 1a.")
         sys.exit(1)
 
-    # Fetch metadata for each selected experiment via list_experiments.
-    # Group by organism to minimize calls.
     classified_df = pd.DataFrame(CLASSIFICATIONS)
-    organisms = sorted({row["experiment_id"].split("_")[-1] for row in CLASSIFICATIONS})  # heuristic; refine if needed
 
-    all_rows: list[dict] = []
-    # Pull detailed metadata for the IDs of interest.
-    # Strategy: query broad by organism, then filter to the selected IDs.
-    seen = set()
-    for org in ["MED4"] + [o for o in organisms if o != "MED4"]:
-        try:
-            result = list_experiments(organism=org, verbose=True)
-        except Exception as e:
-            log.warning(f"list_experiments(organism={org}) failed: {e}")
-            continue
-        tp_df = experiments_to_dataframe(result)
-        all_rows.append(tp_df)
-        log.info(f"Pulled {len(tp_df)} rows for organism={org}")
-
-    combined = pd.concat(all_rows, ignore_index=True) if all_rows else pd.DataFrame()
+    # API gap workaround: list_experiments has no experiment_ids filter, so we
+    # pull the full landscape and filter locally. See api_coverage.md.
+    result = list_experiments(verbose=True, limit=None)
+    combined = experiments_to_dataframe(result)
+    log.info(f"Pulled {len(combined)} experiment × timepoint rows from list_experiments(limit=None)")
 
     # Filter to our selected experiment_ids, join classification.
     selected = combined[combined["experiment_id"].isin(classified_df["experiment_id"])].copy()
     selected = selected.merge(classified_df, on="experiment_id", how="left")
 
-    # Report any missing experiments.
-    missing = set(classified_df["experiment_id"]) - set(selected["experiment_id"])
+    # Any experiment in CLASSIFICATIONS that didn't match the KG's returned IDs is a
+    # typo or a stale ID — fail loudly rather than silently writing an incomplete CSV.
+    missing = sorted(set(classified_df["experiment_id"]) - set(selected["experiment_id"]))
     if missing:
-        log.error(f"Missing experiments after metadata join: {missing}")
+        log.error(f"Missing experiments after metadata join ({len(missing)}): {missing}")
+        print(
+            f"ERROR: {len(missing)} classified experiment_ids not found in list_experiments: "
+            f"{missing}",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 
     # Write output.
     out_path = ANALYSIS_DIR / "data" / "experiments_classified.csv"
@@ -345,11 +351,11 @@ In chat, show:
 
 - [ ] **Step 2: Append show section to notebook entry**
 
-Open `$ANALYSIS_DIR/exploration/2026-04-19-notebook.md` and append:
+Open `$ANALYSIS_DIR/exploration/notebook.md` and append the following. **Note:** the outer code fence below uses four backticks so that the inner `` ```bash `` fence renders cleanly when copied into the notebook — keep that distinction when pasting.
 
-```markdown
+````markdown
 
-## 2026-04-19 HH:MM — Step 1a: experiment discovery + classification
+## YYYY-MM-DD HH:MM — Step 1a: experiment discovery + classification
 
 ### Command
 ```bash
@@ -366,7 +372,7 @@ uv run scripts/01_select_experiments.py
 
 ### Exploration (agent-driven QC)
 - ...
-```
+````
 
 - [ ] **Step 3: Interactive walkthrough with researcher**
 
@@ -393,7 +399,7 @@ Decision: proceed / redo classification / adjust scope. Append to notebook entry
 - [ ] **Step 5: Commit 2 (decide-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/exploration/2026-04-19-notebook.md"
+git add "$ANALYSIS_DIR/exploration/notebook.md"
 git commit -m "step 1a decide: classification approved"
 ```
 
@@ -562,8 +568,16 @@ Add rows for `landscape_<org>.csv` and `nitrogen_ontology_search.csv`.
 - [ ] **Step 8: Commit 1 (do-phase)**
 
 ```bash
+# Collect the landscape_*.csv paths into an array — shell globs in git add are
+# fragile (literal pattern if nothing matches, and "git add" complains).
+mapfile -t LANDSCAPE_FILES < <(ls "$ANALYSIS_DIR/data/"landscape_*.csv 2>/dev/null || true)
+if [ ${#LANDSCAPE_FILES[@]} -eq 0 ]; then
+    echo "No landscape_*.csv files found — did 02_ontology_landscape.py run?" >&2
+    exit 1
+fi
+
 git add "$ANALYSIS_DIR/scripts/02_ontology_landscape.py" \
-        "$ANALYSIS_DIR/data/"landscape_*.csv \
+        "${LANDSCAPE_FILES[@]}" \
         "$ANALYSIS_DIR/data/nitrogen_ontology_search.csv" \
         "$ANALYSIS_DIR/data/DATA_MANIFEST.md" \
         "$ANALYSIS_DIR/ontology_selection.md" \
@@ -587,7 +601,7 @@ git commit -m "step 1b do: ontology landscape + selection + key-pathway panel"
 
 - [ ] **Step 2: Append show section to notebook entry**
 
-Append to `$ANALYSIS_DIR/exploration/2026-04-19-notebook.md`.
+Append to `$ANALYSIS_DIR/exploration/notebook.md`.
 
 - [ ] **Step 3: Interactive walkthrough with researcher**
 
@@ -604,7 +618,7 @@ Decision: ontology set locked / redo. Append to notebook.
 - [ ] **Step 5: Commit 2 (decide-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/exploration/2026-04-19-notebook.md"
+git add "$ANALYSIS_DIR/exploration/notebook.md"
 git commit -m "step 1b decide: ontology set + key-pathway panel locked"
 ```
 
@@ -687,12 +701,56 @@ def main() -> int:
     results: dict[tuple, object] = {}
     all_rows: list[pd.DataFrame] = []
 
-    for org, org_group in classified.groupby("organism_name"):
+    # Dedupe to one row per experiment before splitting — experiments_to_dataframe
+    # returns one row per (experiment × timepoint), so the class / table_scope / id
+    # columns repeat across timepoints.
+    classified_unique = classified.drop_duplicates("experiment_id")
+
+    # PICKLE STAGE-1 PROBE — run a single small enrichment call first and
+    # verify single-object round-trip + .explain() BEFORE the main loop.
+    # Rationale (spec §5 Step 2): fail fast, don't discover pickle breakage
+    # after every call has completed. Stage 2 (dict round-trip) happens after
+    # the full results dict is built.
+    probe_org_row = classified_unique.iloc[0]
+    probe_ont = ONTOLOGIES[0]
+    try:
+        probe = run_one(
+            organism=probe_org_row["organism_name"],
+            ontology=probe_ont["ontology"],
+            level=probe_ont["level"],
+            experiment_ids=[probe_org_row["experiment_id"]],
+            background="organism",  # safest default for a single-experiment probe
+            tree=probe_ont.get("tree"),
+        )
+    except Exception as e:
+        log.error(f"Pickle probe enrichment call failed: {e} — cannot verify pickle round-trip")
+        return 1
+
+    probe_pkl = ANALYSIS_DIR / "data" / "_probe_single.pkl"
+    try:
+        with open(probe_pkl, "wb") as f:
+            pickle.dump(probe, f)
+        with open(probe_pkl, "rb") as f:
+            loaded_probe = pickle.load(f)
+        if not loaded_probe.results.empty:
+            first_row = loaded_probe.results.iloc[0]
+            _ = loaded_probe.explain(first_row["cluster"], first_row["term_id"])
+            log.info("Pickle stage 1 probe (single object): OK (.explain verified)")
+        else:
+            log.info("Pickle stage 1 probe (single object): OK (probe returned empty results, .explain skipped)")
+    except Exception as e:
+        log.error(f"Pickle stage 1 probe FAILED: {e} — see spec §8 risk 7 for fallbacks")
+        probe_pkl.unlink(missing_ok=True)
+        return 2
+    finally:
+        probe_pkl.unlink(missing_ok=True)
+
+    for org, org_group in classified_unique.groupby("organism_name"):
         # Split by table_scope.
         is_detected = org_group["table_scope"] == "all_detected_genes"
         detected_ids = org_group.loc[is_detected, "experiment_id"].tolist()
         restricted_ids = org_group.loc[~is_detected, "experiment_id"].tolist()
-        log.info(f"Organism {org}: {len(detected_ids)} detected, {len(restricted_ids)} restricted")
+        log.info(f"Organism {org}: {len(detected_ids)} detected, {len(restricted_ids)} restricted (experiment-level counts)")
 
         for ont in ONTOLOGIES:
             for bg_label, exp_ids, bg_value in [
@@ -726,38 +784,27 @@ def main() -> int:
     combined.to_csv(ANALYSIS_DIR / "data" / "enrichment_all.csv", index=False)
     log.info(f"Wrote {len(combined)} total rows to enrichment_all.csv")
 
-    # PICKLE ROUND-TRIP CHECK — see spec §8 risk 7.
+    # PICKLE STAGE-2 — full-dict round-trip. Stage-1 probe was done before the
+    # main loop. See spec §8 risk 7 (empirical status: both stages validated on
+    # 2026-04-19; escalation paths are precautionary).
     pkl_path = ANALYSIS_DIR / "data" / "enrichment_results.pkl"
-    # Stage 1: single-object
-    any_key = next(iter(results))
-    test_pkl = pkl_path.parent / "_test_single.pkl"
-    with open(test_pkl, "wb") as f:
-        pickle.dump(results[any_key], f)
-    with open(test_pkl, "rb") as f:
-        loaded = pickle.load(f)
-    try:
-        first_row = loaded.results.iloc[0]
-        _ = loaded.explain(first_row["cluster"], first_row["term_id"])
-        log.info("Pickle round-trip stage 1 (single object): OK")
-    except Exception as e:
-        log.error(f"Pickle round-trip stage 1 FAILED: {e}")
-        test_pkl.unlink(missing_ok=True)
-        return 2
-    test_pkl.unlink(missing_ok=True)
-
-    # Stage 2: full dict
     with open(pkl_path, "wb") as f:
         pickle.dump(results, f)
     with open(pkl_path, "rb") as f:
         loaded_dict = pickle.load(f)
     try:
-        any_key2 = next(iter(loaded_dict))
-        inst = loaded_dict[any_key2]
-        first_row = inst.results.iloc[0]
-        _ = inst.explain(first_row["cluster"], first_row["term_id"])
-        log.info("Pickle round-trip stage 2 (dict): OK")
+        verified = False
+        for key, inst in loaded_dict.items():
+            if not inst.results.empty:
+                first_row = inst.results.iloc[0]
+                _ = inst.explain(first_row["cluster"], first_row["term_id"])
+                log.info(f"Pickle stage 2 (dict): OK (.explain verified on {key})")
+                verified = True
+                break
+        if not verified:
+            log.warning("Pickle stage 2: dict loaded but all values empty; .explain not exercised")
     except Exception as e:
-        log.error(f"Pickle round-trip stage 2 FAILED: {e} — see spec §8 risk 7 for fallbacks")
+        log.error(f"Pickle stage 2 FAILED: {e} — see spec §8 risk 7 for fallbacks")
         pkl_path.unlink(missing_ok=True)
         return 3
 
@@ -851,6 +898,7 @@ For each R cluster × key pathway combination, drill into contributing genes via
 from __future__ import annotations
 
 import pickle
+import sys
 from pathlib import Path
 
 ANALYSIS_DIR = Path(__file__).resolve().parent.parent
@@ -861,10 +909,33 @@ with open(ANALYSIS_DIR / "data" / "enrichment_results.pkl", "rb") as f:
 # Pick an R cluster and the N-metabolism term.
 # Replace with actual R cluster + term_id from Step 1b key_pathways.
 target_key = ("Prochlorococcus MED4", "cyanorak_role", "table_scope")
-r_cluster = "<experiment_id>|<timepoint>|up"   # fill in
+r_cluster = "<experiment_id>|<timepoint_label>|up"   # fill in
+# Cluster naming: "{experiment_id}|{timepoint}|{direction}". Single-timepoint
+# experiments (no timepoint) serialize as "{experiment_id}|NA|{direction}".
+# Verify the exact label by inspecting result.results["cluster"].unique().
 term_id = "cyanorak.role:E.4"
 
+if target_key not in results:
+    print(f"target_key {target_key} not in results. Available keys:", file=sys.stderr)
+    for k in results:
+        print(f"  {k}", file=sys.stderr)
+    sys.exit(1)
+
 result = results[target_key]
+
+available_clusters = set(result.results["cluster"].unique()) if not result.results.empty else set()
+if r_cluster not in available_clusters:
+    print(f"cluster {r_cluster!r} not found in result. Available clusters for {target_key}:", file=sys.stderr)
+    for c in sorted(available_clusters):
+        print(f"  {c}", file=sys.stderr)
+    sys.exit(1)
+
+available_terms = set(result.results["term_id"].unique()) if not result.results.empty else set()
+if term_id not in available_terms:
+    print(f"term_id {term_id!r} not present in this cluster's enrichment results.", file=sys.stderr)
+    print(f"(The term may exist in the ontology but not pass min_gene_set_size for this cluster.)", file=sys.stderr)
+    sys.exit(1)
+
 explanation = result.explain(r_cluster, term_id)
 print(explanation._repr_markdown_())
 ```
@@ -885,7 +956,7 @@ Q → data → finding → impact capture. Typical questions:
 - [ ] **Step 6: Commit 2 (decide-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/exploration/2026-04-19-notebook.md" \
+git add "$ANALYSIS_DIR/exploration/notebook.md" \
         "$ANALYSIS_DIR/scripts/"explore_step2_*.py
 git commit -m "step 2 decide: enrichment QC passed"
 ```
@@ -897,29 +968,35 @@ git commit -m "step 2 decide: enrichment QC passed"
 **Spec reference:** §5 Step 3 do
 
 **Files:**
-- Create: `$ANALYSIS_DIR/scripts/04_derive_signature.py`
+- Create: `$ANALYSIS_DIR/scripts/signature.py` (shared primitive — reused by Task 10 LOO-R)
+- Create: `$ANALYSIS_DIR/scripts/04_derive_signature.py` (runner — I/O + logging)
 - Create: `$ANALYSIS_DIR/data/reference_signature.csv`
 - Create: `$ANALYSIS_DIR/data/signature_dropped.csv`
 - Create: `$ANALYSIS_DIR/logs/step3.log`
 
-- [ ] **Step 1: Write the signature script**
+- [ ] **Step 1a: Write the shared signature primitive module**
 
-Write `$ANALYSIS_DIR/scripts/04_derive_signature.py`:
+Write `$ANALYSIS_DIR/scripts/signature.py`:
 
 ```python
-"""Derive MED4-only reference N-limitation signature with temporal filter +
-bidirectional tie-breaker + per-experiment breakdown."""
+"""Shared signature-derivation primitive.
+
+Pure functions — no I/O, no logging. Imported by 04_derive_signature.py (main
+run) and 05_compute_scores.py (LOO-R stability re-derivation). Kept as a
+single-file module, not a package, to match spec §9's "no _utils/ package"
+discipline while still avoiding cross-script importlib hacks.
+
+Promotion candidate: if this primitive proves reusable across analyses, a
+future `multiomics_explorer.analysis.signature` module could export
+`derive_for_ontology` + the threshold constants. Defer that decision until a
+second use case appears.
+"""
 from __future__ import annotations
 
 import json
-import logging
 from collections import defaultdict
-from pathlib import Path
 
-import numpy as np
 import pandas as pd
-
-ANALYSIS_DIR = Path(__file__).resolve().parent.parent
 
 TIMEPOINT_HOURS_CUTOFF = 3.0
 CORE_SUPPORT = 3
@@ -927,10 +1004,16 @@ FALLBACK_SUPPORT = 2
 NOTABLE_SIGNED_SCORE = 3.0
 
 
-def derive_for_ontology(df: pd.DataFrame, support_threshold: int, log) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Return (signature_df, dropped_df) for one ontology."""
-    # df is already filtered to R clusters of one ontology, with temporal filter applied.
-    # Count per (term_id, direction).
+def derive_for_ontology(
+    df: pd.DataFrame, support_threshold: int
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Return (signature_df, dropped_df) for one ontology.
+
+    Caller is responsible for upstream filtering (restricting to R clusters of
+    one ontology, applying any temporal filter). Required columns on df:
+    term_id, term_name, cluster, direction, experiment_id, p_adjust,
+    signed_score.
+    """
     sig_rows = []
     dropped_rows = []
     for (term_id, term_name), grp in df.groupby(["term_id", "term_name"]):
@@ -941,13 +1024,11 @@ def derive_for_ontology(df: pd.DataFrame, support_threshold: int, log) -> tuple[
         down_clusters = sig.loc[sig["direction"] == "down", "cluster"].tolist()
         max_abs = grp["signed_score"].abs().max() if len(grp) else 0.0
 
-        # Per-experiment breakdown (JSON dict).
         per_exp = defaultdict(lambda: {"up": 0, "down": 0})
         for _, r in sig.iterrows():
             per_exp[r["experiment_id"]][r["direction"]] += 1
         per_exp_json = json.dumps(dict(per_exp))
 
-        # Classify.
         is_up = n_up >= support_threshold and n_down < support_threshold
         is_down = n_down >= support_threshold and n_up < support_threshold
         is_bidirectional = n_up >= support_threshold and n_down >= support_threshold
@@ -988,9 +1069,54 @@ def derive_for_ontology(df: pd.DataFrame, support_threshold: int, log) -> tuple[
                 "contributing_clusters_down": "|".join(down_clusters),
                 "per_experiment_breakdown": per_exp_json,
             })
-        # else: silently omitted (truly uninteresting)
 
     return pd.DataFrame(sig_rows), pd.DataFrame(dropped_rows)
+```
+
+- [ ] **Step 1b: Write the runner**
+
+Write `$ANALYSIS_DIR/scripts/04_derive_signature.py`:
+
+```python
+"""Derive MED4-only reference N-limitation signature.
+
+I/O + logging runner. Pure derivation logic lives in signature.py.
+"""
+from __future__ import annotations
+
+import logging
+from pathlib import Path
+
+import pandas as pd
+
+from signature import (
+    CORE_SUPPORT,
+    FALLBACK_SUPPORT,
+    TIMEPOINT_HOURS_CUTOFF,
+    derive_for_ontology,
+)
+
+ANALYSIS_DIR = Path(__file__).resolve().parent.parent
+
+
+MED4_ORGANISM_SUBSTRING = "MED4"  # organism_name filter (substring, case-insensitive)
+
+
+def _append_fallback_to_decisions(ontology: str, core_size: int, analysis_dir: Path) -> None:
+    """Append a fallback-rule entry to decisions.md (spec §5 Step 3)."""
+    decisions = analysis_dir / "decisions.md"
+    from datetime import datetime
+    stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    section = (
+        f"\n## D-auto — Signature derivation fallback ({ontology})\n\n"
+        f"**Applied:** {stamp}\n\n"
+        f"Ontology `{ontology}` produced {core_size} signature pathways under the "
+        f"core rule (≥{CORE_SUPPORT} same-direction R clusters). Because {core_size} < 5, "
+        f"the fallback threshold (≥{FALLBACK_SUPPORT}) was applied. The resulting "
+        f"signature is weaker — document in `caveats.md`.\n"
+    )
+    with decisions.open("a") as f:
+        f.write(section)
 
 
 def main() -> int:
@@ -1004,45 +1130,101 @@ def main() -> int:
     enrichment = pd.read_csv(ANALYSIS_DIR / "data" / "enrichment_all.csv")
     classified = pd.read_csv(ANALYSIS_DIR / "data" / "experiments_classified.csv")
 
-    # Restrict to MED4 R clusters.
-    r_exp_ids = set(classified.loc[(classified["class"] == "R") & (classified["organism_name"] == "Prochlorococcus MED4"), "experiment_id"])
-    r_clusters = enrichment[enrichment["experiment_id"].isin(r_exp_ids)].copy()
-    log.info(f"MED4 R experiments: {len(r_exp_ids)}, clusters: {r_clusters['cluster'].nunique()}")
+    # Restrict to MED4 R clusters — match MED4 by substring so we're robust to
+    # display-name variants ("Prochlorococcus MED4", "MED4", case drift, etc.).
+    organism_mask = classified["organism_name"].fillna("").str.contains(
+        MED4_ORGANISM_SUBSTRING, case=False, regex=False
+    )
+    r_exp_ids = set(
+        classified.loc[(classified["class"] == "R") & organism_mask, "experiment_id"]
+    )
+    if not r_exp_ids:
+        log.error(
+            f"No MED4 R experiments found (filter: class=R AND organism_name contains "
+            f"{MED4_ORGANISM_SUBSTRING!r}). Check experiments_classified.csv classifications "
+            f"and organism_name spelling."
+        )
+        return 1
 
-    # Temporal filter: drop clusters with timepoint_hours < 3 (but keep NaN / missing).
-    hours_col = r_clusters.get("timepoint_hours")
-    if hours_col is not None:
+    r_clusters = enrichment[enrichment["experiment_id"].isin(r_exp_ids)].copy()
+    log.info(
+        f"MED4 R experiments: {len(r_exp_ids)}, "
+        f"clusters: {r_clusters['cluster'].nunique()}"
+    )
+    if r_clusters.empty:
+        log.error(
+            f"MED4 R experiments ({sorted(r_exp_ids)}) classified but produced zero "
+            f"enrichment rows. Verify enrichment_all.csv covers these experiments."
+        )
+        return 1
+
+    # Temporal filter: drop clusters with timepoint_hours < 3 (keep NaN / missing).
+    if "timepoint_hours" in r_clusters.columns:
+        hours_col = r_clusters["timepoint_hours"]
         mask_keep = hours_col.isna() | (hours_col >= TIMEPOINT_HOURS_CUTOFF)
-        dropped_early = (~mask_keep).sum()
+        dropped_early = int((~mask_keep).sum())
         r_clusters = r_clusters[mask_keep].copy()
-        log.info(f"Temporal filter (<{TIMEPOINT_HOURS_CUTOFF}h): dropped {dropped_early} early-cluster rows")
+        log.info(
+            f"Temporal filter (<{TIMEPOINT_HOURS_CUTOFF}h): "
+            f"dropped {dropped_early} early-cluster rows"
+        )
+    else:
+        log.warning(
+            "timepoint_hours column missing from enrichment_all.csv; temporal filter skipped. "
+            "Verify 03_run_enrichment.py passes cluster metadata through."
+        )
+
+    if r_clusters.empty:
+        log.error("After temporal filter, r_clusters is empty — cannot derive signature.")
+        return 1
 
     # Per-ontology derivation.
     all_sig = []
     all_dropped = []
+    fallback_ontologies: list[tuple[str, int]] = []  # (ontology, core_size)
     for ontology, ont_df in r_clusters.groupby("ontology"):
-        sig_df, drop_df = derive_for_ontology(ont_df, CORE_SUPPORT, log)
+        sig_df, drop_df = derive_for_ontology(ont_df, CORE_SUPPORT)
         rule = "core"
         if len(sig_df) < 5:
-            log.warning(f"Ontology {ontology}: {len(sig_df)} < 5 signature pathways under core rule. Applying fallback (>=2).")
-            sig_df, drop_df = derive_for_ontology(ont_df, FALLBACK_SUPPORT, log)
+            core_size = len(sig_df)
+            log.warning(
+                f"Ontology {ontology}: {core_size} < 5 signature pathways "
+                f"under core rule. Applying fallback (>={FALLBACK_SUPPORT})."
+            )
+            sig_df, drop_df = derive_for_ontology(ont_df, FALLBACK_SUPPORT)
             rule = "fallback"
+            fallback_ontologies.append((ontology, core_size))
         sig_df["ontology"] = ontology
         sig_df["rule_applied"] = rule
         drop_df["ontology"] = ontology
         all_sig.append(sig_df)
         all_dropped.append(drop_df)
-        log.info(f"Ontology {ontology}: signature size = {len(sig_df)} ({rule}), dropped = {len(drop_df)}")
+        log.info(
+            f"Ontology {ontology}: signature size = {len(sig_df)} ({rule}), "
+            f"dropped = {len(drop_df)}"
+        )
 
-    signature = pd.concat(all_sig, ignore_index=True) if all_sig else pd.DataFrame()
+    signature_df = pd.concat(all_sig, ignore_index=True) if all_sig else pd.DataFrame()
     dropped = pd.concat(all_dropped, ignore_index=True) if all_dropped else pd.DataFrame()
 
-    signature.to_csv(ANALYSIS_DIR / "data" / "reference_signature.csv", index=False)
+    if signature_df.empty:
+        log.error(
+            "Derived signature is empty across all ontologies — cannot proceed. "
+            "Either R set is too small, or no pathway meets the support threshold."
+        )
+        return 1
+
+    signature_df.to_csv(ANALYSIS_DIR / "data" / "reference_signature.csv", index=False)
     dropped.to_csv(ANALYSIS_DIR / "data" / "signature_dropped.csv", index=False)
-    log.info(f"Wrote {len(signature)} signature, {len(dropped)} dropped")
+    log.info(f"Wrote {len(signature_df)} signature, {len(dropped)} dropped")
+
+    # Record any fallback applications to decisions.md (spec §5 Step 3).
+    for ont, core_size in fallback_ontologies:
+        _append_fallback_to_decisions(ont, core_size, ANALYSIS_DIR)
+        log.info(f"Appended fallback-rule entry for ontology={ont} to decisions.md")
 
     print("\n=== Signature sizes per ontology ===")
-    print(signature.groupby(["ontology", "rule_applied", "direction"]).size().to_string())
+    print(signature_df.groupby(["ontology", "rule_applied", "direction"]).size().to_string())
     print("\n=== Dropped sizes per ontology ===")
     print(dropped.groupby(["ontology", "drop_reason"]).size().to_string())
 
@@ -1052,6 +1234,10 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 ```
+
+**If `decisions.md` doesn't exist yet:** the runner's `open("a")` creates it on first fallback write. If no fallback applies, the file is never touched here and gets created in Task 9 (pre-registration). Either order is safe; the append-mode open never truncates.
+
+**Import note:** `uv run scripts/04_derive_signature.py` puts `scripts/` on `sys.path`, so `from signature import ...` resolves to `scripts/signature.py` without any packaging. No `__init__.py`; no `sys.path` munging.
 
 - [ ] **Step 2: Run the script**
 
@@ -1066,11 +1252,19 @@ Expected: `data/reference_signature.csv`, `data/signature_dropped.csv`, stdout s
 - [ ] **Step 4: Commit 1 (do-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/scripts/04_derive_signature.py" \
+# If the runner appended fallback entries to decisions.md, include it in this commit.
+DECISIONS_ARG=()
+if [ -f "$ANALYSIS_DIR/decisions.md" ] && git status --short "$ANALYSIS_DIR/decisions.md" | grep -q .; then
+    DECISIONS_ARG=("$ANALYSIS_DIR/decisions.md")
+fi
+
+git add "$ANALYSIS_DIR/scripts/signature.py" \
+        "$ANALYSIS_DIR/scripts/04_derive_signature.py" \
         "$ANALYSIS_DIR/data/reference_signature.csv" \
         "$ANALYSIS_DIR/data/signature_dropped.csv" \
         "$ANALYSIS_DIR/data/DATA_MANIFEST.md" \
-        "$ANALYSIS_DIR/logs/step3.log"
+        "$ANALYSIS_DIR/logs/step3.log" \
+        "${DECISIONS_ARG[@]}"
 git commit -m "step 3 do: MED4 reference signature with temporal + tie-breaker filters"
 ```
 
@@ -1105,7 +1299,7 @@ Example: `$ANALYSIS_DIR/scripts/explore_step3_single_exp_dominance.py` — flag 
 - [ ] **Step 6: Commit 2 (decide-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/exploration/2026-04-19-notebook.md" \
+git add "$ANALYSIS_DIR/exploration/notebook.md" \
         "$ANALYSIS_DIR/scripts/"explore_step3_*.py 2>/dev/null || true
 git commit -m "step 3 decide: signature locked"
 ```
@@ -1172,7 +1366,12 @@ Do NOT commit yet — this will be combined with the scoring script commit in Ta
 Write `$ANALYSIS_DIR/scripts/05_compute_scores.py`:
 
 ```python
-"""Compute Layer A scores with sign-weighted alignment + SCORE_CAP + stability checks."""
+"""Compute Layer A scores with sign-weighted alignment + SCORE_CAP + stability checks.
+
+Stability check 2 (LOO R experiments) re-derives the signature per exclusion,
+re-scores all clusters, re-computes calibration, and re-classifies T clusters —
+so the flag is a *classification flip*, not just a score delta (spec §5 Step 4).
+"""
 from __future__ import annotations
 
 import logging
@@ -1180,6 +1379,13 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+from signature import (
+    CORE_SUPPORT,
+    FALLBACK_SUPPORT,
+    TIMEPOINT_HOURS_CUTOFF,
+    derive_for_ontology,
+)
 
 ANALYSIS_DIR = Path(__file__).resolve().parent.parent
 
@@ -1189,7 +1395,7 @@ SCORE_CAP = 10.0
 def capped_signed_score(s: float) -> float:
     if pd.isna(s):
         return 0.0
-    return np.sign(s) * min(abs(s), SCORE_CAP)
+    return float(np.sign(s)) * min(abs(s), SCORE_CAP)
 
 
 def compute_score(cluster_rows: pd.DataFrame, signature: pd.DataFrame) -> float:
@@ -1207,6 +1413,104 @@ def compute_score(cluster_rows: pd.DataFrame, signature: pd.DataFrame) -> float:
     return float(np.mean(contributions)) if contributions else np.nan
 
 
+def score_all_clusters(
+    enrichment_df: pd.DataFrame,
+    signature_df: pd.DataFrame,
+    class_map: dict[str, str],
+) -> pd.DataFrame:
+    """Score every (cluster, ontology, background_used) against signature_df."""
+    rows = []
+    for (cluster, ontology, bg), grp in enrichment_df.groupby(
+        ["cluster", "ontology", "background_used"]
+    ):
+        ont_sig = signature_df[signature_df["ontology"] == ontology]
+        if ont_sig.empty:
+            continue
+        score = compute_score(grp, ont_sig)
+        first = grp.iloc[0]
+        rows.append({
+            "cluster": cluster,
+            "ontology": ontology,
+            "background_used": bg,
+            "score": score,
+            "organism": first["organism"],
+            "experiment_id": first["experiment_id"],
+            "timepoint": first.get("timepoint"),
+            "timepoint_hours": first.get("timepoint_hours"),
+            "direction": first.get("direction"),
+            "class": class_map.get(first["experiment_id"]),
+        })
+    return pd.DataFrame(rows)
+
+
+def compute_calibration(scores_df: pd.DataFrame) -> pd.DataFrame:
+    """NC noise floor + PC peak per (ontology, background_used)."""
+    nc = scores_df[scores_df["class"] == "NC"]
+    pc = scores_df[scores_df["class"] == "PC"]
+    rows = []
+    groups = set(zip(nc["ontology"], nc["background_used"])) | set(
+        zip(pc["ontology"], pc["background_used"])
+    )
+    for ont, bg in sorted(groups):
+        nc_grp = nc[(nc["ontology"] == ont) & (nc["background_used"] == bg)]
+        pc_grp = pc[(pc["ontology"] == ont) & (pc["background_used"] == bg)]
+        rows.append({
+            "ontology": ont, "background_used": bg,
+            "nc_mean": nc_grp["score"].mean() if len(nc_grp) else np.nan,
+            "nc_std": nc_grp["score"].std(ddof=1) if len(nc_grp) >= 2 else np.nan,
+            "nc_n": len(nc_grp),
+            "pc_mean": pc_grp["score"].mean() if len(pc_grp) else np.nan,
+            "pc_std": pc_grp["score"].std(ddof=1) if len(pc_grp) >= 2 else np.nan,
+            "pc_n": len(pc_grp),
+        })
+    return pd.DataFrame(rows)
+
+
+def classify(score: float, calib_df: pd.DataFrame, ontology: str, bg: str) -> str:
+    """Map (score, matched calibration) → label per spec §5 Step 4."""
+    c = calib_df[(calib_df["ontology"] == ontology) & (calib_df["background_used"] == bg)]
+    if c.empty:
+        return "no_matched_calibration"
+    row = c.iloc[0]
+    if pd.isna(row["nc_std"]) or row["nc_std"] == 0:
+        return "insufficient_nc"
+    if pd.isna(score):
+        return "no_signature_coverage"
+    if score >= row["nc_mean"] + 2 * row["nc_std"]:
+        if (
+            not pd.isna(row["pc_mean"])
+            and not pd.isna(row["pc_std"])
+            and score >= row["pc_mean"] - 2 * row["pc_std"]
+        ):
+            return "pc_like"
+        return "detectable"
+    if abs(score - row["nc_mean"]) < 2 * row["nc_std"]:
+        return "no_signal"
+    return "below_nc"
+
+
+def rederive_signature_loo(
+    enrichment_df: pd.DataFrame,
+    r_exp_ids: set[str],
+    excluded: str,
+) -> pd.DataFrame:
+    """Re-run Step 3 derivation logic excluding one R experiment."""
+    r_subset = enrichment_df[
+        enrichment_df["experiment_id"].isin(r_exp_ids - {excluded})
+    ].copy()
+    if "timepoint_hours" in r_subset.columns:
+        hours = r_subset["timepoint_hours"]
+        r_subset = r_subset[hours.isna() | (hours >= TIMEPOINT_HOURS_CUTOFF)]
+    parts = []
+    for ont, ont_df in r_subset.groupby("ontology"):
+        s, _ = derive_for_ontology(ont_df, CORE_SUPPORT)
+        if len(s) < 5:
+            s, _ = derive_for_ontology(ont_df, FALLBACK_SUPPORT)
+        s["ontology"] = ont
+        parts.append(s)
+    return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
+
+
 def main() -> int:
     logging.basicConfig(
         filename=str(ANALYSIS_DIR / "logs" / "step4.log"),
@@ -1219,139 +1523,135 @@ def main() -> int:
     classified = pd.read_csv(ANALYSIS_DIR / "data" / "experiments_classified.csv")
     signature = pd.read_csv(ANALYSIS_DIR / "data" / "reference_signature.csv")
 
-    class_map = dict(zip(classified["experiment_id"], classified["class"]))
-    enrichment["class"] = enrichment["experiment_id"].map(class_map)
+    # Dedupe to one row per experiment — classified has one row per (experiment × timepoint).
+    classified_unique = classified.drop_duplicates("experiment_id")
+    class_map = classified_unique.set_index("experiment_id")["class"].to_dict()
 
-    # Compute score per (cluster, ontology, background_used).
-    score_rows = []
-    for (cluster, ontology, bg), grp in enrichment.groupby(["cluster", "ontology", "background_used"]):
-        ont_sig = signature[signature["ontology"] == ontology]
-        if ont_sig.empty:
-            continue
-        score = compute_score(grp, ont_sig)
-        score_rows.append({
-            "cluster": cluster,
-            "ontology": ontology,
-            "background_used": bg,
-            "score": score,
-            "organism": grp.iloc[0]["organism"],
-            "experiment_id": grp.iloc[0]["experiment_id"],
-            "timepoint": grp.iloc[0].get("timepoint"),
-            "timepoint_hours": grp.iloc[0].get("timepoint_hours"),
-            "direction": grp.iloc[0].get("direction"),
-            "class": grp.iloc[0].get("class"),
-        })
-    scores = pd.DataFrame(score_rows)
+    # Main scoring + calibration.
+    scores = score_all_clusters(enrichment, signature, class_map)
     scores.to_csv(ANALYSIS_DIR / "results" / "scores_all.csv", index=False)
     log.info(f"Wrote {len(scores)} cluster scores")
 
-    # NC noise floor per (ontology, background_used).
-    nc_scores = scores[scores["class"] == "NC"]
-    pc_scores = scores[scores["class"] == "PC"]
-    calib = []
-    for (ont, bg), nc_grp in nc_scores.groupby(["ontology", "background_used"]):
-        pc_grp = pc_scores[(pc_scores["ontology"] == ont) & (pc_scores["background_used"] == bg)]
-        calib.append({
-            "ontology": ont, "background_used": bg,
-            "nc_mean": nc_grp["score"].mean(), "nc_std": nc_grp["score"].std(ddof=1),
-            "nc_n": len(nc_grp),
-            "pc_mean": pc_grp["score"].mean() if len(pc_grp) else np.nan,
-            "pc_std": pc_grp["score"].std(ddof=1) if len(pc_grp) >= 2 else np.nan,
-            "pc_n": len(pc_grp),
-        })
-    calib_df = pd.DataFrame(calib)
+    calib_df = compute_calibration(scores)
     log.info(f"Calibration: {len(calib_df)} (ontology, background_used) groups")
 
-    # T condition summary with classification vs. calibration.
+    # T condition summary with classification.
     t_scores = scores[scores["class"] == "T"].copy()
     t_summary = []
     for _, row in t_scores.iterrows():
-        c = calib_df[(calib_df["ontology"] == row["ontology"]) & (calib_df["background_used"] == row["background_used"])]
-        if c.empty:
-            classification = "no_matched_calibration"
-        else:
-            c = c.iloc[0]
-            if pd.isna(c["nc_std"]) or c["nc_std"] == 0:
-                classification = "insufficient_nc"
-            elif row["score"] >= c["nc_mean"] + 2 * c["nc_std"]:
-                if not pd.isna(c["pc_mean"]) and not pd.isna(c["pc_std"]) and row["score"] >= c["pc_mean"] - 2 * c["pc_std"]:
-                    classification = "pc_like"
-                else:
-                    classification = "detectable"
-            elif abs(row["score"] - c["nc_mean"]) < 2 * c["nc_std"]:
-                classification = "no_signal"
-            else:
-                classification = "below_nc"
-        t_summary.append({**row.to_dict(), "classification": classification})
+        t_summary.append({
+            **row.to_dict(),
+            "classification": classify(row["score"], calib_df, row["ontology"], row["background_used"]),
+        })
     summary = pd.DataFrame(t_summary)
     summary.to_csv(ANALYSIS_DIR / "results" / "score_summary.csv", index=False)
+
+    # Build a lookup of original classification keyed by (cluster, ontology, background_used).
+    orig_class_lookup = {
+        (r["cluster"], r["ontology"], r["background_used"]): r["classification"]
+        for r in t_summary
+    }
 
     # Stability check 1: LOO signature pathways per T cluster.
     loo_sig_rows = []
     for _, trow in t_scores.iterrows():
         ont_sig = signature[signature["ontology"] == trow["ontology"]]
-        cluster_rows = enrichment[(enrichment["cluster"] == trow["cluster"]) & (enrichment["ontology"] == trow["ontology"])]
+        cluster_rows = enrichment[
+            (enrichment["cluster"] == trow["cluster"])
+            & (enrichment["ontology"] == trow["ontology"])
+        ]
         orig_score = trow["score"]
         for _, sigrow in ont_sig.iterrows():
             reduced = ont_sig[ont_sig["term_id"] != sigrow["term_id"]]
             new_score = compute_score(cluster_rows, reduced)
             flip = (np.sign(orig_score) != np.sign(new_score)) if not pd.isna(new_score) else False
-            drop = abs(new_score) < 0.5 * abs(orig_score) if not pd.isna(new_score) else False
+            drop = (abs(new_score) < 0.5 * abs(orig_score)) if not pd.isna(new_score) else False
             loo_sig_rows.append({
                 "cluster": trow["cluster"], "ontology": trow["ontology"],
                 "removed_term_id": sigrow["term_id"], "removed_term_name": sigrow["term_name"],
                 "orig_score": orig_score, "new_score": new_score,
-                "flag_flip": flip, "flag_large_drop": drop,
+                "flag_sign_flip": flip, "flag_large_drop": drop,
             })
     loo_sig = pd.DataFrame(loo_sig_rows)
     loo_sig.to_csv(ANALYSIS_DIR / "results" / "loo_signature.csv", index=False)
 
-    # Stability check 2: LOO R experiments (re-derive signature excluding each R exp).
-    # This requires re-running Step 3 logic per-exclusion; abbreviated here.
-    # Use derive_for_ontology from 04_derive_signature.py as a library.
-    from importlib.util import spec_from_file_location, module_from_spec
-    sig_mod_spec = spec_from_file_location("derive", ANALYSIS_DIR / "scripts" / "04_derive_signature.py")
-    sig_mod = module_from_spec(sig_mod_spec)
-    sig_mod_spec.loader.exec_module(sig_mod)
-
-    r_exp_ids = [eid for eid, c in class_map.items() if c == "R"]
+    # Stability check 2: LOO R experiments (classification-flip per spec §5 Step 4).
+    # Per exclusion: re-derive signature, re-score ALL clusters, re-compute
+    # calibration, re-classify T. Flag classification_flip if label changes.
+    r_exp_ids = {eid for eid, c in class_map.items() if c == "R"}
     loo_r_rows = []
-    for excl in r_exp_ids:
-        r_subset = enrichment[enrichment["experiment_id"].isin(set(r_exp_ids) - {excl})].copy()
-        # Apply temporal filter
-        if "timepoint_hours" in r_subset.columns:
-            mask = r_subset["timepoint_hours"].isna() | (r_subset["timepoint_hours"] >= sig_mod.TIMEPOINT_HOURS_CUTOFF)
-            r_subset = r_subset[mask]
-        new_sig_parts = []
-        for ont, ont_df in r_subset.groupby("ontology"):
-            s, _ = sig_mod.derive_for_ontology(ont_df, sig_mod.CORE_SUPPORT, log)
-            if len(s) < 5:
-                s, _ = sig_mod.derive_for_ontology(ont_df, sig_mod.FALLBACK_SUPPORT, log)
-            s["ontology"] = ont
-            new_sig_parts.append(s)
-        new_sig = pd.concat(new_sig_parts, ignore_index=True) if new_sig_parts else pd.DataFrame()
-        # Re-score T clusters with new signature.
+    for excl in sorted(r_exp_ids):
+        new_sig = rederive_signature_loo(enrichment, r_exp_ids, excl)
+        if new_sig.empty:
+            log.warning(f"LOO-R excl={excl}: empty signature; skipping classification")
+            for _, trow in t_scores.iterrows():
+                orig_class = orig_class_lookup[(trow["cluster"], trow["ontology"], trow["background_used"])]
+                loo_r_rows.append({
+                    "excluded_experiment": excl,
+                    "cluster": trow["cluster"], "ontology": trow["ontology"],
+                    "background_used": trow["background_used"],
+                    "orig_score": trow["score"], "new_score": np.nan,
+                    "orig_classification": orig_class,
+                    "new_classification": "empty_signature",
+                    "classification_flip": True,
+                    "new_signature_size": 0,
+                })
+            continue
+
+        new_scores = score_all_clusters(enrichment, new_sig, class_map)
+        new_calib = compute_calibration(new_scores)
+        new_sig_size_by_ont = new_sig.groupby("ontology").size().to_dict()
+
         for _, trow in t_scores.iterrows():
-            cluster_rows = enrichment[(enrichment["cluster"] == trow["cluster"]) & (enrichment["ontology"] == trow["ontology"])]
-            ont_sig2 = new_sig[new_sig["ontology"] == trow["ontology"]]
-            new_score = compute_score(cluster_rows, ont_sig2)
+            key = (trow["cluster"], trow["ontology"], trow["background_used"])
+            orig_class = orig_class_lookup[key]
+            match = new_scores[
+                (new_scores["cluster"] == trow["cluster"])
+                & (new_scores["ontology"] == trow["ontology"])
+                & (new_scores["background_used"] == trow["background_used"])
+            ]
+            if match.empty:
+                new_score = np.nan
+                new_class = "no_signature_coverage"
+            else:
+                new_score = match.iloc[0]["score"]
+                new_class = classify(new_score, new_calib, trow["ontology"], trow["background_used"])
             loo_r_rows.append({
                 "excluded_experiment": excl,
                 "cluster": trow["cluster"], "ontology": trow["ontology"],
+                "background_used": trow["background_used"],
                 "orig_score": trow["score"], "new_score": new_score,
+                "orig_classification": orig_class,
+                "new_classification": new_class,
+                "classification_flip": orig_class != new_class,
+                "new_signature_size": int(new_sig_size_by_ont.get(trow["ontology"], 0)),
             })
     loo_r = pd.DataFrame(loo_r_rows)
     loo_r.to_csv(ANALYSIS_DIR / "results" / "loo_r_experiments.csv", index=False)
 
+    n_flips = int(loo_r["classification_flip"].sum()) if not loo_r.empty else 0
+    log.info(f"LOO-R: {len(loo_r)} (excl × T cluster × ontology) rows, {n_flips} classification flips")
+
     # Print summary.
     print("\n=== T condition scores with classification ===")
-    print(summary[["experiment_id", "timepoint", "direction", "ontology", "background_used", "score", "classification"]].to_string(index=False))
+    print(summary[[
+        "experiment_id", "timepoint", "direction", "ontology", "background_used",
+        "score", "classification",
+    ]].to_string(index=False))
+    print(f"\n=== LOO-R classification flips: {n_flips} / {len(loo_r)} ===")
+    if n_flips:
+        print(loo_r[loo_r["classification_flip"]][[
+            "excluded_experiment", "cluster", "ontology", "background_used",
+            "orig_classification", "new_classification",
+        ]].to_string(index=False))
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
 ```
+
+**Classification flip semantics (per spec §5 Step 4):** the LOO-R flag fires when removing any single R experiment changes a T cluster's threshold label (`detectable` / `no_signal` / `pc_like` / `below_nc` / `insufficient_nc` / `no_matched_calibration`). This requires re-running the full pipeline (derive → score all → calibrate → classify) per exclusion — `rederive_signature_loo` + `score_all_clusters` + `compute_calibration` + `classify`. Score-only flags (sign flip, >50% drop) are kept as Stability check 1 (LOO signature pathways), which is a different failure mode.
 
 - [ ] **Step 2: Run the script**
 
@@ -1369,6 +1669,16 @@ Compare decisions.md pre-registration against scores. Document discrepancies in 
 
 - [ ] **Step 5: Commit 1 (do-phase, bundling pre-registration + scoring)**
 
+**Before committing — verify `decisions.md` is ready to stage.** It was written in Task 9 Step 1 and deliberately left uncommitted so it lands in a single atomic commit alongside the scoring outputs (spec §5 Step 4). Confirm:
+
+```bash
+git status --short -- "$ANALYSIS_DIR/decisions.md"
+# Expected: either "?? ...decisions.md" (untracked) or " M ...decisions.md" (modified).
+# If empty, the pre-registration was never written — go back to Task 9.
+```
+
+Then commit:
+
 ```bash
 git add "$ANALYSIS_DIR/scripts/05_compute_scores.py" \
         "$ANALYSIS_DIR/results/scores_all.csv" \
@@ -1380,6 +1690,8 @@ git add "$ANALYSIS_DIR/scripts/05_compute_scores.py" \
         "$ANALYSIS_DIR/logs/step4.log"
 git commit -m "step 4 do: pre-registration + scores + stability checks"
 ```
+
+After commit, verify `decisions.md` was included: `git log -1 --stat | grep decisions.md` must return a line; if not, the commit is malformed and must be redone.
 
 ---
 
@@ -1414,7 +1726,7 @@ Per-T chat capture:
 - [ ] **Step 6: Commit 2 (decide-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/exploration/2026-04-19-notebook.md" \
+git add "$ANALYSIS_DIR/exploration/notebook.md" \
         "$ANALYSIS_DIR/scripts/"explore_step4_*.py 2>/dev/null || true
 git commit -m "step 4 decide: scores approved"
 ```
@@ -1437,13 +1749,238 @@ git commit -m "step 4 decide: scores approved"
 - Create: `$ANALYSIS_DIR/references.md`
 - Create: `$ANALYSIS_DIR/logs/step5.log`
 
-- [ ] **Step 1: Write the figures script**
+- [ ] **Step 1: Write the figures script (skeleton)**
 
-Write `$ANALYSIS_DIR/scripts/06_make_figures.py` producing:
-- Fig 1: Unified signed-enrichment heatmap. Rows = signature + key-pathway panel + any pathway significantly enriched in ≥1 T cluster (cap ~60–80, multi-panel by ontology if overflow). Columns = clusters ordered by class T → R → PC → NC → CTX. Color saturated at ±10 (matches SCORE_CAP). Signature rows highlighted (bold + annotation column). MED4 columns highlighted.
-- Fig 2: Score-trajectory lineplots, panel per experiment. x = timepoint (hours/ordinal), y = Layer A score, color = ontology. NC panels show noise-floor reference line. MED4 T panels visually distinguished.
+Write `$ANALYSIS_DIR/scripts/06_make_figures.py`. **This is a starting skeleton.** After the first run, inspect both figures and iterate on sizes/labels/highlights with the researcher in the show phase — expect 2–3 iterations before final. The structural logic (row selection policy, column ordering, color cap) is spec-determined and should not drift; everything marked `# TWEAK:` is cosmetic and will change based on actual data.
 
-See spec §5 Step 5 for full specification.
+Spec refs: Fig 1 = spec §5 Step 5 "unified signed-enrichment heatmap"; Fig 2 = spec §5 Step 5 "score-trajectory lineplots". `SCORE_CAP = 10` matches the scoring cap.
+
+```python
+"""Build Fig 1 (unified signed-enrichment heatmap) and Fig 2 (score trajectories).
+
+Starting skeleton — cosmetic choices (fontsize, row density, highlight styling)
+are marked `# TWEAK:` and will be iterated in Step 5 show/explore/decide.
+Structural choices (axis semantics, row selection, column ordering, color cap)
+are spec-locked and should not drift.
+"""
+from __future__ import annotations
+
+import logging
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+ANALYSIS_DIR = Path(__file__).resolve().parent.parent
+
+SCORE_CAP = 10.0  # matches scoring cap — color scale saturates here
+CLASS_ORDER = ["T", "R", "PC", "NC", "CTX"]
+FIG1_ROW_CAP = 80  # TWEAK: may need to drop to ~60 for legibility, or switch to multi-panel
+
+
+def load_inputs() -> dict:
+    enrichment = pd.read_csv(ANALYSIS_DIR / "data" / "enrichment_all.csv")
+    signature = pd.read_csv(ANALYSIS_DIR / "data" / "reference_signature.csv")
+    key_paths = pd.read_csv(ANALYSIS_DIR / "exploration" / "key_pathways.csv")
+    scores = pd.read_csv(ANALYSIS_DIR / "results" / "scores_all.csv")
+    summary = pd.read_csv(ANALYSIS_DIR / "results" / "score_summary.csv")
+    classified = pd.read_csv(ANALYSIS_DIR / "data" / "experiments_classified.csv")
+    class_map = dict(zip(classified["experiment_id"], classified["class"]))
+    enrichment["class"] = enrichment["experiment_id"].map(class_map)
+    return dict(
+        enrichment=enrichment, signature=signature, key_paths=key_paths,
+        scores=scores, summary=summary, classified=classified, class_map=class_map,
+    )
+
+
+def select_fig1_rows(inputs: dict) -> pd.DataFrame:
+    """Row selection policy (spec-locked): signature ∪ key-pathway panel ∪ any
+    pathway sig-enriched in ≥1 T cluster."""
+    enrichment = inputs["enrichment"]
+    signature = inputs["signature"]
+    key_paths = inputs["key_paths"]
+
+    sig_ids = set(signature["term_id"])
+    key_ids = set(key_paths["term_id"])
+    t_sig_ids = set(
+        enrichment[(enrichment["class"] == "T") & (enrichment["p_adjust"] < 0.05)]["term_id"]
+    )
+    visible = sig_ids | key_ids | t_sig_ids
+
+    rows = (
+        enrichment[enrichment["term_id"].isin(visible)]
+        .drop_duplicates(["term_id", "term_name", "ontology"])
+        [["term_id", "term_name", "ontology"]]
+    )
+    rows["in_signature"] = rows["term_id"].isin(sig_ids)
+    rows["in_key_panel"] = rows["term_id"].isin(key_ids)
+    return rows
+
+
+def order_columns(enrichment: pd.DataFrame) -> list[str]:
+    """Column ordering: T → R → PC → NC → CTX; within class by experiment, timepoint."""
+    cluster_df = (
+        enrichment.drop_duplicates("cluster")
+        [["cluster", "class", "experiment_id", "timepoint", "timepoint_hours", "direction", "organism"]]
+    )
+    cluster_df["class_rank"] = cluster_df["class"].map({c: i for i, c in enumerate(CLASS_ORDER)}).fillna(99)
+    cluster_df = cluster_df.sort_values(
+        ["class_rank", "experiment_id", "timepoint_hours", "timepoint", "direction"]
+    )
+    return cluster_df["cluster"].tolist()
+
+
+def build_fig1_pivot(enrichment: pd.DataFrame, visible_rows: pd.DataFrame,
+                     column_order: list[str]) -> pd.DataFrame:
+    sub = enrichment[enrichment["term_id"].isin(visible_rows["term_id"])]
+    pivot = sub.pivot_table(
+        index=["ontology", "term_name", "term_id"],
+        columns="cluster",
+        values="signed_score",
+        aggfunc="first",
+    )
+    # Preserve column order.
+    pivot = pivot.reindex(columns=[c for c in column_order if c in pivot.columns])
+    # Saturate at ±SCORE_CAP for the visualization (raw values preserved in CSV).
+    pivot = pivot.clip(lower=-SCORE_CAP, upper=SCORE_CAP)
+    return pivot
+
+
+def make_fig1(inputs: dict) -> None:
+    visible = select_fig1_rows(inputs)
+    column_order = order_columns(inputs["enrichment"])
+    pivot = build_fig1_pivot(inputs["enrichment"], visible, column_order)
+
+    if len(pivot) > FIG1_ROW_CAP:
+        # TWEAK: if overflow, switch to per-ontology multi-panel. For now, warn + truncate.
+        logging.warning(
+            f"Fig 1: {len(pivot)} rows exceeds cap {FIG1_ROW_CAP}; "
+            f"keeping top by max |signed_score|. Consider multi-panel."
+        )
+        rank = pivot.abs().max(axis=1).sort_values(ascending=False)
+        pivot = pivot.loc[rank.head(FIG1_ROW_CAP).index]
+
+    # TWEAK: figsize proportional to matrix shape; adjust after first run.
+    fig, ax = plt.subplots(figsize=(max(14, 0.25 * pivot.shape[1]),
+                                    max(8, 0.22 * pivot.shape[0])))
+    sns.heatmap(
+        pivot, center=0, cmap="RdBu_r", vmin=-SCORE_CAP, vmax=SCORE_CAP,
+        ax=ax, cbar_kws={"label": f"signed_score (saturated at ±{SCORE_CAP:.0f})"},
+    )
+    # TWEAK: signature row highlighting. Simplest form — bold + left annotation.
+    # After first run, may switch to shaded band or separate annotation column.
+    sig_ids = set(inputs["signature"]["term_id"])
+    for i, (_, _, term_id) in enumerate(pivot.index):
+        if term_id in sig_ids:
+            ax.get_yticklabels()[i].set_fontweight("bold")
+    # TWEAK: MED4 column highlighting — bold/colored x-tick labels.
+    med4_clusters = set(
+        inputs["enrichment"]
+        .query("organism == 'Prochlorococcus MED4'")["cluster"]
+        .unique()
+    )
+    for i, col in enumerate(pivot.columns):
+        if col in med4_clusters:
+            ax.get_xticklabels()[i].set_color("#0b5394")
+    ax.set_title("Fig 1 — pathway enrichment across classes (signed score)")
+    plt.setp(ax.get_xticklabels(), rotation=90, fontsize=7)  # TWEAK: rotation / fontsize
+    plt.setp(ax.get_yticklabels(), fontsize=8)               # TWEAK
+    plt.tight_layout()
+    out = ANALYSIS_DIR / "results" / "fig1_heatmap"
+    plt.savefig(out.with_suffix(".png"), dpi=200, bbox_inches="tight")
+    plt.savefig(out.with_suffix(".pdf"), bbox_inches="tight")
+    plt.close(fig)
+
+
+def make_fig2(inputs: dict) -> None:
+    scores = inputs["scores"].copy()
+    classified = inputs["classified"]
+
+    # Precompute NC noise-floor reference lines per (ontology, background_used).
+    nc = scores[scores["class"] == "NC"]
+    calib = (
+        nc.groupby(["ontology", "background_used"])["score"]
+        .agg(mean="mean", std="std").reset_index()
+    )
+
+    experiments = sorted(
+        scores["experiment_id"].dropna().unique(),
+        key=lambda eid: (
+            CLASS_ORDER.index(inputs["class_map"].get(eid, "CTX"))
+            if inputs["class_map"].get(eid, "CTX") in CLASS_ORDER else 99,
+            eid,
+        ),
+    )
+    n = len(experiments)
+    # TWEAK: panel grid shape. 4 cols is a decent default for 10–20 experiments.
+    ncols = 4
+    nrows = (n + ncols - 1) // ncols
+    fig, axes = plt.subplots(nrows, ncols,
+                             figsize=(4 * ncols, 3 * nrows),  # TWEAK
+                             squeeze=False)
+    ontologies = sorted(scores["ontology"].dropna().unique())
+    palette = dict(zip(ontologies, sns.color_palette("tab10", len(ontologies))))
+
+    for ax_idx, eid in enumerate(experiments):
+        ax = axes[ax_idx // ncols][ax_idx % ncols]
+        sub = scores[scores["experiment_id"] == eid].copy()
+        cls = inputs["class_map"].get(eid, "CTX")
+        for ont, g in sub.groupby("ontology"):
+            g = g.sort_values("timepoint_hours", na_position="first")
+            x = g["timepoint_hours"].fillna(0).to_numpy() if g["timepoint_hours"].notna().any() \
+                else np.arange(len(g))
+            ax.plot(x, g["score"], marker="o", color=palette.get(ont), label=ont)
+
+        # NC reference band per ontology.
+        for _, row in calib.iterrows():
+            if pd.isna(row["mean"]) or pd.isna(row["std"]):
+                continue
+            ax.axhspan(row["mean"] - 2 * row["std"], row["mean"] + 2 * row["std"],
+                       alpha=0.08, color=palette.get(row["ontology"], "grey"))
+        ax.axhline(0, color="grey", linewidth=0.5)
+        title = f"{eid[:40]}…\n[{cls}]"  # TWEAK: truncate length
+        ax.set_title(title, fontsize=8)  # TWEAK
+        ax.tick_params(labelsize=7)
+        # TWEAK: frame MED4 T panels specifically.
+        if cls == "T":
+            for spine in ax.spines.values():
+                spine.set_edgecolor("#0b5394")
+                spine.set_linewidth(1.5)
+
+    # Hide empty subplots.
+    for j in range(n, nrows * ncols):
+        axes[j // ncols][j % ncols].axis("off")
+
+    handles = [plt.Line2D([0], [0], color=palette[o], marker="o", label=o) for o in ontologies]
+    fig.legend(handles=handles, loc="upper right", bbox_to_anchor=(1.0, 1.0))
+    fig.suptitle("Fig 2 — Layer A score trajectories by experiment", fontsize=12)
+    plt.tight_layout(rect=[0, 0, 0.95, 0.97])
+    out = ANALYSIS_DIR / "results" / "fig2_trajectories"
+    plt.savefig(out.with_suffix(".png"), dpi=200, bbox_inches="tight")
+    plt.savefig(out.with_suffix(".pdf"), bbox_inches="tight")
+    plt.close(fig)
+
+
+def main() -> int:
+    logging.basicConfig(
+        filename=str(ANALYSIS_DIR / "logs" / "step5.log"),
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
+    inputs = load_inputs()
+    make_fig1(inputs)
+    make_fig2(inputs)
+    logging.info("Figures written to results/ (png + pdf)")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+```
+
+**Iteration protocol (spec §5 Step 5 show/explore/decide):** first run produces `fig1_heatmap.png` and `fig2_trajectories.png` at reasonable-but-unpolished quality. Show in chat; researcher flags which `# TWEAK:` spots need adjustment (row cap, panel grid, fontsize, highlight styling). Commit each iteration with its notebook entry. Do not treat the first-run output as final.
 
 - [ ] **Step 2: Run the figures script**
 
@@ -1477,9 +2014,44 @@ Per artifacts-guide §caveats.md. Include:
 
 Per artifacts-guide §gaps_and_friction.md format. Four sections: KG data bugs, KG gaps, MCP friction, Skill/methodology friction. Plus Process retrospective (what worked / didn't / proposed changes).
 
+**Pre-seeded items** (carry these over from pre-execution review + Step 1a execution; expand with anything new encountered during execution). Source: `docs/superpowers/specs/2026-04-18-research-methodology-v3-improvements-from-b2.md` §4.
+
+### MCP friction
+
+- **`list_experiments` lacks an `experiment_ids` parameter.** Once the researcher has classified a concrete set of IDs, there's no direct way to fetch metadata only for those IDs — the workaround is a full-landscape pull + local filter. Proposed fix: add `experiment_ids: list[str] | None = None` to `list_experiments`, consistent with `pathway_enrichment`, `ontology_landscape`, and `gene_overview`. (v3 meta-doc §4.5 A1)
+- **`pathway_enrichment` "Package import equivalent" doc says it returns a dict, but it actually returns an `EnrichmentResult` object.** Caused real confusion during pre-execution review (led to a retracted blocker-bug report about missing columns). Propose: fix the MCP doc to say "returns `EnrichmentResult`; call `.to_envelope(...)` for the MCP dict shape." (v3 meta-doc §4.5 A2)
+- **Cluster naming convention `{experiment_id}|{timepoint}|{direction}` (NaN → `"NA"`) is not prominent in the docs.** Every `.explain()` drill-down depends on it. Propose: move to top of Response format section. (v3 meta-doc §4.5 A3)
+- **`ontology_landscape` default `limit=10` silently truncates.** Surfaces as "landscape looks thin" only if you know to look for `truncated=True`. Propose: change default to `None` or highlight truncation more prominently. (v3 meta-doc §4.5 A4)
+
+### Skill / methodology friction
+
+- **Plan-review surfaced hygiene issues at ~4:1 ratio to analysis-specific bugs.** The hygiene patterns (F1–F4 in v3 meta-doc §4.1) aren't captured as explicit rules anywhere in the skill — propose a dedicated `research-code-hygiene.md` with the four failure modes and their corrections.
+- **Empirical probe rule missing from step-protocol.** Spec §8 risk 7 had four escalation paths for pickle failure; a 10-minute empirical probe ruled all of them out. When any risk in a spec has ≥3 escalation paths, the plan must probe empirically before planning contingencies. (v3 meta-doc §4.2)
+- **Spec-to-plan parameterization drift.** Spec §5.0 hardcoded a dated notebook filename that went stale when the plan ran a day later. Specs should reference parameters (`<target_organism>`, `<notebook_filename>`), not concrete values. (v3 meta-doc §4.3)
+- **Figures iterate within a step; don't spec cosmetics upfront.** Already C19 — reinforced during review. Figure code belongs in skeleton + `# TWEAK:` form, not polished inline. (v3 meta-doc §4.4)
+
+### Process retrospective — plan-review effectiveness
+
+- Pre-execution plan review caught 20+ issues in one multi-pass session: one blocker (broken organism heuristic), several high-severity silent-wrong-behavior patterns (duplicated experiment_ids, dict-zip on multi-row frames, hardcoded organism strings, empty-intermediate blindness), and a handful of medium brittleness items (ANALYSIS_DIR env lifetime, shell globs in git add, nested markdown fences).
+- ~80% of issues caught were generalizable hygiene patterns, not analysis-specific. Proposes: a plan-review sub-skill or a code-reviewer subagent primed with the v3 meta-doc §4.6 hygiene checklist could mechanize most of this work.
+- Track during B2 execution: how many new hygiene issues surface that the §4.6 checklist missed? Any that show up is a candidate new rule.
+
 - [ ] **Step 6: Write `api_coverage.md`**
 
 Per spec §10. Table of MCP tools + Python primitives used, for what, where each worked or failed. Compared against B1's friction list (look at `analyses/2026-04-09-1713-pathway_enrichment_b1/gaps_and_friction.md`).
+
+**Pre-seeded gaps to include** (from pre-execution review + execution). Source: v3 meta-doc §4.5.
+
+| Tool / Function | Step used | Purpose | Worked well | Friction / gaps |
+|---|---|---|---|---|
+| `list_experiments` | 1a | Pull metadata for the classified experiment IDs | Filters (organism, treatment_type, search_text) work; single unfiltered `limit=None` call returns the full landscape cheaply | **No `experiment_ids` filter.** Cannot pass a list of specific IDs to fetch only those rows. Workaround: pull unfiltered and filter locally by `experiment_id`. Not costly today (~76 experiments), but as the KG grows this becomes wasteful. Proposed: add an `experiment_ids: list[str] \| None` parameter mirroring the filter shape of `pathway_enrichment` / `ontology_landscape`. (§4.5 A1) |
+| `pathway_enrichment` | 2 | Run Fisher ORA per (org, ontology, background) | Returns `EnrichmentResult` with `.results` DataFrame, `.explain()`, `.generate_summary()`, `.to_envelope()`. Cluster metadata (experiment_id, timepoint, timepoint_hours, direction, etc.) is merged into `.results` by the Python wrapper — usable directly for downstream filtering. | **Doc says "returns dict" in "Package import equivalent" block** — actually returns `EnrichmentResult`. Caused a retracted blocker-bug report during plan review. (§4.5 A2)<br>**Cluster naming convention not prominent in response docs.** `{experiment_id}\|{timepoint}\|{direction}`, NaN → `"NA"` — documented only in a common-mistakes bullet. (§4.5 A3) |
+| `ontology_landscape` | 1b | Rank (ontology, level) by enrichment suitability | Per-organism ranking is clear; `experiment_ids` filter works; `relevance_rank` column stable. | **Default `limit=10` silently truncates.** Surfaces only via `truncated=True` in envelope. (§4.5 A4) |
+| `search_ontology` | 1b | Find nitrogen-related terms across ontologies | Returns a clean flat list, `to_dataframe`-friendly. | [Fill in during execution.] |
+| `genes_by_ontology` | 1b (sanity check) | Verify canonical marker genes in selected ontology term_ids | Used in the key-pathways sanity loop; returns `term_id → locus_tag` mapping. | [Fill in during execution.] |
+| `EnrichmentResult.explain` | 2, 3, 4 | Drill into per-pathway gene overlap | Works on loaded-from-pickle instances (empirically verified on 2026-04-19). | [Fill in during execution — any cases where cluster or term_id isn't found cleanly.] |
+| Standard pickle round-trip | 2 | Persist `EnrichmentResult` dict for downstream drill-down | Works cleanly on 2-key heterogeneous dict at B2 scale (~0.4 MB/obj, ~20 MB full dict). | Spec §8 risk 7 contingencies are precautionary only; empirically validated (§4.2). |
+| `fisher_ora` (direct Python primitive) | (not used in B2) | Would enable custom-term2gene ORA | Available via `multiomics_explorer.analysis.enrichment`. | Not exercised in B2 — B2 uses the DE-wired `pathway_enrichment` wrapper. Left for a future analysis. |
 
 - [ ] **Step 7: Write `README.md`**
 
@@ -1533,7 +2105,7 @@ git commit -m "step 5 do: figures and write-up"
 - [ ] **Step 5: Commit 2 (decide-phase)**
 
 ```bash
-git add "$ANALYSIS_DIR/exploration/2026-04-19-notebook.md"
+git add "$ANALYSIS_DIR/exploration/notebook.md"
 git commit -m "step 5 decide: analysis published"
 ```
 
@@ -1547,7 +2119,14 @@ Every file in `data/` and `results/` should have a row in the corresponding mani
 
 - [ ] **Step 2: Merge analysis-local `gaps_and_friction.md` findings into the meta-doc**
 
-Open `docs/superpowers/specs/2026-04-18-research-methodology-v3-improvements-from-b2.md` and append findings from `$ANALYSIS_DIR/gaps_and_friction.md` under the relevant §2 (content gaps) and §3 (meta-process gaps) subsections.
+Open `docs/superpowers/specs/2026-04-18-research-methodology-v3-improvements-from-b2.md` and append findings from `$ANALYSIS_DIR/gaps_and_friction.md` under the appropriate sections:
+
+- **§2 (content gaps)** — new C-numbered items for missing methodology rules.
+- **§3 (meta-process gaps)** — new M-lettered items for framing/drift issues.
+- **§4 (B2 plan-review conclusions)** — add any new execution-time hygiene patterns that weren't caught by the §4.6 checklist. Update §4.7 retrospective with the "how did §4.6 hold up" observations.
+- **§4.5 (API gaps)** — any new MCP / explorer API friction encountered during execution.
+
+Note: §4 was seeded before execution from the plan review. The pre-seeded items (A1–A4 API gaps, F1–F4 code hygiene, empirical probe rule, parameterization drift) are already in the meta-doc — the analysis-local `gaps_and_friction.md` should focus on NEW friction encountered, not re-documenting the pre-seeded items. Treat the pre-seed as the baseline; record the delta.
 
 - [ ] **Step 3: Commit meta-doc update**
 
@@ -1556,15 +2135,11 @@ git add docs/superpowers/specs/2026-04-18-research-methodology-v3-improvements-f
 git commit -m "meta: merge B2 execution friction findings into skill-v3 proposals"
 ```
 
-- [ ] **Step 4: Push to origin**
-
-```bash
-git push origin main
-```
-
-- [ ] **Step 5: Tell the researcher the analysis is complete**
+- [ ] **Step 4: Tell the researcher the analysis is complete**
 
 Report: analysis directory path, final commit hash, location of figures and summary table, any open items or follow-ups to discuss.
+
+**Do not push to `origin` without explicit researcher approval.** `git push origin main` affects shared state; the researcher decides when the branch is ready to share. If they approve, push; otherwise leave the commits local.
 
 ---
 

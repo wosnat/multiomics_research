@@ -57,6 +57,8 @@ Each item is a place where the researcher had to explicitly prompt the assistant
 
 **C14. Time-course visualization convention.** For time-course experiments, lineplot trajectories (panel per experiment) complement heatmaps. Skill has no figure-type-to-experiment-type guidance.
 
+**C19. Figures are iterative; plans/specs should not over-specify pre-run.** Figure polish (fontsize, row density, panel grid, highlight styling, label rotation) can only be judged against real data — spec'ing 200 lines of matplotlib upfront produces false confidence and rot on mismatch. Pattern surfaced in B2 planning: the figures step was the only one where "write full inline template" felt wrong. Proposed rule (for `artifacts.md` or new `figures.md`): separate **structural choices** (axis semantics, row selection, column ordering, value caps — spec-locked) from **cosmetic choices** (sizes, highlights, rotations — marked `# TWEAK:` in the script, iterated in show/explore/decide). Plans should instruct executors to treat first-run output as a draft, not a deliverable. `step-protocol.md` should explicitly allow "figures iteration" as a sub-loop within Step-N show/explore/decide — multiple commits acceptable as `fig 1 iter 1`, `fig 1 iter 2`, each with a notebook entry.
+
 ### Python API patterns (owner: `python-api-guide.md`)
 
 **C15. Pickling stateful API result objects.** `EnrichmentResult`-style dataclasses can pickle individually but fail in dict aggregation. Propose: add a section on "persisting stateful API return objects," prescribing (1) round-trip verification before full run, (2) split-to-subdir fallback, (3) constituent-state reconstruction, (4) inline re-run as last resort.
@@ -99,16 +101,87 @@ These aren't content; they're structural weaknesses in how the skill is framed o
 
 ---
 
-## 4. Consolidation and next steps
+## 4. B2 plan-review conclusions (added 2026-04-20)
 
-1. During B2 execution, `analyses/<date>-<slug>/gaps_and_friction.md` captures live friction.
-2. At B2 completion, merge the "Skill/methodology friction" and "Proposed changes to the skill" sections from `gaps_and_friction.md` into §2 and §3 here.
-3. When this doc has enough mass (end of B2 + maybe one more analysis), it becomes the input to a skill-v3 brainstorm with the same research-methodology skill restructuring pattern as `2026-04-06-research-skill-restructure-design.md`.
+Before execution began, the B2 plan went through a multi-pass review that surfaced 20+ issues in the inline Python / bash templates. The issues cluster into a small number of patterns that aren't spec-specific — they're hygiene failures common to any research-extraction codebase. Capturing them here so (a) the plan-authoring skill can get a hygiene checklist, (b) future plan reviews don't need to rediscover the patterns, (c) the research-methodology skill v3 can promote the reliable ones to hard rules.
+
+### 4.1 Four recurring failure modes in research-code templates
+
+These are the "crooked code" patterns the plan review caught repeatedly. Propose adding a dedicated `research-code-hygiene.md` (or a subsection of `python-api-guide.md`) that enumerates them with corrections.
+
+**F1. Heuristic string parsing on structured IDs.** Example caught: `organisms = {row["experiment_id"].split("_")[-1] for row in CLASSIFICATIONS}` — using the suffix of a DOI-derived ID to infer organism. Failure mode: IDs are opaque keys; any token-position heuristic is silently wrong when the ID schema evolves. **Rule:** carry every field you need as an explicit column. If you find yourself parsing an ID string to recover a field, fix the upstream data structure instead.
+
+**F2. Silent-last-wins on multi-row frames.** Example caught: `class_map = dict(zip(classified["experiment_id"], classified["class"]))` applied to a DataFrame with one row per (experiment × timepoint). `dict(zip(...))` keeps only the last value per key; if class varies (even by typo) across timepoints, the lookup is silently wrong. Same pattern: `exp_ids = df["experiment_id"].tolist()` when `df` has repeated IDs → passes duplicates to APIs. **Rule:** dedupe to the natural primary key (`df.drop_duplicates("experiment_id")`) BEFORE casting a DataFrame into a scalar lookup, a list, or a set intended to describe experiments.
+
+**F3. Hardcoded condition-specific strings as equality checks.** Example caught: `classified["organism_name"] == "Prochlorococcus MED4"` — breaks silently if the KG display name drifts, or if an upstream call returns `"MED4"` (substring form). **Rule:** match by case-insensitive substring (`.str.contains(MED4, case=False)`), by validated enum drawn from `list_organisms()`, or by a parameter loaded from config — never by a hardcoded full-name equality unless validated non-empty immediately after.
+
+**F4. Empty-intermediate blindness.** Every research step has a DataFrame that could be empty: filter removed everything, enrichment returned zero significant rows, calibration has no NCs in this `(ontology, background)` group. Without a guard, the pipeline runs to completion with an empty output and the failure surfaces three tasks later at a downstream `.iloc[0]`. **Rule:** every `groupby` / `concat` / `read_csv` / post-filter frame gets either (a) an explicit empty-guard (`if df.empty: log.error(...); return 1`), or (b) a `log.info(f"rows={len(df)}")` sanity trace. Prefer (a) for anything that would break downstream; (b) is acceptable only for inspection.
+
+### 4.2 Empirical probe before elaborate contingency
+
+Spec §8 risk 7 enumerated four escalation paths for `EnrichmentResult` pickle failure (split-to-subdir, `dill`/`cloudpickle`, constituent-state reconstruction, inline re-run). During review, a 10-minute probe against the live KG confirmed standard pickle round-trips cleanly at B2 scale. **The four escalation paths remain valid as precautionary fallbacks, but they never would have been needed.**
+
+**Rule for specs and plans:** when a risk enumerates ≥3 escalation paths, the plan must include an empirical probe before committing to contingency planning. Probes are typically <15 minutes to write and <5 minutes to run, and they either rule out the risk entirely or surface a concrete failure mode that sharpens the fallback choice. Speculative contingency planning without a probe is a distractor.
+
+Propose: add this rule to `step-protocol.md` as a sub-section "Before contingency planning, probe." Also see C15 (pickling-specific) — this is the generalization.
+
+### 4.3 Spec → plan parameterization drift
+
+Example caught: spec §5.0 hardcoded `exploration/2026-04-18-notebook.md` (the brainstorm date). The plan was executed on 2026-04-19, copied the spec verbatim into the analysis dir via `cp`, and the copied spec then referenced a file that wasn't there. Same pattern: organism names, ontology keys, experiment IDs, anything date-stamped.
+
+**Rule:** specs reference parameters by role (`<target_organism>`, `<notebook_filename>`), not by concrete values that bind at spec-write time. The plan (or a preamble in the spec) maps parameters → concrete values. If the spec must use concrete values (e.g., "MED4" because the entire analysis is MED4-specific), call them out in a "Concrete parameters" subsection that's easy to find and update.
+
+Propose: add a spec-template rule to `artifacts.md` — specs declare their parameters explicitly; plans resolve them. When a spec is copied into an analysis dir, the parameter resolution travels with it.
+
+### 4.4 Figures are iterative within a step
+
+Already captured in C19 — but reinforced by the review. The figures script was the only Step where "write the full inline code upfront" felt wrong. The resolved approach (skeleton + `# TWEAK:` markers + explicit iteration protocol in show/explore/decide) is the right pattern for any visualization step. Do not over-specify figure cosmetics in plans; do specify structural choices (axis semantics, row selection, color cap).
+
+### 4.5 multiomics_explorer API surface gaps
+
+Confirmed during review; flagged for the explorer team.
+
+**A1. `list_experiments` lacks `experiment_ids` filter.** All other "fetch by experiment" tools take one (`pathway_enrichment`, `ontology_landscape`, `gene_overview`, `gene_response_profile`, `differential_expression_by_gene`). For the Task-1 pattern "classify N experiments, fetch metadata for those N," the workaround is pull unfiltered + local filter. Cheap today (~76 experiments), wasteful as KG grows. Propose: add `experiment_ids: list[str] | None = None` parameter mirroring the filter shape of the sibling tools.
+
+**A2. `pathway_enrichment` "Package import equivalent" docs block is wrong.** The MCP tool doc says "returns dict with keys..." but the Python `pathway_enrichment` actually returns an `EnrichmentResult` object (wrapping `.results` as a DataFrame, plus accessor methods). This was the single largest source of confusion during review — I initially thought `experiment_id` wasn't a column on `result.results`. Propose: fix the doc block to say "returns `EnrichmentResult`; call `.to_envelope(...)` for the MCP dict shape" and cross-reference the Per-result fields table as the authoritative column list.
+
+**A3. Cluster naming convention (`{experiment_id}|{timepoint}|{direction}`, NaN → `"NA"`) is not prominent in the docs.** Every drill-down pattern using `result.explain(cluster, term_id)` depends on this convention. Currently it's a bullet in Common mistakes. Propose: move to the top of the Response format section or create a dedicated "Cluster naming" subsection.
+
+**A4. `ontology_landscape` default `limit=10` silent truncation.** Easy to assume the full landscape is returned. Propose: either change the default to `None`, or surface the truncation with a `truncated=True` signal that's checked at the top of the doc (it IS returned in the envelope but not flagged prominently).
+
+### 4.6 Plan-authoring hygiene checklist (new)
+
+Beyond the existing "spec-completeness" self-review in plans, a separate "execution-correctness" checklist would catch most of what this review found. Propose adding to `writing-plans` skill (or `step-protocol.md`):
+
+- [ ] Every inline Python script template has an empty-guard on every DataFrame read / filter / groupby result.
+- [ ] No string-parsing heuristics on structured IDs (experiment_id, cluster, term_id).
+- [ ] No hardcoded condition-specific strings in equality checks without an adjacent non-empty validation.
+- [ ] Every `dict(zip(df.col, df.col))` or `df.col.tolist()` targeted at a per-experiment lookup has a `drop_duplicates` first, or is explicitly safe because the frame is already at experiment granularity.
+- [ ] Every `except Exception: continue` has a justification comment or is upgraded to fail-fast.
+- [ ] Bash blocks: every task's first two lines are `cd <repo root>` + `export ANALYSIS_DIR="$(cat .analysis_dir)"`. No inherited-shell assumptions.
+- [ ] `git add` uses explicit file lists or bash arrays, never raw shell globs.
+- [ ] Long matplotlib / visualization code in plans uses skeleton + `# TWEAK:` pattern, not full polished code.
+- [ ] Cross-script shared utilities live in a named module importable via `sys.path` (no `importlib.util.spec_from_file_location` hacks for 04-style filenames).
+- [ ] For every risk with ≥3 escalation paths in the spec, the plan has an empirical probe task.
+
+### 4.7 Review-process meta-observation
+
+This review was ~80% pattern-matching for hygiene issues that aren't domain-specific and ~20% analysis-specific findings (pickle empirical validation, API gap, spec-plan drift). The hygiene 80% is mechanizable: a pre-execution review sub-skill (or the code-reviewer subagent primed with §4.6 checklist) could catch most of it automatically. Worth experimenting with for future multi-step research plans before they go to execution.
 
 ---
 
-## 5. Cross-references
+## 5. Consolidation and next steps
+
+1. During B2 execution, `analyses/<date>-<slug>/gaps_and_friction.md` captures live friction.
+2. At B2 completion, merge the "Skill/methodology friction" and "Proposed changes to the skill" sections from `gaps_and_friction.md` into §2 and §3 here.
+3. Items in §4 (plan-review conclusions) are already generalizable — they can feed skill v3 directly without waiting for B2 execution to finish. But validate during B2 that the hygiene checklist (§4.6) actually prevents the patterns it targets, and add any new patterns surfaced during execution.
+4. When this doc has enough mass (end of B2 + maybe one more analysis), it becomes the input to a skill-v3 brainstorm with the same research-methodology skill restructuring pattern as `2026-04-06-research-skill-restructure-design.md`.
+
+---
+
+## 6. Cross-references
 
 - [B2 design spec](2026-04-18-pathway-enrichment-b2-design.md) — the analysis this brainstorm produced.
+- [B2 execution plan](../plans/2026-04-18-pathway-enrichment-b2-plan.md) — the plan the §4 review hardened.
 - [B1 gaps_and_friction](../../analyses/2026-04-09-1713-pathway_enrichment_b1/gaps_and_friction.md) — prior analysis friction log; some items overlap and strengthen the case for v3 changes.
 - [Prior skill-improvement specs](.) — `2026-04-06-research-skill-restructure-design.md`, `2026-04-07-research-notebook-discipline-design.md`, `2026-04-08-research-methodology-v2-improvements-design.md` — establish the pattern for skill-change proposals.

@@ -49,7 +49,7 @@ Six steps. Each step follows the research-methodology skill's do → show → ex
 
 Uniform per-step obligations — the implementation plan must materialize these as explicit tasks, not collapse them.
 
-- **Notebook entry per step.** Every step produces one notebook entry in `exploration/2026-04-18-notebook.md`. Built incrementally: QC section at `show`, chat-capture at `explore`, decision at `decide`. Committed as Commit 2 per step-protocol.
+- **Notebook entry per step.** Every step produces one notebook entry in `exploration/notebook.md`. Built incrementally: QC section at `show`, chat-capture at `explore`, decision at `decide`. Committed as Commit 2 per step-protocol.
 - **Two commits per step.** Commit 1 at end of `do`: script + outputs + log + DATA_MANIFEST/RESULTS_MANIFEST updates. Commit 2 at end of `decide`: notebook entry (QC + chat-capture + decision). No exceptions.
 - **Per-step diagnostic log.** Each script writes to `logs/step<N>.log` per artifacts-guide §Log verbosity — summary statistics, diagnostic traces, key-pathway values, edge-case resolutions. "N pathways built" is not sufficient; the log must capture enough to verify the step without rerunning.
 - **Show phase is interactive and blocking.** Claude presents QC diagnostics in chat; the researcher inspects before `explore` begins. No skipping to the next step.
@@ -205,7 +205,7 @@ This section operationalizes the step-protocol for THIS analysis; the plan inher
 Per step-protocol: before Step 1 begins, create:
 - `analyses/2026-04-18-HHMM-pathway_enrichment_b2/` directory with subdirectories per artifacts-guide §Directory structure.
 - Empty `data/DATA_MANIFEST.md`, `results/RESULTS_MANIFEST.md` with header.
-- `exploration/2026-04-18-notebook.md` stub with spec-walkthrough section.
+- `exploration/notebook.md` stub with spec-walkthrough section.
 - Per-analysis `.gitignore` with explicit-file entries only (no blanket `data/*` or `results/*`):
   ```
   # No large intermediates expected — enrichment results are small
@@ -296,7 +296,11 @@ Per skill Rule 2:
 
 6. **LOO on R experiments collapses the signature.** If removing a single R experiment drops signature size below 5 per ontology, the signature is really just that one experiment. Contingency: document, treat the analysis as descriptive rather than reference-anchored.
 
-7. **`EnrichmentResult` pickle round-trip fails.** Individual objects may pickle fine, but combining them in a dict and round-tripping can still fail — shared class refs drift across dict values, the aggregate may exceed size limits, or `.explain()` may break on the reconstructed instances even though the dict loads without error. Detection: the Step 2 `do` round-trip check verifies `.explain()` on at least one loaded instance both for an isolated pickle and for the full-dict pickle. Contingency, in escalation order:
+7. **`EnrichmentResult` pickle round-trip fails.** Individual objects may pickle fine, but combining them in a dict and round-tripping can still fail — shared class refs drift across dict values, the aggregate may exceed size limits, or `.explain()` may break on the reconstructed instances even though the dict loads without error. Detection: the Step 2 `do` round-trip check verifies `.explain()` on at least one loaded instance both for an isolated pickle and for the full-dict pickle.
+
+   **Empirical status (2026-04-19).** Standard pickle round-trip verified against a 2-key heterogeneous dict of `EnrichmentResult` values (one 31-row MED4 × cyanorak_role result, one empty) — both single-object and dict stages loaded cleanly, `.explain()` worked on the loaded instances, per-object size ≈ 0.4 MB. Extrapolating to B2's full run (≤ ~30 keys), the full pickle stays well under 20 MB — far from pickle's practical limits. **The escalation paths below are precautionary, not observed failure modes at this scale.** If the Step 2 check fails anyway (scale drift, class churn, environment mismatch), the fallbacks apply.
+
+   Contingency, in escalation order:
 
    1. **Split into multiple pickle files** — one per `(organism, ontology, background_used)` in `data/enrichment_pkl/` subdirectory. Downstream loads are a lazy dict keyed on filename lookup (`enrichment_pkl/MED4__cyanorak_role__table_scope.pkl`). Often the aggregate-dict problem is the only thing broken.
    2. **Try `dill` or `cloudpickle`** for the individual files if standard pickle fails at the single-object level.
@@ -310,7 +314,7 @@ Analysis directory: `analyses/2026-04-18-HHMM-pathway_enrichment_b2/` with stand
 Files expected at completion:
 - `data/experiments_classified.csv`, `data/enrichment_all.csv`, `data/enrichment_results.pkl`, `data/reference_signature.csv`, `data/signature_dropped.csv`, `data/DATA_MANIFEST.md`.
 - `results/scores_all.csv`, `results/score_summary.csv`, `results/loo_signature.csv`, `results/loo_r_experiments.csv`, `results/fig1_heatmap.png`, `results/fig1_heatmap.pdf`, `results/fig2_trajectories.png`, `results/fig2_trajectories.pdf`, `results/RESULTS_MANIFEST.md`.
-- `exploration/2026-04-18-notebook.md`, `exploration/key_pathways.csv`, `exploration/qc/` (diagnostic figures per step).
+- `exploration/notebook.md`, `exploration/key_pathways.csv`, `exploration/qc/` (diagnostic figures per step).
 - `scripts/01_select_experiments.py`, `02_ontology_landscape.py`, `03_run_enrichment.py`, `04_derive_signature.py`, `05_compute_scores.py`, `06_make_figures.py`. Plus `scripts/explore_*.py` — ad-hoc iteration scripts written during any step's `explore` phase (e.g., `explore_step2_key_pathway_genes.py` for `.explain()` drill-down, `explore_step3_fragile_signature.py` for per-experiment dominance checks). Committed with their outputs; never deleted; referenced from the relevant notebook entry.
 - `logs/step1a.log`, `logs/step1b.log`, `logs/step2.log`, `logs/step3.log`, `logs/step4.log`, `logs/step5.log` — per-step diagnostic logs (summary statistics, marker gene traces, edge-case resolutions) per artifacts-guide §Log verbosity.
 - Root: `README.md`, `methods.md`, `decisions.md`, `caveats.md`, `gaps_and_friction.md`, `api_coverage.md`, `references.md` (bibliographic — original data publications, methods references, tool/KG citations per artifacts-guide).
