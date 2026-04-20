@@ -284,3 +284,74 @@ Proceeds to Step 2 do (Task 5) after Task 4 formal decide gate.
 
 ---
 
+## 2026-04-20 15:20 — Step 2 do: enrichment + explore phase (IN PROGRESS — handoff to fresh session)
+
+### Commands run
+```bash
+uv run scripts/03_run_enrichment.py              # main Step 2 do
+uv run scripts/explore_step2_rkey_agreement.py   # explore-phase R×keypath drill-down
+```
+
+### Outputs committed as 3511318 (do-phase) + pending commit (explore artifacts)
+- [data/enrichment_all.csv](../data/enrichment_all.csv) — 11,239 rows, 70 clusters, **225 p_adjust<0.05**
+- [data/enrichment_results.pkl](../data/enrichment_results.pkl) — 8-entry dict (organism, ontology, bg) → EnrichmentResult
+- [exploration/qc/step2_key_pathway_heatmap.png](qc/step2_key_pathway_heatmap.png) — diagnostic heatmap (crammed; re-render pending)
+- [exploration/qc/step2_rkey_matrix.csv](qc/step2_rkey_matrix.csv) + 4 summary CSVs (by_term, by_expTp, disagreements, NC)
+
+### Significance + agreement (from CSVs, not memory)
+
+Per (org, ontology, bg) — from `logs/step2.log`:
+
+| org | ontology | bg | clusters | tests | significant |
+|---|---|---|---|---|---|
+| MED4 | cyanorak | organism | 8 | 552 | 17 |
+| MED4 | cyanorak | table_scope | 51 | 3309 | 78 |
+| MED4 | kegg | organism | 8 | 776 | 13 |
+| MED4 | kegg | table_scope | 51 | 4695 | 72 |
+| MIT9313 | cyanorak | table_scope | 9 | 702 | 23 |
+| MIT9313 | kegg | table_scope | 9 | 873 | 17 |
+| SS120 | cyanorak | organism | 2 | 144 | 2 |
+| SS120 | kegg | organism | 2 | 188 | 3 |
+| **total** | | | **70** | **11,239** | **225** |
+
+R cluster × key-pathway agreement per term — from `step2_rkey_summary_by_term.csv`:
+
+| term_id | expected | n_sig | n_agree | min_padj |
+|---|---|---|---|---|
+| cyanorak:E.4 N-metab | up | 6 | 6 | 4e-5 |
+| cyanorak:J.2 CO2 fixation | down | 6 | 5 | 1.5e-6 |
+| cyanorak:J.7 PSI | down | 5 | 5 | 2.1e-9 |
+| cyanorak:J.8 PSII | down | 4 | 4 | 1.9e-3 |
+| cyanorak:K.2 Ribosome | down | 5 | 5 | 1.6e-30 |
+| ko00195 Photosynthesis | down | 5 | 5 | 2.0e-18 |
+| ko00910 N-metab | up | 5 | 5 | 6.6e-4 |
+| ko03010 Ribosome | down | 5 | 5 | 6.2e-34 |
+
+**Total agreement: 40/41 significant R×key-pathway hits concordant with expected (97.6%).** [KG]
+
+**3 key pathways had 0 significant R hits** (signature weakness): `cyanorak.role:A.3`, `ko00250`, `ko00260`. [interpretation] AA biosynthesis is likely suppressed rather than induced under N-limit; the UP expected direction I assigned in `key_pathways.csv` was biologically naive.
+
+### One R disagreement
+
+From `step2_rkey_disagreements.csv`: Read 2017 3h|up × `cyanorak.role:J.2` CO2 fixation, signed=+1.35, padj=0.045 (borderline), expected=down. Early-timepoint transient flip — exactly what the spec §5 Step 3 temporal filter (`timepoint_hours < 3`) is meant to catch; 3h is on the boundary. **Open decision (see below).**
+
+### NC noise floor — interpretable biology, not pure noise
+
+From `step2_rkey_nc_enrichment.csv` (4 significant NC hits):
+- Steglich high-light 45min down × PSI/photosynthesis (padj 3e-3, 3e-2) — real high-light-stress response, not noise.
+- Weissberg coculture (no N-starvation) day 11 up × N-metabolism (padj 9e-5, 1.6e-5) — real coculture-induced N-scavenging without explicit starvation.
+
+[interpretation] NC mean+SD will be non-zero on photosynthesis (Steglich) and N-metabolism (Weissberg coculture) anchors. Signature score calibration will be biased — T scores must be interpreted against this elevated noise floor.
+
+### OPEN DECISIONS — resolve in fresh session before Step 2 decide commit
+
+1. **Temporal filter boundary.** Keep spec `< 3h` (retains Read 3h disagreement) or tighten to `≤ 3` (excludes). Recommendation: keep spec default.
+2. **Heatmap quality.** Re-render with two-panel by ontology + larger fontsize, or accept current diagnostic for QC purpose and rely on Step 5 Fig 1 for publication quality.
+3. **Signature weakness for AA-biosynthesis anchors.** Update `key_pathways.csv` expected directions? (current: A.3 up, ko00250 up → signal suggests neither direction is reliably enriched).
+4. **NC noise-floor bias.** Document in `caveats.md` that NC floor is non-zero on photosynthesis + N-metabolism anchors. Decide whether to flag specific T scores differently as a result.
+
+Fresh session picks up here: read this entry, read the CSVs listed above, resolve decisions with researcher, commit Step 2 decide gate, then proceed to Step 3 (signature derivation, Task 7).
+
+---
+
+

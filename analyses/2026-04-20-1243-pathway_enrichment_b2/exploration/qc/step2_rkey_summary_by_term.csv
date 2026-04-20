@@ -1,0 +1,9 @@
+term_id,term_name,expected_direction,n_significant,n_agree,mean_abs_signed_score,min_padj,n_tests_total
+cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism,up,6,6,3.5621647999126114,4.002739020108686e-05,17
+cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation,down,6,5,4.0796802719512835,1.5364432441182434e-06,17
+cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I,down,5,5,6.194931165263729,2.0604696966934914e-09,17
+cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II,down,4,4,2.1598813876189356,0.0018977332604337,17
+cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification,down,5,5,24.363888373299385,1.6073185118771207e-30,17
+kegg.pathway:ko00195,Photosynthesis,down,5,5,14.148287598956921,1.9854899181542673e-18,17
+kegg.pathway:ko00910,Nitrogen metabolism,up,5,5,2.273008680356977,0.0006634008274198,17
+kegg.pathway:ko03010,Ribosome,down,5,5,27.135606360199905,6.167194788640151e-34,17

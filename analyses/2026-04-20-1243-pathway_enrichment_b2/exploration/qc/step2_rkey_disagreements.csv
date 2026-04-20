@@ -1,0 +1,2 @@
+class,first_author,experiment_short,experiment_id,timepoint,timepoint_hours,direction,ontology,term_id,term_name,expected_direction,signed_score,p_adjust,count,bg_count,fold_enrichment,is_significant,agrees_with_expected
+R,Robert W Read,ismej.2017.88,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,3h,3.0,up,cyanorak_role,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation,down,1.3488527026242512,0.0447865178497252,5,22,6.702849389416554,True,False
