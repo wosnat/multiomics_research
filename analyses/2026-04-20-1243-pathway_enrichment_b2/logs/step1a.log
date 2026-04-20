@@ -1,0 +1,6 @@
+2026-04-20 13:41:28,472 [INFO] Starting 01_select_experiments.py
+2026-04-20 13:41:28,473 [INFO] Loaded 16 classifications: {'NC': 5, 'T': 4, 'CTX': 3, 'R': 2, 'PC': 2}
+2026-04-20 13:41:28,505 [INFO] Pulled 296 experiment × timepoint rows from list_experiments(limit=None)
+2026-04-20 13:41:28,561 [INFO] Pulled 35 publication rows for attribution join
+2026-04-20 13:41:28,565 [INFO] Wrote 40 rows (16 unique experiments) to /home/osnat/github/multiomics_research/analyses/2026-04-20-1243-pathway_enrichment_b2/data/experiments_classified.csv
+2026-04-20 13:41:28,572 [INFO] R experiment timepoint counts: {'10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq': 3, '10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray': 6}
