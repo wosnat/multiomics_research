@@ -1,0 +1,5 @@
+2026-04-21 09:52:58,079 [INFO] MED4 R experiments: 2, clusters: 17
+2026-04-21 09:52:58,080 [INFO] Temporal filter (hours > 3.0, D1): dropped 830 early-cluster rows from 5 clusters: ['10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq|3h|down', '10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq|3h|up', '10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray|0h|down', '10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray|0h|up', '10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray|3h|up']
+2026-04-21 09:52:58,147 [INFO] Ontology cyanorak_role: signature size = 7 (core), dropped = 3
+2026-04-21 09:52:58,238 [INFO] Ontology kegg: signature size = 6 (core), dropped = 3
+2026-04-21 09:52:58,240 [INFO] Wrote 13 signature, 6 dropped
