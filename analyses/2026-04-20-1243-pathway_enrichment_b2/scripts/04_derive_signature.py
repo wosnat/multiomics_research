@@ -24,6 +24,15 @@ ANALYSIS_DIR = Path(__file__).resolve().parent.parent
 
 MED4_ORGANISM_SUBSTRING = "MED4"  # organism_name filter (substring, case-insensitive)
 
+# Watchlist curation: terms the `below_threshold_notable` rule surfaced but
+# which are biologically irrelevant to N-limitation and would clutter the
+# "terms to look at" shortlist. Applied to signature_dropped.csv only; the
+# signature itself is never touched by this list. See decisions.md D5
+# (Step 3 decide) for rationale per term.
+WATCHLIST_EXCLUDE_TERMS: set[str] = {
+    "kegg.pathway:ko05152",  # Tuberculosis — KEGG disease map, N/A to this analysis
+}
+
 
 def _append_fallback_to_decisions(ontology: str, core_size: int, analysis_dir: Path) -> None:
     """Append a fallback-rule entry to decisions.md (spec §5 Step 3)."""
@@ -142,6 +151,16 @@ def main() -> int:
             "Either R set is too small, or no pathway meets the support threshold."
         )
         return 1
+
+    # Apply watchlist curation to dropped-notable terms (D5). Does not affect
+    # signature_df — only the "terms to watch" shortlist.
+    if WATCHLIST_EXCLUDE_TERMS and not dropped.empty:
+        pre = len(dropped)
+        dropped = dropped[~dropped["term_id"].isin(WATCHLIST_EXCLUDE_TERMS)].copy()
+        log.info(
+            f"Watchlist curation (D5): excluded {pre - len(dropped)} term(s) "
+            f"from signature_dropped.csv: {sorted(WATCHLIST_EXCLUDE_TERMS)}"
+        )
 
     signature_df.to_csv(ANALYSIS_DIR / "data" / "reference_signature.csv", index=False)
     dropped.to_csv(ANALYSIS_DIR / "data" / "signature_dropped.csv", index=False)

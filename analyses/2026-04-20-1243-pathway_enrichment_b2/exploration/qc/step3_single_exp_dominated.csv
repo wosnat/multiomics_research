@@ -1,0 +1,2 @@
+ontology,term_id,term_name,direction,n_exps_contributing,n_exps_present,total_in_direction,max_per_exp,contributing_exps,single_exp_dominated,share_max_exp
+kegg,kegg.pathway:ko00910,Nitrogen metabolism,up,1,1,4,4,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,True,1.0

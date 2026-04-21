@@ -1,0 +1,16 @@
+term_id_a,n_a,term_id_b,n_b,intersect,union,jaccard,subset_relation,flag
+kegg.pathway:ko00710,16,kegg.pathway:ko01200,58,16,58,0.27586206896551724,a_in_b,True
+kegg.pathway:ko00190,33,kegg.pathway:ko00195,51,9,75,0.12,none,False
+kegg.pathway:ko00190,33,kegg.pathway:ko00710,16,0,49,0.0,none,False
+kegg.pathway:ko00190,33,kegg.pathway:ko01200,58,0,91,0.0,none,False
+kegg.pathway:ko00190,33,kegg.pathway:ko03010,54,0,87,0.0,none,False
+kegg.pathway:ko00195,51,kegg.pathway:ko00710,16,0,67,0.0,none,False
+kegg.pathway:ko00190,33,kegg.pathway:ko00910,6,0,39,0.0,none,False
+kegg.pathway:ko00195,51,kegg.pathway:ko00910,6,0,57,0.0,none,False
+kegg.pathway:ko00195,51,kegg.pathway:ko01200,58,0,109,0.0,none,False
+kegg.pathway:ko00195,51,kegg.pathway:ko03010,54,0,105,0.0,none,False
+kegg.pathway:ko00710,16,kegg.pathway:ko00910,6,0,22,0.0,none,False
+kegg.pathway:ko00710,16,kegg.pathway:ko03010,54,0,70,0.0,none,False
+kegg.pathway:ko00910,6,kegg.pathway:ko01200,58,0,64,0.0,none,False
+kegg.pathway:ko00910,6,kegg.pathway:ko03010,54,0,60,0.0,none,False
+kegg.pathway:ko01200,58,kegg.pathway:ko03010,54,0,112,0.0,none,False

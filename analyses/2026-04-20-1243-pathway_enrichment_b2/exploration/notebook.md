@@ -625,4 +625,136 @@ Step 2 decide gate passed. Proceed to Task 7 (Step 3 do — signature derivation
 
 ---
 
+## 2026-04-21 10:XX — Step 3 do + show + explore + decide: MED4 reference signature
+
+### Summary (read this first)
+
+**Step 3 completed; signature locked.** 13 signature pathways across 2 ontologies, all under the core rule (`n_clusters_supporting ≥ 3`, no fallback) on 12 signature-eligible MED4 R clusters (Tolonen 6h/12h/24h/48h × 2dir + Read 12h/24h × 2dir, after D1 `hours > 3.0` filter).
+
+- **cyanorak_role (7):** 5 down (J.1 ATP synthase, J.2 CO2 fix, J.7 PSI, J.8 PSII, K.2 Ribosome), 2 up (D.1 Adaptation/acclimation, E.4 N-metab).
+- **kegg (6):** 5 down (ko00190 Oxphos, ko00195 Photosynthesis, ko00710 Calvin, ko01200 C-metab, ko03010 Ribosome), 1 up (ko00910 N-metab).
+- **Key-panel coverage:** 8/11 a priori anchors in signature; 3 silently omitted (cyanorak A.3, ko00250, ko00260) — all D3-documented falsifications of the "AA biosynthesis up under N-limit" prior.
+- **Discovered-strong new in signature (not in a priori panel):** 5 — cyanorak D.1, J.1; kegg ko00190, ko00710, ko01200.
+
+**Decisions locked in this step (full detail in [`../decisions.md`](../decisions.md)):**
+- **D5** — Watchlist curation: `kegg.pathway:ko05152` (Tuberculosis) excluded from `signature_dropped.csv` via `WATCHLIST_EXCLUDE_TERMS` in the runner. Curation affects only the "terms to watch" shortlist, never the signature. 5 retained watchlist terms (D.4, L.3, R.2, ko00061, ko01212).
+- **D6** — Signature stability handling: option (A) audit-only for the 1 flagged within-kegg redundancy (`ko00710 Calvin ⊂ ko01200 C-metab` strict subset) + 1 soft note (`ko00190 ∩ ko00195 = 9 atp genes`). `ko00910 N-metab (up)` flagged as single-R-experiment dominated (Tolonen-only) — forward-flag to Step 4 LOO-R. Task 10 adds `results/kegg_redundancy_sensitivity.csv` artifact; Task 12 adds caveats C6 (redundancy) and C7 (ko00910 dominance).
+
+4 explore scripts committed (dominance + redundancy) with CSV/PNG outputs in `exploration/qc/step3_*`.
+
+**Fresh-session agents resuming Step 4: start from this summary + [`../decisions.md`](../decisions.md) D1–D6, then plan Task 9.**
+
+### Do-phase — [signature.py](../scripts/signature.py) + [04_derive_signature.py](../scripts/04_derive_signature.py)
+
+Primitive module `signature.py` holds pure `derive_for_ontology(df, support_threshold)` (no I/O). Runner `04_derive_signature.py` performs I/O, applies the temporal filter `hours > TIMEPOINT_HOURS_CUTOFF=3.0` (strict `>`, per D1) and then calls the primitive per ontology, with the `n_sig < 5 → fallback` rule wired but unused (both ontologies satisfied core).
+
+**Run sanity check** (`logs/step3.log`):
+
+- 2 MED4 R experiments × 17 total R clusters before filter.
+- Temporal filter dropped 830 rows from 5 clusters: Tolonen 0h up+down, Tolonen 3h up, Read 3h up+down. Expected minimum was 3 cluster rows (Tolonen 0h up + 3h up + Read 3h up); actual was 5 (also dropped Tolonen 0h down + Read 3h down as they had enrichment rows). Clean pass.
+- 12 signature-eligible clusters remaining = Tolonen 6h/12h/24h/48h × 2dir (8) + Read 12h/24h × 2dir (4). Matches D1 budget.
+- cyanorak signature size = 7 core; kegg signature size = 6 core; no fallback triggered.
+
+### Show — composition tables
+
+**Signature distribution per ontology (from `reference_signature.csv`, 13 rows):**
+
+| ontology | up | down | total | rule |
+|---|---:|---:|---:|---|
+| cyanorak_role | 2 | 5 | 7 | core (≥3) |
+| kegg | 1 | 5 | 6 | core (≥3) |
+
+**Per-R-experiment support (from [step3_per_exp_support.csv](qc/step3_per_exp_support.csv)):**
+
+| term | dir | n_exps | Tolonen | Read | share_max_exp |
+|---|:---:|:---:|---:|---:|---:|
+| cyanorak J.1 ATP synthase | ↓ | 2 | 4 | 2 | 0.67 |
+| cyanorak J.2 CO2 fixation | ↓ | 2 | 4 | 1 | 0.80 |
+| cyanorak J.7 PSI | ↓ | 2 | 3 | 2 | 0.60 |
+| cyanorak J.8 PSII | ↓ | 2 | 3 | 1 | 0.75 |
+| cyanorak K.2 Ribosome | ↓ | 2 | 3 | 2 | 0.60 |
+| cyanorak D.1 Adaptation | ↑ | 2 | 1 | 2 | 0.67 |
+| cyanorak E.4 N-metabolism | ↑ | 2 | 3 | 2 | 0.60 |
+| kegg ko00190 Oxphos | ↓ | 2 | 4 | 2 | 0.67 |
+| kegg ko00195 Photosynthesis | ↓ | 2 | 3 | 2 | 0.60 |
+| kegg ko00710 Calvin cycle | ↓ | 2 | 4 | 1 | 0.80 |
+| kegg ko01200 C-metabolism | ↓ | 2 | 3 | 1 | 0.75 |
+| kegg ko03010 Ribosome | ↓ | 2 | 3 | 2 | 0.60 |
+| **kegg ko00910 N-metabolism** | **↑** | **1** | **4** | **0** | **1.00 ← flag** |
+
+**Dropped-notable (post-D5 curation) = 5 terms** — all n=2, max |s| below 3.3:
+
+| ontology | term | dir | n | max \|s\| |
+|---|---|:---:|:---:|:---:|
+| cyanorak | D.4 Chaperones | ↓ | 2 | 1.57 |
+| cyanorak | L.3 Protein folding and stabilization | ↓ | 2 | 1.80 |
+| cyanorak | R.2 Conserved hypothetical proteins | ↑ | 2 | 3.28 |
+| kegg | ko00061 Fatty acid biosynthesis | ↓ | 2 | 2.97 |
+| kegg | ko01212 Fatty acid metabolism | ↓ | 2 | 2.87 |
+
+(ko05152 Tuberculosis excluded per D5.)
+
+**Key-panel coverage (11 a priori anchors):**
+
+| status | count | terms |
+|---|:---:|---|
+| In signature | 8/11 | cyanorak E.4↑, J.7↓, J.8↓, J.2↓, K.2↓; kegg ko00910↑, ko00195↓, ko03010↓ |
+| Silently omitted (0 R hits, D3 falsified) | 3/11 | cyanorak A.3 (up expected, 0/12 R sig); kegg ko00250 (up expected, 0/12), ko00260 (ambiguous, 0/12) |
+| New discovered-strong (not in key panel) | +5 | cyanorak D.1, J.1; kegg ko00190, ko00710, ko01200 |
+
+### Explore — dominance + redundancy
+
+#### [explore_step3_single_exp_dominance.py](../scripts/explore_step3_single_exp_dominance.py) → [step3_single_exp_dominated.csv](qc/step3_single_exp_dominated.csv)
+
+**1 flag:** `kegg.pathway:ko00910 Nitrogen metabolism (up)` — 4 Tolonen 2006 clusters (6h, 12h, 24h, 48h), 0 Read 2017. `share_max_exp = 1.00`.
+
+[interpretation] Confirms Step 2 preview ("Tolonen-only weakness on kegg ko00910"). Read 2017 does hit `cyanorak.role:E.4 Nitrogen metabolism` (3 clusters, padj<0.05), so the broader N-metabolism signal has cross-experiment support in cyanorak. But within kegg, the narrower 6-gene `ko00910` pathway needs more detection power than Read's RNA-seq provides post-BH, so Read's N-metab support is only readable via cyanorak.
+
+[impact] Task 10 M4 LOO-R: expected drop of ko00910 from kegg signature when Tolonen removed; expected retention when Read removed. Recorded as forward-flag in D6 Part 2; caveats C7 at Step 5.
+
+#### [explore_step3_redundancy_audit.py](../scripts/explore_step3_redundancy_audit.py) → [step3_signature_redundancy_{cyanorak_role,kegg}.{csv,png}](qc/)
+
+**cyanorak_role:** 0 flagged pairs. All pairwise Jaccard < 0.08. Hierarchical disjointness at L1 confirmed.
+
+| top-5 cyanorak pairs | n_a | n_b | ∩ | Jaccard |
+|---|:---:|:---:|:---:|:---:|
+| D.1 Adaptation (213) ∩ E.4 N-metab (28) | 213 | 28 | 17 | 0.076 |
+| D.1 ∩ J.8 PSII (31) | 213 | 31 | 4 | 0.017 |
+| D.1 ∩ K.2 Ribosome (61) | 213 | 61 | 4 | 0.015 |
+| D.1 ∩ J.7 PSI (17) | 213 | 17 | 3 | 0.013 |
+| D.1 ∩ J.2 CO2 fix (22) | 213 | 22 | 0 | 0.000 |
+
+D.1 "Adaptation/acclimation to atypical conditions" is a 213-gene cyanorak catch-all — it contains many genes but its overlap with focused pathways is small relative to its own size. D.1 itself carries N-adaptation biology (includes stress-response and regulatory genes) and is biologically distinct from the focal pathways even with small shared gene counts. No filter warranted.
+
+**kegg:** **1 flagged pair + 1 soft note:**
+
+| kegg pair | n_a | n_b | ∩ | Jaccard | relation | flag |
+|---|:---:|:---:|:---:|:---:|:---|:---:|
+| **ko00710 Calvin cycle ⊂ ko01200 Carbon metabolism** | 16 | 58 | 16 | 0.276 | **a_in_b strict subset** | ✓ |
+| ko00190 Oxphos ∩ ko00195 Photosynthesis | 33 | 51 | 9 | 0.120 | none (9 atp genes) | — |
+
+[interpretation]
+- **ko00710 ⊂ ko01200:** every one of the 16 MED4 Calvin-cycle genes is also in the Carbon-metabolism umbrella. KEGG annotates ko01200 as covering TCA + glycolysis + gluconeogenesis + Calvin cycle + pentose phosphate; Calvin is one branch of it. Keeping both in the signature means the 16 Calvin genes' evidence contributes to the kegg Layer A aggregate twice.
+- **ko00190 ∩ ko00195 = 9 atp genes:** the atpA-I operon. Step 2 Q3 `.explain()` showed this is the ONLY overlap between oxphos and photosynthesis in MED4. Jaccard 0.12 is below the 0.5 flag threshold but biologically consequential — coordinate atp-down ≠ independent confirmation of "oxphos down" AND "photosynthesis down."
+- **cyanorak J.1 ATP synthase (10 atp genes)** does not overlap any cyanorak signature term. It's a distinct category at L1 per cyanorak's hierarchical schema.
+
+**Decide — option (A) audit-only** for both kegg overlap findings (see D6 Part 1 for reasoning). Task 10 adds an **M4 redundancy sensitivity check** that computes kegg `score_A(T)` with full signature AND with `ko00710` removed AND with `{ko00710, ko00195}` removed, records deltas in `results/kegg_redundancy_sensitivity.csv`, and flags T-cluster classification flips.
+
+### Decisions resolved (2)
+
+- **D5** — Watchlist curation: ko05152 Tuberculosis excluded from signature_dropped.csv via runner-level constant. 5 watchlist terms retained.
+- **D6** — Signature stability handling: option (A) audit-only for within-kegg redundancy (ko00710⊂ko01200 subset + ko00190∩ko00195 atp-operon soft overlap); ko00910 N-metab single-R-exp dominance flagged for Task 10 LOO-R expected-drop check and caveats C7.
+
+### Gate checks
+
+- **Gate 1 (step-boundary):** Step 3 do committed `36aee00`. This decide commit bundles explore scripts + signature_dropped.csv re-generation after D5 + decisions.md D5/D6 append + notebook entry + manifest + qc artifacts.
+- **Gate 2 (manifest currency):** DATA_MANIFEST.md updated for reference_signature.csv + signature_dropped.csv (do-phase commit) + the 4 new Step 3 explore qc files (this commit).
+- **Gate 3 (chat-capture):** all exploration Q→data→finding→impact captured above. Recommendation framing captured inline; researcher approved option (A) audit-only in single-turn "ok".
+
+### Decision
+
+Step 3 decide gate passed. Signature locked at 13 terms (7 cyanorak + 6 kegg, all core rule). Proceed to Task 9 (Step 4 pre-registration of T outcomes) then Task 10 (scoring + stability, with D4 NC exclusion + D6 M4 redundancy sensitivity + D6 LOO-R ko00910 expected-drop check all wired).
+
+---
+
 

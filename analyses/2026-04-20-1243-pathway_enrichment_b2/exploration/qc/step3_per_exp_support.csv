@@ -1,0 +1,26 @@
+ontology,term_id,term_name,direction,experiment_id,n_up,n_down,n_in_direction
+cyanorak_role,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification,up,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,1,0,1
+cyanorak_role,cyanorak.role:D.1,Cellular processes > Adaptation/acclimation to atypical conditions and detoxification,up,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,2,0,2
+cyanorak_role,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism,up,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,3,0,3
+cyanorak_role,cyanorak.role:E.4,Central intermediary metabolism > Nitrogen metabolism,up,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,2,0,2
+cyanorak_role,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,4,4
+cyanorak_role,cyanorak.role:J.1,Photosynthesis and respiration > ATP synthase,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,2,2
+cyanorak_role,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,4,4
+cyanorak_role,cyanorak.role:J.2,Photosynthesis and respiration > CO2 fixation,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,1,1
+cyanorak_role,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,3,3
+cyanorak_role,cyanorak.role:J.7,Photosynthesis and respiration > Photosystem I,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,2,2
+cyanorak_role,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,3,3
+cyanorak_role,cyanorak.role:J.8,Photosynthesis and respiration > Photosystem II,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,1,1
+cyanorak_role,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,3,3
+cyanorak_role,cyanorak.role:K.2,Protein synthesis > Ribosomal proteins: synthesis and modification,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,2,2
+kegg,kegg.pathway:ko00190,Oxidative phosphorylation,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,1,4,4
+kegg,kegg.pathway:ko00190,Oxidative phosphorylation,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,2,2
+kegg,kegg.pathway:ko00195,Photosynthesis,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,3,3
+kegg,kegg.pathway:ko00195,Photosynthesis,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,2,2
+kegg,kegg.pathway:ko00710,Carbon fixation by Calvin cycle,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,4,4
+kegg,kegg.pathway:ko00710,Carbon fixation by Calvin cycle,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,1,1
+kegg,kegg.pathway:ko00910,Nitrogen metabolism,up,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,4,0,4
+kegg,kegg.pathway:ko01200,Carbon metabolism,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,3,3
+kegg,kegg.pathway:ko01200,Carbon metabolism,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,1,1
+kegg,kegg.pathway:ko03010,Ribosome,down,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,0,3,3
+kegg,kegg.pathway:ko03010,Ribosome,down,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,0,2,2
