@@ -1460,10 +1460,10 @@ git commit -m "step 3 decide: signature locked"
 
 Write or append to `$ANALYSIS_DIR/decisions.md`:
 
-```markdown
-# Decision Log — Pathway enrichment B2
+**Note on numbering:** `decisions.md` was seeded at Step 2 decide with D1–D4 (temporal filter, heatmap design, AA-anchor falsification, NC calibration exclusion — see commit after Step 2 decide). This Task 9 entry appends as **D5**, not D1. Do not overwrite D1–D4; the file is append-only.
 
-## D1 — Pre-registration of expected T condition outcomes
+```markdown
+## D5 — Pre-registration of expected T condition outcomes
 
 **Written:** 2026-04-19 HH:MM (before Step 4 scoring)
 
