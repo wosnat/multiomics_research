@@ -356,6 +356,26 @@ Fresh session picks up here: read this entry, read the CSVs listed above, resolv
 
 ## 2026-04-20 20:30 — Step 2 decide: 4 decisions resolved, extended explore phase in fresh session
 
+### Summary (read this first)
+
+**Step 2 decide: all 4 open decisions resolved; Step 2 QC passed; ready for Step 3.**
+
+Decisions locked (full detail in "Decisions resolved" block below and in [`../decisions.md`](../decisions.md)):
+- **D1** — Temporal filter tightened to `hours > 3` (excludes 3h; 12 signature-eligible R clusters remain).
+- **D2** — v2 heatmap locked: two-panel per ontology, class dividers + axenic/coculture T split, ±5 display cap + saturation stars, inline legend.
+- **D3** — AA-biosynthesis anchors (`A.3`, `ko00250`) kept as `expected_direction="up"` (falsified prior preserved; caveats.md at Step 5).
+- **D4** — NC calibration option (b) with padj<1e-3 exclusion criterion; Weissberg coculture d11 up excluded from `(*, table_scope)`; Steglich retained.
+
+New Step 3 sub-task added (plan Task 8 Step 2b): within-ontology pathway-gene-overlap audit — researcher decides A (audit-only) / B (post-filter) / C (de-weight).
+
+Preliminary hypothesis H1 ([`../hypotheses.md`](../hypotheses.md)): coculture > axenic on N-limitation signature strength. **PRELIMINARY — requires Step 4 scoring with LOO + NC-exclusion-sensitivity check before it becomes a finding.**
+
+6 explore scripts + 5 new `exploration/qc/` artifacts committed (`cc61de1` step 2 decide, `160f10b` follow-ups).
+
+**Fresh-session agents resuming: start by reading this summary, then [`../decisions.md`](../decisions.md), then plan Task 7. The full Q&A and exploration detail below is the evidence base — drill in when needed.**
+
+### Entry scope
+
 Fresh session resumed from commit `02ef861`. Read handover memory, notebook through interim Step 2 entry, `gaps_and_friction.md`, `ontology_selection.md`, and all `exploration/qc/step2_rkey_*.csv` artifacts from files (not memory). Extended the explore phase before committing decide.
 
 ### Extended exploration — scripts produced during this session

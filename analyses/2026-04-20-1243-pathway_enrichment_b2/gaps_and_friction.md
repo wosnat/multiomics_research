@@ -308,6 +308,112 @@ A recipe skill (`recipes/pathway-enrichment-qc-heatmap`?) or an artifacts.md sub
 
 ---
 
+## Mid-way Step 2 retrospective (2026-04-21)
+
+Captured at end-of-session after completing Step 2 decide, before Step 3 begins. Narrative retrospective that motivates the distilled lessons in the next section. Comparable to a sprint-retro: honest reflection on what worked, what friction I introduced, what I'd change next session.
+
+### What worked
+
+- **Every analytical claim came from a file read, not memory.** The prior session (pre-restart) had drifted into memory-based chat tables with inaccuracies. This session held the line: CSVs + script output + schema probes before any numeric claim. Zero attribution bugs this time.
+- **Researcher pushbacks were productive, not dismissed.** Three moments where corrective feedback improved the analysis: (a) "don't amend key_pathways" — I'd proposed adding discovered-strong pathways (J.1 ATP synthase, ko00190 Ox phos) and the researcher caught the confirmation bias; (b) "is 5→10 vs 10→20 meaningful?" — I'd been pushing ±20 display cap, the question forced genuine re-examination and I updated to keep spec ±10 for scoring, use ±5 for visualization; (c) "axenic vs coculture, not omics" — I'd defaulted to Prot/RNA as T divider and the researcher corrected to the real biological contrast.
+- **Explore scripts stayed committed with outputs, linked from the notebook.** 6 scripts + 5 artifacts (`step2_cluster_totals.csv`, `step2_r_top_pathways.csv`, 2 heatmap PNGs, `step2_score_distribution.png`) all cross-referenced. No orphaned work.
+- **Skill-friction capture was substantive.** 5 entries with concrete v3 skill additions, each tied to a specific incident rather than generic advice (SCORE_CAP scoring-vs-viz, within-ontology redundancy, a priori locked, heatmap conventions, NC calibration).
+
+### What I did badly
+
+- **Too much heatmap iteration.** Rendered the heatmap ~5 times before it landed. Could have been 2 if I'd front-loaded the design questions (author format, timepoint shortening, direction encoding, axenic-vs-omics divider). I started coding on partial spec and paid the cost in iterations. User-visible cost was modest, but researcher time and cache burn accumulated.
+- **Missed the `omics_type=NaN` bug before rendering.** The T panel first render showed "nan" as a divider label — a dataset-assumption violation catchable by `df.groupby("omics_type").size()` before building. This is the same failure class as the prior session's issues: trusting merged columns were populated without verifying. One diagnostic line would have caught it upfront.
+- **Let documentation lag.** `DATA_MANIFEST.md` was 5 artifacts stale at session close — a Gate 2 violation. `decisions.md`, `hypotheses.md`, `api_coverage.md` didn't exist until the researcher asked "anything else worth capturing?" The plan's step-boundary manifest updates invite exactly this drift. Fixed in follow-up commit `160f10b`, but cleaner discipline would have been: any new artifact in a commit gets its manifest row in the same commit.
+- **Over-elaborated first proposals.** When asked for a heatmap, I jumped to full design structure before confirming shape. When discussing the score cap, I pushed a specific number (±20) before establishing the biological-vs-saturation regime framework. Better pattern: confirm framing, then propose concrete values.
+- **Notebook Step 2 decide entry grew too long.** ~350 lines covering 7 Q&A blocks, 4 decisions, legend, caveats. Exhaustive but not scannable for a fresh reader who needs to orient quickly. A 10-line summary at the top would help — added in follow-up commit per researcher request.
+
+### Risk flag for next session
+
+The `>=` → `>` spec amendment for the temporal filter (decision #1) is captured in memory + plan + notebook + decisions.md, but it's a one-character change that's easy to overlook in the scaffolded code block. Next session's first Task 7 action must be a deliberate grep check on `scripts/signature.py` and `scripts/04_derive_signature.py` to confirm the filter uses `>`, not `>=`. A 30-second verification prevents a whole-step redo. Captured as lesson L5 below.
+
+### Distilled lessons
+
+Below in "Session-level process lessons" — L1–L5, each with rule, concrete application, and candidate v3 skill addition. These are the actionable form of the narrative above; the retrospective itself is the evidence base.
+
+---
+
+## Session-level process lessons
+
+Captured at end-of-session 2026-04-21 after completing Step 2 decide. These are process patterns that surfaced during the session — distinct from the whole-analysis Process retrospective (Task 14). Each is a candidate v3 skill addition in its own right or reinforcement of existing rules.
+
+### L1 — Verify dataset assumptions before visualization
+
+**What happened.** First T-panel render of the v2 heatmap showed "nan" as a divider label. Cause: `omics_type` column in `enrichment_all.csv` is populated for non-Weissberg experiments but NaN for Weissberg T experiments; I had merged on classified for `first_author` but not for `omics_type`, trusting the column was uniformly populated. One `df.groupby("omics_type").size()` check before rendering would have caught it upfront.
+
+**Rule.** Before building a visualization or analytical transform that depends on a merged/joined column, run one diagnostic line to verify the column is populated for the relevant subset. Cheap check, high-value catch.
+
+**Concretely.** Before any plot, aggregation, or groupby on a derived dataframe, run `df[key].isna().sum()` or `df.groupby(key).size()` and eyeball it. Same class of check as the "check API schema with 2-line call" rule.
+
+**Candidate v3 addition** (to `research-methodology` skill, likely `kg-rules.md` or a new `data-hygiene.md`):
+
+> **Pre-render dataset-assumption check.** Before visualization, aggregation, or any transform that assumes a column is populated: run a diagnostic line (`isna().sum()`, `groupby(col).size()`, `head()`) and inspect the result. Merged / joined / derived columns are the high-risk category — do not trust that the column is uniformly populated across the classes, organisms, or omics types the downstream code assumes.
+
+### L2 — Confirm framing before values in interactive design
+
+**What happened.** When the researcher asked for a better heatmap, I proposed a complete design structure (row selection, column grouping, cap, stars, labels) in one go, then iterated 4–5 times through revisions (authors format, tp shortening, dividers, omics vs condition split, legend, newlines). Some revisions were real refinement, but several could have been avoided by confirming the rough shape first. Similarly for the SCORE_CAP discussion, I proposed ±20 before establishing the evidence-saturation framework; the researcher's "is 5→10 vs 10→20 meaningful?" forced a re-framing and value change.
+
+**Rule.** In interactive design tasks, separate framing decisions ("what axes of choice exist? what's the goal?") from value decisions ("what specific number / format / layout?"). Get framing right first, then propose values; iterate on values only.
+
+**Concretely.** When asked "build X," structure the response as:
+1. Identify the framing questions ("by-ontology vs combined?" "biological-contrast divider vs lab-instrument divider?" "display-layer cap vs scoring-layer cap?")
+2. Confirm framing with researcher (short exchange).
+3. Propose specific values once framing is locked.
+
+This is a version of the brainstorming skill applied to sub-decisions within a larger task.
+
+**Candidate v3 addition** (to `research-notebook.md` or `step-protocol.md`):
+
+> **Separate framing from values in interactive design.** For any design task where multiple axes of choice exist (what to plot, what to cap, what to group by), identify the axes first and confirm framing with the researcher before proposing specific values. Iterating on values under a wrong frame wastes cycles; iterating under a confirmed frame is cheap.
+
+### L3 — Manifest currency is per-commit, not per-step
+
+**What happened.** `DATA_MANIFEST.md` was 5 artifacts stale when closing the session. Gate 2 ("manifest currency") exists in the spec but was treated as a step-boundary check — i.e., update at each Step's commit 1 (do-phase). That's what the plan says. But `cc61de1` (Step 2 decide) landed 5 new artifacts without manifest rows because they were produced during the explore phase (not the do-phase), and the plan's Task 6 Step 6 commit list didn't include manifest update. Documentation drift by design.
+
+**Rule.** Any commit that adds or modifies a data artifact in `data/`, `results/`, or `exploration/qc/` must update the relevant manifest file in the same commit.
+
+**Concretely.** Before every commit that includes a new file in `data/`, `results/`, or `exploration/qc/`: check whether the manifest covers it. If not, add the manifest row in the same commit. No "update later" commits. Treat manifest updates as part of the commit content, not a separate task.
+
+**Candidate v3 addition** (to `step-protocol.md` or `artifacts.md`):
+
+> **Manifest currency is a per-commit hard gate.** Any commit that touches files in `data/`, `results/`, or `exploration/qc/` must update the corresponding manifest file (`data/DATA_MANIFEST.md` or `results/RESULTS_MANIFEST.md`) in the same commit. This is stricter than step-boundary checking: explore-phase and decide-phase commits often land artifacts, and each needs manifest coverage at commit time. The plan's per-step commit script should always include the manifest path in `git add`.
+
+### L4 — Notebook entry summary-at-top
+
+**What happened.** The Step 2 decide notebook entry grew to ~350 lines (7 Q&A blocks, 4 decision writeups, heatmap legend, caveats text). Comprehensive but not scannable — a fresh reader (e.g., next-session agent, or the researcher returning after a week) has to parse the whole block to orient.
+
+**Rule.** Long notebook entries should open with a 10–15-line "what this step resolved" summary. Details below. The summary stands alone as "if you read nothing else."
+
+**Concretely.** For any notebook entry covering a decide-phase with ≥3 decisions or ≥5 Q&A blocks, lead with:
+- One-sentence entry scope ("Step N decide: X resolved")
+- Bulleted list of decisions made (with numeric labels referencing `decisions.md`)
+- One-line preview of key observations / hypotheses
+- Pointer to "Full detail below" for the deeper content
+
+**Candidate v3 addition** (to `research-notebook.md`):
+
+> **Summary-at-top for long decide-phase notebook entries.** When a notebook decide-phase entry exceeds ~50 lines (roughly: ≥3 decisions or ≥5 Q&A blocks), open with a concise summary block: (1) one-sentence entry scope; (2) bulleted decisions with `decisions.md` cross-references; (3) one-line preview of key observations; (4) pointer to full detail below. Long-entry discipline — the researcher rereads the summary; the agent rereads details when needed.
+
+### L5 — Verify spec amendments against scaffolded code before executing
+
+**What happened.** Decision #1 amended the spec from `hours < 3` to `hours > 3`. The plan's Task 7 scaffold has the cutoff constant + the filter mask embedded in a code block. A fresh-session agent executing Task 7 by copy-pasting the scaffold would miss the `>=` → `>` change unless they remember it from memory + notebook + plan.
+
+**Rule.** When a decision amends something that's already scaffolded in plan/code, the scaffold must be updated (or explicitly flagged for per-execution verification) — otherwise the amendment silently fails to apply.
+
+**Concretely.** At decide-phase commits that amend scaffolded code, do one of:
+- Update the scaffold in place to match the new decision (preferred).
+- If the scaffold can't be updated (e.g., it's a template that serves multiple call sites), add a **deliberate verification step** at the execution task's Step 1: "grep/diff the live code against the latest decision before running." Document the specific check ("grep for `>=` and `>` in `signature.py`'s temporal filter; confirm `>` is used").
+
+**Candidate v3 addition** (to `step-protocol.md` Redo path section):
+
+> **Spec-amendment ↔ scaffold reconciliation.** When a decide-phase commit amends the spec or plan semantics, either (a) update the scaffolded code in the same commit, or (b) add a deliberate verification step to the next execution task's Step 1 ("before running, grep/diff for the amended semantic"). Do not rely on future-session agents to remember multi-file amendments from notebook + memory + plan alone — a one-character semantic change is too easy to overlook.
+
+---
+
 ## Process retrospective
 
-_(populated at Task 14)_
+_(populated at Task 14 — whole-analysis retrospective. Session-level lessons above are the per-session layer.)_

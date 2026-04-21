@@ -967,6 +967,24 @@ git commit -m "step 2 decide: enrichment QC passed"
 
 **Spec reference:** §5 Step 3 do
 
+**⚠ Pre-execution verification (REQUIRED — before Step 1a):**
+
+Decision #1 (Step 2 decide, see `../decisions.md`) amended the spec's temporal filter from `hours < 3` to `hours > 3` (exclude 3h from signature derivation). The scaffolded code below in Step 1a + 1b still contains `TIMEPOINT_HOURS_CUTOFF = 3.0` and mask `hours >= TIMEPOINT_HOURS_CUTOFF` — **this mask operator is now wrong**. The scaffold uses `>=`; the decision requires `>`.
+
+**Before running the scripts, the executing agent MUST:**
+
+1. **In `signature.py` / `04_derive_signature.py`**: verify the keep-mask uses `>` not `>=`:
+   ```bash
+   # Expected: hours_col > TIMEPOINT_HOURS_CUTOFF  (strict greater-than, excludes 3h)
+   # WRONG: hours_col >= TIMEPOINT_HOURS_CUTOFF  (retains 3h)
+   grep -n "hours.*TIMEPOINT_HOURS_CUTOFF\|TIMEPOINT_HOURS_CUTOFF.*hours" \
+       "$ANALYSIS_DIR/scripts/signature.py" \
+       "$ANALYSIS_DIR/scripts/04_derive_signature.py"
+   ```
+   If the mask uses `>=`, edit it to `>` before running. Same change applies at Task 10 in `05_compute_scores.py`'s `rederive_signature_loo` function.
+
+2. **Post-run sanity check**: after `04_derive_signature.py` runs, confirm `logs/step3.log` reports `dropped X early-cluster rows` where X ≥ 3 (Tolonen 0h + 3h up + Read 3h up = 3 cluster rows; if Tolonen has 3h down as empty foreground, it won't show in enrichment_all, so X may be 3 or fewer depending on whether 0h down appeared). If X = 0, the filter isn't working; stop and fix.
+
 **Files:**
 - Create: `$ANALYSIS_DIR/scripts/signature.py` (shared primitive — reused by Task 10 LOO-R)
 - Create: `$ANALYSIS_DIR/scripts/04_derive_signature.py` (runner — I/O + logging)
