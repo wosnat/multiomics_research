@@ -1,0 +1,17 @@
+2026-04-22 21:59:08,364 [INFO] Wrote 72 per-(exp × tp × ontology) signature-score rows
+2026-04-22 21:59:08,371 [INFO] NC cluster exclusion (D4): ('10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq|day 11|up', 'cyanorak_role', 'table_scope')
+2026-04-22 21:59:08,371 [INFO] NC cluster exclusion (D4): ('10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq|day 11|up', 'kegg', 'table_scope')
+2026-04-22 21:59:08,371 [INFO] NC exp×tp exclusion (D4 collapsed): ('10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq', 'day 11', 'cyanorak_role', 'table_scope')
+2026-04-22 21:59:08,371 [INFO] NC exp×tp exclusion (D4 collapsed): ('10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq', 'day 11', 'kegg', 'table_scope')
+2026-04-22 21:59:08,385 [INFO] Calibrations: final/up/down × 4 (ont×bg) groups; NC exclusions applied: 2
+2026-04-22 21:59:08,408 [INFO] Prereg P1 (ordering_B_gt_A, cyanorak_role×up): holds=False
+2026-04-22 21:59:08,408 [INFO] Prereg P2 (ordering_B_gt_A, cyanorak_role×down): holds=True
+2026-04-22 21:59:08,408 [INFO] Prereg P3 (ordering_B_gt_A, kegg×up): holds=True
+2026-04-22 21:59:08,408 [INFO] Prereg P4 (ordering_B_gt_A, kegg×down): holds=True
+2026-04-22 21:59:08,408 [INFO] Prereg T1 (threshold_A_above_noise, cyanorak_role×up): holds=True
+2026-04-22 21:59:08,408 [INFO] Prereg T2 (threshold_A_above_noise, cyanorak_role×down): holds=True
+2026-04-22 21:59:08,408 [INFO] Prereg T3 (threshold_A_above_noise, kegg×up): holds=True
+2026-04-22 21:59:08,408 [INFO] Prereg T4 (threshold_A_above_noise, kegg×down): holds=True
+2026-04-22 21:59:08,686 [INFO] D6 kegg redundancy: 14 T-kegg (exp×tp); material shifts >50%: no_ko00710=0, no_ko00710_ko00195=4
+2026-04-22 21:59:09,853 [INFO] LOO-signature: 182 rows
+2026-04-22 21:59:11,272 [INFO] LOO-R: 56 rows — classification_flips=0, raw_sign_flips=1, raw_large_changes=8

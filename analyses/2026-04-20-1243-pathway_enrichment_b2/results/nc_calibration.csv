@@ -1,0 +1,13 @@
+ontology,background_used,value_col,nc_mean,nc_std,nc_n,pc_mean,pc_std,pc_n
+cyanorak_role,organism,final_score,0.927826463166933,,1,,,0
+cyanorak_role,table_scope,final_score,0.0,0.0,3,1.3301912041892243,1.2486631432555297,2
+kegg,organism,final_score,0.2547229984233718,,1,,,0
+kegg,table_scope,final_score,0.0,0.0,3,0.5414160130092335,0.7656778684836261,2
+cyanorak_role,organism,score_up,2.0029638138849317,,1,,,0
+cyanorak_role,table_scope,score_up,0.0,0.0,3,2.192912639912035,0.8874572525590406,2
+kegg,organism,score_up,0.0,,1,,,0
+kegg,table_scope,score_up,0.0,0.0,3,0.0,0.0,2
+cyanorak_role,organism,score_down,0.4977715228797336,,1,,,0
+cyanorak_role,table_scope,score_down,0.0,0.0,3,0.9851026299001001,1.3931454995341253,2
+kegg,organism,score_down,0.30566759810804617,,1,,,0
+kegg,table_scope,score_down,0.0,0.0,3,0.6496992156110801,0.9188134421803512,2

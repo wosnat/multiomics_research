@@ -1,0 +1,15 @@
+experiment_id,timepoint,category,omics,background_used,final_score_full,final_score_no_ko00710,final_score_no_ko00710_ko00195,rel_change_no_ko00710,rel_change_no_ko00710_ko00195,material_shift_no_ko00710,material_shift_no_ko00710_ko00195
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,day 14,axenic_dying,Prot,table_scope,0.8110656250101455,0.9732787500121745,1.2165984375152181,0.1999999999999999,0.49999999999999994,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,day 31,axenic_dead,Prot,table_scope,0.6268713308665338,0.7522455970398406,0.0,0.2000000000000001,-1.0,False,True
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,day 89,axenic_dead,Prot,table_scope,0.5097372228917768,0.6116846674701322,0.0,0.2,-1.0,False,True
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,day 18,coculture,Prot,table_scope,1.2699350707014478,1.5239220848417374,1.9049026060521717,0.2,0.4999999999999999,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,day 31,coculture,Prot,table_scope,2.820309621724968,3.3843715460699615,3.2135453066525477,0.2,0.1394299696382511,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,day 60,coculture,Prot,table_scope,0.62843943057734,0.754127316692808,0.5684760135561706,0.2,-0.09541638239675966,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,day 89,coculture,Prot,table_scope,0.7811804203433915,0.9374165044120698,0.5120118899595605,0.19999999999999998,-0.3445664066509883,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,days 60+89,coculture,Prot,table_scope,0.7263345789002367,0.871601494680284,0.5255643881719828,0.20000000000000004,-0.2764155756321633,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,day 14,axenic_dying,RNA,table_scope,3.683519087146783,4.0,2.5,0.08591808685274381,-0.32130119571703514,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,day 18,coculture,RNA,table_scope,0.0,0.0,0.0,,,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,day 31,coculture,RNA,table_scope,0.250460389821665,0.30055246778599803,0.0,0.20000000000000004,-1.0,False,True
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,day 60,coculture,RNA,table_scope,1.3729450220045027,1.6475340264054033,0.0,0.19999999999999996,-1.0,False,True
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,day 89,coculture,RNA,table_scope,0.0,0.0,0.0,,,False,False
+10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,days 60+89,coculture,RNA,table_scope,0.0,0.0,0.0,,,False,False

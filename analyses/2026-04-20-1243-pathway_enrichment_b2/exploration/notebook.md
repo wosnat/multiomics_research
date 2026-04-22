@@ -757,4 +757,100 @@ Step 3 decide gate passed. Signature locked at 13 terms (7 cyanorak + 6 kegg, al
 
 ---
 
+## 2026-04-22 — Step 4 do: scoring + stability (D7 pre-registration + D8 methodology rewrite)
+
+### Summary (plain English, read this first)
+
+Dying axenic MED4 cells at day 14 show the strongest canonical N-limitation response: transcriptional shutdown of photosynthesis (photosystem I, photosystem II, CO2 fixation via the Calvin cycle), oxidative phosphorylation, and ribosomal proteins, together with engagement of nitrogen-scavenging pathways (glutamine synthetase, cyanate transport, urea catabolism). At the ontology level, axenic-dying cells score roughly nine-fold higher than coculture cells on the shutdown direction in the functional-role framework and roughly four-fold higher on the KEGG pathway framework. Coculture cells — rescued by their *Alteromonas* partner and surviving ninety days under conditions that kill axenic cells in two weeks — show the opposite asymmetry: the strongest up-direction (N-scavenging) signal, especially at the protein level, sustained across timepoints from day 18 through day 89. Their shutdown signal is weak to absent.
+
+Splitting by omics reveals the mechanism more sharply. In transcripts, axenic-dying cells show strong canonical shutdown while coculture cells are largely silent on the canonical signature. In proteins, axenic-dying cells show only partial shutdown (the long half-life of photosynthesis proteins means they have not turned over in fourteen days), while coculture shows sustained protein-level engagement of N-scavenging enzymes across all timepoints. Post-mortem axenic cells (day 31, day 89 proteomics) show no active up-regulation and only weak residual down signal.
+
+The emerging picture is that N-limitation response in MED4 is not a single program executed weakly in coculture and strongly in axenic culture, as a naive rescue-hypothesis would predict. Instead, axenic and coculture engage qualitatively different responses. Axenic cells enter a classical stress program — shut down the N-expensive machinery, engage scavenging, die. Coculture cells skip the shutdown entirely while actively engaging scavenging at the protein level. The coculture rescue appears mechanistically as "scavenge without stop-the-engine": an intermediate physiological state that the two-week-lethal axenic program does not produce.
+
+### Data vs interpretation — explicit audit
+
+To keep observations and inferences separable for Task 11 decide and Step 5 write-up:
+
+**Directly from Step 4 results (data):**
+- Axenic-dying scores highest on down-direction: means 2.69 (cyanorak), 2.38 (kegg) vs coculture 0.30, 0.65. Ratios ~9× and ~3.7×. From `results/category_mean_scores.csv`.
+- Coculture scores highest on cyanorak up-direction (2.37 vs 1.33) at the omics-mixed level.
+- Per-omics: coculture Prot up = 4.74 cyanorak / 2.94 kegg — strongest single-slice signal in the entire analysis.
+- Coculture RNA near-silent across all directions (0.00–0.39).
+- Axenic-dying RNA: strong down (4.99 cyanorak, 4.42 kegg), weaker up (0.91 cyanorak, 0.00 kegg).
+- Axenic-dead: up = 0.00 both ontologies, down = 0.66 / 0.68.
+- Axenic side is a single timepoint (d14) per omics.
+- kegg N-metab (ko00910) supported by Tolonen only — from the Step 3 dominance audit.
+- Signature-specificity collapses NC calibration: nc_std ≈ 0 across most (ontology × bg) groups → classification degenerate.
+- LOO stability: dropping Read → 0 raw flags; dropping Tolonen → 8 raw-score flags + 1 sign flip. Signature shrinks 7→5 cyanorak and 6→3 kegg on Tolonen removal.
+
+**Biology framing from prior knowledge (not from Step 4 data):**
+- Specific gene names (glnA, cynABDS, urtABCD, psbA) — from Step 1b key_pathways.csv rationales (canonical markers), not from Step 4 analysis.
+- "MED4 dies axenically in ~2 weeks, survives ~90 days in coculture" — from biology-context memory / Weissberg 2025 background. Frames which timepoints count as "dying" vs "alive."
+- "Classical N-limit stress program" as a canonical phenotype — references prior cyanobacterial literature.
+- "Long half-life of photosynthesis proteins" — intrinsic protein-biology knowledge explaining RNA-Prot asynchrony at d14.
+
+**Synthesis / interpretation (reasoning built on data + prior knowledge, not directly measured):**
+- "Machinery intact" / "cells are alive" (coculture): inferred from absence of shutdown signal plus 90-day-survival prior; scores don't prove machinery intact, only that shutdown signature doesn't fire.
+- "Proteins accumulate across timepoints": data shows sustained (roughly flat/declining: d18 5.75 → d89 3.50) protein-level signal; "accumulate" implies dynamics we didn't directly test. More precise language for write-up: "sustained engagement at the protein level across timepoints."
+- "Expected response has shifted entirely" (re: coculture RNA being silent) — interpretation of why RNA is silent.
+- "Post-mortem" / "decay rather than regulation" (re: axenic_dead) — interpretation of the weak-down + zero-up pattern assuming dead cells can't regulate.
+- "Qualitatively different responses" and "scavenge without stop-the-engine" — hypothesis labels for the asymmetric pattern, directly consistent with data but not *proven* by it (e.g., we haven't ruled out a timing-offset alternative: maybe coculture cells would shut down too at timepoints beyond d89).
+
+For Step 5 write-up, observational claims belong in Results; mechanistic framing belongs in Discussion with explicit acknowledgment of the caveats above.
+
+### Pre-registration evaluation
+
+Pre-registration (written 2026-04-21, frozen) committed axenic-dying (B) to score higher than coculture (A) on all four `ontology × direction` slices. Observed outcomes on the omics-mixed category means:
+
+| claim | prediction | observed | holds |
+|---|---|---|:---:|
+| P1 cyanorak × up | B > A | B=1.33, A=2.37 | ❌ FALSE |
+| P2 cyanorak × down | B > A | B=2.69, A=0.30 | ✓ |
+| P3 kegg × up | B > A | B=1.57, A=1.47 | ✓ (marginal; fragile — ko00910 single-exp) |
+| P4 kegg × down | B > A | B=2.38, A=0.65 | ✓ |
+| T1-T4 threshold claims (A > noise) | — | all hold | ✓ (vacuously — threshold ≈ 0 per classification degeneracy) |
+
+Three of four ordering claims hold. P1 fails because coculture engages the cyanorak up-direction (N-scavenging pathways) MORE than axenic-dying cells do. Per the decide-phase framing at Task 11: the data arbitrates as **asymmetric outcome** — neither pure reframing (B > A everywhere) nor pure H1-reinstatement (A > B everywhere). Both categories engage the signature but in different directions, reflecting mechanistically distinct physiological states.
+
+Per-omics breakdown reveals where each claim's support concentrates:
+- P1 (cyanorak up, B > A) fails at the omics-mixed level because coculture Prot (4.74) dominates. On RNA alone, B (0.91) > A (0.00), which would have P1 hold. The mechanistic asymmetry — coculture's up-signature lives in proteomics while axenic's shutdown lives in transcriptomics — is the real finding; the mixed-omics D7 summary averages this into a misleading single number.
+- P2 (cyanorak down, B > A) holds robustly: axenic-dying RNA (4.99) >> coculture RNA (0.14) and also Prot (0.38 vs 0.46 roughly tied).
+- P4 (kegg down, B > A) holds similarly — axenic-dying RNA (4.42) >> coculture RNA (0.39).
+
+### Stability findings
+
+**LOO-R** (dropping one reference experiment, rederiving signature, rescoring all T rows):
+- Dropping Read 2017 RNA-seq → **0 raw-score flags** on all 28 T rows. Read contributes minimal unique signal to the signature; it's redundant with Tolonen.
+- Dropping Tolonen 2006 microarray → **8 raw-score changes >50%** plus 1 sign flip. Signature shrinks 7 → 5 cyanorak terms and 6 → 3 kegg terms (kegg especially: ko00190 Oxphos, ko00710 Calvin, ko00910 N-metab all dropped — only ko00195 Photosynth and ko01200 C-metab survive Tolonen removal on the down side, plus ko03010 Ribosome).
+- Category-mean ordering (B > A on cyanorak down, kegg down) preserved under both exclusions.
+
+**LOO-signature** (dropping one signature term per T row and recomputing):
+- 6 / 182 sign flips (3%) and 14 / 182 large drops (>50%) (8%). Modest sensitivity, no single-term dominance.
+
+### Caveats captured for Task 12 (Step 5 caveats.md)
+
+- **C9** — Classification labels degenerate under D8 scoring. NC clusters almost never trigger the N-response signature at padj<0.05 (signature is highly specific), so `nc_std → 0` and all T rows classify as `insufficient_nc`. Interpretation uses raw score magnitudes + ordering comparisons rather than discrete "detectable / no_signal / pc_like" labels. The classification column is retained in `results/score_summary.csv` for audit only.
+- **C10 (new)** — Single-timepoint fragility on the axenic side. Axenic-dying category = 1 TP × 2 omics = 4 (exp × tp × direction) data points; axenic-dead = 2 TPs × 1 omics = 4. The "acute dying window" and "post-mortem" framings are supported by one d14 snapshot per omics, with late axenic coverage on proteomics only (no axenic RNA d31/d89).
+- **C11 (new)** — kegg N-metabolism signature term (ko00910) is single-experiment-dominated: all four Tolonen R-clusters contribute, zero Read clusters. kegg up-direction scores are effectively the ko00910 signed contribution alone. Robust across LOO-signature (cyanorak E.4 N-metab carries cross-ontology agreement for N-scavenging), but the kegg up-direction reading should not be interpreted independently.
+
+### Decisions applied this step
+
+- **D1** — temporal filter `hours > 3.0` inherited via `signature.py`; verified on `rederive_signature_loo` via grep-check.
+- **D4** — NC calibration exclusion (Weissberg coculture d11 up) applied per-(exp × tp × ontology × bg).
+- **D6** — kegg redundancy sensitivity (`full / no_ko00710 / no_ko00710_ko00195` variants): 0 material shifts removing ko00710 alone; 4 of 14 T-kegg rows shift >50% removing both ko00710 and ko00195. Documentable in C6 at Step 5.
+- **D7** — pre-registration frozen 2026-04-21. Formal check uses omics-mixed category means (labeled as such in artifacts); primary interpretation uses per-omics breakdown.
+- **D8** — scoring methodology (max-abs cluster combination + 1.301 threshold + omics-split aggregation + category names + classification-degeneracy acknowledgment + raw LOO-R flags). Written 2026-04-22 during this Task 10 walkthrough.
+
+### Gate checks
+
+- **Gate 1 (step-boundary):** scoring do-phase outputs committed in a single atomic commit that bundles pre-registration (D7), new methodology (D8), and `hypotheses.md` H1 status-line plain-English rewrite.
+- **Gate 2 (manifest currency):** `RESULTS_MANIFEST.md` + `DATA_MANIFEST.md` current for all new / changed files in this commit.
+- **Gate 3 (chat-capture):** this notebook entry captures the plain-English summary, data-vs-interpretation audit, pre-reg evaluation, stability findings, and caveat list. No chat-only reasoning.
+
+### Decision
+
+Step 4 do-phase complete. Scoring artifacts stable, pre-reg evaluated, stability checks run, caveats identified. Proceed to Task 11 (Step 4 show / explore / decide) after this commit lands. Task 11 will walk the researcher through the asymmetric-outcome biology interpretation and produce the next formal decision (D9 — Step 4 decide: scores final / narrative framing).
+
+---
+
 

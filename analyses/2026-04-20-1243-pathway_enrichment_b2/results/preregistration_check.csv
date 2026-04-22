@@ -1,0 +1,9 @@
+claim_id,claim_type,ontology,direction,cat_B_mean,cat_A_mean,delta_B_minus_A,nc_mean,nc_std,threshold,holds
+P1,ordering_B_gt_A,cyanorak_role,up,1.3315503290710038,2.3707058781633608,-1.039155549092357,,,,False
+P2,ordering_B_gt_A,cyanorak_role,down,2.685996735214256,0.30074819744682557,2.3852485377674304,,,,True
+P3,ordering_B_gt_A,kegg,up,1.569837290198682,1.4708755245737986,0.09896176562488335,,,,True
+P4,ordering_B_gt_A,kegg,down,2.3827833692544207,0.6477774391740665,1.7350059300803542,,,,True
+T1,threshold_A_above_noise,cyanorak_role,up,,2.3707058781633608,,0.0,0.0,0.0,True
+T2,threshold_A_above_noise,cyanorak_role,down,,0.30074819744682557,,0.0,0.0,0.0,True
+T3,threshold_A_above_noise,kegg,up,,1.4708755245737986,,0.0,0.0,0.0,True
+T4,threshold_A_above_noise,kegg,down,,0.6477774391740665,,0.0,0.0,0.0,True

@@ -8,7 +8,9 @@ Entries are ordered by when the observation was made, not by importance.
 
 ## H1 — Coculture > axenic on N-limitation signature strength in Weissberg 2025 MED4
 
-**Status:** PRELIMINARY (generated at Step 2 QC, 2026-04-20)
+**Status:** PRELIMINARY (based on Step 2 QC heatmap, 2026-04-20); **CONTESTED as of 2026-04-21** — before seeing Step 4 scoring results, the researcher committed to the opposite prediction: axenic MED4 cells in the acute dying window (day 14, still alive but about to die) show the strongest canonical N-limitation response; coculture cells show a weaker-but-nonzero response (rescued by the *Alteromonas* partner); decomposing late-stage axenic cells (day 31 and 89) are left unpredicted. Step 4 scoring arbitrates.
+
+_Internal cross-refs: decisions.md D7 formalizes the pre-registration (3-category framework, per-ontology per-direction predictions P1–P4, non-zero-engagement threshold claims T1–T4, LOO-R stability requirements). If D7 is confirmed at Task 11, H1's surface reading is FALSIFIED. If D7 is falsified, H1 promotes to CONFIRMED._
 **Confirmation requires:** Step 4 scoring with proper NC calibration + LOO stability (Task 10). Specifically:
 - Layer A `score_A(T_coculture, ontology)` ≥ Layer A `score_A(T_axenic, ontology)` across both ontologies, after matched-background calibration.
 - Classification thresholds hold when LOO-R removes any single R experiment.

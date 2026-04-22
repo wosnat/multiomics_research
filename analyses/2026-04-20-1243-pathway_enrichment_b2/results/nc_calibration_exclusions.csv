@@ -1,0 +1,3 @@
+experiment_id,timepoint,ontology,background_used
+10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,day 11,cyanorak_role,table_scope
+10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,day 11,kegg,table_scope

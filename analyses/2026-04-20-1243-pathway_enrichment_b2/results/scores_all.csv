@@ -1,0 +1,73 @@
+category,omics,timepoint,timepoint_hours,ontology,experiment_id,class,background_used,organism,score_up,score_down,final_score,n_up_sig,n_down_sig,n_up_total,n_down_total,n_total_sig,n_total_terms
+,RNA,20h,20.0,cyanorak_role,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,NC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,0,69
+,RNA,20h,20.0,kegg,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,NC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+,RNA,12h,12.0,cyanorak_role,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,R,organism,Prochlorococcus MED4,4.359401755465056,5.023832711675226,4.8339952956151775,2,5,2,5,8,69
+,RNA,12h,12.0,kegg,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,R,organism,Prochlorococcus MED4,0.0,5.301478467623967,4.417898723019972,0,5,1,5,8,97
+,RNA,24h,24.0,cyanorak_role,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,R,organism,Prochlorococcus MED4,3.9094928921264875,4.451103731926201,4.296357777697712,2,3,2,5,5,69
+,RNA,24h,24.0,kegg,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,R,organism,Prochlorococcus MED4,0.0,4.289274952440474,3.5743957937003947,0,3,1,5,3,97
+,RNA,3h,3.0,cyanorak_role,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,R,organism,Prochlorococcus MED4,0.0,-0.2697705405248502,-0.19269324323203588,0,1,2,5,1,69
+,RNA,3h,3.0,kegg,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,R,organism,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+,Microarray,steady state,,cyanorak_role,10.1038/msb4100087_growth_medium_growth_on_cyanate_as_med4_microarray,PC,table_scope,Prochlorococcus MED4,2.820439681209715,1.9702052598002002,2.213129380202919,1,3,2,5,4,69
+,Microarray,steady state,,kegg,10.1038/msb4100087_growth_medium_growth_on_cyanate_as_med4_microarray,PC,table_scope,Prochlorococcus MED4,0.0,1.2993984312221603,1.082832026018467,0,2,1,5,2,97
+,Microarray,steady state,,cyanorak_role,10.1038/msb4100087_growth_medium_growth_on_urea_as_med4_microarray,PC,table_scope,Prochlorococcus MED4,1.5653855986143548,0.0,0.4472530281755299,1,0,2,5,1,69
+,Microarray,steady state,,kegg,10.1038/msb4100087_growth_medium_growth_on_urea_as_med4_microarray,PC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+,Microarray,0h,0.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,1,69
+,Microarray,0h,0.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+,Microarray,12h,12.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,2.104910488109419,6.671149549496602,5.366509817671692,1,5,2,5,8,69
+,Microarray,12h,12.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,2.635378679523801,5.525351464329641,5.043689333528667,1,4,1,5,5,97
+,Microarray,24h,24.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,2.0085280273820505,6.324424334386855,5.091311103814054,1,5,2,5,8,69
+,Microarray,24h,24.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,2.31900615940061,5.665235528081439,5.107530633301301,1,5,1,5,8,97
+,Microarray,3h,3.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,1.1347002349806312,0.0,0.3242000671373232,1,0,2,5,2,69
+,Microarray,3h,3.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,1.8218596251478727,0.0,0.30364327085797876,1,0,1,5,1,97
+,Microarray,48h,48.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,0.8245146164460373,4.190821517516244,3.2290195457818993,1,4,2,5,7,69
+,Microarray,48h,48.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,1.4105749465657174,3.6174988685892577,3.2496782149186676,1,4,1,5,6,97
+,Microarray,6h,6.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,2.1988213625569375,4.73636076601553,4.011349507884503,1,3,2,5,5,69
+,Microarray,6h,6.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,R,table_scope,Prochlorococcus MED4,3.178223991146885,4.143889072852126,3.9829448925679194,1,4,1,5,10,97
+,Microarray,12h,12.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,3.1696676761590927,4.0,3.7627621931883124,2,2,2,5,4,69
+,Microarray,12h,12.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,0.0,3.213569239228226,2.6779743660235216,0,3,1,5,3,97
+,Microarray,24h,24.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,2.5667352726441344,6.045998308497097,5.051923155396251,2,4,2,5,8,69
+,Microarray,24h,24.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,0.0,4.264577393888613,3.553814494907178,0,3,1,5,5,97
+,Microarray,3h,3.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,0.0,0.0,0.0,0,0,2,5,0,69
+,Microarray,3h,3.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,0.0,0.0,0.0,0,0,1,5,0,97
+,Microarray,48h,48.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,2.048825379829471,4.7308173227110135,3.9645339104591435,1,4,2,5,6,69
+,Microarray,48h,48.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,0.0,4.0,3.3333333333333335,0,2,1,5,4,97
+,Microarray,6h,6.0,cyanorak_role,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,6.1334987799132525,3.338233818746672,4.136880950508552,2,2,2,5,5,69
+,Microarray,6h,6.0,kegg,10.1038/msb4100087_nitrogen_nitrogen_deprivation_mit9313_mit9313_microarray,CTX,table_scope,Prochlorococcus MIT9313,0.0,2.4186298380869093,2.0155248650724245,0,2,1,5,5,97
+,RNA,day 11,264.0,cyanorak_role,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,NC,table_scope,Prochlorococcus MED4,2.031542441543175,0.0,0.5804406975837643,1,0,2,5,2,69
+,RNA,day 11,264.0,kegg,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,NC,table_scope,Prochlorococcus MED4,4.799435032012628,0.0,0.7999058386687713,1,0,1,5,1,97
+axenic_dying,Prot,day 14,336.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,T,table_scope,Prochlorococcus MED4,1.7532707052281056,0.381962940313869,0.7737651588607938,1,1,2,5,2,69
+axenic_dying,Prot,day 14,336.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,T,table_scope,Prochlorococcus MED4,3.139674580397364,0.3453438339327016,0.8110656250101455,1,1,1,5,3,97
+axenic_dead,Prot,day 31,744.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,T,table_scope,Prochlorococcus MED4,0.0,0.6488808099041314,0.4634862927886653,0,1,2,5,2,69
+axenic_dead,Prot,day 31,744.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,T,table_scope,Prochlorococcus MED4,0.0,0.7522455970398406,0.6268713308665338,0,1,1,5,3,97
+axenic_dead,Prot,day 89,2136.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,T,table_scope,Prochlorococcus MED4,0.0,0.6689990750197852,0.47785648215698945,0,2,2,5,4,69
+axenic_dead,Prot,day 89,2136.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,T,table_scope,Prochlorococcus MED4,0.0,0.6116846674701322,0.5097372228917768,0,1,1,5,1,97
+coculture,Prot,day 18,432.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,5.7459785124099145,0.42019528213525137,1.941847633642298,2,1,2,5,4,69
+coculture,Prot,day 18,432.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,5.43036485237694,0.4378491143663494,1.2699350707014478,1,1,1,5,4,97
+coculture,Prot,day 31,744.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,5.0,2.0,2.857142857142857,1,1,2,5,4,69
+coculture,Prot,day 31,744.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,2.8541812266101907,2.8135353007479234,2.820309621724968,1,2,1,5,3,97
+coculture,Prot,day 60,1440.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,4.50616995710767,-0.1296520123090204,1.1948685503814627,2,2,2,5,6,69
+coculture,Prot,day 60,1440.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,2.2739040542246824,0.2993465058478715,0.62843943057734,1,1,1,5,2,97
+coculture,Prot,day 89,2136.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,3.498917594856927,0.0,0.9996907413876934,1,0,2,5,3,69
+coculture,Prot,day 89,2136.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,2.048047559838242,0.5278069924444213,0.7811804203433915,1,1,1,5,10,97
+coculture,Prot,days 60+89,,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,4.955992717259095,0.0,1.4159979192168843,2,0,2,5,4,69
+coculture,Prot,days 60+89,,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,T,table_scope,Prochlorococcus MED4,2.1022575526879312,0.45114998414269775,0.7263345789002367,1,1,1,5,5,97
+axenic_dying,RNA,day 14,336.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,T,table_scope,Prochlorococcus MED4,0.909829952913902,4.990030530114643,3.824258936628717,1,5,2,5,8,69
+axenic_dying,RNA,day 14,336.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,T,table_scope,Prochlorococcus MED4,0.0,4.42022290457614,3.683519087146783,0,3,1,5,6,97
+coculture,RNA,day 18,432.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,0,69
+coculture,RNA,day 18,432.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+coculture,RNA,day 31,744.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,0,69
+coculture,RNA,day 31,744.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.30055246778599803,0.250460389821665,0,1,1,5,1,97
+coculture,RNA,day 60,1440.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.7169387046420248,0.5120990747443034,0,2,2,5,2,69
+coculture,RNA,day 60,1440.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,1.6475340264054033,1.3729450220045027,0,1,1,5,1,97
+coculture,RNA,day 89,2136.0,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,1,69
+coculture,RNA,day 89,2136.0,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+coculture,RNA,days 60+89,,cyanorak_role,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,0,69
+coculture,RNA,days 60+89,,kegg,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,T,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+,Microarray,45 min,0.75,cyanorak_role,10.1128/JB.01097-06_light_stress_high_white_light_55_med4_microarray,NC,organism,Prochlorococcus MED4,2.0029638138849317,0.4977715228797336,0.927826463166933,1,1,2,5,3,69
+,Microarray,45 min,0.75,kegg,10.1128/JB.01097-06_light_stress_high_white_light_55_med4_microarray,NC,organism,Prochlorococcus MED4,0.0,0.30566759810804617,0.2547229984233718,0,1,1,5,2,97
+,Prot,24h,24.0,cyanorak_role,10.1128/mSystems.00008-17_azaserine_ss120_proteomics,CTX,organism,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),0.0,0.0,0.0,0,0,2,5,2,69
+,Prot,24h,24.0,kegg,10.1128/mSystems.00008-17_azaserine_ss120_proteomics,CTX,organism,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),0.0,-0.5130643160935348,-0.4275535967446123,0,1,1,5,3,97
+,Prot,darkness,,cyanorak_role,10.1128/spectrum.03275-22_dark_high_glucose_med4_proteomics,NC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,0,69
+,Prot,darkness,,kegg,10.1128/spectrum.03275-22_dark_high_glucose_med4_proteomics,NC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
+,Prot,stationary,,cyanorak_role,10.1128/spectrum.03275-22_light_high_glucose_med4_proteomics,NC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,2,5,0,69
+,Prot,stationary,,kegg,10.1128/spectrum.03275-22_light_high_glucose_med4_proteomics,NC,table_scope,Prochlorococcus MED4,0.0,0.0,0.0,0,0,1,5,0,97
