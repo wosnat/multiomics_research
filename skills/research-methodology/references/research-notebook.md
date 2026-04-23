@@ -2,257 +2,184 @@
 
 ## Step protocol and enforcement
 
-For per-step commit timing, hard gates, and the chat-capture
-pattern, see [Step protocol](step-protocol.md). This document
-owns the notebook **format and content**; step-protocol owns
-**when things happen and what gates enforce them**.
+For per-step commit timing, hard gates, and the decide-gate checklist, see [Step protocol](step-protocol.md). This document owns the notebook **format and content**; step-protocol owns **when things happen and what gates enforce them**.
 
 ---
 
-Every analysis is driven by an interactive research notebook — a
-chronological log where each analytical step is recorded, inspected,
-explored with the researcher, and approved before the next step
-proceeds. Implementation can be fast or delegated; quality control
-and exploration are always interactive.
+Every analysis is driven by **per-step interactive notebooks** — one `notebook.md` per step folder — plus a single `paper.md` at the analysis root that grows as a polished write-up. Implementation can be fast or delegated; quality control, exploration, and decision-making are always interactive.
 
-## The step cycle: do → show → explore → decide
+## Just-in-time formalization
 
-Every step that produces data or analytical output follows this
-cycle:
+Terms, predictions, metrics, stability checks, decisions, and caveats enter the analysis **only when the data demands them**. Nothing is enumerated in advance "just in case."
 
-1. **Do** — write/update script, run, update manifests, commit.
-2. **Show** — present QC diagnostics, begin notebook entry with
-   summary tables, figure links, counts.
-3. **Explore** — interactive walkthrough, append chat-capture
-   section to notebook entry.
-4. **Decide** — researcher says continue/redo/adjust. Decision
-   logged, notebook entry committed.
+Concrete rules:
+- **Step 3 framing has a floor, not a template.** Minimum: hypothesis in prose, what success means operationally, positive and negative controls from the KG. Nothing else required.
+- **Preregistration is optional and minimal.** If confirmation bias is a real risk, preregister 1–3 named predictions — not a 4×4 matrix of ordering and thresholds.
+- **Stability checks are added when a specific result triggers them**, not planned up front.
+- **Decisions are written when forced by data**, not anticipated. No "we may decide X" placeholders.
+- **Methods (step 4) stay minimal** — ad-hoc Python module with exactly what this analysis needs.
+- **Caveats are harvested at step 6** from what actually happened; not pre-cataloged.
 
-Per-phase obligations, commit timing, and hard gates are in
-[Step protocol](step-protocol.md). What follows here is the
-notebook **format**.
+This principle governs every step. If you find yourself listing things the analysis might need before the data has arrived, stop.
 
-Mechanical tasks (formatting, plotting from existing data, file
-reorganization) can skip the explore phase but still need
-show + decide.
+## The 6-step flow
 
-## What a "step" is
+1. **Research question** — conversation: user prompt + Claude clarifying questions → locked question
+2. **KG entries** — identify relevant publications, experiments, organisms, data types
+3. **Analysis framing** — (a) selection: publications/experiments/organisms/data types; (b) framing: hypothesis, target, positive and negative controls, expected outcome — all in KG terms
+4. **Methods** — pick one item from step 3 as a driving example; select or generate an analysis method; produce an ad-hoc Python module
+5. **Analyze** — run the method; produce scored outputs, figures, tables
+6. **Evaluate** — assess results against framing; harvest caveats; finalize paper
 
-A step is:
-- A Python script with explicit command-line invocation
-- Output artifacts (CSV, figures, summary files)
-- A notebook entry capturing all four phases of the cycle
+Steps 1–3 are the **research proposal**. Locked at end of step 3. Steps 4–6 execute against it.
 
-## Interactive discovery steps
+Step 1 is the only conversation-only step (typically produces only `notebook.md`). Steps 2–6 all produce `scripts/`, `data/`, `figures/`, and QC alongside `notebook.md`.
 
-Some steps are naturally exploratory — browsing experiments,
-classifying conditions, discussing what to include. These don't
-fit neatly into "run a script, check the output." The pattern for
-interactive steps:
+## The intra-step rhythm: do → show → explore → decide
 
-1. Explore interactively via MCP queries and chat discussion
-2. Produce a **frozen output file** (CSV, table) that downstream
-   scripts consume — this is the reproducible artifact
-3. Write a **notebook entry** documenting the reasoning,
-   classifications, and decisions — detailed enough that a
-   different researcher could follow the logic
-4. Optionally, write a script that reproduces the frozen output
-   from KG queries
+Every step advances through these four phases (see [step-protocol.md](step-protocol.md) for commit timing and gates):
 
-The frozen output + notebook entry are the minimum. A script is
-preferred but not required for discovery steps where the process
-is inherently iterative and conversational.
+- **do** — do the step's work; outputs land wherever the step naturally produces them
+- **show** — populate `notebook.md` with what was produced
+- **explore** — investigate anomalies, surprises, or gaps; add `qc_*.py` checks, sensitivity analyses, or follow-up clarifying questions as needed
+- **decide** — finalize notebook, update paper.md, present state to researcher, commit on approval
 
-Rule 5 (scripts over chat reasoning) still applies to
-computations. Interactive steps are for *discovery and
-classification*, not for computing statistics in chat.
+## notebook.md format
 
-## Notebook format
+One `notebook.md` per step folder. Freeform prose, not a rigid template — include what applies to the step.
 
-One notebook per analysis: `exploration/YYYY-MM-DD-notebook.md`
+### Recommended sections
 
-Chronological and append-only. Reruns add new entries, not
-overwrites. This is a messy lab notebook, not a publication.
+- **Context** — what this step is for; what the prior step decided
+- **What I did** — work performed; scripts run with their command-line invocation for non-trivial cases; KG queries issued
+- **Results** — summary tables shown inline (as markdown tables, not prose paraphrases); links to full tables in `data/` and figures in `figures/` produced this step; cited publications from the KG by DOI or experiment ID — resolved via `list_publications`, never from memory (see [anti-hallucination.md — Category 5](anti-hallucination.md))
+- **Surprises** — anomalies, data oddities, unexpected distributions worth flagging
+- **Decisions** — in prose with dates, if any forks were taken this step; omit if none
+- **Advance rationale** — one line at the end
 
-### Entry template
+### Decide-gate checklist (end of notebook.md)
 
-~~~markdown
----
+At step close, the notebook ends with this checklist (see [step-protocol.md](step-protocol.md) for the approval gate):
 
-## YYYY-MM-DD HH:MM — Step N: {description}
+- **Outputs produced** — filenames in `scripts/`, `data/`, `figures/`, with command lines for non-trivial scripts (for reproducibility)
+- **Results presented** — summary tables shown inline in `notebook.md`; links to full tables and figures generated this step
+- **QC gate** — what was checked → result (one line per check)
+- **Decisions made this step** — prose + date, if any; omit the section if none
+- **Advance rationale** — one line, why this step is ready to close
 
-### Command
-```bash
-uv run scripts/script_name.py --arg value --output data/output.csv
-```
+The checklist must stay this minimal. It is not a template to extend with optional fields. Inflation of this list reintroduces the premature-formalization failure that the per-step notebook is designed to prevent.
 
-### Inputs
-- [input_file.csv](../data/input_file.csv) — N rows, N genes, N timepoints
+### Labels
 
-### Outputs
-- [output_file.csv](../data/output_file.csv) — N rows, description
-- [figure.png](../results/figure.png) — description
+Labels are permitted within a single document when each label is paired with a short readable name in the same paragraph on first mention. **No cross-file labels.**
 
-### QC
-- Summary statistics, counts, sanity checks
-- What's present, what's missing, what's surprising
+- OK: "the coculture-stronger prediction (2) was not supported; (2) rests on the assumption that axenic cells shut down before fully engaging response"
+- Not OK: "P2 failed" (no name) or "see D7 in decisions.md" (cross-file label)
 
-### Exploration (agent-driven QC)
-- Walked through gene X (PMM0xxx): values, logic, conclusion
-- Checked gene Y: values — expected / unexpected because [reason]
-- Spot-checked edge case Z: [what was checked, what it showed]
+If paired-label-plus-name still obscures content, drop to prose-only — labels are a convenience, not a requirement.
 
-### Chat exploration (researcher-driven questions)
-**Q: [researcher's question, as asked]**
-Data: [what was looked up / computed to answer it]
-Finding: [what the data showed, with concrete numbers]
-Impact: [how this affects interpretation or next steps]
+### Overwrite vs append
 
-**Q: [next question]**
-...
+A step's `notebook.md` represents what-we-now-believe-happened in that step. On redo, the notebook is **overwritten**, not appended — the narrative reflects the successful attempt, not a log of past attempts. The prior attempt lives in git history (see [step-protocol.md — Redo path](step-protocol.md)).
 
-### Decision
-What was decided and why. Proceed / redo / adjust.
-~~~
+`gaps_and_friction.md` is **append-only** (see below).
 
-Logs must be sufficient to verify the step without rerunning —
-see [Artifacts guide — Log verbosity](artifacts.md) for the
-standard.
+## paper.md growth pattern
 
-### What the notebook captures
+Single `paper.md` at the analysis root. Skeleton sections exist from day 1 (seeded by Claude during scaffolding at start of step 1) and fill in during each step's **decide** phase — after the step's notebook is finalized but before the commit.
 
-Everything:
-- **Spec walkthrough** — the initial section-by-section review of
-  the analysis design (questions, decisions, rationale)
-- **Each analytical step** — command, inputs, outputs, QC,
-  exploration, decision
-- **Reruns** — see [Rerun and revision workflow](#rerun-and-revision-workflow)
-- **Chat-based follow-up** — interpretation discussions, "what
-  about gene X?" explorations, with actual data points
-- **Questions and decisions** — including dead ends and rejected
-  alternatives
-- **Relative links** to all artifacts produced
+| paper.md section | Populated from |
+|---|---|
+| Question | step 1 |
+| Background | step 2 (KG entries and prior work) |
+| Methods | steps 3 (framing) and 4 (implementation) |
+| Results | step 5 |
+| Discussion | step 6 |
+| References | accumulates across all steps that cite publications |
 
-## Rerun and revision workflow
+References are populated as publications are cited. Every reference must be resolved through `list_publications` and cited by DOI or KG experiment ID — never drafted from intrinsic knowledge (see [anti-hallucination.md — Category 5.2](anti-hallucination.md)). Citation format inside prose can be short (author-year or numeric); the References section at the end carries the resolved DOI or experiment ID for each.
 
-When a step is rerun (due to a formula correction, normalization
-change, filter adjustment, or any methodology change mid-analysis):
+When the analysis ends, the paper ends. The B2 failure mode was deferring write-up to a final step that never happened — `paper.md`'s incremental growth prevents this.
 
-1. **Update the utility code** — change the shared methodology
-   (`*_utils/`), not just the script
-2. **Run tests** — verify the change is correct against toy data
-3. **Rerun all downstream steps** that consumed the changed
-   output — every step after the change gets a fresh run
-4. **New notebook entry per rerun** — each rerun gets its own
-   entry explaining what changed and what the impact was
-5. **Commit each rerun's outputs** — see
-   [Step protocol](step-protocol.md) for commit timing during
-   redos
+## gaps_and_friction.md (transitional)
 
-The rerun entry template:
+A top-level file at `analyses/<slug>/gaps_and_friction.md` captures friction encountered during the analysis, distinct from decisions:
 
-~~~markdown
----
+- **Decision** = a fork the analysis had to take, based on data → logged in the relevant step's `notebook.md`
+- **Friction** = a problem that slowed us down, surprised us, or revealed a gap in methodology / KG / tooling → logged in `gaps_and_friction.md`
 
-## YYYY-MM-DD HH:MM — Step N rerun: {what changed}
+These can co-occur — a methodology gap can force both a decision and a friction entry. Log in both places when that happens.
 
-### Why
-What was wrong with the previous output and how it was discovered.
+**What goes in `gaps_and_friction.md`:**
+- KG data issues and bugs encountered
+- MCP tool schema or capability mismatches (see [anti-hallucination.md — Category 5.1](anti-hallucination.md))
+- Methodology gaps discovered during execution (nuances the framing didn't anticipate)
+- Anti-hallucination corrections (claims from memory caught by verification)
+- Process friction (things that slowed the work)
 
-### Changes
-- What code was modified (file, function, logic change)
-- How tests were affected (new tests, changed expected values)
-- How many downstream steps needed rerunning
+Each entry is prose with a date, a short name, what happened, and — if relevant — the workaround and the downstream impact on methodology/KG/tooling.
 
-### Outputs
-- Updated files with new row counts / statistics
+**Why this is transitional.** The 6-step methodology itself is under development. Every analysis teaches us something about what's missing or awkward. `gaps_and_friction.md` is the learning record that feeds back into methodology and KG/tooling improvements. Mandatory while the methodology is being stabilized — likely the first 3–5 analyses. Once the pattern settles, revisit: keep, make optional, or fold into `notebook.md`. Retirement criterion: when two consecutive analyses produce a near-empty `gaps_and_friction.md` (only incidental friction, no methodology gaps), propose retiring the requirement.
 
-### Impact
-- What changed in the results (direction, magnitude, interpretation)
-- What didn't change (confirming robustness where applicable)
+Append-only. Redo friction entries accumulate.
 
-### Decision
-Proceed with updated output / need another iteration.
-~~~
+## Using `superpowers:brainstorming` for step 1
+
+The brainstorming skill's dialogue pattern (clarifying questions one at a time, proposing approaches, converging) fits step 1 well. **Two overrides apply:**
+
+1. **Capture location.** The skill's default writes a design doc to `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md`. Override: output lands in `analyses/<slug>/1_question/notebook.md`. The formulated research question, clarifying dialogue in summary form, rejected alternatives, and converged scope all live there.
+2. **Terminal action.** The skill's terminal state is invoking `superpowers:writing-plans`. **Skip this.** Step 1 decide advances to step 2 (KG entries), not to implementation-plan writing. There is no monolithic plan for the analysis — the 6-step flow replaces it.
+
+If the skill's preamble nudges toward writing a spec doc outside the analysis folder or invoking writing-plans at the end, treat those as defaults being overridden by this methodology skill (which has higher priority for research work in this repo).
 
 ## QC checkpoint types
 
 What to show depends on the step type.
 
-### Data extraction
-- Row count, gene count, timepoint/condition count
-- Sample rows (first 5 or curated edge cases)
-- What's missing: expected genes absent, unexpected metadata
-  (e.g., `timepoint=single`)
-- One-sentence summary: "This is X genes across Y conditions
-  from Z experiments"
+### KG selection (step 2)
+- Row counts per filter: experiments at each stage (started with → filter by organism → filter by assay → final)
+- Sample rows of selected entries (experiment ID, publication, TPs, omics)
+- Per-TP gene counts (`tp_gene_count`), **not** cumulative `gene_count` (see [anti-hallucination.md — Category 5.3](anti-hallucination.md))
+- Publication attributions resolved via `list_publications`
 
-### Gene selection / filtering
-- Counts at each filter step: started with → filter 1 →
-  filter 2 → final
-- Sample excluded genes with reason
-- Sample included genes — known markers present?
-- Flag surprises: "Gene X was excluded because Y — expected?"
+### Analysis framing (step 3)
+- Controls selected from the KG with validation: what distinguishes positive from negative; coverage of TPs/conditions; distributional QC
+- Hypothesis statement in prose
+- Expected outcome phrased in KG-operational terms (what table / metric / direction will change)
 
-### Computation / metric
-- Worked example: 2-3 genes through the formula with actual
-  numbers, step by step
+### Computation / metric (step 4)
+- Worked example: 2–3 genes or clusters through the formula with actual numbers, step by step
 - Summary statistics of the output (distribution, range, NaNs)
-- Sanity check against known biology: "glnA should score
-  high — does it?"
+- Sanity check against known biology ("glnA should score high — does it?")
 
-### Scoring / comparison
-- Full results table in markdown (not prose summary — the
-  actual numbers)
+### Scoring / comparison (step 5)
+- Full results table in markdown (the actual numbers, not prose summary)
 - Best/worst scores, surprises, anything unexpected
-- Cross-condition comparison with expectation check
+- Cross-condition comparison with expectation check against the step 3 framing
+
+### Evaluation (step 6)
+- Preregistered predictions held / not held
+- Sensitivity / LOO stability where applicable
+- Harvested caveats
 
 ## Code lifecycle: analysis-first, productize later
 
-Research code has two phases. Follow phase 1 during analysis;
-flag phase 2 candidates in the notebook.
+Research code has two phases. Follow phase 1 during analysis; flag phase 2 candidates.
 
 ### Phase 1 — Analysis code (methodology-first)
 
-Code is written to solve the immediate research problem. It lives
-in the analysis directory. The goal is correct methodology, not
-good software engineering.
+Code lives in the analysis directory. Goal: correct methodology, not good software engineering.
 
-**Separate reusable logic from scripts.** When an analysis
-introduces a new methodology (signature scoring, enrichment,
-concordance metrics), put the reusable logic in a utility package
-within the analysis directory (`analyses/*/sig_utils/`,
-`analyses/*/enrich_utils/`). Scripts call the utilities for
-specific data; utilities contain the methodology. This separation
-is what makes toy-testing possible and productization
-straightforward later.
+**Separate reusable logic from scripts.** When step 4 introduces a new method, put the reusable logic in a utility package within the step folder (`4_methods/<module_name>.py`) and let analysis scripts in later steps import it. Scripts call utilities for specific data; utilities contain the methodology. This separation is what makes toy-testing possible and productization straightforward later.
 
-**Specs describe methodology, not implementation.** For novel
-utilities (scoring functions, metrics, gene set operations), the
-spec should contain formulas with worked examples, expected I/O,
-and pseudocode — not Python implementation. Regular
-extraction/plotting scripts are straightforward enough to go
-directly in the plan.
+**Methods modules describe methodology, not implementation scaffolding.** For novel utilities (scoring functions, metrics, gene-set operations), the module should be minimal — the formula with a worked example, expected I/O, and the minimum code to compute it. Regular extraction/plotting scripts are straightforward enough not to need a separate utility.
 
-**Toy-data verification before real data.** When building a
-reusable utility, verify with hand-calculated toy examples first.
-This is a notebook step: create small synthetic input, compute
-expected output by hand, run the utility, compare, log the
-verification. Applies to anything in a shared `*_utils/` package.
-One-off scripts don't need it.
+**Toy-data verification before real data.** When building a reusable utility, verify with hand-calculated toy examples first. Create small synthetic input, compute expected output by hand, run the utility, compare, log the verification in `4_methods/notebook.md`. Applies to anything in a shared utility; one-off scripts don't need it.
 
-**Refine through the notebook QC cycle.** The interactive
-do→show→explore→decide loop is how the methodology gets validated.
-Formula corrections, edge cases, direction logic — all discovered
-through the researcher walking through concrete examples.
+**Refine through the notebook QC cycle.** The do → show → explore → decide loop is how methodology gets validated. Formula corrections, edge cases, direction logic — all discovered through the researcher walking through concrete examples.
 
 ### Phase 2 — Productization (software-first)
 
-After the analysis, if a utility proves reusable (used across
-multiple analyses or conditions), flag it for productization — a
-separate brainstorm with proper API design, tests, and
-documentation. It moves from the analysis directory to a shared
-package (e.g., `multiomics_explorer/analysis/`).
+After the analysis, if a utility proves reusable (used across multiple analyses), flag it for productization — a separate brainstorm with API design, tests, and documentation. It moves from the analysis directory to a shared package (e.g., `multiomics_explorer/analysis/`).
 
-Don't productize speculatively. Wait for proven reuse — the
-analysis notebook is the evidence.
+Don't productize speculatively. Wait for proven reuse — the analysis notebooks across multiple analyses are the evidence.

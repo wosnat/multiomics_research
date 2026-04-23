@@ -1,172 +1,133 @@
 # Step protocol
 
-The step cycle (do → show → explore → decide) is defined in
-[research-notebook.md](research-notebook.md). This document owns
-**when things happen and what gates enforce them**. Follow it for
-every step that produces data or analytical output.
+Each analysis step advances through the rhythm **do → show → explore → decide** (phase content defined in [research-notebook.md](research-notebook.md)). This document owns **when things happen and what gates enforce them**.
+
+The **just-in-time formalization** principle applies throughout: terms, metrics, stability checks, decisions, and caveats enter the analysis only when the data demands them. Do not pre-specify framework inventories. See [research-notebook.md](research-notebook.md) for the full principle and its application to step 3 framing.
 
 ## Commit structure
 
-Two commits per step:
-- **Commit 1** (end of "do"): script + outputs + log + manifest
-  updates
-- **Commit 2** (end of "decide"): notebook entry with QC tables,
-  chat-capture section, and decision
+**One commit per step**, at the end of the decide phase. The commit includes everything the step produced:
 
-Show, explore, and decide produce ONE notebook entry together —
-QC section from show, chat-capture section from explore, decision
-from decide — committed once at the end of decide.
+- `notebook.md` (narrative + decide-gate checklist)
+- `scripts/`, `data/`, `figures/` (main + `qc_*` files)
+- updates to `paper.md` (the step's synthesis section)
+- updates to `gaps_and_friction.md` (if the step encountered friction)
 
-If the researcher requests a redo, the exploration reasoning is
-preserved separately from the artifacts that get replaced.
+No mid-step commits, no separate "do commit + decide commit" pattern. The decide phase is the atomic step boundary.
+
+Step 1 is a special case: the commit includes both the scaffold (analysis folder, `paper.md` skeleton, `gaps_and_friction.md` header, `1_question/notebook.md`) and step 1's own outputs. See [artifacts.md](artifacts.md) for scaffold creation.
 
 ## Before starting a step
 
-- Confirm previous step's artifacts are committed (script +
-  outputs + log + manifests — Commit 1)
-- Confirm previous step's notebook entry is committed (including
-  chat-capture — Commit 2)
+- Previous step's commit exists
+- Previous step's `notebook.md` has the decide-gate checklist populated
+- Previous step's `paper.md` section is populated
+
+If any of these is missing, close the previous step first.
 
 ## "do" phase
 
-1. Write or update the script
-2. Run script, capture outputs and log
-3. Update `DATA_MANIFEST.md` or `RESULTS_MANIFEST.md` with new
-   files (see [artifacts.md](artifacts.md) for manifest format)
-4. Git commit: script + outputs + log + manifest updates
+Do the step's work — scope depends on the step:
 
-## "show" phase (begins the notebook entry)
+- **Step 1:** clarifying dialogue with the researcher (see [research-notebook.md — Using brainstorming for step 1](research-notebook.md))
+- **Steps 2, 4, 5:** write and run scripts; produce data and figures
+- **Steps 3, 6:** select, validate, or evaluate; produce scripts + data + figures for the QC side; write prose for the framing or evaluation side
 
-Present QC diagnostics to the researcher. Write the QC section
-of the notebook entry, including:
+Outputs land wherever the step naturally produces them: a conversation lands in `notebook.md`; scripts land in `scripts/`; their outputs land in `data/` and `figures/`. QC artifacts use the `qc_` filename prefix (see [artifacts.md](artifacts.md)).
 
-- Summary tables of outputs — the same tables shown in chat,
-  written to the notebook as markdown tables, not prose
-  paraphrases
-- Links to figures produced
-  (`![description](../results/fig.png)`)
-- Row counts, gene counts, key statistics
+No commit yet. The step's outputs are uncommitted working-tree state until decide.
 
-See [research-notebook.md — QC checkpoint types](research-notebook.md)
-for what to show per step type.
+## "show" phase
 
-## "explore" phase (continues the same notebook entry)
+Populate `notebook.md` with what was produced. Recommended sections (see [research-notebook.md](research-notebook.md) for full content):
 
-Interactive walkthrough with the researcher. Append the
-chat-capture section to the notebook entry AS exploration
-happens, not after.
+- **Context** — what this step is for; what the prior step decided
+- **What I did** — scripts run with their command-line invocation for non-trivial cases; KG queries issued
+- **Results** — summary tables shown inline (as markdown tables, not prose paraphrases); links to full tables in `data/` and figures in `figures/`; cited publications resolved via `list_publications` (never from memory — see [anti-hallucination.md — Category 5](anti-hallucination.md))
 
-### Chat-capture format
+Summary tables in **Results** are the same tables presented to the researcher in chat — copied as markdown into the notebook, not paraphrased.
 
-```markdown
-## Chat exploration
+## "explore" phase
 
-**Q: [researcher's question, as asked]**
-Data: [what was looked up / computed to answer it]
-Finding: [what the data showed, with concrete numbers]
-Impact: [how this affects interpretation or next steps]
+Investigate anomalies, surprises, or gaps:
 
-**Q: [next question]**
-...
-```
+- Ask follow-up clarifying questions (step 1)
+- Add `qc_*.py` checks; run sensitivity analyses; cross-validate against controls (steps 2–6)
 
-**What gets captured:** Questions that surfaced data points,
-changed interpretation, or influenced decisions. Any exchange
-that produced a number, a comparison, or a "therefore."
+Capture anomalies worth flagging as **Surprises** in `notebook.md`. If a researcher question during this phase produces a data point or changes interpretation, both the prose and the data live in the notebook — the narrative IS the exploration record. No separate chat-capture section.
 
-**What does NOT get captured:** Clarifications ("what does column
-X mean"), formatting/typo fixes, tool-call mechanics.
+## "decide" phase
 
-Why not verbatim chat? Chat is noisy with tool calls, retries,
-and formatting. The value is the Q → data → finding → impact
-chain, not the raw transcript.
+1. **Finalize `notebook.md`:**
+   - Ensure Context / What I did / Results / Surprises are populated as applicable
+   - Add **Decisions** section if any forks were taken (prose + date; see [research-notebook.md](research-notebook.md))
+   - Write the **decide-gate checklist** at the end of notebook.md:
+     - **Outputs produced** — filenames in `scripts/`, `data/`, `figures/`, with command lines for non-trivial scripts
+     - **Results presented** — summary tables shown inline; links to full tables and figures generated this step
+     - **QC gate** — what was checked → result (one line per check)
+     - **Decisions made this step** — prose + date, if any; omit the section if none
+     - **Advance rationale** — one line, why this step is ready to close
 
-**GATE 3** applies here — see below.
+2. **Update `paper.md`:** write the synthesis paragraph (or figure inclusion, or methods sub-section) for the section this step populates — see [research-notebook.md — paper.md growth](research-notebook.md) for the section-to-step mapping.
 
-## "decide" phase (closes the notebook entry)
+3. **Append to `gaps_and_friction.md`** if friction was encountered this step (KG issues, MCP schema mismatches, methodology gaps, anti-hallucination corrections).
 
-Researcher says continue, redo, or adjust. Decision logged in
-the notebook entry, closing it. Then git commit (Commit 2): the
-completed notebook entry (QC + chat-capture + decision).
+4. **Present state to researcher:** show the `notebook.md` content, the `paper.md` diff, and any `gaps_and_friction.md` additions. Wait for explicit approval or redirect.
+
+5. **On approval, commit.** One commit, containing all of the step's changes.
+
+6. Begin next step (create its folder as needed — see [artifacts.md](artifacts.md) for progressive folder creation).
 
 ## Redo path
 
-When the researcher says "redo with X":
+When the researcher says "redo step N with X":
 
-1. **do:** Update script, rerun, update manifests → NEW commit
-   (never amend previous)
-2. **show:** New QC presentation — same requirements as first
-   pass (summary tables, figure links, counts)
-3. **explore:** New walkthrough with chat-capture → APPEND new
-   notebook entry (never revise previous entries)
-4. **decide:** Researcher reviews. The notebook entry explicitly
-   lists downstream steps that consumed the changed output.
-   Researcher decides whether to cascade redo or accept as-is.
-   Decision logged in notebook.
+1. **do:** update script or framing; rerun; regenerate outputs. New artifacts overwrite old in the step folder.
+2. **show / explore:** new tables, figures, Results; update Surprises if changed.
+3. **decide:** new decide-gate checklist, new `paper.md` synthesis, new `gaps_and_friction.md` entry if the redo surfaced friction. **New commit (never amend the previous).**
 
-The failed attempt's notebook entry stays as a record of what
-was tried and why it was rejected. Append-only.
+The previous commit remains in git history as the record of what was tried. The working-tree `notebook.md` is overwritten because it now describes what actually happened in the successful attempt — it is not a log of prior attempts.
+
+If the redo invalidates downstream steps, the redo's `notebook.md` must list the downstream steps that consumed its outputs. The researcher decides whether to cascade the redo.
+
+`gaps_and_friction.md` is append-only: redo friction entries accumulate.
 
 ## Hard gates
 
-Each gate explains what goes wrong without it (citing real
-failures from past analyses), then states the stop condition.
-
 ### GATE 1: Step boundary
 
-B1's notebook was written retroactively — exploration reasoning
-was lost and couldn't be verified against the actual data state
-at the time.
+B1 and B2 partially wrote notebooks retroactively — exploration reasoning was lost and couldn't be verified against the actual data state at the time.
 
-**Do not start step N+1 until step N's notebook entry (including
-chat-capture section) is committed.**
+**Do not start step N+1 until step N is committed, including `notebook.md`, `paper.md` updates, and `gaps_and_friction.md` updates if applicable.**
 
-### GATE 2: Manifest currency
+### GATE 2: Researcher approval
 
-B1's manifests were updated in bulk at the end. By that point,
-file descriptions were reconstructed from memory rather than
-written when the data was fresh.
+B2's scope drift (decisions D5–D8 added mid-execution) slipped past because there was no atomic gate between "I finished some work" and "I'm advancing." The decide phase presents state to the researcher; the researcher approves, requests a redo, or redirects.
 
-**Do not commit a script's outputs without updating the relevant
-manifest in the same commit.**
+**Do not commit the step without explicit researcher approval of the decide-gate state.**
 
-### GATE 3: Chat-capture
+### GATE 3: Results presented, not paraphrased
 
-B1's most valuable findings came from researcher questions during
-explore ("is this dominated by catch-all categories?", "what
-about Steglich's low power?"). These drove analytical decisions
-but were lost from the chat context.
+Summary tables shown in chat must also appear as markdown tables in `notebook.md`. Prose paraphrases of numbers lose precision and are unreviewable.
 
-**Do not enter "decide" phase until the chat-capture section
-exists in the notebook entry.**
+**Do not close the step if the Results section in `notebook.md` is prose where a table belongs.**
 
 ## Git discipline
 
 ### Per-analysis .gitignore
 
-Each analysis gets its own `.gitignore` created during
-scaffolding (before step 1), with explicit decisions logged in
-the notebook. Default template:
-
+Created during scaffolding (at start of step 1). Default:
 ```
 # Large intermediate data reproducible from KG
 # (list specific files here, not blanket patterns)
 __pycache__/
 ```
+Everything else tracked by default. Explicit entries with a comment explaining why.
 
-Everything else tracked by default. If a file should be ignored,
-list it explicitly with a comment explaining why.
+### Scaffolding
 
-### Scaffolding commit
+Scaffolding and step 1 land in the same commit. Claude creates the scaffold during step 1's do phase, before the dialogue begins (see [artifacts.md — Scaffold creation](artifacts.md)). No separate scaffolding commit.
 
-When creating an analysis directory, the initial scaffolding
-(directory structure, empty manifests, `.gitignore`, notebook
-stub) gets its own commit before step 1 begins. This establishes
-tracking decisions upfront.
+### Redo commits
 
-### Commit discipline
-
-- Two commits per step (do + explore)
-- Redo: new commits, never amend
-- Each commit is self-contained: includes the artifacts it
-  produces AND the manifest/notebook updates for those artifacts
+Redo produces new commits, not amendments. The failed attempt's commit stays in history. Within the working tree, the step's `notebook.md` is overwritten to reflect the successful attempt.

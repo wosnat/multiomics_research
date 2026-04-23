@@ -1,17 +1,18 @@
 ---
 name: research-methodology
-description: Non-negotiable rules for multi-omics KG research. Load when answering biological questions, analyzing expression data, planning or brainstorming a research analysis, reviewing results, or working with the multiomics KG in any capacity. CRITICAL — must be loaded BEFORE the brainstorming skill, because its rules constrain what can be designed. Loading after the spec is written means retrofitting. Recipe skills (enrichment, response-matrix, conservation) assume this skill is already loaded. Reference skill — provides domain rules, not process.
+description: Use when answering biological questions, analyzing expression data, planning or brainstorming a research analysis, reviewing results, or working with the multiomics KG in any capacity. Non-negotiable domain rules and research process for multi-omics KG work. CRITICAL — load BEFORE invoking brainstorming for step 1 of an analysis; loading after the step-1 dialogue means retrofitting.
 ---
 
 # Multi-omics research methodology
 
-These rules apply to ALL research work — brainstorming, planning,
-and execution. They are non-negotiable.
+These rules apply to ALL research work — dialogue, analysis,
+execution. They are non-negotiable.
 
-> **Load this skill BEFORE brainstorming.** The notebook structure,
-> artifact requirements, and methodology rules shape the entire
-> analysis design. Loading after the spec is written means
-> retrofitting — which is what happened in the N-limitation analysis.
+> **Load this skill BEFORE invoking `superpowers:brainstorming` for step 1
+> of an analysis.** Step 1's capture location and terminal behavior are
+> overridden by this skill (see Rule 8 and
+> [research-notebook.md — Using brainstorming for step 1](references/research-notebook.md)).
+> Loading after step 1 is committed means retrofitting.
 
 ## Rule 1: KG is the sole data source
 
@@ -92,30 +93,72 @@ the KG provides, what you must compute in scripts, and what to flag.
 See [Anti-hallucination](references/anti-hallucination.md) for
 concrete failure modes and prevention patterns.
 
-## Rule 8: Research notebook, not pipeline
+## Rule 8: The 6-step research flow
 
-Every analysis is driven by an interactive notebook where each
-step is recorded, explored with the researcher, and approved
-before the next step. Implementation can be fast or delegated;
-quality control is always interactive.
+Every research analysis is structured as 6 steps, each advancing
+through the rhythm **do → show → explore → decide** with an atomic
+researcher-approval gate at decide close.
 
-See [Step protocol](references/step-protocol.md) for per-step
-commit timing, hard gates, the chat-capture pattern, and redo
-path. See [Research notebook](references/research-notebook.md)
-for notebook format, entry templates, QC checkpoint types, and
-code lifecycle rules.
+1. **Research question** — user prompt + clarifying questions →
+   locked question
+2. **KG entries** — relevant publications, experiments, organisms,
+   data types identified from the KG
+3. **Analysis framing** — (a) selection: publications / experiments /
+   organisms / data types; (b) framing: hypothesis, target, positive
+   and negative controls, expected outcome — all in KG terms
+4. **Methods** — pick one item from step 3 as driving example;
+   produce an ad-hoc Python module
+5. **Analyze** — run the method; produce scored outputs, figures,
+   tables
+6. **Evaluate** — assess against framing; harvest caveats; finalize
+   paper
 
-Recipe skills (enrichment, response-matrix, conservation) assume
-this skill is already loaded. Load this skill first, then the
-relevant recipe.
+Steps 1–3 form the research proposal (locked at end of step 3
+decide). Steps 4–6 execute against it. Step 1 is a conversation
+(typically uses `superpowers:brainstorming` with overrides); steps
+2–6 produce scripts, data, figures, and QC alongside `notebook.md`.
+
+### Just-in-time formalization
+
+Terms, predictions, metrics, stability checks, decisions, and
+caveats enter the analysis **only when the data demands them**.
+Nothing is enumerated in advance "just in case." If you find
+yourself listing things the analysis might need before the data
+has arrived, stop.
+
+### What replaces the old spec/plan/decisions machinery
+
+- **No `spec.md` / `plan.md`** — the 6-step flow replaces the
+  monolithic plan; each step's intent is captured in its own
+  `notebook.md`
+- **No global `decisions.md`** — decisions live in the step's
+  `notebook.md` where they were forced
+- **No `hypotheses.md`** — the hypothesis lives in step 3's
+  `notebook.md` (the framing)
+- **No cross-file labels** (H1/P3/D8/T4) — labels are
+  document-scoped; labels used must be paired with a short readable
+  name in the same paragraph
+- **Per-step `notebook.md` + single `paper.md`** at the analysis
+  root replace the single exploration notebook + methods.md +
+  caveats.md
+- **`gaps_and_friction.md`** (transitional) captures methodology /
+  KG / tooling friction, distinct from decisions
+
+See [Step protocol](references/step-protocol.md) for commit timing,
+decide-gate checklist, hard gates, and redo path. See
+[Research notebook](references/research-notebook.md) for notebook
+format, `paper.md` growth, `gaps_and_friction.md`, and the
+brainstorming override for step 1. See
+[Artifacts guide](references/artifacts.md) for directory structure
+and scaffold creation.
 
 ## References — read on demand, not all at once
 
-- [Step protocol](references/step-protocol.md) — read at the start of every analysis execution; owns commit timing, hard gates, chat-capture, redo path
+- [Step protocol](references/step-protocol.md) — read at the start of every analysis execution; owns commit timing, decide-gate checklist, hard gates, redo path
+- [Research notebook](references/research-notebook.md) — read when starting or resuming an analysis; owns notebook format, paper.md growth, gaps_and_friction.md, brainstorming override for step 1
+- [Artifacts guide](references/artifacts.md) — read at scaffold time or when unsure about directory structure, per-step folders, QC naming
+- [Anti-hallucination](references/anti-hallucination.md) — read before presenting findings; covers tool-schema claims, publication attribution, field semantics, and the other anti-hallucination patterns
 - [KG rules](references/kg-rules.md) — read when scoping a new analysis or uncertain about data sourcing vs literature
 - [Gene identity](references/gene-identity.md) — read when working with gene names, paralogs, or orthologs
-- [Artifacts guide](references/artifacts.md) — read when setting up an analysis directory or unsure about file structure
-- [Anti-hallucination](references/anti-hallucination.md) — read before presenting findings or when self-checking results
 - [Python API guide](references/python-api-guide.md) — read before writing extraction or analysis scripts
 - [Statistical rigor](references/statistical-rigor.md) — read when computing enrichment, comparing across studies, or reporting p-values
-- [Research notebook](references/research-notebook.md) — read when starting or resuming an interactive analysis

@@ -10,7 +10,8 @@ example from this KG.
 2. [Narrative fabrication](#category-2-narrative-fabrication) — causal claims, cherry-picking, selective reporting, language strength, cross-experiment aggregation
 3. [Data handling errors](#category-3-data-handling-errors) — counting from truncated lists, cross-study p-values, fabricating statistics
 4. [Knowledge boundary violations](#category-4-knowledge-boundary-violations) — asserting absence, assuming completeness, unsupported literature claims
-5. [Quick self-check](#quick-self-check) — 7-question checklist before presenting findings
+5. [Source-of-truth verification failures](#category-5-source-of-truth-verification-failures) — tool capabilities from memory, publication attribution from memory, field semantics from memory
+6. [Quick self-check](#quick-self-check) — 8-question checklist before presenting findings
 
 ---
 
@@ -227,6 +228,45 @@ verified from the data.
 
 ---
 
+## Category 5: Source-of-truth verification failures
+
+Claims made from training knowledge or prior-session memory without re-reading the current schema, API, or metadata. These are the hardest to catch because the claim *feels* confident — it's based on something real that existed somewhere — but the specific detail may be wrong for this KG, this tool version, or this field's semantics.
+
+### 5.1 MCP tool capability from memory
+
+**What happens:** Asserting what parameters an MCP tool accepts, what it returns, or what filters it supports, based on a remembered tool signature. Tool schemas evolve; memory of "what the tool could do" drifts.
+
+**Real example (N-limitation analysis):** "`pathway_enrichment` accepts only `ontology` + `level`, no `term_ids` filter." The current schema supports `term_ids` for DAG ontologies. The false claim blocked a whole line of analysis that would have worked.
+
+**Prevention:**
+- Before asserting what any MCP tool accepts or returns, run `ToolSearch select:<tool_name>` to re-load the current schema
+- Do not rely on memory of tool signatures from earlier in the session or orientation — schemas change and memory drifts
+- If a tool call fails, check the schema before concluding the capability is missing
+
+### 5.2 Publication attribution from training knowledge
+
+**What happens:** Naming authors or papers from intrinsic knowledge — recognizing that "this experiment sounds like X's work" — without calling the KG publications API. The attribution may be confidently wrong.
+
+**Real example (N-limitation analysis):** NC1 was attributed to "Hennon" (a real coculture researcher) based on how the experiment was described. The actual paper was Aharonovich & Sher 2016 — different group, different strain, different biology.
+
+**Prevention:**
+- Before naming an author, title, or citation associated with an experiment, run `list_publications` (with the relevant `experiment_id` or filter)
+- Cite by KG-resolved DOI or experiment ID; use author-year labels only for what `list_publications` returned
+- If two experiments "sound similar," that's a signal to verify, not to infer
+
+### 5.3 Field semantics from memory — cumulative vs per-timepoint counts
+
+**What happens:** Using a top-level summary field as if it were per-timepoint or per-condition because the field name sounds unambiguous. Example: `list_experiments` returns a top-level `gene_count` that is cumulative across timepoints; per-TP counts are in `tp_gene_count`. Using the former as the latter distorts detection-power expectations and pathway background sizes.
+
+**Real example (N-limitation analysis):** Tolonen 2006 was reported as having "10,182 genes" — ~6× the actual MED4 ORFome. The number was cumulative across timepoints, not per-TP.
+
+**Prevention:**
+- For per-TP detection power, pathway background size, or cluster Fisher 2×2 dimensions: use `tp_gene_count`, never top-level `gene_count`
+- When pulling a numeric field from any tool response, check the field's docstring or schema description before using it in a summary
+- For anything that sounds "obvious" (counts, totals, sizes), verify the unit and scope against the schema
+
+---
+
 ## Quick self-check
 
 Before presenting any finding, ask:
@@ -243,3 +283,6 @@ Before presenting any finding, ask:
    which
 7. **Would a different paralog assignment change this conclusion?**
    → If yes, verify the assignment
+8. **Am I claiming tool capabilities, citations, or field semantics
+   from memory?** → Verify against current schema (`ToolSearch`),
+   `list_publications`, or field descriptions before asserting

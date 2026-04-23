@@ -56,47 +56,65 @@ For researchers, it will be installable from a marketplace (private git repo).
 
 ## Research methodology
 
-**Load the `research-methodology` skill BEFORE brainstorming.** It
-contains the rules for KG usage, gene identity, artifact structure,
-notebook discipline, and anti-hallucination. These rules shape the
-analysis design — loading after the spec means retrofitting.
+**Load the `research-methodology` skill BEFORE invoking
+`superpowers:brainstorming` for step 1 of an analysis.** The skill
+contains KG usage rules, gene identity rules, anti-hallucination
+patterns, scripts-over-chat-reasoning, and the 6-step research flow.
+Loading after step 1 is committed means retrofitting.
 
-For specific analysis types, invoke the corresponding recipe skill
-(e.g., `enrichment`, `response-matrix`, `conservation`).
+### The 6-step flow
 
-Use the superpowers workflow for research: brainstorm the question,
-write a plan, execute with checkpoints. The methodology skill
-provides the domain rules; superpowers provides the process
-discipline.
+Every research analysis advances through 6 steps:
 
-### Naming conventions
+1. **Research question** — user prompt + clarifying questions →
+   locked question (uses `superpowers:brainstorming` with overrides)
+2. **KG entries** — relevant publications, experiments, organisms,
+   data types
+3. **Analysis framing** — selection + framing (hypothesis, controls,
+   expected outcome) in KG terms
+4. **Methods** — ad-hoc Python module using one item from step 3
+   as a driving example
+5. **Analyze** — run the method; produce scored outputs, figures,
+   tables
+6. **Evaluate** — assess against framing; harvest caveats; finalize
+   paper
 
-- **Spec steps ≠ plan tasks.** Spec steps describe the analytical
-  pipeline (Step 1, Step 2, ...). Plan tasks describe
-  implementation work and may split one spec step into multiple
-  tasks. Specs must not reference files by task number. Plans must
-  cross-reference the spec step in each task description (e.g.,
-  "Task 5: Build signature utilities [Step 3]"). This prevents
-  confusion when the plan introduces scaffolding or verification
-  tasks that don't correspond to a spec step.
+Steps 1–3 form the research proposal (locked at end of step 3).
+Steps 4–6 execute against it.
 
-### Process overrides
+### Intra-step rhythm: do → show → explore → decide
 
-- **Don't skip subagent reviews** for tasks that produce data
-  outputs. At minimum, run spec compliance review. The tasks that
-  seem simple are where silent bugs hide.
+Every step advances through **do → show → explore → decide**. The
+**decide** phase produces a minimal notebook.md checklist and pauses
+for explicit researcher approval before committing. One commit per
+step, at decide close. See
+`skills/research-methodology/references/step-protocol.md` for commit
+timing, the decide-gate checklist, and hard gates.
 
-- **Notebook-commit gates in plans.** When writing implementation
-  plans for research analyses, every plan must include a
-  notebook-commit gate between data-producing steps. The gate is:
-  "commit notebook entry for Step N before beginning Step N+1."
-  This ensures the executing agent treats the notebook as a
-  blocking dependency, not a nice-to-have.
+### Just-in-time formalization
 
-- **Interactive discovery steps.** Rule 5 (scripts over chat
-  reasoning) has a carve-out for interactive discovery/scoping
-  steps — see the research-methodology skill for the
-  frozen-output + notebook-entry pattern.
+Terms, predictions, metrics, stability checks, decisions, and
+caveats enter the analysis **only when the data demands them**.
+Nothing is enumerated in advance "just in case." No upfront
+taxonomies of hypotheses, predictions, or thresholds. If you find
+yourself listing things the analysis might need before the data has
+arrived, stop.
+
+### What is NOT used in this workflow
+
+- **No `superpowers:writing-plans`** — the 6-step flow replaces the
+  monolithic plan; each step's intent lives in its own `notebook.md`
+- **No `superpowers:executing-plans`** — the decide-gate per step
+  replaces task-level checkpoint reviews
+- **No per-analysis `spec.md` / `plan.md` / `decisions.md` /
+  `hypotheses.md`** — content lives in per-step `notebook.md` +
+  single analysis-root `paper.md`
+- **No cross-file labels** (H1 / P3 / D8 / T4) — labels are
+  document-scoped and must be paired with a short readable name
+
+On-demand tools that remain available: `superpowers:brainstorming`
+(step 1), `superpowers:verification-before-completion`,
+`superpowers:systematic-debugging`, `superpowers:requesting-code-review`.
 
 ## Evaluation Framework
 
