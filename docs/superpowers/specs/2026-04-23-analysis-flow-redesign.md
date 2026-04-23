@@ -36,7 +36,7 @@ Concrete rules that follow from this principle:
 
 ## The 6-step flow
 
-1. **Research question** — formulate the question in prose
+1. **Research question** — the user states the question; Claude asks clarifying questions; they converge on a formulated question locked in `notebook.md`. This step is a conversation, not a computation. `superpowers:brainstorming` is the natural tool.
 2. **KG entries** — identify relevant publications, experiments, organisms, data types in the KG
 3. **Analysis framing** — (a) selection: publications, experiments, organisms, data types (DE, cluster, ontologies); (b) framing: hypothesis, target, positive and negative controls, expected outcome — all in KG terms
 4. **Methods** — pick one item from step 3 as a driving example; select or generate an analysis method (statistical test, score, ...); produce an ad-hoc Python module
@@ -45,14 +45,25 @@ Concrete rules that follow from this principle:
 
 Steps 1–3 are collectively the **research proposal**. Locked at the end of step 3 decide. Steps 4–6 execute against it.
 
+Step 1 is the only conversation-only step — it converges on a formulated question through dialogue and typically produces only `notebook.md`. Every other step (2–6) involves computation: step 2 queries the KG and filters entries; step 3 validates selection and control choices with QC scripts; step 4 builds the method module; step 5 runs the analysis; step 6 performs sensitivity / evaluation analyses against the framing. Steps 2–6 all produce scripts, data, figures, and QC alongside `notebook.md`.
+
+### Using `superpowers:brainstorming` for step 1
+
+The brainstorming skill's dialogue pattern (clarifying questions one at a time, proposing approaches, converging) fits step 1 well. Two overrides apply:
+
+- **Capture location.** The skill's default is to write a design doc to `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md`. Override this — the output lands in `analyses/<slug>/1_question/notebook.md` instead. The formulated research question, the clarifying dialogue (in summary form), any rejected alternatives, and the converged scope all live there.
+- **Terminal action.** The skill's terminal state is to invoke `superpowers:writing-plans`. **Skip this.** Step 1 decide advances to step 2 (KG entries), not to implementation-plan writing. There is no monolithic plan for the analysis — the 6-step flow replaces it.
+
+If the skill's preamble nudges toward writing a spec doc outside the analysis folder or invoking writing-plans at the end, treat those as defaults being overridden by the research methodology skill (which has higher priority in this repo).
+
 ## Intra-step rhythm: do → show → explore → decide
 
 Every step — including step 1 — advances through these four phases:
 
-- **do** — run the step's work; produce outputs in `scripts/`, `data/`, `figures/`
-- **show** — populate `notebook.md` with tables, figures, observations; display to researcher
-- **explore** — investigate anomalies or surprises; add `qc_*.py` checks as needed; add `qc_*.csv` / `qc_*.png` as needed
-- **decide** — finalize notebook.md; minimal checklist (below); **researcher approval gate**; git commit; advance
+- **do** — do the step's work; outputs land wherever the step naturally produces them (a conversation lands in `notebook.md`; scripts land in `scripts/` with outputs in `data/` and `figures/`)
+- **show** — populate `notebook.md` with what was produced: the question (step 1), the KG entries (step 2), the framing and selection QC (step 3), the method module and test outputs (step 4), the analysis tables and figures (step 5), the evaluation results (step 6)
+- **explore** — investigate anomalies, surprises, or gaps: ask follow-up clarifying questions (step 1); add `qc_*.py` checks, run sensitivity analyses, cross-validate against controls, produce exploratory figures (steps 2–6)
+- **decide** — finalize notebook.md; update the relevant section of paper.md with this step's synthesis; minimal checklist (below); **researcher approval gate**; git commit; advance
 
 The decide phase is the only formal gate between steps.
 
@@ -60,7 +71,8 @@ The decide phase is the only formal gate between steps.
 
 Each step's decide phase must produce, in its `notebook.md`:
 
-- **Outputs produced** — filenames in `scripts/`, `data/`, `figures/`
+- **Outputs produced** — filenames in `scripts/`, `data/`, `figures/`, with command lines for non-trivial scripts (for reproducibility)
+- **Results presented** — summary tables shown inline in `notebook.md`; links to full tables and figures generated this step
 - **QC gate** — what was checked → result (one line per check)
 - **Decisions made this step** — prose + date, if any; omit the section if none
 - **Advance rationale** — one line, why this step is ready to close
@@ -74,34 +86,54 @@ The checklist must stay this minimal. It is not a template to extend with option
 ```
 analyses/YYYY-MM-DD-<slug>/
   paper.md                        # single academic-style writeup, grows from step 1
+  gaps_and_friction.md            # transitional — methodology/KG/tooling friction log
   1_question/
     notebook.md
-    scripts/
-    data/
-    figures/
   2_kg_selection/
     notebook.md, scripts/, data/, figures/
   3_analysis_framing/
-    ...
+    notebook.md, scripts/, data/, figures/
   4_methods/
     notebook.md
     <module_name>.py              # ad-hoc method module
     scripts/, data/, figures/
   5_analyze/
-    ...
+    notebook.md, scripts/, data/, figures/
   6_evaluate/
-    ...
+    notebook.md, scripts/, data/, figures/
 ```
 
 **QC artifacts** live in the same `scripts/` / `data/` / `figures/` folders as main outputs, using a `qc_` filename prefix (e.g., `scripts/qc_check_tp_coverage.py`, `figures/qc_tp_coverage_histogram.png`). No separate `qc/` subfolder.
+
+### Scaffold creation
+
+Claude creates the scaffold at the **start of step 1**, before the brainstorming dialogue begins. The researcher does not pre-create folders.
+
+1. **Propose a slug.**
+   - **Who:** Claude proposes; the user approves or counter-proposes.
+   - **When:** at the start of step 1, before any folder or file is written. No scaffold is created until the slug is confirmed.
+   - **Source:** the user's initial prompt / topic.
+   - **Format:** `YYYY-MM-DD-<descriptor>` where descriptor is snake_case, 2–4 words reflecting the research question (e.g., `2026-04-23-n_limitation_signature`). Same-day collision: append a letter suffix (`-a`, `-b`).
+2. **Create the minimal scaffold:**
+```
+analyses/YYYY-MM-DD-<slug>/
+  paper.md              # skeleton with empty section headers: Question, Background, Methods, Results, Discussion, References
+  gaps_and_friction.md  # header only; entries added as friction occurs
+  1_question/
+    notebook.md         # empty; populated by the step 1 dialogue
+```
+3. **Begin step 1 dialogue.** `1_question/notebook.md` grows through the clarifying exchange.
+4. **At step 1 decide:** `paper.md`'s Question section is populated from the locked research question; the first git commit includes the scaffold plus step 1 artifacts.
+
+Step folders for 2–6 are created **progressively** — each folder (and its `scripts/` / `data/` / `figures/` subfolders as needed) is created when that step begins, not pre-created at scaffold time. This avoids empty folders cluttering the analysis during work in progress.
 
 ## notebook.md narrative (per step)
 
 Freeform prose. Recommended sections (not a required template — include what applies):
 
 - **Context** — what this step is for; what the prior step decided
-- **What I did** — work performed; scripts run; KG queries issued
-- **What I saw** — tables and figure links inline; cited publications from the KG (by DOI / experiment ID — resolved via `list_publications`, never from memory)
+- **What I did** — work performed; scripts run with their command-line invocation for non-trivial cases; KG queries issued
+- **Results** — summary tables shown inline; links to full tables in `data/` and figures in `figures/` produced this step; cited publications from the KG (by DOI or experiment ID — resolved via `list_publications`, never from memory)
 - **Surprises** — anomalies, data oddities, unexpected distributions
 - **Decisions** — in prose with dates, if any were forced this step
 - **Advance rationale** — one line at the end
@@ -110,7 +142,7 @@ Figures produced in this step must be linked from `notebook.md`. Publications re
 
 ## paper.md growth pattern
 
-Single `paper.md` at the analysis root. Skeleton sections exist from day 1 and fill in as steps complete:
+Single `paper.md` at the analysis root. Skeleton sections exist from day 1 and fill in during each step's **decide** phase — after the step's notebook is finalized but before the commit. Each decide produces a synthesis paragraph (or figure inclusion, or methods sub-section) for the relevant part of paper.md:
 
 | Section | Populated from |
 |---|---|
@@ -119,8 +151,34 @@ Single `paper.md` at the analysis root. Skeleton sections exist from day 1 and f
 | Methods | steps 3 (framing) and 4 (implementation) |
 | Results | step 5 |
 | Discussion | step 6 |
+| References | accumulates across all steps that cite publications |
+
+References are populated as publications are cited in any step's `notebook.md` or in `paper.md` sections. Every reference must be resolved through `list_publications` and cited by DOI or KG experiment ID — never drafted from intrinsic knowledge (per Rule 7, anti-hallucination). Citation format inside paper prose can be short (author-year or numeric); the References section at the end carries the resolved DOI / experiment ID for each.
 
 When the analysis ends, the paper ends. Avoids the B2 pattern where the write-up was deferred to a final step that never happened.
+
+## gaps_and_friction.md (transitional)
+
+A top-level file at `analyses/<slug>/gaps_and_friction.md` captures friction encountered during the analysis, distinct from the decisions that land in per-step `notebook.md`:
+
+- **Decision** = a fork the analysis had to take, based on data (logged in the relevant step's `notebook.md`)
+- **Friction** = a problem that slowed us down, surprised us, or revealed a gap in methodology / KG / tooling (logged in `gaps_and_friction.md`)
+
+These can co-occur — a methodology gap can force both a decision and a friction entry. Log in both places when that happens.
+
+**What goes in `gaps_and_friction.md`:**
+
+- KG data issues and bugs encountered (e.g., B2's background-collapse bug)
+- MCP tool schema or capability mismatches
+- Methodology gaps discovered during execution (nuances the framing didn't anticipate)
+- Anti-hallucination corrections (claims from memory caught by verification)
+- Process friction (things that slowed the work)
+
+Each entry is prose with a date, a short name, what happened, and — if relevant — the workaround and the downstream impact on methodology/KG/tooling.
+
+**Why this is transitional.** The 6-step methodology itself is under development. Every analysis we run teaches us something about what's missing or awkward. `gaps_and_friction.md` is the learning record that feeds back into methodology and KG/tooling improvements. Mandatory while the methodology is being stabilized — likely the first 3–5 analyses. Once the pattern settles, we revisit: keep it, make it optional, or fold into `notebook.md`. Decision criterion: when two consecutive analyses produce a near-empty `gaps_and_friction.md` (only incidental friction, no methodology gaps), propose retiring the requirement.
+
+The decide-gate checklist gains an implicit fifth item: if friction was encountered this step, it's appended to `gaps_and_friction.md` before the commit.
 
 ## Labels
 
