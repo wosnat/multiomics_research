@@ -853,4 +853,69 @@ Step 4 do-phase complete. Scoring artifacts stable, pre-reg evaluated, stability
 
 ---
 
+## 2026-04-23 — Step 4 explore: figures produced, analysis PAUSED for methodology rethink
+
+### Summary (plain English, read this first)
+
+The researcher paused the analysis during Task 11 (Step 4 show/explore) after reviewing the scoring output and three exploration figures. The methodology as built (pre-registration + scoring primitive + aggregation rules) is not producing outputs that satisfy the research question's framing, and the researcher decided to rethink the methodology in a separate session rather than push through to a formal decide in this one. No formal Step 4 decide decision was written. The scoring artifacts, stability checks, exploration figures, and contribution decomposition stay on disk and in git history as a record of what was tried; the next session will likely supersede some or all of the methodology decisions recorded in decisions.md (the 3-category pre-registration and the scoring rules adopted during this walkthrough).
+
+### What was produced in this explore sub-step
+
+Three exploration figures + two supporting CSVs in [`exploration/qc/`](qc/):
+
+- [step4_figA_trajectory.png](qc/step4_figA_trajectory.png) — 6-panel per-timepoint trajectory (2 ontologies × 2 omics) showing up-direction and down-direction scores across timepoints per category. Makes the coculture-proteomics temporal dynamic visible (early ribosome-down fades, N-scavenging-up sustains) alongside the single-timepoint axenic measurements.
+- [step4_figB_contributions.png](qc/step4_figB_contributions.png) — per-term contribution heatmap: 13 signature terms × 28 T clusters, color = max-abs contribution with saturation markers. Shows axenic-dying RNA d14 has saturated shutdown across ribosome + photosynthesis + ATP synthase; coculture proteomics shows N-metabolism capped at multiple timepoints with co-engaged ribosome shutdown at days 18 and 31, fading at later timepoints; coculture transcriptomics is essentially silent throughout.
+- [step4_figC_category_means.png](qc/step4_figC_category_means.png) — category-mean bar chart split by ontology × omics × direction. Cleanest summary of the asymmetric pattern: axenic-dying lives in RNA-down + Prot-up quadrants; coculture lives in Prot-up quadrant only; axenic-dead shows only weak Prot-down.
+- [step4_t_contribution_decomposition.csv](qc/step4_t_contribution_decomposition.csv) — long-form per (T × term) max-abs contributions with signed_score and contributing cluster recorded. Source data for Fig B.
+- [step4_t_top_contributors.csv](qc/step4_t_top_contributors.csv) — top-3 contributors per T cluster by |contribution|, for tabular drill-down.
+- [step4_cross_ontology_agreement.csv](qc/step4_cross_ontology_agreement.csv) — cyanorak vs kegg scores per T cluster with agreement category. Zero opposite-sign disagreements across 14 T rows — cyanorak and kegg tell the same story per (exp × tp).
+
+Produced by two new explore scripts: `scripts/explore_step4_contribution_decomposition.py` (decomposition + cross-ontology agreement) and `scripts/explore_step4_figures.py` (three figures).
+
+### Methodology concerns surfaced during the walkthrough
+
+These are issues the researcher wants to rethink in the next session; they're recorded here so the next-session context is explicit about what pushed the pause.
+
+1. **Category-mean dilution persists despite omics split.** The decided aggregation (Option X: matched-direction only per exp × tp, then mean across timepoints per category × omics × ontology × direction) cleanly separates RNA from Prot. But category-mean still averages over timepoints that carry very different amounts of biology (e.g., coculture d18 has strong ribosome-down, d60 has none). The category-level B > A comparisons in the pre-registration collapse a temporal trajectory into one number, which obscures rather than reveals the mechanism. The richer picture lives at the per-timepoint level, which the pre-registration doesn't exercise.
+
+2. **The pre-registration framework does not match the observed biology.** The 3-category framework + direction-separated ordering claims were written before the researcher could see how much RNA-Prot decoupling would appear in the data. Observed: coculture engages the up-direction strongly at proteomics and is silent at transcriptomics; axenic-dying engages the down-direction strongly at transcriptomics and partially at proteomics. Neither H1's naive reframing nor D7's category-level ordering prediction cleanly fits this asymmetric-by-omics pattern. Evaluating P1-P4 on omics-mixed means produces "holds/fails" that don't map to the mechanistic story.
+
+3. **Threshold-based scoring makes classification vacuous.** The D8 significance threshold at |contrib| ≥ 1.301 collapses NC noise variance to ≈ 0 across most (ontology × bg) groups (the signature is so specific that diverse non-N-limit biology doesn't trigger it at padj<0.05). Classification labels become `insufficient_nc` for all T rows. The decided response was to fall back on raw scores + ordering — which works but reveals that the spec's classification machinery was not load-bearing for this particular signature, and the decision process to accept that was post-hoc rather than anticipated.
+
+4. **Max-abs cluster combination obscures co-engagement.** Picking the larger of UP-cluster vs DOWN-cluster contribution per term gives a clean number but loses information when both clusters contribute (rare but present — e.g., the anti-signature J.2 at coculture Prot d60). A framework that tracks both contributions, and flags anti-signature as a separate category, would make the biology more legible. The "which cluster contributed" column in the decomposition CSV is a partial workaround but not integrated into the main scoring.
+
+5. **kegg up-direction is single-term and Tolonen-only.** The signature has only one up-expected kegg term (ko00910), and ko00910 is supported by one reference experiment (Tolonen 2006) per Step 3 dominance audit. The kegg up-direction dir_score is effectively the ko00910 signed contribution alone. This fragility was flagged at Step 3 decide but compounds the kegg-calibration-degeneracy issue in Step 4 — a significant fraction of the signature has thin evidence.
+
+6. **Single-timepoint axenic observations.** "Axenic dying" and "axenic dead" categories rest on 1–2 timepoints per omics. The narrative treats them as distinct physiological states, but the data supporting the distinction is a single d14 RNA-seq cluster and a single d14 proteomics cluster for the "dying" category. The biological interpretation ("acute stress response program before death") is plausible but is a single snapshot per omics, inferred as a phase rather than sampled as a trajectory.
+
+7. **Cross-ontology agreement is good but per-ontology redundancy concerns remain.** Within-kegg the Calvin-cycle is a strict subset of Carbon-metabolism, and the atpA-I operon appears in both oxphos and photosynthesis. The stability audit (D6) showed removing one overlap term doesn't flip scores much, but removing two does. Whether this matters scientifically or just operationally is unresolved.
+
+### What stays vs what the next session may revisit
+
+**Preserved (unlikely to change):**
+- The enrichment layer (`data/enrichment_all.csv`) — Fisher ORA over all signature-eligible clusters across all experiments × ontologies × backgrounds. The raw statistical layer.
+- The signature derivation (`data/reference_signature.csv`) — 13 pathway terms with up/down expectations. The biological anchor list.
+- The experiment classification (T/R/PC/NC/CTX) — `data/experiments_classified.csv`.
+- The ontology selection (`ontology_selection.md`) and key-pathway panel (`exploration/key_pathways.csv`).
+- Decisions D1 (temporal filter semantics), D3 (AA-anchor falsification preserved), D4 (NC calibration exclusion), D5 (watchlist curation), D6 (within-ontology redundancy audit-only).
+
+**May be revisited / superseded in the next session:**
+- D7 pre-registration (3-category × ordering claims). The framework itself may be replaced.
+- D8 scoring methodology (max-abs + threshold + omics-split aggregation). Specifically: whether max-abs is the right cluster combiner; whether threshold-based zeroing is appropriate; whether category-level aggregation is even the right granularity; whether classification labels should be abandoned formally.
+- Category naming if the framework changes.
+- The scoring script (`scripts/05_compute_scores.py`) and all `results/` artifacts.
+
+**The biological observation that will survive methodology rewrite:**
+- Axenic MED4 at day 14 shows a strong canonical N-limit shutdown signal at the transcript level (photosynthesis, ribosome, ATP synthase all driven down).
+- Axenic MED4 at day 14 proteomics shows only partial shutdown (ribosome turnover has started, photosynthesis proteins have not).
+- Coculture MED4 proteomics shows sustained N-scavenging-protein engagement across days 18–89, with an early-phase ribosome-shutdown (days 18, 31) that fades at later timepoints (days 60, 89).
+- Coculture MED4 transcriptomics is largely silent across all timepoints for this signature.
+- These raw observational patterns will re-emerge under any reasonable scoring methodology.
+
+### Process note: no formal Step 4 decide
+
+Per plan Task 11 Step 5 the researcher normally decides "scores final / redo." Neither outcome applies here — the researcher is deferring the decision to a separate session where methodology will be reconsidered. No D9 entry written. The Task 10 do-phase commit (`a16dec1`) stands as the last formal Step 4 state.
+
+---
+
 

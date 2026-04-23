@@ -52,3 +52,14 @@ Run scripts from `multiomics_research` root with `uv run`.
 | `exploration/qc/step3_signature_redundancy_kegg.csv` | 15 | `explore_step3_redundancy_audit.py` | Pairwise Jaccard on MED4 gene membership, 6×5/2=15 signature pathway pairs. 1 flag: `ko00710 Calvin ⊂ ko01200 C-metab` (16/16, Jaccard 0.276). Soft note: `ko00190 ∩ ko00195 = 9 atp genes` (Jaccard 0.120, below flag but biologically meaningful — per Step 2 Q3 atpA-I operon cross-reference). |
 | `exploration/qc/step3_signature_redundancy_cyanorak_role.png` | — | `explore_step3_redundancy_audit.py` | Jaccard heatmap, OrRd colormap, symmetric matrix. |
 | `exploration/qc/step3_signature_redundancy_kegg.png` | — | `explore_step3_redundancy_audit.py` | Jaccard heatmap. The Calvin/C-metab strict-subset cell is the darkest off-diagonal. |
+
+## Exploration artifacts (step 4 QC)
+
+| File | Rows | Produced by | Description |
+|------|------|-------------|-------------|
+| `exploration/qc/step4_t_contribution_decomposition.csv` | 182 | `explore_step4_contribution_decomposition.py` | Long-form per-(T cluster × signature term): up_signed_score, down_signed_score, up_contribution, down_contribution, max_abs_contribution, contributing_cluster (UP/DOWN/-). Source data for Fig B. 14 T rows × 13 signature terms = 182. |
+| `exploration/qc/step4_t_top_contributors.csv` | 42 | `explore_step4_contribution_decomposition.py` | Top-3 contributors per (T × ontology) by \|max_abs_contribution\|, zeros excluded. 14 T rows × 3 = up to 42 rows. |
+| `exploration/qc/step4_cross_ontology_agreement.csv` | 14 | `explore_step4_contribution_decomposition.py` | Per T (exp × tp × bg), cyanorak vs kegg agreement on final_score, score_up, score_down. Categories: same_sign, opposite_sign, both_weak, missing. 0 opposite-sign disagreements on all three. |
+| `exploration/qc/step4_figA_trajectory.png` | — | `explore_step4_figures.py` | 6-panel per-TP trajectory: 2 ontologies × (RNA + Prot), 3 categories overlaid. Up-direction solid, down-direction dashed. Dotted grey line at display cap ±5. |
+| `exploration/qc/step4_figB_contributions.png` | — | `explore_step4_figures.py` | 13-row × 28-column heatmap of max-abs contributions. Rows: signature terms grouped by ontology + expected direction. Columns: T clusters grouped by category \| omics \| tp \| ontology. Diverging blue-red, display cap ±5, saturation stars at \|5\| and \|10\|. Anti-signature (negative) annotated with leading '-'. Category + ontology dividers as solid black lines; direction dividers as dotted grey. |
+| `exploration/qc/step4_figC_category_means.png` | — | `explore_step4_figures.py` | 2-panel (cyanorak, kegg) bar chart. Per category on x-axis, 4 bars: RNA ↑ (blue solid), RNA ↓ (blue hatched), Prot ↑ (orange solid), Prot ↓ (orange hatched). Summarizes asymmetric-outcome pattern. |
