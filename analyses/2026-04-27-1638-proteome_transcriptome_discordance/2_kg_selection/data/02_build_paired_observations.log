@@ -1,0 +1,29 @@
+Loaded 29 TP rows from timepoints_weissberg2025.csv
+
+F1 fix applied (MED4 axenic RNAseq → day 14):
+  Before: {'experiment_id': '10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic', 'organism_name': 'Prochlorococcus MED4', 'omics_type': 'RNASEQ', 'background_factors': 'axenic | light', 'is_time_course': False, 'timepoint': nan, 'timepoint_order': nan, 'timepoint_hours': nan, 'tp_growth_phase': nan, 'tp_gene_count': nan, 'tp_significant_up': nan, 'tp_significant_down': nan, 'tp_not_significant': nan, 'experiment_name': 'MED4 PRO99-lowN nutrient starvation vs PRO99-lowN exponential growth (RNASEQ)', 'publication_doi': '10.1101/2025.11.24.690089', 'treatment_type': 'nitrogen', 'coculture_partner': nan, 'table_scope': 'all_detected_genes', 'table_scope_detail': nan, 'gene_count': 1849, 'distinct_gene_count': 1849, 'clustering_analysis_count': 0, 'cluster_types': nan, 'growth_phases': 'nutrient_limited', 'time_point_growth_phases': 'nutrient_limited', 'publication_title': 'Transcriptomic and Proteomic Analysis Reveals Nitrogen Recycling as a Core Mechanism for Prochlorococcus Prolonged Survival', 'treatment': 'PRO99-lowN nutrient starvation', 'control': 'PRO99-lowN exponential growth', 'light_condition': 'continuous light', 'light_intensity': '20 umol photons m-2 s-1', 'medium': 'PRO99-lowN', 'temperature': '24C', 'statistical_test': 'DESeq2', 'experimental_context': 'Axenic Prochlorococcus MED4 in PRO99-lowN at 24C under continuous light', 'cluster_count': 0, 'genes_by_status_significant_up': 405, 'genes_by_status_significant_down': 472, 'genes_by_status_not_significant': 972, 'condition': 'axenic'}
+  After:  {'experiment_id': '10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic', 'organism_name': 'Prochlorococcus MED4', 'omics_type': 'RNASEQ', 'background_factors': 'axenic | light', 'is_time_course': False, 'timepoint': 'day 14', 'timepoint_order': nan, 'timepoint_hours': 336.0, 'tp_growth_phase': 'nutrient_limited', 'tp_gene_count': 1849.0, 'tp_significant_up': nan, 'tp_significant_down': nan, 'tp_not_significant': nan, 'experiment_name': 'MED4 PRO99-lowN nutrient starvation vs PRO99-lowN exponential growth (RNASEQ)', 'publication_doi': '10.1101/2025.11.24.690089', 'treatment_type': 'nitrogen', 'coculture_partner': nan, 'table_scope': 'all_detected_genes', 'table_scope_detail': nan, 'gene_count': 1849, 'distinct_gene_count': 1849, 'clustering_analysis_count': 0, 'cluster_types': nan, 'growth_phases': 'nutrient_limited', 'time_point_growth_phases': 'nutrient_limited', 'publication_title': 'Transcriptomic and Proteomic Analysis Reveals Nitrogen Recycling as a Core Mechanism for Prochlorococcus Prolonged Survival', 'treatment': 'PRO99-lowN nutrient starvation', 'control': 'PRO99-lowN exponential growth', 'light_condition': 'continuous light', 'light_intensity': '20 umol photons m-2 s-1', 'medium': 'PRO99-lowN', 'temperature': '24C', 'statistical_test': 'DESeq2', 'experimental_context': 'Axenic Prochlorococcus MED4 in PRO99-lowN at 24C under continuous light', 'cluster_count': 0, 'genes_by_status_significant_up': 405, 'genes_by_status_significant_down': 472, 'genes_by_status_not_significant': 972, 'condition': 'axenic'}
+
+Dropped pooled / null-hours rows: 29 → 24
+
+Paired observations: 11 rows
+  Alteromonas macleodii HOT1A3     axenic     day 18     (432h, nutrient_limited)  rna_genes=3950  prot_genes=2226
+  Alteromonas macleodii HOT1A3     axenic     day 31     (744h, nutrient_limited)  rna_genes=3950  prot_genes=2226
+  Alteromonas macleodii HOT1A3     coculture  day 18     (432h, nutrient_limited)  rna_genes=3950  prot_genes=2226
+  Alteromonas macleodii HOT1A3     coculture  day 31     (744h, nutrient_limited)  rna_genes=3950  prot_genes=2226
+  Alteromonas macleodii HOT1A3     coculture  day 60     (1440h, nutrient_limited)  rna_genes=3950  prot_genes=2226
+  Alteromonas macleodii HOT1A3     coculture  day 89     (2136h, nutrient_limited)  rna_genes=3950  prot_genes=2226
+  Prochlorococcus MED4             axenic     day 14     (336h, nutrient_limited)  rna_genes=1849  prot_genes=1424
+  Prochlorococcus MED4             coculture  day 18     (432h, nutrient_limited)  rna_genes=1849  prot_genes=1424
+  Prochlorococcus MED4             coculture  day 31     (744h, nutrient_limited)  rna_genes=1849  prot_genes=1424
+  Prochlorococcus MED4             coculture  day 60     (1440h, nutrient_limited)  rna_genes=1849  prot_genes=1424
+  Prochlorococcus MED4             coculture  day 89     (2136h, nutrient_limited)  rna_genes=1849  prot_genes=1424
+
+Pairing coverage by (organism, condition):
+  Alteromonas macleodii HOT1A3     axenic     2 paired TP(s)
+  Alteromonas macleodii HOT1A3     coculture  4 paired TP(s)
+  Prochlorococcus MED4             axenic     1 paired TP(s)
+  Prochlorococcus MED4             coculture  4 paired TP(s)
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/paired_observations.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/02_build_paired_observations.log

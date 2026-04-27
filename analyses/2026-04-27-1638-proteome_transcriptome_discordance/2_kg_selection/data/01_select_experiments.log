@@ -1,0 +1,72 @@
+Filter funnel for 10.1101/2025.11.24.690089:
+  publication_doi filter ........................ 10 experiments
+  omics_type in ['PROTEOMICS', 'RNASEQ'] & treatment_type contains 'nitrogen'
+  ............................................... 8 experiments
+
+Dropped from selection (2 experiments):
+  10.1101/2025.11.24.690089_coculture_prochlorococcus_med4_hot1a3_rnaseq  omics=RNASEQ  tt=['coculture']
+  10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq  omics=RNASEQ  tt=['coculture']
+
+Selected experiments (compact):
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_proteomics_coculture
+    organism=Alteromonas macleodii HOT1A3     omics=PROTEOMICS bg=coculture | light         time_course=True  distinct_genes=2226
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_proteomics_axenic
+    organism=Alteromonas macleodii HOT1A3     omics=PROTEOMICS bg=axenic | light            time_course=True  distinct_genes=2226
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_coculture
+    organism=Alteromonas macleodii HOT1A3     omics=RNASEQ     bg=coculture | light         time_course=True  distinct_genes=3950
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_axenic
+    organism=Alteromonas macleodii HOT1A3     omics=RNASEQ     bg=axenic | light            time_course=True  distinct_genes=3950
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture
+    organism=Prochlorococcus MED4             omics=PROTEOMICS bg=coculture | light         time_course=True  distinct_genes=1424
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic
+    organism=Prochlorococcus MED4             omics=PROTEOMICS bg=axenic | light            time_course=True  distinct_genes=1424
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture
+    organism=Prochlorococcus MED4             omics=RNASEQ     bg=coculture | light         time_course=True  distinct_genes=1849
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic
+    organism=Prochlorococcus MED4             omics=RNASEQ     bg=axenic | light            time_course=False distinct_genes=1849
+
+Per-experiment timepoint structure (with growth phase):
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_proteomics_axenic: 2 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=2226.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=2226.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_proteomics_coculture: 5 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=2226.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=2226.0
+    tp=day 60          phase=nutrient_limited   hours=1440.0 tp_gene_count=2226.0
+    tp=day 89          phase=nutrient_limited   hours=2136.0 tp_gene_count=2226.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=2226.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_axenic: 3 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=3950.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=3950.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=3950.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_coculture: 5 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=3950.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=3950.0
+    tp=day 60          phase=nutrient_limited   hours=1440.0 tp_gene_count=3950.0
+    tp=day 89          phase=nutrient_limited   hours=2136.0 tp_gene_count=3950.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=3950.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic: 3 TP row(s)
+    tp=day 14          phase=nutrient_limited   hours=336.0  tp_gene_count=1424.0
+    tp=day 31          phase=death              hours=744.0  tp_gene_count=1424.0
+    tp=day 89          phase=death              hours=2136.0 tp_gene_count=1424.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture: 5 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=1424.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=1424.0
+    tp=day 60          phase=nutrient_limited   hours=1440.0 tp_gene_count=1424.0
+    tp=day 89          phase=nutrient_limited   hours=2136.0 tp_gene_count=1424.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=1424.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic: 1 TP row(s)
+    tp=nan             phase=nan                hours=nan    tp_gene_count=nan
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture: 5 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=1849.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=1849.0
+    tp=day 60          phase=nutrient_limited   hours=1440.0 tp_gene_count=1849.0
+    tp=day 89          phase=nutrient_limited   hours=2136.0 tp_gene_count=1849.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=1849.0
+
+QC: all 8 selected experiments use table_scope == 'all_detected_genes'
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/experiments_weissberg2025.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/experiments_weissberg2025_full.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/timepoints_weissberg2025.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/01_select_experiments.log

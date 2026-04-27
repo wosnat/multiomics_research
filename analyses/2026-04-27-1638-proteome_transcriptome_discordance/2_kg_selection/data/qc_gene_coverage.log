@@ -1,0 +1,52 @@
+Found 4 (organism, condition) experiment pairs
+
+=== Alteromonas macleodii HOT1A3 / axenic ===
+  RNAseq exp:     10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_axenic
+  Proteomics exp: 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_proteomics_axenic
+  |RNAseq detected|     =  3950
+  |Proteomics detected| =  2226
+  |Both (paired pool)|  =  2221
+  |RNA only|            =  1729
+  |Protein only|        =     5
+  Pct of proteins also in RNA: 99.8%
+
+=== Alteromonas macleodii HOT1A3 / coculture ===
+  RNAseq exp:     10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_rnaseq_coculture
+  Proteomics exp: 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_hot1a3_proteomics_coculture
+  |RNAseq detected|     =  3950
+  |Proteomics detected| =  2226
+  |Both (paired pool)|  =  2221
+  |RNA only|            =  1729
+  |Protein only|        =     5
+  Pct of proteins also in RNA: 99.8%
+
+=== Prochlorococcus MED4 / axenic ===
+  RNAseq exp:     10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic
+  Proteomics exp: 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic
+  |RNAseq detected|     =  1849
+  |Proteomics detected| =  1424
+  |Both (paired pool)|  =  1424
+  |RNA only|            =   425
+  |Protein only|        =     0
+  Pct of proteins also in RNA: 100.0%
+
+=== Prochlorococcus MED4 / coculture ===
+  RNAseq exp:     10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture
+  Proteomics exp: 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture
+  |RNAseq detected|     =  1849
+  |Proteomics detected| =  1424
+  |Both (paired pool)|  =  1424
+  |RNA only|            =   425
+  |Protein only|        =     0
+  Pct of proteins also in RNA: 100.0%
+
+=== Cross-condition consistency (within organism) ===
+  Alteromonas macleodii HOT1A3:
+    RNAseq:     |union|=3950  |intersection|=3950  |axen-only|=0  |cocul-only|=0
+    Proteomics: |union|=2226  |intersection|=2226  |axen-only|=0  |cocul-only|=0
+  Prochlorococcus MED4:
+    RNAseq:     |union|=1849  |intersection|=1849  |axen-only|=0  |cocul-only|=0
+    Proteomics: |union|=1424  |intersection|=1424  |axen-only|=0  |cocul-only|=0
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/qc_gene_coverage.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/qc_gene_coverage.log

@@ -10,7 +10,15 @@ The discordance question is decomposed across multiple gene-level classification
 
 ## Background
 
-*To be populated at step 2 decide-close.*
+The data underlying this analysis comes from Weissberg et al. 2025 [1], a multi-omics time-course of *Prochlorococcus* MED4 and *Alteromonas macleodii* HOT1A3 in PRO99-lowN medium under continuous light at 24 °C, in axenic culture and in coculture with each other. The published narrative is that axenic *Prochlorococcus* perishes under extreme N-deprivation while coculture cultures persist 90+ days, supported by N-recycling activity attributed to *Alteromonas*.
+
+The KG indexes 10 differential-expression experiments for this publication. After dropping the two single-timepoint coculture-vs-axenic RNA-seq contrasts (no matching proteomics, out of scope per step 1), the analysis uses the remaining **8 N-starvation experiments** — for each (organism × omics × condition) cell, a fold-change comparison between PRO99-lowN nutrient-starvation timepoints and PRO99-lowN exponential-phase controls. All 8 experiments use `table_scope == "all_detected_genes"`, supporting fair cross-experiment comparison.
+
+Joining RNA-seq and proteomics on (organism, condition, timepoint_hours) produces **11 paired observations**, all in `nutrient_limited` growth phase: MED4 coculture days 18 / 31 / 60 / 89, MED4 axenic day 14, HOT1A3 coculture days 18 / 31 / 60 / 89, HOT1A3 axenic days 18 / 31. The MED4 axenic RNA-seq experiment has no per-timepoint metadata in the KG and is asserted to map to day 14 in the analysis pipeline (the only timepoint where RNA was extractable from axenic MED4 cells; later proteome timepoints have no matching RNA-seq — see `gaps_and_friction.md` F1, F2). The pooled "days 60+89" rows present in four experiments are dropped — they are statistical-power summaries of the individual late timepoints, which we use directly.
+
+The paired-discordance gene pool — proteomics-detected ∩ RNA-seq-detected — is **1424 genes for MED4** (100% of the MED4 proteome) and **2221 genes for HOT1A3** (99.8% of the HOT1A3 proteome; the 5 missing genes are all `istB` IS21-element transposase paralogs, a known paralog-resolution mismatch between MS peptide assignment and RNA-seq multi-mapper filtering, see `gaps_and_friction.md` F3). Within each organism the RNA-seq and proteomics detected sets are identical between axenic and coculture, so axis-6 (cross-condition consistency) compares the same genes' fold-changes across conditions, not different gene sets.
+
+The 11 classification axes for discordant genes (locked at step 1 — pathway / function, protein size, protein architecture / localization including GO Cellular Component and KEGG BRITE, direction-of-discordance, ortholog conservation breadth, cross-condition consistency, cross-organism conservation, temporal pattern, operon / genomic context, hydrophobicity, annotation quality) will be prioritized at step 3 framing.
 
 ## Methods
 
