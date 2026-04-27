@@ -1,0 +1,52 @@
+Filter funnel for 10.1101/2025.11.24.690089:
+  publication_doi filter ........................ 10 experiments
+  organism_name == 'Prochlorococcus MED4' (post-hoc) .. 5 experiments
+
+Selected experiments (compact):
+  10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq
+    omics=RNASEQ     bg=light                     time_course=False genes=1849
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture
+    omics=PROTEOMICS bg=coculture | light         time_course=True  genes=1424
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic
+    omics=PROTEOMICS bg=axenic | light            time_course=True  genes=1424
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture
+    omics=RNASEQ     bg=coculture | light         time_course=True  genes=1849
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic
+    omics=RNASEQ     bg=axenic | light            time_course=False genes=1849
+
+Per-experiment timepoint structure (with growth phase):
+  10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq: 1 TP row(s)
+    tp=nan             phase=nan                hours=nan    tp_gene_count=nan
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic: 3 TP row(s)
+    tp=day 14          phase=nutrient_limited   hours=336.0  tp_gene_count=1424.0
+    tp=day 31          phase=death              hours=744.0  tp_gene_count=1424.0
+    tp=day 89          phase=death              hours=2136.0 tp_gene_count=1424.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture: 5 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=1424.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=1424.0
+    tp=day 60          phase=nutrient_limited   hours=1440.0 tp_gene_count=1424.0
+    tp=day 89          phase=nutrient_limited   hours=2136.0 tp_gene_count=1424.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=1424.0
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic: 1 TP row(s)
+    tp=nan             phase=nan                hours=nan    tp_gene_count=nan
+  10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture: 5 TP row(s)
+    tp=day 18          phase=nutrient_limited   hours=432.0  tp_gene_count=1849.0
+    tp=day 31          phase=nutrient_limited   hours=744.0  tp_gene_count=1849.0
+    tp=day 60          phase=nutrient_limited   hours=1440.0 tp_gene_count=1849.0
+    tp=day 89          phase=nutrient_limited   hours=2136.0 tp_gene_count=1849.0
+    tp=days 60+89      phase=nutrient_limited   hours=nan    tp_gene_count=1849.0
+
+Cross-condition TP overlap (axenic vs coculture, per omics):
+  [RNASEQ] axenic (TP, phase):    []
+  [RNASEQ] coculture (TP, phase): [('day 18', 'nutrient_limited'), ('day 31', 'nutrient_limited'), ('day 60', 'nutrient_limited'), ('day 89', 'nutrient_limited'), ('days 60+89', 'nutrient_limited')]
+  [RNASEQ] calendar-shared TPs:    []
+  [RNASEQ] phys-shared (TP+phase): []
+  [PROTEOMICS] axenic (TP, phase):    [('day 14', 'nutrient_limited'), ('day 31', 'death'), ('day 89', 'death')]
+  [PROTEOMICS] coculture (TP, phase): [('day 18', 'nutrient_limited'), ('day 31', 'nutrient_limited'), ('day 60', 'nutrient_limited'), ('day 89', 'nutrient_limited'), ('days 60+89', 'nutrient_limited')]
+  [PROTEOMICS] calendar-shared TPs:    ['day 31', 'day 89']
+  [PROTEOMICS] phys-shared (TP+phase): []
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/2_kg_selection/data/experiments_pro_med4.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/2_kg_selection/data/experiments_pro_med4_full.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/2_kg_selection/data/timepoints_pro_med4.csv
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/2_kg_selection/data/01_select_experiments.log
