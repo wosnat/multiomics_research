@@ -25,7 +25,31 @@ The five stress axes (N-starvation, oxidative, proteotoxic, photosynthetic, cell
 
 ## Methods
 
-_Populated across steps 3 (framing) and 4 (implementation)._
+### Framing (step 3)
+
+**Hypothesis.** If *Prochlorococcus* MED4 is stressed in a given axis (N-starvation, oxidative, proteotoxic, photosynthetic, or late-stationary) within a given condition (axenic, coculture), then across the within-condition trajectory from exponential phase through nutrient-limited and (where present) death-phase timepoints, the panel of canonical positive-control genes for that axis will show coordinated, statistically significant differential expression in the direction empirically calibrated against this dataset (rather than a textbook-presumed direction).
+
+**Control panel.** We curated a 26-gene control panel — 23 positive controls across the 5 stress axes plus 3 negative-control housekeeping candidates — anchored in the cyanorak hand-curated functional ontology where available (`D.1.3` Adaptation/Nitrogen, `D.1.4` Oxidative stress, `L.3` Protein folding and stabilization, `J.8` Photosystem II), supplemented by GO Biological Process terms and canonical literature markers (psbA, lrtA) where the ontologies were sparse for *Prochlorococcus*. The cell-death axis was reframed as **late-stationary / starvation response** because formal cell-death annotations are absent in both GO BP and cyanorak for MED4 (`gaps_and_friction.md` F4).
+
+**Direction calibration via validation.** For every panel gene we pulled all available DE rows from the 4 trajectory + 1 single-point experiments (298 rows) and inspected each gene's log2-fold-change and significance pattern across (omics × condition × timepoint) cells. The validation revealed that **direction is axis-specific, not always upregulated**:
+
+- N-stress markers up (ntcA, glnA, glnB, urtA, amt1)
+- Photosystem proteins down (psbA, psbD, ftsH2 — PSII disassembly), but high-light-inducible proteins up (HLI; PMM1404 reaches log2FC = +9.6)
+- Proteotoxic markers weakly up (htpG, groES) or flat (dnaK1)
+- Oxidative markers mostly flat (sodN, ahpC, gor) — see explicit limitation below
+- Late-stationary marker lrtA strongly down; spoT mixed; isiB down (wrong-handed for N-stress, retained as a transparency anchor)
+
+**Sensitivity limits made explicit.** Three limits were calibrated by the validation:
+
+1. *Oxidative axis* — the canonical *intracellular* oxidative-defense responders (sodN, ahpC, gor) are unresponsive in this experiment. *Prochlorococcus* MED4 lacks catalase and depends on heterotroph / extracellular peroxiredoxin activity for ROS detoxification (consistent with the Black Queen Hypothesis); the intracellular transcript / protein readout is therefore an insensitive assay. A "no oxidative-axis signal" finding from this analysis is read as *insensitivity to the relevant biology*, not as "no oxidative stress."
+2. *HLI proteins are RNA-only* in the photo axis — bottom-up proteomics does not detect them due to small size. Cross-omics concordance for photo is computed only over psbA, psbD, ftsH2; HLI is RNA-side only.
+3. *Negative controls are imperfect under prolonged starvation* — atpA crashes (max|log2FC| = 4.7) under axenic-RNA d18; rpoB is the only near-flat reference. We retain all three and report the imperfect flatness rather than swap to candidates that may also fail.
+
+**Operational success criterion.** For each (axis × condition × omics) cell the step-5 output is: (a) a stress-score trajectory aggregating signed positive-control contributions; (b) a direction-aware verdict per cell; (c) a cross-omics concordance flag with the photo-axis caveat; and (d) the explicit oxidative-axis insensitivity caveat.
+
+### Implementation (step 4)
+
+_Populated at end of step 4._
 
 ## Results
 

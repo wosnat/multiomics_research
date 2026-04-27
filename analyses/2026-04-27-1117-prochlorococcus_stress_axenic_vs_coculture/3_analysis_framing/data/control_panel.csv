@@ -1,0 +1,27 @@
+locus_tag,gene_name,product,axis,role,kg_evidence
+PMM0246,ntcA,global nitrogen regulatory protein,n_stress,positive,cyanorak:D.1.3+E.4
+PMM0920,glnA,"glutamine synthetase, type I",n_stress,positive,cyanorak:E.4
+PMM0263,amt1,ammonium transporter,n_stress,positive,cyanorak:E.4
+PMM1463,glnB,nitrogen regulatory protein P-II,n_stress,positive,cyanorak:D.1.3+E.4
+PMM0970,urtA,"ABC-type urea transporter, substrate binding component",n_stress,positive,cyanorak:D.1.3+E.4
+PMM1294,sodN,superoxide dismutase [Ni],oxidative,positive,cyanorak:D.1.4+go:0006979
+PMM0856,ahpC,2-Cys peroxiredoxin,oxidative,positive,cyanorak:D.1.4+go:0006979
+PMM0079,prxQ,2-Cys peroxiredoxin,oxidative,positive,cyanorak:D.1.4+go:0006979
+PMM1061,trxA,m-type thioredoxin,oxidative,positive,cyanorak:D.1.4+go:0006979
+PMM0567,gor,glutathione reductase,oxidative,positive,cyanorak:D.1.4+go:0006979
+PMM1436,groL1,chaperonin GroEL,proteotoxic,positive,cyanorak:L.3+go:0006457
+PMM1432,dnaK1,chaperone protein DnaK,proteotoxic,positive,cyanorak:L.3+go:0006457+go:0006986
+PMM0901,htpG,molecular chaperone HtpG,proteotoxic,positive,cyanorak:L.3+go:0006457
+PMM1657,clpX,"ATP-dependent Clp protease ATP-binding subunit, ClpX",proteotoxic,positive,cyanorak:L.3+go:0006457
+PMM1437,groES,co-chaperonin GroES,proteotoxic,positive,cyanorak:L.3+go:0006457
+PMM0223,psbA,photosystem II protein D1.1,photo,positive,cyanorak:J.8
+PMM1157,psbD,photosystem II D2 protein,photo,positive,cyanorak:J.8+go:0009769
+PMM0743,ftsH2,photosystem II D1 repair protein FtsH2,photo,positive,cyanorak:L.3+go:0010206
+PMM1404,hli,high light inducible protein,photo,positive,gene_category=stress_response
+PMM0064,hli,high light inducible protein,photo,positive,gene_category=stress_response
+PMM0191,spoT,bifunctional GTP diphosphokinase / ppGpp,cell_death,positive,go:0015968+go:0042594
+PMM0400,lrtA,light repressed protein A (ribosome hibernation),cell_death,positive,canonical_literature_marker
+PMM1171,isiB,flavodoxin,cell_death,positive,go:0042594
+PMM1485,rpoB,"DNA-directed RNA polymerase, beta subunit",negative,negative,housekeeping
+PMM1511,rpsL,30S ribosomal protein S12,negative,negative,housekeeping
+PMM1451,atpA,ATP synthase alpha chain,negative,negative,housekeeping

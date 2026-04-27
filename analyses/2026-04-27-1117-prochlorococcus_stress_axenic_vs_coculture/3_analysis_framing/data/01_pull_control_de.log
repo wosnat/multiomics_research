@@ -1,0 +1,43 @@
+Control panel: 26 genes across 6 axes (23 positives, 3 negatives)
+Trajectory + summary experiments: 4
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture]
+  total_matching=120 returned=120
+  columns=['locus_tag', 'gene_name', 'experiment_id', 'treatment_type', 'timepoint', 'timepoint_hours', 'timepoint_order', 'log2fc', 'padj', 'rank']...
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic]
+  total_matching=72 returned=72
+  columns=['locus_tag', 'gene_name', 'experiment_id', 'treatment_type', 'timepoint', 'timepoint_hours', 'timepoint_order', 'log2fc', 'padj', 'rank']...
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture]
+  total_matching=130 returned=130
+  columns=['locus_tag', 'gene_name', 'experiment_id', 'treatment_type', 'timepoint', 'timepoint_hours', 'timepoint_order', 'log2fc', 'padj', 'rank']...
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic]
+  total_matching=26 returned=26
+  columns=['locus_tag', 'gene_name', 'experiment_id', 'treatment_type', 'timepoint', 'timepoint_hours', 'timepoint_order', 'log2fc', 'padj', 'rank']...
+
+Combined DE rows: 348
+
+Dropped pooled 'days 60+89' rows: 348 -> 298
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/3_analysis_framing/data/control_de_long.csv
+  shape=(298, 26)
+  columns=['locus_tag', 'gene_name', 'experiment_id', 'treatment_type', 'timepoint', 'timepoint_hours', 'timepoint_order', 'log2fc', 'padj', 'rank', 'rank_up', 'rank_down', 'expression_status', 'growth_phase', 'product', 'experiment_name', 'treatment', 'gene_category', 'omics_type', 'coculture_partner', 'table_scope', 'table_scope_detail', 'background_factors', 'axis', 'role', 'kg_evidence']
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/3_analysis_framing/data/control_de_summary.csv
+
+Per-axis significance rate (positives only):
+  cell_death     n= 3  with_any_sig= 3/3  mean_max|log2FC|=2.66
+  n_stress       n= 5  with_any_sig= 5/5  mean_max|log2FC|=3.36
+  oxidative      n= 5  with_any_sig= 2/5  mean_max|log2FC|=1.33
+  photo          n= 5  with_any_sig= 5/5  mean_max|log2FC|=4.64
+  proteotoxic    n= 5  with_any_sig= 4/5  mean_max|log2FC|=1.75
+
+Negative controls (should show low DE):
+  atpA   (PMM1451): n_sig=3/12  max|log2FC|=4.73
+  rpoB   (PMM1485): n_sig=1/12  max|log2FC|=1.46
+  rpsL   (PMM1511): n_sig=3/12  max|log2FC|=2.15

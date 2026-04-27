@@ -69,3 +69,28 @@ To recover the per-TP phase (day 14 → nutrient_limited; day 31 → death; day 
 **Downstream impact.**
 - *Methodology:* every analysis that uses `experiments_to_dataframe` to ask "what was the growth phase at this TP?" silently gets the *experiment-level joined string* instead of the per-TP value. If a downstream script does `df[df["time_point_growth_phases"] == "death"]` or similar, it filters on the join string, not on the per-TP phase — silently wrong.
 - *Suggested KG-side fix (deferred to later):* in `experiments_to_dataframe`, when expanding `timepoints` per row, also emit a `tp_growth_phase` column populated from `time_point_growth_phases[timepoint_order - 1]`. The experiment-level string column can stay (or be renamed `experiment_growth_phases_joined`) for backward compatibility. To be raised against `multiomics_explorer` later — user has indicated this is a gap to handle later, not now.
+
+---
+
+## F4 — Annotation gaps for stress axes in MED4
+
+**Date:** 2026-04-27 (encountered in step 3)
+
+**What happened.** While defining stress-axis controls in step 3, several canonical ontology terms have **0 MED4 genes** in this KG, even though the underlying biology is well-established:
+
+| Axis | Term | Ontology | MED4 genes | Comment |
+|---|---|---|---|---|
+| N-stress | `go:0006995` cellular response to nitrogen starvation | GO BP | **0** | The hand-curated `cyanorak.role:D.1.3` (16 genes) and `E.4` (28 genes) cover this well, so the GO BP gap is workaround-able. |
+| Cell death | `go:0008219` cell death | GO BP | **0** | No MED4 genes annotated to "cell death." |
+| Cell death | `go:0012501` programmed cell death | GO BP | **0** | Same. |
+| Cell death | `cyanorak.role:D.3` Cell growth and death | cyanorak | **0** | Even the hand-curated cyanorak ontology has no MED4 genes in "Cell growth and death." Cell death is structurally absent from MED4 annotations. |
+| Photo-stress | photosystem-II-related GO BP terms | GO BP | psbA (PMM0223) is **not** in `go:0009769`, `go:0010206`, `go:0019684` despite being the canonical D1 protein. | psbA is properly annotated in `cyanorak.role:J.8` (Photosystem II). GO BP coverage of psbA is the gap. |
+| Oxidative | catalase / `katG` | (n/a) | **0** | Not a KG gap — MED4 *biologically lacks* catalase (Black Queen Hypothesis). The gap is the absence of the gene from the genome, not from the KG. Logged here so future axes don't expect it to be present. |
+| HLI proteins | `cyanorak.role:J.8` (PSII) | cyanorak | not in J.8 | The 23 high-light-inducible (HLI) proteins are not in the cyanorak PSII role; they live in `gene_category="Stress response and adaptation"` only. Cross-reference is via gene_category, not ontology. |
+
+**Workaround in this analysis.** Step 3 control panel uses cyanorak (hand-curated, 73% MED4 coverage) where it has gene sets, falls back to GO BP where cyanorak is empty, and uses canonical literature markers (psbA, lrtA) for genes that aren't in either ontology. The cell-death axis is reframed as **"late-stationary / starvation response"** because formal cell-death annotations are unavailable; positive controls are spoT (stringent response), lrtA (ribosome hibernation), isiB (flavodoxin / starvation marker).
+
+**Downstream impact.**
+- *Methodology:* the cell-death axis cannot use a single canonical gene-set definition. It must rely on a small hand-picked set of starvation-response markers, and the axis label should be qualified ("late-stationary / starvation response") rather than promising programmed-cell-death-detection capability.
+- *Step 4 (methods):* gene-set definitions per axis should mix evidence sources transparently — cyanorak primary, GO BP supplementary, literature markers explicitly tagged. The mixture must be visible in any methods write-up.
+- *KG / annotation suggestion:* a future cyanorak update could populate `D.3` (Cell growth and death) with starvation/stationary-phase markers — even minimal coverage (spoT, lrtA, isiB and similar) would be enough for axis-level analyses to ground in a single ontology. Out of scope for this analysis.
