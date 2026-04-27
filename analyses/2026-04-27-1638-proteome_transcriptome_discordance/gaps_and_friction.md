@@ -66,3 +66,19 @@ Decisions live in each step's `notebook.md`; this file captures friction (gaps, 
 **Downstream impact.**
 - Methodology-side: a user-level feedback memory was added (`feedback_check_api_before_cypher.md`) so future analyses default to "check the API surface first."
 - *Suggested methodology improvement:* [python-api-guide.md](../../skills/research-methodology/references/python-api-guide.md) could note explicitly that several functions named for one entity (e.g., `_by_gene`, `_by_ortholog`, `_by_function`) accept filters for adjacent entities with `None` defaults and double as broader queries — the current "Writing raw Neo4j or `requests` calls → Use the API functions" rule covers the spirit but doesn't surface this specific pattern.
+
+---
+
+## F5 — Editorializing data observations at step 2 before the formal analysis runs
+
+**Date:** 2026-04-27 (encountered in step 2 close)
+
+**What happened.** While presenting the QC #4 canonical-marker heatmap (5 N-regulon genes showing mRNA-down / protein-up in MED4 coculture), I described it as "biologically loaded", "massive finding", "biologically explosive", and claimed the data "reframes the analysis" with a "strongly motivated default hypothesis." Osnat asked me to flag every place where my interpretation read as hand-wavy. Two failures: (a) using emotive vocabulary for data observed but not yet formally tested — discordance metric is step-4 work, axis-stratified testing is step-5; (b) pre-committing to a post-transcriptional-regulation interpretation when the same data is also compatible with mRNA-degradation artefacts at coculture sampling, normalization issues, paralog mapping, etc. The 6-step methodology puts hypothesis testing at step 5 and caveat harvesting at step 6 to prevent step-2 enthusiasm from biasing later analysis. Also flagged: my use of "confirms the prior-analysis flag" for atpA, which leaned on a prior conclusion about the same single data point as authority rather than describing the data here.
+
+**Workaround.** Notebook + paper text describing the marker heatmap and the agreement-overview Pearson values has been re-written in factual terms ("5 N-regulon markers show RNA log2FC < 0 and protein log2FC > 0 at MED4 coculture days 31–89", "HOT1A3 paired-pool Pearson r is in [−0.09, +0.03] at every observation"). Interpretive framings tagged `[interpretation]` and listed alongside competing alternatives where applicable.
+
+**Generalizable lesson.** Vocabulary itself signals premature commitment. Emotive words like "striking", "massive", "rich", "central", "explosive", "reframes" should not appear in step-2 / step-3 outputs. Reserve them for step-6 evaluation, where preregistered predictions have been tested and the framing has earned them.
+
+**Downstream impact.**
+- A user-level feedback memory was added (`feedback_no_pre_celebration.md`) so future analyses default to factual-at-early-steps phrasing.
+- *Suggested methodology improvement:* the [research-methodology/references/anti-hallucination.md] could add a category covering "interpretive vocabulary as premature commitment" — distinct from the existing categories that focus on hallucinated facts. The failure mode here was real-data + over-claimed interpretation, not invented data.

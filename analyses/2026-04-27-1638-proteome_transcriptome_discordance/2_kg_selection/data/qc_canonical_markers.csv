@@ -1,0 +1,36 @@
+marker_name,marker_role,marker_product,locus_tag,condition,timepoint_label,timepoint_hours,log2fc_rna,expression_status_rna,log2fc_prot,expression_status_prot,category
+ntcA,concordance_pos_ctrl,N regulator,PMM0246,axenic,day 14,336.0,3.352117316421244,significant_up,1.86500326792399,significant_up,concordant_up
+ntcA,concordance_pos_ctrl,N regulator,PMM0246,coculture,day 18,432.0,-1.4581215417256552,not_significant,1.76032638549805,significant_up,prot_only_up
+ntcA,concordance_pos_ctrl,N regulator,PMM0246,coculture,day 31,744.0,-1.582427219583685,not_significant,2.23080062866211,significant_up,prot_only_up
+ntcA,concordance_pos_ctrl,N regulator,PMM0246,coculture,day 60,1440.0,-1.7014965249685456,not_significant,1.34489758809407,significant_up,prot_only_up
+ntcA,concordance_pos_ctrl,N regulator,PMM0246,coculture,day 89,2136.0,-2.0842747712258936,significant_down,1.1701078414917,significant_up,opposite_rna_down
+glnA,concordance_pos_ctrl,glutamine synthetase,PMM0920,axenic,day 14,336.0,3.3569768863566645,significant_up,2.12048435211182,significant_up,concordant_up
+glnA,concordance_pos_ctrl,glutamine synthetase,PMM0920,coculture,day 18,432.0,-0.4648341108995685,not_significant,2.55111503601075,significant_up,prot_only_up
+glnA,concordance_pos_ctrl,glutamine synthetase,PMM0920,coculture,day 31,744.0,-1.6759261001964705,not_significant,2.94569333394369,significant_up,prot_only_up
+glnA,concordance_pos_ctrl,glutamine synthetase,PMM0920,coculture,day 60,1440.0,-2.173486157594152,significant_down,2.57054074605306,significant_up,opposite_rna_down
+glnA,concordance_pos_ctrl,glutamine synthetase,PMM0920,coculture,day 89,2136.0,-1.2614457344339756,not_significant,2.21589183807374,significant_up,prot_only_up
+glnB,concordance_pos_ctrl,PII protein,PMM1463,axenic,day 14,336.0,-0.5422675688840383,not_significant,1.27472082773845,significant_up,prot_only_up
+glnB,concordance_pos_ctrl,PII protein,PMM1463,coculture,day 18,432.0,-1.0065323828512034,not_significant,1.34688440958659,significant_up,prot_only_up
+glnB,concordance_pos_ctrl,PII protein,PMM1463,coculture,day 31,744.0,-2.033906878694434,significant_down,2.10725593566895,significant_up,opposite_rna_down
+glnB,concordance_pos_ctrl,PII protein,PMM1463,coculture,day 60,1440.0,-1.6791831482157482,significant_down,2.99547640482585,significant_up,opposite_rna_down
+glnB,concordance_pos_ctrl,PII protein,PMM1463,coculture,day 89,2136.0,-2.578430371607697,significant_down,3.29939047495524,significant_up,opposite_rna_down
+urtA,concordance_pos_ctrl,urea ABC transporter,PMM0970,axenic,day 14,336.0,2.6694942279740563,significant_up,0.82442315419515,not_significant,rna_only_up
+urtA,concordance_pos_ctrl,urea ABC transporter,PMM0970,coculture,day 18,432.0,-0.2512931813539277,not_significant,1.66582997639974,significant_up,prot_only_up
+urtA,concordance_pos_ctrl,urea ABC transporter,PMM0970,coculture,day 31,744.0,-1.251171583457403,not_significant,2.26979764302572,significant_up,prot_only_up
+urtA,concordance_pos_ctrl,urea ABC transporter,PMM0970,coculture,day 60,1440.0,-2.015510978873359,significant_down,2.47993787129721,significant_up,opposite_rna_down
+urtA,concordance_pos_ctrl,urea ABC transporter,PMM0970,coculture,day 89,2136.0,-0.62179381078263,not_significant,2.47821776072185,significant_up,prot_only_up
+amt1,concordance_pos_ctrl,ammonium transporter,PMM0263,axenic,day 14,336.0,3.8635086439112745,significant_up,0.270531654357914,not_significant,rna_only_up
+amt1,concordance_pos_ctrl,ammonium transporter,PMM0263,coculture,day 18,432.0,0.3290345082187893,not_significant,0.276550292968751,not_significant,both_ns
+amt1,concordance_pos_ctrl,ammonium transporter,PMM0263,coculture,day 31,744.0,0.6232447386142197,not_significant,1.03662236531576,significant_up,prot_only_up
+amt1,concordance_pos_ctrl,ammonium transporter,PMM0263,coculture,day 60,1440.0,-1.5390575528420043,significant_down,2.33147939046224,significant_up,opposite_rna_down
+amt1,concordance_pos_ctrl,ammonium transporter,PMM0263,coculture,day 89,2136.0,0.1292981574585233,not_significant,2.28471151987712,significant_up,prot_only_up
+rpoB,housekeeping,RNA polymerase β,PMM1485,axenic,day 14,336.0,-0.3287560333706574,not_significant,-0.367538770039876,not_significant,both_ns
+rpoB,housekeeping,RNA polymerase β,PMM1485,coculture,day 18,432.0,0.3056516914679615,not_significant,-0.287348429361978,not_significant,both_ns
+rpoB,housekeeping,RNA polymerase β,PMM1485,coculture,day 31,744.0,0.372341232675545,not_significant,-0.5946102142334,not_significant,both_ns
+rpoB,housekeeping,RNA polymerase β,PMM1485,coculture,day 60,1440.0,0.1030197384809773,not_significant,-0.387651443481446,not_significant,both_ns
+rpoB,housekeeping,RNA polymerase β,PMM1485,coculture,day 89,2136.0,0.4209515921122939,not_significant,-0.347099622090657,not_significant,both_ns
+atpA,housekeeping,ATP synthase α (imperfect — flagged in prior analysis),PMM1451,axenic,day 14,336.0,-4.730623112079471,significant_down,-0.580751101175948,not_significant,rna_only_down
+atpA,housekeeping,ATP synthase α (imperfect — flagged in prior analysis),PMM1451,coculture,day 18,432.0,-0.1170070369931728,not_significant,0.0025622049967504,not_significant,both_ns
+atpA,housekeeping,ATP synthase α (imperfect — flagged in prior analysis),PMM1451,coculture,day 31,744.0,-1.006335074782657,not_significant,-0.718907038370764,not_significant,both_ns
+atpA,housekeeping,ATP synthase α (imperfect — flagged in prior analysis),PMM1451,coculture,day 60,1440.0,-1.2117573074785244,not_significant,-0.463082631429034,not_significant,both_ns
+atpA,housekeeping,ATP synthase α (imperfect — flagged in prior analysis),PMM1451,coculture,day 89,2136.0,-0.4238107049915481,not_significant,-0.320567766825355,not_significant,both_ns

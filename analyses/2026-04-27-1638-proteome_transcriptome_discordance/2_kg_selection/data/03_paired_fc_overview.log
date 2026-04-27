@@ -1,0 +1,52 @@
+Building long paired-FC table for 11 observations:
+  Alteromonas macleodii HOT1A3     axenic     day 18     ( 432h)  paired_pool=2221
+  Alteromonas macleodii HOT1A3     axenic     day 31     ( 744h)  paired_pool=2221
+  Alteromonas macleodii HOT1A3     coculture  day 18     ( 432h)  paired_pool=2221
+  Alteromonas macleodii HOT1A3     coculture  day 31     ( 744h)  paired_pool=2221
+  Alteromonas macleodii HOT1A3     coculture  day 60     (1440h)  paired_pool=2221
+  Alteromonas macleodii HOT1A3     coculture  day 89     (2136h)  paired_pool=2221
+  Prochlorococcus MED4             axenic     day 14     ( 336h)  paired_pool=1424
+  Prochlorococcus MED4             coculture  day 18     ( 432h)  paired_pool=1424
+  Prochlorococcus MED4             coculture  day 31     ( 744h)  paired_pool=1424
+  Prochlorococcus MED4             coculture  day 60     (1440h)  paired_pool=1424
+  Prochlorococcus MED4             coculture  day 89     (2136h)  paired_pool=1424
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/paired_fc_long.csv  (20446 rows)
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/paired_fc_summary.csv  (11 rows)
+
+Per-observation summary:
+  HOT1A3  axenic     day 18   ( 432h)  n=2221  Pearson r=-0.01  Spearman ρ=-0.05  ||  conc=  0 asym= 362 opp=  0 ns=1859
+  HOT1A3  axenic     day 31   ( 744h)  n=2221  Pearson r=-0.03  Spearman ρ=-0.07  ||  conc= 70 asym=1024 opp= 69 ns=1058
+  HOT1A3  coculture  day 18   ( 432h)  n=2221  Pearson r=-0.09  Spearman ρ=-0.11  ||  conc= 18 asym= 482 opp= 15 ns=1706
+  HOT1A3  coculture  day 31   ( 744h)  n=2221  Pearson r= 0.03  Spearman ρ=-0.01  ||  conc= 69 asym= 721 opp= 42 ns=1389
+  HOT1A3  coculture  day 60   (1440h)  n=2221  Pearson r=-0.03  Spearman ρ=-0.03  ||  conc= 62 asym= 788 opp= 70 ns=1301
+  HOT1A3  coculture  day 89   (2136h)  n=2221  Pearson r= 0.00  Spearman ρ=-0.03  ||  conc= 71 asym= 798 opp= 83 ns=1269
+  MED4    axenic     day 14   ( 336h)  n=1424  Pearson r= 0.23  Spearman ρ= 0.23  ||  conc= 64 asym= 651 opp= 14 ns= 695
+  MED4    coculture  day 18   ( 432h)  n=1424  Pearson r=-0.06  Spearman ρ=-0.08  ||  conc=  1 asym=  77 opp=  0 ns=1346
+  MED4    coculture  day 31   ( 744h)  n=1424  Pearson r= 0.12  Spearman ρ= 0.10  ||  conc= 36 asym= 406 opp= 18 ns= 964
+  MED4    coculture  day 60   (1440h)  n=1424  Pearson r= 0.18  Spearman ρ= 0.18  ||  conc= 40 asym= 347 opp= 18 ns=1019
+  MED4    coculture  day 89   (2136h)  n=1424  Pearson r= 0.22  Spearman ρ= 0.21  ||  conc= 36 asym= 337 opp=  8 ns=1043
+
+Compact category breakdown (% of paired pool):
+  observation                          concordant_sig  asymmetric_sig    opposite_sig    both_ns
+  HOT1A3 axenic day 18                           0.0%           16.3%            0.0%      83.7%
+  HOT1A3 axenic day 31                           3.2%           46.1%            3.1%      47.6%
+  HOT1A3 coculture day 18                        0.8%           21.7%            0.7%      76.8%
+  HOT1A3 coculture day 31                        3.1%           32.5%            1.9%      62.5%
+  HOT1A3 coculture day 60                        2.8%           35.5%            3.2%      58.6%
+  HOT1A3 coculture day 89                        3.2%           35.9%            3.7%      57.1%
+  MED4 axenic day 14                             4.5%           45.7%            1.0%      48.8%
+  MED4 coculture day 18                          0.1%            5.4%            0.0%      94.5%
+  MED4 coculture day 31                          2.5%           28.5%            1.3%      67.7%
+  MED4 coculture day 60                          2.8%           24.4%            1.3%      71.6%
+  MED4 coculture day 89                          2.5%           23.7%            0.6%      73.2%
+
+Cross-observation overall (pooled across all 11):
+  concordant_sig     =   467 (2.3% of 20446 paired-gene-observations)
+  asymmetric_sig     =  5993 (29.3% of 20446 paired-gene-observations)
+  opposite_sig       =   337 (1.6% of 20446 paired-gene-observations)
+  both_ns            = 13649 (66.8% of 20446 paired-gene-observations)
+
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/figures/paired_fc_scatter_grid.png
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/figures/paired_fc_category_bars.png
+Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1638-proteome_transcriptome_discordance/2_kg_selection/data/03_paired_fc_overview.log

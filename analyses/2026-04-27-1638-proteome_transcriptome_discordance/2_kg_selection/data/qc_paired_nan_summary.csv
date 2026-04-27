@@ -1,0 +1,12 @@
+organism_name,condition,timepoint_label,timepoint_hours,n_paired_pool,n_rna_null_log2fc,n_prot_null_log2fc,n_either_null,n_both_null,pct_either_null
+Alteromonas macleodii HOT1A3,axenic,day 18,432.0,2221,0,0,0,0,0.0
+Alteromonas macleodii HOT1A3,axenic,day 31,744.0,2221,0,0,0,0,0.0
+Alteromonas macleodii HOT1A3,coculture,day 18,432.0,2221,0,0,0,0,0.0
+Alteromonas macleodii HOT1A3,coculture,day 31,744.0,2221,0,0,0,0,0.0
+Alteromonas macleodii HOT1A3,coculture,day 60,1440.0,2221,0,0,0,0,0.0
+Alteromonas macleodii HOT1A3,coculture,day 89,2136.0,2221,0,0,0,0,0.0
+Prochlorococcus MED4,axenic,day 14,336.0,1424,0,0,0,0,0.0
+Prochlorococcus MED4,coculture,day 18,432.0,1424,0,0,0,0,0.0
+Prochlorococcus MED4,coculture,day 31,744.0,1424,0,0,0,0,0.0
+Prochlorococcus MED4,coculture,day 60,1440.0,1424,0,0,0,0,0.0
+Prochlorococcus MED4,coculture,day 89,2136.0,1424,0,0,0,0,0.0
