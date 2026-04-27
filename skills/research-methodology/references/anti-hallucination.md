@@ -7,9 +7,9 @@ example from this KG.
 ## Contents
 
 1. [Gene identity errors](#category-1-gene-identity-errors) — paralog conflation, ortholog conflation, inventing functions
-2. [Narrative fabrication](#category-2-narrative-fabrication) — causal claims, cherry-picking, selective reporting, language strength, cross-experiment aggregation
+2. [Narrative fabrication](#category-2-narrative-fabrication) — causal claims, cherry-picking, selective reporting, language strength, cross-experiment aggregation, emotive vocabulary, speculative proposals
 3. [Data handling errors](#category-3-data-handling-errors) — counting from truncated lists, cross-study p-values, fabricating statistics
-4. [Knowledge boundary violations](#category-4-knowledge-boundary-violations) — asserting absence, assuming completeness, unsupported literature claims
+4. [Knowledge boundary violations](#category-4-knowledge-boundary-violations) — asserting absence, assuming completeness, unsupported literature claims, measurement failure vs biological absence
 5. [Source-of-truth verification failures](#category-5-source-of-truth-verification-failures) — tool capabilities from memory, publication attribution from memory, field semantics from memory
 6. [Quick self-check](#quick-self-check) — 8-question checklist before presenting findings
 
@@ -135,6 +135,65 @@ not the same as log2FC 3 on RNA-seq.
 
 **Prevention:** See [Statistical rigor — Cross-experiment comparison](statistical-rigor.md#cross-experiment-comparison-caveats). Compare direction and rank, not magnitude, across platforms.
 
+### 2.6 Emotive vocabulary and speculative proposals
+
+Two related failure modes. Both reach for elaborate language or
+elaborate fixes when the data hasn't earned them yet.
+
+**(a) Emotive vocabulary in steps 1–5.** Describing a data observation
+with words like "striking", "massive", "biologically loaded",
+"biologically explosive", "central finding", "reframes the analysis"
+before the formal analysis has run. The vocabulary commits to a
+conclusion the analysis hasn't tested.
+
+**Real example (discordance analysis, step 2 close):** Before any
+discordance metric had been computed, the step-2 narrative described
+a 5-marker heatmap as "biologically loaded", "massive finding",
+"biologically explosive", and claimed the data "reframes the
+analysis with a strongly motivated default hypothesis." The 6-step
+flow puts hypothesis testing at step 5 and caveat harvesting at
+step 6 — step-2 enthusiasm biases later analysis.
+
+**(b) Anchor-on-loud-cells then narrate wrong.** Reading a heatmap
+or summary table by eye, fixating on the strongest-color cells,
+and writing a generalization ("all", "systematically", "primarily")
+without checking the underlying data file.
+
+**Real example (stress-axis analysis, step 3):** Step 3 control
+heatmap was described as "All 5 N-stress positives are clearly UP
+across both omics in both conditions." The data file showed
+coculture-RNA values systematically negative (log2FC −1 to −2.6)
+at all 4 timepoints. The narrative anchored on the strongest cells
+(axenic-protein death-phase) and missed the muted pattern. Caught
+at step 5 by a quantitative score, not at step 3.
+
+**(c) Speculative proposals.** Listing methodology improvements,
+KG-side fixes, or process changes that aren't anchored to specific
+data or recurring friction. The proposals sound systematic but are
+extrapolations from a single nudge or single incident.
+
+**Real example (stress-axis analysis, retrospective):** A retrospective
+listed 7 methodology improvements after one analysis, including
+process changes ("adopt `uv run` as default", "add a retrospective
+sub-protocol") that came from a single nudge or a single occurrence
+— not a pattern. Process change needs the same friction across two
+analyses; one occurrence is a note, not a directive.
+
+**Prevention:**
+- In steps 1–5, write factual statements: numbers, directions,
+  conditions. Drop vocabulary like "massive", "striking", "explosive",
+  "central", "reframes", "rich", "hand-wavy" used as praise.
+- Interpretation, where present, goes inline with `[interpretation]`,
+  and lists competing alternatives.
+- Words like "all", "every", "no", "systematically", "primarily"
+  require a query against the data file, not a heatmap glance. If
+  you write "all 5 are UP", check all 5 in the data first.
+- For methodology / KG / tooling proposals: point to the specific
+  friction (date, location, what failed). One occurrence is a note;
+  process change needs the same friction in two analyses.
+- Reserve interpretive vocabulary and bold proposals for step 6,
+  where the framing has been tested.
+
 ---
 
 ## Category 3: Data handling errors
@@ -198,6 +257,8 @@ when it's a property of the KG's gene set.
   biological absence is well-established, that knowledge comes
   from training data, not the KG)
 
+See also [4.4 Measurement failure vs biological absence](#44-measurement-failure-vs-biological-absence) for the related case of missing measurements (vs missing annotations).
+
 ### 4.2 Assuming KG completeness
 
 **What happens:** "All nitrogen-responsive genes in MED4 are..."
@@ -225,6 +286,44 @@ verified from the data.
   a KG explorer, not a literature review tool
 - Never cite a specific paper from intrinsic knowledge as if
   it were a KG reference
+
+### 4.4 Measurement failure vs biological absence
+
+Related to [4.1 Asserting absence](#41-asserting-absence) — that one is about KG annotation; this one is about missing measurements.
+
+**What happens:** Data is missing for one omics layer (or condition,
+or timepoint) and present for another. The LLM treats the missing
+data as evidence of *biological* absence — "mRNA is gone", "the
+protein is not expressed", "the gene is silenced" — when the
+absence is technical, not biological.
+
+**Real example (discordance analysis, step 1):** Sketched a
+sub-question "protein persists while mRNA is gone" for MED4 axenic
+d31 / d89 proteome-only data. The missing RNA-seq was an extraction
+failure (cell death, RNA degradation, biomass below extraction
+threshold) — not biological absence of mRNA. Treating it as "mRNA
+gone" would have produced a false post-transcriptional-persistence
+claim.
+
+**Common reasons data is missing without being biologically zero:**
+- Extraction failure (RNA degradation, low biomass, technical)
+- Detection limit (dynamic range of the assay)
+- Sample loss or processing error
+- Sequencing or MS depth insufficient for low-abundance species
+- Multi-mapper filtering (genome-redundant paralogs dropped)
+- Different platforms cover different gene sets by design
+
+**Prevention:**
+- Before claiming biological absence from missing data, ask: was
+  this gene / sample / timepoint actually measured? Check the
+  experiment design and the upstream pipeline.
+- Treat missing data as missing data — no information — not as
+  zero or "below biological detection."
+- If you must use the data despite the gap, explicitly handle it
+  as missing-not-at-random and flag the assumption.
+- Language: "no protein detected" (not "protein absent"), "no
+  RNA-seq data" (not "mRNA gone"), "below detection limit" (not
+  "not expressed").
 
 ---
 

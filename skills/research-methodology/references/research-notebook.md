@@ -10,9 +10,13 @@ Every analysis is driven by **per-step interactive notebooks** — one `notebook
 
 ## Just-in-time formalization
 
-Terms, predictions, metrics, stability checks, decisions, and caveats enter the analysis **only when the data demands them**. Nothing is enumerated in advance "just in case."
+Plans, framings, predictions, metrics, terms, decisions, and caveats enter the analysis **only when the data demands them**. Nothing is enumerated in advance "just in case."
+
+Look at the data before drafting the plan. Pull what's in the KG — counts, fields, coverage — then propose the minimal plan that fits. Start simple; expand only when a specific finding forces it.
 
 Concrete rules:
+- **Step 1 grounds the dialogue in MCP queries, not assumptions.** Before locking scope or proposing sub-questions, run `list_publications`, `list_experiments`, `list_organisms` filtered to the prompt's context. Surface counts and structural surprises (e.g. "axenic RNA-seq is single-contrast, not time-course") in the dialogue. Capture the queries and key counts in step-1 `notebook.md` under a **"KG context"** sub-section. Step 1 grounds; step 2 enumerates.
+- **Step 1 locks the question, not sub-questions.** Sub-narratives that form during dialogue (e.g., "protein persists while mRNA is gone") belong to step 3. Defer; flag as step-3 candidate.
 - **Step 3 framing has a floor, not a template.** Minimum: hypothesis in prose, what success means operationally, positive and negative controls from the KG. Nothing else required.
 - **Preregistration is optional and minimal.** If confirmation bias is a real risk, preregister 1–3 named predictions — not a 4×4 matrix of ordering and thresholds.
 - **Stability checks are added when a specific result triggers them**, not planned up front.
@@ -20,7 +24,7 @@ Concrete rules:
 - **Methods (step 4) stay minimal** — ad-hoc Python module with exactly what this analysis needs.
 - **Caveats are harvested at step 6** from what actually happened; not pre-cataloged.
 
-This principle governs every step. If you find yourself listing things the analysis might need before the data has arrived, stop.
+This principle governs every step. If you find yourself listing or architecting things the analysis might need before the data has arrived, stop.
 
 ## The 6-step flow
 
@@ -33,7 +37,7 @@ This principle governs every step. If you find yourself listing things the analy
 
 Steps 1–3 are the **research proposal**. Locked at end of step 3. Steps 4–6 execute against it.
 
-Step 1 is the only conversation-only step (typically produces only `notebook.md`). Steps 2–6 all produce `scripts/`, `data/`, `figures/`, and QC alongside `notebook.md`.
+Step 1 produces `notebook.md` (including a "KG context" sub-section that captures grounding queries, counts, and any structural surprises encountered during the dialogue). Step 1 is interactive, not scripted, but it is not assumption-driven — MCP queries ground the conversation. Steps 2–6 add `scripts/`, `data/`, `figures/`, and QC alongside `notebook.md`.
 
 ## The intra-step rhythm: do → show → explore → decide
 
@@ -125,10 +129,11 @@ Append-only. Redo friction entries accumulate.
 
 ## Using `superpowers:brainstorming` for step 1
 
-The brainstorming skill's dialogue pattern (clarifying questions one at a time, proposing approaches, converging) fits step 1 well. **Two overrides apply:**
+The brainstorming skill's dialogue pattern (clarifying questions one at a time, proposing approaches, converging) fits step 1 well. **Three overrides apply:**
 
 1. **Capture location.** The skill's default writes a design doc to `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md`. Override: output lands in `analyses/<slug>/1_question/notebook.md`. The formulated research question, clarifying dialogue in summary form, rejected alternatives, and converged scope all live there.
-2. **Terminal action.** The skill's terminal state is invoking `superpowers:writing-plans`. **Skip this.** Step 1 decide advances to step 2 (KG entries), not to implementation-plan writing. There is no monolithic plan for the analysis — the 6-step flow replaces it.
+2. **KG grounding alongside the dialogue.** Brainstorming is pure conversation by default. Step 1 here adds lightweight MCP grounding (`list_publications`, `list_experiments`, `list_organisms` filtered to the prompt's context) before scope or sub-question decisions. Capture queries and counts in a "KG context" sub-section in `notebook.md`. See the Just-in-time concrete rules above for the rationale.
+3. **Terminal action.** The skill's terminal state is invoking `superpowers:writing-plans`. **Skip this.** Step 1 decide advances to step 2 (KG entries), not to implementation-plan writing. There is no monolithic plan for the analysis — the 6-step flow replaces it.
 
 If the skill's preamble nudges toward writing a spec doc outside the analysis folder or invoking writing-plans at the end, treat those as defaults being overridden by this methodology skill (which has higher priority for research work in this repo).
 

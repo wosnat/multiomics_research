@@ -120,11 +120,13 @@ decide). Steps 4–6 execute against it. Step 1 is a conversation
 
 ### Just-in-time formalization
 
-Terms, predictions, metrics, stability checks, decisions, and
-caveats enter the analysis **only when the data demands them**.
-Nothing is enumerated in advance "just in case." If you find
-yourself listing things the analysis might need before the data
-has arrived, stop.
+Plans, framings, predictions, metrics, decisions, and caveats enter
+the analysis **only when the data demands them**. Look at the data
+before drafting the plan; start with the simplest plan; expand only
+when a specific finding forces it. Step-1 sub-narratives belong to
+step 3, after step 2 has shown what's in the KG.
+
+See [Research notebook — Just-in-time formalization](references/research-notebook.md#just-in-time-formalization) for per-step concrete rules.
 
 ### What replaces the old spec/plan/decisions machinery
 
@@ -151,6 +153,34 @@ format, `paper.md` growth, `gaps_and_friction.md`, and the
 brainstorming override for step 1. See
 [Artifacts guide](references/artifacts.md) for directory structure
 and scaffold creation.
+
+## Rule 9: Plain language; describe before interpreting
+
+Write in plain English. Numbers and direction first, interpretation
+second. Don't reach for fancy vocabulary when ordinary words work.
+
+**Banned in steps 1–5** (these signal commitment before the analysis
+has earned it): "striking", "massive", "central finding",
+"biologically loaded", "biologically explosive", "reframes", "rich",
+"hand-wavy" as praise. Reserve interpretive vocabulary for step 6.
+
+**Describe before interpreting.** Write the numbers and direction
+first ("5 markers show RNA log2FC < 0 and protein log2FC > 0 at
+coculture days 31–89"). Tag interpretation `[interpretation]` and
+list plausible alternatives.
+
+**Verify before generalizing.** Words like "all", "every",
+"systematically", "primarily", "no genes" require a query against
+the data file, not a heatmap glance. If you write "all 5 are UP",
+check all 5 in the data first.
+
+**Proposals must cite specific data or friction.** When suggesting
+a fix, framework, or methodology change, point to the data or
+incident that motivates it. One occurrence is a note; process
+change needs the same friction in two analyses. Don't enumerate
+speculative proposals.
+
+See [Anti-hallucination — 2.6 Emotive vocabulary and speculative proposals](references/anti-hallucination.md#26-emotive-vocabulary-and-speculative-proposals).
 
 ## References — read on demand, not all at once
 

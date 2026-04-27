@@ -194,7 +194,39 @@ Use this to decide whether `limit=None` is safe or whether you need to filter up
 
 ---
 
-## 6. Common Mistakes
+## 6. Before reaching for `run_cypher`
+
+Function names reflect the most common use case, not the only one.
+Several `_by_X` functions accept filters for adjacent entities with
+`None` defaults — they double as broader queries when those filters
+are supplied alone.
+
+**Concrete example (discordance analysis, step 2 QC).** The first
+version of `qc_gene_coverage.py` used `run_cypher` with `MATCH
+(e:Experiment)-[:Changes_expression_of]->(g:Gene) RETURN DISTINCT
+g.locus_tag` to fetch the locus_tag set per experiment. Unnecessary.
+`differential_expression_by_gene(experiment_ids=[exp_id],
+limit=None)` — with `locus_tags` left at default `None` — returns
+every DE row for the experiment; the locus_tag set is one
+set-comprehension away. The envelope's `matching_genes` field
+cross-checks the count.
+
+**Default approach.** Before writing Cypher, inspect existing API
+function signatures:
+```python
+import inspect
+from multiomics_explorer import differential_expression_by_gene
+print(inspect.signature(differential_expression_by_gene))
+```
+
+Look for `_by_X` functions that accept `experiment_ids`, `organism`,
+or other adjacent-entity filters at `None` default. Reach for
+`run_cypher` only when the question genuinely requires relationship
+traversals or aggregations the API doesn't expose.
+
+---
+
+## 7. Common Mistakes
 
 | Mistake | Fix |
 |---------|-----|
@@ -202,7 +234,7 @@ Use this to decide whether `limit=None` is safe or whether you need to filter up
 | Guessing column names (`product`, `is_significant`) | Test with `result["results"][0].keys()` first |
 | `pd.DataFrame(result["results"])` then `.to_csv()` on nested data | Use `to_dataframe(result)` — handles all flattening automatically (see section 4) |
 | Hardcoding the full organism name | Fuzzy matching works: `"MED4"` resolves correctly |
-| Writing raw Neo4j or `requests` calls | Use the API functions — they handle connection, auth, and serialization |
+| Writing raw Neo4j (`run_cypher`) when an API function would cover the case | See section 6. Inspect `_by_X` function signatures first; many accept adjacent-entity filters with `None` defaults. |
 | Setting an arbitrarily high `limit=10000` | Use `limit=None` to get all results without guessing |
 | Treating `not_known` cells as "not measured" | `not_known` may mean "measured but not significant" — check `groups_tested_not_responded` for genes confirmed tested with no response, and `list_experiments` for the treatment type's `table_scope` |
 | Extracting with `verbose=True` but not joining `product`/`gene_category` into gene-level outputs | Join metadata immediately — don't defer annotation to a separate step. Unnamed genes in signature CSVs are opaque. |
