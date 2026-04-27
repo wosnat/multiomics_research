@@ -49,7 +49,17 @@ The five stress axes (N-starvation, oxidative, proteotoxic, photosynthetic, cell
 
 ### Implementation (step 4)
 
-_Populated at end of step 4._
+The per-axis stress score is a direction-aware signed-Z statistic against the genome-wide log2-fold-change distribution at each (experiment × timepoint). For axis gene set G with calibrated per-gene direction d_g ∈ {+1, -1}:
+
+$$\text{axis\_score} = \frac{\overline{d_g \cdot \log_2 FC_g}_{g \in G} - \overline{\log_2 FC_b}_{b \in \text{background}}}{\text{SD}\!\left(\log_2 FC_b\right)_{b \in \text{background}}}$$
+
+where the background is all non-axis genes quantified at the same (experiment, timepoint), with NaN values excluded. Population SD (ddof=0) is used. The score is reported alongside its components — the raw axis-mean signed log2FC, the background mean and SD, and the count of axis-genes-with-data — because the score and the raw axis response can disagree under heavy-tailed background distributions and that disagreement is itself biological information (see Results / Discussion).
+
+Direction calibration (the d_g values) comes from the step-3 validation — for n_stress all five positive controls are +1 (UP), for the photo axis HLI proteins are +1 and psbA/psbD/ftsH2 are -1 (PSII disassembly), and so on. The implementation requires direction be specified per gene (`dict[locus_tag, ±1]`) and raises `KeyError` on missing entries to prevent silent default-to-+1 bugs.
+
+Verification: the formula was hand-computed for six toy cases (basic, all-negative-with-symmetry, bidirectional, missing-direction error, NaN handling, single-gene axis) and the implementation reproduces every case to floating-point precision. The single-line docstring example was corrected during this step from `sqrt(0.13/3) ≈ 0.208` (sample variance) to `sqrt(0.13/4) ≈ 0.180` (population variance, matching the implementation).
+
+Driving-example application: N-stress axis × axenic-proteomics across 3 timepoints (day 14 nutrient_limited, day 31 death, day 89 death) using the 5 N-stress positives (ntcA, glnA, amt1, glnB, urtA) all with direction +1. The axis score is +1.71 at day 14, drops to +0.93 at day 31, and recovers slightly to +1.01 at day 89 — driven not by the axis genes (whose raw signed log2FC stays near +1.27) but by the background SD widening at death phase as the global proteome response intensifies. This is the methodology insight that motivates reporting axis_score and raw axis-mean signed log2FC as two complementary panels in step 5 trajectories.
 
 ## Results
 
