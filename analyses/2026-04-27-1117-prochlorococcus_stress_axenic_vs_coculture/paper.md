@@ -97,11 +97,55 @@ The most informative cross-omics signal is the N-starvation × coculture diverge
 
 ### Headline figure
 
-The headline figure is `5_analyze/figures/trajectories_positive_panel.png` — a 5-axis × 2-omics grid showing axenic vs coculture trajectories per (axis, omics) cell, with axis_score on the y-axis and timepoint (days) on the x-axis. Companion figures: `..._raw.png` (axis-mean signed log2FC view), `..._cyanorak_panel.png` (broader gene-set sensitivity check), `panel_comparison.png` (positive-panel vs cyanorak-panel scatter).
+The headline figure is [5_analyze/figures/trajectories_positive_panel.png](5_analyze/figures/trajectories_positive_panel.png) — a 5-axis × 2-omics grid showing axenic vs coculture trajectories per (axis, omics) cell, with axis_score on the y-axis and timepoint (days) on the x-axis. Companion figures: [trajectories_positive_panel_raw.png](5_analyze/figures/trajectories_positive_panel_raw.png) (axis-mean signed log2FC view), [trajectories_cyanorak_panel.png](5_analyze/figures/trajectories_cyanorak_panel.png) (broader gene-set sensitivity check), [panel_comparison.png](5_analyze/figures/panel_comparison.png) (positive-panel vs cyanorak-panel scatter).
+
+The step-6 trajectory figure with permutation-significance overlaid: [6_evaluate/figures/trajectories_positive_panel_sig.png](6_evaluate/figures/trajectories_positive_panel_sig.png) (positive panel) and [6_evaluate/figures/trajectories_cyanorak_panel_sig.png](6_evaluate/figures/trajectories_cyanorak_panel_sig.png) (cyanorak panel).
+
+The step-3 control-panel validation heatmap that grounded the per-gene direction calibration: [3_analysis_framing/figures/control_validation_heatmap.png](3_analysis_framing/figures/control_validation_heatmap.png).
+
+The step-4 driving-example trajectory (N-stress × axenic-proteomics, 2-panel raw + Z): [4_methods/figures/n_stress_axenic_prot_trajectory.png](4_methods/figures/n_stress_axenic_prot_trajectory.png).
 
 ## Discussion
 
-_Populated at end of step 6._
+### Answering the locked question
+
+*Is Prochlorococcus MED4 stressed in axenic and in coculture conditions under prolonged nitrogen deprivation, as measured across five stress axes?*
+
+**Yes for both conditions, but with strikingly different multi-omics shapes.**
+
+Within axenic culture, the photosynthetic axis emerges as the dominant signal at the physiological transition from nutrient_limited to death phase: the photo axis_score in axenic-proteomics jumps from +1.17 at day 14 to +3.15 at day 31 (BH-FDR p_bh = 0.0007), the largest single-cell engagement in the analysis. This is driven by significant downregulation of PSII reaction-center proteins (psbA, psbD, ftsH2) — the molecular signature of photosystem disassembly. Concurrently the N-starvation axis is engaged at both omics throughout the sampled timepoints (axis_score +0.93 to +1.71 in proteomics, p_bh 0.003-0.041; +1.45 at the single RNA timepoint, p_bh = 0.009). The cell-death/late-stationary axis is engaged at the RNA level (axis_score +1.51 at day 14, p_bh = 0.029) but proteomic cell-death scores decline over time, plausibly because the cell-death markers themselves degrade in failing cells.
+
+Within coculture, the N-starvation axis tells a more nuanced story than axenic does. The five canonical N-stress positives (ntcA, glnA, amt1, glnB, urtA) are *strongly upregulated at the protein level* across all 4 sampled timepoints (axis_score +2.49 to +2.79; all p_bh ≈ 0.0007), the highest sustained engagement of any axis in any condition in the analysis. But the *same five genes* are *significantly downregulated at the RNA level* across the same timepoints (axis_score −1.07 to −1.76; p_bh 0.015-0.047 in the negative direction at 3 of 4 TPs). This RNA/protein decoupling is the most informative finding of the analysis: coculture cells reduce *transcription* of the N-scavenging machinery while maintaining the N-scavenging *proteome*. The most parsimonious interpretation is **homeostatic relief at the transcriptional level** — Alteromonas-supplied bioavailable N (per the published nitrogen-recycling mechanism) reduces the demand for *more* N-scavenging proteins while the existing proteome, synthesized under the early N-starvation stimulus, remains stable and functional. The protein-side axis is engaged because the cells maintain N-scavenging capacity; the RNA-side axis is *anti*-engaged because the cells no longer need to make more.
+
+The photosynthetic axis is also engaged in coculture-proteomics (peak axis_score +2.14 at day 31, p_bh = 0.003), though at lower magnitude than axenic, and the coculture-RNA photo axis stays approximately null with one cell trending slightly negative at day 89 — coculture cells appear to preserve photosynthetic capacity even at 90 days. The proteotoxic axis is essentially null across all 12 cells (1 of 12 transient-significant); the oxidative axis is null in all 12 cells.
+
+### How this maps onto the published nitrogen-recycling mechanism
+
+The published narrative — that *Alteromonas* recycles organic N to bioavailable NH₄⁺ for *Prochlorococcus*, enabling 90+ day survival — predicts that coculture cells should be *less* N-stressed than axenic cells over time. Our analysis adds quantitative texture to that picture: coculture cells are *not* N-stress-free; rather, their N-scavenging proteome remains highly engaged (more so than axenic, in fact, because axenic distinctiveness drops at death phase as the entire proteome enters flux). The novel observation is that coculture cells appear to have *exited the transcriptional N-stress response* even while maintaining the corresponding proteome — consistent with the heterotroph providing *enough* N to relieve the transcriptional drive without enough N to dismantle the existing scavenging machinery. This is exactly the kind of "transcription off, protein on" pattern that multi-omics analysis is uniquely positioned to detect.
+
+The accelerating PSII disassembly in axenic at death phase (photo axis_score doubling between day 14 and day 31) is consistent with the published axenic-collapse narrative and adds a quantitative timing anchor: photosystem disassembly does not increase smoothly with N-deprivation duration; it accelerates abruptly at the nutrient_limited → death transition. This may be a biomarker for the irreversible commitment to cell death.
+
+### What the analysis cannot conclude
+
+The intracellular oxidative-defense response is null across all conditions, all TPs, both omics, both panel kinds. We do *not* read this as "no oxidative stress occurs." *Prochlorococcus* MED4 lacks catalase and depends on extracellular / heterotroph-mediated peroxiredoxin activity for ROS detoxification (Black Queen Hypothesis). The intracellular transcript / protein readout of canonical oxidative-defense genes is therefore an insensitive assay for the relevant biology, and a null result here is a calibrated null, not a biological denial. Direct measurement of extracellular H₂O₂ kinetics — which is not in the KG — would be needed to test the oxidative-stress component of the Black Queen Hypothesis.
+
+The proteomic cell-death axis declines over time in both conditions, opposite to its RNA-side engagement. We tentatively attribute this to degradation of cell-death-marker proteins themselves in dying cells, but cannot confirm without orthogonal data (e.g., viability counts at each TP, absolute protein quantification with internal standards). The cell-death axis is the only axis where RNA and protein read in opposite directions in our data.
+
+Calendar-shared timepoints across conditions (day 31, day 89 in proteomics) are not physiologically comparable: axenic is in death phase by day 31 while coculture is still nutrient_limited. Cross-condition statistical contrast at matched calendar days would conflate "stress mitigation" with "different physiological states at the same calendar day." The analysis is therefore strictly within-condition; cross-condition reading is by trajectory shape and inspection only.
+
+The per-gene direction calibration (psbA = -1, lrtA = -1, isiB = -1, etc.) is dataset-specific. lrtA going DOWN under N-starvation here may not generalize to other studies; another study (different *Pro* strain, different stressor) might invalidate the per-gene signs. The signed-Z methodology generalizes; the calibration table does not.
+
+### Future work
+
+The most natural next step is a **methodology-generalization analysis**: compute these axis_scores across all MED4 experiments in the KG (~30-50 experiments after filtering to those with ≥100 quantified genes) using the same Weissberg-2025-calibrated direction map. This would (a) ground our specific axis_scores against the broader landscape of MED4 stress responses in the KG; (b) test whether the direction calibration we derived generalizes across other stress types; (c) identify which axes are detectors-of-which-stress in a hypothesis-free way (e.g., "do oxidative-stress experiments engage our oxidative axis? do phage-challenge experiments engage proteotoxic?"). The compute is trivial (~3 minutes per experiment) and the data retrieval is bounded; the dev work is moderate (~2 hours) and primarily concerns experiment-metadata aware visualization. We propose this as a separate follow-up analysis under its own slug; it is not required to answer the current locked question but would significantly strengthen any publication-level claim that "this scoring methodology is the right way to detect stress in MED4 multi-omics data."
+
+A second line of follow-up is **direct extracellular-ROS measurements** to test the oxidative-stress component of the Black Queen Hypothesis. The current null result for the oxidative axis is calibrated rather than biological; closing that loop requires data not in the KG.
+
+A third line is **a cross-condition contrast analysis at the *one* physiologically-matched timepoint that may be feasible** — day 14-18 in nutrient_limited phase before axenic enters death — restricted to proteomics where both conditions sampled there. This would address F1's "no cross-condition contrast" limitation in the most defensible way and could be designed as a single follow-up question.
+
+### Summary
+
+The analysis answers the locked question with a multi-axis, multi-omics, statistically-defensible profile per condition. The central new finding is the **transcription-off / protein-on pattern in coculture for the N-starvation axis** — a homeostatic relief signature that is consistent with the published nitrogen-recycling mechanism and would be invisible to a single-omics analysis. The methodology, calibrated and tested in this analysis, is positioned for further use across the MED4 KG.
 
 ## References
 

@@ -1,0 +1,59 @@
+Permutation test: K = 10000, seed = 42
+Scoring 108 cells
+  loaded genome DE for proteomics_coculture: 5696 rows
+  loaded genome DE for proteomics_axenic: 4272 rows
+  loaded genome DE for rnaseq_coculture: 7396 rows
+  loaded genome DE for rnaseq_axenic: 1849 rows
+  [10/108] elapsed 17.3s — last: n_stress cyanorak proteomics_coculture tp=day 60 → p=0.0001
+  [20/108] elapsed 32.2s — last: oxidative cyanorak proteomics_coculture tp=day 18 → p=0.2138
+  [30/108] elapsed 47.0s — last: proteotoxic positive proteomics_coculture tp=day 60 → p=0.2769
+  [40/108] elapsed 63.1s — last: n_stress positive proteomics_axenic tp=day 89 → p=0.0107
+  [50/108] elapsed 80.5s — last: oxidative cyanorak proteomics_axenic tp=day 31 → p=0.4820
+  [60/108] elapsed 98.0s — last: proteotoxic positive proteomics_axenic tp=day 14 → p=0.4628
+  [70/108] elapsed 115.6s — last: n_stress positive rnaseq_coculture tp=day 60 → p=0.0001
+  [80/108] elapsed 133.4s — last: oxidative cyanorak rnaseq_coculture tp=day 31 → p=0.4604
+  [90/108] elapsed 151.2s — last: photo cyanorak rnaseq_coculture tp=day 60 → p=0.0005
+  [100/108] elapsed 168.9s — last: cell_death positive rnaseq_axenic tp=day 14 → p=0.0071
+  [108/108] elapsed 183.1s — last: proteotoxic cyanorak rnaseq_axenic tp=day 14 → p=0.1120
+
+Wrote 108 rows to /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/6_evaluate/data/permutation_pvalues.csv
+
+Summary (p_bh < 0.05):
+  35/108 cells significant after BH-FDR correction
+  n_stress     positive   proteomics_coculture      tp=day 89       z=+2.49  p_bh=0.0007199
+  n_stress     positive   rnaseq_coculture          tp=day 60       z=-1.76  p_bh=0.0007199
+  photo        cyanorak   proteomics_axenic         tp=day 31       z=+1.42  p_bh=0.0007199
+  photo        cyanorak   proteomics_axenic         tp=day 89       z=+0.80  p_bh=0.0007199
+  photo        positive   proteomics_axenic         tp=day 31       z=+3.15  p_bh=0.0007199
+  n_stress     cyanorak   proteomics_axenic         tp=day 14       z=+0.93  p_bh=0.0007199
+  photo        cyanorak   proteomics_coculture      tp=day 31       z=+0.79  p_bh=0.0007199
+  photo        cyanorak   rnaseq_axenic             tp=day 14       z=+1.13  p_bh=0.0007199
+  n_stress     cyanorak   proteomics_coculture      tp=day 89       z=+1.41  p_bh=0.0007199
+  n_stress     cyanorak   proteomics_coculture      tp=day 31       z=+1.91  p_bh=0.0007199
+  n_stress     positive   proteomics_coculture      tp=day 60       z=+2.76  p_bh=0.0007199
+  n_stress     positive   proteomics_coculture      tp=day 31       z=+2.66  p_bh=0.0007199
+  n_stress     cyanorak   proteomics_coculture      tp=day 60       z=+1.56  p_bh=0.0007199
+  n_stress     cyanorak   proteomics_coculture      tp=day 18       z=+2.05  p_bh=0.0007199
+  n_stress     positive   proteomics_coculture      tp=day 18       z=+2.79  p_bh=0.0007199
+  photo        positive   proteomics_axenic         tp=day 89       z=+2.27  p_bh=0.002025
+  n_stress     cyanorak   rnaseq_axenic             tp=day 14       z=+0.73  p_bh=0.002541
+  photo        positive   proteomics_coculture      tp=day 31       z=+2.14  p_bh=0.002842
+  photo        cyanorak   rnaseq_coculture          tp=day 60       z=+0.84  p_bh=0.002842
+  n_stress     positive   proteomics_axenic         tp=day 14       z=+1.71  p_bh=0.00324
+  n_stress     positive   rnaseq_axenic             tp=day 14       z=+1.45  p_bh=0.008742
+  n_stress     cyanorak   proteomics_axenic         tp=day 31       z=+0.53  p_bh=0.008835
+  n_stress     positive   rnaseq_coculture          tp=day 89       z=-1.25  p_bh=0.01502
+  n_stress     cyanorak   proteomics_axenic         tp=day 89       z=+0.47  p_bh=0.02475
+  proteotoxic  positive   rnaseq_coculture          tp=day 18       z=+1.25  p_bh=0.02937
+  cell_death   positive   rnaseq_axenic             tp=day 14       z=+1.51  p_bh=0.02949
+  n_stress     positive   rnaseq_coculture          tp=day 31       z=-1.07  p_bh=0.03168
+  photo        cyanorak   proteomics_coculture      tp=day 89       z=+0.31  p_bh=0.03168
+  photo        positive   proteomics_coculture      tp=day 60       z=+1.07  p_bh=0.03168
+  photo        positive   proteomics_coculture      tp=day 89       z=+1.15  p_bh=0.03168
+  photo        cyanorak   rnaseq_coculture          tp=day 18       z=+0.66  p_bh=0.03518
+  n_stress     positive   proteomics_axenic         tp=day 89       z=+1.01  p_bh=0.03611
+  photo        cyanorak   proteomics_coculture      tp=day 18       z=+0.45  p_bh=0.03992
+  n_stress     positive   proteomics_axenic         tp=day 31       z=+0.93  p_bh=0.04097
+  n_stress     cyanorak   rnaseq_coculture          tp=day 60       z=-0.40  p_bh=0.04752
+
+Total elapsed: 183.1s
