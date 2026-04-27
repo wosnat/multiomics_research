@@ -63,7 +63,41 @@ Driving-example application: N-stress axis × axenic-proteomics across 3 timepoi
 
 ## Results
 
-_Populated at end of step 5._
+We scored five stress axes — N-starvation, photosynthetic, proteotoxic, oxidative, late-stationary/cell-death — across all (axis × condition × omics × timepoint) cells defined by the four trajectory experiments and one single-point summary. Each cell was scored with the validated 3–5-gene **positive panel** (per-gene direction calibrated against the data) and, where available, with the broader **cyanorak hand-curated panel** (~21–31 genes per axis) as a sensitivity control. The two panels agree qualitatively across all engaged cells; the positive panel produces larger absolute scores because it concentrates strongly-responding genes, while the cyanorak panel is more conservative.
+
+### N-starvation: cross-omics divergence in coculture, condition-specific drop in axenic
+
+The N-starvation axis is the strongest signal in the analysis and reveals a clear cross-omics divergence in the coculture condition. At the protein level, the five validated N-stress positives (ntcA, glnA, amt1, glnB, urtA) are upregulated and stable across all 4 sampled TPs in coculture (axis_score +2.79 → +2.66 → +2.76 → +2.49 from day 18 to day 89). At the RNA level in the same condition, the same five genes are *downregulated* across all 4 TPs (axis_score −0.89 → −1.07 → −1.76 → −1.25; raw axis-mean signed log2FC −0.57 to −1.82). This is consistent with a "transcription off, protein still on" pattern: coculture cells reduce N-scavenging transcription — likely because Alteromonas-supplied N relieves the need to make more N-scavenging machinery — while the existing N-scavenging proteome remains engaged.
+
+In axenic, the same five genes are upregulated at both omics (axenic-RNA single point at +1.45; axenic-proteomics +1.71 → +0.93 → +1.01 across nutrient_limited day 14 → death day 31 → death day 89). The drop in axenic-proteomics axis_score from day 14 to day 31 reflects not a fading axis response (raw axis-mean signed log2FC stays around +1.16-1.35 throughout) but a widening genome-wide background SD (0.77 → 1.32) at death phase: the N-stress axis no longer stands out because the entire proteome is in flux.
+
+### Photosynthesis: PSII disassembly accelerates at axenic death phase
+
+The photo axis is bidirectional by construction: PSII reaction-center proteins (psbA, psbD, ftsH2) carry direction = -1 (DOWN under stress = engaged); high-light-inducible proteins (HLI; PMM1404, PMM0064) carry direction = +1 (UP under stress = engaged). The largest single-cell axis_score in the analysis is photo × axenic-proteomics × day 31 = **+3.15** (death phase), up from +1.17 at day 14 (nutrient_limited) — a near-tripling of the distinctiveness score concomitant with the physiological transition to death phase. Coculture-proteomics also rises (+1.07 → +2.14 at day 31) but plateaus at lower magnitude (+1.07 to +1.15 at later TPs). At the RNA level, axenic shows +0.86 at the single timepoint (day 14); coculture-RNA stays around +0.3 throughout and dips slightly negative at day 89 (−0.76), the only cell where the photo axis is in the un-engaged direction — consistent with coculture cells preserving photosynthetic capacity even at 90 days.
+
+### Cell-death/late-stationary: RNA-side engagement, protein-side fade
+
+The cell-death axis (spoT, lrtA, isiB; lrtA and isiB calibrated direction = -1 because they go DOWN under stress in this dataset) is engaged at the RNA level — axenic-RNA single-point score +1.51 is the strongest RNA-side signal of any axis × condition cell in the analysis. Coculture-RNA shows a milder but consistent positive signal across TPs (+0.83 to +1.24). In contrast, both proteomes show declining cell-death axis scores over time (axenic +0.87 → +0.55 → +0.48; coculture +1.10 → +0.48 across the 4 TPs). This is the only axis where RNA and protein read in opposite directions, plausibly because cell-death-marker proteins themselves degrade (or fall below MS detection) in cells that are dying.
+
+### Oxidative and proteotoxic: weakly engaged across all cells
+
+Both axes are weakly engaged across all 4 trajectory experiments × all TPs. Oxidative axis_scores stay between +0.19 and +0.63; no cell crosses any reasonable engagement threshold. Proteotoxic axis_scores stay between -0.13 and +1.25; the maximum is in axenic-RNA (single point), and even there the score is below z = +2. This is the calibrated sensitivity-limit prediction from step 3: *Prochlorococcus* MED4 lacks catalase and depends on heterotroph / extracellular ROS handling for oxidative stress relief (Black Queen Hypothesis), so the *intracellular* transcriptional / translational oxidative-defense response is a poor assay for "is *Prochlorococcus* oxidatively stressed in this dataset" regardless of condition. The proteotoxic axis is similarly muted — N-starvation does not appear to produce strong canonical chaperone-and-protease induction in this organism under these conditions.
+
+### Cross-omics concordance summary
+
+| Axis | Axenic (RNA vs Prot) | Coculture (RNA vs Prot) |
+|---|---|---|
+| N-starvation | concordant UP | **divergent** — RNA DOWN, Prot UP |
+| Photosynthesis | concordant UP at single-point and rising-prot | RNA flat / dipping negative late, Prot UP |
+| Cell-death | RNA strong UP, Prot declining | RNA modest UP, Prot declining |
+| Proteotoxic | concordant low | concordant low |
+| Oxidative | concordant null | concordant null |
+
+The most informative cross-omics signal is the N-starvation × coculture divergence, which is precisely the cell where the multi-omics framing of the underlying paper is most relevant.
+
+### Headline figure
+
+The headline figure is `5_analyze/figures/trajectories_positive_panel.png` — a 5-axis × 2-omics grid showing axenic vs coculture trajectories per (axis, omics) cell, with axis_score on the y-axis and timepoint (days) on the x-axis. Companion figures: `..._raw.png` (axis-mean signed log2FC view), `..._cyanorak_panel.png` (broader gene-set sensitivity check), `panel_comparison.png` (positive-panel vs cyanorak-panel scatter).
 
 ## Discussion
 

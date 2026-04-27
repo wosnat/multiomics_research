@@ -94,3 +94,22 @@ To recover the per-TP phase (day 14 → nutrient_limited; day 31 → death; day 
 - *Methodology:* the cell-death axis cannot use a single canonical gene-set definition. It must rely on a small hand-picked set of starvation-response markers, and the axis label should be qualified ("late-stationary / starvation response") rather than promising programmed-cell-death-detection capability.
 - *Step 4 (methods):* gene-set definitions per axis should mix evidence sources transparently — cyanorak primary, GO BP supplementary, literature markers explicitly tagged. The mixture must be visible in any methods write-up.
 - *KG / annotation suggestion:* a future cyanorak update could populate `D.3` (Cell growth and death) with starvation/stationary-phase markers — even minimal coverage (spoT, lrtA, isiB and similar) would be enough for axis-level analyses to ground in a single ontology. Out of scope for this analysis.
+
+---
+
+## F5 — Step-3 heatmap reading error: "all UP" claim contradicted by data
+
+**Date:** 2026-04-27 (caught in step 5)
+
+**What happened.** Step 3's notebook described the step-3 control-validation heatmap with: *"All 5 N-stress positives are clearly UP across both omics in both conditions. Magnitudes biggest in axenic late TPs."* That description is wrong for **coculture-RNA**. Re-reading the underlying `3_analysis_framing/data/control_de_long.csv` directly: in the coculture-RNA experiment, glnB at day 89 has log2FC = -2.58 (significant_down); ntcA at day 89 = -2.08 (significant_down); glnA at day 60 = -2.17 (significant_down). The 5 N-stress positives are systematically **DOWN** in coculture-RNA across all 4 TPs (day 18, 31, 60, 89). The step-3 narrative anchored on the strongest cells (axenic-Prot death-phase) and missed the muted-but-systematic cocult-RNA negative pattern.
+
+This was caught in step 5 only because the score-based view computes a quantitative `axis_mean_signed_lfc` per cell, which immediately surfaced the negative values for cocult-RNA n_stress (-1.18 at day 31, -1.82 at day 60, etc.).
+
+**Workaround / correction.** Step 5's notebook now reports the cocult-RNA n_stress DOWN-regulation as a **central finding** (transcriptional relief in coculture: cells reduce N-scavenging transcription while the proteome stays engaged, consistent with Alteromonas-supplied N relieving the need to make more N-scavenging proteins). The step-3 claim "all UP" remains in step 3's notebook as an artifact of how the analysis evolved — fixing it retroactively would erase the methodology learning. Instead, this entry plus the step 5 notebook serve as the corrective record.
+
+**Methodology lesson for future analyses.** Heatmap reads are easy to anchor on the strongest cells and miss the muted-but-systematic ones. **Step-3 control validation should include a per-(omics × condition) summary table of axis-mean log2FC alongside the per-gene heatmap.** A two-line table per axis showing per-condition-per-omics direction would have surfaced the cocult-RNA negative pattern at step 3 close instead of step 5. Recommend adopting this for future analyses.
+
+**Downstream impact.**
+- *Step 5:* turned what could have been a rote "apply scoring across all cells" into a major-finding-discovery step. Net positive.
+- *Step 3 retrofit:* not retrofitted. The narrative-overwrite anti-pattern (overwriting step-3 retroactively) would erase the methodology lesson. Step 3's narrative stands; this entry + step 5's notebook hold the corrected reading.
+- *General:* the validation-summary numerical table proposal will be adopted for future step-3 work.

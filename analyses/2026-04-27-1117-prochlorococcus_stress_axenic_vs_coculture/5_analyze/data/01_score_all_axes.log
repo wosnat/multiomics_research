@@ -1,0 +1,80 @@
+Positive panel (step 3): 23 genes across 5 axes
+  positive[cell_death  ] n=3: ['PMM0191', 'PMM0400', 'PMM1171']
+  positive[n_stress    ] n=5: ['PMM0246', 'PMM0920', 'PMM0263', 'PMM1463', 'PMM0970']
+  positive[oxidative   ] n=5: ['PMM1294', 'PMM0856', 'PMM0079', 'PMM1061', 'PMM0567']
+  positive[photo       ] n=5: ['PMM0223', 'PMM1157', 'PMM0743', 'PMM1404', 'PMM0064']
+  positive[proteotoxic ] n=5: ['PMM1436', 'PMM1432', 'PMM0901', 'PMM1657', 'PMM1437']
+  cyanorak[n_stress    ] n=28 (terms=['cyanorak.role:D.1.3', 'cyanorak.role:E.4'])
+  cyanorak[oxidative   ] n=25 (terms=['cyanorak.role:D.1.4'])
+  cyanorak[proteotoxic ] n=28 (terms=['cyanorak.role:L.3'])
+  cyanorak[photo       ] n=31 (terms=['cyanorak.role:J.8'])
+
+Wrote panel definitions to /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/5_analyze/data/panel_definitions.csv
+
+Scoring 4 experiments:
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture
+  - 10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture]
+  genome-wide rows: 7120 (truncated=False)
+  dropped 1424 pooled 'days 60+89' rows
+  wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/5_analyze/data/genome_de_proteomics_coculture.csv
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic]
+  genome-wide rows: 4272 (truncated=False)
+  wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/5_analyze/data/genome_de_proteomics_axenic.csv
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture]
+  genome-wide rows: 9245 (truncated=False)
+  dropped 1849 pooled 'days 60+89' rows
+  wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/5_analyze/data/genome_de_rnaseq_coculture.csv
+
+[10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic]
+  genome-wide rows: 1849 (truncated=False)
+  wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/5_analyze/data/genome_de_rnaseq_axenic.csv
+
+Wrote 108 score rows to /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-27-1117-prochlorococcus_stress_axenic_vs_coculture/5_analyze/data/all_axes_scores.csv
+  axes:        ['cell_death', 'n_stress', 'oxidative', 'photo', 'proteotoxic']
+  panel_kinds: ['cyanorak', 'positive']
+  conditions:  ['axenic', 'coculture']
+  omics:       ['PROTEOMICS', 'RNASEQ']
+
+Coverage (n_axis_with_data / n_axis_total) per (axis × panel × experiment_short × first-TP):
+  cell_death   positive   proteomics_axenic          3/ 3
+  cell_death   positive   proteomics_coculture       3/ 3
+  cell_death   positive   rnaseq_axenic              3/ 3
+  cell_death   positive   rnaseq_coculture           3/ 3
+  n_stress     cyanorak   proteomics_axenic         27/28
+  n_stress     cyanorak   proteomics_coculture      27/28
+  n_stress     cyanorak   rnaseq_axenic             28/28
+  n_stress     cyanorak   rnaseq_coculture          28/28
+  n_stress     positive   proteomics_axenic          5/ 5
+  n_stress     positive   proteomics_coculture       5/ 5
+  n_stress     positive   rnaseq_axenic              5/ 5
+  n_stress     positive   rnaseq_coculture           5/ 5
+  oxidative    cyanorak   proteomics_axenic         21/25
+  oxidative    cyanorak   proteomics_coculture      21/25
+  oxidative    cyanorak   rnaseq_axenic             25/25
+  oxidative    cyanorak   rnaseq_coculture          25/25
+  oxidative    positive   proteomics_axenic          5/ 5
+  oxidative    positive   proteomics_coculture       5/ 5
+  oxidative    positive   rnaseq_axenic              5/ 5
+  oxidative    positive   rnaseq_coculture           5/ 5
+  photo        cyanorak   proteomics_axenic         22/31
+  photo        cyanorak   proteomics_coculture      22/31
+  photo        cyanorak   rnaseq_axenic             30/31
+  photo        cyanorak   rnaseq_coculture          30/31
+  photo        positive   proteomics_axenic          3/ 5
+  photo        positive   proteomics_coculture       3/ 5
+  photo        positive   rnaseq_axenic              5/ 5
+  photo        positive   rnaseq_coculture           5/ 5
+  proteotoxic  cyanorak   proteomics_axenic         27/28
+  proteotoxic  cyanorak   proteomics_coculture      27/28
+  proteotoxic  cyanorak   rnaseq_axenic             28/28
+  proteotoxic  cyanorak   rnaseq_coculture          28/28
+  proteotoxic  positive   proteomics_axenic          5/ 5
+  proteotoxic  positive   proteomics_coculture       5/ 5
+  proteotoxic  positive   rnaseq_axenic              5/ 5
+  proteotoxic  positive   rnaseq_coculture           5/ 5
