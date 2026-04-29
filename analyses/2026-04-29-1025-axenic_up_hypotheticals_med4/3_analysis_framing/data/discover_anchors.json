@@ -1,0 +1,1516 @@
+{
+  "gene_overview": {
+    "total_matching": 3,
+    "by_organism": [
+      {
+        "organism_name": "Prochlorococcus MED4",
+        "count": 3
+      }
+    ],
+    "by_category": [
+      {
+        "category": "Unknown",
+        "count": 2
+      },
+      {
+        "category": "Stress response and adaptation",
+        "count": 1
+      }
+    ],
+    "by_annotation_type": [
+      {
+        "annotation_type": "pfam",
+        "count": 2
+      },
+      {
+        "annotation_type": "cog_category",
+        "count": 2
+      },
+      {
+        "annotation_type": "cyanorak_role",
+        "count": 2
+      },
+      {
+        "annotation_type": "tigr_role",
+        "count": 2
+      },
+      {
+        "annotation_type": "go_bp",
+        "count": 1
+      },
+      {
+        "annotation_type": "go_mf",
+        "count": 1
+      },
+      {
+        "annotation_type": "go_cc",
+        "count": 1
+      },
+      {
+        "annotation_type": "kegg",
+        "count": 1
+      },
+      {
+        "annotation_type": "brite",
+        "count": 1
+      }
+    ],
+    "has_expression": 3,
+    "has_significant_expression": 3,
+    "has_orthologs": 3,
+    "has_clusters": 3,
+    "has_derived_metrics": 1,
+    "not_found": [],
+    "returned": 3,
+    "offset": 0,
+    "truncated": false,
+    "results": [
+      {
+        "locus_tag": "PMM0246",
+        "gene_name": "ntcA",
+        "product": "global nitrogen regulatory protein",
+        "gene_category": "Stress response and adaptation",
+        "annotation_quality": 3,
+        "organism_name": "Prochlorococcus MED4",
+        "annotation_types": [
+          "go_bp",
+          "go_mf",
+          "go_cc",
+          "pfam",
+          "cog_category",
+          "kegg",
+          "brite",
+          "cyanorak_role",
+          "tigr_role"
+        ],
+        "expression_edge_count": 27,
+        "significant_up_count": 14,
+        "significant_down_count": 3,
+        "closest_ortholog_group_size": 13,
+        "closest_ortholog_genera": [
+          "Prochlorococcus",
+          "Synechococcus"
+        ],
+        "cluster_membership_count": 3,
+        "cluster_types": [
+          "condition_comparison",
+          "diel",
+          "time_course"
+        ],
+        "numeric_metric_count": 0,
+        "boolean_metric_count": 0,
+        "categorical_metric_count": 0,
+        "gene_summary": "ntcA :: global nitrogen regulatory protein :: Required for full expression of proteins subject to ammonium repression. Transcriptional activator of genes subject to nitrogen control",
+        "function_description": "Required for full expression of proteins subject to ammonium repression. Transcriptional activator of genes subject to nitrogen control",
+        "all_identifiers": [
+          "CK_Pro_MED4_00246",
+          "Q7TUG3",
+          "TX50_RS01275",
+          "WP_011131884.1"
+        ],
+        "numeric_metric_types_observed": [],
+        "boolean_metric_types_observed": [],
+        "categorical_metric_types_observed": [],
+        "compartments_observed": [],
+        "derived_metric_count": 0,
+        "derived_metric_value_kinds": []
+      },
+      {
+        "locus_tag": "PMM0958",
+        "gene_name": null,
+        "product": "conserved hypothetical protein (DUF1830)",
+        "gene_category": "Unknown",
+        "annotation_quality": 1,
+        "organism_name": "Prochlorococcus MED4",
+        "annotation_types": [
+          "pfam",
+          "cog_category",
+          "cyanorak_role",
+          "tigr_role"
+        ],
+        "expression_edge_count": 31,
+        "significant_up_count": 17,
+        "significant_down_count": 2,
+        "closest_ortholog_group_size": 11,
+        "closest_ortholog_genera": [
+          "Prochlorococcus",
+          "Synechococcus"
+        ],
+        "cluster_membership_count": 3,
+        "cluster_types": [
+          "condition_comparison",
+          "diel",
+          "time_course"
+        ],
+        "numeric_metric_count": 1,
+        "boolean_metric_count": 0,
+        "categorical_metric_count": 0,
+        "gene_summary": "conserved hypothetical protein (DUF1830) :: Alternative locus ID",
+        "function_description": "Alternative locus ID",
+        "all_identifiers": [
+          "CK_Pro_MED4_00958",
+          "Q7V1C1",
+          "TX50_RS05100",
+          "WP_011132591.1"
+        ],
+        "numeric_metric_types_observed": [
+          "vesicle_dna_avg_read_coverage"
+        ],
+        "boolean_metric_types_observed": [],
+        "categorical_metric_types_observed": [],
+        "compartments_observed": [
+          "vesicle"
+        ],
+        "derived_metric_count": 1,
+        "derived_metric_value_kinds": [
+          "numeric"
+        ]
+      },
+      {
+        "locus_tag": "PMM1898",
+        "gene_name": null,
+        "product": "Conserved hypothetical protein",
+        "gene_category": "Unknown",
+        "annotation_quality": 0,
+        "organism_name": "Prochlorococcus MED4",
+        "annotation_types": [],
+        "expression_edge_count": 7,
+        "significant_up_count": 2,
+        "significant_down_count": 1,
+        "closest_ortholog_group_size": 1,
+        "closest_ortholog_genera": [
+          "Prochlorococcus"
+        ],
+        "cluster_membership_count": 1,
+        "cluster_types": [
+          "condition_comparison"
+        ],
+        "numeric_metric_count": 0,
+        "boolean_metric_count": 0,
+        "categorical_metric_count": 0,
+        "gene_summary": "Conserved hypothetical protein :: -",
+        "function_description": null,
+        "all_identifiers": [
+          "A8WIB7",
+          "CK_Pro_MED4_01898",
+          "TX50_RS09660",
+          "WP_173027985.1"
+        ],
+        "numeric_metric_types_observed": [],
+        "boolean_metric_types_observed": [],
+        "categorical_metric_types_observed": [],
+        "compartments_observed": [],
+        "derived_metric_count": 0,
+        "derived_metric_value_kinds": []
+      }
+    ]
+  },
+  "gene_ontology_terms": {
+    "total_matching": 20,
+    "total_genes": 2,
+    "total_terms": 20,
+    "by_ontology": [
+      {
+        "ontology_type": "cyanorak_role",
+        "term_count": 4,
+        "gene_count": 2
+      },
+      {
+        "ontology_type": "go_mf",
+        "term_count": 3,
+        "gene_count": 1
+      },
+      {
+        "ontology_type": "pfam",
+        "term_count": 3,
+        "gene_count": 2
+      },
+      {
+        "ontology_type": "cog_category",
+        "term_count": 2,
+        "gene_count": 2
+      },
+      {
+        "ontology_type": "go_bp",
+        "term_count": 2,
+        "gene_count": 1
+      },
+      {
+        "ontology_type": "go_cc",
+        "term_count": 2,
+        "gene_count": 1
+      },
+      {
+        "ontology_type": "tigr_role",
+        "term_count": 2,
+        "gene_count": 2
+      },
+      {
+        "ontology_type": "brite",
+        "term_count": 1,
+        "gene_count": 1
+      },
+      {
+        "ontology_type": "kegg",
+        "term_count": 1,
+        "gene_count": 1
+      }
+    ],
+    "by_term": [
+      {
+        "term_id": "kegg.brite:ko03000.A2.B1.C13",
+        "term_name": "CRP/FNR family",
+        "level": 2,
+        "count": 1,
+        "tree": "transcription_factors",
+        "tree_code": "ko03000",
+        "ontology_type": "brite"
+      },
+      {
+        "term_id": "cog.category:K",
+        "term_name": "Transcription",
+        "level": 0,
+        "count": 1,
+        "ontology_type": "cog_category"
+      },
+      {
+        "term_id": "cog.category:S",
+        "term_name": "Function unknown",
+        "level": 0,
+        "count": 1,
+        "ontology_type": "cog_category"
+      },
+      {
+        "term_id": "cyanorak.role:N.5",
+        "term_name": "Regulatory functions > Other",
+        "level": 1,
+        "count": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "term_id": "cyanorak.role:E.4",
+        "term_name": "Central intermediary metabolism > Nitrogen metabolism",
+        "level": 1,
+        "count": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "term_id": "cyanorak.role:D.1.3",
+        "term_name": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen",
+        "level": 2,
+        "count": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "term_id": "cyanorak.role:R.2",
+        "term_name": "Other > Conserved hypothetical proteins",
+        "level": 1,
+        "count": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "term_id": "go:0006808",
+        "term_name": "regulation of nitrogen utilization",
+        "level": 5,
+        "count": 1,
+        "ontology_type": "go_bp"
+      },
+      {
+        "term_id": "go:0006355",
+        "term_name": "regulation of DNA-templated transcription",
+        "level": 8,
+        "count": 1,
+        "ontology_type": "go_bp"
+      },
+      {
+        "term_id": "go:0032993",
+        "term_name": "protein-DNA complex",
+        "level": 2,
+        "count": 1,
+        "ontology_type": "go_cc"
+      },
+      {
+        "term_id": "go:0005829",
+        "term_name": "cytosol",
+        "level": 2,
+        "count": 1,
+        "ontology_type": "go_cc"
+      },
+      {
+        "term_id": "go:1901363",
+        "term_name": "heterocyclic compound binding",
+        "level": 3,
+        "count": 1,
+        "ontology_type": "go_mf"
+      },
+      {
+        "term_id": "go:0043565",
+        "term_name": "sequence-specific DNA binding",
+        "level": 4,
+        "count": 1,
+        "ontology_type": "go_mf"
+      },
+      {
+        "term_id": "go:0003700",
+        "term_name": "DNA-binding transcription factor activity",
+        "level": 2,
+        "count": 1,
+        "ontology_type": "go_mf"
+      },
+      {
+        "term_id": "kegg.orthology:K21561",
+        "term_name": "ntcA; CRP/FNR family transcriptional regulator, global nitrogen regulator",
+        "level": 3,
+        "count": 1,
+        "ontology_type": "kegg"
+      },
+      {
+        "term_id": "pfam:PF00027",
+        "term_name": "Cyclic nucleotide-binding domain",
+        "level": 1,
+        "count": 1,
+        "ontology_type": "pfam"
+      },
+      {
+        "term_id": "pfam:PF13545",
+        "term_name": "Crp-like helix-turn-helix domain",
+        "level": 1,
+        "count": 1,
+        "ontology_type": "pfam"
+      },
+      {
+        "term_id": "pfam:PF08865",
+        "term_name": "Domain of unknown function (DUF1830)",
+        "level": 1,
+        "count": 1,
+        "ontology_type": "pfam"
+      },
+      {
+        "term_id": "tigr.role:129",
+        "term_name": "Regulatory functions / Other",
+        "level": 0,
+        "count": 1,
+        "ontology_type": "tigr_role"
+      },
+      {
+        "term_id": "tigr.role:156",
+        "term_name": "Hypothetical proteins / Conserved",
+        "level": 0,
+        "count": 1,
+        "ontology_type": "tigr_role"
+      }
+    ],
+    "terms_per_gene_min": 4,
+    "terms_per_gene_max": 16,
+    "terms_per_gene_median": 10.0,
+    "returned": 20,
+    "offset": 0,
+    "truncated": false,
+    "not_found": [],
+    "no_terms": [
+      "PMM1898"
+    ],
+    "results": [
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "cog.category:K",
+        "term_name": "Transcription",
+        "level": 0,
+        "ontology_type": "cog_category"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "cyanorak.role:D.1.3",
+        "term_name": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen",
+        "level": 2,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "cyanorak.role:E.4",
+        "term_name": "Central intermediary metabolism > Nitrogen metabolism",
+        "level": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "cyanorak.role:N.5",
+        "term_name": "Regulatory functions > Other",
+        "level": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:0003700",
+        "term_name": "DNA-binding transcription factor activity",
+        "level": 2,
+        "ontology_type": "go_mf"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:0005829",
+        "term_name": "cytosol",
+        "level": 2,
+        "ontology_type": "go_cc"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:0006355",
+        "term_name": "regulation of DNA-templated transcription",
+        "level": 8,
+        "ontology_type": "go_bp"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:0006808",
+        "term_name": "regulation of nitrogen utilization",
+        "level": 5,
+        "ontology_type": "go_bp"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:0032993",
+        "term_name": "protein-DNA complex",
+        "level": 2,
+        "ontology_type": "go_cc"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:0043565",
+        "term_name": "sequence-specific DNA binding",
+        "level": 4,
+        "ontology_type": "go_mf"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "go:1901363",
+        "term_name": "heterocyclic compound binding",
+        "level": 3,
+        "ontology_type": "go_mf"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "kegg.brite:ko03000.A2.B1.C13",
+        "term_name": "CRP/FNR family",
+        "level": 2,
+        "tree": "transcription_factors",
+        "tree_code": "ko03000",
+        "ontology_type": "brite"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "kegg.orthology:K21561",
+        "term_name": "ntcA; CRP/FNR family transcriptional regulator, global nitrogen regulator",
+        "level": 3,
+        "ontology_type": "kegg"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "pfam:PF00027",
+        "term_name": "Cyclic nucleotide-binding domain",
+        "level": 1,
+        "ontology_type": "pfam"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "pfam:PF13545",
+        "term_name": "Crp-like helix-turn-helix domain",
+        "level": 1,
+        "ontology_type": "pfam"
+      },
+      {
+        "locus_tag": "PMM0246",
+        "term_id": "tigr.role:129",
+        "term_name": "Regulatory functions / Other",
+        "level": 0,
+        "ontology_type": "tigr_role"
+      },
+      {
+        "locus_tag": "PMM0958",
+        "term_id": "cog.category:S",
+        "term_name": "Function unknown",
+        "level": 0,
+        "ontology_type": "cog_category"
+      },
+      {
+        "locus_tag": "PMM0958",
+        "term_id": "cyanorak.role:R.2",
+        "term_name": "Other > Conserved hypothetical proteins",
+        "level": 1,
+        "ontology_type": "cyanorak_role"
+      },
+      {
+        "locus_tag": "PMM0958",
+        "term_id": "pfam:PF08865",
+        "term_name": "Domain of unknown function (DUF1830)",
+        "level": 1,
+        "ontology_type": "pfam"
+      },
+      {
+        "locus_tag": "PMM0958",
+        "term_id": "tigr.role:156",
+        "term_name": "Hypothetical proteins / Conserved",
+        "level": 0,
+        "ontology_type": "tigr_role"
+      }
+    ]
+  },
+  "gene_clusters_by_gene": {
+    "total_matching": 7,
+    "total_clusters": 4,
+    "genes_with_clusters": 3,
+    "genes_without_clusters": 0,
+    "not_found": [],
+    "not_matched": [],
+    "by_cluster_type": [
+      {
+        "cluster_type": "condition_comparison",
+        "count": 3
+      },
+      {
+        "cluster_type": "diel",
+        "count": 2
+      },
+      {
+        "cluster_type": "time_course",
+        "count": 2
+      }
+    ],
+    "by_treatment_type": [
+      {
+        "treatment_type": "growth_phase",
+        "count": 3
+      },
+      {
+        "treatment_type": "diel",
+        "count": 2
+      },
+      {
+        "treatment_type": "nitrogen",
+        "count": 2
+      }
+    ],
+    "by_background_factors": [
+      {
+        "background_factor": "axenic",
+        "count": 7
+      },
+      {
+        "background_factor": "light",
+        "count": 5
+      },
+      {
+        "background_factor": "diel",
+        "count": 2
+      }
+    ],
+    "by_analysis": [
+      {
+        "analysis_id": "clustering_analysis:1471-2180-14-11:med4_expression_level",
+        "count": 3
+      },
+      {
+        "analysis_id": "clustering_analysis:journal.pone.0005135:med4_diel_clusters",
+        "count": 2
+      },
+      {
+        "analysis_id": "clustering_analysis:msb4100087:med4_kmeans_nstarvation",
+        "count": 2
+      }
+    ],
+    "returned": 7,
+    "offset": 0,
+    "truncated": false,
+    "results": [
+      {
+        "locus_tag": "PMM0246",
+        "gene_name": "ntcA",
+        "cluster_id": "cluster:1471-2180-14-11:med4_expression_level:VEG",
+        "cluster_name": "Prochlorococcus MED4 cluster VEG (variably expressed)",
+        "cluster_type": "condition_comparison",
+        "membership_score": null,
+        "analysis_id": "clustering_analysis:1471-2180-14-11:med4_expression_level",
+        "analysis_name": "MED4 gene expression level classification",
+        "treatment_type": [
+          "growth_phase"
+        ],
+        "background_factors": [
+          "axenic",
+          "light"
+        ],
+        "cluster_method": "Quartile-based classification from RNA-seq RPKM across 10 growth conditions",
+        "member_count": 1073,
+        "cluster_functional_description": "N/A",
+        "cluster_expression_dynamics": "N/A",
+        "cluster_temporal_pattern": "N/A",
+        "treatment": "Steady-state expression level classification across multiple growth conditions",
+        "light_condition": "continuous light (28 umol quanta m-2 s-1)",
+        "experimental_context": "Classification of all MED4 CDS genes by expression level from RNA-seq across 10 samples (Pro99 and AMP media, exponential and log-phase). RPKM quartiles used to assign: VEG = very highly expressed (top quartile), HEG = highly expressed, MEG = moderately expressed, LEG = lowly expressed, NEG = not expressed, -- = unclassified. 21C, continuous light at 28 umol quanta m-2 s-1.",
+        "p_value": null
+      },
+      {
+        "locus_tag": "PMM0246",
+        "gene_name": "ntcA",
+        "cluster_id": "cluster:journal.pone.0005135:med4_diel_clusters:18",
+        "cluster_name": "Prochlorococcus cluster 18 (menaquinone and ubiquinone)",
+        "cluster_type": "diel",
+        "membership_score": 1.0,
+        "analysis_id": "clustering_analysis:journal.pone.0005135:med4_diel_clusters",
+        "analysis_name": "MED4 diel cycling expression clusters",
+        "treatment_type": [
+          "diel"
+        ],
+        "background_factors": [
+          "axenic",
+          "diel"
+        ],
+        "cluster_method": "Soft clustering (Mfuzz, c=16, m=1.25)",
+        "member_count": 180,
+        "cluster_functional_description": "Enriched for menaquinone and ubiquinone genes (6/9 genes, p=0.00045).",
+        "cluster_expression_dynamics": "N/A",
+        "cluster_temporal_pattern": "Non-expressed gene cluster per Table 1 classification.",
+        "treatment": "Simulated diel light-dark cycle (14h light : 10h dark) over 48 hours",
+        "light_condition": "14:10 light:dark cycle",
+        "experimental_context": "Axenic Prochlorococcus MED4 in Sargasso Seawater-based Pro99 medium (10 mM HEPES pH 7.5) at 24C; 14:10 L:D cycle with gradual dawn/dusk transitions; max PAR ~232 umol quanta m-2 s-1; custom Affymetrix MD4-9313 GeneChip; 50 timepoints at 2h intervals over 48h; duplicate cultures sampled alternately; RMA-normalized; Fourier analysis (FDR<0.10) for periodicity; soft clustering via Mfuzz (c=16, m=1.25)",
+        "p_value": null
+      },
+      {
+        "locus_tag": "PMM0246",
+        "gene_name": "ntcA",
+        "cluster_id": "cluster:msb4100087:med4_kmeans_nstarvation:2",
+        "cluster_name": "Prochlorococcus MED4 cluster 2 (16 genes)",
+        "cluster_type": "time_course",
+        "membership_score": null,
+        "analysis_id": "clustering_analysis:msb4100087:med4_kmeans_nstarvation",
+        "analysis_name": "MED4 K-means N-starvation clusters",
+        "treatment_type": [
+          "nitrogen"
+        ],
+        "background_factors": [
+          "axenic",
+          "light"
+        ],
+        "cluster_method": "K-means (K=9)",
+        "member_count": 16,
+        "cluster_functional_description": "Contains the rapidly-responding subset of hli genes (including hli10) and ntcA. The most highly upregulated hli genes have the strongest NtcA binding sites.",
+        "cluster_expression_dynamics": "early transient",
+        "cluster_temporal_pattern": "Rapidly and highly upregulated early in nitrogen starvation, representing the fast-responding hli subset distinct from the later-responding hli genes in cluster 3.",
+        "treatment": "N-starvation time course (0, 3, 6, 12, 24, 48h)",
+        "light_condition": "continuous light",
+        "experimental_context": "Custom Affymetrix microarray MD4-9313; MED4 cells in Pro99 medium under continuous light (27 \u00b5mol photons m-2 s-1, 24\u00b0C); sampled at 0, 3, 6, 12, 24, 48h post N-deprivation",
+        "p_value": null
+      },
+      {
+        "locus_tag": "PMM0958",
+        "gene_name": null,
+        "cluster_id": "cluster:1471-2180-14-11:med4_expression_level:VEG",
+        "cluster_name": "Prochlorococcus MED4 cluster VEG (variably expressed)",
+        "cluster_type": "condition_comparison",
+        "membership_score": null,
+        "analysis_id": "clustering_analysis:1471-2180-14-11:med4_expression_level",
+        "analysis_name": "MED4 gene expression level classification",
+        "treatment_type": [
+          "growth_phase"
+        ],
+        "background_factors": [
+          "axenic",
+          "light"
+        ],
+        "cluster_method": "Quartile-based classification from RNA-seq RPKM across 10 growth conditions",
+        "member_count": 1073,
+        "cluster_functional_description": "N/A",
+        "cluster_expression_dynamics": "N/A",
+        "cluster_temporal_pattern": "N/A",
+        "treatment": "Steady-state expression level classification across multiple growth conditions",
+        "light_condition": "continuous light (28 umol quanta m-2 s-1)",
+        "experimental_context": "Classification of all MED4 CDS genes by expression level from RNA-seq across 10 samples (Pro99 and AMP media, exponential and log-phase). RPKM quartiles used to assign: VEG = very highly expressed (top quartile), HEG = highly expressed, MEG = moderately expressed, LEG = lowly expressed, NEG = not expressed, -- = unclassified. 21C, continuous light at 28 umol quanta m-2 s-1.",
+        "p_value": null
+      },
+      {
+        "locus_tag": "PMM0958",
+        "gene_name": null,
+        "cluster_id": "cluster:journal.pone.0005135:med4_diel_clusters:18",
+        "cluster_name": "Prochlorococcus cluster 18 (menaquinone and ubiquinone)",
+        "cluster_type": "diel",
+        "membership_score": 1.0,
+        "analysis_id": "clustering_analysis:journal.pone.0005135:med4_diel_clusters",
+        "analysis_name": "MED4 diel cycling expression clusters",
+        "treatment_type": [
+          "diel"
+        ],
+        "background_factors": [
+          "axenic",
+          "diel"
+        ],
+        "cluster_method": "Soft clustering (Mfuzz, c=16, m=1.25)",
+        "member_count": 180,
+        "cluster_functional_description": "Enriched for menaquinone and ubiquinone genes (6/9 genes, p=0.00045).",
+        "cluster_expression_dynamics": "N/A",
+        "cluster_temporal_pattern": "Non-expressed gene cluster per Table 1 classification.",
+        "treatment": "Simulated diel light-dark cycle (14h light : 10h dark) over 48 hours",
+        "light_condition": "14:10 light:dark cycle",
+        "experimental_context": "Axenic Prochlorococcus MED4 in Sargasso Seawater-based Pro99 medium (10 mM HEPES pH 7.5) at 24C; 14:10 L:D cycle with gradual dawn/dusk transitions; max PAR ~232 umol quanta m-2 s-1; custom Affymetrix MD4-9313 GeneChip; 50 timepoints at 2h intervals over 48h; duplicate cultures sampled alternately; RMA-normalized; Fourier analysis (FDR<0.10) for periodicity; soft clustering via Mfuzz (c=16, m=1.25)",
+        "p_value": null
+      },
+      {
+        "locus_tag": "PMM0958",
+        "gene_name": null,
+        "cluster_id": "cluster:msb4100087:med4_kmeans_nstarvation:1",
+        "cluster_name": "Prochlorococcus MED4 cluster 1 (5 genes)",
+        "cluster_type": "time_course",
+        "membership_score": null,
+        "analysis_id": "clustering_analysis:msb4100087:med4_kmeans_nstarvation",
+        "analysis_name": "MED4 K-means N-starvation clusters",
+        "treatment_type": [
+          "nitrogen"
+        ],
+        "background_factors": [
+          "axenic",
+          "light"
+        ],
+        "cluster_method": "K-means (K=9)",
+        "member_count": 5,
+        "cluster_functional_description": "Contains nitrogen transport genes such as urtA and cynA. Enriched for transport and binding category.",
+        "cluster_expression_dynamics": "early transient",
+        "cluster_temporal_pattern": "Most rapidly and highly upregulated genes in MED4 during nitrogen starvation, with expression first appearing within 6 hours and peaking early in the time course.",
+        "treatment": "N-starvation time course (0, 3, 6, 12, 24, 48h)",
+        "light_condition": "continuous light",
+        "experimental_context": "Custom Affymetrix microarray MD4-9313; MED4 cells in Pro99 medium under continuous light (27 \u00b5mol photons m-2 s-1, 24\u00b0C); sampled at 0, 3, 6, 12, 24, 48h post N-deprivation",
+        "p_value": null
+      },
+      {
+        "locus_tag": "PMM1898",
+        "gene_name": null,
+        "cluster_id": "cluster:1471-2180-14-11:med4_expression_level:VEG",
+        "cluster_name": "Prochlorococcus MED4 cluster VEG (variably expressed)",
+        "cluster_type": "condition_comparison",
+        "membership_score": null,
+        "analysis_id": "clustering_analysis:1471-2180-14-11:med4_expression_level",
+        "analysis_name": "MED4 gene expression level classification",
+        "treatment_type": [
+          "growth_phase"
+        ],
+        "background_factors": [
+          "axenic",
+          "light"
+        ],
+        "cluster_method": "Quartile-based classification from RNA-seq RPKM across 10 growth conditions",
+        "member_count": 1073,
+        "cluster_functional_description": "N/A",
+        "cluster_expression_dynamics": "N/A",
+        "cluster_temporal_pattern": "N/A",
+        "treatment": "Steady-state expression level classification across multiple growth conditions",
+        "light_condition": "continuous light (28 umol quanta m-2 s-1)",
+        "experimental_context": "Classification of all MED4 CDS genes by expression level from RNA-seq across 10 samples (Pro99 and AMP media, exponential and log-phase). RPKM quartiles used to assign: VEG = very highly expressed (top quartile), HEG = highly expressed, MEG = moderately expressed, LEG = lowly expressed, NEG = not expressed, -- = unclassified. 21C, continuous light at 28 umol quanta m-2 s-1.",
+        "p_value": null
+      }
+    ]
+  },
+  "gene_derived_metrics": {
+    "total_matching": 1,
+    "total_derived_metrics": 1,
+    "genes_with_metrics": 1,
+    "genes_without_metrics": 2,
+    "not_found": [],
+    "not_matched": [
+      "PMM1898",
+      "PMM0246"
+    ],
+    "by_value_kind": [
+      {
+        "value_kind": "numeric",
+        "count": 1
+      }
+    ],
+    "by_metric_type": [
+      {
+        "metric_type": "vesicle_dna_avg_read_coverage",
+        "count": 1
+      }
+    ],
+    "by_metric": [
+      {
+        "count": 1,
+        "value_kind": "numeric",
+        "name": "MED4 vesicle DNA average read coverage (Biller 2014 Table S4, top-50 ORFs)",
+        "metric_type": "vesicle_dna_avg_read_coverage",
+        "derived_metric_id": "derived_metric:science.1243457:s4_med4_vesicle_dna_top50:vesicle_dna_avg_read_coverage"
+      }
+    ],
+    "by_compartment": [
+      {
+        "compartment": "vesicle",
+        "count": 1
+      }
+    ],
+    "by_treatment_type": [
+      {
+        "treatment_type": "compartment",
+        "count": 1
+      }
+    ],
+    "by_background_factors": [
+      {
+        "background_factor": "axenic",
+        "count": 1
+      },
+      {
+        "background_factor": "light",
+        "count": 1
+      }
+    ],
+    "by_publication": [
+      {
+        "publication_doi": "10.1126/science.1243457",
+        "count": 1
+      }
+    ],
+    "returned": 1,
+    "offset": 0,
+    "truncated": false,
+    "results": [
+      {
+        "locus_tag": "PMM0958",
+        "gene_name": null,
+        "derived_metric_id": "derived_metric:science.1243457:s4_med4_vesicle_dna_top50:vesicle_dna_avg_read_coverage",
+        "value_kind": "numeric",
+        "name": "MED4 vesicle DNA average read coverage (Biller 2014 Table S4, top-50 ORFs)",
+        "value": 2210.0,
+        "rankable": true,
+        "has_p_value": false,
+        "rank_by_metric": 28,
+        "metric_percentile": 40.0,
+        "metric_bucket": "mid",
+        "metric_type": "vesicle_dna_avg_read_coverage",
+        "field_description": "Average read coverage across the entire ORF, from Illumina MiSeq sequencing of vesicle-encapsulated, DNase-protected, MDA-amplified DNA from MED4 cultures. Combined dataset across two biological replicate libraries. Top 50 ORFs by coverage; 1079 of 1949 MED4 ORFs had >=1 read.",
+        "unit": "reads",
+        "allowed_categories": null,
+        "compartment": "vesicle",
+        "treatment_type": [
+          "compartment"
+        ],
+        "background_factors": [
+          "axenic",
+          "light"
+        ],
+        "publication_doi": "10.1126/science.1243457",
+        "treatment": "Vesicle-encapsulated DNA fraction (DNase-protected)",
+        "light_condition": "continuous light",
+        "experimental_context": "Gradient-purified vesicle pellet treated with TURBO DNase to remove non-vesicle DNA, then lysed; vesicle DNA amplified by REPLI-g (phi29 MDA), Illumina MiSeq sequenced, mapped to MED4 reference genome. 1079 of 1949 MED4 ORFs had >=1 read coverage; Table S4 reports the 50 ORFs with highest average read depth (gene-body coverage from combined replicates)."
+      }
+    ]
+  },
+  "gene_homologs": {
+    "total_matching": 12,
+    "by_organism": [
+      {
+        "organism_name": "Prochlorococcus MED4",
+        "count": 3
+      }
+    ],
+    "by_source": [
+      {
+        "source": "eggnog",
+        "count": 9
+      },
+      {
+        "source": "cyanorak",
+        "count": 3
+      }
+    ],
+    "not_found": [],
+    "no_groups": [],
+    "top_cyanorak_roles": [
+      {
+        "id": "cyanorak.role:R.2",
+        "count": 1,
+        "name": "Other > Conserved hypothetical proteins"
+      },
+      {
+        "id": "cyanorak.role:N.5",
+        "count": 1,
+        "name": "Regulatory functions > Other"
+      },
+      {
+        "id": "cyanorak.role:E.4",
+        "count": 1,
+        "name": "Central intermediary metabolism > Nitrogen metabolism"
+      },
+      {
+        "id": "cyanorak.role:D.1.3",
+        "count": 1,
+        "name": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen"
+      }
+    ],
+    "top_cog_categories": [
+      {
+        "id": "cog.category:S",
+        "count": 1,
+        "name": "Function unknown"
+      },
+      {
+        "id": "cog.category:K",
+        "count": 1,
+        "name": "Transcription"
+      }
+    ],
+    "returned": 12,
+    "offset": 0,
+    "truncated": false,
+    "results": [
+      {
+        "locus_tag": "PMM0246",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "cyanorak:CK_00000468",
+        "consensus_gene_name": "ntcA",
+        "consensus_product": "global nitrogen regulatory protein",
+        "taxonomic_level": "curated",
+        "source": "cyanorak",
+        "specificity_rank": 0,
+        "member_count": 13,
+        "organism_count": 13,
+        "genera": [
+          "Prochlorococcus",
+          "Synechococcus"
+        ],
+        "has_cross_genus_members": "cross_genus",
+        "description": null,
+        "functional_description": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen; Central intermediary metabolism > Nitrogen metabolism; Regulatory functions > Other; Transcription",
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:N.5",
+            "name": "Regulatory functions > Other"
+          },
+          {
+            "id": "cyanorak.role:E.4",
+            "name": "Central intermediary metabolism > Nitrogen metabolism"
+          },
+          {
+            "id": "cyanorak.role:D.1.3",
+            "name": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:K",
+            "name": "Transcription"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0246",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:1MM09@1212",
+        "consensus_gene_name": "ntcA",
+        "consensus_product": "global nitrogen regulatory protein",
+        "taxonomic_level": "Prochloraceae",
+        "source": "eggnog",
+        "specificity_rank": 1,
+        "member_count": 10,
+        "organism_count": 10,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": "CRP family of transcriptional regulators",
+        "functional_description": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen; Central intermediary metabolism > Nitrogen metabolism; Regulatory functions > Other; Transcription",
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:N.5",
+            "name": "Regulatory functions > Other"
+          },
+          {
+            "id": "cyanorak.role:E.4",
+            "name": "Central intermediary metabolism > Nitrogen metabolism"
+          },
+          {
+            "id": "cyanorak.role:D.1.3",
+            "name": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:K",
+            "name": "Transcription"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0246",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:1G07U@1117",
+        "consensus_gene_name": "ntcA",
+        "consensus_product": "global nitrogen regulatory protein",
+        "taxonomic_level": "Cyanobacteria",
+        "source": "eggnog",
+        "specificity_rank": 2,
+        "member_count": 19,
+        "organism_count": 18,
+        "genera": [
+          "Prochlorococcus",
+          "Synechococcus",
+          "Thermosynechococcus"
+        ],
+        "has_cross_genus_members": "cross_genus",
+        "description": "- catabolite gene activator and regulatory subunit of cAMP-dependent protein",
+        "functional_description": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen; Central intermediary metabolism > Nitrogen metabolism; Regulatory functions > Other; Transcription",
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:N.5",
+            "name": "Regulatory functions > Other"
+          },
+          {
+            "id": "cyanorak.role:E.4",
+            "name": "Central intermediary metabolism > Nitrogen metabolism"
+          },
+          {
+            "id": "cyanorak.role:D.1.3",
+            "name": "Cellular processes > Adaptation/acclimation to atypical conditions and detoxification > Nitrogen"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:K",
+            "name": "Transcription"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0246",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:COG0664@2",
+        "consensus_gene_name": "ntcA",
+        "consensus_product": "Crp/Fnr family transcriptional regulator",
+        "taxonomic_level": "Bacteria",
+        "source": "eggnog",
+        "specificity_rank": 3,
+        "member_count": 129,
+        "organism_count": 27,
+        "genera": [
+          "Alteromonas",
+          "Marinobacter",
+          "Meiothermus",
+          "Prochlorococcus",
+          "Pseudomonas",
+          "Ruegeria",
+          "Shewanella",
+          "Synechococcus",
+          "Thermosynechococcus"
+        ],
+        "has_cross_genus_members": "cross_genus",
+        "description": "cyclic nucleotide binding",
+        "functional_description": "Transcription",
+        "cyanorak_roles": [],
+        "cog_categories": [
+          {
+            "id": "cog.category:K",
+            "name": "Transcription"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0958",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "cyanorak:CK_00001751",
+        "consensus_gene_name": "PMN2A_RS08515",
+        "consensus_product": "conserved hypothetical protein (DUF1830)",
+        "taxonomic_level": "curated",
+        "source": "cyanorak",
+        "specificity_rank": 0,
+        "member_count": 11,
+        "organism_count": 11,
+        "genera": [
+          "Prochlorococcus",
+          "Synechococcus"
+        ],
+        "has_cross_genus_members": "cross_genus",
+        "description": null,
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:S",
+            "name": "Function unknown"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0958",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:1MMSH@1212",
+        "consensus_gene_name": null,
+        "consensus_product": "conserved hypothetical protein (DUF1830)",
+        "taxonomic_level": "Prochloraceae",
+        "source": "eggnog",
+        "specificity_rank": 1,
+        "member_count": 6,
+        "organism_count": 6,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": "Alternative locus ID",
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:S",
+            "name": "Function unknown"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0958",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:1GN8G@1117",
+        "consensus_gene_name": null,
+        "consensus_product": "conserved hypothetical protein (DUF1830)",
+        "taxonomic_level": "Cyanobacteria",
+        "source": "eggnog",
+        "specificity_rank": 2,
+        "member_count": 6,
+        "organism_count": 6,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": "Alternative locus ID",
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:S",
+            "name": "Function unknown"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM0958",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:30R7F@2",
+        "consensus_gene_name": null,
+        "consensus_product": "conserved hypothetical protein (DUF1830)",
+        "taxonomic_level": "Bacteria",
+        "source": "eggnog",
+        "specificity_rank": 3,
+        "member_count": 6,
+        "organism_count": 6,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": "Alternative locus ID",
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": [
+          {
+            "id": "cog.category:S",
+            "name": "Function unknown"
+          }
+        ]
+      },
+      {
+        "locus_tag": "PMM1898",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "cyanorak:CK_00047606",
+        "consensus_gene_name": null,
+        "consensus_product": "Conserved hypothetical protein",
+        "taxonomic_level": "curated",
+        "source": "cyanorak",
+        "specificity_rank": 0,
+        "member_count": 1,
+        "organism_count": 1,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": null,
+        "functional_description": null,
+        "cyanorak_roles": [],
+        "cog_categories": []
+      },
+      {
+        "locus_tag": "PMM1898",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:1MPCX@1212",
+        "consensus_gene_name": null,
+        "consensus_product": "Conserved hypothetical protein",
+        "taxonomic_level": "Prochloraceae",
+        "source": "eggnog",
+        "specificity_rank": 1,
+        "member_count": 6,
+        "organism_count": 5,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": null,
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": []
+      },
+      {
+        "locus_tag": "PMM1898",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:1GI3K@1117",
+        "consensus_gene_name": null,
+        "consensus_product": "Conserved hypothetical protein",
+        "taxonomic_level": "Cyanobacteria",
+        "source": "eggnog",
+        "specificity_rank": 2,
+        "member_count": 6,
+        "organism_count": 5,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": null,
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": []
+      },
+      {
+        "locus_tag": "PMM1898",
+        "organism_name": "Prochlorococcus MED4",
+        "group_id": "eggnog:31TX9@2",
+        "consensus_gene_name": null,
+        "consensus_product": "Conserved hypothetical protein",
+        "taxonomic_level": "Bacteria",
+        "source": "eggnog",
+        "specificity_rank": 3,
+        "member_count": 6,
+        "organism_count": 5,
+        "genera": [
+          "Prochlorococcus"
+        ],
+        "has_cross_genus_members": "single_genus",
+        "description": null,
+        "functional_description": null,
+        "cyanorak_roles": [
+          {
+            "id": "cyanorak.role:R.2",
+            "name": "Other > Conserved hypothetical proteins"
+          }
+        ],
+        "cog_categories": []
+      }
+    ]
+  },
+  "gene_response_profile": {
+    "organism_name": "Prochlorococcus MED4",
+    "genes_queried": 3,
+    "genes_with_response": 3,
+    "not_found": [],
+    "no_expression": [],
+    "returned": 3,
+    "offset": 0,
+    "truncated": false,
+    "results": [
+      {
+        "locus_tag": "PMM0246",
+        "gene_name": "ntcA",
+        "product": "global nitrogen regulatory protein",
+        "gene_category": "Stress response and adaptation",
+        "response_summary": {
+          "coculture": {
+            "experiments_total": 2,
+            "experiments_tested": 2,
+            "experiments_up": 1,
+            "experiments_down": 1,
+            "timepoints_total": 2,
+            "timepoints_tested": 2,
+            "timepoints_up": 1,
+            "timepoints_down": 1,
+            "up_best_rank": 25,
+            "up_median_rank": 25,
+            "up_max_log2fc": 2.400821454544718,
+            "down_best_rank": 100,
+            "down_median_rank": 100,
+            "down_max_log2fc": -11.45172627
+          },
+          "nitrogen": {
+            "experiments_total": 8,
+            "experiments_tested": 8,
+            "experiments_up": 5,
+            "experiments_down": 1,
+            "timepoints_total": 25,
+            "timepoints_tested": 25,
+            "timepoints_up": 13,
+            "timepoints_down": 2,
+            "up_best_rank": 4,
+            "up_median_rank": 21,
+            "up_max_log2fc": 4.45086478182776,
+            "down_best_rank": 31,
+            "down_median_rank": 32.0,
+            "down_max_log2fc": -2.0842747712258936
+          }
+        },
+        "groups_responded": [
+          "coculture",
+          "nitrogen"
+        ],
+        "groups_not_responded": [],
+        "groups_tested_not_responded": [
+          "salt",
+          "viral",
+          "iron"
+        ],
+        "groups_not_known": [
+          "carbon",
+          "phosphorus",
+          "light"
+        ]
+      },
+      {
+        "locus_tag": "PMM0958",
+        "gene_name": null,
+        "product": "conserved hypothetical protein (DUF1830)",
+        "gene_category": "Unknown",
+        "response_summary": {
+          "coculture": {
+            "experiments_total": 2,
+            "experiments_tested": 2,
+            "experiments_up": 1,
+            "experiments_down": 1,
+            "timepoints_total": 2,
+            "timepoints_tested": 2,
+            "timepoints_up": 1,
+            "timepoints_down": 1,
+            "up_best_rank": 5,
+            "up_median_rank": 5,
+            "up_max_log2fc": 4.043240719284284,
+            "down_best_rank": 190,
+            "down_median_rank": 190,
+            "down_max_log2fc": -10.64475759
+          },
+          "iron": {
+            "experiments_total": 3,
+            "experiments_tested": 3,
+            "experiments_up": 2,
+            "experiments_down": 1,
+            "timepoints_total": 4,
+            "timepoints_tested": 4,
+            "timepoints_up": 2,
+            "timepoints_down": 1,
+            "up_best_rank": 30,
+            "up_median_rank": 30.5,
+            "up_max_log2fc": 1.14,
+            "down_best_rank": 57,
+            "down_median_rank": 57,
+            "down_max_log2fc": -1.03
+          },
+          "nitrogen": {
+            "experiments_total": 8,
+            "experiments_tested": 8,
+            "experiments_up": 4,
+            "experiments_down": 0,
+            "timepoints_total": 25,
+            "timepoints_tested": 25,
+            "timepoints_up": 14,
+            "timepoints_down": 0,
+            "up_best_rank": 1,
+            "up_median_rank": 4.5,
+            "up_max_log2fc": 6.01862436906552
+          }
+        },
+        "groups_responded": [
+          "coculture",
+          "iron",
+          "nitrogen"
+        ],
+        "groups_not_responded": [],
+        "groups_tested_not_responded": [
+          "salt",
+          "viral"
+        ],
+        "groups_not_known": [
+          "carbon",
+          "phosphorus",
+          "light"
+        ]
+      },
+      {
+        "locus_tag": "PMM1898",
+        "gene_name": null,
+        "product": "Conserved hypothetical protein",
+        "gene_category": "Unknown",
+        "response_summary": {
+          "coculture": {
+            "experiments_total": 2,
+            "experiments_tested": 1,
+            "experiments_up": 1,
+            "experiments_down": 0,
+            "timepoints_total": 2,
+            "timepoints_tested": 1,
+            "timepoints_up": 1,
+            "timepoints_down": 0,
+            "up_best_rank": 21,
+            "up_median_rank": 21,
+            "up_max_log2fc": 2.4734135798296
+          },
+          "nitrogen": {
+            "experiments_total": 8,
+            "experiments_tested": 2,
+            "experiments_up": 1,
+            "experiments_down": 1,
+            "timepoints_total": 25,
+            "timepoints_tested": 6,
+            "timepoints_up": 1,
+            "timepoints_down": 1,
+            "up_best_rank": 16,
+            "up_median_rank": 16,
+            "up_max_log2fc": 4.679947892418878,
+            "down_best_rank": 35,
+            "down_median_rank": 35,
+            "down_max_log2fc": -2.098338249254313
+          }
+        },
+        "groups_responded": [
+          "coculture",
+          "nitrogen"
+        ],
+        "groups_not_responded": [],
+        "groups_tested_not_responded": [
+          "salt",
+          "viral",
+          "iron"
+        ],
+        "groups_not_known": [
+          "carbon",
+          "phosphorus",
+          "light"
+        ]
+      }
+    ]
+  }
+}

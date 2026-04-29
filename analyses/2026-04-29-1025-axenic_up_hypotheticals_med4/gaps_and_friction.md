@@ -39,4 +39,22 @@ Empirical check via `gene_ontology_terms(locus_tags=[…116 candidates…], orga
 
 ---
 
+## F3 — 2 RefSeq-only locus tags carry no cluster, no homolog, no ontology
+
+**Date:** 2026-04-29 (encountered in step 3, dossier-axis discovery)
+
+**What happened.** The 116-gene candidate set contains two locus tags with the RefSeq-style prefix `TX50_RS` rather than the expected MED4 `PMM` prefix: **`TX50_RS09500`** (log2fc 2.70, AQ=0, "hypothetical protein") and **`TX50_RS09520`** (log2fc 1.93, AQ=0, "hypothetical protein"). Per-axis discovery returned: no homolog groups (`gene_homologs` reports both in `no_groups`), no cluster memberships (`gene_clusters_by_gene` reports both in `not_matched`), no ontology terms (already counted in the F1 17-gene no-ontology subset). The dossier card on these two genes reduces to identity + DE evidence + cross-study response profile only; cluster, homolog, and ontology axes all surface as "no data" rows.
+
+A third RefSeq-only candidate **`TX50_RS09860`** (log2fc 1.75, AQ=0, "conserved hypothetical protein") has no clusters and no ontology but DOES have homolog groups — partially less stripped than the two above.
+
+**Workaround.** No workaround at step 3 — the dossier card honestly reports "no data" on the affected axes. The two genes pass through to step 4/5 dossier construction with most-stripped floor-case behavior. Step 4 method-design will exercise the empty-axis branches against PMM1898 (driving example B, F1 floor with singleton homolog group) and may also test `TX50_RS09500` as an even-more-stripped check (no cluster + no homolog + no ontology + minimal locus identity).
+
+**Interpretation.** [interpretation] The `TX50_RS` prefix is the RefSeq automated-locus-tagging system. PMM-prefix locus tags are the curated MED4 genome annotation. The two `TX50_RS09500/09520` genes are probably late additions to the genome (RefSeq-only entries that never received PMM curation, possibly small ORFs or re-annotated regions) and consequently were never folded into the cyanorak / eggNOG ortholog grouping pipelines or any of the four clustering analyses. The TX50 RefSeq tags don't show up in the legacy MED4 annotation pipelines because those pipelines were built on the PMM identifier set.
+
+**Downstream impact.**
+- *Step 4/5 (dossier):* the two RefSeq-only genes define the dossier's true floor. The card layout's empty-row branches must handle them gracefully — three "no data" rows in addition to the F1 ontology-empty row.
+- *KG-enhancement proposal (step 6):* the lack of ortholog grouping and cluster membership for these two genes traces back to the **upstream pipeline scope** (cyanorak curation, eggNOG inference, microarray-era clustering analyses) — these were all run on the PMM-identifier set without reprocessing for late-added RefSeq entries. The remediation is at the pipeline boundary, not the KG schema: re-run the ortholog-inference and cluster-membership pipelines with the current full locus-tag set (PMM ∪ TX50_RS) so late-added genes get assigned to groups and clusters where appropriate. This is a different remediation from the F1 / earlier KG-enhancement leads (AA sequences + batch bioinformatics layers), which addressed annotation-content gaps; F3 addresses identifier-coverage gaps in the precomputed analyses.
+
+---
+
 *Append further entries as encountered.*

@@ -1,0 +1,8 @@
+metric_type,value_kind,name,publication_doi,compartment,n_rows,n_distinct_candidates
+vesicle_dna_avg_read_coverage,numeric,"MED4 vesicle DNA average read coverage (Biller 2014 Table S4, top-50 ORFs)",10.1126/science.1243457,vesicle,5,5
+damping_ratio,numeric,Transcript:protein amplitude ratio,10.1371/journal.pone.0043432,whole_cell,4,4
+diel_amplitude_protein_log2,numeric,Protein amplitude (log2),10.1371/journal.pone.0043432,whole_cell,4,4
+diel_amplitude_transcript_log2,numeric,Transcript amplitude (log2),10.1371/journal.pone.0043432,whole_cell,4,4
+peak_time_protein_h,numeric,Time of peak protein abundance (h),10.1371/journal.pone.0043432,whole_cell,4,4
+peak_time_transcript_h,numeric,Time of peak transcript abundance (h),10.1371/journal.pone.0043432,whole_cell,4,4
+protein_transcript_lag_h,numeric,Protein-transcript lag (h),10.1371/journal.pone.0043432,whole_cell,4,4

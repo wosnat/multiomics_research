@@ -1,0 +1,66 @@
+2026-04-29 12:30:21,267 INFO Anchors: ['PMM0958', 'PMM1898', 'PMM0246']
+2026-04-29 12:30:21,267 INFO Candidate set: 116 genes
+2026-04-29 12:30:21,267 INFO [anchors] gene_overview verbose...
+2026-04-29 12:30:21,290 INFO [anchors] gene_ontology_terms (organism=MED4)...
+2026-04-29 12:30:21,393 INFO [anchors] gene_clusters_by_gene verbose...
+2026-04-29 12:30:21,454 INFO [anchors] gene_derived_metrics verbose...
+2026-04-29 12:30:21,472 INFO [anchors] gene_homologs verbose...
+2026-04-29 12:30:21,491 INFO [anchors] gene_response_profile (default = all MED4 experiments)...
+2026-04-29 12:30:21,583 INFO wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/3_analysis_framing/data/discover_anchors.json
+2026-04-29 12:30:21,586 INFO wrote anchors_summary
+2026-04-29 12:30:21,586 INFO [candidate_set] gene_clusters_by_gene verbose...
+2026-04-29 12:30:21,959 INFO     cluster rows for candidate set: 238 (envelope total=238)
+2026-04-29 12:30:21,960 INFO     genes_with_clusters=113 genes_without_clusters=3
+2026-04-29 12:30:21,978 INFO wrote clusters_aggregate (per-analysis_id)
+2026-04-29 12:30:21,981 INFO 
+                                                    analysis_id                               analysis_name         cluster_type                                                              cluster_method  n_candidate_rows  n_distinct_candidates  n_distinct_clusters  rows_with_curated_func_desc
+      clustering_analysis:1471-2180-14-11:med4_expression_level   MED4 gene expression level classification condition_comparison Quartile-based classification from RNA-seq RPKM across 10 growth conditions               113                    113                    5                           32
+    clustering_analysis:journal.pone.0005135:med4_diel_clusters       MED4 diel cycling expression clusters                 diel                                       Soft clustering (Mfuzz, c=16, m=1.25)                80                     80                   14                           58
+         clustering_analysis:msb4100087:med4_kmeans_nstarvation          MED4 K-means N-starvation clusters          time_course                                                               K-means (K=9)                37                     37                    6                           37
+clustering_analysis:nature06130:med4_phage_transcription_groups MED4 phage-upregulated transcription groups          time_course                           Stable clusters of co-expressed upregulated genes                 8                      8                    1                            8
+2026-04-29 12:30:21,981 INFO [candidate_set] gene_homologs verbose...
+2026-04-29 12:30:22,528 INFO     homolog rows for candidate set: 437 (envelope total=437)
+2026-04-29 12:30:22,528 INFO     by_source: [{'source': 'eggnog', 'count': 323}, {'source': 'cyanorak', 'count': 114}]
+2026-04-29 12:30:22,528 INFO     no_groups: ['TX50_RS09500', 'TX50_RS09520']
+2026-04-29 12:30:22,539 INFO wrote homologs_aggregate
+2026-04-29 12:30:22,541 INFO 
+  source taxonomic_level  specificity_rank  n_rows  n_distinct_candidates
+cyanorak         curated                 0     114                    114
+  eggnog   Prochloraceae                 1     102                    102
+  eggnog   Cyanobacteria                 2     110                    110
+  eggnog        Bacteria                 3     111                    111
+2026-04-29 12:30:22,541 INFO [candidate_set] gene_derived_metrics verbose...
+2026-04-29 12:30:22,934 INFO     DM rows for candidate set: 29 (envelope total=29)
+2026-04-29 12:30:22,934 INFO     by_value_kind: [{'value_kind': 'numeric', 'count': 29}]
+2026-04-29 12:30:22,934 INFO     by_metric_type: [{'metric_type': 'vesicle_dna_avg_read_coverage', 'count': 5}, {'metric_type': 'damping_ratio', 'count': 4}, {'metric_type': 'diel_amplitude_protein_log2', 'count': 4}, {'metric_type': 'diel_amplitude_transcript_log2', 'count': 4}, {'metric_type': 'protein_transcript_lag_h', 'count': 4}, {'metric_type': 'peak_time_protein_h', 'count': 4}, {'metric_type': 'peak_time_transcript_h', 'count': 4}]
+2026-04-29 12:30:22,934 INFO     genes_with_metrics=9 genes_without_metrics=107
+2026-04-29 12:30:22,948 INFO wrote dms_aggregate
+2026-04-29 12:30:22,951 INFO 
+                   metric_type value_kind                                                                       name              publication_doi compartment  n_rows  n_distinct_candidates
+ vesicle_dna_avg_read_coverage    numeric MED4 vesicle DNA average read coverage (Biller 2014 Table S4, top-50 ORFs)      10.1126/science.1243457     vesicle       5                      5
+                 damping_ratio    numeric                                         Transcript:protein amplitude ratio 10.1371/journal.pone.0043432  whole_cell       4                      4
+   diel_amplitude_protein_log2    numeric                                                   Protein amplitude (log2) 10.1371/journal.pone.0043432  whole_cell       4                      4
+diel_amplitude_transcript_log2    numeric                                                Transcript amplitude (log2) 10.1371/journal.pone.0043432  whole_cell       4                      4
+           peak_time_protein_h    numeric                                         Time of peak protein abundance (h) 10.1371/journal.pone.0043432  whole_cell       4                      4
+        peak_time_transcript_h    numeric                                      Time of peak transcript abundance (h) 10.1371/journal.pone.0043432  whole_cell       4                      4
+      protein_transcript_lag_h    numeric                                                 Protein-transcript lag (h) 10.1371/journal.pone.0043432  whole_cell       4                      4
+2026-04-29 12:30:22,951 INFO [candidate_set] gene_response_profile (default — all MED4)...
+2026-04-29 12:30:23,537 INFO     response_profile rows for candidate set: 116 (genes_with_response=116)
+2026-04-29 12:30:23,541 INFO wrote response_aggregate
+2026-04-29 12:30:23,543 INFO 
+treatment_type  n_candidates_responded  n_candidates_not_responded  n_candidates_tested_not_responded  n_candidates_not_known
+      nitrogen                     116                           0                                  0                       0
+     coculture                      42                          74                                  0                       0
+        carbon                      27                           2                                  0                      87
+          iron                      14                           0                                102                       0
+         light                       9                           0                                  0                     107
+         viral                       9                           0                                107                       0
+          salt                       6                           0                                110                       0
+    phosphorus                       4                           0                                  0                     112
+2026-04-29 12:30:23,543 INFO breadth (n_treatments_responded): [(1, 43), (2, 40), (3, 28), (4, 5)]
+2026-04-29 12:30:23,543 INFO ============================================================
+2026-04-29 12:30:23,543 INFO ENVELOPE SUMMARY (candidate set, n=116)
+2026-04-29 12:30:23,543 INFO clusters: 238 gene-cluster rows, 26 distinct clusters; 113 genes_with / 3 genes_without
+2026-04-29 12:30:23,543 INFO homologs: 437 gene-group rows; sources=[{'source': 'eggnog', 'count': 323}, {'source': 'cyanorak', 'count': 114}]; no_groups=['TX50_RS09500', 'TX50_RS09520']
+2026-04-29 12:30:23,543 INFO derived_metrics: 29 gene-DM rows; by_value_kind=[{'value_kind': 'numeric', 'count': 29}]
+2026-04-29 12:30:23,543 INFO response_profile: 116 candidates with response data

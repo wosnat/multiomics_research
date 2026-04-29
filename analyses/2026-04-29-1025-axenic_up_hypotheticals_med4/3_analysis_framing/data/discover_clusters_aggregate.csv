@@ -1,0 +1,5 @@
+analysis_id,analysis_name,cluster_type,cluster_method,n_candidate_rows,n_distinct_candidates,n_distinct_clusters,rows_with_curated_func_desc
+clustering_analysis:1471-2180-14-11:med4_expression_level,MED4 gene expression level classification,condition_comparison,Quartile-based classification from RNA-seq RPKM across 10 growth conditions,113,113,5,32
+clustering_analysis:journal.pone.0005135:med4_diel_clusters,MED4 diel cycling expression clusters,diel,"Soft clustering (Mfuzz, c=16, m=1.25)",80,80,14,58
+clustering_analysis:msb4100087:med4_kmeans_nstarvation,MED4 K-means N-starvation clusters,time_course,K-means (K=9),37,37,6,37
+clustering_analysis:nature06130:med4_phage_transcription_groups,MED4 phage-upregulated transcription groups,time_course,Stable clusters of co-expressed upregulated genes,8,8,1,8

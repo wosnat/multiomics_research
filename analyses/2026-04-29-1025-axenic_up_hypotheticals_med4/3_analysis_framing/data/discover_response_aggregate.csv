@@ -1,0 +1,9 @@
+treatment_type,n_candidates_responded,n_candidates_not_responded,n_candidates_tested_not_responded,n_candidates_not_known
+nitrogen,116,0,0,0
+coculture,42,74,0,0
+carbon,27,2,0,87
+iron,14,0,102,0
+light,9,0,0,107
+viral,9,0,107,0
+salt,6,0,110,0
+phosphorus,4,0,0,112

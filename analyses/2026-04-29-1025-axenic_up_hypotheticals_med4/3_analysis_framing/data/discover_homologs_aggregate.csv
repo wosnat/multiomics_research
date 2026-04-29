@@ -1,0 +1,5 @@
+source,taxonomic_level,specificity_rank,n_rows,n_distinct_candidates
+cyanorak,curated,0,114,114
+eggnog,Prochloraceae,1,102,102
+eggnog,Cyanobacteria,2,110,110
+eggnog,Bacteria,3,111,111
