@@ -57,4 +57,61 @@ A third RefSeq-only candidate **`TX50_RS09860`** (log2fc 1.75, AQ=0, "conserved 
 
 ---
 
+## F4 — `"N/A"` stored as literal string in cluster description fields (not NULL)
+
+**Date:** 2026-04-29 (encountered in step 4 dossier rendering and confirmed in step 5 sweep)
+
+**What happened.** `gene_clusters_by_gene(verbose=True)` returns the literal string `"N/A"` (case-sensitive, with no whitespace variation observed) for `cluster_functional_description`, `cluster_expression_dynamics`, and `cluster_temporal_pattern` when those fields are not curated for a given cluster. The KG does not return `null` / `None` / `""` / SQL `NULL` for these — it returns the three-character string `"N/A"`. Consumers that filter by `pd.isna(...)` or `field is None` will treat `"N/A"` as populated content and surface uninformative cells in downstream tables.
+
+Concrete example: `cluster:1471-2180-14-11:med4_expression_level:VEG` (the cluster touching 72 / 116 candidates) returns `cluster_functional_description="N/A"`, `cluster_expression_dynamics="N/A"`, `cluster_temporal_pattern="N/A"`. The dossier rendering code in `4_methods/dossier.py::_fmt_na` strips the literal `"N/A"` (and `None`, `""`) to em-dash for display, but the JSON dump preserves the original string.
+
+**Workaround.** `dossier.py::_fmt_na` handles rendering; downstream aggregations on `agg_clusters_pivot.csv` use the raw string. Future scripts working off `dossiers.json` need to apply the same convention — `value is None or value == "" or str(value).strip().upper() == "N/A"` is the test for "no content".
+
+**Downstream impact.**
+- *Step 5 aggregations (already produced):* `agg_clusters_pivot.csv`'s `cluster_functional_description` column carries the literal `"N/A"` for un-curated clusters; the `agg_top_fc_signals.csv` "first informative cluster" column uses the strip-N/A rule and correctly returns empty for VEG-only candidates.
+- *KG-enhancement proposal (step 6 consolidation).* Either (a) normalize at the KG layer — replace `"N/A"` with `NULL` / empty in the underlying graph database, or (b) document the convention in the KG schema docs so consumers default to the strip-N/A rule. Option (a) is the cleaner remediation; option (b) is a quicker workaround that requires every downstream tool to know the convention.
+
+---
+
+## F5 — `function_description` carries placeholder text `"Alternative locus ID"`
+
+**Date:** 2026-04-29 (encountered in step 4 anchor cards and confirmed in step 5 sweep)
+
+**What happened.** The `function_description` field on Gene nodes (returned by `gene_overview(verbose=True)`) sometimes contains real curated text (e.g., for ntcA: "Required for full expression of proteins subject to ammonium repression. Transcriptional activator of genes subject to nitrogen control") and sometimes contains placeholder text `"Alternative locus ID"` that is meaningless as a function description. Examples in the candidate set: PMM0958 → `"Alternative locus ID"`; PMM0689 (hli) → `"Alternative locus ID"`; PMM1813 → `"Alternative locus ID"`; PMM1404 (hli) → `null`.
+
+Reading the dossier card top-to-bottom, a reader sees `function_description: Alternative locus ID` on PMM0958's identity section and momentarily mistakes it for a real description before realizing it's metadata stub. The card is honest (it shows the field as the KG returned it) but the field itself is polluted at the source.
+
+**Workaround.** None at the dossier level. Step 5 cards display the field as-returned. The dossier card reader must mentally filter `"Alternative locus ID"` as a non-description.
+
+**Downstream impact.**
+- *Future analyses:* same risk for any per-gene tool that surfaces `function_description`.
+- *KG-enhancement proposal (step 6 consolidation).* Clean up the `function_description` content at the source: either populate with real curated text where available or replace placeholder strings with `NULL`. The placeholder appears to be an artifact of an upstream import that filled the field with a row-identifier-like string when no real description was available — should be undone at the import layer.
+
+---
+
+## F6 — Curated cluster description coverage is uneven across clustering analyses
+
+**Date:** 2026-04-29 (encountered in step 5 cluster aggregation)
+
+**What happened.** From `3_analysis_framing/data/discover_clusters_aggregate.csv` (re-confirmed in step 5):
+
+| analysis | candidate rows touching it | rows with curated `cluster_functional_description` | rate |
+|---|---:|---:|---:|
+| MED4 K-means N-starvation clusters (Tolonen 2006) | 37 | 37 | 100 % |
+| MED4 phage-upregulated transcription groups (Lindell 2007) | 8 | 8 | 100 % |
+| MED4 diel cycling expression clusters (Zinser 2009) | 80 | 58 | 72 % |
+| MED4 gene expression level classification (Wang 2014) | 113 | 32 | 28 % |
+
+The expression-level analysis (VEG / HEG / MEG / LEG / NEG / "--") is touched by every candidate that has any cluster membership (113 of 116) but only 28 % of those rows carry a curated functional description. The K-means N-starvation analysis is the smallest in candidate-coverage (37 rows) but has 100 % curated descriptions. So the analysis with the highest dossier impact (most candidate cards touched) is also the worst-curated; the analysis with the most informative content per row (K-means N-starvation, with curated descriptions like "Contains nitrogen transport genes such as urtA and cynA") touches the fewest candidates.
+
+For 5 of the top 10 candidates by log2fc (PMM1828, PMM1813, PMM1966, PMM1898, PMM1939) the only cluster membership is in the under-curated expression-level analysis — they get an N/A description on their only cluster axis. This is the dossier's worst-served subset and is captured in step 5's S4 surprise.
+
+**Workaround.** None within the analysis. The dossier honestly reports the curated description as `"N/A"` (after F4 normalization in rendering); the candidate's role-suggestion content from the cluster axis is just absent for those 81 rows in the expression-level analysis (113 − 32 = 81).
+
+**Downstream impact.**
+- *Step 5 conclusions:* the candidate set is *cluster-axis-informative for ~30 % of cluster rows* (37 + 8 + 58 + 32 = 135 of 238 total cluster rows = 57 %, but the share is much lower for VEG / HEG / MEG / LEG / NEG — see breakdown above). The dossier's "potential role" anchor on the cluster axis is most reliable for K-means N-starvation cluster members.
+- *KG-enhancement proposal (step 6 consolidation).* The expression-level (VEG / HEG / MEG / LEG / NEG) clustering is a per-gene "expression-level bin" classification, not a functional grouping per se — so the lack of curated functional descriptions may be by design rather than oversight. If so, the KG could (a) flag this analysis as "non-functional clustering" so consumers know not to expect role-bearing descriptions, or (b) add a different metadata field that describes what each VEG / HEG / MEG / LEG / NEG bin SHOULD mean (e.g. "VEG = top RPKM quartile, expected to include constitutive housekeeping + highly-expressed regulators") rather than leaving the per-cluster description as `"N/A"`.
+
+---
+
 *Append further entries as encountered.*
