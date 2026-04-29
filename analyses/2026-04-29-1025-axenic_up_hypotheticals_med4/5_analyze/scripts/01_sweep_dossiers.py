@@ -1,0 +1,146 @@
+"""
+Sweep dossier construction across all 116 candidate genes.
+
+Loads the candidate set from step 2, reuses the group probe cache seeded by
+the step-4 anchor run, builds one dossier card per candidate, writes per-gene
+markdown cards, an aggregated JSON, and an index.md sorted by log2fc desc.
+
+Inputs:
+    --candidate-csv   path to candidate_set.csv (default: ../../2_kg_selection/data/candidate_set.csv)
+    --cache-source    path to seed cache from (default: ../../4_methods/data/group_probe_cache.json)
+    --data-dir        output directory (default: ../data/)
+
+Outputs (under --data-dir):
+    cards/<locus_tag>.md       per-gene markdown card
+    dossiers.json              aggregated structured cards (one entry per candidate)
+    index.md                   1-line summary per candidate (sorted by log2fc desc) with link
+    group_probe_cache.json     populated cache after sweep (carries all groups touched)
+    01_sweep_dossiers.log      runtime log
+"""
+
+import argparse
+import json
+import logging
+import shutil
+import sys
+import time
+from pathlib import Path
+
+import pandas as pd
+
+ANALYSIS_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ANALYSIS_ROOT / "4_methods"))
+from dossier import GroupProbeCache, build_dossier, render_card_markdown
+
+LOCKED_EXPERIMENT_ID = (
+    "10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic"
+)
+ORGANISM = "MED4"
+
+
+def _index_row(card: dict) -> str:
+    ident = card.get("identity") or {}
+    de = card.get("de_evidence") or {}
+    n_clusters = len(card.get("clusters") or [])
+    n_groups = len(card.get("ortholog_groups") or [])
+    n_ontology = len(card.get("ontology") or [])
+    n_dms = len(card.get("derived_metrics") or [])
+    log2fc = de.get("log2fc")
+    log2fc_str = f"{log2fc:.2f}" if isinstance(log2fc, (int, float)) else "—"
+    aq = ident.get("annotation_quality")
+    name = ident.get("gene_name") or ""
+    product = (ident.get("product") or "")[:60]
+    locus_tag = card["locus_tag"]
+    return (
+        f"- [`{locus_tag}`](cards/{locus_tag}.md)"
+        f"{' (' + name + ')' if name else ''}"
+        f" — log2fc {log2fc_str}, AQ {aq}, {product}"
+        f" · clusters={n_clusters}, ortholog_groups={n_groups}, ontology={n_ontology}, DMs={n_dms}"
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--candidate-csv",
+        type=Path,
+        default=ANALYSIS_ROOT / "2_kg_selection" / "data" / "candidate_set.csv",
+    )
+    parser.add_argument(
+        "--cache-source",
+        type=Path,
+        default=ANALYSIS_ROOT / "4_methods" / "data" / "group_probe_cache.json",
+    )
+    parser.add_argument(
+        "--data-dir",
+        type=Path,
+        default=Path(__file__).resolve().parent.parent / "data",
+    )
+    args = parser.parse_args()
+    args.data_dir.mkdir(parents=True, exist_ok=True)
+    cards_dir = args.data_dir / "cards"
+    cards_dir.mkdir(parents=True, exist_ok=True)
+
+    log_path = args.data_dir / "01_sweep_dossiers.log"
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(message)s",
+        handlers=[logging.FileHandler(log_path, mode="w"), logging.StreamHandler()],
+    )
+    log = logging.getLogger(__name__)
+
+    cache_path = args.data_dir / "group_probe_cache.json"
+    # Seed step-5 cache from step-4's cache (12 anchor probes).
+    if not cache_path.exists() and args.cache_source.exists():
+        shutil.copy(args.cache_source, cache_path)
+        log.info("seeded cache from %s", args.cache_source)
+
+    cache = GroupProbeCache(cache_path=cache_path)
+    log.info("cache loaded with %d entries", len(cache._cache))
+
+    cand = pd.read_csv(args.candidate_csv)
+    cand = cand.sort_values("log2fc", ascending=False).reset_index(drop=True)
+    log.info("sweeping %d candidates", len(cand))
+
+    cards = []
+    t0 = time.time()
+    for i, row in enumerate(cand.itertuples(), start=1):
+        locus_tag = row.locus_tag
+        card = build_dossier(
+            locus_tag=locus_tag,
+            locked_experiment_id=LOCKED_EXPERIMENT_ID,
+            organism=ORGANISM,
+            group_cache=cache,
+        )
+        cards.append(card)
+        md = render_card_markdown(card)
+        (cards_dir / f"{locus_tag}.md").write_text(md)
+        if i % 10 == 0 or i == len(cand):
+            elapsed = time.time() - t0
+            log.info("progress: %d / %d  (%.1fs elapsed, cache=%d)",
+                     i, len(cand), elapsed, len(cache._cache))
+
+    out_json = args.data_dir / "dossiers.json"
+    out_json.write_text(json.dumps(cards, indent=2, default=str))
+    log.info("wrote %s (%d entries)", out_json, len(cards))
+
+    cache.save()
+    log.info("wrote %s (%d entries)", cache_path, len(cache._cache))
+
+    # Index sorted by log2fc desc
+    index_md = args.data_dir / "index.md"
+    index_md.write_text(
+        "# Dossier index — full candidate set (step 5)\n\n"
+        f"Generated by `01_sweep_dossiers.py`. {len(cards)} cards under `cards/`. Sorted by log2fc desc.\n\n"
+        f"Locked experiment: `{LOCKED_EXPERIMENT_ID}`\n\n"
+        + "\n".join(_index_row(c) for c in cards)
+        + "\n"
+    )
+    log.info("wrote %s", index_md)
+
+    elapsed = time.time() - t0
+    log.info("done in %.1fs (avg %.2fs/card)", elapsed, elapsed / len(cand))
+
+
+if __name__ == "__main__":
+    main()

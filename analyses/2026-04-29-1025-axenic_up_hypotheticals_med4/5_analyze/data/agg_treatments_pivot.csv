@@ -1,0 +1,9 @@
+treatment,n_candidates_responded,n_candidates_with_treatment_data,fraction_responded
+nitrogen,116,116,1.0
+coculture,42,116,0.362
+carbon,27,29,0.233
+iron,14,14,0.121
+light,9,9,0.078
+viral,9,9,0.078
+salt,6,6,0.052
+phosphorus,4,4,0.034

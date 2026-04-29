@@ -1,0 +1,5 @@
+axis,n_with,n_total,fraction
+clusters,113,116,0.974
+ortholog_groups,114,116,0.983
+ontology_terms,99,116,0.853
+derived_metrics,9,116,0.078

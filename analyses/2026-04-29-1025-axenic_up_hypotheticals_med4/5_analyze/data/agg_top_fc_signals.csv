@@ -1,0 +1,11 @@
+locus_tag,gene_name,product,annotation_quality,log2fc,rank_up,n_clusters,cluster_with_curated_desc,n_ortholog_groups,n_ontology,n_dms,breadth,groups_responded
+PMM1828,,Hypothetical protein,1,6.716442209499447,3,1,,4,1,0,3,"coculture, iron, nitrogen"
+PMM1813,,conserved hypothetical protein,1,6.278731081746498,5,1,,4,3,0,3,"carbon, coculture, nitrogen"
+PMM0958,,conserved hypothetical protein (DUF1830),1,5.739882511894883,7,3,"[diel] Prochlorococcus cluster 18 (menaquinone and ubiquinone): Enriched for menaquinone and ubiquinone genes (6/9 genes, p=0.00045).",4,4,1,3,"coculture, iron, nitrogen"
+PMM0030,,conserved hypothetical protein,0,5.21558509421573,9,4,[condition_comparison] Prochlorococcus MED4 cluster MEG (moderately expressed): Enriched for essential genes with homologs in the Database of Essential Genes (DEG).,4,1,0,3,"coculture, nitrogen, viral"
+PMM1427,,conserved hypothetical protein,1,4.940958409884867,12,2,"[time_course] MED4 cluster 2 (late sustained): Includes genes involved in RNA degradation and modification such as rne, rnhB, dus, and sun; protein turnover genes clpS and an AAA ATPase family gene; stress response genes umuD and phoH; and genes of unknown function.",4,3,0,3,"coculture, nitrogen, viral"
+PMM0684,,conserved hypothetical protein (DUF1651),1,4.737350948185801,14,4,"[condition_comparison] Prochlorococcus MED4 cluster HEG (highly expressed): Enriched for genes involved in energy production and conversion, translation and ribosomal structure, and protein modification, folding and turnover. Includes ribosomal proteins and photosynthetic apparatus genes.",4,4,0,4,"carbon, coculture, nitrogen, viral"
+PMM1966,,conserved hypothetical protein,1,4.705838225250466,15,1,,4,2,0,2,"coculture, nitrogen"
+PMM1898,,Conserved hypothetical protein,0,4.679947892418878,16,1,,4,0,0,2,"coculture, nitrogen"
+PMM0819,,conserved hypothetical protein,1,4.660970769559715,17,4,[time_course] Prochlorococcus MED4 cluster 3 (19 genes): Contains a subset of hli genes that respond later and to a lesser degree than cluster 2. Also includes genes involved in regulation.,4,2,0,4,"carbon, coculture, nitrogen, viral"
+PMM1939,,Conserved hypothetical protein,0,4.652180082560368,18,1,,4,0,0,3,"carbon, coculture, nitrogen"

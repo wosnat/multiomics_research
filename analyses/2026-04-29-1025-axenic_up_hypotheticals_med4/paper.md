@@ -50,7 +50,45 @@ The cluster axis carries the strongest "potential role" anchor in the candidate 
 
 ## Results
 
-*To be populated at step 5 decide-close.*
+The dossier sweep produced one card per candidate (116 cards) in 31.8 s of MCP calls (avg 0.27 s/card). The group probe cache grew from 12 anchor entries to 431 unique groups touched by the candidate set, of which 27 are singletons. Per-gene markdown cards live in `5_analyze/data/cards/<locus_tag>.md` with an `index.md` sorted by log2fc desc; the structured cards aggregate to `5_analyze/data/dossiers.json`.
+
+### Per-axis fill rate
+
+Axis fill rates re-confirm the step-2 facet-availability snapshot: clusters 113 / 116 (97 %), ortholog groups 114 / 116 (98 %), ontology terms 99 / 116 (85 %), derived metrics 9 / 116 (8 %). The cross-study response-profile axis is universal. Figure `5_analyze/figures/agg_axis_fill.png`.
+
+### Cluster pivot
+
+26 distinct clusters across 4 clustering analyses are touched by candidates. The 15 clusters with the most candidates are tabulated in `5_analyze/data/agg_clusters_pivot.csv` and visualized in `5_analyze/figures/agg_clusters_pivot.png`. Headline observations:
+
+The **VEG cluster** (`cluster:1471-2180-14-11:med4_expression_level:VEG`, 1073 members, condition_comparison classification) contains 72 / 116 candidates (62 %). This cluster is defined by top-quartile RPKM across 10 growth conditions and carries no curated functional description. Most of the 116 sig_up hypotheticals are also "highly expressed at steady state" — descriptive but not by itself a role anchor.
+
+Three K-means N-starvation clusters with 100 % curated-description coverage are touched by candidates: cluster 1 (5 members, "Contains nitrogen transport genes such as urtA and cynA. Enriched for transport and binding category"; 1 candidate — PMM0958, the rich-content driver), cluster 2 (16 members, "Contains the rapidly-responding subset of hli genes (including hli10) and ntcA. The most highly upregulated hli genes have the strongest NtcA binding sites"; 4 candidates incl. PMM0246 / ntcA control), cluster 3 (19 members, "late sustained"; 4 candidates), cluster 4 (86 members, "Enriched for amino acid synthesis genes and genes involved in carbon metabolism"; 20 candidates), cluster 5 (73 members, "Contains two rpoD-like sigma factors that are upregulated during nitrogen stress"; 7 candidates).
+
+The **diel-clustering analysis** (Mfuzz soft clustering on a diel time course; Zinser et al. 2009 [3]) touches the candidate set across 7 distinct clusters with curated descriptions ranging from "Enriched for menaquinone and ubiquinone genes" (n=14 candidates), "Enriched for nitrogen metabolism genes (4/8 genes, p=0.087)" (n=12), "Enriched for purine ribonucleotide biosynthesis genes" (n=10), "respiratory terminal oxidases" (n=6), "RNA synthesis, modification, and DNA transcription" (n=6), and "chaperone genes" (n=5). [interpretation] The diel cluster 7 nitrogen-metabolism overlap (12 candidates of 116, 10 % of the cluster) is a step-6 caveat-bearing finding — the p-value (0.087) is borderline and 10 % of cluster membership is not concentrated by candidate-share, but the curated co-clustering with annotated N-metabolism genes warrants flagging.
+
+The **phage-induction cluster 2** (Lindell et al. 2007 [4]; 25 members, "Includes genes involved in RNA degradation and modification such as rne, rnhB…") contains 8 candidates — 32 % of the cluster's membership, the highest candidate-share-of-cluster value in this analysis.
+
+### Cross-study response profile
+
+By construction every candidate responds to nitrogen. Beyond nitrogen, 42 / 116 (36 %) respond to coculture; 27 of 29 candidates with carbon-experiment data respond to carbon (the other 87 candidates have no carbon data in the KG); 14 respond to iron (out of 14 with iron data); 9 each to light and viral; 6 to salt; 4 to phosphorus. The breadth distribution (n_treatments responded per candidate): 1 → 43 candidates, 2 → 40, 3 → 28, **4 → 5 candidates** (PMM0684 with DUF1651, PMM0819, PMM0348 with PM-17 family, PMM0731 uncharacterized membrane protein, PMM0087). All 5 broad responders are AQ=1. Two pairs share matching treatment-axis combinations: PMM0684 + PMM0819 = {carbon, coculture, nitrogen, viral}; PMM0348 + PMM0087 = {carbon, light, nitrogen, salt}.
+
+### Floor genes
+
+Floor genes by axis emptiness, from `5_analyze/data/agg_floor_genes.csv`: 17 F1 candidates (no ontology terms in any source — all AQ=0); 2 F3 candidates (no clusters AND no homolog groups — both RefSeq-only locus tags `TX50_RS09500`, `TX50_RS09520`). A third RefSeq-only candidate `TX50_RS09860` has 1 ortholog group so does not meet the strict F3 definition. For the 17 F1 / 2 F3 candidates the dossier card surface degrades to identity + DE evidence + cross-study response profile + ortholog-group signal probe (where applicable). PMM1898 and PMM1939 are F1 candidates within the top 10 by log2fc — illustrating the dossier's weakest content slice at the top of the candidate set.
+
+### Top FC by cluster-anchor availability
+
+Of the top 10 candidates by log2fc, 5 carry at least one cluster with a curated functional description (PMM0958, PMM0030, PMM1427, PMM0684, PMM0819) and 5 sit only in the VEG cluster with no curated description (PMM1828 log2fc 6.72, PMM1813 6.28, PMM1966 4.71, PMM1898 4.68, PMM1939 4.65). The full table is at `5_analyze/data/agg_top_fc_signals.csv`. [interpretation] The dossier's promise to support "potential role" reasoning rests most heavily on the cluster axis when curated descriptions are present; for these 5 VEG-only top-FC candidates, the dossier delivers identity + DE + response profile + ortholog probe envelopes but no curated cluster context — a step-6 caveat about the analysis's worst-served subset.
+
+### Three candidate functional bins (the stretch-(b) question)
+
+The cluster pivot surfaces three candidate functional bins worth recording for step-6 evaluation:
+
+1. **Diel-N-metabolism bin** — 12 candidates in `cluster:journal.pone.0005135:med4_diel_clusters:7` (curated: nitrogen-metabolism enriched, 4/8 genes, p=0.087). These are N-stress-up hypotheticals that ALSO sit in a diel-rhythmic N-metabolism cluster.
+2. **Phage-RNA-processing bin** — 8 candidates in `cluster:nature06130:med4_phage_transcription_groups:2` (curated: RNA degradation / modification, includes rne, rnhB). These are N-stress-up hypotheticals that ALSO sit in a phage-induced RNA-processing cluster (32 % of cluster membership).
+3. **Broad-stress-responders bin** — 5 breadth=4 candidates whose cross-study response profile spans 4 distinct treatments (PMM0684, PMM0819, PMM0348, PMM0731, PMM0087).
+
+Each bin is *recorded as a candidate*; whether each represents a coherent functional grouping or coincidental overlap with a broader regulatory program is a step-6 evaluation question, not a step-5 conclusion. The data files are at `5_analyze/data/agg_clusters_pivot.csv` (rows for the diel-N-metabolism and phage-RNA-processing clusters) and `5_analyze/data/agg_broad_responders.csv` (rows with `breadth = 4`).
 
 ## Discussion
 
@@ -59,3 +97,15 @@ The cluster axis carries the strongest "potential role" anchor in the candidate 
 ## References
 
 [1] Weissberg O, Aharonovich D, Sher D. *Transcriptomic and Proteomic Analysis Reveals Nitrogen Recycling as a Core Mechanism for Prochlorococcus Prolonged Survival.* bioRxiv (2025). DOI: `10.1101/2025.11.24.690089`. — KG experiment used: `10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic`.
+
+[2] Tolonen AC, Aach J, Lindell D, Johnson ZI, Rector T, Steen R, Church GM, Chisholm SW. *Global gene expression of Prochlorococcus ecotypes in response to changes in nitrogen availability.* Molecular Systems Biology (2006). DOI: `10.1038/msb4100087`. — KG clustering analysis used: `clustering_analysis:msb4100087:med4_kmeans_nstarvation` (MED4 K-means N-starvation clusters, 9 clusters; 100 % curated descriptions). Verified via `list_publications`.
+
+[3] Zinser ER, Lindell D, Johnson ZI, Futschik ME, Steglich C, Coleman ML, Wright MA, Rector T, Steen R, McNulty N, Thompson LR, Chisholm SW. *Choreography of the Transcriptome, Photophysiology, and Cell Cycle of a Minimal Photoautotroph, Prochlorococcus.* PLOS ONE (2009). DOI: `10.1371/journal.pone.0005135`. — KG clustering analysis used: `clustering_analysis:journal.pone.0005135:med4_diel_clusters` (MED4 diel cycling expression clusters; Mfuzz soft clustering, c=16, m=1.25). Verified via `list_publications`.
+
+[4] Lindell D, Jaffe JD, Coleman ML, Futschik ME, Axmann IM, Rector T, Kettler G, Sullivan MB, Steen R, Hess WR, Church GM, Chisholm SW. *Genome-wide expression dynamics of a marine virus and host reveal features of co-evolution.* Nature (2007). DOI: `10.1038/nature06130`. — KG clustering analysis used: `clustering_analysis:nature06130:med4_phage_transcription_groups` (MED4 phage-upregulated transcription groups). Verified via `list_publications`.
+
+[5] Wang B, Lu L, Lv H, Jiang H, Qu G, Tian C, Ma Y. *The transcriptome landscape of Prochlorococcus MED4 and the factors for stabilizing the core genome.* BMC Microbiology (2014). DOI: `10.1186/1471-2180-14-11`. — KG clustering analysis used: `clustering_analysis:1471-2180-14-11:med4_expression_level` (MED4 gene expression level classification: VEG / HEG / MEG / LEG / NEG via top-quartile RPKM across 10 growth conditions). Verified via `list_publications`.
+
+[6] Biller SJ, Schubotz F, Roggensack SE, Thompson AW, Summons RE, Chisholm SW. *Bacterial Vesicles in Marine Ecosystems.* Science (2014). DOI: `10.1126/science.1243457`. — KG derived metric used: `derived_metric:science.1243457:s4_med4_vesicle_dna_top50:vesicle_dna_avg_read_coverage` (MED4 vesicle DNA average read coverage, top-50 ORFs); 5 candidates carry this metric. Verified via `list_publications`.
+
+[7] Waldbauer JR, Rodrigue S, Coleman ML, Chisholm SW. *Transcriptome and Proteome Dynamics of a Light-Dark Synchronized Bacterial Cell Cycle.* PLoS ONE (2012). DOI: `10.1371/journal.pone.0043432`. — KG derived metrics used: `damping_ratio`, `diel_amplitude_protein_log2`, `diel_amplitude_transcript_log2`, `peak_time_protein_h`, `peak_time_transcript_h`, `protein_transcript_lag_h`; 4 candidates carry these metrics (whole_cell compartment). Verified via `list_publications`.

@@ -1,0 +1,11 @@
+2026-04-29 14:44:55,338 INFO loaded 116 candidate dossiers
+2026-04-29 14:44:55,678 INFO wrote agg_axis_fill (CSV + PNG)
+2026-04-29 14:44:55,696 INFO wrote agg_clusters_pivot (26 unique clusters touched)
+2026-04-29 14:44:56,617 INFO wrote figures/agg_clusters_pivot.png
+2026-04-29 14:44:56,630 INFO wrote agg_treatments_pivot
+2026-04-29 14:44:57,296 INFO wrote agg_breadth_distribution (CSV + PNG)
+2026-04-29 14:44:57,299 INFO wrote agg_floor_genes (17 genes; F1=17, F3=2)
+2026-04-29 14:44:57,303 INFO wrote agg_broad_responders (33 genes with breadth>=3; breadth=4: 5)
+2026-04-29 14:44:57,305 INFO wrote agg_top_fc_signals (top 10 by log2fc)
+2026-04-29 14:44:57,315 INFO ortholog probe summary: 431 total probes, 27 singletons; non-singleton groups have median has_expression=2.0, has_clusters=1.0, has_derived_metrics=0.0
+2026-04-29 14:44:57,315 INFO done

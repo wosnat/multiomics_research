@@ -1,0 +1,19 @@
+2026-04-29 14:43:06,663 INFO seeded cache from /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/4_methods/data/group_probe_cache.json
+2026-04-29 14:43:06,663 INFO cache loaded with 12 entries
+2026-04-29 14:43:06,669 INFO sweeping 116 candidates
+2026-04-29 14:43:09,626 INFO progress: 10 / 116  (3.0s elapsed, cache=44)
+2026-04-29 14:43:12,501 INFO progress: 20 / 116  (5.8s elapsed, cache=75)
+2026-04-29 14:43:15,191 INFO progress: 30 / 116  (8.5s elapsed, cache=111)
+2026-04-29 14:43:18,021 INFO progress: 40 / 116  (11.4s elapsed, cache=146)
+2026-04-29 14:43:20,853 INFO progress: 50 / 116  (14.2s elapsed, cache=182)
+2026-04-29 14:43:23,598 INFO progress: 60 / 116  (16.9s elapsed, cache=221)
+2026-04-29 14:43:26,288 INFO progress: 70 / 116  (19.6s elapsed, cache=256)
+2026-04-29 14:43:29,006 INFO progress: 80 / 116  (22.3s elapsed, cache=293)
+2026-04-29 14:43:31,465 INFO progress: 90 / 116  (24.8s elapsed, cache=330)
+2026-04-29 14:43:34,177 INFO progress: 100 / 116  (27.5s elapsed, cache=368)
+2026-04-29 14:43:36,730 INFO progress: 110 / 116  (30.1s elapsed, cache=407)
+2026-04-29 14:43:38,382 INFO progress: 116 / 116  (31.7s elapsed, cache=431)
+2026-04-29 14:43:38,450 INFO wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/5_analyze/data/dossiers.json (116 entries)
+2026-04-29 14:43:38,464 INFO wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/5_analyze/data/group_probe_cache.json (431 entries)
+2026-04-29 14:43:38,464 INFO wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/5_analyze/data/index.md
+2026-04-29 14:43:38,465 INFO done in 31.8s (avg 0.27s/card)

@@ -1,0 +1,18 @@
+locus_tag,gene_name,product,annotation_quality,log2fc,n_clusters,n_ortholog_groups,n_ontology,n_dms,is_F1_no_ontology,is_F3_no_cluster_no_homolog
+PMM1898,,Conserved hypothetical protein,0,4.679947892418878,1,4,0,0,True,False
+PMM1939,,Conserved hypothetical protein,0,4.652180082560368,1,4,0,0,True,False
+PMM1955,,Conserved hypothetical protein,0,3.876899592349444,1,4,0,0,True,False
+PMM1863,,Conserved hypothetical protein,0,3.6876269063715865,1,4,0,0,True,False
+PMM1894,,Conserved hypothetical protein,0,3.4514826332421285,1,4,0,0,True,False
+PMM1248,,conserved hypothetical protein,0,3.263279008283139,3,1,0,0,True,False
+PMM1249,,conserved hypothetical protein,0,3.0936181251420507,2,4,0,0,True,False
+PMM1864,,Conserved hypothetical protein,0,2.942626402248639,1,4,0,0,True,False
+TX50_RS09500,,hypothetical protein,0,2.701940566762947,0,0,0,0,True,True
+TX50_RS09520,,hypothetical protein,0,1.928489220332844,0,0,0,0,True,True
+TX50_RS09860,,conserved hypothetical protein,0,1.7460449943147696,0,1,0,0,True,False
+PMM0119,,conserved hypothetical protein,0,1.6395014743925116,2,4,0,0,True,False
+PMM2077,,Hypothetical protein,0,1.5427691076848489,1,1,0,0,True,False
+PMM2003,,Conserved hypothetical protein,0,1.5367576732597357,1,4,0,0,True,False
+PMM1395,,conserved hypothetical protein,0,1.3666023334686768,2,4,0,0,True,False
+PMM1834,,Conserved hypothetical protein,0,1.153221049213674,1,4,0,0,True,False
+PMM1970,,Hypothetical protein,0,1.023606778113525,1,4,0,0,True,False
