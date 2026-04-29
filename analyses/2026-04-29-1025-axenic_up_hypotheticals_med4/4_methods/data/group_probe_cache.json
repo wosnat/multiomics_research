@@ -1,0 +1,339 @@
+{
+  "cyanorak:CK_00000468": {
+    "by_annotation_type": {
+      "brite": 12,
+      "cog_category": 12,
+      "cyanorak_role": 12,
+      "go_bp": 11,
+      "go_cc": 12,
+      "go_mf": 12,
+      "kegg": 12,
+      "pfam": 12,
+      "tigr_role": 12
+    },
+    "by_category": {
+      "Stress response and adaptation": 12
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9303": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus MIT9313": 1,
+      "Prochlorococcus NATL1A": 1,
+      "Prochlorococcus NATL2A": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1,
+      "Synechococcus CC9311": 1,
+      "Synechococcus WH7803": 1,
+      "Synechococcus WH8102": 1,
+      "Synechococcus sp. BL107": 1
+    },
+    "has_clusters": 3,
+    "has_derived_metrics": 0,
+    "has_expression": 5,
+    "has_orthologs": 12,
+    "has_significant_expression": 3,
+    "n_members_excl_candidate": 12
+  },
+  "cyanorak:CK_00001751": {
+    "by_annotation_type": {
+      "cog_category": 8,
+      "cyanorak_role": 10,
+      "pfam": 10,
+      "tigr_role": 10
+    },
+    "by_category": {
+      "Unknown": 10
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus NATL1A": 1,
+      "Prochlorococcus NATL2A": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1,
+      "Synechococcus CC9311": 1,
+      "Synechococcus WH7803": 1,
+      "Synechococcus WH8102": 1,
+      "Synechococcus sp. BL107": 1
+    },
+    "has_clusters": 2,
+    "has_derived_metrics": 1,
+    "has_expression": 3,
+    "has_orthologs": 10,
+    "has_significant_expression": 3,
+    "n_members_excl_candidate": 10
+  },
+  "cyanorak:CK_00047606": null,
+  "eggnog:1G07U@1117": {
+    "by_annotation_type": {
+      "brite": 18,
+      "cog_category": 18,
+      "cyanorak_role": 13,
+      "go_bp": 17,
+      "go_cc": 18,
+      "go_mf": 18,
+      "kegg": 18,
+      "pfam": 18,
+      "tigr_role": 13
+    },
+    "by_category": {
+      "Stress response and adaptation": 13,
+      "Transcription": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9303": 2,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus MIT9313": 1,
+      "Prochlorococcus NATL1A": 1,
+      "Prochlorococcus NATL2A": 1,
+      "Prochlorococcus RSP50": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1,
+      "Synechococcus CC9311": 1,
+      "Synechococcus PCC 7002": 1,
+      "Synechococcus WH7803": 1,
+      "Synechococcus WH8102": 1,
+      "Synechococcus elongatus PCC 7942": 1,
+      "Synechococcus elongatus UTEX 2973": 1,
+      "Synechococcus sp. BL107": 1,
+      "Thermosynechococcus vestitus BP-1": 1
+    },
+    "has_clusters": 4,
+    "has_derived_metrics": 0,
+    "has_expression": 6,
+    "has_orthologs": 18,
+    "has_significant_expression": 3,
+    "n_members_excl_candidate": 18
+  },
+  "eggnog:1GI3K@1117": {
+    "by_annotation_type": {
+      "cyanorak_role": 4,
+      "tigr_role": 4
+    },
+    "by_category": {
+      "Unknown": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MED4": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus RSP50": 1
+    },
+    "has_clusters": 2,
+    "has_derived_metrics": 0,
+    "has_expression": 2,
+    "has_orthologs": 5,
+    "has_significant_expression": 2,
+    "n_members_excl_candidate": 5
+  },
+  "eggnog:1GN8G@1117": {
+    "by_annotation_type": {
+      "cog_category": 5,
+      "cyanorak_role": 4,
+      "pfam": 5,
+      "tigr_role": 4
+    },
+    "by_category": {
+      "Unknown": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus RSP50": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1
+    },
+    "has_clusters": 1,
+    "has_derived_metrics": 1,
+    "has_expression": 2,
+    "has_orthologs": 5,
+    "has_significant_expression": 2,
+    "n_members_excl_candidate": 5
+  },
+  "eggnog:1MM09@1212": {
+    "by_annotation_type": {
+      "brite": 9,
+      "cog_category": 9,
+      "cyanorak_role": 8,
+      "go_bp": 9,
+      "go_cc": 9,
+      "go_mf": 9,
+      "kegg": 9,
+      "pfam": 9,
+      "tigr_role": 8
+    },
+    "by_category": {
+      "Stress response and adaptation": 8,
+      "Transcription": 1
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9303": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus MIT9313": 1,
+      "Prochlorococcus NATL1A": 1,
+      "Prochlorococcus NATL2A": 1,
+      "Prochlorococcus RSP50": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1
+    },
+    "has_clusters": 3,
+    "has_derived_metrics": 0,
+    "has_expression": 4,
+    "has_orthologs": 9,
+    "has_significant_expression": 3,
+    "n_members_excl_candidate": 9
+  },
+  "eggnog:1MMSH@1212": {
+    "by_annotation_type": {
+      "cog_category": 5,
+      "cyanorak_role": 4,
+      "pfam": 5,
+      "tigr_role": 4
+    },
+    "by_category": {
+      "Unknown": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus RSP50": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1
+    },
+    "has_clusters": 1,
+    "has_derived_metrics": 1,
+    "has_expression": 2,
+    "has_orthologs": 5,
+    "has_significant_expression": 2,
+    "n_members_excl_candidate": 5
+  },
+  "eggnog:1MPCX@1212": {
+    "by_annotation_type": {
+      "cyanorak_role": 4,
+      "tigr_role": 4
+    },
+    "by_category": {
+      "Unknown": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MED4": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus RSP50": 1
+    },
+    "has_clusters": 2,
+    "has_derived_metrics": 0,
+    "has_expression": 2,
+    "has_orthologs": 5,
+    "has_significant_expression": 2,
+    "n_members_excl_candidate": 5
+  },
+  "eggnog:30R7F@2": {
+    "by_annotation_type": {
+      "cog_category": 5,
+      "cyanorak_role": 4,
+      "pfam": 5,
+      "tigr_role": 4
+    },
+    "by_category": {
+      "Unknown": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus RSP50": 1,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 1
+    },
+    "has_clusters": 1,
+    "has_derived_metrics": 1,
+    "has_expression": 2,
+    "has_orthologs": 5,
+    "has_significant_expression": 2,
+    "n_members_excl_candidate": 5
+  },
+  "eggnog:31TX9@2": {
+    "by_annotation_type": {
+      "cyanorak_role": 4,
+      "tigr_role": 4
+    },
+    "by_category": {
+      "Unknown": 5
+    },
+    "by_organism": {
+      "Prochlorococcus AS9601": 1,
+      "Prochlorococcus MED4": 1,
+      "Prochlorococcus MIT9301": 1,
+      "Prochlorococcus MIT9312": 1,
+      "Prochlorococcus RSP50": 1
+    },
+    "has_clusters": 2,
+    "has_derived_metrics": 0,
+    "has_expression": 2,
+    "has_orthologs": 5,
+    "has_significant_expression": 2,
+    "n_members_excl_candidate": 5
+  },
+  "eggnog:COG0664@2": {
+    "by_annotation_type": {
+      "brite": 68,
+      "cog_category": 128,
+      "cyanorak_role": 44,
+      "ec": 3,
+      "go_bp": 73,
+      "go_cc": 65,
+      "go_mf": 117,
+      "kegg": 68,
+      "pfam": 127,
+      "tigr_role": 53
+    },
+    "by_category": {
+      "Energy production": 2,
+      "Regulatory functions": 4,
+      "Signal transduction": 28,
+      "Stress response and adaptation": 34,
+      "Transcription": 52,
+      "Transport": 8
+    },
+    "by_organism": {
+      "Alteromonas (MarRef v6)": 2,
+      "Alteromonas macleodii EZ55": 3,
+      "Alteromonas macleodii HOT1A3": 3,
+      "Alteromonas macleodii MIT1002": 3,
+      "Marinobacter (MarRef v6)": 5,
+      "Meiothermus ruber": 4,
+      "Prochlorococcus AS9601": 2,
+      "Prochlorococcus MED4": 2,
+      "Prochlorococcus MIT9301": 2,
+      "Prochlorococcus MIT9303": 7,
+      "Prochlorococcus MIT9312": 2,
+      "Prochlorococcus MIT9313": 6,
+      "Prochlorococcus NATL1A": 4,
+      "Prochlorococcus NATL2A": 4,
+      "Prochlorococcus RSP50": 3,
+      "Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)": 4,
+      "Pseudomonas putida KT2440": 4,
+      "Ruegeria pomeroyi DSS-3": 8,
+      "Shewanella sp. W3-18-1": 6,
+      "Synechococcus CC9311": 5,
+      "Synechococcus PCC 7002": 8,
+      "Synechococcus WH7803": 5,
+      "Synechococcus WH8102": 4,
+      "Synechococcus elongatus PCC 7942": 11,
+      "Synechococcus elongatus UTEX 2973": 11,
+      "Synechococcus sp. BL107": 6,
+      "Thermosynechococcus vestitus BP-1": 4
+    },
+    "has_clusters": 17,
+    "has_derived_metrics": 2,
+    "has_expression": 52,
+    "has_orthologs": 128,
+    "has_significant_expression": 27,
+    "n_members_excl_candidate": 128
+  }
+}
