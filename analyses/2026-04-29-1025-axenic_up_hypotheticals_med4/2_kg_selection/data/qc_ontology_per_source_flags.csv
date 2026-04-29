@@ -1,0 +1,117 @@
+locus_tag,log2fc,annotation_quality,annotation_types,has_any_ontology_row,has_go_bp,has_go_mf,has_go_cc,has_kegg,has_ec,has_cog_category,has_cyanorak_role,has_tigr_role,has_pfam,has_brite
+PMM1828,6.716442209499447,1,cog_category,True,False,False,False,False,False,True,False,False,False,False
+PMM1813,6.278731081746498,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0958,5.739882511894883,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0030,5.21558509421573,0,tigr_role,True,False,False,False,False,False,False,False,True,False,False
+PMM1427,4.940958409884867,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0684,4.737350948185801,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM1966,4.705838225250466,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1898,4.679947892418878,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0819,4.660970769559715,1,pfam | cog_category,True,False,False,False,False,False,True,False,False,True,False
+PMM1939,4.652180082560368,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1860,4.60816166421428,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM0337,4.404923755200296,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1885,4.381109719687346,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM0685,4.295477808531503,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0348,4.180174728276323,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0687,4.0674889457570345,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1915,4.02485471615402,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1671,3.9101776286002807,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1955,3.876899592349444,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1037,3.727383062878376,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1897,3.712726380044303,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM1863,3.6876269063715865,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0334,3.6260850558508992,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM1024,3.4815856205704545,1,cog_category,True,False,False,False,False,False,True,False,False,False,False
+PMM1873,3.477704559348211,0,tigr_role,True,False,False,False,False,False,False,False,True,False,False
+PMM1894,3.4514826332421285,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1312,3.278629428535752,1,go_mf | go_cc | pfam | cog_category | cyanorak_role | tigr_role,True,False,True,True,False,False,True,True,True,True,False
+PMM1248,3.263279008283139,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM2013,3.206325577469096,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM1249,3.0936181251420507,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0351,3.0689916006284714,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM1050,3.048310395769093,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0347,2.951382820361075,1,go_cc | cog_category | cyanorak_role | tigr_role,True,False,False,True,False,False,True,True,True,False,False
+PMM1864,2.942626402248639,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0086,2.877177702771692,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM0698,2.859368312038584,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0338,2.8436643709563776,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM2005,2.8293868084854266,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM0309,2.783164267328629,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+TX50_RS09500,2.701940566762947,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1910,2.580277331692581,1,cog_category,True,False,False,False,False,False,True,False,False,False,False
+PMM0359,2.5675697258211083,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0360,2.56522114841542,1,go_mf | pfam | cog_category | kegg | cyanorak_role | tigr_role,True,False,True,False,True,False,True,True,True,True,False
+PMM1983,2.555476185509782,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1479,2.4676848364330675,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM0975,2.4109045813818564,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0984,2.400888381797426,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1134,2.388567861059389,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0938,2.344727345296854,1,go_bp | go_mf | cog_category | tigr_role,True,True,True,False,False,False,True,False,True,False,False
+PMM1283,2.336846603388784,1,go_cc | pfam | cog_category | kegg | cyanorak_role | tigr_role,True,False,False,True,True,False,True,True,True,True,False
+PMM1588,2.2757714841667105,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1804,2.2752631275457844,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1884,2.240652732160701,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1919,2.227193732481097,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1893,2.147429465264081,1,cog_category,True,False,False,False,False,False,True,False,False,False,False
+PMM0731,2.1031547324493243,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0369,2.0662943513144074,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1043,2.0643817955354584,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1870,2.0574953528332585,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM0810,2.035413432007069,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1013,2.0143684027383726,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1238,1.9983374606964213,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM0726,1.9839051204954696,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0237,1.9695121544855272,1,pfam | cog_category,True,False,False,False,False,False,True,False,False,True,False
+TX50_RS09520,1.928489220332844,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0998,1.924241492015185,1,go_mf | pfam | cog_category | tigr_role,True,False,True,False,False,False,True,False,True,True,False
+PMM0858,1.8825316946035453,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0210,1.875083630818337,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM0087,1.8720605816908888,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0247,1.7781930303732056,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0368,1.7762759005060205,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+TX50_RS09860,1.7460449943147696,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1587,1.6477521240333175,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0432,1.6413705570865804,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM0119,1.6395014743925116,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0364,1.6391452266392934,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0451,1.6135171129632735,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1678,1.6080699768912716,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0088,1.5841485573999063,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM0991,1.551392131852606,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM2077,1.5427691076848489,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM2003,1.5367576732597357,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1959,1.5343824453048331,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM1387,1.5299456312399682,1,pfam | cog_category,True,False,False,False,False,False,True,False,False,True,False
+PMM0707,1.4979424572052362,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0904,1.4698740504102674,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM1574,1.4369221251977349,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0099,1.428330235995931,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0650,1.4195970371100304,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1395,1.3666023334686768,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0849,1.362642439064513,1,go_mf | go_cc | pfam | cog_category | tigr_role,True,False,True,True,False,False,True,False,True,True,False
+PMM0361,1.339362756264124,1,go_mf | cog_category | cyanorak_role | tigr_role,True,False,True,False,False,False,True,True,True,False,False
+PMM0719,1.3137504893600755,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM1418,1.3075776122117195,1,pfam | cog_category | kegg | brite,True,False,False,False,True,False,True,False,False,True,True
+PMM0268,1.2952526727056377,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0664,1.2911887069709074,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM0667,1.2718878343105944,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM1078,1.2711081366806,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0383,1.2624827631780184,1,go_bp | go_cc | pfam | cog_category | kegg | cyanorak_role | tigr_role,True,True,False,True,True,False,True,True,True,True,False
+PMM0715,1.255022371349108,0,cyanorak_role | tigr_role,True,False,False,False,False,False,False,True,True,False,False
+PMM0773,1.2365613261077806,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1362,1.18326197615125,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0996,1.181663987036058,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0739,1.1625609159471328,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM0509,1.1607023317268346,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1307,1.1604495720241634,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1834,1.153221049213674,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM0737,1.1012924497229075,1,cog_category | tigr_role,True,False,False,False,False,False,True,False,True,False,False
+PMM1473,1.096262404232921,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM1045,1.0892991856457417,1,pfam | cog_category | tigr_role,True,False,False,False,False,False,True,False,True,True,False
+PMM1363,1.0846370848788964,1,pfam | cog_category,True,False,False,False,False,False,True,False,False,True,False
+PMM1872,1.0582983032899271,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM1941,1.0539872136345714,1,pfam | cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,True,False
+PMM1970,1.023606778113525,0,,False,False,False,False,False,False,False,False,False,False,False
+PMM1355,1.020796582328294,1,cog_category | cyanorak_role | tigr_role,True,False,False,False,False,False,True,True,True,False,False
+PMM0075,1.0178142326676525,1,go_bp | pfam | cog_category | kegg | cyanorak_role | tigr_role,True,True,False,False,True,False,True,True,True,True,False

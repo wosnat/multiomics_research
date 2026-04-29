@@ -1,0 +1,22 @@
+facet,locus_tag,n_rows_for_gene,content_sample
+gene_overview,PMM1828,1,AQ=1 product='Hypothetical protein' annotation_types=['cog_category']
+gene_overview,PMM1813,1,"AQ=1 product='conserved hypothetical protein' annotation_types=['cog_category', 'cyanorak_role', 'tigr_role']"
+gene_overview,PMM0958,1,"AQ=1 product='conserved hypothetical protein (DUF1830)' annotation_types=['pfam', 'cog_category', 'cyanorak_role', 'tigr_role']"
+gene_details,PMM1828,1,no sparse fields populated
+gene_details,PMM1813,1,no sparse fields populated
+gene_details,PMM0958,1,no sparse fields populated
+gene_ontology_terms,PMM1828,1,1 terms across ['cog_category']; sample=['cog_category:Function unknown']
+gene_ontology_terms,PMM1813,3,"3 terms across ['cog_category', 'cyanorak_role', 'tigr_role']; sample=['cog_category:Function unknown', 'cyanorak_role:Other > Conserved hypothetical proteins', 'tigr_role:Hypothetical proteins / Conserved']"
+gene_ontology_terms,PMM0958,4,"4 terms across ['cog_category', 'cyanorak_role', 'pfam', 'tigr_role']; sample=['cog_category:Function unknown', 'cyanorak_role:Other > Conserved hypothetical proteins', 'pfam:Domain of unknown function (DUF1830)']"
+gene_clusters_by_gene,PMM1828,1,1 memberships: ['Prochlorococcus MED4 cluster VEG (variably expressed)']
+gene_clusters_by_gene,PMM1813,1,1 memberships: ['Prochlorococcus MED4 cluster VEG (variably expressed)']
+gene_clusters_by_gene,PMM0958,3,"3 memberships: ['Prochlorococcus MED4 cluster VEG (variably expressed)', 'Prochlorococcus cluster 18 (menaquinone and ubiquinone)', 'Prochlorococcus MED4 cluster 1 (5 genes)']"
+gene_derived_metrics,PMM1828,0,no derived metrics
+gene_derived_metrics,PMM1813,0,no derived metrics
+gene_derived_metrics,PMM0958,1,"1 DMs: ['MED4 vesicle DNA average read coverage (Biller 2014 Table S4, top-50 ORFs)']"
+gene_homologs,PMM1828,4,"4 groups: [('cyanorak', 'cyanorak:CK_00039912', 'curated', 'PMN2A_RS05595'), ('eggnog', 'eggnog:1MN53@1212', 'Prochloraceae', 'PMN2A_RS05595'), ('eggnog', 'eggnog:1GMTU@1117', 'Cyanobacteria', 'PMN2A_RS05595'), ('eggnog', 'eggnog:30HI9@2', 'Bacteria', 'PMN2A_RS05595')]"
+gene_homologs,PMM1813,4,"4 groups: [('cyanorak', 'cyanorak:CK_00054066', 'curated', None), ('eggnog', 'eggnog:1MMWS@1212', 'Prochloraceae', None), ('eggnog', 'eggnog:1GMPA@1117', 'Cyanobacteria', None), ('eggnog', 'eggnog:321QF@2', 'Bacteria', None)]"
+gene_homologs,PMM0958,4,"4 groups: [('cyanorak', 'cyanorak:CK_00001751', 'curated', 'PMN2A_RS08515'), ('eggnog', 'eggnog:1MMSH@1212', 'Prochloraceae', None), ('eggnog', 'eggnog:1GN8G@1117', 'Cyanobacteria', None), ('eggnog', 'eggnog:30R7F@2', 'Bacteria', None)]"
+gene_response_profile,PMM1828,1,"groups_responded=['coculture', 'iron', 'nitrogen'] groups_not_responded=[]"
+gene_response_profile,PMM1813,1,"groups_responded=['carbon', 'coculture', 'nitrogen'] groups_not_responded=[]"
+gene_response_profile,PMM0958,1,"groups_responded=['coculture', 'iron', 'nitrogen'] groups_not_responded=[]"

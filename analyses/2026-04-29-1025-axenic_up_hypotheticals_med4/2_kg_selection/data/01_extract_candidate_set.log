@@ -1,0 +1,28 @@
+2026-04-29 11:05:26,428 INFO experiment_id=10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic annotation_cut=1
+2026-04-29 11:05:26,675 INFO DE call: matching_genes=405 total_matching=405 truncated=False
+2026-04-29 11:05:26,696 INFO wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/2_kg_selection/data/sig_up_de_rows.csv (405 rows, 23 cols)
+2026-04-29 11:05:26,697 INFO distinct sig_up locus_tags: 405
+2026-04-29 11:05:27,193 INFO gene_overview: total_matching=405 returned=405 truncated=False not_found=[]
+2026-04-29 11:05:27,222 INFO wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/2_kg_selection/data/sig_up_405_overview.csv (405 rows, 26 cols)
+2026-04-29 11:05:27,223 INFO annotation_quality distribution among 405 sig_up genes:
+2026-04-29 11:05:27,224 INFO     annotation_quality=0: 28
+2026-04-29 11:05:27,224 INFO     annotation_quality=1: 88
+2026-04-29 11:05:27,224 INFO     annotation_quality=2: 30
+2026-04-29 11:05:27,224 INFO     annotation_quality=3: 259
+2026-04-29 11:05:27,237 INFO candidate set (annotation_quality <= 1): 116 genes — /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-04-29-1025-axenic_up_hypotheticals_med4/2_kg_selection/data/candidate_set.csv
+2026-04-29 11:05:27,237 INFO ============================================================
+2026-04-29 11:05:27,237 INFO FILTER FUNNEL
+2026-04-29 11:05:27,237 INFO 1849 detected (KG list_experiments) -> 405 sig_up -> 116 candidate (annotation_quality <= 1)
+2026-04-29 11:05:27,237 INFO ============================================================
+2026-04-29 11:05:27,238 INFO CANDIDATE-SET FACET AVAILABILITY (from gene_overview):
+2026-04-29 11:05:27,239 INFO     annotation_types               has any ontology: 99 / 116
+2026-04-29 11:05:27,239 INFO     expression_edge_count          has expression data (>0): 116 / 116
+2026-04-29 11:05:27,239 INFO     significant_up_count           is sig_up in any other study (>0): 116 / 116
+2026-04-29 11:05:27,240 INFO     closest_ortholog_group_size    has ortholog group (>0): 114 / 116
+2026-04-29 11:05:27,240 INFO     cluster_membership_count       has cluster membership (>0): 113 / 116
+2026-04-29 11:05:27,241 INFO     derived_metric_count           has derived metrics (>0): 9 / 116
+2026-04-29 11:05:27,241 INFO ============================================================
+2026-04-29 11:05:27,241 INFO CANDIDATE-SET log2fc summary:
+2026-04-29 11:05:27,242 INFO     min=1.018 max=6.716 median=2.061 mean=2.451
+2026-04-29 11:05:27,242 INFO ============================================================
+2026-04-29 11:05:27,242 INFO done.

@@ -1,0 +1,10 @@
+ontology_type,term_count,gene_count
+tigr_role,90,90
+cog_category,88,88
+cyanorak_role,71,64
+pfam,37,35
+go_cc,7,5
+go_mf,7,6
+kegg,5,5
+go_bp,3,3
+brite,1,1
