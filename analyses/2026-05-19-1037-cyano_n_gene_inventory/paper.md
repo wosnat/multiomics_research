@@ -22,11 +22,38 @@ Two strains warrant a Background note. **SS120 lacks the entire urea pathway** (
 
 ## Methods
 
-*[Populated in steps 3–4: framing decisions, comparison axes, methods module.]*
+**Gene-set construction.** The inventory was assembled by querying the multi-omics KG via the `multiomics_explorer` Python API (mirror of the MCP tools). Per-strain Cyanorak `E.4 ∪ D.1.3` membership was pulled with `genes_by_ontology`. Each anchor locus_tag was then mapped to its eggnog Cyanobacteria-level ortholog group (`gene_homologs(source='eggnog', taxonomic_level='Cyanobacteria')`); 366 / 375 (97.6%) mapped to one of 54 unique eggnog groups. The remaining 9 orphan anchor locus_tags (no Cyanobacteria-level group) were recovered as **synthetic singleton groups** (one per (strain, gene_name) pair) so no anchor was dropped; this yielded 7 additional groups for a final inventory dimension of 19 strains × 61 ortholog groups. Group members across all 19 cyano strains were pulled with `genes_by_homolog_group`. Strain clade assignments were taken from the Cyanorak source CSVs (`prochlorococcus.csv`, `synechococcus.csv`) rather than the KG `Organism.clade` field, which is mis-populated for *Synechococcus* (null) and NATL1A/NATL2A (LLII instead of LLI).
+
+**Cross-strain comparison.** The 19 × 61 copy-count matrix was clustered hierarchically on both axes. The clustering used **Jaccard distance** computed on the binarized presence/absence matrix (cell > 0 → 1), with **UPGMA (average linkage)** for both rows and columns. The binarized clustering pairs with copy-count cell encoding in the heatmap, which keeps paralog signal visible without committing to a paralog-distance metric. The colormap is discrete (0, 1, 2, ≥3) and cells with copy_count ≥ 2 carry an integer overlay. Row annotations: canonical clade (Cyanorak), genus, Cyanorak Pigment type (where applicable), genome gene count.
+
+**Reproducibility.** All extraction, clustering, and rendering live in `analyses/2026-05-19-1037-cyano_n_gene_inventory/` with one script per pipeline stage (`2_kg_selection/scripts/01..06`, `4_methods/heatmap_clustering.py`, `5_analyze/scripts/01_cluster_and_plot.py`). The clustering module was toy-data-verified against hand-computed Jaccard distances before running on the real inventory.
 
 ## Results
 
-*[Populated in step 5.]*
+The clustered heatmap is presented in `5_analyze/figures/01_clustered_heatmap.png` (see Figure 1). Across 19 cyanobacterial genome strains and 61 N-gene ortholog groups, 539 of 1159 (46.5%) strain × group cells are present, with 18 cells carrying paralog copies (copy_count ≥ 2).
+
+**Strain clustering recovers taxonomy.** The data-driven dendrogram splits cleanly into two top-level clades: all 11 *Prochlorococcus* in one branch, all 8 non-*Prochlorococcus* (4 marine *Synechococcus* + 1 *Synechococcus* PCC 7002 + 2 *S. elongatus* + 1 *Thermosynechococcus*) in the other. Within *Prochlorococcus*, sub-clades pair as expected: LLIV (MIT9303 + MIT9313), LLI (NATL2A + MIT0801 + NATL1A), HLII (MIT9301 + AS9601 + MIT9312), HLI (MED4 + RSP50). The two systematic deviations are biologically explainable: SS120 (LLII) separates from the LL group because of complete urea-pathway loss (no urtABCDE + no ureABCDEFG); WH7803 (marine *Synechococcus* clade V) separates from the other marine *Synechococcus* because of urease loss with partial urea-transport loss.
+
+**Ortholog-group structure reflects functional units.** The column clustering recovers operon-level co-occurrence: the urea pathway (urtABCDE + ureABCDEFG) cluster tightly — strains either have the entire 12-gene module or none of it — consistent with horizontal acquisition / loss as a unit. The nitrate / nitrite pathway (nrtP, narB, narM, nirA, focA) cluster as a separate unit, present in marine *Synechococcus* + PCC 7002 + *Thermosynechococcus* + LL Prochlorococcus NATL2A and absent from HL *Prochlorococcus*. The cyanate operon (cynABDSH) splits into Pro-lineage and Syn-lineage paralog sub-clusters — the orthology bridge correctly preserves this lineage asymmetry.
+
+**Universally-conserved N machinery is the dense right block of the heatmap.** Seven ortholog groups are present in all 19 strains: NtcA (global N regulator), GlnB (P-II regulator), GlnA (glutamine synthetase), GlsF (ferredoxin-dependent glutamate synthase), CarA (carbamoyl-P synthase small subunit), MetC (cystathionine β-lyase), and MoeB (molybdopterin biosynthesis). These define the cyano-wide core N regulatory + assimilation machinery.
+
+**Notable paralog signal.** Of the 18 multi-copy cells, the highest is *Synechococcus* PCC 7002 amt1 × 3. *Prochlorococcus* MIT9303 carries a duplicated ntcA — a Crp/FNR-family paralog (`ptrA`, P9303_11071) in the same Cyanobacteria-level ortholog group as the canonical ntcA. The cysK ortholog group has paralog copies in all 4 marine *Synechococcus*. WH8102 carries a duplicated urtA.
+
+### Pathway-level cross-strain comparison
+
+Collapsing the 61 ortholog groups into 10 N-pathway categories (regulation, assimilation core, ammonium uptake, urea uptake, urease, cyanate, nitrate/nitrite, Mo cofactor biosynthesis, Met biosynthesis, other) yields three complementary views (Figures 2–4).
+
+**Figure 2 (Strain × Pathway).** With strains ordered by Figure 1's clustering, the strain × pathway heatmap shows pathway-level coverage at a glance. SS120 is the visible outlier: zero coverage in urea uptake, urease, cyanate, nitrate/nitrite, and Mo cofactor. The two *Synechococcus elongatus* strains (PCC 7942 and UTEX 2973) have identical pathway profiles. PCC 7002 is the broadest non-marine cyano.
+
+**Figure 3 (Clade-group × Pathway summary).** Aggregating strains into 8 clade groups (HLI, HLII, LLI, LLII, LLIV, marine *Synechococcus*, non-marine *Synechococcus*, *Thermosynechococcus*), the highest-level cross-clade comparison surfaces several patterns:
+- All *Prochlorococcus* clades except LLII (=SS120) retain ~70% of urea uptake and ~70% of urease.
+- Cyanate utilization is HLI *Prochlorococcus*-specific (38% in HLI; 0% in HLII / LLII / LLIV; 12% in LLI from MIT0801 alone) — the canonical MED4-lineage cyanate operon (cynABDS).
+- Nitrate / nitrite is a *Synechococcus* / *Thermosynechococcus* signature: marine *Syn* 68%, non-marine *Syn* 52%, *Thermosynechococcus* 43%; absent in HL *Prochlorococcus*; partial in LL *Prochlorococcus* (29%).
+- Mo cofactor biosynthesis is broadly conserved in *Synechococcus* (~60-90%) but rare in *Prochlorococcus* (~11%).
+- Met biosynthesis is universal in marine *Synechococcus* (100%), high in *Prochlorococcus* (~80%), reduced in non-marine *Synechococcus* (47%), and minimal in *Thermosynechococcus* (20%) — *Thermosynechococcus* uses a different Met biosynthesis route.
+
+**Figure 4 (Per-strain composition).** Stacked horizontal bars of pathway-group counts per strain, sorted descending by total. CC9311 (43 groups) and WH8102 (41) are the broadest; SS120 (12) is the most reduced. Strains with higher total N-gene counts diversify across more pathways (not just more copies of the same pathway).
 
 ## Discussion
 

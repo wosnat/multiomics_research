@@ -1,0 +1,37 @@
+2026-05-19 12:02:53,966 INFO Loaded inventory matrix: 19 strains × 61 groups
+2026-05-19 12:02:53,967 INFO Loaded strain table: 19 rows, group table: 61 rows
+2026-05-19 12:02:53,980 INFO Clustering complete. Strain leaf order:
+2026-05-19 12:02:53,980 INFO    1. WH8102
+2026-05-19 12:02:53,981 INFO    2. CC9311
+2026-05-19 12:02:53,981 INFO    3. BL107
+2026-05-19 12:02:53,981 INFO    4. PCC 7002
+2026-05-19 12:02:53,981 INFO    5. BP-1 (Thermosyn.)
+2026-05-19 12:02:53,981 INFO    6. WH7803
+2026-05-19 12:02:53,981 INFO    7. PCC 7942 (elong.)
+2026-05-19 12:02:53,981 INFO    8. UTEX 2973 (elong.)
+2026-05-19 12:02:53,981 INFO    9. SS120
+2026-05-19 12:02:53,981 INFO   10. MIT9303
+2026-05-19 12:02:53,981 INFO   11. MIT9313
+2026-05-19 12:02:53,981 INFO   12. NATL2A
+2026-05-19 12:02:53,981 INFO   13. MIT0801
+2026-05-19 12:02:53,982 INFO   14. NATL1A
+2026-05-19 12:02:53,982 INFO   15. MIT9301
+2026-05-19 12:02:53,982 INFO   16. AS9601
+2026-05-19 12:02:53,982 INFO   17. MIT9312
+2026-05-19 12:02:53,982 INFO   18. MED4
+2026-05-19 12:02:53,982 INFO   19. RSP50
+2026-05-19 12:02:53,982 INFO First 10 group leaves: ['anchor_singleton:ureE:MIT9313', 'eggnog:1G8J1@1117', 'eggnog:1GCPE@1117', 'anchor_singleton:cynA:MED4', 'eggnog:1GBHI@1117', 'eggnog:1GJ43@1117', 'anchor_singleton:moaB:CC9311', 'anchor_singleton:cynH:CC9311', 'eggnog:1GMPI@1117', 'anchor_singleton:amt2:CC9311']
+2026-05-19 12:02:53,982 INFO Last 10 group leaves: ['eggnog:1G0Z6@1117', 'eggnog:1G529@1117', 'eggnog:1G0CH@1117', 'eggnog:1G0S8@1117', 'eggnog:1G61D@1117', 'eggnog:1G5AI@1117', 'eggnog:1G53K@1117', 'eggnog:1G0VS@1117', 'eggnog:1G0DW@1117', 'eggnog:1G0K2@1117']
+2026-05-19 12:02:53,994 INFO Pathway category distribution across 61 groups:
+2026-05-19 12:02:53,995 INFO   urease               10 groups
+2026-05-19 12:02:53,995 INFO   mo_cofactor          9 groups
+2026-05-19 12:02:53,995 INFO   cyanate              8 groups
+2026-05-19 12:02:53,995 INFO   nitrate_nitrite      7 groups
+2026-05-19 12:02:53,995 INFO   urea_uptake          7 groups
+2026-05-19 12:02:53,995 INFO   met_biosynthesis     5 groups
+2026-05-19 12:02:53,995 INFO   regulation           5 groups
+2026-05-19 12:02:53,995 INFO   assimilation_core    4 groups
+2026-05-19 12:02:53,995 INFO   ammonium_uptake      3 groups
+2026-05-19 12:02:53,995 INFO   other                3 groups
+2026-05-19 12:02:56,933 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/5_analyze/figures/01_clustered_heatmap.png and /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/5_analyze/figures/01_clustered_heatmap.pdf
+2026-05-19 12:02:56,941 INFO Inventory totals: 1159 cells, 539 present (46.5%), 18 with paralogs

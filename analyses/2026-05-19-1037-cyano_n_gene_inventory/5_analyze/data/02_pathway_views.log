@@ -1,0 +1,31 @@
+2026-05-19 12:08:38,707 INFO Pathway-collapse complete. Pathway → n_groups: {'regulation': np.int64(5), 'assimilation_core': np.int64(4), 'ammonium_uptake': np.int64(3), 'urea_uptake': np.int64(7), 'urease': np.int64(10), 'cyanate': np.int64(8), 'nitrate_nitrite': np.int64(7), 'mo_cofactor': np.int64(9), 'met_biosynthesis': np.int64(5), 'other': np.int64(3)}
+2026-05-19 12:08:38,707 INFO Per-strain total present groups (matches Figure 1):
+2026-05-19 12:08:38,708 INFO   Prochlorococcus AS9601                                   24
+2026-05-19 12:08:38,708 INFO   Prochlorococcus MED4                                     28
+2026-05-19 12:08:38,708 INFO   Prochlorococcus MIT0801                                  28
+2026-05-19 12:08:38,708 INFO   Prochlorococcus MIT9301                                  25
+2026-05-19 12:08:38,708 INFO   Prochlorococcus MIT9303                                  27
+2026-05-19 12:08:38,709 INFO   Prochlorococcus MIT9312                                  24
+2026-05-19 12:08:38,709 INFO   Prochlorococcus MIT9313                                  27
+2026-05-19 12:08:38,709 INFO   Prochlorococcus NATL1A                                   28
+2026-05-19 12:08:38,709 INFO   Prochlorococcus NATL2A                                   28
+2026-05-19 12:08:38,709 INFO   Prochlorococcus RSP50                                    26
+2026-05-19 12:08:38,709 INFO   Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)  12
+2026-05-19 12:08:38,709 INFO   Synechococcus WH8102                                     41
+2026-05-19 12:08:38,709 INFO   Synechococcus WH7803                                     28
+2026-05-19 12:08:38,709 INFO   Synechococcus CC9311                                     43
+2026-05-19 12:08:38,709 INFO   Synechococcus sp. BL107                                  39
+2026-05-19 12:08:38,709 INFO   Synechococcus PCC 7002                                   35
+2026-05-19 12:08:38,710 INFO   Synechococcus elongatus PCC 7942                         24
+2026-05-19 12:08:38,710 INFO   Synechococcus elongatus UTEX 2973                        24
+2026-05-19 12:08:38,710 INFO   Thermosynechococcus vestitus BP-1                        28
+2026-05-19 12:08:42,517 INFO Clade-group × pathway summary (mean %% present):
+2026-05-19 12:08:42,517 INFO   Pro HLI (n=2)                  {'regulation': 0.4, 'assimilation_core': 0.75, 'ammonium_uptake': 0.33, 'urea_uptake': 0.71, 'urease': 0.7, 'cyanate': 0.38, 'nitrate_nitrite': 0.0, 'mo_cofactor': 0.11, 'met_biosynthesis': 0.8, 'other': 0.33}
+2026-05-19 12:08:42,518 INFO   Pro HLII (n=3)                 {'regulation': 0.47, 'assimilation_core': 0.75, 'ammonium_uptake': 0.33, 'urea_uptake': 0.71, 'urease': 0.7, 'cyanate': 0.0, 'nitrate_nitrite': 0.0, 'mo_cofactor': 0.11, 'met_biosynthesis': 0.8, 'other': 0.33}
+2026-05-19 12:08:42,518 INFO   Pro LLI (n=3)                  {'regulation': 0.4, 'assimilation_core': 0.75, 'ammonium_uptake': 0.33, 'urea_uptake': 0.71, 'urease': 0.7, 'cyanate': 0.12, 'nitrate_nitrite': 0.29, 'mo_cofactor': 0.11, 'met_biosynthesis': 0.8, 'other': 0.67}
+2026-05-19 12:08:42,518 INFO   Pro LLII (n=1, SS120)          {'regulation': 0.4, 'assimilation_core': 0.75, 'ammonium_uptake': 0.33, 'urea_uptake': 0.0, 'urease': 0.0, 'cyanate': 0.0, 'nitrate_nitrite': 0.0, 'mo_cofactor': 0.11, 'met_biosynthesis': 0.8, 'other': 0.33}
+2026-05-19 12:08:42,518 INFO   Pro LLIV (n=2)                 {'regulation': 0.6, 'assimilation_core': 0.75, 'ammonium_uptake': 0.33, 'urea_uptake': 0.71, 'urease': 0.7, 'cyanate': 0.0, 'nitrate_nitrite': 0.29, 'mo_cofactor': 0.11, 'met_biosynthesis': 0.8, 'other': 0.33}
+2026-05-19 12:08:42,519 INFO   Marine Syn (n=4)               {'regulation': 0.6, 'assimilation_core': 0.88, 'ammonium_uptake': 0.42, 'urea_uptake': 0.57, 'urease': 0.52, 'cyanate': 0.31, 'nitrate_nitrite': 0.68, 'mo_cofactor': 0.92, 'met_biosynthesis': 1.0, 'other': 0.08}
+2026-05-19 12:08:42,519 INFO   Non-marine Syn (n=3)           {'regulation': 1.0, 'assimilation_core': 1.0, 'ammonium_uptake': 0.33, 'urea_uptake': 0.19, 'urease': 0.23, 'cyanate': 0.33, 'nitrate_nitrite': 0.52, 'mo_cofactor': 0.59, 'met_biosynthesis': 0.47, 'other': 0.0}
+2026-05-19 12:08:42,519 INFO   Thermosyn (n=1, BP-1)          {'regulation': 0.6, 'assimilation_core': 0.75, 'ammonium_uptake': 0.33, 'urea_uptake': 0.71, 'urease': 0.7, 'cyanate': 0.0, 'nitrate_nitrite': 0.43, 'mo_cofactor': 0.56, 'met_biosynthesis': 0.2, 'other': 0.0}
+2026-05-19 12:08:44,486 INFO Wrote 3 figures (PNG + PDF) and 3 data CSVs.
