@@ -1,0 +1,35 @@
+2026-05-19 12:24:15,191 INFO ===== Test 1: Mantel (Jaccard vs taxonomic distance) =====
+2026-05-19 12:24:17,452 INFO Mantel r = 0.7842, p (9999 perms, two-sided) = 0.0001
+2026-05-19 12:24:17,454 INFO ===== Test 2a: Fisher's exact (clade group × pathway), BH × 80 =====
+2026-05-19 12:24:17,619 INFO Significant (q < 0.05): 0 of 80. (Conservative due to small clade-group N.)
+2026-05-19 12:24:17,621 INFO Raw p < 0.05 (uncorrected, 3 contrasts):
+2026-05-19 12:24:17,621 INFO   Pro HLII           × nitrate_nitrite    DEPLETED in=0/3 out=13/16 OR=0.00 p=0.0206 q=0.963
+2026-05-19 12:24:17,621 INFO   Pro HLII           × cyanate            DEPLETED in=0/3 out=12/16 OR=0.00 p=0.0361 q=0.963
+2026-05-19 12:24:17,622 INFO   Non-marine Syn     × other              DEPLETED in=0/3 out=12/16 OR=0.00 p=0.0361 q=0.963
+2026-05-19 12:24:17,622 INFO ===== Test 2b: Pre-specified contrasts (Fisher's exact, BH × 5) =====
+2026-05-19 12:24:17,651 INFO     HLI Pro vs other Pro: cyanate                      a=2/2 b=3/9 OR=inf p=0.182 q=0.303
+2026-05-19 12:24:17,651 INFO     Syn (all) vs Pro: nitrate                          a=8/8 b=5/11 OR=inf p=0.0181 q=0.0903
+2026-05-19 12:24:17,652 INFO     Syn (all) vs Pro: Mo cofactor                      a=8/8 b=11/11 OR=nan p=1 q=1
+2026-05-19 12:24:17,652 INFO     SS120 vs other Pro: urea_uptake                    a=0/1 b=10/10 OR=0.00 p=0.0909 q=0.227
+2026-05-19 12:24:17,652 INFO     Thermosyn vs others: met biosynthesis              a=1/1 b=18/18 OR=nan p=1 q=1
+2026-05-19 12:24:17,652 INFO ===== Test 2c: Mann-Whitney U on %% pathway coverage =====
+2026-05-19 12:24:17,684 INFO   * Syn vs Pro: nitrate_nitrite                          a_med=0.64 (n=8) b_med=0.00 (n=11) U=88.0 p=0.000211 q=0.000527
+2026-05-19 12:24:17,684 INFO   * Syn vs Pro: mo_cofactor                              a_med=0.78 (n=8) b_med=0.11 (n=11) U=88.0 p=5.92e-05 q=0.000296
+2026-05-19 12:24:17,684 INFO   * Marine Syn vs Non-marine Syn: met_biosynthesis       a_med=1.00 (n=4) b_med=0.40 (n=4) U=16.0 p=0.0194 q=0.0242
+2026-05-19 12:24:17,685 INFO   * HL Pro vs LL Pro: nitrate_nitrite                    a_med=0.00 (n=5) b_med=0.29 (n=6) U=2.5 p=0.0114 q=0.019
+2026-05-19 12:24:17,685 INFO     HL Pro vs LL Pro: cyanate                            a_med=0.00 (n=5) b_med=0.06 (n=6) U=16.5 p=0.84 q=0.84
+2026-05-19 12:24:17,685 INFO ===== Test 3: Silhouette per strain on Jaccard distance, by clade group =====
+2026-05-19 12:24:17,688 INFO Silhouette (merged labels): mean=0.241, min=-0.312 (= worst fit), max=0.762
+2026-05-19 12:24:17,688 INFO Worst-fitting strains (lowest silhouette = farthest from own group centroid):
+2026-05-19 12:24:17,689 INFO   Prochlorococcus MIT0801                                 s=-0.312  (Pro LLI → Pro LL)
+2026-05-19 12:24:17,689 INFO   Prochlorococcus NATL1A                                  s=-0.312  (Pro LLI → Pro LL)
+2026-05-19 12:24:17,689 INFO   Prochlorococcus NATL2A                                  s=-0.312  (Pro LLI → Pro LL)
+2026-05-19 12:24:17,690 INFO   Thermosynechococcus vestitus BP-1                       s=-0.103  (Thermosyn → Non-marine cyano)
+2026-05-19 12:24:17,690 INFO   Prochlorococcus marinus subsp. marinus CCMP1375 (SS120) s=-0.102  (Pro LLII → Pro LL)
+2026-05-19 12:24:17,690 INFO Best-fitting strains (highest silhouette):
+2026-05-19 12:24:17,691 INFO   Prochlorococcus MED4                                    s=0.605  (Pro HLI → Pro HL)
+2026-05-19 12:24:17,691 INFO   Prochlorococcus MIT9301                                 s=0.695  (Pro HLII → Pro HL)
+2026-05-19 12:24:17,691 INFO   Prochlorococcus RSP50                                   s=0.738  (Pro HLI → Pro HL)
+2026-05-19 12:24:17,691 INFO   Prochlorococcus MIT9312                                 s=0.762  (Pro HLII → Pro HL)
+2026-05-19 12:24:17,691 INFO   Prochlorococcus AS9601                                  s=0.762  (Pro HLII → Pro HL)
+2026-05-19 12:24:17,692 INFO Wrote 3 result CSVs.

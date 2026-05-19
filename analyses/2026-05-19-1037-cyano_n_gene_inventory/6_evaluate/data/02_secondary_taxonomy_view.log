@@ -1,0 +1,3 @@
+2026-05-19 12:25:37,714 INFO Taxonomy-ordered matrix shape: (19, 61)
+2026-05-19 12:25:37,716 INFO Pathway-block sizes (columns): {'regulation': 5, 'assimilation_core': 4, 'ammonium_uptake': 3, 'urea_uptake': 7, 'urease': 10, 'cyanate': 8, 'nitrate_nitrite': 7, 'mo_cofactor': 9, 'met_biosynthesis': 5, 'other': 3}
+2026-05-19 12:25:40,443 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/6_evaluate/figures/05_taxonomy_view.png and /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/6_evaluate/figures/05_taxonomy_view.pdf

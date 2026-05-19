@@ -1,0 +1,2 @@
+test,n_strains,n_distances,permutations,mantel_r,p_value
+mantel_jaccard_vs_taxonomy,19,171,9999,0.7842035770960323,0.0001

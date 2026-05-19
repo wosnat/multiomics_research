@@ -1,0 +1,6 @@
+contrast,pathway,a_present,a_total,b_present,b_total,odds_ratio,p_value,q_value_bh
+HLI Pro vs other Pro: cyanate,cyanate,2,2,3,9,inf,0.18181818181818182,0.30303030303030304
+Syn (all) vs Pro: nitrate,nitrate_nitrite,8,8,5,11,inf,0.018059855521155833,0.09029927760577916
+Syn (all) vs Pro: Mo cofactor,mo_cofactor,8,8,11,11,,1.0,1.0
+SS120 vs other Pro: urea_uptake,urea_uptake,0,1,10,10,0.0,0.09090909090909091,0.22727272727272727
+Thermosyn vs others: met biosynthesis,met_biosynthesis,1,1,18,18,,1.0,1.0

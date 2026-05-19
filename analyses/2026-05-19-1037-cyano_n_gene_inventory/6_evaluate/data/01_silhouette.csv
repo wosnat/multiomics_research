@@ -1,0 +1,20 @@
+strain,clade_group,merged_label,silhouette_merged
+Prochlorococcus MIT0801,Pro LLI,Pro LL,-0.31210746983828186
+Prochlorococcus NATL1A,Pro LLI,Pro LL,-0.31210746983828186
+Prochlorococcus NATL2A,Pro LLI,Pro LL,-0.31210746983828186
+Thermosynechococcus vestitus BP-1,Thermosyn,Non-marine cyano,-0.10269808588623935
+Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro LLII,Pro LL,-0.10198874296435254
+Synechococcus PCC 7002,Non-marine Syn,Non-marine cyano,-0.060718125785592124
+Prochlorococcus MIT9303,Pro LLIV,Pro LL,0.11987113189760124
+Prochlorococcus MIT9313,Pro LLIV,Pro LL,0.11987113189760124
+Synechococcus WH7803,Marine Syn,Marine Syn,0.18977354625801315
+Synechococcus WH8102,Marine Syn,Marine Syn,0.2528425888593018
+Synechococcus elongatus PCC 7942,Non-marine Syn,Non-marine cyano,0.3493625659852856
+Synechococcus elongatus UTEX 2973,Non-marine Syn,Non-marine cyano,0.3493625659852856
+Synechococcus CC9311,Marine Syn,Marine Syn,0.3840445784172141
+Synechococcus sp. BL107,Marine Syn,Marine Syn,0.4564532448219331
+Prochlorococcus MED4,Pro HLI,Pro HL,0.6046543815248339
+Prochlorococcus MIT9301,Pro HLII,Pro HL,0.6948999935687182
+Prochlorococcus RSP50,Pro HLI,Pro HL,0.7380635458442817
+Prochlorococcus MIT9312,Pro HLII,Pro HL,0.7621421616358325
+Prochlorococcus AS9601,Pro HLII,Pro HL,0.7621421616358325
