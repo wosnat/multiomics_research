@@ -1,0 +1,33 @@
+2026-05-19 11:38:34,558 INFO Inputs: 9 orphan loci, 54 existing groups, 549 member rows, matrix (19, 54)
+2026-05-19 11:38:34,573 INFO Synthetic singleton groups added: 7 (one per orphan (strain, gene_name) pair)
+2026-05-19 11:38:34,573 INFO   + anchor_singleton:cynA:MED4 — cynA (cyanate ABC transporter, substrate-binding protein) [member_count=1]
+2026-05-19 11:38:34,574 INFO   + anchor_singleton:ureE:MIT9313 — ureE (urease accessory protein UreE) [member_count=1]
+2026-05-19 11:38:34,574 INFO   + anchor_singleton:amt2:CC9311 — amt2 (ammonium transporter) [member_count=1]
+2026-05-19 11:38:34,574 INFO   + anchor_singleton:cynH:CC9311 — cynH (cyanate hydratase) [member_count=2]
+2026-05-19 11:38:34,574 INFO   + anchor_singleton:moaB:CC9311 — moaB (molybdenum cofactor biosynthesis protein B) [member_count=1]
+2026-05-19 11:38:34,575 INFO   + anchor_singleton:nrtP:WH8102 — nrtP (nitrate transporter) [member_count=2]
+2026-05-19 11:38:34,575 INFO   + anchor_singleton:focA:BL107 — focA (nitrite transporter, FNT family) [member_count=1]
+2026-05-19 11:38:34,587 INFO ---
+2026-05-19 11:38:34,587 INFO Augmented groups CSV: 54 → 61 rows
+2026-05-19 11:38:34,588 INFO Augmented members CSV: 549 → 558 rows
+2026-05-19 11:38:34,588 INFO Augmented matrix: (19, 54) → (19, 61)
+2026-05-19 11:38:34,588 INFO Per-strain copy-count change:
+2026-05-19 11:38:34,588 INFO   Prochlorococcus AS9601                                  before=24  after=24
+2026-05-19 11:38:34,589 INFO   Prochlorococcus MED4                                    before=27  after=28  +1
+2026-05-19 11:38:34,589 INFO   Prochlorococcus MIT0801                                 before=28  after=28
+2026-05-19 11:38:34,590 INFO   Prochlorococcus MIT9301                                 before=25  after=25
+2026-05-19 11:38:34,590 INFO   Prochlorococcus MIT9303                                 before=28  after=28
+2026-05-19 11:38:34,590 INFO   Prochlorococcus MIT9312                                 before=24  after=24
+2026-05-19 11:38:34,591 INFO   Prochlorococcus MIT9313                                 before=26  after=27  +1
+2026-05-19 11:38:34,591 INFO   Prochlorococcus NATL1A                                  before=28  after=28
+2026-05-19 11:38:34,592 INFO   Prochlorococcus NATL2A                                  before=29  after=29
+2026-05-19 11:38:34,592 INFO   Prochlorococcus RSP50                                   before=26  after=26
+2026-05-19 11:38:34,592 INFO   Prochlorococcus marinus subsp. marinus CCMP1375 (SS120) before=12  after=12
+2026-05-19 11:38:34,593 INFO   Synechococcus WH8102                                    before=43  after=45  +2
+2026-05-19 11:38:34,593 INFO   Synechococcus WH7803                                    before=29  after=29
+2026-05-19 11:38:34,594 INFO   Synechococcus CC9311                                    before=41  after=45  +4
+2026-05-19 11:38:34,594 INFO   Synechococcus sp. BL107                                 before=39  after=40  +1
+2026-05-19 11:38:34,594 INFO   Synechococcus PCC 7002                                  before=39  after=39
+2026-05-19 11:38:34,595 INFO   Synechococcus elongatus PCC 7942                        before=26  after=26
+2026-05-19 11:38:34,595 INFO   Synechococcus elongatus UTEX 2973                       before=26  after=26
+2026-05-19 11:38:34,596 INFO   Thermosynechococcus vestitus BP-1                       before=29  after=29

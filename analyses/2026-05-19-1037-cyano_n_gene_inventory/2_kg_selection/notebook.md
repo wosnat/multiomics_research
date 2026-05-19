@@ -209,19 +209,19 @@ All 7 cross-genus (Prochlorococcus + Synechococcus + Thermosynechococcus). NtcA 
 
 **Per-orphan undercount audit (Q7b, post-hoc).** After the initial "orphans are paralog copies, don't matter" framing was challenged, I audited each orphan against the inventory: does any group in the inventory with the same `consensus_gene_name` actually include the orphan's strain as a member? Result:
 
-| Orphan locus | Strain | Gene | Undercount in inventory? |
+| Orphan locus | Strain | Gene | Undercount before recovery |
 |---|---|---|---|
 | PMM0370 | MED4 | cynA | yes — MED4 absent in cynA group |
 | PMT2232 | MIT9313 | ureE | yes — MIT9313 absent in both ureE groups |
 | SYNW2462 + SYNW2463 | WH8102 | nrtP | yes — WH8102 absent in nrtP group (2 paralog copies unrepresented) |
 | sync_2840 + sync_2903 | CC9311 | cynH | yes — CC9311 absent in cynH group (2 paralog copies unrepresented) |
 | BL107_06829 | BL107 | focA | yes — BL107 absent in focA group |
-| sync_2280 | CC9311 | amt2 | yes — amt2 is **not in the inventory at all** (no amt2 group) |
-| sync_2895 | CC9311 | moaB | no — represented via another locus_tag |
+| sync_2280 | CC9311 | amt2 | yes — amt2 was not in the inventory at all |
+| sync_2895 | CC9311 | moaB | (already represented via another locus_tag, but kept as its own group for symmetry) |
 
-So **6 strain × gene cells in `05_inventory_matrix.csv` show 0 where the strain genuinely has the gene**, and 1 gene name (amt2) is entirely missing from the inventory's column set. Affects 5 unique strains (MED4, MIT9313, WH8102, CC9311, BL107) on 6 specific genes (cynA, ureE, nrtP, cynH, focA, amt2). The biological story is mostly correct (e.g., MED4 still shows urease and urea transport correctly, just not cynA); these 6 specific cells are the documented inaccuracies.
+**Recovery (`06_orphan_recovery.py`, researcher-redirected).** Earlier I framed these as a documented limitation to keep ortholog-tier purity. Researcher overrode: don't throw out the orphans. Each (strain, gene_name) orphan combination became one synthetic singleton group with `group_id = anchor_singleton:<gene>:<strain>`, `source = anchor_singleton`. 9 orphan locus_tags collapsed into 7 synthetic groups (WH8102 nrtP and CC9311 cynH each merge 2 paralog copies into one group with copy_count=2). The inventory matrix grew from 19 × 54 → **19 × 61**. Members CSV grew from 549 → 558 rows. Per-strain copy-count deltas after recovery: MED4 +1, MIT9313 +1, WH8102 +2, CC9311 +4, BL107 +1; net +9 copies — matches the orphan total. All other strains unchanged.
 
-**Decision:** accept and document — do not patch. Reasons: (1) the inventory's *direction* (HL/LL/Syn/non-marine differences) is unchanged by these 6 cells; (2) patching via cyanorak-curated fallback would mix tiers and introduce a different consistency problem; (3) at step 6, any interpretive claim that depends on one of these specific cells will be cross-checked against the source CSV before being stated. Logged in `gaps_and_friction.md`.
+**Tier-mixing acknowledgment:** the inventory is now a mix of 54 eggnog Cyanobacteria-level groups (cross-strain orthology) and 7 anchor singleton groups (strain-specific, no orthology). The `source` column on `04_ortholog_groups.csv` distinguishes them. Downstream analysis should treat synthetic singletons as strain-specific "anchor presence" indicators, not as cross-strain comparable units.
 
 ## Decisions
 
@@ -235,7 +235,7 @@ So **6 strain × gene cells in `05_inventory_matrix.csv` show 0 where the strain
 
 **2026-05-19 — Ortholog tier locked at eggnog Cyanobacteria (specificity_rank=2).** The Cyanobacteria tier gives 366/375 anchor coverage with clean bridge integrity (Q5). Going to Prochloraceae would split lineage-specific paralogs further (smaller groups, less cross-comparability). Going to Bacteria would let in non-cyano members (Alteromonas, Marinobacter). Cyanobacteria is the right tier.
 
-**2026-05-19 — Orphan anchors accepted as a documented inventory limitation.** The post-hoc Q7b audit showed the orphan impact is larger than initially framed: 6 strain × gene cells in the inventory matrix are wrong (cell=0 when gene present in strain), and 1 gene (amt2) is entirely absent from the inventory's column set. Affects 5 strains (MED4, MIT9313, WH8102, CC9311, BL107) on 6 genes (cynA, ureE, nrtP, cynH, focA, amt2). Decision: do not patch the inventory; document the specific cells; cross-check against source CSV if any step-6 interpretive claim depends on one of them. Trade-off: keeping the inventory at a single ortholog tier (eggnog Cyanobacteria) is more important than recovering 6 cells via tier-mixing.
+**2026-05-19 — Orphan anchors recovered as synthetic singleton groups (researcher-redirected reversal).** Earlier decision was to leave orphans out for ortholog-tier purity. Researcher overrode that — don't throw out data. Each (strain, gene_name) orphan combination became one synthetic singleton group via `06_orphan_recovery.py`. Inventory matrix grew 19 × 54 → 19 × 61. The synthetic-singleton convention is principled (a strain-specific anchor that has no Cyanobacteria-level eggnog group is still data); the trade-off is tier mixing, addressed by the `source` column on `04_ortholog_groups.csv` (`eggnog` vs `anchor_singleton`).
 
 ### Items deferred to later steps
 
@@ -251,8 +251,8 @@ KG entries enumerated, anchor set built, ortholog expansion performed, and 7-que
 ## Decide-gate checklist
 
 - **Outputs produced.**
-  - Scripts (run with `uv run python 2_kg_selection/scripts/<name>.py`): `01_anchor_genes.py`, `02_strain_table.py`, `03_n_publications.py`, `qc_outlier_coverage.py`, `04_anchor_to_ortholog.py`, `05_ortholog_inventory.py`, `qc_ortholog_inventory.py`.
-  - Data: `01_anchor_genes.csv` (612 rows), `01_anchor_summary.csv` (13), `02_strain_table.csv` (19 × 17), `03_n_publications.csv` (4), `qc_outlier_coverage.csv` (31), `04_anchor_to_ortholog.csv` (366 rows), `04_anchors_without_group.csv` (9), `04_ortholog_groups.csv` (54), `05_inventory_members.csv` (549), `05_inventory_matrix.csv` (19 × 54), `qc_universal_groups.csv` (7), `qc_paralogs.csv` (16), `qc_orphan_anchors.csv` (9). Plus 7 .log files.
+  - Scripts (run with `uv run python 2_kg_selection/scripts/<name>.py`): `01_anchor_genes.py`, `02_strain_table.py`, `03_n_publications.py`, `qc_outlier_coverage.py`, `04_anchor_to_ortholog.py`, `05_ortholog_inventory.py`, `qc_ortholog_inventory.py`, `06_orphan_recovery.py`.
+  - Data: `01_anchor_genes.csv` (612 rows), `01_anchor_summary.csv` (13), `02_strain_table.csv` (19 × 17), `03_n_publications.csv` (4), `qc_outlier_coverage.csv` (31), `04_anchor_to_ortholog.csv` (366 rows), `04_anchors_without_group.csv` (9), `04_ortholog_groups.csv` (**61** post-recovery), `05_inventory_members.csv` (**558** post-recovery), `05_inventory_matrix.csv` (**19 × 61** post-recovery), `06_synthetic_groups.csv` (7), `qc_universal_groups.csv` (7), `qc_paralogs.csv` (16), `qc_orphan_anchors.csv` (9). Plus 8 .log files.
   - No figures (figures come in step 5).
 - **Results presented.** Anchor summary, 19-strain enriched table, N-publications table, outlier QC, ortholog group inventory, per-strain group counts, ubiquity distribution, 7-question QC suite — all shown inline above with same numbers as the underlying CSVs.
 - **QC gate (7 named checks).**
@@ -263,6 +263,6 @@ KG entries enumerated, anchor set built, ortholog expansion performed, and 7-que
   - Q2/Q3/Q4. Per-strain group inventories for outliers + previously-uncovered strains → biologically interpretable; SS120/WH7803 absences match expectations; PCC 7942 = UTEX 2973 identical (expected).
   - Q5. Bridge integrity → all 549 member rows in-scope cyano; no Alteromonas/Marinobacter leakage.
   - Q6. Paralog inventory → 16 (strain × group) multi-copy entries identified for downstream copy-aware analysis.
-  - Q7. Orphan anchors → 8/9 are paralog copies whose gene-name is still represented elsewhere; 1 (MED4 cynA) has only a Bacteria-level group, deliberately not added to keep tier consistency.
-- **Decisions made this step.** Five: two-tier stratification; `clade_canonical` convention; keep SS120/WH7803 in scope; lock ortholog tier at eggnog Cyanobacteria; orphan anchors accepted as a tolerated limitation.
+  - Q7. Orphan anchors → 9 orphan loci, Q7b audit showed 6 strain × gene cells were undercounted; resolved by `06_orphan_recovery.py` adding 7 synthetic singleton groups (one per (strain, gene_name) orphan combination). Inventory matrix now 19 × 61.
+- **Decisions made this step.** Five: two-tier stratification; `clade_canonical` convention; keep SS120/WH7803 in scope; lock ortholog tier at eggnog Cyanobacteria (for cross-strain comparison); **recover orphan anchors as synthetic singleton groups** (so no anchor gene is dropped from the inventory).
 - **Advance rationale.** Anchor + ortholog inventory is built and QC'd. The 19 × 54 matrix is the inventory the step-1 question asks for; step 3 will decide *how* to present and interpret it.

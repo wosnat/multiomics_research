@@ -1,11 +1,13 @@
 organism_name,group_id,copy_count,consensus_gene_name,consensus_product
 Prochlorococcus MIT9303,eggnog:1G07U@1117,2,ntcA,global nitrogen regulatory protein
 Prochlorococcus NATL2A,eggnog:1G0Z6@1117,2,nirA,ferredoxin--nitrite reductase
+Synechococcus CC9311,anchor_singleton:cynH:CC9311,2,cynH,cyanate hydratase
 Synechococcus CC9311,eggnog:1G493@1117,2,cysK,O-acetylserine sulfhydrylase A
 Synechococcus PCC 7002,eggnog:1G0S8@1117,3,amt1,ammonium transporter
 Synechococcus PCC 7002,eggnog:1G1XM@1117,2,cynD,ABC transporter ATP-binding protein
 Synechococcus PCC 7002,eggnog:1G529@1117,2,cynS,cyanate hydratase
 Synechococcus WH7803,eggnog:1G493@1117,2,cysK,O-acetylserine sulfhydrylase A
+Synechococcus WH8102,anchor_singleton:nrtP:WH8102,2,nrtP,nitrate transporter
 Synechococcus WH8102,eggnog:1G1XM@1117,2,cynD,ABC transporter ATP-binding protein
 Synechococcus WH8102,eggnog:1G29H@1117,2,urtA,"ABC-type urea transporter, substrate binding component"
 Synechococcus WH8102,eggnog:1G493@1117,2,cysK,O-acetylserine sulfhydrylase A

@@ -53,3 +53,10 @@ eggnog:1GMZN@1117,mobA,molybdenum cofactor guanylyltransferase,Cyanobacteria,egg
 eggnog:1GNRD@1117,moaD,molydbenum cofactor biosynthesis protein D (molybdopterin converting factor small subunit),Cyanobacteria,eggnog,2,4,4,Synechococcus,single_genus,4
 eggnog:1GP1E@1117,cynH,cyanate hydratase,Cyanobacteria,eggnog,2,3,3,Synechococcus,single_genus,3
 eggnog:1GRCJ@1117,PMN2A_RS05525,nitroreductase family protein,Cyanobacteria,eggnog,2,3,3,Prochlorococcus,single_genus,2
+anchor_singleton:cynA:MED4,cynA,"cyanate ABC transporter, substrate-binding protein",anchor_singleton,anchor_singleton,,1,1,Prochlorococcus,single_genus,1
+anchor_singleton:ureE:MIT9313,ureE,urease accessory protein UreE,anchor_singleton,anchor_singleton,,1,1,Prochlorococcus,single_genus,1
+anchor_singleton:amt2:CC9311,amt2,ammonium transporter,anchor_singleton,anchor_singleton,,1,1,Synechococcus,single_genus,1
+anchor_singleton:cynH:CC9311,cynH,cyanate hydratase,anchor_singleton,anchor_singleton,,2,1,Synechococcus,single_genus,2
+anchor_singleton:moaB:CC9311,moaB,molybdenum cofactor biosynthesis protein B,anchor_singleton,anchor_singleton,,1,1,Synechococcus,single_genus,1
+anchor_singleton:nrtP:WH8102,nrtP,nitrate transporter,anchor_singleton,anchor_singleton,,2,1,Synechococcus,single_genus,2
+anchor_singleton:focA:BL107,focA,"nitrite transporter, FNT family",anchor_singleton,anchor_singleton,,1,1,Synechococcus,single_genus,1

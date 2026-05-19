@@ -1,0 +1,8 @@
+group_id,consensus_gene_name,consensus_product,taxonomic_level,source,specificity_rank,member_count,organism_count,genera,has_cross_genus_members,n_anchor_loci_in_group
+anchor_singleton:cynA:MED4,cynA,"cyanate ABC transporter, substrate-binding protein",anchor_singleton,anchor_singleton,,1,1,Prochlorococcus,single_genus,1
+anchor_singleton:ureE:MIT9313,ureE,urease accessory protein UreE,anchor_singleton,anchor_singleton,,1,1,Prochlorococcus,single_genus,1
+anchor_singleton:amt2:CC9311,amt2,ammonium transporter,anchor_singleton,anchor_singleton,,1,1,Synechococcus,single_genus,1
+anchor_singleton:cynH:CC9311,cynH,cyanate hydratase,anchor_singleton,anchor_singleton,,2,1,Synechococcus,single_genus,2
+anchor_singleton:moaB:CC9311,moaB,molybdenum cofactor biosynthesis protein B,anchor_singleton,anchor_singleton,,1,1,Synechococcus,single_genus,1
+anchor_singleton:nrtP:WH8102,nrtP,nitrate transporter,anchor_singleton,anchor_singleton,,2,1,Synechococcus,single_genus,2
+anchor_singleton:focA:BL107,focA,"nitrite transporter, FNT family",anchor_singleton,anchor_singleton,,1,1,Synechococcus,single_genus,1
