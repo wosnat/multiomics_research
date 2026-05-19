@@ -1,0 +1,17 @@
+2026-05-19 11:04:47,623 INFO Prochlorococcus AS9601: 40 rows, 24 unique locus_tags, 23 unique gene names
+2026-05-19 11:04:47,767 INFO Prochlorococcus MED4: 44 rows, 28 unique locus_tags, 27 unique gene names
+2026-05-19 11:04:47,886 INFO Prochlorococcus MIT9301: 42 rows, 25 unique locus_tags, 24 unique gene names
+2026-05-19 11:04:48,008 INFO Prochlorococcus MIT9303: 45 rows, 27 unique locus_tags, 26 unique gene names
+2026-05-19 11:04:48,175 INFO Prochlorococcus MIT9312: 40 rows, 24 unique locus_tags, 23 unique gene names
+2026-05-19 11:04:48,291 INFO Prochlorococcus MIT9313: 45 rows, 27 unique locus_tags, 26 unique gene names
+2026-05-19 11:04:48,426 INFO Prochlorococcus NATL1A: 46 rows, 28 unique locus_tags, 26 unique gene names
+2026-05-19 11:04:48,549 INFO Prochlorococcus NATL2A: 46 rows, 28 unique locus_tags, 28 unique gene names
+2026-05-19 11:04:48,669 INFO Prochlorococcus marinus subsp. marinus CCMP1375 (SS120): 16 rows, 12 unique locus_tags, 12 unique gene names
+2026-05-19 11:04:48,797 INFO Synechococcus WH8102: 71 rows, 43 unique locus_tags, 40 unique gene names
+2026-05-19 11:04:48,943 INFO Synechococcus WH7803: 43 rows, 28 unique locus_tags, 27 unique gene names
+2026-05-19 11:04:49,075 INFO Synechococcus CC9311: 71 rows, 43 unique locus_tags, 40 unique gene names
+2026-05-19 11:04:49,194 INFO Synechococcus sp. BL107: 63 rows, 38 unique locus_tags, 37 unique gene names
+2026-05-19 11:04:49,203 INFO ---
+2026-05-19 11:04:49,203 INFO Total anchor rows across 13 strains: 612
+2026-05-19 11:04:49,204 INFO Total unique locus_tags across 13 strains: 375
+2026-05-19 11:04:49,204 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/01_anchor_genes.csv and /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/01_anchor_summary.csv

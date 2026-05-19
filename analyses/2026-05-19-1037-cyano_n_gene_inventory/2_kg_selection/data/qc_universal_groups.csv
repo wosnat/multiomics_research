@@ -1,0 +1,8 @@
+group_id,consensus_gene_name,consensus_product,taxonomic_level,source,specificity_rank,member_count,organism_count,genera,has_cross_genus_members,n_anchor_loci_in_group
+eggnog:1G19V@1117,carA,carbamoyl-phosphate synthase small subunit,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G255@1117,glnA,"glutamine synthetase, type I",Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G5QJ@1117,glnB,nitrogen regulatory protein P-II,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G0XM@1117,glsF,ferredoxin-dependent glutamate synthase,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G03T@1117,metC,cystathionine beta-lyase family aluminum resistance protein,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G0FS@1117,moeB,molybdopterin biosynthesis protein MoeB,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G07U@1117,ntcA,global nitrogen regulatory protein,Cyanobacteria,eggnog,2,20,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13

@@ -1,0 +1,32 @@
+outlier_strain_short,outlier_strain,gene_name,n_peers_with_gene,n_peers_total,present_in_outlier_proteome_by_name
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),focA,4,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),nirA,4,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureA,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureB,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureC,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureD,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureE,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureF,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),ureG,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),urtA,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),urtB,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),urtC,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),urtD,8,8,False
+SS120,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),urtE,8,8,False
+WH7803,Synechococcus WH7803,amt2,1,3,False
+WH7803,Synechococcus WH7803,cynA,1,3,False
+WH7803,Synechococcus WH7803,cynB,1,3,False
+WH7803,Synechococcus WH7803,cynD,1,3,False
+WH7803,Synechococcus WH7803,merR,1,3,False
+WH7803,Synechococcus WH7803,ntrX,1,3,False
+WH7803,Synechococcus WH7803,ureA,3,3,False
+WH7803,Synechococcus WH7803,ureB,3,3,False
+WH7803,Synechococcus WH7803,ureC,3,3,False
+WH7803,Synechococcus WH7803,ureD,3,3,False
+WH7803,Synechococcus WH7803,ureE,3,3,False
+WH7803,Synechococcus WH7803,ureF,3,3,False
+WH7803,Synechococcus WH7803,ureG,3,3,False
+WH7803,Synechococcus WH7803,urtB,3,3,False
+WH7803,Synechococcus WH7803,urtC,3,3,False
+WH7803,Synechococcus WH7803,urtD,3,3,False
+WH7803,Synechococcus WH7803,urtE,3,3,False

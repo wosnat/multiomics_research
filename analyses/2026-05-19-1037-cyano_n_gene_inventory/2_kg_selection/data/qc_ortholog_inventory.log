@@ -1,0 +1,77 @@
+2026-05-19 11:15:19,660 INFO ===== Q1: Universal (present in all 19 strains) groups =====
+2026-05-19 11:15:19,669 INFO Universal groups: 7
+2026-05-19 11:15:19,669 INFO   eggnog:1G19V@1117 — carA (carbamoyl-phosphate synthase small subunit) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,669 INFO   eggnog:1G255@1117 — glnA (glutamine synthetase, type I) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,670 INFO   eggnog:1G5QJ@1117 — glnB (nitrogen regulatory protein P-II) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,670 INFO   eggnog:1G0XM@1117 — glsF (ferredoxin-dependent glutamate synthase) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,670 INFO   eggnog:1G03T@1117 — metC (cystathionine beta-lyase family aluminum resistance protein) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,670 INFO   eggnog:1G0FS@1117 — moeB (molybdopterin biosynthesis protein MoeB) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,671 INFO   eggnog:1G07U@1117 — ntcA (global nitrogen regulatory protein) [genera: Prochlorococcus | Synechococcus | Thermosynechococcus]
+2026-05-19 11:15:19,671 INFO ===== Q2/Q3/Q4: per-strain group inventory for outlier and previously-uncovered strains =====
+2026-05-19 11:15:19,672 INFO --- Prochlorococcus marinus subsp. marinus CCMP1375 (SS120) (12 present / 42 absent of 54 groups)
+2026-05-19 11:15:19,672 INFO     present: PMN2A_RS02170, amt1, carA, cysK, glnA, glnB, glsF, metB, metC, metY, moeB, ntcA
+2026-05-19 11:15:19,672 INFO     absent:  PMN2A_RS05525, amt1, cynA, cynB, cynD, cynD, cynH, cynS, eggnog:1GMPI@1117, focA, glnN1, merR, metB, moaA, moaB, moaC, moaD, moaE, mobA, moeA, narB, narM, nirA, nrtP, ntrB, ntrX, ureA, ureB, ureC, ureD, ureE, ureE, ureF, ureF, ureG, urtA, urtB, urtC, urtC, urtD, urtD, urtE
+2026-05-19 11:15:19,673 INFO --- Synechococcus WH7803 (28 present / 26 absent of 54 groups)
+2026-05-19 11:15:19,673 INFO     present: amt1, carA, cynH, cynS, cysK, focA, glnA, glnB, glnN1, glsF, metB, metB, metC, metY, moaA, moaB, moaC, moaD, moaE, mobA, moeA, moeB, narB, narM, nirA, nrtP, ntcA, urtA
+2026-05-19 11:15:19,673 INFO     absent:  PMN2A_RS02170, PMN2A_RS05525, amt1, cynA, cynB, cynD, cynD, eggnog:1GMPI@1117, merR, ntrB, ntrX, ureA, ureB, ureC, ureD, ureE, ureE, ureF, ureF, ureG, urtB, urtC, urtC, urtD, urtD, urtE
+2026-05-19 11:15:19,674 INFO --- Prochlorococcus MIT0801 (28 present / 26 absent of 54 groups)
+2026-05-19 11:15:19,674 INFO     present: PMN2A_RS02170, PMN2A_RS05525, amt1, carA, cynS, cysK, focA, glnA, glnB, glsF, metB, metC, metY, moeB, nirA, ntcA, ureA, ureB, ureC, ureD, ureE, ureF, ureG, urtA, urtB, urtC, urtD, urtE
+2026-05-19 11:15:19,674 INFO     absent:  amt1, cynA, cynB, cynD, cynD, cynH, eggnog:1GMPI@1117, glnN1, merR, metB, moaA, moaB, moaC, moaD, moaE, mobA, moeA, narB, narM, nrtP, ntrB, ntrX, ureE, ureF, urtC, urtD
+2026-05-19 11:15:19,675 INFO --- Prochlorococcus RSP50 (26 present / 28 absent of 54 groups)
+2026-05-19 11:15:19,675 INFO     present: PMN2A_RS02170, amt1, carA, cynB, cynD, cysK, glnA, glnB, glsF, metB, metC, metY, moeB, ntcA, ureA, ureB, ureC, ureD, ureE, ureF, ureG, urtA, urtB, urtC, urtD, urtE
+2026-05-19 11:15:19,675 INFO     absent:  PMN2A_RS05525, amt1, cynA, cynD, cynH, cynS, eggnog:1GMPI@1117, focA, glnN1, merR, metB, moaA, moaB, moaC, moaD, moaE, mobA, moeA, narB, narM, nirA, nrtP, ntrB, ntrX, ureE, ureF, urtC, urtD
+2026-05-19 11:15:19,676 INFO --- Synechococcus PCC 7002 (35 present / 19 absent of 54 groups)
+2026-05-19 11:15:19,676 INFO     present: amt1, carA, cynD, cynS, focA, glnA, glnB, glnN1, glsF, merR, metC, moaA, moaB, moaC, moaE, moeA, moeB, narB, narM, nirA, nrtP, ntcA, ntrB, ntrX, ureA, ureB, ureC, ureD, ureE, ureF, ureG, urtA, urtB, urtC, urtE
+2026-05-19 11:15:19,676 INFO     absent:  PMN2A_RS02170, PMN2A_RS05525, amt1, cynA, cynB, cynD, cynH, cysK, eggnog:1GMPI@1117, metB, metB, metY, moaD, mobA, ureE, ureF, urtC, urtD, urtD
+2026-05-19 11:15:19,677 INFO --- Synechococcus elongatus PCC 7942 (24 present / 30 absent of 54 groups)
+2026-05-19 11:15:19,677 INFO     present: amt1, carA, cynA, cynD, cynS, cysK, glnA, glnB, glnN1, glsF, merR, metC, metY, moaA, moaC, moaE, moeA, moeB, narB, narM, nirA, ntcA, ntrB, ntrX
+2026-05-19 11:15:19,677 INFO     absent:  PMN2A_RS02170, PMN2A_RS05525, amt1, cynB, cynD, cynH, eggnog:1GMPI@1117, focA, metB, metB, moaB, moaD, mobA, nrtP, ureA, ureB, ureC, ureD, ureE, ureE, ureF, ureF, ureG, urtA, urtB, urtC, urtC, urtD, urtD, urtE
+2026-05-19 11:15:19,678 INFO --- Synechococcus elongatus UTEX 2973 (24 present / 30 absent of 54 groups)
+2026-05-19 11:15:19,678 INFO     present: amt1, carA, cynA, cynD, cynS, cysK, glnA, glnB, glnN1, glsF, merR, metC, metY, moaA, moaC, moaE, moeA, moeB, narB, narM, nirA, ntcA, ntrB, ntrX
+2026-05-19 11:15:19,678 INFO     absent:  PMN2A_RS02170, PMN2A_RS05525, amt1, cynB, cynD, cynH, eggnog:1GMPI@1117, focA, metB, metB, moaB, moaD, mobA, nrtP, ureA, ureB, ureC, ureD, ureE, ureE, ureF, ureF, ureG, urtA, urtB, urtC, urtC, urtD, urtD, urtE
+2026-05-19 11:15:19,679 INFO --- Thermosynechococcus vestitus BP-1 (28 present / 26 absent of 54 groups)
+2026-05-19 11:15:19,679 INFO     present: amt1, carA, glnA, glnB, glsF, metC, moaA, moaC, moaE, moeA, moeB, narB, narM, nirA, ntcA, ntrB, ureA, ureB, ureC, ureD, ureE, ureF, ureG, urtA, urtB, urtC, urtD, urtE
+2026-05-19 11:15:19,679 INFO     absent:  PMN2A_RS02170, PMN2A_RS05525, amt1, cynA, cynB, cynD, cynD, cynH, cynS, cysK, eggnog:1GMPI@1117, focA, glnN1, merR, metB, metB, metY, moaB, moaD, mobA, nrtP, ntrX, ureE, ureF, urtC, urtD
+2026-05-19 11:15:19,679 INFO ===== Q5: bridge integrity — are any members outside the 19 cyano scope? =====
+2026-05-19 11:15:19,680 INFO All 549 member rows are in-scope (19 cyano strains). Bridge integrity OK.
+2026-05-19 11:15:19,680 INFO ===== Q6: groups with multi-copy members in any strain =====
+2026-05-19 11:15:19,688 INFO Groups with paralogs in at least one strain: 16 entries (strain × group)
+2026-05-19 11:15:19,689 INFO   Prochlorococcus MIT9303: ntcA (eggnog:1G07U@1117) × 2 copies
+2026-05-19 11:15:19,689 INFO   Prochlorococcus NATL2A: nirA (eggnog:1G0Z6@1117) × 2 copies
+2026-05-19 11:15:19,689 INFO   Synechococcus CC9311: cysK (eggnog:1G493@1117) × 2 copies
+2026-05-19 11:15:19,690 INFO   Synechococcus PCC 7002: amt1 (eggnog:1G0S8@1117) × 3 copies
+2026-05-19 11:15:19,690 INFO   Synechococcus PCC 7002: cynD (eggnog:1G1XM@1117) × 2 copies
+2026-05-19 11:15:19,690 INFO   Synechococcus PCC 7002: cynS (eggnog:1G529@1117) × 2 copies
+2026-05-19 11:15:19,690 INFO   Synechococcus WH7803: cysK (eggnog:1G493@1117) × 2 copies
+2026-05-19 11:15:19,691 INFO   Synechococcus WH8102: cynD (eggnog:1G1XM@1117) × 2 copies
+2026-05-19 11:15:19,691 INFO   Synechococcus WH8102: urtA (eggnog:1G29H@1117) × 2 copies
+2026-05-19 11:15:19,691 INFO   Synechococcus WH8102: cysK (eggnog:1G493@1117) × 2 copies
+2026-05-19 11:15:19,691 INFO   Synechococcus elongatus PCC 7942: ntrB (eggnog:1G09I@1117) × 2 copies
+2026-05-19 11:15:19,692 INFO   Synechococcus elongatus PCC 7942: cynD (eggnog:1G1XM@1117) × 2 copies
+2026-05-19 11:15:19,692 INFO   Synechococcus elongatus UTEX 2973: ntrB (eggnog:1G09I@1117) × 2 copies
+2026-05-19 11:15:19,692 INFO   Synechococcus elongatus UTEX 2973: cynD (eggnog:1G1XM@1117) × 2 copies
+2026-05-19 11:15:19,692 INFO   Synechococcus sp. BL107: cysK (eggnog:1G493@1117) × 2 copies
+2026-05-19 11:15:19,693 INFO   Thermosynechococcus vestitus BP-1: amt1 (eggnog:1G0S8@1117) × 2 copies
+2026-05-19 11:15:19,693 INFO ===== Q7: orphan anchors — alternative-tier groups =====
+2026-05-19 11:15:19,718 INFO   Tier=Prochloraceae: 0/9 orphan loci have a group at this tier
+2026-05-19 11:15:19,718 INFO     PMM0370 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,719 INFO     PMT2232 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,719 INFO     SYNW2462 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,719 INFO     SYNW2463 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,719 INFO     sync_2895 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,720 INFO     sync_2280 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,720 INFO     sync_2840 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,720 INFO     sync_2903 → NO group at Prochloraceae tier
+2026-05-19 11:15:19,720 INFO     BL107_06829 → NO group at Prochloraceae tier
+2026-05-19 11:15:20,217 INFO   Tier=Bacteria: 1/9 orphan loci have a group at this tier
+2026-05-19 11:15:20,219 INFO     PMM0370 → eggnog:COG0715@2 (nrtC)
+2026-05-19 11:15:20,222 INFO     PMT2232 → NO group at Bacteria tier
+2026-05-19 11:15:20,224 INFO     SYNW2462 → NO group at Bacteria tier
+2026-05-19 11:15:20,225 INFO     SYNW2463 → NO group at Bacteria tier
+2026-05-19 11:15:20,226 INFO     sync_2895 → NO group at Bacteria tier
+2026-05-19 11:15:20,227 INFO     sync_2280 → NO group at Bacteria tier
+2026-05-19 11:15:20,229 INFO     sync_2840 → NO group at Bacteria tier
+2026-05-19 11:15:20,230 INFO     sync_2903 → NO group at Bacteria tier
+2026-05-19 11:15:20,231 INFO     BL107_06829 → NO group at Bacteria tier
+2026-05-19 11:15:20,233 INFO ---
+2026-05-19 11:15:20,233 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/qc_universal_groups.csv, /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/qc_paralogs.csv, /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/qc_orphan_anchors.csv

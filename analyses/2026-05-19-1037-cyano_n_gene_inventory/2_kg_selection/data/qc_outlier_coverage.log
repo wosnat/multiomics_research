@@ -1,0 +1,37 @@
+2026-05-19 11:06:51,427 INFO SS120: 12 anchor genes; peer-consensus (in >=4 of 8 peers): 25; missing from outlier: 14
+2026-05-19 11:06:51,920 INFO WH7803: 27 anchor genes; peer-consensus (in >=1 of 3 peers): 44; missing from outlier: 17
+2026-05-19 11:06:52,179 INFO ---
+2026-05-19 11:06:52,181 INFO SS120: 14 genes missing from anchor; 0 found in proteome via gene_name search (annotation gap), 14 truly absent
+2026-05-19 11:06:52,181 INFO   SS120: focA (4/8 peers have it) — absent
+2026-05-19 11:06:52,182 INFO   SS120: nirA (4/8 peers have it) — absent
+2026-05-19 11:06:52,182 INFO   SS120: ureA (8/8 peers have it) — absent
+2026-05-19 11:06:52,182 INFO   SS120: ureB (8/8 peers have it) — absent
+2026-05-19 11:06:52,183 INFO   SS120: ureC (8/8 peers have it) — absent
+2026-05-19 11:06:52,183 INFO   SS120: ureD (8/8 peers have it) — absent
+2026-05-19 11:06:52,183 INFO   SS120: ureE (8/8 peers have it) — absent
+2026-05-19 11:06:52,183 INFO   SS120: ureF (8/8 peers have it) — absent
+2026-05-19 11:06:52,184 INFO   SS120: ureG (8/8 peers have it) — absent
+2026-05-19 11:06:52,184 INFO   SS120: urtA (8/8 peers have it) — absent
+2026-05-19 11:06:52,184 INFO   SS120: urtB (8/8 peers have it) — absent
+2026-05-19 11:06:52,184 INFO   SS120: urtC (8/8 peers have it) — absent
+2026-05-19 11:06:52,184 INFO   SS120: urtD (8/8 peers have it) — absent
+2026-05-19 11:06:52,185 INFO   SS120: urtE (8/8 peers have it) — absent
+2026-05-19 11:06:52,185 INFO WH7803: 17 genes missing from anchor; 0 found in proteome via gene_name search (annotation gap), 17 truly absent
+2026-05-19 11:06:52,185 INFO   WH7803: amt2 (1/3 peers have it) — absent
+2026-05-19 11:06:52,185 INFO   WH7803: cynA (1/3 peers have it) — absent
+2026-05-19 11:06:52,186 INFO   WH7803: cynB (1/3 peers have it) — absent
+2026-05-19 11:06:52,186 INFO   WH7803: cynD (1/3 peers have it) — absent
+2026-05-19 11:06:52,186 INFO   WH7803: merR (1/3 peers have it) — absent
+2026-05-19 11:06:52,186 INFO   WH7803: ntrX (1/3 peers have it) — absent
+2026-05-19 11:06:52,187 INFO   WH7803: ureA (3/3 peers have it) — absent
+2026-05-19 11:06:52,187 INFO   WH7803: ureB (3/3 peers have it) — absent
+2026-05-19 11:06:52,187 INFO   WH7803: ureC (3/3 peers have it) — absent
+2026-05-19 11:06:52,187 INFO   WH7803: ureD (3/3 peers have it) — absent
+2026-05-19 11:06:52,187 INFO   WH7803: ureE (3/3 peers have it) — absent
+2026-05-19 11:06:52,188 INFO   WH7803: ureF (3/3 peers have it) — absent
+2026-05-19 11:06:52,188 INFO   WH7803: ureG (3/3 peers have it) — absent
+2026-05-19 11:06:52,188 INFO   WH7803: urtB (3/3 peers have it) — absent
+2026-05-19 11:06:52,188 INFO   WH7803: urtC (3/3 peers have it) — absent
+2026-05-19 11:06:52,188 INFO   WH7803: urtD (3/3 peers have it) — absent
+2026-05-19 11:06:52,189 INFO   WH7803: urtE (3/3 peers have it) — absent
+2026-05-19 11:06:52,189 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/qc_outlier_coverage.csv

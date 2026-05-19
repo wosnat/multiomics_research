@@ -1,0 +1,55 @@
+group_id,consensus_gene_name,consensus_product,taxonomic_level,source,specificity_rank,member_count,organism_count,genera,has_cross_genus_members,n_anchor_loci_in_group
+eggnog:1G03T@1117,metC,cystathionine beta-lyase family aluminum resistance protein,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G07U@1117,ntcA,global nitrogen regulatory protein,Cyanobacteria,eggnog,2,20,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G09I@1117,ntrB,nitrate ABC transporter permease,Cyanobacteria,eggnog,2,7,5,Synechococcus | Thermosynechococcus,cross_genus,1
+eggnog:1G0CH@1117,glnN1,"glutamine synthetase, type III",Cyanobacteria,eggnog,2,5,5,Synechococcus,single_genus,2
+eggnog:1G0DW@1117,narB,nitrate reductase,Cyanobacteria,eggnog,2,8,8,Synechococcus | Thermosynechococcus,cross_genus,4
+eggnog:1G0FS@1117,moeB,molybdopterin biosynthesis protein MoeB,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G0GT@1117,ureG,urease accessory protein UreG,Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G0K2@1117,moeA,molybdopterin biosynthesis protein MoeA,Cyanobacteria,eggnog,2,8,8,Synechococcus | Thermosynechococcus,cross_genus,4
+eggnog:1G0NY@1117,nrtP,nitrate transporter,Cyanobacteria,eggnog,2,4,4,Synechococcus,single_genus,3
+eggnog:1G0QD@1117,urtC,"ABC-type urea transporter, membrane component",Cyanobacteria,eggnog,2,13,13,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,9
+eggnog:1G0S8@1117,amt1,ammonium transporter,Cyanobacteria,eggnog,2,13,10,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,6
+eggnog:1G0UF@1117,urtE,"ABC-type urea transporter, ATPase component UrtE",Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G0VS@1117,moaA,molybdenum cofactor biosynthesis protein A,Cyanobacteria,eggnog,2,8,8,Synechococcus | Thermosynechococcus,cross_genus,4
+eggnog:1G0XM@1117,glsF,ferredoxin-dependent glutamate synthase,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G0Z6@1117,nirA,ferredoxin--nitrite reductase,Cyanobacteria,eggnog,2,14,13,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,8
+eggnog:1G0ZS@1117,focA,"nitrite transporter, FNT family",Cyanobacteria,eggnog,2,8,8,Prochlorococcus | Synechococcus,cross_genus,6
+eggnog:1G10F@1117,ureD,urease accessory protein UreD,Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G12D@1117,ureC,urease alpha subunit,Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G19V@1117,carA,carbamoyl-phosphate synthase small subunit,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G1UJ@1117,merR,Nit6803 family nitrilase,Cyanobacteria,eggnog,2,5,5,Prochlorococcus | Synechococcus,cross_genus,2
+eggnog:1G1XM@1117,cynD,ABC transporter ATP-binding protein,Cyanobacteria,eggnog,2,8,4,Synechococcus,single_genus,1
+eggnog:1G22F@1117,urtB,"ABC-type urea transporter, permease component",Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G255@1117,glnA,"glutamine synthetase, type I",Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G29H@1117,urtA,"ABC-type urea transporter, substrate binding component",Cyanobacteria,eggnog,2,17,16,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G2AC@1117,ntrX,nitrogen assimilation regulatory protein,Cyanobacteria,eggnog,2,7,7,Prochlorococcus | Synechococcus,cross_genus,3
+eggnog:1G2Q2@1117,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Cyanobacteria,eggnog,2,6,6,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,5
+eggnog:1G3PC@1117,ureF,urease accessory protein UreF,Cyanobacteria,eggnog,2,5,5,Synechococcus | Thermosynechococcus,cross_genus,3
+eggnog:1G43Q@1117,metB,O-succinylhomoserine(thiol)-lyase,Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus,cross_genus,13
+eggnog:1G493@1117,cysK,O-acetylserine sulfhydrylase A,Cyanobacteria,eggnog,2,21,17,Prochlorococcus | Synechococcus,cross_genus,13
+eggnog:1G4EH@1117,metY,O-acetylhomoserine aminocarboxypropyltransferase,Cyanobacteria,eggnog,2,17,17,Prochlorococcus | Synechococcus,cross_genus,13
+eggnog:1G4VP@1117,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Cyanobacteria,eggnog,2,8,8,Prochlorococcus,single_genus,6
+eggnog:1G514@1117,moaB,molybdenum cofactor biosynthesis protein B,Cyanobacteria,eggnog,2,5,5,Synechococcus,single_genus,3
+eggnog:1G529@1117,cynS,cyanate hydratase,Cyanobacteria,eggnog,2,12,11,Prochlorococcus | Synechococcus,cross_genus,7
+eggnog:1G53K@1117,moaC,molybdenum cofactor biosynthesis protein C,Cyanobacteria,eggnog,2,8,8,Synechococcus | Thermosynechococcus,cross_genus,4
+eggnog:1G5AI@1117,moaE,molybdenum cofactor biosynthesis protein E (molydbopterin converting factor large subunit),Cyanobacteria,eggnog,2,8,8,Synechococcus | Thermosynechococcus,cross_genus,4
+eggnog:1G5QJ@1117,glnB,nitrogen regulatory protein P-II,Cyanobacteria,eggnog,2,19,19,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,13
+eggnog:1G61D@1117,narM,nitrate reductase associated protein,Cyanobacteria,eggnog,2,8,8,Synechococcus | Thermosynechococcus,cross_genus,4
+eggnog:1G6IB@1117,ureB,urease beta subunit,Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G6KQ@1117,ureA,urease gamma subunit,Cyanobacteria,eggnog,2,15,15,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,11
+eggnog:1G6TF@1117,ureE,urease accessory protein UreE,Cyanobacteria,eggnog,2,13,13,Prochlorococcus | Synechococcus | Thermosynechococcus,cross_genus,9
+eggnog:1G8J1@1117,ureE,urease accessory protein UreE,Cyanobacteria,eggnog,2,1,1,Prochlorococcus,single_genus,1
+eggnog:1GBHI@1117,cynD,cyanate ABC transporter ATP-binding protein,Cyanobacteria,eggnog,2,2,2,Prochlorococcus,single_genus,1
+eggnog:1GBHS@1117,cynA,ABC transporter substrate-binding protein,Cyanobacteria,eggnog,2,3,3,Synechococcus,single_genus,1
+eggnog:1GC52@1117,ureF,urease accessory protein UreF,Cyanobacteria,eggnog,2,10,10,Prochlorococcus,single_genus,8
+eggnog:1GCF1@1117,metB,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Cyanobacteria,eggnog,2,4,4,Synechococcus,single_genus,4
+eggnog:1GCPE@1117,urtC,"ABC-type urea transporter, membrane component",Cyanobacteria,eggnog,2,2,2,Prochlorococcus,single_genus,2
+eggnog:1GD8R@1117,amt1,ammonium transporter,Cyanobacteria,eggnog,2,9,9,Prochlorococcus,single_genus,7
+eggnog:1GJ43@1117,cynB,"cyanate ABC transporter, permease protein",Cyanobacteria,eggnog,2,2,2,Prochlorococcus,single_genus,1
+eggnog:1GMGD@1117,PMN2A_RS02170,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Cyanobacteria,eggnog,2,11,11,Prochlorococcus,single_genus,9
+eggnog:1GMPI@1117,,"putative urea transporter, UT family",Cyanobacteria,eggnog,2,1,1,Synechococcus,single_genus,1
+eggnog:1GMZN@1117,mobA,molybdenum cofactor guanylyltransferase,Cyanobacteria,eggnog,2,4,4,Synechococcus,single_genus,4
+eggnog:1GNRD@1117,moaD,molydbenum cofactor biosynthesis protein D (molybdopterin converting factor small subunit),Cyanobacteria,eggnog,2,4,4,Synechococcus,single_genus,4
+eggnog:1GP1E@1117,cynH,cyanate hydratase,Cyanobacteria,eggnog,2,3,3,Synechococcus,single_genus,3
+eggnog:1GRCJ@1117,PMN2A_RS05525,nitroreductase family protein,Cyanobacteria,eggnog,2,3,3,Prochlorococcus,single_genus,2

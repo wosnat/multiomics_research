@@ -1,0 +1,50 @@
+2026-05-19 11:13:45,757 INFO Pulling members for 54 ortholog groups
+2026-05-19 11:13:46,239 INFO   fetched 10/54 groups
+2026-05-19 11:13:46,435 INFO   fetched 20/54 groups
+2026-05-19 11:13:46,614 INFO   fetched 30/54 groups
+2026-05-19 11:13:46,776 INFO   fetched 40/54 groups
+2026-05-19 11:13:46,926 INFO   fetched 50/54 groups
+2026-05-19 11:13:46,984 INFO   fetched 54/54 groups
+2026-05-19 11:13:46,990 INFO Total member rows across all groups: 549
+2026-05-19 11:13:46,991 INFO Distinct organisms across all group memberships: 19
+2026-05-19 11:13:46,992 INFO In-scope (cyano-only) member rows: 549
+2026-05-19 11:13:47,003 INFO ---
+2026-05-19 11:13:47,003 INFO Inventory matrix shape: 19 strains × 54 groups
+2026-05-19 11:13:47,004 INFO Per-strain N(groups present) summary:
+2026-05-19 11:13:47,004 INFO   Prochlorococcus AS9601                                  24 groups present, 24 total gene copies
+2026-05-19 11:13:47,004 INFO   Prochlorococcus MED4                                    27 groups present, 27 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus MIT0801                                 28 groups present, 28 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus MIT9301                                 25 groups present, 25 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus MIT9303                                 27 groups present, 28 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus MIT9312                                 24 groups present, 24 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus MIT9313                                 26 groups present, 26 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus NATL1A                                  28 groups present, 28 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus NATL2A                                  28 groups present, 29 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus RSP50                                   26 groups present, 26 total gene copies
+2026-05-19 11:13:47,005 INFO   Prochlorococcus marinus subsp. marinus CCMP1375 (SS120) 12 groups present, 12 total gene copies
+2026-05-19 11:13:47,005 INFO   Synechococcus WH8102                                    40 groups present, 43 total gene copies
+2026-05-19 11:13:47,006 INFO   Synechococcus WH7803                                    28 groups present, 29 total gene copies
+2026-05-19 11:13:47,006 INFO   Synechococcus CC9311                                    40 groups present, 41 total gene copies
+2026-05-19 11:13:47,006 INFO   Synechococcus sp. BL107                                 38 groups present, 39 total gene copies
+2026-05-19 11:13:47,006 INFO   Synechococcus PCC 7002                                  35 groups present, 39 total gene copies
+2026-05-19 11:13:47,006 INFO   Synechococcus elongatus PCC 7942                        24 groups present, 26 total gene copies
+2026-05-19 11:13:47,006 INFO   Synechococcus elongatus UTEX 2973                       24 groups present, 26 total gene copies
+2026-05-19 11:13:47,006 INFO   Thermosynechococcus vestitus BP-1                       28 groups present, 29 total gene copies
+2026-05-19 11:13:47,007 INFO Group ubiquity distribution (n strains where present):
+2026-05-19 11:13:47,007 INFO    1 strains: 2 groups
+2026-05-19 11:13:47,007 INFO    2 strains: 3 groups
+2026-05-19 11:13:47,008 INFO    3 strains: 3 groups
+2026-05-19 11:13:47,008 INFO    4 strains: 5 groups
+2026-05-19 11:13:47,008 INFO    5 strains: 5 groups
+2026-05-19 11:13:47,008 INFO    6 strains: 1 groups
+2026-05-19 11:13:47,008 INFO    7 strains: 1 groups
+2026-05-19 11:13:47,008 INFO    8 strains: 8 groups
+2026-05-19 11:13:47,008 INFO    9 strains: 1 groups
+2026-05-19 11:13:47,008 INFO   10 strains: 2 groups
+2026-05-19 11:13:47,008 INFO   11 strains: 2 groups
+2026-05-19 11:13:47,008 INFO   13 strains: 3 groups
+2026-05-19 11:13:47,008 INFO   15 strains: 8 groups
+2026-05-19 11:13:47,009 INFO   16 strains: 1 groups
+2026-05-19 11:13:47,009 INFO   17 strains: 2 groups
+2026-05-19 11:13:47,009 INFO   19 strains: 7 groups
+2026-05-19 11:13:47,009 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/05_inventory_members.csv and /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/05_inventory_matrix.csv

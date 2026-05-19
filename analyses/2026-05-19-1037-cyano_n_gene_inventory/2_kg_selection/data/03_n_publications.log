@@ -1,0 +1,6 @@
+2026-05-19 11:06:15,078 INFO Pulled 4 N-perturbation publications
+2026-05-19 11:06:15,079 INFO   2006 — Andrew C Tolonen 10.1038/msb4100087 — Prochlorococcus MED4 | Prochlorococcus MIT9313 (MICROARRAY)
+2026-05-19 11:06:15,080 INFO   2017 — Robert W Read 10.1038/ismej.2017.88 — Prochlorococcus MED4 (RNASEQ)
+2026-05-19 11:06:15,080 INFO   2017 — Maria Agustina Domínguez-Martín 10.1128/mSystems.00008-17 — Prochlorococcus marinus subsp. marinus CCMP1375 (SS120) (PROTEOMICS)
+2026-05-19 11:06:15,080 INFO   2025 — Osnat Weissberg 10.1101/2025.11.24.690089 — Alteromonas macleodii HOT1A3 | Prochlorococcus MED4 (PROTEOMICS | RNASEQ)
+2026-05-19 11:06:15,080 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/03_n_publications.csv

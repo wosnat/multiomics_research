@@ -43,6 +43,33 @@ PCC 7002, PCC 7942, UTEX 2973, and Thermosynechococcus vestitus BP-1 are outside
 
 **Impact on KG.** Loader bug — the `Clade` (and likely `SubCluster`, `SubClade`, `Pigment type`) columns from the Cyanorak Synechococcus table are not propagating into `Organism.clade` in the graph for Synechococcus nodes. Same loader probably handles both Pro and Syn tables; needs to verify why one populates and the other doesn't. May also be that the Synechococcus `clade` value is being mapped to a different KG property (e.g., subcluster) and the API isn't exposing it. Worth investigating upstream.
 
+## 2026-05-19 — Methodology compression: ortholog expansion + QC pulled into step 2 by researcher redirect
+
+**What happened.** Step 2 was about to close after the initial 4 scripts (anchor extraction, strain table, N publications, outlier QC). The researcher requested pulling the ortholog-bridge expansion (script 04 + 05) and the cross-strain inventory QC (script qc_ortholog_inventory) into step 2 before commit, so the full gene-set inventory exists before step 3 framing. This is methodologically step-4/5 work (methods + analyze) pulled into step-2 (KG entries).
+
+**Workaround.** Did it. Inventory matrix (19 strains × 54 groups) sits at `2_kg_selection/data/05_inventory_matrix.csv` at end of step 2. Step 3 (framing) becomes a presentation-and-ordering decision rather than a methodology decision.
+
+**Impact on methodology.** Consistent with just-in-time formalization — *"look at the data before drafting the plan"*. The trade-off: step 2's commit is much larger than typical, and step 3 will be unusually short. Worth a methodology observation: for inventory-style analyses (no hypothesis test), the 6-step flow may naturally compress into 2-3 substantive steps. If this pattern recurs, consider an "inventory analysis" methodology variant. One occurrence is a note; revisit if seen again.
+
+## 2026-05-19 — Orphan-anchor inventory undercount (eggnog Cyanobacteria-level lineage asymmetry)
+
+**What happened.** Of the 375 Cyanorak `E.4 ∪ D.1.3` anchor locus_tags, 9 returned no eggnog Cyanobacteria-level ortholog group. A post-hoc audit (`qc_ortholog_inventory.py` Q7b) showed that 6 of these 9 caused real undercounts in the 19-strain × 54-group inventory matrix: the strain shows cell=0 for a gene it actually has, because the orphan's lineage-specific ortholog group is not represented at the eggnog Cyanobacteria tier.
+
+Affected cells (5 strains × 6 genes):
+
+| Strain | Gene | Orphan locus_tag(s) |
+|---|---|---|
+| Prochlorococcus MED4 | cynA | PMM0370 |
+| Prochlorococcus MIT9313 | ureE | PMT2232 |
+| Synechococcus WH8102 | nrtP | SYNW2462, SYNW2463 |
+| Synechococcus CC9311 | cynH | sync_2840, sync_2903 |
+| Synechococcus CC9311 | amt2 | sync_2280 (gene fully absent from inventory) |
+| Synechococcus sp. BL107 | focA | BL107_06829 |
+
+**Workaround.** Accept and document. Considered (but rejected): augment inventory with cyanorak-curated groups as a fallback for orphans (would mix tiers); per-cell patch (would mix data sources). For step 6, any interpretive claim that hinges on one of these 6 cells must be cross-checked against the original CSV.
+
+**Impact on KG.** Suggests that the eggnog-Cyanobacteria-level orthology in the KG is not symmetric across cyano lineages — for some genes, only one of the lineage-specific paralog groups makes it to the Cyanobacteria tier (the other stays at a more specific tier or has no group). Worth a longer-term KG audit: which Cyanorak roles have eggnog Cyanobacteria-level coverage in both Prochlorococcus and Synechococcus lineages, and which are asymmetric? For this analysis, the inventory matrix is correct in 1020 of 1026 cells (99.4%) and incorrect in 6.
+
 ## 2026-05-19 — KG bug: NATL1A and NATL2A clade is wrong in KG (LLII instead of LLI)
 
 **What happened.** `list_organisms` returns `clade=LLII` for both Prochlorococcus NATL1A and NATL2A. The Cyanorak source CSV (`Cyanorak  Organism Table  prochlorococcus.csv`) lists both as **LLI** — which matches the established literature (NATL1A and NATL2A are the canonical LLI reference strains). All 8 other Prochlorococcus strains in our scope match between the KG and the source CSV; only these two are wrong.

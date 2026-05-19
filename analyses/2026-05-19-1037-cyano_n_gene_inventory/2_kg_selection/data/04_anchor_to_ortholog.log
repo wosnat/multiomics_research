@@ -1,0 +1,25 @@
+2026-05-19 11:12:56,143 INFO Unique anchor locus_tags: 375 (from 612 anchor rows across 13 strains)
+2026-05-19 11:12:56,791 INFO Batch 1/8: 50 locus_tags in, 49 group rows out, 1 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:56,845 INFO Batch 2/8: 50 locus_tags in, 50 group rows out, 0 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:56,901 INFO Batch 3/8: 50 locus_tags in, 49 group rows out, 1 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:57,001 INFO Batch 4/8: 50 locus_tags in, 50 group rows out, 0 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:57,046 INFO Batch 5/8: 50 locus_tags in, 49 group rows out, 1 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:57,100 INFO Batch 6/8: 50 locus_tags in, 48 group rows out, 2 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:57,154 INFO Batch 7/8: 50 locus_tags in, 48 group rows out, 2 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:57,191 INFO Batch 8/8: 25 locus_tags in, 23 group rows out, 2 anchors had no Cyanobacteria-level group
+2026-05-19 11:12:57,211 INFO ---
+2026-05-19 11:12:57,212 INFO Anchor locus_tags mapped to a Cyanobacteria-level group: 366 / 375
+2026-05-19 11:12:57,212 INFO Anchor locus_tags WITHOUT a Cyanobacteria-level group: 9
+2026-05-19 11:12:57,213 INFO   PMM0370 (Prochlorococcus MED4, cynA, Central intermediary metabolism) — cyanate ABC transporter, substrate-binding protein
+2026-05-19 11:12:57,213 INFO   PMT2232 (Prochlorococcus MIT9313, ureE, Stress response and adaptation) — urease accessory protein UreE
+2026-05-19 11:12:57,213 INFO   SYNW2462 (Synechococcus WH8102, nrtP, Stress response and adaptation) — nitrate transporter
+2026-05-19 11:12:57,213 INFO   SYNW2463 (Synechococcus WH8102, nrtP, Stress response and adaptation) — nitrate transporter
+2026-05-19 11:12:57,214 INFO   sync_2895 (Synechococcus CC9311, moaB, Coenzyme metabolism) — molybdenum cofactor biosynthesis protein B
+2026-05-19 11:12:57,214 INFO   sync_2280 (Synechococcus CC9311, amt2, Central intermediary metabolism) — ammonium transporter
+2026-05-19 11:12:57,214 INFO   sync_2840 (Synechococcus CC9311, cynH, Central intermediary metabolism) — cyanate hydratase
+2026-05-19 11:12:57,215 INFO   sync_2903 (Synechococcus CC9311, cynH, Central intermediary metabolism) — cyanate hydratase
+2026-05-19 11:12:57,215 INFO   BL107_06829 (Synechococcus sp. BL107, focA, Stress response and adaptation) — nitrite transporter, FNT family
+2026-05-19 11:12:57,215 INFO Unique ortholog groups: 54
+2026-05-19 11:12:57,216 INFO   cross-genus groups: 35 ; single-genus groups: 19
+2026-05-19 11:12:57,217 INFO   median member_count: 8, max: 21
+2026-05-19 11:12:57,217 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/04_anchor_to_ortholog.csv, /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/04_anchors_without_group.csv, /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/04_ortholog_groups.csv

@@ -1,0 +1,10 @@
+locus_tag,strain,gene_name,product,gene_category
+PMM0370,Prochlorococcus MED4,cynA,"cyanate ABC transporter, substrate-binding protein",Central intermediary metabolism
+PMT2232,Prochlorococcus MIT9313,ureE,urease accessory protein UreE,Stress response and adaptation
+SYNW2462,Synechococcus WH8102,nrtP,nitrate transporter,Stress response and adaptation
+SYNW2463,Synechococcus WH8102,nrtP,nitrate transporter,Stress response and adaptation
+sync_2895,Synechococcus CC9311,moaB,molybdenum cofactor biosynthesis protein B,Coenzyme metabolism
+sync_2280,Synechococcus CC9311,amt2,ammonium transporter,Central intermediary metabolism
+sync_2840,Synechococcus CC9311,cynH,cyanate hydratase,Central intermediary metabolism
+sync_2903,Synechococcus CC9311,cynH,cyanate hydratase,Central intermediary metabolism
+BL107_06829,Synechococcus sp. BL107,focA,"nitrite transporter, FNT family",Stress response and adaptation

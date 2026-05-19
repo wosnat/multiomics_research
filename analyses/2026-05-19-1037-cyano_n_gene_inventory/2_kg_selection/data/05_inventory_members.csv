@@ -1,0 +1,550 @@
+group_id,organism_name,locus_tag,gene_name,product,gene_category
+eggnog:1G03T@1117,Prochlorococcus AS9601,A9601_18791,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus MED4,PMM1670,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus MIT0801,EW15_2225,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus MIT9301,P9301_18601,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus MIT9303,P9303_28921,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus MIT9312,PMT9312_1762,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus MIT9313,PMT2171,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus NATL1A,NATL1_21401,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus NATL2A,PMN2A_1269,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Prochlorococcus RSP50,BSR22_02825,metC,aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme,Inorganic ion transport
+eggnog:1G03T@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro1831,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Synechococcus CC9311,sync_2790,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Synechococcus PCC 7002,SYNPCC7002_A2197,metC,methionine gamma-lyase family protein,Inorganic ion transport
+eggnog:1G03T@1117,Synechococcus WH7803,SynWH7803_2414,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Synechococcus WH8102,SYNW2376,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Synechococcus elongatus PCC 7942,H6G84_00070,H6G84_RS00070,methionine gamma-lyase family protein,Inorganic ion transport
+eggnog:1G03T@1117,Synechococcus elongatus UTEX 2973,M744_03395,metC,aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme,Inorganic ion transport
+eggnog:1G03T@1117,Synechococcus sp. BL107,BL107_07294,metC,cystathionine beta-lyase family aluminum resistance protein,Stress response and adaptation
+eggnog:1G03T@1117,Thermosynechococcus vestitus BP-1,tlr2020,metC,aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme,Inorganic ion transport
+eggnog:1G07U@1117,Prochlorococcus AS9601,A9601_02681,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MED4,PMM0246,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MIT0801,EW15_0339,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MIT9301,P9301_02691,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MIT9303,P9303_11071,ptrA,"transcriptional phosphate regulator, Crp family",Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MIT9303,P9303_24561,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MIT9312,PMT9312_0248,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus MIT9313,PMT1831,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus NATL1A,NATL1_03241,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus NATL2A,PMN2A_1612,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Prochlorococcus RSP50,BSR22_04335,ntcA,global nitrogen regulator NtcA,Transcription
+eggnog:1G07U@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0277,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Synechococcus CC9311,sync_0316,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Synechococcus PCC 7002,SYNPCC7002_A1675,ntcA,global nitrogen regulator NtcA,Transcription
+eggnog:1G07U@1117,Synechococcus WH7803,SynWH7803_0319,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Synechococcus WH8102,SYNW0275,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Synechococcus elongatus PCC 7942,H6G84_07175,ntcA,global nitrogen regulator NtcA,Transcription
+eggnog:1G07U@1117,Synechococcus elongatus UTEX 2973,M744_02430,ntcA,global nitrogen regulator NtcA,Transcription
+eggnog:1G07U@1117,Synechococcus sp. BL107,BL107_07964,ntcA,global nitrogen regulatory protein,Stress response and adaptation
+eggnog:1G07U@1117,Thermosynechococcus vestitus BP-1,tll1650,ntcA,global nitrogen regulator NtcA,Transcription
+eggnog:1G09I@1117,Synechococcus PCC 7002,SYNPCC7002_A0861,ntrB,nitrate ABC transporter permease,Inorganic ion transport
+eggnog:1G09I@1117,Synechococcus WH8102,SYNW2486,cynB,"cyanate ABC transporter, permease protein",Central intermediary metabolism
+eggnog:1G09I@1117,Synechococcus elongatus PCC 7942,H6G84_08795,ntrB,nitrate ABC transporter permease,Inorganic ion transport
+eggnog:1G09I@1117,Synechococcus elongatus PCC 7942,H6G84_13580,srpM,ABC transporter permease,Inorganic ion transport
+eggnog:1G09I@1117,Synechococcus elongatus UTEX 2973,M744_10450,ntrB,nitrate ABC transporter permease,Inorganic ion transport
+eggnog:1G09I@1117,Synechococcus elongatus UTEX 2973,M744_13990,,ABC transporter permease,Inorganic ion transport
+eggnog:1G09I@1117,Thermosynechococcus vestitus BP-1,tlr1351,nrtB,nitrate ABC transporter permease,Inorganic ion transport
+eggnog:1G0CH@1117,Synechococcus CC9311,sync_1253,glnN1,"glutamine synthetase, type III",Amino acid metabolism
+eggnog:1G0CH@1117,Synechococcus PCC 7002,SYNPCC7002_A0246,glnN,glutamine synthetase III,Unknown
+eggnog:1G0CH@1117,Synechococcus WH7803,SynWH7803_1458,glnN1,"glutamine synthetase, type III",Amino acid metabolism
+eggnog:1G0CH@1117,Synechococcus elongatus PCC 7942,H6G84_06960,H6G84_RS06960,glutamine synthetase III family protein,Unknown
+eggnog:1G0CH@1117,Synechococcus elongatus UTEX 2973,M744_02210,glnN,glutamine synthetase III,Unknown
+eggnog:1G0DW@1117,Synechococcus CC9311,sync_2888,narB,nitrate reductase,Stress response and adaptation
+eggnog:1G0DW@1117,Synechococcus PCC 7002,SYNPCC7002_A1314,narB,molybdopterin oxidoreductase family protein,Energy production
+eggnog:1G0DW@1117,Synechococcus WH7803,SynWH7803_2481,narB,nitrate reductase,Stress response and adaptation
+eggnog:1G0DW@1117,Synechococcus WH8102,SYNW2464,narB,nitrate reductase,Stress response and adaptation
+eggnog:1G0DW@1117,Synechococcus elongatus PCC 7942,H6G84_08810,H6G84_RS08810,nitrate reductase catalytic subunit,Energy production
+eggnog:1G0DW@1117,Synechococcus elongatus UTEX 2973,M744_10465,narB,nitrate reductase catalytic subunit,Energy production
+eggnog:1G0DW@1117,Synechococcus sp. BL107,BL107_06899,narB,nitrate reductase,Stress response and adaptation
+eggnog:1G0DW@1117,Thermosynechococcus vestitus BP-1,tlr1355,narB,molybdopterin oxidoreductase family protein,Energy production
+eggnog:1G0FS@1117,Prochlorococcus AS9601,A9601_17761,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus MED4,PMM1569,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus MIT0801,EW15_2088,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus MIT9301,P9301_17601,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus MIT9303,P9303_22891,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus MIT9312,PMT9312_1661,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus MIT9313,PMT1719,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus NATL1A,NATL1_20151,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus NATL2A,PMN2A_1141,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus RSP50,BSR22_02300,moeB,molybdopterin-synthase adenylyltransferase MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro1724,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus CC9311,sync_0452,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus PCC 7002,SYNPCC7002_A0363,moeB,molybdopterin-synthase adenylyltransferase MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus WH7803,SynWH7803_0448,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus WH8102,SYNW2053,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus elongatus PCC 7942,H6G84_07020,moeB,molybdopterin-synthase adenylyltransferase MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus elongatus UTEX 2973,M744_02270,moeB,molybdopterin-synthase adenylyltransferase MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Synechococcus sp. BL107,BL107_08711,moeB,molybdopterin biosynthesis protein MoeB,Coenzyme metabolism
+eggnog:1G0FS@1117,Thermosynechococcus vestitus BP-1,tlr2403,moeB,molybdopterin-synthase adenylyltransferase MoeB,Coenzyme metabolism
+eggnog:1G0GT@1117,Prochlorococcus AS9601,A9601_08891,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus MED4,PMM0969,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus MIT0801,EW15_1981,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus MIT9301,P9301_08871,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus MIT9303,P9303_29751,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus MIT9312,PMT9312_0830,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus MIT9313,PMT2230,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus NATL1A,NATL1_19201,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus NATL2A,PMN2A_1049,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Prochlorococcus RSP50,BSR22_07400,ureG,urease accessory protein UreG,Nucleotide metabolism
+eggnog:1G0GT@1117,Synechococcus CC9311,sync_2873,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Synechococcus PCC 7002,SYNPCC7002_A2071,ureG,urease accessory protein UreG,Transcription
+eggnog:1G0GT@1117,Synechococcus WH8102,SYNW2443,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Synechococcus sp. BL107,BL107_06984,ureG,urease accessory protein UreG,Stress response and adaptation
+eggnog:1G0GT@1117,Thermosynechococcus vestitus BP-1,tlr0057,ureG,urease accessory protein UreG,Transcription
+eggnog:1G0K2@1117,Synechococcus CC9311,sync_2892,moeA,molybdopterin biosynthesis protein MoeA,Coenzyme metabolism
+eggnog:1G0K2@1117,Synechococcus PCC 7002,SYNPCC7002_A0771,glp,gephyrin-like molybdotransferase Glp,Coenzyme metabolism
+eggnog:1G0K2@1117,Synechococcus WH7803,SynWH7803_2485,moeA,molybdopterin biosynthesis protein MoeA,Coenzyme metabolism
+eggnog:1G0K2@1117,Synechococcus WH8102,SYNW2469,moeA,molybdopterin biosynthesis protein MoeA,Coenzyme metabolism
+eggnog:1G0K2@1117,Synechococcus elongatus PCC 7942,H6G84_08550,H6G84_RS08550,molybdopterin molybdotransferase MoeA,Coenzyme metabolism
+eggnog:1G0K2@1117,Synechococcus elongatus UTEX 2973,M744_10195,moeA,molybdopterin molybdotransferase MoeA,Coenzyme metabolism
+eggnog:1G0K2@1117,Synechococcus sp. BL107,BL107_06869,moeA,molybdopterin biosynthesis protein MoeA,Coenzyme metabolism
+eggnog:1G0K2@1117,Thermosynechococcus vestitus BP-1,tll1364,moeA,molybdopterin molybdotransferase MoeA,Coenzyme metabolism
+eggnog:1G0NY@1117,Synechococcus CC9311,sync_2887,nrtP,nitrate transporter,Stress response and adaptation
+eggnog:1G0NY@1117,Synechococcus PCC 7002,SYNPCC7002_A1313,ntrP,MFS transporter,Inorganic ion transport
+eggnog:1G0NY@1117,Synechococcus WH7803,SynWH7803_2480,nrtP,nitrate transporter,Stress response and adaptation
+eggnog:1G0NY@1117,Synechococcus sp. BL107,BL107_06904,nrtP,nitrate transporter,Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus AS9601,A9601_08861,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus MED4,PMM0972,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus MIT0801,EW15_1978,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus MIT9301,P9301_08841,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus MIT9312,PMT9312_0827,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus NATL1A,NATL1_19171,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus NATL2A,PMN2A_1046,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Prochlorococcus RSP50,BSR22_07385,urtC,urea ABC transporter permease subunit UrtC,Amino acid metabolism
+eggnog:1G0QD@1117,Synechococcus CC9311,sync_2870,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Synechococcus PCC 7002,SYNPCC7002_A0396,urtC,urea ABC transporter permease subunit UrtC,Inorganic ion transport
+eggnog:1G0QD@1117,Synechococcus WH8102,SYNW2440,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Synechococcus sp. BL107,BL107_06999,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1G0QD@1117,Thermosynechococcus vestitus BP-1,tlr1122,urtC,urea ABC transporter permease subunit UrtC,Amino acid metabolism
+eggnog:1G0S8@1117,Prochlorococcus MIT9303,P9303_24801,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1G0S8@1117,Prochlorococcus MIT9313,PMT1853,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1G0S8@1117,Synechococcus CC9311,sync_0293,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1G0S8@1117,Synechococcus PCC 7002,SYNPCC7002_A1070,amt,ammonium transporter,Inorganic ion transport
+eggnog:1G0S8@1117,Synechococcus PCC 7002,SYNPCC7002_A2208,amt1,ammonium transporter,Inorganic ion transport
+eggnog:1G0S8@1117,Synechococcus PCC 7002,SYNPCC7002_A2754,amt1,ammonium transporter,Inorganic ion transport
+eggnog:1G0S8@1117,Synechococcus WH7803,SynWH7803_0297,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1G0S8@1117,Synechococcus WH8102,SYNW0253,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1G0S8@1117,Synechococcus elongatus PCC 7942,H6G84_05550,H6G84_RS05550,ammonium transporter,Inorganic ion transport
+eggnog:1G0S8@1117,Synechococcus elongatus UTEX 2973,M744_00755,amt1,ammonium transporter,Inorganic ion transport
+eggnog:1G0S8@1117,Synechococcus sp. BL107,BL107_05259,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1G0S8@1117,Thermosynechococcus vestitus BP-1,tll0188,amt1,ammonium transporter,Inorganic ion transport
+eggnog:1G0S8@1117,Thermosynechococcus vestitus BP-1,tll1985,amt1,ammonium transporter,Inorganic ion transport
+eggnog:1G0UF@1117,Prochlorococcus AS9601,A9601_08841,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus MED4,PMM0974,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus MIT0801,EW15_1976,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus MIT9301,P9301_08821,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus MIT9303,P9303_29701,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus MIT9312,PMT9312_0825,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus MIT9313,PMT2225,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus NATL1A,NATL1_19151,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus NATL2A,PMN2A_1044,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Prochlorococcus RSP50,BSR22_07375,urtE,urea ABC transporter ATP-binding subunit UrtE,Amino acid metabolism
+eggnog:1G0UF@1117,Synechococcus CC9311,sync_2868,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Synechococcus PCC 7002,SYNPCC7002_A1627,urtE,urea ABC transporter ATP-binding subunit UrtE,Amino acid metabolism
+eggnog:1G0UF@1117,Synechococcus WH8102,SYNW2438,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Synechococcus sp. BL107,BL107_07009,urtE,"ABC-type urea transporter, ATPase component UrtE",Stress response and adaptation
+eggnog:1G0UF@1117,Thermosynechococcus vestitus BP-1,tlr1124,urtE,urea ABC transporter ATP-binding subunit UrtE,Amino acid metabolism
+eggnog:1G0VS@1117,Synechococcus CC9311,sync_2885,moaA,molybdenum cofactor biosynthesis protein A,Coenzyme metabolism
+eggnog:1G0VS@1117,Synechococcus PCC 7002,SYNPCC7002_A1361,moaA,"GTP 3^,8-cyclase MoaA",Coenzyme metabolism
+eggnog:1G0VS@1117,Synechococcus WH7803,SynWH7803_2478,moaA,molybdenum cofactor biosynthesis protein A,Coenzyme metabolism
+eggnog:1G0VS@1117,Synechococcus WH8102,SYNW2460,moaA,molybdenum cofactor biosynthesis protein A,Coenzyme metabolism
+eggnog:1G0VS@1117,Synechococcus elongatus PCC 7942,H6G84_08570,moaA,"GTP 3^,8-cyclase MoaA",Coenzyme metabolism
+eggnog:1G0VS@1117,Synechococcus elongatus UTEX 2973,M744_10215,moaA,"GTP 3^,8-cyclase MoaA",Coenzyme metabolism
+eggnog:1G0VS@1117,Synechococcus sp. BL107,BL107_06914,moaA,molybdenum cofactor biosynthesis protein A,Coenzyme metabolism
+eggnog:1G0VS@1117,Thermosynechococcus vestitus BP-1,tll1363,moaA,"GTP 3^,8-cyclase MoaA",Coenzyme metabolism
+eggnog:1G0XM@1117,Prochlorococcus AS9601,A9601_17161,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus MED4,PMM1512,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus MIT0801,EW15_2017,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus MIT9301,P9301_17041,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus MIT9303,P9303_23581,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus MIT9312,PMT9312_1604,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus MIT9313,PMT1777,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus NATL1A,NATL1_19531,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus NATL2A,PMN2A_1078,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Prochlorococcus RSP50,BSR22_02020,gltB,glutamate synthase large subunit,Amino acid metabolism
+eggnog:1G0XM@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro1668,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Synechococcus CC9311,sync_0387,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Synechococcus PCC 7002,SYNPCC7002_A2393,gltB,glutamate synthase large subunit,Amino acid metabolism
+eggnog:1G0XM@1117,Synechococcus WH7803,SynWH7803_0385,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Synechococcus WH8102,SYNW2132,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Synechococcus elongatus PCC 7942,H6G84_11885,gltB,glutamate synthase large subunit,Amino acid metabolism
+eggnog:1G0XM@1117,Synechococcus elongatus UTEX 2973,M744_12285,gltB,glutamate synthase large subunit,Amino acid metabolism
+eggnog:1G0XM@1117,Synechococcus sp. BL107,BL107_08289,glsF,ferredoxin-dependent glutamate synthase,Stress response and adaptation
+eggnog:1G0XM@1117,Thermosynechococcus vestitus BP-1,tll1368,glsF,glutamate synthase-related protein,Amino acid metabolism
+eggnog:1G0Z6@1117,Prochlorococcus MIT0801,EW15_2256,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Prochlorococcus MIT9303,P9303_29861,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Prochlorococcus MIT9313,PMT2239,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Prochlorococcus NATL1A,NATL1_21711,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Prochlorococcus NATL2A,PMN2A_1298,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Prochlorococcus NATL2A,PMN2A_RS10340,nirA,ferredoxin--nitrite reductase,Energy production
+eggnog:1G0Z6@1117,Synechococcus CC9311,sync_2898,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Synechococcus PCC 7002,SYNPCC7002_A1827,nirA,ferredoxin--nitrite reductase,Energy production
+eggnog:1G0Z6@1117,Synechococcus WH7803,SynWH7803_2492,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Synechococcus WH8102,SYNW2477,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Synechococcus elongatus PCC 7942,H6G84_08785,H6G84_RS08785,ferredoxin--nitrite reductase,Energy production
+eggnog:1G0Z6@1117,Synechococcus elongatus UTEX 2973,M744_10440,nirA,ferredoxin--nitrite reductase,Energy production
+eggnog:1G0Z6@1117,Synechococcus sp. BL107,BL107_06834,nirA,ferredoxin--nitrite reductase,Stress response and adaptation
+eggnog:1G0Z6@1117,Thermosynechococcus vestitus BP-1,tlr1349,nirA,ferredoxin--nitrite reductase,Energy production
+eggnog:1G0ZS@1117,Prochlorococcus MIT0801,EW15_2258,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G0ZS@1117,Prochlorococcus MIT9303,P9303_29881,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G0ZS@1117,Prochlorococcus MIT9313,PMT2240,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G0ZS@1117,Prochlorococcus NATL1A,NATL1_21721,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G0ZS@1117,Prochlorococcus NATL2A,PMN2A_1299,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G0ZS@1117,Synechococcus CC9311,sync_2899,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G0ZS@1117,Synechococcus PCC 7002,SYNPCC7002_A0125,,formate/nitrite transporter family protein,Inorganic ion transport
+eggnog:1G0ZS@1117,Synechococcus WH7803,SynWH7803_2493,focA,"nitrite transporter, FNT family",Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus AS9601,A9601_08921,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus MED4,PMM0966,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus MIT0801,EW15_1984,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus MIT9301,P9301_08901,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus MIT9303,P9303_29781,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus MIT9312,PMT9312_0833,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus MIT9313,PMT2233,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus NATL1A,NATL1_19231,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus NATL2A,PMN2A_1052,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Prochlorococcus RSP50,BSR22_07415,ureD,urease accessory protein UreD,Post-translational modification
+eggnog:1G10F@1117,Synechococcus CC9311,sync_2876,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Synechococcus PCC 7002,SYNPCC7002_A2123,ureD,urease accessory protein UreD,Post-translational modification
+eggnog:1G10F@1117,Synechococcus WH8102,SYNW2446,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Synechococcus sp. BL107,BL107_06969,ureD,urease accessory protein UreD,Stress response and adaptation
+eggnog:1G10F@1117,Thermosynechococcus vestitus BP-1,tlr0536,ureD,urease accessory protein UreD,Post-translational modification
+eggnog:1G12D@1117,Prochlorococcus AS9601,A9601_08951,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus MED4,PMM0963,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus MIT0801,EW15_1987,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus MIT9301,P9301_08931,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus MIT9303,P9303_29811,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus MIT9312,PMT9312_0836,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus MIT9313,PMT2236,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus NATL1A,NATL1_19261,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus NATL2A,PMN2A_1055,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Prochlorococcus RSP50,BSR22_07430,ureC,urease subunit alpha,Amino acid metabolism
+eggnog:1G12D@1117,Synechococcus CC9311,sync_2879,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Synechococcus PCC 7002,SYNPCC7002_A0193,ureC,urease subunit alpha,Amino acid metabolism
+eggnog:1G12D@1117,Synechococcus WH8102,SYNW2449,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Synechococcus sp. BL107,BL107_06954,ureC,urease alpha subunit,Stress response and adaptation
+eggnog:1G12D@1117,Thermosynechococcus vestitus BP-1,tlr0005,ureC,urease subunit alpha,Amino acid metabolism
+eggnog:1G19V@1117,Prochlorococcus AS9601,A9601_09091,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus MED4,PMM0951,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus MIT0801,EW15_0945,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus MIT9301,P9301_09071,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus MIT9303,P9303_15771,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus MIT9312,PMT9312_0848,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus MIT9313,PMT0653,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus NATL1A,NATL1_09281,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus NATL2A,PMN2A_0259,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Prochlorococcus RSP50,BSR22_07500,carA,glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit,Nucleotide metabolism
+eggnog:1G19V@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0745,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Synechococcus CC9311,sync_1636,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Synechococcus PCC 7002,SYNPCC7002_A2505,carA,glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit,Nucleotide metabolism
+eggnog:1G19V@1117,Synechococcus WH7803,SynWH7803_1061,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Synechococcus WH8102,SYNW1026,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Synechococcus elongatus PCC 7942,H6G84_02350,carA,glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit,Nucleotide metabolism
+eggnog:1G19V@1117,Synechococcus elongatus UTEX 2973,M744_05765,carA,glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit,Nucleotide metabolism
+eggnog:1G19V@1117,Synechococcus sp. BL107,BL107_12350,carA,carbamoyl-phosphate synthase small subunit,Central intermediary metabolism
+eggnog:1G19V@1117,Thermosynechococcus vestitus BP-1,tll0760,carA,glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit,Nucleotide metabolism
+eggnog:1G1UJ@1117,Prochlorococcus MIT9301,P9301_13131,merR,aliphatic nitrilase,Stress response and adaptation
+eggnog:1G1UJ@1117,Synechococcus PCC 7002,SYNPCC7002_A0664,,Nit6803 family nitrilase,Unknown
+eggnog:1G1UJ@1117,Synechococcus WH8102,SYNW1425,merR,aliphatic nitrilase,Stress response and adaptation
+eggnog:1G1UJ@1117,Synechococcus elongatus PCC 7942,H6G84_12150,H6G84_RS12150,Nit6803 family nitrilase,Unknown
+eggnog:1G1UJ@1117,Synechococcus elongatus UTEX 2973,M744_12540,,Nit6803 family nitrilase,Unknown
+eggnog:1G1XM@1117,Synechococcus PCC 7002,SYNPCC7002_G0014,nrtD,ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1G1XM@1117,Synechococcus PCC 7002,SYNPCC7002_RS08765,tauB,ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1G1XM@1117,Synechococcus WH8102,SYNW1417,tauB,"ABC-type nitrate/sulfonate/bicarbonate transport system, ATPase component",Transport
+eggnog:1G1XM@1117,Synechococcus WH8102,SYNW2485,cynD,cyanate ABC transporter ATP-binding protein,Central intermediary metabolism
+eggnog:1G1XM@1117,Synechococcus elongatus PCC 7942,H6G84_02440,cynD,ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1G1XM@1117,Synechococcus elongatus PCC 7942,H6G84_08805,H6G84_RS08805,nitrate ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1G1XM@1117,Synechococcus elongatus UTEX 2973,M744_05855,cynD,ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1G1XM@1117,Synechococcus elongatus UTEX 2973,M744_10460,nrtD,nitrate ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1G22F@1117,Prochlorococcus AS9601,A9601_08871,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus MED4,PMM0971,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus MIT0801,EW15_1979,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus MIT9301,P9301_08851,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus MIT9303,P9303_29731,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus MIT9312,PMT9312_0828,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus MIT9313,PMT2228,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus NATL1A,NATL1_19181,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus NATL2A,PMN2A_1047,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Prochlorococcus RSP50,BSR22_07390,urtB,urea ABC transporter permease subunit UrtB,Amino acid metabolism
+eggnog:1G22F@1117,Synechococcus CC9311,sync_2871,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Synechococcus PCC 7002,SYNPCC7002_A0397,urtB,urea ABC transporter permease subunit UrtB,Inorganic ion transport
+eggnog:1G22F@1117,Synechococcus WH8102,SYNW2441,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Synechococcus sp. BL107,BL107_06994,urtB,"ABC-type urea transporter, permease component",Stress response and adaptation
+eggnog:1G22F@1117,Thermosynechococcus vestitus BP-1,tlr1121,urtB,ABC transporter permease subunit,Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus AS9601,A9601_09401,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus MED4,PMM0920,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus MIT0801,EW15_0822,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus MIT9301,P9301_09391,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus MIT9303,P9303_16421,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus MIT9312,PMT9312_0880,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus MIT9313,PMT0601,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus NATL1A,NATL1_07731,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus NATL2A,PMN2A_0141,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Prochlorococcus RSP50,BSR22_07660,glnA,type I glutamate--ammonia ligase,Coenzyme metabolism
+eggnog:1G255@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro1038,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Synechococcus CC9311,sync_1569,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Synechococcus PCC 7002,SYNPCC7002_A1630,glnA,type I glutamate--ammonia ligase,Coenzyme metabolism
+eggnog:1G255@1117,Synechococcus WH7803,SynWH7803_1347,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Synechococcus WH8102,SYNW1073,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Synechococcus elongatus PCC 7942,H6G84_02155,glnA,type I glutamate--ammonia ligase,Coenzyme metabolism
+eggnog:1G255@1117,Synechococcus elongatus UTEX 2973,M744_05575,glnA,type I glutamate--ammonia ligase,Coenzyme metabolism
+eggnog:1G255@1117,Synechococcus sp. BL107,BL107_13740,glnA,"glutamine synthetase, type I",Amino acid metabolism
+eggnog:1G255@1117,Thermosynechococcus vestitus BP-1,tll1588,glnA,type I glutamate--ammonia ligase,Amino acid metabolism
+eggnog:1G29H@1117,Prochlorococcus AS9601,A9601_08881,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus MED4,PMM0970,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus MIT0801,EW15_1980,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus MIT9301,P9301_08861,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus MIT9303,P9303_29741,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus MIT9312,PMT9312_0829,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus MIT9313,PMT2229,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus NATL1A,NATL1_19191,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus NATL2A,PMN2A_1048,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Prochlorococcus RSP50,BSR22_07395,urtA,urea ABC transporter substrate-binding protein,Amino acid metabolism
+eggnog:1G29H@1117,Synechococcus CC9311,sync_2872,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Synechococcus PCC 7002,SYNPCC7002_A0398,urtA,urea ABC transporter substrate-binding protein,Amino acid metabolism
+eggnog:1G29H@1117,Synechococcus WH7803,SynWH7803_0599,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Synechococcus WH8102,SYNW0374,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Synechococcus WH8102,SYNW2442,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Synechococcus sp. BL107,BL107_06989,urtA,"ABC-type urea transporter, substrate binding component",Stress response and adaptation
+eggnog:1G29H@1117,Thermosynechococcus vestitus BP-1,tlr1120,urtA,urea ABC transporter substrate-binding protein,Amino acid metabolism
+eggnog:1G2AC@1117,Prochlorococcus MIT9303,P9303_29251,ntrX,nitrogen assimilation regulatory protein,Stress response and adaptation
+eggnog:1G2AC@1117,Prochlorococcus MIT9313,PMT2200,ntrX,nitrogen assimilation regulatory protein,Stress response and adaptation
+eggnog:1G2AC@1117,Synechococcus CC9311,sync_1472,ntrX,nitrogen assimilation regulatory protein,Stress response and adaptation
+eggnog:1G2AC@1117,Synechococcus PCC 7002,SYNPCC7002_A1475,,sigma 54-interacting transcriptional regulator,Energy production
+eggnog:1G2AC@1117,Synechococcus elongatus PCC 7942,H6G84_11285,H6G84_RS11285,sigma 54-interacting transcriptional regulator,Energy production
+eggnog:1G2AC@1117,Synechococcus elongatus UTEX 2973,M744_08640,,sigma 54-interacting transcriptional regulator,Energy production
+eggnog:1G2AC@1117,Synechococcus sp. BL107,BL107_RS13190,,hypothetical protein,Energy production
+eggnog:1G2Q2@1117,Prochlorococcus MIT9303,P9303_29711,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G2Q2@1117,Prochlorococcus MIT9313,PMT2226,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G2Q2@1117,Synechococcus CC9311,sync_2869,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G2Q2@1117,Synechococcus WH8102,SYNW2439,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G2Q2@1117,Synechococcus sp. BL107,BL107_07004,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G2Q2@1117,Thermosynechococcus vestitus BP-1,tlr1123,urtD,urea ABC transporter ATP-binding protein UrtD,Unknown
+eggnog:1G3PC@1117,Synechococcus CC9311,sync_2874,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1G3PC@1117,Synechococcus PCC 7002,SYNPCC7002_A2329,ureF,urease accessory protein UreF,Post-translational modification
+eggnog:1G3PC@1117,Synechococcus WH8102,SYNW2444,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1G3PC@1117,Synechococcus sp. BL107,BL107_06979,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1G3PC@1117,Thermosynechococcus vestitus BP-1,tll1365,ureF,urease accessory protein UreF,Post-translational modification
+eggnog:1G43Q@1117,Prochlorococcus AS9601,A9601_04591,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus MED4,PMM0409,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus MIT0801,EW15_0474,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus MIT9301,P9301_04281,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus MIT9303,P9303_21181,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus MIT9312,PMT9312_0404,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus MIT9313,PMT0226,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus NATL1A,NATL1_04601,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus NATL2A,PMN2A_1743,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus RSP50,BSR22_05120,metB,trans-sulfuration enzyme family protein,Amino acid metabolism
+eggnog:1G43Q@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0405,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Synechococcus CC9311,sync_0623,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Synechococcus WH7803,SynWH7803_0587,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Synechococcus WH8102,SYNW0675,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G43Q@1117,Synechococcus sp. BL107,BL107_15740,metB,O-succinylhomoserine(thiol)-lyase,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus AS9601,A9601_04571,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus MED4,PMM0407,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus MIT0801,EW15_0472,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus MIT9301,P9301_04261,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus MIT9303,P9303_21201,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus MIT9312,PMT9312_0402,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus MIT9313,PMT0224,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus NATL1A,NATL1_04581,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus NATL2A,PMN2A_1741,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus RSP50,BSR22_05110,cysK,cysteine synthase A,Amino acid metabolism
+eggnog:1G493@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0403,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus CC9311,sync_0620,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus CC9311,sync_2577,cysK,O-acetylserine (thiol)-lyase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus WH7803,SynWH7803_0585,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus WH7803,SynWH7803_2234,cysK,O-acetylserine (thiol)-lyase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus WH8102,SYNW0673,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus WH8102,SYNW2222,cysK,O-acetylserine (thiol)-lyase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus elongatus PCC 7942,H6G84_13510,cysK,cysteine synthase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus elongatus UTEX 2973,M744_14065,cysK,cysteine synthase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus sp. BL107,BL107_05004,cysK,O-acetylserine (thiol)-lyase A,Amino acid metabolism
+eggnog:1G493@1117,Synechococcus sp. BL107,BL107_15750,cysK,O-acetylserine sulfhydrylase A,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus AS9601,A9601_06981,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus MED4,PMM0642,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus MIT0801,EW15_0749,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus MIT9301,P9301_06691,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus MIT9303,P9303_13191,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus MIT9312,PMT9312_0642,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus MIT9313,PMT0875,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus NATL1A,NATL1_07071,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus NATL2A,PMN2A_0083,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus RSP50,BSR22_06325,met17,O-acetylhomoserine aminocarboxypropyltransferase/cysteine synthase family protein,Amino acid metabolism
+eggnog:1G4EH@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0800,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Synechococcus CC9311,sync_1180,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Synechococcus WH7803,SynWH7803_1407,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Synechococcus WH8102,SYNW0851,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4EH@1117,Synechococcus elongatus PCC 7942,H6G84_05925,H6G84_RS05925,O-acetylhomoserine aminocarboxypropyltransferase/cysteine synthase family protein,Amino acid metabolism
+eggnog:1G4EH@1117,Synechococcus elongatus UTEX 2973,M744_01135,met17,O-acetylhomoserine aminocarboxypropyltransferase/cysteine synthase family protein,Amino acid metabolism
+eggnog:1G4EH@1117,Synechococcus sp. BL107,BL107_14720,metY,O-acetylhomoserine aminocarboxypropyltransferase,Amino acid metabolism
+eggnog:1G4VP@1117,Prochlorococcus AS9601,A9601_08851,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus MED4,PMM0973,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus MIT0801,EW15_1977,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus MIT9301,P9301_08831,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus MIT9312,PMT9312_0826,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus NATL1A,NATL1_19161,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus NATL2A,PMN2A_1045,urtD,"ABC-type urea transporter, ATP-binding component UrtD",Stress response and adaptation
+eggnog:1G4VP@1117,Prochlorococcus RSP50,BSR22_07380,urtD,urea ABC transporter ATP-binding protein UrtD,Unknown
+eggnog:1G514@1117,Synechococcus CC9311,SYNC_RS13265,moaB,molybdenum cofactor biosynthesis protein B,Coenzyme metabolism
+eggnog:1G514@1117,Synechococcus PCC 7002,SYNPCC7002_A0565,moaB,molybdenum cofactor biosynthesis protein B,Coenzyme metabolism
+eggnog:1G514@1117,Synechococcus WH7803,SynWH7803_2488,moaB,molybdenum cofactor biosynthesis protein B,Coenzyme metabolism
+eggnog:1G514@1117,Synechococcus WH8102,SYNW2474,moaB,molybdenum cofactor biosynthesis protein B,Coenzyme metabolism
+eggnog:1G514@1117,Synechococcus sp. BL107,BL107_06849,moaB,molybdenum cofactor biosynthesis protein B,Coenzyme metabolism
+eggnog:1G529@1117,Prochlorococcus MED4,PMM0373,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Prochlorococcus MIT0801,EW15_0074,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Prochlorococcus NATL1A,NATL1_00701,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Prochlorococcus NATL2A,PMN2A_1390,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Synechococcus CC9311,sync_2901,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Synechococcus PCC 7002,SYNPCC7002_A0643,cynS,cyanase,Coenzyme metabolism
+eggnog:1G529@1117,Synechococcus PCC 7002,SYNPCC7002_A0863,cynS,cyanase,Coenzyme metabolism
+eggnog:1G529@1117,Synechococcus WH7803,SynWH7803_2495,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Synechococcus WH8102,SYNW2490,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G529@1117,Synechococcus elongatus PCC 7942,H6G84_02445,cynS,cyanase,Coenzyme metabolism
+eggnog:1G529@1117,Synechococcus elongatus UTEX 2973,M744_05860,cynS,cyanase,Coenzyme metabolism
+eggnog:1G529@1117,Synechococcus sp. BL107,BL107_06819,cynS,cyanate hydratase,Central intermediary metabolism
+eggnog:1G53K@1117,Synechococcus CC9311,sync_2891,moaC,molybdenum cofactor biosynthesis protein C,Coenzyme metabolism
+eggnog:1G53K@1117,Synechococcus PCC 7002,SYNPCC7002_A2292,moaC,cyclic pyranopterin monophosphate synthase MoaC,Coenzyme metabolism
+eggnog:1G53K@1117,Synechococcus WH7803,SynWH7803_2484,moaC,molybdenum cofactor biosynthesis protein C,Coenzyme metabolism
+eggnog:1G53K@1117,Synechococcus WH8102,SYNW2468,moaC,molybdenum cofactor biosynthesis protein C,Coenzyme metabolism
+eggnog:1G53K@1117,Synechococcus elongatus PCC 7942,H6G84_08555,moaCB,bifunctional molybdenum cofactor biosynthesis protein MoaC/MoaB,Coenzyme metabolism
+eggnog:1G53K@1117,Synechococcus elongatus UTEX 2973,M744_10200,moaCB,bifunctional molybdenum cofactor biosynthesis protein MoaC/MoaB,Coenzyme metabolism
+eggnog:1G53K@1117,Synechococcus sp. BL107,BL107_06874,moaC,molybdenum cofactor biosynthesis protein C,Coenzyme metabolism
+eggnog:1G53K@1117,Thermosynechococcus vestitus BP-1,tll1362,moaC,cyclic pyranopterin monophosphate synthase MoaC,Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus CC9311,sync_2893,moaE,molybdenum cofactor biosynthesis protein E (molydbopterin converting factor large subunit),Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus PCC 7002,SYNPCC7002_A1690,moaE,molybdenum cofactor biosynthesis protein MoaE,Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus WH7803,SynWH7803_2486,moaE,molybdenum cofactor biosynthesis protein E (molydbopterin converting factor large subunit),Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus WH8102,SYNW2472,moaE,molybdenum cofactor biosynthesis protein E (molydbopterin converting factor large subunit),Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus elongatus PCC 7942,H6G84_08565,H6G84_RS08565,molybdopterin synthase catalytic subunit,Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus elongatus UTEX 2973,M744_10210,moaE,molybdopterin synthase catalytic subunit,Coenzyme metabolism
+eggnog:1G5AI@1117,Synechococcus sp. BL107,BL107_06859,moaE,molybdenum cofactor biosynthesis protein E (molydbopterin converting factor large subunit),Coenzyme metabolism
+eggnog:1G5AI@1117,Thermosynechococcus vestitus BP-1,tll1360,moaE,molybdenum cofactor biosynthesis protein MoaE,Coenzyme metabolism
+eggnog:1G5QJ@1117,Prochlorococcus AS9601,A9601_16651,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus MED4,PMM1463,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus MIT0801,EW15_1915,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus MIT9301,P9301_16531,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus MIT9303,P9303_04671,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus MIT9312,PMT9312_1556,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus MIT9313,PMT1481,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus NATL1A,NATL1_18621,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus NATL2A,PMN2A_0993,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Prochlorococcus RSP50,BSR22_01770,glnB,P-II family nitrogen regulator,Transcription
+eggnog:1G5QJ@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro1616,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Synechococcus CC9311,sync_2331,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Synechococcus PCC 7002,SYNPCC7002_A1285,glnB,P-II family nitrogen regulator,Transcription
+eggnog:1G5QJ@1117,Synechococcus WH7803,SynWH7803_2035,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Synechococcus WH8102,SYNW0462,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Synechococcus elongatus PCC 7942,H6G84_06185,H6G84_RS06185,P-II family nitrogen regulator,Transcription
+eggnog:1G5QJ@1117,Synechococcus elongatus UTEX 2973,M744_01410,glnB,P-II family nitrogen regulator,Transcription
+eggnog:1G5QJ@1117,Synechococcus sp. BL107,BL107_16790,glnB,nitrogen regulatory protein P-II,Stress response and adaptation
+eggnog:1G5QJ@1117,Thermosynechococcus vestitus BP-1,tll0591,glnB,P-II family nitrogen regulator,Transcription
+eggnog:1G61D@1117,Synechococcus CC9311,sync_2889,narM,nitrate reductase associated protein,Central intermediary metabolism
+eggnog:1G61D@1117,Synechococcus PCC 7002,SYNPCC7002_A2874,,nitrate reductase associated protein,Unknown
+eggnog:1G61D@1117,Synechococcus WH7803,SynWH7803_2482,narM,nitrate reductase associated protein,Central intermediary metabolism
+eggnog:1G61D@1117,Synechococcus WH8102,SYNW2465,narM,nitrate reductase associated protein,Central intermediary metabolism
+eggnog:1G61D@1117,Synechococcus elongatus PCC 7942,H6G84_10360,narM,nitrate reductase associated protein,Unknown
+eggnog:1G61D@1117,Synechococcus elongatus UTEX 2973,M744_12050,,nitrate reductase associated protein,Unknown
+eggnog:1G61D@1117,Synechococcus sp. BL107,BL107_06894,narM,nitrate reductase associated protein,Central intermediary metabolism
+eggnog:1G61D@1117,Thermosynechococcus vestitus BP-1,tlr1356,,nitrate reductase associated protein,Unknown
+eggnog:1G6IB@1117,Prochlorococcus AS9601,A9601_08941,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus MED4,PMM0964,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus MIT0801,EW15_1986,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus MIT9301,P9301_08921,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus MIT9303,P9303_29801,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus MIT9312,PMT9312_0835,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus MIT9313,PMT2235,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus NATL1A,NATL1_19251,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus NATL2A,PMN2A_1054,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Prochlorococcus RSP50,BSR22_07425,ureB,urease subunit beta,Amino acid metabolism
+eggnog:1G6IB@1117,Synechococcus CC9311,sync_2878,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Synechococcus PCC 7002,SYNPCC7002_A2437,ureB,urease subunit beta,Amino acid metabolism
+eggnog:1G6IB@1117,Synechococcus WH8102,SYNW2448,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Synechococcus sp. BL107,BL107_06959,ureB,urease beta subunit,Stress response and adaptation
+eggnog:1G6IB@1117,Thermosynechococcus vestitus BP-1,tll0330,ureB,urease subunit beta,Amino acid metabolism
+eggnog:1G6KQ@1117,Prochlorococcus AS9601,A9601_08931,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus MED4,PMM0965,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus MIT0801,EW15_1985,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus MIT9301,P9301_08911,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus MIT9303,P9303_29791,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus MIT9312,PMT9312_0834,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus MIT9313,PMT2234,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus NATL1A,NATL1_19241,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus NATL2A,PMN2A_1053,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Prochlorococcus RSP50,BSR22_07420,ureA,urease subunit gamma,Amino acid metabolism
+eggnog:1G6KQ@1117,Synechococcus CC9311,sync_2877,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Synechococcus PCC 7002,SYNPCC7002_A1319,ureA,urease subunit gamma,Amino acid metabolism
+eggnog:1G6KQ@1117,Synechococcus WH8102,SYNW2447,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Synechococcus sp. BL107,BL107_06964,ureA,urease gamma subunit,Stress response and adaptation
+eggnog:1G6KQ@1117,Thermosynechococcus vestitus BP-1,tlr0981,ureA,urease subunit gamma,Amino acid metabolism
+eggnog:1G6TF@1117,Prochlorococcus AS9601,A9601_08911,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus MED4,PMM0967,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus MIT0801,EW15_1983,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus MIT9301,P9301_08891,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus MIT9312,PMT9312_0832,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus NATL1A,NATL1_19221,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus NATL2A,PMN2A_1051,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Prochlorococcus RSP50,BSR22_07410,ureE,urease accessory protein UreE,Post-translational modification
+eggnog:1G6TF@1117,Synechococcus CC9311,sync_2875,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Synechococcus PCC 7002,SYNPCC7002_A0720,ureE,urease accessory protein UreE,Post-translational modification
+eggnog:1G6TF@1117,Synechococcus WH8102,SYNW2445,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Synechococcus sp. BL107,BL107_06974,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1G6TF@1117,Thermosynechococcus vestitus BP-1,tll1366,ureE,urease accessory protein UreE,Post-translational modification
+eggnog:1G8J1@1117,Prochlorococcus MIT9303,P9303_29771,ureE,urease accessory protein UreE,Stress response and adaptation
+eggnog:1GBHI@1117,Prochlorococcus MED4,PMM0372,cynD,cyanate ABC transporter ATP-binding protein,Central intermediary metabolism
+eggnog:1GBHI@1117,Prochlorococcus RSP50,BSR22_01510,,ABC transporter ATP-binding protein,Inorganic ion transport
+eggnog:1GBHS@1117,Synechococcus WH8102,SYNW2487,cynA,"cyanate ABC transporter, substrate-binding protein",Central intermediary metabolism
+eggnog:1GBHS@1117,Synechococcus elongatus PCC 7942,H6G84_02430,H6G84_RS02430,ABC transporter substrate-binding protein,Inorganic ion transport
+eggnog:1GBHS@1117,Synechococcus elongatus UTEX 2973,M744_05845,,ABC transporter substrate-binding protein,Inorganic ion transport
+eggnog:1GC52@1117,Prochlorococcus AS9601,A9601_08901,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus MED4,PMM0968,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus MIT0801,EW15_1982,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus MIT9301,P9301_08881,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus MIT9303,P9303_29761,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus MIT9312,PMT9312_0831,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus MIT9313,PMT2231,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus NATL1A,NATL1_19211,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus NATL2A,PMN2A_1050,ureF,urease accessory protein UreF,Stress response and adaptation
+eggnog:1GC52@1117,Prochlorococcus RSP50,BSR22_07405,ureF,urease accessory protein UreF,Post-translational modification
+eggnog:1GCF1@1117,Synechococcus CC9311,sync_0622,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GCF1@1117,Synechococcus WH7803,SynWH7803_0586,metB,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GCF1@1117,Synechococcus WH8102,SYNW0674,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GCF1@1117,Synechococcus sp. BL107,BL107_15745,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GCPE@1117,Prochlorococcus MIT9303,P9303_29721,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1GCPE@1117,Prochlorococcus MIT9313,PMT2227,urtC,"ABC-type urea transporter, membrane component",Stress response and adaptation
+eggnog:1GD8R@1117,Prochlorococcus AS9601,A9601_02851,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus MED4,PMM0263,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus MIT0801,EW15_0356,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus MIT9301,P9301_02861,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus MIT9312,PMT9312_0265,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus NATL1A,NATL1_03411,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus NATL2A,PMN2A_1629,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GD8R@1117,Prochlorococcus RSP50,BSR22_04425,amtB,ammonium transporter,Inorganic ion transport
+eggnog:1GD8R@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0295,amt1,ammonium transporter,Central intermediary metabolism
+eggnog:1GJ43@1117,Prochlorococcus MED4,PMM0371,cynB,"cyanate ABC transporter, permease protein",Central intermediary metabolism
+eggnog:1GJ43@1117,Prochlorococcus RSP50,BSR22_01515,,ABC transporter permease,Inorganic ion transport
+eggnog:1GMGD@1117,Prochlorococcus AS9601,A9601_04581,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus MED4,PMM0408,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus MIT0801,EW15_0473,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus MIT9301,P9301_04271,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus MIT9303,P9303_21191,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus MIT9312,PMT9312_0403,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus MIT9313,PMT0225,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus NATL1A,NATL1_04591,,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus NATL2A,PMN2A_1742,PMN2A_RS02170,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus RSP50,BSR22_05115,,PLP-dependent transferase,Amino acid metabolism
+eggnog:1GMGD@1117,Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Pro0404,metC/metB,"O-succinylhomoserine(thiol)-lyase, MetB-like protein",Amino acid metabolism
+eggnog:1GMPI@1117,Synechococcus CC9311,sync_1571,,"putative urea transporter, UT family",Stress response and adaptation
+eggnog:1GMZN@1117,Synechococcus CC9311,sync_2886,mobA,molybdenum cofactor guanylyltransferase,Coenzyme metabolism
+eggnog:1GMZN@1117,Synechococcus WH7803,SynWH7803_2479,mobA,molybdenum cofactor guanylyltransferase,Coenzyme metabolism
+eggnog:1GMZN@1117,Synechococcus WH8102,SYNW2461,mobA,molybdenum cofactor guanylyltransferase,Coenzyme metabolism
+eggnog:1GMZN@1117,Synechococcus sp. BL107,BL107_06909,mobA,molybdenum cofactor guanylyltransferase,Coenzyme metabolism
+eggnog:1GNRD@1117,Synechococcus CC9311,sync_2894,moaD,molydbenum cofactor biosynthesis protein D (molybdopterin converting factor small subunit),Coenzyme metabolism
+eggnog:1GNRD@1117,Synechococcus WH7803,SynWH7803_2487,moaD,molydbenum cofactor biosynthesis protein D (molybdopterin converting factor small subunit),Coenzyme metabolism
+eggnog:1GNRD@1117,Synechococcus WH8102,SYNW2473,moaD,molydbenum cofactor biosynthesis protein D (molybdopterin converting factor small subunit),Coenzyme metabolism
+eggnog:1GNRD@1117,Synechococcus sp. BL107,BL107_06854,moaD,molydbenum cofactor biosynthesis protein D (molybdopterin converting factor small subunit),Coenzyme metabolism
+eggnog:1GP1E@1117,Synechococcus WH7803,SynWH7803_2496,cynH,cyanate hydratase,Central intermediary metabolism
+eggnog:1GP1E@1117,Synechococcus WH8102,TX72_RS12565,cynH,cyanate hydratase,Central intermediary metabolism
+eggnog:1GP1E@1117,Synechococcus sp. BL107,BL107_RS12100,cynH,cyanate hydratase,Central intermediary metabolism
+eggnog:1GRCJ@1117,Prochlorococcus MIT0801,EW15_1227,,nitroreductase family protein,Stress response and adaptation
+eggnog:1GRCJ@1117,Prochlorococcus NATL1A,NATL1_12251,,nitroreductase family protein,Stress response and adaptation
+eggnog:1GRCJ@1117,Prochlorococcus NATL2A,PMN2A_0498,PMN2A_RS05525,nitroreductase family protein,Stress response and adaptation

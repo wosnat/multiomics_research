@@ -1,0 +1,15 @@
+2026-05-19 11:05:41,010 INFO list_organisms returned 37 organism rows total
+2026-05-19 11:05:41,012 INFO Filtered to 19 scope strains
+2026-05-19 11:05:41,020 INFO Cyanorak Pro CSV: 43 rows; Syn CSV: 54 rows
+2026-05-19 11:05:41,067 INFO ---
+2026-05-19 11:05:41,067 INFO Strains with KG/Cyanorak clade mismatch: 2
+2026-05-19 11:05:41,068 INFO   Prochlorococcus NATL1A — KG=LLII, Cyanorak=LLI
+2026-05-19 11:05:41,068 INFO   Prochlorococcus NATL2A — KG=LLII, Cyanorak=LLI
+2026-05-19 11:05:41,069 INFO Strains with null KG clade (where Cyanorak has it): 4
+2026-05-19 11:05:41,069 INFO Strains outside Cyanorak picocyano CSVs: 5
+2026-05-19 11:05:41,071 INFO   Prochlorococcus RSP50 (KG clade: HLI)
+2026-05-19 11:05:41,071 INFO   Synechococcus PCC 7002 (KG clade: nan)
+2026-05-19 11:05:41,071 INFO   Synechococcus elongatus PCC 7942 (KG clade: nan)
+2026-05-19 11:05:41,071 INFO   Synechococcus elongatus UTEX 2973 (KG clade: nan)
+2026-05-19 11:05:41,072 INFO   Thermosynechococcus vestitus BP-1 (KG clade: nan)
+2026-05-19 11:05:41,072 INFO Wrote /fast_data/Osnat/multiomics/multiomics_research/analyses/2026-05-19-1037-cyano_n_gene_inventory/2_kg_selection/data/02_strain_table.csv

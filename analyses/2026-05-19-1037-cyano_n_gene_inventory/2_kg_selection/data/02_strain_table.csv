@@ -1,0 +1,20 @@
+strain,genus,species_kg,strain_short,ncbi_taxon_id,gene_count_kg,experiment_count_kg,publication_count_kg,clade_kg,cyanorak_name,cyanorak_species,cyanorak_subcluster,cyanorak_clade,cyanorak_subclade,cyanorak_pigment,in_cyanorak_picocyano_csv,clade_canonical
+Prochlorococcus AS9601,Prochlorococcus,Prochlorococcus marinus,AS9601,146891,1951,1,1,HLII,Pro_AS9601,Prochlorococcus marinus,HL,HLII,HLII,Lba,True,HLII
+Prochlorococcus MED4,Prochlorococcus,Prochlorococcus marinus,MED4,59919,1976,114,17,HLI,Pro_MED4,Prochlorococcus marinus,HL,HLI,HLI,Lba,True,HLI
+Prochlorococcus MIT0801,Prochlorococcus,,MIT0801,1501269,2358,6,1,LLI,Pro_MIT0801,Prochlorococcus marinus,LL,LLI,LLI,Hba,True,LLI
+Prochlorococcus MIT9301,Prochlorococcus,Prochlorococcus marinus,MIT9301,167546,1935,8,3,HLII,Pro_MIT9301,Prochlorococcus marinus,HL,HLII,HLII,Lba,True,HLII
+Prochlorococcus MIT9303,Prochlorococcus,Prochlorococcus marinus,MIT9303,59922,3114,4,1,LLIV,Pro_MIT9303,Prochlorococcus sp.,LL,LLIV,LLIV,Hba,True,LLIV
+Prochlorococcus MIT9312,Prochlorococcus,Prochlorococcus marinus,MIT9312,74546,1978,27,5,HLII,Pro_MIT9312,Prochlorococcus marinus,HL,HLII,HLII,Lba,True,HLII
+Prochlorococcus MIT9313,Prochlorococcus,Prochlorococcus marinus,MIT9313,74547,2948,38,9,LLIV,Pro_MIT9313,Prochlorococcus sp.,LL,LLIV,LLIV,Hba,True,LLIV
+Prochlorococcus NATL1A,Prochlorococcus,Prochlorococcus marinus,NATL1A,167555,2226,2,1,LLII,Pro_NATL1A,Prochlorococcus marinus,LL,LLI,LLI,Hba,True,LLI
+Prochlorococcus NATL2A,Prochlorococcus,Prochlorococcus marinus,NATL2A,59920,2214,17,6,LLII,Pro_NATL2A,Prochlorococcus marinus,LL,LLI,LLI,Hba,True,LLI
+Prochlorococcus RSP50,Prochlorococcus,,RSP50,1924285,1870,0,0,HLI,,,,,,,False,HLI
+Prochlorococcus marinus subsp. marinus CCMP1375 (SS120),Prochlorococcus,Prochlorococcus marinus,SS120,167539,1964,64,3,LLII,Pro_SS120,Prochlorococcus marinus,LL,LLII,LLII,Hba,True,LLII
+Synechococcus WH8102,Parasynechococcus,Parasynechococcus marenigrum,WH8102,84588,2881,74,4,,Syn_WH8102,Synechococcus sp.,5.1,III,IIIa,3c,True,III
+Synechococcus WH7803,Synechococcus,,WH7803,32051,2621,69,4,,Syn_WH7803,Synechococcus sp.,5.1,V,V,3a,True,V
+Synechococcus CC9311,Synechococcus,,CC9311,64471,3052,11,1,,Syn_CC9311,Synechococcus sp.,5.1,I,Ia,3dA,True,I
+Synechococcus sp. BL107,Synechococcus,Synechococcus sp.,BL107,313625,2595,60,1,,Syn_BL107,Synechococcus sp.,5.1,IV,IVa,3dA,True,IV
+Synechococcus PCC 7002,Picosynechococcus,,PCC7002,32049,3207,6,1,,,,,,,,False,
+Synechococcus elongatus PCC 7942,Synechococcus,Synechococcus elongatus,PCC7942,1140,2717,4,1,,,,,,,,False,
+Synechococcus elongatus UTEX 2973,Synechococcus,Synechococcus elongatus,UTEX2973,1350461,2714,2,1,,,,,,,,False,
+Thermosynechococcus vestitus BP-1,Thermosynechococcus,Thermosynechococcus vestitus,BP1,197221,2449,1,1,,,,,,,,False,
