@@ -15,6 +15,7 @@ analysis = [
     "seaborn>=0.13",
     "scipy>=1.11",
     "multiomics-explorer",
+    "scikit-learn>=1.8.0",
 ]
 
 [tool.uv.sources]
