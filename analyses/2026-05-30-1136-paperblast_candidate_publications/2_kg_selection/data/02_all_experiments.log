@@ -1,0 +1,96 @@
+== all_experiments: top_n=10 min_tps=2 ==
+experiments: 197 total; organisms in KG: 44
+  ERR skip EXOPROTEOMICS 10.1101/2025.05.28.656624_ez55_exudate_proteome: IndexError
+  ERR skip PROTEOMICS 10.1101/2025.05.28.656624_ez55_whole_cell_proteome: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_dark_low_glucose_alt_in_med4_proteomics: IndexError
+  ...25/197 processed
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_light_low_glucose_alt_in_med4_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_dark_low_glucose_alt_in_wh7803_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_dark_high_glucose_alt_in_wh7803_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_light_low_glucose_alt_in_wh7803_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_light_high_glucose_alt_in_wh7803_proteomics: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1093/femsml/uqac025_vesicle_proteomics_ad45: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1093/femsml/uqac025_vesicle_proteomics_atcc27126: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1093/femsml/uqac025_vesicle_proteomics_bgp6: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1093/femsml/uqac025_vesicle_proteomics_bs11: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1093/femsml/uqac025_vesicle_proteomics_hot1a3: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1093/femsml/uqac025_vesicle_proteomics_mit1002: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_dark_low_glucose_marino_in_med4_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_light_low_glucose_marino_in_wh7803_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_dark_low_glucose_med4_proteomics: IndexError
+  ERR skip PROTEOMICS 10.1128/spectrum.03275-22_light_low_glucose_med4_proteomics: IndexError
+  ERR skip METABOLOMICS 10.1128/msystems.01261-22_kujawinski_metabolomics_0801_extracellular: IndexError
+  ERR skip METABOLOMICS 10.1128/msystems.01261-22_kujawinski_metabolomics_0801_whole_cell: IndexError
+  ERR skip RNASEQ 10.1128/mbio.03425-22_thermal_acclimation_mit9301_rnaseq: IndexError
+  ERR skip METABOLOMICS 10.1128/msystems.01261-22_kujawinski_metabolomics_9301_extracellular: IndexError
+  ERR skip METABOLOMICS 10.1128/msystems.01261-22_kujawinski_metabolomics_9301_whole_cell: IndexError
+  ...75/197 processed
+  ERR skip METABOLOMICS 10.1073/pnas.2213271120_chitosan_addition_mit9303_metabolomics: IndexError
+  ERR skip METABOLOMICS 10.1073/pnas.2213271120_chitosan_addition_mit9313_metabolomics: IndexError
+  ERR skip METABOLOMICS 10.1128/msystems.01261-22_kujawinski_metabolomics_9313_extracellular: IndexError
+  ERR skip METABOLOMICS 10.1128/msystems.01261-22_kujawinski_metabolomics_9313_whole_cell: IndexError
+  ...100/197 processed
+  ERR skip METABOLOMICS 10.1111/1462-2920.15834_vesicle_metabolomics_mit9312: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1111/1462-2920.15834_vesicle_proteomics_mit9312: IndexError
+  ERR skip METABOLOMICS 10.1111/1462-2920.15834_cells_metabolomics_mit9312: IndexError
+  ERR skip METABOLOMICS 10.1111/1462-2920.15834_vesicle_metabolomics_mit9313: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1111/1462-2920.15834_vesicle_proteomics_mit9313: IndexError
+  ERR skip METABOLOMICS 10.1111/1462-2920.15834_cells_metabolomics_mit9313: IndexError
+  ...125/197 processed
+  ERR skip RNASEQ 10.1128/mSystems.00181-16_coculture_bp1_mruber_light_oxygen_rnaseq: IndexError
+  ...150/197 processed
+  ERR skip EXOPROTEOMICS 10.1002/pmic.201400562_dss3_exoproteome_with_wh7803: IndexError
+  ERR skip EXOPROTEOMICS 10.1002/pmic.201400562_dss3_exoproteome_with_wh8102: IndexError
+  ERR skip RNASEQ 10.1186/1471-2180-14-11_expression_profiling_med4_rnaseq: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1126/science.1243457_vesicle_proteomics_med4: IndexError
+  ERR skip VESICLE_DNASEQ 10.1126/science.1243457_vesicle_dnaseq_med4: IndexError
+  ERR skip VESICLE_PROTEOMICS 10.1126/science.1243457_vesicle_proteomics_mit9313: IndexError
+  ERR skip PAIRED_RNASEQ_PROTEOME 10.1371/journal.pone.0043432_waldbauer_2012_med4_paired_diel: IndexError
+  ...175/197 processed
+  ERR skip MICROARRAY 10.1371/journal.pone.0005135_diel_cycling_med4_microarray: IndexError
+experiments: 155 contributed, 42 errored (package bug), 0 empty
+
+pooled rows (before dedup): 2290
+distinct genes (locus_tag): 1653
+distinct (organism, locus_tag): 1653
+
+=== distribution by GENUS (before dedup) ===
+                   pooled_rows  distinct_genes  organisms  experiments
+genus                                                                 
+Prochlorococcus           1070             726          9           68
+Alteromonas                461             320          4           35
+Synechococcus              252             218          5           17
+Marinobacter               227             148          1           18
+Parasynechococcus          100              90          1            6
+Ruegeria                    80              68          1            3
+Pseudomonas                 40              38          1            2
+Picosynechococcus           30              22          1            3
+Shewanella                  30              23          1            3
+
+=== distribution by ORGANISM (before dedup) ===
+                                                         pooled_rows  distinct_genes  experiments
+organism                                                                                         
+Prochlorococcus MED4                                             524             295           34
+Marinobacter (MarRef v6)                                         227             148           18
+Alteromonas macleodii EZ55                                       215             131           10
+Prochlorococcus MIT9313                                          176             133           10
+Prochlorococcus NATL2A                                           140             108            9
+Synechococcus WH7803                                             128             111            8
+Alteromonas macleodii HOT1A3                                     115             104            7
+Synechococcus WH8102                                             100              90            6
+Prochlorococcus MIT9312                                           88              56            5
+Ruegeria pomeroyi DSS-3                                           80              68            3
+Alteromonas (MarRef v6)                                           75              37           14
+Prochlorococcus marinus subsp. marinus CCMP1375 (SS120)           68              60            6
+Alteromonas macleodii MIT1002                                     56              48            4
+Synechococcus sp. BL107                                           42              26            4
+Pseudomonas putida KT2440                                         40              38            2
+Synechococcus elongatus PCC 7942                                  40              40            2
+Synechococcus elongatus UTEX 2973                                 30              29            2
+Synechococcus PCC 7002                                            30              22            3
+Shewanella sp. W3-18-1                                            30              23            3
+Prochlorococcus AS9601                                            20              20            1
+Prochlorococcus MIT9301                                           20              20            1
+Prochlorococcus NATL1A                                            20              20            1
+Prochlorococcus MIT9303                                           14              14            1
+Synechococcus CC9311                                              12              12            1

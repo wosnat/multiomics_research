@@ -1,0 +1,43 @@
+== ortholog dedup: finest-available key, within-pool ==
+
+pool sizes (before ortholog dedup):
+pool
+pro             726
+syn             330
+alt             320
+other_hetero    277
+
+genes with an ortholog group: 1629 / 1653  (24 keyed by locus_tag)
+
+finest-group source mix:
+og_source
+cyanorak    957
+eggnog      672
+NaN          24
+
+=== seeds per pool: before -> after ortholog dedup ===
+              genes_before  seeds_after  collapsed
+pool                                              
+alt                    320          282         38
+other_hetero           277          265         12
+pro                    726          575        151
+syn                    330          308         22
+
+TOTAL seeds after dedup: 1430  (from 1653 genes)
+
+=== multi-gene collapses (n_collapsed > 1), top 15 ===
+  [alt] EZ55_03376 (nan) <- 2 genes via eggnog:46CBI@72275
+  [alt] EZ55_02348 (metE) <- 3 genes via eggnog:464VV@72275
+  [alt] ACZ81_18535 (nan) <- 3 genes via eggnog:46CI9@72275
+  [alt] EZ55_01776 (nan) <- 2 genes via eggnog:46CDY@72275
+  [alt] EZ55_02855 (suxA) <- 2 genes via eggnog:46441@72275
+  [alt] EZ55_03747 (nan) <- 2 genes via eggnog:464WI@72275
+  [alt] EZ55_01060 (flaA) <- 4 genes via eggnog:464FC@72275
+  [alt] EZ55_02347 (nan) <- 3 genes via eggnog:465VF@72275
+  [alt] EZ55_03498 (actP) <- 2 genes via eggnog:4640T@72275
+  [alt] ACZ81_08845 (ahpF) <- 2 genes via eggnog:465DW@72275
+  [alt] EZ55_01737 (nan) <- 2 genes via eggnog:46780@72275
+  [alt] EZ55_03522 (katB) <- 2 genes via eggnog:4644E@72275
+  [alt] MIT1002_03521 (nan) <- 3 genes via eggnog:468YY@72275
+  [alt] DEH24_14880 (infB) <- 2 genes via eggnog:46433@72275
+  [alt] EZ55_03499 (nan) <- 2 genes via eggnog:468I1@72275
