@@ -1,0 +1,3 @@
+# Large intermediate data reproducible from KG
+# (list specific files here, not blanket patterns)
+__pycache__/
