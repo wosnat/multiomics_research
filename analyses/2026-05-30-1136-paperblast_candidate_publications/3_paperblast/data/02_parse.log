@@ -1,0 +1,21 @@
+  ✓ NATL1_02111.html [NATL1_02111/pro]: 8 hits, 3 kept
+  ✓ PMM1028.html [PMM1028/pro]: 1 hits, 1 kept
+  ✓ PMM1135.html [PMM1135/pro]: 18 hits, 18 kept
+  ✓ PMM1404.html [PMM1404/pro]: 8 hits, 8 kept
+  ✓ PMT1742.html [PMT1742/pro]: 152 hits, 4 kept
+  ✓ PMT9312_0549.html [PMT9312_0549/pro]: 112 hits, 33 kept
+  ✓ PMT9312_0550.html [PMT9312_0550/pro]: 241 hits, 19 kept
+  ✓ Pro0418.html [Pro0418/pro]: 84 hits, 2 kept
+
+=== summary ===
+files parsed: 8 seeds
+total hits: 624 | kept: 88 | dropped (taxonomy): 536
+  of dropped: 7 were MAG-flagged
+kept-hit tier mix:
+tier
+cyano    88
+
+paper rows (kept hits, pre-dedup): 189
+  unique DOIs: 3 | unique PMCIDs: 102
+
+top dropped genera: [{'genus': 'Staphylococcus', 'hit_count': 21}, {'genus': 'Clostridium', 'hit_count': 18}, {'genus': 'Pseudomonas', 'hit_count': 15}, {'genus': 'Listeria', 'hit_count': 8}, {'genus': 'Acidithiobacillus', 'hit_count': 8}, {'genus': 'Mycobacterium', 'hit_count': 8}, {'genus': 'Streptococcus', 'hit_count': 8}, {'genus': 'Escherichia', 'hit_count': 8}, {'genus': 'Arabidopsis', 'hit_count': 7}, {'genus': 'Oryza', 'hit_count': 7}, {'genus': 'Hydrogenovibrio', 'hit_count': 6}, {'genus': 'Salmonella', 'hit_count': 6}]

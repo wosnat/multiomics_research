@@ -1,3 +1,6 @@
 # Large intermediate data reproducible from KG
 # (list specific files here, not blanket patterns)
 __pycache__/
+
+# PaperBLAST step: NCBI id-converter cache (reproducible from NCBI API)
+3_paperblast/data/03_idconv_cache.json

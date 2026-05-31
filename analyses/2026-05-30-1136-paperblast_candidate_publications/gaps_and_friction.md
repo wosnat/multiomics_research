@@ -33,3 +33,21 @@ Append-only log of methodology / KG / tooling friction encountered during this a
 **What happened.** Early seed-builder attempts used `e["id"]` and `r["log2_fold_change"]`/`r["rank_by_effect"]` (from the `kg_schema` edge property names). The typed-tool results actually expose `experiment_id`, `log2fc`, `rank_up`, `rank_down`, `expression_status` (per `docs://tools/differential_expression_by_gene`). The schema property names ≠ the tool's result field names.
 
 **Impact on methodology.** Wasted a couple of iterations producing empty/zero pools. Lesson logged for the methodology: read the per-tool doc's "Per-result fields" before scripting against result dicts; don't assume `kg_schema` property names carry through to tool output.
+
+## 2026-05-31 — PaperBLAST save: filename collision + one missave
+
+**What happened.** Browser "Save as" defaults to a generic `PaperBLAST.html`, so saving multiple queries overwrites. One pro seed (PMT1742, rplN) was saved as a byte-identical copy of another (PMT9312_0549, csoS1A) — the inventory script caught it via md5/query-line, and it was re-saved correctly.
+
+**Impact on methodology.** The save step needs one file per seed named with the locus_tag (or protein_id). `01_inventory.py` is the guard — it matches each file to its seed by in-page query line (not filename) and flags missing/duplicate/unmatched, so a missave can't silently corrupt the results.
+
+## 2026-05-31 — relevance filter: "same phylum" too loose; Cyanorak ≠ cyanobacteria
+
+**What happened.** First relevance pass kept any Proteobacteria hit (the KG heterotrophs' phylum), which readmitted clinical/gut bacteria (P. aeruginosa, E. coli, Salmonella) for cyano seeds. Also, a genus-token match would have wrongly flagged freshwater Synechococcus elongatus / PCC 7002 as "in Cyanorak".
+
+**Impact on methodology.** Two fixes: (1) the relevance filter is **pool-aware** — cyano-only for pro/syn, Proteobacteria for the heterotroph pools; (2) `in_cyanorak` is computed from the **Cyanorak strain tables** (strain-code match), not a genus match, because Cyanorak is marine-picocyano only (excludes Synechocystis, Anabaena, freshwater elongatus). The Cyanorak CSVs live in `multiomics_biocypher_kg/data`.
+
+## 2026-05-31 — PaperBLAST links papers by PMCID; NCBI id-converter for DOI dedup
+
+**What happened.** PaperBLAST result pages link papers almost entirely by PMC ID (102 PMCIDs vs 3 explicit DOIs for the pro pool). The KG dedup target is keyed by DOI, so PMCID→DOI resolution is required.
+
+**Impact on methodology.** Added an NCBI id-converter step (cached on disk, dedup-before-call so each paper sends one id, exponential backoff on HTTP 429). NCBI throttles to 3 req/s anonymously, 10 with an API key (read from `.env` via python-dotenv). Without resolution the KG dedup silently passes everything as "new" — so this is load-bearing, not cosmetic.

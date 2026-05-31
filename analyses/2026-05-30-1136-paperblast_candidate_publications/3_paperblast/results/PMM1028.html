@@ -1,0 +1,379 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>PaperBLAST</title>
+<link href="../static/favicon.ico" rel="shortcut icon" />
+<style type="text/css">
+<!--/* <![CDATA[ */
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+/* for showing protein sequences */
+/* base style, and for unusual items */
+.aa  { background-color: white; }
+
+/* Clustal colors */
+.aa1 { background-color: lightblue; } /* for AILMFWV */
+.aa2 { background-color: red; } /* for KR */
+.aa3 { background-color: magenta; } /* for ED */
+.aa4 { background-color: lightgreen; } /* for NQST */
+.aa5 { background-color: pink; } /* for C */
+.aa6 { background-color: orange; } /* for G */
+.aa7 { background-color: yellow; } /* for P */
+.aa8 { background-color: cyan; } /* for HY */
+
+/* My brewed colors (see sitesTree.cgi for origin) */
+.aaD { background-color: #FB9A99; }
+.aaE { background-color: #E31A1C; }
+.aaN { background-color: #CCE6FF; }
+.aaQ { background-color: #A7C9EC; }
+.aaK { background-color: #81ADD9; }
+.aaR { background-color: #5892C7; }
+.aaH { background-color: #1F78B4; }
+.aaF { background-color: #FDBF6F; }
+.aaW { background-color: #FFA043; }
+.aaY { background-color: #FF7F00; }
+.aaP { background-color: #FFFF99; }
+.aaM { background-color: #DBAB5E; }
+.aaC { background-color: #B15928; }
+.aaG { background-color: #E6FFE6; }
+.aaA { background-color: #BDE7B7; }
+.aaV { background-color: #93D089; }
+.aaL { background-color: #68B85C; }
+.aaI { background-color: #33A02C; }
+.aaS { background-color: #CAB2D6; }
+.aaT { background-color: #6A3D9A; }
+.aaGap { background-color: #EEEEEE; }
+
+/* for showing the alignment line */
+.alnS, .alnS1, .alnS0 { font-size: smaller; }
+.alnS1 { font-weight: bold; color: darkgreen; } /* site, matching */
+.alnS0 { font-weight: bold; color: darkred; } /* site, not matching */
+
+/* pad the characters a little bit */
+.aa, .aa1, .aa2, .aa3, .aa4, .aa5, .aa6, .aa7, .aa8, .aa9,
+.aaD, .aaE, .aaN, .aaQ, .aaK, .aaR, .aaH, .aaF, .aaW, .aaY,
+.aaP, .aaM, .aaC, .aaG, .aaA, .aaV, .aaL, .aaI, .aaS, .aaT, .aaGap,
+.alnS, .alnS1, .alnS0 {
+  padding-left: 3px; padding-right: 3px; margin-top: 1px;
+}
+
+/* for an alignment column */
+.alnCol, .alnLabel {
+  vertical-align:top; float:left; display:inline-block;
+  margin-top: 1.5em;
+  font-family: "Courier New", monospace; font-size: 90%;
+}
+.alnCol { background-color: #EEEEEE;
+  border-width: 1px;
+  /*border-width-left: 1px; border-width-right: 1px;   border-width-top: 2px; border-width-bottom: 2px;*/
+  border-color: #EEEEEE; border-style: solid; }
+
+/* In many browsers, the label prevents the columns from wrapping all the way to the left,
+   so, make it subtly smaller */
+.alnLabel { margin-right: 0.5em; border: none; font-size: 85%; }
+
+
+
+/* ]]> */-->
+</style>
+<script src="../static/autocomplete_uniprot.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div style="background-color: #40C0CB; display: block; position: absolute; top: 0px; left: -1px;
+  width: 100%; padding: 0.25em; z-index: 400;">
+<H2 style="margin: 0em;">
+<A HREF="litSearch.cgi" style="color: gold; font-family: 'Montserrat', sans-serif; font-style:italic;
+  text-shadow: 1px 1px 1px #000000; text-decoration: none;">
+PaperBLAST &ndash; <small>Find papers about a protein or its homologs</small>
+</A></H2></div>
+<P style="margin: 0em;">&nbsp;</P>
+<SCRIPT src="../static/pb.js"></SCRIPT>
+<h2>PaperBLAST</h2>
+<SCRIPT src="../static/pb.js"></SCRIPT>
+<SCRIPT src="https://fit.genomics.lbl.gov/d3js/d3.min.js"></SCRIPT>
+<SCRIPT src="https://fit.genomics.lbl.gov/images/fitblast.js"></SCRIPT>
+<h3>PaperBLAST Hits for tr|Q7V158|Q7V158_PROMP Conserved hypothetical OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=PMM1028 PE=4 SV=1 (82 a.a., MDFIISIFLA...)</h3><DIV style="float:right; padding-left: 10px; width:25%; background-color: #EEEEEE; font-size: 95%;"><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Other sequence analysis tools:</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Find functional residues: <a href="https://papers.genomics.lbl.gov/cgi-bin/sites.cgi?query=%3Etr%7CQ7V158%7CQ7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1%0AMDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="Compare to proteins with known functional residues">SitesBLAST</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Search for <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=%3Etr.Q7V158.Q7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1%0AMDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="Compare your sequence to NCBI's Conserved Domains Database">conserved domains</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Find the <a href="https://fast.genomics.lbl.gov/cgi/bestHitUniprot.cgi?query=%3Etr%7CQ7V158%7CQ7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1%0AMDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="See UniProt's annotation, the predicted structure, and protein families from InterPro">best match</a> in UniProt
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Compare to <a href="https://papers.genomics.lbl.gov/cgi-bin/pdbBlast.cgi?query=%3Etr%7CQ7V158%7CQ7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1%0AMDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="Find similar proteins with known structures">protein structures</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Predict transmenbrane helices: <a href="https://fit.genomics.lbl.gov/cgi-bin/myPhobius.cgi?name=tr%7CQ7V158%7CQ7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1&amp;seq=MDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="Phobius predicts transmembrane helices and signal peptides">Phobius</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Predict protein localization: <a href="https://papers.genomics.lbl.gov/cgi-bin/psortb.cgi?type=negative&amp;name=tr%7CQ7V158%7CQ7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1&amp;seq=MDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="PSORTb v3.0 for Gram-negative bacteria">PSORTb</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Find homologs in <a href="https://fast.genomics.lbl.gov/cgi/findHomologs.cgi?seqDesc=tr%7CQ7V158%7CQ7V158_PROMP%20Conserved%20hypothetical%20OS%3DProchlorococcus%20marinus%20subsp.%20pastoris%20%28strain%20CCMP1986%20%2F%20NIES-2087%20%2F%20MED4%29%20OX%3D59919%20GN%3DPMM1028%20PE%3D4%20SV%3D1&amp;seq=MDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN" title="A representative genome for each genus of bacteria and archaea"><i>fast.genomics</i></a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;"><a name="#fitness" title="Compare to bacterial and archaeal proteins that have mutant phenotypes">Fitness BLAST</a>: <SPAN ID="fitblast_short"><SMALL>loading...</SMALL></SPAN><SCRIPT> 
+           var server_root = "https://fit.genomics.lbl.gov/";
+           var seq = "MDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN";
+           fitblast_load_short("fitblast_short", server_root, seq);
+           </SCRIPT>
+</p></DIV><SCRIPT>
+ShowQuery = function() {
+                    document.getElementById("showSequenceLink").style.display = "none";
+                    document.getElementById("querySequence").style.display = "block";
+                    return false;
+                 }
+</SCRIPT>
+<p id="showSequenceLink" style="font-size:90%;"><a href="#" onclick="return ShowQuery()">Show query sequence</a></p><p id="querySequence" style="font-family: monospace; display:none; font-size:90%; padding-left: 2em;">>tr|Q7V158|Q7V158_PROMP Conserved hypothetical OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=PMM1028 PE=4 SV=1<br />MDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFD<br />ANGLQDVAKIEKESVVEKLQKN</p>
+<p id="searching">Running BLASTp...</p>
+<SCRIPT>
+document.getElementById("searching").style.display = "none";
+</SCRIPT>
+<p>Found 1 similar proteins in the literature:</p>
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=566383" onmousedown="logger(this, 'curated::PMM1028')" title="MicrobesOnline">PMM1028</a> conserved hypothetical from <i>Prochlorococcus marinus sp. MED4</i><BR><a href="showAlign.cgi?def1=tr|Q7V158|Q7V158_PROMP Conserved hypothetical OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=PMM1028 PE=4 SV=1&amp;def2=PMM1028&amp;seq1=MDFIISIFLASVMWVQVPQWEADWSKCAVDVPDTSCHWYVAAPDNTFGEGFDWESAPWFDANGLQDVAKIEKESVVEKLQKN&amp;acc2=VIMSS566383" style="font-family: sans-serif; font-size: smaller;" title="1:82/82 of query is similar to 1:82/82 of hit (E = 2e-41,  168 bits)">100% identity, 100% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1242208" onmousedown="logger(this, 'pb::PMM1028')">Identification of cyanobacterial non-coding RNAs by comparative genome analysis</a><br /><small><a title="Axmann IM, Kensche P, Vogel J, Kohl S, Herzel H, Hess WR.">Axmann,</a> Genome biology 2005 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...PMM0687 yfr4 194 383389..383483 94 PMM0404 and phdC yfr5 NP Complement (972088..972176) 89 PMM1027 and <B><span style="color: red;">PMM1028</span></B> yfr6 53 Complement (627729..627972 244 PMM0659 and PMM0660 yfr7 51 652625..652844 220 purK and PMM0684 SS120 yfr2 84 Complement (556612..556701) 90 rpsU and Pro0591 yfr6 53 Complement (923780..924018) 239 Pro1007...&rdquo;</UL></UL></p>
+
+<h3><a href="litSearch.cgi">New Search</a></h3>
+For advice on how to use these tools together, see
+<A HREF="https://www.biorxiv.org/content/10.1101/2024.04.15.589591v1">Interactive tools for functional annotation of bacterial genomes</A>.
+
+<H3><A NAME="stats">Statistics</A></H3>
+
+The PaperBLAST database links 838,522 different protein sequences to 1,299,844 scientific articles. Searches against EuropePMC were last performed on May 13 2026.
+
+<H3><A NAME="works">How It Works</A></H3>
+
+<P>PaperBLAST builds a database of protein sequences that are linked
+to scientific articles. These links come from automated text searches
+against the articles in <A HREF="http://europepmc.org/" title="Europe PMC (PubMedCentral)">EuropePMC</A>
+and from manually-curated information from <A
+HREF="https://www.ncbi.nlm.nih.gov/gene/about-generif" title="Gene
+Reference into Function (NCBI)">GeneRIF</A>, <A
+HREF="http://www.uniprot.org/" title="The manually annotated and reviewed section of UniProt">UniProtKB/Swiss-Prot</A>,
+<A HREF="http://www.brenda-enzymes.org/index.php" title="The Comprehensive Enzyme Information System">BRENDA</A>,
+<A HREF="http://www.cazy.org/" title="Carbohydrate-Active enZYmes Database">CAZy</A> (as made available by <A HREF="http://csbl.bmb.uga.edu/dbCAN/download.php">dbCAN</A>),
+<A HREF="https://seq2fun.dcmb.med.umich.edu/BioLiP/" title="BioLiP for Ligand-protein binding database">BioLiP</A>,
+<A HREF="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245046/" title="Database of experimentally characterized protein annotations">CharProtDB</A>,
+<A HREF="http://metacyc.org/" title="MetaCyc Metabolic Pathway Database">MetaCyc</A>,
+<A HREF="http://ecocyc.org" title="EcoCyc: Encyclopedia of E. coli Genes and Metabolic Pathways">EcoCyc</A>,
+<A HREF="http://www.tcdb.org/" title="The Transporter Classification Database (TCDB)"</A>TCDB</A>,
+<A HREF="http://rebase.neb.com/rebase/rebase.html" title="The Restriction Enzyme Database">REBASE</A>,
+the <A HREF="http://fit.genomics.lbl.gov/" title="Reannotations from genome-wide fitness data">Fitness Browser</A>,
+and a subset of the European Nucleotide Archive with the /experiment tag.
+Given this database and a protein sequence query,
+PaperBLAST uses <A
+HREF="https://en.wikipedia.org/wiki/BLAST">protein-protein BLAST</A>
+to find similar sequences with E &lt; 0.001.
+
+<P>To build the database, we query EuropePMC with locus tags, with <A
+HREF="https://www.ncbi.nlm.nih.gov/refseq/">RefSeq</A> protein
+identifiers, and with <A HREF="http://www.uniprot.org/">UniProt</A>
+accessions.  We obtain the locus tags from RefSeq or from <A
+HREF="http://www.microbesonline.org/">MicrobesOnline</A>.  We use
+queries of the form "locus_tag AND genus_name" to try to ensure that
+the paper is actually discussing that gene.  Because EuropePMC indexes
+most recent biomedical papers, even if they are not open access, some
+of the links may be to papers that you cannot read or that our
+computers cannot read.  We query each of these identifiers that
+appears in the open access part of EuropePMC, as well as every locus
+tag that appears in the 500 most-referenced genomes, so that a gene
+may appear in the PaperBLAST results even though none of the papers
+that mention it are open access. We also incorporate text-mined links
+from EuropePMC that link open access articles to UniProt or RefSeq
+identifiers.  (This yields some additional links because EuropePMC
+uses different heuristics for their text mining than we do.)
+
+<P>For every article that mentions a locus tag, a RefSeq protein
+identifier, or a UniProt accession, we try to select one or two
+snippets of text that refer to the protein. If we cannot get access to
+the full text, we try to select a snippet from the abstract, but
+unfortunately, unique identifiers such as locus tags are rarely
+provided in abstracts.
+
+<P>PaperBLAST also incorporates manually-curated protein functions:
+<UL>
+<LI>Proteins from NCBI's RefSeq are included if a
+  <A HREF="https://www.ncbi.nlm.nih.gov/gene/about-generif">GeneRIF</A>
+  entry links the gene to an article in
+  <A  HREF="http://www.ncbi.nlm.nih.gov/pubmed/">PubMed</A><sup>&reg;</sup>.
+  GeneRIF also provides a short summary of the article's claim about the
+  protein, which is shown instead of a snippet.
+<LI>Proteins from Swiss-Prot (the curated part of <A HREF="http://uniprot.org">UniProt</A>)
+  are included if the curators
+  identified experimental evidence for the protein's function (evidence
+  code ECO:0000269). For these proteins, the fields of the Swiss-Prot entry that
+  describe the protein's function are shown (with bold headings).
+<LI>Proteins from <A HREF="http://www.brenda-enzymes.org/index.php">BRENDA</A>,
+  a curated database of enzymes, are included if they are linked to a paper in PubMed
+  and their full sequence is known.
+<LI>Every protein from the non-redundant subset of
+  <A HREF="https://seq2fun.dcmb.med.umich.edu/BioLiP/">BioLiP</A>,
+  a database
+  of ligand-binding sites and catalytic residues in protein structures, is included. Since BioLiP itself
+  does not include descriptions of the proteins, those are taken from the
+  <A HREF="https://www.rcsb.org/" title="Protein Data Bank">Protein Data Bank</A>.
+  Descriptions from PDB rely on the original submitter of the
+    structure and cannot be updated by others, so they may be less reliable.
+  (For SitesBLAST and Sites on a Tree, we use a larger subset of BioLiP so that every
+   ligand is represented among a group of structures with similar sequences, but for
+   PaperBLAST, we use the non-redundant set provided by BioLiP.)
+<LI>Every protein from <A HREF="http://ecocyc.org">EcoCyc</A>, a curated
+  database of the proteins in <i> Escherichia coli</i> K-12, is included, regardless
+  of whether they are characterized or not.
+<LI>Proteins from the <A HREF="http://metacyc.org">MetaCyc</A> metabolic pathway database
+  are included if they are linked to a paper in PubMed and their full sequence is known.
+<LI>Proteins from the Transport Classification Database (<A HREF="http://www.tcdb.org">TCDB</A>)
+  are included if they have known substrate(s), have reference(s),
+  and are not described as uncharacterized or putative.
+  (Some of the references are not visible on the PaperBLAST web site.)
+<LI>Every protein from <A HREF="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245046/">CharProtDB</A>,
+  a database of experimentally characterized protein annotations, is included.
+<LI>Proteins from the <A HREF="http://www.cazy.org/">CAZy</A> database of carbohydrate-active enzymes
+  are included if they are associated with an Enzyme Classification number.
+  Even though CAZy does not provide links from individual protein sequences to papers,
+  these should all be experimentally-characterized proteins.
+<LI>Proteins from the <A HREF="http://rebase.neb.com/rebase/rebase.html">REBASE</A> database
+  of restriction enzymes are included if they have known specificity.
+<LI>Every protein with an evidence-based reannotation (based on mutant phenotypes)
+  in the <A HREF="http://fit.genomics.lbl.gov/">Fitness Browser</A> is included.
+<LI>Sequence-specific transcription factors (including sigma factors and DNA-binding response regulators)
+with experimentally-determined DNA binding sites from the
+<A HREF="https://www.prodoric.de/">PRODORIC</A> database of gene regulation in prokaryotes.
+<LI>Putative transcription factors from <A HREF="https://regprecise.lbl.gov/">RegPrecise</A>
+that have manually-curated predictions for their binding sites. These predictions are based on
+conserved putative regulatory sites across genomes that contain similar transcription factors,
+so PaperBLAST clusters the TFs at 70% identity and retains just one member of each cluster.
+<LI>Coding sequence (CDS) features from the
+    <A HREF="https://www.ebi.ac.uk/ena/browser/about">European Nucleotide Archive</A> (ENA)
+    are included if the /experiment tag is set (implying that there is experimental evidence for the annotation),
+    the nucleotide entry links to paper(s) in PubMed,
+    and the nucleotide entry is from the STD data class
+    (implying that these are targeted annotated sequences, not from shotgun sequencing).
+    Also, to filter out genes whose transcription or translation was detected, but whose function
+    was not studied, nucleotide entries or papers with more than 25 such proteins are excluded.
+    Descriptions from ENA rely on the original submitter of the
+    sequence and cannot be updated by others, so they may be less reliable.
+</UL>
+<P>Except for GeneRIF and ENA,
+the curated entries include a short curated
+description of the protein's function.
+For entries from BioLiP, the protein's function may not be known beyond binding to the ligand.
+Many of these entries also link to articles in <A
+HREF="http://www.ncbi.nlm.nih.gov/pubmed/">PubMed</A>.
+
+<P>For more information see the
+<A title="PaperBLAST: Text Mining Papers for Information about Homologs" HREF="http://msystems.asm.org/content/2/4/e00039-17">PaperBLAST paper</A> (<i>mSystems</i> 2017)
+or the <A HREF="https://github.com/morgannprice/PaperBLAST">code</A>.
+You can download PaperBLAST's database <A HREF="https://github.com/morgannprice/PaperBLAST#download">here</A>.
+
+<P>Changes to PaperBLAST since the paper was written:
+
+<UL>
+<LI>November 2023: incorporated PRODORIC and RegPrecise. Many PRODORIC entries were not linked to a protein sequence (no UniProt identifier), so we added this information.
+<LI>February 2023: BioLiP changed their download format. PaperBLAST now includes their non-redundant subset. SitesBLAST and Sites on a Tree use a larger non-redundant subset that ensures that every ligand is represented within each cluster. This should ensure that every binding site is represented.
+<LI>June 2022: incorporated some coding sequences from ENA with the /experiment tag.
+<LI>March 2022: incorporated BioLiP.
+<LI>April 2020: incorporated TCDB.
+<LI>April 2019: EuropePMC now returns table entries in their search results. This has expanded PaperBLAST's database, but most of the new entries are of low relevance, and the resulting snippets are often just lists of locus tags with annotations.
+<LI>February 2018: the alignment page reports the conservation of the hit's functional sites (if available from from Swiss-Prot or UniProt)
+<LI>January 2018: incorporated BRENDA.
+<LI>December 2017: incorporated MetaCyc, CharProtDB, CAZy, REBASE, and the reannotations from the Fitness Browser.
+<LI>September 2017: EuropePMC no longer returns some table entries in their search results. This has shrunk PaperBLAST's database, but has also reduced the number of low-relevance hits.
+</UL>
+
+<P>Many of these changes are described in <A HREF="https://www.biorxiv.org/content/10.1101/2024.04.15.589591v1">Interactive tools for functional annotation of bacterial genomes</A>.
+
+<H3><A NAME="secret">Secrets</A></H3>
+
+<P>PaperBLAST cannot provide snippets for many of the papers that are
+published in non-open-access journals. This limitation applies even if
+the paper is marked as "free" on the publisher's web site and is
+available in PubmedCentral or EuropePMC. If a journal that you publish
+in is marked as "secret," please consider publishing elsewhere.
+
+<H3><A NAME="omission">Omissions from the PaperBLAST Database</A></H3>
+
+<P>Many important articles are missing from PaperBLAST, either because
+the article's full text is not in EuropePMC (as for many older
+articles), or because the paper does not mention a protein identifier such as a locus tag, or because of PaperBLAST's heuristics. If you notice an
+article that characterizes a protein's function but is missing from
+PaperBLAST, please notify the curators at <A
+HREF="http://www.uniprot.org/update">UniProt</A>
+or add an entry to <A
+HREF="https://www.ncbi.nlm.nih.gov/gene/submit-generif">GeneRIF</A>.
+Entries in either of these databases will eventually be incorporated
+into PaperBLAST.  Note that to add an entry to UniProt, you will need
+to find the UniProt identifier for the protein.  If the protein is not
+already in UniProt, you can ask them to create an entry.  To add an
+entry to GeneRIF, you will need an NCBI Gene identifier, but
+unfortunately many prokaryotic proteins in RefSeq do not have
+corresponding Gene identifers.
+
+<H3>References</H3>
+
+<P><A HREF="http://msystems.asm.org/content/2/4/e00039-17">PaperBLAST: Text-mining papers for information about homologs.</A><BR>
+ <small>M. N. Price and A. P. Arkin (2017). mSystems, 10.1128/mSystems.00039-17.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkx1005">Europe PMC in 2017.</A><BR>
+<small>M. Levchenko et al (2017). Nucleic Acids Research, 10.1093/nar/gkx1005.</small>
+
+<P><A HREF="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1480312/">Gene indexing: characterization and analysis of NLM's GeneRIFs.</A><BR>
+<small>J. A. Mitchell et al (2003). AMIA Annu Symp Proc 2003:460-464.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkw1099">UniProt: the universal protein knowledgebase.</A><BR>
+<small>The UniProt Consortium (2016). Nucleic Acids Research, 10.1093/nar/gkw1099.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkw952">BRENDA in 2017: new perspectives and new tools in BRENDA.</A><BR>
+<small>S. Placzek et al (2017). Nucleic Acids Research, 10.1093/nar/gkw952.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkw1003">The EcoCyc database: reflecting new knowledge about Escherichia coli K-12.</A><BR>
+<small>I. M. Keeseler et al (2016). Nucleic Acids Research, 10.1093/nar/gkw1003.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkx935">The MetaCyc database of metabolic pathways and enzymes.</A><BR>
+<small>R. Caspi et al (2018). Nucleic Acids Research, 10.1093/nar/gkx935.</small>
+
+<P><A HREF="https://academic.oup.com/nar/article/40/D1/D237/2903195">CharProtDB: a database of experimentally characterized protein annotations.</A><BR>
+<small>R. Madupu et al (2012). Nucleic Acids Research, 10.1093/nar/gkr1133.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkt1178">The carbohydrate-active enzymes database (CAZy) in 2013.</A><BR>
+<small>V. Lombard et al (2014). Nucleic Acids Research, 10.1093/nar/gkt1178.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkv1103">The Transporter Classification Database (TCDB): recent advances</A><BR>
+<small>M. H. Saier, Jr. et al (2016). Nucleic Acids Research, 10.1093/nar/gkv1103.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gku1046">REBASE - a database for DNA restriction and modification: enzymes, genes and genomes.</A><BR>
+<small>R. J. Roberts et al (2015). Nucleic Acids Research, 10.1093/nar/gku1046.</small>
+
+<P><A HREF="https://dx.doi.org/10.1101/072470">Deep annotation of protein function across diverse bacteria from mutant phenotypes.</A><BR>
+<small>M. N. Price et al (2016). bioRxiv, 10.1101/072470.</small>
+
+<P>
+<small>
+<center>by <A HREF="http://morgannprice.org/">Morgan Price</A>,
+<A HREF="http://genomics.lbl.gov/">Arkin group</A><BR>
+Lawrence Berkeley National Laboratory
+</center>
+</small>
+</P>
+
+</body>
+</html>

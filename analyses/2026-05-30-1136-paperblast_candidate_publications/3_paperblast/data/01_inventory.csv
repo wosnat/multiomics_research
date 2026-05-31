@@ -1,0 +1,9 @@
+file,matched_pool,matched_sel_rank,matched_locus_tag,matched_by,n_hits,query
+NATL1_02111.html,pro,8.0,NATL1_02111,locus_tag,8,tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NA
+PMM1135.html,pro,3.0,PMM1135,locus_tag,18,tr|Q7V0W6|Q7V0W6_PROMP Possible high light inducible protein OS=Prochlorococcus marinus subsp. pastoris (strai
+PMM1404.html,pro,2.0,PMM1404,locus_tag,8,PMM1404 possible high light inducible protein
+PMT1742.html,pro,5.0,PMT9312_0549,locus_tag,119,tr|Q31BY5|Q31BY5_PROM9 Carboxysome shell protein CsoS1 OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 G
+PMT9312_0549.html,pro,5.0,PMT9312_0549,locus_tag,119,tr|Q31BY5|Q31BY5_PROM9 Carboxysome shell protein CsoS1 OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 G
+PMT9312_0550.html,pro,4.0,PMT9312_0550,locus_tag,250,sp|Q31BY4|RBL_PROM9 Ribulose bisphosphate carboxylase large chain OS=Prochlorococcus marinus (strain MIT 9312)
+PaperBLAST.html,,,,,250,tr|Q7TUG3|Q7TUG3_PROMP Global nitrogen regulator OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 /
+Pro0418.html,pro,7.0,Pro0418,locus_tag,84,Pro0418 Malate:quinone oxidoreductase

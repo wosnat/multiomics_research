@@ -44,11 +44,57 @@ Field-relevant prior work in the KG cited as background:
 
 ## Methods
 
-_(populated in steps 3–4 — prioritization / dedup / triage criteria, and the gene-list builder + PaperBLAST-result parser modules)_
+**Seed selection** is described in Background. **PaperBLAST run:** the 32 seed
+protein IDs were submitted to PaperBLAST (papers.genomics.lbl.gov) manually in a
+browser — the interface is Cloudflare-gated, so this step cannot be scripted — and
+each result saved as one "HTML Only" page per seed.
+
+**Triage pipeline** (`3_paperblast/scripts/01–03`, typed parsing of the saved
+HTML, no live PaperBLAST calls):
+1. *Inventory* — each saved page is mapped to its seed by the in-page query line
+   (filenames are unreliable), with missing/duplicate detection.
+2. *Parse + filter* — each page is parsed into (homolog hit → paper) rows
+   carrying organism, %identity, and the linked papers (title, PMCID/PMID/DOI,
+   year). A **pool-aware relevance filter** keeps only homologs in the seed's
+   lineage: cyanobacteria for *Prochlorococcus*/*Synechococcus* (`pro`/`syn`)
+   seeds, Proteobacteria (the KG heterotrophs' phylum) for `alt`/`other_hetero`
+   seeds; MAG/SAG/metagenome sources are dropped (isolate genomes only). Each hit
+   is tagged `in_cyanorak` by matching its strain against the Cyanorak organism
+   tables — distinguishing a KG marine-picocyano organism from any other
+   cyanobacterium.
+3. *Dedup + triage* — papers are collapsed to distinct works; PMCID/PMID are
+   resolved to DOI via the NCBI id-converter; papers already among the KG's 43
+   publications are dropped; each survivor is scored for **KG-fit** (omics = 3,
+   comparative-genomics/bioinformatics = 2, other = 1, single-protein
+   characterization = 0) and assigned a **priority tier** (1 = in-Cyanorak
+   homolog, 2 = other cyanobacterium from a `pro`/`syn` seed, 3 = heterotroph).
+   The ranked shortlist sorts priority-first, then KG-fit, then cross-seed
+   breadth, then identity.
+
+KG version, the `multiomics_explorer` package, and Cyanorak source tables
+(`multiomics_biocypher_kg/data`) are the data sources; the NCBI id-converter
+provides PMCID→DOI resolution.
 
 ## Results
 
-_(populated in step 5 — the ranked candidate-publication shortlist)_
+_Preliminary — pro pool only (8 of 32 seeds); the other three pools are pending
+their PaperBLAST runs._
+
+The 8 *Prochlorococcus* seeds returned 624 homolog hits; the pool-aware filter
+kept 88 (cyanobacterial, isolate-genome), yielding 189 paper rows → 102 distinct
+papers. Eight were already in the KG (correctly identified — Tolonen N,
+the salinity transcriptome, the glucose proteomics, etc.) and dropped, leaving
+**94 new candidate papers**. Of these, 12 have an in-Cyanorak homolog (priority 1)
+and 9 score KG-fit ≥2 (5 omics, 4 comparative-genomics).
+
+The two ranking axes pull apart for *Prochlorococcus*: the in-scope (in-Cyanorak)
+papers are mostly not ingestible datasets — the MED4 genome paper, ncRNA surveys,
+ProPortal, regulon inference — while the genuine omics/genomics datasets are about
+other cyanobacteria (*Synechocystis*, *Crocosphaera*, *Anabaena*, *Leptolyngbya*),
+surfaced because the conserved Pro seed genes hit their homologs. This is
+consistent with *Prochlorococcus* being heavily studied and already well
+represented among the KG's 43 publications; the heterotroph pools are expected to
+be the richer source of novel ingestible papers.
 
 ## Discussion
 

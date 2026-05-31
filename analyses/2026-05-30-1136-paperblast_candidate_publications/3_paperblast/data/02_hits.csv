@@ -1,0 +1,625 @@
+seed,pool,organism,genus,identity,coverage,tier,in_cyanorak,is_mag,keep,n_papers
+NATL1_02111,pro,Prochlorococcus marinus str. NATL1A,Prochlorococcus,100,100,cyano,True,False,True,1
+NATL1_02111,pro,Dolichospermum sp. UHCC 0315A,Dolichospermum,29,89,cyano,False,False,True,1
+NATL1_02111,pro,Synechocystis sp. PCC 6803,Synechocystis,34,43,cyano,False,False,True,2
+NATL1_02111,pro,Streptococcus pneumoniae R6,Streptococcus,31,42,out,False,False,False,1
+NATL1_02111,pro,Streptococcus pyogenes M1 GAS,Streptococcus,33,41,out,False,False,False,1
+NATL1_02111,pro,Streptococcus gordonii str. Challis substr. CH1,Streptococcus,30,42,out,False,False,False,1
+NATL1_02111,pro,Streptococcus gallolyticus UCN34,Streptococcus,27,55,out,False,False,False,1
+NATL1_02111,pro,Bacillus subtilis (strain 168),Bacillus,27,41,out,False,False,False,7
+PMM1028,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,100,100,cyano,True,False,True,1
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,100,100,cyano,True,False,True,3
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,91,99,cyano,True,False,True,4
+PMM1135,pro,Synechococcus sp. WH 8102,Synechococcus,47,69,cyano,True,False,True,1
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,57,62,cyano,True,False,True,1
+PMM1135,pro,Synechococcus sp. CC9605,Synechococcus,45,70,cyano,True,False,True,1
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,79,43,cyano,True,False,True,1
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,72,34,cyano,True,False,True,1
+PMM1135,pro,Cyanothece sp. ATCC 51142,Cyanothece,42,68,cyano,False,False,True,1
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,72,47,cyano,True,False,True,2
+PMM1135,pro,Cyanothece sp. ATCC 51142,Cyanothece,42,89,cyano,False,False,True,1
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,64,49,cyano,True,False,True,3
+PMM1135,pro,Prochlorococcus marinus str. MIT 9313,Prochlorococcus,44,66,cyano,True,False,True,1
+PMM1135,pro,Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / FACHB-805) (Anacystis nidulans R2),Synechococcus,43,82,cyano,False,False,True,3
+PMM1135,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,72,47,cyano,True,False,True,2
+PMM1135,pro,Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa),Synechocystis,50,77,cyano,False,False,True,8
+PMM1135,pro,Nostoc sp. PCC 7120,Nostoc,35,94,cyano,False,False,True,1
+PMM1135,pro,Prochlorococcus marinus str. MIT 9313,Prochlorococcus,57,54,cyano,True,False,True,1
+PMM1135,pro,Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa),Synechocystis,48,77,cyano,False,False,True,8
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,100,100,cyano,True,False,True,1
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,88,49,cyano,True,False,True,1
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,92,78,cyano,True,False,True,1
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,57,62,cyano,True,False,True,3
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,53,65,cyano,True,False,True,4
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,73,59,cyano,True,False,True,2
+PMM1404,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,70,59,cyano,True,False,True,2
+PMM1404,pro,Prochlorococcus marinus str. MIT 9313,Prochlorococcus,66,57,cyano,True,False,True,1
+PMT1742,pro,Nostoc sp. PCC 7120,Nostoc,70,99,cyano,False,False,True,2
+PMT1742,pro,Microcystis aeruginosa (strain NIES-843 / IAM M-2473),Microcystis,70,99,cyano,False,False,True,1
+PMT1742,pro,Synechocystis sp. PCC 6803,Synechocystis,70,99,cyano,False,False,True,2
+PMT1742,pro,Ostreococcus tauri,Ostreococcus,69,100,out,False,False,False,1
+PMT1742,pro,Phaeodactylum tricornutum (strain CCAP 1055/1),Phaeodactylum,67,100,out,False,False,False,2
+PMT1742,pro,Crocosphaera subtropica ATCC 51142,Crocosphaera,66,99,cyano,False,False,True,1
+PMT1742,pro,Lactuca sativa,Lactuca,66,99,out,False,False,False,1
+PMT1742,pro,Solanum lycopersicum,Solanum,66,99,out,False,False,False,2
+PMT1742,pro,Ruminococcus flavefaciens 007c,Ruminococcus,65,99,out,False,False,False,1
+PMT1742,pro,Populus alba,Populus,62,99,out,False,False,False,1
+PMT1742,pro,Thermus thermophilus (strain ATCC 27634 / DSM 579 / HB8),Thermus,68,99,out,False,False,False,0
+PMT1742,pro,Arabidopsis thaliana,Arabidopsis,62,99,out,False,False,False,1
+PMT1742,pro,Arabis hirsuta,Arabis,62,99,out,False,False,False,1
+PMT1742,pro,Anthoceros angustus (Hornwort) (Anthoceros formosae),Anthoceros,62,99,out,False,False,False,0
+PMT1742,pro,Vitis vinifera,Vitis,61,99,out,False,False,False,1
+PMT1742,pro,Streptomyces scabiei (strain 87.22),Streptomyces,67,99,out,False,False,False,1
+PMT1742,pro,Clostridium acetobutylicum ATCC 824,Clostridium,65,99,out,False,False,False,1
+PMT1742,pro,Corynebacterium glutamicum ATCC 13032,Corynebacterium,68,99,out,False,False,False,1
+PMT1742,pro,Streptococcus mutans UA159,Streptococcus,67,99,out,False,False,False,1
+PMT1742,pro,Enterococcus faecalis,Enterococcus,69,99,out,False,False,False,0
+PMT1742,pro,Commelina communis,Commelina,64,98,out,False,False,False,3
+PMT1742,pro,Didierea madagascariensis,Didierea,63,100,out,False,False,False,2
+PMT1742,pro,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,65,99,other_proteo,False,False,False,1
+PMT1742,pro,Lactococcus lactis subsp. cremoris MG1363,Lactococcus,66,99,out,False,False,False,1
+PMT1742,pro,Streptomyces rimosus,Streptomyces,67,99,out,False,False,False,4
+PMT1742,pro,Streptococcus pneumoniae R6,Streptococcus,66,99,out,False,False,False,3
+PMT1742,pro,Streptococcus agalactiae LMG 14747,Streptococcus,66,99,out,False,False,False,1
+PMT1742,pro,Streptococcus sanguinis SK36,Streptococcus,66,99,out,False,False,False,3
+PMT1742,pro,Chlamydophila abortus S26/3,Chlamydophila,63,99,out,False,False,False,1
+PMT1742,pro,Oryza sativa subsp. japonica,Oryza,61,98,out,False,False,False,1
+PMT1742,pro,Staphylococcus epidermidis RP62A,Staphylococcus,65,99,out,False,False,False,3
+PMT1742,pro,Zea mays (Maize),Zea,60,98,out,False,False,False,0
+PMT1742,pro,Bacillus subtilis (strain 168),Bacillus,66,99,out,False,False,False,2
+PMT1742,pro,Deschampsia antarctica,Deschampsia,60,98,out,False,False,False,1
+PMT1742,pro,Listeria monocytogenes EGD-e,Listeria,65,99,out,False,False,False,5
+PMT1742,pro,Spinacia oleracea (Spinach),Spinacia,61,100,out,False,False,False,1
+PMT1742,pro,Staphylococcus aureus subsp. aureus str. Newman,Staphylococcus,65,99,out,False,False,False,6
+PMT1742,pro,Commelina communis,Commelina,62,99,out,False,False,False,3
+PMT1742,pro,Chlamydia trachomatis D/UW-3/CX,Chlamydia,61,99,out,False,False,False,1
+PMT1742,pro,Lactobacillus casei ATCC 334,Lactobacillus,66,99,out,False,False,False,1
+PMT1742,pro,Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / JCM 16871 / CCUG 27074 / LMG 4051 / NBRC 15346 / NCIMB 9279 / VKM B-1422 / R1),Deinococcus,62,90,out,False,False,False,0
+PMT1742,pro,Acinetobacter sp. ADP1,Acinetobacter,65,99,other_proteo,False,False,False,1
+PMT1742,pro,Fusobacterium nucleatum subsp. nucleatum ATCC 25586,Fusobacterium,61,99,out,False,False,False,1
+PMT1742,pro,Triticum aestivum,Triticum,59,98,out,False,False,False,2
+PMT1742,pro,Helicobacter pylori 26695,Helicobacter,63,99,other_proteo,False,False,False,6
+PMT1742,pro,Acinetobacter baumannii,Acinetobacter,63,99,other_proteo,False,False,False,2
+PMT1742,pro,Flavobacterium psychrophilum JIP02/86,Flavobacterium,66,99,out,False,False,False,1
+PMT1742,pro,Dinoroseobacter shibae DFL 12,Dinoroseobacter,62,99,other_proteo,False,False,False,1
+PMT1742,pro,Limosilactobacillus reuteri,Limosilactobacillus,63,99,out,False,False,False,1
+PMT1742,pro,Xanthomonas oryzae pv. oryzae (strain KACC10331 / KXO85),Xanthomonas,63,99,other_proteo,False,False,False,1
+PMT1742,pro,Brucella melitensis biovar Abortus 2308,Brucella,63,99,other_proteo,False,False,False,1
+PMT1742,pro,Treponema pallidum (strain Nichols),Treponema,63,99,out,False,False,False,1
+PMT1742,pro,Lactiplantibacillus plantarum (strain ATCC BAA-793 / NCIMB 8826 / WCFS1),Lactiplantibacillus,63,99,out,False,False,False,4
+PMT1742,pro,Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),Pseudomonas,62,99,kg_genus,False,False,False,5
+PMT1742,pro,Lactiplantibacillus pentosus,Lactiplantibacillus,62,99,out,False,False,False,1
+PMT1742,pro,Xylella fastidiosa Temecula1,Xylella,63,99,other_proteo,False,False,False,2
+PMT1742,pro,Legionella pneumophila subsp. pneumophila str. Philadelphia 1,Legionella,64,100,other_proteo,False,False,False,1
+PMT1742,pro,Agrobacterium fabrum (strain C58 / ATCC 33970),Agrobacterium,61,99,other_proteo,False,False,False,1
+PMT1742,pro,Pseudomonas syringae pv. syringae B728a,Pseudomonas,61,99,kg_genus,False,False,False,6
+PMT1742,pro,Triticum urartu,Triticum,60,61,out,False,False,False,1
+PMT1742,pro,Rhizobium johnstonii (strain DSM 114642 / LMG 32736 / 3841),Rhizobium,61,99,other_proteo,False,False,False,1
+PMT1742,pro,Sinorhizobium meliloti 1021,Sinorhizobium,61,99,other_proteo,False,False,False,2
+PMT1742,pro,Sodalis glossinidius str. 'morsitans',Sodalis,60,98,other_proteo,False,False,False,1
+PMT1742,pro,Bradyrhizobium japonicum USDA 110,Bradyrhizobium,61,99,other_proteo,False,False,False,1
+PMT1742,pro,Nitrobacter winogradskyi Nb-255,Nitrobacter,61,99,other_proteo,False,False,False,1
+PMT1742,pro,Rhodopseudomonas palustris (strain ATCC BAA-98 / CGA009),Rhodopseudomonas,61,99,other_proteo,False,False,False,1
+PMT1742,pro,Adiantum capillus-veneris (Maidenhair fern),Adiantum,66,99,out,False,False,False,0
+PMT1742,pro,Escherichia coli K-12 substr. MG1655,Escherichia,60,98,other_proteo,False,False,False,17
+PMT1742,pro,Mycobacterium smegmatis str. MC2 155,Mycobacterium,69,99,out,False,False,False,1
+PMT1742,pro,Neisseria gonorrhoeae FA 1090,Neisseria,62,99,other_proteo,False,False,False,2
+PMT1742,pro,Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),Mycobacterium,68,99,out,False,False,False,9
+PMT1742,pro,Shewanella oneidensis MR-1,Shewanella,61,99,kg_genus,False,False,False,2
+PMT1742,pro,Francisella tularensis subsp. holarctica OSU18,Francisella,61,99,other_proteo,False,False,False,2
+PMT1742,pro,Neisseria meningitidis MC58,Neisseria,62,99,other_proteo,False,False,False,2
+PMT1742,pro,Mycobacterium abscessus ATCC 19977,Mycobacterium,67,99,out,False,False,False,1
+PMT1742,pro,Porphyromonas gingivalis W83,Porphyromonas,64,100,out,False,False,False,3
+PMT1742,pro,Enterobacter cloacae subsp. cloacae ATCC 13047,Enterobacter,59,98,other_proteo,False,False,False,1
+PMT1742,pro,Salmonella typhimurium LT2,Salmonella,59,98,other_proteo,False,False,False,3
+PMT1742,pro,Yersinia pseudotuberculosis IP 32953,Yersinia,59,98,other_proteo,False,False,False,3
+PMT1742,pro,Vibrio fischeri ES114,Vibrio,60,98,other_proteo,False,False,False,1
+PMT1742,pro,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,60,98,other_proteo,False,False,False,1
+PMT1742,pro,Haemophilus influenzae Rd KW20,Haemophilus,59,98,other_proteo,False,False,False,3
+PMT1742,pro,Paracidovorax citrulli,Paracidovorax,61,99,other_proteo,False,False,False,1
+PMT1742,pro,Photobacterium damselae subsp. damselae CIP 102761,Photobacterium,59,98,other_proteo,False,False,False,1
+PMT1742,pro,Bifidobacterium longum NCC2705,Bifidobacterium,66,99,out,False,False,False,1
+PMT1742,pro,Candidatus Sulcia muelleri str. Hc (Homalodisca coagulata),Candidatus,56,100,other_proteo,False,True,False,3
+PMT1742,pro,Erwinia amylovora CFBP1430,Erwinia,58,98,other_proteo,False,False,False,1
+PMT1742,pro,Ralstonia metallidurans CH34,Ralstonia,60,99,other_proteo,False,False,False,1
+PMT1742,pro,Bordetella pertussis Tohama I,Bordetella,59,99,other_proteo,False,False,False,1
+PMT1742,pro,Candidatus Thioglobus autotrophicus,Candidatus,58,99,other_proteo,False,True,False,1
+PMT1742,pro,Rickettsia rickettsii str. 'Sheila Smith',Rickettsia,56,99,other_proteo,False,False,False,1
+PMT1742,pro,Pirellula sp. 1,Pirellula,64,99,out,False,False,False,1
+PMT1742,pro,Geobacter sulfurreducens PCA,Geobacter,59,99,other_proteo,False,False,False,1
+PMT1742,pro,Helicobacter pylori J99,Helicobacter,62,99,other_proteo,False,False,False,1
+PMT1742,pro,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,49,69,out,False,False,False,6
+PMT1742,pro,Zea mays,Zea,45,71,out,False,False,False,1
+PMT1742,pro,Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast),Schizosaccharomyces,45,96,out,False,False,False,0
+PMT1742,pro,Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987),Neurospora,41,90,out,False,False,False,0
+PMT1742,pro,Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1),Pyrococcus,48,79,out,False,False,False,1
+PMT1742,pro,Cryptococcus neoformans var. neoformans JEC21,Cryptococcus,40,81,out,False,False,False,1
+PMT1742,pro,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,38,61,out,False,False,False,3
+PMT1742,pro,Haloarcula marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / VKM B-1809) (Halobacterium marismortui),Haloarcula,38,91,out,False,False,False,2
+PMT1742,pro,Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) (Sulfolobus solfataricus),Saccharolobus,42,87,out,False,False,False,1
+PMT1742,pro,Halobacterium salinarum (strain ATCC 700922 / JCM 11081 / NRC-1),Halobacterium,37,91,out,False,False,False,1
+PMT1742,pro,Toxoplasma gondii,Toxoplasma,36,100,out,False,False,False,1
+PMT1742,pro,Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast),Saccharomyces,40,88,out,False,False,False,6
+PMT1742,pro,Cryptococcus neoformans H99,Cryptococcus,41,81,out,False,False,False,2
+PMT1742,pro,Methanococcus maripaludis S2,Methanococcus,37,77,out,False,False,False,2
+PMT1742,pro,Trypanosoma cruzi (strain CL Brener),Trypanosoma,35,83,out,False,False,False,1
+PMT1742,pro,Trypanosoma brucei gambiense (strain MHOM/CI/86/DAL972),Trypanosoma,35,83,out,False,False,False,1
+PMT1742,pro,Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast),Schizosaccharomyces,33,84,out,False,False,False,2
+PMT1742,pro,Vairimorpha ceranae,Vairimorpha,39,73,out,False,False,False,0
+PMT1742,pro,Nosema ceranae,Nosema,40,82,out,False,False,False,2
+PMT1742,pro,Leishmania major strain Friedlin,Leishmania,33,83,out,False,False,False,2
+PMT1742,pro,Cryptosporidium parvum Iowa II,Cryptosporidium,33,79,out,False,False,False,1
+PMT1742,pro,Phytophthora infestans,Phytophthora,34,82,out,False,False,False,2
+PMT1742,pro,Entamoeba histolytica HM-1:IMSS,Entamoeba,34,86,out,False,False,False,2
+PMT1742,pro,Plasmodium falciparum 3D7,Plasmodium,32,83,out,False,False,False,1
+PMT1742,pro,Caenorhabditis elegans,Caenorhabditis,37,69,out,False,False,False,2
+PMT1742,pro,Plasmodium berghei ANKA,Plasmodium,34,83,out,False,False,False,1
+PMT1742,pro,Aspergillus oryzae RIB40,Aspergillus,36,73,out,False,False,False,1
+PMT1742,pro,Cryptococcus neoformans H99,Cryptococcus,34,83,out,False,False,False,2
+PMT1742,pro,Methanothermobacter thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 10044 / NBRC 100330 / Delta H),Methanothermobacter,39,77,out,False,False,False,1
+PMT1742,pro,Brassica campestris,Brassica,36,10,out,False,False,False,1
+PMT1742,pro,Ogataea parapolymorpha DL-1,Ogataea,32,77,out,False,False,False,1
+PMT1742,pro,Drosophila melanogaster,Drosophila,39,69,out,False,False,False,1
+PMT1742,pro,Ixodes scapularis,Ixodes,38,71,out,False,False,False,1
+PMT1742,pro,Aspergillus niger,Aspergillus,36,73,out,False,False,False,1
+PMT1742,pro,Aspergillus fumigatus Af293,Aspergillus,36,80,out,False,False,False,5
+PMT1742,pro,Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast),Saccharomyces,36,72,out,False,False,False,22
+PMT1742,pro,Magallana gigas,Magallana,36,70,out,False,True,False,1
+PMT1742,pro,Nicotiana tabacum,Nicotiana,34,81,out,False,False,False,1
+PMT1742,pro,Zea mays,Zea,33,91,out,False,False,False,1
+PMT1742,pro,Aspergillus fischeri,Aspergillus,36,73,out,False,False,False,0
+PMT1742,pro,Oryctolagus cuniculus (Rabbit),Oryctolagus,37,71,out,False,False,False,34
+PMT1742,pro,Rattus norvegicus,Rattus,37,71,out,False,False,False,1
+PMT1742,pro,Picea mariana,Picea,33,86,out,False,False,False,1
+PMT1742,pro,Zea mays,Zea,33,81,out,False,False,False,3
+PMT1742,pro,Arabidopsis thaliana,Arabidopsis,33,91,out,False,False,False,3
+PMT1742,pro,Arabidopsis thaliana,Arabidopsis,33,81,out,False,False,False,23
+PMT1742,pro,Puccinia graminis f. sp. tritici (strain CRL 75-36-700-3 / race SCCL),Puccinia,34,85,out,False,False,False,1
+PMT1742,pro,Helianthus annuus,Helianthus,33,81,out,False,False,False,4
+PMT1742,pro,Medicago truncatula,Medicago,33,81,out,False,False,False,1
+PMT1742,pro,Candida albicans (strain SC5314 / ATCC MYA-2876) (Yeast),Candida,34,72,out,False,False,False,0
+PMT1742,pro,Paracoccidioides brasiliensis Pb18,Paracoccidioides,36,80,out,False,False,False,3
+PMT1742,pro,Triticum aestivum,Triticum,35,69,out,False,False,False,1
+PMT1742,pro,Ctenocephalides felis,Ctenocephalides,41,60,out,False,False,False,1
+PMT1742,pro,Syntrichia ruralis,Syntrichia,32,83,out,False,False,False,2
+PMT1742,pro,Bos taurus (Bovine),Bos,32,80,out,False,False,False,0
+PMT1742,pro,Macaca mulatta,Macaca,31,80,out,False,False,False,1
+PMT1742,pro,Homo sapiens (Human),Homo,31,80,out,False,False,False,5
+PMT1742,pro,Ichthyophthirius multifiliis,Ichthyophthirius,27,91,out,False,False,False,1
+PMT9312_0549,pro,Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4),Prochlorococcus,99,100,cyano,True,False,True,0
+PMT9312_0549,pro,Prochlorococcus marinus (strain MIT 9313),Prochlorococcus,98,100,cyano,True,False,True,1
+PMT9312_0549,pro,Synechococcus sp. (strain WH7803),Synechococcus,98,100,cyano,True,False,True,0
+PMT9312_0549,pro,Prochlorococcus marinus sp. MED4,Prochlorococcus,99,95,cyano,True,False,True,3
+PMT9312_0549,pro,Thiocapsa bogorovii,Thiocapsa,93,93,other_proteo,False,False,False,1
+PMT9312_0549,pro,Hydrogenovibrio crunogenus (strain DSM 25203 / XCL-2) (Thiomicrospira crunogena),Hydrogenovibrio,92,92,other_proteo,False,False,False,0
+PMT9312_0549,pro,Prochlorococcus marinus str. MIT 9313,Prochlorococcus,92,43,cyano,True,False,True,1
+PMT9312_0549,pro,Hydrogenovibrio crunogenus (strain DSM 25203 / XCL-2) (Thiomicrospira crunogena),Hydrogenovibrio,95,84,other_proteo,False,False,False,0
+PMT9312_0549,pro,Thioalkalivibrio sp. K90mix,Thioalkalivibrio,88,89,other_proteo,False,False,False,1
+PMT9312_0549,pro,Halothiobacillus neapolitanus (strain ATCC 23641 / DSM 15147 / CIP 104769 / NCIMB 8539 / c2) (Thiobacillus neapolitanus),Halothiobacillus,90,85,other_proteo,False,False,False,2
+PMT9312_0549,pro,Halothiobacillus neapolitanus (strain ATCC 23641 / DSM 15147 / CIP 104769 / NCIMB 8539 / c2) (Thiobacillus neapolitanus),Halothiobacillus,90,87,other_proteo,False,False,False,1
+PMT9312_0549,pro,Acidithiobacillus ferrooxidans ATCC 23270,Acidithiobacillus,92,78,other_proteo,False,False,False,2
+PMT9312_0549,pro,Halothiobacillus neapolitanus (strain ATCC 23641 / DSM 15147 / CIP 104769 / NCIMB 8539 / c2) (Thiobacillus neapolitanus),Halothiobacillus,93,84,other_proteo,False,False,False,1
+PMT9312_0549,pro,Acidithiobacillus ferrooxidans ATCC 23270,Acidithiobacillus,92,84,other_proteo,False,False,False,1
+PMT9312_0549,pro,Acidihalobacter yilgarnensis,Acidihalobacter,95,82,other_proteo,False,False,False,1
+PMT9312_0549,pro,Acidithiobacillus ferrooxidans ATCC 23270,Acidithiobacillus,91,84,other_proteo,False,False,False,3
+PMT9312_0549,pro,Clostridium perfringens ATCC 13124,Clostridium,69,83,out,False,False,False,1
+PMT9312_0549,pro,Clostridium autoethanogenum DSM 10061,Clostridium,68,83,out,False,False,False,2
+PMT9312_0549,pro,Clostridium autoethanogenum DSM 10061,Clostridium,67,83,out,False,False,False,1
+PMT9312_0549,pro,Haliangium ochraceum (strain DSM 14365 / JCM 11303 / SMP-2),Haliangium,59,92,out,False,False,False,2
+PMT9312_0549,pro,Clostridium ljungdahlii DSM 13528,Clostridium,68,83,out,False,False,False,3
+PMT9312_0549,pro,Fusobacterium nucleatum subsp. nucleatum ATCC 23726,Fusobacterium,66,83,out,False,False,False,1
+PMT9312_0549,pro,Clostridioides difficile (strain 630) (Peptoclostridium difficile),Clostridioides,67,83,out,False,False,False,6
+PMT9312_0549,pro,Proteus mirabilis HI4320,Proteus,57,83,other_proteo,False,False,False,5
+PMT9312_0549,pro,Enterococcus faecalis V583,Enterococcus,68,83,out,False,False,False,4
+PMT9312_0549,pro,Proteus mirabilis HI4320,Proteus,58,83,other_proteo,False,False,False,2
+PMT9312_0549,pro,Proteus mirabilis HI4320,Proteus,57,83,other_proteo,False,False,False,2
+PMT9312_0549,pro,Sporomusa malonica,Sporomusa,66,83,out,False,False,False,1
+PMT9312_0549,pro,Listeria monocytogenes EGD-e,Listeria,66,83,out,False,False,False,1
+PMT9312_0549,pro,Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1),Thermosynechococcus,55,85,cyano,False,False,True,1
+PMT9312_0549,pro,Cyanothece sp. ATCC 51142,Cyanothece,55,85,cyano,False,False,True,1
+PMT9312_0549,pro,Bilophila wadsworthia 3_1_6,Bilophila,65,80,out,False,False,False,1
+PMT9312_0549,pro,Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa),Synechocystis,54,85,cyano,False,False,True,9
+PMT9312_0549,pro,Clostridium phytofermentans ISDg,Clostridium,64,52,out,False,False,False,3
+PMT9312_0549,pro,Synechococcus sp. PCC 7002,Synechococcus,54,85,cyano,False,False,True,1
+PMT9312_0549,pro,Clostridium kluyveri DSM 555,Clostridium,61,84,out,False,False,False,1
+PMT9312_0549,pro,Synechococcus sp. JA-2-3B'a(2-13),Synechococcus,54,85,cyano,False,False,True,1
+PMT9312_0549,pro,Synechococcus sp. PCC 7002,Synechococcus,54,79,cyano,False,False,True,1
+PMT9312_0549,pro,Acaryochloris marina MBIC11017,Acaryochloris,53,85,cyano,False,False,True,1
+PMT9312_0549,pro,Synechococcus sp. JA-2-3B'a(2-13),Synechococcus,54,78,cyano,False,False,True,1
+PMT9312_0549,pro,Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / FACHB-805) (Anacystis nidulans R2),Synechococcus,54,85,cyano,False,False,True,7
+PMT9312_0549,pro,Nostoc sp. PCC 7120,Nostoc,54,85,cyano,False,False,True,3
+PMT9312_0549,pro,Acaryochloris marina MBIC11017,Acaryochloris,53,77,cyano,False,False,True,1
+PMT9312_0549,pro,Anabaena variabilis ATCC 29413,Anabaena,53,77,cyano,False,False,True,1
+PMT9312_0549,pro,Listeria monocytogenes EGD-e,Listeria,59,88,out,False,False,False,4
+PMT9312_0549,pro,Rhodospirillum rubrum ATCC 11170,Rhodospirillum,64,85,other_proteo,False,False,False,1
+PMT9312_0549,pro,Thermacetogenium phaeum DSM 12270,Thermacetogenium,70,77,out,False,False,False,1
+PMT9312_0549,pro,Listeria innocua Clip11262,Listeria,59,88,out,False,False,False,1
+PMT9312_0549,pro,Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1),Thermosynechococcus,54,78,cyano,False,False,True,2
+PMT9312_0549,pro,Clostridium beijerinckii,Clostridium,60,83,out,False,False,False,2
+PMT9312_0549,pro,Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa),Synechocystis,52,79,cyano,False,False,True,10
+PMT9312_0549,pro,Rhodopseudomonas palustris BisB18,Rhodopseudomonas,62,85,other_proteo,False,False,False,1
+PMT9312_0549,pro,Clostridium ljungdahlii DSM 13528,Clostridium,51,81,out,False,False,False,1
+PMT9312_0549,pro,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,58,85,other_proteo,False,False,False,10
+PMT9312_0549,pro,Citrobacter freundii,Citrobacter,58,85,other_proteo,False,False,False,0
+PMT9312_0549,pro,Levilactobacillus brevis ATCC 14869 = DSM 20054,Levilactobacillus,56,83,out,False,False,False,1
+PMT9312_0549,pro,Klebsiella pneumoniae subsp. pneumoniae HS11286,Klebsiella,58,85,other_proteo,False,False,False,1
+PMT9312_0549,pro,Escherichia coli LF82,Escherichia,58,85,other_proteo,False,False,False,1
+PMT9312_0549,pro,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,57,85,other_proteo,False,False,False,10
+PMT9312_0549,pro,Clostridium beijerinckii,Clostridium,60,83,out,False,False,False,1
+PMT9312_0549,pro,Levilactobacillus brevis ATCC 14869 = DSM 20054,Levilactobacillus,58,85,out,False,False,False,1
+PMT9312_0549,pro,Listeria innocua Clip11262,Listeria,57,85,out,False,False,False,1
+PMT9312_0549,pro,Listeria monocytogenes EGD-e,Listeria,58,83,out,False,False,False,3
+PMT9312_0549,pro,Salmonella enterica subsp. enterica serovar Typhi str. CT18,Salmonella,51,41,other_proteo,False,False,False,2
+PMT9312_0549,pro,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,57,80,other_proteo,False,False,False,9
+PMT9312_0549,pro,Escherichia coli K-12 substr. MG1655,Escherichia,57,80,other_proteo,False,False,False,7
+PMT9312_0549,pro,Clostridium ljungdahlii DSM 13528,Clostridium,54,33,out,False,False,False,2
+PMT9312_0549,pro,Yersinia enterocolitica subsp. enterocolitica 8081,Yersinia,54,87,other_proteo,False,False,False,1
+PMT9312_0549,pro,Citrobacter freundii,Citrobacter,56,85,other_proteo,False,False,False,1
+PMT9312_0549,pro,Clostridium perfringens ATCC 13124,Clostridium,52,36,out,False,False,False,1
+PMT9312_0549,pro,Acetobacterium woodii DSM 1030,Acetobacterium,62,83,out,False,False,False,2
+PMT9312_0549,pro,[Clostridium] hylemonae DSM 15053,Clostridium,54,77,out,False,False,False,1
+PMT9312_0549,pro,Desulfovibrio desulfuricans G20,Desulfovibrio,51,39,other_proteo,False,False,False,1
+PMT9312_0549,pro,Rhodopirellula baltica SH 1,Rhodopirellula,52,83,out,False,False,False,1
+PMT9312_0549,pro,Rhodopseudomonas palustris BisB18,Rhodopseudomonas,58,85,other_proteo,False,False,False,1
+PMT9312_0549,pro,Leptolyngbya boryana CZ1,Leptolyngbya,44,75,cyano,False,False,True,1
+PMT9312_0549,pro,Clostridium difficile 630,Clostridium,49,36,out,False,False,False,2
+PMT9312_0549,pro,Clostridium ljungdahlii DSM 13528,Clostridium,53,75,out,False,False,False,2
+PMT9312_0549,pro,Clostridium beijerinckii,Clostridium,45,43,out,False,False,False,1
+PMT9312_0549,pro,Fusobacterium nucleatum subsp. nucleatum ATCC 23726,Fusobacterium,45,63,out,False,False,False,1
+PMT9312_0549,pro,Rhodopirellula baltica SH 1,Rhodopirellula,52,78,out,False,False,False,1
+PMT9312_0549,pro,Escherichia coli LF82,Escherichia,43,61,other_proteo,False,False,False,1
+PMT9312_0549,pro,Synechocystis sp. PCC 6803,Synechocystis,37,31,cyano,False,False,True,8
+PMT9312_0549,pro,Listeria monocytogenes EGD-e,Listeria,41,58,out,False,False,False,2
+PMT9312_0549,pro,Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / FACHB-805) (Anacystis nidulans R2),Synechococcus,47,28,cyano,False,False,True,2
+PMT9312_0549,pro,Listeria innocua Clip11262,Listeria,41,58,out,False,False,False,1
+PMT9312_0549,pro,Synechococcus sp. PCC 7002,Synechococcus,38,34,cyano,False,False,True,1
+PMT9312_0549,pro,Nostoc sp. PCC 7120 = FACHB-418,Nostoc,42,73,cyano,False,False,True,3
+PMT9312_0549,pro,Anabaena variabilis ATCC 29413,Anabaena,42,73,cyano,False,False,True,1
+PMT9312_0549,pro,Bilophila wadsworthia 3_1_6,Bilophila,45,60,out,False,False,False,1
+PMT9312_0549,pro,Leptolyngbya boryana CZ1,Leptolyngbya,38,32,cyano,False,False,True,1
+PMT9312_0549,pro,Citrobacter freundii,Citrobacter,40,51,other_proteo,False,False,False,0
+PMT9312_0549,pro,Klebsiella quasipneumoniae,Klebsiella,44,66,other_proteo,False,False,False,1
+PMT9312_0549,pro,Levilactobacillus brevis ATCC 14869 = DSM 20054,Levilactobacillus,42,48,out,False,False,False,1
+PMT9312_0549,pro,Anabaena variabilis ATCC 29413,Anabaena,42,33,cyano,False,False,True,1
+PMT9312_0549,pro,Halothece sp. (strain PCC 7418) (Synechococcus sp. (strain PCC 7418)),Halothece,38,73,cyano,False,False,True,0
+PMT9312_0549,pro,Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),Mycolicibacterium,54,79,out,False,False,False,1
+PMT9312_0549,pro,Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / FACHB-805) (Anacystis nidulans R2),Synechococcus,36,73,cyano,False,False,True,3
+PMT9312_0549,pro,Synechococcus sp. PCC 7002,Synechococcus,39,73,cyano,False,False,True,1
+PMT9312_0549,pro,Enterococcus faecalis V583,Enterococcus,40,52,out,False,False,False,1
+PMT9312_0549,pro,Escherichia coli K-12 substr. MG1655,Escherichia,43,49,other_proteo,False,False,False,4
+PMT9312_0549,pro,Escherichia coli O157:H7 EDL933,Escherichia,43,49,other_proteo,False,False,False,2
+PMT9312_0549,pro,Clostridium phytofermentans ISDg,Clostridium,40,82,out,False,False,False,2
+PMT9312_0549,pro,Clostridium phytofermentans ISDg,Clostridium,33,48,out,False,False,False,3
+PMT9312_0549,pro,Thermacetogenium phaeum DSM 12270,Thermacetogenium,46,45,out,False,False,False,1
+PMT9312_0549,pro,Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa),Synechocystis,39,72,cyano,False,False,True,9
+PMT9312_0549,pro,Proteus mirabilis HI4320,Proteus,46,48,other_proteo,False,False,False,1
+PMT9312_0549,pro,Citrobacter freundii,Citrobacter,32,48,other_proteo,False,False,False,0
+PMT9312_0549,pro,Bilophila wadsworthia 3_1_6,Bilophila,38,46,out,False,False,False,1
+PMT9312_0549,pro,Crocosphaera subtropica (strain ATCC 51142 / BH68),Crocosphaera,35,75,cyano,False,False,True,1
+PMT9312_0549,pro,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,30,48,other_proteo,False,False,False,5
+PMT9312_0549,pro,Synechococcus sp. PCC 7002,Synechococcus,39,73,cyano,False,False,True,1
+PMT9312_0550,pro,Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4),Prochlorococcus,100,100,cyano,True,False,True,0
+PMT9312_0550,pro,Prochlorococcus marinus (strain MIT 9313),Prochlorococcus,99,100,cyano,True,False,True,0
+PMT9312_0550,pro,Parasynechococcus marenigrum (strain WH8102),Parasynechococcus,94,100,cyano,True,False,True,1
+PMT9312_0550,pro,Synechococcus sp. (strain WH7803),Synechococcus,94,100,cyano,True,False,True,0
+PMT9312_0550,pro,Synechococcus,Synechococcus,94,100,cyano,False,False,True,0
+PMT9312_0550,pro,Cyanobium gracile (strain ATCC 27147 / PCC 6307),Cyanobium,94,100,cyano,True,False,True,1
+PMT9312_0550,pro,Thiocapsa bogorovii,Thiocapsa,87,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Thioalkalivibrio sp. K90mix,Thioalkalivibrio,82,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Thioalkalivibrio thiocyanoxidans ARh2,Thioalkalivibrio,82,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Acidihalobacter prosperus,Acidihalobacter,81,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Bradyrhizobium sp. ORS278,Bradyrhizobium,81,97,other_proteo,False,False,False,2
+PMT9312_0550,pro,Halothiobacillus neapolitanus (strain ATCC 23641 / DSM 15147 / CIP 104769 / NCIMB 8539 / c2) (Thiobacillus neapolitanus),Halothiobacillus,81,99,other_proteo,False,False,False,5
+PMT9312_0550,pro,Allochromatium vinosum (strain ATCC 17899 / DSM 180 / NBRC 103801 / NCIMB 10441 / D) (Chromatium vinosum),Allochromatium,81,99,other_proteo,False,False,False,0
+PMT9312_0550,pro,Hydrogenovibrio marinus,Hydrogenovibrio,84,100,other_proteo,False,False,False,0
+PMT9312_0550,pro,Acidithiobacillus ferrooxidans,Acidithiobacillus,81,99,other_proteo,False,False,False,4
+PMT9312_0550,pro,Allochromatium vinosum (strain ATCC 17899 / DSM 180 / NBRC 103801 / NCIMB 10441 / D) (Chromatium vinosum),Allochromatium,78,99,other_proteo,False,False,False,3
+PMT9312_0550,pro,Sideroxydans lithotrophicus ES-1,Sideroxydans,81,99,other_proteo,False,False,False,2
+PMT9312_0550,pro,Acidithiobacillus ferriphilus,Acidithiobacillus,80,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Hydrogenovibrio crunogenus (strain DSM 25203 / XCL-2) (Thiomicrospira crunogena),Hydrogenovibrio,83,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Thiobacillus denitrificans (strain ATCC 25259 / T1),Thiobacillus,80,99,other_proteo,False,False,False,2
+PMT9312_0550,pro,Methylocaldum szegediense,Methylocaldum,80,99,other_proteo,False,False,False,2
+PMT9312_0550,pro,Hydrogenovibrio crunogenus (strain DSM 25203 / XCL-2) (Thiomicrospira crunogena),Hydrogenovibrio,79,100,other_proteo,False,False,False,0
+PMT9312_0550,pro,Methylococcus capsulatus str. Bath,Methylococcus,79,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Thiocapsa bogorovii,Thiocapsa,78,100,other_proteo,False,False,False,1
+PMT9312_0550,pro,Cupriavidus metallidurans CH34,Cupriavidus,80,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Ferrovum sp. JA12,Ferrovum,79,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Thiobacter aerophilum,Thiobacter,79,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Hydrogenovibrio marinus,Hydrogenovibrio,76,100,other_proteo,False,False,False,0
+PMT9312_0550,pro,Ferrovum sp. JA12,Ferrovum,79,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Nitrosomonas europaea ATCC 19718,Nitrosomonas,79,99,other_proteo,False,False,False,2
+PMT9312_0550,pro,Acidithiobacillus ferrooxidans ATCC 23270,Acidithiobacillus,79,99,other_proteo,False,False,False,6
+PMT9312_0550,pro,Mariprofundus ferrooxydans PV-1,Mariprofundus,79,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Acidithiobacillus ferrivorans SS3,Acidithiobacillus,78,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Acidithiobacillus ferriphilus,Acidithiobacillus,78,99,other_proteo,False,False,False,1
+PMT9312_0550,pro,Synechococcus sp. PCC 7002,Synechococcus,75,99,cyano,False,False,True,4
+PMT9312_0550,pro,Halomicronema hongdechloris C2206,Halomicronema,74,97,cyano,False,False,True,1
+PMT9312_0550,pro,Picosynechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) (Agmenellum quadruplicatum),Picosynechococcus,75,99,cyano,False,False,True,0
+PMT9312_0550,pro,Synechococcus sp. JA-2-3B'a(2-13),Synechococcus,75,98,cyano,False,False,True,1
+PMT9312_0550,pro,Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) (Anacystis nidulans),Synechococcus,74,98,cyano,False,False,True,9
+PMT9312_0550,pro,Trichormus variabilis ATCC 29413,Trichormus,75,97,cyano,False,False,True,2
+PMT9312_0550,pro,Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576),Nostoc,75,97,cyano,False,True,False,5
+PMT9312_0550,pro,Phormidium pseudopriestleyi FRX01,Phormidium,73,97,cyano,False,False,True,1
+PMT9312_0550,pro,Gloeothece verrucosa PCC 7822,Gloeothece,73,98,cyano,False,False,True,1
+PMT9312_0550,pro,Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1),Thermosynechococcus,74,97,cyano,False,False,True,0
+PMT9312_0550,pro,Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa),Synechocystis,74,98,cyano,False,False,True,11
+PMT9312_0550,pro,Crocosphaera subtropica ATCC 51142,Crocosphaera,74,98,cyano,False,False,True,3
+PMT9312_0550,pro,Microcystis sp. LEGE 08355,Microcystis,73,99,cyano,False,False,True,2
+PMT9312_0550,pro,Chlamydomonas reinhardtii (Chlamydomonas smithii),Chlamydomonas,72,97,out,False,False,False,12
+PMT9312_0550,pro,Physcomitrium patens,Physcomitrium,72,97,out,False,False,False,1
+PMT9312_0550,pro,Arthrospira maxima CS-328,Arthrospira,72,97,cyano,False,False,True,2
+PMT9312_0550,pro,Tetrameles nudiflora,Tetrameles,71,99,out,False,False,False,3
+PMT9312_0550,pro,Tetradesmus obliquus,Tetradesmus,71,97,out,False,False,False,1
+PMT9312_0550,pro,Ostreococcus tauri,Ostreococcus,70,97,out,False,False,False,2
+PMT9312_0550,pro,Cryptomeria japonica,Cryptomeria,72,98,out,False,False,False,0
+PMT9312_0550,pro,Tovaria pendula,Tovaria,72,99,out,False,False,False,6
+PMT9312_0550,pro,Lemna minor,Lemna,71,98,out,False,False,False,1
+PMT9312_0550,pro,Arabis hirsuta,Arabis,72,98,out,False,False,False,1
+PMT9312_0550,pro,Phaseolus vulgaris,Phaseolus,71,98,out,False,False,False,1
+PMT9312_0550,pro,Solanum tuberosum,Solanum,71,98,out,False,False,False,2
+PMT9312_0550,pro,Allium cepa,Allium,72,98,out,False,False,False,0
+PMT9312_0550,pro,Aethionema cordifolium,Aethionema,72,97,out,False,False,False,1
+PMT9312_0550,pro,Picea sitchensis,Picea,71,98,out,False,False,False,2
+PMT9312_0550,pro,Kigelia africana,Kigelia,71,99,out,False,False,False,1
+PMT9312_0550,pro,Nicotiana debneyi,Nicotiana,72,98,out,False,False,False,2
+PMT9312_0550,pro,Arabidopsis thaliana,Arabidopsis,71,98,out,False,False,False,12
+PMT9312_0550,pro,Nicotiana tabacum (Common tobacco),Nicotiana,72,98,out,False,False,False,7
+PMT9312_0550,pro,Magnolia ovata,Magnolia,71,98,out,False,True,False,1
+PMT9312_0550,pro,Picea abies,Picea,71,98,out,False,False,False,1
+PMT9312_0550,pro,Brassica napus,Brassica,71,98,out,False,False,False,2
+PMT9312_0550,pro,Solanum lycopersicum,Solanum,72,98,out,False,False,False,4
+PMT9312_0550,pro,Adiantum capillus-veneris,Adiantum,72,97,out,False,False,False,1
+PMT9312_0550,pro,Tetrapanax papyrifer,Tetrapanax,72,97,out,False,False,False,8
+PMT9312_0550,pro,Datura stramonium,Datura,72,99,out,False,False,False,1
+PMT9312_0550,pro,Adoxa moschatellina,Adoxa,71,99,out,False,False,False,1
+PMT9312_0550,pro,Magnolia singapurensis,Magnolia,71,98,out,False,True,False,8
+PMT9312_0550,pro,Rhodoleia henryi,Rhodoleia,71,98,out,False,False,False,1
+PMT9312_0550,pro,Prunus persica,Prunus,71,98,out,False,False,False,2
+PMT9312_0550,pro,Helianthus tuberosus,Helianthus,70,97,out,False,False,False,1
+PMT9312_0550,pro,Cucurbita pepo,Cucurbita,71,99,out,False,False,False,1
+PMT9312_0550,pro,Liquidambar styraciflua,Liquidambar,71,98,out,False,False,False,1
+PMT9312_0550,pro,Anthoceros angustus (Hornwort) (Anthoceros formosae),Anthoceros,71,97,out,False,False,False,0
+PMT9312_0550,pro,Pyrus pyrifolia,Pyrus,70,98,out,False,False,False,1
+PMT9312_0550,pro,Chlorella variabilis,Chlorella,71,97,out,False,False,False,1
+PMT9312_0550,pro,Prunus laurocerasus,Prunus,71,98,out,False,False,False,8
+PMT9312_0550,pro,Mytilaria laosensis,Mytilaria,70,98,out,False,False,False,1
+PMT9312_0550,pro,Physocarpus malvaceus,Physocarpus,71,98,out,False,False,False,1
+PMT9312_0550,pro,Tetracarpaea tasmannica,Tetracarpaea,70,98,out,False,False,False,1
+PMT9312_0550,pro,Cycas circinalis,Cycas,71,97,out,False,False,False,1
+PMT9312_0550,pro,Hedythyrsus thamnoideus,Hedythyrsus,71,98,out,False,False,False,1
+PMT9312_0550,pro,Camellia cuspidata,Camellia,71,98,out,False,False,False,1
+PMT9312_0550,pro,Glycine max,Glycine,71,98,out,False,False,False,2
+PMT9312_0550,pro,Camellia sinensis,Camellia,70,98,out,False,False,False,1
+PMT9312_0550,pro,Centella erecta,Centella,70,98,out,False,False,False,1
+PMT9312_0550,pro,Tabebuia heterophylla,Tabebuia,71,99,out,False,False,False,1
+PMT9312_0550,pro,Cerastium glomeratum,Cerastium,71,98,out,False,False,False,1
+PMT9312_0550,pro,Saururus cernuus,Saururus,71,98,out,False,False,False,1
+PMT9312_0550,pro,Cassia fistula,Cassia,71,98,out,False,False,False,1
+PMT9312_0550,pro,Flaveria bidentis,Flaveria,71,95,out,False,False,False,1
+PMT9312_0550,pro,Ilex crenata,Ilex,71,98,out,False,False,False,1
+PMT9312_0550,pro,Akania bidwillii,Akania,70,99,out,False,False,False,1
+PMT9312_0550,pro,Pisum sativum (Garden pea) (Lathyrus oleraceus),Pisum,71,97,out,False,False,False,2
+PMT9312_0550,pro,Sapium glandulosum,Sapium,71,98,out,False,False,False,1
+PMT9312_0550,pro,Ricinus communis,Ricinus,71,98,out,False,False,False,1
+PMT9312_0550,pro,Lolium perenne,Lolium,70,98,out,False,False,False,1
+PMT9312_0550,pro,Trevesia palmata,Trevesia,71,97,out,False,False,False,1
+PMT9312_0550,pro,Glycine cyrtoloba,Glycine,71,98,out,False,False,False,1
+PMT9312_0550,pro,Humulus lupulus,Humulus,70,99,out,False,False,False,2
+PMT9312_0550,pro,Neurachne munroi,Neurachne,70,98,out,False,False,False,1
+PMT9312_0550,pro,Platanus occidentalis,Platanus,70,99,out,False,False,False,1
+PMT9312_0550,pro,Arachis hypogaea,Arachis,71,98,out,False,False,False,1
+PMT9312_0550,pro,Trema micranthum,Trema,71,99,out,False,False,False,4
+PMT9312_0550,pro,Oryza sativa subsp. indica (Rice),Oryza,70,98,out,False,False,False,15
+PMT9312_0550,pro,Oryza sativa Indica Group,Oryza,70,96,out,False,False,False,3
+PMT9312_0550,pro,Saxifraga mertensiana,Saxifraga,70,98,out,False,False,False,8
+PMT9312_0550,pro,Oryza sativa,Oryza,70,98,out,False,False,False,3
+PMT9312_0550,pro,Thuja occidentalis,Thuja,72,97,out,False,False,False,8
+PMT9312_0550,pro,Limonium gibertii,Limonium,71,96,out,False,False,False,1
+PMT9312_0550,pro,Sorghum bicolor,Sorghum,71,98,out,False,False,False,4
+PMT9312_0550,pro,Glycine max,Glycine,70,98,out,False,False,False,2
+PMT9312_0550,pro,Sesbania sesban,Sesbania,70,98,out,False,False,False,1
+PMT9312_0550,pro,Deschampsia antarctica,Deschampsia,70,98,out,False,False,False,1
+PMT9312_0550,pro,Jasminum simplicifolium subsp. suavissimum,Jasminum,71,99,out,False,False,False,2
+PMT9312_0550,pro,Toxicodendron radicans,Toxicodendron,70,99,out,False,False,False,3
+PMT9312_0550,pro,Tragia urticifolia,Tragia,70,98,out,False,False,False,1
+PMT9312_0550,pro,Eustoma russellianum,Eustoma,70,99,out,False,False,False,1
+PMT9312_0550,pro,Agrostis stolonifera,Agrostis,70,98,out,False,False,False,1
+PMT9312_0550,pro,Tapirira mexicana,Tapirira,70,99,out,False,False,False,8
+PMT9312_0550,pro,Garrya elliptica,Garrya,71,97,out,False,False,False,1
+PMT9312_0550,pro,Pelargonium hortorum,Pelargonium,70,98,out,False,False,False,1
+PMT9312_0550,pro,Citrus sinensis,Citrus,70,98,out,False,False,False,1
+PMT9312_0550,pro,Linum usitatissimum,Linum,70,98,out,False,False,False,1
+PMT9312_0550,pro,Ceratopetalum gummiferum,Ceratopetalum,71,97,out,False,False,False,1
+PMT9312_0550,pro,Chrysanthemum morifolium,Chrysanthemum,70,96,out,False,False,False,1
+PMT9312_0550,pro,Helianthus annuus,Helianthus,70,95,out,False,False,False,1
+PMT9312_0550,pro,Spinacia oleracea (Spinach),Spinacia,70,98,out,False,False,False,8
+PMT9312_0550,pro,Zea mays,Zea,70,98,out,False,False,False,12
+PMT9312_0550,pro,Trochodendron aralioides,Trochodendron,71,98,out,False,False,False,1
+PMT9312_0550,pro,Tetraselmis suecica,Tetraselmis,69,97,out,False,False,False,1
+PMT9312_0550,pro,Ageratina adenophora,Ageratina,72,96,out,False,False,False,1
+PMT9312_0550,pro,Solanum chenopodioides,Solanum,72,96,out,False,False,False,1
+PMT9312_0550,pro,Vitis vinifera,Vitis,70,98,out,False,False,False,1
+PMT9312_0550,pro,Spinacia oleracea,Spinacia,70,98,out,False,False,False,2
+PMT9312_0550,pro,Cuscuta sandwichiana,Cuscuta,70,98,out,False,False,False,1
+PMT9312_0550,pro,Nypa fruticans,Nypa,71,97,out,False,False,False,2
+PMT9312_0550,pro,Aneura mirabilis,Aneura,69,97,out,False,False,False,1
+PMT9312_0550,pro,Hordeum vulgare subsp. vulgare,Hordeum,70,97,out,False,False,False,5
+PMT9312_0550,pro,Triticum aestivum (Wheat),Triticum,70,97,out,False,False,False,7
+PMT9312_0550,pro,Oryza sativa subsp. japonica,Oryza,70,98,out,False,False,False,1
+PMT9312_0550,pro,Senecio vulgaris,Senecio,71,96,out,False,False,False,1
+PMT9312_0550,pro,Setaria italica,Setaria,71,96,out,False,False,False,1
+PMT9312_0550,pro,Cucumis zeyherii,Cucumis,71,96,out,False,False,False,1
+PMT9312_0550,pro,Vitis rotundifolia,Vitis,70,98,out,False,False,False,1
+PMT9312_0550,pro,Oryza sativa subsp. japonica,Oryza,70,97,out,False,False,False,1
+PMT9312_0550,pro,Triticum aestivum,Triticum,70,97,out,False,False,False,1
+PMT9312_0550,pro,Psathyrostachys huashanica,Psathyrostachys,70,97,out,False,False,False,1
+PMT9312_0550,pro,Codonopsis viridis,Codonopsis,71,97,out,False,False,False,1
+PMT9312_0550,pro,Helianthus annuus,Helianthus,70,97,out,False,False,False,1
+PMT9312_0550,pro,Trillium sessile,Trillium,71,96,out,False,False,False,6
+PMT9312_0550,pro,Trillium camschatcense,Trillium,71,96,out,False,False,False,8
+PMT9312_0550,pro,Lupinus polyphyllus,Lupinus,71,97,out,False,False,False,1
+PMT9312_0550,pro,Erythrina crista-galli,Erythrina,71,97,out,False,False,False,1
+PMT9312_0550,pro,Sedum rubrotinctum,Sedum,71,95,out,False,False,False,1
+PMT9312_0550,pro,Metanarthecium luteoviride,Metanarthecium,70,95,out,False,False,False,1
+PMT9312_0550,pro,Campanula poscharskyana,Campanula,71,96,out,False,False,False,1
+PMT9312_0550,pro,Treichelia longibracteata,Treichelia,69,98,out,False,False,False,1
+PMT9312_0550,pro,Vachellia farnesiana,Vachellia,71,97,out,False,False,False,1
+PMT9312_0550,pro,Paraserianthes lophantha,Paraserianthes,70,97,out,False,False,False,1
+PMT9312_0550,pro,Codonopsis ovata,Codonopsis,71,98,out,False,False,False,1
+PMT9312_0550,pro,Euglena longa,Euglena,67,98,out,False,False,False,1
+PMT9312_0550,pro,Crassula rupestris subsp. marnieriana,Crassula,71,95,out,False,False,False,1
+PMT9312_0550,pro,Sphaerochara intricata,Sphaerochara,71,95,out,False,False,False,8
+PMT9312_0550,pro,Tolypella nidifica,Tolypella,71,95,out,False,False,False,5
+PMT9312_0550,pro,Beta vulgaris,Beta,71,95,out,False,False,False,1
+PMT9312_0550,pro,Torilis japonica,Torilis,72,93,out,False,False,False,8
+PMT9312_0550,pro,Zamioculcas zamiifolia,Zamioculcas,71,95,out,False,False,False,1
+PMT9312_0550,pro,Antirrhinum majus,Antirrhinum,71,94,out,False,False,False,1
+PMT9312_0550,pro,Polygonatum x desoulavyi,Polygonatum,71,94,out,False,False,False,1
+PMT9312_0550,pro,Zinnia elegans,Zinnia,71,94,out,False,False,False,1
+PMT9312_0550,pro,Veronica persica,Veronica,70,93,out,False,False,False,1
+PMT9312_0550,pro,Pentachondra pumila,Pentachondra,68,98,out,False,False,False,1
+PMT9312_0550,pro,Agathis montana,Agathis,72,93,out,False,False,False,1
+PMT9312_0550,pro,Tecticornia disarticulata,Tecticornia,71,95,out,False,False,False,1
+PMT9312_0550,pro,Abies firma,Abies,71,94,out,False,False,False,1
+PMT9312_0550,pro,Tetrachondra hamiltonii,Tetrachondra,71,94,out,False,False,False,1
+PMT9312_0550,pro,Desmodium sp. SH-2010,Desmodium,71,94,out,False,False,False,1
+PMT9312_0550,pro,Iris germanica,Iris,71,94,out,False,False,False,1
+PMT9312_0550,pro,Araucaria angustifolia,Araucaria,72,93,out,False,False,False,1
+PMT9312_0550,pro,Polypodium macaronesicum,Polypodium,71,94,out,False,False,False,8
+PMT9312_0550,pro,Araucaria humboldtensis,Araucaria,71,93,out,False,False,False,1
+PMT9312_0550,pro,Pleopeltis macrocarpa,Pleopeltis,71,94,out,False,False,False,8
+PMT9312_0550,pro,Codonopsis foetens subsp. nervosa,Codonopsis,72,92,out,False,False,False,1
+PMT9312_0550,pro,Microcodon glomeratus,Microcodon,69,96,out,False,False,False,1
+PMT9312_0550,pro,Strelitzia nicolai,Strelitzia,69,95,out,False,False,False,8
+PMT9312_0550,pro,Salvia chamaedryoides,Salvia,70,95,out,False,False,False,1
+PMT9312_0550,pro,Saccoloma elegans,Saccoloma,71,93,out,False,False,False,1
+PMT9312_0550,pro,Klaineanthus gaboniae,Klaineanthus,71,94,out,False,False,False,1
+PMT9312_0550,pro,Dioscorea esculenta,Dioscorea,72,92,out,False,False,False,1
+PMT9312_0550,pro,Begonia metallica x Begonia sanguinea,Begonia,70,94,out,False,False,False,1
+PMT9312_0550,pro,Capsella bursa-pastoris,Capsella,72,91,out,False,False,False,1
+PMT9312_0550,pro,Eriogonum flavum,Eriogonum,69,96,out,False,False,False,1
+PMT9312_0550,pro,Vanilla palmarum,Vanilla,71,93,out,False,False,False,1
+PMT9312_0550,pro,Thelypteris palustris,Thelypteris,71,93,out,False,False,False,8
+PMT9312_0550,pro,Radiovittaria gardneriana,Radiovittaria,70,93,out,False,False,False,8
+PMT9312_0550,pro,Araucaria bidwillii,Araucaria,71,93,out,False,False,False,1
+PMT9312_0550,pro,Drosera petiolaris,Drosera,70,94,out,False,False,False,1
+PMT9312_0550,pro,Psiloxylon mauritianum,Psiloxylon,67,99,out,False,False,False,8
+PMT9312_0550,pro,Arabidopsis thaliana,Arabidopsis,72,91,out,False,False,False,1
+PMT9312_0550,pro,Zingiber gramineum,Zingiber,70,95,out,False,False,False,1
+PMT9312_0550,pro,Haplopteris ensiformis,Haplopteris,70,93,out,False,False,False,6
+PMT9312_0550,pro,Brassica campestris,Brassica,71,87,out,False,False,False,1
+PMT9312_0550,pro,Claoxylon sp. SH-2010,Claoxylon,72,90,out,False,False,False,1
+PMT9312_0550,pro,Limonium sinense,Limonium,72,88,out,False,False,False,1
+PMT9312_0550,pro,Tmesipteris oblanceolata,Tmesipteris,72,85,out,False,False,False,3
+PMT9312_0550,pro,Polystichum acutidens,Polystichum,70,92,out,False,False,False,1
+PMT9312_0550,pro,Haworthia cymbiformis var. cymbiformis,Haworthia,70,89,out,False,False,False,1
+PMT9312_0550,pro,Chlamydomonas raudensis,Chlamydomonas,71,84,out,False,False,False,1
+PMT9312_0550,pro,Haplopteris zosterifolia,Haplopteris,70,93,out,False,False,False,1
+PMT9312_0550,pro,Lysinema ciliatum,Lysinema,68,93,out,False,False,False,1
+PMT9312_0550,pro,Penaea mucronata,Penaea,64,99,out,False,False,False,8
+PMT9312_0550,pro,Drosera meristocaulis,Drosera,72,86,out,False,False,False,1
+PMT9312_0550,pro,Asplenium oligophlebium,Asplenium,72,84,out,False,False,False,1
+PMT9312_0550,pro,Asplenium tripteropus,Asplenium,72,84,out,False,False,False,1
+PMT9312_0550,pro,Nelumbo lutea,Nelumbo,72,84,out,False,False,False,1
+PMT9312_0550,pro,Asplenium normale,Asplenium,72,84,out,False,False,False,1
+PMT9312_0550,pro,Distichlis spicata,Distichlis,72,83,out,False,False,False,1
+PMT9312_0550,pro,Vittaria dimorpha,Vittaria,68,93,out,False,False,False,2
+PMT9312_0550,pro,Cyclanthus bipartitus,Cyclanthus,70,82,out,False,False,False,1
+PMT9312_0550,pro,Asplenium obliquissimum,Asplenium,73,77,out,False,False,False,1
+PMT9312_0550,pro,Fagus grandifolia subsp. mexicana,Fagus,71,80,out,False,False,False,1
+PMT9312_0550,pro,Mycobacterium sp.,Mycobacterium,58,99,out,False,False,False,0
+PMT9312_0550,pro,Mycobacterium sp.,Mycobacterium,58,99,out,False,False,False,0
+PMT9312_0550,pro,Bradyrhizobium diazoefficiens USDA 110,Bradyrhizobium,58,96,other_proteo,False,False,False,3
+PMT9312_0550,pro,Bradyrhizobium diazoefficiens (strain JCM 10833 / BCRC 13528 / IAM 13628 / NBRC 14792 / USDA 110),Bradyrhizobium,58,96,other_proteo,False,False,False,2
+PMT9312_0550,pro,Candidatus Methylacidithermus pantelleriae,Candidatus,58,95,other_proteo,False,True,False,1
+PMT9312_0550,pro,Bradyrhizobium sp. ORS278,Bradyrhizobium,58,96,other_proteo,False,False,False,3
+PMT9312_0550,pro,Rhodopseudomonas palustris,Rhodopseudomonas,57,96,other_proteo,False,False,False,4
+PMT9312_0550,pro,Pseudonocardia dioxanivorans (strain ATCC 55486 / DSM 44775 / JCM 13855 / CB1190),Pseudonocardia,57,99,other_proteo,False,False,False,0
+PMT9312_0550,pro,Oryza sativa subsp. japonica,Oryza,72,77,out,False,False,False,1
+PMT9312_0550,pro,Gaiella occulta,Gaiella,59,95,other_proteo,False,False,False,1
+PMT9312_0550,pro,Xanthobacter flavus,Xanthobacter,58,95,other_proteo,False,False,False,0
+PMT9312_0550,pro,Cupriavidus necator (Alcaligenes eutrophus) (Ralstonia eutropha),Cupriavidus,57,96,other_proteo,False,False,False,0
+Pro0418,pro,Prochlorococcus marinus (strain SARG / CCMP1375 / SS120),Prochlorococcus,100,100,cyano,True,False,True,2
+Pro0418,pro,Parasynechococcus marenigrum (strain WH8102),Parasynechococcus,58,98,cyano,True,False,True,1
+Pro0418,pro,Pseudomonas aeruginosa UCBPP-PA14,Pseudomonas,52,94,kg_genus,False,False,False,2
+Pro0418,pro,Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC),Escherichia,51,88,other_proteo,False,False,False,1
+Pro0418,pro,Escherichia coli K-12 substr. MG1655,Escherichia,51,88,other_proteo,False,False,False,9
+Pro0418,pro,Pseudomonas aeruginosa PAO1,Pseudomonas,52,94,kg_genus,False,False,False,11
+Pro0418,pro,Pseudomonas linyingensis,Pseudomonas,51,96,kg_genus,False,False,False,1
+Pro0418,pro,Pseudomonas taetrolens,Pseudomonas,49,98,kg_genus,False,False,False,0
+Pro0418,pro,Pseudomonas aeruginosa,Pseudomonas,49,95,kg_genus,False,False,False,12
+Pro0418,pro,Pseudomonas syringae,Pseudomonas,49,97,kg_genus,False,False,False,1
+Pro0418,pro,Pseudomonas putida KT2440,Pseudomonas,49,97,kg_genus,False,False,False,6
+Pro0418,pro,Pseudomonas lactis,Pseudomonas,50,97,kg_genus,False,False,False,1
+Pro0418,pro,Burkholderia cenocepacia J2315,Burkholderia,51,86,other_proteo,False,False,False,1
+Pro0418,pro,Pantoea ananatis Sd-1,Pantoea,48,89,other_proteo,False,False,False,1
+Pro0418,pro,Polynucleobacter sp. QLW-P1DMWA-1,Polynucleobacter,47,98,other_proteo,False,False,False,1
+Pro0418,pro,Pseudomonas putida KT2440,Pseudomonas,49,91,kg_genus,False,False,False,1
+Pro0418,pro,Pseudomonas brassicacearum,Pseudomonas,51,86,kg_genus,False,False,False,1
+Pro0418,pro,Baumannia cicadellinicola str. Hc (Homalodisca coagulata),Baumannia,48,95,other_proteo,False,False,False,1
+Pro0418,pro,Bradyrhizobium diazoefficiens (strain JCM 10833 / BCRC 13528 / IAM 13628 / NBRC 14792 / USDA 110),Bradyrhizobium,48,95,other_proteo,False,False,False,1
+Pro0418,pro,Pseudomonas brassicacearum,Pseudomonas,49,97,kg_genus,False,False,False,1
+Pro0418,pro,Arthrobacter sp. FB24,Arthrobacter,49,93,out,False,False,False,1
+Pro0418,pro,Bacillus pseudofirmus OF4,Bacillus,48,97,out,False,False,False,1
+Pro0418,pro,Acetobacter pasteurianus 386B,Acetobacter,51,97,other_proteo,False,False,False,2
+Pro0418,pro,Pseudomonas syringae group genomosp. 3,Pseudomonas,49,86,kg_genus,False,False,False,1
+Pro0418,pro,Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759,Vibrio,49,90,other_proteo,False,False,False,1
+Pro0418,pro,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305,Staphylococcus,48,96,out,False,False,False,1
+Pro0418,pro,Staphylococcus xylosus,Staphylococcus,48,96,out,False,False,False,1
+Pro0418,pro,Ralstonia solanacearum GMI1000,Ralstonia,48,86,other_proteo,False,False,False,1
+Pro0418,pro,Agrobacterium tumefaciens str. C58 (Cereon),Agrobacterium,49,86,other_proteo,False,False,False,1
+Pro0418,pro,Pantoea ananatis Sd-1,Pantoea,47,90,other_proteo,False,False,False,1
+Pro0418,pro,Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759,Vibrio,48,92,other_proteo,False,False,False,1
+Pro0418,pro,Staphylococcus epidermidis RP62A,Staphylococcus,47,98,out,False,False,False,1
+Pro0418,pro,Rhodopseudomonas palustris CGA009,Rhodopseudomonas,47,97,other_proteo,False,False,False,1
+Pro0418,pro,Ralstonia solanacearum,Ralstonia,49,83,other_proteo,False,False,False,1
+Pro0418,pro,Pseudomonas citronellolis,Pseudomonas,49,94,kg_genus,False,False,False,0
+Pro0418,pro,Gluconobacter oxydans 621H,Gluconobacter,47,96,other_proteo,False,False,False,1
+Pro0418,pro,Lysinibacillus sphaericus (strain C3-41),Lysinibacillus,46,98,out,False,False,False,1
+Pro0418,pro,Staphylococcus aureus (strain MRSA252),Staphylococcus,45,98,out,False,False,False,0
+Pro0418,pro,Streptomyces parvulus,Streptomyces,47,97,out,False,False,False,1
+Pro0418,pro,Staphylococcus aureus subsp. aureus Mu50,Staphylococcus,45,95,out,False,False,False,9
+Pro0418,pro,Neisseria gonorrhoeae FA 1090,Neisseria,48,95,other_proteo,False,False,False,3
+Pro0418,pro,Neisseria meningitidis serogroup B (strain ATCC BAA-335 / MC58),Neisseria,48,95,other_proteo,False,False,False,4
+Pro0418,pro,Staphylococcus aureus subsp. aureus USA300_TCH1516,Staphylococcus,45,95,out,False,False,False,3
+Pro0418,pro,Staphylococcus aureus,Staphylococcus,45,98,out,False,False,False,6
+Pro0418,pro,Neisseria meningitidis FAM18,Neisseria,48,95,other_proteo,False,False,False,2
+Pro0418,pro,Asaia bogorensis NBRC 16594,Asaia,46,97,other_proteo,False,False,False,1
+Pro0418,pro,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305,Staphylococcus,44,97,out,False,False,False,1
+Pro0418,pro,Glutamicibacter arilaitensis Re117,Glutamicibacter,45,98,out,False,False,False,1
+Pro0418,pro,Acinetobacter baumannii ATCC 17978,Acinetobacter,45,88,other_proteo,False,False,False,2
+Pro0418,pro,Staphylococcus xylosus,Staphylococcus,44,97,out,False,False,False,3
+Pro0418,pro,Acinetobacter baumannii (strain ATCC 19606 / DSM 30007 / JCM 6841 / CCUG 19606 / CIP 70.34 / NBRC 109757 / NCIMB 12457 / NCTC 12156 / 81),Acinetobacter,45,88,other_proteo,False,False,False,1
+Pro0418,pro,Bacillus cereus ATCC 14579,Bacillus,47,97,out,False,False,False,2
+Pro0418,pro,Staphylococcus epidermidis RP62A,Staphylococcus,43,98,out,False,False,False,2
+Pro0418,pro,Actinobacillus pleuropneumoniae L20,Actinobacillus,45,99,other_proteo,False,False,False,1
+Pro0418,pro,Staphylococcus epidermidis (strain ATCC 12228 / FDA PCI 1200),Staphylococcus,43,98,out,False,False,False,1
+Pro0418,pro,Staphylococcus aureus subsp. aureus COL,Staphylococcus,43,98,out,False,False,False,20
+Pro0418,pro,Staphylococcus aureus subsp. aureus MW2,Staphylococcus,43,98,out,False,False,False,1
+Pro0418,pro,Staphylococcus carnosus subsp. carnosus TM300,Staphylococcus,44,97,out,False,False,False,1
+Pro0418,pro,Staphylococcus epidermidis RP62A,Staphylococcus,42,96,out,False,False,False,1
+Pro0418,pro,Staphylococcus epidermidis RP62A,Staphylococcus,42,98,out,False,False,False,3
+Pro0418,pro,Staphylococcus pseudintermedius,Staphylococcus,42,97,out,False,False,False,1
+Pro0418,pro,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305,Staphylococcus,42,97,out,False,False,False,1
+Pro0418,pro,Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),Mycolicibacterium,45,94,out,False,False,False,5
+Pro0418,pro,Xylella fastidiosa 9a5c,Xylella,45,87,other_proteo,False,False,False,2
+Pro0418,pro,Corynebacterium glutamicum,Corynebacterium,43,99,out,False,False,False,7
+Pro0418,pro,Mycolicibacterium smegmatis MC2 155,Mycolicibacterium,45,93,out,False,False,False,1
+Pro0418,pro,Staphylococcus epidermidis RP62A,Staphylococcus,41,97,out,False,False,False,2
+Pro0418,pro,Acinetobacter sp. ADP1,Acinetobacter,42,87,other_proteo,False,False,False,1
+Pro0418,pro,Mycobacterium avium subsp. paratuberculosis str. k10,Mycobacterium,42,98,out,False,False,False,1
+Pro0418,pro,Mycobacterium tuberculosis H37Ra,Mycobacterium,42,98,out,False,False,False,8
+Pro0418,pro,Mycobacterium abscessus ATCC 19977,Mycobacterium,45,95,out,False,False,False,1
+Pro0418,pro,Thiocapsa bogorovii,Thiocapsa,23,88,other_proteo,False,False,False,1
+Pro0418,pro,Sulfurospirillum multivorans DSM 12446,Sulfurospirillum,22,87,other_proteo,False,False,False,1
+Pro0418,pro,Plasmodium berghei ANKA,Plasmodium,23,84,out,False,False,False,1
+Pro0418,pro,Klebsiella pneumoniae,Klebsiella,40,16,other_proteo,False,False,False,1
+Pro0418,pro,Theileria parva strain Muguga,Theileria,24,86,out,False,False,False,1
+Pro0418,pro,Theileria annulata,Theileria,24,89,out,False,False,False,1
+Pro0418,pro,Helicobacter pylori (strain ATCC 700392 / 26695),Helicobacter,23,86,other_proteo,False,False,False,8
+Pro0418,pro,Campylobacter coli RM2228,Campylobacter,22,87,other_proteo,False,False,False,1
+Pro0418,pro,Helicobacter pylori G27,Helicobacter,23,86,other_proteo,False,False,False,1
+Pro0418,pro,Toxoplasma gondii ME49,Toxoplasma,23,83,out,False,False,False,2
+Pro0418,pro,Campylobacter jejuni subsp. jejuni NCTC 11168,Campylobacter,21,87,other_proteo,False,False,False,0
+Pro0418,pro,Campylobacter jejuni,Campylobacter,23,60,other_proteo,False,False,False,8
+Pro0418,pro,Allochromatium vinosum DSM 180,Allochromatium,20,61,other_proteo,False,False,False,1

@@ -1,0 +1,395 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>PaperBLAST</title>
+<link href="../static/favicon.ico" rel="shortcut icon" />
+<style type="text/css">
+<!--/* <![CDATA[ */
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+/* for showing protein sequences */
+/* base style, and for unusual items */
+.aa  { background-color: white; }
+
+/* Clustal colors */
+.aa1 { background-color: lightblue; } /* for AILMFWV */
+.aa2 { background-color: red; } /* for KR */
+.aa3 { background-color: magenta; } /* for ED */
+.aa4 { background-color: lightgreen; } /* for NQST */
+.aa5 { background-color: pink; } /* for C */
+.aa6 { background-color: orange; } /* for G */
+.aa7 { background-color: yellow; } /* for P */
+.aa8 { background-color: cyan; } /* for HY */
+
+/* My brewed colors (see sitesTree.cgi for origin) */
+.aaD { background-color: #FB9A99; }
+.aaE { background-color: #E31A1C; }
+.aaN { background-color: #CCE6FF; }
+.aaQ { background-color: #A7C9EC; }
+.aaK { background-color: #81ADD9; }
+.aaR { background-color: #5892C7; }
+.aaH { background-color: #1F78B4; }
+.aaF { background-color: #FDBF6F; }
+.aaW { background-color: #FFA043; }
+.aaY { background-color: #FF7F00; }
+.aaP { background-color: #FFFF99; }
+.aaM { background-color: #DBAB5E; }
+.aaC { background-color: #B15928; }
+.aaG { background-color: #E6FFE6; }
+.aaA { background-color: #BDE7B7; }
+.aaV { background-color: #93D089; }
+.aaL { background-color: #68B85C; }
+.aaI { background-color: #33A02C; }
+.aaS { background-color: #CAB2D6; }
+.aaT { background-color: #6A3D9A; }
+.aaGap { background-color: #EEEEEE; }
+
+/* for showing the alignment line */
+.alnS, .alnS1, .alnS0 { font-size: smaller; }
+.alnS1 { font-weight: bold; color: darkgreen; } /* site, matching */
+.alnS0 { font-weight: bold; color: darkred; } /* site, not matching */
+
+/* pad the characters a little bit */
+.aa, .aa1, .aa2, .aa3, .aa4, .aa5, .aa6, .aa7, .aa8, .aa9,
+.aaD, .aaE, .aaN, .aaQ, .aaK, .aaR, .aaH, .aaF, .aaW, .aaY,
+.aaP, .aaM, .aaC, .aaG, .aaA, .aaV, .aaL, .aaI, .aaS, .aaT, .aaGap,
+.alnS, .alnS1, .alnS0 {
+  padding-left: 3px; padding-right: 3px; margin-top: 1px;
+}
+
+/* for an alignment column */
+.alnCol, .alnLabel {
+  vertical-align:top; float:left; display:inline-block;
+  margin-top: 1.5em;
+  font-family: "Courier New", monospace; font-size: 90%;
+}
+.alnCol { background-color: #EEEEEE;
+  border-width: 1px;
+  /*border-width-left: 1px; border-width-right: 1px;   border-width-top: 2px; border-width-bottom: 2px;*/
+  border-color: #EEEEEE; border-style: solid; }
+
+/* In many browsers, the label prevents the columns from wrapping all the way to the left,
+   so, make it subtly smaller */
+.alnLabel { margin-right: 0.5em; border: none; font-size: 85%; }
+
+
+
+/* ]]> */-->
+</style>
+<script src="../static/autocomplete_uniprot.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div style="background-color: #40C0CB; display: block; position: absolute; top: 0px; left: -1px;
+  width: 100%; padding: 0.25em; z-index: 400;">
+<H2 style="margin: 0em;">
+<A HREF="litSearch.cgi" style="color: gold; font-family: 'Montserrat', sans-serif; font-style:italic;
+  text-shadow: 1px 1px 1px #000000; text-decoration: none;">
+PaperBLAST &ndash; <small>Find papers about a protein or its homologs</small>
+</A></H2></div>
+<P style="margin: 0em;">&nbsp;</P>
+<SCRIPT src="../static/pb.js"></SCRIPT>
+<h2>PaperBLAST</h2>
+<SCRIPT src="../static/pb.js"></SCRIPT>
+<SCRIPT src="https://fit.genomics.lbl.gov/d3js/d3.min.js"></SCRIPT>
+<SCRIPT src="https://fit.genomics.lbl.gov/images/fitblast.js"></SCRIPT>
+<h3>PaperBLAST Hits for tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1 (239 a.a., MEQAASWRRN...)</h3><DIV style="float:right; padding-left: 10px; width:25%; background-color: #EEEEEE; font-size: 95%;"><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Other sequence analysis tools:</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Find functional residues: <a href="https://papers.genomics.lbl.gov/cgi-bin/sites.cgi?query=%3Etr%7CA2BZW5%7CA2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1%0AMEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="Compare to proteins with known functional residues">SitesBLAST</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Search for <a href="http://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=%3Etr.A2BZW5.A2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1%0AMEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="Compare your sequence to NCBI's Conserved Domains Database">conserved domains</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Find the <a href="https://fast.genomics.lbl.gov/cgi/bestHitUniprot.cgi?query=%3Etr%7CA2BZW5%7CA2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1%0AMEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="See UniProt's annotation, the predicted structure, and protein families from InterPro">best match</a> in UniProt
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Compare to <a href="https://papers.genomics.lbl.gov/cgi-bin/pdbBlast.cgi?query=%3Etr%7CA2BZW5%7CA2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1%0AMEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="Find similar proteins with known structures">protein structures</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Predict transmenbrane helices: <a href="https://fit.genomics.lbl.gov/cgi-bin/myPhobius.cgi?name=tr%7CA2BZW5%7CA2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1&amp;seq=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="Phobius predicts transmembrane helices and signal peptides">Phobius</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Predict protein localization: <a href="https://papers.genomics.lbl.gov/cgi-bin/psortb.cgi?type=negative&amp;name=tr%7CA2BZW5%7CA2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1&amp;seq=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="PSORTb v3.0 for Gram-negative bacteria">PSORTb</a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;">Find homologs in <a href="https://fast.genomics.lbl.gov/cgi/findHomologs.cgi?seqDesc=tr%7CA2BZW5%7CA2BZW5_PROM1%20Putative%20molecular%20chaperone%20OS%3DProchlorococcus%20marinus%20%28strain%20NATL1A%29%20OX%3D167555%20GN%3DNATL1_02111%20PE%3D4%20SV%3D1&amp;seq=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK" title="A representative genome for each genus of bacteria and archaea"><i>fast.genomics</i></a>
+</p><p style="margin-top: 0.5em; margin-bottom: 0.5em;"><a name="#fitness" title="Compare to bacterial and archaeal proteins that have mutant phenotypes">Fitness BLAST</a>: <SPAN ID="fitblast_short"><SMALL>loading...</SMALL></SPAN><SCRIPT> 
+           var server_root = "https://fit.genomics.lbl.gov/";
+           var seq = "MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK";
+           fitblast_load_short("fitblast_short", server_root, seq);
+           </SCRIPT>
+</p></DIV><SCRIPT>
+ShowQuery = function() {
+                    document.getElementById("showSequenceLink").style.display = "none";
+                    document.getElementById("querySequence").style.display = "block";
+                    return false;
+                 }
+</SCRIPT>
+<p id="showSequenceLink" style="font-size:90%;"><a href="#" onclick="return ShowQuery()">Show query sequence</a></p><p id="querySequence" style="font-family: monospace; display:none; font-size:90%; padding-left: 2em;">>tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1<br />MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVF<br />NIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLD<br />SISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIIS<br />PQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK</p>
+<p id="searching">Running BLASTp...</p>
+<SCRIPT>
+document.getElementById("searching").style.display = "none";
+</SCRIPT>
+<p>Found 8 similar proteins in the literature:</p>
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=1214911" onmousedown="logger(this, 'curated::NATL1_02111')" title="MicrobesOnline">NATL1_02111</a> Inactive homolog of metal-dependent proteases, putative molecular chaperone from <i>Prochlorococcus marinus str. NATL1A</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=NATL1_02111&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS1214911" style="font-family: sans-serif; font-size: smaller;" title="1:239/239 of query is similar to 1:239/239 of hit (E = 3e-136,  484 bits)">100% identity, 100% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC9606707" onmousedown="logger(this, 'pb::NATL1_02111')">Acclimation and stress response of <i>Prochlorococcus</i> to low salinity</a><br /><small><a title="He X, Liu H, Long L, Dong J, Huang S.">He,</a> Frontiers in microbiology 2022 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...stress cells of NATL1A, many genes were highly inhibited, which were related to posttranslational modification (<B><span style="color: red;">NATL1_02111</span></B> and NATL1_13731), signal transduction mechanisms ( typA ), cell envelope biogenesis, outer membrane (NATL1_08371 and NATL1_04491), translation, ribosomal structure and biogenesis ( rpsR ), coenzyme metabolism ( folE ), energy...&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.ncbi.nlm.nih.gov/protein/WP_148765363.1" onmousedown="logger(this, 'curated::BMF77_03965')" title="RefSeq">BMF77_03965</a> tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex dimerization subunit type 1 TsaB from <i>Dolichospermum sp. UHCC 0315A</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=BMF77_03965&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=WP_148765363.1" style="font-family: sans-serif; font-size: smaller;" title="24:236/239 of query is similar to 7:222/223 of hit (E = 1e-15, 84.3 bits)">29% identity, 89% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6426976" onmousedown="logger(this, 'pb::BMF77_03965')">Insight into the genome and brackish water adaptation strategies of toxic and bloom-forming Baltic Sea Dolichospermum sp. UHCC 0315</a><br /><small><a title="Teikari JE, Popin RV, Hou S, Wahlsten M, Hess WR, Sivonen K.">Teikari,</a> Scientific reports 2019 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...BMF77_04465 RNA polymerase sigma factor SigA 1,01 BMF77_00231 SerinetRNA ligase 1,36 BMF77_02360 SsrA-binding protein 1,04 <B><span style="color: red;">BMF77_03965</span></B> tRNA threonylcarbamoyladenosine biosynthesis protein TsaB 1,38 BMF77_02233 tRNA pseudouridine synthase A 1,02 BMF77_00676 tRNA-His(gtg) 1,79 Chaperones BMF77_03414 10kDa chaperonin 1,17 BMF77_02118 Chaperone protein ClpB 1,35 BMF77_03359 Chaperone protein DnaK2 1,39...&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=10346" onmousedown="logger(this, 'curated::sll1063')" title="MicrobesOnline">sll1063</a> unknown protein from <i>Synechocystis sp. PCC 6803</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=sll1063&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS10346" style="font-family: sans-serif; font-size: smaller;" title="32:134/239 of query is similar to 16:115/219 of hit (E = 3e-12, 73.6 bits)">34% identity, 43% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6508509" onmousedown="logger(this, 'pb::sll1063')">Ethylene causes transcriptomic changes in <i>Synechocystis</i> during phototaxis</a><br /><small><a title="Lacey RF, Allen CJ, Bakshi A, Binder BM.">Lacey,</a> Plant direct 2018 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...exceptions were several pairs of genes ( sll1392 and sll1393 ; sll0361 and sll0362 ; <B><span style="color: red;">sll1063</span></B> and sll1064 ) and sll5041 through sll5046 . The group of 13 genes from slr1065 to slr1078 is predicted to be in three operons. Table 3 Selected clusters of genes...&rdquo;</UL><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4963248" onmousedown="logger(this, 'pb::sll1063')">Essentiality of threonylcarbamoyladenosine (t(6)A), a universal tRNA modification, in bacteria</a><br /><small><a title="Thiaville PC, El Yacoubi B, Köhrer C, Thiaville JJ, Deutsch C, Iwata-Reuyl D, Bacusmo JM, Armengaud J, Bessho Y, Wetzel C, Cao X, Limbach PA, RajBhandary UL, de Crécy-Lagard V.">Thiaville,</a> Molecular microbiology 2015 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...Single gene knockout ( Onodera et al. , 2013 ) Synechocystis sp. PCC 6308 slr1866 <B><span style="color: red;">sll1063</span></B> slr0807 sll0257 Single gene knockout ( Zuther et al. , 1998 ) Streptococcus mutans UA159 SMU.1083c SMU.385 SMU.387 SMU.409 Single gene knockout ( Bitoun et al. , 2014 ) N.P....&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=133014" onmousedown="logger(this, 'curated::spr0129')" title="MicrobesOnline">spr0129</a> Conserved hypothetical protein from <i>Streptococcus pneumoniae R6</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=spr0129&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS133014" style="font-family: sans-serif; font-size: smaller;" title="31:130/239 of query is similar to 3:101/227 of hit (E = 2e-07, 57.4 bits)">31% identity, 42% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3811476" onmousedown="logger(this, 'pb::spr0129')">Genomic characterization of ciprofloxacin resistance in a laboratory-derived mutant and a clinical isolate of Streptococcus pneumoniae</a><br /><small><a title="Lupien A, Billal DS, Fani F, Soualhine H, Zhanel GG, Leprohon P, Ouellette M.">Lupien,</a> Antimicrobial agents and chemotherapy 2013 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...and gyrA (E85K) or within intergenic regions upstream of <B><span style="color: red;">spr0129</span></B> and downstream of spr0952 (Table 2). Of these, the only mutations that transferred to T5-R6M2B...&rdquo;<LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...to the A-to-G transition observed three nucleotides upstream of <B><span style="color: red;">spr0129</span></B> in R6M2B, as its reversion to a wild-type sequence had no effect on the CIP MIC of...&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=102011" onmousedown="logger(this, 'curated::SPy1874')" title="MicrobesOnline">SPy1874</a> putative glycoprotein endopeptidase from <i>Streptococcus pyogenes M1 GAS</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=SPy1874&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS102011" style="font-family: sans-serif; font-size: smaller;" title="32:129/239 of query is similar to 4:100/232 of hit (E = 4e-07, 56.2 bits)">33% identity, 41% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322576" onmousedown="logger(this, 'pb::SPy1874')">Surface interactome in Streptococcus pyogenes</a><br /><small><a title="Galeotti CL, Bove E, Pezzicoli A, Nogarotto R, Norais N, Pileri S, Lelli B, Falugi F, Balloni S, Tedde V, Chiarot E, Bombaci M, Soriani M, Bracci L, Grandi G, Grifantini R.">Galeotti,</a> Molecular & cellular proteomics : MCP 2012 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...prgA; SPy0128; SPy0130; SPy0838; SPy0872; SPy1054; SPy1686; <B><span style="color: red;">SPy1874</span></B>; SPy1939; gi-19224134; gi-19224141 isp2; mur1.2 hylA; ska; speC; speG; speI; speJ SPy1718...&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=3788535" onmousedown="logger(this, 'curated::SGO_0221')" title="MicrobesOnline">SGO_0221</a> glycoprotein endopeptidase from <i>Streptococcus gordonii str. Challis substr. CH1</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=SGO_0221&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS3788535" style="font-family: sans-serif; font-size: smaller;" title="31:131/239 of query is similar to 3:102/230 of hit (E = 1e-05, 51.2 bits)">30% identity, 42% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6341032" onmousedown="logger(this, 'pb::SGO_0221')">Streptococcus endopeptidases promote HPV infection in vitro</a><br /><small><a title="Pavlova SI, Wilkening RV, Federle MJ, Lu Y, Schwartz J, Tao L.">Pavlova,</a> MicrobiologyOpen 2019 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...R This study sepA Deletion of SGO_2150 with Km R This study pepM22 Inactivation of <B><span style="color: red;">SGO_0221</span></B> with pSF151, Km R This study cppA Inactivation of SGO_0237 with pSF151, Km R This study pepM26 Inactivation of SGO_0408 with pSF151, Km R This study sepM Inactivation of SGO_0652...&rdquo;<LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...gcta ggatcc ttcgctagctacctgatcat Bam HI SepAF2 gaccagcattag gaattc aaatg Eco RI SepAR2 ttagagagactaatctttacttcgactccc Construction of <B><span style="color: red;">SGO_0221</span></B> mutant Sgo221F ctgag aatt gcggtggcgac Tas I Sgo221R gagcc aatt ttcctcggctt Tas I Construction of SGO_0237 mutant Sgo237F ttggga gatc agacaaagag Sau 3AI Sgo237R gcat gatc gccaaaaggttgataat Sau 3AI Construction...&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=10396688" onmousedown="logger(this, 'curated::GALLO_1986')" title="MicrobesOnline">GALLO_1986</a> putative glycoprotein endopeptidase from <i>Streptococcus gallolyticus UCN34</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=GALLO_1986&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS10396688" style="font-family: sans-serif; font-size: smaller;" title="31:162/239 of query is similar to 3:126/229 of hit (E = 1e-05, 51.2 bits)">27% identity, 55% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5786311" onmousedown="logger(this, 'pb::GALLO_1986')">Biofilm formation and transcriptome analysis of Streptococcus gallolyticus subsp. gallolyticus in response to lysozyme</a><br /><small><a title="Grimm I, Dumke J, Dreier J, Knabbe C, Vollmer T.">Grimm,</a> PloS one 2018 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...resistance dpr peroxide resistance protein Dpr n. r. - n. r. -1.07 0.04 0.48 protease <B><span style="color: red;">GALLO_1986</span></B> putative O-sialoglycoprotein endopeptidase n. p. - n. p. -1.00 0.04 0.50 protein synthesis miaA tRNA delta(2)-isopentenylpyrophosphate transferase n. r. - n. r. -1.32 0.02 0.40 GALLO_0368 ribosome maturation protein RimP...&rdquo;</UL></UL></p>
+
+<p style="margin-top: 1em; margin-bottom: 0em;"><a href="http://www.uniprot.org/uniprot/O05516" onmousedown="logger(this, 'curated::TSAB_BACSU / O05516')" title="SwissProt">TSAB_BACSU / O05516</a> <b>tRNA threonylcarbamoyladenosine biosynthesis protein TsaB; t(6)A37 threonylcarbamoyladenosine biosynthesis protein TsaB</b> from <i>Bacillus subtilis (strain 168)</i> (see <a href="http://pubmed.ncbi.nlm.nih.gov/pubmed/?term=17005971,23072323&amp;sort=pubdate" onmousedown="logger(this, 'curatedpaper::TSAB_BACSU / O05516')">2 papers</a>)<BR><a href="http://www.microbesonline.org/cgi-bin/fetchLocus.cgi?locus=37125" onmousedown="logger(this, 'curated::BSU05920')" title="MicrobesOnline">BSU05920</a> putative chaperone or protease from <i>Bacillus subtilis subsp. subtilis str. 168</i><BR><a href="showAlign.cgi?def1=tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NATL1_02111 PE=4 SV=1&amp;def2=TSAB_BACSU / O05516&amp;seq1=MEQAASWRRNSKIIVIINKLQNFYTSKSKYLLALHSTSESFGIAVKDIEEKETIIKSEVFNIGRALSNKLFSCIETILPRKFWKQIIRISVAKGPGSYTSTRLTISMARTIAQQINCSLDSISSFHIMAPRLYKYLDQNQNFNPFWIKDILPRRGIVAGKYKLIKIHQESDFYEFSEIISPQLISNDKEINPSIKASNNIEKDIISLINFSEYCQKSNFHSNWRRILPIYPTSPIDNQK&amp;acc2=VIMSS37125" style="font-family: sans-serif; font-size: smaller;" title="31:129/239 of query is similar to 3:100/229 of hit (E = 3e-04, 47.0 bits)">27% identity, 41% coverage</a><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; ><b>function:</b> Required for the formation of a threonylcarbamoyl group on adenosine at position 37 (t(6)A37) in tRNAs that read codons beginning with adenine. Is involved in the transfer of the threonylcarbamoyl moiety of threonylcarbamoyl-AMP (TC-AMP) to the N6 group of A37, together with TsaD and TsaE; this reaction does not require ATP in vitro. TsaB seems to play an indirect role in the t(6)A biosynthesis pathway, possibly in regulating the core enzymatic function of TsaD. <BR>
+<b>subunit:</b> Forms a heterodimer with TsaE. <BR>
+<b>disruption</b> <b>phenotype:</b> Cells lacking this gene display a slow growth phenotype. Cell size, shape and nucleoid morphology remain unchanged. <LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC10221552" onmousedown="logger(this, 'pb::BSU05920')">A model industrial workhorse: Bacillus subtilis strain 168 and its genome after a quarter of a century</a><br /><small><a title="Bremer E, Calteau A, Danchin A, Harwood C, Helmann JD, Médigue C, Palsson BO, Sekowska A, Vallenet D, Zuniga A, Zuniga C.">Bremer,</a> Microbial biotechnology 2023 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...(adenine(37)N6)methyltransferase 2.1.1.223 BSU27360 trmR yrrM Omethyltransferase for modification of tRNA U34 into 5methoxyuridine (mo5U) 2.1.1. <B><span style="color: red;">BSU05920</span></B> tsaB ydiC tRNA(NNU) t(6)A37 threonylcarbamoyladenosine modification _ BSU36950 tsaC tamT, ywlC, ipc29d, rimN tRNA(NNU) t(6)A37 threonylcarbamoyladenosine modification; threoninedependent ADPforming ATPase 2.7.7.87 BSU05940 tsaD gcp, ydiE tRNA(NNU) t(6)A37 threonylcarbamoyladenosine modification; glycation...&rdquo;</UL><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5116877" onmousedown="logger(this, 'pb::BSU05920')">The Blueprint of a Minimal Cell: MiniBacillus</a><br /><small><a title="Reuß DR, Commichau FM, Gundlach J, Zhu B, Stülke J.">Reuß,</a> Microbiology and molecular biology reviews : MMBR 2016 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...ypuI tilS tsaB BSU27510 BSU00960 BSU00420 BSU23160 BSU23200 BSU00670 <B><span style="color: red;">BSU05920</span></B> Yes No No No No Yes Yes tsaD BSU05940 Yes tsaC BSU36950 No gidA BSU41010 No thdF...&rdquo;</UL><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4963248" onmousedown="logger(this, 'pb::BSU05920')">Essentiality of threonylcarbamoyladenosine (t(6)A), a universal tRNA modification, in bacteria</a><br /><small><a title="Thiaville PC, El Yacoubi B, Köhrer C, Thiaville JJ, Deutsch C, Iwata-Reuyl D, Bacusmo JM, Armengaud J, Bessho Y, Wetzel C, Cao X, Limbach PA, RajBhandary UL, de Crécy-Lagard V.">Thiaville,</a> Molecular microbiology 2015 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...2008 , Dybvig et al. , 2010 ) Bacillus subtilis subsp. subtilis str. 168 BSU36950 <B><span style="color: red;">BSU05920</span></B> BSU05940 BSU05910 Whole Genome, single gene knockout, non-polar ( Kobayashi et al. , 2003 ) Haemophilus influenzae Rd HI0656 HI0388 HI0530 1 HI0065 mariner -based minitransposon ( Akerley et al....&rdquo;</UL><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4615747" onmousedown="logger(this, 'pb::BSU05920')">Diversity of the biosynthesis pathway for threonylcarbamoyladenosine (t(6)A), a universal modification of tRNA</a><br /><small><a title="Thiaville PC, Iwata-Reuyl D, de Crécy-Lagard V.">Thiaville,</a> RNA biology 2014 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...N.P. Mycoplasm pulmonis MYPU_6130 # MYPU_1190 MYPU_1180 MYPU_1200 Bacillus subtilis subsp. subtilis str. 168 BSU36950 <B><span style="color: red;">BSU05920</span></B> BSU05940 BSU05910 Haemophilus influenzae Rd HI0656 HI0388 HI0530 HI0065 Acinetobacter baylyi APD1 ACIAD0208 ACIAD0677 ACIAD1332 ACIAD2376 Salmonella Typhii TY2 STY4395 STY1950 STY3387 STY4714 Francisella novisida U112 FTN_0158 FTN_1148 FTN_1565 FTN_0274...&rdquo;</UL><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3650553" onmousedown="logger(this, 'pb::BSU05920')">Bacillus subtilis mutants with knockouts of the genes encoding ribonucleases RNase Y and RNase J1 are viable, with major defects in cell morphology, sporulation, and competence</a><br /><small><a title="Figaro S, Durand S, Gilet L, Cayet N, Sachse M, Condon C.">Figaro,</a> Journal of bacteriology 2013 </small> <small>(<a title="Journal of bacteriology is not open access, sorry">secret</a>)</small><LI style="list-style-type: none;" margin-left: 6em; ><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3814617" onmousedown="logger(this, 'pb::BSU05920')">Distinct co-evolution patterns of genes associated to DNA polymerase III DnaE and PolC</a><br /><small><a title="Engelen S, Vallenet D, Médigue C, Danchin A.">Engelen,</a> BMC genomics 2012 </small><UL style="margin-top: 0em; margin-bottom: 0em;"><LI style="list-style-type: none;" margin-left: 6em; >&ldquo;...resulting in alteration of gene expression BSU05910 ydiB ydiB yjeE putative ATPase or kinase UPF0079 <B><span style="color: red;">BSU05920</span></B> ydiC ydiC yeaZ putative chaperone or protease BSU05950 ydiF ydiF ybiT putative ABC transporter (ATP-binding protein) 3 BSU07370 uup yfmR ycbH putative ABC protein involved in RecA-independent precise excision of...&rdquo;</UL><LI style="list-style-type: none;" margin-left: 6em; >Application of Structural Genomics for Developing Novel Antibacterial Agents<br /><small><a title="Das SK.">Das,</a>  2007 </small><LI style="list-style-type: none;" margin-left: 6em; ><a href="https://doi.org/10.1159/000076741" onmousedown="logger(this, 'pb::BSU05920')">A global approach to identify novel broad-spectrum antibacterial targets among proteins of unknown function</a><br /><small><a title="Zalacain M, Biswas S, Ingraham KA, Ambrad J, Bryant A, Chalker AF, Iordanescu S, Fan J, Fan F, Lunsford RD, O'Dwyer K, Palmer LM, So C, Sylvester D, Volker C, Warren P, McDevitt D, Brown JR, Holmes DJ, Burnham MK.">Zalacain,</a> Journal of molecular microbiology and biotechnology 2003 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/15044829" onmousedown="logger(this, 'pb::BSU05920')">PubMed</a>)</small> <small>(<a title="Journal of molecular microbiology and biotechnology is not open access, sorry">secret</a>)</small><LI style="list-style-type: none;" margin-left: 6em; ><a href="litSearch.cgi?more=VIMSS37125">More</a></UL></p>
+
+<h3><a href="litSearch.cgi">New Search</a></h3>
+For advice on how to use these tools together, see
+<A HREF="https://www.biorxiv.org/content/10.1101/2024.04.15.589591v1">Interactive tools for functional annotation of bacterial genomes</A>.
+
+<H3><A NAME="stats">Statistics</A></H3>
+
+The PaperBLAST database links 838,522 different protein sequences to 1,299,844 scientific articles. Searches against EuropePMC were last performed on May 13 2026.
+
+<H3><A NAME="works">How It Works</A></H3>
+
+<P>PaperBLAST builds a database of protein sequences that are linked
+to scientific articles. These links come from automated text searches
+against the articles in <A HREF="http://europepmc.org/" title="Europe PMC (PubMedCentral)">EuropePMC</A>
+and from manually-curated information from <A
+HREF="https://www.ncbi.nlm.nih.gov/gene/about-generif" title="Gene
+Reference into Function (NCBI)">GeneRIF</A>, <A
+HREF="http://www.uniprot.org/" title="The manually annotated and reviewed section of UniProt">UniProtKB/Swiss-Prot</A>,
+<A HREF="http://www.brenda-enzymes.org/index.php" title="The Comprehensive Enzyme Information System">BRENDA</A>,
+<A HREF="http://www.cazy.org/" title="Carbohydrate-Active enZYmes Database">CAZy</A> (as made available by <A HREF="http://csbl.bmb.uga.edu/dbCAN/download.php">dbCAN</A>),
+<A HREF="https://seq2fun.dcmb.med.umich.edu/BioLiP/" title="BioLiP for Ligand-protein binding database">BioLiP</A>,
+<A HREF="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245046/" title="Database of experimentally characterized protein annotations">CharProtDB</A>,
+<A HREF="http://metacyc.org/" title="MetaCyc Metabolic Pathway Database">MetaCyc</A>,
+<A HREF="http://ecocyc.org" title="EcoCyc: Encyclopedia of E. coli Genes and Metabolic Pathways">EcoCyc</A>,
+<A HREF="http://www.tcdb.org/" title="The Transporter Classification Database (TCDB)"</A>TCDB</A>,
+<A HREF="http://rebase.neb.com/rebase/rebase.html" title="The Restriction Enzyme Database">REBASE</A>,
+the <A HREF="http://fit.genomics.lbl.gov/" title="Reannotations from genome-wide fitness data">Fitness Browser</A>,
+and a subset of the European Nucleotide Archive with the /experiment tag.
+Given this database and a protein sequence query,
+PaperBLAST uses <A
+HREF="https://en.wikipedia.org/wiki/BLAST">protein-protein BLAST</A>
+to find similar sequences with E &lt; 0.001.
+
+<P>To build the database, we query EuropePMC with locus tags, with <A
+HREF="https://www.ncbi.nlm.nih.gov/refseq/">RefSeq</A> protein
+identifiers, and with <A HREF="http://www.uniprot.org/">UniProt</A>
+accessions.  We obtain the locus tags from RefSeq or from <A
+HREF="http://www.microbesonline.org/">MicrobesOnline</A>.  We use
+queries of the form "locus_tag AND genus_name" to try to ensure that
+the paper is actually discussing that gene.  Because EuropePMC indexes
+most recent biomedical papers, even if they are not open access, some
+of the links may be to papers that you cannot read or that our
+computers cannot read.  We query each of these identifiers that
+appears in the open access part of EuropePMC, as well as every locus
+tag that appears in the 500 most-referenced genomes, so that a gene
+may appear in the PaperBLAST results even though none of the papers
+that mention it are open access. We also incorporate text-mined links
+from EuropePMC that link open access articles to UniProt or RefSeq
+identifiers.  (This yields some additional links because EuropePMC
+uses different heuristics for their text mining than we do.)
+
+<P>For every article that mentions a locus tag, a RefSeq protein
+identifier, or a UniProt accession, we try to select one or two
+snippets of text that refer to the protein. If we cannot get access to
+the full text, we try to select a snippet from the abstract, but
+unfortunately, unique identifiers such as locus tags are rarely
+provided in abstracts.
+
+<P>PaperBLAST also incorporates manually-curated protein functions:
+<UL>
+<LI>Proteins from NCBI's RefSeq are included if a
+  <A HREF="https://www.ncbi.nlm.nih.gov/gene/about-generif">GeneRIF</A>
+  entry links the gene to an article in
+  <A  HREF="http://www.ncbi.nlm.nih.gov/pubmed/">PubMed</A><sup>&reg;</sup>.
+  GeneRIF also provides a short summary of the article's claim about the
+  protein, which is shown instead of a snippet.
+<LI>Proteins from Swiss-Prot (the curated part of <A HREF="http://uniprot.org">UniProt</A>)
+  are included if the curators
+  identified experimental evidence for the protein's function (evidence
+  code ECO:0000269). For these proteins, the fields of the Swiss-Prot entry that
+  describe the protein's function are shown (with bold headings).
+<LI>Proteins from <A HREF="http://www.brenda-enzymes.org/index.php">BRENDA</A>,
+  a curated database of enzymes, are included if they are linked to a paper in PubMed
+  and their full sequence is known.
+<LI>Every protein from the non-redundant subset of
+  <A HREF="https://seq2fun.dcmb.med.umich.edu/BioLiP/">BioLiP</A>,
+  a database
+  of ligand-binding sites and catalytic residues in protein structures, is included. Since BioLiP itself
+  does not include descriptions of the proteins, those are taken from the
+  <A HREF="https://www.rcsb.org/" title="Protein Data Bank">Protein Data Bank</A>.
+  Descriptions from PDB rely on the original submitter of the
+    structure and cannot be updated by others, so they may be less reliable.
+  (For SitesBLAST and Sites on a Tree, we use a larger subset of BioLiP so that every
+   ligand is represented among a group of structures with similar sequences, but for
+   PaperBLAST, we use the non-redundant set provided by BioLiP.)
+<LI>Every protein from <A HREF="http://ecocyc.org">EcoCyc</A>, a curated
+  database of the proteins in <i> Escherichia coli</i> K-12, is included, regardless
+  of whether they are characterized or not.
+<LI>Proteins from the <A HREF="http://metacyc.org">MetaCyc</A> metabolic pathway database
+  are included if they are linked to a paper in PubMed and their full sequence is known.
+<LI>Proteins from the Transport Classification Database (<A HREF="http://www.tcdb.org">TCDB</A>)
+  are included if they have known substrate(s), have reference(s),
+  and are not described as uncharacterized or putative.
+  (Some of the references are not visible on the PaperBLAST web site.)
+<LI>Every protein from <A HREF="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245046/">CharProtDB</A>,
+  a database of experimentally characterized protein annotations, is included.
+<LI>Proteins from the <A HREF="http://www.cazy.org/">CAZy</A> database of carbohydrate-active enzymes
+  are included if they are associated with an Enzyme Classification number.
+  Even though CAZy does not provide links from individual protein sequences to papers,
+  these should all be experimentally-characterized proteins.
+<LI>Proteins from the <A HREF="http://rebase.neb.com/rebase/rebase.html">REBASE</A> database
+  of restriction enzymes are included if they have known specificity.
+<LI>Every protein with an evidence-based reannotation (based on mutant phenotypes)
+  in the <A HREF="http://fit.genomics.lbl.gov/">Fitness Browser</A> is included.
+<LI>Sequence-specific transcription factors (including sigma factors and DNA-binding response regulators)
+with experimentally-determined DNA binding sites from the
+<A HREF="https://www.prodoric.de/">PRODORIC</A> database of gene regulation in prokaryotes.
+<LI>Putative transcription factors from <A HREF="https://regprecise.lbl.gov/">RegPrecise</A>
+that have manually-curated predictions for their binding sites. These predictions are based on
+conserved putative regulatory sites across genomes that contain similar transcription factors,
+so PaperBLAST clusters the TFs at 70% identity and retains just one member of each cluster.
+<LI>Coding sequence (CDS) features from the
+    <A HREF="https://www.ebi.ac.uk/ena/browser/about">European Nucleotide Archive</A> (ENA)
+    are included if the /experiment tag is set (implying that there is experimental evidence for the annotation),
+    the nucleotide entry links to paper(s) in PubMed,
+    and the nucleotide entry is from the STD data class
+    (implying that these are targeted annotated sequences, not from shotgun sequencing).
+    Also, to filter out genes whose transcription or translation was detected, but whose function
+    was not studied, nucleotide entries or papers with more than 25 such proteins are excluded.
+    Descriptions from ENA rely on the original submitter of the
+    sequence and cannot be updated by others, so they may be less reliable.
+</UL>
+<P>Except for GeneRIF and ENA,
+the curated entries include a short curated
+description of the protein's function.
+For entries from BioLiP, the protein's function may not be known beyond binding to the ligand.
+Many of these entries also link to articles in <A
+HREF="http://www.ncbi.nlm.nih.gov/pubmed/">PubMed</A>.
+
+<P>For more information see the
+<A title="PaperBLAST: Text Mining Papers for Information about Homologs" HREF="http://msystems.asm.org/content/2/4/e00039-17">PaperBLAST paper</A> (<i>mSystems</i> 2017)
+or the <A HREF="https://github.com/morgannprice/PaperBLAST">code</A>.
+You can download PaperBLAST's database <A HREF="https://github.com/morgannprice/PaperBLAST#download">here</A>.
+
+<P>Changes to PaperBLAST since the paper was written:
+
+<UL>
+<LI>November 2023: incorporated PRODORIC and RegPrecise. Many PRODORIC entries were not linked to a protein sequence (no UniProt identifier), so we added this information.
+<LI>February 2023: BioLiP changed their download format. PaperBLAST now includes their non-redundant subset. SitesBLAST and Sites on a Tree use a larger non-redundant subset that ensures that every ligand is represented within each cluster. This should ensure that every binding site is represented.
+<LI>June 2022: incorporated some coding sequences from ENA with the /experiment tag.
+<LI>March 2022: incorporated BioLiP.
+<LI>April 2020: incorporated TCDB.
+<LI>April 2019: EuropePMC now returns table entries in their search results. This has expanded PaperBLAST's database, but most of the new entries are of low relevance, and the resulting snippets are often just lists of locus tags with annotations.
+<LI>February 2018: the alignment page reports the conservation of the hit's functional sites (if available from from Swiss-Prot or UniProt)
+<LI>January 2018: incorporated BRENDA.
+<LI>December 2017: incorporated MetaCyc, CharProtDB, CAZy, REBASE, and the reannotations from the Fitness Browser.
+<LI>September 2017: EuropePMC no longer returns some table entries in their search results. This has shrunk PaperBLAST's database, but has also reduced the number of low-relevance hits.
+</UL>
+
+<P>Many of these changes are described in <A HREF="https://www.biorxiv.org/content/10.1101/2024.04.15.589591v1">Interactive tools for functional annotation of bacterial genomes</A>.
+
+<H3><A NAME="secret">Secrets</A></H3>
+
+<P>PaperBLAST cannot provide snippets for many of the papers that are
+published in non-open-access journals. This limitation applies even if
+the paper is marked as "free" on the publisher's web site and is
+available in PubmedCentral or EuropePMC. If a journal that you publish
+in is marked as "secret," please consider publishing elsewhere.
+
+<H3><A NAME="omission">Omissions from the PaperBLAST Database</A></H3>
+
+<P>Many important articles are missing from PaperBLAST, either because
+the article's full text is not in EuropePMC (as for many older
+articles), or because the paper does not mention a protein identifier such as a locus tag, or because of PaperBLAST's heuristics. If you notice an
+article that characterizes a protein's function but is missing from
+PaperBLAST, please notify the curators at <A
+HREF="http://www.uniprot.org/update">UniProt</A>
+or add an entry to <A
+HREF="https://www.ncbi.nlm.nih.gov/gene/submit-generif">GeneRIF</A>.
+Entries in either of these databases will eventually be incorporated
+into PaperBLAST.  Note that to add an entry to UniProt, you will need
+to find the UniProt identifier for the protein.  If the protein is not
+already in UniProt, you can ask them to create an entry.  To add an
+entry to GeneRIF, you will need an NCBI Gene identifier, but
+unfortunately many prokaryotic proteins in RefSeq do not have
+corresponding Gene identifers.
+
+<H3>References</H3>
+
+<P><A HREF="http://msystems.asm.org/content/2/4/e00039-17">PaperBLAST: Text-mining papers for information about homologs.</A><BR>
+ <small>M. N. Price and A. P. Arkin (2017). mSystems, 10.1128/mSystems.00039-17.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkx1005">Europe PMC in 2017.</A><BR>
+<small>M. Levchenko et al (2017). Nucleic Acids Research, 10.1093/nar/gkx1005.</small>
+
+<P><A HREF="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1480312/">Gene indexing: characterization and analysis of NLM's GeneRIFs.</A><BR>
+<small>J. A. Mitchell et al (2003). AMIA Annu Symp Proc 2003:460-464.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkw1099">UniProt: the universal protein knowledgebase.</A><BR>
+<small>The UniProt Consortium (2016). Nucleic Acids Research, 10.1093/nar/gkw1099.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkw952">BRENDA in 2017: new perspectives and new tools in BRENDA.</A><BR>
+<small>S. Placzek et al (2017). Nucleic Acids Research, 10.1093/nar/gkw952.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkw1003">The EcoCyc database: reflecting new knowledge about Escherichia coli K-12.</A><BR>
+<small>I. M. Keeseler et al (2016). Nucleic Acids Research, 10.1093/nar/gkw1003.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkx935">The MetaCyc database of metabolic pathways and enzymes.</A><BR>
+<small>R. Caspi et al (2018). Nucleic Acids Research, 10.1093/nar/gkx935.</small>
+
+<P><A HREF="https://academic.oup.com/nar/article/40/D1/D237/2903195">CharProtDB: a database of experimentally characterized protein annotations.</A><BR>
+<small>R. Madupu et al (2012). Nucleic Acids Research, 10.1093/nar/gkr1133.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkt1178">The carbohydrate-active enzymes database (CAZy) in 2013.</A><BR>
+<small>V. Lombard et al (2014). Nucleic Acids Research, 10.1093/nar/gkt1178.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gkv1103">The Transporter Classification Database (TCDB): recent advances</A><BR>
+<small>M. H. Saier, Jr. et al (2016). Nucleic Acids Research, 10.1093/nar/gkv1103.</small>
+
+<P><A HREF="https://doi.org/10.1093/nar/gku1046">REBASE - a database for DNA restriction and modification: enzymes, genes and genomes.</A><BR>
+<small>R. J. Roberts et al (2015). Nucleic Acids Research, 10.1093/nar/gku1046.</small>
+
+<P><A HREF="https://dx.doi.org/10.1101/072470">Deep annotation of protein function across diverse bacteria from mutant phenotypes.</A><BR>
+<small>M. N. Price et al (2016). bioRxiv, 10.1101/072470.</small>
+
+<P>
+<small>
+<center>by <A HREF="http://morgannprice.org/">Morgan Price</A>,
+<A HREF="http://genomics.lbl.gov/">Arkin group</A><BR>
+Lawrence Berkeley National Laboratory
+</center>
+</small>
+</P>
+
+</body>
+</html>
