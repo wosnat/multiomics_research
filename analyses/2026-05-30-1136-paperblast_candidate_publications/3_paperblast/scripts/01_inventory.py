@@ -23,9 +23,13 @@ from __future__ import annotations
 
 import html
 import re
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pb_io import load_pages  # noqa: E402
 
 BASE = Path(__file__).resolve().parents[1]          # 3_paperblast/
 RESULTS = BASE / "results"
@@ -62,8 +66,7 @@ def main() -> int:
                  if pd.notna(g) and gn_counts[g] == 1}
 
     rows = []
-    for f in sorted(RESULTS.glob("*.html")):
-        t = f.read_text(encoding="utf-8", errors="replace")
+    for f, t in load_pages(RESULTS):
         flat = flatten(t)
         q = query_line(flat)
         hay = q + " " + f.name  # search query text + filename
@@ -84,7 +87,7 @@ def main() -> int:
                 lt = gn_unique[gn.group(1)]
                 match, how = loci[lt], "gene_name"
         rows.append({
-            "file": f.name,
+            "file": str(f.relative_to(RESULTS)),
             "matched_pool": getattr(match, "pool", None),
             "matched_sel_rank": getattr(match, "sel_rank", None),
             "matched_locus_tag": getattr(match, "locus_tag", None),

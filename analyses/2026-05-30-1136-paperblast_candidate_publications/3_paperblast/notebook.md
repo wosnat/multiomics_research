@@ -11,6 +11,17 @@ dedups, and triages** the saved pages into a candidate-publication shortlist.
 This commit covers the **pro pool (8 seeds)** end-to-end, validating the whole
 pipeline before the other three pools are run.
 
+> **Update (pro + syn, 16 seeds).** The syn pool was added. Two pipeline changes:
+> (a) `pb_io.py` shared loader now reads both `.html` and `.mhtml` (Single-File)
+> saves and scans `results/<pool>/` subfolders recursively; (b) pro files moved
+> into `results/prochlorococcus/`. Combined run: 1418 hits → 157 kept → 164
+> distinct papers → 10 already in KG → **154 new candidates** (P1 in-Cyanorak = 19,
+> KG-fit ≥2 = 11). The syn P1 set is more in-scope than pro's (WH8102 phosphorus
+> proteomics, coastal *Synechococcus* comparisons, genome-wide DNA-damage
+> transcriptional response) — less Synechocystis spillover. The per-pool numbers
+> and "two axes pull apart" finding below are the original pro-only figures; the
+> final combined write-up lands after alt + other_hetero are run.
+
 ## What I did
 
 Three scripts, run from repo root with `env -u VIRTUAL_ENV uv run python <script>`:

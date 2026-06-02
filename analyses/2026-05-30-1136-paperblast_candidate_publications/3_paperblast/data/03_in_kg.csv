@@ -1,9 +1,11 @@
 title,doi,year,n_seeds,seeds,in_cyanorak
-Integrated Proteomic and Metabolomic Analyses Show Differential Effects of Glucose Availability in Marine <i>Synechococcus</i> and <i>Prochlorococcus</i>,10.1128/spectrum.03275-22,2023,1,Pro0418,True
+Integrated Proteomic and Metabolomic Analyses Show Differential Effects of Glucose Availability in Marine <i>Synechococcus</i> and <i>Prochlorococcus</i>,10.1128/spectrum.03275-22,2023,2,Pro0418;SynWH7803_0353,True
 Pseudomonas putida as saviour for troubled Synechococcus elongatus in a synthetic co-culture - interaction studies based on a multi-OMICs approach,10.1038/s42003-024-06098-5,2024,1,PMM1135,False
 Genome-wide analysis of light sensing in Prochlorococcus,10.1128/jb.01097-06,2006,2,PMM1135;PMM1404,True
 Global gene expression of Prochlorococcus ecotypes in response to changes in nitrogen availability,10.1038/msb4100087,2006,2,PMM1135;PMM1404,True
 The transcriptome landscape of Prochlorococcus MED4 and the factors for stabilizing the core genome,10.1186/1471-2180-14-11,2014,2,PMM1135;PMM1404,True
 Response of Prochlorococcus to varying CO2:O2 ratios,10.1038/ismej.2015.36,2015,1,PMT9312_0549,True
 Indirect Interspecies Regulation: Transcriptional and Physiological Responses of a Cyanobacterium to Heterotrophic Partnership,10.1128/msystems.00181-16,2017,1,PMT9312_0549,False
+Nitrogen cost minimization is promoted by structural changes in the transcriptome of N-deprived Prochlorococcus cells,10.1038/ismej.2017.88,2017,1,BL107_16040,True
+Heterotroph Interactions Alter Prochlorococcus Transcriptome Dynamics during Extended Periods of Darkness,10.1128/msystems.00040-18,2018,1,SYNW1780,True
 Acclimation and stress response of Prochlorococcus to low salinity,10.3389/fmicb.2022.1038136,2022,1,NATL1_02111,True

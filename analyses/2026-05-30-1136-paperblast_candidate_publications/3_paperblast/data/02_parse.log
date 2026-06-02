@@ -6,16 +6,24 @@
   ✓ PMT9312_0549.html [PMT9312_0549/pro]: 112 hits, 33 kept
   ✓ PMT9312_0550.html [PMT9312_0550/pro]: 241 hits, 19 kept
   ✓ Pro0418.html [Pro0418/pro]: 84 hits, 2 kept
+  ✓ BL107_07454.mhtml [BL107_07454/syn]: 72 hits, 2 kept
+  ✓ BL107_11441.mhtml [BL107_11441/syn]: 14 hits, 12 kept
+  ✓ BL107_16040.mhtml [BL107_16040/syn]: 220 hits, 6 kept
+  ✓ SYNPCC7002_C0017.mhtml [SYNPCC7002_C0017/syn]: 213 hits, 4 kept
+  ✓ SYNW1780.mhtml [SYNW1780/syn]: 166 hits, 5 kept
+  ✓ SYNW1812.mhtml [SYNW1812/syn]: 4 hits, 1 kept
+  ✓ SynWH7803_0353.mhtml [SynWH7803_0353/syn]: 62 hits, 13 kept
+  ✓ SynWH7803_2236.html [SynWH7803_2236/syn]: 43 hits, 26 kept
 
 === summary ===
-files parsed: 8 seeds
-total hits: 624 | kept: 88 | dropped (taxonomy): 536
-  of dropped: 7 were MAG-flagged
+files parsed: 16 seeds
+total hits: 1418 | kept: 157 | dropped (taxonomy): 1261
+  of dropped: 12 were MAG-flagged
 kept-hit tier mix:
 tier
-cyano    88
+cyano    157
 
-paper rows (kept hits, pre-dedup): 189
-  unique DOIs: 3 | unique PMCIDs: 102
+paper rows (kept hits, pre-dedup): 305
+  unique DOIs: 13 | unique PMCIDs: 164
 
-top dropped genera: [{'genus': 'Staphylococcus', 'hit_count': 21}, {'genus': 'Clostridium', 'hit_count': 18}, {'genus': 'Pseudomonas', 'hit_count': 15}, {'genus': 'Listeria', 'hit_count': 8}, {'genus': 'Acidithiobacillus', 'hit_count': 8}, {'genus': 'Mycobacterium', 'hit_count': 8}, {'genus': 'Streptococcus', 'hit_count': 8}, {'genus': 'Escherichia', 'hit_count': 8}, {'genus': 'Arabidopsis', 'hit_count': 7}, {'genus': 'Oryza', 'hit_count': 7}, {'genus': 'Hydrogenovibrio', 'hit_count': 6}, {'genus': 'Salmonella', 'hit_count': 6}]
+top dropped genera: [{'genus': 'Staphylococcus', 'hit_count': 64}, {'genus': 'Streptococcus', 'hit_count': 48}, {'genus': 'Pseudomonas', 'hit_count': 44}, {'genus': 'Clostridium', 'hit_count': 40}, {'genus': 'Mycobacterium', 'hit_count': 31}, {'genus': 'Escherichia', 'hit_count': 25}, {'genus': 'Salmonella', 'hit_count': 23}, {'genus': 'Vibrio', 'hit_count': 20}, {'genus': 'Streptomyces', 'hit_count': 18}, {'genus': 'Bacillus', 'hit_count': 17}, {'genus': 'Acinetobacter', 'hit_count': 16}, {'genus': 'Listeria', 'hit_count': 16}]

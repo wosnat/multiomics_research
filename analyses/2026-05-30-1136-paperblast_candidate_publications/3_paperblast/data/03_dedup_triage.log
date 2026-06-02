@@ -1,20 +1,21 @@
-input paper rows (kept hits): 189
-distinct papers: 102
-distinct papers needing DOI resolution: 102 (of 102; 0 already had a DOI)
-already in KG: 8 | new candidates: 94
+input paper rows (kept hits): 305
+distinct papers: 164
+distinct papers needing DOI resolution: 164 (of 164; 0 already had a DOI)
+  idconv batch 1: +62 ids
+already in KG: 10 | new candidates: 154
 
-=== candidate shortlist: 94 new papers ===
+=== candidate shortlist: 154 new papers ===
 by priority tier:
 priority
-1    12
-2    82
+1     19
+2    135
   p1 = in-Cyanorak | p2 = other-cyano (pro/syn) | p3 = heterotroph
 by kind:
 kind
-other                   84
-omics                    5
-comparative_genomics     4
-characterization         1
-in_cyanorak: 12 | omics+comparative-genomics (score>=2): 9
-multi-seed (hit by >1 seed): 19
-resolved DOI: 94/94
+other                   140
+omics                     6
+comparative_genomics      5
+characterization          3
+in_cyanorak: 19 | omics+comparative-genomics (score>=2): 11
+multi-seed (hit by >1 seed): 33
+resolved DOI: 154/154

@@ -30,9 +30,13 @@ from __future__ import annotations
 
 import html
 import re
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pb_io import load_pages  # noqa: E402
 
 BASE = Path(__file__).resolve().parents[1]
 RESULTS = BASE / "results"
@@ -141,9 +145,9 @@ def keep_for_pool(tier: str, pool: str) -> bool:
     return False
 
 
-def parse_file(path: Path):
-    """Yield hit dicts: organism, genus, identity, coverage, papers[]."""
-    raw = path.read_text(encoding="utf-8", errors="replace")
+def parse_file(raw: str):
+    """Yield hit dicts: organism, genus, identity, coverage, papers[]. `raw` is
+    the page HTML (already decoded — mhtml handled upstream by pb_io)."""
     # split on each characterized-hit anchor: "...from <i>ORG</i><BR><a ...>NN% identity, NN% coverage</a><UL>...papers...</UL>"
     # iterate identity anchors; for each, look back for the nearest 'from <i>..</i>'
     hits = []
@@ -189,15 +193,14 @@ def main() -> int:
 
     hit_rows, paper_rows = [], []
     dropped = {}
-    files = [f for f in sorted(RESULTS.glob("*.html"))]
-    for f in files:
-        flat = flatten(f.read_text(encoding="utf-8", errors="replace"))
+    for f, raw in load_pages(RESULTS):
+        flat = flatten(raw)
         seed = query_id(flat, seeds, f.name)
         if seed is None:
             log(f"  ? {f.name}: no seed match — skipped")
             continue
         pool = seeds.loc[seeds["locus_tag"] == seed, "pool"].iloc[0]
-        hits = parse_file(f)
+        hits = parse_file(raw)
         for h in hits:
             is_mag = any(mk.lower() in h["organism"].lower() for mk in MAG_MARKERS)
             tier = tier_of(h["genus"])

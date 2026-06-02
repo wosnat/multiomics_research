@@ -1,9 +1,17 @@
 file,matched_pool,matched_sel_rank,matched_locus_tag,matched_by,n_hits,query
-NATL1_02111.html,pro,8.0,NATL1_02111,locus_tag,8,tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NA
-PMM1135.html,pro,3.0,PMM1135,locus_tag,18,tr|Q7V0W6|Q7V0W6_PROMP Possible high light inducible protein OS=Prochlorococcus marinus subsp. pastoris (strai
-PMM1404.html,pro,2.0,PMM1404,locus_tag,8,PMM1404 possible high light inducible protein
-PMT1742.html,pro,5.0,PMT9312_0549,locus_tag,119,tr|Q31BY5|Q31BY5_PROM9 Carboxysome shell protein CsoS1 OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 G
-PMT9312_0549.html,pro,5.0,PMT9312_0549,locus_tag,119,tr|Q31BY5|Q31BY5_PROM9 Carboxysome shell protein CsoS1 OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 G
-PMT9312_0550.html,pro,4.0,PMT9312_0550,locus_tag,250,sp|Q31BY4|RBL_PROM9 Ribulose bisphosphate carboxylase large chain OS=Prochlorococcus marinus (strain MIT 9312)
-PaperBLAST.html,,,,,250,tr|Q7TUG3|Q7TUG3_PROMP Global nitrogen regulator OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 /
-Pro0418.html,pro,7.0,Pro0418,locus_tag,84,Pro0418 Malate:quinone oxidoreductase
+prochlorococcus/NATL1_02111.html,pro,8,NATL1_02111,locus_tag,8,tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NA
+prochlorococcus/PMM1028.html,pro,1,PMM1028,locus_tag,1,tr|Q7V158|Q7V158_PROMP Conserved hypothetical OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NI
+prochlorococcus/PMM1135.html,pro,3,PMM1135,locus_tag,18,tr|Q7V0W6|Q7V0W6_PROMP Possible high light inducible protein OS=Prochlorococcus marinus subsp. pastoris (strai
+prochlorococcus/PMM1404.html,pro,2,PMM1404,locus_tag,8,PMM1404 possible high light inducible protein
+prochlorococcus/PMT1742.html,pro,6,PMT1742,locus_tag,189,sp|Q7TUP3|RL14_PROMM Large ribosomal subunit protein uL14 OS=Prochlorococcus marinus (strain MIT 9313) OX=7454
+prochlorococcus/PMT9312_0549.html,pro,5,PMT9312_0549,locus_tag,119,tr|Q31BY5|Q31BY5_PROM9 Carboxysome shell protein CsoS1 OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 G
+prochlorococcus/PMT9312_0550.html,pro,4,PMT9312_0550,locus_tag,250,sp|Q31BY4|RBL_PROM9 Ribulose bisphosphate carboxylase large chain OS=Prochlorococcus marinus (strain MIT 9312)
+prochlorococcus/Pro0418.html,pro,7,Pro0418,locus_tag,84,Pro0418 Malate:quinone oxidoreductase
+syn/BL107_07454.mhtml,syn,3,BL107_07454,locus_tag,76,BL107_07454 transcription antitermination protein NusG
+syn/BL107_11441.mhtml,syn,4,BL107_11441,locus_tag,14,UPI00005D423D (Q3AX38.1) from Bacteria
+syn/BL107_16040.mhtml,syn,5,BL107_16040,locus_tag,520,UPI0000E541E5 (Q064C0.1) from Synechococcus sp. BL107
+syn/SYNPCC7002_C0017.mhtml,syn,1,SYNPCC7002_C0017,locus_tag,216,UPI00016DCDEF (A0AA94IR61.1) from Cyanophyceae
+syn/SYNW1780.mhtml,syn,7,SYNW1780,locus_tag,176,sp|Q7U5C7|ARGB_PARMW Acetylglutamate kinase OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=argB P
+syn/SYNW1812.mhtml,syn,6,SYNW1812,locus_tag,5,tr|Q7U595|Q7U595_PARMW Nucleoside 2-deoxyribosyltransferase OS=Parasynechococcus marenigrum (strain WH8102) OX
+syn/SynWH7803_0353.mhtml,syn,8,SynWH7803_0353,locus_tag,66,SynWH7803_0353 Photosystem II manganese-stabilizing protein PsbO
+syn/SynWH7803_2236.html,syn,2,SynWH7803_2236,locus_tag,84,UPI00015251FC (A5GNZ7.1) from Synechococcus sp. (st= rain WH7803)

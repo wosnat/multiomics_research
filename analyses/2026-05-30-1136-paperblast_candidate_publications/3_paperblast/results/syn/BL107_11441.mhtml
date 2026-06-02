@@ -1,0 +1,1321 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://papers.genomics.lbl.gov/cgi-bin/litSearch.cgi?query=BL107_11441&Search=Search
+Subject: PaperBLAST
+Date: Tue, 2 Jun 2026 15:17:23 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--tFd4aqQHbXqjd3l7SBLCXB122Z3SG1jf1AQ1FqGF50----"
+
+
+------MultipartBoundary--tFd4aqQHbXqjd3l7SBLCXB122Z3SG1jf1AQ1FqGF50----
+Content-Type: text/html
+Content-ID: <frame-A7D3A04F4470CA8CC9474916E6548B50@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://papers.genomics.lbl.gov/cgi-bin/litSearch.cgi?query=BL107_11441&Search=Search
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" lang=3D"en-US" xml:lang=3D"en-US"><head><meta http-equiv=3D=
+"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"styleshe=
+et" type=3D"text/css" href=3D"cid:css-4c6f5abd-c051-46bb-bdc6-acaaf19bc59a@=
+mhtml.blink" />
+<title>PaperBLAST</title>
+<link href=3D"https://papers.genomics.lbl.gov/static/favicon.ico" rel=3D"sh=
+ortcut icon">
+
+
+
+</head>
+<body>
+<div style=3D"background-color: #40C0CB; display: block; position: absolute=
+; top: 0px; left: -1px;
+  width: 100%; padding: 0.25em; z-index: 400;">
+<h2 style=3D"margin: 0em;">
+<a href=3D"https://papers.genomics.lbl.gov/cgi-bin/litSearch.cgi" style=3D"=
+color: gold; font-family: 'Montserrat', sans-serif; font-style:italic;
+  text-shadow: 1px 1px 1px #000000; text-decoration: none;">
+PaperBLAST =E2=80=93 <small>Find papers about a protein or its homologs</sm=
+all>
+</a></h2></div>
+<p style=3D"margin: 0em;">&nbsp;</p>
+
+<h2>PaperBLAST</h2>
+
+
+
+<h3>PaperBLAST Hits for UPI00005D423D (Q3AX38.1) from Bacteria (122 a.a., M=
+LTGSDLLAK...)</h3><div style=3D"float:right; padding-left: 10px; width:25%;=
+ background-color: #EEEEEE; font-size: 95%;"><p style=3D"margin-top: 0.5em;=
+ margin-bottom: 0.5em;">Other sequence analysis tools:</p><p style=3D"margi=
+n-top: 0.5em; margin-bottom: 0.5em;">Find functional residues: <a href=3D"h=
+ttps://papers.genomics.lbl.gov/cgi-bin/sites.cgi?query=3D%3EUPI00005D423D%2=
+0%28Q3AX38.1%29%20from%20Bacteria%0AMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRL=
+NFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVP=
+VGAEDDEE" title=3D"Compare to proteins with known functional residues">Site=
+sBLAST</a>
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;">Search for <a hre=
+f=3D"http://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?seqinput=3D%3EUPI0=
+0005D423D%20%28Q3AX38.1%29%20from%20Bacteria%0AMLTGSDLLAKVKELGDVSKSDLVKACGY=
+VSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTI=
+KLGKKAIRLVPVGAEDDEE" title=3D"Compare your sequence to NCBI's Conserved Dom=
+ains Database">conserved domains</a>
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;">Find the <a href=
+=3D"https://fast.genomics.lbl.gov/cgi/bestHitUniprot.cgi?query=3D%3EUPI0000=
+5D423D%20%28Q3AX38.1%29%20from%20Bacteria%0AMLTGSDLLAKVKELGDVSKSDLVKACGYVST=
+KKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLG=
+KKAIRLVPVGAEDDEE" title=3D"See UniProt's annotation, the predicted structur=
+e, and protein families from InterPro">best match</a> in UniProt
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;">Compare to <a hre=
+f=3D"https://papers.genomics.lbl.gov/cgi-bin/pdbBlast.cgi?query=3D%3EUPI000=
+05D423D%20%28Q3AX38.1%29%20from%20Bacteria%0AMLTGSDLLAKVKELGDVSKSDLVKACGYVS=
+TKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKL=
+GKKAIRLVPVGAEDDEE" title=3D"Find similar proteins with known structures">pr=
+otein structures</a>
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;">Predict transmenb=
+rane helices: <a href=3D"https://fit.genomics.lbl.gov/cgi-bin/myPhobius.cgi=
+?name=3DUPI00005D423D%20%28Q3AX38.1%29%20from%20Bacteria&amp;seq=3DMLTGSDLL=
+AKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNL=
+LVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE" title=3D"Phobius predicts transmem=
+brane helices and signal peptides">Phobius</a>
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;">Predict protein l=
+ocalization: <a href=3D"https://papers.genomics.lbl.gov/cgi-bin/psortb.cgi?=
+type=3Dnegative&amp;name=3DUPI00005D423D%20%28Q3AX38.1%29%20from%20Bacteria=
+&amp;seq=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGI=
+GKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE" title=3D"PSORTb=
+ v3.0 for Gram-negative bacteria">PSORTb</a>
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;">Find homologs in =
+<a href=3D"https://fast.genomics.lbl.gov/cgi/findHomologs.cgi?seqDesc=3DUPI=
+00005D423D%20%28Q3AX38.1%29%20from%20Bacteria&amp;seq=3DMLTGSDLLAKVKELGDVSK=
+SDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLE=
+LEPGAEFTIKLGKKAIRLVPVGAEDDEE" title=3D"A representative genome for each gen=
+us of bacteria and archaea"><i>fast.genomics</i></a>
+</p><p style=3D"margin-top: 0.5em; margin-bottom: 0.5em;"><a name=3D"#fitne=
+ss" title=3D"Compare to bacterial and archaeal proteins that have mutant ph=
+enotypes">Fitness BLAST</a>: <span id=3D"fitblast_short">49% id. to <a href=
+=3D"https://fit.genomics.lbl.gov/cgi-bin/singleFit.cgi?orgId=3DSynE&amp;loc=
+usId=3DSynpcc7942_2255">Synpcc7942_2255</a> from Synechococcus elongatus PC=
+C 7942: <a title=3D"fitness -3.2 to 5.1" href=3D"https://fit.genomics.lbl.g=
+ov/cgi-bin/singleFit.cgi?orgId=3DSynE&amp;locusId=3DSynpcc7942_2255">strong=
+ phenotype</a>, <a title=3D"top cofitness 0.83" href=3D"https://fit.genomic=
+s.lbl.gov/cgi-bin/cofit.cgi?orgId=3DSynE&amp;locusId=3DSynpcc7942_2255">cof=
+it</a> (<a href=3D"https://fit.genomics.lbl.gov/cgi-bin/mySeqSearch.cgi?que=
+ry=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRK=
+LSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE" title=3D"View more hi=
+ts">more</a>)</span>
+</p></div>
+<p id=3D"showSequenceLink" style=3D"font-size:90%;"><a href=3D"https://pape=
+rs.genomics.lbl.gov/cgi-bin/litSearch.cgi?query=3DBL107_11441&amp;Search=3D=
+Search#">Show query sequence</a></p><p id=3D"querySequence" style=3D"font-f=
+amily: monospace; display:none; font-size:90%; padding-left: 2em;">&gt;UPI0=
+0005D423D (Q3AX38.1) from Bacteria<br>MLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGD=
+RLNFTAFYEALLEAKGVSLATGG<br>GAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKK=
+AIRLVPVGAEDD<br>EE</p>
+<p id=3D"searching" style=3D"display: none;">Running BLASTp...</p>
+
+<p>Found 14 similar proteins in the literature:</p>
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D1206903" title=3D"MicrobesOn=
+line">SYNW1518</a> conserved hypothetical protein from <i>Synechococcus sp.=
+ WH 8102</i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlig=
+n.cgi?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3DSYNW15=
+18&amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGG=
+AGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVI=
+MSS1206903" style=3D"font-family: sans-serif; font-size: smaller;" title=3D=
+"1:122/122 of query is similar to 1:123/123 of hit (E =3D 1e-45,  182 bits)=
+">82% identity, 99% coverage</a></p><ul style=3D"margin-top: 0em; margin-bo=
+ttom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"=
+"><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3209654">Examinati=
+on of microbial proteome preservation techniques applicable to autonomous e=
+nvironmental sample collection</a><br><small><a title=3D"Saito MA, Bulygin =
+VV, Moran DM, Taylor C, Scholin C.">Saito,</a> Frontiers in microbiology 20=
+11 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"=
+list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...0.48 0.09 0=
+.37 NP_898080 Possible phycobilisome linker polypeptide 1.08 0.79 1.40 2.28=
+ NP_897611 Hypothetical protein <b><span style=3D"color: red;">SYNW1518</sp=
+an></b> 2.15 101 0.37 1.39 NP_896409 Phycobilisome rod-core linker polypept=
+ide cpcG 1.08 1.39 0.00 0.81 NP_898278 Putative RND family outer membrane e=
+fflux protein 0.94 148 2.10 0.91 NP_898090 Phycobilisome linker polypeptide=
+...=E2=80=9D</li></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D1363725" title=3D"MicrobesOn=
+line">sync_0950</a> hypothetical protein from <i>Synechococcus sp. CC9311</=
+i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=
+=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3Dsync_0950&amp;se=
+q1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRK=
+LSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS136372=
+5" style=3D"font-family: sans-serif; font-size: smaller;" title=3D"1:120/12=
+2 of query is similar to 1:119/122 of hit (E =3D 2e-40,  165 bits)">72% ide=
+ntity, 98% coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: 0em=
+;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=
+=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2725496">Coastal strains of=
+ marine Synechococcus species exhibit increased tolerance to copper shock a=
+nd a distinctive transcriptional response relative to those of open-ocean s=
+trains</a><br><small><a title=3D"Stuart RK, Dupont CL, Johnson DA, Paulsen =
+IT, Palenik B.">Stuart,</a> Applied and environmental microbiology 2009 </s=
+mall><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-s=
+tyle-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...sync_1542 sync_00=
+59 sync_2224 sync_2274 sync_2872 sync_2789 sync_0271 <b><span style=3D"colo=
+r: red;">sync_0950</span></b> sync_1807 sync_2027 sync_2900 0.54 0.48 1.16 =
+0.52 0.41 1.18 0.84 1.12 0.44 0.59...=E2=80=9D</li></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D1207486" title=3D"MicrobesOn=
+line">SYNW2103</a> conserved hypothetical protein from <i>Synechococcus sp.=
+ WH 8102</i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlig=
+n.cgi?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3DSYNW21=
+03&amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGG=
+AGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVI=
+MSS1207486" style=3D"font-family: sans-serif; font-size: smaller;" title=3D=
+"1:122/122 of query is similar to 1:121/121 of hit (E =3D 4e-39,  160 bits)=
+">75% identity, 100% coverage</a></p><ul style=3D"margin-top: 0em; margin-b=
+ottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D=
+""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2725496">Coastal =
+strains of marine Synechococcus species exhibit increased tolerance to copp=
+er shock and a distinctive transcriptional response relative to those of op=
+en-ocean strains</a><br><small><a title=3D"Stuart RK, Dupont CL, Johnson DA=
+, Paulsen IT, Palenik B.">Stuart,</a> Applied and environmental microbiolog=
+y 2009 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=
+=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...SYNW130=
+3 SYNW2224 SYNW0058 SYNW0546 SYNW0521 SYNW2442 SYNW2375 SYNW0233 <b><span s=
+tyle=3D"color: red;">SYNW2103</span></b> SYNW1730 SYNW1778 SYNW2489 0.46 0.=
+59 0.62 0.72 0.62 0.97 0.74 0.44 0.42 0.77...=E2=80=9D</li></ul></li></ul><=
+p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D5427097" title=3D"MicrobesOn=
+line">cce_0453</a> putative transcriptional regulator AbrB from <i>Cyanothe=
+ce sp. ATCC 51142</i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin=
+/showAlign.cgi?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=
+=3Dcce_0453&amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAK=
+GVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;=
+acc2=3DVIMSS5427097" style=3D"font-family: sans-serif; font-size: smaller;"=
+ title=3D"2:122/122 of query is similar to 10:129/130 of hit (E =3D 3e-27, =
+ 120 bits)">50% identity, 93% coverage</a></p><ul style=3D"margin-top: 0em;=
+ margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"=
+" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5118933"=
+>Dinitrogenase-Driven Photobiological Hydrogen Production Combats Oxidative=
+ Stress in Cyanothece sp. Strain ATCC 51142</a><br><small><a title=3D"Sadle=
+r NC, Bernstein HC, Melnicki MR, Charania MA, Hill EA, Anderson LN, Monroe =
+ME, Smith RD, Beliaev AS, Wright AT.">Sadler,</a> Applied and environmental=
+ microbiology 2016 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em=
+;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...sp. PCC 6803 (45). The transcription regulator cyAbrB (<b><span style=
+=3D"color: red;">cce_0453</span></b>) was only probe labeled in the C-deple=
+ted experiments. This protein has been implicated in...=E2=80=9D</li></ul><=
+/li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a hre=
+f=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3457224">The AbrB2 autorep=
+ressor, expressed from an atypical promoter, represses the hydrogenase oper=
+on to regulate hydrogen production in Synechocystis strain PCC6803</a><br><=
+small><a title=3D"Dutheil J, Saenkham P, Sakr S, Leplat C, Ortega-Ramos M, =
+Bottin H, Cournac L, Cassier-Chauvat C, Chauvat F.">Dutheil,</a> Journal of=
+ bacteriology 2012 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em=
+;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...cyanobacteria are as follows: Cyanothece ATCC 51142 (<b><span style=
+=3D"color: red;">cce_0453</span></b>), Microcystis aeruginosa NIES-843 (mae=
+_35130), Nostoc PCC 7120 (all2080), Anabaena variabilis ATCC...=E2=80=9D</l=
+i></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D12855" title=3D"MicrobesOnli=
+ne">sll0822</a> unknown protein from <i>Synechocystis sp. PCC 6803</i><br><=
+a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=3DUPI0=
+0005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3Dsll0822&amp;seq1=3DMLTG=
+SDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQG=
+NGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS12855" style=3D=
+"font-family: sans-serif; font-size: smaller;" title=3D"2:122/122 of query =
+is similar to 10:129/129 of hit (E =3D 5e-27,  120 bits)">52% identity, 94%=
+ coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li sty=
+le=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http:/=
+/www.ncbi.nlm.nih.gov/pmc/articles/PMC11368403">CyAbrB2 is a nucleoid-assoc=
+iated protein in <i>Synechocystis</i> controlling hydrogenase expression du=
+ring fermentation</a><br><small><a title=3D"Kariyazono R, Osanai T.">Kariya=
+zono,</a> eLife 2024 </small><ul style=3D"margin-top: 0em; margin-bottom: 0=
+em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=
+=80=9C...( Osanai et al., 2005 ; Osanai et al., 2011 ), while transcription=
+ factor cyAbrB2 (<b><span style=3D"color: red;">Sll0822</span></b>) repress=
+es them ( Dutheil et al., 2012 ; Leplat et al., 2013 ). Positive regulators=
+ for the hox operon include LexA (Sll1626) and cyAbrB1 (Sll0359) ( Oliveira=
+ and Lindblad, 2008...=E2=80=9D</li><li style=3D"list-style-type: none;" ma=
+rgin-left:=3D"" 6em;=3D"">=E2=80=9C...; Kariyazono and Osanai, 2022 ). Disr=
+uption and epitope tagging of cyabrb1 (sll0359) and cyabrb2 (<b><span style=
+=3D"color: red;">sll0822</span></b>) were performed by homologous double re=
+combination between the genome and PCR fragment ( Williams, 1988 ). The res=
+ulting transformants were selected using three passages on BG-11 plates con=
+taining 5 g/mL...=E2=80=9D</li></ul></li><li style=3D"list-style-type: none=
+;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/a=
+rticles/PMC10243305">Deep Proteogenomics of a Photosynthetic Cyanobacterium=
+</a><br><small><a title=3D"Sp=C3=A4t P, Krauspe V, Hess WR, Ma=C4=8Dek B, N=
+alpas N.">Sp=C3=A4t,</a> Journal of proteome research 2023 </small><ul styl=
+e=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: no=
+ne;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Representation of phosphorylat=
+ed site positions within the transcriptional regulators cyAbrB1 (Sll0359; t=
+op panel) and cyAbrB2 (<b><span style=3D"color: red;">Sll0822</span></b>; b=
+ottom panel). Each phosphorylation site is colored based on the condition i=
+t was quantified in (e.g., resuscitation from chlorosis WT, grad-seq). We r=
+anked proteins based on their number of phosphorylation...=E2=80=9D</li><li=
+ style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...N=
+otable examples of condition-specific phosphorylation included the AbrB-lik=
+e transcriptional regulator proteins, cyAbrB1 (Sll0359) and cyAbrB2 (<b><sp=
+an style=3D"color: red;">Sll0822</span></b>), which were found phosphorylat=
+ed nearly exclusively during resuscitation from chlorosis ( Figure 4 e). Ot=
+her examples of highly phosphorylated proteins were the nitrogen regulatory=
+ P II protein (GlnB, Ssl0707, several...=E2=80=9D</li></ul></li><li style=
+=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://w=
+ww.ncbi.nlm.nih.gov/pmc/articles/PMC10094980">Site-2 Protease Slr1821 Regul=
+ates Carbon/Nitrogen Homeostasis during Ammonium Stress Acclimation in Cyan=
+obacterium <i>Synechocystis</i> sp. PCC 6803</a><br><small><a title=3D"Lin =
+S, Li S, Ouyang T, Chen G.">Lin,</a> International journal of molecular sci=
+ences 2023 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li s=
+tyle=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...kno=
+ckout of slr1821 . Similar compensation was also observed in the transcript=
+ional regulator CyAbrB2 gene <b><span style=3D"color: red;">sll0822</span><=
+/b> . CyAbrB2 was involved in coordination of carbon and nitrogen metabolis=
+m, essential for the genes activation upon a shift to nitrogen starvation o=
+r photomixotrophic conditions; thus, it was suggested to...=E2=80=9D</li><l=
+i style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...=
+2016 57 1309 1318 10.1093/pcp/pcw079 27095737 62. Ishii A. Hihara Y. An Abr=
+B-like transcriptional regulator, <b><span style=3D"color: red;">Sll0822</s=
+pan></b>, is essential for the activation of nitrogen-regulated genes in Sy=
+nechocystis sp. PCC 6803 Plant Physiol. 2008 148 660 670 10.1104/pp.108.123=
+505 18667724 PMC2528100 63. Yamauchi Y. Kaniya Y. Kaneko Y. Hihara...=E2=80=
+=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6e=
+m;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC9241938">Exp=
+ression of the Cyanobacterial F&lt;sub&gt;o&lt;/sub&gt;F&lt;sub&gt;1&lt;/su=
+b&gt; ATP Synthase Regulator Atp=CE=98 Depends on Small DNA-Binding Protein=
+s and Differential mRNA Stability</a><br><small><a title=3D"Song K, Hageman=
+n M, Georg J, Maa=C3=9F S, Becher D, Hess WR.">Song,</a> Microbiology spect=
+rum 2022 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li sty=
+le=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...fragm=
+ent (Fig. S3). The mass spectrometry analysis identified the proteins cyAbr=
+B1 and cyAbrB2 (Sll0359 and <b><span style=3D"color: red;">Sll0822</span></=
+b> [ 22 , 23 ]). Hence, two particular DNA-binding proteins were enriched i=
+n this size class (theoretical masses of 17.22 and 13.96kDa) in the P atpT6=
+6 -5UTR sample, while the...=E2=80=9D</li><li style=3D"list-style-type: non=
+e;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...these proteins were not conside=
+red further. However, the cyanobacterial AbrB-like transcriptional regulato=
+rs (cyAbrBs) Sll0359 and <b><span style=3D"color: red;">Sll0822</span></b> =
+have previously been reported to play important physiological roles in Syne=
+chocystis 6803. In particular, they function in carbon and nitrogen metabol=
+ism and, interestingly, in regulating the switch between day and...=E2=80=
+=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6e=
+m;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC7766704">Str=
+uctural Determinants and Their Role in Cyanobacterial Morphogenesis</a><br>=
+<small><a title=3D"Springstein BL, N=C3=BCrnberg DJ, Weiss GL, Pilhofer M, =
+Stucken K.">Springstein,</a> Life (Basel, Switzerland) 2020 </small><ul sty=
+le=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: n=
+one;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...been linked to cell density s=
+ensing [ 149 ]. In Synechocystis , two transcription factors (<b><span styl=
+e=3D"color: red;">Sll0822</span></b> and Sll0359), which regulate ftsZ and =
+ftsQ transcription, belong to the cyAbrB clade B of transcriptional regulat=
+ors. Deletion of <b><span style=3D"color: red;">sll0822</span></b> results =
+in a cell division defect with swollen cells [...=E2=80=9D</li><li style=3D=
+"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Y. Kaniya =
+Y. Kaneko Y. Hihara Y. Physiological roles of the cyAbrB transcriptional re=
+gulator pair <b><span style=3D"color: red;">Sll0822</span></b> and Sll0359 =
+in synechocystis sp. strain PCC 6803 J. Bacteriol. 2011 193 3702 3709 10.11=
+28/JB.00284-11 21642457 PMC3147526 160. He D. Xu X. CalA, a cyAbrB protein,=
+ binds to the upstream...=E2=80=9D</li></ul></li><li style=3D"list-style-ty=
+pe: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.g=
+ov/pmc/articles/PMC7301839">Transcriptome Analysis Reveals IsiA-Regulatory =
+Mechanisms Underlying Iron Depletion and Oxidative-Stress Acclimation in <i=
+>Synechocystis</i> sp. Strain PCC 6803</a><br><small><a title=3D"Cheng Y, Z=
+hang T, Wang L, Chen W.">Cheng,</a> Applied and environmental microbiology =
+2020 </small> <small>(<a title=3D"Applied and environmental microbiology is=
+ not open access, sorry">secret</a>)</small></li><li style=3D"list-style-ty=
+pe: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.g=
+ov/pmc/articles/PMC8042125">Carbon/nitrogen homeostasis control in cyanobac=
+teria</a><br><small><a title=3D"Forchhammer K, Selim KA.">Forchhammer,</a> =
+FEMS microbiology reviews 2020 </small><ul style=3D"margin-top: 0em; margin=
+-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=
+=3D"">=E2=80=9C...reactions, the expression of CCM-related genes is de-repr=
+essed resulting in high CCM activity. The CyAbrB2 (<b><span style=3D"color:=
+ red;">sll0822</span></b>) factor was found to be complementary to CmpR and=
+ NdhR transcription factors, through controlling several CCM-related genes =
+positively such as the cmpABCB , sbtAB and NDH-I 3 ( ndhF3/ndhD3/cupA )...=
+=E2=80=9D</li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=
+=3D"">=E2=80=9C...Y , Kaneko Y et al . Physiological roles of the cyAbrB tr=
+anscriptional regulator pair <b><span style=3D"color: red;">Sll0822</span><=
+/b> and Sll0359 in Synechocystis sp. strain PCC 6803 . J Bacteriol . 2011 ;=
+ 193 : 3702 9 . 21642457 10.1128/JB.00284-11 PMC3147526 Zalutskaya Z , Khar=
+atyan N , Forchhammer K...=E2=80=9D</li></ul></li><li style=3D"list-style-t=
+ype: none;" margin-left:=3D"" 6em;=3D""><a href=3D"https://doi.org/10.1002/=
+bit.26842">Effects of inactivation of the cyAbrB2 transcription factor toge=
+ther with glycogen synthesis on cellular metabolism and free fatty acid pro=
+duction in the cyanobacterium Synechocystis sp. PCC 6803</a><br><small><a t=
+itle=3D"Kodama Y, Kawahara A, Miyagi A, Ishikawa T, Kawai-Yamada M, Kaneko =
+Y, Takimura Y, Hihara Y.">Kodama,</a> Biotechnology and bioengineering 2018=
+ (<a href=3D"http://www.ncbi.nlm.nih.gov/pubmed/30252943">PubMed</a>)</smal=
+l><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-styl=
+e-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Corporation, Wakayam=
+a, Japan Deletion of the cyAbrB2 (<b><span style=3D"color: red;">Sll0822</s=
+pan></b>) transcription factor in Synechocystis sp. PCC 6803 Correspondence=
+ Yukako Hihara, Graduate School...=E2=80=9D</li><li style=3D"list-style-typ=
+e: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...&amp; Hihara, 2008). Char=
+acterization of the cyabrB2 cyAbrB2 (<b><span style=3D"color: red;">Sll0822=
+</span></b>) in Synechocystis sp. PCC 6803 is a member of the disrupted (cy=
+abrB2) mutant has revealed...=E2=80=9D</li></ul></li><li style=3D"list-styl=
+e-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"https://papers.genomi=
+cs.lbl.gov/cgi-bin/litSearch.cgi?more=3DVIMSS12855">More</a></li></ul><p></=
+p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D6874457" title=3D"MicrobesOn=
+line">Npun_R2896</a> hypothetical protein from <i>Nostoc punctiforme</i><br=
+><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=3DUP=
+I00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3DNpun_R2896&amp;seq1=
+=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLS=
+YTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS6874457"=
+ style=3D"font-family: sans-serif; font-size: smaller;" title=3D"2:121/122 =
+of query is similar to 10:128/137 of hit (E =3D 9e-26,  116 bits)">51% iden=
+tity, 88% coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: 0em;=
+"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=
+=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3457224">The AbrB2 autorepr=
+essor, expressed from an atypical promoter, represses the hydrogenase opero=
+n to regulate hydrogen production in Synechocystis strain PCC6803</a><br><s=
+mall><a title=3D"Dutheil J, Saenkham P, Sakr S, Leplat C, Ortega-Ramos M, B=
+ottin H, Cournac L, Cassier-Chauvat C, Chauvat F.">Dutheil,</a> Journal of =
+bacteriology 2012 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;=
+"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...ATCC 29413 (ava_3125), Nostoc punctiforme PCC 73102 (<b><span style=
+=3D"color: red;">npun_R2896</span></b>), and Trichodesmium erythraeum ISM10=
+1 (tery_1859). The positions of the conserved extended 10...=E2=80=9D</li><=
+/ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><=
+a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3126725">Transcript a=
+nalysis of the extended hyp-operon in the cyanobacteria Nostoc sp. strain P=
+CC 7120 and Nostoc punctiforme ATCC 29133</a><br><small><a title=3D"Holmqvi=
+st M, Lindberg P, Agervald A, Stensj=C3=B6 K, Lindblad P.">Holmqvist,</a> B=
+MC research notes 2011 </small><ul style=3D"margin-top: 0em; margin-bottom:=
+ 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=
+=80=9C...the identified peptides were CalA (encoded by Npun_R5944 , alr0946=
+ ) and CalB (encoded by <b><span style=3D"color: red;">Npun_R2896</span></b=
+> , all2080 ). The rest of the identified peptides, present in both negativ=
+e controls and samples, were either from unspecific binding, e.g. phycobili=
+some linker polypeptide, or artifacts from the experimental...=E2=80=9D</li=
+></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D1050782" title=3D"MicrobesOn=
+line">Ava_3125</a> Transcriptional regulator AbrB from <i>Anabaena variabil=
+is ATCC 29413</i><br><a href=3D"http://www.microbesonline.org/cgi-bin/fetch=
+Locus.cgi?locus=3D164433" title=3D"MicrobesOnline">all2080</a> hypothetical=
+ protein from <i>Nostoc sp. PCC 7120</i><br><a href=3D"https://papers.genom=
+ics.lbl.gov/cgi-bin/showAlign.cgi?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%=
+20Bacteria&amp;def2=3DAva_3125&amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKK=
+DGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKK=
+AIRLVPVGAEDDEE&amp;acc2=3DVIMSS1050782" style=3D"font-family: sans-serif; f=
+ont-size: smaller;" title=3D"2:121/122 of query is similar to 10:128/137 of=
+ hit (E =3D 1e-25,  115 bits)">49% identity, 88% coverage</a></p><ul style=
+=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: non=
+e;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/=
+articles/PMC3457224">The AbrB2 autorepressor, expressed from an atypical pr=
+omoter, represses the hydrogenase operon to regulate hydrogen production in=
+ Synechocystis strain PCC6803</a><br><small><a title=3D"Dutheil J, Saenkham=
+ P, Sakr S, Leplat C, Ortega-Ramos M, Bottin H, Cournac L, Cassier-Chauvat =
+C, Chauvat F.">Dutheil,</a> Journal of bacteriology 2012 </small><ul style=
+=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: non=
+e;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...PCC 7120 (all2080), Anabaena va=
+riabilis ATCC 29413 (<b><span style=3D"color: red;">ava_3125</span></b>), N=
+ostoc punctiforme PCC 73102 (npun_R2896), and Trichodesmium erythraeum ISM1=
+01 (tery_1859). The...=E2=80=9D</li></ul></li><li style=3D"list-style-type:=
+ none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/=
+pmc/articles/PMC12282138">Regulatory networks of FUR and NtcA are intertwin=
+ed by transcriptional regulators, two-component systems, serine/threonine k=
+inases, and sigma factors in &lt;i&gt;Anabaena&lt;/i&gt; sp. PCC 7120</a><b=
+r><small><a title=3D"Gu=C3=ADo J, Peleato ML, Fillat MF, Sevilla E.">Gu=C3=
+=ADo,</a> mSystems 2025 </small><ul style=3D"margin-top: 0em; margin-bottom=
+: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=
+=E2=80=9C...description Fold change EMSA FurA c Transcriptional regulators =
+all1651 all1651 ; transcriptional regulator 3.4 + <b><span style=3D"color: =
+red;">all2080</span></b> calB ; AbrB family transcriptional regulator 2.9 +=
+ all3903 all3903 ; ArsR family transcriptional regulator 1.5 + alr0946 calA=
+ ; AbrB family transcriptional regulator 3.1 Two-component systems all0129 =
+rpaA ;...=E2=80=9D</li><li style=3D"list-style-type: none;" margin-left:=3D=
+"" 6em;=3D"">=E2=80=9C...FurB c FurC c NtcA c Transcriptional regulators al=
+l1651 all1651 ; transcriptional regulator A A <b><span style=3D"color: red;=
+">all2080</span></b> calB ; AbrB family transcriptional regulator A A all39=
+03 all3903 ; ArsR family transcriptional regulator R all7621 smtB ; transcr=
+iptional repressor (zinc) R all0345 all0345 ; transcriptional regulator A a=
+ll7016...=E2=80=9D</li></ul></li><li style=3D"list-style-type: none;" margi=
+n-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/=
+PMC7290344">The First Proteomics Study of <i>Nostoc</i> sp. PCC 7120 Expose=
+d to Cyanotoxin BMAA under Nitrogen Starvation</a><br><small><a title=3D"Ko=
+ksharova OA, Butenko IO, Pobeguts OV, Safronova NA, Govorun VM.">Koksharova=
+,</a> Toxins 2020 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;=
+"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...), is on the top of the same coexpressed gene list as the all2375 and=
+ <b><span style=3D"color: red;">all2080</span></b> genes, which encode the =
+identified downregulated hypothetical proteins ( http://alcodb.jp/cyano/PCC=
+7120/all2319/list ) ( Supplementary Tables S2 and S3 ). The coexpression of=
+ these three genes and similar regulation of their protein...=E2=80=9D</li>=
+<li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C.=
+..the PII regulatory protein may have two more uncharacterized functional p=
+artners (corresponding genes all2375 and <b><span style=3D"color: red;">all=
+2080</span></b> ). These two proteins could be used as new targets for futu=
+re experimental studies. Summarizing the above, we can note that BMAA influ=
+ences the regulation of the key regulatory protein...=E2=80=9D</li></ul></l=
+i><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=
+=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3457224">The AbrB2 autorepr=
+essor, expressed from an atypical promoter, represses the hydrogenase opero=
+n to regulate hydrogen production in Synechocystis strain PCC6803</a><br><s=
+mall><a title=3D"Dutheil J, Saenkham P, Sakr S, Leplat C, Ortega-Ramos M, B=
+ottin H, Cournac L, Cassier-Chauvat C, Chauvat F.">Dutheil,</a> Journal of =
+bacteriology 2012 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;=
+"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...aeruginosa NIES-843 (mae_35130), Nostoc PCC 7120 (<b><span style=3D"c=
+olor: red;">all2080</span></b>), Anabaena variabilis ATCC 29413 (ava_3125),=
+ Nostoc punctiforme PCC 73102 (npun_R2896), and...=E2=80=9D</li></ul></li><=
+li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"=
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3126725">Transcript analysis of=
+ the extended hyp-operon in the cyanobacteria Nostoc sp. strain PCC 7120 an=
+d Nostoc punctiforme ATCC 29133</a><br><small><a title=3D"Holmqvist M, Lind=
+berg P, Agervald A, Stensj=C3=B6 K, Lindblad P.">Holmqvist,</a> BMC researc=
+h notes 2011 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li=
+ style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...p=
+eptides were CalA (encoded by Npun_R5944 , alr0946 ) and CalB (encoded by N=
+pun_R2896 , <b><span style=3D"color: red;">all2080</span></b> ). The rest o=
+f the identified peptides, present in both negative controls and samples, w=
+ere either from unspecific binding, e.g. phycobilisome linker polypeptide, =
+or artifacts from the experimental procedure, e.g....=E2=80=9D</li></ul></l=
+i><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=
+=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3141437">Genome fluctuation=
+s in cyanobacteria reflect evolutionary, developmental and adaptive traits<=
+/a><br><small><a title=3D"Larsson J, Nylander JA, Bergman B.">Larsson,</a> =
+BMC evolutionary biology 2011 </small><ul style=3D"margin-top: 0em; margin-=
+bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=
+=3D"">=E2=80=9C...which we term Cya1043 and Cya1555, are represented in all=
+ 58 genomes (corresponding to genes <b><span style=3D"color: red;">all2080<=
+/span></b> and all0476 in Nostoc sp. PCC 7120, respectively). Cya1043 corre=
+sponds to a AbrB family transcriptional regulator, shown to be involved in =
+triggering a number of physiological processes in cyanobacteria, such...=E2=
+=80=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D""=
+ 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2813017">=
+CalA, a cyanobacterial AbrB protein, interacts with the upstream region of =
+hypC and acts as a repressor of its transcription in the cyanobacterium Nos=
+toc sp. strain PCC 7120</a><br><small><a title=3D"Agervald A, Zhang X, Sten=
+sj=C3=B6 K, Devine E, Lindblad P.">Agervald,</a> Applied and environmental =
+microbiology 2010 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;=
+"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...OF THE NOSTOC PCC 7120 hypC BY CalA 887 <b><span style=3D"color: red;=
+">All2080</span></b> (CalB), is also annotated as a hypothetical protein, b=
+ut slightly shorter, 137 aa, truncated in the last...=E2=80=9D</li></ul></l=
+i></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D2184875" title=3D"MicrobesOn=
+line">Tery_1859</a> transcriptional regulator AbrB from <i>Trichodesmium er=
+ythraeum IMS101</i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/s=
+howAlign.cgi?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=
+=3DTery_1859&amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEA=
+KGVSLATGGGAGIGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp=
+;acc2=3DVIMSS2184875" style=3D"font-family: sans-serif; font-size: smaller;=
+" title=3D"2:115/122 of query is similar to 10:122/140 of hit (E =3D 1e-24,=
+  112 bits)">50% identity, 81% coverage</a></p><ul style=3D"margin-top: 0em=
+; margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D=
+"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3457224=
+">The AbrB2 autorepressor, expressed from an atypical promoter, represses t=
+he hydrogenase operon to regulate hydrogen production in Synechocystis stra=
+in PCC6803</a><br><small><a title=3D"Dutheil J, Saenkham P, Sakr S, Leplat =
+C, Ortega-Ramos M, Bottin H, Cournac L, Cassier-Chauvat C, Chauvat F.">Duth=
+eil,</a> Journal of bacteriology 2012 </small><ul style=3D"margin-top: 0em;=
+ margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"=
+" 6em;=3D"">=E2=80=9C...PCC 73102 (npun_R2896), and Trichodesmium erythraeu=
+m ISM101 (<b><span style=3D"color: red;">tery_1859</span></b>). The positio=
+ns of the conserved extended 10 promoter element and of the nonconserved...=
+=E2=80=9D</li></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D5429917" title=3D"MicrobesOn=
+line">cce_3242</a> hypothetical protein from <i>Cyanothece sp. ATCC 51142</=
+i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=
+=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3Dcce_3242&amp;seq=
+1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKL=
+SYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS5429917=
+" style=3D"font-family: sans-serif; font-size: smaller;" title=3D"2:121/122=
+ of query is similar to 34:151/153 of hit (E =3D 2e-21,  102 bits)">46% ide=
+ntity, 78% coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: 0em=
+;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=
+=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3568600">Proteome analyses =
+of strains ATCC 51142 and PCC 7822 of the diazotrophic cyanobacterium Cyano=
+thece sp. under culture conditions resulting in enhanced H=E2=82=82 product=
+ion</a><br><small><a title=3D"Aryal UK, Callister SJ, Mishra S, Zhang X, Sh=
+utthanandan JI, Angel TE, Shukla AK, Monroe ME, Moore RJ, Koppenaal DW, Smi=
+th RD, Sherman L.">Aryal,</a> Applied and environmental microbiology 2013 <=
+/small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list=
+-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...(PEP) carboxyla=
+se (Ppc), PEP carboxykinase, or malic oxidoreductase (<b><span style=3D"col=
+or: red;">cce_3242</span></b>) did not change in the presence of glyc- Febr=
+uary 2013 Volume 79 Number 4 erol...=E2=80=9D</li></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D12239" title=3D"MicrobesOnli=
+ne">sll0359</a> unknown protein from <i>Synechocystis sp. PCC 6803</i><br><=
+a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=3DUPI0=
+0005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3Dsll0359&amp;seq1=3DMLTG=
+SDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQG=
+NGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS12239" style=3D=
+"font-family: sans-serif; font-size: smaller;" title=3D"2:122/122 of query =
+is similar to 35:153/155 of hit (E =3D 9e-21, 99.8 bits)">46% identity, 78%=
+ coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li sty=
+le=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"https:=
+//doi.org/10.2323/jgam.2024.01.001">CRISPRi knockdown of the cyabrB1 gene i=
+nduces the divergently transcribed icfG and sll1783 operons related to carb=
+on metabolism in the cyanobacterium Synechocystis sp. PCC 6803</a><br><smal=
+l><a title=3D"Hishida A, Shirai R, Higo A, Matsutani M, Nimura-Matsune K, T=
+akahashi T, Watanabe S, Ehira S, Hihara Y.">Hishida,</a> The Journal of gen=
+eral and applied microbiology 2024 (<a href=3D"http://www.ncbi.nlm.nih.gov/=
+pubmed/38267064">PubMed</a>)</small><ul style=3D"margin-top: 0em; margin-bo=
+ttom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"=
+">=E2=80=9C...regulated by cyAbrBs. In this study, we investigated the func=
+tion of the essential gene cyabrB1 (<b><span style=3D"color: red;">sll0359<=
+/span></b>) in Synechocystis sp. PCC 6803 by using CRISPR interference tech=
+nology. The conditional knockdown of cyabrB1 caused increases of cyAbrB2 tr=
+anscript and protein levels. However, the effect of cyabrB1 knockdown on...=
+=E2=80=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=
+=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1136=
+8403">CyAbrB2 is a nucleoid-associated protein in <i>Synechocystis</i> cont=
+rolling hydrogenase expression during fermentation</a><br><small><a title=
+=3D"Kariyazono R, Osanai T.">Kariyazono,</a> eLife 2024 </small><ul style=
+=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: non=
+e;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...et al., 2013 ). Positive regula=
+tors for the hox operon include LexA (Sll1626) and cyAbrB1 (<b><span style=
+=3D"color: red;">Sll0359</span></b>) ( Oliveira and Lindblad, 2008 ; Guteku=
+nst et al., 2005 ; Oliveira and Lindblad, 2005 ). SigE, an alternative sigm=
+a factor, controls the expression of genes involved in glycogen catabolism.=
+..=E2=80=9D</li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=
+=3D"">=E2=80=9C...et al., 2005 ; Kariyazono and Osanai, 2022 ). Disruption =
+and epitope tagging of cyabrb1 (<b><span style=3D"color: red;">sll0359</spa=
+n></b>) and cyabrb2 (sll0822) were performed by homologous double recombina=
+tion between the genome and PCR fragment ( Williams, 1988 ). The resulting =
+transformants were selected using three passages on BG-11 plates...=E2=80=
+=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6e=
+m;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC10243305">De=
+ep Proteogenomics of a Photosynthetic Cyanobacterium</a><br><small><a title=
+=3D"Sp=C3=A4t P, Krauspe V, Hess WR, Ma=C4=8Dek B, Nalpas N.">Sp=C3=A4t,</a=
+> Journal of proteome research 2023 </small><ul style=3D"margin-top: 0em; m=
+argin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" =
+6em;=3D"">=E2=80=9C...phosphorylated sites per protein. (e) Representation =
+of phosphorylated site positions within the transcriptional regulators cyAb=
+rB1 (<b><span style=3D"color: red;">Sll0359</span></b>; top panel) and cyAb=
+rB2 (Sll0822; bottom panel). Each phosphorylation site is colored based on =
+the condition it was quantified in (e.g., resuscitation from chlorosis WT, =
+grad-seq). We ranked proteins based...=E2=80=9D</li><li style=3D"list-style=
+-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Table S4d ). Notable =
+examples of condition-specific phosphorylation included the AbrB-like trans=
+criptional regulator proteins, cyAbrB1 (<b><span style=3D"color: red;">Sll0=
+359</span></b>) and cyAbrB2 (Sll0822), which were found phosphorylated near=
+ly exclusively during resuscitation from chlorosis ( Figure 4 e). Other exa=
+mples of highly phosphorylated proteins were the nitrogen regulatory P II p=
+rotein...=E2=80=9D</li></ul></li><li style=3D"list-style-type: none;" margi=
+n-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/=
+PMC9241938">Expression of the Cyanobacterial F&lt;sub&gt;o&lt;/sub&gt;F&lt;=
+sub&gt;1&lt;/sub&gt; ATP Synthase Regulator Atp=CE=98 Depends on Small DNA-=
+Binding Proteins and Differential mRNA Stability</a><br><small><a title=3D"=
+Song K, Hagemann M, Georg J, Maa=C3=9F S, Becher D, Hess WR.">Song,</a> Mic=
+robiology spectrum 2022 </small><ul style=3D"margin-top: 0em; margin-bottom=
+: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=
+=E2=80=9C...the 5UTR fragment (Fig. S3). The mass spectrometry analysis ide=
+ntified the proteins cyAbrB1 and cyAbrB2 (<b><span style=3D"color: red;">Sl=
+l0359</span></b> and Sll0822 [ 22 , 23 ]). Hence, two particular DNA-bindin=
+g proteins were enriched in this size class (theoretical masses of 17.22 an=
+d 13.96kDa) in the P atpT66 -5UTR sample,...=E2=80=9D</li><li style=3D"list=
+-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...transcriptional=
+ regulators, these proteins were not considered further. However, the cyano=
+bacterial AbrB-like transcriptional regulators (cyAbrBs) <b><span style=3D"=
+color: red;">Sll0359</span></b> and Sll0822 have previously been reported t=
+o play important physiological roles in Synechocystis 6803. In particular, =
+they function in carbon and nitrogen metabolism and, interestingly, in regu=
+lating the switch between...=E2=80=9D</li></ul></li><li style=3D"list-style=
+-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.ni=
+h.gov/pmc/articles/PMC7766704">Structural Determinants and Their Role in Cy=
+anobacterial Morphogenesis</a><br><small><a title=3D"Springstein BL, N=C3=
+=BCrnberg DJ, Weiss GL, Pilhofer M, Stucken K.">Springstein,</a> Life (Base=
+l, Switzerland) 2020 </small><ul style=3D"margin-top: 0em; margin-bottom: 0=
+em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=
+=80=9C...to cell density sensing [ 149 ]. In Synechocystis , two transcript=
+ion factors (Sll0822 and <b><span style=3D"color: red;">Sll0359</span></b>)=
+, which regulate ftsZ and ftsQ transcription, belong to the cyAbrB clade B =
+of transcriptional regulators. Deletion of sll0822 results in a cell divisi=
+on defect with swollen cells [ 159 ],...=E2=80=9D</li><li style=3D"list-sty=
+le-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Y. Kaneko Y. Hihara=
+ Y. Physiological roles of the cyAbrB transcriptional regulator pair Sll082=
+2 and <b><span style=3D"color: red;">Sll0359</span></b> in synechocystis sp=
+. strain PCC 6803 J. Bacteriol. 2011 193 3702 3709 10.1128/JB.00284-11 2164=
+2457 PMC3147526 160. He D. Xu X. CalA, a cyAbrB protein, binds to the upstr=
+eam region of...=E2=80=9D</li></ul></li><li style=3D"list-style-type: none;=
+" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/ar=
+ticles/PMC4264147">Advances in the function and regulation of hydrogenase i=
+n the cyanobacterium Synechocystis PCC6803</a><br><small><a title=3D"Cassie=
+r-Chauvat C, Veaudor T, Chauvat F.">Cassier-Chauvat,</a> International jour=
+nal of molecular sciences 2014 </small><ul style=3D"margin-top: 0em; margin=
+-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=
+=3D"">=E2=80=9C...2 ); two positively acting regulators, LexA (Sll1626) [ 2=
+2 , 23 ] and AbrB1 (<b><span style=3D"color: red;">Sll0359</span></b>) [ 30=
+ ], and one repressor AbrB2 (Sll0822) [ 16 ]. Figure 2 Schematic representa=
+tion of the redox (electron transfer) metabolism of Synechocystis growing i=
+n photoautotrophic conditions. The electron transfers...=E2=80=9D</li><li s=
+tyle=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Y. =
+Kaneko Y. Hihara Y. Physiological roles of the cyAbrB transcriptional regul=
+ator pair Sll0822 and <b><span style=3D"color: red;">Sll0359</span></b> in =
+Synechocystis sp. strain PCC 6803 J. Bacteriol. 2011 193 3702 3709 21642457=
+ 10.1128/JB.00284-11 PMC3147526 37. Leplat C. Champeimont R. Saenkham P. Ca=
+ssier-Chauvat C. Aude J.-C. Chauvat F. Genome-wide transcriptome...=E2=80=
+=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6e=
+m;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4284466">The=
+ Effects of Dark Incubation on Cellular Metabolism of the Wild Type Cyanoba=
+cterium Synechocystis sp. PCC 6803 and a Mutant Lacking the Transcriptional=
+ Regulator cyAbrB2</a><br><small><a title=3D"Hanai M, Sato Y, Miyagi A, Kaw=
+ai-Yamada M, Tanaka K, Kaneko Y, Nishiyama Y, Hihara Y.">Hanai,</a> Life (B=
+asel, Switzerland) 2014 </small><ul style=3D"margin-top: 0em; margin-bottom=
+: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=
+=E2=80=9C...the genome of the unicellular cyanobacterium Synechocystis sp. =
+PCC 6803, has two cyAbrB genes, cyabrB1 (<b><span style=3D"color: red;">sll=
+0359</span></b>) and cyabrB2 (sll0822), as well as several abrB genes encod=
+ing AbrB-type regulators with an N-terminal DNA-binding domain. We previous=
+ly reported that cyabrB1 , but not cyabrB2 , is an essential...=E2=80=9D</l=
+i><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...as templates for in vitro transcription reaction. In the cases of cya=
+brB2 (sll0822) and cyabrB1 (<b><span style=3D"color: red;">sll0359</span></=
+b>), PCR products were cloned into the pT7Blue T-Vector containing a T7 pol=
+ymerase recognition sequence, and the resultant plasmids were used as templ=
+ates for in vitro transcription. 2.7. Immunoblot Analysis Cell...=E2=80=9D<=
+/li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=
+=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3504015">Cyano=
+PhyChe: a database for physico-chemical properties, structure and biochemic=
+al pathway information of cyanobacterial proteins</a><br><small><a title=3D=
+"Arun PV, Bakku RK, Subhashini M, Singh P, Prabhu NP, Suzuki I, Prakash JS.=
+">Arun,</a> PloS one 2012 </small><ul style=3D"margin-top: 0em; margin-bott=
+om: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=
+=E2=80=9C...physico-chemical properties of the selected proteins. Physico-c=
+hemical properties of (A) Sll0649, (B) Sll0088 and (C) <b><span style=3D"co=
+lor: red;">Sll0359</span></b> proteins from Synechocystis sp. PCC6803. Base=
+d on the presented physico-chemical properties of, solubility, probability =
+of the protein entering into an inclusion body (PEPIB), polarity and struct=
+ural stability were calculated and...=E2=80=9D</li><li style=3D"list-style-=
+type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...scales. Figure 3 shows=
+ the determined physico-chemical properties of three selected proteins, Sll=
+0649, Sll0088, and <b><span style=3D"color: red;">Sll0359</span></b> from S=
+ynechocystis sp. PCC 6803. PEPIB values calculated for Sll0649 and Sll0088 =
+are 0.7 and 0.65, respectively. These values indicate that there is a high =
+chance for these proteins to...=E2=80=9D</li></ul></li><li style=3D"list-st=
+yle-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"https://papers.geno=
+mics.lbl.gov/cgi-bin/litSearch.cgi?more=3DVIMSS12239">More</a></li></ul><p>=
+</p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.ncb=
+i.nlm.nih.gov/protein/WP_204137943.1" title=3D"RefSeq">JUK32_RS06010</a> Ab=
+rB family transcriptional regulator from <i>Halomicronema sp. CCY15110</i><=
+br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=3D=
+UPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3DJUK32_RS06010&amp;s=
+eq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGR=
+KLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DWP_2041379=
+43.1" style=3D"font-family: sans-serif; font-size: smaller;" title=3D"2:122=
+/122 of query is similar to 9:127/127 of hit (E =3D 1e-19, 96.3 bits)">43% =
+identity, 95% coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: =
+0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a h=
+ref=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC11765580">Biofilm Format=
+ion, Modulation, and Transcriptomic Regulation Under Stress Conditions in <=
+i>Halomicronema</i> sp</a><br><small><a title=3D"Caldara M, Bolhuis H, Marm=
+iroli M, Marmiroli N.">Caldara,</a> International journal of molecular scie=
+nces 2025 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li st=
+yle=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...tran=
+scriptional regulator Essential for cell survival, spore formation, and bio=
+film development [ 51 ] AbrB-06010 <b><span style=3D"color: red;">JUK32_RS0=
+6010</span></b> 5239 WP_204137943.1 YebC/PmpR family DNA-binding transcript=
+ional regulator Probably involved in regulation of quorum sensing, and viru=
+lence, regulates EPS and LPS production to form biofilm [ 52 ] YebC-12275 J=
+UK32_RS12275 283...=E2=80=9D</li></ul></li></ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D163302" title=3D"MicrobesOnl=
+ine">alr0946</a> hypothetical protein from <i>Nostoc sp. PCC 7120</i><br><a=
+ href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi?def1=3DUPI00=
+005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3Dalr0946&amp;seq1=3DMLTGS=
+DLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGIGKGGRKLSYTAKVQGN=
+GNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS163302" style=3D=
+"font-family: sans-serif; font-size: smaller;" title=3D"2:119/122 of query =
+is similar to 9:124/144 of hit (E =3D 1e-19, 96.3 bits)">42% identity, 82% =
+coverage</a></p><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li styl=
+e=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://=
+www.ncbi.nlm.nih.gov/pmc/articles/PMC12282138">Regulatory networks of FUR a=
+nd NtcA are intertwined by transcriptional regulators, two-component system=
+s, serine/threonine kinases, and sigma factors in &lt;i&gt;Anabaena&lt;/i&g=
+t; sp. PCC 7120</a><br><small><a title=3D"Gu=C3=ADo J, Peleato ML, Fillat M=
+F, Sevilla E.">Gu=C3=ADo,</a> mSystems 2025 </small><ul style=3D"margin-top=
+: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-lef=
+t:=3D"" 6em;=3D"">=E2=80=9C...AbrB family transcriptional regulator 2.9 + a=
+ll3903 all3903 ; ArsR family transcriptional regulator 1.5 + <b><span style=
+=3D"color: red;">alr0946</span></b> calA ; AbrB family transcriptional regu=
+lator 3.1 Two-component systems all0129 rpaA ; response regulator 2.0 + all=
+1704 all1704 ; response regulator 1.9 all1804 all1804 ; hybrid histidine ki=
+nase 2.1 +...=E2=80=9D</li></ul></li><li style=3D"list-style-type: none;" m=
+argin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/artic=
+les/PMC8967839">Cyclophilin anaCyp40 regulates photosystem assembly and phy=
+cobilisome association in a cyanobacterium</a><br><small><a title=3D"Yadav =
+S, Centola M, Glaesmann M, Pogoryelov D, Ladig R, Heilemann M, Rai LC, Yild=
+iz =C3=96, Schleiff E.">Yadav,</a> Nature communications 2022 </small><ul s=
+tyle=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-style-type:=
+ none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...All2566 Gap1 210 3 2 8 343 =
+4.7 All3680 210 3 2 5 317 6.6 <b><span style=3D"color: red;">Alr0946</span>=
+</b> 210 3 2 19 144 5.6 Alr1526 CbbS 210 3 2 12 109 7.3 Asr0105 210 3 2 5 8=
+8 3.4 All5265 GyrB 410 3 2 5 645 3.4 All7614...=E2=80=9D</li></ul></li><li =
+style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"htt=
+ps://doi.org/10.1007/s00709-016-1059-7">Overexpression of phytochelatin syn=
+thase (pcs) enhances abiotic stress tolerance by altering the proteome of t=
+ransformed Anabaena sp. PCC 7120</a><br><small><a title=3D"Chaurasia N, Mis=
+hra Y, Chatterjee A, Rai R, Yadav S, Rai LC.">Chaurasia,</a> Protoplasma 20=
+17 (<a href=3D"http://www.ncbi.nlm.nih.gov/pubmed/28000119">PubMed</a>)</sm=
+all><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-st=
+yle-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...(nutrient stress i=
+nduced DNA binding protein, MnSOD, <b><span style=3D"color: red;">Alr0946</=
+span></b> (CalA)), (ii) protein folding and modification (molecular chapero=
+ne DnaK, FKBP-type peptidyl-prolyl...=E2=80=9D</li><li style=3D"list-style-=
+type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...(spot9), carboxyl-term=
+inal processing protease (spot10), hypothetical protein <b><span style=3D"c=
+olor: red;">Alr0946</span></b> (spot11) with conserved domain as AbrB super=
+family (Fig. S4) and asl0060...=E2=80=9D</li></ul></li><li style=3D"list-st=
+yle-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.nlm=
+.nih.gov/pmc/articles/PMC3126725">Transcript analysis of the extended hyp-o=
+peron in the cyanobacteria Nostoc sp. strain PCC 7120 and Nostoc punctiform=
+e ATCC 29133</a><br><small><a title=3D"Holmqvist M, Lindberg P, Agervald A,=
+ Stensj=C3=B6 K, Lindblad P.">Holmqvist,</a> BMC research notes 2011 </smal=
+l><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=3D"list-styl=
+e-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...proteins analyzed wi=
+th mass spectrometry. Among the identified peptides were CalA (encoded by N=
+pun_R5944 , <b><span style=3D"color: red;">alr0946</span></b> ) and CalB (e=
+ncoded by Npun_R2896 , all2080 ). The rest of the identified peptides, pres=
+ent in both negative controls and samples, were either from unspecific bind=
+ing, e.g. phycobilisome linker...=E2=80=9D</li></ul></li><li style=3D"list-=
+style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http://www.ncbi.n=
+lm.nih.gov/pmc/articles/PMC3147526">Physiological roles of the cyAbrB trans=
+criptional regulator pair Sll0822 and Sll0359 in Synechocystis sp. strain P=
+CC 6803</a><br><small><a title=3D"Yamauchi Y, Kaniya Y, Kaneko Y, Hihara Y.=
+">Yamauchi,</a> Journal of bacteriology 2011 </small><ul style=3D"margin-to=
+p: 0em; margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-le=
+ft:=3D"" 6em;=3D"">=E2=80=9C...J. BACTERIOL. Recently, a cyAbrB belonging t=
+o clade A, CalA (<b><span style=3D"color: red;">Alr0946</span></b>), has be=
+en shown to bind to the upstream region of ftsZ in Nostoc sp. strain PCC 71=
+20 (7)....=E2=80=9D</li></ul></li><li style=3D"list-style-type: none;" marg=
+in-left:=3D"" 6em;=3D""><a href=3D"https://doi.org/10.1111/j.1462-2920.2010=
+.02255.x">The CyAbrB transcription factor CalA regulates the iron superoxid=
+e dismutase in Nostoc sp. strain PCC 7120</a><br><small><a title=3D"Agerval=
+d A, Baebprasert W, Zhang X, Incharoensakdi A, Lindblad P, Stensj=C3=B6 K."=
+>Agervald,</a> Environmental microbiology 2010 (<a href=3D"http://www.ncbi.=
+nlm.nih.gov/pubmed/20545738">PubMed</a>)</small><ul style=3D"margin-top: 0e=
+m; margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left:=
+=3D"" 6em;=3D"">=E2=80=9C...transcription factor CalA (Cyanobacterial AbrB-=
+like, annotated as <b><span style=3D"color: red;">Alr0946</span></b>) in th=
+e cyanobacterium Nostoc sp. PCC 7120 were analysed. The CalA overexpression=
+...=E2=80=9D</li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em=
+;=3D"">=E2=80=9C...Ltd Introduction The CyAbrB transcription factor annotat=
+ed as <b><span style=3D"color: red;">Alr0946</span></b> in the Nostoc sp. s=
+train PCC 7120 (Nostoc PCC 7120) genome was recently renamed CalA...=E2=80=
+=9D</li></ul></li><li style=3D"list-style-type: none;" margin-left:=3D"" 6e=
+m;=3D""><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2813017">Cal=
+A, a cyanobacterial AbrB protein, interacts with the upstream region of hyp=
+C and acts as a repressor of its transcription in the cyanobacterium Nostoc=
+ sp. strain PCC 7120</a><br><small><a title=3D"Agervald A, Zhang X, Stensj=
+=C3=B6 K, Devine E, Lindblad P.">Agervald,</a> Applied and environmental mi=
+crobiology 2010 </small><ul style=3D"margin-top: 0em; margin-bottom: 0em;">=
+<li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C.=
+..subunit. In this study we present a protein, CalA (<b><span style=3D"colo=
+r: red;">Alr0946</span></b> in the genome), belonging to the transcription =
+regulator family AbrB, which in protein-DNA assays was...=E2=80=9D</li><li =
+style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...71=
+20 harboring the self-replicating pnir vector (see below) with <b><span sty=
+le=3D"color: red;">alr0946</span></b> (N7120 OV) or without it (N7120 EV) a=
+nd the wild-type strain were grown in BG110...=E2=80=9D</li></ul></li><li s=
+tyle=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><a href=3D"http=
+s://doi.org/10.1007/s00203-010-0573-9">CalA, a cyAbrB protein, binds to the=
+ upstream region of ftsZ and is down-regulated in heterocysts in Anabaena s=
+p. PCC 7120</a><br><small><a title=3D"He D, Xu X.">He,</a> Archives of micr=
+obiology 2010 (<a href=3D"http://www.ncbi.nlm.nih.gov/pubmed/20405108">PubM=
+ed</a>)</small><ul style=3D"margin-top: 0em; margin-bottom: 0em;"><li style=
+=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...Abstrac=
+t A protein of cyAbrB family of regulators, <b><span style=3D"color: red;">=
+Alr0946</span></b> (CalA), was identified by DNA affinity chromatography us=
+ing DNA fragments from the promoter region of...=E2=80=9D</li><li style=3D"=
+list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=9C...their expre=
+ssion. One of the two cyAbrBs in Anabaena 7120, <b><span style=3D"color: re=
+d;">Alr0946</span></b> (CalA), has been shown to bind to the upstream regio=
+ns of hypC, a gene encoding a hydrogenase...=E2=80=9D</li></ul></li></ul><p=
+></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D6877439" title=3D"MicrobesOn=
+line">Npun_R5944</a> transcriptional regulator AbrB from <i>Nostoc punctifo=
+rme</i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.cgi=
+?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3DNpun_R5944&=
+amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAGI=
+GKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMSS=
+6877439" style=3D"font-family: sans-serif; font-size: smaller;" title=3D"2:=
+119/122 of query is similar to 9:124/145 of hit (E =3D 2e-18, 92.0 bits)">4=
+2% identity, 81% coverage</a></p><ul style=3D"margin-top: 0em; margin-botto=
+m: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""><=
+a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3126725">Transcript a=
+nalysis of the extended hyp-operon in the cyanobacteria Nostoc sp. strain P=
+CC 7120 and Nostoc punctiforme ATCC 29133</a><br><small><a title=3D"Holmqvi=
+st M, Lindberg P, Agervald A, Stensj=C3=B6 K, Lindblad P.">Holmqvist,</a> B=
+MC research notes 2011 </small><ul style=3D"margin-top: 0em; margin-bottom:=
+ 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=
+=80=9C...and the proteins analyzed with mass spectrometry. Among the identi=
+fied peptides were CalA (encoded by <b><span style=3D"color: red;">Npun_R59=
+44</span></b> , alr0946 ) and CalB (encoded by Npun_R2896 , all2080 ). The =
+rest of the identified peptides, present in both negative controls and samp=
+les, were either from unspecific binding, e.g....=E2=80=9D</li></ul></li></=
+ul><p></p>
+
+<p style=3D"margin-top: 1em; margin-bottom: 0em;"><a href=3D"http://www.mic=
+robesonline.org/cgi-bin/fetchLocus.cgi?locus=3D2183709" title=3D"MicrobesOn=
+line">Tery_0493</a> hypothetical protein from <i>Trichodesmium erythraeum I=
+MS101</i><br><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/showAlign.c=
+gi?def1=3DUPI00005D423D%20(Q3AX38.1)%20from%20Bacteria&amp;def2=3DTery_0493=
+&amp;seq1=3DMLTGSDLLAKVKELGDVSKSDLVKACGYVSTKKDGGDRLNFTAFYEALLEAKGVSLATGGGAG=
+IGKGGRKLSYTAKVQGNGNLLVGKAYTAMLELEPGAEFTIKLGKKAIRLVPVGAEDDEE&amp;acc2=3DVIMS=
+S2183709" style=3D"font-family: sans-serif; font-size: smaller;" title=3D"1=
+:117/122 of query is similar to 18:132/144 of hit (E =3D 3e-17, 87.8 bits)"=
+>43% identity, 81% coverage</a></p><ul style=3D"margin-top: 0em; margin-bot=
+tom: 0em;"><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D""=
+><a href=3D"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143802">The primar=
+y transcriptome of the marine diazotroph Trichodesmium erythraeum IMS101</a=
+><br><small><a title=3D"Pfreundt U, Kopf M, Belkin N, Berman-Frank I, Hess =
+WR.">Pfreundt,</a> Scientific reports 2014 </small><ul style=3D"margin-top:=
+ 0em; margin-bottom: 0em;"><li style=3D"list-style-type: none;" margin-left=
+:=3D"" 6em;=3D"">=E2=80=9C...( Tery_2891 ) widely conserved in cyanobacteri=
+a, a transcriptional regulator of the Abr family ( <b><span style=3D"color:=
+ red;">Tery_0493</span></b> ), two hypothetical proteins unique to T. eryth=
+raeum ( Tery_3815 and Tery_2341 ), and Tery_0600 , a protein with remote si=
+milarity to a kinesin family-like protein from the brown alga...=E2=80=9D</=
+li><li style=3D"list-style-type: none;" margin-left:=3D"" 6em;=3D"">=E2=80=
+=9C...as_ Tery_3257 , Fig. 3C.4 4997269r 576,462 Tery_2891 conserved HP (DU=
+F4327) gTSS - 4501104r 516,160 <b><span style=3D"color: red;">Tery_0493</sp=
+an></b> AbrB regulator gTSS - 789400f 489,363 Tery_4846 PSI psaK gTSS - 744=
+0696r 477,939 Tery_3815 unique HP gTSS - 5865700f 380,696 Tery_2341 unique =
+HP gTSS - 3616443f 357,463 ncr1099929 HP Sta7437_4063...=E2=80=9D</li></ul>=
+</li></ul><p></p>
+
+<h3><a href=3D"https://papers.genomics.lbl.gov/cgi-bin/litSearch.cgi">New S=
+earch</a></h3>
+For advice on how to use these tools together, see
+<a href=3D"https://www.biorxiv.org/content/10.1101/2024.04.15.589591v1">Int=
+eractive tools for functional annotation of bacterial genomes</a>.
+
+<h3><a name=3D"stats">Statistics</a></h3>
+
+The PaperBLAST database links 838,522 different protein sequences to 1,299,=
+844 scientific articles. Searches against EuropePMC were last performed on =
+May 13 2026.
+
+<h3><a name=3D"works">How It Works</a></h3>
+
+<p>PaperBLAST builds a database of protein sequences that are linked
+to scientific articles. These links come from automated text searches
+against the articles in <a href=3D"http://europepmc.org/" title=3D"Europe P=
+MC (PubMedCentral)">EuropePMC</a>
+and from manually-curated information from <a href=3D"https://www.ncbi.nlm.=
+nih.gov/gene/about-generif" title=3D"Gene
+Reference into Function (NCBI)">GeneRIF</a>, <a href=3D"http://www.uniprot.=
+org/" title=3D"The manually annotated and reviewed section of UniProt">UniP=
+rotKB/Swiss-Prot</a>,
+<a href=3D"http://www.brenda-enzymes.org/index.php" title=3D"The Comprehens=
+ive Enzyme Information System">BRENDA</a>,
+<a href=3D"http://www.cazy.org/" title=3D"Carbohydrate-Active enZYmes Datab=
+ase">CAZy</a> (as made available by <a href=3D"http://csbl.bmb.uga.edu/dbCA=
+N/download.php">dbCAN</a>),
+<a href=3D"https://seq2fun.dcmb.med.umich.edu/BioLiP/" title=3D"BioLiP for =
+Ligand-protein binding database">BioLiP</a>,
+<a href=3D"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245046/" title=3D"=
+Database of experimentally characterized protein annotations">CharProtDB</a=
+>,
+<a href=3D"http://metacyc.org/" title=3D"MetaCyc Metabolic Pathway Database=
+">MetaCyc</a>,
+<a href=3D"http://ecocyc.org/" title=3D"EcoCyc: Encyclopedia of E. coli Gen=
+es and Metabolic Pathways">EcoCyc</a>,
+<a href=3D"http://www.tcdb.org/" title=3D"The Transporter Classification Da=
+tabase (TCDB)" <=3D"" a=3D"">TCDB</a>,
+<a href=3D"http://rebase.neb.com/rebase/rebase.html" title=3D"The Restricti=
+on Enzyme Database">REBASE</a>,
+the <a href=3D"http://fit.genomics.lbl.gov/" title=3D"Reannotations from ge=
+nome-wide fitness data">Fitness Browser</a>,
+and a subset of the European Nucleotide Archive with the /experiment tag.
+Given this database and a protein sequence query,
+PaperBLAST uses <a href=3D"https://en.wikipedia.org/wiki/BLAST">protein-pro=
+tein BLAST</a>
+to find similar sequences with E &lt; 0.001.
+
+</p><p>To build the database, we query EuropePMC with locus tags, with <a h=
+ref=3D"https://www.ncbi.nlm.nih.gov/refseq/">RefSeq</a> protein
+identifiers, and with <a href=3D"http://www.uniprot.org/">UniProt</a>
+accessions.  We obtain the locus tags from RefSeq or from <a href=3D"http:/=
+/www.microbesonline.org/">MicrobesOnline</a>.  We use
+queries of the form "locus_tag AND genus_name" to try to ensure that
+the paper is actually discussing that gene.  Because EuropePMC indexes
+most recent biomedical papers, even if they are not open access, some
+of the links may be to papers that you cannot read or that our
+computers cannot read.  We query each of these identifiers that
+appears in the open access part of EuropePMC, as well as every locus
+tag that appears in the 500 most-referenced genomes, so that a gene
+may appear in the PaperBLAST results even though none of the papers
+that mention it are open access. We also incorporate text-mined links
+from EuropePMC that link open access articles to UniProt or RefSeq
+identifiers.  (This yields some additional links because EuropePMC
+uses different heuristics for their text mining than we do.)
+
+</p><p>For every article that mentions a locus tag, a RefSeq protein
+identifier, or a UniProt accession, we try to select one or two
+snippets of text that refer to the protein. If we cannot get access to
+the full text, we try to select a snippet from the abstract, but
+unfortunately, unique identifiers such as locus tags are rarely
+provided in abstracts.
+
+</p><p>PaperBLAST also incorporates manually-curated protein functions:
+</p><ul>
+<li>Proteins from NCBI's RefSeq are included if a
+  <a href=3D"https://www.ncbi.nlm.nih.gov/gene/about-generif">GeneRIF</a>
+  entry links the gene to an article in
+  <a href=3D"http://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a><sup>=C2=AE</su=
+p>.
+  GeneRIF also provides a short summary of the article's claim about the
+  protein, which is shown instead of a snippet.
+</li><li>Proteins from Swiss-Prot (the curated part of <a href=3D"http://un=
+iprot.org/">UniProt</a>)
+  are included if the curators
+  identified experimental evidence for the protein's function (evidence
+  code ECO:0000269). For these proteins, the fields of the Swiss-Prot entry=
+ that
+  describe the protein's function are shown (with bold headings).
+</li><li>Proteins from <a href=3D"http://www.brenda-enzymes.org/index.php">=
+BRENDA</a>,
+  a curated database of enzymes, are included if they are linked to a paper=
+ in PubMed
+  and their full sequence is known.
+</li><li>Every protein from the non-redundant subset of
+  <a href=3D"https://seq2fun.dcmb.med.umich.edu/BioLiP/">BioLiP</a>,
+  a database
+  of ligand-binding sites and catalytic residues in protein structures, is =
+included. Since BioLiP itself
+  does not include descriptions of the proteins, those are taken from the
+  <a href=3D"https://www.rcsb.org/" title=3D"Protein Data Bank">Protein Dat=
+a Bank</a>.
+  Descriptions from PDB rely on the original submitter of the
+    structure and cannot be updated by others, so they may be less reliable=
+.
+  (For SitesBLAST and Sites on a Tree, we use a larger subset of BioLiP so =
+that every
+   ligand is represented among a group of structures with similar sequences=
+, but for
+   PaperBLAST, we use the non-redundant set provided by BioLiP.)
+</li><li>Every protein from <a href=3D"http://ecocyc.org/">EcoCyc</a>, a cu=
+rated
+  database of the proteins in <i> Escherichia coli</i> K-12, is included, r=
+egardless
+  of whether they are characterized or not.
+</li><li>Proteins from the <a href=3D"http://metacyc.org/">MetaCyc</a> meta=
+bolic pathway database
+  are included if they are linked to a paper in PubMed and their full seque=
+nce is known.
+</li><li>Proteins from the Transport Classification Database (<a href=3D"ht=
+tp://www.tcdb.org/">TCDB</a>)
+  are included if they have known substrate(s), have reference(s),
+  and are not described as uncharacterized or putative.
+  (Some of the references are not visible on the PaperBLAST web site.)
+</li><li>Every protein from <a href=3D"https://www.ncbi.nlm.nih.gov/pmc/art=
+icles/PMC3245046/">CharProtDB</a>,
+  a database of experimentally characterized protein annotations, is includ=
+ed.
+</li><li>Proteins from the <a href=3D"http://www.cazy.org/">CAZy</a> databa=
+se of carbohydrate-active enzymes
+  are included if they are associated with an Enzyme Classification number.
+  Even though CAZy does not provide links from individual protein sequences=
+ to papers,
+  these should all be experimentally-characterized proteins.
+</li><li>Proteins from the <a href=3D"http://rebase.neb.com/rebase/rebase.h=
+tml">REBASE</a> database
+  of restriction enzymes are included if they have known specificity.
+</li><li>Every protein with an evidence-based reannotation (based on mutant=
+ phenotypes)
+  in the <a href=3D"http://fit.genomics.lbl.gov/">Fitness Browser</a> is in=
+cluded.
+</li><li>Sequence-specific transcription factors (including sigma factors a=
+nd DNA-binding response regulators)
+with experimentally-determined DNA binding sites from the
+<a href=3D"https://www.prodoric.de/">PRODORIC</a> database of gene regulati=
+on in prokaryotes.
+</li><li>Putative transcription factors from <a href=3D"https://regprecise.=
+lbl.gov/">RegPrecise</a>
+that have manually-curated predictions for their binding sites. These predi=
+ctions are based on
+conserved putative regulatory sites across genomes that contain similar tra=
+nscription factors,
+so PaperBLAST clusters the TFs at 70% identity and retains just one member =
+of each cluster.
+</li><li>Coding sequence (CDS) features from the
+    <a href=3D"https://www.ebi.ac.uk/ena/browser/about">European Nucleotide=
+ Archive</a> (ENA)
+    are included if the /experiment tag is set (implying that there is expe=
+rimental evidence for the annotation),
+    the nucleotide entry links to paper(s) in PubMed,
+    and the nucleotide entry is from the STD data class
+    (implying that these are targeted annotated sequences, not from shotgun=
+ sequencing).
+    Also, to filter out genes whose transcription or translation was detect=
+ed, but whose function
+    was not studied, nucleotide entries or papers with more than 25 such pr=
+oteins are excluded.
+    Descriptions from ENA rely on the original submitter of the
+    sequence and cannot be updated by others, so they may be less reliable.
+</li></ul>
+<p>Except for GeneRIF and ENA,
+the curated entries include a short curated
+description of the protein's function.
+For entries from BioLiP, the protein's function may not be known beyond bin=
+ding to the ligand.
+Many of these entries also link to articles in <a href=3D"http://www.ncbi.n=
+lm.nih.gov/pubmed/">PubMed</a>.
+
+</p><p>For more information see the
+<a title=3D"PaperBLAST: Text Mining Papers for Information about Homologs" =
+href=3D"http://msystems.asm.org/content/2/4/e00039-17">PaperBLAST paper</a>=
+ (<i>mSystems</i> 2017)
+or the <a href=3D"https://github.com/morgannprice/PaperBLAST">code</a>.
+You can download PaperBLAST's database <a href=3D"https://github.com/morgan=
+nprice/PaperBLAST#download">here</a>.
+
+</p><p>Changes to PaperBLAST since the paper was written:
+
+</p><ul>
+<li>November 2023: incorporated PRODORIC and RegPrecise. Many PRODORIC entr=
+ies were not linked to a protein sequence (no UniProt identifier), so we ad=
+ded this information.
+</li><li>February 2023: BioLiP changed their download format. PaperBLAST no=
+w includes their non-redundant subset. SitesBLAST and Sites on a Tree use a=
+ larger non-redundant subset that ensures that every ligand is represented =
+within each cluster. This should ensure that every binding site is represen=
+ted.
+</li><li>June 2022: incorporated some coding sequences from ENA with the /e=
+xperiment tag.
+</li><li>March 2022: incorporated BioLiP.
+</li><li>April 2020: incorporated TCDB.
+</li><li>April 2019: EuropePMC now returns table entries in their search re=
+sults. This has expanded PaperBLAST's database, but most of the new entries=
+ are of low relevance, and the resulting snippets are often just lists of l=
+ocus tags with annotations.
+</li><li>February 2018: the alignment page reports the conservation of the =
+hit's functional sites (if available from from Swiss-Prot or UniProt)
+</li><li>January 2018: incorporated BRENDA.
+</li><li>December 2017: incorporated MetaCyc, CharProtDB, CAZy, REBASE, and=
+ the reannotations from the Fitness Browser.
+</li><li>September 2017: EuropePMC no longer returns some table entries in =
+their search results. This has shrunk PaperBLAST's database, but has also r=
+educed the number of low-relevance hits.
+</li></ul>
+
+<p>Many of these changes are described in <a href=3D"https://www.biorxiv.or=
+g/content/10.1101/2024.04.15.589591v1">Interactive tools for functional ann=
+otation of bacterial genomes</a>.
+
+</p><h3><a name=3D"secret">Secrets</a></h3>
+
+<p>PaperBLAST cannot provide snippets for many of the papers that are
+published in non-open-access journals. This limitation applies even if
+the paper is marked as "free" on the publisher's web site and is
+available in PubmedCentral or EuropePMC. If a journal that you publish
+in is marked as "secret," please consider publishing elsewhere.
+
+</p><h3><a name=3D"omission">Omissions from the PaperBLAST Database</a></h3=
+>
+
+<p>Many important articles are missing from PaperBLAST, either because
+the article's full text is not in EuropePMC (as for many older
+articles), or because the paper does not mention a protein identifier such =
+as a locus tag, or because of PaperBLAST's heuristics. If you notice an
+article that characterizes a protein's function but is missing from
+PaperBLAST, please notify the curators at <a href=3D"http://www.uniprot.org=
+/update">UniProt</a>
+or add an entry to <a href=3D"https://www.ncbi.nlm.nih.gov/gene/submit-gene=
+rif">GeneRIF</a>.
+Entries in either of these databases will eventually be incorporated
+into PaperBLAST.  Note that to add an entry to UniProt, you will need
+to find the UniProt identifier for the protein.  If the protein is not
+already in UniProt, you can ask them to create an entry.  To add an
+entry to GeneRIF, you will need an NCBI Gene identifier, but
+unfortunately many prokaryotic proteins in RefSeq do not have
+corresponding Gene identifers.
+
+</p><h3>References</h3>
+
+<p><a href=3D"http://msystems.asm.org/content/2/4/e00039-17">PaperBLAST: Te=
+xt-mining papers for information about homologs.</a><br>
+ <small>M. N. Price and A. P. Arkin (2017). mSystems, 10.1128/mSystems.0003=
+9-17.</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkx1005">Europe PMC in 2017.<=
+/a><br>
+<small>M. Levchenko et al (2017). Nucleic Acids Research, 10.1093/nar/gkx10=
+05.</small>
+
+</p><p><a href=3D"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1480312/">Ge=
+ne indexing: characterization and analysis of NLM's GeneRIFs.</a><br>
+<small>J. A. Mitchell et al (2003). AMIA Annu Symp Proc 2003:460-464.</smal=
+l>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkw1099">UniProt: the univers=
+al protein knowledgebase.</a><br>
+<small>The UniProt Consortium (2016). Nucleic Acids Research, 10.1093/nar/g=
+kw1099.</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkw952">BRENDA in 2017: new p=
+erspectives and new tools in BRENDA.</a><br>
+<small>S. Placzek et al (2017). Nucleic Acids Research, 10.1093/nar/gkw952.=
+</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkw1003">The EcoCyc database:=
+ reflecting new knowledge about Escherichia coli K-12.</a><br>
+<small>I. M. Keeseler et al (2016). Nucleic Acids Research, 10.1093/nar/gkw=
+1003.</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkx935">The MetaCyc database =
+of metabolic pathways and enzymes.</a><br>
+<small>R. Caspi et al (2018). Nucleic Acids Research, 10.1093/nar/gkx935.</=
+small>
+
+</p><p><a href=3D"https://academic.oup.com/nar/article/40/D1/D237/2903195">=
+CharProtDB: a database of experimentally characterized protein annotations.=
+</a><br>
+<small>R. Madupu et al (2012). Nucleic Acids Research, 10.1093/nar/gkr1133.=
+</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkt1178">The carbohydrate-act=
+ive enzymes database (CAZy) in 2013.</a><br>
+<small>V. Lombard et al (2014). Nucleic Acids Research, 10.1093/nar/gkt1178=
+.</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gkv1103">The Transporter Clas=
+sification Database (TCDB): recent advances</a><br>
+<small>M. H. Saier, Jr. et al (2016). Nucleic Acids Research, 10.1093/nar/g=
+kv1103.</small>
+
+</p><p><a href=3D"https://doi.org/10.1093/nar/gku1046">REBASE - a database =
+for DNA restriction and modification: enzymes, genes and genomes.</a><br>
+<small>R. J. Roberts et al (2015). Nucleic Acids Research, 10.1093/nar/gku1=
+046.</small>
+
+</p><p><a href=3D"https://dx.doi.org/10.1101/072470">Deep annotation of pro=
+tein function across diverse bacteria from mutant phenotypes.</a><br>
+<small>M. N. Price et al (2016). bioRxiv, 10.1101/072470.</small>
+
+</p><p>
+<small>
+</small></p><center><small>by <a href=3D"http://morgannprice.org/">Morgan P=
+rice</a>,
+<a href=3D"http://genomics.lbl.gov/">Arkin group</a><br>
+Lawrence Berkeley National Laboratory
+</small></center><small>
+</small>
+<p></p>
+
+
+</body></html>
+------MultipartBoundary--tFd4aqQHbXqjd3l7SBLCXB122Z3SG1jf1AQ1FqGF50----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-4c6f5abd-c051-46bb-bdc6-acaaf19bc59a@mhtml.blink
+
+@charset "utf-8";
+
+.autocomplete { position: relative; display: inline-block; }
+
+.autocomplete-items { position: absolute; border-width: medium 1px; border-=
+style: none solid; border-color: currentcolor rgb(212, 212, 212); border-im=
+age: initial; z-index: 99; top: 100%; left: 0px; right: 0px; }
+
+.autocomplete-items div { padding: 10px; cursor: pointer; background-color:=
+ rgb(255, 255, 255); border-bottom: 1px solid rgb(212, 212, 212); }
+
+.autocomplete-items div:hover { background-color: rgb(233, 233, 233); }
+
+.autocomplete-active { background-color: dodgerblue !important; color: rgb(=
+255, 255, 255); }
+
+.aa { background-color: white; }
+
+.aa1 { background-color: lightblue; }
+
+.aa2 { background-color: red; }
+
+.aa3 { background-color: magenta; }
+
+.aa4 { background-color: lightgreen; }
+
+.aa5 { background-color: pink; }
+
+.aa6 { background-color: orange; }
+
+.aa7 { background-color: yellow; }
+
+.aa8 { background-color: cyan; }
+
+.aaD { background-color: rgb(251, 154, 153); }
+
+.aaE { background-color: rgb(227, 26, 28); }
+
+.aaN { background-color: rgb(204, 230, 255); }
+
+.aaQ { background-color: rgb(167, 201, 236); }
+
+.aaK { background-color: rgb(129, 173, 217); }
+
+.aaR { background-color: rgb(88, 146, 199); }
+
+.aaH { background-color: rgb(31, 120, 180); }
+
+.aaF { background-color: rgb(253, 191, 111); }
+
+.aaW { background-color: rgb(255, 160, 67); }
+
+.aaY { background-color: rgb(255, 127, 0); }
+
+.aaP { background-color: rgb(255, 255, 153); }
+
+.aaM { background-color: rgb(219, 171, 94); }
+
+.aaC { background-color: rgb(177, 89, 40); }
+
+.aaG { background-color: rgb(230, 255, 230); }
+
+.aaA { background-color: rgb(189, 231, 183); }
+
+.aaV { background-color: rgb(147, 208, 137); }
+
+.aaL { background-color: rgb(104, 184, 92); }
+
+.aaI { background-color: rgb(51, 160, 44); }
+
+.aaS { background-color: rgb(202, 178, 214); }
+
+.aaT { background-color: rgb(106, 61, 154); }
+
+.aaGap { background-color: rgb(238, 238, 238); }
+
+.alnS, .alnS1, .alnS0 { font-size: smaller; }
+
+.alnS1 { font-weight: bold; color: darkgreen; }
+
+.alnS0 { font-weight: bold; color: darkred; }
+
+.aa, .aa1, .aa2, .aa3, .aa4, .aa5, .aa6, .aa7, .aa8, .aa9, .aaD, .aaE, .aaN=
+, .aaQ, .aaK, .aaR, .aaH, .aaF, .aaW, .aaY, .aaP, .aaM, .aaC, .aaG, .aaA, .=
+aaV, .aaL, .aaI, .aaS, .aaT, .aaGap, .alnS, .alnS1, .alnS0 { padding-left: =
+3px; padding-right: 3px; margin-top: 1px; }
+
+.alnCol, .alnLabel { vertical-align: top; float: left; display: inline-bloc=
+k; margin-top: 1.5em; font-family: "Courier New", monospace; font-size: 90%=
+; }
+
+.alnCol { background-color: rgb(238, 238, 238); border-width: 1px; border-c=
+olor: rgb(238, 238, 238); border-style: solid; }
+
+.alnLabel { margin-right: 0.5em; border-width: medium; border-style: none; =
+border-color: currentcolor; border-image: initial; font-size: 85%; }
+------MultipartBoundary--tFd4aqQHbXqjd3l7SBLCXB122Z3SG1jf1AQ1FqGF50------
