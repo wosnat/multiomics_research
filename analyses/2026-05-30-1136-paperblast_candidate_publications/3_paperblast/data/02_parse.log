@@ -1,3 +1,12 @@
+== parse_hits: min_identity_hetero=50 ==
+  ✓ DEH24_02300.mhtml [DEH24_02300/alt]: 232 hits, 5 kept
+  ✓ DEH24_16585.mhtml [DEH24_16585/alt]: 115 hits, 0 kept
+  ✓ EZ55_00751.mhtml [EZ55_00751/alt]: 69 hits, 0 kept
+  ✓ EZ55_01060.mhtml [EZ55_01060/alt]: 134 hits, 2 kept
+  ✓ HBY40558.mhtml [DEH24_14130/alt]: 250 hits, 7 kept
+  ✓ WP_014948722.mhtml [ACZ81_05680/alt]: 93 hits, 0 kept
+  ✓ WP_020745975.mhtml [EZ55_02117/alt]: 138 hits, 0 kept
+  ✓ WP_061486133.mhtml [ACZ81_12890/alt]: 112 hits, 1 kept
   ✓ NATL1_02111.html [NATL1_02111/pro]: 8 hits, 3 kept
   ✓ PMM1028.html [PMM1028/pro]: 1 hits, 1 kept
   ✓ PMM1135.html [PMM1135/pro]: 18 hits, 18 kept
@@ -16,14 +25,15 @@
   ✓ SynWH7803_2236.html [SynWH7803_2236/syn]: 43 hits, 26 kept
 
 === summary ===
-files parsed: 16 seeds
-total hits: 1418 | kept: 157 | dropped (taxonomy): 1261
-  of dropped: 12 were MAG-flagged
+files parsed: 24 seeds
+total hits: 2561 | kept: 172 | dropped (taxonomy): 2389
+  of dropped: 15 were MAG-flagged
 kept-hit tier mix:
 tier
-cyano    157
+cyano       157
+kg_genus     15
 
-paper rows (kept hits, pre-dedup): 305
-  unique DOIs: 13 | unique PMCIDs: 164
+paper rows (kept hits, pre-dedup): 343
+  unique DOIs: 13 | unique PMCIDs: 200
 
-top dropped genera: [{'genus': 'Staphylococcus', 'hit_count': 64}, {'genus': 'Streptococcus', 'hit_count': 48}, {'genus': 'Pseudomonas', 'hit_count': 44}, {'genus': 'Clostridium', 'hit_count': 40}, {'genus': 'Mycobacterium', 'hit_count': 31}, {'genus': 'Escherichia', 'hit_count': 25}, {'genus': 'Salmonella', 'hit_count': 23}, {'genus': 'Vibrio', 'hit_count': 20}, {'genus': 'Streptomyces', 'hit_count': 18}, {'genus': 'Bacillus', 'hit_count': 17}, {'genus': 'Acinetobacter', 'hit_count': 16}, {'genus': 'Listeria', 'hit_count': 16}]
+top dropped genera: [{'genus': 'Pseudomonas', 'hit_count': 132}, {'genus': 'Staphylococcus', 'hit_count': 83}, {'genus': 'Vibrio', 'hit_count': 72}, {'genus': 'Clostridium', 'hit_count': 69}, {'genus': 'Streptococcus', 'hit_count': 63}, {'genus': 'Mycobacterium', 'hit_count': 51}, {'genus': 'Escherichia', 'hit_count': 50}, {'genus': 'Salmonella', 'hit_count': 41}, {'genus': 'Acinetobacter', 'hit_count': 39}, {'genus': 'Burkholderia', 'hit_count': 38}, {'genus': 'Xanthomonas', 'hit_count': 37}, {'genus': 'Bacillus', 'hit_count': 37}]

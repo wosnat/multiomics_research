@@ -120,7 +120,7 @@ def query_id(flat: str, seeds: pd.DataFrame, fname: str) -> str | None:
         if lt in q:
             return lt
     for pid in seeds["protein_id"].astype(str):
-        if pid in q:
+        if pid in q or re.sub(r"\.\d+$", "", pid) in q:  # tolerate dropped ".1" version
             return seeds.loc[seeds["protein_id"] == pid, "locus_tag"].iloc[0]
     return None
 
@@ -135,13 +135,20 @@ def tier_of(genus: str) -> str:
     return "out"
 
 
-def keep_for_pool(tier: str, pool: str) -> bool:
-    """Pool-aware: cyano seeds keep only cyano hits; heterotroph seeds keep
-    Proteobacteria (kg_genus + other_proteo) hits."""
+def keep_for_pool(tier: str, pool: str, identity: int, min_identity_hetero: int) -> bool:
+    """Pool-aware relevance filter:
+      pro / syn          → cyanobacterial hits only (any identity).
+      alt / other_hetero → KG heterotroph genera only AND identity >=
+                           min_identity_hetero. The broad `other_proteo` tier is
+                           dropped (it readmitted clinical/plant-pathogen
+                           Proteobacteria like P. aeruginosa / P. syringae); the
+                           identity floor further removes distant clinical
+                           paralogs within the KG genera, keeping close marine
+                           relatives. (locked 2026-06-03)"""
     if pool in ("pro", "syn"):
         return tier == "cyano"
     if pool in ("alt", "other_hetero"):
-        return tier in ("kg_genus", "other_proteo")
+        return tier == "kg_genus" and identity >= min_identity_hetero
     return False
 
 
@@ -186,10 +193,17 @@ def parse_file(raw: str):
 
 
 def main() -> int:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--min-identity-hetero", type=int, default=50,
+                    help="min %%identity for alt/other_hetero KG-genus hits (drops distant clinical paralogs)")
+    args = ap.parse_args()
+
     DATA.mkdir(exist_ok=True)
     seeds = pd.read_csv(SEEDS)
     logf = open(DATA / "02_parse.log", "w")
     log = lambda m: (print(m), logf.write(m + "\n"))
+    log(f"== parse_hits: min_identity_hetero={args.min_identity_hetero} ==")
 
     hit_rows, paper_rows = [], []
     dropped = {}
@@ -204,8 +218,9 @@ def main() -> int:
         for h in hits:
             is_mag = any(mk.lower() in h["organism"].lower() for mk in MAG_MARKERS)
             tier = tier_of(h["genus"])
-            keep = keep_for_pool(tier, pool) and not is_mag
-            if not keep_for_pool(tier, pool):
+            keep_tax = keep_for_pool(tier, pool, h["identity"], args.min_identity_hetero)
+            keep = keep_tax and not is_mag
+            if not keep_tax:
                 dropped[h["genus"]] = dropped.get(h["genus"], 0) + 1
             cyanorak = in_cyanorak(h["organism"])
             hit_rows.append({

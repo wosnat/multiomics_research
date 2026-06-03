@@ -1,4 +1,12 @@
 file,matched_pool,matched_sel_rank,matched_locus_tag,matched_by,n_hits,query
+alt/DEH24_02300.mhtml,alt,3,DEH24_02300,locus_tag,251,UPI000E8E3634 (A0A359K020.1) from Alteromonas sp.
+alt/DEH24_16585.mhtml,alt,2,DEH24_16585,locus_tag,115,UPI000C66AF44 (A0A2D9KC39.1) from Alteromonadaceae
+alt/EZ55_00751.mhtml,alt,1,EZ55_00751,locus_tag,69,UPI0007777311 (A0A2D8H0W7.1) from Pseudomonadota
+alt/EZ55_01060.mhtml,alt,4,EZ55_01060,locus_tag,140,UPI0012844677 from Alteromonas
+alt/HBY40558.mhtml,alt,5,DEH24_14130,protein_id,257,UPI000913CEA7 (A0A1M5GKW8) from Pseudomonadota
+alt/WP_014948722.mhtml,alt,7,ACZ81_05680,protein_id,97,tr|A0A0B3XZL9|A0A0B3XZL9_9ALTE Transcriptional regulator OS=Alteromonas marina OX=203795 GN=RJ41_15995 PE=4 SV
+alt/WP_020745975.mhtml,alt,6,EZ55_02117,protein_id,143,tr|A0ABV7JZV0|A0ABV7JZV0_9ALTE TonB-dependent receptor family protein OS=Alteromonas oceani OX=2071609 GN=ACFO
+alt/WP_061486133.mhtml,alt,8,ACZ81_12890,protein_id,114,UPI000776B14F from Alteromonas
 prochlorococcus/NATL1_02111.html,pro,8,NATL1_02111,locus_tag,8,tr|A2BZW5|A2BZW5_PROM1 Putative molecular chaperone OS=Prochlorococcus marinus (strain NATL1A) OX=167555 GN=NA
 prochlorococcus/PMM1028.html,pro,1,PMM1028,locus_tag,1,tr|Q7V158|Q7V158_PROMP Conserved hypothetical OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NI
 prochlorococcus/PMM1135.html,pro,3,PMM1135,locus_tag,18,tr|Q7V0W6|Q7V0W6_PROMP Possible high light inducible protein OS=Prochlorococcus marinus subsp. pastoris (strai

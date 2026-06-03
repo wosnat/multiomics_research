@@ -51,3 +51,15 @@ Append-only log of methodology / KG / tooling friction encountered during this a
 **What happened.** PaperBLAST result pages link papers almost entirely by PMC ID (102 PMCIDs vs 3 explicit DOIs for the pro pool). The KG dedup target is keyed by DOI, so PMCID→DOI resolution is required.
 
 **Impact on methodology.** Added an NCBI id-converter step (cached on disk, dedup-before-call so each paper sends one id, exponential backoff on HTTP 429). NCBI throttles to 3 req/s anonymously, 10 with an API key (read from `.env` via python-dotenv). Without resolution the KG dedup silently passes everything as "new" — so this is load-bearing, not cosmetic.
+
+## 2026-06-03 — heterotroph relevance: KG-genus + identity floor; Pseudomonas off-domain
+
+**What happened.** For alt/other_hetero seeds the "keep all Proteobacteria (same phylum)" rule readmitted clinical/plant-pathogen Proteobacteria, ballooning alt to 919 candidates. Even restricting to KG genera, P. putida (a KG genus) hits are dominated by clinical P. aeruginosa / agricultural P. syringae literature — right genus, wrong ecology. A genus filter alone can't separate these.
+
+**Impact on methodology.** The heterotroph keep-rule is now **KG genera only + identity floor** (`--min-identity-hetero`, default 50%): a close homolog is more likely the actual marine relative; distant clinical paralogs fall below the floor. Cut alt 919→36. But the residual is Pseudomonas-specific and inherent to seeding from P. putida genes — flagged for the researcher rather than auto-filtered (a topic/ecology classifier, not just taxonomy, would be needed to catch it). Genuinely marine alt yield is ~6 (Shewanella oneidensis, Ruegeria pomeroyi).
+
+## 2026-06-03 — protein_id version-suffix mismatch in file→seed matching
+
+**What happened.** Some saves were named by protein_id without the version suffix (`WP_014948722` vs seed `WP_014948722.1`), and PaperBLAST's in-page query echoes a UniProt/UniParc accession, not the locus_tag — so 4 alt files came back unmatched in the inventory.
+
+**Impact on methodology.** Both matchers (`01_inventory.py`, `02_parse_hits.py` `query_id`) now also try the version-stripped protein_id. A side observation: PaperBLAST may report "No hits to characterized proteins" for a query yet still list papers attached to *uncharacterized* homologs — those are kept (they can still be relevant literature).

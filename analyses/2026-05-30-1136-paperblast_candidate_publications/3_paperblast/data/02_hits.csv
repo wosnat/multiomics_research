@@ -1,4 +1,1147 @@
 seed,pool,organism,genus,identity,coverage,tier,in_cyanorak,is_mag,keep,n_papers
+DEH24_02300,alt,Colwellia psychrerythraea (strain 34H / ATCC BAA-681),Colwellia,82,59,out,False,False,False,1
+DEH24_02300,alt,Ferrimonas balearica (strain DSM 9799 / CCM 4581 / KCTC 23876 / PAT),Ferrimonas,84,59,out,False,False,False,1
+DEH24_02300,alt,Dickeya chrysanthemi (strain Ech1591),Dickeya,79,59,out,False,False,False,1
+DEH24_02300,alt,Yersinia pestis CO92,Yersinia,78,59,other_proteo,False,False,False,4
+DEH24_02300,alt,Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578),Klebsiella,78,59,other_proteo,False,False,False,2
+DEH24_02300,alt,Escherichia coli K-12 substr. MG1655,Escherichia,77,59,other_proteo,False,False,False,28
+DEH24_02300,alt,Salmonella enterica subsp. enterica serovar Typhimurium,Salmonella,77,59,other_proteo,False,False,False,2
+DEH24_02300,alt,Commelina communis,Commelina,80,59,out,False,False,False,1
+DEH24_02300,alt,Serratia plymuthica S13,Serratia,76,59,other_proteo,False,False,False,2
+DEH24_02300,alt,Shewanella baltica (strain OS223),Shewanella,79,59,kg_genus,False,False,True,1
+DEH24_02300,alt,Edwardsiella ictaluri 93-146,Edwardsiella,77,59,out,False,False,False,1
+DEH24_02300,alt,Vibrio parahaemolyticus serotype O3:K6 (strain RIMD 2210633),Vibrio,79,59,other_proteo,False,False,False,1
+DEH24_02300,alt,Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961),Vibrio,79,59,other_proteo,False,False,False,3
+DEH24_02300,alt,Proteus mirabilis HI4320,Proteus,75,59,other_proteo,False,False,False,1
+DEH24_02300,alt,Haemophilus influenzae 86-028NP,Haemophilus,75,59,other_proteo,False,False,False,3
+DEH24_02300,alt,Laribacter hongkongensis (strain HLHK9),Laribacter,77,58,out,False,False,False,1
+DEH24_02300,alt,Pseudomonas citronellolis,Pseudomonas,75,59,kg_genus,False,False,True,1
+DEH24_02300,alt,Neisseria meningitidis MC58,Neisseria,75,59,other_proteo,False,False,False,1
+DEH24_02300,alt,Neisseria meningitidis WUE 2594,Neisseria,75,59,other_proteo,False,False,False,2
+DEH24_02300,alt,Acidovorax ebreus (strain TPSY),Acidovorax,73,58,out,False,False,False,1
+DEH24_02300,alt,Bordetella pertussis (strain ATCC 9797 / DSM 5571 / CCUG 30873 / LMG 14455 / NCTC 10739 / 18323),Bordetella,69,58,other_proteo,False,False,False,2
+DEH24_02300,alt,Thiomicrospira cyclica (strain DSM 14477 / JCM 11371 / ALM1),Thiomicrospira,70,59,other_proteo,False,False,False,1
+DEH24_02300,alt,Variovorax paradoxus (strain S110),Variovorax,72,58,out,False,False,False,1
+DEH24_02300,alt,Burkholderia pseudomallei 1710b,Burkholderia,69,57,other_proteo,False,False,False,2
+DEH24_02300,alt,Thiobacillus denitrificans (strain ATCC 25259 / T1),Thiobacillus,69,58,other_proteo,False,False,False,1
+DEH24_02300,alt,Burkholderia thailandensis E264,Burkholderia,69,57,other_proteo,False,False,False,2
+DEH24_02300,alt,Methylobacillus flagellatus KT,Methylobacillus,69,58,out,False,False,False,1
+DEH24_02300,alt,Acinetobacter sp. ADP1,Acinetobacter,69,58,other_proteo,False,False,False,1
+DEH24_02300,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,69,59,kg_genus,False,False,True,9
+DEH24_02300,alt,Acinetobacter baumannii (strain ATCC 19606 / DSM 30007 / JCM 6841 / CCUG 19606 / CIP 70.34 / NBRC 109757 / NCIMB 12457 / NCTC 12156 / 81),Acinetobacter,68,58,other_proteo,False,False,False,1
+DEH24_02300,alt,Burkholderia cenocepacia HI2424,Burkholderia,68,57,other_proteo,False,False,False,1
+DEH24_02300,alt,Acinetobacter bohemicus,Acinetobacter,67,58,other_proteo,False,False,False,1
+DEH24_02300,alt,Pseudomonas putida KT2440,Pseudomonas,71,58,kg_genus,False,False,True,3
+DEH24_02300,alt,Psychrobacter sp. PRwf-1,Psychrobacter,68,58,out,False,False,False,1
+DEH24_02300,alt,Ilyobacter polytropus (strain ATCC 51220 / DSM 2926 / LMG 16218 / CuHBu1),Ilyobacter,64,59,out,False,False,False,1
+DEH24_02300,alt,Legionella pneumophila subsp. pneumophila str. Philadelphia 1,Legionella,63,53,other_proteo,False,False,False,1
+DEH24_02300,alt,Arcobacter nitrofigilis (strain ATCC 33309 / DSM 7299 / CCUG 15893 / LMG 7604 / NCTC 12251 / CI),Arcobacter,60,59,out,False,False,False,1
+DEH24_02300,alt,Francisella tularensis subsp. holarctica FTA,Francisella,58,58,other_proteo,False,False,False,1
+DEH24_02300,alt,Calditerrivibrio nitroreducens (strain DSM 19672 / NBRC 101217 / Yu37-1),Calditerrivibrio,57,58,out,False,False,False,1
+DEH24_02300,alt,Trypanosoma brucei brucei (strain 927/4 GUTat10.1),Trypanosoma,58,57,out,False,False,False,0
+DEH24_02300,alt,Trypanosoma brucei,Trypanosoma,57,57,out,False,False,False,1
+DEH24_02300,alt,Geobacillus stearothermophilus (Bacillus stearothermophilus),Geobacillus,53,58,out,False,False,False,4
+DEH24_02300,alt,Shouchella miscanthi,Shouchella,53,58,out,False,False,False,1
+DEH24_02300,alt,Lachnospira eligens (strain ATCC 27750 / DSM 3376 / VPI C15-48 / C15-B4),Lachnospira,54,58,out,False,False,False,1
+DEH24_02300,alt,Selenomonas sputigena (strain ATCC 35185 / DSM 20758 / CCUG 44933 / VPI D19B-28),Selenomonas,56,58,out,False,False,False,1
+DEH24_02300,alt,Bacillus cereus (strain ATCC 14579 / DSM 31 / CCUG 7414 / JCM 2152 / NBRC 15305 / NCIMB 9373 / NCTC 2599 / NRRL B-3711),Bacillus,54,58,out,False,False,False,2
+DEH24_02300,alt,Brevibacillus brevis (strain 47 / JCM 6285 / NBRC 100599),Brevibacillus,53,58,out,False,False,False,1
+DEH24_02300,alt,Bacillus thuringiensis DB27,Bacillus,53,58,out,False,False,False,1
+DEH24_02300,alt,Bacillus anthracis str. Ames,Bacillus,53,58,out,False,False,False,3
+DEH24_02300,alt,Leptonema illini DSM 21528,Leptonema,55,66,out,False,False,False,1
+DEH24_02300,alt,Thermovirga lienii (strain ATCC BAA-1197 / DSM 17291 / Cas60314),Thermovirga,52,58,out,False,False,False,1
+DEH24_02300,alt,Sporosarcina globispora (Bacillus globisporus),Sporosarcina,51,58,out,False,False,False,0
+DEH24_02300,alt,Staphylococcus aureus subsp. aureus N315,Staphylococcus,55,58,out,False,False,False,7
+DEH24_02300,alt,Pelosinus fermentans B4,Pelosinus,54,58,out,False,False,False,1
+DEH24_02300,alt,Leptospira biflexa serovar Patoc strain 'Patoc 1 (Paris)',Leptospira,52,67,out,False,False,False,2
+DEH24_02300,alt,Hippea maritima (strain ATCC 700847 / DSM 10411 / MH2),Hippea,54,59,out,False,False,False,1
+DEH24_02300,alt,Staphylococcus carnosus (strain TM300),Staphylococcus,54,58,out,False,False,False,1
+DEH24_02300,alt,Jeotgalibacillus marinus,Jeotgalibacillus,53,58,out,False,False,False,0
+DEH24_02300,alt,Clostridium difficile R20291,Clostridium,53,57,out,False,False,False,1
+DEH24_02300,alt,Mesorhizobium japonicum (strain LMG 29417 / CECT 9101 / MAFF 303099),Mesorhizobium,58,62,out,False,False,False,1
+DEH24_02300,alt,Syntrophobotulus glycolicus (strain DSM 8271 / FlGlyR),Syntrophobotulus,54,58,out,False,False,False,1
+DEH24_02300,alt,Clostridium difficile 630,Clostridium,53,58,out,False,False,False,1
+DEH24_02300,alt,Mesorhizobium opportunistum (strain LMG 24607 / HAMBI 3007 / WSM2075),Mesorhizobium,58,61,out,False,False,False,1
+DEH24_02300,alt,Bacillus licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / CCUG 7422 / NBRC 12200 / NCIMB 9375 / NCTC 10341 / NRRL NRS-1264 / Gibson 46),Bacillus,50,58,out,False,False,False,1
+DEH24_02300,alt,Clostridium perfringens str. 13,Clostridium,50,57,out,False,False,False,1
+DEH24_02300,alt,Aminomonas paucivorans DSM 12260,Aminomonas,54,58,out,False,False,False,1
+DEH24_02300,alt,Clostridium botulinum (strain Hall / ATCC 3502 / NCTC 13319 / Type A),Clostridium,53,58,out,False,False,False,1
+DEH24_02300,alt,Brucella melitensis 16M,Brucella,54,63,other_proteo,False,False,False,1
+DEH24_02300,alt,Brucella melitensis biovar Abortus 2308,Brucella,54,63,other_proteo,False,False,False,1
+DEH24_02300,alt,Staphylococcus epidermidis ATCC 12228,Staphylococcus,53,58,out,False,False,False,5
+DEH24_02300,alt,Sinorhizobium meliloti 1021,Sinorhizobium,54,64,other_proteo,False,False,False,3
+DEH24_02300,alt,Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e),Listeria,51,58,out,False,False,False,7
+DEH24_02300,alt,Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130,Leptospira,54,65,out,False,False,False,3
+DEH24_02300,alt,Cryptococcus neoformans H99,Cryptococcus,51,46,out,False,False,False,1
+DEH24_02300,alt,Geotalea daltonii (strain DSM 22248 / JCM 15807 / FRC-32),Geotalea,52,58,out,False,False,False,1
+DEH24_02300,alt,Mycobacterium abscessus ATCC 19977,Mycobacterium,55,68,out,False,False,False,1
+DEH24_02300,alt,Listeria monocytogenes serotype 4b (strain CLIP80459),Listeria,50,58,out,False,False,False,2
+DEH24_02300,alt,Kyrpidia tusciae (strain DSM 2912 / NBRC 15312 / T2),Kyrpidia,50,58,out,False,False,False,1
+DEH24_02300,alt,Corynebacterium pseudotuberculosis 1002,Corynebacterium,53,68,out,False,False,False,1
+DEH24_02300,alt,Saccharomyces cerevisiae (strain ATCC 204508 / S288c),Saccharomyces,50,57,out,False,False,False,12
+DEH24_02300,alt,Lactococcus lactis subsp. lactis Il1403,Lactococcus,52,58,out,False,False,False,2
+DEH24_02300,alt,Phaeodactylum tricornutum (strain CCAP 1055/1),Phaeodactylum,53,40,out,False,False,False,1
+DEH24_02300,alt,Roseicella frigidaeris,Roseicella,50,56,out,False,False,False,1
+DEH24_02300,alt,Methylorubrum extorquens (strain PA1),Methylorubrum,51,62,out,False,False,False,1
+DEH24_02300,alt,Bacillus subtilis (strain 168),Bacillus,52,58,out,False,False,False,5
+DEH24_02300,alt,Corynebacterium glutamicum ATCC 13032,Corynebacterium,52,68,out,False,False,False,2
+DEH24_02300,alt,Enterococcus faecalis,Enterococcus,51,58,out,False,False,False,0
+DEH24_02300,alt,Commelina communis,Commelina,49,57,out,False,False,False,1
+DEH24_02300,alt,Pediculus humanus subsp. corporis,Pediculus,49,52,out,False,False,False,1
+DEH24_02300,alt,Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast),Schizosaccharomyces,50,57,out,False,False,False,0
+DEH24_02300,alt,Methylocella silvestris (strain DSM 15510 / CIP 108128 / LMG 27833 / NCIMB 13906 / BL2),Methylocella,50,64,out,False,False,False,1
+DEH24_02300,alt,Turneriella parva (strain ATCC BAA-1111 / DSM 21527 / NCTC 11395 / H),Turneriella,49,63,out,False,False,False,1
+DEH24_02300,alt,Lactiplantibacillus pentosus,Lactiplantibacillus,52,58,out,False,False,False,1
+DEH24_02300,alt,Acinetobacter baumannii ATCC 17978,Acinetobacter,65,51,other_proteo,False,False,False,2
+DEH24_02300,alt,Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987),Neurospora,48,45,out,False,False,False,0
+DEH24_02300,alt,Candida utilis,Candida,47,58,out,False,False,False,1
+DEH24_02300,alt,Tribolium castaneum,Tribolium,49,51,out,False,False,False,1
+DEH24_02300,alt,Aspergillus fumigatus (strain ATCC MYA-4609 / CBS 101355 / FGSC A1100 / Af293),Aspergillus,48,49,out,False,False,False,2
+DEH24_02300,alt,Toxoplasma gondii ME49,Toxoplasma,47,49,out,False,False,False,2
+DEH24_02300,alt,Aedes aegypti,Aedes,49,51,out,False,False,False,1
+DEH24_02300,alt,Pseudothermotoga thermarum DSM 5069,Pseudothermotoga,47,57,out,False,False,False,1
+DEH24_02300,alt,Xanthomonas citri pv. aurantifolii str. ICPB 11122,Xanthomonas,48,66,other_proteo,False,False,False,4
+DEH24_02300,alt,Synechocystis sp. PCC 6803,Synechocystis,53,65,cyano,False,False,False,2
+DEH24_02300,alt,Scleropages formosus,Scleropages,48,54,out,False,False,False,1
+DEH24_02300,alt,Fusarium verticillioides 7600,Fusarium,47,49,out,False,False,False,1
+DEH24_02300,alt,Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) (Aspergillus nidulans),Emericella,48,49,out,False,False,False,0
+DEH24_02300,alt,Danio rerio,Danio,48,52,out,False,False,False,1
+DEH24_02300,alt,Lactobacillus plantarum WCFS1,Lactobacillus,50,58,out,False,False,False,3
+DEH24_02300,alt,Clostridium cellulovorans 743B,Clostridium,50,58,out,False,False,False,1
+DEH24_02300,alt,Komagataella phaffii GS115,Komagataella,46,50,out,False,True,False,1
+DEH24_02300,alt,Danio rerio,Danio,48,54,out,False,False,False,3
+DEH24_02300,alt,Danio rerio (Zebrafish) (Brachydanio rerio),Danio,48,52,out,False,False,False,1
+DEH24_02300,alt,Streptomyces coelicolor A3(2),Streptomyces,48,58,out,False,False,False,1
+DEH24_02300,alt,Cyanobacterium aponinum (strain PCC 10605),Cyanobacterium,48,66,out,False,False,False,1
+DEH24_02300,alt,Corynebacterium diphtheriae NCTC 13129,Corynebacterium,51,68,out,False,False,False,3
+DEH24_02300,alt,Bos taurus,Bos,45,52,out,False,False,False,2
+DEH24_02300,alt,Stanieria cyanosphaera (strain ATCC 29371 / PCC 7437),Stanieria,46,66,out,False,False,False,1
+DEH24_02300,alt,Gallus gallus,Gallus,45,52,out,False,False,False,2
+DEH24_02300,alt,Oryctolagus cuniculus,Oryctolagus,45,54,out,False,False,False,1
+DEH24_02300,alt,Ruegeria pomeroyi DSS-3,Ruegeria,50,53,kg_genus,False,False,True,1
+DEH24_02300,alt,Silicibacter pomeroyi DSS-3,Silicibacter,50,55,out,False,False,False,1
+DEH24_02300,alt,Bartonella australis (strain Aust/NH1),Bartonella,46,64,other_proteo,False,False,False,1
+DEH24_02300,alt,Homo sapiens,Homo,45,54,out,False,False,False,1
+DEH24_02300,alt,Homo sapiens,Homo,45,54,out,False,False,False,3
+DEH24_02300,alt,Homo sapiens (Human),Homo,45,53,out,False,False,False,9
+DEH24_02300,alt,Xylella fastidiosa 9a5c,Xylella,48,66,other_proteo,False,False,False,0
+DEH24_02300,alt,Xylella fastidiosa,Xylella,47,51,other_proteo,False,False,False,3
+DEH24_02300,alt,Setaria italica,Setaria,45,43,out,False,False,False,1
+DEH24_02300,alt,Mycobacterium avium subsp. paratuberculosis K-10,Mycobacterium,49,68,out,False,False,False,4
+DEH24_02300,alt,Xenopus tropicalis,Xenopus,48,54,out,False,False,False,1
+DEH24_02300,alt,Streptococcus pneumoniae,Streptococcus,47,59,out,False,False,False,6
+DEH24_02300,alt,Oryza sativa subsp. japonica,Oryza,45,43,out,False,False,False,1
+DEH24_02300,alt,Oryza sativa subsp. japonica,Oryza,43,51,out,False,False,False,3
+DEH24_02300,alt,Filifactor alocis,Filifactor,47,58,out,False,False,False,1
+DEH24_02300,alt,Capsicum annuum,Capsicum,43,51,out,False,False,False,1
+DEH24_02300,alt,Talaromyces marneffei (Penicillium marneffei),Talaromyces,47,46,out,False,False,False,0
+DEH24_02300,alt,Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),Mycobacterium,47,68,out,False,False,False,12
+DEH24_02300,alt,Aspergillus niger (strain ATCC MYA-4892 / CBS 513.88 / FGSC A1513),Aspergillus,47,49,out,False,False,False,2
+DEH24_02300,alt,Hordeum vulgare subsp. vulgare,Hordeum,43,52,out,False,False,False,1
+DEH24_02300,alt,Zea mays,Zea,43,52,out,False,False,False,1
+DEH24_02300,alt,Juglans regia,Juglans,43,51,out,False,False,False,1
+DEH24_02300,alt,Streptococcus gordonii (strain Challis / ATCC 35105 / BCRC 15272 / CH1 / DL1 / V288),Streptococcus,47,59,out,False,False,False,3
+DEH24_02300,alt,Mus musculus (Mouse),Mus,45,53,out,False,False,False,9
+DEH24_02300,alt,Mus musculus,Mus,45,54,out,False,False,False,8
+DEH24_02300,alt,Mycobacterium smegmatis str. MC2 155,Mycobacterium,49,68,out,False,False,False,1
+DEH24_02300,alt,Rattus norvegicus,Rattus,45,54,out,False,False,False,2
+DEH24_02300,alt,Rattus norvegicus,Rattus,45,53,out,False,False,False,5
+DEH24_02300,alt,Rattus norvegicus,Rattus,45,53,out,False,False,False,1
+DEH24_02300,alt,Zea mays,Zea,44,44,out,False,False,False,1
+DEH24_02300,alt,Zea mays (Maize),Zea,44,56,out,False,False,False,2
+DEH24_02300,alt,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,44,21,out,False,False,False,11
+DEH24_02300,alt,Plasmodium falciparum (isolate 3D7),Plasmodium,43,52,out,False,False,False,6
+DEH24_02300,alt,Streptococcus suis (strain 05ZYH33),Streptococcus,47,59,out,False,False,False,3
+DEH24_02300,alt,Pseudanabaena biceps PCC 7429,Pseudanabaena,43,68,out,False,False,False,1
+DEH24_02300,alt,Botryotinia fuckeliana (strain B05.10),Botryotinia,48,46,out,False,False,False,1
+DEH24_02300,alt,Aquifex aeolicus,Aquifex,46,61,out,False,False,False,1
+DEH24_02300,alt,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,42,50,out,False,False,False,6
+DEH24_02300,alt,Oryza sativa subsp. japonica,Oryza,42,52,out,False,False,False,1
+DEH24_02300,alt,Cordyceps militaris CM01,Cordyceps,45,49,out,False,False,False,2
+DEH24_02300,alt,Arabidopsis thaliana,Arabidopsis,41,51,out,False,False,False,14
+DEH24_02300,alt,Homo sapiens,Homo,45,78,out,False,False,False,1
+DEH24_02300,alt,Paracoccus denitrificans,Paracoccus,52,56,other_proteo,False,False,False,1
+DEH24_02300,alt,Arabidopsis thaliana,Arabidopsis,41,66,out,False,False,False,1
+DEH24_02300,alt,Streptococcus pyogenes M1 GAS,Streptococcus,47,59,out,False,False,False,1
+DEH24_02300,alt,Populus trichocarpa,Populus,41,50,out,False,False,False,1
+DEH24_02300,alt,Halanaerobium praevalens (strain ATCC 33744 / DSM 2228 / GSL),Halanaerobium,49,58,out,False,False,False,1
+DEH24_02300,alt,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,44,44,out,False,False,False,11
+DEH24_02300,alt,Streptococcus pyogenes serotype M6 (strain ATCC BAA-946 / MGAS10394),Streptococcus,47,59,out,False,False,False,0
+DEH24_02300,alt,Streptococcus pyogenes MGAS6180,Streptococcus,47,59,out,False,False,False,1
+DEH24_02300,alt,Populus euphratica,Populus,42,21,out,False,False,False,1
+DEH24_02300,alt,Streptococcus agalactiae serotype V (strain ATCC BAA-611 / 2603 V/R),Streptococcus,46,59,out,False,False,False,3
+DEH24_02300,alt,Crinalium epipsammum PCC 9333,Crinalium,45,66,out,False,False,False,1
+DEH24_02300,alt,Hydrogenobacter thermophilus TK-6,Hydrogenobacter,49,59,out,False,False,False,2
+DEH24_02300,alt,Rhodothermus marinus (strain ATCC 43812 / DSM 4252 / R-10),Rhodothermus,45,59,out,False,False,False,1
+DEH24_02300,alt,Lacticaseibacillus rhamnosus GG,Lacticaseibacillus,48,57,out,False,False,False,1
+DEH24_02300,alt,Treponema pallidum (strain Nichols),Treponema,47,59,out,False,False,False,3
+DEH24_02300,alt,Streptococcus thermophilus LMD-9,Streptococcus,46,57,out,False,False,False,1
+DEH24_02300,alt,Acidithiobacillus ferrivorans SS3,Acidithiobacillus,47,56,other_proteo,False,False,False,1
+DEH24_02300,alt,Babesia bovis T2Bo,Babesia,46,48,out,False,False,False,1
+DEH24_02300,alt,Gardnerella vaginalis (strain ATCC 14019 / 317),Gardnerella,42,68,out,False,False,False,1
+DEH24_02300,alt,Ktedonobacter racemifer DSM 44963,Ktedonobacter,46,57,out,False,False,False,1
+DEH24_02300,alt,Caenorhabditis elegans,Caenorhabditis,42,50,out,False,False,False,1
+DEH24_02300,alt,Winmispira thermophila (strain ATCC 49972 / DSM 6192 / RI 19.B1),Winmispira,45,59,out,False,False,False,1
+DEH24_02300,alt,Sphingobium chlorophenolicum L-1,Sphingobium,49,56,out,False,False,False,1
+DEH24_02300,alt,Coriobacterium glomerans (strain ATCC 49209 / DSM 20642 / JCM 10262 / PW2),Coriobacterium,58,45,out,False,False,False,1
+DEH24_02300,alt,Trypanosoma cruzi (strain CL Brener),Trypanosoma,42,47,out,False,False,False,1
+DEH24_02300,alt,Trypanosoma cruzi,Trypanosoma,42,47,out,False,False,False,1
+DEH24_02300,alt,Chlamydomonas reinhardtii,Chlamydomonas,44,47,out,False,False,False,1
+DEH24_02300,alt,Zymomonas mobilis subsp. mobilis ZM4,Zymomonas,47,56,out,False,False,False,3
+DEH24_02300,alt,Thermotoga neapolitana,Thermotoga,42,56,out,False,False,False,1
+DEH24_02300,alt,Lactobacillus johnsonii (strain FI9785),Lactobacillus,45,58,out,False,False,False,1
+DEH24_02300,alt,Bifidobacterium longum subsp. longum BBMN68,Bifidobacterium,43,66,out,False,False,False,2
+DEH24_02300,alt,Lactobacillus johnsonii N6.2,Lactobacillus,45,58,out,False,False,False,1
+DEH24_02300,alt,Cyclobacterium marinum (strain ATCC 25205 / DSM 745 / LMG 13164 / NCIMB 1802),Cyclobacterium,43,65,out,False,False,False,1
+DEH24_02300,alt,Porphyromonas gingivalis W83,Porphyromonas,42,63,out,False,False,False,2
+DEH24_02300,alt,Bifidobacterium catenulatum subsp. puerorum PV20-2,Bifidobacterium,43,66,out,False,False,False,1
+DEH24_02300,alt,Marivirga tractuosa (strain ATCC 23168 / DSM 4126 / NBRC 15989 / NCIMB 1408 / VKM B-1430 / H-43),Marivirga,43,64,out,False,False,False,1
+DEH24_02300,alt,Leadbetterella byssophila (strain DSM 17132 / JCM 16389 / KACC 11308 / NBRC 106382 / 4M15),Leadbetterella,41,65,out,False,False,False,1
+DEH24_02300,alt,Micrococcus luteus (strain ATCC 4698 / DSM 20030 / JCM 1464 / CCM 169 / CCUG 5858 / IAM 1056 / NBRC 3333 / NCIMB 9278 / NCTC 2665 / VKM Ac-2230),Micrococcus,44,60,out,False,False,False,1
+DEH24_02300,alt,Bacteroides coprosuis DSM 18011,Bacteroides,42,65,out,False,False,False,1
+DEH24_02300,alt,Phytophthora infestans T30-4,Phytophthora,46,15,out,False,False,False,1
+DEH24_02300,alt,Arcanobacterium haemolyticum (strain ATCC 9345 / DSM 20595 / CCM 5947 / CCUG 17215 / LMG 16163 / NBRC 15585 / NCTC 8452 / 11018),Arcanobacterium,42,63,out,False,False,False,1
+DEH24_02300,alt,Bifidobacterium pseudolongum PV8-2,Bifidobacterium,43,64,out,False,False,False,1
+DEH24_02300,alt,Mucilaginibacter paludis DSM 18603,Mucilaginibacter,42,63,out,False,False,False,1
+DEH24_02300,alt,Schistosoma japonicum,Schistosoma,42,53,out,False,False,False,1
+DEH24_02300,alt,Pseudopedobacter saltans (strain ATCC 51119 / DSM 12145 / JCM 21818 / CCUG 39354 / LMG 10337 / NBRC 100064 / NCIMB 13643),Pseudopedobacter,41,63,out,False,False,False,1
+DEH24_02300,alt,Caulobacter crescentus NA1000,Caulobacter,42,64,other_proteo,False,False,False,1
+DEH24_02300,alt,Schistosoma mansoni (Blood fluke),Schistosoma,40,52,out,False,False,False,0
+DEH24_02300,alt,Zobellia galactanivorans,Zobellia,40,33,out,False,False,False,1
+DEH24_02300,alt,Frankia alni ACN14a,Frankia,45,64,out,False,False,False,1
+DEH24_02300,alt,Oenococcus oeni PSU-1,Oenococcus,42,65,out,False,False,False,1
+DEH24_02300,alt,Haliscomenobacter hydrossis (strain ATCC 27775 / DSM 1100 / LMG 10767 / O),Haliscomenobacter,43,65,out,False,False,False,1
+DEH24_02300,alt,Fluviicola taffensis (strain DSM 16823 / NCIMB 13979 / RW262),Fluviicola,39,65,out,False,False,False,1
+DEH24_02300,alt,Bos taurus (Bovine),Bos,40,56,out,False,False,False,0
+DEH24_02300,alt,Homo sapiens (Human),Homo,39,56,out,False,False,False,8
+DEH24_02300,alt,Intrasporangium calvum (strain ATCC 23552 / DSM 43043 / JCM 3097 / NBRC 12989 / NCIMB 10167 / NRRL B-3866 / 7 KIP),Intrasporangium,41,64,out,False,False,False,1
+DEH24_02300,alt,Borrelia hermsii DAH,Borrelia,39,60,out,False,False,False,1
+DEH24_02300,alt,Rubinisphaera brasiliensis (strain ATCC 49424 / DSM 5305 / JCM 21570 / IAM 15109 / NBRC 103401 / IFAM 1448),Rubinisphaera,37,57,out,False,False,False,1
+DEH24_02300,alt,Leishmania major,Leishmania,40,46,out,False,False,False,1
+DEH24_02300,alt,Drosophila melanogaster (Fruit fly),Drosophila,43,58,out,False,False,False,1
+DEH24_02300,alt,Chlamydia pneumoniae J138,Chlamydia,39,57,out,False,False,False,1
+DEH24_02300,alt,Mus musculus,Mus,39,56,out,False,False,False,5
+DEH24_02300,alt,Riemerella anatipestifer (strain ATCC 11845 / DSM 15868 / JCM 9532 / NCTC 11014),Riemerella,39,64,out,False,False,False,2
+DEH24_02300,alt,Borrelia turicatae 91E135,Borrelia,40,60,out,False,False,False,2
+DEH24_02300,alt,Mus musculus,Mus,39,67,out,False,False,False,1
+DEH24_02300,alt,Megalodesulfovibrio gigas,Megalodesulfovibrio,42,56,out,False,False,False,0
+DEH24_02300,alt,Odoribacter splanchnicus (strain ATCC 29572 / DSM 20712 / CIP 104287 / JCM 15291 / NCTC 10825 / 1651/6),Odoribacter,40,65,out,False,False,False,1
+DEH24_02300,alt,Rattus norvegicus,Rattus,38,56,out,False,False,False,1
+DEH24_02300,alt,Maridesulfovibrio salexigens (strain ATCC 14822 / DSM 2638 / NCIMB 8403 / VKM B-1763),Maridesulfovibrio,43,56,out,False,False,False,1
+DEH24_02300,alt,Deinococcus maricopensis (strain DSM 21211 / LMG 22137 / NRRL B-23946 / LB-34),Deinococcus,42,63,out,False,False,False,1
+DEH24_02300,alt,Mycoplasma mycoides subsp. mycoides SC str. Gladysdale,Mycoplasma,37,59,out,False,False,False,1
+DEH24_02300,alt,Trypanosoma brucei brucei (strain 927/4 GUTat10.1),Trypanosoma,39,58,out,False,False,False,0
+DEH24_16585,alt,Flavobacterium tructae,Flavobacterium,78,99,out,False,False,False,1
+DEH24_16585,alt,Dinoroseobacter shibae DFL-12,Dinoroseobacter,79,98,other_proteo,False,False,False,0
+DEH24_16585,alt,Agrobacterium tumefaciens str. C58 (Cereon),Agrobacterium,78,98,other_proteo,False,False,False,1
+DEH24_16585,alt,Ralstonia solanacearum GMI1000,Ralstonia,33,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),Pseudomonas,32,96,kg_genus,False,False,False,15
+DEH24_16585,alt,Xanthomonas oryzae pv. oryzae PXO99A,Xanthomonas,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Xanthomonas axonopodis pv. citri str. 306,Xanthomonas,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Chromobacterium violaceum (strain ATCC 12472 / DSM 30191 / JCM 1249 / CCUG 213 / NBRC 12614 / NCIMB 9131 / NCTC 9757 / MK),Chromobacterium,31,96,out,False,False,False,1
+DEH24_16585,alt,Xanthomonas oryzae pv. oryzae KACC10331,Xanthomonas,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Bordetella bronchiseptica RB50,Bordetella,31,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Bordetella pertussis Tohama I,Bordetella,31,96,other_proteo,False,False,False,3
+DEH24_16585,alt,Taylorella equigenitalis MCE9,Taylorella,32,96,out,False,False,False,1
+DEH24_16585,alt,Pseudomonas putida KT2440,Pseudomonas,32,96,kg_genus,False,False,False,6
+DEH24_16585,alt,Pseudomonas fluorescens SBW25,Pseudomonas,32,96,kg_genus,True,False,False,1
+DEH24_16585,alt,Taylorella asinigenitalis MCE3,Taylorella,31,96,out,False,False,False,1
+DEH24_16585,alt,Alcanivorax borkumensis SK2,Alcanivorax,32,96,out,False,False,False,1
+DEH24_16585,alt,Cupriavidus necator H16,Cupriavidus,30,96,other_proteo,False,False,False,3
+DEH24_16585,alt,Pseudomonas brassicacearum,Pseudomonas,32,96,kg_genus,False,False,False,1
+DEH24_16585,alt,Pseudomonas fluorescens Pf-5,Pseudomonas,32,96,kg_genus,False,False,False,1
+DEH24_16585,alt,Synechococcus elongatus PCC 7942,Synechococcus,31,97,cyano,False,False,False,2
+DEH24_16585,alt,Pseudomonas syringae pv. phaseolicola 1448A,Pseudomonas,32,96,kg_genus,False,False,False,1
+DEH24_16585,alt,Yersinia pseudotuberculosis YPIII,Yersinia,33,96,other_proteo,False,False,False,4
+DEH24_16585,alt,Yersinia enterocolitica subsp. palearctica 105.5R(r),Yersinia,33,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Campylobacter jejuni subsp. jejuni 81-176,Campylobacter,32,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Nostoc sp. PCC 7120,Nostoc,31,97,cyano,False,False,False,2
+DEH24_16585,alt,Aliivibrio fischeri ES114,Aliivibrio,32,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Xenorhabdus nematophila ATCC 19061,Xenorhabdus,33,96,out,False,False,False,1
+DEH24_16585,alt,Campylobacter jejuni subsp. jejuni IA3902,Campylobacter,32,97,other_proteo,False,False,False,10
+DEH24_16585,alt,Xylella fastidiosa 9a5c,Xylella,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Acinetobacter baumannii,Acinetobacter,32,96,other_proteo,False,False,False,4
+DEH24_16585,alt,Ralstonia metallidurans CH34,Ralstonia,31,96,other_proteo,False,False,False,2
+DEH24_16585,alt,Vibrio parahaemolyticus,Vibrio,32,96,other_proteo,False,False,False,2
+DEH24_16585,alt,Helicobacter bizzozeronii CIII-1,Helicobacter,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Cyanothece sp. ATCC 51142,Cyanothece,30,98,cyano,False,False,False,2
+DEH24_16585,alt,Crocosphaera subtropica ATCC 51142,Crocosphaera,30,97,cyano,False,False,False,2
+DEH24_16585,alt,Histophilus somni 2336,Histophilus,31,97,out,False,False,False,1
+DEH24_16585,alt,Vibrio angustum S14,Vibrio,32,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Helicobacter pylori J99,Helicobacter,31,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Klebsiella pneumoniae MRSN 1319,Klebsiella,32,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Klebsiella pneumoniae,Klebsiella,32,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Gloeothece verrucosa PCC 7822,Gloeothece,31,97,cyano,False,False,False,1
+DEH24_16585,alt,Shigella flexneri 2a str. 301,Shigella,32,97,out,False,False,False,1
+DEH24_16585,alt,Aeromonas hydrophila NJ-35,Aeromonas,31,96,out,False,False,False,1
+DEH24_16585,alt,Escherichia coli K-12 substr. MG1655,Escherichia,32,97,other_proteo,False,False,False,6
+DEH24_16585,alt,Asphaltum punjabianum,Asphaltum,32,97,out,False,False,False,0
+DEH24_16585,alt,Escherichia coli O157:H7,Escherichia,32,97,other_proteo,False,False,False,2
+DEH24_16585,alt,Helicobacter pylori 26695,Helicobacter,31,96,other_proteo,False,False,False,8
+DEH24_16585,alt,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,33,97,other_proteo,False,False,False,6
+DEH24_16585,alt,Escherichia coli CFT073,Escherichia,32,97,other_proteo,False,False,False,3
+DEH24_16585,alt,Helicobacter pylori (strain ATCC 700392 / 26695),Helicobacter,31,96,other_proteo,False,False,False,2
+DEH24_16585,alt,Vibrio campbellii ATCC BAA-1116,Vibrio,32,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Enterobacter sp. LU1,Enterobacter,32,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Helicobacter pylori G27,Helicobacter,31,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Vibrio fischeri ES114,Vibrio,31,95,other_proteo,False,False,False,1
+DEH24_16585,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,32,96,other_proteo,False,False,False,5
+DEH24_16585,alt,Prochlorococcus marinus str. SS120,Prochlorococcus,30,96,cyano,True,False,False,1
+DEH24_16585,alt,Neisseria meningitidis serogroup C / serotype 2a (strain ATCC 700532 / DSM 15464 / FAM18),Neisseria,30,97,other_proteo,False,False,False,2
+DEH24_16585,alt,Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150,Salmonella,32,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Aeromonas salmonicida subsp. salmonicida A449,Aeromonas,32,96,out,False,False,False,2
+DEH24_16585,alt,Synechocystis sp. PCC 6803,Synechocystis,30,97,cyano,False,False,False,7
+DEH24_16585,alt,Neisseria meningitidis MC58,Neisseria,30,97,other_proteo,False,False,False,6
+DEH24_16585,alt,Neisseria gonorrhoeae FA 1090,Neisseria,30,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Rahnella aceris,Rahnella,32,96,out,False,False,False,1
+DEH24_16585,alt,Salmonella typhi,Salmonella,32,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Synechococcus sp. PCC 7002,Synechococcus,31,97,cyano,False,False,False,1
+DEH24_16585,alt,Haemophilus somnus 2336,Haemophilus,31,93,other_proteo,False,False,False,1
+DEH24_16585,alt,Burkholderia cenocepacia,Burkholderia,30,96,other_proteo,False,False,False,5
+DEH24_16585,alt,Synechococcus sp. WH 8102,Synechococcus,30,96,cyano,True,False,False,1
+DEH24_16585,alt,Burkholderia contaminans,Burkholderia,30,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Sodalis glossinidius str. 'morsitans',Sodalis,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Phaeodactylum tricornutum (strain CCAP 1055/1),Phaeodactylum,32,91,out,False,False,False,2
+DEH24_16585,alt,Acinetobacter sp. ADP1,Acinetobacter,31,97,other_proteo,False,False,False,1
+DEH24_16585,alt,Shewanella baltica OS678,Shewanella,31,92,kg_genus,False,False,False,1
+DEH24_16585,alt,Salmonella enterica subsp. enterica serovar Paratyphi C strain RKS4594,Salmonella,33,92,other_proteo,False,False,False,0
+DEH24_16585,alt,Commelina communis,Commelina,31,96,out,False,False,False,5
+DEH24_16585,alt,Geobacter sulfurreducens PCA,Geobacter,31,96,other_proteo,False,False,False,5
+DEH24_16585,alt,Geobacter bemidjiensis Bem,Geobacter,31,96,other_proteo,False,False,False,1
+DEH24_16585,alt,Deinococcus radiodurans R1,Deinococcus,25,38,out,False,False,False,4
+DEH24_16585,alt,Haloarcula marismortui ATCC 43049,Haloarcula,23,54,out,False,False,False,1
+DEH24_16585,alt,Gottschalkia acidurici 9a,Gottschalkia,24,54,out,False,False,False,1
+DEH24_16585,alt,Dehalococcoides ethenogenes 195,Dehalococcoides,24,50,out,False,False,False,1
+DEH24_16585,alt,Sulfolobus solfataricus P2,Sulfolobus,21,41,out,False,False,False,1
+DEH24_16585,alt,Archaeoglobus fulgidus DSM 4304,Archaeoglobus,25,52,out,False,False,False,1
+DEH24_16585,alt,Sulfolobus acidocaldarius DSM 639,Sulfolobus,22,41,out,False,False,False,1
+DEH24_16585,alt,Aquifex aeolicus (strain VF5),Aquifex,24,38,out,False,False,False,2
+DEH24_16585,alt,Thermus thermophilus HB27,Thermus,23,41,out,False,False,False,1
+DEH24_16585,alt,Thermus thermophilus (strain ATCC BAA-163 / DSM 7039 / HB27),Thermus,23,41,out,False,False,False,0
+DEH24_16585,alt,Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440),Methanocaldococcus,22,50,out,False,False,False,6
+DEH24_16585,alt,Aspergillus fumigatus (strain ATCC MYA-4609 / CBS 101355 / FGSC A1100 / Af293) (Neosartorya fumigata),Aspergillus,25,36,out,False,False,False,0
+DEH24_16585,alt,Pyrococcus abyssi (strain GE5 / Orsay),Pyrococcus,25,40,out,False,False,False,1
+DEH24_16585,alt,Desulfurobacterium thermolithotrophum,Desulfurobacterium,22,53,out,False,False,False,1
+DEH24_16585,alt,Thermus thermophilus HB8,Thermus,23,41,out,False,False,False,1
+DEH24_16585,alt,Ferroglobus placidus DSM 10642,Ferroglobus,22,50,out,False,False,False,1
+DEH24_16585,alt,Clostridium acetobutylicum ATCC 824,Clostridium,23,38,out,False,False,False,5
+DEH24_16585,alt,Pyrococcus furiosus DSM 3638,Pyrococcus,24,40,out,False,False,False,3
+DEH24_16585,alt,Alternaria alternata (Alternaria rot fungus) (Torula alternata),Alternaria,22,50,out,False,False,False,0
+DEH24_16585,alt,Alternaria alternata (Alternaria rot fungus) (Torula alternata),Alternaria,22,50,out,False,False,False,0
+DEH24_16585,alt,Syntrophobacter fumaroxidans MPOB,Syntrophobacter,22,50,out,False,False,False,1
+DEH24_16585,alt,Clostridium difficile R20291,Clostridium,25,40,out,False,False,False,1
+DEH24_16585,alt,Clostridium difficile 630,Clostridium,25,40,out,False,False,False,2
+DEH24_16585,alt,Caldicellulosiruptor saccharolyticus (strain ATCC 43494 / DSM 8903 / Tp8T 6331),Caldicellulosiruptor,22,50,out,False,False,False,2
+DEH24_16585,alt,Acetivibrio thermocellus DSM 1313,Acetivibrio,24,43,out,False,False,False,1
+DEH24_16585,alt,Leptospira interrogans serogroup Icterohaemorrhagiae serovar Lai (strain 56601),Leptospira,24,40,out,False,False,False,1
+DEH24_16585,alt,Clostridium autoethanogenum DSM 10061,Clostridium,26,25,out,False,False,False,1
+DEH24_16585,alt,Glarea lozoyensis (strain ATCC 20868 / MF5171),Glarea,21,58,out,False,False,False,0
+DEH24_16585,alt,Acidaminococcus fermentans DSM 20731,Acidaminococcus,22,34,out,False,False,False,1
+DEH24_16585,alt,Cryptococcus neoformans var. neoformans JEC21,Cryptococcus,24,50,out,False,False,False,1
+DEH24_16585,alt,Aspergillus rugulosus,Aspergillus,22,50,out,False,False,False,0
+DEH24_16585,alt,Promethearchaeum syntrophicum,Promethearchaeum,21,50,out,False,False,False,1
+DEH24_16585,alt,Clostridium autoethanogenum DSM 10061,Clostridium,22,50,out,False,False,False,1
+DEH24_16585,alt,Geobacter sulfurreducens PCA,Geobacter,24,23,other_proteo,False,False,False,4
+DEH24_16585,alt,Desulfohalobium retbaense DSM 5692,Desulfohalobium,25,26,out,False,False,False,1
+DEH24_16585,alt,Cryptococcus neoformans var. grubii serotype A,Cryptococcus,24,50,out,False,False,False,5
+DEH24_16585,alt,Nitratidesulfovibrio vulgaris (strain ATCC 29579 / DSM 644 / CCUG 34227 / NCIMB 8303 / VKM B-1760 / Hildenborough),Nitratidesulfovibrio,24,23,out,False,False,False,1
+DEH24_16585,alt,Mycobacterium smegmatis str. MC2 155,Mycobacterium,24,25,out,False,False,False,3
+EZ55_00751,alt,Coxiella burnetii RSA 493,Coxiella,45,91,out,False,False,False,5
+EZ55_00751,alt,Coxiella burnetii RSA 493,Coxiella,45,91,out,False,False,False,1
+EZ55_00751,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,44,98,kg_genus,False,False,False,15
+EZ55_00751,alt,Yersinia enterocolitica subsp. enterocolitica 8081,Yersinia,42,97,other_proteo,False,False,False,2
+EZ55_00751,alt,Yersinia enterocolitica subsp. palearctica 105.5R(r),Yersinia,42,97,other_proteo,False,False,False,1
+EZ55_00751,alt,Yersinia enterocolitica subsp. enterocolitica 8081,Yersinia,42,97,other_proteo,False,False,False,1
+EZ55_00751,alt,Dickeya zeae,Dickeya,41,97,out,False,False,False,1
+EZ55_00751,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,39,97,kg_genus,False,False,False,1
+EZ55_00751,alt,Caulobacter crescentus NA1000,Caulobacter,39,97,other_proteo,False,False,False,1
+EZ55_00751,alt,Caulobacter crescentus CB15,Caulobacter,39,95,other_proteo,False,False,False,2
+EZ55_00751,alt,Xenorhabdus nematophila ATCC 19061,Xenorhabdus,40,97,out,False,False,False,1
+EZ55_00751,alt,Pseudomonas syringae pv. phaseolicola 1448A,Pseudomonas,39,98,kg_genus,False,False,False,1
+EZ55_00751,alt,Shigella flexneri 2a,Shigella,38,97,out,False,False,False,1
+EZ55_00751,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,39,96,other_proteo,False,False,False,4
+EZ55_00751,alt,Burkholderia cenocepacia J2315,Burkholderia,37,95,other_proteo,False,False,False,1
+EZ55_00751,alt,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337),Cupriavidus,37,99,other_proteo,False,False,False,1
+EZ55_00751,alt,Klebsiella pneumoniae subsp. pneumoniae HS11286,Klebsiella,36,96,other_proteo,False,False,False,9
+EZ55_00751,alt,Bradyrhizobium japonicum USDA 110,Bradyrhizobium,42,80,other_proteo,False,False,False,1
+EZ55_00751,alt,Pseudomonas putida KT2440,Pseudomonas,36,94,kg_genus,False,False,False,3
+EZ55_00751,alt,Pseudomonas lutea,Pseudomonas,34,90,kg_genus,False,False,False,1
+EZ55_00751,alt,Nitrosococcus oceani,Nitrosococcus,51,42,out,False,False,False,1
+EZ55_00751,alt,Shigella flexneri 2a str. 301,Shigella,50,32,out,False,False,False,2
+EZ55_00751,alt,Wolbachia endosymbiont of Drosophila melanogaster,Wolbachia,28,82,out,False,False,False,1
+EZ55_00751,alt,Mesorhizobium loti MAFF303099,Mesorhizobium,26,72,out,False,False,False,1
+EZ55_00751,alt,Haloferax volcanii DS2,Haloferax,21,96,out,False,False,False,8
+EZ55_00751,alt,Haloferax volcanii DS2,Haloferax,21,96,out,False,False,False,1
+EZ55_00751,alt,Sulfolobus solfataricus P2,Sulfolobus,24,84,out,False,False,False,1
+EZ55_00751,alt,Thermus thermophilus HB8,Thermus,23,92,out,False,False,False,1
+EZ55_00751,alt,Corynebacterium jeikeium K411,Corynebacterium,31,41,out,False,False,False,1
+EZ55_00751,alt,Thermus thermophilus HB8,Thermus,23,92,out,False,False,False,1
+EZ55_00751,alt,Corynebacterium pseudotuberculosis Cp162,Corynebacterium,27,38,out,False,False,False,1
+EZ55_00751,alt,Leptospira santarosai serovar Arenal str. MAVJ 401,Leptospira,26,42,out,False,False,False,1
+EZ55_00751,alt,Streptococcus suis P1/7,Streptococcus,24,78,out,False,False,False,1
+EZ55_00751,alt,Thermus thermophilus HB27,Thermus,24,92,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium avium 104,Mycobacterium,26,77,out,False,False,False,2
+EZ55_00751,alt,Enterococcus faecium DO,Enterococcus,27,37,out,False,False,False,1
+EZ55_00751,alt,Frankia sp. CcI3,Frankia,24,47,out,False,False,False,1
+EZ55_00751,alt,Frankia sp. CcI3,Frankia,24,47,out,False,False,False,1
+EZ55_00751,alt,Corynebacterium glutamicum ATCC 13032,Corynebacterium,27,42,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium avium subsp. hominissuis TH135,Mycobacterium,24,83,out,False,False,False,2
+EZ55_00751,alt,Mesorhizobium loti MAFF303099,Mesorhizobium,31,28,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium bovis BCG str. Pasteur 1173P2,Mycobacterium,25,46,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium tuberculosis H37Rv,Mycobacterium,23,74,out,False,False,False,5
+EZ55_00751,alt,Mycobacterium smegmatis str. MC2 155,Mycobacterium,25,35,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium smegmatis str. MC2 155,Mycobacterium,25,35,out,False,False,False,1
+EZ55_00751,alt,Desulfitobacterium hafniense DCB-2,Desulfitobacterium,32,29,out,False,False,False,1
+EZ55_00751,alt,Streptococcus suis P1/7,Streptococcus,29,26,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium tuberculosis H37Rv,Mycobacterium,25,46,out,False,False,False,4
+EZ55_00751,alt,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,Leptospira,26,28,out,False,False,False,1
+EZ55_00751,alt,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,Leptospira,26,28,out,False,False,False,1
+EZ55_00751,alt,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,Leptospira,26,28,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium bovis AF2122/97,Mycobacterium,25,46,out,False,False,False,1
+EZ55_00751,alt,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,Leptospira,26,28,out,False,False,False,1
+EZ55_00751,alt,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,Leptospira,26,30,out,False,False,False,1
+EZ55_00751,alt,Streptomyces clavuligerus,Streptomyces,22,64,out,False,False,False,1
+EZ55_00751,alt,Bordetella pertussis Tohama I,Bordetella,29,43,other_proteo,False,False,False,1
+EZ55_00751,alt,Saccharopolyspora erythraea NRRL 2338,Saccharopolyspora,22,75,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium tuberculosis CDC1551,Mycobacterium,23,72,out,False,False,False,2
+EZ55_00751,alt,Burkholderia pseudomallei K96243,Burkholderia,26,77,other_proteo,False,False,False,1
+EZ55_00751,alt,Bordetella pertussis Tohama I,Bordetella,29,43,other_proteo,False,False,False,1
+EZ55_00751,alt,Staphylococcus epidermidis RP62A,Staphylococcus,26,44,out,False,False,False,1
+EZ55_00751,alt,Staphylococcus epidermidis RP62A,Staphylococcus,26,44,out,False,False,False,2
+EZ55_00751,alt,Staphylococcus aureus subsp. aureus USA300_FPR3757,Staphylococcus,26,44,out,False,False,False,1
+EZ55_00751,alt,Staphylococcus epidermidis ATCC 12228,Staphylococcus,26,44,out,False,False,False,1
+EZ55_00751,alt,Staphylococcus epidermidis RP62A,Staphylococcus,26,44,out,False,False,False,2
+EZ55_00751,alt,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,Leptospira,26,26,out,False,False,False,1
+EZ55_00751,alt,Streptomyces coelicolor A3(2),Streptomyces,27,19,out,False,False,False,1
+EZ55_00751,alt,Shigella flexneri 2a str. 2457T,Shigella,25,84,out,False,False,False,1
+EZ55_00751,alt,Mycobacterium avium,Mycobacterium,29,37,out,False,False,False,1
+EZ55_01060,alt,Shewanella oneidensis MR-1,Shewanella,64,99,kg_genus,False,False,True,2
+EZ55_01060,alt,Shewanella oneidensis MR-1,Shewanella,52,99,kg_genus,False,False,True,3
+EZ55_01060,alt,Pseudoalteromonas haloplanktis TAC125,Pseudoalteromonas,52,99,out,False,False,False,1
+EZ55_01060,alt,Xylella fastidiosa 9a5c,Xylella,51,99,other_proteo,False,False,False,1
+EZ55_01060,alt,Xylella fastidiosa (strain Temecula1 / ATCC 700964),Xylella,52,94,other_proteo,False,False,False,3
+EZ55_01060,alt,Xanthomonas campestris pv. campestris str. 8004,Xanthomonas,52,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Asaia bogorensis NBRC 16594,Asaia,48,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Capnocytophaga canimorsus Cc5,Capnocytophaga,46,99,out,False,False,False,1
+EZ55_01060,alt,Leishmania donovani,Leishmania,47,93,out,False,False,False,0
+EZ55_01060,alt,Leishmania infantum,Leishmania,47,94,out,False,False,False,2
+EZ55_01060,alt,Astrosporangium hypotensionis,Astrosporangium,48,89,out,False,False,False,0
+EZ55_01060,alt,Porphyromonas gingivalis ATCC 33277,Porphyromonas,46,93,out,False,False,False,5
+EZ55_01060,alt,Escherichia coli K-12 substr. MG1655,Escherichia,46,93,other_proteo,False,False,False,4
+EZ55_01060,alt,Escherichia coli,Escherichia,46,93,other_proteo,False,False,False,1
+EZ55_01060,alt,Porphyromonas gingivalis W83,Porphyromonas,46,93,out,False,False,False,2
+EZ55_01060,alt,Shigella flexneri 5a str. M90T,Shigella,46,93,out,False,False,False,1
+EZ55_01060,alt,Salmonella enterica subsp. enterica serovar Enteritidis str. P125109,Salmonella,45,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,45,94,other_proteo,False,False,False,3
+EZ55_01060,alt,Sinorhizobium meliloti 1021,Sinorhizobium,41,93,other_proteo,False,False,False,1
+EZ55_01060,alt,Brucella melitensis biovar Abortus 2308,Brucella,42,92,other_proteo,False,False,False,3
+EZ55_01060,alt,Corynebacterium glutamicum ATCC 13032,Corynebacterium,44,93,out,False,False,False,2
+EZ55_01060,alt,Bradyrhizobium japonicum USDA 110,Bradyrhizobium,40,95,other_proteo,False,False,False,1
+EZ55_01060,alt,Bdellovibrio bacteriovorus (strain ATCC 15356 / DSM 50701 / NCIMB 9529 / HD100),Bdellovibrio,38,94,out,False,False,False,1
+EZ55_01060,alt,Porphyromonas gingivalis W83,Porphyromonas,37,93,out,False,False,False,1
+EZ55_01060,alt,Porphyromonas gingivalis ATCC 33277,Porphyromonas,36,93,out,False,False,False,1
+EZ55_01060,alt,Escherichia coli K-12 substr. MG1655,Escherichia,35,94,other_proteo,False,False,False,8
+EZ55_01060,alt,Salmonella enterica subsp. enterica serovar Enteritidis str. P125109,Salmonella,34,94,other_proteo,False,False,False,2
+EZ55_01060,alt,Salmonella enterica subsp. enterica serovar Typhimurium str. D23580,Salmonella,34,94,other_proteo,False,False,False,2
+EZ55_01060,alt,Salmonella typhimurium LT2,Salmonella,34,94,other_proteo,False,False,False,4
+EZ55_01060,alt,Photobacterium damselae subsp. damselae CIP 102761,Photobacterium,33,94,other_proteo,False,False,False,2
+EZ55_01060,alt,Pasteurella multocida subsp. multocida str. Pm70,Pasteurella,33,93,other_proteo,False,False,False,1
+EZ55_01060,alt,Haemophilus influenzae Rd KW20,Haemophilus,32,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Proteus mirabilis HI4320,Proteus,32,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd),Haemophilus,32,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Shewanella oneidensis MR-1,Shewanella,33,93,kg_genus,False,False,False,1
+EZ55_01060,alt,Photorhabdus luminescens subsp. laumondii TTO1,Photorhabdus,32,94,out,False,False,False,1
+EZ55_01060,alt,Yersinia pseudotuberculosis IP 32953,Yersinia,33,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Yersinia pestis KIM,Yersinia,32,94,other_proteo,False,False,False,2
+EZ55_01060,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,32,94,other_proteo,False,False,False,2
+EZ55_01060,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,32,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Burkholderia pseudomallei K96243,Burkholderia,33,92,other_proteo,False,False,False,1
+EZ55_01060,alt,Burkholderia cenocepacia J2315,Burkholderia,33,94,other_proteo,False,False,False,2
+EZ55_01060,alt,Aeromonas salmonicida subsp. salmonicida A449,Aeromonas,31,92,out,False,False,False,1
+EZ55_01060,alt,Haemophilus ducreyi 35000HP,Haemophilus,31,93,other_proteo,False,False,False,1
+EZ55_01060,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,32,94,kg_genus,False,False,False,3
+EZ55_01060,alt,Neisseria meningitidis MC58,Neisseria,33,92,other_proteo,False,False,False,2
+EZ55_01060,alt,Pseudomonas putida KT2440,Pseudomonas,32,94,kg_genus,False,False,False,4
+EZ55_01060,alt,Synechocystis sp. PCC 6803,Synechocystis,32,93,cyano,False,False,False,1
+EZ55_01060,alt,Neisseria gonorrhoeae FA 1090,Neisseria,32,92,other_proteo,False,False,False,1
+EZ55_01060,alt,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,30,85,out,False,False,False,10
+EZ55_01060,alt,Arabidopsis thaliana,Arabidopsis,30,84,out,False,False,False,3
+EZ55_01060,alt,Deinococcus radiodurans R1,Deinococcus,32,94,out,False,False,False,3
+EZ55_01060,alt,Citrus clementina,Citrus,30,84,out,False,False,False,1
+EZ55_01060,alt,Coxiella burnetii RSA 493,Coxiella,29,92,out,False,False,False,1
+EZ55_01060,alt,Acinetobacter sp. ADP1,Acinetobacter,31,92,other_proteo,False,False,False,1
+EZ55_01060,alt,Nostoc sp. PCC 7120,Nostoc,31,93,cyano,False,False,False,1
+EZ55_01060,alt,Oryza sativa subsp. japonica,Oryza,30,88,out,False,False,False,1
+EZ55_01060,alt,Deinococcus geothermalis DSM 11300,Deinococcus,31,95,out,False,False,False,1
+EZ55_01060,alt,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,29,94,out,False,False,False,11
+EZ55_01060,alt,Zea mays,Zea,30,87,out,False,False,False,1
+EZ55_01060,alt,Aliivibrio salmonicida LFI1238,Aliivibrio,30,94,other_proteo,False,False,False,1
+EZ55_01060,alt,Phaseolus vulgaris,Phaseolus,29,87,out,False,False,False,1
+EZ55_01060,alt,Phaeodactylum tricornutum (strain CCAP 1055/1),Phaeodactylum,31,93,out,False,False,False,1
+EZ55_01060,alt,Burkholderia pseudomallei K96243,Burkholderia,29,93,other_proteo,False,False,False,1
+EZ55_01060,alt,Entamoeba histolytica HM-1:IMSS,Entamoeba,28,99,out,False,False,False,1
+EZ55_01060,alt,Burkholderia thailandensis E264,Burkholderia,29,93,other_proteo,False,False,False,2
+EZ55_01060,alt,Acinetobacter sp. neg1,Acinetobacter,29,92,other_proteo,False,False,False,1
+EZ55_01060,alt,Phytophthora infestans T30-4,Phytophthora,29,93,out,False,False,False,3
+EZ55_01060,alt,Entamoeba histolytica HM-1:IMSS,Entamoeba,28,91,out,False,False,False,1
+EZ55_01060,alt,Acinetobacter baumannii ATCC 17978,Acinetobacter,35,58,other_proteo,False,False,False,1
+EZ55_01060,alt,Leptospira interrogans serovar Copenhageni,Leptospira,31,78,out,False,False,False,0
+EZ55_01060,alt,Phytophthora nicotianae INRA-310,Phytophthora,29,88,out,False,False,False,1
+EZ55_01060,alt,Nocardia cyriacigeorgica GUH-2,Nocardia,29,7,out,False,False,False,1
+EZ55_01060,alt,Mus musculus (Mouse),Mus,31,81,out,False,False,False,4
+EZ55_01060,alt,Mus musculus,Mus,31,81,out,False,False,False,6
+EZ55_01060,alt,Phytophthora infestans T30-4,Phytophthora,28,88,out,False,False,False,1
+EZ55_01060,alt,Rattus norvegicus (Rat),Rattus,30,81,out,False,False,False,8
+EZ55_01060,alt,Homo sapiens (Human),Homo,30,81,out,False,False,False,16
+EZ55_01060,alt,Oncorhynchus mykiss,Oncorhynchus,29,81,out,False,False,False,1
+EZ55_01060,alt,Sus scrofa (Pig),Sus,31,81,out,False,False,False,0
+EZ55_01060,alt,Bos taurus,Bos,30,88,out,False,False,False,2
+EZ55_01060,alt,Bos taurus,Bos,30,88,out,False,False,False,0
+EZ55_01060,alt,Dictyostelium discoideum AX4,Dictyostelium,27,91,out,False,False,False,1
+EZ55_01060,alt,Rattus norvegicus (Rat),Rattus,29,81,out,False,False,False,4
+EZ55_01060,alt,Colletotrichum lupini,Colletotrichum,27,65,out,False,False,False,1
+EZ55_01060,alt,Mus musculus,Mus,29,87,out,False,False,False,6
+EZ55_01060,alt,Coprinopsis cinerea okayama7#130,Coprinopsis,30,87,out,False,False,False,1
+EZ55_01060,alt,Leishmania braziliensis,Leishmania,28,76,out,False,False,False,1
+EZ55_01060,alt,Exophiala dermatitidis NIH/UT8656,Exophiala,26,86,out,False,False,False,1
+EZ55_01060,alt,Homo sapiens,Homo,28,87,out,False,False,False,14
+EZ55_01060,alt,Mus musculus,Mus,28,77,out,False,False,False,6
+EZ55_01060,alt,Naegleria gruberi,Naegleria,28,77,out,False,False,False,1
+EZ55_01060,alt,Sus scrofa (Pig),Sus,28,87,out,False,False,False,0
+EZ55_01060,alt,Mus musculus,Mus,30,74,out,False,False,False,1
+EZ55_01060,alt,Aspergillus fischeri NRRL 181,Aspergillus,26,79,out,False,False,False,1
+EZ55_01060,alt,Bos taurus,Bos,28,87,out,False,False,False,2
+EZ55_01060,alt,Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast),Saccharomyces,27,78,out,False,False,False,7
+EZ55_01060,alt,Aspergillus niger,Aspergillus,26,87,out,False,False,False,1
+EZ55_01060,alt,Trichophyton rubrum CBS 118892,Trichophyton,25,88,out,False,False,False,2
+EZ55_01060,alt,Acinetobacter baumannii ATCC 17978,Acinetobacter,28,79,other_proteo,False,False,False,1
+EZ55_01060,alt,Acinetobacter baumannii AYE,Acinetobacter,28,79,other_proteo,False,False,False,2
+EZ55_01060,alt,Acinetobacter baumannii ACICU,Acinetobacter,29,74,other_proteo,False,False,False,1
+EZ55_01060,alt,Schistosoma mansoni,Schistosoma,29,73,out,False,False,False,2
+EZ55_01060,alt,Neurospora crassa OR74A,Neurospora,27,65,out,False,False,False,1
+EZ55_01060,alt,Aspergillus niger,Aspergillus,25,79,out,False,False,False,1
+EZ55_01060,alt,Aspergillus oryzae RIB40,Aspergillus,24,87,out,False,False,False,2
+EZ55_01060,alt,Aspergillus terreus NIH2624,Aspergillus,26,87,out,False,False,False,1
+EZ55_01060,alt,Paracoccidioides lutzii Pb01,Paracoccidioides,26,87,out,False,False,False,1
+EZ55_01060,alt,Aspergillus fumigatus Af293,Aspergillus,26,66,out,False,False,False,1
+EZ55_01060,alt,Aspergillus fumigatus Af293,Aspergillus,27,71,out,False,False,False,3
+EZ55_01060,alt,Paracoccidioides brasiliensis Pb18,Paracoccidioides,26,87,out,False,False,False,1
+EZ55_01060,alt,Mus musculus,Mus,29,72,out,False,False,False,1
+EZ55_01060,alt,Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432),Ajellomyces,27,87,out,False,False,False,1
+EZ55_01060,alt,Aspergillus niger,Aspergillus,27,64,out,False,False,False,1
+EZ55_01060,alt,Arabidopsis thaliana (Mouse-ear cress),Arabidopsis,24,78,out,False,False,False,6
+EZ55_01060,alt,Leishmania infantum,Leishmania,26,75,out,False,False,False,1
+EZ55_01060,alt,Arabidopsis thaliana,Arabidopsis,24,76,out,False,False,False,8
+EZ55_01060,alt,Mus musculus,Mus,23,91,out,False,False,False,2
+EZ55_01060,alt,Schizosaccharomyces pombe,Schizosaccharomyces,26,73,out,False,False,False,1
+EZ55_01060,alt,Homo sapiens (Human),Homo,23,92,out,False,False,False,14
+EZ55_01060,alt,Rattus norvegicus,Rattus,24,91,out,False,False,False,1
+EZ55_01060,alt,Drosophila melanogaster,Drosophila,24,76,out,False,False,False,1
+EZ55_01060,alt,Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast),Saccharomyces,24,72,out,False,False,False,2
+EZ55_01060,alt,Exophiala dermatitidis NIH/UT8656,Exophiala,25,58,out,False,False,False,1
+EZ55_01060,alt,Saccharomyces cerevisiae,Saccharomyces,22,72,out,False,False,False,6
+EZ55_01060,alt,Mus musculus,Mus,22,72,out,False,False,False,0
+EZ55_01060,alt,Aspergillus niger,Aspergillus,22,88,out,False,False,False,1
+EZ55_01060,alt,Pleurotus djamor,Pleurotus,23,66,out,False,False,False,1
+EZ55_01060,alt,Schizophyllum commune (Split gill fungus),Schizophyllum,23,73,out,False,False,False,0
+EZ55_01060,alt,Diaporthe leptostromiformis (Lupinosis disease fungus) (Phomopsis leptostromiformis),Diaporthe,22,54,out,False,False,False,0
+EZ55_01060,alt,Diaporthe leptostromiformis (Lupinosis disease fungus) (Phomopsis leptostromiformis),Diaporthe,23,78,out,False,False,False,0
+EZ55_01060,alt,Rattus norvegicus,Rattus,29,30,out,False,False,False,1
+EZ55_01060,alt,Coprinellus disseminatus,Coprinellus,23,68,out,False,False,False,1
+EZ55_01060,alt,Trypanosoma brucei,Trypanosoma,23,58,out,False,False,False,0
+DEH24_14130,alt,Pseudoalteromonas lipolytica SCSIO 04301,Pseudoalteromonas,82,98,out,False,False,False,1
+DEH24_14130,alt,Aeromonas hydrophila NJ-35,Aeromonas,79,100,out,False,False,False,1
+DEH24_14130,alt,Pseudoalteromonas sp. SM9913,Pseudoalteromonas,78,98,out,False,False,False,1
+DEH24_14130,alt,Shewanella oneidensis MR-1,Shewanella,80,99,kg_genus,False,False,True,3
+DEH24_14130,alt,Shewanella putrefaciens,Shewanella,80,99,kg_genus,False,False,True,1
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,81,86,other_proteo,False,False,False,8
+DEH24_14130,alt,Shewanella algae,Shewanella,79,99,kg_genus,False,False,True,1
+DEH24_14130,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,82,91,other_proteo,False,False,False,4
+DEH24_14130,alt,Aliivibrio fischeri ES114,Aliivibrio,81,92,other_proteo,False,False,False,1
+DEH24_14130,alt,Vibrio mimicus VM603,Vibrio,80,91,other_proteo,False,False,False,2
+DEH24_14130,alt,Vibrio anguillarum 775,Vibrio,81,91,other_proteo,False,False,False,2
+DEH24_14130,alt,Pseudomonas putida KT2440,Pseudomonas,76,98,kg_genus,False,False,True,1
+DEH24_14130,alt,Vibrio salmonicida LFI1238,Vibrio,78,93,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),Pseudomonas,77,95,kg_genus,False,False,True,9
+DEH24_14130,alt,Pseudomonas fluorescens Pf0-1,Pseudomonas,72,99,kg_genus,False,False,True,1
+DEH24_14130,alt,Thalassolituus oleivorans MIL-1,Thalassolituus,76,94,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. actinidiae str. Shaanxi_M228,Pseudomonas,77,90,kg_genus,False,False,True,2
+DEH24_14130,alt,Thioalkalivibrio sp. K90mix,Thioalkalivibrio,62,89,other_proteo,False,False,False,1
+DEH24_14130,alt,Archaeoglobus fulgidus DSM 4304,Archaeoglobus,46,90,out,False,False,False,1
+DEH24_14130,alt,Archaeoglobus profundus DSM 5631,Archaeoglobus,47,88,out,False,False,False,1
+DEH24_14130,alt,Tepidanaerobacter acetatoxydans Re1,Tepidanaerobacter,45,90,out,False,False,False,1
+DEH24_14130,alt,Methanosarcina mazei Goe1,Methanosarcina,38,95,out,False,False,False,1
+DEH24_14130,alt,Methanosarcina acetivorans C2A,Methanosarcina,36,87,out,False,False,False,2
+DEH24_14130,alt,Aeromonas hydrophila NJ-35,Aeromonas,39,76,out,False,False,False,2
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,41,76,other_proteo,False,False,False,1
+DEH24_14130,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,43,77,other_proteo,False,False,False,3
+DEH24_14130,alt,Desulfovibrio desulfuricans G20,Desulfovibrio,41,97,other_proteo,False,False,False,1
+DEH24_14130,alt,Shewanella algae,Shewanella,34,84,kg_genus,False,False,False,1
+DEH24_14130,alt,Shewanella algae,Shewanella,34,84,kg_genus,False,False,False,1
+DEH24_14130,alt,Burkholderia multivorans ATCC 17616,Burkholderia,35,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Burkholderia thailandensis E264,Burkholderia,35,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Desulfotignum phosphitoxidans DSM 13687,Desulfotignum,38,84,out,False,False,False,1
+DEH24_14130,alt,Geobacter sulfurreducens PCA,Geobacter,34,88,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,37,81,kg_genus,False,False,False,2
+DEH24_14130,alt,Burkholderia cenocepacia J2315,Burkholderia,34,85,other_proteo,False,False,False,3
+DEH24_14130,alt,Xanthomonas oryzae pv. oryzae PXO99A,Xanthomonas,37,87,other_proteo,False,False,False,2
+DEH24_14130,alt,Stenotrophomonas maltophilia,Stenotrophomonas,35,97,out,False,False,False,1
+DEH24_14130,alt,Burkholderia pseudomallei,Burkholderia,34,83,other_proteo,False,False,False,3
+DEH24_14130,alt,Thermoanaerobacter tengcongensis MB4,Thermoanaerobacter,37,90,out,False,False,False,1
+DEH24_14130,alt,Xanthomonas campestris pv. campestris str. ATCC 33913,Xanthomonas,36,87,other_proteo,False,False,False,3
+DEH24_14130,alt,Methanosarcina acetivorans C2A,Methanosarcina,36,79,out,False,False,False,1
+DEH24_14130,alt,Thermoanaerobacter tengcongensis MB4,Thermoanaerobacter,38,31,out,False,False,False,1
+DEH24_14130,alt,Clostridium beijerincki NCIMB 8052,Clostridium,37,91,out,False,False,False,1
+DEH24_14130,alt,Brachyspira hyodysenteriae WA1,Brachyspira,33,89,out,False,False,False,1
+DEH24_14130,alt,Sinorhizobium meliloti,Sinorhizobium,32,93,other_proteo,False,False,False,3
+DEH24_14130,alt,Agrobacterium tumefaciens 5A,Agrobacterium,35,84,other_proteo,False,False,False,1
+DEH24_14130,alt,Xanthomonas campestris pv. campestris str. 8004,Xanthomonas,36,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Pantoea agglomerans,Pantoea,35,84,other_proteo,False,False,False,1
+DEH24_14130,alt,Treponema denticola ATCC 35405,Treponema,33,93,out,False,False,False,1
+DEH24_14130,alt,Herbaspirillum seropedicae SmR1,Herbaspirillum,32,96,out,False,False,False,1
+DEH24_14130,alt,Proteus mirabilis HI4320,Proteus,36,86,other_proteo,False,False,False,3
+DEH24_14130,alt,Thermococcus kodakaraensis KOD1,Thermococcus,38,86,out,False,False,False,1
+DEH24_14130,alt,Methanosarcina mazei Goe1,Methanosarcina,35,76,out,False,False,False,1
+DEH24_14130,alt,Bordetella bronchiseptica RB50,Bordetella,32,94,other_proteo,False,False,False,1
+DEH24_14130,alt,Enterobacter sp. HSTU-ASh6,Enterobacter,35,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Ethanoligenens harbinense YUAN-3,Ethanoligenens,37,92,out,False,False,False,1
+DEH24_14130,alt,Escherichia coli K-12 substr. MG1655,Escherichia,35,86,other_proteo,False,False,False,28
+DEH24_14130,alt,Yersinia pseudotuberculosis YPIII,Yersinia,34,88,other_proteo,False,False,False,3
+DEH24_14130,alt,Yersinia pestis CO92,Yersinia,34,88,other_proteo,False,False,False,1
+DEH24_14130,alt,Phenylobacterium zucineum HLK1,Phenylobacterium,33,94,out,False,False,False,1
+DEH24_14130,alt,Agrobacterium tumefaciens str. C58 (Cereon),Agrobacterium,30,91,other_proteo,False,False,False,3
+DEH24_14130,alt,Escherichia coli O157:H7 EDL933,Escherichia,34,86,other_proteo,False,False,False,1
+DEH24_14130,alt,Rhizobium sp. NGR234,Rhizobium,32,91,other_proteo,False,False,False,1
+DEH24_14130,alt,Sinorhizobium fredii HH103,Sinorhizobium,31,91,other_proteo,False,False,False,1
+DEH24_14130,alt,Yersinia enterocolitica subsp. enterocolitica 8081,Yersinia,33,88,other_proteo,False,False,False,1
+DEH24_14130,alt,Nitrosomonas europaea ATCC 19718,Nitrosomonas,35,84,other_proteo,False,False,False,1
+DEH24_14130,alt,Sinorhizobium meliloti 1021,Sinorhizobium,28,91,other_proteo,False,False,False,3
+DEH24_14130,alt,Geobacter sulfurreducens PCA,Geobacter,32,93,other_proteo,False,False,False,1
+DEH24_14130,alt,Geobacter anodireducens,Geobacter,35,78,other_proteo,False,False,False,1
+DEH24_14130,alt,Cronobacter sakazakii (strain ATCC BAA-894),Cronobacter,33,86,out,False,False,False,1
+DEH24_14130,alt,Thermoanaerobacter tengcongensis MB4,Thermoanaerobacter,34,83,out,False,False,False,2
+DEH24_14130,alt,Helicobacter suis HS5,Helicobacter,31,85,other_proteo,False,False,False,1
+DEH24_14130,alt,Thermoanaerobacter tengcongensis,Thermoanaerobacter,35,80,out,False,False,False,0
+DEH24_14130,alt,Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344,Salmonella,33,83,other_proteo,False,False,False,4
+DEH24_14130,alt,Halalkalibacterium halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / C-125),Halalkalibacterium,35,86,out,False,False,False,1
+DEH24_14130,alt,Clostridium beijerincki NCIMB 8052,Clostridium,33,89,out,False,False,False,1
+DEH24_14130,alt,Borrelia burgdorferi B31,Borrelia,35,83,out,False,False,False,9
+DEH24_14130,alt,Leptospira interrogans serovar lai str. 56601,Leptospira,34,83,out,False,False,False,2
+DEH24_14130,alt,Thermotoga maritima MSB8,Thermotoga,32,90,out,True,False,False,2
+DEH24_14130,alt,Rhodobacter capsulatus (strain ATCC BAA-309 / NBRC 16581 / SB1003),Rhodobacter,32,85,out,True,False,False,1
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,34,28,other_proteo,False,False,False,8
+DEH24_14130,alt,Burkholderia pseudomallei K96243,Burkholderia,35,79,other_proteo,False,False,False,1
+DEH24_14130,alt,Shewanella oneidensis MR-1,Shewanella,29,82,kg_genus,False,False,False,2
+DEH24_14130,alt,Xanthomonas axonopodis pv. citri str. 306,Xanthomonas,32,84,other_proteo,False,False,False,2
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,32,89,other_proteo,False,False,False,8
+DEH24_14130,alt,Oleidesulfovibrio alaskensis G20,Oleidesulfovibrio,32,87,out,False,False,False,1
+DEH24_14130,alt,Xanthomonas oryzae pv. oryzae KACC10331,Xanthomonas,37,79,other_proteo,False,False,False,1
+DEH24_14130,alt,Brachyspira hyodysenteriae WA1,Brachyspira,37,73,out,False,False,False,1
+DEH24_14130,alt,Clostridium acetobutylicum ATCC 824,Clostridium,32,95,out,False,False,False,1
+DEH24_14130,alt,Xanthomonas campestris pv. campestris str. 8004,Xanthomonas,32,82,other_proteo,False,False,False,1
+DEH24_14130,alt,Phenylobacterium zucineum HLK1,Phenylobacterium,29,93,out,False,False,False,1
+DEH24_14130,alt,Geobacter sulfurreducens PCA,Geobacter,34,88,other_proteo,False,False,False,1
+DEH24_14130,alt,Thermococcus eurythermalis,Thermococcus,37,85,out,False,False,False,1
+DEH24_14130,alt,Helicobacter pylori (strain ATCC 700392 / 26695) (Campylobacter pylori),Helicobacter,34,65,other_proteo,False,False,False,10
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,31,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Clostridium acetobutylicum ATCC 824,Clostridium,31,88,out,False,False,False,2
+DEH24_14130,alt,Clostridium difficile 630,Clostridium,34,83,out,False,False,False,2
+DEH24_14130,alt,Bradyrhizobium japonicum USDA 110,Bradyrhizobium,33,84,other_proteo,False,False,False,2
+DEH24_14130,alt,Campylobacter jejuni subsp. jejuni PT14,Campylobacter,31,82,other_proteo,False,False,False,10
+DEH24_14130,alt,Xanthomonas oryzae pv. oryzae PXO99A,Xanthomonas,32,84,other_proteo,False,False,False,4
+DEH24_14130,alt,Caulobacter crescentus CB15,Caulobacter,25,93,other_proteo,False,False,False,2
+DEH24_14130,alt,Actinosynnema pretiosum,Actinosynnema,36,81,out,False,False,False,1
+DEH24_14130,alt,Bacillus subtilis (strain 168),Bacillus,35,85,out,False,False,False,1
+DEH24_14130,alt,Phenylobacterium zucineum HLK1,Phenylobacterium,35,73,out,False,False,False,1
+DEH24_14130,alt,Caulobacter crescentus NA1000,Caulobacter,32,80,other_proteo,False,False,False,1
+DEH24_14130,alt,Caulobacter crescentus CB15,Caulobacter,32,85,other_proteo,False,False,False,1
+DEH24_14130,alt,Vibrio vulnificus MO6-24/O,Vibrio,35,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Methanococcus maripaludis S2,Methanococcus,31,88,out,False,False,False,2
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,34,76,other_proteo,False,False,False,8
+DEH24_14130,alt,Agrobacterium tumefaciens str. C58 (Cereon),Agrobacterium,23,95,other_proteo,False,False,False,3
+DEH24_14130,alt,Shewanella oneidensis MR-1,Shewanella,30,83,kg_genus,False,False,False,2
+DEH24_14130,alt,Treponema denticola ATCC 35405,Treponema,32,32,out,False,False,False,4
+DEH24_14130,alt,Desulfocapsa sulfexigens DSM 10523,Desulfocapsa,31,89,out,False,False,False,1
+DEH24_14130,alt,Borrelia burgdorferi B31,Borrelia,28,81,out,False,False,False,4
+DEH24_14130,alt,Leptospira interrogans serovar Manilae,Leptospira,32,89,out,False,False,False,1
+DEH24_14130,alt,Actinoplanes missouriensis 431,Actinoplanes,33,81,out,False,False,False,1
+DEH24_14130,alt,Brachyspira pilosicoli 95/1000,Brachyspira,35,58,out,False,False,False,1
+DEH24_14130,alt,Thermoanaerobacter tengcongensis MB4,Thermoanaerobacter,37,73,out,False,False,False,1
+DEH24_14130,alt,Clostridium difficile 630,Clostridium,32,86,out,False,False,False,1
+DEH24_14130,alt,Borrelia burgdorferi B31,Borrelia,31,34,out,False,False,False,8
+DEH24_14130,alt,Desulfotignum phosphitoxidans DSM 13687,Desulfotignum,38,77,out,False,False,False,1
+DEH24_14130,alt,Salmonella enterica subsp. enterica serovar Typhi Ty2,Salmonella,32,83,other_proteo,False,False,False,1
+DEH24_14130,alt,Treponema pallidum subsp. pallidum str. Nichols,Treponema,29,30,out,False,False,False,1
+DEH24_14130,alt,Bacillus pumilus (strain SAFR-032),Bacillus,30,81,out,False,False,False,1
+DEH24_14130,alt,Bradyrhizobium japonicum USDA 110,Bradyrhizobium,31,84,other_proteo,False,False,False,2
+DEH24_14130,alt,Laribacter hongkongensis HLHK9,Laribacter,30,96,out,False,False,False,1
+DEH24_14130,alt,Clostridium beijerincki NCIMB 8052,Clostridium,31,81,out,False,False,False,2
+DEH24_14130,alt,Stenotrophomonas maltophilia K279a,Stenotrophomonas,34,44,out,False,False,False,6
+DEH24_14130,alt,Stenotrophomonas maltophilia,Stenotrophomonas,34,44,out,False,False,False,2
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,34,49,other_proteo,False,False,False,4
+DEH24_14130,alt,Agrobacterium tumefaciens 5A,Agrobacterium,31,73,other_proteo,False,False,False,1
+DEH24_14130,alt,Clostridium beijerincki NCIMB 8052,Clostridium,27,88,out,False,False,False,1
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,32,76,other_proteo,False,False,False,1
+DEH24_14130,alt,Azospirillum brasilense,Azospirillum,32,80,out,False,False,False,1
+DEH24_14130,alt,Brachyspira hyodysenteriae WA1,Brachyspira,32,59,out,False,False,False,2
+DEH24_14130,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,30,93,kg_genus,False,False,False,11
+DEH24_14130,alt,Polymorphum gilvum SL003B-26A1,Polymorphum,32,90,out,False,False,False,1
+DEH24_14130,alt,Bradyrhizobium japonicum USDA 110,Bradyrhizobium,31,90,other_proteo,False,False,False,2
+DEH24_14130,alt,Clostridium beijerincki NCIMB 8052,Clostridium,28,85,out,False,False,False,1
+DEH24_14130,alt,Stenotrophomonas maltophilia R551-3,Stenotrophomonas,33,44,out,False,False,False,1
+DEH24_14130,alt,Xanthomonas campestris pv. campestris str. 8004,Xanthomonas,34,33,other_proteo,False,False,False,1
+DEH24_14130,alt,Oceanobacillus iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 3954 / HTE831),Oceanobacillus,33,83,out,False,False,False,1
+DEH24_14130,alt,Clostridium beijerinckii NRRL B-598,Clostridium,27,88,out,False,False,False,1
+DEH24_14130,alt,Xanthomonas campestris pv. vesicatoria str. 85-10,Xanthomonas,33,44,other_proteo,False,False,False,1
+DEH24_14130,alt,Xanthomonas campestris pv. campestris str. 8004,Xanthomonas,35,44,other_proteo,False,False,False,1
+DEH24_14130,alt,Erythrobacter sp. 3-20A1M,Erythrobacter,26,82,out,False,False,False,1
+DEH24_14130,alt,Xanthomonas oryzae pv. oryzae KACC10331,Xanthomonas,33,44,other_proteo,False,False,False,3
+DEH24_14130,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,32,49,other_proteo,False,False,False,4
+DEH24_14130,alt,Bacillus amyloliquefaciens,Bacillus,34,81,out,False,False,False,0
+DEH24_14130,alt,Vitis vinifera,Vitis,32,84,out,False,False,False,1
+DEH24_14130,alt,Caulobacter crescentus CB15,Caulobacter,33,83,other_proteo,False,False,False,2
+DEH24_14130,alt,Xanthomonas oryzae pv. oryzae KACC10331,Xanthomonas,32,40,other_proteo,False,False,False,2
+DEH24_14130,alt,Methanospirillum hungatei JF-1,Methanospirillum,30,75,out,False,False,False,1
+DEH24_14130,alt,Shewanella oneidensis MR-1,Shewanella,31,49,kg_genus,False,False,False,2
+DEH24_14130,alt,Azorhizobium caulinodans ORS 571,Azorhizobium,31,83,out,False,False,False,1
+DEH24_14130,alt,Bdellovibrio bacteriovorus HD100,Bdellovibrio,30,28,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas putida KT2440,Pseudomonas,31,49,kg_genus,False,False,False,2
+DEH24_14130,alt,Oceanobacillus iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 3954 / HTE831),Oceanobacillus,28,75,out,False,False,False,1
+DEH24_14130,alt,Caulobacter crescentus CB15,Caulobacter,31,91,other_proteo,False,False,False,4
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,31,49,other_proteo,False,False,False,1
+DEH24_14130,alt,Clostridium novyi,Clostridium,26,90,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas putida KT2440,Pseudomonas,32,68,kg_genus,False,False,False,2
+DEH24_14130,alt,Haloferax volcanii DS2,Haloferax,32,80,out,False,False,False,1
+DEH24_14130,alt,Haloferax volcanii DS2,Haloferax,32,80,out,False,False,False,2
+DEH24_14130,alt,Haloferax volcanii,Haloferax,28,44,out,False,False,False,1
+DEH24_14130,alt,Vibrio vulnificus YJ016,Vibrio,31,85,other_proteo,False,False,False,1
+DEH24_14130,alt,Acidithiobacillus caldus,Acidithiobacillus,36,32,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas aeruginosa UCBPP-PA14,Pseudomonas,31,49,kg_genus,False,False,False,3
+DEH24_14130,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,31,49,kg_genus,False,False,False,9
+DEH24_14130,alt,Shewanella putrefaciens,Shewanella,31,49,kg_genus,False,False,False,1
+DEH24_14130,alt,Clostridium acetobutylicum ATCC 824,Clostridium,30,85,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas donghuensis,Pseudomonas,29,49,kg_genus,False,False,False,1
+DEH24_14130,alt,Thioalkalivibrio sp. K90mix,Thioalkalivibrio,30,49,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,30,49,kg_genus,False,False,False,1
+DEH24_14130,alt,Bacillus subtilis (strain 168),Bacillus,29,47,out,False,False,False,1
+DEH24_14130,alt,Photobacterium damselae subsp. damselae CIP 102761,Photobacterium,33,49,other_proteo,False,False,False,2
+DEH24_14130,alt,Stenotrophomonas maltophilia R551-3,Stenotrophomonas,31,32,out,False,False,False,1
+DEH24_14130,alt,Bacillus cereus biovar anthracis str. CI,Bacillus,28,45,out,False,False,False,1
+DEH24_14130,alt,Shewanella putrefaciens,Shewanella,27,38,kg_genus,False,False,False,1
+DEH24_14130,alt,Bacillus cereus ATCC 14579,Bacillus,28,45,out,False,False,False,7
+DEH24_14130,alt,Periweissella beninensis,Periweissella,33,83,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas fluorescens Pf-5,Pseudomonas,29,49,kg_genus,False,False,False,1
+DEH24_14130,alt,Vibrio salmonicida LFI1238,Vibrio,26,44,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas ogarae,Pseudomonas,29,49,kg_genus,False,False,False,1
+DEH24_14130,alt,Shewanella putrefaciens,Shewanella,26,45,kg_genus,False,False,False,1
+DEH24_14130,alt,Acidithiobacillus thiooxidans,Acidithiobacillus,35,30,other_proteo,False,False,False,1
+DEH24_14130,alt,Shewanella oneidensis MR-1,Shewanella,26,45,kg_genus,False,False,False,1
+DEH24_14130,alt,Aeromonas hydrophila subsp. hydrophila ATCC 7966,Aeromonas,29,50,out,False,False,False,1
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,28,40,other_proteo,False,False,False,2
+DEH24_14130,alt,Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e),Listeria,29,45,out,False,False,False,12
+DEH24_14130,alt,Laribacter hongkongensis HLHK9,Laribacter,30,46,out,False,False,False,1
+DEH24_14130,alt,Laribacter hongkongensis HLHK9,Laribacter,30,44,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas stutzeri A1501,Pseudomonas,29,42,kg_genus,False,False,False,1
+DEH24_14130,alt,Pseudomonas fluorescens Pf-5,Pseudomonas,27,46,kg_genus,False,False,False,1
+DEH24_14130,alt,Myxococcus xanthus DK 1622,Myxococcus,29,81,out,False,False,False,1
+DEH24_14130,alt,Bacillus amyloliquefaciens,Bacillus,29,46,out,False,False,False,0
+DEH24_14130,alt,Vitis vinifera,Vitis,26,37,out,False,False,False,2
+DEH24_14130,alt,Shewanella putrefaciens,Shewanella,29,44,kg_genus,False,False,False,1
+DEH24_14130,alt,Laribacter hongkongensis HLHK9,Laribacter,29,44,out,False,False,False,1
+DEH24_14130,alt,Laribacter hongkongensis HLHK9,Laribacter,29,41,out,False,False,False,1
+DEH24_14130,alt,Laribacter hongkongensis HLHK9,Laribacter,29,41,out,False,False,False,1
+DEH24_14130,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,23,39,other_proteo,False,False,False,1
+DEH24_14130,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,27,40,other_proteo,False,False,False,1
+DEH24_14130,alt,Myxococcus xanthus,Myxococcus,27,93,out,False,False,False,2
+DEH24_14130,alt,Helicobacter pylori J99,Helicobacter,33,42,other_proteo,False,False,False,1
+DEH24_14130,alt,Campylobacter jejuni RM1221,Campylobacter,26,47,other_proteo,False,False,False,8
+DEH24_14130,alt,Campylobacter jejuni subsp. jejuni 81-176,Campylobacter,26,47,other_proteo,False,False,False,2
+DEH24_14130,alt,Halalkalibacterium halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / C-125),Halalkalibacterium,27,46,out,False,False,False,1
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,30,31,other_proteo,False,False,False,1
+DEH24_14130,alt,Vibrio alginolyticus,Vibrio,22,38,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,27,46,kg_genus,False,False,False,1
+DEH24_14130,alt,Helicobacter pylori G27,Helicobacter,32,42,other_proteo,False,False,False,1
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,22,39,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. syringae,Pseudomonas,27,47,kg_genus,False,False,False,1
+DEH24_14130,alt,Thermotoga maritima (strain ATCC 43589 / DSM 3109 / JCM 10099 / NBRC 100826 / MSB8),Thermotoga,26,85,out,True,False,False,5
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,23,38,other_proteo,False,False,False,3
+DEH24_14130,alt,Thermosynechococcus sp. CL-1,Thermosynechococcus,33,74,cyano,False,False,False,1
+DEH24_14130,alt,Helicobacter pylori (strain ATCC 700392 / 26695) (Campylobacter pylori),Helicobacter,32,42,other_proteo,False,False,False,8
+DEH24_14130,alt,Methanonatronarchaeum thermophilum,Methanonatronarchaeum,27,83,out,False,False,False,1
+DEH24_14130,alt,Pseudoalteromonas sp. RW-H-Ap-1,Pseudoalteromonas,24,42,out,False,False,False,1
+DEH24_14130,alt,Vibrio mimicus VM603,Vibrio,22,38,other_proteo,False,False,False,1
+DEH24_14130,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,23,47,other_proteo,False,False,False,5
+DEH24_14130,alt,Acinetobacter baumannii,Acinetobacter,21,90,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas putida KT2440,Pseudomonas,27,47,kg_genus,False,False,False,3
+DEH24_14130,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,27,41,other_proteo,False,False,False,1
+DEH24_14130,alt,Periweissella ghanensis,Periweissella,28,75,out,False,False,False,1
+DEH24_14130,alt,Halalkalibacterium halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / C-125),Halalkalibacterium,23,49,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas fluorescens,Pseudomonas,27,89,kg_genus,False,False,False,1
+DEH24_14130,alt,Desulfocapsa sulfexigens DSM 10523,Desulfocapsa,26,21,out,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. phaseolicola 1448A,Pseudomonas,25,66,kg_genus,False,False,False,1
+DEH24_14130,alt,Shouchella clausii (strain KSM-K16),Shouchella,28,46,out,False,False,False,1
+DEH24_14130,alt,Periweissella ghanensis,Periweissella,21,90,out,False,False,False,1
+DEH24_14130,alt,Periweissella fabalis,Periweissella,27,75,out,False,False,False,1
+DEH24_14130,alt,Vibrio vulnificus YJ016,Vibrio,23,41,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas fluorescens SBW25,Pseudomonas,31,65,kg_genus,True,False,False,2
+DEH24_14130,alt,Vibrio anguillarum,Vibrio,24,48,other_proteo,False,False,False,1
+DEH24_14130,alt,Synechococcus elongatus PCC 7942,Synechococcus,28,83,cyano,False,False,False,1
+DEH24_14130,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,25,57,kg_genus,False,False,False,1
+DEH24_14130,alt,Pseudomonas fluorescens SBW25,Pseudomonas,27,80,kg_genus,True,False,False,1
+DEH24_14130,alt,Pseudomonas putida KT2440,Pseudomonas,28,89,kg_genus,False,False,False,3
+DEH24_14130,alt,Shouchella clausii (strain KSM-K16),Shouchella,26,85,out,False,False,False,1
+DEH24_14130,alt,Erwinia pyrifoliae DSM 12163,Erwinia,27,47,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas fluorescens,Pseudomonas,30,65,kg_genus,False,False,False,1
+DEH24_14130,alt,Synechococcus elongatus PCC 7942,Synechococcus,26,81,cyano,False,False,False,1
+DEH24_14130,alt,Synechocystis sp. PCC 6803,Synechocystis,27,72,cyano,False,False,False,4
+DEH24_14130,alt,Helicobacter suis HS5,Helicobacter,29,41,other_proteo,False,False,False,1
+DEH24_14130,alt,Azospirillum brasilense,Azospirillum,48,9,out,False,False,False,1
+DEH24_14130,alt,Helicobacter pylori G27,Helicobacter,22,43,other_proteo,False,False,False,1
+DEH24_14130,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,26,70,kg_genus,False,False,False,8
+DEH24_14130,alt,Periweissella fabalis,Periweissella,19,90,out,False,False,False,1
+ACZ81_05680,alt,Aeromonas hydrophila subsp. hydrophila ATCC 7966,Aeromonas,42,77,out,False,False,False,2
+ACZ81_05680,alt,Pseudomonas chlororaphis,Pseudomonas,31,87,kg_genus,False,False,False,1
+ACZ81_05680,alt,Salmonella enterica subsp. enterica serovar Gallinarum str. 287/91,Salmonella,31,89,other_proteo,False,False,False,1
+ACZ81_05680,alt,Yersinia ruckeri,Yersinia,32,87,other_proteo,False,False,False,1
+ACZ81_05680,alt,Salmonella choleraesuis (strain SC-B67),Salmonella,32,87,other_proteo,False,False,False,6
+ACZ81_05680,alt,Pseudomonas syringae pv. phaseolicola 1448A,Pseudomonas,34,75,kg_genus,False,False,False,1
+ACZ81_05680,alt,Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01) (Photorhabdus luminescens subsp. laumondii),Photorhabdus,32,87,out,False,False,False,0
+ACZ81_05680,alt,Klebsiella pneumoniae,Klebsiella,31,85,other_proteo,False,False,False,4
+ACZ81_05680,alt,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,Salmonella,31,87,other_proteo,False,False,False,6
+ACZ81_05680,alt,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),Salmonella,31,87,other_proteo,False,False,False,12
+ACZ81_05680,alt,Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),Pseudomonas,29,85,kg_genus,False,False,False,7
+ACZ81_05680,alt,Pseudomonas putida KT2440,Pseudomonas,30,87,kg_genus,False,False,False,1
+ACZ81_05680,alt,Yersinia pseudotuberculosis serotype I (strain IP32953),Yersinia,29,87,other_proteo,False,False,False,19
+ACZ81_05680,alt,Candidatus Blochmannia floridanus,Candidatus,30,87,other_proteo,False,True,False,1
+ACZ81_05680,alt,Serratia sp. (strain ATCC 39006) (Prodigiosinella confusarubida),Serratia,30,94,other_proteo,False,False,False,1
+ACZ81_05680,alt,Escherichia coli UTI89,Escherichia,31,87,other_proteo,False,False,False,1
+ACZ81_05680,alt,Escherichia coli CFT073,Escherichia,31,87,other_proteo,False,False,False,1
+ACZ81_05680,alt,Yersinia enterocolitica,Yersinia,29,87,other_proteo,False,False,False,0
+ACZ81_05680,alt,Oxalobacter paraformigenes,Oxalobacter,37,64,out,False,False,False,1
+ACZ81_05680,alt,Dickeya dadantii 3937,Dickeya,30,95,out,False,False,False,2
+ACZ81_05680,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,30,84,other_proteo,False,False,False,1
+ACZ81_05680,alt,Oxalobacter formigenes OXCC13,Oxalobacter,30,84,out,False,False,False,1
+ACZ81_05680,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,33,75,kg_genus,False,False,False,1
+ACZ81_05680,alt,Escherichia coli K-12 substr. MG1655,Escherichia,30,87,other_proteo,False,False,False,15
+ACZ81_05680,alt,Escherichia coli,Escherichia,30,87,other_proteo,False,False,False,0
+ACZ81_05680,alt,Bordetella bronchiseptica RB50,Bordetella,33,68,other_proteo,False,False,False,1
+ACZ81_05680,alt,Pectobacterium atrosepticum SCRI1043,Pectobacterium,30,95,out,False,False,False,2
+ACZ81_05680,alt,Pectobacterium carotovorum subsp. carotovorum (Erwinia carotovora subsp. carotovora),Pectobacterium,30,95,out,False,False,False,1
+ACZ81_05680,alt,Pectobacterium parmentieri,Pectobacterium,30,95,out,False,False,False,1
+ACZ81_05680,alt,Xanthomonas axonopodis pv. citri str. 306,Xanthomonas,28,85,other_proteo,False,False,False,1
+ACZ81_05680,alt,Burkholderia cenocepacia J2315,Burkholderia,35,76,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,29,88,other_proteo,False,False,False,2
+ACZ81_05680,alt,Pseudomonas fluorescens Pf-5,Pseudomonas,31,78,kg_genus,False,False,False,1
+ACZ81_05680,alt,Xanthomonas campestris pv. campestris str. ATCC 33913,Xanthomonas,29,91,other_proteo,False,False,False,1
+ACZ81_05680,alt,Klebsiella pneumoniae subsp. pneumoniae,Klebsiella,28,84,other_proteo,False,False,False,1
+ACZ81_05680,alt,Pseudomonas syringae pv. phaseolicola 1448A,Pseudomonas,31,71,kg_genus,False,False,False,2
+ACZ81_05680,alt,Xanthomonas euroxanthea,Xanthomonas,29,77,other_proteo,False,False,False,1
+ACZ81_05680,alt,Mesorhizobium loti MAFF303099,Mesorhizobium,31,71,out,False,False,False,1
+ACZ81_05680,alt,Pseudomonas putida KT2440,Pseudomonas,28,87,kg_genus,False,False,False,5
+ACZ81_05680,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,31,71,kg_genus,False,False,False,1
+ACZ81_05680,alt,Klebsiella pneumoniae subsp. pneumoniae,Klebsiella,27,81,other_proteo,False,False,False,1
+ACZ81_05680,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,26,85,other_proteo,False,False,False,3
+ACZ81_05680,alt,Rhodobacter sphaeroides 2.4.1,Rhodobacter,28,77,out,False,False,False,1
+ACZ81_05680,alt,Mycobacterium smegmatis str. MC2 155,Mycobacterium,28,65,out,False,False,False,1
+ACZ81_05680,alt,Bacillus subtilis subsp. subtilis str. 168,Bacillus,27,79,out,False,False,False,1
+ACZ81_05680,alt,Burkholderia thailandensis E264,Burkholderia,28,75,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,24,89,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,28,75,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,28,71,other_proteo,False,False,False,1
+ACZ81_05680,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,25,52,other_proteo,False,False,False,2
+ACZ81_05680,alt,Oxalobacter paraformigenes,Oxalobacter,22,92,out,False,False,False,1
+ACZ81_05680,alt,Bacteroides fragilis 638R,Bacteroides,30,73,out,False,False,False,1
+ACZ81_05680,alt,Streptococcus agalactiae 2603V/R,Streptococcus,32,58,out,False,False,False,1
+ACZ81_05680,alt,Magnetospirillum magneticum AMB-1,Magnetospirillum,32,57,out,False,True,False,1
+ACZ81_05680,alt,Lactobacillus acidophilus NCFM,Lactobacillus,27,77,out,False,False,False,2
+ACZ81_05680,alt,Mycobacterium marinum M,Mycobacterium,30,50,out,False,False,False,1
+ACZ81_05680,alt,Sinorhizobium meliloti 1021,Sinorhizobium,22,84,other_proteo,False,False,False,2
+ACZ81_05680,alt,Streptococcus agalactiae NEM316,Streptococcus,32,56,out,False,False,False,3
+ACZ81_05680,alt,Mycobacterium tuberculosis H37Rv,Mycobacterium,28,53,out,False,False,False,6
+ACZ81_05680,alt,Streptococcus gallolyticus subsp. gallolyticus ATCC BAA-2069,Streptococcus,36,50,out,False,False,False,1
+ACZ81_05680,alt,Sinorhizobium meliloti 1021,Sinorhizobium,27,76,other_proteo,False,False,False,1
+ACZ81_05680,alt,Clostridium beijerincki NCIMB 8052,Clostridium,34,44,out,False,False,False,1
+ACZ81_05680,alt,Burkholderia pseudomallei K96243,Burkholderia,27,62,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,28,32,other_proteo,False,False,False,1
+ACZ81_05680,alt,Novosphingobium aromaticivorans DSM 12444,Novosphingobium,23,87,out,False,False,False,2
+ACZ81_05680,alt,Enterobacter sakazakii ATCC BAA-894,Enterobacter,25,81,other_proteo,False,False,False,1
+ACZ81_05680,alt,Clostridium difficile 630,Clostridium,28,61,out,False,False,False,1
+ACZ81_05680,alt,Zymomonas mobilis subsp. mobilis ZM4,Zymomonas,24,79,out,False,False,False,2
+ACZ81_05680,alt,Bordetella petrii (strain ATCC BAA-461 / DSM 12804 / CCUG 43448 / CIP 107267 / Se-1111R),Bordetella,27,69,other_proteo,False,False,False,1
+ACZ81_05680,alt,Corynebacterium diphtheriae NCTC 13129,Corynebacterium,26,90,out,False,False,False,1
+ACZ81_05680,alt,Methanosarcina acetivorans C2A,Methanosarcina,32,52,out,False,False,False,1
+ACZ81_05680,alt,Escherichia coli CFT073,Escherichia,21,69,other_proteo,False,False,False,3
+ACZ81_05680,alt,Clostridioides difficile 630,Clostridioides,26,66,out,False,False,False,2
+ACZ81_05680,alt,Ralstonia solanacearum,Ralstonia,25,76,other_proteo,False,False,False,1
+ACZ81_05680,alt,Clostridium ljungdahlii DSM 13528,Clostridium,25,77,out,False,False,False,1
+ACZ81_05680,alt,Streptococcus gallolyticus UCN34,Streptococcus,28,54,out,False,False,False,0
+ACZ81_05680,alt,Mycobacterium marinum M,Mycobacterium,25,68,out,False,False,False,1
+ACZ81_05680,alt,Lactobacillus plantarum WCFS1,Lactobacillus,26,53,out,False,False,False,1
+ACZ81_05680,alt,Burkholderia cenocepacia J2315,Burkholderia,32,58,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,28,31,other_proteo,False,False,False,2
+ACZ81_05680,alt,Streptococcus thermophilus CNRZ1066,Streptococcus,25,58,out,False,False,False,1
+ACZ81_05680,alt,Listeria monocytogenes EGD-e,Listeria,26,83,out,False,False,False,2
+ACZ81_05680,alt,Sinorhizobium meliloti 1021,Sinorhizobium,25,77,other_proteo,False,False,False,1
+ACZ81_05680,alt,Listeria monocytogenes str. 4b F2365,Listeria,32,64,out,False,False,False,1
+ACZ81_05680,alt,Methanosarcina acetivorans C2A,Methanosarcina,28,78,out,False,False,False,1
+ACZ81_05680,alt,Bacillus cereus ATCC 14579,Bacillus,24,74,out,False,False,False,1
+ACZ81_05680,alt,Burkholderia thailandensis E264,Burkholderia,26,62,other_proteo,False,False,False,0
+ACZ81_05680,alt,Burkholderia,Burkholderia,27,87,other_proteo,False,False,False,4
+ACZ81_05680,alt,Mycobacterium abscessus ATCC 19977,Mycobacterium,21,77,out,False,False,False,4
+ACZ81_05680,alt,Lacticaseibacillus rhamnosus GG,Lacticaseibacillus,27,47,out,False,False,False,1
+ACZ81_05680,alt,Ruegeria pomeroyi DSS-3,Ruegeria,30,77,kg_genus,False,False,False,1
+ACZ81_05680,alt,Rhizobium tropici CIAT 899,Rhizobium,20,88,other_proteo,False,False,False,1
+ACZ81_05680,alt,Bradyrhizobium diazoefficiens USDA 110,Bradyrhizobium,31,54,other_proteo,False,False,False,2
+EZ55_02117,alt,Riemerella anatipestifer RA-YM,Riemerella,26,90,out,False,False,False,1
+EZ55_02117,alt,Riemerella anatipestifer ATCC 11845 = DSM 15868,Riemerella,26,92,out,False,False,False,2
+EZ55_02117,alt,Riemerella anatipestifer RA-CH-1,Riemerella,26,90,out,False,False,False,2
+EZ55_02117,alt,Bizionia argentinensis JUB59,Bizionia,26,81,out,False,False,False,1
+EZ55_02117,alt,Flavobacterium columnare,Flavobacterium,25,82,out,False,False,False,1
+EZ55_02117,alt,Pseudomonas paraeruginosa,Pseudomonas,26,91,kg_genus,False,False,False,1
+EZ55_02117,alt,Caulobacter crescentus NA1000,Caulobacter,25,85,other_proteo,False,False,False,10
+EZ55_02117,alt,Piscirickettsia salmonis,Piscirickettsia,25,87,out,False,False,False,1
+EZ55_02117,alt,Herbaspirillum seropedicae SmR1,Herbaspirillum,24,98,out,False,False,False,1
+EZ55_02117,alt,Vibrio alginolyticus,Vibrio,25,94,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas fluorescens,Pseudomonas,24,76,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas fragi,Pseudomonas,23,80,kg_genus,False,False,False,1
+EZ55_02117,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,24,94,other_proteo,False,False,False,8
+EZ55_02117,alt,Xanthomonas campestris pv. campestris str. ATCC 33913,Xanthomonas,24,90,other_proteo,False,False,False,3
+EZ55_02117,alt,Shewanella piezotolerans WP3,Shewanella,23,88,kg_genus,False,False,False,1
+EZ55_02117,alt,Xanthomonas arboricola pv. juglandis,Xanthomonas,24,90,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas fluorescens FW300-N2E2,Pseudomonas,25,75,kg_genus,False,False,False,0
+EZ55_02117,alt,Xanthomonas axonopodis pv. citri str. 306,Xanthomonas,23,89,other_proteo,False,False,False,1
+EZ55_02117,alt,Xanthomonas oryzae pv. oryzicola BLS256,Xanthomonas,23,97,other_proteo,False,False,False,2
+EZ55_02117,alt,Pseudoalteromonas haloplanktis TAC125,Pseudoalteromonas,23,97,out,False,False,False,1
+EZ55_02117,alt,Pseudomonas syringae pv. syringae B728a,Pseudomonas,22,87,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas simiae WCS417,Pseudomonas,24,77,kg_genus,False,False,False,0
+EZ55_02117,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,23,87,kg_genus,False,False,False,6
+EZ55_02117,alt,Xanthomonas oryzae pv. oryzae KACC10331,Xanthomonas,22,97,other_proteo,False,False,False,2
+EZ55_02117,alt,Pseudomonas savastanoi pv. savastanoi NCPPB 3335,Pseudomonas,22,87,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas syringae pv. phaseolicola 1448A,Pseudomonas,22,90,kg_genus,False,False,False,1
+EZ55_02117,alt,Pectobacterium versatile,Pectobacterium,22,79,out,False,False,False,1
+EZ55_02117,alt,Pseudomonas putida KT2440,Pseudomonas,24,62,kg_genus,False,False,False,3
+EZ55_02117,alt,Escherichia coli K-12 substr. MG1655,Escherichia,21,80,other_proteo,False,False,False,22
+EZ55_02117,alt,Klebsiella pneumoniae IS43,Klebsiella,22,88,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa,Pseudomonas,21,87,kg_genus,False,False,False,11
+EZ55_02117,alt,Pseudomonas aeruginosa UCBPP-PA14,Pseudomonas,21,87,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa PAK,Pseudomonas,21,87,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa PAK,Pseudomonas,23,79,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,23,79,kg_genus,False,False,False,10
+EZ55_02117,alt,Stenotrophomonas maltophilia K279a,Stenotrophomonas,23,92,out,False,False,False,4
+EZ55_02117,alt,Stenotrophomonas maltophilia K279a,Stenotrophomonas,23,92,out,False,False,False,1
+EZ55_02117,alt,Ralstonia metallidurans CH34,Ralstonia,20,97,other_proteo,False,False,False,1
+EZ55_02117,alt,Ralstonia metallidurans CH34,Ralstonia,21,95,other_proteo,False,False,False,2
+EZ55_02117,alt,Cupriavidus metallidurans CH34,Cupriavidus,21,97,other_proteo,False,False,False,2
+EZ55_02117,alt,Cupriavidus metallidurans CH34,Cupriavidus,20,97,other_proteo,False,False,False,1
+EZ55_02117,alt,Xanthomonas albilineans,Xanthomonas,21,87,other_proteo,False,False,False,2
+EZ55_02117,alt,Leptospira biflexa serovar Patoc strain 'Patoc 1 (Paris)',Leptospira,22,56,out,False,False,False,1
+EZ55_02117,alt,Pectobacterium versatile,Pectobacterium,23,96,out,False,False,False,1
+EZ55_02117,alt,Nitrosomonas europaea ATCC 19718,Nitrosomonas,24,59,other_proteo,False,False,False,1
+EZ55_02117,alt,Yersinia pestis KIM,Yersinia,22,95,other_proteo,False,False,False,3
+EZ55_02117,alt,Acinetobacter baumannii,Acinetobacter,22,83,other_proteo,False,False,False,1
+EZ55_02117,alt,Vibrio anguillarum,Vibrio,22,84,other_proteo,False,False,False,1
+EZ55_02117,alt,Acinetobacter baumannii MDR-ZJ06,Acinetobacter,21,83,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas putida KT2440,Pseudomonas,23,45,kg_genus,False,False,False,1
+EZ55_02117,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,22,85,other_proteo,False,False,False,2
+EZ55_02117,alt,Pseudomonas fulva,Pseudomonas,23,44,kg_genus,False,False,False,1
+EZ55_02117,alt,Leptospira interrogans serogroup Icterohaemorrhagiae serovar copenhageni (strain Fiocruz L1-130),Leptospira,23,28,out,False,False,False,10
+EZ55_02117,alt,Leptospira interrogans serovar lai str. 56601,Leptospira,23,28,out,False,False,False,2
+EZ55_02117,alt,Acinetobacter baumannii (strain ATCC 19606 / DSM 30007 / JCM 6841 / CCUG 19606 / CIP 70.34 / NBRC 109757 / NCIMB 12457 / NCTC 12156 / 81),Acinetobacter,21,83,other_proteo,False,False,False,2
+EZ55_02117,alt,Rhizobium sp. NGR234,Rhizobium,23,80,other_proteo,False,False,False,1
+EZ55_02117,alt,Vibrio parahaemolyticus BB22OP,Vibrio,22,85,other_proteo,False,False,False,1
+EZ55_02117,alt,Vibrio parahaemolyticus,Vibrio,26,40,other_proteo,False,False,False,1
+EZ55_02117,alt,Leptospira interrogans serovar Manilae,Leptospira,23,28,out,False,False,False,1
+EZ55_02117,alt,Acinetobacter baumannii ATCC 17978,Acinetobacter,21,83,other_proteo,False,False,False,5
+EZ55_02117,alt,Pelobacter carbinolicus str. DSM 2380,Pelobacter,27,34,out,False,False,False,1
+EZ55_02117,alt,Alcanivorax borkumensis SK2,Alcanivorax,23,40,out,False,False,False,1
+EZ55_02117,alt,Fusobacterium animalis 7_1,Fusobacterium,22,87,out,False,False,False,1
+EZ55_02117,alt,Flavobacterium columnare,Flavobacterium,21,77,out,False,False,False,1
+EZ55_02117,alt,Pseudomonas putida KT2440,Pseudomonas,26,34,kg_genus,False,False,False,1
+EZ55_02117,alt,Shewanella oneidensis MR-1,Shewanella,23,95,kg_genus,False,False,False,4
+EZ55_02117,alt,Vibrio salmonicida LFI1238,Vibrio,23,66,other_proteo,False,False,False,2
+EZ55_02117,alt,Vibrio cholerae PS15,Vibrio,24,40,other_proteo,False,False,False,1
+EZ55_02117,alt,Undibacterium sp. Jales W-56,Undibacterium,24,48,out,False,False,False,1
+EZ55_02117,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,25,40,other_proteo,False,False,False,8
+EZ55_02117,alt,Pseudomonas aeruginosa,Pseudomonas,23,41,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa (strain UCBPP-PA14),Pseudomonas,23,41,kg_genus,False,False,False,3
+EZ55_02117,alt,Methylobacterium mesophilicum SR1.6/6,Methylobacterium,26,26,out,False,False,False,1
+EZ55_02117,alt,Pseudomonas brassicacearum,Pseudomonas,25,39,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),Pseudomonas,23,41,kg_genus,False,False,False,11
+EZ55_02117,alt,Escherichia coli O157:H7 EDL933,Escherichia,25,40,other_proteo,False,False,False,3
+EZ55_02117,alt,Pectobacterium versatile,Pectobacterium,22,93,out,False,False,False,1
+EZ55_02117,alt,Bacteroides fragilis YCH46,Bacteroides,24,37,out,False,False,False,1
+EZ55_02117,alt,Pseudomonas chlororaphis subsp. aureofaciens 30-84,Pseudomonas,20,43,kg_genus,False,False,False,1
+EZ55_02117,alt,Xanthomonas axonopodis pv. citri str. 306,Xanthomonas,23,85,other_proteo,False,False,False,1
+EZ55_02117,alt,Helicobacter pylori J99,Helicobacter,22,61,other_proteo,False,False,False,6
+EZ55_02117,alt,Stenotrophomonas maltophilia K279a,Stenotrophomonas,23,78,out,False,False,False,2
+EZ55_02117,alt,Escherichia coli,Escherichia,25,40,other_proteo,False,False,False,9
+EZ55_02117,alt,Bordetella bronchiseptica RB50,Bordetella,24,32,other_proteo,False,False,False,3
+EZ55_02117,alt,Fusobacterium polymorphum ATCC 10953,Fusobacterium,22,51,out,False,False,False,2
+EZ55_02117,alt,Agrobacterium tumefaciens 5A,Agrobacterium,25,37,other_proteo,False,False,False,1
+EZ55_02117,alt,Bordetella pertussis (strain Tohama I / ATCC BAA-589 / NCTC 13251),Bordetella,24,32,other_proteo,False,False,False,7
+EZ55_02117,alt,Agrobacterium tumefaciens str. C58 (Cereon),Agrobacterium,23,38,other_proteo,False,False,False,2
+EZ55_02117,alt,Helicobacter pylori G27,Helicobacter,22,61,other_proteo,False,False,False,2
+EZ55_02117,alt,Pseudomonas ogarae,Pseudomonas,24,44,kg_genus,False,False,False,1
+EZ55_02117,alt,Escherichia coli,Escherichia,24,43,other_proteo,False,False,False,1
+EZ55_02117,alt,Bordetella parapertussis 12822,Bordetella,23,32,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa UCBPP-PA14,Pseudomonas,25,44,kg_genus,False,False,False,3
+EZ55_02117,alt,Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),Pseudomonas,25,44,kg_genus,False,False,False,2
+EZ55_02117,alt,Pseudomonas aeruginosa,Pseudomonas,27,28,kg_genus,False,False,False,8
+EZ55_02117,alt,Pseudomonas aeruginosa,Pseudomonas,23,64,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa UCBPP-PA14,Pseudomonas,27,28,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas aeruginosa M18,Pseudomonas,27,28,kg_genus,False,False,False,1
+EZ55_02117,alt,Riemerella anatipestifer ATCC 11845 = DSM 15868,Riemerella,20,42,out,False,False,False,1
+EZ55_02117,alt,Escherichia coli CFT073,Escherichia,23,43,other_proteo,False,False,False,8
+EZ55_02117,alt,Cupriavidus metallidurans CH34,Cupriavidus,22,90,other_proteo,False,False,False,1
+EZ55_02117,alt,Xanthomonas campestris pv. campestris str. 8004,Xanthomonas,26,28,other_proteo,False,False,False,5
+EZ55_02117,alt,Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 / CH34),Cupriavidus,22,87,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas fluorescens,Pseudomonas,25,43,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas brassicacearum,Pseudomonas,23,44,kg_genus,False,False,False,1
+EZ55_02117,alt,Pseudomonas putida KT2440,Pseudomonas,25,33,kg_genus,False,False,False,3
+EZ55_02117,alt,Rhodopseudomonas palustris CGA009,Rhodopseudomonas,22,77,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas syringae pv. tomato str. DC3000,Pseudomonas,23,39,kg_genus,False,False,False,1
+EZ55_02117,alt,Riemerella anatipestifer RA-YM,Riemerella,20,42,out,False,False,False,1
+EZ55_02117,alt,Klebsiella pneumoniae IS43,Klebsiella,22,88,other_proteo,False,False,False,1
+EZ55_02117,alt,Escherichia coli O157:H7 EDL933,Escherichia,23,43,other_proteo,False,False,False,12
+EZ55_02117,alt,Escherichia coli,Escherichia,23,43,other_proteo,False,False,False,1
+EZ55_02117,alt,Escherichia coli,Escherichia,23,43,other_proteo,False,False,False,1
+EZ55_02117,alt,Erwinia amylovora CFBP1430,Erwinia,22,43,other_proteo,False,False,False,2
+EZ55_02117,alt,Sphingomonas wittichii RW1,Sphingomonas,26,29,other_proteo,False,False,False,1
+EZ55_02117,alt,Xanthomonas axonopodis pv. citri str. 306,Xanthomonas,21,79,other_proteo,False,False,False,1
+EZ55_02117,alt,Pseudomonas brassicacearum,Pseudomonas,25,32,kg_genus,False,False,False,1
+EZ55_02117,alt,Avibacterium paragallinarum,Avibacterium,20,80,out,False,False,False,1
+EZ55_02117,alt,Actinobacillus pleuropneumoniae L20,Actinobacillus,21,78,other_proteo,False,False,False,2
+EZ55_02117,alt,Myxococcus xanthus DK 1622,Myxococcus,26,19,out,False,False,False,1
+EZ55_02117,alt,Vibrio anguillarum,Vibrio,26,38,other_proteo,False,False,False,1
+EZ55_02117,alt,Alteromonas macleodii ATCC 27126,Alteromonas,30,33,kg_genus,False,False,False,1
+EZ55_02117,alt,Klebsiella pneumoniae 30684/NJST258_2,Klebsiella,23,41,other_proteo,False,False,False,1
+EZ55_02117,alt,Nostoc sp. PCC 7120,Nostoc,26,31,cyano,False,False,False,2
+EZ55_02117,alt,Trichormus variabilis ATCC 29413,Trichormus,23,34,cyano,False,False,False,1
+EZ55_02117,alt,Vibrio parahaemolyticus,Vibrio,22,66,other_proteo,False,False,False,4
+EZ55_02117,alt,Pseudomonas ogarae,Pseudomonas,22,87,kg_genus,False,False,False,1
+EZ55_02117,alt,Acinetobacter baumannii ATCC 17978,Acinetobacter,25,40,other_proteo,False,False,False,6
+EZ55_02117,alt,Ensifer sp. M14,Ensifer,26,32,out,False,False,False,1
+EZ55_02117,alt,Vibrio parahaemolyticus RIMD 2210633,Vibrio,24,41,other_proteo,False,False,False,2
+EZ55_02117,alt,Riemerella anatipestifer RA-CH-1,Riemerella,20,42,out,False,False,False,4
+EZ55_02117,alt,Pseudomonas aeruginosa,Pseudomonas,23,32,kg_genus,False,False,False,24
+EZ55_02117,alt,Shewanella oneidensis MR-1,Shewanella,28,19,kg_genus,False,False,False,11
+EZ55_02117,alt,Acinetobacter baumannii DU202,Acinetobacter,25,40,other_proteo,False,False,False,1
+EZ55_02117,alt,Azotobacter chroococcum NCIMB 8003,Azotobacter,32,16,out,False,False,False,1
+EZ55_02117,alt,Allochromatium vinosum DSM 180,Allochromatium,29,25,other_proteo,False,False,False,1
+EZ55_02117,alt,Sphingobium sp. SYK-6,Sphingobium,24,30,out,False,False,False,3
+EZ55_02117,alt,Shewanella oneidensis MR-1,Shewanella,28,19,kg_genus,False,False,False,10
+ACZ81_12890,alt,Vibrio cholerae O1 biovar eltor str. N16961,Vibrio,66,97,other_proteo,False,False,False,3
+ACZ81_12890,alt,Pseudomonas stutzeri RCH2,Pseudomonas,61,100,kg_genus,False,False,True,0
+ACZ81_12890,alt,Stutzerimonas stutzeri A1501,Stutzerimonas,61,100,out,False,False,False,1
+ACZ81_12890,alt,Stutzerimonas kunmingensis,Stutzerimonas,60,100,out,False,False,False,1
+ACZ81_12890,alt,Stutzerimonas kunmingensis,Stutzerimonas,60,100,out,False,False,False,1
+ACZ81_12890,alt,Rhodopirellula baltica (strain DSM 10527 / NCIMB 13988 / SH1),Rhodopirellula,49,96,out,False,False,False,1
+ACZ81_12890,alt,Paracoccus denitrificans PD1222,Paracoccus,50,93,other_proteo,False,False,False,2
+ACZ81_12890,alt,Glutamicibacter arilaitensis Re117,Glutamicibacter,50,92,out,False,False,False,1
+ACZ81_12890,alt,Desulfitobacterium hafniense Y51,Desulfitobacterium,44,87,out,False,False,False,1
+ACZ81_12890,alt,Dethiobacter alkaliphilus AHT 1,Dethiobacter,47,98,out,False,False,False,1
+ACZ81_12890,alt,Desulfohalobium retbaense DSM 5692,Desulfohalobium,44,97,out,False,False,False,1
+ACZ81_12890,alt,Desulfovibrio desulfuricans G20,Desulfovibrio,45,92,other_proteo,False,False,False,4
+ACZ81_12890,alt,Nitratidesulfovibrio vulgaris (strain ATCC 29579 / DSM 644 / CCUG 34227 / NCIMB 8303 / VKM B-1760 / Hildenborough),Nitratidesulfovibrio,44,95,out,False,False,False,9
+ACZ81_12890,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,43,95,other_proteo,False,False,False,8
+ACZ81_12890,alt,Shewanella algae,Shewanella,41,96,kg_genus,False,False,False,1
+ACZ81_12890,alt,Shewanella sp. ANA-3,Shewanella,41,95,kg_genus,False,False,False,0
+ACZ81_12890,alt,Haloferax volcanii DS2,Haloferax,40,98,out,False,False,False,3
+ACZ81_12890,alt,Shewanella oneidensis MR-1,Shewanella,40,95,kg_genus,False,False,False,11
+ACZ81_12890,alt,Bilophila wadsworthia,Bilophila,43,96,out,False,False,False,3
+ACZ81_12890,alt,Archaeoglobus fulgidus DSM 4304,Archaeoglobus,38,94,out,False,False,False,3
+ACZ81_12890,alt,Staphylococcus xylosus,Staphylococcus,37,97,out,False,False,False,2
+ACZ81_12890,alt,Staphylococcus pseudintermedius,Staphylococcus,38,97,out,False,False,False,1
+ACZ81_12890,alt,Haloferax volcanii DS2,Haloferax,35,98,out,False,False,False,1
+ACZ81_12890,alt,Neisseria meningitidis MC58,Neisseria,34,94,other_proteo,False,False,False,8
+ACZ81_12890,alt,Neisseria meningitidis FAM18,Neisseria,34,94,other_proteo,False,False,False,1
+ACZ81_12890,alt,Neisseria gonorrhoeae MS11,Neisseria,34,94,other_proteo,False,False,False,1
+ACZ81_12890,alt,Neisseria gonorrhoeae FA 1090,Neisseria,34,94,other_proteo,False,False,False,7
+ACZ81_12890,alt,Neisseria gonorrhoeae,Neisseria,31,96,other_proteo,False,False,False,1
+ACZ81_12890,alt,Photobacterium profundum SS9,Photobacterium,31,94,other_proteo,False,False,False,1
+ACZ81_12890,alt,Acetobacterium woodii DSM 1030,Acetobacterium,30,95,out,False,False,False,4
+ACZ81_12890,alt,Tepidanaerobacter acetatoxydans Re1,Tepidanaerobacter,31,90,out,False,False,False,1
+ACZ81_12890,alt,Clostridium ljungdahlii DSM 13528,Clostridium,28,100,out,False,False,False,2
+ACZ81_12890,alt,Clostridium tyrobutyricum,Clostridium,30,100,out,False,False,False,1
+ACZ81_12890,alt,Actinobacillus pleuropneumoniae L20,Actinobacillus,31,96,other_proteo,False,False,False,1
+ACZ81_12890,alt,Actinobacillus pleuropneumoniae serovar 1 str. 4074,Actinobacillus,31,96,other_proteo,False,False,False,1
+ACZ81_12890,alt,Haemophilus influenzae 86-028NP,Haemophilus,31,93,other_proteo,False,False,False,1
+ACZ81_12890,alt,Aliiglaciecola sp. LCG003,Aliiglaciecola,33,92,out,False,False,False,1
+ACZ81_12890,alt,Haemophilus influenzae Rd KW20,Haemophilus,31,93,other_proteo,False,False,False,8
+ACZ81_12890,alt,Borrelia burgdorferi B31,Borrelia,28,96,out,False,False,False,9
+ACZ81_12890,alt,Haemophilus influenzae R2846,Haemophilus,32,88,other_proteo,False,False,False,1
+ACZ81_12890,alt,Eubacterium maltosivorans,Eubacterium,28,94,out,False,False,False,1
+ACZ81_12890,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,30,98,other_proteo,False,False,False,7
+ACZ81_12890,alt,Acinetobacter baumannii MDR-ZJ06,Acinetobacter,28,91,other_proteo,False,False,False,1
+ACZ81_12890,alt,Acinetobacter baumannii AB0057,Acinetobacter,28,91,other_proteo,False,False,False,3
+ACZ81_12890,alt,Acinetobacter baumannii,Acinetobacter,28,91,other_proteo,False,False,False,2
+ACZ81_12890,alt,Clostridium perfringens str. 13,Clostridium,28,93,out,False,False,False,1
+ACZ81_12890,alt,Clostridium beijerincki NCIMB 8052,Clostridium,28,92,out,False,False,False,1
+ACZ81_12890,alt,Borrelia duttonii Ly,Borrelia,28,92,out,False,False,False,1
+ACZ81_12890,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,28,91,other_proteo,False,False,False,7
+ACZ81_12890,alt,Cronobacter sakazakii ATCC BAA-894,Cronobacter,28,97,out,False,False,False,1
+ACZ81_12890,alt,Pseudomonas putida KT2440,Pseudomonas,28,97,kg_genus,False,False,False,4
+ACZ81_12890,alt,Acinetobacter sp. ADP1,Acinetobacter,27,97,other_proteo,False,False,False,1
+ACZ81_12890,alt,Bacillus subtilis (strain 168),Bacillus,28,91,out,False,False,False,7
+ACZ81_12890,alt,Thermodesulfovibrio sp. N1,Thermodesulfovibrio,27,91,out,False,False,False,1
+ACZ81_12890,alt,Salmonella enterica subsp. enterica serovar Typhimurium str. 14028S,Salmonella,27,97,other_proteo,False,False,False,6
+ACZ81_12890,alt,Pelotomaculum thermopropionicum SI,Pelotomaculum,28,95,out,False,False,False,1
+ACZ81_12890,alt,Salmonella enterica subsp. enterica serovar Kentucky,Salmonella,27,97,other_proteo,False,False,False,1
+ACZ81_12890,alt,Campylobacter jejuni subsp. jejuni NCTC 11168,Campylobacter,30,98,other_proteo,False,False,False,11
+ACZ81_12890,alt,Bacillus anthracis str. Sterne,Bacillus,29,96,out,False,False,False,2
+ACZ81_12890,alt,Heyndrickxia coagulans DSM 1 = ATCC 7050,Heyndrickxia,28,90,out,False,False,False,1
+ACZ81_12890,alt,Shewanella oneidensis MR-1,Shewanella,27,97,kg_genus,False,False,False,6
+ACZ81_12890,alt,Pseudomonas fluorescens SBW25,Pseudomonas,26,97,kg_genus,True,False,False,1
+ACZ81_12890,alt,Pseudomonas simiae WCS417,Pseudomonas,26,97,kg_genus,False,False,False,0
+ACZ81_12890,alt,Pseudomonas fluorescens FW300-N2C3,Pseudomonas,27,86,kg_genus,False,False,False,0
+ACZ81_12890,alt,Desulfovibrio desulfuricans G20,Desulfovibrio,28,85,other_proteo,False,False,False,2
+ACZ81_12890,alt,Shigella flexneri 2a str. 2457T,Shigella,27,97,out,False,False,False,1
+ACZ81_12890,alt,Campylobacter jejuni subsp. jejuni 81116,Campylobacter,29,98,other_proteo,False,False,False,1
+ACZ81_12890,alt,Escherichia coli O157:H7 str. EDL933,Escherichia,27,97,other_proteo,False,False,False,2
+ACZ81_12890,alt,Escherichia coli BW25113,Escherichia,27,97,other_proteo,False,False,False,13
+ACZ81_12890,alt,Pseudomonas umsongensis,Pseudomonas,26,97,kg_genus,False,False,False,2
+ACZ81_12890,alt,Klebsiella michiganensis M5al,Klebsiella,27,97,other_proteo,False,False,False,0
+ACZ81_12890,alt,Helicobacter pylori J99,Helicobacter,28,97,other_proteo,False,False,False,2
+ACZ81_12890,alt,Escherichia coli K-12 substr. MG1655,Escherichia,28,97,other_proteo,False,False,False,4
+ACZ81_12890,alt,Porphyromonas gingivalis W83,Porphyromonas,27,96,out,False,False,False,4
+ACZ81_12890,alt,Brucella melitensis biovar Abortus 2308,Brucella,28,97,other_proteo,False,False,False,4
+ACZ81_12890,alt,Helicobacter pylori PMSS1,Helicobacter,28,98,other_proteo,False,False,False,1
+ACZ81_12890,alt,Helicobacter pylori 26695,Helicobacter,26,98,other_proteo,False,False,False,8
+ACZ81_12890,alt,Lactobacillus acidophilus NCFM,Lactobacillus,25,93,out,False,False,False,1
+ACZ81_12890,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,27,98,other_proteo,False,False,False,8
+ACZ81_12890,alt,Pseudomonas aeruginosa PAO1,Pseudomonas,27,90,kg_genus,False,False,False,9
+ACZ81_12890,alt,Cupriavidus necator H16,Cupriavidus,26,86,other_proteo,False,False,False,1
+ACZ81_12890,alt,Bilophila wadsworthia,Bilophila,25,86,out,False,False,False,2
+ACZ81_12890,alt,Helicobacter pylori (strain ATCC 700392 / 26695),Helicobacter,28,96,other_proteo,False,False,False,4
+ACZ81_12890,alt,Azotobacter vinelandii AvOP,Azotobacter,26,97,out,False,False,False,1
+ACZ81_12890,alt,Megasphaera paucivorans,Megasphaera,26,96,out,False,False,False,1
+ACZ81_12890,alt,Bacillus subtilis subsp. subtilis str. 168,Bacillus,26,94,out,False,False,False,2
+ACZ81_12890,alt,Glutamicibacter arilaitensis Re117,Glutamicibacter,26,93,out,False,False,False,1
+ACZ81_12890,alt,Ralstonia solanacearum Po82,Ralstonia,26,90,other_proteo,False,False,False,1
+ACZ81_12890,alt,Rhodopseudomonas palustris CGA009,Rhodopseudomonas,27,86,other_proteo,False,False,False,1
+ACZ81_12890,alt,Geobacter sulfurreducens PCA,Geobacter,30,54,other_proteo,False,False,False,3
+ACZ81_12890,alt,Staphylococcus xylosus,Staphylococcus,26,96,out,False,False,False,1
+ACZ81_12890,alt,Megasphaera paucivorans,Megasphaera,26,85,out,False,False,False,1
+ACZ81_12890,alt,Sulfolobus solfataricus P2,Sulfolobus,26,88,out,False,False,False,2
+ACZ81_12890,alt,Propionibacterium freudenreichii subsp. shermanii CIRM-BIA1,Propionibacterium,27,93,out,False,False,False,1
+ACZ81_12890,alt,Propionibacterium freudenreichii subsp. freudenreichii,Propionibacterium,27,93,out,False,False,False,1
+ACZ81_12890,alt,Staphylococcus aureus subsp. aureus MW2,Staphylococcus,24,97,out,False,False,False,2
+ACZ81_12890,alt,Staphylococcus epidermidis ATCC 12228,Staphylococcus,24,98,out,False,False,False,1
+ACZ81_12890,alt,Staphylococcus aureus subsp. aureus MRSA252,Staphylococcus,26,96,out,False,False,False,5
+ACZ81_12890,alt,Bacillus cereus ATCC 14579,Bacillus,24,97,out,False,False,False,3
+ACZ81_12890,alt,Staphylococcus aureus,Staphylococcus,26,96,out,False,False,False,5
+ACZ81_12890,alt,Bordetella bronchiseptica RB50,Bordetella,27,95,other_proteo,False,False,False,1
+ACZ81_12890,alt,Staphylococcus aureus subsp. aureus N315,Staphylococcus,24,97,out,False,False,False,7
+ACZ81_12890,alt,Stenotrophomonas maltophilia K279a,Stenotrophomonas,32,47,out,False,False,False,1
+ACZ81_12890,alt,Staphylococcus aureus subsp. aureus str. Newman,Staphylococcus,24,96,out,False,False,False,12
+ACZ81_12890,alt,Propionibacterium acnes KPA171202,Propionibacterium,27,93,out,False,False,False,2
+ACZ81_12890,alt,Staphylococcus aureus subsp. aureus USA300_FPR3757,Staphylococcus,24,97,out,False,False,False,3
+ACZ81_12890,alt,Staphylococcus aureus,Staphylococcus,24,96,out,False,False,False,1
+ACZ81_12890,alt,Corynebacterium diphtheriae NCTC 13129,Corynebacterium,25,96,out,False,False,False,1
+ACZ81_12890,alt,Bacillus cereus ATCC 14579,Bacillus,22,93,out,False,False,False,1
+ACZ81_12890,alt,Bacillus anthracis str. Ames,Bacillus,29,48,out,False,False,False,2
+ACZ81_12890,alt,Dethiobacter alkaliphilus AHT 1,Dethiobacter,35,19,out,False,False,False,1
+ACZ81_12890,alt,Desulfovibrio vulgaris Hildenborough,Desulfovibrio,22,93,other_proteo,False,False,False,5
 NATL1_02111,pro,Prochlorococcus marinus str. NATL1A,Prochlorococcus,100,100,cyano,True,False,True,1
 NATL1_02111,pro,Dolichospermum sp. UHCC 0315A,Dolichospermum,29,89,cyano,False,False,True,1
 NATL1_02111,pro,Synechocystis sp. PCC 6803,Synechocystis,34,43,cyano,False,False,True,2

@@ -22,6 +22,23 @@ pipeline before the other three pools are run.
 > and "two axes pull apart" finding below are the original pro-only figures; the
 > final combined write-up lands after alt + other_hetero are run.
 
+> **Update (+ alt, 24 seeds).** Adding the alt pool exposed that the "Proteobacteria
+> = same phylum" keep-rule was too loose for heterotroph seeds — it readmitted
+> clinical/plant-pathogen Proteobacteria (P. aeruginosa, P. syringae) and ballooned
+> the candidate list to 1073 (915 P3). Two fixes (`02_parse_hits.py`): the
+> heterotroph pools now keep **KG genera only** (dropping the broad `other_proteo`
+> tier) **and** apply an **identity floor** (`--min-identity-hetero`, default 50%)
+> — a close homolog is more likely the actual marine relative, not a distant
+> clinical paralog. This cut alt to 36 candidates and the total to **190** (P1=19,
+> P2=135, P3=36; KG-fit ≥2 = 17). Residual alt noise is *Pseudomonas*-specific:
+> P. putida is a KG genus but its literature is dominated by clinical/soil
+> studies, so even high-identity hits surface off-domain papers. The genuinely
+> marine alt candidates (~6) are Shewanella oneidensis + Ruegeria pomeroyi
+> omics/genomics. Inventory also gained version-suffix tolerance
+> (WP_014948722 ~ WP_014948722.1) since some saves drop the ".1". Two alt seeds
+> (slyA, fecA) returned "No hits to characterized proteins" in PaperBLAST but
+> still list uncharacterized-homolog papers.
+
 ## What I did
 
 Three scripts, run from repo root with `env -u VIRTUAL_ENV uv run python <script>`:

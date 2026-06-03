@@ -78,7 +78,10 @@ def main() -> int:
                 break
         if match is None:
             for pid, r in pids.items():
-                if pid in hay:
+                # match with or without the version suffix (WP_014948722.1 ~ WP_014948722),
+                # since saved filenames often drop the ".1"
+                pid_nover = re.sub(r"\.\d+$", "", str(pid))
+                if pid in hay or pid_nover in hay:
                     match, how = r, "protein_id"
                     break
         if match is None:
