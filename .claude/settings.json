@@ -1,4 +1,13 @@
 {
+  "permissions": {
+    "allow": [
+      "mcp__multiomics-kg__gene_aa_sequence",
+      "WebFetch(domain:papers.genomics.lbl.gov)",
+      "Bash(env -u VIRTUAL_ENV uv run python analyses/2026-05-30-1136-paperblast_candidate_publications/3_paperblast/scripts/01_inventory.py)",
+      "Bash(env -u VIRTUAL_ENV uv run python analyses/2026-05-30-1136-paperblast_candidate_publications/3_paperblast/scripts/02_parse_hits.py)",
+      "Bash(env -u VIRTUAL_ENV uv run python analyses/2026-05-30-1136-paperblast_candidate_publications/3_paperblast/scripts/03_dedup_triage.py)"
+    ]
+  },
   "hooks": {
     "PostToolUse": [
       {
