@@ -1,74 +1,72 @@
-# Step 2 — Is the up-regulation specific to N stress? (statistical test)
+# Step 2 — Is the up-regulation specific to N stress? (pooled, 3 families)
 
 ## Question
-The flowers (step 1) showed these genes go UP under nitrogen stress. But they
-also move under other conditions. **Is up-regulation actually enriched under N
-relative to other stresses, or do these genes just respond to everything?**
+Step-1 flowers showed these genes go UP under nitrogen stress, but they also move
+under other conditions. **Is up-regulation enriched under N relative to other
+stresses — and is that true for all three families, or only some?**
 
 ## Method (locked framing)
-- **Test:** per gene, Fisher's exact on a 2×2 of
-  `(experiment is N vs non-N) × (gene significantly UP vs not-up)`.
-- **Unit:** experiment (timepoints collapsed — "up" if significant up in ≥1 timepoint).
-- **"Tested":** gene is *detected* (has a DE row) in that experiment.
-- **No fold-change magnitude is used** — only the DE/not-DE call — so the test is
-  robust to platform dynamic-range differences (RNA-seq vs microarray vs proteomics).
-  [feedback: compare rank or DE/not-DE, not FC]
-- One-sided (`greater`) = up-regulation enriched under N. BH-FDR within each scope.
-- **Scopes (both):** MED4 per-gene panel (cynS, cynD, urtA–E, amt1); and pooled
-  across all genomes at the gene-family level (urtA, cynS ortholog groups).
-- Script: `scripts/n_specificity_fisher.py` (rerunnable against frozen CSVs in `data/`).
+- **Self-contained, reproducible:** `scripts/pooled_n_specificity.py` downloads the
+  data from the KG via the `multiomics_explorer` Python API
+  (`differential_expression_by_ortholog` → `to_dataframe`), caches it to
+  `data/pooled_de_downloaded.csv`, then computes the test and figure. Rerun:
+  `uv run python analyses/.../scripts/pooled_n_specificity.py`.
+- **Three families** (pooled across all genomes with DE data):
+  - `urt*` = urea transporter, ortholog groups urtA–E (CK_00000076/1365/1366/1367/8074)
+  - `amt*` = ammonium transporter, amt1 + amt2 (CK_00000244, CK_00008701)
+  - `cynS` = cyanate hydratase (CK_00001552)
+- **Test:** per family, Fisher's exact on `(experiment is N vs non-N) × (family UP vs not-up)`.
+  - Unit = experiment (each experiment = one genome). Timepoints **and** subunits
+    collapsed: family is "up" if **any** member is significantly up in **any** timepoint;
+    "tested" if any member is detected.
+  - **DE / not-DE call only — no fold-change magnitude** → robust to platform
+    dynamic-range differences (RNA-seq / microarray / proteomics). [feedback: rank or DE/not-DE, not FC]
+  - One-sided (`greater`) = up enriched under N. BH-FDR across the 3 families.
+- Scope: **pooled only** (the MED4 per-gene panel was dropped — underpowered).
 
-## Results [KG]  (`data/n_specificity_results.csv`, figure `figures/fig8_n_specificity_forest.*`)
+## Results [KG]  (`data/n_specificity_pooled_results.csv`, figure `figures/fig8_n_specificity_forest.*`)
+Downloaded: 421 rows, 7 genomes, 41 experiments.
 
-| scope | gene/family | up/tested (N) | up/tested (other) | OR | q (BH) |
-|---|---|---|---|---|---|
-| MED4 | cynS | 4/8 | 1/4 | 3.0 | 0.82 |
-| MED4 | cynD | 5/7 | 1/2 | 2.5 | 0.82 |
-| MED4 | amt1 | 5/8 | 2/6 | 3.3 | 0.82 |
-| MED4 | urtA | 5/8 | 3/11 | 4.4 | 0.82 |
-| MED4 | urtB | 4/8 | 1/5 | 4.0 | 0.82 |
-| MED4 | urtC | 2/7 | 1/5 | 1.6 | 0.82 |
-| MED4 | urtD | 2/7 | 1/2 | 0.4 | 0.92 |
-| MED4 | urtE | 3/8 | 1/3 | 1.2 | 0.82 |
-| **POOLED** | **urtA family** | **8/11** | **6/27** | **9.3** | **0.011 \*** |
-| POOLED | cynS family | 4/8 | 1/9 | 8.0 | 0.11 |
+| family | up/tested (N) | up/tested (other) | OR | q (BH) |
+|---|---|---|---|---|
+| **urt\*** (urea) | **10/11** | **7/27** | **28.6** | **0.0010 \*** |
+| amt\* (ammonium) | 6/11 | 6/17 | 2.2 | 0.27 |
+| cynS (cyanate) | 4/8 | 1/9 | 8.0 | 0.17 |
 
 ## Interpretation
-**Plain English:** Pooled across all genomes, urea-transporter (urtA) up-regulation
-is significantly more frequent under nitrogen stress than under other conditions —
-up in **8 of 11** N experiments vs only **6 of 27** non-N (odds ratio ≈ 9, q = 0.011).
-The cyanate-hydratase (cynS) family points the same way (4/8 vs 1/9, OR 8) but does
-**not** reach significance (q = 0.11). Within MED4 alone, **7 of 8** genes have OR > 1
-(direction = N-specific) but **none is individually significant** (all q ≈ 0.82).
+**Plain English:** Pooled across genomes, **urea-transporter (urt\*) up-regulation is
+strongly and significantly nitrogen-specific** — up in 10 of 11 N experiments vs only
+7 of 27 non-N (odds ratio ≈ 29, q = 0.001). **Cyanate hydratase (cynS)** points the same
+way (4/8 vs 1/9, OR 8) but does **not** reach significance (q = 0.17, underpowered — only
+8 N experiments test it). **Ammonium transporter (amt\*) is NOT N-specific** (6/11 vs 6/17,
+OR 2.2, q = 0.27): it goes up about as readily under other conditions.
 
-`[interpretation]` Two things are true at once: (1) the up-regulation *is*
-preferentially nitrogen-associated — strongly so when the whole dataset is pooled;
-(2) it is **not exclusive** — these genes (urtA especially) also go up under some
-other stresses, which is why per-gene MED4 odds ratios are modest. The marker signal
-is real but **partial**: a panel read together (and pooled across strains) detects N
-stress; no single gene in a single genome is a clean, statistically-proven N-only
-switch given the data now in the KG.
+`[interpretation]` The three families behave differently, which sharpens the marker story:
+- **urt\*** — the robust N-stress reporter in this dataset.
+- **cynS** — probably N-specific (large OR) but **under-measured**; needs more N experiments
+  across strains to confirm.
+- **amt\*** — a **general-response** gene, not a clean N marker (ammonium is the *preferred*
+  N source, so amt regulation tracks many physiological states, not N starvation alone).
 
-`[interpretation]` The limiting factor is **power, not effect**: most genes are tested
-in only a handful of non-N experiments, so per-gene MED4 tests can't resolve a 3–4×
-odds ratio. Pooling across genomes (urtA) is what crosses significance.
+`[interpretation]` Net: "are these up-regulations specific for N stress?" → **urea transport, yes;
+cyanate, likely; ammonium transport, no.** A urt-anchored panel is the defensible N-stress detector.
 
 ## Caveats `[KG]` / `[interpretation]`
-- **Underpowered per gene/per strain** — non-N tested counts are small (2–11 in MED4);
-  consistent OR>1 across 7/8 genes is itself suggestive but each alone is n.s.
-- **Pseudoreplication** — timepoints collapsed to experiment; experiments within one
-  study are not fully independent. A study-level random effect would be stricter.
-- **Per-publication thresholds** — "significant" uses each study's own DE call, not a
-  uniform padj. This is the *point* (platform-robust) but means the unit of "up" varies.
-- **tested-absent / table_scope** — for `significant_only` / `top_n` tables the gene is
-  only recorded when significant, so "tested-but-not-up" is undercounted there (pooled set
-  includes 12 significant_only + 7 top_n + 18 filtered_subset rows; MED4 Read 2017 is
-  top-50% filtered_subset). This can inflate up-rates for those experiments.
-- **"non-N" is a heterogeneous union** (carbon, P, light, viral, coculture, salt, iron,
-  darkness) — the test asks "N vs everything else", not "N vs any one specific stress".
+- **Family-level "any-subunit-up"** — urt\* has 5 subunits, so "any member up" is more permissive
+  than a single gene (raises the up-rate in both N and non-N; the OR is still high, but the
+  absolute rates should be read with this in mind).
+- **Pseudoreplication** — timepoints collapsed to experiment; experiments within one study are
+  not fully independent (no study-level random effect).
+- **Per-publication thresholds** — "significant" uses each study's own DE call (this is the point —
+  platform-robust — but the unit of "up" varies by study).
+- **tested-absent / table_scope** — for `significant_only` / `top_n` source tables, a gene is only
+  recorded when significant, so "tested-but-not-up" is undercounted there; can inflate up-rates.
+- **"non-N" is a heterogeneous union** (carbon, P, light, viral, coculture, salt, iron, darkness,
+  plastic) — the test asks "N vs everything else", not "N vs any one specific stress".
 - **Direction = up only** (down and n.s. both count as "not-up").
+- **cynS only** — the Synechococcus-only paralog group cynH (CK_00003051) is excluded; it has no DE data anyway.
 
 ## Decision
-Headline for the slide: **"Up-regulation is significantly N-enriched at the family level
-(urtA: 8/11 vs 6/27, OR≈9, q=0.011); cynS trends the same; the signal is a partial,
-panel-level marker, not a single-gene on/off switch."** Use `fig8` next to the flowers.
+Slide headline: **"Up-regulation is significantly N-specific for urea transport (urt\*: 10/11 vs
+7/27, OR≈29, q=0.001); cyanate (cynS) trends the same; ammonium transport (amt\*) is not N-specific."**
+Use `fig8` alongside the flowers (fig6/fig7).
