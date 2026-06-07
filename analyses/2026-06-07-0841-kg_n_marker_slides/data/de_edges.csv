@@ -1,0 +1,50 @@
+gene,locus_tag,organism,ortholog_group,treatment_type,experiment_id,direction,log2fc_or_note,source
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,up,3.49,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,up,4.67,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,up,1.30,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,up,1.57,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1038/msb4100087_growth_medium_growth_on_cyanate_as_med4_microarray,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1038/msb4100087_growth_medium_growth_on_urea_as_med4_microarray,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,carbon,10.1038/ismej.2015.36_carbon_low_co2_0004_co2_med4_microarray,down,-1.0,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,carbon,10.1038/ismej.2015.36_carbon_low_co2_and_no_med4_microarray,down,-1.1,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,coculture,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,up,1.70,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,coculture,10.1038/ismej.2016.70_coculture_alteromonas_hot1a3_med4_rnaseq,down,-13.43 (likely detection-floor artifact),KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,iron,10.1038/ismej.2011.49_iron_starvation_med4_microarray,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,salt,10.3389/fmicb.2022.1038136_salt_low_salinity_acclimation_28_med4_rnaseq,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,viral,10.1371/journal.pone.0165375_viral_phage_phm2_lysate_med4_rnaseq,ns,not_significant,KG
+cynS,PMM0373,Prochlorococcus MED4,cyanorak:CK_00001552,darkness,10.1371/journal.pone.0165375_light_stress_constant_dark_med4_rnaseq,ns,not_significant,KG
+cynD,PMM0372,Prochlorococcus MED4,,nitrogen,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,up,2.18,KG
+cynD,PMM0372,Prochlorococcus MED4,,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,up,3.27,KG
+cynD,PMM0372,Prochlorococcus MED4,,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,up,2.98,KG
+cynD,PMM0372,Prochlorococcus MED4,,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,up,1.57,KG
+cynD,PMM0372,Prochlorococcus MED4,,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,up,1.27,KG
+cynD,PMM0372,Prochlorococcus MED4,,coculture,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,up,1.64,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1038/msb4100087_nitrogen_nitrogen_deprivation_med4_med4_microarray,up,5.37,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1038/ismej.2017.88_nitrogen_stress_ndepleted_pro99_medium_med4_rnaseq,up,4.07,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_axenic,up,2.67,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_coculture,up,2.48,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1038/msb4100087_growth_medium_growth_on_cyanate_as_med4_microarray,up,0.91,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_proteomics_axenic,down,-1.45,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1101/2025.11.24.690089_growth_state_pro99lown_nutrient_starvation_med4_rnaseq_coculture,down,-2.02,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,nitrogen,10.1038/msb4100087_growth_medium_growth_on_urea_as_med4_microarray,ns,not_significant,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,carbon,10.1038/ismej.2015.36_carbon_air_0036_co2_21_med4_microarray,up,2.1,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,carbon,10.1038/ismej.2015.36_carbon_low_co2_0004_co2_med4_microarray,down,-3.1,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,carbon,10.1038/ismej.2015.36_carbon_low_co2_and_no_med4_microarray,down,-2.5,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,phosphorus,10.1073/pnas.0601301103_phosphorus_phosphate_starvation_med4_microarray,down,-1.88,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,viral,10.1038/nature06130_viral_phage_infected_med4_microarray,up,1.43,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,darkness,10.1371/journal.pone.0165375_light_stress_constant_dark_med4_rnaseq,down,-1.9,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,coculture,10.1101/2025.11.24.690089_coculture_alteromonas_hot1a3_med4_rnaseq,up,2.53,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,salt,10.3389/fmicb.2022.1038136_salt_low_salinity_acclimation_28_med4_rnaseq,ns,not_significant,KG
+urtA,PMM0970,Prochlorococcus MED4,cyanorak:CK_00000076,iron,10.1038/ismej.2011.49_iron_starvation_med4_microarray,ns,not_significant,KG
+cynS_ortholog,PMN2A_1390,Prochlorococcus NATL2A,cyanorak:CK_00001552,darkness,(NATL2A darkness experiments),down,3 timepoints down,KG
+urtA_ortholog,PMT2229,Prochlorococcus MIT9313,cyanorak:CK_00000076,nitrogen,(MIT9313 N experiments),up,7 timepoints up (clean),KG
+urtA_ortholog,PMT2229,Prochlorococcus MIT9313,cyanorak:CK_00000076,viral,(MIT9313 viral),down,1 timepoint down,KG
+urtA_ortholog,PMN2A_1048,Prochlorococcus NATL2A,cyanorak:CK_00000076,darkness,(NATL2A darkness),mixed,1 up / 9 down,KG
+urtA_ortholog,PMT9312_0829,Prochlorococcus MIT9312,cyanorak:CK_00000076,carbon,(MIT9312 carbon),down,1 timepoint down,KG
+urtA_ortholog,PMT9312_0829,Prochlorococcus MIT9312,cyanorak:CK_00000076,plastic,(MIT9312 plastic),up,1 timepoint up,KG
+urtA_ortholog,A9601_08881,Prochlorococcus AS9601,cyanorak:CK_00000076,salt,10.1016/j.micres.2015.04.006_salt_saltacclimated_5_salt_as9601_rnaseq,down,1 timepoint down,KG
+urtA_ortholog,SYNW0374,Synechococcus WH8102,cyanorak:CK_00000076,carbon,(WH8102 carbon),up,1 timepoint up,KG
+urtA_ortholog,SynWH7803_0599,Synechococcus WH7803,cyanorak:CK_00000076,coculture,10.1038/nmicrobiol.2017.100_late_coculture_syn_wh7803_proteomics,ns,not_significant,KG
+cynS_ortholog,SynWH7803_2495,Synechococcus WH7803,cyanorak:CK_00001552,coculture,10.1038/nmicrobiol.2017.100_coculture_syn_wh7803_proteomics,ns,not_significant (early+late),KG

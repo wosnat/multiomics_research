@@ -1,0 +1,31 @@
+%%{init: {'flowchart': {'curve': 'basis'}, 'themeVariables': {'fontSize': '16px'}}}%%
+flowchart LR
+  classDef gene fill:#2c3e50,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef cond fill:#ecf0f1,color:#2c3e50,stroke:#bdc3c7,stroke-width:1px
+  classDef leg fill:#ffffff,color:#2c3e50,stroke:#ffffff
+
+  cynS["<b>cynS · PMM0373</b><br/>cyanate hydratase<br/>Prochlorococcus MED4"]:::gene
+
+  N["Nitrogen stress<br/>8 experiments"]:::cond
+  C["Low-CO₂ / carbon<br/>2 experiments"]:::cond
+  CO["Coculture<br/>2 experiments"]:::cond
+  FE["Iron starvation<br/>3 experiments"]:::cond
+  SA["Salt acclimation<br/>1 experiment"]:::cond
+  VI["Viral / phage<br/>1 experiment"]:::cond
+  DK["Constant dark<br/>1 experiment"]:::cond
+
+  cynS -->|"↑ up to +4.7 log2FC · sig 4/8"| N
+  cynS -->|"↓ −1.0 to −1.1"| C
+  cynS -->|"± mixed: +1.7 / −13.4*"| CO
+  cynS -->|"n.s."| FE
+  cynS -->|"n.s."| SA
+  cynS -->|"n.s."| VI
+  cynS -->|"n.s."| DK
+
+  linkStyle 0 stroke:#d73027,stroke-width:4px
+  linkStyle 1 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 2 stroke:#b39ddb,stroke-width:2px,stroke-dasharray:5 4
+  linkStyle 3 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 4 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 5 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 6 stroke:#bdc3c7,stroke-width:1.5px

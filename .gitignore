@@ -31,3 +31,8 @@ Thumbs.db
 
 
 .env
+
+# Node deps (mermaid-cli for figure rendering)
+node_modules/
+package-lock.json
+package.json

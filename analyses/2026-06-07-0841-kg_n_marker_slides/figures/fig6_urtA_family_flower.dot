@@ -1,0 +1,78 @@
+// urtA gene-family "flower": ortholog group at centre, genes as petals,
+// experiments at the rim. Edge colour = expression change; gold = N experiment.
+// Counts are the full family totals; the rim shows a representative subset of the 38 experiments.
+// Render: twopi -Tpng fig6_urtA_family_flower.dot -o fig6_urtA_family_flower.png
+digraph urtA_flower {
+  layout=twopi;
+  root=FAM;
+  ranksep="1.3 0.7";
+  overlap=false;
+  splines=curved;
+  sep="+10";
+  nodesep=0.4;
+  bgcolor="white";
+  labelloc="b";
+  fontname="Helvetica";
+  fontsize=13;
+  label="Edge colour = expression change:  red = up   blue = down   purple = mixed   grey = not significant\lGold outline = nitrogen-stress experiment      (rim shows representative experiments)\l";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=12,
+        color="#1b2631", penwidth=1.2, margin="0.12,0.07"];
+  edge [penwidth=3.0, arrowsize=0.6];
+
+  // centre = ortholog group
+  FAM [label="Urea-transporter\ngene (urtA)\n— one gene family —\n7 genomes\n38 experiments\n18 publications",
+       shape=ellipse, fillcolor="#1b3a4b", fontcolor="white", fontsize=16, penwidth=2.5,
+       width=2.3, height=2.3, fixedsize=true];
+
+  // ring 1 = genes (one per genome)
+  node [fillcolor="#2c3e50", fontcolor="white"];
+  MED4 [label="Prochlorococcus\nMED4"];
+  M13  [label="Prochlorococcus\nMIT9313"];
+  M12  [label="Prochlorococcus\nMIT9312"];
+  NAT  [label="Prochlorococcus\nNATL2A"];
+  AS   [label="Prochlorococcus\nAS9601"];
+  WH8  [label="Synechococcus\nWH8102"];
+  WH7  [label="Synechococcus\nWH7803"];
+
+  // ring 2 = experiments
+  node [fillcolor="#f4f6f7", fontcolor="#2c3e50", fontsize=11];
+  e1  [label="N deprivation\nTolonen 2006",  fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e2  [label="N depletion\nRead 2017",       fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e3  [label="N starvation\nWeissberg 2025", fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e4  [label="low CO₂\nBagby 2015"];
+  e5  [label="P starvation\nMartiny 2006"];
+  e6  [label="phage infection\nLindell 2007"];
+  e7  [label="low salinity\nHe 2022"];
+  e8  [label="N deprivation\nTolonen 2006",  fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e9  [label="viral lysis products\nFang 2019"];
+  e10 [label="elevated CO₂\nHennon 2018"];
+  e11 [label="plastic leachate\nTetu 2019"];
+  e12 [label="extended darkness\nBiller 2018"];
+  e13 [label="dark co-culture\nCoe 2024"];
+  e14 [label="salt acclimation\nAl-Hosani 2015"];
+  e15 [label="elevated pCO₂\nBarreto Filho 2022"];
+  e16 [label="co-culture\nChristie-Oleza 2017"];
+
+  // membership edges (neutral)
+  edge [color="#34495e", penwidth=2.2, arrowhead=none];
+  FAM -> MED4; FAM -> M13; FAM -> M12; FAM -> NAT; FAM -> AS; FAM -> WH8; FAM -> WH7;
+
+  // expression edges: up=red  down=blue  mixed=purple  n.s.=gray  (N edges thickened)
+  edge [arrowhead=normal, penwidth=3.0];
+  MED4 -> e1  [color="#d73027", penwidth=4.5];
+  MED4 -> e2  [color="#d73027", penwidth=4.5];
+  MED4 -> e3  [color="#b39ddb", style=dashed, penwidth=4.5];
+  MED4 -> e4  [color="#4575b4"];
+  MED4 -> e5  [color="#4575b4"];
+  MED4 -> e6  [color="#d73027"];
+  MED4 -> e7  [color="#bdc3c7", penwidth=1.8];
+  M13  -> e8  [color="#d73027", penwidth=4.5];
+  M13  -> e9  [color="#4575b4"];
+  M12  -> e10 [color="#4575b4"];
+  M12  -> e11 [color="#d73027"];
+  NAT  -> e12 [color="#4575b4"];
+  NAT  -> e13 [color="#b39ddb", style=dashed];
+  AS   -> e14 [color="#4575b4"];
+  WH8  -> e15 [color="#d73027"];
+  WH7  -> e16 [color="#bdc3c7", penwidth=1.8];
+}

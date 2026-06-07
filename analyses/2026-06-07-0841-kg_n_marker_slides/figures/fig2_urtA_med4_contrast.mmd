@@ -1,0 +1,33 @@
+%%{init: {'flowchart': {'curve': 'basis'}, 'themeVariables': {'fontSize': '16px'}}}%%
+flowchart LR
+  classDef gene fill:#2c3e50,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef cond fill:#ecf0f1,color:#2c3e50,stroke:#bdc3c7,stroke-width:1px
+
+  urtA["<b>urtA · PMM0970</b><br/>urea ABC transporter (SBP)<br/>Prochlorococcus MED4"]:::gene
+
+  N["Nitrogen stress<br/>8 experiments"]:::cond
+  CA["Carbon / CO₂<br/>3 experiments"]:::cond
+  PH["Phosphate starvation<br/>1 experiment"]:::cond
+  DK["Constant dark<br/>1 experiment"]:::cond
+  VI["Viral / phage<br/>1 experiment"]:::cond
+  CO["Coculture<br/>2 experiments"]:::cond
+  SA["Salt acclimation<br/>1 experiment"]:::cond
+  FE["Iron starvation<br/>2 experiments"]:::cond
+
+  urtA -->|"± +5.4 up / −2.0 down"| N
+  urtA -->|"± +2.1 / −3.1"| CA
+  urtA -->|"↓ −1.9"| PH
+  urtA -->|"↓ −1.9"| DK
+  urtA -->|"↑ +1.4"| VI
+  urtA -->|"± +2.5 / mixed"| CO
+  urtA -->|"n.s."| SA
+  urtA -->|"n.s."| FE
+
+  linkStyle 0 stroke:#b39ddb,stroke-width:3px,stroke-dasharray:5 4
+  linkStyle 1 stroke:#b39ddb,stroke-width:2.5px,stroke-dasharray:5 4
+  linkStyle 2 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 3 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 4 stroke:#d73027,stroke-width:2.5px
+  linkStyle 5 stroke:#b39ddb,stroke-width:2px,stroke-dasharray:5 4
+  linkStyle 6 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 7 stroke:#bdc3c7,stroke-width:1.5px

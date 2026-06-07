@@ -1,0 +1,48 @@
+%%{init: {'flowchart': {'curve': 'basis'}, 'themeVariables': {'fontSize': '15px'}}}%%
+flowchart LR
+  classDef group fill:#34495e,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef gene fill:#2c3e50,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef cond fill:#ecf0f1,color:#2c3e50,stroke:#bdc3c7,stroke-width:1px
+  classDef gap fill:#f7f7f7,color:#95a5a6,stroke:#d5dbdb,stroke-dasharray:4 3
+
+  OG(["<b>urtA ortholog group</b><br/>cyanorak:CK_00000076<br/>19 orthologs · Prochlorococcus + Synechococcus"]):::group
+
+  MED4["MED4 · PMM0970"]:::gene
+  M13["MIT9313 · PMT2229"]:::gene
+  M12["MIT9312 · PMT9312_0829"]:::gene
+  NAT["NATL2A · PMN2A_1048"]:::gene
+  AS["AS9601 · A9601_08881"]:::gene
+  WH["WH8102 · SYNW0374"]:::gene
+  GAP["13 orthologs — no DE experiments in KG"]:::gap
+
+  Nstress["N stress"]:::cond
+  Other["other conditions<br/>carbon · darkness · salt · plastic"]:::cond
+
+  OG --- MED4
+  OG --- M13
+  OG --- M12
+  OG --- NAT
+  OG --- AS
+  OG --- WH
+  OG -.-> GAP
+
+  MED4 -->|"N ± (14 up / 2 down)"| Nstress
+  M13 -->|"N ↑ (7 tp, clean)"| Nstress
+  M12 -->|"carbon ↓ / plastic ↑"| Other
+  NAT -->|"darkness (1 up / 9 down)"| Other
+  AS -->|"salt ↓"| Other
+  WH -->|"carbon ↑"| Other
+
+  linkStyle 0 stroke:#34495e,stroke-width:2px
+  linkStyle 1 stroke:#34495e,stroke-width:2px
+  linkStyle 2 stroke:#34495e,stroke-width:2px
+  linkStyle 3 stroke:#34495e,stroke-width:2px
+  linkStyle 4 stroke:#34495e,stroke-width:2px
+  linkStyle 5 stroke:#34495e,stroke-width:2px
+  linkStyle 6 stroke:#d5dbdb,stroke-width:1.5px,stroke-dasharray:4 3
+  linkStyle 7 stroke:#b39ddb,stroke-width:3px,stroke-dasharray:5 4
+  linkStyle 8 stroke:#d73027,stroke-width:4px
+  linkStyle 9 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 10 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 11 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 12 stroke:#bdc3c7,stroke-width:1.5px

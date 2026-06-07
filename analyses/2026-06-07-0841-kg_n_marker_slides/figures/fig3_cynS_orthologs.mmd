@@ -1,0 +1,34 @@
+%%{init: {'flowchart': {'curve': 'basis'}, 'themeVariables': {'fontSize': '15px'}}}%%
+flowchart LR
+  classDef group fill:#34495e,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef gene fill:#2c3e50,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef cond fill:#ecf0f1,color:#2c3e50,stroke:#bdc3c7,stroke-width:1px
+  classDef gap fill:#f7f7f7,color:#95a5a6,stroke:#d5dbdb,stroke-dasharray:4 3
+
+  OG(["<b>cynS ortholog group</b><br/>cyanorak:CK_00001552<br/>10 orthologs · Prochlorococcus + Synechococcus"]):::group
+
+  MED4["MED4 · PMM0373"]:::gene
+  NAT["NATL2A · PMN2A_1390"]:::gene
+  GAP["8 orthologs — no DE experiments in KG<br/>MIT0801, NATL1A, PAC1, SB,<br/>WH7803, WH8102, BL107, CC9311"]:::gap
+
+  Nm["N stress"]:::cond
+  Cm["low-CO₂"]:::cond
+  Om["coculture"]:::cond
+  Dn["darkness"]:::cond
+
+  OG --- MED4
+  OG --- NAT
+  OG -.-> GAP
+
+  MED4 -->|"N stress ↑ +4.7 (10 tp)"| Nm
+  MED4 -->|"↓"| Cm
+  MED4 -->|"±"| Om
+  NAT -->|"darkness ↓ (×3)"| Dn
+
+  linkStyle 0 stroke:#34495e,stroke-width:2px
+  linkStyle 1 stroke:#34495e,stroke-width:2px
+  linkStyle 2 stroke:#d5dbdb,stroke-width:1.5px,stroke-dasharray:4 3
+  linkStyle 3 stroke:#d73027,stroke-width:4px
+  linkStyle 4 stroke:#4575b4,stroke-width:2px
+  linkStyle 5 stroke:#b39ddb,stroke-width:2px,stroke-dasharray:5 4
+  linkStyle 6 stroke:#4575b4,stroke-width:2px

@@ -1,0 +1,87 @@
+%%{init: {'flowchart': {'curve': 'basis', 'nodeSpacing': 24, 'rankSpacing': 95}, 'themeVariables': {'fontSize': '15px'}}}%%
+flowchart LR
+  classDef fam fill:#1b3a4b,color:#ffffff,stroke:#0d1f29,stroke-width:2px
+  classDef gene fill:#2c3e50,color:#ffffff,stroke:#1b2631,stroke-width:2px
+  classDef exp fill:#f4f6f7,color:#2c3e50,stroke:#cfd6d8,stroke-width:1px
+  classDef lup fill:#d73027,color:#ffffff,stroke:#a81d18
+  classDef ldn fill:#4575b4,color:#ffffff,stroke:#2f5589
+  classDef lmx fill:#b39ddb,color:#3d2c5a,stroke:#8e6fc0
+  classDef lns fill:#ffffff,color:#7f8c8d,stroke:#cfd6d8
+
+  FAM["<b>Urea-transporter gene (urtA)</b><br/>one gene family<br/>━━━━━━<br/>measured in 7 genomes<br/>38 experiments · 18 publications<br/><i>(representative experiments shown)</i>"]:::fam
+
+  MED4["Prochlorococcus MED4"]:::gene
+  M13["Prochlorococcus MIT9313"]:::gene
+  M12["Prochlorococcus MIT9312"]:::gene
+  NAT["Prochlorococcus NATL2A"]:::gene
+  AS["Prochlorococcus AS9601"]:::gene
+  WH["Synechococcus WH8102"]:::gene
+  WH7["Synechococcus WH7803"]:::gene
+
+  e1["N deprivation<br/>Tolonen 2006"]:::exp
+  e2["N depletion<br/>Read 2017"]:::exp
+  e3["N starvation<br/>Weissberg 2025"]:::exp
+  e4["low CO₂<br/>Bagby 2015"]:::exp
+  e5["P starvation<br/>Martiny 2006"]:::exp
+  e6["phage infection<br/>Lindell 2007"]:::exp
+  e7["low salinity<br/>He 2022"]:::exp
+  e8["N deprivation<br/>Tolonen 2006"]:::exp
+  e9["viral lysis products<br/>Fang 2019"]:::exp
+  e10["elevated CO₂<br/>Hennon 2018"]:::exp
+  e11["plastic leachate<br/>Tetu 2019"]:::exp
+  e12["extended darkness<br/>Biller 2018"]:::exp
+  e13["dark co-culture<br/>Coe 2024"]:::exp
+  e14["salt acclimation<br/>Al-Hosani 2015"]:::exp
+  e15["elevated pCO₂<br/>Barreto Filho 2022"]:::exp
+  e16["co-culture<br/>Christie-Oleza 2017"]:::exp
+
+  FAM --- MED4
+  FAM --- M13
+  FAM --- M12
+  FAM --- NAT
+  FAM --- AS
+  FAM --- WH
+  FAM --- WH7
+
+  MED4 --> e1
+  MED4 --> e2
+  MED4 --> e3
+  MED4 --> e4
+  MED4 --> e5
+  MED4 --> e6
+  MED4 --> e7
+  M13 --> e8
+  M13 --> e9
+  M12 --> e10
+  M12 --> e11
+  NAT --> e12
+  NAT --> e13
+  AS --> e14
+  WH --> e15
+  WH7 --> e16
+
+  linkStyle 0,1,2,3,4,5,6 stroke:#34495e,stroke-width:2px
+  linkStyle 7 stroke:#d73027,stroke-width:3.5px
+  linkStyle 8 stroke:#d73027,stroke-width:3.5px
+  linkStyle 9 stroke:#b39ddb,stroke-width:3px,stroke-dasharray:5 4
+  linkStyle 10 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 11 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 12 stroke:#d73027,stroke-width:3px
+  linkStyle 13 stroke:#bdc3c7,stroke-width:1.5px
+  linkStyle 14 stroke:#d73027,stroke-width:3.5px
+  linkStyle 15 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 16 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 17 stroke:#d73027,stroke-width:3px
+  linkStyle 18 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 19 stroke:#b39ddb,stroke-width:3px,stroke-dasharray:5 4
+  linkStyle 20 stroke:#4575b4,stroke-width:2.5px
+  linkStyle 21 stroke:#d73027,stroke-width:3px
+  linkStyle 22 stroke:#bdc3c7,stroke-width:1.5px
+
+  subgraph LG ["Edge colour = expression change"]
+    direction LR
+    Lu["up"]:::lup
+    Ld["down"]:::ldn
+    Lm["mixed"]:::lmx
+    Ln["not significant"]:::lns
+  end
