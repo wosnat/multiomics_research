@@ -1,0 +1,4 @@
+family,description,up_per_tested_N,up_per_tested_other,odds_ratio,q_BH,significant_q<0.05
+urt*,urea transporter (urtA-E),10/11,7/27,28.6,0.001,True
+amt*,ammonium transporter (amt1/2),6/11,6/17,2.2,0.2693,False
+cynS,cyanate hydratase,4/8,1/9,8.0,0.1663,False

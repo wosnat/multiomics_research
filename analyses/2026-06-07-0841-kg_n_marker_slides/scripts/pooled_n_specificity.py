@@ -105,58 +105,66 @@ def main():
     print(res[["family", "up_N", "tested_N", "up_nonN", "tested_nonN",
                "odds_ratio", "p_greater", "p_bh"]].to_string(index=False))
 
-    # ---- forest plot (3 rows) ----
-    RED, GREY = "#d73027", "#9aa3a8"
     res_o = res.set_index("family").loc[ORDER].reset_index()
-    fig, (axL, axR) = plt.subplots(1, 2, figsize=(11.5, 4.4),
-                                   gridspec_kw={"width_ratios": [7, 5]})
+
+    # ---- (1) the table -> CSV (slide-ready, friendly columns) ----
+    tbl = pd.DataFrame({
+        "family": res_o["family"],
+        "description": res_o["description"],
+        "up_per_tested_N": res_o["up_N"].astype(str) + "/" + res_o["tested_N"].astype(str),
+        "up_per_tested_other": res_o["up_nonN"].astype(str) + "/" + res_o["tested_nonN"].astype(str),
+        "odds_ratio": res_o["odds_ratio"].round(1),
+        "q_BH": res_o["p_bh"].round(4),
+        "significant_q<0.05": res_o["p_bh"] < 0.05,
+    })
+    tbl.to_csv(os.path.join(DATA, "fig8_table.csv"), index=False)
+
+    # ---- (2) forest plot, large fonts for PPT (no table; OR labelled on points) ----
+    plt.rcParams.update({"font.size": 18, "svg.fonttype": "none"})
+    RED, GREY = "#d73027", "#9aa3a8"
     S = 1.6  # row spacing
     ys = (np.arange(len(res_o)) * S)[::-1]
+    fig, ax = plt.subplots(figsize=(13, 6.5))
     for y, r in zip(ys, res_o.itertuples()):
         sig = r.p_bh < 0.05
         col = RED if sig else GREY
-        axL.plot([max(r.ci_low, 0.05), r.ci_high], [y, y], color=col, lw=2.5, zorder=2)
-        axL.scatter([r.or_haldane], [y], s=110, color=col, zorder=3,
-                    edgecolor="white", linewidth=1.3)
-        axL.text(0.052, y + 0.30, f"{r.family}", fontsize=12.5, weight="bold",
-                 va="bottom", ha="left", transform=axL.get_yaxis_transform())
-        axL.text(0.052, y - 0.30, FAMILY_DESC[r.family], fontsize=8.5,
-                 color="#666", va="top", ha="left", transform=axL.get_yaxis_transform())
-        star = "  *" if sig else ""
-        axR.text(0.00, y, f"{r.up_N}/{r.tested_N}", fontsize=10.5, va="center", ha="center")
-        axR.text(0.22, y, f"{r.up_nonN}/{r.tested_nonN}", fontsize=10.5, va="center", ha="center")
-        axR.text(0.46, y, f"{r.odds_ratio:.1f}" if np.isfinite(r.odds_ratio) else "∞",
-                 fontsize=10.5, va="center", ha="center")
-        axR.text(0.74, y, f"{r.p_bh:.3g}{star}", fontsize=10.5, va="center", ha="center",
-                 color=RED if sig else "#333", weight="bold" if sig else "normal")
+        ax.plot([max(r.ci_low, 0.05), r.ci_high], [y, y], color=col, lw=5, zorder=2,
+                solid_capstyle="round")
+        ax.scatter([r.or_haldane], [y], s=420, color=col, zorder=3,
+                   edgecolor="white", linewidth=2)
+        ax.text(0.05, y + 0.34, r.family, fontsize=30, weight="bold",
+                va="bottom", ha="left", transform=ax.get_yaxis_transform())
+        ax.text(0.05, y - 0.30, FAMILY_DESC[r.family], fontsize=17, color="#666",
+                va="top", ha="left", transform=ax.get_yaxis_transform())
+        star = " *" if sig else ""
+        or_txt = f"OR {r.odds_ratio:.1f}{star}" if np.isfinite(r.odds_ratio) else f"OR ∞{star}"
+        ax.text(r.ci_high * 1.4, y, or_txt, fontsize=21, va="center", ha="left",
+                color=col, weight="bold")
 
-    axL.axvline(1, ls="--", color="#444", lw=1, zorder=1)
-    axL.set_xscale("log"); axL.set_xlim(0.05, 3000)
-    axL.xaxis.set_major_locator(FixedLocator([0.1, 1, 10, 100, 1000]))
-    axL.xaxis.set_major_formatter(FixedFormatter(["0.1", "1", "10", "100", "1000"]))
-    axL.set_xlabel("odds ratio   (up-regulation enriched under N  →)", fontsize=10.5)
+    ax.axvline(1, ls="--", color="#444", lw=2, zorder=1)
+    ax.set_xscale("log"); ax.set_xlim(0.05, 9000)
+    ax.xaxis.set_major_locator(FixedLocator([0.1, 1, 10, 100, 1000]))
+    ax.xaxis.set_major_formatter(FixedFormatter(["0.1", "1", "10", "100", "1000"]))
+    ax.tick_params(axis="x", labelsize=20, length=7, width=1.5)
+    ax.set_xlabel("odds ratio   (up-regulation enriched under N  →)", fontsize=22)
     ytop = (len(res_o) - 1) * S
-    axL.set_yticks([]); axL.set_ylim(-0.95, ytop + 1.0)
+    ax.set_yticks([]); ax.set_ylim(-0.95, ytop + 1.05)
     for s in ("top", "right", "left"):
-        axL.spines[s].set_visible(False)
-    axR.set_xlim(-0.1, 0.95); axR.set_ylim(-0.95, ytop + 1.0); axR.axis("off")
-    hy = ytop + 0.85
-    for x, lab in [(0.0, "up/tested\n(N)"), (0.22, "up/tested\n(other)"),
-                   (0.46, "odds\nratio"), (0.74, "q (BH)")]:
-        axR.text(x, hy, lab, fontsize=9, ha="center", va="center", weight="bold", color="#555")
+        ax.spines[s].set_visible(False)
+    ax.spines["bottom"].set_linewidth(1.5)
 
-    fig.suptitle("Is up-regulation specific to nitrogen stress?  (pooled across genomes)\n"
-                 "Fisher exact on DE / not-DE calls — fold-change magnitude not used",
-                 fontsize=12.5, weight="bold")
-    fig.text(0.5, 0.01,
-             "OR > 1 (right of dashed line) = up-regulation more frequent under N than other conditions.   "
-             "Red = BH q < 0.05.   Whiskers = 95% CI.", fontsize=8.5, color="#555", ha="center")
-    fig.tight_layout(rect=[0, 0.04, 1, 0.88])
+    ax.set_title("Is up-regulation specific to nitrogen stress?",
+                 fontsize=27, weight="bold", pad=26)
+    fig.text(0.5, 0.015,
+             "Pooled across genomes · Fisher exact on DE/not-DE calls (no fold-change) · "
+             "red = significant (q<0.05) · whiskers = 95% CI",
+             fontsize=15, color="#555", ha="center")
+    fig.tight_layout(rect=[0, 0.05, 1, 1])
     for ext in ("png", "svg"):
         fig.savefig(os.path.join(FIGS, f"fig8_n_specificity_forest.{ext}"),
                     dpi=200, bbox_inches="tight")
     print("\nwrote figures/fig8_n_specificity_forest.{png,svg}, "
-          "data/n_specificity_pooled_results.csv, data/pooled_de_downloaded.csv")
+          "data/fig8_table.csv, data/n_specificity_pooled_results.csv, data/pooled_de_downloaded.csv")
 
 
 if __name__ == "__main__":
