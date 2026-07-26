@@ -1,0 +1,91 @@
+// ERC half-column version of fig6 (urtA gene-family "flower").
+//
+// Same structure, same data, same colour legend as fig6_urtA_family_flower.dot.
+// Differences, all made to survive placement at 85 mm column width:
+//   - strain names only ("P. MED4"), genus given in the legend
+//   - conditions and citations abbreviated to <= 11 characters per line
+//   - fonts enlarged and the ring packing tightened (sep=+0, ranksep 0.7/0.4)
+// Net effect: rim labels render at ~6.6 pt when the figure is placed at 85 mm,
+// vs ~3.4 pt for the conference version at the same width.
+//
+// Render:
+//   twopi -Tsvg fig6_urtA_family_flower_erc.dot -o fig6_urtA_family_flower_erc.svg
+//   twopi -Tpdf -Gsize=3.346,3.6 fig6_urtA_family_flower_erc.dot -o fig6_urtA_family_flower_erc.pdf
+digraph urtA_flower_erc {
+  layout=twopi;
+  root=FAM;
+  ranksep="0.7 0.4";
+  overlap=false;
+  splines=curved;
+  sep="+2";   // +0 packs tightest but lets WH7803 touch its rim box, hiding the grey edge
+  nodesep=0.28;
+  bgcolor="white";
+  labelloc="b";
+  fontname="Helvetica";
+  fontsize=22;
+  label="red = up   blue = down   purple = mixed   grey = tested, not significant\lgold = nitrogen-stress experiment\lP. = Prochlorococcus   S. = Synechococcus\l";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=22,
+        color="#1b2631", penwidth=1.4, margin="0.05,0.03"];
+  edge [penwidth=3.0, arrowsize=0.6];
+
+  // centre = ortholog group
+  FAM [label="urtA\nurea transporter\n\n7 genomes\n38 experiments\n18 publications",
+       shape=ellipse, fillcolor="#1b3a4b", fontcolor="white", fontsize=22, penwidth=2.5,
+       width=3.2, height=3.2, fixedsize=true];   // 3.2in is the largest hub the rim ring absorbs
+                                                 // for free; beyond it the whole flower inflates
+                                                 // and the rim labels shrink.
+
+  // ring 1 = genes (one per genome)
+  node [fillcolor="#2c3e50", fontcolor="white", fontsize=24];
+  MED4 [label="P. MED4"];
+  M13  [label="P. MIT9313"];
+  M12  [label="P. MIT9312"];
+  NAT  [label="P. NATL2A"];
+  AS   [label="P. AS9601"];
+  WH8  [label="S. WH8102"];
+  WH7  [label="S. WH7803"];
+
+  // ring 2 = experiments
+  node [fillcolor="#f4f6f7", fontcolor="#2c3e50", fontsize=22];
+  e1  [label="N stress\nTolonen 06",  fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e2  [label="N stress\nRead 17",     fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e3  [label="N stress\nWeissb. 25",  fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e4  [label="low CO₂\nBagby 15"];
+  e5  [label="P starv.\nMartiny 06"];
+  e6  [label="phage\nLindell 07"];
+  e7  [label="low salt\nHe 22"];
+  e8  [label="N stress\nTolonen 06",  fillcolor="#fff3c4", color="#e0a800", penwidth=3.5];
+  e9  [label="viral DOM\nFang 19"];
+  e10 [label="high CO₂\nHennon 18"];
+  e11 [label="plastic\nTetu 19"];
+  e12 [label="darkness\nBiller 18"];
+  e13 [label="dark co-cx\nCoe 24"];
+  e14 [label="high salt\nAlHosani 15"];
+  e15 [label="high pCO₂\nBarreto 22"];
+  e16 [label="co-culture\nChristie 17"];
+
+  // membership edges (neutral)
+  edge [color="#34495e", penwidth=2.2, arrowhead=none];
+  FAM -> MED4; FAM -> M13; FAM -> M12; FAM -> NAT; FAM -> AS; FAM -> WH8; FAM -> WH7;
+
+  // expression edges: up=red  down=blue  mixed=purple  n.s.=gray  (N edges thickened)
+  edge [arrowhead=normal, penwidth=3.0];
+  MED4 -> e1  [color="#d73027", penwidth=4.5];
+  MED4 -> e2  [color="#d73027", penwidth=4.5];
+  MED4 -> e3  [color="#b39ddb", style=dashed, penwidth=4.5];
+  MED4 -> e4  [color="#4575b4"];
+  MED4 -> e5  [color="#4575b4"];
+  MED4 -> e6  [color="#d73027"];
+  MED4 -> e7  [color="#bdc3c7", penwidth=1.8, arrowsize=0.9];
+  M13  -> e8  [color="#d73027", penwidth=4.5];
+  M13  -> e9  [color="#4575b4"];
+  M12  -> e10 [color="#4575b4"];
+  M12  -> e11 [color="#d73027"];
+  NAT  -> e12 [color="#4575b4"];
+  NAT  -> e13 [color="#b39ddb", style=dashed];
+  AS   -> e14 [color="#4575b4"];
+  WH8  -> e15 [color="#d73027"];
+  // WH7803 sits close to its rim box at this density, so this n.s. edge renders as a
+  // short stub — enlarge the arrowhead so the grey "tested, no change" still reads.
+  WH7  -> e16 [color="#bdc3c7", penwidth=1.8, arrowsize=0.9];
+}

@@ -13,6 +13,7 @@ is tagged `[interpretation]`.
 | File | What it shows |
 |---|---|
 | `figures/fig6_urtA_family_flower.*` | **★ Hero / impact slide (radial "flower").** urtA family at the centre, genomes as petals, experiments at the rim; **nitrogen experiments highlighted in gold**. Graphviz `twopi` (mermaid can't do radial). Best for a title/impact slide. |
+| `figures/fig6_urtA_family_flower_erc.*` | **ERC half-column version of fig6.** Same structure, same data, same colour legend; strain names only (genus in the legend), conditions/citations abbreviated, fonts enlarged and ring packing tightened. Placed at 85 mm the rim labels render at **~6.3 pt** vs ~3.4 pt for the conference version at the same width. Ships as `.pdf` (85 mm page, drop in at 100 %), `.svg`, and a 1200-dpi `.png`. |
 | `figures/fig7_cynS_family_flower.*` | **cynS flower (contrast).** Same radial style; hub reads "DE data in only 3 of 10 genomes." Makes the "cleanest marker, least measured" point next to fig6. |
 | `figures/fig8_n_specificity_forest.*` | **Step 2 — statistical specificity test (pooled, 3 families).** Forest plot of Fisher odds ratios (DE/not-DE, no fold-change) asking "is up-regulation enriched under N?" **urt\* significant** (OR≈29, q=0.001); cynS trends (q=0.17); **amt\* not N-specific** (q=0.27). Built by the self-contained `scripts/pooled_n_specificity.py` (downloads via the Python API → `to_dataframe`). See `notebook_step2_specificity.md`. |
 | `figures/fig5_urtA_family_integration.*` | **★ "Power of the KG" detail slide.** One gene family → 7 genomes → each genome's fan of experiments, edges colored up/down/mixed/not-significant, real author-year citations. Data integrated across **38 experiments and 18 publications** (rim shows a representative subset). No locus tags / IDs. Best for the walk-through. |
@@ -26,6 +27,18 @@ Each figure is a `.mmd` (mermaid source), `.svg` (vector, for slides), and `.png
 ```bash
 node_modules/.bin/mmdc -i figures/fig1_cynS_med4.mmd -o figures/fig1_cynS_med4.svg -b transparent
 ```
+
+The flowers (fig6/fig7) are Graphviz `.dot`, not mermaid — mermaid has no radial layout:
+```bash
+cd figures
+twopi -Tsvg fig6_urtA_family_flower_erc.dot -o fig6_urtA_family_flower_erc.svg
+twopi -Tpdf -Gsize=3.346,3.6 fig6_urtA_family_flower_erc.dot -o fig6_urtA_family_flower_erc.pdf
+```
+`-Gsize=3.346,3.6` is the 85 mm half-column box. Note the trade-off baked into the ERC
+variant: with all 16 rim experiments kept, ~6.3 pt is the ceiling at 85 mm — the ring
+radius is set by the total width of the rim labels, so raising the font size in the
+source inflates the layout by the same factor and buys almost nothing. Real gains come
+only from cutting rim content.
 
 ## Edge colour legend (unified across all figures)
 
